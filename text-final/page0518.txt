@@ -1,0 +1,136 @@
+ 
+
+ 
+
+1913
+
+ 
+
+Isotopes
+
+During the intense study of
+radioactive phenomena
+that had been going on for
+the previous seventeen
+years, some forty to fifty dif-
+ferent elements had been re-
+ported (as judged by
+differences in radioactive
+properties—the kinds, in-
+tensities, and energies of
+particles emitted). How-
+ever, there were only ten to
+twelve places available for
+them in the periodic table.
+Either the periodic table
+did not apply to radioactive
+elements or there was some-
+thing subtle about those ele-
+ments that had been
+missed.
+
+The British chemist
+Frederick Soddy (1877—
+1956) worked on the prob-
+lem. He made clear what is
+now called the radioactive
+displacement law. (The Pol-
+ish chemist Kasimir Fajans
+[1887—1975] made these
+same suggestions indepen-
+dently at about the same
+time.) When an atom gives
+off an alpha particle, the
+alpha particle has a posi-
+tive charge of 2 and a mass
+of 4. The atom that gave it
+off therefore has to turn
+into another atom with a
+
+smaller charge (by 2) on its
+nucleus and a smaller mass
+(by 4).
+
+When a beta particle is
+given off, with a negative
+charge of 1, the loss of the
+negative charge is equiva-
+lent to the gain of a positive
+charge. An atom that gives
+off a beta particle therefore
+turns into another atom
+with a larger nuclear
+charge (by 1). Since an elec-
+tron has only a tiny mass,
+the mass of an atom is vir-
+tually unchanged in beta-
+particle emission.
+
+A gamma ray, having
+neither electric charge nor
+mass, does not affect the na-
+ture of an atom when given
+off; it merely decreases the
+atom’s energy content.
+
+By following these
+changes, Soddy suggested
+that a given place in the pe-
+riodic table might be occu-
+pied by two or more
+different substances, distin-
+guishable from each other
+by their differing radioac-
+tive properties. These occu-
+pants of the same place
+would be equal in nuclear
+charge but different in
+mass. Soddy called them
+isotopes, from Greek words
+meaning “‘same place.”
+
+For his advancement of
+
+the isotope concept, Soddy
+was awarded the Nobel
+Prize for chemistry in 1921.
+
+Lead Isotopes
+
+Soddy had worked out the
+isotope concept in connec-
+tion with radioactive ele-
+ments (see above), but
+
+these were available in
+such tiny quantities that
+atomic weights could not
+be determined, and the exis-
+tence of isotopes could not
+be checked in that way.
+However, the radioactive
+displacement law made it
+clear that uranium and tho-
+rium each broke down to a
+different isotope of lead,
+and that could be checked.
+
+The American chemist
+Theodore William Richards
+(1868-1928) had worked
+out unprecedentedly accu-
+rate methods for determin-
+ing atomic weights, and he
+used these methods to de-
+termine the atomic weight
+of lead obtained from ores
+containing uranium or tho-
+rium and those containing
+neither.
+
+In 1913 Richards found
+definite variations in the
+atomic weight of lead, and
+this strongly supported the
+isotope concept. For his
+

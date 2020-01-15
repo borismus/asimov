@@ -1,0 +1,128 @@
+1946
+
+ 
+
+ENIAC
+
+Bush had devised a com-
+puter that made use of
+radio tubes as electronic
+switches in addition to the
+usual mechanical parts (see
+1930).
+
+The obvious next step
+was to make an entirely
+electronic computer, with
+no moving mechanical
+parts at all. This was done
+by the American engineers
+John William Mauchly
+(1907-1980) and John Pre-
+sper Eckart, Jr. (b. 1919),
+who devised the first practi-
+cal electronic digital com-
+puter in 1946. It was called
+ENIAC (electronic numerical
+integrator and computer).
+
+It was an enormous, en-
+ergy-guzzling device,
+weighing 30 tons and tak-
+ing up 1,500 square feet of
+space. Though it was a won-
+der of its time, ENIAC was
+retired some nine years
+after it had been set up. It
+was by then hopelessly ob-
+solete, for its descendants
+were growing steadily
+smaller, cheaper, more ef-
+ficient, and much more ca-
+pable.
+
+Microwave
+Reflection from
+the Moon
+
+Thanks to radar, it was pos-
+sible to detect microwave
+reflections from airplanes,
+and from the reflections to
+calculate the distance and
+direction of the airplanes.
+In principle, there was no
+reason this could not be
+done for an astronomical
+body.
+
+In 1946 a Hungarian
+scientist, Zoltan Lajos Bay,
+sent a beam of microwaves
+to the Moon and detected
+the reflection. The time it
+took for the reflection to re-
+turn could be used to deter-
+mine the distance of the
+Moon at the time of reflec-
+tion with far greater preci-
+sion than had ever been
+possible before.
+
+Nuclear
+Magnetic
+Resonance
+
+It is possible for chemical
+substances to absorb cer-
+tain frequencies of micro-
+wave radiation when those
+substances are in a strong,
+steady, and homogeneous
+magnetic field. The frequen-
+
+cies that are absorbed de-
+pend on the magnetic
+properties of the atoms in-
+volved.
+
+In particular, atomic
+nuclei act as tiny spinning
+magnets, and these can be
+lined up in a magnetic
+field, to strengthen the mi-
+crowave absorption. The
+Swiss-born American physi-
+cist Felix Bloch (1905—
+1983) and the American
+physicist Edward Mills Pur-
+cell (b. 1912) independently
+developed this technique in
+1946, and for it they shared
+the Nobel Prize for physics
+in 1952,
+
+The technique, named
+nuclear magnetic resonance
+(NMR), provided a noninva-
+sive way of studying the in-
+terior of living organisms.
+Since microwaves are far
+less energetic than X rays,
+they are correspondingly
+less likely to do damage to
+tissues. Then too, X rays
+are best at detecting mas-
+sive atoms, of which there
+are few in the body, while
+NMR detects light atoms,
+particularly hydrogen, and
+these are plentiful in the
+body.
+
+The use of NMR is
+growing more common, but
+because of public fears of
+the word nuelear (thinking
+that it implies the existence
+

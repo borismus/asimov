@@ -1,0 +1,60 @@
+was to come when it would
+
+be a primary weapon in
+wars fought in Vietnam
+and Afghanistan, to say
+nothing of its uses in
+tracking traffic, rescue
+work, and intra-urban
+transportation.
+
+ 
+
+Frequency
+Modulation
+
+Static in radio broadcasts
+was proving a rather intrac-
+table problem. Radio trans-
+mission for the first forty
+
+years after Marconi’s dis-
+covery (see 1901) was car-
+ried out by systematically
+altering the amplitude (the
+height of the wave) of the
+carrier signal to match the
+variation in the amplitude
+of the sound waves being
+transmitted. This was
+called amplitude modula-
+tion, or AM.
+
+Unfortunately, thun-
+derstorms and electrical ap-
+pliances also modulate the
+amplitude, doing it ran-
+domly and producing the ir-
+ritating noise of static.
+
+In 1939, however, Arm-
+strong, who had invented
+the superheterodyne re-
+ceiver (see 1916), devised a
+method of transmitting a
+signal by systematically al-
+tering the frequency (the
+length of the wave) of the
+carrier signal. This was
+called frequency modula-
+tion, or FM. Thunderstorms
+and electrical appliances
+have no effect on frequency,
+so FM transmission is
+largely static-free. Unfortu-
+nately, FM will work only
+for carrier waves of high fre-
+quency, and these cannot
+be transmitted much be-
+yond the horizon.
+

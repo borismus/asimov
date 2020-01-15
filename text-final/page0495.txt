@@ -1,0 +1,135 @@
+1906
+
+ 
+
+Radio Waves
+and Sound
+
+Radio communication first
+came into use only as a
+wireless telegraph, forming
+the dots and dashes of the
+Morse code in appropriate
+bursts of radio waves.
+
+It occurred to the Cana-
+dian-born American physi-
+cist Reginald Aubrey
+Fessenden (1866—1932) to
+send out a continuous sig-
+nal with an amplitude (the
+height of the waves) vary-
+ing in such a way as to fol-
+low the irregularities of
+sound waves. The radio
+wave was said to have am-
+plitude modulation (AM) im-
+posed on it.
+
+At the receiving end,
+the modulation could be re-
+converted into sound
+waves, with the result that
+you could use a radio for
+speaking and hearing
+thanks to modulated radio
+waves the same way you
+could use a telephone for
+speaking and hearing
+thanks to modulated elec-
+tric currents.
+
+On December 24, 1906,
+the first such message was
+sent out from the Massachu-
+setts coast, and wireless re-
+ceivers picked up music.
+
+Triode
+
+The rectifying diode
+worked out by Fleming (see
+1904) was a useful tool but
+limited in its range. That
+range was extended in 1906
+by the American inventor
+Lee De Forest (1873-1961).
+He inserted a third ele-
+ment, called a grid, into the
+tube to make it a triode
+(three electrodes).
+
+The grid is an electrode
+with holes in it, so that elec-
+trons can move from the
+hot filament through the
+holes of the grid to the
+plate. Even a weak charge
+placed on the grid can have
+a relatively enormous effect
+on the electron current. It
+can increase the intensity
+of the current if the grid is
+slightly positively charged,
+since it then attracts elec-
+trons from the heated fila-
+ment; and it can decrease
+the intensity if slightly neg-
+atively charged, since it
+then repels electrons. By
+placing a small varying
+charge on the grid, you get
+a much larger variation in
+the electron flow.
+
+A triode therefore acts
+as an amplifier, and it can
+be modified to perform a
+great variety of tasks.
+Radio became more than
+
+ever adapted to the trans-
+mission of sound through
+Fessenden's modulation
+(see above).
+
+Trojan
+Asteroids
+
+By 1906, no fewer than 587
+asteroids had been spotted
+(thanks to Wolf’s photo-
+graphic technique—see
+1891) and had their orbits
+calculated.
+
+In 1906 Wolf discov-
+ered an asteroid that
+moved unusually slowly
+and must therefore be un-
+usually distant. In fact it
+moved in Jupiter’s orbit at
+the outer extreme of the as-
+teroid belt, keeping step
+with Jupiter at a distance
+of 60 degrees.
+
+This meant that the
+Sun, Jupiter, and the new
+asteroid were located at the
+vertices of a vast equilat-
+eral triangle. Lagrange (see
+1788) had shown back in
+1772 that such an arrange-
+ment was gravitationally
+stable, but this was the first
+case of such a gravitational
+triangle that had been actu-
+ally found in space.
+
+Wolf named the aster-
+oid Achilles, after the hero
+of Homer’s Iliad, the tale of
+
+ 
+

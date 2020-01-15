@@ -1,0 +1,143 @@
+circuit, and a second flash,
+in the opposite direction,
+when he opened the circuit.
+
+Faraday explained this
+by means of the lines of
+force that he had visual-
+ized. When a circuit was
+closed and electricity was
+set to flowing, magnetic
+lines of force sprang out-
+ward and crossed the sec-
+ond coil, inducing an
+electric current. When the
+circuit was opened again,
+the magnetic lines of force
+collapsed inward and
+crossed the second coil
+again, inducing an electric
+current in the opposite di-
+rection. When the magnetic
+lines remained in place be-
+cause the current in the
+first coil was flowing stead-
+ily, no lines crossed the sec-
+ond coil in either direction
+and no current was induced
+in it.
+
+Faraday went on to de-
+vise a way of having metal
+cut across the lines of force
+continually. He turned a
+copper wheel so that its
+rim passed between the
+poles of a permanent horse-
+shoe magnet. As long as the
+copper wheel turned, its
+rim continually cut
+through magnetic lines of
+force and an electric cur-
+rent flowed continually in
+the wheel. That current
+could be led off and made
+to do work. Faraday had
+thus devised the first elec-
+tric generator.
+
+Until then, electric cur-
+rent had been produced
+only by batteries, which
+meant that the electricity
+was obtained by burning
+metals such as zinc. This
+meant that electricity was
+expensive and limited in
+quantity.
+
+The turning of the cop-
+per wheel to cut across the
+magnetic lines of force took
+considerable effort, and it
+was this energy that was
+turned into electricity. If
+one had to turn the wheel
+by muscle power, little elec-
+tricity could be obtained.
+However, the wheel could
+be and eventually was
+driven by steam power,
+which meant that the elec-
+tricity was formed from
+burning fuel or from some
+other copious source of en-
+ergy such as falling water
+or blowing wind.
+
+Eventually, when the
+electric generator was suf-
+ficiently improved, electric-
+ity could be generated
+cheaply and in any quan-
+tity desired.
+
+Electric Motors
+
+Henry (see 1823) discovered
+electrical induction inde-
+pendently of Faraday, but
+the latter published first by
+a few months and gets the
+credit. Henry went on to
+study the reverse process. If
+the rotary motion of a cop-
+per wheel cutting across
+
+magnetic lines of force can
+induce an electric current,
+then an electric current
+ought to be able to produce
+a rotary motion.
+
+In essence, Faraday
+had already shown this in a
+simple way (see 1821), but
+in 1831 Henry devised a
+much more practical ver-
+sion of such a machine, one
+in which a wheel would
+turn if electric current was
+supplied. This was the first
+practical electric motor
+(from a Latin word mean-
+ing “to move'").
+
+The importance of the
+motor cannot be overem-
+phasized. A motor can be
+made as large or as small
+as desired. It can be run by
+electricity brought to it
+over a distance of many
+miles. Most important of
+all, it can (unlike a steam
+engine) be started in a mo-
+ment and stopped in a mo-
+ment.
+
+The supply of cheap,
+abundant electricity made
+possible by Faraday'’s dis-
+covery of the generator
+(once it was sufficiently im-
+proved) would have been
+useless without some
+means of putting it conve-
+niently to work. Henry’s
+motor (once it was suffi-
+ciently improved) did that,
+so that between them, Fara-
+day and Henry ushered in
+the age of electricity.
+

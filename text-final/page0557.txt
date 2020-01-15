@@ -1,0 +1,139 @@
+radioactively to another
+atom, comparative packing
+fractions reduced the total
+mass somewhat, and this
+made a certain amount of
+kinetic energy available for
+the emerging alpha parti-
+cles. The alpha particles in-
+variably came out with the
+energy to be expected of the
+mass loss.
+
+Beta particles re-
+mained puzzling. The maxi-
+mum energies they
+possessed were always
+those to be expected of the
+mass loss, but there were
+beta particles that invari-
+ably emerged at lesser ener-
+gies—all the way to zero—
+and the explanation for
+that still eluded physicists.
+
+Exclusion
+°
+
+Principle
+Bohr and Sommerfeld had
+worked out the energy lev-
+els of the electrons in an
+atom (see 1913). These
+could be expressed as quan-
+tum numbers, which fol-
+lowed certain simple rules.
+Three quantum numbers
+were known at this time.
+
+The Austrian-born
+American physicist Wolf-
+gang Pauli (1900-1958) con-
+sidered the matter and felt
+that there was need for a
+fourth quantum number, If
+that were allowed ac-
+cording to certain rules,
+
+ 
+
+then it would be possible to
+show that no two electrons
+in a particular system of
+electrons could have all
+four quantum numbers
+alike. In other words, if a
+particular electron in an
+atom had one of the four
+quantum numbers, all the
+other electrons would be ex-
+cluded from having that
+number. This was called
+the exclusion principle, and
+it allowed the arrangement
+of electrons in any atom to
+be worked out. It also ex-
+plained why Mendeleyev's
+periodic table (see 1869)
+took the form it did.
+
+For the exclusion prin-
+ciple, Pauli was awarded
+the Nobel Prize for physics
+in 1945.
+
+Particle Spin
+
+Once Pauli had enunciated
+the exclusion principle (see
+above), two Dutch physi-
+cists, George Eugene Uhlen-
+beck (1900-1988) and
+Samuel Abraham Gouds-
+mit (1902—1978), at once
+pointed out that the fourth
+quantum number that
+Pauli had decided was re-
+quired could be interpreted
+neatly as particle spin. Each
+particle, such as an elec-
+tron, could spin either
+clockwise or counterclock-
+wise at a rate that could be
+expressed as +'2 or — ',
+Eventually, similar
+
+spins (equal to 2 or some
+multiple thereof) were
+found to exist for almost all
+other particles.
+
+Matrix
+Mechanics
+
+Beginning with Bohr (see
+1913), physicists had tried
+to interpret spectral lines
+(which represented energy
+given off or taken up as elec-
+trons passed from one state
+to another) using images
+similar to those used for
+planets circling a star. They
+spoke of circular orbits, el-
+liptical orbits, tilted orbits,
+rotation about an axis (par-
+ticle spin), and so on.
+
+The German physicist
+Werner Karl Heisenberg
+(1901-1976) considered all
+this useless and misleading.
+He preferred to take the
+numbers representing the
+energy level and manipu-
+late them without regard to
+their pictured significance.
+In 1925 he developed a
+form of manipulation
+called matrix mechanics for
+the purpose.
+
+Magnetism and
+Absolute Zero
+The Dutch physicist Willem
+Hendrik Keesom (1876~
+
+1956) had managed to
+reach a temperature of 0.5
+

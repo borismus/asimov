@@ -1,0 +1,70 @@
+520 B.C.
+
+ 
+
+Irrational
+Numbers
+
+The Greek philosepher Py-
+thagoras (ca. 580—ca. 500
+B.c.) believed that whole
+numbers, including frac-
+tions, since they are ratios
+of whole numbers, were the
+basis of the Universe. Thus,
+¥4 is the ratio of 3 to 4. If
+you begin with 3 pies and
+divide them equally among
+4 people, each person gets
+*ls of a pie. Whole numbers
+and fractions together
+make up the rational num-
+bers (those that can be ex-
+pressed as ratios), and it is
+easy Lo suppose that ratio-
+
+nal numbers are all that
+exist.
+
+However, suppose you
+have a right triangle with
+each side equal to 1 unit.
+What is the length of the hy-
+potenuse? The answer can
+be obtained by remember-
+ing that the square of the
+hypotenuse is equal to the
+sum of the squares of the
+sides. This was long known,
+but Pythagoras worked out
+a good proof and it is called
+the Pythagorean theorem as
+aresult.
+
+The square of each side
+is 1, so the square of the hy-
+potenuse is 2, and the
+length of the hypotenuse is
+the square root of 2, or that
+
+number which, when
+multiplied by itself, equals
+2. The number 7% is nearly
+right, since 75 x s = 2.04.
+The number /s is even
+closer, since fso0 X "7/spo is
+a little over 1.999.
+
+[t can be shown quite
+easily, just the same, that
+there is no fraction, no frac-
+tion at all, however compli-
+cated, that when multiplied
+by itself gives exactly 2.
+The square root of 2 is
+therefore not a rational
+number. It is an irrational
+nutimber, and as it turns out,
+there are an infinite num-
+ber of such irrationals.
+

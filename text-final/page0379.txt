@@ -1,0 +1,144 @@
+ 
+
+relatively cool atmosphere
+of the Sun. From those
+lines, one could be sure that
+sodium existed in the Sun’s
+atmosphere, and half a
+dozen other elements as
+well.
+
+This was the first ac-
+tual observation indicating
+that the same chemical ele-
+ments that existed on Earth
+existed also on other as-
+tronomical bodies, and
+therefore presumably
+throughout the Universe.
+
+Solar Flares
+
+The British astronomer
+Richard Christopher Car-
+rington (1826—1875) mea-
+sured the Sun's rotation by
+the motion of the sunspots.
+Galileo had done that two
+and a half centuries before,
+but Carrington could work
+with more delicate instru-
+ments. He found that the
+Sun did not rotate all in a
+piece, which meant that it
+was not a solid body, but
+that the outer regions, at
+least, might well be gas-
+eous. (In view of the temper-
+ature of the Sun's surface,
+this was not surprising.) A
+point on the solar equator
+took 25 days to make one
+turn around the Sun, while
+at solar latitude 45 degrees,
+a point that had to travel a
+considerably smaller dis-
+tance to make the turn, it
+took 27'% days.
+
+On September 1, 1859,
+
+Carrington, watching the
+sunspots, observed a star-
+like point of light burst out
+of the Sun's surface. It
+lasted 5 minutes and sub-
+sided. Carrington specu-
+lated that a large meteor
+had fallen into the Sun, but
+it was eventually realized
+that he had been the first to
+see a solar flare, a brief but
+violent explosion that was
+usually associated with sun-
+spots. This was the begin-
+ning of an understanding
+that when the number of
+sunspots was high, we had
+an “active Sun” and when
+it was low, a “quiet Sun.”
+
+Kinetic Theory
+of Gases
+
+Maxwell, having worked on
+the small particles that
+made up Saturn's rings (see
+1857), turned in 1859 to
+other, even smaller parti-
+cles—the molecules that
+made up gases. Maxwell
+treated the situation statis-
+tically, assuming that the
+molecules moved in ran-
+dom directions at random
+speeds and bounced off the
+walls of a container, and off
+each other, with perfect
+elasticity.
+
+Eventually he worked
+out mathematical relation-
+ships that showed the dis-
+tribution of velocities
+among the molecules of a
+gas at a particular tempera-
+
+ture. A few molecules
+moved very slowly and a
+few very quickly, but larger
+percentages moved at inter-
+mediate velocities, with the
+most common velocity
+somewhere in the middle. A
+rise in temperature caused
+the average velocity to rise,
+while a drop in tempera-
+ture caused it to fall. In fact
+temperature—and heat it-
+self—could be pictured as
+molecular movement and
+nothing else. This is called
+the kinetic theory of gases,
+where kinetic is from the
+Greek word for “motion.”
+
+From the random mo-
+tion of the molecules, the
+various laws involving
+gases could be deduced
+(Boyle's law—see 1662;
+Charles's law—see 1787),
+but they were obeyed statis-
+tically. That is, gases might
+act quite differently from
+the way they do by chance
+deviation from the normal.
+However, there are so
+many molecules that statis-
+tical deviations involving
+more than a vanishingly
+small percentage of them
+are enormously improba-
+ble.
+
+In the same way, as
+Maxwell pointed out, gases
+can defy the second law of
+thermodynamics if all the
+molecules happen to move
+in the same direction, or all
+the faster molecules gain
+still more speed from the
+slower ones—but the
+

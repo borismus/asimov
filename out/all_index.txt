@@ -1,0 +1,1330 @@
+-2000000	Bipedality
+-500000	Stone Tools
+-200000	Fire
+-200000	Religion
+-20000	Art
+-20000	Bows and Arrows
+-20000	Oil Lamps
+-12000	Animal Domestication
+-8000	Agriculture
+-7000	Pottery
+-6000	Linen
+-6000	Rafts
+-6000	Sickles
+-5000	Irrigation
+-5000	Scales
+-4000	Copper
+-4000	Sundials
+-3600	Bronze
+-3500	Wheeled Carts
+-3500	River Boats
+-3500	Writing
+-3500	Ploughs
+-3100	Nations
+-3000	Candles
+-2800	Calendars
+-2650	Stone Monuments
+-2500	Literature
+-2500	Glass
+-2340	Empires
+-2000	Horses
+-1800	Mathematics and Astronomy
+-1800	Fermentation
+-1775	Law
+-1550	Medicine
+-1500	Alphabet
+-1370	Monotheism
+-1200	Dyes
+-1100	Sea Navigation
+-1000	Iron
+-750	Arches
+-700	Aqueducts
+-700	Zoos
+-700	Sundials
+-640	Libraries
+-640	Coins
+-585	Eclipses
+-580	Elements
+-520	Irrational Numbers
+-510	Maps
+-500	Atlantic Ocean
+-500	Dissection
+-500	Abacus
+-480	Venus
+-480	Dreams
+-420	Atoms
+-400	Epilepsy
+-387	Catapults
+-387	Advanced Schools
+-387	Other Centers of the Universe
+-387	Spherical Earth
+-387	Five Elements
+-387	Animal Classification
+-312	Star Maps
+-300	Roads
+-300	Geometry
+-280	Tides
+-280	Arteries
+-280	Size of Moon and Sun
+-270	Lighthouse
+-260	Water Clock
+-260	Lever
+-260	Size of Earth
+-214	Chronology
+-214	Great Wall
+-170	Scientific Revolution in the
+-150	Parchment
+-134	Distance of the Moon
+-46	Star Map
+50	Earth’s Zones
+50	Pharmacology
+105	Steam Power
+140	Paper
+180	Geocentric Universe
+300	Spinal Cord
+300	Alchemy
+400	Stirrups
+537	Wheelbarrows
+552	Domes
+600	Silk
+673	Moldboard Plows
+673	Greek Fire
+750	Porcelain
+810	Acetic Acid
+850	Zero
+870	Coffee
+874	Arctic Circle
+900	Iceland
+982	Horse Collars
+982	Vinland
+1025	Internal
+1050	Optics
+1054	Crossbows
+1066	New Star
+1071	Comet
+1137	Forks
+1180	Flying Buttresses
+1180	Windmills
+1194	Magnetic Compasses
+1194	Spitzbergen
+1228	Arabic Numerals
+1241	Coal
+1241	Rudders
+1241	Eyeglasses
+1252	Gunpowder
+1269	Planetary Tables
+1291	Magnetic Poles
+1298	Mirrors
+1298	The Far East
+1298	Spinning Wheels
+1300	Longbows
+1300	Sulfuric Acid
+1304	Distilled Liquor
+1312	Giotto’s Comet
+1316	Canary Islands
+1316	Dissection
+1316	Neverthe
+1403	Mechanical Clocks
+1403	Quarantine
+2	When the Black Death
+1418	Indian Ocean
+1418	After Emperor Yung-
+1427	Madeira
+1436	Azores
+1439	Perspective
+1450	Artillery
+1450	Harquebuses
+1451	the Hundred Years War.
+1454	Concave Lenses
+1472	Printing
+1487	Position of Comets
+1492	Cape of Good Hope
+1492	New World
+1495	Magnetic Declination
+1495	Syphilis
+1495	India
+1495	America
+1504	Asia. In
+1513	Watches
+1513	South Sea
+1519	Florida
+1523	Mexico
+1531	Circumnavigation of the Earth
+1531	Peru
+1531	Cubic Equations
+1531	Comets’ Tails
+1542	Mississippi River
+1543	Amazon River
+1543	Heliocentric System
+1545	New Anatomy
+4	Negative Numbers
+1551	Surgery
+1551	Trigonometric Tables
+1552	Planetary Tables
+1552	Eustachian Tube
+1552	Northeastern Passage
+1555	Ottar the Vik-
+1556	Homologies
+1556	Mineralogy
+1556	Agricola. (Agricole
+1560	Tobacco
+1565	Scientific Societies
+1568	Musket
+1572	World Maps
+1576	Supernova
+1577	Northwest Passage
+1577	Distance of Comets
+1581	Drake Strait
+1582	Pendulum
+1583	Gregorian Calendar
+1586	Hydrostatics
+1589	Decimal Fractions
+1589	Falling Bodies
+1589	Cryptanalysis
+1590	Knitting Machines
+1591	Microscopes
+1592	Algebraic Symbols
+1596	Thermometer
+1596	Archaeology
+1596	East Indies
+1597	Pi
+1603	Medieval Alchemy
+1603	Vein Valves
+1608	Jamestown
+1608	Telescope
+1609	Quebec
+1609	Planetary Orbits
+1609	The Milky Way
+1610	Moon
+1610	Jupiter
+1610	Florence)	Ga
+1610	Ganvmede
+1612	Sunspots
+1614	Andromeda Nebula
+1614	Logarithms
+1614	Metabolism
+1620	Baffin Bay
+1620	Stagecoaches
+1621	Scientific Method
+1622	Refraction
+1624	Slide Rules
+1627	Gas
+1627	Planetary Tables
+1628	Aurochs
+1635	Blood Circulation
+1637	Magnetic Declination
+1637	Analytic Geometry
+1640	Fermat’'s Last Theorem
+1641	Coke
+105	Cross Hairs
+105	Quinine
+105	Adding Machine
+1643	South Pacific
+1648	Barometer
+1648	Air Pressure and Altitude
+1650	Fluid Pressure
+1650	Double Stars
+1653	Age of the Earth
+1654	Lymphatics
+1656	Probability
+10	Air Pressure
+10	Saturn’s Ring
+1657	Pendulum Clock
+1658	Falling Bodies
+1659	Red Blood Corpuscles
+1660	Syrtis Major
+1660	Capillaries
+1661	Static Electricity
+1662	Chemical Elements
+1662	Boyle’s Law
+1664	Royal Society
+1665	Great Red Spot
+1665	Cell
+1665	Light Diffraction
+1666	Planetary Rotations
+1668	Light Spectrum
+1668	Conservation of Momentum
+1668	Spontaneous Generation
+1669	Reflecting Telescopes
+1669	Calculus
+1669	Phosphorus
+1669	Fossils
+1669	Double Refraction
+1670	Blood Color
+1671	Diabetes
+1672	Saturn’s Satellites
+1676	Distance of Mars
+1678	Microorganisms
+1678	Southern Stars
+1679	Light Waves
+1680	Pressure Cookers
+1680	Muscles and Bones
+1682	Dodo
+1683	Plant Sexuality
+1684	Bacteria
+1684	Size of the Earth
+1686	Imaginary Numbers
+1687	Meteorological Map
+1687	Laws of Motion
+1687	Universal Gravitation
+1688	Shape of the Earth
+1693	Plate Glass
+1693	Calculating Machines
+1698	Mortality Tables
+1698	Miner’s Friend
+1699	Scientific Voyages
+1699	Gas Volume and Temperature
+1699	Binary System
+1699	Comets’ Orbits
+1707	Plant Nourishment
+1707	Static Electricity
+1709	Pulse Watch
+1712	Coke and Iron
+1713	Newcomen Steam Engine
+1714	Smallpox Inoculation
+1715	Mercury Thermometer
+1715	Solar Eclipse
+1715	Stellar Motion
+1728	Easter Island
+1728	Ship’s Chronometer
+1728	Aberration of Light
+1728	Bering Strait
+1729	Dentistry
+1733	Electrical Conductance
+1733	Achromatic Lens
+1733	Blood Pressure
+1733	Two Electrical Fluids
+1735	Flying Shuttle
+1735	Shape of the Earth
+1735	Taxonomy
+1736	Trade Winds
+1737	Mechanics
+1738	Cobalt
+1739	Kinetic Theory of Gases
+1740	Rocky Mountains
+1742	Hydra
+1742	Celsius Scale
+1742	Goldbach’s Conjecture
+1744	Franklin Stove
+1745	Transcendental Numbers
+1745	Leyden Jar
+1747	Blood and Iron
+1748	Scurvy
+1748	Osmosis
+1749	Platinum
+1749	Biological Evolution
+1751	Formation of the Earth
+1751	Nickel
+1752	Encyclopedias
+1752	Lightning Rod
+1752	Digestion
+1752	Lol
+1752	Earth and Heat
+1754	Neptunists.
+1754	Carbon Dioxide
+1756	Galaxy
+1758	Land Bridges
+1758	Halley’'s Comet
+1759	Flame Tests
+1760	Embryology
+1760	Earthquakes
+1760	Heat Capacity
+1761	Pathology
+1761	Venus’s Atmosphere
+1762	Percussion
+1763	Latent Heat
+1763	Pollination
+1763	Steam Engine
+1766	Plutonism
+1768	Hydrogen
+1768	Spontaneous Generation
+1768	Australia
+1769	Carbonated Water
+1769	Quantitative Chemistry
+1770	Spinning Frame
+1770	Nile River
+1770	Gulf Stream
+1771	Soluble Gases
+1771	Nebulas
+1772	Plants and Carbon Dioxide
+1772	Combustion
+1772	Diamond
+1773	Nitrogen
+1773	Antarctic Circle
+1774	Bacilli
+1774	Oxygen
+1774	Chlorine
+1775	Mind and Disease
+1776	Digitalis
+1777	Races
+1778	Torsion Balance
+1778	Molybdenum
+1779	Hawaiian Islands
+1779	Fertilization
+1779	Photosynthesis
+1781	Electrical Stimulation
+1781	Uranus
+1781	Crystallography
+1781	Axial Inclination of Mars
+1783	Steam Engine
+1783	Motion of the Sun
+1783	Respiration and Combustion
+1783	Balloon
+1784	Tungsten
+1784	Volcanoes
+1784	Bifocal Lenses
+1784	Alaska
+1785	Tellurium
+1785	Clusters and Nebulas
+1785	Galaxy
+1787	Uniformitar-
+1787	Charles’s Law
+1787	Chemical Nomenclature
+1788	Steamboat
+1788	Algebra and Mechanics
+1789	Affinities
+1789	Satellites
+1789	Acids
+1789	Conservation of Mass
+1790	Uranium
+1790	Industrial Revolution
+1791	Metric System
+1791	Titanium
+1793	Columbia River
+1793	Cotton Gin
+1793	Insane Asylums
+1793	Across North America
+1794	Vancouver Island
+1794	Meteorites
+1795	Rare Earths
+1796	Canning Food
+1796	Vaccination
+1796	Nebular Hypothesis
+1797	Heptadecagon
+1797	Chromium
+1798	Parachute
+1798	Mass of the Earth
+1798	Comparative Anatomy
+1798	Population Pressure
+1798	Liquid Ammonia
+1798	Interchangeable Parts
+1799	Beryllium
+1799	Law of Definite Proportions
+1799	Strata
+1799	Perturbations
+1800	Rosetta Stone
+1800	Electric Battery
+1800	Decomposition of Water
+1800	Infrared Radiation
+1800	Tissues
+1801	Malleable Platinum
+1801	Jacquard Loom
+1801	Ceres
+1801	Invertebrates
+1801	Ultraviolet
+1801	Light Waves
+1802	Niobium
+1802	Asteroids
+1803	Tantalum
+1803	Atomic Theory
+1803	Meteorites
+1804	Cerium	Osmium	Iridium
+1804	Scientific Ballooning
+1805	Steam Locomotive
+1805	Missouri River
+1806	Morphine
+1807	Asparagine
+1807	Sodium and Potassium
+1807	Steamboat
+1809	Polarized Light
+1809	Mechanism of Evolution
+1810	Aerodynamics
+1810	Brain
+1811	Chlorine
+1811	Avogadro’s Hypothesis
+1811	Catastrophism
+1811	Chemical Symbols
+1814	Plant Classification
+1815	Spectral Lines
+1815	Plane of Polarized Light
+1815	Organic Radicals
+1815	Prout’s Hypothesis
+1816	Paved Roads
+1817	Stethoscope
+1817	Chlorophyll
+1818	Cadmium	Lithium	Selenium
+1818	Transverse Light Waves
+1818	Encke’s Comet
+1819	Atomic Weights
+1820	Steamship
+1820	Electromagnetism
+1820	Antarctic Land
+1821	Diffraction Gratings
+1821	Electrical Motion
+1821	Seebeck Effect
+1822	Glaciers
+1822	Heat Flow
+1822	Computers
+1822	Projective Geometry
+1822	Iguanodon
+1823	Hieroglyphics
+1823	Gastric Acidity
+1823	Isomers
+1823	Liquefying Gases
+1824	Electromagnets
+1824	Portland Cement
+1824	Steam Engine Efficiency
+1824	Distance of the Sun
+1824	Quintic Equations
+1825	Silicon
+1825	Steam Locomotives
+1825	Aluminum
+1825	Gastric Digestion
+1825	Candles
+1826	Astigmatism
+1827	Bromine
+1827	Ohm’s Law
+1827	Turbines
+1827	Screw Propeller
+1827	Mammalian Ova
+1827	Food Classification
+1828	Brownian Motion
+1828	Synthetic Urea
+1828	Notochord
+1828	Thorium
+1830	Nicol Prism
+1830	Achromatic Microscopes
+1830	Group Theory
+1830	Uniformitar-
+1830	Electric Generators
+1830	Electric Motors
+1830	Matches
+1830	North Magnetic Pole
+1830	Cell Nucleus
+1830	Diffusion
+1830	Chloroform
+1832	Cyclonic Storms
+1833	Laws of Electrolysis
+1834	Diastase
+1834	Mechanical Reaper
+1835	Celiulose
+1835	Dry Ice
+1835	Coriolis Effect
+1836	Revolvers
+1836	Pepsin
+1837	Daniell Cell
+1837	Ice Age
+1838	Chlorophyll and Cells
+-4	Distance of Stars
+-4	Cell Theory
+-4	The Schleiden-
+-4	Yeast Cells
+-4	Protein
+1839	Morse Code
+1839	Photography
+1839	Photography of the Moon
+1839	Rubber
+1839	Fuel Cell
+1839	Antarctica
+1839	Ross Ice Shelf
+1839	Bicycle
+1840	Lanthanum
+1841	Thermochemistry
+1841	Ozone
+1841	Hypnotism
+1841	Photographic Negative
+1841	Needle Gun
+1841	Screw Threads
+1841	Chemical Fertilizer
+1841	Doppler Effect
+1843	Cranial Index
+1843	Mechanical Equivalent of Heat
+1843	Sunspot Cycle
+1843	Quaternions
+1843	Higher Analytic Geometry
+1843	Wheatstone Bridge
+1843	Transatlantic Liner
+1843	Telegraph
+1845	Companion of
+1845	Astraea
+1845	Spiral Nebulas
+1846	Permanent Gases
+1846	Anesthesia
+1846	Neptune
+1846	Vulcan
+1846	Crystal Asymmetry
+1846	Protoplasm
+1846	Cuneiform
+1846	Tigris-Euphrates valley.
+1847	Sewing Machine
+1847	Conservation of Energy
+1847	Puerperal Fever
+1847	Painless Childbirth
+1847	Symbolic Logic
+1848	Silver Fillings
+1848	Absolute Zero
+1848	Crab Nebula
+1849	Spectral Line Shift
+1849	Speed of Light
+1849	Roche Limit
+1849	Nerve Fibers
+1850	Schleiden and Schwann
+1851	Infrared Waves
+1851	Rotation of the Earth
+1852	Ariel and Umbriel
+1852	Valence
+1852	Gyroscope
+1852	Sunspots and Earth
+1853	Elevators
+1853	Age of the Sun
+1854	Glider
+1854	Kerosene
+1854	Cholera
+1855	Telegraph Plateau
+1855	Lines of Force
+1855	Geissler Tubes
+1856	Seismograph
+1856	Glycogen
+1856	Steel
+1856	Synthetic Dyes
+1856	Neanderthal Man
+1857	Pasteurization
+1858	Saturn’s Rings
+1858	Organic Molecular Structure
+1858	Cellular Pathology
+1859	Refrigerators
+1859	Oil Wells
+1859	Storage Battery
+1859	Spectral Lines and Elements
+1859	Solar Flares
+1860	Kinetic Theory of Gases
+1860	Spontaneous Generation
+1860	Organic Synthesis
+1860	Solar Prominences
+1860	Avogadro’s Hypothesis
+1861	Black Bodies
+1861	Archeopteryx
+1861	Broca’s Convolution
+1861	Thallium
+1861	Germ Theory of Disease
+1861	Hydrogen in the Sun
+1861	Chloroplasts
+1861	Source of the White Nile
+1861	Ironclad Warships
+1861	Machine Guns
+1863	Hemoglobin
+1863	Greenhouse Effect
+1863	Law of Octaves
+1863	Constitution of the Stars
+1863	Barbiturates
+1864	Indium
+1865	Nature of Orion Nebula
+1865	Genetics
+1865	Benzene Ring
+271	Avogadro’s Number
+271	Maxwell’s Equations
+1866	Cylinder Locks
+1866	Dynamite
+1866	Clinical Thermometer
+1866	Kirkwood Gaps
+1867	Earth’s Iron Core
+1867	Dry Cell
+1867	Typewriters
+1868	Law of Mass Action
+1868	Air Brake
+1868	Helium
+1869	Magnon. The
+1869	Periodic Table of the Elements
+1869	Nucleic Acid
+1869	Critical Temperature
+1869	“Ul
+1869	Biogeography
+1869	Islets of Langerhans
+1869	Celluloid
+1870	Stock Ticker
+1870	Troy
+1870	Human Evolution
+1870	Dry Plates
+1870	Plant Strains
+1870	Gilgamesh
+1870	Bacteriology
+1870	Stellar Photography
+1873	Experimental Psychology
+1873	Gas Laws
+1873	Leprosy
+1873	Transcendental Numbers
+1873	Platelets
+1873	Gallium
+1873	Tetrahedral Carbon Atom
+1873	Transfinite Numbers
+1875	Current and Crystals
+1875	Fertilization
+1876	Radiometer
+1876	Telephone
+1876	Chemical Thermodynamics
+1876	Bacterial Cultivation
+1877	Cathode Rays
+1877	Protein Size
+1877	Liquid Oxygen
+1877	Martian Canals
+1878	Martian Satellites
+1878	Enzyme
+1878	Varves
+1879	Ytterbium
+1879	Electric Light
+1879	Origin of the Moon
+1879	Saccharin
+1879	Scandium
+1880	Heat and Radiation
+1880	Malaria
+1880	Nebular Photography
+1880	Seismograph
+1880	Gadolinium
+1880	Unconscious
+1880	Electromechanical Calculator
+1880	Charged Cathode Rays
+1880	High Pressure
+1880	Piezoelectricity
+1880	Interferometer
+1880	Anthrax Inoculation
+1880	Pneumococcus
+1880	Venn Diagram
+1880	Chromatin
+1880	Speed of Light
+1880	Diffraction Gratings
+1883	Tuberculosis
+1883	Alloy Steel
+1883	Alternating Currents
+1883	Edison Effect
+1883	Rayon
+1883	Meiosis
+1883	Phagocytes
+1883	Diphtheria
+1883	Maxim Gun
+1883	Eugenics
+4354	Heat and Temperature
+4354	Sugar Structure
+4354	Cocaine
+4354	Bacterial Staining
+4354	Steam Turbine
+4354	Linotype
+4354	Fountain Pen
+4354	Rabies
+4354	Praseodymium and Neodymium
+4354	Welsbach Mantle
+4354	Transformer
+4354	Automobile
+1886	Fingerprints
+1886	Aluminum
+1886	Germanium
+1886	Fluorine
+1886	Dysprosium
+1886	Canal Rays
+1886	Raoult’s Law
+1887	Nitrogen
+1887	Photoelectric Effect
+1887	Mach Number
+1888	Rubber Tire
+1888	Radio Waves
+1888	Chromosome
+1888	Greenland Ice Cap
+1889	Home Photography
+1889	Neuron Theory
+1889	Tetanus
+1889	Axiomatics
+1889	Energy of Activation
+1889	Spectroscopic Binaries
+1889	Mercury’s Rotation
+1889	Cordite
+1890	Motion Pictures
+1890	Antitoxin
+1890	Java Man
+1890	Spectroheliograph
+1891	Surgical Gloves
+1891	Asteroid Photography
+1891	Gravitational and Inertial Mass
+1891	Carborundum
+1892	Gliders
+1892	Amalthea
+1892	Light Pressure
+1892	Fitzgerald Contraction
+1893	Dewar Flask
+1893	Psychoanalysis
+1893	Cattle Fever
+1893	Wavelengths and Temperature
+1894	Alternating Current
+1894	Argon
+1895	aAver
+1895	Cathode Ray Particles
+1895	Velocity and Mass
+1895	Magnetism and Heat
+1896	Radio Antennas
+1896	Uranium Radiations
+1896	Dietary Deficiency Diseases
+1896	Light and Magnetism
+1896	Ferments and Enzymes
+200	Acoustics
+200	Alpha Rays and Beta Rays
+200	Mosquitoes and Malaria
+200	Large Refracting Telescope
+1898	Diesel Engine
+1898	Polonium and Radium
+1898	Neon	Krypton	and Xenon
+1898	Liquid Hydrogen
+1898	Phoebe
+1898	Eros
+1898	Filtrable Virus
+1898	Mitochondria
+1898	Epinephrine
+1898	Submarine
+1898	Actinium
+1898	Logic and Geometry
+1900	Solid Hydrogen
+1900	Quanta
+1900	Mass Increase
+1900	Beta Particles
+1900	Gamma Rays
+1900	Radon
+1900	Atomic Change
+1900	Electron Emission
+1900	Mutations
+1900	Blood Types
+1900	Yellow Fever
+1900	Dreams
+1900	Tryptophan
+1900	Free Radicals
+1900	Knossos
+1900	Radioactive Energy
+1900	Radio
+1900	Europium
+1902	Grignard Reagents
+1902	Chromosomes and Inheritance
+1902	Secretin
+1902	Animal Inheritance
+1902	Anaphylactic Shock
+1902	Sutures
+1902	Radioactive Series
+1902	Photoelectric Effect and Electrons
+1902	Stratosphere
+1902	Symbolic Logic and Mathematics
+1903	Uktramicroscope
+1903	Airplane
+1903	Space Flight
+1904	Electrocardiogram
+1904	Electronic Rectifier
+1904	Atomic Structure
+1904	Coenzyme
+1904	Organic Tracers
+1904	Novocaine
+1904	Star Streams
+1905	Jupiter's Outer Satellites
+1905	Special Relativity
+1905	Photoelectric Effect and Quanta
+1905	Brownian Motion and Atomic Size
+1905	Color and Stellar Luminosity
+1905	Planetesimal Hypothesis
+1905	Metabolic Intermediates
+1905	Hormones
+1905	Linkage of Characteristics
+1905	High Pressure
+1905	Intelligence Quotient
+1905	Radio Waves and Sound
+1905	Triode
+1905	Trojan Asteroids
+1905	Alpha Particles
+1905	Third Law of Thermodynamics
+1905	Vitamin Concept
+1905	Magnesium and Chlorophyll
+1905	Chromatography
+1907	Radioactivity and Earth
+1907	Lutetium
+1907	Synthetic Peptides
+1907	Chemotherapy
+1907	Fruit Flies
+1907	Tissue Culture
+1908	Conditioned Response
+1908	Atomic Size
+1908	Liquid Helium
+1908	Geiger Counter
+1908	Sunspots and Magnetism
+1908	Rickettsia
+1908	Assembly Line
+1908	Haber Process
+1908	Typhus
+1908	Ribose
+1908	Genes
+1908	Tungsten Wire
+1908	Bakelite
+1908	Mohorovicic Discontinuity
+1910	North Pole
+1910	Neon Lights
+1911	Mathematics and Logic
+1911	Nuclear Atom
+1911	Cloud Chamber
+1911	Electron Charge
+1911	Cosmic Rays
+1911	Superconductivity
+1911	Chromosome Maps
+1911	Tumor Virus
+1911	Earthquakes and Faults
+1911	Seaplanes
+1912	South Pole
+1912	Cepheid Variables
+1912	Nebular Velocities
+1912	Continental Drift
+1912	X-Ray Diffraction
+1912	Neon Varieties
+1912	Dipole Moments
+1913	Coal Hydrogenation
+1913	Isotopes
+1913	Lead Isotopes
+1913	Quantized Atom
+1913	Coolidge Tube
+1913	Stark Effect
+1913	Magellanic Cloud Distances
+1914	Ozonosphere
+1914	Atomic Number
+1914	X-Ray Wavelength
+1914	Proton
+1914	Main Sequence
+1914	White Dwarfs
+1914	Acetylcholine
+1914	Earth’s Mantle and Core
+1915	Behaviorism
+1915	Pellagra
+1915	Thyroxine
+1915	Bacteriophages
+1916	Elliptical Electron Orbits
+1916	General Relativity
+1916	Black Holes
+1916	Electrons and Chemical Bonds
+1917	Superheterodyne Receiver
+1917	Expanding Universe
+1917	Microcrystalline Diffraction
+1917	100-Inch Telescope
+1917	Protactinium
+1917	Sonar
+1917	Center of the Galaxy
+1917	Spectral Classes
+1917	Radioactive Tracers
+1917	Organizer
+1917	Mass Spectrometer
+1917	Nuclear Reaction
+1917	Gravitational Deflection of
+1920	Bee Communication
+1920	Stellar Diameter
+1920	Novas in Andromeda
+1920	Hidalgo
+1920	Dendrochronology
+1920	Climatic Cycles
+1920	Anemia
+1920	Air Masses
+1920	Insulin
+1920	Vagusstoffe
+1920	Rickets
+1920	Glutathione
+1920	Magnetrons
+1920	Tetraethyl Lead
+1920	Introvert and Extrovert
+1922	Rorschach Test
+1922	Sumeria
+1922	Tutankhamen'’s Tomb
+1922	Growth Hormone
+1922	Lysozyme
+1922	Nerve Fibers
+1922	Expansion of the Universe
+1922	Coenzyme Structure
+1922	Cepheids in Andromeda
+1922	Hafnium
+1924	Ultracentrifuge
+1924	Australopithecus
+1924	Cytochrome
+1925	Irradiation
+1925	Packing Fraction
+1925	Particle Spin
+1925	Matrix Mechanics
+1925	Gravitational Red Shift
+1925	Rhenium
+1925	Morphine Synthesis
+1925	Parathormone
+1926	Iron and Cytochrome
+1926	Wave Mechanics
+1926	Wave Packets
+1926	Galactic Rotation
+1926	Enzyme Crystallization
+1927	Pemnicious Anemia
+1927	Uncertainty Principle
+1927	Electron Diffraction
+1927	Speed of Light
+1927	Cosmic Egg
+1927	Electron Bonds
+1927	Peking Man
+1928	Talking Pictures
+1928	Penicillin
+1928	Raman Spectra
+1928	Game Theory
+1928	Hexuronic Acid
+1928	Receding Galaxies
+1928	Solar Composition
+1928	Solar Energy
+1928	Coincidence Counter
+1928	Particle Accelerator
+1928	Deoxyribose
+1928	Heme
+1928	Estrone
+1928	Intrinsic Factor
+1928	Electroencephalography
+1928	Cardiac Catheter
+1930	Child Development
+1930	Pluto
+1930	Surface Temperature of the Moon
+1930	Coronagraph
+1930	Schmidt Camera
+1930	Interstellar Matter
+1930	Antimatter
+1930	Cyclotron
+1930	Computer
+1930	Crystalline Enzymes
+1931	Freon
+1931	Godel’s Proof
+1931	Neutrino
+217	Deuterium
+217	Resonance
+217	Androsterone
+217	Neoprene
+217	Nylon
+217	Virus Particles
+1932	Virus Culture
+203	Neutron
+203	Positron
+203	Particle Accelerator and Nuclear Reaction
+203	Electron Microscope
+203	Prontosil
+203	Ascorbic Acid
+203	Urea Cycle
+1933	Polaroid
+1934	Molecular Beams
+1934	Neutron Bombardment
+1934	Weak Interaction
+1934	Cherenkov Radiation
+1934	Supernovas
+1934	Neutron Stars
+1934	Sex Hormones
+1934	Bathyspheres
+1934	Uranium-235
+1934	Isotopic Tracers
+1934	Crystalline Viruses
+1934	Strong Interaction
+1934	Sulfanilamide
+1934	Riboflavin
+1934	Cortisone
+1934	Prostaglandins
+1934	Radar
+1934	Imprinting
+1936	Richter Scale
+1936	Neutron Absorption
+1936	Thiamine
+1937	Perfusion Pump
+1937	Technetium
+1937	Muon
+1937	Electrophoresis
+1937	Electron Microscopes
+1937	Radio Telescope
+1937	Citric Acid Cycle
+1937	Niacin
+1937	Yellow Fever Vaccine
+1937	Evolution and Mutation
+1937	Solar Energy Source
+1937	Magnetic Resonance
+1937	Iconoscope
+1937	Xerography
+1937	Ballpoint Pen
+1939	Coelacanth
+1939	Nuclear Fission
+1939	Nuclear Chain Reaction
+1939	Francium
+1939	Neutron Stars
+1939	Magnetic Moments
+1939	Rh Factor
+1939	Tyrothricin
+1939	Essential Minerals
+1939	Helicopter
+1940	Frequency Modulation
+1940	Neptunium and Plutonium
+1940	Uranium Hexafluoride
+1940	Astatine
+1940	Betatron
+615	Streptomycin
+1941	Color Television
+1941	Polarimetry
+1941	Cardiac Catheterization
+1941	Distance of the Sun
+1941	Jet Planes
+1942	Neurospora
+1942	Nuclear Reactor
+1942	Biotin
+1943	Bacteriophage Structure
+1943	Adrenocorticotrophic Hormone
+1943	Lysergic Acid Diethylamide
+1943	Seyfert Galaxies
+1944	Aqualungs
+1944	Serve
+1944	Paper Chromatography
+1944	Teflon
+1944	New Nebular Hypothesis
+1944	Americium and Curium
+1944	Nuclear Fission Bomb
+1944	Synchrocyclotron
+1944	Promethium
+1944	Viral Mutations
+1944	Jet Streams
+1944	Artificial Kidneys
+1944	Nuclear Magnetic Resonance
+1944	Noradrenaline
+1944	Bacterial Genetics
+1947	Virus Genetics
+1947	Pion
+1947	Carbon-14 Dating
+1947	Martian Atmosphere
+1947	Chloramphenicol
+1947	Holography
+1947	Land Camera
+1947	Supersonic Flight
+1948	Television in the Home
+1948	Transistor
+1948	Cybernetics
+1948	Nuclear Structure
+1948	Quantum Electrodynamics
+1948	The Big Bang
+1948	Cyanocobalamine
+1948	Cortisone and Arthritis
+1948	Tetracyclines
+1948	Tissue Transplantation
+1948	Virus Culture
+1948	Starch Chromatography
+1949	Bathyscaphe
+1949	Icarus
+1949	Nereid
+1949	Atomic Clock
+1949	Berkelium and Californium
+1949	Soviet Fission Bomb
+1949	Embryonic Immunological Tolerance
+1949	Essential Amino Acids
+1949	Cometary Structure
+1949	Cometary Cloud
+1949	Pluto’s Diameter
+1949	Turing Machine
+1951	Endoplasmic Reticulum
+1951	Breeder Reactors
+1951	Stellarator
+1951	Hydrogen Radiation
+1951	Milky Way Structure
+1951	Superconductivity Theory
+1951	Steroid Synthesis
+1951	Acetylcoenzyme
+1952	Fluoridation
+1952	Nuclear Fusion Bomb
+1952	Einsteinium and Fermium
+1952	Kaons and Hyperons
+1952	Insulin Structure
+1952	Virus Nucleic
+1952	Nerve Growth Factor
+1952	Radioimmune Assay
+1952	Tranquilizers
+1952	Gas Chromatography
+1953	Zone Refining
+1953	The Double
+1953	Isotactic Polymers
+1953	Plate Tectonics
+1953	Bubble Chambers
+1953	Strange Particles
+1953	Masers
+1954	Transistorization
+1954	Spray Cans
+1954	Salk Vaccine
+1954	Thus the
+1954	Kidney Transplant
+-1954	Controlled Fission Reactors
+-1954	Oxytocin Synthesis
+-1954	Chloroplast Isolation
+-1954	Strychnine Synthesis
+-1954	Genetic Code
+-1954	Photovoltaic Cells
+-1954	Robots
+-1954	Bevatron
+-1954	Oral Contraceptives
+1955	Contact Lenses
+1955	Exploding Galaxies
+1955	Birth of Stars
+1955	Jupiter's Radio Waves
+1955	Pluto’s Rotation
+1955	Antiproton
+1955	Mendelevium
+1955	Synthetic Diamonds
+1956	Nucleic Acid Formation
+1956	Cyanocobalamin Structure
+1956	Detection of the Neutrino
+1956	Antineutron
+1956	Continuous Maser
+1956	Temperature of Venus
+1956	Ribosomes
+1957	Pituitary Hormones
+1957	Sputnik
+1957	Jodrell Bank
+1957	Details of Photosynthesis
+1957	Gibberellins
+1957	Interferon
+1957	Sabin Vaccine
+1957	Pacemaker
+1957	Tunnel Diode
+1958	Borazon
+1958	Mossbauer Effect
+1958	Magnetosphere
+1958	Nobelium
+1958	Photocopying
+1958	Moon Probes
+1958	Shape of the Earth
+1958	Solar Wind
+1958	Shape of the Hemoglobin Molecule
+1958	Homo Habilis
+1958	Spark Chamber
+1960	Color Vision
+1960	Laser
+1960	Proof of General Relativity
+1960	Standard Meter
+1960	Resonance Particles
+1960	Weather Satellites
+1960	Cyclic-AMP
+1960	Chlorophyll Synthesis
+1960	Human Beings in Space
+1960	Heliosphere
+1960	Quarks
+1960	Lawrencium
+1960	The Genetic Code
+1960	Gene Regulators
+1960	Electronic Watch
+1960	American in Space
+1960	Communications Satellites
+1960	Venus Probe
+1960	Rotation of Venus
+1960	Noble Gas Compounds
+1963	Approaching Absolute Zero
+1963	Environment
+1963	Quasars
+1963	Arecibo Radio Telescope
+1963	X-Ray Sources
+1963	Hydroxyls in Space
+1963	Woman in Space
+1964	Magnetic Reversals
+1964	Background Microwave Radiation
+1964	Transfer-RNA Structure
+1964	Multiperson Spaceflight
+1965	Rutherfordium
+1965	Martian Craters
+1965	Rotation of Mercury
+1965	Spacewalks
+1965	Space Rendezvous
+1965	Communications Satellites
+1965	Venus Probe
+1965	Holography
+1965	Microfossils
+1967	Protein Synthesis
+1967	Pulsars
+1967	Venus’s Atmosphere
+1967	Space Casualties
+1967	Heart Transplants
+1967	Clones
+1968	Hahnium
+1968	Electroweak Interaction
+1968	Solar Neutrinos
+1968	Astrochemistry
+1969	Rotating Neutron Stars
+1969	of the Moon
+1969	Cosmonaut Transfer
+1969	Optical Pulsars
+1969	Antarctic Meteorites
+1969	Protein Structure
+1969	Artificial Hearts
+1970	Coronary Bypass
+1970	Black Hole Evaporation
+1970	Meteoritic Amino Acids
+1970	1Stry
+1970	Gene Synthesis
+1970	Reverse Transcriptase
+1970	Megavitamin Therapy
+1970	Fiber Optics
+1970	Scanning Electron Microscope
+1970	Planetary Soft Landing
+1971	Supersonic Transport
+1971	Mapping Mars
+1971	Moon Rocks
+1971	Space Station
+1972	Black Hole Detection
+1972	Pocket Calculators
+1972	Punctuated Evolution
+1972	Speed of Light
+1972	Earth Resources Satellites
+1972	Quantum Chromodynamics
+1973	Laser Disks
+1973	Jupiter Probe
+1973	Skylab
+1973	Origin of the Universe
+1973	Genetic Engineering
+1974	Proton Decay
+1974	Mapping of Mercury
+1974	Formation of the Moon
+1974	Leda
+1974	Freon and the Ozone Layer
+1974	Tauon
+1975	Charmed Quarks
+1975	Microchips
+1975	Surface of Venus
+1976	Endorphins
+1976	Pluto’s Surface
+1976	Synthetic Gene
+1977	String Theory
+1977	Rings of Uranus
+1977	Chiron
+1977	Inflationary Universe
+1977	Vela Pulsar
+1977	Lucy
+1977	Fiber Optics
+1978	Balloon
+1978	Radar Mapping of Venus
+1978	Charon
+1978	Oncogenes
+1979	Virus Genome
+1979	Jupiter’s Satellites
+1979	Extinction of the Dinosaurs
+1980	Gluons
+1980	Saturnian System
+1981	Neutrino Mass
+1982	Space Shuttle
+1982	Neptune’s Rings
+1982	Millisecond Pulsar
+1982	Magnetic Monopole
+1982	Jarvik Hearts
+1982	Laser Printers
+1982	Extrasolar Planets
+1984	Nuclear Winter
+1985	Brown Dwarfs
+1985	Ozone Hole
+1986	Pluto and Charon
+1986	Uranus Probe
+1987	Halley’s Comet
+1987	Magellanic Supermnova
+1988	Warm Superconductivity
+1988	Distant Galaxies
+1988	Teven
+1988	Shroud of Turin
+1989	Greenhouse Effect
+1989	Neptune and Triton
+1989	Cold Fusion
+1990	Chiron
+1990	Genetic Medicine
+1991	Hubble Space Telescope
+1991	Fullerene Research
+1991	Volcanic Venus
+1991	First Asteroid Photograph
+1992	Gamma Ray Bursts
+1993	Background Microwave Radiation

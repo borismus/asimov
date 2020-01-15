@@ -1,0 +1,115 @@
+continuously round the cir-
+cuit.
+
+This is the Seebeck ef-
+fect and it was the first
+demonstration of the
+phenomenon of thermoelec-
+tricity. Nothing much was
+done with it, however, for
+over a century.
+
+Glaciers
+
+Mountain glaciers were
+well known to people who
+lived in mountainous areas
+such as Switzerland. It was
+
+ 
+
+known that they stretched
+down the declivities on the
+mountainsides like rivers of
+ice; that the end in the val-
+ley melted in the summer
+and refroze in the winter;
+that in advancing and re-
+treating at the valley end,
+the glaciers scraped rocks,
+since the pebbles frozen
+into the bottom of the gla-
+ciers gouged striations into
+those rocks.
+
+It was also noticed by
+some geologists that there
+were striations in rocks
+
+that were nowhere near gla-
+ciers. It made sense to sup-
+pose that the striations
+could have been caused by
+glaciers, but how?
+
+A Swiss geologist, Ig-
+natz Venetz (1788—1859),
+decided there was only one
+explanation. Glaciers must,
+at some time in the past,
+have extended far beyond
+their present limits. He
+published material to this
+effect in 1821, but it made
+no great impression at the
+time.
+
+ 
+
+1822
+
+ 
+
+Heat Flow
+
+In 1807 the French mathe-
+matician Jean-Baptiste-Jo-
+seph, Baron Fourier (1768—
+1830) had been able to dem-
+onstrate what is called Fou-
+rier’s theorem. This states
+that any periodic oscilla-
+tion (that is, any variation
+that sooner or later repeats
+itself exactly, over and
+over) can be broken up into
+a series of simple regular
+wave motions (expressed as
+sines and cosines), the sum
+
+of which will be the origi-
+nal complex periodic varia-
+tion.
+
+Fourier used his theo-
+rem to study the flow of
+heat and in 1822 published
+a book entitled Analytical
+Theory of Heat, which
+amply explained that
+branch of physics.
+
+In the book, he showed
+that it was necessary to use
+a consistent set of units and
+that, in equations involving
+quantities expressed as so
+many units, those units had
+
+to balance on both sides of
+the equation just as the
+numbers did. This began
+the technique of dimen-
+sional analysis. Fourier sug-
+gested that the basic set of
+units should be those of
+mass, length, and time, and
+that other units be built up
+of those three.
+
+Computers
+
+Pascal and Leibniz had con-
+structed calculating ma-
+chines (see 1642 and 1693),
+

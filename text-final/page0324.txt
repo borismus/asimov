@@ -1,0 +1,61 @@
+1829
+
+ 
+
+Nicol Prism
+
+Biot had noted that the
+plane of polarized light
+seemed to twist when it
+passed through certain or-
+ganic compounds that were
+liquid or in solution (see
+1815), but the fact was of lit-
+tle use without some sim-
+ple method of measuring
+this twist accurately.
+
+In 1829 the Scottish
+physicist William Nicol
+(1768-1851) devised a use-
+ful instrument in this con-
+nection by cementing two
+crystals of Iceland spar to-
+
+gether with Canadian bal-
+sam. He put them together
+in such a way that one of
+the two rays of light re-
+fracted by the first crystal
+was reflected out of the side
+of the crystal at the layer of
+balsam, while the ather,
+striking the balsam at a
+slightly different angle,
+passed through to the other
+end of the crystal.
+
+The one beam that ap-
+peared at the other end of
+the Nicol prism could then
+pass through a second
+Nicol prism without being
+weakened, if the second
+
+prism was lined up parallel
+to the first. If the polarized
+light was then allowed to
+pass through a container of
+organic liquid or solution
+that was placed between
+the prisms, and if the plane
+of polarization was twisted
+as a result, then the second
+prism would have to be
+turned to allow the beam
+through at maximum
+brightness. The degree of
+twist could be easily mea-
+sured, and polarimetry be-
+came a practical technique.
+

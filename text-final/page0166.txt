@@ -1,0 +1,80 @@
+1648
+
+ 
+
+Air Pressure
+and Altitude
+
+If the mercury column of
+Torricelli's barometer (see
+1643) were held up by air
+pressure, then if one went
+up high in the air, there
+should be less air above,
+and the air pressure should
+decrease. Therefore, so
+should the height of the
+mercury column.
+
+To test this, Pascal (see
+1642) sent his brother-in-
+law up a neighboring moun-
+tain with a couple of barom-
+eters. His brother-in-law
+climbed about a mile and
+found that the mercury col-
+umns had dropped from 30
+to 27 inches.
+
+This showed clearly
+
+that the atmosphere could
+only have a finite height. In
+fact, if it were as dense
+throughout as it was at sea
+level, it would be only 5
+miles in height.
+
+Even when it became
+apparent that air became
+less dense with height, so
+that quantities of it ex-
+tended far higher than 5
+miles, there had to be lim-
+its. At a height of 100 miles
+or so, air would be so thin
+that it might as well be vac-
+uum, and so for all the rest
+of the distance to the Moon
+and to other heavenly bod-
+ies.
+
+Experiments like those
+of Torricelli and Pascal’s
+brother-in-law amounted
+to the discovery of outer
+
+space.
+
+Fluid Pressure
+
+About 1648, Pascal also
+studied fluid pressure by ex-
+erting pressure on water
+and noting how that pres-
+sure was transmitted
+against the walls of a
+closed vessel. He concluded
+that when pressure is ex-
+erted on a fluid in a closed
+vessel, it is transmitted un-
+diminished throughout the
+fluid and that it pushes at
+right angles to all surfaces
+that it touches. This is
+called Pascal’s principle and
+is the basis of the hydraulic
+press.
+
+ 
+

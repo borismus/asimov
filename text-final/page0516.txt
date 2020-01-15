@@ -1,0 +1,148 @@
+ 
+
+ 
+
+already done the job. A crys-
+tal consisted of layers of
+atoms that were spaced
+just as regularly as, but far
+more closely than, the
+
+ruled scratches of any grat-
+ing. A beam of X rays
+aimed at a crystal ought
+then to be diffracted as ordi-
+nary light would be by an
+ordinary grating. The re-
+sults would be compli-
+cated, because ordinary
+gratings consist simply of
+parallel lines, while crys-
+tals contain layers of atoms
+extending in various direc-
+tions. Still, it could be
+done.
+
+In 1912 Laue tried the
+experiment of passing X
+rays through a crystal of
+zine sulfide and recording
+the diffraction pattern on a
+photographic plate. It
+worked perfectly. It was
+clear that such a diffraction
+pattern could be used to cal-
+culate X-ray wavelengths,
+and that once the wave-
+lengths were known, the
+technique could be used to
+study the fine structure of
+crystals.
+
+For his work on X-ray
+diffraction, Laue was
+awarded the Nobel Prize
+for physics in 1914.
+
+Neon Varieties
+
+Thomson (see 1897) found
+himself interested in the
+canal rays that Goldberg
+
+ 
+
+had discovered a quarter-
+century earlier (see 1886).
+By 1912 it was clear that
+they were composed of posi-
+tively charged subatomic
+particles, so Thomson
+called them positive rays. In
+the light of Rutherford’s nu-
+clear atom (see 1911), the
+positive rays appeared to
+be streams of atomic nu-
+clei.
+
+In 1912 Thomson stud-
+ied the manner in which
+positive rays were deflected
+by magnetic and electric
+fields. He balanced those
+helds in such a way that
+particles of different
+charge-to-mass ratio
+curved differently and fell
+in different spots on a pho-
+tographic plate.
+
+When he deflected
+streams of neon nuclei, he
+found to his surprise that
+they landed on two differ-
+ent spots, as though there
+were two varieties of neon
+atom that differed in
+charge, mass, or both. Ob-
+servations such as this were
+soon to introduce new con-
+cepts of atomic structure
+that proved to be of the
+greatest importance.
+
+Dipole
+Moments
+
+Now that it was understood
+that electrons formed part
+of atoms, it followed that
+
+when atoms joined to form
+molecules, electrons ought
+to be distributed over the
+various atoms of the mole-
+cules.
+
+Such distribution
+might be symmetrical, so
+that the molecule was elec-
+trically uncharged, or un-
+symmetrical, so that one
+part of the molecule might
+have a surplus of electrons
+and thus a slight negative
+charge while another part
+might have a deficit of elec-
+trons and a slight positive
+charge. These would repre-
+sent positive and negative
+poles of the molecules,
+which would thus be polar
+molecules, or molecular di-
+poles.
+
+Naturally, polar mole-
+cules and nonpolar mole-
+cules would act differently
+with respect to electric
+fields. In addition, polar
+molecules would attract
+each other, positive toward
+negative, and therefore
+have higher melting and
+boiling points than nonpo-
+lar molecules of similar
+size.
+
+In 1912 a Dutch physi-
+cal chemist, Peter Joseph
+William Debye (1884~
+1966), worked out a set of
+equations that would repre-
+sent the behavior of such
+polar molecules. This gave
+rise to the concept of dipole
+moments and greatly
+helped chemists under-
+

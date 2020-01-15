@@ -1,0 +1,137 @@
+In 1929 the Russian-
+born American physicist
+George Gamow (1904—
+1968) suggested that the nu-
+clear source was the conver-
+sion of hydrogen nuclei into
+helium nuclei, since these
+two elements made up
+nearly all the Sun, as Rus-
+sell had shown (see above).
+As four hydrogen nuclei
+had to fuse together to form
+one helium nucleus, this
+process was called nuclear
+fusion, or more specifically,
+hydrogen fusion.
+
+However, not enough
+was known about nuclear
+fusion as yet for Gamow to
+flesh out his suggestion in
+detail.
+
+Coincidence
+Counter
+
+In 1929 the German physi-
+cist Walther Wilhelm
+Georg Franz Bothe (1891—
+1957) devised a new
+method of studying cosmic
+rays. He placed two Geiger
+counters (see 1908) one
+above the other and set up
+a circuit that would record
+an event only if both count-
+ers recorded it virtually si-
+multaneously.
+
+This would happen
+only if a cosmic ray parti-
+cle, streaking down from
+above, shot vertically
+through both counters. Par-
+ticles coming from some
+other direction would pass
+
+through one counter and
+not the other. And particles
+that were not cosmic rays,
+though coming from the
+right direction, would be in-
+sufficiently energetic to
+pass through both.
+
+Such a coincidence
+counter turned out to be
+very useful in measuring
+the shert intervals of time
+between passage through
+one counter and the next.
+These ultrashort intervals
+were still long enough for
+events to take place on the
+subatomic scale. Bothe
+used this technique to show
+that the laws of conserva-
+tion of energy and of mo-
+mentum were as valid for
+atoms as for billiard balls.
+
+For his coincidence
+counters, Bothe was
+awarded the Nobel Prize
+for physics in 1954.
+
+Particle
+Accelerator
+
+In the quarter-century
+since the discovery of radio-
+activity, the most energetic
+particles easily available to
+nuclear physicists had been
+alpha particles. The shorter
+the halFlife of a particular
+radioactive isotope, the
+more energetic the alpha
+particles they produced.
+Rutherford used alpha par-
+ticles to bombard atoms
+and induce nuclear reac-
+tions (see 1906), but even
+
+the most energetic alpha
+particles could only do so
+much. Of course, cosmic
+ray particles were more
+powerful still, much more
+powerful, but they were not
+under scientists’ control.
+
+What was needed was
+some way of beginning
+with ordinary nuclear parti-
+cles, say protons obtained
+by ionizing hydrogen
+atoms, and then accelerat-
+ing them, perhaps by
+means of an electromag-
+netic field.
+
+This was first accom-
+plished by the British physi-
+cist John Douglas Cockeroft
+(1897-1967) and his co-
+worker, the Irish physicist
+Ernest Thomas Sinton Wal-
+ton (b. 1903). In 1929 they
+devised a voltage multiplier
+that would build up high
+electrical voltages capable
+of accelerating protons to
+the point where they con-
+tained more energy than
+the alpha particles oc-
+curring in nature.
+
+This was the first parti-
+cle accelerator (better
+known to the public for a
+time as an atoni-smasher).
+For this work, Cockeroft
+and Walton were awarded
+the Nobel Prize for physics
+in 1951.
+

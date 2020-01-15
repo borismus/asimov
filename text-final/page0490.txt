@@ -1,0 +1,150 @@
+ 
+
+ 
+
+thing as "absolute space”
+or “absolute time,” since
+both depend on velocity
+and therefore have mean-
+ing only relative to the
+viewer. Nevertheless, de-
+spite this absence of abso-
+lutes, the laws of physics
+still held for all “frames of
+reference.” In particular,
+Maxwell's equations (see
+1865) still held, though the
+much older and more re-
+vered laws of motion as
+worked out by Newton had
+to be modified.
+
+The theory is special,
+because it confines itself to
+the special case of objects
+that are moving at constant
+velocity. Under those condi-
+tions, the theory does not
+take into account the effect
+of gravitational interac-
+tions, which are every-
+where present and which
+force accelerations on mo-
+tion.
+
+Einstein's view of the
+Universe seemed to go
+against common sense, but
+that was only because the
+average person deals with a
+Universe of small distances
+and small velocities. Under
+those conditions, Newton's
+theories hold almost per-
+fectly. In fact, Einstein’s
+equations reduce to New-
+ton’s under such condi-
+tions. However, where
+large distances and large
+velocities are involved, Ein-
+stein’s equations hold and
+Newton’s do not.
+
+In the eight decades
+
+since special relativity was
+advanced, endless tests and
+observations have upheld it
+completely. No divergences
+between reality and the
+Einsteinian view have been
+found.
+
+Mass-Energy
+
+Another consequence of
+Einstein's theory of special
+relativity (see above) is that
+mass must be viewed as a
+highly concentrated form of
+energy. Einstein’s equation
+representing this is the fa-
+mous e = mc?, where e is
+energy, m is mass, and ¢ is
+the speed of light. The
+speed of light is so huge
+that to square it and multi-
+ply it by even a small
+amount of mass is to repre-
+sent a large amount of en-
+ergy (1 gram of mass equals
+900 billion billion ergs of
+energy),
+
+Whenever any process
+gives off energy, it loses a
+little mass; when it absorbs
+energy, it gains a little
+mass. The amount of mass
+lost or gained under ordi-
+nary conditions is so min-
+ute it had never been
+detected. That is why Lavoi-
+sier could consider mass
+conserved independently of
+energy (see 1769) and Helm-
+holtz could consider energy
+conserved independently of
+mass (see 1847).
+
+With the study of radio-
+activity, much larger en-
+ergy changes per unit mass
+
+were involved, as Pierre
+Curie had found (see 1901).
+Mass-energy equivalence
+could then be measured
+and was found to be pre-
+cisely as Einstein's theory
+required it to be. The law of
+conservation of energy was
+thus extended and made
+more precise by the inclu-
+sion of mass as one more
+form of energy. The law of
+conservation of mass be-
+came obsolete, or rather,
+was included in what is
+sometimes known as the
+law of conservation of mass-
+energy.
+
+Photoelectric
+Effect and
+Quanta
+
+In 1905 the photoelectric ef-
+fect, as observed by Lenard
+(see 1902), was combined
+with quantum theory (see
+1900) by Einstein.
+
+He showed that if light
+consisted of quanta, with
+energies proportional to fre-
+quency (inversely propor-
+tional to wavelength), then
+the atoms in a metal sur-
+face could only absorb in-
+tact quanta. Furthermore,
+long-wavelength quanta
+would not supply enough
+energy to eject an electron
+from the metal, no matter
+how intense the light might
+be. But as wavelength grew
+shorter, energy quanta
+grew larger, and a point
+would be reached where
+

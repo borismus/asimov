@@ -1,0 +1,81 @@
+ 
+
+ 
+
+LT
+
+electrically charged parti-
+cles.
+
+That decision held up
+in all subsequent studies.
+
+High Pressure
+
+Scientists starting with
+Boyle (see 1662) had used
+pressure to study the com-
+pression of gases or, as Far-
+aday had, to bring about
+the liquefaction of gases
+(see 1823).
+
+A French physicist,
+Emile Hilaire Amagat
+(1841-1915), was the first,
+though, to attempt to reach
+really high pressures and
+study the behavior of mate-
+rials under those condi-
+tions. He began his
+experiments in 1880 and
+
+ 
+
+soon managed to attain a
+pressure equal to 3,000 at-
+mospheres. It set a record
+and laid the groundwork
+for further work in decades
+to come at still more ex-
+treme pressures.
+
+Piezoelectricity
+
+In 1880 a French chemist,
+Pierre Curie (1859-1906),
+noted that if a crystal of
+quartz was placed under
+pressure, an electric poten-
+tial appeared across it. If,
+in reverse, the crystal was
+subjected to an electric po-
+tential, it would compress
+as though under pressure.
+If the electric potential
+changed rapidly, the crys-
+tal would compress and ex-
+
+pand in time with the
+change, and the vibration
+of the crystal would set up
+sound waves that oscillated
+too rapidly to be heard.
+Curie had thus discovered a
+way of producing ultrasonic
+vibrations.
+
+The manner in which
+this is done—the interac-
+tion of pressure and electric
+potentials—is known as pi-
+ezoelectricity, where piezo
+comes from the Greek word
+for “pressure.” Crystals
+with piezoelectric proper-
+ties came to form an essen-
+tial portion of sound-
+electronic devices such as
+microphones and record
+players.
+

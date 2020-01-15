@@ -1,0 +1,86 @@
+SENOIN
+
+1832
+
+ 
+
+Laws of
+Electrolysis
+
+In his youth, Faraday (see
+1821) had worked under
+Davy (see 1800) and carried
+on the elder’s work in elec-
+trochemistry. The method
+whereby Davy had liber-
+ated a number of new met-
+als, by passing an electric
+current through molten
+compounds of those metals,
+Faraday named electrolysis
+(from Greek words mean-
+ing “to loosen by electric-
+ity”).
+
+Faraday named a lig-
+uid or a solution that could
+conduct electricity an elec-
+trolyte. The metal rods in-
+serted into the liquid or
+solution he called electrodes
+
+(from Greek words mean-
+ing “the road of electric-
+ity"). The positively
+charged electrode he called
+the anode (high road) and
+the negatively charged elec-
+trode he called the cathode
+(low road). This likened the
+flow of electricity to the
+flow of water from the
+height of the anode to the
+depth of the cathode, fol-
+lowing Franklin's guess
+that electricity flowed from
+positive to negative (see
+1752). (In fact, that turned
+out to be wrong, however,
+and electricity flowed from
+the negative electrode to
+the positive.)
+
+All these names were
+suggested to Faraday by
+the British scholar William
+Whewell (1794-1866), who
+
+also coined the word scien-
+tist in the next decade.
+
+In 1832 Faraday an-
+nounced what are now
+called his laws of electroly-
+sis. They are:
+
+1. The mass of sub-
+stance liberated at an elec-
+trode during electrolysis is
+proportional to the quan-
+tity of electricity driven
+through the solution.
+
+2. The mass liberated
+by a given quantity of elec-
+tricity is proportional to
+the atomic weight of the ele-
+ment liberated and in-
+versely proportional to the
+combining power of the ele-
+ment—that is, to the num-
+ber of atoms that one atom
+of the element will combine
+with.
+
+ 
+

@@ -1,0 +1,150 @@
+the energy was just suffi-
+cient to eject an electron.
+The shorter the wavelength
+beyond that, the more ener-
+getic the ejected electron
+would be and the more
+speedily it would travel.
+Since some metals may
+hold electrons more firmly
+than others, the critical
+wavelength must be shorter
+in some cases than in oth-
+ers.
+
+Einstein’s analysis had
+several consequences.
+
+1. It explained the pho-
+teelectric effect completely.
+There have not had to be
+any extensions or additions
+to the explanation since.
+
+2. It made use of quan-
+tum theory to explain a phe-
+nomenon unexplainable
+otherwise, and a phenome-
+non moreover that had not
+been in Planck’s mind
+when he worked out the the-
+ory. If quantum theory
+were simply a mathemati-
+cal device needed to make
+black-body radiation come
+out right, it wouldn't be
+likely to be applicable with-
+out modification to an alto-
+gether different
+phenomenon. Einstein's
+work therefore established
+quantum theory as legiti-
+mate and not merely a
+mathematical trick.
+
+3. It showed that light
+could be treated as parti-
+cles in some respects. New-
+ton's particles and
+Huygens's waves (see 1678)
+were thus combined into a
+
+whole that was far more
+complex and useful than
+could have been imagined
+on the basis of seventeenth-
+century knowledge. The
+particle aspects of light,
+and of electromagnetic ra-
+diation generally, are re-
+ferred to nowadays as
+photons.
+
+It was for this work on
+the photoelectric effect (not
+on his still greater discover-
+ies in connection with rela-
+tivity) that Einstein gained
+a Nobel Prize in physics in
+15217
+
+Brownian
+Motion and
+Atomic Size
+
+Brownian motion had re-
+mained somewhat of a puz-
+zle since Brown had
+discovered it (see 1827). In
+1902 the Swedish chemist
+Theodor Svedberg (1884—
+1971) had suggested that
+the unequal bombardment
+of small particles by mole-
+cules from all sides im-
+pelled them to move
+randomly, this way and
+that.
+
+Einstein, in 1905, ana-
+lyzed the possibility of mo-
+lecular bombardment
+thoroughly. He reasoned
+that any sizable object im-
+mersed in water (or any
+fluid) is bombarded from
+all sides, and surely more
+from one side at one mo-
+ment and more from an-
+
+other side at another
+moment. However, the
+countless trillions of mole-
+cules involved means that
+any small differences will
+be so small as to be inde-
+tectable.
+
+If we consider a
+smaller and smaller object,
+the total number of mole-
+cules striking it at a given
+moment will be smaller,
+and little deviations will
+loom larger. By the time ob-
+jects approach the micro-
+scopic in size, an additional
+molecule from this side or
+that should be sufficient to
+give it a noticeable push in
+this direction or that.
+
+Einstein worked out an
+equation to describe
+Brownian motion, one from
+which it was possible to
+work out the size of mole-
+cules and of the atoms mak-
+ing them up, provided one
+found a way to measure cer-
+tain other variables that
+occur in the equation.
+
+It was not long before
+Einstein’s equation was put
+to good use.
+
+Color and
+Stellar
+Luminosity
+
+We all know that some
+stars are brighter than oth-
+ers; astronomers measure
+that brightness as magui-
+tude. A star can appear
+bright for either of two rea-
+sons. It may radiate a large
+
+ 
+

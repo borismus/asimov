@@ -1,0 +1,151 @@
+ 
+
+ 
+
+A
+
+working with electric gener-
+ators, however, to get a
+kind of current that goes
+first in one direction, then
+in the other, alternating
+very rapidly, with the cur-
+rent intensity rising and
+falling like a sine wave.
+This is alternating current
+(ac).
+
+Alternating current
+didn't seem as useful as di-
+rect current, but then in
+1883 a Croatian electrical
+engineer, Nikola Tesla
+(1856—1943), constructed
+an induction motor that
+could make use of alternat-
+ing current to do useful
+work.
+
+Edison had committed
+himself to direct current,
+and he fought the use of al-
+ternating current, but he
+lost out eventually.
+
+Edison Effect
+
+Once Edison had invented
+the electric light (see 1879),
+he naturally endeavored to
+improve it. In particular,
+he wanted to make the fil-
+ament last longer. In 1883
+he sealed a metal wire into
+a light bulb near the hot
+filament. Perhaps he
+thought this might absorb
+some of the remaining air
+in the tube and lessen its de-
+structive effect on the fila-
+ment.
+
+To Edison's surprise,
+electricity flowed from the
+hot filament to the cold
+
+ 
+
+wire across the gap that
+separated them. This is
+called the Edison effect.
+Edison wrote up the ef-
+fect meticulously and pat-
+ented it, as a matter of
+course, but he could think
+of no use for it. This was his
+only purely scientific dis-
+covery, and he didn’t follow
+it up. The Edison effect
+proved the basis for the sci-
+ence of electronics that was
+eventually to come.
+
+Rayon
+
+The French chemist Louis-
+Marie-Hilaire Bernigaud de
+Chardonnet (1839-1924)
+had begun some five years
+earlier to produce fibers by
+forcing solutions of nitrocel-
+lulose through tiny holes
+and allowing the solvent to
+evaporate. He perfected the
+process in 1883 and found
+he had a fiber that strongly
+resembled silk in its fine-
+ness and shininess. He
+called it rayon (from the
+French word for “a ray of
+light”") because of its shini-
+ness. He used only partly ni-
+trated cellulose, so rayon
+wasn't explosive, but it was
+still uncomfortably in-
+flammable.
+
+Rayon was the first
+synthetic fiber, and it was
+to be followed by many
+others.
+
+Meiosis
+
+The discovery of the mecha-
+nism of cell division by
+Flemming (see 1882) stimu-
+lated many biologists into
+investigating the matter
+further.
+
+The Belgian cytologist
+Edouard Joseph Louis-
+Marie van Beneden (1846—
+1910) found that the num-
+ber of chromosomes in the
+cells of a particular species
+was always constant,
+though the number varied
+from species to species.
+
+(It is now known that there
+are forty-six chromosomes
+in human cells.)
+
+Furthermore, he dis-
+covered that in the forma-
+tion of the sex cells (that is,
+the ova and spermatozoa),
+the division of chromo-
+somes during one of the cell
+divisions was not preceded
+by a doubling. Each egg
+and sperm cell, therefore,
+ended with only half the
+usual number of chromo-
+somes. (This halving of
+number was called meiosis,
+from a Greek word mean-
+ing “to make smaller”).
+Consequently, when a
+sperm cell entered an egg
+cell in the process of fertil-
+ization, the chromosomes
+reached their normal num-
+ber for the species, half of
+them coming from the
+mother and half from the
+father.
+
+Meiosis fit in perfectly
+

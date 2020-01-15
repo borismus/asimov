@@ -1,0 +1,90 @@
+discovered by the American
+chemist Thomas Midgley,
+Jr. (see 1921). In 1930 he
+prepared difluoredichlo-
+romethane, with a mole-
+cule consisting of a carbon
+atom to which two chlorine
+atoms and two fluorine
+atoms were attached. It
+had all the properties
+needed for refrigeration.
+
+It belonged to the class
+of chlorofluorocarbons, and
+other molecules of the class
+had uses too. For example,
+such liquids could be used
+in spray cans to force other
+liquids out in a fine mist.
+
+Trademarked prepara-
+tions of the liquid, like
+Freon, rapidly went into
+use. They made air-condi-
+
+tioners common and, in-
+deed, in developed
+societies, nearly universal
+equipment. Eventually
+
+ 
+
+however, the chlorofluoro-
+carbons were found to have
+dangers that at the time of
+their discovery could not
+have been foreseen, and
+their use is now being in-
+creasingly discouraged.
+
+ 
+
+1931
+
+ 
+
+Godel’s Proof
+
+Thirty years earlier, Frege
+had attempted to place all
+of mathematics on a formal
+logical basis, making it
+fully rigorous, and had
+failed (see 1902). Other,
+more elaborate attempts
+followed.
+
+An Austrian mathema-
+tician, Kurt Godel (1906—
+1978), put a final end to
+
+such schemes in 1931 by ad-
+vancing what is now called
+Gadel's proof. He translated
+the symbols of symbolic
+logic into numbers in a sys-
+tematic way and showed
+that it was always possible
+to construct a number that
+could not be arrived at
+from the other numbers of
+his system.
+
+What it amounted to
+was this; Godel showed
+
+that if you began with any
+set of axioms, there would
+always be statements
+within the system governed
+by those axioms that could
+be neither proved nor dis-
+proved on the basis of those
+axioms. If the axioms were
+modified in such a way that
+the statement could be ei-
+ther proved or disproved,
+then another statement
+could be constructed that
+

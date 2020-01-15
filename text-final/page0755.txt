@@ -1,0 +1,40 @@
+the exponent # is greater
+than two (see 1637). Fermat
+never recorded his proof,
+and mathematicians ever
+since have tried without
+success to prove Fermat's
+Last Theorem.
+
+Thus a milestone
+seemed to have been
+reached when British math-
+ematician Andrew John
+Wiles (b. 1953) announced
+
+in July that he had estab-
+lished the truth of the fa-
+mous theorem. While a
+year or two would be re-
+quired for the 200-page
+proof to be thoroughly scru-
+tinized and confirmed,
+Wiles's reputation was
+excellent, and on first re-
+view by his mathematical
+peers the proof was highly
+acclaimed.
+
+Wiles cracked the Fer-
+mat case by first solving a
+related math riddle central
+to number theory, the Tani-
+yama Conjecture, which
+deals with elliptical curves.
+As part of the process of lay-
+ing Fermat's 356-year-old
+problem to rest, Wiles also
+developed new techniques
+for dealing with important
+issues in number theory.
+

@@ -1,0 +1,148 @@
+ 
+
+ 
+
+sually ever since. There
+seemed nothing of interest
+about them except for the
+fact of their existence.
+
+The amateur German
+astronomer Samuel Hein-
+rich Schwabe (1789-1875)
+had to work as a pharma-
+cist, so he could not stay up
+all night to observe the sky.
+As something to do by day
+when business was slow, he
+began to study the neigh-
+borhood of the Sun to see if
+he could find some planet
+closer to the Sun than Mer-
+cury. Then the Sun itself
+caught his attention, and
+for seventeen years he stud-
+ied its orb on every day
+that it was visible.
+
+In 1843 he announced
+that the number of sun-
+spots seemed to wax and
+wane in a ten-year cycle.
+(Later observations made
+the cycle appear eleven
+vears long, on the average.)
+This discovery founded the
+modern study of solar phys-
+ics and of astrophysics in
+general,
+
+Quaternions
+
+The discovery of non-Eu-
+clidean geometries taught
+mathematicians that there
+were no absolute truths but
+that many alternative
+mathematics could exist de-
+pending on the nature of
+the axioms chosen. In other
+words, more than one set of
+axioms could give rise to
+self-consistent and useful
+
+consequences. This was so
+in geometry, and the Irish
+mathematician William
+Rowan Hamilton (1805—
+1865) showed that it
+
+was true in algebra as
+well.
+
+Gauss had shown that
+complex numbers could be
+treated as though they were
+points on a plane, and that
+each could be represented
+by two numbers. Hamilton
+tried to deal with Aypercom-
+plex numbers that could be
+presented as points in three
+or more dimensions. He
+tried to work out a system
+of dealing with such points
+and found he could not.
+Then, in 1843, the thought
+came to him that he could
+do so if he were willing to
+abandon the commutative
+law of multiplication,
+
+It had always been
+taken as self-evident that A
+x B = B X A, but if this
+was abandoned, Hamilton
+found he could devise a
+self-consistent algebra of
+hypercomplex numbers, or
+as he called them, quaterni-
+ons (from the Latin word
+for “four,” because each of
+Hamilton's points involved
+four numbers).
+
+Higher Analytic
+Geometry
+
+Descartes had worked out
+an analytic geometry in
+two dimensions, expressing
+curves by algebraic equa-
+
+tions. The British mathema-
+tician Arthur Cayley (1821—
+1895) wanted to extend this
+to higher dimensions, as
+Hamilton had extended
+imaginary numbers (also
+planar). In 1843 Cayley suc-
+ceeded in working out
+analytic geometry in three
+or more dimensions.
+
+This would be called
+n-dimensional analytic
+geometry.
+
+Wheatstone
+Bridge
+
+In 1843 Wheatstone (see
+1838) used and made popu-
+lar what came to be called
+the Wheatstone bridge. (He
+did not invent it—he freely
+admitted he did not—but
+there is some credit to be
+derived from making a de-
+vice popular and introduc-
+ing it to the scientific
+community.) The
+Wheatstone bridge was a
+device that measured the
+resistance of a circuit very
+delicately by balancing a
+number of currents against
+each other.
+
+Transatlantic
+Liner
+
+The first ship a modern
+might recognize as a trans-
+atlantic liner was the S.S.
+Great Britain, launched on
+July 19, 1843. It was 322
+feet long, had a crew of 130,
+

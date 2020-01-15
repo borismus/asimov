@@ -1,0 +1,143 @@
+in 1919 developed a mass
+spectrometer, which could
+separate ions so delicately
+that all ions of a particular
+mass would focus in a fine
+line on a photographic film.
+Working with neon ions,
+Aston showed that there
+were two lines, one indicat-
+ing a mass of 20 and the
+other a mass of 22. From
+the comparative darkness
+of the two lines, Aston cal-
+culated that the ions of
+mass 20 were 10 times as
+numerous as those of 22, If
+all the ions were lumped to-
+gether, they would have an
+average mass of 20.2, and
+that was indeed the atomic
+weight of neon. (Later, a
+third group of neon ions of
+mass 21, occurring in only
+a tiny concentration, was
+discovered.)
+
+Working with chlorine
+atoms, Aston found again
+two types of atoms, with
+masses of 35 and 37, in the
+ratio of 2 to 1. A weighted
+average came out to 35.5,
+which was the atomic
+weight of chlorine.
+
+The use of the mass
+spectrograph eventually
+showed that most stable el-
+ements (but not all) con-
+sisted of two or more stable
+isotopes. The atomic nuclei
+of a particular element all
+had the same positive elec-
+tric charge, but the isotopes
+differed in mass. Each had
+its own mass number.
+
+For this work, Aston
+was awarded the Nobel
+Prize for chemistry in 1922.
+
+Nuclear
+Reaction
+
+Rutherford, in his work
+with alpha-particle bom-
+bardments of matter (see
+1906), had made gases his
+target. For instance, when
+he bombarded hydrogen,
+he got bright scintillations
+on a zinc sulfide screen
+(which gave off a flash of
+light whenever struck by an
+energetic subatomic parti-
+cle). The alpha particles
+themselves produced scin-
+tillations, but the new scin-
+tillations, which appeared
+when hydrogen was pres-
+ent, were particularly
+bright.
+
+Rutherford decided
+(correctly) that the alpha
+particles occasionally
+struck a hydrogen nucleus
+(consisting of a single pro-
+ton) and hurled it forward.
+It was these speeding pro-
+tons, he felt, that produced
+the bright scintillations.
+
+In 1919, when nitrogen
+was introduced into the cyl-
+inder, occasional bright
+scintillations like those of
+protons were produced.
+Rutherford knew that the
+nitrogen nucleus had a
+charge of +7, so that it had
+to contain at least seven
+
+protons. He felt that the
+alpha particle must knock
+one of these protons out of
+the nitrogen nucleus every
+once in a while.
+
+The number of alpha-
+particle scintillations pro-
+duced under these
+circumstances gradually
+decreased. Rutherford rea-
+soned that some of the par-
+ticles must be absorbed by
+the nitrogen nuclei. If a ni-
+trogen nucleus absorbed an
+alpha particle with its
+charge of +2 and lost a pro-
+ton with its charge of +1,
+the net change would leave
+the nitrogen nucleus with a
+total charge of +8. This is
+the characteristic charge of
+an oxygen nucleus.
+
+In short, what Ruther-
+ford had done was to com-
+bine a helium nucleus (an
+alpha particle) and a nitro-
+gen nucleus to form a hy-
+drogen nucleus (a proton)
+and an oxygen nucleus. He
+had converted one type of
+atom into another by sub-
+atomic bombardment.
+
+Ordinary chemical re-
+actions involve the transfer
+or sharing of electrons, as
+Lewis had pointed out (see
+1916). Now Rutherford had
+produced reactions that in-
+volved the transfer of parti-
+cles inside the nucleus. In
+other words, he had
+brought about the first hu-
+manly engineered nuclear
+reaction.
+
+ 
+

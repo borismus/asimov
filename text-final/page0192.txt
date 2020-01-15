@@ -1,0 +1,101 @@
+imaginary. You can then
+say that +i X +i= —1.
+What's more, —i X ~i
+= —1.
+
+Wallis (see 1668) suc-
+ceeded in making sense out
+of such imaginary numbers
+in 1685.
+
+Imagine a horizontal
+line. Mark off a point as
+zero and then imagine the
+positive numbers marked
+off to the right and the nega-
+tive numbers marked off to
+the left, with all the frac-
+tions and irrational num-
+
+bers appropriately marked
+off between the whole num-
+bers. That is the real num-
+ber axis.
+
+Next, draw a vertical
+line passing through the
+zero point. Mark all the i
+numbers (i, 2i, 3i, and so
+on) upward, and all the —i
+numbers downward, with
+all the imaginary fractions
+and irrational numbers
+marked off, too. That is the
+imaginary number axis.
+
+Every point in the
+plane can then be marked
+
+off just as Descartes did in
+his analytical geometry (see
+1637). Every point (a) on
+the real number axis be-
+comes a + 0i; every point
+(b) on the imaginary num-
+ber axis becomes 0 + bi;
+and every number on nei-
+ther axis (the complex num-
+bers) becomes a + bi.
+
+Such a scheme proved
+enormously useful to math-
+ematicians, scientists, and
+engineers.
+
+ 
+
+1686
+
+ 
+
+Meteorological
+Map
+
+The wind often seems to be
+totally unruly and unpre-
+dictable, but even the an-
+cient Romans knew that it
+blew from Africa to India
+for six months and then in
+the other direction for six
+months. These seasonal
+winds were called mon-
+
+soons, from an Arabic word
+meaning ‘‘season.” There
+were also the steady trade
+winds that blew southwest-
+ward north of the equator
+and northwestward south
+of the equator.
+
+The first person to try
+to make world sense out of
+the winds was Halley (see
+1678), who in 1686 wrote a
+book on the subject. It in-
+cluded a world map that
+
+showed the prevailing
+winds over the tropic
+oceans—the monsoons and
+trade winds. Halley did not
+have quite the proper expla-
+nation for the winds, how-
+ever. He knew they
+involved the rising of sun-
+heated air but did not un-
+derstand the reason for the
+westward flow of tropical
+air.
+

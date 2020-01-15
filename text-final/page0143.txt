@@ -1,0 +1,141 @@
+use a straight-edge (some-
+thing that would draw
+straight lines) and a com-
+pass (something that would
+draw circles) and you had
+to do it in a finite number
+of steps. Unfortunately,
+they could never solve that
+problem.
+
+In working with it,
+though, they got involved
+
+with the ratio of the circum-
+
+ference of a circle to its di-
+ameter, a ratio that we now
+refer to as pi (one of the
+Greek letters). Anyone can
+measure the diameter and
+then run a piece of string
+
+around the circumference,
+straighten it, and measure
+that, too. It turns out that
+the circumference (for any
+circle at all) is just a little
+over 3 times as long as the
+diameter. But what is the
+ratio exactly?
+
+There are geometric
+ways of trying to get the
+exact ratio, and Archi-
+medes (se
+ten a figure of about 3.142.
+Better values were ob-
+tained in later centuries
+until, in 1596, the Dutch
+mathematician Ludolf van
+Ceulen (1540-1610) ob-
+
+   
+
+ 
+
+> 260 B.c.) had got-
+
+tained a value of pi to
+twenty decimal places
+(Later in life, he
+
+thirty-five decim
+
+Even that didn
+
+  
+
+an exact value, but it was so
+nearly exact that no reason
+able computation involving
+pi would need a more exact
+value. (In Germany, pi is
+still sometimes called Lu-
+
+dolf's number.) Since then
+
+ 
+
+pi has been obtained to a
+vastly greater number of
+decimal places, but even so
+
+there is no exact figure
+
+ 
+
+ 
+
+1597
+
+ 
+
+Medieval
+Alchemy
+
+The medieval alchemists
+didn’t achieve much of
+what they would have liked
+to achieve. They didn't
+manufacture gold out of
+lead, and they didn’t find
+the elixir of life. However,
+
+ 
+
+they weren't totally useless,
+
+either.
+
+In 1597 a German al-
+chemist, Andreas L
+1540-1616), better known
+by the Latinized form of his
+name as Libavius, wrote a
+book entitled Alchemnia in
+which he summarized me
+
+ 
+
+dieval achievements in al-
+chemy. It was the first
+
+chemical textbook worthy
+of the name. Libavius
+
+wrote clearly rather than
+
+ 
+
+miystically. He was
+
+to describe the
+
+ 
+
+of hvdrochloric acid, and
+
+le gave clear direc
+
+tions for
+preparing o
+
+acids such
+
+ 
+
+and aqua
+
+water 1 nuxture of sutiu
+

@@ -1,0 +1,145 @@
+physicists often speak of
+the Lorentz-FitzGerald con-
+traction.
+
+Helium on Earth
+
+The time had passed when
+a new element could be dis-
+covered and then treated as
+though it existed all by it-
+self. Mendeleyev with his
+periodic table (see 1869)
+had shown that elements
+existed in families.
+
+Argon, discovered the
+year before by Rayleigh
+and Ramsay (see 1894), did
+not fit in with any existing
+family, but it seemed to be
+in the neighborhood of chlo-
+rine and potassium as far
+as its atomic weight was
+concerned. Since the peri-
+odic table was based
+largely on valence (see
+1852), it made sense to put
+argon between chlorine and
+potassium. Chlorine and
+potassium each had a va-
+lence of 1, and since argon
+formed no combinations
+with other atoms at all, it
+had to have a valence of 0.
+The valence progression of
+1,0, 1 made sense, and
+argon would be the first
+member of a new family of
+elements of 0 valence.
+
+In that case, where
+were the others? Ramsay
+made it his business to look
+for them. In 1895 he
+learned that in America,
+samples of a gas taken for
+nitrogen had been obtained
+
+from a uranium mineral.
+That looked hopeful, for the
+0-valence gases could be
+mistaken for the rather
+inert nitrogen but for no
+other gas.
+
+Ramsay repeated the
+work with a uranium min-
+eral and got a gas that re-
+sembled nitrogen in its
+inertness. He tested the gas
+spectroscopically, how-
+ever, and it did not produce
+the spectral lines of nitro-
+gen. Instead it produced
+the spectral lines that Ram-
+say recognized as those de-
+tected by Janssen in
+sunlight (see 1868).
+
+Janssen's solar element
+had been named helium,
+and now Ramsay had iden-
+tified it on Earth, and
+found that it would lie be-
+tween hydrogen and lith-
+ium in the periodic table.
+As to what helium might be
+doing in the uranium min-
+eral, that was a puzzle, but
+the answer was not long in
+coming.
+
+Magnetism
+and Heat
+
+People must have noticed
+that if a magnet was made
+red hot it would lose its
+magnetism. Curie (see
+1880) showed that this was
+not a gradual effect. There
+was a specific temperature
+(now called the Curie ten-
+perature) at which the mag-
+
+netism of iron disappeared.
+This happens to be 770° C.
+
+Other metals that have
+the same strong response to
+magnetism that iron does
+(and are therefore said to
+be ferromagnetic, from the
+Latin word for “iron") also
+have Curie temperatures.
+For nickel it is 358° C, and
+for cobalt, 1131° C.
+
+Radio Antennas
+
+Once Hertz had demon-
+strated the existence of
+radio waves (see 1888), the
+possibility of using such
+waves in signaling across
+long distances occurred to
+a number of people. If one
+could use such radiation for
+the purpose, one could do
+away with total depen-
+dence on telegraph wires
+and cables. Indeed, the Brit-
+ish call communications by
+radio waves wireless telegra-
+phy or for short wireless.
+Americans call it radioreleg-
+raphy or for short radio.
+
+Of course, to make
+such communication possi-
+ble, one needs a far better
+detector than the simple
+loop Hertz used. In 1890 a
+French physicist, Edouard-
+Eugeéne Branly (1844
+1940), invented a detector
+that consisted of a con-
+tainer of loosely packed
+metal filings. It ordinarily
+conducted little current,
+but it conducted quite a bit
+when radio waves fell upon
+
+ 
+

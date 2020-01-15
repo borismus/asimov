@@ -1,0 +1,148 @@
+ 
+
+ 
+
+clock would obviously fail
+to work on the swaying
+deck of a ship, and the
+watches of the time were in-
+sufficiently accurate.
+
+In 1714 the British gov-
+ernment offered a prize of
+twenty thousand pounds,
+an incredible fortune in
+those days, to anyone who
+would devise a method of
+determining a ship’s longi-
+tude. The sum was clearly
+worth it, to be sure, consid-
+ering the improvement it
+would make in a ship’s abil-
+ity to navigate accurately
+and the profits that would
+result from accelerated
+trade.
+
+Beginning in 1728, an
+English instrument-maker,
+John Harrison (1693—1776),
+built a series of five clocks,
+each one better than the
+one before. Each clock was
+so mounted that it could
+take the sway of a ship with-
+out being adversely af-
+fected. He designed a
+pendulum of different met-
+als so that it would stay the
+same length and give the
+same beat even as tempera-
+ture changed. He also in-
+serted a mechanism that
+would keep the clock going
+while it was being wound.
+Any one of Harrison's
+clocks met the demands of
+the prize conditions. In
+fact, they were more accu-
+rate at sea than any other
+clock then known was on
+land. One of Harrison's
+
+chronometers was off by
+less than a minute after five
+months at sea.
+
+The British parliament,
+however, put on an extraor-
+dinary display of miserli-
+ness in this connection. It
+put off the payment to Har-
+rison for years, and he did
+not get the full amount
+until 1773.
+
+Aberration
+of Light
+
+Since Copernicus’s book
+(see 1543) nearly two centu-
+ries before, the question of
+the parallax of the stars
+had bothered astronomers.
+If the Earth did indeed
+move about the Sun, that
+should induce a parallactic
+displacement among the
+nearer stars as compared
+with the farther ones. View-
+ing a nearby star from one
+side of the Sun and then
+viewing it again from the
+other side, 186,000,000
+miles away, should produce
+a displacement—but it
+didn't.
+
+Those who accepted Co-
+pernicus and Kepler felt
+this was because even the
+nearest stars were so far
+away that their parallax
+was too small to measure.
+Still, telescopes were con-
+stantly improving, so as-
+tronomers kept trying.
+
+One of those who tried
+was a British astronomer,
+
+James Bradley (1693~
+1762). Bradley, using a tele-
+scope 212 feet long, tried to
+measure the small displace-
+ment of stars in the course
+of the year and actually de-
+tected such a displacement.
+What he found, however,
+could not be parallax, be-
+cause the displacement did
+not coincide with what
+would be expected if it
+were the result of Earth's
+changing position in its
+orbit.
+
+Bradley looked for an
+alternate explanation and
+one occurred to him in
+1728: The displacement
+arose because the telescope
+had to be tipped slightly to
+catch the light as the Earth
+moved (this is called ad-
+justing to the aberration of
+light), just as an umbrella
+must be tipped when you're
+walking briskly through a
+rainstorm in which the
+drops are falling vertically.
+The amount by which the
+telescope must be tipped
+depends on the ratio of the
+speed of the Earth in its
+orbit to the speed of light.
+
+This meant that al-
+though Bradley had not de-
+tected parallax, he had
+discovered a new way of
+calculating the speed of
+light, since the speed of the
+Earth in its orbit was
+known and the amount of
+the tipping of the telescope
+was known, too. This was
+the first determination of
+

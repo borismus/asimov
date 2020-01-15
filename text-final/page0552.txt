@@ -1,0 +1,147 @@
+ 
+
+ 
+
+Debye, who had devel-
+oped the notion of dipole
+moments (see 1912), tack-
+led the problem. He sug-
+gested that dissolved
+electrolytes were indeed
+completely dissociated in
+solution but that each posi-
+tive ion was attended by a
+cloud of negative ions,
+while each negative ion
+was attended by a cloud of
+positive ions, The two types
+of ions therefore tended to
+insulate each other to some
+extent, and this gave the ap-
+pearance of incomplete dis-
+sociation. Debye, with an
+assistant, the German
+chemist Erich Huckel,
+worked out equations to
+represent the situation. The
+Debye-Huckel equations are
+the key to modern interpre-
+tation of the properties of
+solutions.
+
+Acid-Base Pairs
+
+After the notion of ionic dis-
+sociation was established
+by Arrhenius, an acid came
+to be defined as a substance
+that split up to yield hydro-
+gen ions, while a base was
+one that split up to yield hy-
+droxyl ions (OH;s-). These
+neutralized each other, be-
+cause hydrogen ions and hy-
+droxyl ions combined to
+form neutral water mole-
+cules.
+
+The Danish chemist Jo-
+hannes Nicolaus Bronsted
+(1879-1947) suggested a
+
+ 
+
+more general definition in
+1923. An acid didn’t simply
+give up a hydrogen ion
+(which could be viewed as
+a proton), because as a pro-
+ton, it could not exist loose
+in solution. The proton,
+once it broke free of the
+acid molecule, must
+promptly attach itself to an-
+other molecule. Therefore,
+chemists ought to speak of
+acid-base pairs. Whenever a
+proton transferred from
+one molecule to another,
+the one that gave up the
+proton was an acid, the
+one that accepted it was a
+base. This broadened the
+concept and made it more
+useful.
+
+Coenzyme
+Structure
+
+Harden had shown that the
+yeast enzyme that fer-
+mented sugar had a nonpro-
+tein portion, which he
+called a coenzyme (see
+1904). The chemical struc-
+ture of that coenzyme was
+unknown, however.
+
+It was not until 1923
+that a German chemist,
+Hans Karl August Simon
+von Euler-Chelpin (1873—
+1964), solved that problem
+and worked out the struc-
+ture of Harden's coenzyme.
+The structure was related
+to that of the nucleotides
+that formed the building
+blocks of nucleic acid mole-
+
+cules, and it received the
+name of diphosphopyridine
+nucleotide.
+
+The most interesting
+thing about the molecule
+was that a portion of it,
+when broken off, proved to
+be the well-known chemi-
+cal compound nicotin-
+amide, which could easily
+be changed to nicotinic
+acid. Both possessed a six-
+atom ring made up of five
+carbon atoms and a nitro-
+gen atom. This type of ring
+did not occur in living tis-
+sue except in this coenzyme
+and in other closely related
+compounds.
+
+For this work, Euler-
+Chelpin was awarded a
+share (with Harden) of the
+Nobel Prize for chemistry
+in 1929.
+
+Cepheids in
+Andromeda
+
+Three years earlier, Curtis
+had debated Shapley over
+whether the Andromeda
+nebula was a distant galaxy
+(see 1920).
+
+The still-new 100-inch
+telescope offered a way of
+settling the matter. The
+American astronomer
+Edwin Powell Hubble
+(1889-1953) used it in 1923
+to study the Andromeda
+nebula and managed to
+make out some ordinary
+stars (not novas) in it.
+Some of these stars were
+

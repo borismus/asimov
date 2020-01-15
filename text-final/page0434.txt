@@ -1,0 +1,151 @@
+ 
+
+ 
+
+4354
+
+This lowering is in propor-
+tion to the quantity of the
+substance dissolved.
+
+For different sub-
+stances, the amount of low-
+ering depends on the
+number of molecules pres-
+ent. If substance A has mol-
+ecules only half the mass of
+substance B’s molecules,
+and if equal masses of both
+are dissolved in separate
+quantities of water, there
+will be twice as many mole-
+cules of the half-sized A in
+solution as of the full-sized
+B. Substance A will there-
+fore be more effective in
+lowering the freezing point
+of water than substance B.
+
+That goes for sub-
+stances that don't conduct
+electric current in solution
+(nonelectrolytes). For sub-
+stances that do conduct
+electric current (electro-
+Iytes), the situation is differ-
+ent. For instance, when
+sodium chloride is dis-
+solved in water, one can cal-
+culate how many of its
+molecules are in solution
+and therefore how far the
+freezing point will be de-
+pressed. However, the freez-
+ing point is depressed twice
+as much as the calculated
+figure. The same is true for
+potassium bromide and so-
+dium nitrate. With sub-
+stances like barium
+chloride and sodium sul-
+fate, the depression of the
+freezing point is three
+times what is calculated.
+
+ 
+
+A Swedish chemistry
+student, Svante August
+Arrhenius (1859-1927), de-
+cided that the logical way
+to explain this was to sup-
+pose that sodium chloride
+molecules broke up into
+two fragments of opposite
+electrical charge (such frag-
+ments are called ions, a
+word first used by Faraday
+—see 1821). The ions car-
+ried the current, and since
+there were twice as many
+particles as there would
+have been if the molecule
+had remained intact, this
+accounted for the doubled
+depression of the freezing
+point. In the same way, bar-
+ium chloride must break up
+into three ions, and so on.
+
+In 1884 Arrhenius pre-
+sented his theory of ionic
+dissociation as his Ph.D.
+thesis. It was not greeted
+with enthusiasm, for chem-
+ists had assumed for a cen-
+tury that atoms were
+featureless, indestructible,
+and unchanging. The
+thought of atoms carrying
+electric charges lent them
+features and a structure,
+and that was hard to ac-
+cept. However, Arrhenius’s
+theory made sense in every
+other way, so he was given
+a passing grade—but the
+lowest possible one. In
+1903, when key discoveries
+had been made concerning
+the atom’s structure, this
+same thesis obtained for
+Arrhenius a Nobel Prize.
+
+Sugar Structure
+
+Though sugars had been
+studied throughout the
+nineteenth century, and
+though their atomic con-
+tent was more or less
+known, the actual three-
+dimensional arrangement
+of the atoms was not
+known. The work of van’t
+Hoff, ten years before, had
+shown the importance of
+the three-dimensional
+arrangement of atoms in
+a molecule and the way
+this could be responsible
+for optical activity (see
+1874).
+
+In a long series of ex-
+periments beginning in
+1884, the German chemist
+Emil Hermann Fischer
+(1852—1919) isolated pure
+sugars and studied their
+structures. He showed that
+the best-known sugars con-
+tained six carbon atoms
+and could exist in sixteen
+varieties, depending on
+how the carbon bonds were
+arranged. Each different ar-
+rangement was reflected in
+the way the plane of light
+polarization was twisted.
+
+Fischer showed that
+there were two series of sug-
+ars, mirror images of each
+other, which he called the
+D-series and the L-series. He
+had to pick which mirror
+image belonged to which
+method of writing the for-
+mula, and he did so arbi-
+trarily. He had a fifty-fifty
+

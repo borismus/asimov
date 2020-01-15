@@ -1,0 +1,120 @@
+1926
+
+ 
+
+Wave
+Mechanics
+
+Three years earlier, de
+Broglie had suggested that
+particles such as electrons
+might have wave aspects
+(see 1923).
+
+In 1926 an Austrian
+physicist, Erwin Schro-
+dinger (1887—1961), de-
+cided that if the electron
+was viewed as a wave
+rather than as a particle,
+Bohr's electron orbits (see
+1913 and 1915) might make
+more sense.
+
+Schrédinger imagined
+an atom in which the elec-
+tron could be in any orbit,
+provided that its matter-
+waves would extend
+around that orbit in an inte-
+gral number of wave-
+lengths. This would pro-
+duce a standing wave and
+therefore would not repre-
+sent an electric charge in os-
+cillation. The electron, as
+long as it remained in such
+an orbit, need not radiate
+light and would not violate
+the conditions of Maxwell’s
+equations (see 1865).
+
+Furthermore, the per-
+missible orbits worked out
+by Bohr and others all in-
+volved whole wavelengths,
+and the lowest orbit was
+one that involved a single
+wavelength. In this way,
+Bohr's suggestions came to
+make solid sense.
+
+This view of Schro-
+dinger's was called wave
+mechanics, and it was soon
+shown to be mathemati-
+cally equivalent to Heisen-
+berg's matrix mechanics of
+the year before (see 1925).
+However, Schradinger’s
+waves seemed the more
+attractive idea of the
+two, because they did offer
+the mind a picture of
+the atom.
+
+Schrodinger worked
+out the mathematical un-
+derpinnings of wave me-
+chanics; a key relationship
+that he presented is known
+as the Schrodinger wave
+equation.
+
+For his work on wave
+mechanics, Schrodinger
+was awarded a share (along
+with Dirac—see 1930) of
+the Nobel Prize for physics
+in 1933.
+
+Wave Packets
+
+Like Schradinger (see
+above), the German physi-
+cist Max Born (1882—1970)
+tried to work out the impli-
+cations of the electron
+viewed as a wave. He gave
+electron waves a probabilis-
+tic interpretation: the rise
+and fall of waves could be
+taken to indicate the rise
+and fall in probability that
+the electron behaved as
+though it was a particle ex-
+isting at those points in the
+wave packet.
+
+He also worked on the
+mathematical basis of such
+a view. He, Schrodinger,
+and Heisenberg (see 1925)
+may be viewed as the inven-
+tors of quantum mechanics,
+which ever since has been
+used to interpret chemistry
+and subatomic physics
+with remarkable success.
+Quantum mechanics and
+Einstein's relativity (see
+1905 and 1916) are the two
+great theoretical founda-
+tions of twentieth-century
+physics.
+
+For his work on quan-
+tum mechanics, Born was
+
+ 
+

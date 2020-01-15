@@ -1,0 +1,145 @@
+ 
+
+ 
+
+the change of neutrons to
+protons, which liberated
+antineutrinos rather than
+neutrinos. However, if anti-
+neutrinos existed, no scien-
+tist alive would doubt for a
+minute that neutrinos ex-
+isted also.)
+
+Although antineutrinos
+scarcely interact with other
+particles, every once in a
+while one out of trillions
+will collide squarely with a
+proton, converting it to a
+neutron (the opposite of the
+change that produced the
+antineutrino in the first
+place) and liberating an an-
+tielectron (positron) as
+well. It was necessary to
+watch for the simultaneous
+appearance of a neutron
+and an antielectron, to-
+gether with gamma rays of
+a certain energy arising
+after a certain interval.
+
+In 1956 two American
+physicists, Frederick Reines
+(b. 1918) and Clyde Lorrain
+Cowan (b. 1919), set up the
+necessary detection system
+and snared a few antineutri-
+nos.
+
+Eventually, neutrinos
+themselves were detected
+in solar radiation.
+
+Conservation of
+Parity
+Physicists had worked out
+
+conservation laws that dic-
+tated conservation of en-
+
+ergy, momentum, angular
+momentum, and electric
+charge, among others. In
+every case, this meant that
+the total quantity of that
+property in a closed system
+(one that did not interact
+with objects outside the sys-
+tem) could not change, no
+matter what happened
+within the system. The as-
+sumption was that such
+conservation laws were uni-
+versal.
+
+The study of subatomic
+particles showed that these
+conservation laws held in
+the subatomic realm as
+well. In addition, new
+conservation laws were
+discovered, such as the
+conservation of parity. Par-
+ity was the quality of being
+either odd or even. Just as
+in numbers, odd parity plus
+odd parity equaled even
+parity; even parity plus
+even parity equaled even
+parity; but odd parity plus
+even parity equaled odd
+parity. Each particle was
+assigned a particular par-
+ity, either odd or even, so
+that the total of all the par-
+ticles in a closed system
+was either odd or even. No
+matter what happened to
+the particles within the sys-
+tem, if it began even, it
+ended even, and if it began
+odd, it ended odd. At least,
+so it was assumed.
+
+Then trouble arose
+with kaons. Sometimes
+
+kaons broke down to two
+pions, which together had
+even parity; and sometimes
+to three pions, which to-
+gether had odd parity, It
+was concluded that there
+were two kinds of kaons,
+one with even parity and
+one with odd. However, no
+one could detect any differ-
+ence between the two kinds
+of kaons or predict which
+one a particular kaon
+would be.
+
+In 1956 two Chinese
+physicists, Yang Chen Ning
+(b. 1922) and Lee Tsung-
+dao (b. 1926), suggested
+that there was only one
+kind of kaon, but that since
+kaons broke down through
+the weak interaction, and
+since in the weak interac-
+tion parity was not neces-
+sarily conserved, then a
+kaon could break down into
+either two or three pions in-
+discriminately. They
+pointed out that if parity
+was conserved in the weak
+interaction, then in certain
+particle changes, electrons
+would come out in equal
+amounts, left and right. If
+parity was not conserved,
+then electrons would come
+out predominantly in one
+direction. The experiment
+was performed, and the
+electrons came out predom-
+inantly in one direction.
+
+This meant that al-
+though parity seemed to be
+conserved in the strong in-
+

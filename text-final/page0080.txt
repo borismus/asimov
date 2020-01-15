@@ -1,0 +1,102 @@
+810
+
+ 
+
+Zero
+
+Human beings had been
+manipulating numbers ever
+since they had begun writ-
+ing, about twenty-three cen-
+turies earlier. In general,
+there would be a tendency
+to make score marks for
+units, so that 4 would
+be /// /. Different marks
+would be introduced for
+fives, tens, and fifties, to
+avoid having to make too
+many score marks. Or else,
+as in the case of the Jews
+and Greeks, letters of the al-
+phabet would be used
+(which introduced nonsig-
+nificant connections be-
+tween words and numbers
+and introduced the supersti-
+tious folly of numerology).
+It might have occurred
+to someone to use the same
+numbers for units, tens,
+hundreds, and so on,
+merely placing the num-
+bers in different positions
+
+for each level, as on an aba-
+cus (see 500 B.c.). No one
+tried this positional nota-
+tion, however, because no
+one thought of using a sym-
+bol for an abacus level in
+which no beads had been
+moved
+
+For example, if you
+want to indicate 507 on an
+abacus, you move 5 beads
+at the hundreds level and 7
+at the units level. You can
+record the 5 and the 7, but
+how do you indicate that
+the tens level hasn't been
+touched?
+
+About the year 500,
+some Indian mathemati-
+cian suggested that such an
+untouched abacus level be
+given a special symbol.
+(Our symbol is 0 and we
+call it zero.) This meant
+that you could no longer
+confuse 507 with 57 or 570.
+The Arabs may have picked
+it up from the Hindus
+about the year 700.
+
+ 
+
+The first important
+mathematician to make use
+of this positional notation
+was an Arab, Muhammad
+ibn Al-Khwarizmi (780—
+850), who wrote a book fea-
+turing it about 810. (In the
+book he coined a term that
+in English became algebra.)
+
+The new system slowly
+penetrated Europe, which
+took centuries to give up its
+clumsy Roman numerals
+and take up the new Arabic
+numerals (although, of
+course, the numerals were
+Indian to start with). It
+took centuries to overcome
+the habit of sticking to
+something inconvenient
+but customary rather than
+adopting something good
+but new. Still, it was done
+in the end, and the transi-
+tion democratized arith-
+metical computation,
+bringing it within reach of
+everyone.
+
+ 
+
+ 
+

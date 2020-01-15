@@ -1,0 +1,148 @@
+ 
+
+ 
+
+quantities from petroleum,
+and the kerosene lamp be-
+came almost universal in
+the United States and else-
+where. Kerosene served to
+replace whale oil and to cut
+down somewhat on the car-
+nage that humanity was vis-
+iting on those inoffensive
+animals.
+
+Much more than that,
+however, lay in the future.
+
+Storage Battery
+
+All the electric batteries
+used in the six decades
+since Volta had invented
+the first one (see 1800) were
+one-shot affairs. The chemi-
+cal reaction that gave rise
+to the electric current even-
+tually proceeded to a point
+where it could no longer
+support current. It then
+had to be discarded, for the
+chemical reaction could not
+be reversed.
+
+Yet some chemical re-
+actions are easily revers-
+ible. In 1859 a French
+physicist, Gaston Planté
+(1834—1889), took two
+sheets of lead, with an insu-
+lating sheet of rubber be-
+tween them, rolled the lead
+sheets into a spiral, and up-
+ended it into dilute sulfuric
+acid. He found that a chemi-
+cal reaction resulted that
+would produce an electric
+current. Furthermore,
+when the battery was dis-
+charged, an electric current
+could be forced through it
+
+in the opposite direction,
+and the chemical reaction
+would be reversed, so that
+the battery could eventu-
+ally produce an electric cur-
+rent again.
+
+Naturally, we are not
+getting something for noth-
+ing. The second law of ther-
+modynamics (see 1850)
+would not allow that. The
+electrical energy required
+to charge a storage battery
+is always greater than the
+amount it can then deliver.
+It would be a lasing propo-
+sition, therefore, to charge
+a discharged storage bat-
+tery from one that was fully
+charged. To charge a stor-
+age battery, you must get
+your electricity from a gen-
+erator that makes use of
+fuel energy or some other
+nonelectrical source of en-
+ergy.
+
+Spectral Lines
+and Elements
+
+Since their discovery by
+Fraunhofer nearly half a
+century before (see 1814),
+spectral lines had not been
+connected with chemistry.
+The German physicist
+Gustav Robert Kirchhoff
+(1824-1887), however, had
+carefully studied the spec-
+tra of light produced when
+various elements were
+heated to incandescence.
+He found that each element
+produced light of only cer-
+
+tain wavelengths, so that
+the spectrum consisted
+sometimes of only a few
+lines of light, which were
+sometimes well separated.
+
+In 1859 Kirchhoff an-
+nounced that every element
+produced characteristic
+spectral lines, which it also
+absorbed when its vapors
+were cooler than the light
+source. The pattern of lines
+was different for each ele-
+ment; no two elements
+shared spectral lines in ex-
+actly the same pasitions. In
+essence, each element had a
+spectral “fingerprint.”
+
+This meant that if any
+sample of ore, on being
+heated to incandescence,
+produced even a single
+spectral line in a position
+not recorded for any known
+element, then some new ele-
+ment must be present in
+that ore.
+
+Making use of such
+spectroscopic data, Kirch-
+hoff discovered cesium in
+1860. The name is derived
+from the Latin word for
+"sky-blue,” since that was
+the color of the spectral
+line that had given away ce-
+sium'’s existence, The next
+year Kirchhoff discovered
+rubidium, a related ele-
+ment, its name coming
+from the Latin for “red.”
+
+Kirchhoff also pointed
+out that the dark lines in
+the solar spectrum were the
+result of light being ab-
+sorbed by the gases in the
+

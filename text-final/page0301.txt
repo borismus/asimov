@@ -1,0 +1,82 @@
+1814
+
+ 
+
+Spectral Lines
+
+Since Newton had first
+studied the spectrum (see
+1666), nothing much had
+followed. Wollaston (see
+1800) in 1802 had observed
+a few dark lines in the spec-
+trum but had supposed
+them to be boundary lines
+between the colors and had
+not followed up on the mat-
+ter.
+
+Meanwhile a German
+physicist, Joseph von
+Fraunhofer (1787—1826),
+was meticulously manufac-
+turing the best lenses and
+prisms yet made. In 1814
+he was testing one by send-
+ing sunlight through a nar-
+row slit and then through
+the prism. In effect, he pro-
+duced innumerable lines of
+
+light, each an image of the
+slit and each containing a
+very narrow band of wave-
+lengths. Some wavelengths
+were missing, however, so
+that the slit images at those
+particular wavelengths
+were dark. The result was
+that the solar spectrum was
+crossed by dark lines.
+
+In theory, these should
+always have been visible,
+even to Newton, but if the
+prism was somewhat im-
+perfect and the slit too
+wide, there would be
+enough fuzziness to obscure
+them. Where Newton had
+reported none and Wollas-
+ton seven, Fraunhofer, with
+his excellent instrument,
+detected nearly six hundred
+lines.
+
+Fraunhofer went on to
+
+measure the position of the
+more prominent lines,
+which he marked off with
+letters from A to K, and
+showed that they always
+fell in the same portion of
+the spectrum, whether the
+light came directly from
+the Sun or was reflected
+from the Moon or planets,
+Eventually he mapped the
+wavelengths of several hun-
+dred of these Fraunhofer
+lines, as they were called.
+
+Not much was done
+with these spectral lines for
+the next half-century, but
+eventually they proved to
+be major items in the re-
+search armory of chemists
+and astronomers.
+
+ 
+

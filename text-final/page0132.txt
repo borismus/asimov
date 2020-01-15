@@ -1,0 +1,102 @@
+1568
+
+ 
+
+World Maps
+
+Once the Age of Explora-
+tion began, it became im-
+portant to try to map the
+world in general and to do
+so accurately, so that
+navigators could reach
+their destinations more
+easily.
+
+The difficulty was that
+one cannot map a spherical
+surface on a plane surface
+without distortion. Since
+distortion is unavoidable,
+therefore, one must find a
+distortion that will remain
+useful.
+
+The answer was sup-
+plied by a Flemish geogra-
+pher, Gerhard Kremer
+(1512-1594), better known
+by his Latinized name, Ge-
+rardus Mercator. In 1568,
+Mercator perfected his cy-
+lindrical projection.
+
+Imagine a hollow cylin-
+
+der encircling the Earth
+and touching it all around
+the equator. A light at the
+Earth’s center can then be
+imagined as casting the
+shadow of the surface fea-
+tures on the cylinder, and
+the cylinder, when un-
+wrapped, will carry a map
+of the world, a Mercator
+map.
+
+In this map, the meridi-
+ans of longitude are verti-
+cal and parallel. Since, on
+the sphere, the meridians of
+longitude approach each
+other and meet at the poles,
+this means that in a Merca-
+tor projection, the east-west
+distances are increasingly
+exaggerated as one travels
+north or south from the
+equator. The parallels of
+latitude run horizontal and
+parallel, as they do on the
+sphere, but as one goes
+north and south from the
+
+equator, they spread out
+more widely, too.
+
+On such a map, Green-
+land looks larger than Af-
+rica, although in actual
+fact, Africa is thirteen times
+as large as Greenland.
+
+Nevertheless, the Mer-
+cator projection is useful
+for navigators, because a
+ship that travels in any con-
+stant compass direction
+moves in a straight line on
+the Mercator projection but
+in a curved line on any
+other type of projection.
+
+The cover of Mercator's
+book of maps showed Atlas,
+the mythological Greek
+Titan, holding the world on
+his shoulders. As a result,
+that book and all later
+books of maps have been
+called atlases.
+
+With Mercator, Greek
+geography ended and mod-
+ern geography began.
+
+ 
+
+  
+
+ 
+

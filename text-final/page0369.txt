@@ -1,0 +1,174 @@
+ 
+
+the incidence of cholera fell
+at once.
+
+This gave a powerful
+impetus to improving hy-
+giene as a means of disease
+prevention.
+
+Telegraph
+Plateau
+
+With cables laid across the
+Hudson and Mississippi riv-
+ers in the 1840s and under
+the English Channel and
+the Irish Sea in the 1850s
+(see 1851), it became natu-
+ral to think of a real job,
+that of laying a cable under
+the Atlantic Ocean to con-
+nect Europe and America.
+The process of laying
+such a cable required some
+understanding of what the
+floor of the Atlantic Ocean
+was like, and the task fell to
+the American oceanogra-
+pher Matthew Fontaine
+Maury (1806—1873). In the
+early 1850s he had pre-
+pared a chart of ocean
+depths, and by 1854 he had
+noted that the Atlantic
+Ocean was shallower in the
+center than on either side.
+He concluded that there was
+a central plateau, which he
+called Telegraph Plateau.
+
+This was the first im-
+portant physical finding
+concern
+
+ 
+
+1e ocean bot-
+tom, and little more was to
+be learned for another cen-
+tury
+
+Non-Euclidean
+Geometry
+
+The non-Euclidean geome-
+try worked out by Loba-
+chevsky and Bolyai (see
+1826) presupposed the pos-
+sibility of more than one
+line through a point (even
+an infinite number of lines),
+all parallel to a given line
+that did not include the
+point. As in Euclidean ge-
+ometry, lines of infinite
+length were possible.
+
+In 1854 a German
+mathematician, Georg
+Friedrich Bernhard Rie-
+mann (1826-1866), devel-
+oped another kind of non-
+Euclidean geometry, one in
+which it was impossible for
+
+ 
+
+  
+
+any two lines to be parallel,
+and all lines intersec
+What's more, in th
+try all lines were finite in
+length. In Euclidean geome-
+try, the three angles of a tri-
+le add up to 360
+degrees; in Lobachevskian
+
+  
+
+ 
+
+an
+
+ 
+
+ 
+
+geometry, they add up to
+
+rees; and
+
+ 
+
+ss than 360 de;
+in Riemannian geometry
+they add up to more than
+360 de
+
+Riemann S geometry 1S
+
+ 
+
+perfectly reasonable and
+
+self-consistent. Indeed, it re-
+
+ 
+
+sembles the
+
+ 
+
+zeometry on
+the surface of a sphere
+
+where al
+
+ 
+
+sreal circles (those
+that divide the surface into
+equal halves) are finite in
+
+th and intersect
+Riemann generalized
+geometry to the point
+
+ 
+
+le
+
+where he considered it in
+any number of dimensions
+He also considered situa-
+tions in which measure-
+ments changed from point
+to point in space but in
+such a way that one could
+transform one set ‘)1 mea-
+surements into another ac-
+cording to a fixed rule.
+
+At the time, this
+sounded like pure abstrac-
+ion, but half a century
+later, Riemannian geome-
+try was shown to re present
+
+ 
+
+ 
+
+L
+
+a truer picture of the Uni-
+verse than did Euclid’s ge
+ometry, thanks to the
+
+theory of general relativity
+
+ 
+

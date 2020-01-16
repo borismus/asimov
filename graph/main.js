@@ -35,6 +35,7 @@ function render(data) {
     .join("circle")
     .attr("r", 5)
     .attr("fill", color)
+    .on("click", clicked)
     .call(drag(simulation));
 
   node.append("title")
@@ -53,6 +54,14 @@ function render(data) {
   });
 
   //invalidation.then(() => simulation.stop());
+
+  function clicked(d) {
+    if (d3.event.defaultPrevented) return; // dragged
+    console.log('clicked');
+
+    d.fx = null;
+    d.fy = null;
+  }
 }
 
 const drag = simulation => {
@@ -70,7 +79,7 @@ const drag = simulation => {
 
   function dragended(d) {
     if (!d3.event.active) simulation.alphaTarget(0);
-    d.fx = null;
+    d.fx = d3.event.x;
     d.fy = null;
   }
 

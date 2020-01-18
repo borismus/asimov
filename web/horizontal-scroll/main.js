@@ -1,14 +1,16 @@
-import {loadGraph} from './graph.js';
-import {formatYear} from './utils.js';
+import {formatYear, loadGraph} from '../utils.js';
+import {renderCard} from '../card.js';
 
-const width = window.innerWidth;
+//const width = window.innerWidth;
+const width = 60000;
 const height = window.innerHeight;
 
 let x;
+let y;
 let svg;
 
 async function init() {
-  const data = await loadGraph('asimov-1700.csv');
+  const data = await loadGraph('../asimov-1700.csv');
   render(data);
 }
 
@@ -19,32 +21,27 @@ function render(data) {
   const simulation = d3.forceSimulation(nodes)
     .force('link', d3.forceLink(links).id(d => d.id))
     .force('charge', d3.forceManyBody())
+    .force('collide', d3.forceCollide().radius(50))
     .force('center', d3.forceCenter(width / 2, height / 2));
 
   svg = d3.select('#container').append('svg')
+    .attr('width', width)
     .attr('viewBox', [0, 0, width, height]);
 
   const link = svg.append('g')
-    .attr('stroke', '#999')
-    .attr('stroke-opacity', 0.6)
+    .attr('class', 'link')
     .selectAll('line')
     .data(links)
     .join('line')
-    .attr('stroke-width', d => Math.sqrt(d.value));
 
-  const node = svg.append('g')
-    .attr('stroke', '#fff')
-    .attr('stroke-width', 1.5)
-    .selectAll('circle')
+  const node = svg.selectAll('g')
     .data(nodes)
-    .join('circle')
-    .attr('r', 5)
-    .attr('fill', color)
+    .enter()
+    .append('g')
     .on('click', clicked)
     .call(drag(simulation));
 
-  node.append('title')
-    .text(d => d.id);
+  renderCard(node);
 
   // Create a scale from years to X coordinates.
   const firstYear = nodes[0].year;
@@ -59,26 +56,31 @@ function render(data) {
     const yearsRemaining = year - lastYear - 1;
     return scale(yearsRemaining);
   };
+  y = val => {
+    return Math.min(Math.max(0, val), height);
+  };
 
   simulation.on('tick', () => {
     link
       .attr('x1', d => x(d.source.year))
-      .attr('y1', d => d.source.y)
+      .attr('y1', d => y(d.source.y))
       .attr('x2', d => x(d.target.year))
-      .attr('y2', d => d.target.y);
+      .attr('y2', d => y(d.target.y));
 
     node
-      .attr('cx', d => x(d.year))
-      .attr('cy', d => d.y);
+      .attr('transform', d => {
+        return `translate(${x(d.year)}, ${y(d.y)})`
+      });
   });
 
-  function clicked(d) {
-    if (d3.event.defaultPrevented) return; // dragged
-    console.log('clicked');
-
-    d.fy = null;
-  }
   renderGuidelines(svg);
+}
+
+function clicked(d) {
+  if (d3.event.defaultPrevented) return; // dragged
+  console.log('clicked');
+
+  d.fy = null;
 }
 
 const drag = simulation => {
@@ -125,12 +127,11 @@ function renderGuidelines(svg) {
 
   guideline
     .append('line')
+    .attr('class', 'guideline')
     .attr('x1', d => x(d))
     .attr('x2', d => x(d))
     .attr('y1', 0)
     .attr('y2', height)
-    .attr('stroke-dasharray', '5,5')
-    .attr('stroke', '#ccc');
 
   guideline
     .append('text')

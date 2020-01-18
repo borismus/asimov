@@ -1,0 +1,14 @@
+.link {
+  stroke: #999;
+  stroke-opacity: 0.6;
+}
+
+.node {
+  stroke: #fff;
+  stroke-width: 1.5;
+}
+
+.guideline {
+  stroke-dasharray: 5,5;
+  stroke: #ccc;
+}

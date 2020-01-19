@@ -17,7 +17,6 @@
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 8px;
-  box-shadow: 0px 0px 5px #333;
 }
 
 .card-container.discovery { background: linear-gradient(var(--gradient-angle), rgba(var(--color1), 1), rgba(var(--color1), 0.5)); }

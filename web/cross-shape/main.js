@@ -23,7 +23,9 @@ async function init() {
   }
   window.addEventListener('keyup', onKeyUp);
   currentIndex = Math.floor(Math.random() * data.nodes.length);
+  currentIndex = 0;
   renderIndex(currentIndex);
+  renderLabels();
 }
 
 /**
@@ -57,7 +59,7 @@ function getVisibleCards(focusIndex, distance = 0) {
   // Get all next and previous cards.
   for (let i = 1; i < distance + 1; i++) {
     // Try to add a previous card.
-    if (focusIndex - i >= 0) {
+    if (focusIndex - i > 0) {
       const previous = cards[focusIndex - i];
       previous.dx = 0;
       previous.dy = -i;
@@ -89,7 +91,7 @@ function getParents(card) {
   }
   for (const [index, parent] of parents.entries()) {
     parent.dx = -1;
-    parent.dy = index;
+    parent.dy = getPosition(index, parents.length);
   }
   return parents;
 }
@@ -104,9 +106,23 @@ function getChildren(card) {
   }
   for (const [index, child] of children.entries()) {
     child.dx = 1;
-    child.dy = index;
+    child.dy = getPosition(index, children.length);
   }
   return children;
+}
+
+/** Given an index and the total number, get the position in the grid. For
+  * example, with index=0, total=1 => 0. index=0, total=2 => -0.5. index=1,
+  * total=3 => 0. */
+function getPosition(index, total, spacing=1) {
+  const width = spacing * (total - 1);
+  const position = index * spacing - width/2;
+  console.log('position', position);
+  return position;
+}
+
+function renderLabels() {
+  // Draw text for chronological labels and parent/children labels.
 }
 
 function renderIndex(index) {

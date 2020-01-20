@@ -23,7 +23,6 @@ async function init() {
   }
   window.addEventListener('keyup', onKeyUp);
   currentIndex = Math.floor(Math.random() * data.nodes.length);
-  currentIndex = 0;
   renderIndex(currentIndex);
   renderLabels();
 }
@@ -123,6 +122,21 @@ function getPosition(index, total, spacing=1) {
 
 function renderLabels() {
   // Draw text for chronological labels and parent/children labels.
+  const data = [
+    {
+      dx: 0, dy: -1, text: 'previous'
+    }, {
+      dx: 0, dy: 1, text: 'next'
+    }, {
+      dx: -1, dy: 0, text: 'depends on'
+    }, {
+      dx: 1, dy: 0, text: 'led to'
+    }
+  ];
+  const labels = svg.append('g').attr('class', 'labels');
+  labels.selectAll('text')
+    .data(data, d => d.text);
+
 }
 
 function renderIndex(index) {
@@ -144,17 +158,21 @@ function update(data) {
   cardsEnter.merge(cards);
 
   // Update existing cards.
-  cards.transition().duration(500)
+  cards.transition().duration(250)
     .attr('transform', d => getTransform(d));
 
   // Remove old cards.
-  cards.exit().remove();
+  cards.exit()
+    .style('animation', 'fadeout 0.25s')
+    .transition()
+    .remove();
 }
 
 function renderCrossCards(cardsEnter) {
   const cards = renderCard(cardsEnter);
   cards.on('click', onCardClick);
   cards.attr('transform', d => getTransform(d))
+  cards.style('animation', 'fadein 0.25s');
 }
 
 function onCardClick(card) {

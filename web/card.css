@@ -1,0 +1,73 @@
+:root {
+  /* RGB values from https://coolors.co/5bc0eb-fde74c-9bc53d-e55934-fa7921. */
+  --color1: 91, 192, 235;
+  --color2: 253, 231, 76;
+  --color3: 155, 197, 61;
+  --color4: 229, 89, 52;
+  --color5: 250, 121, 33;
+  --gradient-angle: 45deg;
+}
+
+.card-container {
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 8px;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes fadeout {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+.card-container.discovery { background: linear-gradient(var(--gradient-angle), rgba(var(--color1), 1), rgba(var(--color1), 0.5)); }
+.card-container.institution { background: linear-gradient(var(--gradient-angle), rgba(var(--color2), 1), rgba(var(--color2), 0.5)); }
+.card-container.invention { background: linear-gradient(var(--gradient-angle), rgba(var(--color3), 1), rgba(var(--color3), 0.5)); }
+.card-container.social { background: linear-gradient(var(--gradient-angle), rgba(var(--color4), 1), rgba(var(--color4), 0.5)); }
+.card-container.technique { background: linear-gradient(var(--gradient-angle), rgba(var(--color5), 1), rgba(var(--color5), 0.5)); }
+
+.card-container img {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.card-details {
+  width: 100%;
+  height: 100%;
+}
+
+
+.card-header .title, .card-center .inventor {
+  flex: 1;
+}
+
+.card-header, .card-center {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+}
+
+.card-header {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.card-center {
+  font-size: 16px;
+  font-weight: normal;
+  margin-top: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #333;
+  margin-bottom: 12px;
+}
+
+.card-body {
+  font-family: 'Slabo 27px', serif;
+  font-size: 14px;
+  hyphens: auto;
+}
+

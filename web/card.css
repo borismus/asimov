@@ -1,10 +1,14 @@
 :root {
-  /* RGB values from https://coolors.co/5bc0eb-fde74c-9bc53d-e55934-fa7921. */
-  --color1: 91, 192, 235;
-  --color2: 253, 231, 76;
-  --color3: 155, 197, 61;
-  --color4: 229, 89, 52;
-  --color5: 250, 121, 33;
+  /* hue and saturation values from
+   * https://coolors.co/5bc0eb-fde74c-9bc53d-e55934-fa7921. */
+  --hs1: 198, 78%;
+  --hs2: 53, 98%;
+  --hs3: 79, 54%;
+  --hs4: 13, 77%;
+  --hs5: 24, 96%;
+  --lumin1: 40%;
+  --lumin2: 60%;
+
   --gradient-angle: 45deg;
 }
 
@@ -23,11 +27,12 @@
   to { opacity: 0; }
 }
 
-.card-container.discovery { background: linear-gradient(var(--gradient-angle), rgba(var(--color1), 1), rgba(var(--color1), 0.5)); }
-.card-container.institution { background: linear-gradient(var(--gradient-angle), rgba(var(--color2), 1), rgba(var(--color2), 0.5)); }
-.card-container.invention { background: linear-gradient(var(--gradient-angle), rgba(var(--color3), 1), rgba(var(--color3), 0.5)); }
-.card-container.social { background: linear-gradient(var(--gradient-angle), rgba(var(--color4), 1), rgba(var(--color4), 0.5)); }
-.card-container.technique { background: linear-gradient(var(--gradient-angle), rgba(var(--color5), 1), rgba(var(--color5), 0.5)); }
+/** TODO: Use HSL to control lumininosity without resorting to alphas. */
+.card-container.discovery { background: linear-gradient(var(--gradient-angle), hsl(var(--hs1), var(--lumin1)), hsl(var(--hs1), var(--lumin2))); }
+.card-container.institution{ background: linear-gradient(var(--gradient-angle), hsl(var(--hs2), var(--lumin1)), hsl(var(--hs2), var(--lumin2))); }
+.card-container.invention { background: linear-gradient(var(--gradient-angle), hsl(var(--hs3), var(--lumin1)), hsl(var(--hs3), var(--lumin2))); }
+.card-container.social{ background: linear-gradient(var(--gradient-angle), hsl(var(--hs4), var(--lumin1)), hsl(var(--hs4), var(--lumin2))); }
+.card-container.technique { background: linear-gradient(var(--gradient-angle), hsl(var(--hs5), var(--lumin1)), hsl(var(--hs5), var(--lumin2))); }
 
 .card-container img {
   border: 1px solid rgba(0, 0, 0, 0.1);

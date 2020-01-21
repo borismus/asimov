@@ -11,6 +11,7 @@ const height = window.innerHeight;
 const svg = d3.select('#container').append('svg')
   .attr('width', width)
   .attr('viewBox', [0, 0, width, height]);
+const links = svg.append('g').attr('class', 'links');
 const nodes = svg.append('g').attr('class', 'nodes');
 
 let data;
@@ -49,6 +50,7 @@ function getVisibleCards(focusIndex, distance = 0) {
   const focusCard = cards[focusIndex];
   focusCard.dx = 0;
   focusCard.dy = 0;
+  focusCard.role = 'focus';
   console.log(`Focusing on ${focusCard.id}.`);
   visible.push(focusCard);
 
@@ -91,6 +93,7 @@ function getParents(card) {
   for (const [index, parent] of parents.entries()) {
     parent.dx = -1;
     parent.dy = getPosition(index, parents.length);
+    parent.role = 'parent';
   }
   return parents;
 }
@@ -106,6 +109,7 @@ function getChildren(card) {
   for (const [index, child] of children.entries()) {
     child.dx = 1;
     child.dy = getPosition(index, children.length);
+    child.role = 'child';
   }
   return children;
 }
@@ -125,18 +129,27 @@ function renderLabels() {
   const data = [
     {
       dx: 0, dy: -1, text: 'previous'
-    }, {
+    },
+    {
       dx: 0, dy: 1, text: 'next'
-    }, {
+    },
+    /*
+    {
       dx: -1, dy: 0, text: 'depends on'
-    }, {
+    },
+    {
       dx: 1, dy: 0, text: 'led to'
     }
+    */
   ];
   const labels = svg.append('g').attr('class', 'labels');
   labels.selectAll('text')
-    .data(data, d => d.text);
-
+    .data(data, d => d.text)
+    .enter()
+    .append('text')
+    .attr('class', 'label')
+    .html(d => d.text)
+    .attr('transform', d => getLabelTransform(d));
 }
 
 function renderIndex(index) {
@@ -145,12 +158,45 @@ function renderIndex(index) {
   update(visible);
 }
 
-function update(data) {
+function update(visibleNodes) {
+  updateLinks(visibleNodes);
+  updateNodes(visibleNodes);
+}
+
+function updateLinks(visibleNodes) {
+  // Filter all links to just include the ones between the visible cards.
+  const ids = visibleNodes.map(d => d.id);
+  const visibleLinks = data.links.filter(link =>
+    ids.includes(link.source.id) && ids.includes(link.target.id)
+  );
+
+  const cardLinks = links.selectAll('line')
+    .data(visibleLinks, d => d.source.id + d.target.id);
+
+  cardLinks.enter()
+    .append('line')
+    .attr('x1', d => getX(d.source))
+    .attr('y1', d => getY(d.source))
+    .attr('x2', d => getX(d.target))
+    .attr('y2', d => getY(d.target))
+    .merge(cardLinks);
+
+  cardLinks.transition().duration(250)
+    .attr('x1', d => getX(d.source))
+    .attr('y1', d => getY(d.source))
+    .attr('x2', d => getX(d.target))
+    .attr('y2', d => getY(d.target));
+
+  cardLinks.exit().remove();
+
+}
+
+function updateNodes(visibleNodes) {
   // Important: the following data call binds the data and assigns a key (in
   // this case, the ID), so that d3 knows which card is old and which is new.
   const cards = nodes
     .selectAll('foreignObject')
-    .data(data, d => d.id);
+    .data(visibleNodes, d => d.id);
 
   // Render new cards.
   const cardsEnter = cards.enter();
@@ -159,7 +205,7 @@ function update(data) {
 
   // Update existing cards.
   cards.transition().duration(250)
-    .attr('transform', d => getTransform(d));
+    .attr('transform', d => getCardTransform(d));
 
   // Remove old cards.
   cards.exit()
@@ -171,7 +217,7 @@ function update(data) {
 function renderCrossCards(cardsEnter) {
   const cards = renderCard(cardsEnter);
   cards.on('click', onCardClick);
-  cards.attr('transform', d => getTransform(d))
+  cards.attr('transform', d => getCardTransform(d))
   cards.style('animation', 'fadein 0.25s');
 }
 
@@ -180,12 +226,26 @@ function onCardClick(card) {
   renderIndex(currentIndex);
 }
 
-function getTransform(d) {
+function getCardTransform(card) {
+  return `translate(${getX(card)}, ${getY(card)})`;
+}
+
+function getLabelTransform(d) {
   const cx = width / 2;
   const cy = height / 2;
-  const xOffset = cx + d.dx * cardOffsetX;
-  const yOffset = cy + d.dy * cardOffsetY;
+  const xOffset = cx + d.dx * cardOffsetX / 2;
+  const yOffset = cy + d.dy * cardOffsetY / 2;
   return `translate(${xOffset}, ${yOffset})`;
+}
+
+function getX(card) {
+  const cx = width / 2;
+  return cx + card.dx * cardOffsetX;
+}
+
+function getY(card) {
+  const cy = height / 2;
+  return cy + card.dy * cardOffsetY;
 }
 
 function navigateToParent() {

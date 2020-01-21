@@ -54,8 +54,8 @@ export async function loadGraph(csvUrl) {
     const sourceIndex = ids.indexOf(depId);
     if (sourceIndex >= 0) {
       links.push({
-        source: ids[sourceIndex],
-        target: ids[targetIndex],
+        source: nodes[sourceIndex],
+        target: nodes[targetIndex],
       });
     } else {
       console.warn(`Found no dependency for ${depId}.`);

@@ -24,6 +24,7 @@ async function init() {
   }
   window.addEventListener('keyup', onKeyUp);
   currentIndex = Math.floor(Math.random() * data.nodes.length);
+  currentIndex = 0;
   renderIndex(currentIndex);
   renderLabels();
 }
@@ -188,7 +189,6 @@ function updateLinks(visibleNodes) {
     .attr('y2', d => getY(d.target));
 
   cardLinks.exit().remove();
-
 }
 
 function updateNodes(visibleNodes) {

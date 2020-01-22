@@ -36,7 +36,8 @@ export async function loadGraph(csvUrl) {
     location: row.Location,
     type: row.Type || 'Invention',
     url: row.URL,
-    image: `https://i.picsum.photos/id/${integer}/${imageWidth}/${imageHeight}.jpg`
+    //image: `https://i.picsum.photos/id/${integer}/${imageWidth}/${imageHeight}.jpg`,
+    image: `/images/${row.ID}.jpg`
   }));
 
   // Get all links from the raw data.

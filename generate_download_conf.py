@@ -13,7 +13,9 @@ def generate_conf(csv_path):
     for row in reader:
       ids.append(row['ID'])
 
-  return list(map(id_to_record, ids))
+  return {
+    'Records': list(map(id_to_record, ids))
+  }
 
 def id_to_record(id):
   return {

@@ -65,6 +65,7 @@ function getVisibleCards(focusIndex, distance = 0) {
       const previous = cards[focusIndex - i];
       previous.dx = 0;
       previous.dy = -i;
+      previous.role = 'previous';
       visible.push(previous);
     }
     // Try to add a next card.
@@ -72,6 +73,7 @@ function getVisibleCards(focusIndex, distance = 0) {
       const next = cards[focusIndex + i];
       next.dx = 0;
       next.dy = i;
+      next.role = 'next';
       visible.push(next);
     }
   }
@@ -207,6 +209,8 @@ function updateNodes(visibleNodes) {
   cards.transition().duration(250)
     .attr('transform', d => getCardTransform(d));
 
+  cards.classed('focus', d => d.role == 'focus');
+
   // Remove old cards.
   cards.exit()
     .style('animation', 'fadeout 0.25s')
@@ -219,6 +223,7 @@ function renderCrossCards(cardsEnter) {
   cards.on('click', onCardClick);
   cards.attr('transform', d => getCardTransform(d))
   cards.style('animation', 'fadein 0.25s');
+  cards.classed('focus', d => d.role == 'focus');
 }
 
 function onCardClick(card) {

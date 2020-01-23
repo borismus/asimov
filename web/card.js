@@ -19,7 +19,7 @@ export function renderCard(card) {
     .html(
       d => `
       <header class='card-header'>
-        <div class='title'>${d.title}</div>
+        <div class='title' title='${d.title}'>${d.title}</div>
         <div class='year'>${formatYear(d.year)}</div>
       </header>
       <img src='${d.image}' alt='Image for ${d.id}'/>

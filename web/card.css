@@ -13,9 +13,13 @@
 }
 
 .card-container {
-  border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 8px;
+  cursor: pointer;
+}
+
+.card-container.focus {
+  outline: 5px solid blue;
 }
 
 @keyframes fadein {
@@ -36,7 +40,11 @@
 
 .card-container img {
   border: 1px solid rgba(0, 0, 0, 0.1);
+  max-width: 240px;
+  max-height: 135px;
   width: 100%;
+  height: auto;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .card-details {
@@ -47,6 +55,15 @@
 
 .card-header .title, .card-center .inventor {
   flex: 1;
+}
+
+.card-header .title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.card-header .year {
+  padding-left: 10px;
 }
 
 .card-header, .card-center {

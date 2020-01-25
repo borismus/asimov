@@ -19,7 +19,11 @@ def convert_images():
     source = os.path.join(in_dir, image)
     target = os.path.join(out_dir, '%s.jpg' % name)
 
-    os.system(f'convert \"{source}\" -resize "{width}x{height}^" -gravity center -crop {width}x{height}+0+0 +repage "{target}"')
+    os.system(f'convert "{source}" \
+        -background white -alpha remove -alpha off \
+        -resize "{width}x{height}^" \
+        -gravity center -crop {width}x{height}+0+0 +repage "{target}"')
+    print(f'Wrote {target}.')
 
 if __name__ == '__main__':
   convert_images()

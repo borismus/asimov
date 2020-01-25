@@ -29,7 +29,7 @@ export async function loadGraph(csvUrl) {
   const nodes = rows.map(row => ({
     id: row.ID,
     year: parseYear(row.Year),
-    deps: row.Dependencies.split(',').map(dep => dep.trim()),
+    deps: parseDeps(row.Dependencies),
     title: row.Title,
     description: row.Description,
     inventor: row.Inventor,
@@ -42,24 +42,25 @@ export async function loadGraph(csvUrl) {
 
   // Get all links from the raw data.
   const links = [];
-  const ids = rows.map(row => row.ID);
-  const deps = rows.map(row => row.Dependencies);
+  const ids = nodes.map(node => node.id);
+  const deps = nodes.map(node => node.deps);
 
-  for (let [targetIndex, depId] of deps.entries()) {
-    if (!depId) {
-      console.info(`No dependencies listed for ${depId}.`);
+  for (let [targetIndex, depIds] of deps.entries()) {
+    if (!depIds) {
       continue;
     }
     // If an ID of a row is also listed as a dependency of the row (there can
     // only be one for now), the nodes are linked.
-    const sourceIndex = ids.indexOf(depId);
-    if (sourceIndex >= 0) {
-      links.push({
-        source: nodes[sourceIndex],
-        target: nodes[targetIndex],
-      });
-    } else {
-      console.warn(`Found no dependency for ${depId}.`);
+    for (const depId of depIds) {
+      const sourceIndex = ids.indexOf(depId);
+      if (sourceIndex >= 0) {
+        links.push({
+          source: nodes[sourceIndex],
+          target: nodes[targetIndex],
+        });
+      } else {
+        console.warn(`Found no entry for ${depId}.`);
+      }
     }
   }
   console.log(`Found ${links.length} links.`);
@@ -67,4 +68,11 @@ export async function loadGraph(csvUrl) {
     nodes,
     links
   };
+}
+
+function parseDeps(depsString) {
+  if (!depsString) {
+    return [];
+  }
+  return depsString.split(',').map(dep => dep.trim());
 }

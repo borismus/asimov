@@ -17,21 +17,30 @@ const nodes = svg.append('g').attr('class', 'nodes');
 let data;
 let currentIndex;
 
-async function init() {
+async function onLoad() {
   data = await loadGraph('../asimov-1700.csv');
   for (let [index, card] of data.nodes.entries()) {
     card.index = index;
   }
   window.addEventListener('keyup', onKeyUp);
-  currentIndex = Math.floor(Math.random() * data.nodes.length);
-  currentIndex = 0;
-  renderIndex(currentIndex);
+  let startIndex = 0;
+  if (window.location.hash) {
+    const id = window.location.hash.slice(1);
+    const ids = data.nodes.map(n => n.id);
+    startIndex = ids.indexOf(id);
+  } else {
+    startIndex = Math.floor(Math.random() * data.nodes.length);
+  }
+  changeFocusIndex(startIndex);
   renderLabels();
 }
 
+function onHashChange() {
+}
+
 /**
- * Get all cards that are currently visible, given the focus card, and distance
- * from it. If distance is zero, only show the focus card. If it's one, show
+ * Get all cards that are currently visible, given the focus card, and depth
+ * from it. If depth is zero, only show the focus card. If it's one, show
  * next, previous, any parents and children. If it's two, show next and
  * next-next, previous and previous-previous, parents and grandparents, children
  * and grandchildren.
@@ -41,7 +50,7 @@ async function init() {
  * may be shared by multiple cards, in which case they will fan out in the
  * y-axis.
  */
-function getVisibleCards(focusIndex, distance = 0) {
+function getVisibleCards(focusIndex, depth = 0) {
   const cards = data.nodes;
   let visible = [];
 
@@ -55,11 +64,11 @@ function getVisibleCards(focusIndex, distance = 0) {
   console.log(`Focusing on ${focusCard.id}.`);
   visible.push(focusCard);
 
-  if (distance === 0) {
+  if (depth === 0) {
     return visible;
   }
   // Get all next and previous cards.
-  for (let i = 1; i < distance + 1; i++) {
+  for (let i = 1; i < depth + 1; i++) {
     // Try to add a previous card.
     if (focusIndex - i > 0) {
       const previous = cards[focusIndex - i];
@@ -79,10 +88,44 @@ function getVisibleCards(focusIndex, distance = 0) {
   }
 
   // TODO: Get all parents and children recursively to a certain level.
-  visible = visible.concat(getParents(focusCard));
-  visible = visible.concat(getChildren(focusCard));
+  const ancestors = getAncestors(focusCard, depth)
+  console.log(`${focusCard.id} has ${ancestors.length} ancestors with depth ${depth}.`);
+  visible = visible.concat(ancestors);
+  visible = visible.concat(getDescendants(focusCard));
 
   return visible;
+}
+
+function getAncestors(card, depth, offset = 0) {
+  // Base case.
+  if (offset === depth) {
+    return [];
+  }
+  let ancestors = [];
+  for (const parent of getParents(card)) {
+    parent.dx = -offset - 1;
+    ancestors.push(parent);
+    ancestors = ancestors.concat(getAncestors(parent, depth, offset + 1));
+  }
+  // Make sure we don't have dupes.
+  ancestors = [...new Set(ancestors)];
+  return ancestors;
+}
+
+function getDescendants(card, depth, offset = 0) {
+  // Base case.
+  if (offset === depth) {
+    return [];
+  }
+  let descendants = [];
+  for (const child of getChildren(card)) {
+    child.dx = offset + 1;
+    descendants.push(child);
+    descendants = descendants.concat(getDescendants(child, depth, offset + 1));
+  }
+  // Make sure we don't have dupes.
+  descendants = [...new Set(descendants)];
+  return descendants;
 }
 
 function getParents(card) {
@@ -123,7 +166,6 @@ function getChildren(card) {
 function getPosition(index, total, spacing=1) {
   const width = spacing * (total - 1);
   const position = index * spacing - width/2;
-  console.log('position', position);
   return position;
 }
 
@@ -157,7 +199,7 @@ function renderLabels() {
 
 function renderIndex(index) {
   const {links, nodes} = data;
-  const visible = getVisibleCards(index, 1);
+  const visible = getVisibleCards(index, 2);
   update(visible);
 }
 
@@ -227,7 +269,12 @@ function renderCrossCards(cardsEnter) {
 }
 
 function onCardClick(card) {
-  currentIndex = card.index;
+  changeFocusIndex(card.index);
+}
+
+function changeFocusIndex(cardIndex) {
+  currentIndex = cardIndex;
+  window.location.hash = data.nodes[cardIndex].id;
   renderIndex(currentIndex);
 }
 
@@ -261,8 +308,7 @@ function navigateToParent() {
     return;
   }
 
-  currentIndex = parents[0].index;
-  renderIndex(currentIndex);
+  changeFocusIndex(parents[0].index);
 }
 
 function navigateToChild() {
@@ -273,19 +319,16 @@ function navigateToChild() {
     return;
   }
 
-  currentIndex = children[0].index;
-  renderIndex(currentIndex);
+  changeFocusIndex(children[0].index);
 }
 
 function onKeyUp(e) {
   switch (e.code) {
     case 'ArrowUp':
-      currentIndex -= 1;
-      renderIndex(currentIndex);
+      changeFocusIndex(currentIndex - 1);
       break;
     case 'ArrowDown':
-      currentIndex += 1;
-      renderIndex(currentIndex);
+      changeFocusIndex(currentIndex + 1);
       break;
     case 'ArrowRight':
       navigateToChild();
@@ -296,4 +339,5 @@ function onKeyUp(e) {
   }
 }
 
-window.addEventListener('load', init);
+window.addEventListener('load', onLoad);
+window.addEventListener('hashchange', onHashChange);

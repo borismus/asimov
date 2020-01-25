@@ -16,9 +16,11 @@
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 8px;
   cursor: pointer;
+  border-radius: 10px;
 }
 
 .card-container.focus {
+  border-radius: 0;
   outline: 5px solid blue;
 }
 
@@ -44,7 +46,7 @@
   max-height: 135px;
   width: 100%;
   height: auto;
-  background: rgba(0, 0, 0, 0.5);
+  background: white;
 }
 
 .card-details {

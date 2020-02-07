@@ -1,6 +1,6 @@
 import {formatYear} from './utils.js';
 
-const cardAspect = 2.5 / 3.5;
+const cardAspect = 1;
 export const cardWidth = 240;
 export const cardHeight = cardWidth / cardAspect;
 
@@ -22,14 +22,13 @@ export function renderCard(card) {
         <div class='title' title='${d.title}'>${d.title}</div>
         <div class='year'>${formatYear(d.year)}</div>
       </header>
-      <img src='${d.image}' alt='Image for ${d.id}'/>
-      <section class='card-center'>
+      <section class='card-body'>
+        ${d.description}
+      </section>
+      <footer class='card-footer'>
         <div class='inventor'>${d.inventor}</div>
         <div class='location'>${d.location}</div>
-      </section>
-      <div class='card-body'>
-        <div>${d.description}</div>
-      </div>`
+      </footer>`
     );
 
   return innerCard;

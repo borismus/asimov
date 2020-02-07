@@ -32,7 +32,7 @@ export async function loadGraph(csvUrl) {
     deps: parseDeps(row.Dependencies),
     title: row.Title,
     description: row.Description,
-    inventor: row.Inventor,
+    inventor: row.Inventor || '(Unknown Inventor)',
     location: row.Location,
     type: row.Type || 'Invention',
     url: row.URL,

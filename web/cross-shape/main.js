@@ -5,6 +5,7 @@ const cardPaddingX = 100;
 const cardPaddingY = 20;
 const cardOffsetX = cardWidth + cardPaddingX;
 const cardOffsetY = cardHeight + cardPaddingY;
+const cardOverlapPercent = 0.16;
 
 const width = window.innerWidth;
 const height = window.innerHeight;
@@ -91,7 +92,7 @@ function getVisibleCards(focusIndex, depth = 0) {
   const ancestors = getAncestors(focusCard, depth)
   console.log(`${focusCard.id} has ${ancestors.length} ancestors with depth ${depth}.`);
   visible = visible.concat(ancestors);
-  visible = visible.concat(getDescendants(focusCard));
+  visible = visible.concat(getDescendants(focusCard, depth));
 
   return visible;
 }
@@ -138,7 +139,7 @@ function getParents(card) {
   }
   for (const [index, parent] of parents.entries()) {
     parent.dx = -1;
-    parent.dy = getPosition(index, parents.length);
+    parent.dy = getDy(index, parents.length, cardOverlapPercent);
     parent.role = 'parent';
   }
   return parents;
@@ -154,7 +155,7 @@ function getChildren(card) {
   }
   for (const [index, child] of children.entries()) {
     child.dx = 1;
-    child.dy = getPosition(index, children.length);
+    child.dy = getDy(index, children.length, cardOverlapPercent);
     child.role = 'child';
   }
   return children;
@@ -163,7 +164,7 @@ function getChildren(card) {
 /** Given an index and the total number, get the position in the grid. For
   * example, with index=0, total=1 => 0. index=0, total=2 => -0.5. index=1,
   * total=3 => 0. */
-function getPosition(index, total, spacing=1) {
+function getDy(index, total, spacing=1) {
   const width = spacing * (total - 1);
   const position = index * spacing - width/2;
   return position;
@@ -199,7 +200,7 @@ function renderLabels() {
 
 function renderIndex(index) {
   const {links, nodes} = data;
-  const visible = getVisibleCards(index, 2);
+  const visible = getVisibleCards(index, 3);
   update(visible);
 }
 
@@ -308,7 +309,7 @@ function navigateToParent() {
     return;
   }
 
-  changeFocusIndex(parents[0].index);
+  changeFocusIndex(parents[parents.length - 1].index);
 }
 
 function navigateToChild() {
@@ -319,7 +320,7 @@ function navigateToChild() {
     return;
   }
 
-  changeFocusIndex(children[0].index);
+  changeFocusIndex(children[children.length - 1].index);
 }
 
 function onKeyUp(e) {

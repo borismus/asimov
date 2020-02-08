@@ -230,7 +230,7 @@ function renderLabels() {
 
 function renderIndex(index) {
   const {links, nodes} = data;
-  const visible = getVisibleCards(index, 2);
+  const visible = getVisibleCards(index, 4);
   update(visible);
 }
 

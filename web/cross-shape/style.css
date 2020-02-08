@@ -14,4 +14,24 @@
 
 line {
   stroke: black;
+  stroke-width: 2px;
+}
+
+line.cross-field {
+  stroke: red;
+  stroke-width: 3px;
+  stroke-dasharray: 5,5;
+}
+
+#search {
+  margin: 4px;
+  padding: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#search.error {
+  font-family: 'Roboto Condensed', sans-serif;
+  background: red;
 }

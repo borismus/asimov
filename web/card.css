@@ -6,22 +6,25 @@
   --hs3: 79, 54%;
   --hs4: 13, 77%;
   --hs5: 24, 96%;
-  --lumin1: 40%;
-  --lumin2: 60%;
+  --hs6: 280, 96%;
+  --hs7: 250, 46%;
+  --hs8: 130, 96%;
+  --hs9: 220, 6%;
+  --lumin1: 75%;
+  --lumin2: 85%;
 
   --gradient-angle: 45deg;
 }
 
 .card-container {
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.5);
   padding: 8px;
   cursor: pointer;
   border-radius: 10px;
 }
 
 .card-container.focus {
-  border-radius: 0;
-  outline: 5px solid blue;
+  filter: drop-shadow(0 0 1em crimson);
 }
 
 @keyframes fadein {
@@ -33,12 +36,15 @@
   to { opacity: 0; }
 }
 
-/** TODO: Use HSL to control lumininosity without resorting to alphas. */
-.card-container.discovery { background: linear-gradient(var(--gradient-angle), hsl(var(--hs1), var(--lumin1)), hsl(var(--hs1), var(--lumin2))); }
-.card-container.institution{ background: linear-gradient(var(--gradient-angle), hsl(var(--hs2), var(--lumin1)), hsl(var(--hs2), var(--lumin2))); }
-.card-container.invention { background: linear-gradient(var(--gradient-angle), hsl(var(--hs3), var(--lumin1)), hsl(var(--hs3), var(--lumin2))); }
-.card-container.social{ background: linear-gradient(var(--gradient-angle), hsl(var(--hs4), var(--lumin1)), hsl(var(--hs4), var(--lumin2))); }
-.card-container.technique { background: linear-gradient(var(--gradient-angle), hsl(var(--hs5), var(--lumin1)), hsl(var(--hs5), var(--lumin2))); }
+.card-container.culture{ background: linear-gradient(var(--gradient-angle), hsl(var(--hs1), var(--lumin1)), hsl(var(--hs1), var(--lumin2))); }
+.card-container.design{ background: linear-gradient(var(--gradient-angle), hsl(var(--hs2), var(--lumin1)), hsl(var(--hs2), var(--lumin2))); }
+.card-container.general{ background: linear-gradient(var(--gradient-angle), hsl(var(--hs3), var(--lumin1)), hsl(var(--hs3), var(--lumin2))); }
+.card-container.geography{ background: linear-gradient(var(--gradient-angle), hsl(var(--hs4), var(--lumin1)), hsl(var(--hs4), var(--lumin2))); }
+.card-container.math{ background: linear-gradient(var(--gradient-angle), hsl(var(--hs5), var(--lumin1)), hsl(var(--hs5), var(--lumin2))); }
+.card-container.science{ background: linear-gradient(var(--gradient-angle), hsl(var(--hs6), var(--lumin1)), hsl(var(--hs6), var(--lumin2))); }
+.card-container.space{ background: linear-gradient(var(--gradient-angle), hsl(var(--hs7), var(--lumin1)), hsl(var(--hs7), var(--lumin2))); }
+.card-container.war{ background: linear-gradient(var(--gradient-angle), hsl(var(--hs8), var(--lumin1)), hsl(var(--hs8), var(--lumin2))); }
+.card-container.unknown{ background: linear-gradient(var(--gradient-angle), hsl(var(--hs9), var(--lumin1)), hsl(var(--hs9), var(--lumin2))); }
 
 .card-details {
   width: 100%;
@@ -52,6 +58,16 @@
 header .title, footer .inventor {
   flex: 1;
 }
+
+.inventor.unknown:before {
+  content: 'Inventor';
+  opacity: 0.3;
+}
+.location.unknown:before {
+  content: 'Location';
+  opacity: 0.3;
+}
+
 
 /*
 header .title {
@@ -80,6 +96,12 @@ header {
   margin-bottom: 8px;
 }
 
+img.field {
+  width: 20px;
+  height: 20px;
+  margin-left: 4px;
+}
+
 footer {
   font-size: 16px;
   font-weight: normal;
@@ -94,5 +116,6 @@ footer {
   font-family: 'Slabo 27px', serif;
   font-size: 14px;
   hyphens: auto;
+  overflow-y: hidden;
 }
 

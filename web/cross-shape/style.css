@@ -35,3 +35,7 @@ line.cross-field {
   font-family: 'Roboto Condensed', sans-serif;
   background: red;
 }
+
+.card-container:hover {
+  filter: drop-shadow(0 0 1em lightgray);
+}

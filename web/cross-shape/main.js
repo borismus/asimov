@@ -269,18 +269,17 @@ function updateLinks(visibleNodes) {
 }
 
 function updateNodes(visibleNodes) {
+  visibleNodes.sort((a, b) => d3.ascending(a.index, b.index));
+
   // Important: the following data call binds the data and assigns a key (in
-  // this case, the ID), so that d3 knows which card is old and which is new.
+  // this case, the index), so that d3 knows which card is old and which is new,
+  // and keeps them in the right order.
   const cards = nodes
     .selectAll('foreignObject')
-    .data(visibleNodes, d => d.id);
+    .data(visibleNodes, d => d.index);
 
   // Render new cards.
   const cardsEnter = cards.enter();
-
-
-  // Make sure everything is ordered correctly.
-  cardsEnter.raise();
 
   renderCrossCards(cardsEnter);
   cardsEnter.merge(cards);
@@ -296,6 +295,9 @@ function updateNodes(visibleNodes) {
     .style('animation', 'fadeout 0.25s')
     .transition()
     .remove();
+
+  // Make sure everything is ordered correctly.
+  cards.order();
 }
 
 function renderCrossCards(cardsEnter) {

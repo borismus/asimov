@@ -34,8 +34,7 @@ export async function loadGraph(csvUrl) {
     description: row.Description,
     inventor: row.Inventor,
     location: row.Location,
-    type: row.Type || 'Invention',
-    field: row.Field.toLowerCase() || 'Unknown',
+    field: row.Field.toLowerCase() || 'unknown',
     url: row.URL,
     //image: `https://i.picsum.photos/id/${integer}/${imageWidth}/${imageHeight}.jpg`,
     image: `/images/${row.ID}.jpg`

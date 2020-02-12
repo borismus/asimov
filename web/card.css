@@ -21,10 +21,11 @@
   padding: 8px;
   cursor: pointer;
   border-radius: 10px;
-}
+  width: 100%;
+  height: 100%;
 
-.card-container.focus {
-  filter: drop-shadow(0 0 1em crimson);
+  display: flex;
+  flex-direction: column;
 }
 
 @keyframes fadein {
@@ -45,15 +46,6 @@
 .card-container.space{ background: linear-gradient(var(--gradient-angle), hsl(var(--hs7), var(--lumin1)), hsl(var(--hs7), var(--lumin2))); }
 .card-container.war{ background: linear-gradient(var(--gradient-angle), hsl(var(--hs8), var(--lumin1)), hsl(var(--hs8), var(--lumin2))); }
 .card-container.unknown{ background: linear-gradient(var(--gradient-angle), hsl(var(--hs9), var(--lumin1)), hsl(var(--hs9), var(--lumin2))); }
-
-.card-details {
-  width: 100%;
-  height: 100%;
-
-  display: flex;
-  flex-direction: column;
-}
-
 
 header .title, footer .inventor {
   flex: 1;

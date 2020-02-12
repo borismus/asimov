@@ -36,6 +36,11 @@ line.cross-field {
   background: red;
 }
 
-.card-container:hover {
+foreignObject:hover {
   filter: drop-shadow(0 0 1em lightgray);
 }
+
+foreignObject.focus {
+  filter: drop-shadow(0 0 1em crimson);
+}
+

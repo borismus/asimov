@@ -7,7 +7,6 @@ export const cardHeight = cardWidth / cardAspect;
 export function renderCard(card) {
   const innerCard = card
     .append('foreignObject')
-    .attr('class', d => `card-container ${d.field.toLowerCase()} ${d.year}`)
     .attr('x', -cardWidth / 2)
     .attr('y', -cardHeight / 2)
     .attr('width', cardWidth)
@@ -15,7 +14,7 @@ export function renderCard(card) {
 
   const details = innerCard
     .append('xhtml:div')
-    .attr('class', 'card-details')
+    .attr('class', d => `card-container ${d.field.toLowerCase()} ${d.year}`)
     .html(
       d => `
       <header class='card-header'>

@@ -108,7 +108,6 @@ function getVisibleCards(focusIndex, depth = 0) {
     // Try to add a previous card.
     if (focusIndex - i > 0) {
       const previous = Object.assign({}, cards[focusIndex - i]);
-      previous.index += 0.5;
       previous.dx = 0;
       previous.dy = -i;
       previous.role = 'previous';
@@ -117,7 +116,6 @@ function getVisibleCards(focusIndex, depth = 0) {
     // Try to add a next card.
     if (focusIndex + i < cards.length) {
       const next = Object.assign({}, cards[focusIndex + i]);
-      next.index += 0.5;
       next.dx = 0;
       next.dy = i;
       next.role = 'next';

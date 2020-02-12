@@ -97,7 +97,7 @@ function getVisibleCards(focusIndex, depth = 0) {
     return visible;
   }
 
-  // TODO: Get all parents and children recursively to a certain level.
+  // Get all parents and children recursively to a certain depth.
   const ancestors = getAncestors(focusCard, depth)
   visible = visible.concat(ancestors);
   const descendants = getDescendants(focusCard, depth);
@@ -107,7 +107,8 @@ function getVisibleCards(focusIndex, depth = 0) {
   for (let i = 1; i < depth + 1; i++) {
     // Try to add a previous card.
     if (focusIndex - i > 0) {
-      const previous = cards[focusIndex - i];
+      const previous = Object.assign({}, cards[focusIndex - i]);
+      previous.index += 0.5;
       previous.dx = 0;
       previous.dy = -i;
       previous.role = 'previous';
@@ -115,7 +116,8 @@ function getVisibleCards(focusIndex, depth = 0) {
     }
     // Try to add a next card.
     if (focusIndex + i < cards.length) {
-      const next = cards[focusIndex + i];
+      const next = Object.assign({}, cards[focusIndex + i]);
+      next.index += 0.5;
       next.dx = 0;
       next.dy = i;
       next.role = 'next';

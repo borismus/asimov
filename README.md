@@ -15,6 +15,6 @@ book from 1700 CE onward.
 
 [demo]: https://borismus.github.io/asimov/web/cross-shape/#steel
 [blog]: https://smus.com/visual-chronology-science-discovery/
-[asimov]: https://drive.google.com/file/d/190RDAxrUzu5m0d_zxQi98euIguBDb0qf/view?usp=sharing
+[book]: https://drive.google.com/file/d/190RDAxrUzu5m0d_zxQi98euIguBDb0qf/view?usp=sharing
 [spreadsheet-old]: https://docs.google.com/spreadsheets/d/1uDeBCfcaVUfZFEK-0WJIb43dT6cqHHq9o6Uxn6PihLY/edit#gid=0
 [spreadsheet-new]: https://docs.google.com/spreadsheets/d/1uDeBCfcaVUfZFEK-0WJIb43dT6cqHHq9o6Uxn6PihLY/edit#gid=158368026

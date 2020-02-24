@@ -2,8 +2,8 @@ This is the source code to a Visual Chronology of Science & Discovery. Here is a
 [demo of the visualization][demo], and [more information about the project][blog].
 
 So far, the visualization covers the period up to 1700 CE according to
-[Asimov][book]. The next step in the project is to summarize the contents of the
-book from 1700 CE onward.
+[Asimov's book][book]. The next step in the project is to summarize the contents
+of the book from 1700 CE onward.
 
 - If there's an issue with the visualization you'd like addressed, please submit
   a [GH issue][issue].

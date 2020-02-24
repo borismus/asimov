@@ -1,14 +1,0 @@
-some months of 30 days
-and some of 31, plus an
-added day every four years
-(Leap Year). The additional
-day was added because the
-year is actually 365"% days
-long, and in this respect the
-Julian calendar was an im-
-provement over the Egyp-
-tian. (The Julian calendar,
-with a small correction
-made sixteen centuries
-later, is still in use today.)
-

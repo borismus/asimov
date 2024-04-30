@@ -14,26 +14,29 @@ const svg = d3.select('#container').append('svg')
   .attr('viewBox', [0, 0, width, height]);
 const links = svg.append('g').attr('class', 'links');
 const nodes = svg.append('g').attr('class', 'nodes');
+
 const searchInput = document.querySelector('#search');
 searchInput.addEventListener('input', onSearchInput);
+searchInput.addEventListener('keyup', onSearchKey);
+searchInput.querySelector('input').addEventListener('focus', onSearchFocus);
+searchInput.querySelector('input').addEventListener('blur', onSearchBlur);
 
 let data;
 let currentIndex;
 
 const idToIndex = {};
+let visibleNodes = [];
 
 async function onLoad() {
   data = await loadGraph('../asimov-1700.csv');
-  const leaves = getLeafNodes();
-  //console.log('Leaf nodes', leaves.map(card => card.id));
-  // console.log('Redundant', getRedundantDeps());
 
   for (let [index, card] of data.nodes.entries()) {
     card.index = index;
     idToIndex[card.id] = card.index;
   }
+  visibleNodes = data.nodes;
+
   window.addEventListener('keyup', onKeyUp);
-  let startIndex = 0;
   if (window.location.hash) {
     onHashChange();
   } else {
@@ -44,10 +47,14 @@ async function onLoad() {
   //renderLabels();
 }
 
-function search(query) {
-  const results = data.nodes.filter(card => searchHelper(card, query));
-  console.log(`Search for "${query}" resulted in ${results.length} results.`);
-  data.nodes = results;
+function onResize() {
+  const width = window.innerWidth;
+  const height = window.innerHeight;
+  svg
+    .attr('width', width)
+    .attr('viewBox', [0, 0, width, height]);
+
+  renderIndex(currentIndex);
 }
 
 function searchHelper(card, query) {
@@ -60,6 +67,9 @@ function onHashChange() {
   console.log('onHashChange id', id);
   currentIndex = idToIndex[id];
   renderIndex(currentIndex);
+
+  lastChild = null;
+  lastParent = null;
 }
 
 /**
@@ -75,7 +85,7 @@ function onHashChange() {
  * y-axis.
  */
 function getVisibleCards(focusIndex, depth = 0) {
-  const cards = data.nodes;
+  const cards = visibleNodes;
   // Reset dx and dy on all card data.
   cards.map(card => {
     card.dx = 0;
@@ -371,8 +381,6 @@ function changeFocusIndex(cardIndex) {
   const cards = data.nodes;
   const focusCard = cards[currentIndex];
   const nextCard = cards[cardIndex];
-  lastChild = null;
-  lastParent = null;
   if (focusCard.deps.includes(nextCard.id)) {
     // Navigating from a child to its parent.
     lastChild = focusCard;
@@ -464,24 +472,24 @@ function onKeyUp(e) {
 }
 
 /**
- * List all entries that don't have any children or descendants. Maybe I should
- * mark some for them?
- */
-function getLeafNodes() {
-  const leafNodes = [];
-  for (const card of data.nodes) {
-    if (getChildren(card).length === 0) {
-      leafNodes.push(card);
-    }
-  }
-  return leafNodes;
-}
-
-/**
  * Detect if one of the parents is also an ancestor. This leads to bad behavior.
  */
 function getRedundantDeps() {
   // TODO: Implement me.
+}
+
+let beforeSearchFocus = null;
+function onSearchFocus() {
+  beforeSearchFocus = window.location.hash;
+}
+
+function onSearchBlur() {
+  visibleNodes = data.nodes;
+
+  if (beforeSearchFocus) {
+    window.location.hash = beforeSearchFocus;
+  }
+  searchInput.querySelector('input').value = '';
 }
 
 function onSearchInput() {
@@ -493,9 +501,28 @@ function onSearchInput() {
     return;
   } else {
     searchInput.classList.remove('error');
+    visibleNodes = matching;
+    renderIndex(0);
   }
-  window.location.hash = matching[0].id;
+}
+
+function onSearchKey(e) {
+  if (e.key === 'Enter') {
+    const query = searchInput.querySelector('input').value;
+    const matching = data.nodes.filter(card => searchHelper(card, query));
+    window.location.hash = matching[0].id;
+
+    visibleNodes = data.nodes;
+    renderIndex(currentIndex);
+
+    searchInput.querySelector('input').value = '';
+    beforeSearchFocus = null;
+  }
+  if (e.key === 'Escape') {
+    searchInput.querySelector('input').blur();
+  }
 }
 
 window.addEventListener('load', onLoad);
 window.addEventListener('hashchange', onHashChange);
+window.addEventListener('resize', onResize);

@@ -4,7 +4,6 @@
 }
 
 .label {
-  alignment-baseline: central;
   text-anchor: middle;
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: bold;
@@ -42,5 +41,9 @@ foreignObject:hover {
 
 foreignObject.focus {
   filter: drop-shadow(0 0 1em crimson);
+}
+
+foreignObject.lastFocus {
+  filter: drop-shadow(0 0 4px crimson);
 }
 

@@ -5,7 +5,7 @@ const cardPaddingX = 100;
 const cardPaddingY = 20;
 const cardOffsetX = cardWidth + cardPaddingX;
 const cardOffsetY = cardHeight + cardPaddingY;
-const cardOverlapPercent = 0.16;
+const cardOverlapPercent = 0.12;
 
 const width = window.innerWidth;
 const height = window.innerHeight;
@@ -26,7 +26,7 @@ async function onLoad() {
   data = await loadGraph('../asimov-1700.csv');
   const leaves = getLeafNodes();
   //console.log('Leaf nodes', leaves.map(card => card.id));
-  console.log('Redundant', getRedundantDeps());
+  // console.log('Redundant', getRedundantDeps());
 
   for (let [index, card] of data.nodes.entries()) {
     card.index = index;
@@ -87,10 +87,9 @@ function getVisibleCards(focusIndex, depth = 0) {
     return visible;
   }
   const focusCard = cards[focusIndex];
-  focusCard.dx = 0;
-  focusCard.dy = 0;
+  focusCard.offset = 0;
   focusCard.role = 'focus';
-  console.log(`Focusing on ${focusCard.id}.`);
+  // console.log(`Focusing on ${focusCard.id}.`);
   visible.push(focusCard);
 
   if (depth === 0) {
@@ -103,25 +102,53 @@ function getVisibleCards(focusIndex, depth = 0) {
   const descendants = getDescendants(focusCard, depth);
   visible = visible.concat(descendants);
 
-  // Get all next and previous cards.
-  for (let i = 1; i < depth + 1; i++) {
-    // Try to add a previous card.
-    if (focusIndex - i > 0) {
-      const previous = Object.assign({}, cards[focusIndex - i]);
-      previous.dx = 0;
-      previous.dy = -i;
-      previous.role = 'previous';
-      visible.push(previous);
-    }
-    // Try to add a next card.
-    if (focusIndex + i < cards.length) {
-      const next = Object.assign({}, cards[focusIndex + i]);
-      next.dx = 0;
-      next.dy = i;
-      next.role = 'next';
-      visible.push(next);
+  // Get descendants of parents.
+  // const parents = getParents(focusCard);
+  // const siblings = [];
+  // for (const parent of parents) {
+    // siblings.push(...getChildren(parent));
+  // }
+  // visible = visible.concat(siblings);
+
+
+  // Set positions for all visible cards based on their depth.
+  for (const card of visible) {
+    // console.log(`Offset of ${card.id} is ${card.offset}.`);
+    card.dx = card.offset;
+  }
+
+  // Get cards by generation.
+  const offsets = visible.map(card => card.offset);
+  const minOffset = Math.min(...offsets);
+  const maxOffset = Math.max(...offsets);
+  for (let offset = minOffset; offset <= maxOffset; offset++) {
+    const generation = visible.filter(card => card.offset === offset);
+    generation.sort((a, b) => d3.ascending(a.index, b.index));
+    for (const [index, card] of generation.entries()) {
+      card.dy = getDy(index, generation.length, cardOverlapPercent);
     }
   }
+
+
+  // Get all next and previous cards.
+  // for (let i = 1; i < depth + 1; i++) {
+  //   // Try to add a previous card.
+  //   if (focusIndex - i > 0) {
+  //     const previous = Object.assign({}, cards[focusIndex - i]);
+  //     previous.dx = 0;
+  //     previous.dy = -i;
+  //     previous.role = 'previous';
+  //     visible.push(previous);
+  //   }
+  //   // Try to add a next card.
+  //   if (focusIndex + i < cards.length) {
+  //     const next = Object.assign({}, cards[focusIndex + i]);
+  //     next.dx = 0;
+  //     next.dy = i;
+  //     next.role = 'next';
+  //     visible.push(next);
+  //   }
+  // }
 
   return visible;
 }
@@ -133,12 +160,18 @@ function getAncestors(card, depth, offset = 0) {
   }
   let ancestors = [];
   for (const parent of getParents(card)) {
-    parent.dx = -offset - 1;
+    // parent.dx = -offset - 1;
+    parent.offset = -offset - 1;
     ancestors.push(parent);
     ancestors = ancestors.concat(getAncestors(parent, depth, offset + 1));
   }
   // Make sure we don't have dupes.
+  const beforeLength = ancestors.length;
   ancestors = [...new Set(ancestors)];
+  if (beforeLength !== ancestors.length) {
+    console.log(`Removed ${beforeLength - ancestors.length} cards via Set.`);
+  }
+
   return ancestors;
 }
 
@@ -149,8 +182,9 @@ function getDescendants(card, depth, offset = 0) {
   }
   let descendants = [];
   for (const child of getChildren(card)) {
-    child.dx = offset + 1;
-    child.dy += card.dy;
+    // child.dx = offset + 1;
+    // child.dy += card.dy;
+    child.offset = offset + 1;
     descendants.push(child);
     descendants = descendants.concat(getDescendants(child, depth, offset + 1));
   }
@@ -168,9 +202,9 @@ function getParents(card) {
     }
   }
   for (const [index, parent] of parents.entries()) {
-    parent.dx = -1;
-    parent.dy += getDy(index, parents.length, cardOverlapPercent);
-    parent.role = 'parent';
+    // parent.dx = -1;
+    // parent.dy += getDy(index, parents.length, cardOverlapPercent);
+    // parent.role = 'parent';
   }
   return parents;
 }
@@ -184,9 +218,9 @@ function getChildren(card) {
     }
   }
   for (const [index, child] of children.entries()) {
-    child.dx = 1;
-    child.dy += getDy(index, children.length, cardOverlapPercent);
-    child.role = 'child';
+    // child.dx = 1;
+    // child.dy += getDy(index, children.length, cardOverlapPercent);
+    // child.role = 'child';
   }
   return children;
 }
@@ -195,6 +229,15 @@ function getChildren(card) {
   * example, with index=0, total=1 => 0. index=0, total=2 => -0.5. index=1,
   * total=3 => 0. */
 function getDy(index, total, spacing=1) {
+  if (total === 0) {
+    return 0;
+  }
+  if (total === 1) {
+    return 0;
+  }
+  if (total === 2) {
+    return index - 0.5;
+  }
   const width = spacing * (total - 1);
   const position = index * spacing - width/2;
   return position;
@@ -289,6 +332,7 @@ function updateNodes(visibleNodes) {
     .attr('transform', d => getCardTransform(d));
 
   cards.classed('focus', d => d.role == 'focus');
+  cards.classed('lastFocus', d => d.role == 'lastFocus');
 
   // Remove old cards.
   cards.exit()
@@ -315,7 +359,29 @@ function onCardClick(card) {
 
 function changeFocusIndex(cardIndex) {
   if (cardIndex < 0 || cardIndex >= data.nodes.length) {
+    console.warn(`Invalid index ${cardIndex}.`);
     return;
+  }
+  if (lastChild) {
+    lastChild.role = '';
+  }
+  if (lastParent) {
+    lastParent.role = '';
+  }
+  const cards = data.nodes;
+  const focusCard = cards[currentIndex];
+  const nextCard = cards[cardIndex];
+  lastChild = null;
+  lastParent = null;
+  if (focusCard.deps.includes(nextCard.id)) {
+    // Navigating from a child to its parent.
+    lastChild = focusCard;
+    lastChild.role = 'lastFocus';
+  }
+  if (nextCard.deps.includes(focusCard.id)) {
+    // Navigating from a parent to its child.
+    lastParent = focusCard;
+    lastParent.role = 'lastFocus';
   }
   window.location.hash = data.nodes[cardIndex].id;
 }
@@ -342,7 +408,15 @@ function getY(card) {
   return cy + card.dy * cardOffsetY;
 }
 
+let lastChild = null;
+let lastParent = null;
+
 function navigateToParent() {
+  if (lastParent) {
+    changeFocusIndex(lastParent.index);
+    return;
+  }
+
   const cards = data.nodes;
   const focusCard = cards[currentIndex];
   const parents = getParents(focusCard);
@@ -354,6 +428,10 @@ function navigateToParent() {
 }
 
 function navigateToChild() {
+  if (lastChild) {
+    changeFocusIndex(lastChild.index);
+    return;
+  }
   const cards = data.nodes;
   const focusCard = cards[currentIndex];
   const children = getChildren(focusCard);
@@ -380,7 +458,7 @@ function onKeyUp(e) {
       break;
   }
 
-  if (e.code === 'KeyF' && e.ctrlKey) {
+  if (e.code === 'KeyF' && e.ctrlKey || e.code === 'Slash') {
     searchInput.querySelector('input').focus();
   }
 }

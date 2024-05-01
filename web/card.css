@@ -19,7 +19,6 @@
 .card-container {
   border: 1px solid rgba(0, 0, 0, 0.5);
   padding: 8px;
-  cursor: pointer;
   border-radius: 10px;
   width: 100%;
   height: 100%;
@@ -60,7 +59,9 @@ header .title, footer .inventor {
   content: 'Location';
   opacity: 0.3;
 }
-
+.location {
+  white-space: nowrap;
+}
 
 
 header .title {
@@ -112,3 +113,6 @@ footer {
   overflow-y: hidden;
 }
 
+.card {
+  cursor: pointer;
+}

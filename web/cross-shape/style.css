@@ -35,15 +35,15 @@ line.cross-field {
   background: red;
 }
 
-foreignObject:hover {
+.card:hover {
   filter: drop-shadow(0 0 1em lightgray);
 }
 
-foreignObject.focus {
+.card.focus {
   filter: drop-shadow(0 0 1em crimson);
 }
 
-foreignObject.lastFocus {
+.card.lastFocus {
   filter: drop-shadow(0 0 4px crimson);
 }
 

@@ -1,5 +1,5 @@
 import {formatYear, loadGraph} from '../utils.js';
-import {cardWidth, cardHeight, renderCard} from '../card.js';
+import {cardWidth, cardHeight, renderCard, renderMTGCard} from '../card.js';
 
 const cardPaddingX = 100;
 const cardPaddingY = 20;
@@ -28,7 +28,7 @@ const idToIndex = {};
 let visibleNodes = [];
 
 async function onLoad() {
-  data = await loadGraph('../asimov-1700.csv');
+  data = await loadGraph('../asimov-1850.csv');
 
   for (let [index, card] of data.nodes.entries()) {
     card.index = index;
@@ -67,9 +67,6 @@ function onHashChange() {
   console.log('onHashChange id', id);
   currentIndex = idToIndex[id];
   renderIndex(currentIndex);
-
-  lastChild = null;
-  lastParent = null;
 }
 
 /**
@@ -328,14 +325,15 @@ function updateNodes(visibleNodes) {
   // this case, the index), so that d3 knows which card is old and which is new,
   // and keeps them in the right order.
   const cards = nodes
-    .selectAll('foreignObject')
+    .selectAll('g.card')
     .data(visibleNodes, d => d.index);
 
   // Render new cards.
   const cardsEnter = cards.enter();
+  console.log(`cardsEnter`, cardsEnter._groups[0]);
+  console.log(`cardsExit`, cards.exit()._groups[0]);
 
   renderCrossCards(cardsEnter);
-  cardsEnter.merge(cards);
 
   // Update existing cards.
   cards.transition().duration(250)
@@ -346,7 +344,7 @@ function updateNodes(visibleNodes) {
 
   // Remove old cards.
   cards.exit()
-    .style('animation', 'fadeout 0.25s')
+    .style('animation', 'fadeout 0.5s')
     .transition()
     .remove();
 
@@ -356,6 +354,7 @@ function updateNodes(visibleNodes) {
 
 function renderCrossCards(cardsEnter) {
   const cards = renderCard(cardsEnter);
+  // const cards = renderMTGCard(cardsEnter);
 
   cards.on('click', onCardClick);
   cards.attr('transform', d => getCardTransform(d))
@@ -378,6 +377,9 @@ function changeFocusIndex(cardIndex) {
   if (lastParent) {
     lastParent.role = '';
   }
+  lastChild = null;
+  lastParent = null;
+
   const cards = data.nodes;
   const focusCard = cards[currentIndex];
   const nextCard = cards[cardIndex];
@@ -512,11 +514,9 @@ function onSearchKey(e) {
     const matching = data.nodes.filter(card => searchHelper(card, query));
     window.location.hash = matching[0].id;
 
-    visibleNodes = data.nodes;
     renderIndex(currentIndex);
-
-    searchInput.querySelector('input').value = '';
     beforeSearchFocus = null;
+    searchInput.querySelector('input').blur();
   }
   if (e.key === 'Escape') {
     searchInput.querySelector('input').blur();

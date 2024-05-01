@@ -8,6 +8,7 @@ const imageAspect = 392 / 312;
 
 export function renderMTGCard(card) {
   const outerG = card.append("g").attr("class", "card");
+
   const g = outerG.append("g").attr("class", "card-inner");
   g.attr("transform", `translate(${-cardWidth / 2}, ${-cardHeight / 2})`);
 
@@ -22,7 +23,7 @@ export function renderMTGCard(card) {
   g.append("rect")
     .attr("width", cardWidth)
     .attr("height", cardHeight)
-    .attr("fill", "transparent")
+    .attr("fill", "white")
     .attr("stroke", "black")
     .attr("stroke-width", 2)
     .classed("container", true);
@@ -43,13 +44,13 @@ export function renderMTGCard(card) {
     .attr("stroke", "black");
 
   // Image
-  g.append("image")
-    .attr("x", margin)
-    .attr("y", margin + headerExtra)
-    .attr("width", cardWidth - margin * 2)
-    .attr("height", (cardWidth - margin * 2) * (1 / imageAspect) + headerExtra)
-    .attr("href", (d) => `images/${d.id}.jpg`)
-    .attr("preserveAspectRatio", "xMidYMid slice");
+  // g.append("image")
+  //   .attr("x", margin)
+  //   .attr("y", margin + headerExtra)
+  //   .attr("width", cardWidth - margin * 2)
+  //   .attr("height", (cardWidth - margin * 2) * (1 / imageAspect) + headerExtra)
+  //   .attr("href", (d) => `images/${d.id}.jpg`)
+  //   .attr("preserveAspectRatio", "xMidYMid slice");
 
   const footerHeight = 20;
   const midHeight = 36;
@@ -85,7 +86,7 @@ export function renderMTGCard(card) {
   // Middle text
   g.append("text")
     .attr("x", marginIn)
-    .attr("y", imageHeight + midHeight/2 + 12)
+    .attr("y", imageHeight + midHeight / 2 + 12)
     .attr("height", 24)
     .attr("width", cardWidth - 2 * marginIn)
     .attr("font-size", 10)
@@ -112,21 +113,27 @@ export function renderMTGCard(card) {
     .attr("cx", cardWidth - margin - 12 + circleRadius)
     .attr("cy", 4 + circleRadius)
     .attr("r", circleRadius)
-    .attr('fill', 'white')
-    .attr('stroke', 'black')
+    .attr("fill", "white")
+    .attr("stroke", "black");
 
   g.append("image")
     .attr("x", cardWidth - margin - 12 + 1)
     .attr("y", 5)
     .attr("width", 10)
     .attr("height", 10)
-    .attr("href", (d) => `../images/fields/${d.field}.png`);
+    .attr("href", (d) => `../images/fields/${formatField(d.field)}.png`);
 
   return outerG;
 }
 
+function formatField(field) {
+  return field.split(":")[0].toLowerCase();
+}
+
 export function renderCard(card) {
-  const innerCard = card
+  const outerG = card.append("g").attr("class", "card");
+
+  const innerCard = outerG
     .append("foreignObject")
     .attr("x", -cardWidth / 2)
     .attr("y", -cardHeight / 2)
@@ -135,13 +142,13 @@ export function renderCard(card) {
 
   const details = innerCard
     .append("xhtml:div")
-    .attr("class", (d) => `card-container ${d.field.toLowerCase()} ${d.year}`)
+    .attr("class", (d) => `card-container ${formatField(d.field)} ${d.year}`)
     .html(
       (d) => `
       <header class='card-header'>
         <div class='title' title='${d.title}'>${d.title}</div>
         <div class='year'>${formatYear(d.year)}</div>
-        <img class="field" src="../images/fields/${d.field}.png" />
+        <img class="field" src="../images/fields/${formatField(d.field)}.png" />
       </header>
       <section class='card-body'>
         <p>${d.description}</p>
@@ -152,5 +159,5 @@ export function renderCard(card) {
       </footer>`
     );
 
-  return innerCard;
+  return outerG;
 }

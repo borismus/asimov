@@ -11,22 +11,22 @@ function formatWithCommas(num) {
 }
 
 export function parseYear(date) {
-  let [year, suffix] = date.split(' ');
-  suffix = suffix ? suffix.toLowerCase() : '';
-  const isBce = (suffix.indexOf('bc') >= 0);
+  let [year, suffix] = date.split(" ");
+  suffix = suffix ? suffix.toLowerCase() : "";
+  const isBce = suffix.indexOf("bc") >= 0;
   year = Number(year);
   return year * (isBce ? -1 : 1);
 }
 
-export async function loadGraph(csvUrl) {
-  const rows = await d3.csv(csvUrl);
+export async function loadGraph(tsvUrl) {
+  const rows = await d3.tsv(tsvUrl);
   const integer = Math.floor(Math.random() * 1000);
   const imageWidth = 240;
   const imageAspect = 16.0 / 9.0;
   const imageHeight = imageWidth / imageAspect;
 
   // Get all nodes.
-  const nodes = rows.map(row => ({
+  const nodes = rows.map((row) => ({
     id: row.ID,
     year: parseYear(row.Year),
     deps: parseDeps(row.Dependencies),
@@ -34,16 +34,16 @@ export async function loadGraph(csvUrl) {
     description: row.Description,
     inventor: row.Inventor,
     location: row.Location,
-    field: row.Field.toLowerCase() || 'unknown',
+    field: row.Field.toLowerCase() || "unknown",
     url: row.URL,
     //image: `https://i.picsum.photos/id/${integer}/${imageWidth}/${imageHeight}.jpg`,
-    image: `/images/${row.ID}.jpg`
+    image: `/images/${row.ID}.jpg`,
   }));
 
   // Get all links from the raw data.
   const links = [];
-  const ids = nodes.map(node => node.id);
-  const deps = nodes.map(node => node.deps);
+  const ids = nodes.map((node) => node.id);
+  const deps = nodes.map((node) => node.deps);
 
   for (let [targetIndex, depIds] of deps.entries()) {
     if (!depIds) {
@@ -66,7 +66,7 @@ export async function loadGraph(csvUrl) {
   console.log(`Found ${links.length} links.`);
   return {
     nodes,
-    links
+    links,
   };
 }
 
@@ -74,5 +74,5 @@ function parseDeps(depsString) {
   if (!depsString) {
     return [];
   }
-  return depsString.split(',').map(dep => dep.trim());
+  return depsString.split(",").map((dep) => dep.trim());
 }

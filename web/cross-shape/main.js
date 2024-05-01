@@ -28,7 +28,7 @@ const idToIndex = {};
 let visibleNodes = [];
 
 async function onLoad() {
-  data = await loadGraph('../asimov-1850.csv');
+  data = await loadGraph('../asimov-1850.tsv');
 
   for (let [index, card] of data.nodes.entries()) {
     card.index = index;

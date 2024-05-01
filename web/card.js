@@ -44,13 +44,13 @@ export function renderMTGCard(card) {
     .attr("stroke", "black");
 
   // Image
-  // g.append("image")
-  //   .attr("x", margin)
-  //   .attr("y", margin + headerExtra)
-  //   .attr("width", cardWidth - margin * 2)
-  //   .attr("height", (cardWidth - margin * 2) * (1 / imageAspect) + headerExtra)
-  //   .attr("href", (d) => `images/${d.id}.jpg`)
-  //   .attr("preserveAspectRatio", "xMidYMid slice");
+  g.append("image")
+    .attr("x", margin)
+    .attr("y", margin + headerExtra)
+    .attr("width", cardWidth - margin * 2)
+    .attr("height", (cardWidth - margin * 2) * (1 / imageAspect) + headerExtra)
+    .attr("href", (d) => `../images/entries/${d.id}.jpg`)
+    .attr("preserveAspectRatio", "xMidYMid slice");
 
   const footerHeight = 20;
   const midHeight = 36;

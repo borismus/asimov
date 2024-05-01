@@ -330,8 +330,6 @@ function updateNodes(visibleNodes) {
 
   // Render new cards.
   const cardsEnter = cards.enter();
-  console.log(`cardsEnter`, cardsEnter._groups[0]);
-  console.log(`cardsExit`, cards.exit()._groups[0]);
 
   renderCrossCards(cardsEnter);
 
@@ -353,8 +351,8 @@ function updateNodes(visibleNodes) {
 }
 
 function renderCrossCards(cardsEnter) {
-  const cards = renderCard(cardsEnter);
-  // const cards = renderMTGCard(cardsEnter);
+  // const cards = renderCard(cardsEnter);
+  const cards = renderMTGCard(cardsEnter);
 
   cards.on('click', onCardClick);
   cards.attr('transform', d => getCardTransform(d))

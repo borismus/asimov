@@ -17,9 +17,9 @@ line {
 }
 
 line.cross-field {
-  stroke: red;
-  stroke-width: 3px;
-  stroke-dasharray: 5,5;
+  stroke: black;
+  stroke-width: 2px;
+  stroke-dasharray: 3,1;
 }
 
 #search {

@@ -395,7 +395,7 @@ function renderCrossCards(cardsEnter) {
       d3.select(this)
         .raise()
         .attr("transform", getCardTransform(d) + " scale(1.5)")
-    }, 500);
+    }, 1000);
   });
   cards.on("mouseleave", function (d, i) {
     d3.select(this).attr("transform", getCardTransform(d));

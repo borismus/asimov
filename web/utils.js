@@ -27,11 +27,15 @@ function validateData(nodes) {
     console.warn(dupes);
     return false;
   }
-  // Check for non-existent dependencies.
+  // Check for missing dependencies.
   for (const node of nodes) {
     for (const dep of node.deps) {
       if (!ids.includes(dep)) {
-        console.warn(`Found non-existent dependency ${dep} for node ${node.id}.`);
+        console.warn(`Found missing dependency ${dep} for node ${node.id}.`);
+        return false;
+      }
+      if (dep === node.id) {
+        console.warn(`Found self-referencing dependency for node ${node.id}.`);
         return false;
       }
     }

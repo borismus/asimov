@@ -126,7 +126,6 @@ function getVisibleCards(focusIndex, depth = 0) {
   }
   siblings = [...new Set(siblings)];
   siblings.map((sib) => {
-    console.log(`Sib ${sib.id}.`);
     sib.role = "sibling";
     sib.offset = 0;
   });

@@ -392,16 +392,18 @@ function renderCrossCards(cardsEnter) {
   cards.classed("focus", (d) => d.role == "focus");
 
   cards.on("mouseenter", function (d, i) {
-    const originalTransform = d3.select(this).attr("transform");
-    d.originalTransform = originalTransform;
     d.growTimeout = setTimeout(() => {
-      d3.select(this).attr("transform", originalTransform + " scale(1.5)").raise();
+      d3.select(this)
+        .raise()
+        .transition()
+        .attr("transform", getCardTransform(d) + " scale(1.5)")
     }, 500);
   });
   cards.on("mouseleave", function (d, i) {
-    d3.select(this).attr("transform", d.originalTransform)
+    d3.select(this).transition().attr("transform", getCardTransform(d));
     clearTimeout(d.growTimeout);
-    cards.sort((a, b) => a.index - b.index);
+    // Sorting cards back to the "original" order leads to odd behaviors.
+    // cards.sort((a, b) => d3.ascending(a.index, b.index));
   });
 }
 

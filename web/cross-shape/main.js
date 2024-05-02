@@ -1,5 +1,6 @@
-import {formatYear, loadGraph} from '../utils.js';
-import {cardWidth, cardHeight, renderCard, renderMTGCard} from '../card.js';
+import { formatYear, loadGraph } from "../utils.js";
+import { cardWidth, cardHeight, renderCard, renderMTGCard } from "../card.js";
+import "./timeline.js";
 
 const cardPaddingX = 100;
 const cardPaddingY = 20;
@@ -9,17 +10,19 @@ const cardOverlapPercent = 0.12;
 
 const width = window.innerWidth;
 const height = window.innerHeight;
-const svg = d3.select('#container').append('svg')
-  .attr('width', width)
-  .attr('viewBox', [0, 0, width, height]);
-const links = svg.append('g').attr('class', 'links');
-const nodes = svg.append('g').attr('class', 'nodes');
+const svg = d3
+  .select("#container")
+  .append("svg")
+  .attr("width", width)
+  .attr("viewBox", [0, 0, width, height]);
+const links = svg.append("g").attr("class", "links");
+const nodes = svg.append("g").attr("class", "nodes");
 
-const searchInput = document.querySelector('#search');
-searchInput.addEventListener('input', onSearchInput);
-searchInput.addEventListener('keyup', onSearchKey);
-searchInput.querySelector('input').addEventListener('focus', onSearchFocus);
-searchInput.querySelector('input').addEventListener('blur', onSearchBlur);
+const searchInput = document.querySelector("#search");
+searchInput.addEventListener("input", onSearchInput);
+searchInput.addEventListener("keyup", onSearchKey);
+searchInput.querySelector("input").addEventListener("focus", onSearchFocus);
+searchInput.querySelector("input").addEventListener("blur", onSearchBlur);
 
 let data;
 let currentIndex;
@@ -28,7 +31,7 @@ const idToIndex = {};
 let visibleNodes = [];
 
 async function onLoad() {
-  data = await loadGraph('../asimov-1850.tsv');
+  data = await loadGraph("../asimov-1850.tsv");
 
   for (let [index, card] of data.nodes.entries()) {
     card.index = index;
@@ -36,11 +39,11 @@ async function onLoad() {
   }
   visibleNodes = data.nodes;
 
-  window.addEventListener('keyup', onKeyUp);
+  window.addEventListener("keyup", onKeyUp);
   if (window.location.hash) {
     onHashChange();
   } else {
-    const ids = data.nodes.map(n => n.id);
+    const ids = data.nodes.map((n) => n.id);
     const randomIndex = Math.floor(Math.random() * data.nodes.length);
     window.location.hash = ids[randomIndex];
   }
@@ -50,21 +53,21 @@ async function onLoad() {
 function onResize() {
   const width = window.innerWidth;
   const height = window.innerHeight;
-  svg
-    .attr('width', width)
-    .attr('viewBox', [0, 0, width, height]);
+  svg.attr("width", width).attr("viewBox", [0, 0, width, height]);
 
   renderIndex(currentIndex);
 }
 
 function searchHelper(card, query) {
-  return card.title.toLowerCase().includes(query) ||
-    card.description.toLowerCase().includes(query);
+  return (
+    card.title.toLowerCase().includes(query) ||
+    card.description.toLowerCase().includes(query)
+  );
 }
 
 function onHashChange() {
   const id = window.location.hash.substring(1);
-  console.log('onHashChange id', id);
+  console.log("onHashChange id", id);
   currentIndex = idToIndex[id];
   renderIndex(currentIndex);
 }
@@ -84,7 +87,7 @@ function onHashChange() {
 function getVisibleCards(focusIndex, depth = 0) {
   const cards = visibleNodes;
   // Reset dx and dy on all card data.
-  cards.map(card => {
+  cards.map((card) => {
     card.dx = 0;
     card.dy = 0;
   });
@@ -95,7 +98,7 @@ function getVisibleCards(focusIndex, depth = 0) {
   }
   const focusCard = cards[focusIndex];
   focusCard.offset = 0;
-  focusCard.role = 'focus';
+  focusCard.role = "focus";
   // console.log(`Focusing on ${focusCard.id}.`);
   visible.push(focusCard);
 
@@ -104,19 +107,31 @@ function getVisibleCards(focusIndex, depth = 0) {
   }
 
   // Get all parents and children recursively to a certain depth.
-  const ancestors = getAncestors(focusCard, depth)
+  const ancestors = getAncestors(focusCard, depth);
   visible = visible.concat(ancestors);
   const descendants = getDescendants(focusCard, depth);
   visible = visible.concat(descendants);
 
   // Get descendants of parents.
-  // const parents = getParents(focusCard);
-  // const siblings = [];
-  // for (const parent of parents) {
-    // siblings.push(...getChildren(parent));
-  // }
-  // visible = visible.concat(siblings);
+  const parents = getParents(focusCard);
+  let siblings = [];
+  for (const parent of parents) {
+    // The focus card should not be in the siblings.
+    const localSibs = getChildren(parent).filter(
+      (sib) => sib.id !== focusCard.id
+    );
+    siblings.push(...localSibs);
+  }
+  siblings.map((sib) => {
+    console.log(`Sib ${sib.id}.`)
+    sib.role = "sibling";
+    sib.offset = 0;
+  });
 
+  console.log(
+    `Found ${siblings.length} siblings: ${siblings.map((s) => s.id)}.`
+  );
+  // visible = visible.concat(siblings);
 
   // Set positions for all visible cards based on their depth.
   for (const card of visible) {
@@ -125,17 +140,20 @@ function getVisibleCards(focusIndex, depth = 0) {
   }
 
   // Get cards by generation.
-  const offsets = visible.map(card => card.offset);
+  const offsets = visible.map((card) => card.offset);
   const minOffset = Math.min(...offsets);
   const maxOffset = Math.max(...offsets);
   for (let offset = minOffset; offset <= maxOffset; offset++) {
-    const generation = visible.filter(card => card.offset === offset);
+    const generation = visible.filter((card) => card.offset === offset);
     generation.sort((a, b) => d3.ascending(a.index, b.index));
     for (const [index, card] of generation.entries()) {
-      card.dy = getDy(index, generation.length, cardOverlapPercent);
+      if (card.role === "sibling") {
+        card.dy = 1;
+      } else {
+        card.dy = getDy(index, generation.length, cardOverlapPercent);
+      }
     }
   }
-
 
   // Get all next and previous cards.
   // for (let i = 1; i < depth + 1; i++) {
@@ -233,9 +251,9 @@ function getChildren(card) {
 }
 
 /** Given an index and the total number, get the position in the grid. For
-  * example, with index=0, total=1 => 0. index=0, total=2 => -0.5. index=1,
-  * total=3 => 0. */
-function getDy(index, total, spacing=1) {
+ * example, with index=0, total=1 => 0. index=0, total=2 => -0.5. index=1,
+ * total=3 => 0. */
+function getDy(index, total, spacing = 1) {
   if (total === 0) {
     return 0;
   }
@@ -246,7 +264,7 @@ function getDy(index, total, spacing=1) {
     return index - 0.5;
   }
   const width = spacing * (total - 1);
-  const position = index * spacing - width/2;
+  const position = index * spacing - width / 2;
   return position;
 }
 
@@ -254,10 +272,14 @@ function renderLabels() {
   // Draw text for chronological labels and parent/children labels.
   const data = [
     {
-      dx: 0, dy: -1, text: 'previous'
+      dx: 0,
+      dy: -1,
+      text: "previous",
     },
     {
-      dx: 0, dy: 1, text: 'next'
+      dx: 0,
+      dy: 1,
+      text: "next",
     },
     /*
     {
@@ -268,18 +290,19 @@ function renderLabels() {
     }
     */
   ];
-  const labels = svg.append('g').attr('class', 'labels');
-  labels.selectAll('text')
-    .data(data, d => d.text)
+  const labels = svg.append("g").attr("class", "labels");
+  labels
+    .selectAll("text")
+    .data(data, (d) => d.text)
     .enter()
-    .append('text')
-    .attr('class', 'label')
-    .html(d => d.text)
-    .attr('transform', d => getLabelTransform(d));
+    .append("text")
+    .attr("class", "label")
+    .html((d) => d.text)
+    .attr("transform", (d) => getLabelTransform(d));
 }
 
 function renderIndex(index) {
-  const {links, nodes} = data;
+  const { links, nodes } = data;
   const visible = getVisibleCards(index, 4);
   update(visible);
 }
@@ -291,29 +314,34 @@ function update(visibleNodes) {
 
 function updateLinks(visibleNodes) {
   // Filter all links to just include the ones between the visible cards.
-  const ids = visibleNodes.map(d => d.id);
-  const visibleLinks = data.links.filter(link =>
-    ids.includes(link.source.id) && ids.includes(link.target.id)
+  const ids = visibleNodes.map((d) => d.id);
+  const visibleLinks = data.links.filter(
+    (link) => ids.includes(link.source.id) && ids.includes(link.target.id)
   );
 
-  const cardLinks = links.selectAll('line')
-    .data(visibleLinks, d => d.source.id + d.target.id);
+  const cardLinks = links
+    .selectAll("line")
+    .data(visibleLinks, (d) => d.source.id + d.target.id);
 
-  cardLinks.enter()
-    .append('line')
-    .attr('x1', d => getX(d.source))
-    .attr('y1', d => getY(d.source))
-    .attr('x2', d => getX(d.target))
-    .attr('y2', d => getY(d.target))
-    .attr('class', d => (d.source.field === d.target.field ?
-          'same-field' : 'cross-field'))
+  cardLinks
+    .enter()
+    .append("line")
+    .attr("x1", (d) => getX(d.source))
+    .attr("y1", (d) => getY(d.source))
+    .attr("x2", (d) => getX(d.target))
+    .attr("y2", (d) => getY(d.target))
+    .attr("class", (d) =>
+      d.source.field === d.target.field ? "same-field" : "cross-field"
+    )
     .merge(cardLinks);
 
-  cardLinks.transition().duration(250)
-    .attr('x1', d => getX(d.source))
-    .attr('y1', d => getY(d.source))
-    .attr('x2', d => getX(d.target))
-    .attr('y2', d => getY(d.target));
+  cardLinks
+    .transition()
+    .duration(250)
+    .attr("x1", (d) => getX(d.source))
+    .attr("y1", (d) => getY(d.source))
+    .attr("x2", (d) => getX(d.target))
+    .attr("y2", (d) => getY(d.target));
 
   cardLinks.exit().remove();
 }
@@ -324,9 +352,7 @@ function updateNodes(visibleNodes) {
   // Important: the following data call binds the data and assigns a key (in
   // this case, the index), so that d3 knows which card is old and which is new,
   // and keeps them in the right order.
-  const cards = nodes
-    .selectAll('g.card')
-    .data(visibleNodes, d => d.index);
+  const cards = nodes.selectAll("g.card").data(visibleNodes, (d) => d.index);
 
   // Render new cards.
   const cardsEnter = cards.enter();
@@ -334,17 +360,16 @@ function updateNodes(visibleNodes) {
   renderCrossCards(cardsEnter);
 
   // Update existing cards.
-  cards.transition().duration(250)
-    .attr('transform', d => getCardTransform(d));
+  cards
+    .transition()
+    .duration(250)
+    .attr("transform", (d) => getCardTransform(d));
 
-  cards.classed('focus', d => d.role == 'focus');
-  cards.classed('lastFocus', d => d.role == 'lastFocus');
+  cards.classed("focus", (d) => d.role == "focus");
+  cards.classed("lastFocus", (d) => d.role == "lastFocus");
 
   // Remove old cards.
-  cards.exit()
-    .style('animation', 'fadeout 0.5s')
-    .transition()
-    .remove();
+  cards.exit().style("animation", "fadeout 0.5s").transition().remove();
 
   // Make sure everything is ordered correctly.
   cards.order();
@@ -354,10 +379,10 @@ function renderCrossCards(cardsEnter) {
   // const cards = renderCard(cardsEnter);
   const cards = renderMTGCard(cardsEnter);
 
-  cards.on('click', onCardClick);
-  cards.attr('transform', d => getCardTransform(d))
-  cards.style('animation', 'fadein 0.25s');
-  cards.classed('focus', d => d.role == 'focus');
+  cards.on("click", onCardClick);
+  cards.attr("transform", (d) => getCardTransform(d));
+  cards.style("animation", "fadein 0.25s");
+  cards.classed("focus", (d) => d.role == "focus");
 }
 
 function onCardClick(card) {
@@ -370,10 +395,10 @@ function changeFocusIndex(cardIndex) {
     return;
   }
   if (lastChild) {
-    lastChild.role = '';
+    lastChild.role = "";
   }
   if (lastParent) {
-    lastParent.role = '';
+    lastParent.role = "";
   }
   lastChild = null;
   lastParent = null;
@@ -384,12 +409,12 @@ function changeFocusIndex(cardIndex) {
   if (focusCard.deps.includes(nextCard.id)) {
     // Navigating from a child to its parent.
     lastChild = focusCard;
-    lastChild.role = 'lastFocus';
+    lastChild.role = "lastFocus";
   }
   if (nextCard.deps.includes(focusCard.id)) {
     // Navigating from a parent to its child.
     lastParent = focusCard;
-    lastParent.role = 'lastFocus';
+    lastParent.role = "lastFocus";
   }
   window.location.hash = data.nodes[cardIndex].id;
 }
@@ -401,8 +426,8 @@ function getCardTransform(card) {
 function getLabelTransform(d) {
   const cx = width / 2;
   const cy = height / 2;
-  const xOffset = cx + d.dx * cardOffsetX / 2;
-  const yOffset = cy + d.dy * cardOffsetY / 2;
+  const xOffset = cx + (d.dx * cardOffsetX) / 2;
+  const yOffset = cy + (d.dy * cardOffsetY) / 2;
   return `translate(${xOffset}, ${yOffset})`;
 }
 
@@ -452,22 +477,22 @@ function navigateToChild() {
 
 function onKeyUp(e) {
   switch (e.code) {
-    case 'ArrowUp':
+    case "ArrowUp":
       changeFocusIndex(currentIndex - 1);
       break;
-    case 'ArrowDown':
+    case "ArrowDown":
       changeFocusIndex(currentIndex + 1);
       break;
-    case 'ArrowRight':
+    case "ArrowRight":
       navigateToChild();
       break;
-    case 'ArrowLeft':
+    case "ArrowLeft":
       navigateToParent();
       break;
   }
 
-  if (e.code === 'KeyF' && e.ctrlKey || e.code === 'Slash') {
-    searchInput.querySelector('input').focus();
+  if ((e.code === "KeyF" && e.ctrlKey) || e.code === "Slash") {
+    searchInput.querySelector("input").focus();
   }
 }
 
@@ -489,38 +514,38 @@ function onSearchBlur() {
   if (beforeSearchFocus) {
     window.location.hash = beforeSearchFocus;
   }
-  searchInput.querySelector('input').value = '';
+  searchInput.querySelector("input").value = "";
 }
 
 function onSearchInput() {
-  const query = searchInput.querySelector('input').value;
+  const query = searchInput.querySelector("input").value;
   // Find the most relevant node matching this.
-  const matching = data.nodes.filter(card => searchHelper(card, query));
+  const matching = data.nodes.filter((card) => searchHelper(card, query));
   if (matching.length == 0) {
-    searchInput.classList.add('error');
+    searchInput.classList.add("error");
     return;
   } else {
-    searchInput.classList.remove('error');
+    searchInput.classList.remove("error");
     visibleNodes = matching;
     renderIndex(0);
   }
 }
 
 function onSearchKey(e) {
-  if (e.key === 'Enter') {
-    const query = searchInput.querySelector('input').value;
-    const matching = data.nodes.filter(card => searchHelper(card, query));
+  if (e.key === "Enter") {
+    const query = searchInput.querySelector("input").value;
+    const matching = data.nodes.filter((card) => searchHelper(card, query));
     window.location.hash = matching[0].id;
 
     renderIndex(currentIndex);
     beforeSearchFocus = null;
-    searchInput.querySelector('input').blur();
+    searchInput.querySelector("input").blur();
   }
-  if (e.key === 'Escape') {
-    searchInput.querySelector('input').blur();
+  if (e.key === "Escape") {
+    searchInput.querySelector("input").blur();
   }
 }
 
-window.addEventListener('load', onLoad);
-window.addEventListener('hashchange', onHashChange);
-window.addEventListener('resize', onResize);
+window.addEventListener("load", onLoad);
+window.addEventListener("hashchange", onHashChange);
+window.addEventListener("resize", onResize);

@@ -90,6 +90,7 @@ function getVisibleCards(focusIndex, depth = 0) {
   cards.map((card) => {
     card.dx = 0;
     card.dy = 0;
+    card.role = "";
   });
   let visible = [];
 
@@ -114,16 +115,18 @@ function getVisibleCards(focusIndex, depth = 0) {
 
   // Get descendants of parents.
   const parents = getParents(focusCard);
+  const visibleIds = visible.map((card) => card.id);
   let siblings = [];
   for (const parent of parents) {
-    // The focus card should not be in the siblings.
+    // None of the currently visible cards should be included.
     const localSibs = getChildren(parent).filter(
-      (sib) => sib.id !== focusCard.id
+      (sib) => !visibleIds.includes(sib.id)
     );
     siblings.push(...localSibs);
   }
+  siblings = [...new Set(siblings)];
   siblings.map((sib) => {
-    console.log(`Sib ${sib.id}.`)
+    console.log(`Sib ${sib.id}.`);
     sib.role = "sibling";
     sib.offset = 0;
   });
@@ -131,7 +134,7 @@ function getVisibleCards(focusIndex, depth = 0) {
   console.log(
     `Found ${siblings.length} siblings: ${siblings.map((s) => s.id)}.`
   );
-  // visible = visible.concat(siblings);
+  visible = visible.concat(siblings);
 
   // Set positions for all visible cards based on their depth.
   for (const card of visible) {
@@ -144,11 +147,16 @@ function getVisibleCards(focusIndex, depth = 0) {
   const minOffset = Math.min(...offsets);
   const maxOffset = Math.max(...offsets);
   for (let offset = minOffset; offset <= maxOffset; offset++) {
-    const generation = visible.filter((card) => card.offset === offset);
+    const generation = visible.filter(
+      (card) => card.offset === offset && card.role !== "focus"
+    );
     generation.sort((a, b) => d3.ascending(a.index, b.index));
+
     for (const [index, card] of generation.entries()) {
-      if (card.role === "sibling") {
-        card.dy = 1;
+      if (card.role === "focus") {
+        card.dy = 0;
+      } else if (card.role === "sibling") {
+        card.dy = 1 + index * cardOverlapPercent;
       } else {
         card.dy = getDy(index, generation.length, cardOverlapPercent);
       }
@@ -302,8 +310,7 @@ function renderLabels() {
 }
 
 function renderIndex(index) {
-  const { links, nodes } = data;
-  const visible = getVisibleCards(index, 4);
+  const visible = getVisibleCards(index, 5);
   update(visible);
 }
 

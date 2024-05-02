@@ -18,8 +18,31 @@ export function parseYear(date) {
   return year * (isBce ? -1 : 1);
 }
 
+function validateData(nodes) {
+  // Check for duplicate IDs.
+  const ids = nodes.map((row) => row.id);
+  const dupes = ids.filter((e, i, a) => a.indexOf(e) !== i);
+  if (dupes.length > 0) {
+    console.warn(`Found ${dupes.length} duplicate IDs.`);
+    console.warn(dupes);
+    return false;
+  }
+  // Check for non-existent dependencies.
+  for (const node of nodes) {
+    for (const dep of node.deps) {
+      if (!ids.includes(dep)) {
+        console.warn(`Found non-existent dependency ${dep} for node ${node.id}.`);
+        return false;
+      }
+    }
+  }
+  return true;
+}
+
 export async function loadGraph(tsvUrl) {
   const rows = await d3.tsv(tsvUrl);
+
+
   const integer = Math.floor(Math.random() * 1000);
   const imageWidth = 240;
   const imageAspect = 16.0 / 9.0;
@@ -39,6 +62,10 @@ export async function loadGraph(tsvUrl) {
     //image: `https://i.picsum.photos/id/${integer}/${imageWidth}/${imageHeight}.jpg`,
     image: `/images/${row.ID}.jpg`,
   }));
+
+  if (!validateData(nodes)) {
+    console.error("Data is invalid.");
+  }
 
   // Get all links from the raw data.
   const links = [];

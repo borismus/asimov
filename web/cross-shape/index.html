@@ -41,10 +41,14 @@
 
 <template id=”asimov-timeline”>
   <style>
+
     section#container {
+    --container-width: 500px;
       position: absolute;
-      top: 12px;
-      left: 12px;
+      top: 0;
+      left: 50%;
+      margin-left: calc(var(--container-width) / -2);
+      width: var(--container-width);
       background: white;
       border: 1px solid black;
 
@@ -89,6 +93,7 @@
     footer.search-filter {
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
       border-top: 1px solid black;
       margin-top: 4px;
       padding: 4px;

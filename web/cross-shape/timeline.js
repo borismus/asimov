@@ -76,22 +76,37 @@ class Timeline extends HTMLElement {
   renderNodes() {
     const nodes = JSON.parse(this.getAttribute("nodes"));
     const focus = this.getAttribute("focus");
+    if (!nodes || nodes.length === 0 || !focus) {
+      return;
+    }
 
     // Find the focus node in the list of nodes.
-    const focusIndex = nodes.findIndex((node) => node.id === focus);
-    console.log(focusIndex);
+    let focusIndex = nodes.findIndex((node) => node.id === focus);
+    if (focusIndex === -1) {
+      console.log(`Focused node ${focus} not found in ${nodes.length} nodes.`);
+      // Show the first node instead.
+      focusIndex = 0;
+    }
 
     const allNodesEl = this.shadowRoot.querySelector(
       "ul#inventions-discoveries"
     );
     allNodesEl.innerHTML = "";
 
-    const range = [
-      Math.max(0, focusIndex - 2),
-      Math.min(nodes.length - 1, focusIndex + 2),
-    ];
-    for (let i = range[0]; i <= range[1]; i++) {
-      const node = nodes[i];
+    // Method 1: show two nodes before and after the focused one.
+    // const range = [
+    //   Math.max(0, focusIndex - 2),
+    //   Math.min(nodes.length - 1, focusIndex + 2),
+    // ];
+    // for (let i = range[0]; i <= range[1]; i++) {
+    //   nodeIndices.push(i);
+    // }
+    // Method 1 end.
+
+    const nodeIndices = getIndicesNear(focusIndex, nodes.length, 5);
+
+    for (const index of nodeIndices) {
+      const node = nodes[index];
       const nodeEl = document.createElement("li");
       const dateEl = document.createElement("span");
       dateEl.className = "date";
@@ -108,7 +123,7 @@ class Timeline extends HTMLElement {
       fieldEl.className = "field";
       nodeEl.appendChild(fieldEl);
 
-      if (i === focusIndex) {
+      if (index === focusIndex) {
         nodeEl.classList.add("focus");
       }
 
@@ -139,6 +154,29 @@ class Timeline extends HTMLElement {
     });
     this.fieldsPopulated = true;
   }
+}
+
+function getIndicesNear(focusIndex, total, count) {
+  let nodeIndices = [];
+  nodeIndices.push(focusIndex);
+
+  let offset = 1;
+  if (total < count) {
+    let range = (n) => Array.from(Array(n).keys());
+    nodeIndices = range(total);
+  } else {
+    while (nodeIndices.length < count) {
+      if (focusIndex + offset < total) {
+        nodeIndices.push(focusIndex + offset);
+      }
+      if (focusIndex - offset >= 0) {
+        nodeIndices.push(focusIndex - offset);
+      }
+      offset++;
+    }
+    nodeIndices = nodeIndices.sort((a, b) => a - b);
+  }
+  return nodeIndices;
 }
 
 customElements.define("asimov-timeline", Timeline);

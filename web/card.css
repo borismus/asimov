@@ -118,3 +118,11 @@ footer {
 .card:not(.focus) {
   cursor: pointer;
 }
+
+.card {
+  font-family: "Lora", serif;
+}
+
+.card .title {
+  font-family: "DM Serif Display", serif;
+}

@@ -1,4 +1,4 @@
-import { formatYear } from "./utils.js";
+import { formatField, formatYear } from "./utils.js";
 
 const cardAspect = 240 / 342;
 export const cardWidth = 240;
@@ -124,10 +124,6 @@ export function renderMTGCard(card) {
     .attr("href", (d) => `../images/fields/${formatField(d.field)}.png`);
 
   return outerG;
-}
-
-function formatField(field) {
-  return field.split(":")[0].toLowerCase();
 }
 
 export function renderCard(card) {

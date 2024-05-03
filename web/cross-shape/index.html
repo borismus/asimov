@@ -26,7 +26,7 @@
   </div>
 </div>
 
-<asimov-timeline focus="biped"></asimov-timeline>
+<asimov-timeline></asimov-timeline>
 
 
 <script src="https://d3js.org/d3.v5.min.js"></script>
@@ -67,6 +67,15 @@
     li {
       display: flex;
       justify-content: space-between;
+      cursor: pointer;
+    }
+
+    li.focus {
+      border: 1px solid yellow;
+    }
+
+    li:hover {
+      background: red;
     }
 
     footer.search-filter {

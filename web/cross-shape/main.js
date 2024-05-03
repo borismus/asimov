@@ -77,6 +77,7 @@ function onHashChange() {
   console.log("onHashChange id", id);
   currentIndex = idToIndex[id];
   renderIndex(currentIndex);
+  timelineEl.setAttribute("focus", id);
 }
 
 /**
@@ -437,7 +438,8 @@ function changeFocusIndex(cardIndex) {
     lastParent = focusCard;
     lastParent.role = "lastFocus";
   }
-  window.location.hash = data.nodes[cardIndex].id;
+
+  window.location.hash = nextCard.id;
 }
 
 function getCardTransform(card) {

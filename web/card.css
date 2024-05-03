@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
 
 :root {
   /* hue and saturation values from
@@ -14,6 +14,7 @@
   --hs9: 220, 6%;
   --lumin1: 75%;
   --lumin2: 85%;
+  --lumin3: 97%;
 
   --gradient-angle: 45deg;
 }
@@ -30,41 +31,113 @@
 }
 
 @keyframes fadein {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 @keyframes fadeout {
-  from { opacity: 1; }
-  to { opacity: 0; }
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
-.card-container.culture{ background: linear-gradient(var(--gradient-angle), hsl(var(--hs1), var(--lumin1)), hsl(var(--hs1), var(--lumin2))); }
-.card-container.design{ background: linear-gradient(var(--gradient-angle), hsl(var(--hs2), var(--lumin1)), hsl(var(--hs2), var(--lumin2))); }
-.card-container.general{ background: linear-gradient(var(--gradient-angle), hsl(var(--hs3), var(--lumin1)), hsl(var(--hs3), var(--lumin2))); }
-.card-container.geography{ background: linear-gradient(var(--gradient-angle), hsl(var(--hs4), var(--lumin1)), hsl(var(--hs4), var(--lumin2))); }
-.card-container.math{ background: linear-gradient(var(--gradient-angle), hsl(var(--hs5), var(--lumin1)), hsl(var(--hs5), var(--lumin2))); }
-.card-container.science{ background: linear-gradient(var(--gradient-angle), hsl(var(--hs6), var(--lumin1)), hsl(var(--hs6), var(--lumin2))); }
-.card-container.space{ background: linear-gradient(var(--gradient-angle), hsl(var(--hs7), var(--lumin1)), hsl(var(--hs7), var(--lumin2))); }
-.card-container.war{ background: linear-gradient(var(--gradient-angle), hsl(var(--hs8), var(--lumin1)), hsl(var(--hs8), var(--lumin2))); }
-.card-container.unknown{ background: linear-gradient(var(--gradient-angle), hsl(var(--hs9), var(--lumin1)), hsl(var(--hs9), var(--lumin2))); }
+.card-container.culture {
+  background: linear-gradient(
+    var(--gradient-angle),
+    hsl(var(--hs1), var(--lumin1)),
+    hsl(var(--hs1), var(--lumin2))
+  );
+}
+.card-container.design {
+  background: linear-gradient(
+    var(--gradient-angle),
+    hsl(var(--hs2), var(--lumin1)),
+    hsl(var(--hs2), var(--lumin2))
+  );
+}
+.card-container.general {
+  background: linear-gradient(
+    var(--gradient-angle),
+    hsl(var(--hs3), var(--lumin1)),
+    hsl(var(--hs3), var(--lumin2))
+  );
+}
+.card-container.geography {
+  background: linear-gradient(
+    var(--gradient-angle),
+    hsl(var(--hs4), var(--lumin1)),
+    hsl(var(--hs4), var(--lumin2))
+  );
+}
+.card-container.math {
+  background: linear-gradient(
+    var(--gradient-angle),
+    hsl(var(--hs5), var(--lumin1)),
+    hsl(var(--hs5), var(--lumin2))
+  );
+}
+.card-container.science {
+  background: linear-gradient(
+    var(--gradient-angle),
+    hsl(var(--hs6), var(--lumin1)),
+    hsl(var(--hs6), var(--lumin2))
+  );
+}
+.card-container.space {
+  background: linear-gradient(
+    var(--gradient-angle),
+    hsl(var(--hs7), var(--lumin1)),
+    hsl(var(--hs7), var(--lumin2))
+  );
+}
+.card-container.war {
+  background: linear-gradient(
+    var(--gradient-angle),
+    hsl(var(--hs8), var(--lumin1)),
+    hsl(var(--hs8), var(--lumin2))
+  );
+}
+.card-container.unknown {
+  background: linear-gradient(
+    var(--gradient-angle),
+    hsl(var(--hs9), var(--lumin1)),
+    hsl(var(--hs9), var(--lumin2))
+  );
+}
 
-header .title, footer .inventor {
+.field-culture rect { fill: hsl(var(--hs1), var(--lumin3)) }
+.field-design rect { fill: hsl(var(--hs2), var(--lumin3)) }
+.field-general rect { fill: hsl(var(--hs3), var(--lumin3)) }
+.field-geography rect { fill: hsl(var(--hs4), var(--lumin3)) }
+.field-math rect { fill: hsl(var(--hs5), var(--lumin3)) }
+.field-science rect { fill: hsl(var(--hs6), var(--lumin3)) }
+.field-space rect { fill: hsl(var(--hs7), var(--lumin3)) }
+.field-war rect { fill: hsl(var(--hs8), var(--lumin3)) }
+}
+
+header .title,
+footer .inventor {
   flex: 1;
   text-wrap: nowrap;
 }
 
 .inventor.unknown:before {
-  content: 'Inventor';
+  content: "Inventor";
   opacity: 0.3;
 }
 .location.unknown:before {
-  content: 'Location';
+  content: "Location";
   opacity: 0.3;
 }
 .location {
   white-space: nowrap;
 }
-
 
 header .title {
   overflow: hidden;
@@ -72,13 +145,13 @@ header .title {
   text-overflow: ellipsis;
 }
 
-
 header .year {
   padding-left: 10px;
 }
 
-header, footer {
-  font-family: 'Roboto Condensed', sans-serif;
+header,
+footer {
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 18px;
   display: flex;
   flex-direction: row;
@@ -109,7 +182,7 @@ footer {
 
 .card-body {
   flex-grow: 1;
-  font-family: 'Slabo 27px', serif;
+  font-family: "Slabo 27px", serif;
   font-size: 14px;
   hyphens: auto;
   overflow-y: hidden;

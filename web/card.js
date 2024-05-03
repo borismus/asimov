@@ -7,7 +7,9 @@ export const cardHeight = cardWidth / cardAspect;
 const imageAspect = 392 / 312;
 
 export function renderMTGCard(card) {
-  const outerG = card.append("g").attr("class", d => "card field-" + formatField(d.field));
+  const outerG = card
+    .append("g")
+    .attr("class", (d) => "card field-" + formatField(d.field));
 
   const g = outerG.append("g").attr("class", "card-inner");
   g.attr("transform", `translate(${-cardWidth / 2}, ${-cardHeight / 2})`);
@@ -26,6 +28,7 @@ export function renderMTGCard(card) {
     .attr("fill", "white")
     .attr("stroke", "black")
     .attr("stroke-width", 2)
+    .attr("rx", 4)
     .classed("container", true);
 
   // Image rectangle
@@ -73,7 +76,10 @@ export function renderMTGCard(card) {
     .attr("width", cardWidth - 2 * marginFo)
     .attr("font-size", bodyFontSize)
     .append("xhtml:div")
-    .html((d) => `<div style="padding: 1px; height: 100%; overflow-y: auto;">${d.description}</div>`);
+    .html(
+      (d) =>
+        `<div style="padding: 1px; height: 100%; overflow-y: auto;">${d.description}</div>`
+    );
 
   // Top left text
   g.append("text")

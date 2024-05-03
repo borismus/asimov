@@ -18,13 +18,8 @@ const svg = d3
 const links = svg.append("g").attr("class", "links");
 const nodes = svg.append("g").attr("class", "nodes");
 
-const searchInput = document.querySelector("#search");
-searchInput.addEventListener("input", onSearchInput);
-searchInput.addEventListener("keyup", onSearchKey);
-searchInput.querySelector("input").addEventListener("focus", onSearchFocus);
-searchInput.querySelector("input").addEventListener("blur", onSearchBlur);
-
 const timelineEl = document.querySelector("asimov-timeline");
+timelineEl.addEventListener("filter", onFilter);
 
 let data;
 let currentIndex;
@@ -52,9 +47,9 @@ async function onLoad() {
   //renderLabels();
 }
 
-function updateVisibleNodes() {
+function updateVisibleNodes(newVisibleNodes) {
   visibleNodes = data.nodes;
-  timelineEl.setAttribute("nodes", JSON.stringify(data.nodes));
+  timelineEl.setAttribute("nodes", JSON.stringify(newVisibleNodes));
 }
 
 function onResize() {
@@ -513,60 +508,15 @@ function onKeyUp(e) {
       navigateToParent();
       break;
   }
-
-  if ((e.code === "KeyF" && e.ctrlKey) || e.code === "Slash") {
-    searchInput.querySelector("input").focus();
-  }
 }
 
-/**
- * Detect if one of the parents is also an ancestor. This leads to bad behavior.
- */
-function getRedundantDeps() {
-  // TODO: Implement me.
-}
+function onFilter(e) {
+  console.log("onFilter", e.detail);
+  const { query, field } = e.detail;
 
-let beforeSearchFocus = null;
-function onSearchFocus() {
-  beforeSearchFocus = window.location.hash;
-}
-
-function onSearchBlur() {
-  updateVisibleNodes(data.nodes);
-
-  if (beforeSearchFocus) {
-    window.location.hash = beforeSearchFocus;
-  }
-  searchInput.querySelector("input").value = "";
-}
-
-function onSearchInput() {
-  const query = searchInput.querySelector("input").value;
   // Find the most relevant node matching this.
   const matching = data.nodes.filter((card) => searchHelper(card, query));
-  if (matching.length == 0) {
-    searchInput.classList.add("error");
-    return;
-  } else {
-    searchInput.classList.remove("error");
-    updateVisibleNodes(matching);
-    renderIndex(0);
-  }
-}
-
-function onSearchKey(e) {
-  if (e.key === "Enter") {
-    const query = searchInput.querySelector("input").value;
-    const matching = data.nodes.filter((card) => searchHelper(card, query));
-    window.location.hash = matching[0].id;
-
-    renderIndex(currentIndex);
-    beforeSearchFocus = null;
-    searchInput.querySelector("input").blur();
-  }
-  if (e.key === "Escape") {
-    searchInput.querySelector("input").blur();
-  }
+  updateVisibleNodes(matching);
 }
 
 window.addEventListener("load", onLoad);

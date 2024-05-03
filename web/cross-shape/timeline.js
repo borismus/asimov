@@ -23,6 +23,16 @@ class Timeline extends HTMLElement {
     console.log("Custom element added to page.");
     const template = getTemplate("asimov-timeline");
     this.shadowRoot.appendChild(template.content.cloneNode(true));
+
+    // Setup search field.
+    this.shadowRoot.querySelector("#query").addEventListener("input", (e) => {
+      this.emitFilterEvent();
+    });
+
+    // Setup field filter.
+    this.shadowRoot.querySelector("#fields").addEventListener("change", (e) => {
+      this.emitFilterEvent();
+    });
   }
 
   disconnectedCallback() {
@@ -40,7 +50,9 @@ class Timeline extends HTMLElement {
 
     if (name === "nodes") {
       // Populate with field data.
-      this.renderFields();
+      if (!this.fieldsPopulated) {
+        this.renderFields();
+      }
 
       // Populate with node data.
       this.renderNodes();
@@ -49,6 +61,16 @@ class Timeline extends HTMLElement {
     if (name === "focus") {
       this.renderNodes();
     }
+  }
+
+  emitFilterEvent() {
+    const event = new CustomEvent("filter", {
+      detail: {
+        query: this.shadowRoot.querySelector("#query").value,
+        field: this.shadowRoot.querySelector("#fields").value,
+      },
+    });
+    this.dispatchEvent(event);
   }
 
   renderNodes() {
@@ -81,6 +103,11 @@ class Timeline extends HTMLElement {
       titleEl.textContent = node.title;
       nodeEl.appendChild(titleEl);
 
+      const fieldEl = document.createElement("img");
+      fieldEl.src = `/images/fields/${formatField(node.field)}.png`;
+      fieldEl.className = "field";
+      nodeEl.appendChild(fieldEl);
+
       if (i === focusIndex) {
         nodeEl.classList.add("focus");
       }
@@ -98,12 +125,19 @@ class Timeline extends HTMLElement {
     const fields = [...new Set(nodes.map((node) => formatField(node.field)))];
     const allFieldsEl = this.shadowRoot.querySelector("#fields");
     allFieldsEl.innerHTML = "";
+
+    const noneField = document.createElement("option");
+    noneField.value = "";
+    noneField.textContent = "All Fields";
+    allFieldsEl.appendChild(noneField);
+
     fields.map((field) => {
       const fieldEl = document.createElement("option");
-      allFieldsEl.value = field;
+      fieldEl.value = field;
       fieldEl.textContent = capitalizeFirstLetter(field);
       allFieldsEl.appendChild(fieldEl);
     });
+    this.fieldsPopulated = true;
   }
 }
 

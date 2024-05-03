@@ -24,6 +24,8 @@ searchInput.addEventListener("keyup", onSearchKey);
 searchInput.querySelector("input").addEventListener("focus", onSearchFocus);
 searchInput.querySelector("input").addEventListener("blur", onSearchBlur);
 
+const timelineEl = document.querySelector("asimov-timeline");
+
 let data;
 let currentIndex;
 
@@ -37,7 +39,7 @@ async function onLoad() {
     card.index = index;
     idToIndex[card.id] = card.index;
   }
-  visibleNodes = data.nodes;
+  updateVisibleNodes(data.nodes);
 
   window.addEventListener("keyup", onKeyUp);
   if (window.location.hash) {
@@ -48,6 +50,11 @@ async function onLoad() {
     window.location.hash = ids[randomIndex];
   }
   //renderLabels();
+}
+
+function updateVisibleNodes() {
+  visibleNodes = data.nodes;
+  timelineEl.setAttribute("nodes", JSON.stringify(data.nodes));
 }
 
 function onResize() {
@@ -233,11 +240,6 @@ function getParents(card) {
       parents.push(potentialParent);
     }
   }
-  for (const [index, parent] of parents.entries()) {
-    // parent.dx = -1;
-    // parent.dy += getDy(index, parents.length, cardOverlapPercent);
-    // parent.role = 'parent';
-  }
   return parents;
 }
 
@@ -248,11 +250,6 @@ function getChildren(card) {
     if (potentialChild.deps.includes(card.id)) {
       children.push(potentialChild);
     }
-  }
-  for (const [index, child] of children.entries()) {
-    // child.dx = 1;
-    // child.dy += getDy(index, children.length, cardOverlapPercent);
-    // child.role = 'child';
   }
   return children;
 }
@@ -394,14 +391,18 @@ function renderCrossCards(cardsEnter) {
     d.growTimeout = setTimeout(() => {
       d3.select(this)
         .raise()
-        .attr("transform", getCardTransform(d) + " scale(1.5)")
+        .attr("transform", getCardTransform(d) + " scale(1.5)");
+      d.isGrow = true;
     }, 1000);
   });
   cards.on("mouseleave", function (d, i) {
     d3.select(this).attr("transform", getCardTransform(d));
     clearTimeout(d.growTimeout);
-    // Sorting cards back to the "original" order leads to odd behaviors.
-    // cards.sort((a, b) => d3.ascending(a.index, b.index));
+    if (d.isGrow) {
+      // Sorting cards back to the "original" order leads to odd behaviors.
+      cards.order();
+      d.isGrow = false;
+    }
   });
 }
 
@@ -529,7 +530,7 @@ function onSearchFocus() {
 }
 
 function onSearchBlur() {
-  visibleNodes = data.nodes;
+  updateVisibleNodes(data.nodes);
 
   if (beforeSearchFocus) {
     window.location.hash = beforeSearchFocus;
@@ -546,7 +547,7 @@ function onSearchInput() {
     return;
   } else {
     searchInput.classList.remove("error");
-    visibleNodes = matching;
+    updateVisibleNodes(matching);
     renderIndex(0);
   }
 }

@@ -22,7 +22,16 @@ export function formatField(field) {
   return field.split(":")[0].toLowerCase();
 }
 
-const VALID_FIELDS = ['general', 'science', 'space', 'math', 'culture', 'war', 'design', 'geography'];
+const VALID_FIELDS = [
+  "general",
+  "science",
+  "space",
+  "math",
+  "culture",
+  "war",
+  "design",
+  "geography",
+];
 
 function validateData(nodes) {
   // Check for duplicate IDs.
@@ -48,7 +57,9 @@ function validateData(nodes) {
       const depIndex = ids.indexOf(dep);
       const depYear = nodes[depIndex].year;
       if (depYear > node.year) {
-        console.warn(`Node ${node.id} (${node.year}) has dependency from the future ${dep} (${depYear}).`);
+        console.warn(
+          `Node ${node.id} (${node.year}) has dependency from the future ${dep} (${depYear}).`
+        );
         return false;
       }
     }
@@ -62,12 +73,26 @@ function validateData(nodes) {
       return false;
     }
   }
+
+  // Warn about nodes that don't depend on anything and are not linked.
+  const independentNodes = nodes.filter((node) => node.deps.length === 0);
+  for (const node of independentNodes) {
+    let linked = false;
+    for (const otherNode of nodes) {
+      if (otherNode.deps.includes(node.id)) {
+        linked = true;
+      }
+    }
+    if (!linked) {
+      console.warn(`Node ${node.id} has no dependencies and nothing depends on it.`);
+    }
+  }
+
   return true;
 }
 
 export async function loadGraph(tsvUrl) {
   const rows = await d3.tsv(tsvUrl);
-
 
   const integer = Math.floor(Math.random() * 1000);
   const imageWidth = 240;

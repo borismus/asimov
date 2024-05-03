@@ -3,7 +3,6 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="../card.css">
   <link rel="stylesheet" href="../arrows.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Slabo+27px&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -27,7 +26,8 @@
   </div>
 </div>
 
-<my-custom-element size="100"></my-custom-element>
+<asimov-timeline focus="biped"></asimov-timeline>
+
 
 <script src="https://d3js.org/d3.v5.min.js"></script>
 <script type="module" src="main.js"></script>
@@ -36,9 +36,69 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-17930798-39"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
 
   gtag('config', 'UA-17930798-39');
 </script>
 
+
+<template id=”asimov-timeline”>
+  <style>
+    section#container {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: black;
+      color: white;
+
+      display: flex;
+      flex-direction: column;
+    }
+
+    ul {
+      font-variant: small-caps;
+      font-family: 'Lora', serif;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    footer.search-filter {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .search {
+      margin-right: 12px;
+    }
+  </style>
+  <section id="container">
+    <ul id="inventions-discoveries">
+      <li><span class="date">1722</span> <span class="title">Easter Island</span></li>
+      <li><span class="date">1728</span> <span class="title">Ship's Chronometer</span></li>
+      <li class="focus"><span class="date">1728</span> <span class="title">Aberration of Light</span></li>
+      <li><span class="date">1728</span> <span class="title">Bering Strait</span></li>
+      <li><span class="date">1729</span> <span class="title">Dentistry</span></li>
+    </ul>
+    <footer class="search-filter">
+      <div class="search">
+        <input id="query" placeholder="Search..."></input>
+      </div>
+      <div class="filter">
+        <label for="fields">Filter</label>
+        <select name="fields" id="fields">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </select>
+      </div>
+    </footer>
+  </section>
+</template>

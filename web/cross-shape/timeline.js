@@ -1,14 +1,22 @@
-// Create a class for the element
+function getTemplate(templateId) {
+  const templates = Array.from(document.getElementsByTagName("template"));
+  templates.filter((template) => template.id === templateId);
+  return templates[0];
+}
+
 class Timeline extends HTMLElement {
-  static observedAttributes = ["color", "size"];
+  static observedAttributes = ["focus", "nodes"];
 
   constructor() {
     // Always call super first in constructor
     super();
+    this.attachShadow({ mode: "open" });
   }
 
   connectedCallback() {
     console.log("Custom element added to page.");
+    const template = getTemplate("asimov-timeline");
+    this.shadowRoot.appendChild(template.content.cloneNode(true));
   }
 
   disconnectedCallback() {
@@ -24,6 +32,8 @@ class Timeline extends HTMLElement {
       `Attribute ${name} has changed from ${oldValue} to ${newValue}.`
     );
   }
+
+  render() {}
 }
 
-customElements.define("my-custom-element", Timeline);
+customElements.define("asimov-timeline", Timeline);

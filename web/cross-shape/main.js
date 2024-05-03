@@ -22,9 +22,9 @@ const timelineEl = document.querySelector("asimov-timeline");
 timelineEl.addEventListener("filter", onFilter);
 
 let data;
-let currentIndex;
+let currentId;
 
-const idToIndex = {};
+const cardById = {};
 let visibleNodes = [];
 
 async function onLoad() {
@@ -32,7 +32,7 @@ async function onLoad() {
 
   for (let [index, card] of data.nodes.entries()) {
     card.index = index;
-    idToIndex[card.id] = card.index;
+    cardById[card.id] = card;
   }
   updateVisibleNodes(data.nodes);
 
@@ -48,8 +48,17 @@ async function onLoad() {
 }
 
 function updateVisibleNodes(newVisibleNodes) {
-  visibleNodes = data.nodes;
+  visibleNodes = newVisibleNodes;
   timelineEl.setAttribute("nodes", JSON.stringify(newVisibleNodes));
+
+  // Check if this ID is still in the visible nodes.
+  if (visibleNodes.find((n) => n.id === currentId)) {
+    console.log("Still visible.", currentId);
+    renderWithFocus(currentId);
+  } else {
+    console.log("Not visible.", currentId);
+    renderWithFocus(visibleNodes[0].id);
+  }
 }
 
 function onResize() {
@@ -57,7 +66,7 @@ function onResize() {
   const height = window.innerHeight;
   svg.attr("width", width).attr("viewBox", [0, 0, width, height]);
 
-  renderIndex(currentIndex);
+  renderWithFocus(currentId);
 }
 
 function searchHelper(card, query) {
@@ -69,9 +78,9 @@ function searchHelper(card, query) {
 
 function onHashChange() {
   const id = window.location.hash.substring(1);
+  currentId = id;
   console.log("onHashChange id", id);
-  currentIndex = idToIndex[id];
-  renderIndex(currentIndex);
+  renderWithFocus(id);
   timelineEl.setAttribute("focus", id);
 }
 
@@ -87,8 +96,9 @@ function onHashChange() {
  * may be shared by multiple cards, in which case they will fan out in the
  * y-axis.
  */
-function getVisibleCards(focusIndex, depth = 0) {
+function getVisibleCardsId(focusId, depth = 0) {
   const cards = visibleNodes;
+
   // Reset dx and dy on all card data.
   cards.map((card) => {
     card.dx = 0;
@@ -97,10 +107,11 @@ function getVisibleCards(focusIndex, depth = 0) {
   });
   let visible = [];
 
-  if (focusIndex < 0 || focusIndex >= cards.length) {
+  const focusCard = cards.find((card) => card.id === focusId);
+  if (!focusCard) {
     return visible;
   }
-  const focusCard = cards[focusIndex];
+
   focusCard.offset = 0;
   focusCard.role = "focus";
   // console.log(`Focusing on ${focusCard.id}.`);
@@ -164,26 +175,6 @@ function getVisibleCards(focusIndex, depth = 0) {
       }
     }
   }
-
-  // Get all next and previous cards.
-  // for (let i = 1; i < depth + 1; i++) {
-  //   // Try to add a previous card.
-  //   if (focusIndex - i > 0) {
-  //     const previous = Object.assign({}, cards[focusIndex - i]);
-  //     previous.dx = 0;
-  //     previous.dy = -i;
-  //     previous.role = 'previous';
-  //     visible.push(previous);
-  //   }
-  //   // Try to add a next card.
-  //   if (focusIndex + i < cards.length) {
-  //     const next = Object.assign({}, cards[focusIndex + i]);
-  //     next.dx = 0;
-  //     next.dy = i;
-  //     next.role = 'next';
-  //     visible.push(next);
-  //   }
-  // }
 
   return visible;
 }
@@ -301,8 +292,9 @@ function renderLabels() {
     .attr("transform", (d) => getLabelTransform(d));
 }
 
-function renderIndex(index) {
-  const visible = getVisibleCards(index, 5);
+function renderWithFocus(id) {
+  console.log("renderWithFocus", id);
+  const visible = getVisibleCardsId(id, 5);
   update(visible);
 }
 
@@ -403,12 +395,13 @@ function renderCrossCards(cardsEnter) {
 }
 
 function onCardClick(card) {
-  changeFocusIndex(card.index);
+  changeFocusId(card.id);
 }
 
-function changeFocusIndex(cardIndex) {
-  if (cardIndex < 0 || cardIndex >= data.nodes.length) {
-    console.warn(`Invalid index ${cardIndex}.`);
+function changeFocusId(nextId) {
+  const nextCard = cardById[nextId];
+  if (!nextCard) {
+    console.warn(`Invalid id ${nextId}.`);
     return;
   }
   if (lastChild) {
@@ -420,9 +413,8 @@ function changeFocusIndex(cardIndex) {
   lastChild = null;
   lastParent = null;
 
-  const cards = data.nodes;
-  const focusCard = cards[currentIndex];
-  const nextCard = cards[cardIndex];
+  const cards = visibleNodes;
+  const focusCard = cardById[currentId];
   if (focusCard.deps.includes(nextCard.id)) {
     // Navigating from a child to its parent.
     lastChild = focusCard;
@@ -464,42 +456,52 @@ let lastParent = null;
 
 function navigateToParent() {
   if (lastParent) {
-    changeFocusIndex(lastParent.index);
+    changeFocusId(lastParent.id);
     return;
   }
 
-  const cards = data.nodes;
-  const focusCard = cards[currentIndex];
+  const focusCard = cardById[currentId];
   const parents = getParents(focusCard);
   if (parents.length === 0) {
     return;
   }
 
-  changeFocusIndex(parents[parents.length - 1].index);
+  changeFocusId(parents[parents.length - 1].id);
 }
 
 function navigateToChild() {
   if (lastChild) {
-    changeFocusIndex(lastChild.index);
+    changeFocusId(lastChild.id);
     return;
   }
-  const cards = data.nodes;
-  const focusCard = cards[currentIndex];
+  const focusCard = cardById[currentId];
   const children = getChildren(focusCard);
   if (children.length === 0) {
     return;
   }
 
-  changeFocusIndex(children[children.length - 1].index);
+  changeFocusId(children[children.length - 1].id);
 }
 
 function onKeyUp(e) {
+  const currentCard = cardById[currentId];
+
   switch (e.code) {
     case "ArrowUp":
-      changeFocusIndex(currentIndex - 1);
+      const prevIndex = currentCard.index - 1;
+      if (prevIndex < 0) {
+        console.warn(`Already at first card ${currentCard.id}.`);
+        return;
+      }
+      changeFocusId(visibleNodes[prevIndex].id);
       break;
     case "ArrowDown":
-      changeFocusIndex(currentIndex + 1);
+      const nextIndex = currentCard.index + 1;
+      if (nextIndex >= visibleNodes.length) {
+        console.warn(`Already at last card ${currentCard.id}.`);
+        return;
+      }
+      changeFocusId(visibleNodes[nextIndex].id);
       break;
     case "ArrowRight":
       navigateToChild();

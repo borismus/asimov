@@ -18,6 +18,12 @@ export function parseYear(date) {
   return year * (isBce ? -1 : 1);
 }
 
+export function formatField(field) {
+  return field.split(":")[0].toLowerCase();
+}
+
+const VALID_FIELDS = ['general', 'science', 'space', 'math', 'culture', 'war', 'design', 'geography'];
+
 function validateData(nodes) {
   // Check for duplicate IDs.
   const ids = nodes.map((row) => row.id);
@@ -38,6 +44,22 @@ function validateData(nodes) {
         console.warn(`Found self-referencing dependency for node ${node.id}.`);
         return false;
       }
+      // Ensure the dependency came before the node.
+      const depIndex = ids.indexOf(dep);
+      const depYear = nodes[depIndex].year;
+      if (depYear > node.year) {
+        console.warn(`Node ${node.id} (${node.year}) has dependency from the future ${dep} (${depYear}).`);
+        return false;
+      }
+    }
+  }
+
+  // Check for nonsensical fields.
+  const fields = nodes.map((node) => formatField(node.field));
+  for (const field of new Set(fields)) {
+    if (!VALID_FIELDS.includes(field)) {
+      console.warn(`Found invalid field ${field}.`);
+      return false;
     }
   }
   return true;

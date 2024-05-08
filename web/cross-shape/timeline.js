@@ -11,7 +11,7 @@ function capitalizeFirstLetter(string) {
 }
 
 class Timeline extends HTMLElement {
-  static observedAttributes = ["focus", "nodes"];
+  static observedAttributes = ["focus", "nodes", "focusYear"];
 
   constructor() {
     // Always call super first in constructor
@@ -76,6 +76,7 @@ class Timeline extends HTMLElement {
   renderNodes() {
     const nodes = JSON.parse(this.getAttribute("nodes"));
     const focus = this.getAttribute("focus");
+    const focusNode = JSON.parse(this.getAttribute("focusNode"));
     if (!nodes || nodes.length === 0 || !focus) {
       return;
     }
@@ -84,8 +85,18 @@ class Timeline extends HTMLElement {
     let focusIndex = nodes.findIndex((node) => node.id === focus);
     if (focusIndex === -1) {
       console.log(`Focused node ${focus} not found in ${nodes.length} nodes.`);
-      // Show the first node instead.
+      // Show the card closest to focusNode.year.
       focusIndex = 0;
+      let closest = Infinity;
+      let closestInd = -1;
+      for (let i = 0; i < nodes.length; i++) {
+        const dist = Math.abs(nodes[i].year - focusNode.year);
+        if (dist < closest) {
+          closest = dist;
+          closestInd = i;
+        }
+      }
+      focusIndex = closestInd;
     }
 
     const allNodesEl = this.shadowRoot.querySelector(

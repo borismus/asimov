@@ -53,10 +53,10 @@ function updateVisibleNodes(newVisibleNodes) {
 
   // Check if this ID is still in the visible nodes.
   if (visibleNodes.find((n) => n.id === currentId)) {
-    console.log("Still visible.", currentId);
+    console.log(`Focused card ${currentId} still visible.`);
     renderWithFocus(currentId);
   } else {
-    console.log("Not visible.", currentId);
+    console.warn(`Focused card ${currentId} not visible.`);
     renderWithFocus(visibleNodes[0].id);
   }
 }
@@ -82,6 +82,7 @@ function onHashChange() {
   console.log("onHashChange id", id);
   renderWithFocus(id);
   timelineEl.setAttribute("focus", id);
+  timelineEl.setAttribute("focusNode", JSON.stringify(cardById[id]));
 }
 
 /**
@@ -138,16 +139,16 @@ function getVisibleCardsId(focusId, depth = 0) {
     );
     siblings.push(...localSibs);
   }
-  siblings = [...new Set(siblings)];
   siblings.map((sib) => {
     sib.role = "sibling";
     sib.offset = 0;
   });
 
-  console.log(
-    `Found ${siblings.length} siblings: ${siblings.map((s) => s.id)}.`
-  );
+  // console.log(
+  // `Found ${siblings.length} siblings: ${siblings.map((s) => s.id)}.`
+  // );
   visible = visible.concat(siblings);
+  visible = [...new Set(visible)];
 
   // Set positions for all visible cards based on their depth.
   for (const card of visible) {
@@ -293,7 +294,6 @@ function renderLabels() {
 }
 
 function renderWithFocus(id) {
-  console.log("renderWithFocus", id);
   const visible = getVisibleCardsId(id, 5);
   update(visible);
 }
@@ -377,10 +377,10 @@ function renderCrossCards(cardsEnter) {
 
   cards.on("mouseenter", function (d, i) {
     d.growTimeout = setTimeout(() => {
-      d3.select(this)
-        .raise()
-        .attr("transform", getCardTransform(d) + " scale(1.5)");
+      const newTransform = getCardTransformCentered(d);
+      d3.select(this).raise().attr("transform", newTransform);
       d.isGrow = true;
+      console.log("newTransform", newTransform);
     }, 1000);
   });
   cards.on("mouseleave", function (d, i) {
@@ -431,6 +431,16 @@ function changeFocusId(nextId) {
 
 function getCardTransform(card) {
   return `translate(${getX(card)}, ${getY(card)})`;
+}
+
+function getCardTransformCentered(card) {
+  return `translate(${getX(card)}, ${getY(card)}) scale(1.5)`;
+
+  const centerX = width / 2;
+  const centerY = height / 2;
+  const cx = (getX(card) + centerX) / 2;
+  const cy = (getY(card) + centerY) / 2;
+  return `translate(${cx}, ${cy}) scale(1.5)`;
 }
 
 function getLabelTransform(d) {
@@ -484,21 +494,23 @@ function navigateToChild() {
 }
 
 function onKeyUp(e) {
-  const currentCard = cardById[currentId];
+  let currentIndex;
 
   switch (e.code) {
     case "ArrowUp":
-      const prevIndex = currentCard.index - 1;
+      currentIndex = visibleNodes.findIndex((n) => n.id === currentId);
+      const prevIndex = currentIndex - 1;
       if (prevIndex < 0) {
-        console.warn(`Already at first card ${currentCard.id}.`);
+        console.warn(`Already at first card ${currentId}.`);
         return;
       }
       changeFocusId(visibleNodes[prevIndex].id);
       break;
     case "ArrowDown":
-      const nextIndex = currentCard.index + 1;
+      currentIndex = visibleNodes.findIndex((n) => n.id === currentId);
+      const nextIndex = currentIndex + 1;
       if (nextIndex >= visibleNodes.length) {
-        console.warn(`Already at last card ${currentCard.id}.`);
+        console.warn(`Already at last card ${currentId}.`);
         return;
       }
       changeFocusId(visibleNodes[nextIndex].id);
@@ -517,8 +529,17 @@ function onFilter(e) {
   const { query, field } = e.detail;
 
   // Find the most relevant node matching this.
-  const matching = data.nodes.filter((card) => searchHelper(card, query));
+  let matching = data.nodes.filter((card) => searchHelper(card, query));
+
   updateVisibleNodes(matching);
+
+  // Filter by field if needed.
+  if (field) {
+    const fieldFiltered = matching.filter(
+      (card) => card.field.toLowerCase() === field
+    );
+    timelineEl.setAttribute("nodes", JSON.stringify(fieldFiltered));
+  }
 }
 
 window.addEventListener("load", onLoad);

@@ -41,9 +41,8 @@
 
 <template id=”asimov-timeline”>
   <style>
-
     section#container {
-    --container-width: 500px;
+      --container-width: 500px;
       position: absolute;
       top: 0;
       left: 50%;
@@ -101,6 +100,24 @@
 
     .search {
       margin-right: 12px;
+    }
+
+    .clearing {
+      animation: glow 1s forwards ease-in-out;
+    }
+
+    @keyframes glow {
+      from {
+        box-shadow: 0 0 0 0 white;
+      }
+
+      50% {
+        box-shadow: 0 0 10px 2px #e95c29;
+      }
+
+      to {
+        box-shadow: 0 0 0 0 white;
+      }
     }
   </style>
   <section id="container">

@@ -165,6 +165,26 @@ class Timeline extends HTMLElement {
     });
     this.fieldsPopulated = true;
   }
+
+  resetFilters() {
+    const queryEl = this.shadowRoot.querySelector("#query");
+    if (queryEl.value) {
+      // Make an animation of clearing
+      queryEl.value = "";
+      queryEl.classList.add("clearing");
+      setTimeout(() => {
+        queryEl.classList.remove("clearing");
+      }, 1000);
+    }
+    const fieldsEl = this.shadowRoot.querySelector("#fields");
+    if (fieldsEl.value) {
+      fieldsEl.value = "";
+      fieldsEl.classList.add("clearing");
+      setTimeout(() => {
+        fieldsEl.classList.remove("clearing");
+      }, 1000);
+    }
+  }
 }
 
 function getIndicesNear(focusIndex, total, count) {

@@ -399,6 +399,12 @@ function onCardClick(card) {
 }
 
 function changeFocusId(nextId) {
+  if (!visibleNodes.map((n) => n.id).includes(nextId)) {
+    // This card is not visible.
+    console.warn(`Card ${nextId} is not visible with current filters. Resetting them.`);
+    timelineEl.resetFilters();
+    updateVisibleNodes(data.nodes);
+  }
   const nextCard = cardById[nextId];
   if (!nextCard) {
     console.warn(`Invalid id ${nextId}.`);
@@ -413,7 +419,6 @@ function changeFocusId(nextId) {
   lastChild = null;
   lastParent = null;
 
-  const cards = visibleNodes;
   const focusCard = cardById[currentId];
   if (focusCard.deps.includes(nextCard.id)) {
     // Navigating from a child to its parent.
@@ -434,13 +439,9 @@ function getCardTransform(card) {
 }
 
 function getCardTransformCentered(card) {
-  return `translate(${getX(card)}, ${getY(card)}) scale(1.5)`;
-
-  const centerX = width / 2;
-  const centerY = height / 2;
-  const cx = (getX(card) + centerX) / 2;
-  const cy = (getY(card) + centerY) / 2;
-  return `translate(${cx}, ${cy}) scale(1.5)`;
+  // Check if the zoomed-in card will be out of bounds, and move it appropriately.
+  const scale = 1.5;
+  return `translate(${getX(card)}, ${getY(card)}) scale(${scale})`;
 }
 
 function getLabelTransform(d) {
@@ -531,15 +532,13 @@ function onFilter(e) {
   // Find the most relevant node matching this.
   let matching = data.nodes.filter((card) => searchHelper(card, query));
 
-  updateVisibleNodes(matching);
-
   // Filter by field if needed.
   if (field) {
-    const fieldFiltered = matching.filter(
-      (card) => card.field.toLowerCase() === field
-    );
-    timelineEl.setAttribute("nodes", JSON.stringify(fieldFiltered));
+    matching = matching.filter((card) => card.field.toLowerCase() === field);
   }
+
+  updateVisibleNodes(matching);
+
 }
 
 window.addEventListener("load", onLoad);

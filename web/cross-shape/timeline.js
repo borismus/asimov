@@ -84,35 +84,14 @@ class Timeline extends HTMLElement {
     // Find the focus node in the list of nodes.
     let focusIndex = nodes.findIndex((node) => node.id === focus);
     if (focusIndex === -1) {
-      console.log(`Focused node ${focus} not found in ${nodes.length} nodes.`);
-      // Show the card closest to focusNode.year.
-      focusIndex = 0;
-      let closest = Infinity;
-      let closestInd = -1;
-      for (let i = 0; i < nodes.length; i++) {
-        const dist = Math.abs(nodes[i].year - focusNode.year);
-        if (dist < closest) {
-          closest = dist;
-          closestInd = i;
-        }
-      }
-      focusIndex = closestInd;
+      console.warn(`Focused node ${focus} not found in ${nodes.length} nodes.`);
+      return;
     }
 
     const allNodesEl = this.shadowRoot.querySelector(
       "ul#inventions-discoveries"
     );
     allNodesEl.innerHTML = "";
-
-    // Method 1: show two nodes before and after the focused one.
-    // const range = [
-    //   Math.max(0, focusIndex - 2),
-    //   Math.min(nodes.length - 1, focusIndex + 2),
-    // ];
-    // for (let i = range[0]; i <= range[1]; i++) {
-    //   nodeIndices.push(i);
-    // }
-    // Method 1 end.
 
     const nodeIndices = getIndicesNear(focusIndex, nodes.length, 5);
 

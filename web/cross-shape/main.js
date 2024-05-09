@@ -65,12 +65,25 @@ function updateVisibleNodes(newVisibleNodes) {
     console.log(`Focused card ${currentId} still visible.`);
     renderWithFocus(currentId);
   } else {
-    const newId = visibleNodes[0].id;
+    const newId = getVisibleCardNearestYear(cardById[currentId].year);
     console.warn(
       `Focused card ${currentId} not visible. Navigating to visible card ${newId}.`
     );
     changeFocusId(newId);
   }
+}
+
+function getVisibleCardNearestYear(year) {
+  let closest = Infinity;
+  let closestId = -1;
+  for (const [index, node] of visibleNodes.entries()) {
+    const dist = Math.abs(node.year - year);
+    if (dist < closest) {
+      closest = dist;
+      closestId = node.id;
+    }
+  }
+  return closestId;
 }
 
 function onResize() {
@@ -91,7 +104,7 @@ function searchHelper(card, query) {
 function onHashChange() {
   const id = window.location.hash.substring(1);
   currentId = id;
-  console.log("onHashChange id", id);
+  console.log(`onHashChange: #${id}`);
   renderWithFocus(id);
   timelineEl.setAttribute("focus", id);
   timelineEl.setAttribute("focusNode", JSON.stringify(cardById[id]));
@@ -205,11 +218,7 @@ function getAncestors(card, depth, offset = 0) {
     ancestors = ancestors.concat(getAncestors(parent, depth, offset + 1));
   }
   // Make sure we don't have dupes.
-  const beforeLength = ancestors.length;
   ancestors = [...new Set(ancestors)];
-  if (beforeLength !== ancestors.length) {
-    console.log(`Removed ${beforeLength - ancestors.length} cards via Set.`);
-  }
 
   return ancestors;
 }
@@ -307,7 +316,6 @@ function renderLabels() {
 
 function renderWithFocus(id) {
   const visible = getVisibleCardsId(id, 5);
-  console.log('visible', visible.map(v => v.id));
   update(visible);
 }
 
@@ -393,7 +401,6 @@ function renderCrossCards(cardsEnter) {
       const newTransform = getCardTransformCentered(d);
       d3.select(this).raise().attr("transform", newTransform);
       d.isGrow = true;
-      console.log("newTransform", newTransform);
     }, 1000);
   });
   cards.on("mouseleave", function (event, d) {
@@ -402,7 +409,6 @@ function renderCrossCards(cardsEnter) {
     if (d.isGrow) {
       // Sorting cards back to the "original" order leads to odd behaviors.
       cards.order();
-      console.log('order', cards._groups[0].map(el => el.__data__.id));
       d.isGrow = false;
     }
   });

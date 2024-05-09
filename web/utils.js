@@ -84,7 +84,7 @@ function validateData(nodes) {
       }
     }
     if (!linked) {
-      console.warn(`Node ${node.id} has no dependencies and nothing depends on it.`);
+      console.warn(`Card #${node.id} has no dependencies and nothing depends on it.`);
     }
   }
 

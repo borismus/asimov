@@ -307,6 +307,7 @@ function renderLabels() {
 
 function renderWithFocus(id) {
   const visible = getVisibleCardsId(id, 5);
+  console.log('visible', visible.map(v => v.id));
   update(visible);
 }
 
@@ -387,7 +388,7 @@ function renderCrossCards(cardsEnter) {
   cards.style("animation", "fadein 0.25s");
   cards.classed("focus", (d) => d.role == "focus");
 
-  cards.on("mouseenter", function (d, i) {
+  cards.on("mouseenter", function (event, d) {
     d.growTimeout = setTimeout(() => {
       const newTransform = getCardTransformCentered(d);
       d3.select(this).raise().attr("transform", newTransform);
@@ -395,18 +396,19 @@ function renderCrossCards(cardsEnter) {
       console.log("newTransform", newTransform);
     }, 1000);
   });
-  cards.on("mouseleave", function (d, i) {
+  cards.on("mouseleave", function (event, d) {
     d3.select(this).attr("transform", getCardTransform(d));
     clearTimeout(d.growTimeout);
     if (d.isGrow) {
       // Sorting cards back to the "original" order leads to odd behaviors.
       cards.order();
+      console.log('order', cards._groups[0].map(el => el.__data__.id));
       d.isGrow = false;
     }
   });
 }
 
-function onCardClick(card) {
+function onCardClick(event, card) {
   changeFocusId(card.id);
 }
 

@@ -55,13 +55,21 @@ function updateVisibleNodes(newVisibleNodes) {
   visibleNodes = newVisibleNodes;
   timelineEl.setAttribute("nodes", JSON.stringify(newVisibleNodes));
 
+  // If there's no current ID, no worries whether it is visible or not.
+  if (!currentId) {
+    return;
+  }
+
   // Check if this ID is still in the visible nodes.
   if (visibleNodes.find((n) => n.id === currentId)) {
     console.log(`Focused card ${currentId} still visible.`);
     renderWithFocus(currentId);
   } else {
-    console.warn(`Focused card ${currentId} not visible.`);
-    renderWithFocus(visibleNodes[0].id);
+    const newId = visibleNodes[0].id;
+    console.warn(
+      `Focused card ${currentId} not visible. Navigating to visible card ${newId}.`
+    );
+    changeFocusId(newId);
   }
 }
 

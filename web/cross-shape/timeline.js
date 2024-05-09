@@ -185,6 +185,10 @@ class Timeline extends HTMLElement {
       }, 1000);
     }
   }
+
+  focusSearch() {
+    this.shadowRoot.querySelector("#query").focus();
+  }
 }
 
 function getIndicesNear(focusIndex, total, count) {

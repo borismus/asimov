@@ -48,6 +48,10 @@ async function onLoad() {
 }
 
 function updateVisibleNodes(newVisibleNodes) {
+  if (newVisibleNodes.length === 0) {
+    console.error(`No visible nodes.`);
+    return;
+  }
   visibleNodes = newVisibleNodes;
   timelineEl.setAttribute("nodes", JSON.stringify(newVisibleNodes));
 
@@ -401,7 +405,9 @@ function onCardClick(card) {
 function changeFocusId(nextId) {
   if (!visibleNodes.map((n) => n.id).includes(nextId)) {
     // This card is not visible.
-    console.warn(`Card ${nextId} is not visible with current filters. Resetting them.`);
+    console.warn(
+      `Card ${nextId} is not visible with current filters. Resetting them.`
+    );
     timelineEl.resetFilters();
     updateVisibleNodes(data.nodes);
   }
@@ -441,7 +447,31 @@ function getCardTransform(card) {
 function getCardTransformCentered(card) {
   // Check if the zoomed-in card will be out of bounds, and move it appropriately.
   const scale = 1.5;
-  return `translate(${getX(card)}, ${getY(card)}) scale(${scale})`;
+  const cardTop = getY(card) - (cardHeight * scale) / 2;
+  const cardLeft = getX(card) - (cardWidth * scale) / 2;
+  const cardBottom = getY(card) + (cardHeight * scale) / 2;
+  const cardRight = getX(card) + (cardWidth * scale) / 2;
+
+  let offset = {
+    x: 0,
+    y: 0,
+  };
+  if (cardTop < 0) {
+    offset.y = -cardTop;
+  }
+  if (cardLeft < 0) {
+    offset.x = -cardLeft;
+  }
+  if (cardRight > width) {
+    offset.x = width - cardRight;
+  }
+  if (cardBottom > height) {
+    offset.y = height - cardBottom;
+  }
+
+  return `translate(${getX(card) + offset.x}, ${
+    getY(card) + offset.y
+  }) scale(${scale})`;
 }
 
 function getLabelTransform(d) {
@@ -522,6 +552,9 @@ function onKeyUp(e) {
     case "ArrowLeft":
       navigateToParent();
       break;
+    case "Slash":
+      timelineEl.focusSearch();
+      break;
   }
 }
 
@@ -538,7 +571,6 @@ function onFilter(e) {
   }
 
   updateVisibleNodes(matching);
-
 }
 
 window.addEventListener("load", onLoad);

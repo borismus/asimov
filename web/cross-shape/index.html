@@ -102,9 +102,14 @@
       margin-right: 12px;
     }
 
+    #query::-webkit-search-cancel-button {
+      cursor: pointer;
+    }
+
     .clearing {
       animation: glow 1s forwards ease-in-out;
     }
+
 
     @keyframes glow {
       from {
@@ -131,7 +136,7 @@
     </ul>
     <footer class="search-filter">
       <div class="search">
-        <input id="query" placeholder="Search..."></input>
+        <input id="query" type="search" placeholder="Search..."></input>
       </div>
       <div class="filter">
         <label for="fields">Show</label>

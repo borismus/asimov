@@ -116,22 +116,25 @@
       }
     }
 
-    #collapse-expand {
+    button {
       width: 24px;
-      height: 24px;
-      border: 2px solid white;
+      border: 1px solid white;
       cursor: pointer;
-      background: url(../images/icons/unfold_less.svg);
       background-size: contain;
+      background-color: white;
+      background-repeat: no-repeat;
     }
 
-    .collapsed #collapse-expand {
-      background: url(../images/icons/unfold_more.svg);
-      background-size: contain;
-    }
-
-    #collapse-expand:hover {
+    button:hover {
       border: 0;
+    }
+
+    button#collapse-expand {
+      background-image: url(../images/icons/unfold_less.svg);
+    }
+
+    .collapsed button#collapse-expand {
+      background-image: url(../images/icons/unfold_more.svg);
     }
 
     #inventions-discoveries {
@@ -146,10 +149,15 @@
       border-top: 0;
     }
 
+    button#help {
+      margin-left: 8px;
+      background-image: url(../images/icons/help.svg);
+    }
+
     select,
     input,
     button {
-      height: 24px;
+      height: 22px;
     }
   </style>
   <section id="container">
@@ -162,6 +170,7 @@
         <select name="fields" id="fields">
         </select>
       </div>
+      <button id="help" onclick="window.open('https://smus.com/visual-chronology-science-discovery', '_blank')"></button>
     </section>
 
     <ul id="inventions-discoveries">

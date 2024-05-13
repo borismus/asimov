@@ -35,13 +35,14 @@
       margin-left: calc(var(--container-width) / -2);
       width: var(--container-width);
       background: white;
-      border: 1px solid black;
 
       display: flex;
       flex-direction: column;
     }
 
     ul {
+      border: 1px solid black;
+      border-spacing: 0;
       font-family: 'DM Serif Display', serif;
       font-size: 14px;
       list-style-type: none;
@@ -75,17 +76,21 @@
       height: 16px;
     }
 
-    footer.search-filter {
+    section.search-filter {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      border-top: 1px solid black;
-      margin-top: 4px;
-      padding: 4px;
+      padding: 6px;
+      padding-left: 0;
+      z-index: 1;
+      background: white;
+      border: 1px solid black;
+      border-top: 0;
     }
 
     .search {
-      margin-right: 12px;
+      margin-right: auto;
+      margin-left: 4px;
     }
 
     #query::-webkit-search-cancel-button {
@@ -110,8 +115,55 @@
         box-shadow: 0 0 0 0 white;
       }
     }
+
+    #collapse-expand {
+      width: 24px;
+      height: 24px;
+      border: 2px solid white;
+      cursor: pointer;
+      background: url(../images/icons/unfold_less.svg);
+      background-size: contain;
+    }
+
+    .collapsed #collapse-expand {
+      background: url(../images/icons/unfold_more.svg);
+      background-size: contain;
+    }
+
+    #collapse-expand:hover {
+      border: 0;
+    }
+
+    #inventions-discoveries {
+      transition: margin-top 0.3s ease-in-out;
+    }
+
+    .collapsed #inventions-discoveries {
+      margin-top: -100%;
+    }
+
+    :not(.collapsed) #inventions-discoveries {
+      border-top: 0;
+    }
+
+    select,
+    input,
+    button {
+      height: 24px;
+    }
   </style>
   <section id="container">
+    <section class="search-filter">
+      <button id="collapse-expand"></button>
+      <div class="search">
+        <input id="query" type="search" placeholder="Search..."></input>
+      </div>
+      <div class="filter">
+        <select name="fields" id="fields">
+        </select>
+      </div>
+    </section>
+
     <ul id="inventions-discoveries">
       <li><span class="date">1722</span> <span class="title">Easter Island</span> <img class="field"
           src="/images/fields/science.png" /></li>
@@ -120,15 +172,5 @@
       <li><span class="date">1728</span> <span class="title">Bering Strait</span></li>
       <li><span class="date">1729</span> <span class="title">Dentistry</span></li>
     </ul>
-    <footer class="search-filter">
-      <div class="search">
-        <input id="query" type="search" placeholder="Search..."></input>
-      </div>
-      <div class="filter">
-        <label for="fields">Show</label>
-        <select name="fields" id="fields">
-        </select>
-      </div>
-    </footer>
   </section>
 </template>

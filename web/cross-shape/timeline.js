@@ -11,7 +11,7 @@ function capitalizeFirstLetter(string) {
 }
 
 class Timeline extends HTMLElement {
-  static observedAttributes = ["focus", "nodes", "focusYear"];
+  static observedAttributes = ["focus", "nodes", "collapsed"];
 
   constructor() {
     // Always call super first in constructor
@@ -33,6 +33,15 @@ class Timeline extends HTMLElement {
     this.shadowRoot.querySelector("#fields").addEventListener("change", (e) => {
       this.emitFilterEvent();
     });
+    // Setup collapse/expand button.
+    this.shadowRoot
+      .querySelector("#collapse-expand")
+      .addEventListener("click", (e) => {
+        this.setAttribute(
+          "collapsed",
+          this.getAttribute("collapsed") === "true" ? "false" : "true"
+        );
+      });
   }
 
   disconnectedCallback() {
@@ -61,6 +70,13 @@ class Timeline extends HTMLElement {
     if (name === "focus") {
       this.renderNodes();
     }
+
+    if (name === "collapsed") {
+      const isNowCollapsed = newValue === "true";
+      this.shadowRoot.querySelector("#container").className = isNowCollapsed
+        ? "collapsed"
+        : "";
+    }
   }
 
   emitFilterEvent() {
@@ -76,7 +92,6 @@ class Timeline extends HTMLElement {
   renderNodes() {
     const nodes = JSON.parse(this.getAttribute("nodes"));
     const focus = this.getAttribute("focus");
-    const focusNode = JSON.parse(this.getAttribute("focusNode"));
     if (!nodes || nodes.length === 0 || !focus) {
       return;
     }

@@ -1,0 +1,185 @@
+<head>
+  <title>Asimov's Chronology (Cross View)</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../card.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<div id="container">
+</div>
+
+<asimov-timeline></asimov-timeline>
+
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script type="module" src="main.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-17930798-39"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-17930798-39');
+</script>
+
+
+<template id=”asimov-timeline”>
+  <style>
+    section#container {
+      --container-width: 500px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: calc(var(--container-width) / -2);
+      width: var(--container-width);
+      background: white;
+
+      display: flex;
+      flex-direction: column;
+    }
+
+    ul {
+      border: 1px solid black;
+      border-spacing: 0;
+      font-family: 'DM Serif Display', serif;
+      font-size: 14px;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+      padding: 4px;
+    }
+
+    li.focus {
+      background: #dc143c33;
+    }
+
+    li:hover:not(.focus) {
+      background: #d3d3d366;
+    }
+
+    .title {
+      margin-left: auto;
+    }
+
+    .field {
+      padding-top: 2px;
+      padding-left: 4px;
+      width: 16px;
+      height: 16px;
+    }
+
+    section.search-filter {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 6px;
+      padding-left: 0;
+      z-index: 1;
+      background: white;
+      border: 1px solid black;
+      border-top: 0;
+    }
+
+    .search {
+      margin-right: auto;
+      margin-left: 4px;
+    }
+
+    #query::-webkit-search-cancel-button {
+      cursor: pointer;
+    }
+
+    .clearing {
+      animation: glow 1s forwards ease-in-out;
+    }
+
+
+    @keyframes glow {
+      from {
+        box-shadow: 0 0 0 0 white;
+      }
+
+      50% {
+        box-shadow: 0 0 10px 2px #e95c29;
+      }
+
+      to {
+        box-shadow: 0 0 0 0 white;
+      }
+    }
+
+    button {
+      width: 24px;
+      border: 1px solid white;
+      cursor: pointer;
+      background-size: contain;
+      background-color: white;
+      background-repeat: no-repeat;
+    }
+
+    button:hover {
+      border: 0;
+    }
+
+    button#collapse-expand {
+      background-image: url(../images/icons/unfold_less.svg);
+    }
+
+    .collapsed button#collapse-expand {
+      background-image: url(../images/icons/unfold_more.svg);
+    }
+
+    #inventions-discoveries {
+      transition: margin-top 0.3s ease-in-out;
+    }
+
+    .collapsed #inventions-discoveries {
+      margin-top: -100%;
+    }
+
+    :not(.collapsed) #inventions-discoveries {
+      border-top: 0;
+    }
+
+    button#help {
+      margin-left: 8px;
+      background-image: url(../images/icons/help.svg);
+    }
+
+    select,
+    input,
+    button {
+      height: 22px;
+    }
+  </style>
+  <section id="container">
+    <section class="search-filter">
+      <button id="collapse-expand"></button>
+      <div class="search">
+        <input id="query" type="search" placeholder="Search..."></input>
+      </div>
+      <div class="filter">
+        <select name="fields" id="fields">
+        </select>
+      </div>
+      <button id="help" onclick="window.open('https://smus.com/visual-chronology-science-discovery', '_blank')"></button>
+    </section>
+
+    <ul id="inventions-discoveries">
+      <li><span class="date">1722</span> <span class="title">Easter Island</span> <img class="field"
+          src="/images/fields/science.png" /></li>
+      <li><span class="date">1728</span> <span class="title">Ship's Chronometer</span></li>
+      <li class="focus"><span class="date">1728</span> <span class="title">Aberration of Light</span></li>
+      <li><span class="date">1728</span> <span class="title">Bering Strait</span></li>
+      <li><span class="date">1729</span> <span class="title">Dentistry</span></li>
+    </ul>
+  </section>
+</template>

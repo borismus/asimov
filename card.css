@@ -119,7 +119,6 @@
 .field-science rect { fill: hsl(var(--hs6), var(--lumin3)) }
 .field-space rect { fill: hsl(var(--hs7), var(--lumin3)) }
 .field-war rect { fill: hsl(var(--hs8), var(--lumin3)) }
-}
 
 header .title,
 footer .inventor {

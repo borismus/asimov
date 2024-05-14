@@ -461,6 +461,9 @@ function changeFocusId(nextId) {
   }
 
   window.location.hash = nextCard.id;
+  gtag('event', 'navigate_to_card', {
+    id: nextCard.id,
+  });
 }
 
 function getCardTransform(card) {

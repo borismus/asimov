@@ -38,7 +38,7 @@ function addCircle(g, index) {
 // Enable zoom and pan.
 const zoom = d3
   .zoom()
-  .scaleExtent(isMobile ? [.1, 2] : [0.3, 2])
+  .scaleExtent(isMobile() ? [0.1, 2] : [0.3, 2])
   .on("zoom", ({ transform }) => {
     g.attr("transform", transform);
     resetZoomEl.className = "visible";
@@ -128,9 +128,10 @@ function onResize() {
 }
 
 function searchHelper(card, query) {
+  const queryLower = query.toLowerCase();
   return (
-    card.title.toLowerCase().includes(query) ||
-    card.description.toLowerCase().includes(query)
+    card.title.toLowerCase().includes(queryLower) ||
+    card.description.toLowerCase().includes(queryLower)
   );
 }
 

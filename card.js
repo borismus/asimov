@@ -56,7 +56,7 @@ export function renderMTGCard(card) {
     .attr("y", margin + headerExtra)
     .attr("width", cardWidth - margin * 2)
     .attr("height", (cardWidth - margin * 2) * (1 / imageAspect) + headerExtra)
-    .attr("href", (d) => `../images/entries/${d.id}.jpg`)
+    .attr("href", (d) => `images/entries/${d.id}.jpg`)
     .attr("preserveAspectRatio", "xMidYMid slice");
 
   const footerHeight = 20;
@@ -131,7 +131,7 @@ export function renderMTGCard(card) {
     .attr("y", 5)
     .attr("width", 10)
     .attr("height", 10)
-    .attr("href", (d) => `../images/fields/${formatField(d.field)}.png`);
+    .attr("href", (d) => `images/fields/${formatField(d.field)}.png`);
 
   // Bottom icon to report a bug.
   g.append("image")
@@ -139,7 +139,7 @@ export function renderMTGCard(card) {
     .attr("y", cardHeight - footerHeight + 6)
     .attr("width", 10)
     .attr("height", 10)
-    .attr("href", "../images/icons/bug_report.svg")
+    .attr("href", "images/icons/bug_report.svg")
     .attr("cursor", "pointer")
     .attr("onclick", (d) => {
       const bugTitle = `Content issue with %23${d.id}`;
@@ -170,7 +170,7 @@ export function renderCard(card) {
       <header class='card-header'>
         <div class='title' title='${d.title}'>${d.title}</div>
         <div class='year'>${formatYear(d.year)}</div>
-        <img class="field" src="../images/fields/${formatField(d.field)}.png" />
+        <img class="field" src="images/fields/${formatField(d.field)}.png" />
       </header>
       <section class='card-body'>
         <p>${d.description}</p>

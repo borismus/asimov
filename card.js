@@ -92,7 +92,7 @@ export function renderMTGCard(card) {
   // Middle text
   g.append("text")
     .attr("x", marginIn)
-    .attr("y", imageHeight + midHeight / 2 + 12)
+    .attr("y", imageHeight + midHeight / 2 + 13)
     .attr("height", 24)
     .attr("width", cardWidth - 2 * marginIn)
     .attr("font-size", 10)

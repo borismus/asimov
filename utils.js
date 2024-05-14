@@ -84,7 +84,9 @@ function validateData(nodes) {
       }
     }
     if (!linked) {
-      console.warn(`Card #${node.id} has no dependencies and nothing depends on it.`);
+      console.warn(
+        `Card #${node.id} has no dependencies and nothing depends on it.`
+      );
     }
   }
 
@@ -153,4 +155,8 @@ function parseDeps(depsString) {
     return [];
   }
   return depsString.split(",").map((dep) => dep.trim());
+}
+
+export function isMobile() {
+  return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 }

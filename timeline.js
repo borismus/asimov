@@ -1,4 +1,4 @@
-import { formatField, formatYear } from "../utils.js";
+import { formatField, formatYear, isMobile } from "../utils.js";
 
 function getTemplate(templateId) {
   const templates = Array.from(document.getElementsByTagName("template"));
@@ -42,6 +42,10 @@ class Timeline extends HTMLElement {
           this.getAttribute("collapsed") === "true" ? "false" : "true"
         );
       });
+
+    if (isMobile()) {
+      this.setAttribute("collapsed", "true");
+    }
   }
 
   disconnectedCallback() {
@@ -108,7 +112,8 @@ class Timeline extends HTMLElement {
     );
     allNodesEl.innerHTML = "";
 
-    const nodeIndices = getIndicesNear(focusIndex, nodes.length, 5);
+    const count = isMobile() ? 3 : 5;
+    const nodeIndices = getIndicesNear(focusIndex, nodes.length, count);
 
     for (const index of nodeIndices) {
       const node = nodes[index];

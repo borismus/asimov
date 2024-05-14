@@ -1,4 +1,4 @@
-import { formatYear, loadGraph } from "../utils.js";
+import { isMobile, loadGraph } from "../utils.js";
 import { cardWidth, cardHeight, renderCard, renderMTGCard } from "../card.js";
 import "./timeline.js";
 
@@ -400,22 +400,25 @@ function renderCrossCards(cardsEnter) {
   cards.style("animation", "fadein 0.25s");
   cards.classed("focus", (d) => d.role == "focus");
 
-  cards.on("mouseenter", function (event, d) {
-    d.growTimeout = setTimeout(() => {
-      const newTransform = getCardTransformCentered(d);
-      d3.select(this).raise().attr("transform", newTransform);
-      d.isGrow = true;
-    }, 1000);
-  });
-  cards.on("mouseleave", function (event, d) {
-    d3.select(this).attr("transform", getCardTransform(d));
-    clearTimeout(d.growTimeout);
-    if (d.isGrow) {
-      // Sorting cards back to the "original" order leads to odd behaviors.
-      cards.order();
-      d.isGrow = false;
-    }
-  });
+  // Zoom in on hover only on desktop.
+  if (!isMobile()) {
+    cards.on("mouseenter", function (event, d) {
+      d.growTimeout = setTimeout(() => {
+        const newTransform = getCardTransformCentered(d);
+        d3.select(this).raise().attr("transform", newTransform);
+        d.isGrow = true;
+      }, 1000);
+    });
+    cards.on("mouseleave", function (event, d) {
+      d3.select(this).attr("transform", getCardTransform(d));
+      clearTimeout(d.growTimeout);
+      if (d.isGrow) {
+        // Sorting cards back to the "original" order leads to odd behaviors.
+        cards.order();
+        d.isGrow = false;
+      }
+    });
+  }
 }
 
 function onCardClick(event, card) {

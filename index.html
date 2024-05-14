@@ -29,7 +29,8 @@
 <template id=”asimov-timeline”>
   <style>
     section#container {
-      --container-width: 500px;
+      --container-width: 400px;
+
       position: absolute;
       top: 0;
       left: 50%;
@@ -160,6 +161,15 @@
     button {
       height: 22px;
     }
+
+    @media only screen and (max-width: 600px) {
+      section#container {
+        top: 0;
+        left: 0;
+        margin-left: 0;
+        width: 100%;
+      }
+    }
   </style>
   <section id="container">
     <section class="search-filter">
@@ -171,7 +181,8 @@
         <select name="fields" id="fields">
         </select>
       </div>
-      <button id="help" onclick="window.open('https://smus.com/visual-chronology-science-discovery', '_blank')"></button>
+      <button id="help"
+        onclick="window.open('https://smus.com/visual-chronology-science-discovery', '_blank')"></button>
     </section>
 
     <ul id="inventions-discoveries">

@@ -58,6 +58,7 @@ line.cross-field {
   bottom: 0;
   left: calc(50% - 50px);
   width: 100px;
+  height: 30px;
   cursor: pointer;
 }
 

@@ -82,7 +82,8 @@ export function renderMTGCard(card) {
     .append("xhtml:div")
     .html(
       (d) =>
-        `<div style="padding: 1px; height: 100%; overflow-y: auto;">${d.description}</div>`
+        // Safari has a bug where overflow-y: auto causes long text to render incorrectly.
+        `<div style="padding: 1px; height: 100%;">${d.description}</div>`
     );
 
   // Top left text

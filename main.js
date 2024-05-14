@@ -17,15 +17,37 @@ const svg = d3
   .attr("viewBox", [0, 0, width, height]);
 
 const g = svg.append("g").attr("class", "cards-and-nodes");
+
+for (let i = 0; i < 10; i++) {
+  addCircle(g, 10 - i - 1);
+}
+
 const links = g.append("g").attr("class", "links");
 const nodes = g.append("g").attr("class", "nodes");
 
+function addCircle(g, index) {
+  const fill = (index % 2 === 0) ? "#fdfdfd" : "white";
+  g.append("circle")
+    .attr("cx", width / 2)
+    .attr("cy", height / 2)
+    .attr("r", (index + 1) * 200)
+    .attr("stroke", "#f5f5f5")
+    .attr("fill", fill);
+}
+
 // Enable zoom and pan.
-const zoom = d3.zoom().on("zoom", ({ transform }) => {
-  g.attr("transform", transform);
-});
+const zoom = d3
+  .zoom()
+  .scaleExtent([0.3, 2])
+  .on("zoom", ({ transform }) => {
+    g.attr("transform", transform);
+    resetZoomEl.className = "visible";
+  });
 
 svg.call(zoom);
+
+const resetZoomEl = document.querySelector("#reset-zoom");
+resetZoomEl.addEventListener("click", resetZoom);
 
 const timelineEl = document.querySelector("asimov-timeline");
 timelineEl.addEventListener("filter", onFilter);
@@ -295,7 +317,7 @@ function getDy(index, total, spacing = 1) {
 }
 
 function renderWithFocus(id) {
-  const visible = getVisibleCardsId(id, 5);
+  const visible = getVisibleCardsId(id, 8);
   update(visible);
 }
 
@@ -375,29 +397,11 @@ function renderCrossCards(cardsEnter) {
   cards.attr("transform", (d) => getCardTransform(d));
   cards.style("animation", "fadein 0.25s");
   cards.classed("focus", (d) => d.role == "focus");
-
-  // Zoom in on hover only on desktop.
-  if (!isMobile()) {
-    cards.on("mouseenter", function (event, d) {
-      d.growTimeout = setTimeout(() => {
-        const newTransform = getCardTransformCentered(d);
-        d3.select(this).raise().attr("transform", newTransform);
-        d.isGrow = true;
-      }, 1000);
-    });
-    cards.on("mouseleave", function (event, d) {
-      d3.select(this).attr("transform", getCardTransform(d));
-      clearTimeout(d.growTimeout);
-      if (d.isGrow) {
-        // Sorting cards back to the "original" order leads to odd behaviors.
-        cards.order();
-        d.isGrow = false;
-      }
-    });
-  }
 }
 
 function onCardClick(event, card) {
+  event.preventDefault();
+  event.stopPropagation();
   changeFocusId(card.id);
 }
 
@@ -436,12 +440,8 @@ function changeFocusId(nextId) {
     lastParent.role = "lastFocus";
   }
 
-  // Reset the zoom and pan.
-  svg.transition().duration(250).call(
-    zoom.transform,
-    d3.zoomIdentity,
-    d3.zoomTransform(svg.node()).invert([width / 2, height / 2])
-  );
+  // TODO: Decide whether we want to reset the zoom every time.
+  // resetZoom();
 
   window.location.hash = nextCard.id;
   gtag("event", "navigate_to_card", {
@@ -449,46 +449,18 @@ function changeFocusId(nextId) {
   });
 }
 
+function resetZoom() {
+  // Reset the zoom and pan.
+  resetZoomEl.className = "";
+  svg
+    .transition()
+    .duration(500)
+    .call(zoom.transform, d3.zoomIdentity)
+    .on("end", () => (resetZoomEl.className = ""));
+}
+
 function getCardTransform(card) {
   return `translate(${getX(card)}, ${getY(card)})`;
-}
-
-function getCardTransformCentered(card) {
-  // Check if the zoomed-in card will be out of bounds, and move it appropriately.
-  const scale = 1.5;
-  const cardTop = getY(card) - (cardHeight * scale) / 2;
-  const cardLeft = getX(card) - (cardWidth * scale) / 2;
-  const cardBottom = getY(card) + (cardHeight * scale) / 2;
-  const cardRight = getX(card) + (cardWidth * scale) / 2;
-
-  let offset = {
-    x: 0,
-    y: 0,
-  };
-  if (cardTop < 0) {
-    offset.y = -cardTop;
-  }
-  if (cardLeft < 0) {
-    offset.x = -cardLeft;
-  }
-  if (cardRight > width) {
-    offset.x = width - cardRight;
-  }
-  if (cardBottom > height) {
-    offset.y = height - cardBottom;
-  }
-
-  return `translate(${getX(card) + offset.x}, ${
-    getY(card) + offset.y
-  }) scale(${scale})`;
-}
-
-function getLabelTransform(d) {
-  const cx = width / 2;
-  const cy = height / 2;
-  const xOffset = cx + (d.dx * cardOffsetX) / 2;
-  const yOffset = cy + (d.dy * cardOffsetY) / 2;
-  return `translate(${xOffset}, ${yOffset})`;
 }
 
 function getX(card) {

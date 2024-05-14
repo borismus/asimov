@@ -52,3 +52,16 @@ line.cross-field {
 }
 
 
+#reset-zoom {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top: 0;
+  border-right: 0;
+  cursor: pointer;
+}
+
+#reset-zoom.visible {
+  display: block;
+}

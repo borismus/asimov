@@ -153,7 +153,7 @@ class Timeline extends HTMLElement {
 
     const noneField = document.createElement("option");
     noneField.value = "";
-    noneField.textContent = "All Fields";
+    noneField.textContent = "All fields";
     allFieldsEl.appendChild(noneField);
 
     fields.map((field) => {

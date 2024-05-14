@@ -1,14 +1,13 @@
-This is the source code to Boris' Visual Chronology of Science & Discovery. Here is a
-[demo of the visualization][demo], and [more information about the project][blog].
+This is the source code to the Visual Chronology of Science & Discovery. It is [running live][demo]. Here is and [more information about the project][blog].
 
-So far, the visualization covers the period up to 1850 CE according to
+Currently, the visualization covers the period up to 1850 CE according to
 [Asimov's book][book]. The next step in the project is to summarize the contents
 of the book from 1850 CE onward.
 
-- If there's an issue with the visualization or text you'd like addressed, please submit
-  a [GH issue][issue].
+If there's an issue with the visualization or text you'd like addressed, please submit
+a [GH issue][issue].
 
-If you have questions, please [email me][email]
+If you have questions, please [email Boris][email]
 
 [demo]: https://borismus.github.io/asimov/web/cross-shape/#steel
 [blog]: https://smus.com/visual-chronology-science-discovery/

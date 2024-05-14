@@ -96,9 +96,15 @@ class Timeline extends HTMLElement {
   renderNodes() {
     const nodes = JSON.parse(this.getAttribute("nodes"));
     const focus = this.getAttribute("focus");
-    if (!nodes || nodes.length === 0 || !focus) {
+    if (!focus) {
       return;
     }
+
+
+    const allNodesEl = this.shadowRoot.querySelector(
+      "ul#inventions-discoveries"
+    );
+    allNodesEl.innerHTML = "";
 
     // Find the focus node in the list of nodes.
     let focusIndex = nodes.findIndex((node) => node.id === focus);
@@ -106,11 +112,6 @@ class Timeline extends HTMLElement {
       console.warn(`Focused node ${focus} not found in ${nodes.length} nodes.`);
       return;
     }
-
-    const allNodesEl = this.shadowRoot.querySelector(
-      "ul#inventions-discoveries"
-    );
-    allNodesEl.innerHTML = "";
 
     const count = isMobile() ? 3 : 5;
     const nodeIndices = getIndicesNear(focusIndex, nodes.length, count);

@@ -26,7 +26,7 @@ const links = g.append("g").attr("class", "links");
 const nodes = g.append("g").attr("class", "nodes");
 
 function addCircle(g, index) {
-  const fill = (index % 2 === 0) ? "#fdfdfd" : "white";
+  const fill = index % 2 === 0 ? "#fdfdfd" : "white";
   g.append("circle")
     .attr("cx", width / 2)
     .attr("cy", height / 2)
@@ -79,12 +79,14 @@ async function onLoad() {
 }
 
 function updateVisibleNodes(newVisibleNodes) {
+  timelineEl.setAttribute("nodes", JSON.stringify(newVisibleNodes));
+  visibleNodes = newVisibleNodes;
+
   if (newVisibleNodes.length === 0) {
     console.error(`No visible nodes.`);
+    renderErrorCard("No cards found with current filters.");
     return;
   }
-  visibleNodes = newVisibleNodes;
-  timelineEl.setAttribute("nodes", JSON.stringify(newVisibleNodes));
 
   // If there's no current ID, no worries whether it is visible or not.
   if (!currentId) {
@@ -142,6 +144,8 @@ function onHashChange() {
   if (card) {
     timelineEl.setAttribute("focusNode", JSON.stringify(card));
     document.title = `${card.title} | Visual Chronology of Science & Discovery`;
+  } else {
+    renderErrorCard(`No card found for id "${id}".`);
   }
 }
 
@@ -319,6 +323,21 @@ function getDy(index, total, spacing = 1) {
 function renderWithFocus(id) {
   const visible = getVisibleCardsId(id, 8);
   update(visible);
+}
+
+function renderErrorCard(message) {
+  const errorCard = {
+    id: "error",
+    title: "Error",
+    description: message,
+    field: "general",
+    year: -1e6,
+    dx: 0,
+    dy: 0,
+    offset: 0,
+    role: "focus",
+  };
+  update([errorCard]);
 }
 
 function update(visibleNodes) {

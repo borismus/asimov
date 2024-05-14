@@ -112,8 +112,6 @@ export async function loadGraph(tsvUrl) {
     location: row.Location,
     field: row.Field.toLowerCase() || "unknown",
     url: row.URL,
-    //image: `https://i.picsum.photos/id/${integer}/${imageWidth}/${imageHeight}.jpg`,
-    image: `/images/${row.ID}.jpg`,
   }));
 
   if (!validateData(nodes)) {

@@ -107,7 +107,11 @@ function onHashChange() {
   console.log(`onHashChange: #${id}`);
   renderWithFocus(id);
   timelineEl.setAttribute("focus", id);
-  timelineEl.setAttribute("focusNode", JSON.stringify(cardById[id]));
+  const card = cardById[id];
+  if (card) {
+    timelineEl.setAttribute("focusNode", JSON.stringify(card));
+    document.title = `${card.title} | Visual Chronology of Science & Discovery`;
+  }
 }
 
 /**

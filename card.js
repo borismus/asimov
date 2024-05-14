@@ -8,7 +8,7 @@ const imageAspect = 392 / 312;
 
 const BUG_BODY = `**Describe the issue**
 
-Is the description incorrect? Is the image missing? Are the dependencies weird? Are the dates or inventors wrong?`
+Is the description incorrect? Is the image missing? Are the dependencies weird? Are the dates or inventors wrong?`;
 
 export function renderMTGCard(card) {
   const outerG = card
@@ -131,16 +131,15 @@ export function renderMTGCard(card) {
     .attr("y", 5)
     .attr("width", 10)
     .attr("height", 10)
-    .attr("href", (d) => `images/fields/${formatField(d.field)}.png`);
-
-  // Bottom icon to report a bug.
-  g.append("image")
-    .attr("x", cardWidth / 2 - 8)
-    .attr("y", cardHeight - footerHeight + 6)
-    .attr("width", 10)
-    .attr("height", 10)
-    .attr("href", "images/icons/bug_report.svg")
+    .attr("href", (d) => `images/fields/${formatField(d.field)}.png`)
     .attr("cursor", "pointer")
+    .on("mouseenter", function() {
+      // Change the icon to be the bug report one.
+      d3.select(this).attr("href", "images/icons/bug_report.svg");
+    })
+    .on("mouseleave", function(event, d) {
+      d3.select(this).attr("href", `images/fields/${formatField(d.field)}.png`);
+    })
     .attr("onclick", (d) => {
       const bugTitle = `Content issue with %23${d.id}`;
       return (

@@ -6,6 +6,10 @@ export const cardHeight = cardWidth / cardAspect;
 
 const imageAspect = 392 / 312;
 
+const BUG_BODY = `**Describe the issue**
+
+Is the description incorrect? Is the image missing? Are the dependencies weird? Are the dates or inventors wrong?`
+
 export function renderMTGCard(card) {
   const outerG = card
     .append("g")
@@ -141,7 +145,7 @@ export function renderMTGCard(card) {
       const bugTitle = `Content issue with %23${d.id}`;
       return (
         `window.open('https://github.com/borismus/asimov/issues/new?` +
-        `title=${bugTitle}&body=PROVIDE DETAILS HERE', '_blank')`
+        `title=${bugTitle}&body=${encodeURIComponent(BUG_BODY)}', '_blank')`
       );
     });
 

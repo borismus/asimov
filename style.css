@@ -3,6 +3,10 @@
   box-sizing: border-box;
 }
 
+svg {
+  cursor: move;
+}
+
 .label {
   text-anchor: middle;
   font-family: 'Roboto Condensed', sans-serif;

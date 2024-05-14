@@ -15,8 +15,17 @@ const svg = d3
   .append("svg")
   .attr("width", width)
   .attr("viewBox", [0, 0, width, height]);
-const links = svg.append("g").attr("class", "links");
-const nodes = svg.append("g").attr("class", "nodes");
+
+const g = svg.append("g").attr("class", "cards-and-nodes");
+const links = g.append("g").attr("class", "links");
+const nodes = g.append("g").attr("class", "nodes");
+
+// Enable zoom and pan.
+const zoom = d3.zoom().on("zoom", ({ transform }) => {
+  g.attr("transform", transform);
+});
+
+svg.call(zoom);
 
 const timelineEl = document.querySelector("asimov-timeline");
 timelineEl.addEventListener("filter", onFilter);
@@ -285,39 +294,6 @@ function getDy(index, total, spacing = 1) {
   return position;
 }
 
-function renderLabels() {
-  // Draw text for chronological labels and parent/children labels.
-  const data = [
-    {
-      dx: 0,
-      dy: -1,
-      text: "previous",
-    },
-    {
-      dx: 0,
-      dy: 1,
-      text: "next",
-    },
-    /*
-    {
-      dx: -1, dy: 0, text: 'depends on'
-    },
-    {
-      dx: 1, dy: 0, text: 'led to'
-    }
-    */
-  ];
-  const labels = svg.append("g").attr("class", "labels");
-  labels
-    .selectAll("text")
-    .data(data, (d) => d.text)
-    .enter()
-    .append("text")
-    .attr("class", "label")
-    .html((d) => d.text)
-    .attr("transform", (d) => getLabelTransform(d));
-}
-
 function renderWithFocus(id) {
   const visible = getVisibleCardsId(id, 5);
   update(visible);
@@ -460,8 +436,15 @@ function changeFocusId(nextId) {
     lastParent.role = "lastFocus";
   }
 
+  // Reset the zoom and pan.
+  svg.transition().duration(250).call(
+    zoom.transform,
+    d3.zoomIdentity,
+    d3.zoomTransform(svg.node()).invert([width / 2, height / 2])
+  );
+
   window.location.hash = nextCard.id;
-  gtag('event', 'navigate_to_card', {
+  gtag("event", "navigate_to_card", {
     id: nextCard.id,
   });
 }

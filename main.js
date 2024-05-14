@@ -17,17 +17,29 @@ const svg = d3
   .attr("viewBox", [0, 0, width, height]);
 
 const g = svg.append("g").attr("class", "cards-and-nodes");
+const background = g.append("g").attr("class", "background");
 
 for (let i = 0; i < 10; i++) {
-  addCircle(g, 10 - i - 1);
+  addCircle(10 - i - 1);
 }
+
+// Render a compass rose.
+const compassSize = 200;
+const compass = background
+  .append("image")
+  .attr("x", width - compassSize)
+  .attr("y", height - compassSize)
+  .attr("width", compassSize)
+  .attr("height", compassSize)
+  .attr("href", "images/icons/compass.svg");
 
 const links = g.append("g").attr("class", "links");
 const nodes = g.append("g").attr("class", "nodes");
 
-function addCircle(g, index) {
+function addCircle(index) {
   const fill = index % 2 === 0 ? "#fdfdfd" : "white";
-  g.append("circle")
+  background
+    .append("circle")
     .attr("cx", width / 2)
     .attr("cy", height / 2)
     .attr("r", (index + 1) * 200)

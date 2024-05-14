@@ -1,4 +1,4 @@
-import { formatField, formatYear, isMobile } from "../utils.js";
+import { formatField, formatYear, isMobile } from "./utils.js";
 
 function getTemplate(templateId) {
   const templates = Array.from(document.getElementsByTagName("template"));

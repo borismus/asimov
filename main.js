@@ -24,11 +24,10 @@ for (let i = 0; i < 10; i++) {
 }
 
 // Render a compass rose.
-const compassSize = 200;
+const compassSize = isMobile() ? 50 : 200;
 const compass = background
   .append("image")
   .attr("x", width - compassSize)
-  .attr("y", height - compassSize)
   .attr("width", compassSize)
   .attr("height", compassSize)
   .attr("href", "images/icons/compass.svg");

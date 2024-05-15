@@ -83,11 +83,14 @@ async function onLoad() {
   if (window.location.hash) {
     onHashChange();
   } else {
-    const ids = data.nodes.map((n) => n.id);
-    const randomIndex = Math.floor(Math.random() * data.nodes.length);
-    window.location.hash = ids[randomIndex];
+    location.replace(`#${randomCardWithDeps().id}`);
   }
-  //renderLabels();
+}
+
+function randomCardWithDeps() {
+  const cardsWithDeps = data.nodes.filter((n) => n.deps && n.deps.length > 0);
+  const randomIndex = Math.floor(Math.random() * cardsWithDeps.length);
+  return cardsWithDeps[randomIndex];
 }
 
 function updateVisibleNodes(newVisibleNodes) {

@@ -192,6 +192,7 @@ function getVisibleCardsId(focusId, depth = 0) {
 
   focusCard.offset = 0;
   focusCard.role = "focus";
+
   // console.log(`Focusing on ${focusCard.id}.`);
   visible.push(focusCard);
 
@@ -231,6 +232,7 @@ function getVisibleCardsId(focusId, depth = 0) {
   for (const card of visible) {
     // console.log(`Offset of ${card.id} is ${card.offset}.`);
     card.dx = card.offset;
+    card.isStacked = false;
   }
 
   // Get cards by generation.
@@ -244,12 +246,14 @@ function getVisibleCardsId(focusId, depth = 0) {
     generation.sort((a, b) => d3.ascending(a.index, b.index));
 
     for (const [index, card] of generation.entries()) {
-      if (card.role === "focus") {
-        card.dy = 0;
-      } else if (card.role === "sibling") {
+      if (card.role === "sibling") {
         card.dy = 1 + index * cardOverlapPercent;
       } else {
         card.dy = getDy(index, generation.length, cardOverlapPercent);
+      }
+
+      if (generation.length >= 2 && index !== generation.length - 1) {
+        card.isStacked = true;
       }
     }
   }
@@ -325,9 +329,6 @@ function getDy(index, total, spacing = 1) {
   if (total === 1) {
     return 0;
   }
-  if (total === 2) {
-    return index - 0.5;
-  }
   const width = spacing * (total - 1);
   const position = index * spacing - width / 2;
   return position;
@@ -335,6 +336,8 @@ function getDy(index, total, spacing = 1) {
 
 function renderWithFocus(id) {
   const visible = getVisibleCardsId(id, 8);
+  // DEBUG.
+  window.visible = visible;
   update(visible);
 }
 
@@ -393,6 +396,7 @@ function updateLinks(visibleNodes) {
 }
 
 function updateNodes(visibleNodes) {
+  // Ensure the focus node is first, but otherwise sort by index.
   visibleNodes.sort((a, b) => d3.ascending(a.index, b.index));
 
   // Important: the following data call binds the data and assigns a key (in
@@ -415,10 +419,14 @@ function updateNodes(visibleNodes) {
   cards.classed("lastFocus", (d) => d.role == "lastFocus");
 
   // Remove old cards.
-  cards.exit().style("animation", "fadeout 0.5s").transition().remove();
+  // cards.exit().style("animation", "fadeout 0.5s").transition().remove();
+  cards.exit().remove();
 
   // Make sure everything is ordered correctly.
-  cards.order();
+  // cards.order();
+
+  // DEBUG.
+  window.cards = cards;
 }
 
 function renderCrossCards(cardsEnter) {
@@ -429,6 +437,76 @@ function renderCrossCards(cardsEnter) {
   cards.attr("transform", (d) => getCardTransform(d));
   cards.style("animation", "fadein 0.25s");
   cards.classed("focus", (d) => d.role == "focus");
+
+  // Move stacked cards up.
+  cards.on("mouseenter", function (event, d) {
+    const inbound = data.links.filter((link) => d.id === link.target.id);
+    const outbound = data.links.filter((link) => d.id === link.source.id);
+    console.log(
+      `Found ${inbound.length} inbound and ${outbound.length} outbound links for #${d.id}.`
+    );
+
+    const inboundLinks = links
+      .selectAll("line")
+      .data(inbound, (d) => d.source.id + d.target.id);
+
+    const outboundLinks = links
+      .selectAll("line")
+      .data(outbound, (d) => d.source.id + d.target.id);
+
+    outboundLinks.classed("highlight", true);
+    inboundLinks.classed("highlight", true);
+
+    if (!d.isStacked) {
+      return;
+    }
+    d3.select(this)
+      .transition()
+      .duration(250)
+      .attr("transform", getCardTransformReveal(d));
+
+    // Update edges to also move.
+    inboundLinks
+      .transition()
+      .attr("x1", (d) => getX(d.source))
+      .attr("y1", (d) => getY(d.source))
+      .attr("x2", (d) => getX(d.target))
+      .attr("y2", (d) => getYHover(d.target));
+
+    outboundLinks
+      .transition()
+      .attr("x1", (d) => getX(d.source))
+      .attr("y1", (d) => getYHover(d.source))
+      .attr("x2", (d) => getX(d.target))
+      .attr("y2", (d) => getY(d.target));
+  });
+  cards.on("mouseleave", function (event, d) {
+    const inout = data.links.filter(
+      (link) => d.id === link.target.id || d.id === link.source.id
+    );
+
+    const inOutLinks = links
+      .selectAll("line")
+      .data(inout, (d) => d.source.id + d.target.id);
+
+    inOutLinks.classed("highlight", false);
+
+    if (!d.isStacked) {
+      return;
+    }
+    d3.select(this)
+      .transition()
+      .duration(250)
+      .attr("transform", getCardTransform(d));
+
+    // Update edges to also move.
+    inOutLinks
+      .transition()
+      .attr("x1", (d) => getX(d.source))
+      .attr("y1", (d) => getY(d.source))
+      .attr("x2", (d) => getX(d.target))
+      .attr("y2", (d) => getY(d.target));
+  });
 }
 
 function onCardClick(event, card) {
@@ -495,6 +573,10 @@ function getCardTransform(card) {
   return `translate(${getX(card)}, ${getY(card)})`;
 }
 
+function getCardTransformReveal(card) {
+  return `translate(${getX(card)}, ${getYHover(card)})`;
+}
+
 function getX(card) {
   const cx = width / 2;
   return cx + card.dx * cardOffsetX;
@@ -503,6 +585,10 @@ function getX(card) {
 function getY(card) {
   const cy = height / 2;
   return cy + card.dy * cardOffsetY;
+}
+
+function getYHover(card) {
+  return getY(card) - cardHeight * (1 - cardOverlapPercent - 0.01);
 }
 
 let lastChild = null;

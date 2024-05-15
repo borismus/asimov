@@ -26,6 +26,11 @@ line.cross-field {
   stroke-dasharray: 3,1;
 }
 
+line.highlight {
+  stroke: goldenrod;
+  stroke-width: 6px;
+}
+
 #search {
   margin: 4px;
   padding: 4px;

@@ -250,7 +250,7 @@ function getVisibleCardsId(focusId, depth = 0) {
 
     for (const [index, card] of generation.entries()) {
       if (card.role === "sibling") {
-        card.dy = 1 + index * cardOverlapPercent;
+        card.dy = 1.5 + index * cardOverlapPercent;
       } else {
         card.dy = getDy(index, generation.length, cardOverlapPercent);
       }
@@ -379,9 +379,9 @@ function updateLinks(visibleNodes) {
     .enter()
     .append("line")
     .attr("x1", (d) => getX(d.source))
-    .attr("y1", (d) => getY(d.source))
+    .attr("y1", (d) => getY(d.source) + cardHeaderOffset)
     .attr("x2", (d) => getX(d.target))
-    .attr("y2", (d) => getY(d.target))
+    .attr("y2", (d) => getY(d.target) + cardHeaderOffset)
     .attr("class", (d) =>
       d.source.field === d.target.field ? "same-field" : "cross-field"
     )
@@ -391,9 +391,9 @@ function updateLinks(visibleNodes) {
     .transition()
     .duration(250)
     .attr("x1", (d) => getX(d.source))
-    .attr("y1", (d) => getY(d.source))
+    .attr("y1", (d) => getY(d.source) + cardHeaderOffset)
     .attr("x2", (d) => getX(d.target))
-    .attr("y2", (d) => getY(d.target));
+    .attr("y2", (d) => getY(d.target) + cardHeaderOffset);
 
   cardLinks.exit().remove();
 }
@@ -464,7 +464,9 @@ function renderCrossCards(cardsEnter) {
     let neighborIds = [];
     neighborIds = neighborIds.concat(inbound.map((link) => link.source.id));
     neighborIds = neighborIds.concat(outbound.map((link) => link.target.id));
-    const neighbors = data.nodes.filter((node) => neighborIds.includes(node.id));
+    const neighbors = data.nodes.filter((node) =>
+      neighborIds.includes(node.id)
+    );
     const neighborCards = nodes
       .selectAll("g.card")
       .data(neighbors, (d) => d.index);
@@ -483,16 +485,16 @@ function renderCrossCards(cardsEnter) {
     inboundLinks
       .transition()
       .attr("x1", (d) => getX(d.source))
-      .attr("y1", (d) => getY(d.source))
+      .attr("y1", (d) => getY(d.source) + cardHeaderOffset)
       .attr("x2", (d) => getX(d.target))
-      .attr("y2", (d) => getYHover(d.target));
+      .attr("y2", (d) => getYHover(d.target) + cardHeaderOffset);
 
     outboundLinks
       .transition()
       .attr("x1", (d) => getX(d.source))
-      .attr("y1", (d) => getYHover(d.source))
+      .attr("y1", (d) => getYHover(d.source) + cardHeaderOffset)
       .attr("x2", (d) => getX(d.target))
-      .attr("y2", (d) => getY(d.target));
+      .attr("y2", (d) => getY(d.target) + cardHeaderOffset);
   });
   cards.on("mouseleave", function (event, d) {
     const inout = data.links.filter(
@@ -508,7 +510,9 @@ function renderCrossCards(cardsEnter) {
     let neighborIds = [];
     neighborIds = neighborIds.concat(inout.map((link) => link.source.id));
     neighborIds = neighborIds.concat(inout.map((link) => link.target.id));
-    const neighbors = data.nodes.filter((node) => neighborIds.includes(node.id));
+    const neighbors = data.nodes.filter((node) =>
+      neighborIds.includes(node.id)
+    );
     const neighborCards = nodes
       .selectAll("g.card")
       .data(neighbors, (d) => d.index);
@@ -527,9 +531,9 @@ function renderCrossCards(cardsEnter) {
     inOutLinks
       .transition()
       .attr("x1", (d) => getX(d.source))
-      .attr("y1", (d) => getY(d.source))
+      .attr("y1", (d) => getY(d.source) + cardHeaderOffset)
       .attr("x2", (d) => getX(d.target))
-      .attr("y2", (d) => getY(d.target));
+      .attr("y2", (d) => getY(d.target) + cardHeaderOffset);
   });
 }
 
@@ -601,7 +605,7 @@ function getCardTransformReveal(card) {
   return `translate(${getX(card)}, ${getYHover(card)})`;
 }
 
-function getX(card) {
+function getX(card, isEdge = false) {
   const cx = width / 2;
   return cx + card.dx * cardOffsetX;
 }
@@ -611,9 +615,12 @@ function getY(card) {
   return cy + card.dy * cardOffsetY;
 }
 
+// New center of the card in the hovered state.
 function getYHover(card) {
   return getY(card) - cardHeight * (1 - cardOverlapPercent - 0.01);
 }
+
+const cardHeaderOffset = -cardHeight / 2 + 10;
 
 let lastChild = null;
 let lastParent = null;

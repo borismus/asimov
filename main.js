@@ -24,11 +24,11 @@ for (let i = 0; i < 10; i++) {
 }
 
 // Render a compass rose.
-const compassSize = isMobile() ? 100 : 200;
+const compassSize = isMobile() ? 150 : 200;
 const compass = background
   .append("image")
   .attr("x", width / 2 - compassSize / 2)
-  .attr("y", isMobile() ? 50 : 170)
+  .attr("y", height / 2 + cardHeight / 2)
   .attr("width", compassSize)
   .attr("height", compassSize)
   .attr("href", "images/icons/compass.svg");

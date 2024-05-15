@@ -9,7 +9,7 @@ svg {
 
 .label {
   text-anchor: middle;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: bold;
   font-variant: small-caps;
   font-size: 12px;
@@ -23,7 +23,7 @@ line {
 line.cross-field {
   stroke: black;
   stroke-width: 2px;
-  stroke-dasharray: 3,1;
+  stroke-dasharray: 3, 1;
 }
 
 line.highlight {
@@ -40,7 +40,7 @@ line.highlight {
 }
 
 #search.error {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   background: red;
 }
 
@@ -58,9 +58,11 @@ line.highlight {
 
 .card.highlight {
   filter: drop-shadow(0 0 1em goldenrod);
-
 }
 
+.card.highlight rect {
+  fill: hsl(43, 74%, 95%);
+}
 
 #reset-zoom {
   display: none;

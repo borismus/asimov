@@ -460,6 +460,17 @@ function renderCrossCards(cardsEnter) {
     outboundLinks.classed("highlight", true);
     inboundLinks.classed("highlight", true);
 
+    // Also highlight the neighbor cards.
+    let neighborIds = [];
+    neighborIds = neighborIds.concat(inbound.map((link) => link.source.id));
+    neighborIds = neighborIds.concat(outbound.map((link) => link.target.id));
+    const neighbors = data.nodes.filter((node) => neighborIds.includes(node.id));
+    const neighborCards = nodes
+      .selectAll("g.card")
+      .data(neighbors, (d) => d.index);
+
+    neighborCards.classed("highlight", true);
+
     if (!d.isStacked) {
       return;
     }
@@ -493,6 +504,16 @@ function renderCrossCards(cardsEnter) {
       .data(inout, (d) => d.source.id + d.target.id);
 
     inOutLinks.classed("highlight", false);
+
+    let neighborIds = [];
+    neighborIds = neighborIds.concat(inout.map((link) => link.source.id));
+    neighborIds = neighborIds.concat(inout.map((link) => link.target.id));
+    const neighbors = data.nodes.filter((node) => neighborIds.includes(node.id));
+    const neighborCards = nodes
+      .selectAll("g.card")
+      .data(neighbors, (d) => d.index);
+
+    neighborCards.classed("highlight", false);
 
     if (!d.isStacked) {
       return;

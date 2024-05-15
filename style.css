@@ -56,6 +56,11 @@ line.highlight {
   filter: drop-shadow(0 0 4px crimson);
 }
 
+.card.highlight {
+  filter: drop-shadow(0 0 1em goldenrod);
+
+}
+
 
 #reset-zoom {
   display: none;

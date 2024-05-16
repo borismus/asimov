@@ -54,6 +54,7 @@ const zoom = d3
   .on("zoom", ({ transform }) => {
     g.attr("transform", transform);
     resetZoomEl.className = "visible";
+    gtag("event", "zoom");
   });
 
 svg.call(zoom);
@@ -582,9 +583,8 @@ function changeFocusId(nextId, navigationMethod) {
   // resetZoom();
 
   gtag("event", "navigate_to_card", {
-    asimov_previous_id: currentId,
-    asimov_id: nextCard.id,
-    asimov_navigation_method: navigationMethod,
+    event_category: navigationMethod,
+    value: nextCard.id,
   });
 
   window.location.hash = nextCard.id;
@@ -598,6 +598,8 @@ function resetZoom() {
     .duration(500)
     .call(zoom.transform, d3.zoomIdentity)
     .on("end", () => (resetZoomEl.className = ""));
+
+  gtag("event", "zoom_reset");
 }
 
 function getCardTransform(card) {
@@ -703,10 +705,17 @@ function onFilter(e) {
     matching = matching.filter((card) => card.field.toLowerCase() === field);
   }
 
-  gtag("event", "filter", {
-    asimov_query: query,
-    asimov_field: field,
-  });
+  if (query) {
+    gtag("event", "search", {
+      value: query,
+    });
+  }
+
+  if (field) {
+    gtag("event", "filter", {
+      value: field,
+    });
+  }
 
   updateVisibleNodes(matching);
 }

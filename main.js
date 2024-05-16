@@ -117,7 +117,7 @@ function updateVisibleNodes(newVisibleNodes) {
     console.warn(
       `Focused card ${currentId} not visible. Navigating to visible card ${newId}.`
     );
-    changeFocusId(newId);
+    changeFocusId(newId, "navigate_to_visible");
   }
 }
 
@@ -540,10 +540,10 @@ function renderCrossCards(cardsEnter) {
 function onCardClick(event, card) {
   event.preventDefault();
   event.stopPropagation();
-  changeFocusId(card.id);
+  changeFocusId(card.id, "click");
 }
 
-function changeFocusId(nextId) {
+function changeFocusId(nextId, navigationMethod) {
   if (!visibleNodes.map((n) => n.id).includes(nextId)) {
     // This card is not visible.
     console.warn(
@@ -581,10 +581,13 @@ function changeFocusId(nextId) {
   // TODO: Decide whether we want to reset the zoom every time.
   // resetZoom();
 
-  window.location.hash = nextCard.id;
   gtag("event", "navigate_to_card", {
-    id: nextCard.id,
+    asimov_previous_id: currentId,
+    asimov_id: nextCard.id,
+    asimov_navigation_method: navigationMethod,
   });
+
+  window.location.hash = nextCard.id;
 }
 
 function resetZoom() {
@@ -627,7 +630,7 @@ let lastParent = null;
 
 function navigateToParent() {
   if (lastParent) {
-    changeFocusId(lastParent.id);
+    changeFocusId(lastParent.id, "keyboard_left");
     return;
   }
 
@@ -637,12 +640,12 @@ function navigateToParent() {
     return;
   }
 
-  changeFocusId(parents[parents.length - 1].id);
+  changeFocusId(parents[parents.length - 1].id, "keyboard_left");
 }
 
 function navigateToChild() {
   if (lastChild) {
-    changeFocusId(lastChild.id);
+    changeFocusId(lastChild.id, "keyboard_right");
     return;
   }
   const focusCard = cardById[currentId];
@@ -651,7 +654,7 @@ function navigateToChild() {
     return;
   }
 
-  changeFocusId(children[children.length - 1].id);
+  changeFocusId(children[children.length - 1].id, "keyboard_right");
 }
 
 function onKeyUp(e) {
@@ -665,7 +668,7 @@ function onKeyUp(e) {
         console.warn(`Already at first card ${currentId}.`);
         return;
       }
-      changeFocusId(visibleNodes[prevIndex].id);
+      changeFocusId(visibleNodes[prevIndex].id, "keyboard_up");
       break;
     case "ArrowDown":
       currentIndex = visibleNodes.findIndex((n) => n.id === currentId);
@@ -674,7 +677,7 @@ function onKeyUp(e) {
         console.warn(`Already at last card ${currentId}.`);
         return;
       }
-      changeFocusId(visibleNodes[nextIndex].id);
+      changeFocusId(visibleNodes[nextIndex].id, "keyboard_up");
       break;
     case "ArrowRight":
       navigateToChild();
@@ -699,6 +702,11 @@ function onFilter(e) {
   if (field) {
     matching = matching.filter((card) => card.field.toLowerCase() === field);
   }
+
+  gtag("event", "filter", {
+    asimov_query: query,
+    asimov_field: field,
+  });
 
   updateVisibleNodes(matching);
 }

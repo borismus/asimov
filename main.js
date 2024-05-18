@@ -585,6 +585,8 @@ function changeFocusId(nextId, navigationMethod) {
   gtag("event", "navigate_to_card", {
     event_category: navigationMethod,
     value: nextCard.id,
+    id: nextCard.id,
+    asimov_id: nextCard.id,
   });
 
   window.location.hash = nextCard.id;
@@ -610,7 +612,7 @@ function getCardTransformReveal(card) {
   return `translate(${getX(card)}, ${getYHover(card)})`;
 }
 
-function getX(card, isEdge = false) {
+function getX(card) {
   const cx = width / 2;
   return cx + card.dx * cardOffsetX;
 }

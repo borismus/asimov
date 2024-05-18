@@ -54,7 +54,7 @@ const zoom = d3
   .on("zoom", ({ transform }) => {
     g.attr("transform", transform);
     resetZoomEl.className = "visible";
-    gtag("event", "zoom");
+    // gtag("event", "zoom");
   });
 
 svg.call(zoom);

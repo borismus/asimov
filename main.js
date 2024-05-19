@@ -589,6 +589,12 @@ function changeFocusId(nextId, navigationMethod) {
     asimov_id: nextCard.id,
   });
 
+  // Submit a standard screen_view event.
+  gtag("event", "screen_view", {
+    app_name: "Card",
+    screen_name: nextCard.id,
+  });
+
   window.location.hash = nextCard.id;
 }
 

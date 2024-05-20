@@ -167,7 +167,7 @@ function onHashChange() {
 
   gtag("event", "select_content", {
     content_type: "Card",
-    content_id: nextCard.id,
+    content_id: id,
   });
 }
 

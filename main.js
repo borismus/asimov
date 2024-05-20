@@ -582,19 +582,10 @@ function changeFocusId(nextId, navigationMethod) {
   // TODO: Decide whether we want to reset the zoom every time.
   // resetZoom();
 
-  gtag("event", "navigate_to_card", {
-    event_category: navigationMethod,
-    value: nextCard.id,
-    id: nextCard.id,
-    asimov_id: nextCard.id,
+  gtag("event", "select_content", {
+    content_type: navigationMethod,
+    content_id: nextCard.id,
   });
-
-  // Submit a standard screen_view event.
-  gtag("event", "screen_view", {
-    app_name: "Card",
-    screen_name: nextCard.id,
-  });
-
   window.location.hash = nextCard.id;
 }
 
@@ -715,7 +706,7 @@ function onFilter(e) {
 
   if (query) {
     gtag("event", "search", {
-      value: query,
+      search_term: query,
     });
   }
 

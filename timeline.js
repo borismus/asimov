@@ -80,6 +80,10 @@ class Timeline extends HTMLElement {
       this.shadowRoot.querySelector("#container").className = isNowCollapsed
         ? "collapsed"
         : "";
+
+      gtag("event", "timeline-visible", {
+        visible: !isNowCollapsed,
+      });
     }
   }
 
@@ -99,7 +103,6 @@ class Timeline extends HTMLElement {
     if (!focus) {
       return;
     }
-
 
     const allNodesEl = this.shadowRoot.querySelector(
       "ul#inventions-discoveries"

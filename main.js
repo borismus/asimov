@@ -164,6 +164,11 @@ function onHashChange() {
   } else {
     renderErrorCard(`No card found for id "${id}".`);
   }
+
+  gtag("event", "select_content", {
+    content_type: "Card",
+    content_id: nextCard.id,
+  });
 }
 
 /**
@@ -582,9 +587,8 @@ function changeFocusId(nextId, navigationMethod) {
   // TODO: Decide whether we want to reset the zoom every time.
   // resetZoom();
 
-  gtag("event", "select_content", {
-    content_type: navigationMethod,
-    content_id: nextCard.id,
+  gtag("event", "navigation", {
+    method: navigationMethod,
   });
   window.location.hash = nextCard.id;
 }

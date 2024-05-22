@@ -72,7 +72,7 @@ const cardById = {};
 let visibleNodes = [];
 
 async function onLoad() {
-  data = await loadGraph("./asimov-1850.tsv");
+  data = await loadGraph("./asimov.tsv");
 
   for (let [index, card] of data.nodes.entries()) {
     card.index = index;

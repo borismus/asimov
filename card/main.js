@@ -12,7 +12,7 @@ async function main() {
     .attr("viewBox", [0, 0, width, height]);
   const nodeSvg = svg.append("g").attr("class", "nodes");
 
-  const { nodes, edges } = await loadGraph("../asimov-1850.tsv");
+  const { nodes, edges } = await loadGraph("../asimov.tsv");
   console.log(`Loaded ${nodes.length} inventions.`);
 
   const myNodes = [nodes[145]]

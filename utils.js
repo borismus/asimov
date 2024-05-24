@@ -34,24 +34,26 @@ const VALID_FIELDS = [
 ];
 
 function validateData(nodes) {
+  let isValid = true;
   // Check for duplicate IDs.
   const ids = nodes.map((row) => row.id);
   const dupes = ids.filter((e, i, a) => a.indexOf(e) !== i);
   if (dupes.length > 0) {
     console.warn(`Found ${dupes.length} duplicate IDs.`);
     console.warn(dupes);
-    return false;
+    isValid = false;
   }
   // Check for missing dependencies.
   for (const node of nodes) {
     for (const dep of node.deps) {
       if (!ids.includes(dep)) {
         console.warn(`Found missing dependency ${dep} for node ${node.id}.`);
-        return false;
+        isValid = false;
+        continue;
       }
       if (dep === node.id) {
         console.warn(`Found self-referencing dependency for node ${node.id}.`);
-        return false;
+        isValid = false;
       }
       // Ensure the dependency came before the node.
       const depIndex = ids.indexOf(dep);
@@ -60,7 +62,7 @@ function validateData(nodes) {
         console.warn(
           `Node ${node.id} (${node.year}) has dependency from the future ${dep} (${depYear}).`
         );
-        return false;
+        isValid = false;
       }
     }
   }
@@ -70,7 +72,7 @@ function validateData(nodes) {
   for (const field of new Set(fields)) {
     if (!VALID_FIELDS.includes(field)) {
       console.warn(`Found invalid field ${field}.`);
-      return false;
+      isValid = false;
     }
   }
 
@@ -90,7 +92,7 @@ function validateData(nodes) {
     }
   }
 
-  return true;
+  return isValid;
 }
 
 export async function loadGraph(tsvUrl) {

@@ -591,7 +591,7 @@ function changeFocusId(nextId, navigationMethod) {
   gtag("event", "navigation", {
     method: navigationMethod,
   });
-  umami.track("card_navigation", { id: nextCard.id });
+  umami.track("card_navigation", { id: nextCard.id, navigationMethod });
   window.location.hash = nextCard.id;
 }
 

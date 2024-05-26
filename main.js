@@ -83,6 +83,7 @@ async function onLoad() {
   window.addEventListener("keyup", onKeyUp);
   if (window.location.hash) {
     onHashChange();
+    umami.track("initial_card", { id: window.location.hash.substring(1) });
   } else {
     location.replace(`#${randomCardWithDeps().id}`);
   }
@@ -590,6 +591,7 @@ function changeFocusId(nextId, navigationMethod) {
   gtag("event", "navigation", {
     method: navigationMethod,
   });
+  umami.track("card_navigation", { id: nextCard.id });
   window.location.hash = nextCard.id;
 }
 
@@ -603,6 +605,7 @@ function resetZoom() {
     .on("end", () => (resetZoomEl.className = ""));
 
   gtag("event", "zoom_reset");
+  umami.track("zoom_reset");
 }
 
 function getCardTransform(card) {
@@ -712,12 +715,14 @@ function onFilter(e) {
     gtag("event", "search", {
       search_term: query,
     });
+    umami.track("search", { query });
   }
 
   if (field) {
     gtag("event", "filter", {
       value: field,
     });
+    umami.track("filter", { field });
   }
 
   updateVisibleNodes(matching);

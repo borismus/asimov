@@ -460,9 +460,6 @@ function renderCrossCards(cardsEnter) {
   cards.on("mouseenter", function (event, d) {
     const inbound = data.links.filter((link) => d.id === link.target.id);
     const outbound = data.links.filter((link) => d.id === link.source.id);
-    console.log(
-      `Found ${inbound.length} inbound and ${outbound.length} outbound links for #${d.id}.`
-    );
 
     const inboundLinks = links
       .selectAll("line")

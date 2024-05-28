@@ -151,7 +151,9 @@ function searchHelper(card, query) {
   const queryLower = query.toLowerCase();
   return (
     card.title.toLowerCase().includes(queryLower) ||
-    card.description.toLowerCase().includes(queryLower)
+    card.description.toLowerCase().includes(queryLower) ||
+    card.year.includes(queryLower) ||
+    card.id.includes(queryLower)
   );
 }
 

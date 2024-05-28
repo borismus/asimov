@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<!--
+  This template will be used to generate each individual invention page for SEO purposes.
+  The canonical URL for these pages look like /:slug, e.g. /germ-theory-of-disease/, so assets need to be served from .., for example /static/style.css.
+-->
+
+<head>
+  <title>{{title}}</title>
+  <meta property="og:title" content="{{title}}" />
+  <meta property="og:site_name" content="{{site_name}}" />
+  <meta property="og:image" content="{{canonical_url}}/{{card_image}}" />
+  <meta name="description" content="{{description}}">
+  <meta property="og:description" content="{{description}}" />
+  <link rel="canonical" href="{{canonical_url}}">
+  <meta name="author" content="Boris Smus">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/card.css">
+  <link rel="icon" type="image/x-icon" href="/static/images/icons/favicon.ico">
+
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="2109e54a-66ad-4611-bb36-25ef6777d1ba"></script>
+</head>
+
+<body>
+  <noscript><img src="{{card_image}}" /></noscript>
+
+  <div id="container">
+  </div>
+
+  <asimov-timeline></asimov-timeline>
+  <button id="reset-zoom">Reset zoom</button>
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script type="module">
+    import { changeFocusId, initChronology, randomCardWithDeps } from "/static/main.js";
+    async function onLoad() {
+      await initChronology();
+      {{initial_javascript}}
+    }
+    window.addEventListener("load", onLoad);
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-02307ST8RC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-02307ST8RC');
+  </script>
+
+  <template id=”asimov-timeline”>
+    <style>
+      section#container {
+        --container-width: 400px;
+
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: calc(var(--container-width) / -2);
+        width: var(--container-width);
+        background: white;
+
+        display: flex;
+        flex-direction: column;
+      }
+
+      ul {
+        border: 1px solid black;
+        border-spacing: 0;
+        font-family: 'DM Serif Display', serif;
+        font-size: 14px;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      li {
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        padding: 4px;
+      }
+
+      li.focus {
+        background: #dc143c33;
+      }
+
+      li:hover:not(.focus) {
+        background: #d3d3d366;
+      }
+
+      .title {
+        margin-left: auto;
+      }
+
+      .field {
+        padding-top: 2px;
+        padding-left: 4px;
+        width: 16px;
+        height: 16px;
+      }
+
+      section.search-filter {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 6px;
+        padding-left: 0;
+        z-index: 1;
+        background: white;
+        border: 1px solid black;
+        border-top: 0;
+      }
+
+      .search {
+        margin-right: auto;
+        margin-left: 4px;
+      }
+
+      #query::-webkit-search-cancel-button {
+        cursor: pointer;
+      }
+
+      .clearing {
+        animation: glow 1s forwards ease-in-out;
+      }
+
+
+      @keyframes glow {
+        from {
+          box-shadow: 0 0 0 0 white;
+        }
+
+        50% {
+          box-shadow: 0 0 10px 2px #e95c29;
+        }
+
+        to {
+          box-shadow: 0 0 0 0 white;
+        }
+      }
+
+      button {
+        width: 24px;
+        border: 1px solid white;
+        cursor: pointer;
+        background-size: contain;
+        background-color: white;
+        background-repeat: no-repeat;
+      }
+
+      button:hover {
+        border: 0;
+      }
+
+      button#collapse-expand {
+        background-image: url(/static/images/icons/unfold_less.svg);
+      }
+
+      .collapsed button#collapse-expand {
+        background-image: url(/static/images/icons/unfold_more.svg);
+      }
+
+      #inventions-discoveries {
+        transition: margin-top 0.3s ease-in-out;
+      }
+
+      .collapsed #inventions-discoveries {
+        margin-top: -100%;
+      }
+
+      :not(.collapsed) #inventions-discoveries {
+        border-top: 0;
+      }
+
+      button#help {
+        margin-left: 8px;
+        background-image: url(/static/images/icons/help.svg);
+      }
+
+      select,
+      input,
+      button {
+        height: 22px;
+      }
+
+      @media only screen and (max-width: 600px) {
+        section#container {
+          top: 0;
+          left: 0;
+          margin-left: 0;
+          width: 100%;
+        }
+      }
+    </style>
+    <section id="container">
+      <section class="search-filter">
+        <button id="collapse-expand"></button>
+        <div class="search">
+          <input id="query" type="search" placeholder="Search..."></input>
+        </div>
+        <div class="filter">
+          <select name="fields" id="fields">
+          </select>
+        </div>
+        <button id="help"
+          onclick="window.open('https://smus.com/visual-chronology-science-discovery-v2', '_blank')"></button>
+      </section>
+
+      <ul id="inventions-discoveries">
+      </ul>
+    </section>
+  </template>
+</body>
+
+</html>

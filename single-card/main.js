@@ -1,5 +1,5 @@
-import { renderCard, renderMTGCard, cardWidth, cardHeight } from "../card.js";
-import { loadGraph } from "../utils.js";
+import { renderCard, renderMTGCard, cardWidth, cardHeight } from "/static/card.js";
+import { loadGraph } from "/static/utils.js";
 
 const width = window.innerWidth;
 const height = window.innerHeight;
@@ -12,7 +12,7 @@ async function main() {
     .attr("viewBox", [0, 0, width, height]);
   const nodeSvg = svg.append("g").attr("class", "nodes");
 
-  const { nodes, edges } = await loadGraph("../asimov.tsv");
+  const { nodes, edges } = await loadGraph("/static/asimov.tsv");
   console.log(`Loaded ${nodes.length} inventions.`);
 
   const myNodes = [nodes[145]]

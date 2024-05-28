@@ -133,7 +133,7 @@ class Timeline extends HTMLElement {
       nodeEl.appendChild(titleEl);
 
       const fieldEl = document.createElement("img");
-      fieldEl.src = `images/fields/${formatField(node.field)}.png`;
+      fieldEl.src = `/static/images/fields/${formatField(node.field)}.png`;
       fieldEl.className = "field";
       nodeEl.appendChild(fieldEl);
 

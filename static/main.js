@@ -31,7 +31,7 @@ const compass = background
   .attr("y", height / 2 + cardHeight / 2)
   .attr("width", compassSize)
   .attr("height", compassSize)
-  .attr("href", "images/icons/compass.svg");
+  .attr("href", "/static/images/icons/compass.svg");
 
 const links = g.append("g").attr("class", "links");
 const nodes = g.append("g").attr("class", "nodes");
@@ -71,7 +71,7 @@ let currentId;
 const cardById = {};
 let visibleNodes = [];
 
-export async function initChronology(dataUrl = "asimov.tsv") {
+export async function initChronology(dataUrl = "/static/asimov.tsv") {
   data = await loadGraph(dataUrl);
 
   for (let [index, card] of data.nodes.entries()) {
@@ -81,12 +81,6 @@ export async function initChronology(dataUrl = "asimov.tsv") {
   updateVisibleNodes(data.nodes);
 
   window.addEventListener("keyup", onKeyUp);
-  if (window.location.hash) {
-    onHashChange();
-    umami_track("initial_card", { id: window.location.hash.substring(1) });
-  } else {
-    location.replace(`#${randomCardWithDeps().id}`);
-  }
 }
 
 function umami_track() {
@@ -97,7 +91,7 @@ function umami_track() {
   umami.apply(this, arguments);
 }
 
-function randomCardWithDeps() {
+export function randomCardWithDeps() {
   const cardsWithDeps = data.nodes.filter((n) => n.deps && n.deps.length > 0);
   const randomIndex = Math.floor(Math.random() * cardsWithDeps.length);
   return cardsWithDeps[randomIndex];
@@ -158,26 +152,6 @@ function searchHelper(card, query) {
     card.title.toLowerCase().includes(queryLower) ||
     card.description.toLowerCase().includes(queryLower)
   );
-}
-
-function onHashChange() {
-  const id = window.location.hash.substring(1);
-  currentId = id;
-  console.log(`onHashChange: #${id}`);
-  renderWithFocus(id);
-  timelineEl.setAttribute("focus", id);
-  const card = cardById[id];
-  if (card) {
-    timelineEl.setAttribute("focusNode", JSON.stringify(card));
-    document.title = `${card.title} | Visual Chronology of Science & Discovery`;
-  } else {
-    renderErrorCard(`No card found for id "${id}".`);
-  }
-
-  gtag("event", "select_content", {
-    content_type: "Card",
-    content_id: id,
-  });
 }
 
 /**
@@ -555,7 +529,11 @@ function onCardClick(event, card) {
   changeFocusId(card.id, "click");
 }
 
-export function changeFocusId(nextId, navigationMethod) {
+export function changeFocusId(
+  nextId,
+  navigationMethod,
+  shouldPushState = true
+) {
   if (!visibleNodes.map((n) => n.id).includes(nextId)) {
     // This card is not visible.
     console.warn(
@@ -578,26 +556,32 @@ export function changeFocusId(nextId, navigationMethod) {
   lastChild = null;
   lastParent = null;
 
-  const focusCard = cardById[currentId];
-  if (focusCard.deps.includes(nextCard.id)) {
-    // Navigating from a child to its parent.
-    lastChild = focusCard;
-    lastChild.role = "lastFocus";
-  }
-  if (nextCard.deps.includes(focusCard.id)) {
-    // Navigating from a parent to its child.
-    lastParent = focusCard;
-    lastParent.role = "lastFocus";
+  if (currentId) {
+    const focusCard = cardById[currentId];
+    if (focusCard.deps.includes(nextCard.id)) {
+      // Navigating from a child to its parent.
+      lastChild = focusCard;
+      lastChild.role = "lastFocus";
+    }
+    if (nextCard.deps.includes(focusCard.id)) {
+      // Navigating from a parent to its child.
+      lastParent = focusCard;
+      lastParent.role = "lastFocus";
+    }
   }
 
   // TODO: Decide whether we want to reset the zoom every time.
   // resetZoom();
 
+  renderWithFocus(nextId);
+  if (shouldPushState) {
+    history.pushState({ id: nextId }, "", `/${nextId}`);
+  }
+
   gtag("event", "navigation", {
     method: navigationMethod,
   });
   umami_track("card_navigation", { id: nextCard.id, navigationMethod });
-  window.location.hash = nextCard.id;
 }
 
 function resetZoom() {
@@ -733,6 +717,13 @@ function onFilter(e) {
   updateVisibleNodes(matching);
 }
 
-window.addEventListener("load", (e) => initChronology());
-window.addEventListener("hashchange", onHashChange);
+function onPopState(e) {
+  console.log("onPopState", e);
+  if (!e.state) {
+    return false;
+  }
+  changeFocusId(e.state.id, "popstate", false);
+}
+
 window.addEventListener("resize", onResize);
+window.addEventListener("popstate", onPopState);

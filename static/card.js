@@ -56,7 +56,7 @@ export function renderMTGCard(card) {
     .attr("y", margin + headerExtra)
     .attr("width", cardWidth - margin * 2)
     .attr("height", (cardWidth - margin * 2) * (1 / imageAspect) + headerExtra)
-    .attr("href", (d) => `images/entries/${d.id}.jpg`)
+    .attr("href", (d) => `/static/images/entries/${d.id}.jpg`)
     .attr("preserveAspectRatio", "xMidYMid slice");
 
   const footerHeight = 20;
@@ -132,14 +132,14 @@ export function renderMTGCard(card) {
     .attr("y", 5)
     .attr("width", 10)
     .attr("height", 10)
-    .attr("href", (d) => `images/fields/${formatField(d.field)}.png`)
+    .attr("href", (d) => `/static/images/fields/${formatField(d.field)}.png`)
     .attr("cursor", "pointer")
     .on("mouseenter", function() {
       // Change the icon to be the bug report one.
-      d3.select(this).attr("href", "images/icons/bug_report.svg");
+      d3.select(this).attr("href", "/static/images/icons/bug_report.svg");
     })
     .on("mouseleave", function(event, d) {
-      d3.select(this).attr("href", `images/fields/${formatField(d.field)}.png`);
+      d3.select(this).attr("href", `/static/images/fields/${formatField(d.field)}.png`);
     })
     .attr("onclick", (d) => {
       const bugTitle = `Content issue with %23${d.id}`;
@@ -170,7 +170,7 @@ export function renderCard(card) {
       <header class='card-header'>
         <div class='title' title='${d.title}'>${d.title}</div>
         <div class='year'>${formatYear(d.year)}</div>
-        <img class="field" src="images/fields/${formatField(d.field)}.png" />
+        <img class="field" src="/static/images/fields/${formatField(d.field)}.png" />
       </header>
       <section class='card-body'>
         <p>${d.description}</p>

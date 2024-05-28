@@ -27,10 +27,9 @@ async function captureScreenshot(cardId, outputPath = null) {
   await browser.close();
 }
 
-console.log(process.argv);
 if (process.argv.length < 3) {
   console.error("usage: node card-screenshot.mjs <card-id> <optional output path>");
-  console.error("example: node card-screenshot.mjs germ-theory-of-disease out.png");
+  // console.error("example: node card-screenshot.mjs germ-theory-of-disease out.png");
   process.exit(1);
 }
 

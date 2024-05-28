@@ -2,11 +2,11 @@
   <title>Visual Chronology of Science & Discovery</title>
   <meta property="og:title" content="Visual Chronology of Science & Discovery" />
   <meta property="og:description" content="Visual Chronology of Science & Discovery" />
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="card.css">
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/card.css">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="author" content="Boris Smus">
-  <link rel="icon" type="image/x-icon" href="images/icons/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="/static/images/icons/favicon.ico">
 
   <script defer src="https://cloud.umami.is/script.js" data-website-id="2109e54a-66ad-4611-bb36-25ef6777d1ba"></script>
 </head>
@@ -19,7 +19,16 @@
 
 
 <script src="https://d3js.org/d3.v7.min.js"></script>
-<script type="module" src="main.js"></script>
+<script type="module">
+  import { initChronology, changeFocusId, randomCardWithDeps } from "/static/main.js";
+
+  async function onLoad() {
+    await initChronology();
+    changeFocusId(randomCardWithDeps().id);
+  }
+
+  window.addEventListener("load", onLoad);
+</script>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-02307ST8RC"></script>
@@ -136,11 +145,11 @@
     }
 
     button#collapse-expand {
-      background-image: url(images/icons/unfold_less.svg);
+      background-image: url(/static/images/icons/unfold_less.svg);
     }
 
     .collapsed button#collapse-expand {
-      background-image: url(images/icons/unfold_more.svg);
+      background-image: url(/static/images/icons/unfold_more.svg);
     }
 
     #inventions-discoveries {
@@ -157,7 +166,7 @@
 
     button#help {
       margin-left: 8px;
-      background-image: url(images/icons/help.svg);
+      background-image: url(/static/images/icons/help.svg);
     }
 
     select,

@@ -33,7 +33,7 @@ const VALID_FIELDS = [
   "geography",
 ];
 
-function validateData(nodes) {
+export function validateData(nodes) {
   let isValid = true;
   // Check for duplicate IDs.
   const ids = nodes.map((row) => row.id);
@@ -95,13 +95,9 @@ function validateData(nodes) {
   return isValid;
 }
 
+
 export async function loadGraph(tsvUrl) {
   const rows = await d3.tsv(tsvUrl);
-
-  const integer = Math.floor(Math.random() * 1000);
-  const imageWidth = 240;
-  const imageAspect = 16.0 / 9.0;
-  const imageHeight = imageWidth / imageAspect;
 
   // Get all nodes.
   const nodes = rows.map((row) => ({

@@ -8,7 +8,7 @@ async function captureScreenshot(cardId, outputPath = null) {
 
   await page.setViewport({ width: 2000, height: 2000, deviceScaleFactor: 2 });
 
-  await page.goto(`https://borismus.github.io/asimov/#${cardId}`, {
+  await page.goto(`https://invention.cards/${cardId}`, {
     waitUntil: "networkidle2",
   });
 
@@ -18,7 +18,7 @@ async function captureScreenshot(cardId, outputPath = null) {
 
   try {
     // Get screenshot of a particular element.
-    const defaultPath = `${cardId}.png`;
+    const defaultPath = `${cardId}.jpg`;
     await element.screenshot({ path: outputPath || defaultPath });
   } catch (e) {
     // if element is 'not visible', spit out error and continue

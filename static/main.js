@@ -89,7 +89,7 @@ function umami_track() {
     console.warn(`No umami.`);
     return;
   }
-  umami.apply(this, arguments);
+  umami.track.apply(this, arguments);
 }
 
 export function randomCardWithDeps() {

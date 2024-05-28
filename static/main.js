@@ -152,7 +152,7 @@ function searchHelper(card, query) {
   return (
     card.title.toLowerCase().includes(queryLower) ||
     card.description.toLowerCase().includes(queryLower) ||
-    card.year.includes(queryLower) ||
+    String(card.year).includes(queryLower) ||
     card.id.includes(queryLower)
   );
 }

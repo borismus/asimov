@@ -41,6 +41,8 @@ if __name__ == "__main__":
   # inventions = [invention for invention in inventions if invention.id == "fire"]
   # print(inventions)
 
+  print(f"Deploying to {args.out_dir}...")
+
   os.makedirs(args.out_dir, exist_ok=True)
 
   # Copy static assets.
@@ -59,7 +61,7 @@ if __name__ == "__main__":
     # Generate an image for the invention using the screenshot command line tool.
     if not os.path.exists(card_image_path) or args.force_screenshots:
       print("Generating card screenshot...")
-      os.system(f"../screenshot/card-screenshot.mjs {invention.id} {card_image_path}")
+      os.system(f"screenshot/card-screenshot.mjs {invention.id} {card_image_path}")
 
     # Generate the index.html file from the index.jinja template, using the invention data.
     data = {

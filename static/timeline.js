@@ -87,6 +87,13 @@ class Timeline extends HTMLElement {
     }
   }
 
+  emitNavigateEvent(id) {
+    const event = new CustomEvent("navigate", {
+      detail: { id },
+    });
+    this.dispatchEvent(event);
+  }
+
   emitFilterEvent() {
     const event = new CustomEvent("filter", {
       detail: {
@@ -142,7 +149,7 @@ class Timeline extends HTMLElement {
       }
 
       nodeEl.addEventListener("click", () => {
-        window.location.hash = node.id;
+        this.emitNavigateEvent(node.id);
       });
 
       allNodesEl.appendChild(nodeEl);

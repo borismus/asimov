@@ -64,6 +64,7 @@ resetZoomEl.addEventListener("click", resetZoom);
 
 const timelineEl = document.querySelector("asimov-timeline");
 timelineEl.addEventListener("filter", onFilter);
+timelineEl.addEventListener("navigate", onTimelineNavigate);
 
 let data;
 let currentId;
@@ -570,6 +571,9 @@ export function changeFocusId(
     }
   }
 
+  timelineEl.setAttribute("focus", nextId);
+  currentId = nextId;
+
   // TODO: Decide whether we want to reset the zoom every time.
   // resetZoom();
 
@@ -715,6 +719,11 @@ function onFilter(e) {
   }
 
   updateVisibleNodes(matching);
+}
+
+function onTimelineNavigate(e) {
+  console.log("onNavigate", e.detail);
+  changeFocusId(e.detail.id, "timeline_navigate");
 }
 
 function onPopState(e) {

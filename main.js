@@ -71,8 +71,8 @@ let currentId;
 const cardById = {};
 let visibleNodes = [];
 
-async function onLoad() {
-  data = await loadGraph("./asimov.tsv");
+export async function initChronology(dataUrl = "asimov.tsv") {
+  data = await loadGraph(dataUrl);
 
   for (let [index, card] of data.nodes.entries()) {
     card.index = index;
@@ -83,10 +83,18 @@ async function onLoad() {
   window.addEventListener("keyup", onKeyUp);
   if (window.location.hash) {
     onHashChange();
-    umami.track("initial_card", { id: window.location.hash.substring(1) });
+    umami_track("initial_card", { id: window.location.hash.substring(1) });
   } else {
     location.replace(`#${randomCardWithDeps().id}`);
   }
+}
+
+function umami_track() {
+  if (!window.umami) {
+    console.warn(`No umami.`);
+    return;
+  }
+  umami.apply(this, arguments);
 }
 
 function randomCardWithDeps() {
@@ -550,7 +558,7 @@ function onCardClick(event, card) {
   changeFocusId(card.id, "click");
 }
 
-function changeFocusId(nextId, navigationMethod) {
+export function changeFocusId(nextId, navigationMethod) {
   if (!visibleNodes.map((n) => n.id).includes(nextId)) {
     // This card is not visible.
     console.warn(
@@ -591,7 +599,7 @@ function changeFocusId(nextId, navigationMethod) {
   gtag("event", "navigation", {
     method: navigationMethod,
   });
-  umami.track("card_navigation", { id: nextCard.id, navigationMethod });
+  umami_track("card_navigation", { id: nextCard.id, navigationMethod });
   window.location.hash = nextCard.id;
 }
 
@@ -605,7 +613,7 @@ function resetZoom() {
     .on("end", () => (resetZoomEl.className = ""));
 
   gtag("event", "zoom_reset");
-  umami.track("zoom_reset");
+  umami_track("zoom_reset");
 }
 
 function getCardTransform(card) {
@@ -715,19 +723,19 @@ function onFilter(e) {
     gtag("event", "search", {
       search_term: query,
     });
-    umami.track("search", { query });
+    umami_track("search", { query });
   }
 
   if (field) {
     gtag("event", "filter", {
       value: field,
     });
-    umami.track("filter", { field });
+    umami_track("filter", { field });
   }
 
   updateVisibleNodes(matching);
 }
 
-window.addEventListener("load", onLoad);
+window.addEventListener("load", (e) => initChronology());
 window.addEventListener("hashchange", onHashChange);
 window.addEventListener("resize", onResize);

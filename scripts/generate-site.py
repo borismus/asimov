@@ -4,7 +4,7 @@ import argparse
 import sys
 import jinja2
 
-sys.path.append("../..")
+sys.path.append("..")
 from asimov_gpt.src.utils import load_inventions
 
 SITE_NAME = "Visual Chronology of Science & Discovery"
@@ -37,7 +37,7 @@ if __name__ == "__main__":
   args = parser.parse_args()
 
   # Load inventions
-  inventions = load_inventions("../static/asimov.tsv")
+  inventions = load_inventions("static/asimov.tsv")
   # inventions = [invention for invention in inventions if invention.id == "fire"]
   # print(inventions)
 

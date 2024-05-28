@@ -1,4 +1,4 @@
-  	Year	Title	Description	Inventor	Location	Dependencies	Field	URL	
+ID	Year	Title	Description	Inventor	Location	Dependencies	Field	URL	
 biped	4000000 BCE	Bipedal species	Free hands allowed hominids to manipulate objects, bring them closer to our senses and thus increase brain capacity, priming the feedback loop.				General		
 stone-tool	2000000 BCE	Stone tools	Crows are known for tool use, and chimps can fashion tools out of sticks. Humans learned to sharpen stones into edges and points.			biped	General		
 fire	500000 BCE	Fire tamed	Initially, fire had to be found (eg. lightning strikes). Eventually, it became possible to start via friction caused by spinning sticks.			biped	General		

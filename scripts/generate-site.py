@@ -13,7 +13,7 @@ SITE_DESCRIPTION = """A Civilization-inspired tech tree but for the real life hi
 
 def copy_static(out_dir):
   # Copy the static directory to the output directory.
-  os.system(f"cp -r ../static {out_dir}")
+  os.system(f"cp -r ./static {out_dir}")
 
 
 def load_template(template_path):

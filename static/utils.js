@@ -135,7 +135,8 @@ export async function loadGraph(tsvUrl) {
           target: nodes[targetIndex],
         });
       } else {
-        console.warn(`Found no entry for ${depId}.`);
+        const dependingNode = nodes[targetIndex];
+        console.warn(`Found no entry for ${depId}.`, dependingNode);
       }
     }
   }

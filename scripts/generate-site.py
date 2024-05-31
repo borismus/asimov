@@ -34,6 +34,12 @@ if __name__ == "__main__":
     help="Force the generation of screenshots.",
     action="store_true",
   )
+  parser.add_argument(
+    "--no-screenshots",
+    "-n",
+    help="Skip generating screenshots.",
+    action="store_true",
+  )
   args = parser.parse_args()
 
   # Load inventions
@@ -59,7 +65,7 @@ if __name__ == "__main__":
     card_image_path = f"{invention_dir}/card.jpg"
 
     # Generate an image for the invention using the screenshot command line tool.
-    if not os.path.exists(card_image_path) or args.force_screenshots:
+    if (not os.path.exists(card_image_path) or args.force_screenshots) and not args.no_screenshots:
       print("Generating card screenshot...")
       os.system(f"screenshot/card-screenshot.mjs {invention.id} {card_image_path}")
 

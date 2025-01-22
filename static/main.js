@@ -84,14 +84,6 @@ export async function initChronology(dataUrl = "/static/asimov.tsv") {
   window.addEventListener("keyup", onKeyUp);
 }
 
-function umami_track() {
-  if (!window.umami) {
-    console.warn(`No umami.`);
-    return;
-  }
-  umami.track.apply(this, arguments);
-}
-
 export function randomCardWithDeps() {
   const cardsWithDeps = data.nodes.filter((n) => n.deps && n.deps.length > 0);
   const randomIndex = Math.floor(Math.random() * cardsWithDeps.length);
@@ -169,7 +161,12 @@ function searchHelper(card, query) {
  * may be shared by multiple cards, in which case they will fan out in the
  * y-axis.
  */
-function getVisibleCardsId(focusId, depth = 0) {
+function getVisibleCardsId(
+  focusId,
+  maxCount = 80,
+  showAncestors = true,
+  showDescendants = true
+) {
   const cards = visibleNodes;
 
   // Reset dx and dy on all card data.
@@ -191,15 +188,29 @@ function getVisibleCardsId(focusId, depth = 0) {
   // console.log(`Focusing on ${focusCard.id}.`);
   visible.push(focusCard);
 
-  if (depth === 0) {
-    return visible;
+  let depthAttempt = 1;
+  for (; depthAttempt < 50; depthAttempt++) {
+    const ancestors = getAncestors(focusCard, depthAttempt);
+    const descendants = getDescendants(focusCard, depthAttempt);
+    const count =
+      (showAncestors ? ancestors.length : 0) +
+      (showDescendants ? descendants.length : 0);
+    if (count > maxCount) {
+      break;
+    }
   }
 
   // Get all parents and children recursively to a certain depth.
-  const ancestors = getAncestors(focusCard, depth);
-  visible = visible.concat(ancestors);
-  const descendants = getDescendants(focusCard, depth);
-  visible = visible.concat(descendants);
+  if (showAncestors) {
+    const ancestors = getAncestors(focusCard, depthAttempt - 1);
+    visible = visible.concat(ancestors);
+  }
+  if (showDescendants) {
+    const descendants = getDescendants(focusCard, depthAttempt - 1);
+    visible = visible.concat(descendants);
+  }
+
+  console.log(`Attempting to render ${visible.length} cards.`);
 
   // Get descendants of parents.
   const parents = getParents(focusCard);
@@ -330,7 +341,7 @@ function getDy(index, total, spacing = 1) {
 }
 
 function renderWithFocus(id) {
-  const visible = getVisibleCardsId(id, 8);
+  const visible = getVisibleCardsId(id);
   // DEBUG.
   window.visible = visible;
   update(visible);
@@ -587,7 +598,6 @@ export function changeFocusId(
   gtag("event", "navigation", {
     method: navigationMethod,
   });
-  umami_track("card_navigation", { id: nextCard.id, navigationMethod });
 }
 
 function resetZoom() {
@@ -600,7 +610,6 @@ function resetZoom() {
     .on("end", () => (resetZoomEl.className = ""));
 
   gtag("event", "zoom_reset");
-  umami_track("zoom_reset");
 }
 
 function getCardTransform(card) {
@@ -710,14 +719,12 @@ function onFilter(e) {
     gtag("event", "search", {
       search_term: query,
     });
-    umami_track("search", { query });
   }
 
   if (field) {
     gtag("event", "filter", {
       value: field,
     });
-    umami_track("filter", { field });
   }
 
   updateVisibleNodes(matching);

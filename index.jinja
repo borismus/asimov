@@ -113,6 +113,25 @@
         border-top: 0;
       }
 
+      header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid black;
+        border-top: 0;
+        background: white;
+        z-index: 1;
+      }
+
+      header h1 {
+        margin: 0;
+        font-family: 'DM Serif Display', serif;
+        font-size: 22px;
+        letter-spacing: .5px;
+        padding: 4px;
+      }
+
       .search {
         margin-right: auto;
         margin-left: 4px;
@@ -162,10 +181,18 @@
         background-image: url(/static/images/icons/unfold_more.svg);
       }
 
+      button#random {
+        background-image: url(/static/images/icons/dice-5.svg);
+      }
+
       #inventions-discoveries {
         transition: margin-top 0.3s ease-in-out;
         max-height: 200px;
         overflow-y: auto;
+      }
+
+      li.total {
+        border-top: 1px solid black;
       }
 
       .collapsed #inventions-discoveries {
@@ -197,6 +224,11 @@
       }
     </style>
     <section id="container">
+      <header>
+        <h1>Invention & Discovery Cards</a></h1>
+        <button id="help"
+          onclick="window.open('https://smus.com/visual-chronology-science-discovery-v2', '_blank')"></button>
+      </header>
       <section class="search-filter">
         <button id="collapse-expand"></button>
         <div class="search">
@@ -206,8 +238,7 @@
           <select name="fields" id="fields">
           </select>
         </div>
-        <button id="help"
-          onclick="window.open('https://smus.com/visual-chronology-science-discovery-v2', '_blank')"></button>
+        <button id="random"></button>
       </section>
 
       <ul id="inventions-discoveries">

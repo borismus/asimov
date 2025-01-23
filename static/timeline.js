@@ -47,6 +47,11 @@ class Timeline extends HTMLElement {
         );
       });
 
+    // Setup random button.
+    this.shadowRoot.querySelector("#random").addEventListener("click", (e) => {
+      this.emitNavigateEvent(this.getRandomCardID());
+    });
+
     if (isMobile()) {
       this.setAttribute("collapsed", "true");
     }
@@ -163,6 +168,19 @@ class Timeline extends HTMLElement {
 
       allNodesEl.appendChild(nodeEl);
     }
+
+    // Summary.
+    const nodeEl = document.createElement("li");
+    nodeEl.className = "total";
+    const labelEl = document.createElement("label");
+    labelEl.textContent = "Total";
+    nodeEl.appendChild(labelEl);
+
+    const countEl = document.createElement("span");
+    countEl.className = "count";
+    countEl.textContent = nodes.length;
+    nodeEl.appendChild(countEl);
+    allNodesEl.appendChild(nodeEl);
   }
 
   renderFields() {
@@ -186,6 +204,12 @@ class Timeline extends HTMLElement {
     this.renderAllNodes();
 
     this.fieldsPopulated = true;
+  }
+
+  getRandomCardID() {
+    const nodes = JSON.parse(this.getAttribute("nodes"));
+    const rand = Math.floor(Math.random() * nodes.length);
+    return nodes[rand].id;
   }
 
   resetFilters() {

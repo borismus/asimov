@@ -19,8 +19,12 @@ class Timeline extends HTMLElement {
     this.attachShadow({ mode: "open" });
   }
 
+  log() {
+    console.log("[Timeline]: ", ...arguments);
+  }
+
   connectedCallback() {
-    console.log("Custom element added to page.");
+    // this.log("Custom element added to page.");
     const template = getTemplate("asimov-timeline");
     this.shadowRoot.appendChild(template.content.cloneNode(true));
 
@@ -49,17 +53,15 @@ class Timeline extends HTMLElement {
   }
 
   disconnectedCallback() {
-    console.log("Custom element removed from page.");
+    // this.log("Custom element removed from page.");
   }
 
   adoptedCallback() {
-    console.log("Custom element moved to new page.");
+    // this.log("Custom element moved to new page.");
   }
 
   attributeChangedCallback(name, oldValue, newValue) {
-    // console.log(
-    //   `Attribute ${name} has changed from ${oldValue} to ${newValue}.`
-    // );
+    // this.log(`Attribute ${name} has changed from ${oldValue} to ${newValue}.`);
 
     if (name === "nodes") {
       // Populate with field data.
@@ -67,12 +69,13 @@ class Timeline extends HTMLElement {
         this.renderFields();
       }
 
-      // Populate with node data.
-      this.renderNodes();
+      // Populate with node data only after we have nodes.
+      this.renderAllNodes();
     }
 
     if (name === "focus") {
-      this.renderNodes();
+      // this.renderNodes();
+      this.focusNode(oldValue, newValue);
     }
 
     if (name === "collapsed") {
@@ -85,6 +88,21 @@ class Timeline extends HTMLElement {
         visible: !isNowCollapsed,
       });
     }
+  }
+
+  focusNode(oldValue, newValue) {
+    // Scroll to the focus node.
+    const allNodesEl = this.shadowRoot.querySelector(
+      "ul#inventions-discoveries"
+    );
+    const oldEl = allNodesEl.querySelector(`.invention-${oldValue}`);
+    if (oldEl) {
+      oldEl.classList.remove("focus");
+    }
+    const newEl = allNodesEl.querySelector(`.invention-${newValue}`);
+    newEl.classList.add("focus");
+
+    newEl.scrollIntoView({ behavior: "instant", block: "center" });
   }
 
   emitNavigateEvent(id) {
@@ -104,31 +122,26 @@ class Timeline extends HTMLElement {
     this.dispatchEvent(event);
   }
 
-  renderNodes() {
+  renderAllNodes() {
     const nodes = JSON.parse(this.getAttribute("nodes"));
-    const focus = this.getAttribute("focus");
-    if (!focus) {
-      return;
-    }
+    this.renderNodesHelper(nodes);
+  }
 
+  renderNodesHelper(nodes) {
     const allNodesEl = this.shadowRoot.querySelector(
       "ul#inventions-discoveries"
     );
     allNodesEl.innerHTML = "";
-
-    // Find the focus node in the list of nodes.
-    let focusIndex = nodes.findIndex((node) => node.id === focus);
-    if (focusIndex === -1) {
-      console.warn(`Focused node ${focus} not found in ${nodes.length} nodes.`);
-      return;
-    }
-
-    const count = isMobile() ? 3 : 5;
-    const nodeIndices = getIndicesNear(focusIndex, nodes.length, count);
-
-    for (const index of nodeIndices) {
-      const node = nodes[index];
+    allNodesEl.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowUp" || e.key === "ArrowDown") {
+        e.stopPropagation();
+        e.preventDefault();
+        return false;
+      }
+    });
+    for (const node of nodes) {
       const nodeEl = document.createElement("li");
+      nodeEl.classList.add(`invention-${node.id}`);
       const dateEl = document.createElement("span");
       dateEl.className = "date";
       dateEl.textContent = formatYear(node.year);
@@ -143,10 +156,6 @@ class Timeline extends HTMLElement {
       fieldEl.src = `/static/images/fields/${formatField(node.field)}.png`;
       fieldEl.className = "field";
       nodeEl.appendChild(fieldEl);
-
-      if (index === focusIndex) {
-        nodeEl.classList.add("focus");
-      }
 
       nodeEl.addEventListener("click", () => {
         this.emitNavigateEvent(node.id);
@@ -173,6 +182,9 @@ class Timeline extends HTMLElement {
       fieldEl.textContent = capitalizeFirstLetter(field);
       allFieldsEl.appendChild(fieldEl);
     });
+
+    this.renderAllNodes();
+
     this.fieldsPopulated = true;
   }
 
@@ -199,29 +211,6 @@ class Timeline extends HTMLElement {
   focusSearch() {
     this.shadowRoot.querySelector("#query").focus();
   }
-}
-
-function getIndicesNear(focusIndex, total, count) {
-  let nodeIndices = [];
-  nodeIndices.push(focusIndex);
-
-  let offset = 1;
-  if (total < count) {
-    let range = (n) => Array.from(Array(n).keys());
-    nodeIndices = range(total);
-  } else {
-    while (nodeIndices.length < count) {
-      if (focusIndex + offset < total) {
-        nodeIndices.push(focusIndex + offset);
-      }
-      if (focusIndex - offset >= 0) {
-        nodeIndices.push(focusIndex - offset);
-      }
-      offset++;
-    }
-    nodeIndices = nodeIndices.sort((a, b) => a - b);
-  }
-  return nodeIndices;
 }
 
 customElements.define("asimov-timeline", Timeline);

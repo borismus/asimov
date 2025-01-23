@@ -145,7 +145,9 @@ function searchHelper(card, query) {
     card.title.toLowerCase().includes(queryLower) ||
     card.description.toLowerCase().includes(queryLower) ||
     String(card.year).includes(queryLower) ||
-    card.id.includes(queryLower)
+    card.id.includes(queryLower) ||
+    (card.inventor && card.inventor.toLowerCase().includes(queryLower)) ||
+    (card.location && card.location.toLowerCase().includes(queryLower))
   );
 }
 

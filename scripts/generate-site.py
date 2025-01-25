@@ -7,8 +7,8 @@ import jinja2
 sys.path.append("..")
 from asimov_gpt.src.utils import load_inventions
 
-SITE_NAME = "Visual Chronology of Science & Discovery"
-SITE_DESCRIPTION = """A Civilization-inspired tech tree but for the real life history of science and discovery."""
+SITE_NAME = "Invention & Discovery Cards"
+SITE_DESCRIPTION = """A Civilization-inspired tech tree but for the real life history of science and discovery. Inventions and discoveries presented in illustrated Magic-style cards."""
 
 
 def copy_static(out_dir):

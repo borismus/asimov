@@ -71,7 +71,7 @@ export function renderMTGCard(card) {
     .attr("stroke", "black");
 
   // Body text
-  const bodyFontSize = 10;
+  const bodyFontSize = 9;
   const marginFo = margin + 2;
   g.append("foreignObject")
     .attr("x", marginFo)
@@ -134,12 +134,15 @@ export function renderMTGCard(card) {
     .attr("height", 10)
     .attr("href", (d) => `/static/images/fields/${formatField(d.field)}.png`)
     .attr("cursor", "pointer")
-    .on("mouseenter", function() {
+    .on("mouseenter", function () {
       // Change the icon to be the bug report one.
       d3.select(this).attr("href", "/static/images/icons/bug_report.svg");
     })
-    .on("mouseleave", function(event, d) {
-      d3.select(this).attr("href", `/static/images/fields/${formatField(d.field)}.png`);
+    .on("mouseleave", function (event, d) {
+      d3.select(this).attr(
+        "href",
+        `/static/images/fields/${formatField(d.field)}.png`
+      );
     })
     .attr("onclick", (d) => {
       const bugTitle = `Content issue with %23${d.id}`;
@@ -170,7 +173,9 @@ export function renderCard(card) {
       <header class='card-header'>
         <div class='title' title='${d.title}'>${d.title}</div>
         <div class='year'>${formatYear(d.year)}</div>
-        <img class="field" src="/static/images/fields/${formatField(d.field)}.png" />
+        <img class="field" src="/static/images/fields/${formatField(
+          d.field
+        )}.png" />
       </header>
       <section class='card-body'>
         <p>${d.description}</p>

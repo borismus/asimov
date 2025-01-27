@@ -9,6 +9,7 @@ from asimov_gpt.src.utils import load_inventions
 
 SITE_NAME = "Invention & Discovery Cards"
 SITE_DESCRIPTION = """A Civilization-inspired tech tree but for the real life history of science and discovery. Inventions and discoveries presented in illustrated Magic-style cards."""
+SITE_ROOT = 'https://invention.cards'
 
 
 def copy_static(out_dir):
@@ -21,6 +22,27 @@ def load_template(template_path):
   templateEnv = jinja2.Environment(loader=templateLoader)
   template = templateEnv.get_template(template_path)
   return template
+
+def generate_sitemap(inventions):
+  header = '''<?xml version="1.0" encoding="UTF-8"?>
+    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  '''
+  out = header
+  for invention in inventions:
+    invention_xml = f'''
+    <url>
+      <loc>{SITE_ROOT}/{invention.id}</loc>
+      <image:image>
+        <image:loc>{SITE_ROOT}/{invention.id}/card.jpg</image:loc>
+      </image:image>
+    </url>
+    '''
+    out += invention_xml
+  footer = '</urlset>'
+  out += footer
+  return out
+
 
 
 if __name__ == "__main__":
@@ -74,7 +96,7 @@ if __name__ == "__main__":
       "title": f"{invention.title} | {SITE_NAME}",
       "site_name": SITE_NAME,
       "description": invention.summary,
-      "canonical_url": f"https://invention.cards/{invention.id}",
+      "canonical_url": f"{SITE_ROOT}/{invention.id}",
       "card_image": "card.jpg",
       "initial_javascript": f"""changeFocusId("{invention.id}")""",
     }
@@ -90,7 +112,7 @@ if __name__ == "__main__":
     "title": SITE_NAME,
     "site_name": SITE_NAME,
     "description": SITE_DESCRIPTION,
-    "canonical_url": "https://invention.cards/",
+    "canonical_url": SITE_ROOT,
     "initial_javascript": "changeFocusId(randomCardWithDeps().id);",
   }
   html = template.render(data)
@@ -98,3 +120,11 @@ if __name__ == "__main__":
   # Create the index.html file.
   with open(f"{args.out_dir}/index.html", "w") as f:
     f.write(html)
+
+  # Create a sitemap.
+  with open(f"{args.out_dir}/sitemap.xml", "w") as f:
+    f.write(generate_sitemap(inventions))
+
+  # Create a robots.txt
+  with open(f"{args.out_dir}/robots.txt", "w") as f:
+    f.write('Sitemap: http://invention.cards/sitemap.xml')

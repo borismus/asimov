@@ -10,6 +10,16 @@ function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
+function debounce(callback, waitMs) {
+  let timer;
+  return (...args) => {
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      callback(...args);
+    }, waitMs);
+  };
+}
+
 class Timeline extends HTMLElement {
   static observedAttributes = ["focus", "nodes", "collapsed"];
 
@@ -29,9 +39,8 @@ class Timeline extends HTMLElement {
     this.shadowRoot.appendChild(template.content.cloneNode(true));
 
     // Setup search field.
-    this.shadowRoot.querySelector("#query").addEventListener("input", (e) => {
-      this.emitFilterEvent();
-    });
+    const debouncedFilterEvent = debounce(() => this.emitFilterEvent(), 200);
+    this.shadowRoot.querySelector("#query").addEventListener("input", debouncedFilterEvent);
 
     // Setup field filter.
     this.shadowRoot.querySelector("#fields").addEventListener("change", (e) => {

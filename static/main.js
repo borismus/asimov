@@ -7,6 +7,7 @@ const cardPaddingY = 20;
 const cardOffsetX = cardWidth + cardPaddingX;
 const cardOffsetY = cardHeight + cardPaddingY;
 const cardOverlapPercent = 0.12;
+const zoomDurationMs = 1000;
 
 const width = window.innerWidth;
 const height = window.innerHeight;
@@ -590,9 +591,16 @@ export function changeFocusId(
   currentId = nextId;
 
   // TODO: Decide whether we want to reset the zoom every time.
-  // resetZoom();
+  const isPannedOrZoomed = resetZoomEl.className != "";
+  if (isPannedOrZoomed) {
+    resetZoom();
+    setTimeout(() => {
+      renderWithFocus(nextId);
+    }, zoomDurationMs);
+  } else {
+    renderWithFocus(nextId);
+  }
 
-  renderWithFocus(nextId);
   if (shouldPushState) {
     history.pushState({ id: nextId }, "", `/${nextId}`);
   }
@@ -607,7 +615,7 @@ function resetZoom() {
   resetZoomEl.className = "";
   svg
     .transition()
-    .duration(500)
+    .duration(zoomDurationMs)
     .call(zoom.transform, d3.zoomIdentity)
     .on("end", () => (resetZoomEl.className = ""));
 

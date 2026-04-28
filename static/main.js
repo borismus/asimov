@@ -1,5 +1,5 @@
 import { isMobile, loadGraph } from "./utils.js";
-import { cardWidth, cardHeight, renderCard, renderMTGCard } from "./card.js";
+import { cardWidth, fullCardHeight as cardHeight, renderCard, renderFullCard as renderMTGCard } from "./card.js";
 import "./timeline.js";
 
 const cardPaddingX = 100;

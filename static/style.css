@@ -32,7 +32,8 @@ line.cross-field {
 
 line.highlight {
   stroke: goldenrod;
-  stroke-width: 3px;
+  /* stroke-width is set inline by updateHoverArtifacts so the line stays in
+     proportion to the (possibly scaled-up) hover card. Don't override it. */
 }
 
 #search {

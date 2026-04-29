@@ -36,6 +36,10 @@ const TIER_FADE_MS = 200;
 // screen pixels — otherwise the title/image are too small to read.
 const HOVER_MIN_PX = 240;
 
+// Minimum query length before search starts matching — prevents thousands of
+// labels lighting up while the user is still typing the first few characters.
+const MIN_SEARCH_CHARS = 3;
+
 function tierFor(k) {
   // LABEL: text labels with density control.
   // IMG:   image + title only (no body text, no metadata).
@@ -69,14 +73,49 @@ const state = {
   hoverId: null,
   hoverNeighbors: [],
   hoverLayout: new Map(),
+  // At LABEL tier we delay the full-card expand so quick scanning over dots
+  // doesn't trigger heavy renders. False = label-only state, true = full card.
+  hoverExpanded: false,
+  // Accumulating list of nodes that have ever been hovered at LABEL tier;
+  // their labels persist in gStickyLabels until the page reloads.
+  stickyLabels: [],
+  // Pinned chain: clicking a hover-expanded card pins it + its full transitive
+  // ancestors and descendants. Only one chain can be pinned at a time.
+  pinnedId: null,
+  pinnedChain: [],
+  pinnedLayout: new Map(),
+  // Live search query (empty / under MIN_SEARCH_CHARS = inactive).
+  searchQuery: "",
   nodesById: {},
 };
+
+// Case-insensitive substring match against title, description, id, inventor,
+// location, year — same predicate as searchHelper in static/main.js.
+function searchHelper(node, query) {
+  const q = query.toLowerCase();
+  return (
+    node.title.toLowerCase().includes(q) ||
+    node.description.toLowerCase().includes(q) ||
+    String(node.year).includes(q) ||
+    node.id.includes(q) ||
+    (node.inventor && node.inventor.toLowerCase().includes(q)) ||
+    (node.location && node.location.toLowerCase().includes(q))
+  );
+}
+
+function isActiveQuery() {
+  return state.searchQuery.trim().length >= MIN_SEARCH_CHARS;
+}
 
 // Debounce hover-leave so a quick cursor transition from a small dot/label onto
 // the (much larger) hover card doesn't tear the card down before the card
 // itself reports mouseenter. 50ms is enough for the next mouseenter to fire on
 // the overlapping hover-card group.
 let hoverLeaveTimeout = null;
+// Delay before the hovered dot's full card pops up at LABEL tier; resets on
+// mousemove so it only fires once the cursor settles.
+let hoverExpandTimer = null;
+const HOVER_EXPAND_DELAY_MS = 300;
 
 const canvas = document.getElementById("links-canvas");
 const ctx = canvas.getContext("2d");
@@ -91,8 +130,8 @@ const svg = container
 // Reusable arrowhead marker for hover lines. markerUnits="strokeWidth" scales
 // the marker with the line's stroke-width (which we already keep ~3 screen px),
 // so the head looks consistent at any zoom level.
-svg
-  .append("defs")
+const defs = svg.append("defs");
+defs
   .append("marker")
   .attr("id", "hover-arrow")
   .attr("viewBox", "0 0 10 10")
@@ -104,18 +143,39 @@ svg
   .append("path")
   .attr("d", "M0,0 L10,5 L0,10 Z")
   .attr("fill", "goldenrod");
+defs
+  .append("marker")
+  .attr("id", "pinned-arrow")
+  .attr("viewBox", "0 0 10 10")
+  .attr("refX", 9)
+  .attr("refY", 5)
+  .attr("markerWidth", 4)
+  .attr("markerHeight", 4)
+  .attr("orient", "auto")
+  .append("path")
+  .attr("d", "M0,0 L10,5 L0,10 Z")
+  .attr("fill", "steelblue");
 
 const gRoot = svg.append("g").attr("class", "world");
 const gAxis = gRoot.append("g").attr("class", "axis");
 const gDots = gRoot.append("g").attr("class", "dots");
 const gLabels = gRoot.append("g").attr("class", "labels");
+// Sticky labels: every node the user has hovered gets its title pinned here
+// for the rest of the session, hidden only when its expanded card is on top.
+const gStickyLabels = gRoot.append("g").attr("class", "sticky-labels");
+// Search labels: matching nodes' titles appear here while a query is active.
+const gSearchLabels = gRoot.append("g").attr("class", "search-labels");
 const gCards = gRoot.append("g").attr("class", "cards");
+// Pinned artifacts sit between the baseline cards and the hover artifacts so an
+// active hover always paints over the pinned chain, but the pinned chain paints
+// over baseline dots/labels/cards.
+const gPinnedLines = gRoot.append("g").attr("class", "pinned-lines");
+const gPinnedCards = gRoot.append("g").attr("class", "pinned-cards");
 // Hover lines render between baseline cards (below) and the hover-expanded
 // versions (above), so a hovered card sits over its outgoing/incoming arrows
 // while non-hovered cards stay beneath them.
 const gHoverLines = gRoot.append("g").attr("class", "hover-lines");
 const gHoverCards = gRoot.append("g").attr("class", "hover-cards");
-const gHoverLabels = gRoot.append("g").attr("class", "hover-labels");
 
 const zoom = d3
   .zoom()
@@ -172,6 +232,13 @@ function scheduleRedraw() {
       renderLabels(labelThreshold(state.transform.k));
     } else {
       renderCards();
+    }
+    renderSearchLabels();
+    // Pinned chain re-tracks the viewport on pan/zoom just like hover. Update
+    // it before hover so hover paints over the latest pinned positions.
+    if (state.pinnedId) {
+      updatePinnedArtifacts();
+      renderPinnedOffscreenIndicators();
     }
     // Recompute hover layout / card transforms / line endpoints / off-screen
     // chips every frame while a hover is active so they track pan + zoom.
@@ -468,8 +535,9 @@ function renderDots() {
     .attr("cx", (d) => d.x)
     .attr("cy", (d) => d.y)
     .on("mouseenter", onHoverEnter)
+    .on("mousemove", onHoverMove)
     .on("mouseleave", onHoverLeave)
-    .on("click", onClick);
+    .on("click", onPinClick);
 }
 
 function drawLinks() {
@@ -583,6 +651,18 @@ function renderLabels(threshold) {
   appendLabels(gLabels, visible);
 }
 
+// Show titles for all nodes matching the active search query (anywhere in
+// world coords, not just in the viewport). Cleared when no query is active.
+function renderSearchLabels() {
+  if (!isActiveQuery()) {
+    gSearchLabels.selectAll("g.dag-label").remove();
+    return;
+  }
+  const q = state.searchQuery.trim();
+  const matches = state.nodes.filter((n) => searchHelper(n, q));
+  appendLabels(gSearchLabels, matches);
+}
+
 function appendLabels(group, nodes) {
   const sel = group.selectAll("g.dag-label").data(nodes, (d) => d.id);
   sel.exit().remove();
@@ -592,8 +672,9 @@ function appendLabels(group, nodes) {
     .attr("class", "dag-label")
     .attr("transform", (d) => `translate(${d.x}, ${d.y + 12})`)
     .style("--label-css-width", (d) => `${d.titleWidthCss + 24}px`)
-    .on("click", (event, d) => onClick(event, d))
+    .on("click", (event, d) => onPinClick(event, d))
     .on("mouseenter", (event, d) => onHoverEnter(event, d))
+    .on("mousemove", onHoverMove)
     .on("mouseleave", (event, d) => onHoverLeave(event, d));
   entered.append("rect").attr("class", "dag-label-bg");
   entered.append("text").attr("class", "dag-label-text").text((d) => d.title);
@@ -609,11 +690,18 @@ function renderCards() {
 
   const entered = renderMTGCard(sel.enter())
     .attr("transform", (d) => `translate(${d.x}, ${d.y})`)
-    .on("click", (event, d) => onClick(event, d))
+    .on("click", (event, d) => onPinClick(event, d))
     .on("mouseenter", (event, d) => onHoverEnter(event, d))
+    .on("mousemove", onHoverMove)
     .on("mouseleave", (event, d) => onHoverLeave(event, d))
     .style("opacity", 0);
   entered.transition().duration(TIER_FADE_MS).style("opacity", 1);
+
+  // Goldenrod glow on cards whose node matches the active search query.
+  const q = state.searchQuery.trim();
+  const active = isActiveQuery();
+  gCards.selectAll("g.card")
+    .classed("search-match", (n) => active && searchHelper(n, q));
 }
 
 // Returns the per-frame scale that keeps a hover card at least HOVER_MIN_PX
@@ -698,14 +786,23 @@ function computeHoverLayout(focused, layoutNeighbors) {
   return layout;
 }
 
-// Re-evaluates the hover state every frame: which neighbors are on screen,
-// how the cards lay out, and where the lines connect. This is the single
-// source of truth for the hover view, so cards "expand" into existence as
-// they pan/zoom into view (and collapse to chips when they leave).
+// Re-evaluates the hover state every frame. At LABEL tier the hover starts in
+// a "label only" pre-expand state — we hold off creating the heavy hover-card
+// + line + chip artifacts until the user has settled on the dot for ~1s.
 function updateHoverArtifacts() {
   if (!state.hoverId || !state.transform) return;
   const hovered = state.nodesById[state.hoverId];
   if (!hovered) return;
+
+  // Pre-expand at LABEL tier: just keep the hovered node's sticky label
+  // visible. Don't bind any cards or lines yet, and clear anything left over.
+  if (!state.hoverExpanded) {
+    gHoverCards.selectAll("g.card").interrupt()
+      .transition().duration(TIER_FADE_MS).style("opacity", 0).remove();
+    gHoverLines.selectAll("line").remove();
+    gStickyLabels.selectAll("g.dag-label").style("opacity", 1);
+    return;
+  }
 
   const w = window.innerWidth, h = window.innerHeight, pad = 18;
   const { k, x: tx, y: ty } = state.transform;
@@ -714,20 +811,44 @@ function updateHoverArtifacts() {
     return sx >= pad && sx <= w - pad && sy >= pad && sy <= h - pad;
   };
   const layoutNeighbors = state.hoverNeighbors.filter((nb) => onScreen(nb.node));
-  const expandNodes = [hovered, ...layoutNeighbors.map((nb) => nb.node)];
+  // Anything already shown by the pinned chain is excluded from the hover
+  // copies — otherwise hovering a pinned-chain card would render a duplicate
+  // on top of the existing pinned card (and same for the lines between them).
+  const pinnedDisplayed = new Set(state.pinnedLayout.keys());
+  const allHoverNodes = [hovered, ...layoutNeighbors.map((nb) => nb.node)];
+  const cardNodes = allHoverNodes.filter((n) => !pinnedDisplayed.has(n.id));
 
-  // Update hover-card data binding: enter newly on-screen, exit those that
-  // panned/zoomed off — so chips ↔ cards swap automatically as the viewport
-  // changes mid-hover.
-  const hoverSel = gHoverCards.selectAll("g.card").data(expandNodes, (n) => n.id);
+  // Hover-card data binding: enter newly on-screen, exit those that panned/
+  // zoomed off — so chips ↔ cards swap automatically as the viewport changes
+  // mid-hover.
+  const hoverSel = gHoverCards.selectAll("g.card").data(cardNodes, (n) => n.id);
   hoverSel.exit().interrupt()
     .transition().duration(TIER_FADE_MS).style("opacity", 0).remove();
-  renderFullCard(hoverSel.enter())
+  const enteredHover = renderFullCard(hoverSel.enter())
     .style("opacity", 0)
     .on("mouseenter", (event, n) => onHoverEnter(event, n))
     .on("mouseleave", () => onHoverLeave())
-    .on("click", (event, n) => onClick(event, n))
-    .transition().duration(TIER_FADE_MS).style("opacity", 1);
+    .on("click", (event, n) => onPinClick(event, n));
+  enteredHover.transition().duration(TIER_FADE_MS).style("opacity", 1);
+  // Sync pin badges across all hover cards (entered + existing) so a click
+  // that pins/unpins flips the badge immediately, not after hover-out.
+  syncPinBadges(gHoverCards.selectAll("g.card"));
+
+  // Hover-line data binding: skip any link that's already drawn by gPinnedLines
+  // (both endpoints in the pinned set) so we don't stack two lines.
+  const related = state.links.filter(
+    (l) =>
+      (l.source.id === hovered.id || l.target.id === hovered.id) &&
+      !(pinnedDisplayed.has(l.source.id) && pinnedDisplayed.has(l.target.id))
+  );
+  const lineSel = gHoverLines.selectAll("line")
+    .data(related, (l) => l.source.id + "->" + l.target.id);
+  lineSel.exit().remove();
+  lineSel.enter()
+    .append("line")
+    .attr("class", "highlight")
+    .attr("stroke", "goldenrod")
+    .attr("marker-end", "url(#hover-arrow)");
 
   state.hoverLayout = computeHoverLayout(hovered, layoutNeighbors);
 
@@ -756,11 +877,29 @@ function updateHoverArtifacts() {
         .attr("x2", b.x).attr("y2", b.y);
     });
 
+  // Suppress baseline cards/labels for anything that has a hover OR pinned
+  // copy on top — so the duplicates don't show through.
+  const expandSet = new Set(state.hoverLayout.keys());
+  for (const id of state.pinnedLayout.keys()) expandSet.add(id);
   if (state.tier !== TIER_LABEL) {
-    const expandSet = new Set(state.hoverLayout.keys());
     gCards.selectAll("g.card")
       .style("opacity", (n) => (expandSet.has(n.id) ? 0 : 1));
   }
+  gStickyLabels.selectAll("g.dag-label")
+    .style("opacity", (d) => (expandSet.has(d.id) ? 0 : 1));
+}
+
+// Schedules the LABEL-tier hover to expand from "just the label" into the
+// full card view after HOVER_EXPAND_DELAY_MS without movement. Resets each
+// time the cursor moves, so the card only fires once the cursor settles.
+function scheduleHoverExpand() {
+  if (hoverExpandTimer) clearTimeout(hoverExpandTimer);
+  hoverExpandTimer = setTimeout(() => {
+    hoverExpandTimer = null;
+    state.hoverExpanded = true;
+    updateHoverArtifacts();
+    renderOffscreenIndicators();
+  }, HOVER_EXPAND_DELAY_MS);
 }
 
 function onHoverEnter(event, d) {
@@ -771,6 +910,7 @@ function onHoverEnter(event, d) {
     hoverLeaveTimeout = null;
   }
 
+  const sameNode = state.hoverId === d.id;
   state.hoverId = d.id;
   const related = state.links.filter(
     (l) => l.source.id === d.id || l.target.id === d.id
@@ -785,21 +925,40 @@ function onHoverEnter(event, d) {
     }
   }
 
-  // Build line elements (positions get set in updateHoverArtifacts below).
-  const lineSel = gHoverLines.selectAll("line")
-    .data(related, (l) => l.source.id + "->" + l.target.id);
-  lineSel.exit().remove();
-  lineSel.enter()
-    .append("line")
-    .attr("class", "highlight")
-    .attr("stroke", "goldenrod")
-    .attr("marker-end", "url(#hover-arrow)");
+  if (state.tier === TIER_LABEL) {
+    // Pin this node's label in gStickyLabels so it shows immediately and
+    // stays after hover ends. Skip the re-add if it's already pinned.
+    if (!sameNode) {
+      state.hoverExpanded = false;
+      if (!state.stickyLabels.some((n) => n.id === d.id)) {
+        state.stickyLabels.push(d);
+        appendLabels(gStickyLabels, state.stickyLabels);
+      }
+    }
+    scheduleHoverExpand();
+  } else {
+    state.hoverExpanded = true;
+  }
 
   updateHoverArtifacts();
   renderOffscreenIndicators();
 }
 
+function onHoverMove() {
+  // Any movement before the card has appeared resets the timer so the user
+  // can scan dots without firing the heavier expand each time.
+  if (state.tier === TIER_LABEL && state.hoverId && !state.hoverExpanded) {
+    scheduleHoverExpand();
+  }
+}
+
 function onHoverLeave() {
+  // Cancel any pending pre-expand timer; a hover that just barely happened
+  // shouldn't pop a card open after the cursor has already left.
+  if (hoverExpandTimer) {
+    clearTimeout(hoverExpandTimer);
+    hoverExpandTimer = null;
+  }
   // Debounce: cursor moving from a small dot/label onto the overlapping hover
   // card briefly leaves the original element before mouseenter fires on the
   // card. The hover-card's mouseenter cancels this pending teardown.
@@ -809,15 +968,23 @@ function onHoverLeave() {
     state.hoverId = null;
     state.hoverNeighbors = [];
     state.hoverLayout = new Map();
+    state.hoverExpanded = false;
     gHoverLines.selectAll("line").remove();
-    gHoverLabels.selectAll("*").remove();
     gHoverCards.selectAll("*").interrupt()
       .transition().duration(TIER_FADE_MS).style("opacity", 0).remove();
+    // Keep pinned cards' baseline copies hidden — only the hover-only
+    // suppressions revert to opacity 1.
+    const pinnedSet = new Set(state.pinnedLayout.keys());
     gCards.selectAll("g.card")
       .interrupt()
       .transition().duration(TIER_FADE_MS)
-      .style("opacity", 1);
-    offscreenContainer.replaceChildren();
+      .style("opacity", (n) => (pinnedSet.has(n.id) ? 0 : 1));
+    gStickyLabels.selectAll("g.dag-label")
+      .style("opacity", (d) => (pinnedSet.has(d.id) ? 0 : 1));
+    // Only remove hover chips; pinned chips persist.
+    offscreenContainer
+      .querySelectorAll(".offscreen-indicator:not(.pinned)")
+      .forEach((el) => el.remove());
   }, 50);
 }
 
@@ -850,7 +1017,11 @@ function lineRectIntersection(hx, hy, nx, ny, w, h, pad) {
 }
 
 function renderOffscreenIndicators() {
-  offscreenContainer.replaceChildren();
+  // Only clear hover chips — pinned chips live in the same container and have
+  // their own lifecycle in renderPinnedOffscreenIndicators.
+  offscreenContainer
+    .querySelectorAll(".offscreen-indicator:not(.pinned)")
+    .forEach((el) => el.remove());
   if (!state.hoverId || !state.transform) return;
   const hovered = state.nodesById[state.hoverId];
   if (!hovered) return;
@@ -890,7 +1061,7 @@ function renderOffscreenIndicators() {
     chip.addEventListener("click", (e) => {
       e.preventDefault();
       e.stopPropagation();
-      zoomToCard(node);
+      onPinClick(e, node);
     });
     offscreenContainer.appendChild(chip);
   }
@@ -906,20 +1077,292 @@ function escapeHtml(s) {
   }[c]));
 }
 
-function onClick(event, d) {
-  event.preventDefault();
-  event.stopPropagation();
-  zoomToCard(d);
+// Walk state.links transitively in one direction. "up" follows links where
+// target.id === current.id (so the source is a parent); "down" follows links
+// where source.id === current.id (so the target is a child).
+// Pin = "remember the current hover" — so the chain is just the root's direct
+// neighbors (same set hover uses), not the transitive ancestor/descendant
+// closure. Otherwise pinning Steel pulls in 150 cards and pinning Fire pulls
+// in nearly the entire graph.
+function computePinnedChain(rootNode) {
+  const out = [];
+  for (const l of state.links) {
+    if (l.source.id === rootNode.id) {
+      out.push({ node: l.target, kind: "child" });
+    } else if (l.target.id === rootNode.id) {
+      out.push({ node: l.source, kind: "parent" });
+    }
+  }
+  return out;
 }
 
-function zoomToCard(d) {
+// "primary" = the actively pinned root (blue badge);
+// "secondary" = a direct neighbor of the primary (green badge);
+// null = not pinned. Click semantics: primary → unpin, secondary → re-pin
+// with that node as the new primary, none → pin.
+function pinKind(id) {
+  if (state.pinnedId === id) return "primary";
+  for (const nb of state.pinnedChain) if (nb.node.id === id) return "secondary";
+  return null;
+}
+
+function isPinned(id) {
+  return pinKind(id) !== null;
+}
+
+function onPinClick(event, d) {
+  event.preventDefault();
+  event.stopPropagation();
+  // Primary → unpin everything. Secondary or unpinned → pin this node as the
+  // new primary (which automatically demotes the previous primary).
+  if (pinKind(d.id) === "primary") {
+    unpin();
+  } else {
+    pin(d);
+  }
+}
+
+function pin(rootNode) {
+  // "Pin new" replaces any existing pin in one shot — clear first so
+  // updatePinnedArtifacts re-binds against an empty selection.
+  if (state.pinnedId) clearPinnedDom();
+  state.pinnedId = rootNode.id;
+  state.pinnedChain = computePinnedChain(rootNode);
+  state.pinnedLayout = new Map();
+  updatePinnedArtifacts();
+  renderPinnedOffscreenIndicators();
+  // If the click happened on a hover card, refresh hover cards so the pin
+  // badge flips on/off without waiting for hover-out.
+  if (state.hoverId) updateHoverArtifacts();
+}
+
+function unpin() {
+  state.pinnedId = null;
+  state.pinnedChain = [];
+  state.pinnedLayout = new Map();
+  clearPinnedDom();
+  // The baseline cards/labels for ex-pinned nodes were hidden — restore them.
+  // Hover (if any) re-runs and will re-suppress whatever it needs.
+  gCards.selectAll("g.card").style("opacity", 1);
+  gStickyLabels.selectAll("g.dag-label").style("opacity", 1);
+  if (state.hoverId) updateHoverArtifacts();
+}
+
+function clearPinnedDom() {
+  gPinnedCards.selectAll("*").remove();
+  gPinnedLines.selectAll("*").remove();
+  offscreenContainer
+    .querySelectorAll(".offscreen-indicator.pinned")
+    .forEach((el) => el.remove());
+}
+
+function pinnedCardTransform(n) {
+  const s = hoverScale();
+  const pos = state.pinnedLayout.get(n.id) || { x: n.x, y: n.y };
+  return `translate(${pos.x}, ${pos.y}) scale(${s})`;
+}
+
+// Top-left blue pin glyph appended to each pinned full card. The card-inner
+// group is translated by (-W/2, -H/2) in renderFullCard, so (8, 8) sits inside
+// the title bar mirroring the field icon on the right.
+const PRIMARY_PIN_COLOR = "steelblue";
+const SECONDARY_PIN_COLOR = "#2a9d8f";
+
+function appendPinBadge(cardSel) {
+  const g = cardSel
+    .select("g.card-inner")
+    .append("g")
+    .attr("class", "pin-badge")
+    .attr("transform", "translate(8, 8)")
+    .attr("pointer-events", "none");
+  g.append("circle")
+    .attr("r", 6)
+    .attr("fill", (d) =>
+      pinKind(d.id) === "primary" ? PRIMARY_PIN_COLOR : SECONDARY_PIN_COLOR
+    )
+    .attr("stroke", "white")
+    .attr("stroke-width", 1);
+  g.append("circle").attr("r", 1.8).attr("fill", "white");
+}
+
+// Keep pin badges in sync with the live pinned state on an arbitrary card
+// selection — strip whatever's there and re-add only on currently pinned
+// nodes. Used after pin/unpin so the visual flips while the user is still
+// hovering the card.
+function syncPinBadges(cardSel) {
+  cardSel.select("g.pin-badge").remove();
+  appendPinBadge(cardSel.filter((n) => isPinned(n.id)));
+}
+
+function updatePinnedArtifacts() {
+  if (!state.pinnedId || !state.transform) return;
+  const root = state.nodesById[state.pinnedId];
+  if (!root) return;
+
+  const w = window.innerWidth, h = window.innerHeight, pad = 18;
+  const { k, x: tx, y: ty } = state.transform;
+  const onScreen = (n) => {
+    const sx = tx + n.x * k, sy = ty + n.y * k;
+    return sx >= pad && sx <= w - pad && sy >= pad && sy <= h - pad;
+  };
+
+  // Both the root and the chain members get the same treatment: render as a
+  // full card if on-screen, render as an offscreen chip otherwise.
+  const layoutNeighbors = state.pinnedChain.filter((nb) => onScreen(nb.node));
+  const cardNodes = onScreen(root)
+    ? [root, ...layoutNeighbors.map((nb) => nb.node)]
+    : layoutNeighbors.map((nb) => nb.node);
+
+  const sel = gPinnedCards.selectAll("g.card").data(cardNodes, (n) => n.id);
+  sel.exit().remove();
+  renderFullCard(sel.enter())
+    .on("mouseenter", (event, n) => onHoverEnter(event, n))
+    .on("mouseleave", () => onHoverLeave())
+    .on("click", (event, n) => onPinClick(event, n));
+  // Sync (not append) so re-pinning a secondary recolors the existing badges
+  // instead of stacking new ones.
+  syncPinBadges(gPinnedCards.selectAll("g.card"));
+
+  // Lines: any link both of whose endpoints are in the pinned set (root +
+  // chain), regardless of whether they're on screen — same data model as hover.
+  const pinnedIds = new Set([root.id, ...state.pinnedChain.map((nb) => nb.node.id)]);
+  const related = state.links.filter(
+    (l) => pinnedIds.has(l.source.id) && pinnedIds.has(l.target.id)
+  );
+  const lineSel = gPinnedLines.selectAll("line")
+    .data(related, (l) => l.source.id + "->" + l.target.id);
+  lineSel.exit().remove();
+  lineSel.enter()
+    .append("line")
+    .attr("class", "highlight pinned")
+    .attr("stroke", "steelblue")
+    .attr("marker-end", "url(#pinned-arrow)");
+
+  // Layout reuse: feed only on-screen neighbors so off-screen ones don't
+  // distort the resolver. Off-screen members are represented by chips.
+  state.pinnedLayout = computeHoverLayout(root, layoutNeighbors);
+
+  gPinnedCards.selectAll("g.card").attr("transform", pinnedCardTransform);
+
+  const s = hoverScale();
+  const halfW = (cardWidth / 2) * s;
+  const halfH = (fullCardHeight / 2) * s;
+  const endpointFor = (node) =>
+    state.pinnedLayout.get(node.id) || { x: node.x, y: node.y };
+
+  gPinnedLines.selectAll("line")
+    .style("stroke-width", 3 * s)
+    .each(function (l) {
+      const sp = endpointFor(l.source);
+      const tp = endpointFor(l.target);
+      const a = clipToCardEdge(sp.x, sp.y, tp.x, tp.y, halfW, halfH);
+      const b = clipToCardEdge(tp.x, tp.y, sp.x, sp.y, halfW, halfH);
+      d3.select(this)
+        .attr("x1", a.x).attr("y1", a.y)
+        .attr("x2", b.x).attr("y2", b.y);
+    });
+
+  // Hide baseline copies of pinned nodes so the pinned full card isn't
+  // shadowed by a smaller one underneath. updateHoverArtifacts unions the same
+  // sets when a hover is also active.
+  if (!state.hoverId) {
+    const expandSet = new Set(state.pinnedLayout.keys());
+    if (state.tier !== TIER_LABEL) {
+      gCards.selectAll("g.card")
+        .style("opacity", (n) => (expandSet.has(n.id) ? 0 : 1));
+    }
+    gStickyLabels.selectAll("g.dag-label")
+      .style("opacity", (d) => (expandSet.has(d.id) ? 0 : 1));
+  }
+}
+
+function renderPinnedOffscreenIndicators() {
+  // Clear pinned chips only — hover chips have their own lifecycle.
+  offscreenContainer
+    .querySelectorAll(".offscreen-indicator.pinned")
+    .forEach((el) => el.remove());
+  if (!state.pinnedId || !state.transform) return;
+  const root = state.nodesById[state.pinnedId];
+  if (!root) return;
+
   const w = window.innerWidth;
   const h = window.innerHeight;
-  const k = 1.6;
-  const cx = d.x;
-  const cy = d.y;
-  const target = d3.zoomIdentity
-    .translate(w / 2 - cx * k, h / 2 - cy * k)
-    .scale(k);
-  svg.transition().duration(750).call(zoom.transform, target);
+  const pad = 18;
+  const { k, x: tx, y: ty } = state.transform;
+  // Anchor offscreen chips to the root's screen position; if the root itself
+  // is off-screen we fall back to the viewport center so chips still resolve.
+  const rootOnScreen =
+    tx + root.x * k >= pad && tx + root.x * k <= w - pad &&
+    ty + root.y * k >= pad && ty + root.y * k <= h - pad;
+  const hx = rootOnScreen ? tx + root.x * k : w / 2;
+  const hy = rootOnScreen ? ty + root.y * k : h / 2;
+
+  // Include the root in the chip set when it has panned off-screen — the user
+  // needs a way to find their way back to it (and to unpin via its chip).
+  const candidates = rootOnScreen
+    ? state.pinnedChain
+    : [{ node: root, kind: "root" }, ...state.pinnedChain];
+
+  for (const { node, kind } of candidates) {
+    const nx = tx + node.x * k;
+    const ny = ty + node.y * k;
+    const onScreen =
+      nx >= pad && nx <= w - pad && ny >= pad && ny <= h - pad;
+    if (onScreen) continue;
+    const exit = lineRectIntersection(hx, hy, nx, ny, w, h, pad);
+    if (!exit) continue;
+
+    let ax = -50, ay = -50;
+    const eps = 1;
+    if (Math.abs(exit.x - pad) < eps) ax = 0;
+    else if (Math.abs(exit.x - (w - pad)) < eps) ax = -100;
+    if (Math.abs(exit.y - pad) < eps) ay = 0;
+    else if (Math.abs(exit.y - (h - pad)) < eps) ay = -100;
+
+    // The root candidate (kind="root") is the active primary; chain members
+    // (kind="parent"|"child") are secondaries the user can promote by click.
+    const pinClass = kind === "root" ? "primary" : "secondary";
+    const chip = document.createElement("button");
+    chip.className = `offscreen-indicator pinned ${pinClass} ${kind}`;
+    chip.style.left = `${exit.x}px`;
+    chip.style.top = `${exit.y}px`;
+    chip.style.transform = `translate(${ax}%, ${ay}%)`;
+    chip.title = node.title;
+    chip.innerHTML = `<span class="label">${escapeHtml(node.title)}</span>`;
+    chip.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      if (pinClass === "primary") {
+        unpin();
+      } else {
+        pin(node);
+      }
+    });
+    offscreenContainer.appendChild(chip);
+  }
 }
+
+// Cmd+F / Ctrl+F search overlay.
+const searchInput = document.getElementById("search-input");
+window.addEventListener("keydown", (e) => {
+  if ((e.metaKey || e.ctrlKey) && !e.altKey && !e.shiftKey && e.key.toLowerCase() === "f") {
+    e.preventDefault();
+    document.body.classList.add("searching");
+    searchInput.focus();
+    searchInput.select();
+  }
+});
+searchInput.addEventListener("input", () => {
+  state.searchQuery = searchInput.value;
+  scheduleRedraw();
+});
+searchInput.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    e.preventDefault();
+    state.searchQuery = "";
+    searchInput.value = "";
+    document.body.classList.remove("searching");
+    searchInput.blur();
+    scheduleRedraw();
+  }
+});

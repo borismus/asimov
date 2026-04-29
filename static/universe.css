@@ -53,6 +53,25 @@
   box-shadow: 0 2px 8px rgba(42, 157, 143, 0.35);
 }
 
+/* Pinned chips: blue for the active primary, green for the secondaries
+   (direct neighbors). Click a green chip to promote it to primary. */
+.offscreen-indicator.pinned {
+  color: white;
+}
+.offscreen-indicator.pinned.primary {
+  background: steelblue;
+  border-color: steelblue;
+  box-shadow: 0 2px 8px rgba(70, 130, 180, 0.45);
+}
+.offscreen-indicator.pinned.primary:hover { background: #4178a8; }
+
+.offscreen-indicator.pinned.secondary {
+  background: #2a9d8f;
+  border-color: #2a9d8f;
+  box-shadow: 0 2px 8px rgba(42, 157, 143, 0.45);
+}
+.offscreen-indicator.pinned.secondary:hover { background: #1f7c70; }
+
 #container {
   position: absolute;
   top: 0;
@@ -149,3 +168,30 @@
 /* Hover cards keep pointer events so cursor stays "on" the card after the
    user moves from the small underlying dot/label onto the larger card. */
 .hover-cards { pointer-events: auto; }
+
+/* Pinned cards behave like hover cards — clickable to unpin. */
+.pinned-cards { pointer-events: auto; }
+
+/* Cmd+F search overlay. Shown only while body has the .searching class. */
+#search-input {
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  padding: 6px 14px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 999px;
+  font: 14px "DM Serif Display", serif;
+  min-width: 320px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  display: none;
+}
+#search-input:focus { outline: none; border-color: goldenrod; }
+body.searching #search-input { display: block; }
+
+/* Goldenrod glow around any card whose node matches the active search query. */
+.card.search-match {
+  filter: drop-shadow(0 0 6px goldenrod) drop-shadow(0 0 6px goldenrod);
+}

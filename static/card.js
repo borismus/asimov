@@ -36,11 +36,12 @@ export function renderMTGCard(card) {
     .attr("rx", 4)
     .classed("container", true);
 
-  // Image fills from below the title bar to near the bottom of the card.
+  // Image fills below the title bar with a matching margin on the bottom so
+  // the top and bottom borders look symmetric.
   const imageX = marginIn;
   const imageY = titleBarH;
   const imageW = cardWidth - marginIn * 2;
-  const imageH = cardHeight - imageY - marginIn / 2;
+  const imageH = cardHeight - imageY - titleBarH;
 
   g.append("rect")
     .attr("class", "image-rect")
@@ -111,7 +112,7 @@ export function renderMTGCard(card) {
 export function renderFullCard(card) {
   const W = cardWidth;
   const H = fullCardHeight;
-  const imageAspect = 392 / 312;
+  const imageAspect = 3 / 2;
 
   const outerG = card
     .append("g")

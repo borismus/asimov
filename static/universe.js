@@ -384,11 +384,17 @@ async function init() {
   // Browser back/forward between /<id> and / drives pin/unpin to match the path.
   // pin()/unpin() will call persistPin, but it no-ops when the URL already
   // matches (which it does post-popstate), so no extra history entry is pushed.
+  // Animate-center on the new pin so the user lands on the card they navigated to.
   window.addEventListener("popstate", () => {
     const id = parsePathPin(window.location.pathname);
     if (id === state.pinnedId) return;
-    if (id && state.nodesById[id]) pin(state.nodesById[id]);
-    else if (state.pinnedId) unpin();
+    if (id && state.nodesById[id]) {
+      const node = state.nodesById[id];
+      pin(node);
+      centerOnNode(node, { animate: true });
+    } else if (state.pinnedId) {
+      unpin();
+    }
   });
 
   const { nodes, links } = await loadGraph("/static/asimov.tsv");
@@ -425,6 +431,18 @@ async function init() {
   scheduleRedraw();
 }
 
+// Center `node` in the viewport at FULL-tier zoom — used when arriving via
+// /<id> (fresh load or popstate). k=1.5 is the LABEL/IMG → FULL threshold so
+// the full card renders with readable body text on first paint.
+function centerOnNode(node, { animate = false } = {}) {
+  const k = 1.5;
+  const tx = window.innerWidth / 2 - node.x * k;
+  const ty = window.innerHeight / 2 - node.y * k;
+  const target = d3.zoomIdentity.translate(tx, ty).scale(k);
+  if (animate) svg.transition().duration(500).call(zoom.transform, target);
+  else svg.call(zoom.transform, target);
+}
+
 function initialTransform() {
   const w = window.innerWidth;
   const h = window.innerHeight;
@@ -446,8 +464,12 @@ function initialTransform() {
 
 function initialCenter() {
   // Pin: pathname (canonical) → localStorage. View: hash → localStorage → computed.
+  // Special case: arriving at /<id> with no explicit view in hash should land
+  // centered + zoomed on the pinned node — otherwise the user sees the timeline
+  // start and has to find the card themselves.
   let transform = null;
-  let pinnedId = parsePathPin(window.location.pathname);
+  const pathPin = parsePathPin(window.location.pathname);
+  let pinnedId = pathPin;
 
   const fromHash = parseViewHash(window.location.hash);
   if (fromHash) {
@@ -468,11 +490,14 @@ function initialCenter() {
     }
   }
 
-  svg.call(zoom.transform, transform || initialTransform());
-
-  if (pinnedId && state.nodesById[pinnedId]) {
-    pin(state.nodesById[pinnedId]);
+  const pinnedNode = pinnedId ? state.nodesById[pinnedId] : null;
+  if (pathPin && pinnedNode && !fromHash) {
+    centerOnNode(pinnedNode);
+  } else {
+    svg.call(zoom.transform, transform || initialTransform());
   }
+
+  if (pinnedNode) pin(pinnedNode);
 }
 
 function renderLabels(threshold) {

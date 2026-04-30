@@ -39,11 +39,14 @@ import {
   panToNode,
   escapeHtml,
 } from "./overlays.js";
+import { searchHelper } from "./search.js";
+import { parsePathPin, pushPath } from "./routing.js";
 
 const TIER_LABEL = 0;
 const TIER_IMG = 1;
 const TIER_FULL = 2;
 const TIER_FADE_MS = 200;
+const TIER_HOLD_MS = 300;
 const FOLD_MS = 140;
 
 // Minimum query length before search starts matching — prevents thousands of
@@ -123,6 +126,10 @@ const state = {
   worldHeight: 0,
   transform: null,
   tier: TIER_LABEL,
+  // Timestamp (performance.now) before which card rendering is suppressed
+  // after a LABEL → IMG transition, so the labels-fade and cards-fade
+  // don't collide in the same frame.
+  cardsHiddenUntil: 0,
   rafPending: false,
   hoverId: null,
   hoverNeighbors: [],
@@ -147,20 +154,6 @@ const state = {
   nodesById: {},
 };
 
-// Case-insensitive substring match against title, description, id, inventor,
-// location, year — same predicate as searchHelper in static/main.js.
-function searchHelper(node, query) {
-  const q = query.toLowerCase();
-  return (
-    node.title.toLowerCase().includes(q) ||
-    node.description.toLowerCase().includes(q) ||
-    String(node.year).includes(q) ||
-    node.id.includes(q) ||
-    (node.inventor && node.inventor.toLowerCase().includes(q)) ||
-    (node.location && node.location.toLowerCase().includes(q))
-  );
-}
-
 function isActiveQuery() {
   return state.searchQuery.trim().length >= MIN_SEARCH_CHARS;
 }
@@ -168,6 +161,11 @@ function isActiveQuery() {
 // Suppresses the default card fade-in on the renderCards() right after a
 // tier change, so LABEL → FULL feels instant.
 let pendingNoFade = false;
+
+// True until the very first scheduleRedraw resolves the initial transform's
+// tier. Skips the LABEL → IMG hold on initial load so users land directly
+// on the right view (instead of waiting 300ms for cards to appear).
+let firstTierResolve = true;
 
 const canvas = document.getElementById("links-canvas");
 const ctx = canvas.getContext("2d");
@@ -218,10 +216,6 @@ let saveViewTimeout = null;
 
 // Path is the source of truth for the pinned invention: /<id>/ pins that node.
 // Hash carries view state (x/y/k) only; localStorage backs both up between visits.
-function parsePathPin(pathname) {
-  const id = pathname.replace(/^\/+|\/+$/g, "");
-  return id || null;
-}
 
 function serializeViewHash() {
   const t = state.transform;
@@ -267,12 +261,7 @@ function persistView() {
 
 // pushState (not replaceState) so back/forward navigates between pinned inventions.
 function persistPin() {
-  const path = state.pinnedId ? `/${state.pinnedId}` : "/";
-  const target = path + (window.location.hash || "");
-  if (window.location.pathname + window.location.hash === target) return;
-  try {
-    history.pushState(null, "", target);
-  } catch (e) {}
+  pushPath(state.pinnedId ? `/${state.pinnedId}` : "/");
 }
 
 initWorld({
@@ -329,10 +318,15 @@ function scheduleRedraw() {
         gCards.selectAll("*").interrupt()
           .transition().duration(TIER_FADE_MS).style("opacity", 0).remove();
       } else if (oldTier === TIER_LABEL) {
-        // LABEL → IMG/FULL: fade labels out, snap cards in (with target fold).
+        // LABEL → IMG/FULL: fade labels out, then hold for a beat before
+        // bringing cards in so the two transitions don't collide. Skipped
+        // on first resolve so the initial page load lands instantly.
         gLabels.selectAll("*").interrupt()
           .transition().duration(TIER_FADE_MS).style("opacity", 0).remove();
-        pendingNoFade = true;
+        if (!firstTierResolve) {
+          state.cardsHiddenUntil = performance.now() + TIER_HOLD_MS;
+          setTimeout(scheduleRedraw, TIER_HOLD_MS);
+        }
       } else {
         // IMG ↔ FULL: tween fold on existing cards. New cards entering on the
         // ensuing renderCards() use the new tier's initialFold.
@@ -340,9 +334,18 @@ function scheduleRedraw() {
       }
       state.tier = newTier;
     }
+    firstTierResolve = false;
+
     if (state.tier === TIER_LABEL) {
       renderLabels(labelThreshold(state.transform.k));
+    } else if (
+      state.cardsHiddenUntil &&
+      performance.now() < state.cardsHiddenUntil
+    ) {
+      // Within the post-LABEL delay window — keep the card layer empty.
+      // The setTimeout above will trigger another redraw when it expires.
     } else {
+      state.cardsHiddenUntil = 0;
       renderCards();
     }
     renderSearchHighlights();
@@ -463,10 +466,9 @@ function initialTransform() {
 }
 
 function initialCenter() {
-  // Pin: pathname (canonical) → localStorage. View: hash → localStorage → computed.
-  // Special case: arriving at /<id> with no explicit view in hash should land
-  // centered + zoomed on the pinned node — otherwise the user sees the timeline
-  // start and has to find the card themselves.
+  // Pin: pathname (canonical) → localStorage → random fallback. View: hash →
+  // localStorage → centered-on-pin → computed. Hitting / with nothing saved
+  // should drop the user on a random card so the page always feels alive.
   let transform = null;
   const pathPin = parsePathPin(window.location.pathname);
   let pinnedId = pathPin;
@@ -490,8 +492,15 @@ function initialCenter() {
     }
   }
 
+  // Nothing told us where to go → pick a random invention. Drop any saved
+  // transform too; it won't match a random card's location.
+  if (!pinnedId && state.nodes.length) {
+    pinnedId = state.nodes[Math.floor(Math.random() * state.nodes.length)].id;
+    transform = null;
+  }
+
   const pinnedNode = pinnedId ? state.nodesById[pinnedId] : null;
-  if (pathPin && pinnedNode && !fromHash) {
+  if (pinnedNode && !transform) {
     centerOnNode(pinnedNode);
   } else {
     svg.call(zoom.transform, transform || initialTransform());

@@ -20,8 +20,13 @@
 
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script type="module">
-    const isMobile = matchMedia("(max-width: 720px)").matches;
-    import(isMobile ? "/static/mobile.js" : "/static/universe.js");
+    const mq = matchMedia("(max-width: 720px)");
+    import(mq.matches ? "/static/mobile.js" : "/static/universe.js");
+    // Crossing the breakpoint mid-session means the wrong bundle is loaded
+    // (universe's D3 graph in a phone viewport, or mobile's flipper on a
+    // wide one). Reload to pick up the right entry. Same-tab reload preserves
+    // the URL hash so view state survives.
+    mq.addEventListener("change", () => location.reload());
   </script>
 </body>
 </html>

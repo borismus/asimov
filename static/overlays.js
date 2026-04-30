@@ -7,8 +7,78 @@
 import { cardWidth, fullCardHeight, cardScreenScale, renderFullCard } from "./card.js";
 
 const HOVER_EXPAND_DELAY_MS = 300;
+// All hover overlays (focused card + neighbors + sticky label at LABEL tier)
+// wait this long after enter before appearing — quick scanning across dots
+// or cards never fires anything; a deliberate linger reveals everything
+// at once.
+const HOVER_PROMOTE_DELAY_MS = 300;
 let hoverLeaveTimeout = null;
 let hoverExpandTimer = null;
+let hoverPromoteTimer = null;
+
+function clearHoverPromoteTimer() {
+  if (hoverPromoteTimer) {
+    clearTimeout(hoverPromoteTimer);
+    hoverPromoteTimer = null;
+  }
+}
+
+function clearHoverExpandTimer() {
+  if (hoverExpandTimer) {
+    clearTimeout(hoverExpandTimer);
+    hoverExpandTimer = null;
+  }
+}
+
+// Reverse-fold + remove the current hover overlay and restore baselines, the
+// same dance onHoverLeave's debounce does. Pulled out so node-switching
+// (onHoverEnter on a different id) can run the same cleanup synchronously
+// instead of relying on the debounced leave path that gets cancelled.
+function dismissHoverOverlay() {
+  state.hoverNeighbors = [];
+  state.hoverLayout = new Map();
+  state.hoverExpanded = false;
+  state.hoverFoldOpen = false;
+  gHoverLines.selectAll("line").remove();
+
+  const pinnedSet = new Set(state.pinnedLayout.keys());
+  const restoreBaselines = () => {
+    gCards.selectAll("g.card")
+      .interrupt()
+      .style("opacity", (n) => (pinnedSet.has(n.id) ? 0 : 1));
+    gStickyLabels.selectAll("g.dag-label")
+      .style("opacity", (d) => (pinnedSet.has(d.id) ? 0 : 1));
+  };
+
+  const hoverCards = gHoverCards.selectAll("g.card");
+  if (hoverCards.empty()) {
+    restoreBaselines();
+  } else if (state.tier === TIER_FULL) {
+    // Full and baseline overlap pixel-for-pixel; snap-remove avoids a flash.
+    gHoverCards.selectAll("*").interrupt().interrupt("fold").remove();
+    restoreBaselines();
+  } else if (state.tier === TIER_IMG) {
+    // Reverse the fold-open animation symmetrically with the enter expand.
+    // Killing any prior "fold" tween via the new transition's name reuse means
+    // partially-open cards pick up cleanly mid-animation.
+    tweenFold(hoverCards, 0)
+      .on("end", () => {
+        gHoverCards.selectAll("*").interrupt().interrupt("fold").remove();
+        restoreBaselines();
+      })
+      .on("interrupt", () => {
+        gHoverCards.selectAll("*").interrupt().interrupt("fold").remove();
+        restoreBaselines();
+      });
+  } else {
+    gHoverCards.selectAll("*").interrupt().interrupt("fold")
+      .transition().duration(TIER_FADE_MS).style("opacity", 0).remove()
+      .on("end", restoreBaselines).on("interrupt", restoreBaselines);
+  }
+  offscreenContainer
+    .querySelectorAll(".offscreen-indicator:not(.pinned)")
+    .forEach((el) => el.remove());
+}
 
 let state, gCards, gHoverCards, gHoverLines, gPinnedCards, gPinnedLines;
 let gStickyLabels, offscreenContainer, svg, zoom;
@@ -133,7 +203,11 @@ export function updateHoverArtifacts() {
   if (!hovered) return;
 
   if (!state.hoverExpanded) {
-    gHoverCards.selectAll("g.card").interrupt()
+    // .interrupt() only kills the default transition — kill "fold" too so a
+    // mid-tween card doesn't keep folding while it fades. Without this, IMG-
+    // tier handoffs leave the body content animating on a card that should
+    // already be unwinding.
+    gHoverCards.selectAll("g.card").interrupt().interrupt("fold")
       .transition().duration(TIER_FADE_MS).style("opacity", 0).remove();
     gHoverLines.selectAll("line").remove();
     gStickyLabels.selectAll("g.dag-label").style("opacity", 1);
@@ -153,7 +227,7 @@ export function updateHoverArtifacts() {
     .filter((n) => !pinnedDisplayed.has(n.id));
 
   const hoverSel = gHoverCards.selectAll("g.card").data(cardNodes, (n) => n.id);
-  hoverSel.exit().interrupt()
+  hoverSel.exit().interrupt().interrupt("fold")
     .transition().duration(TIER_FADE_MS).style("opacity", 0).remove();
   // Fade newly entered hover overlays at LABEL tier (smooth dot → card
   // reveal); snap at FULL tier where the baseline is already a card.
@@ -223,103 +297,86 @@ export function onHoverEnter(event, d) {
   const sameNode = state.hoverId === d.id;
   state.hoverId = d.id;
 
-  // When a card is pinned, the user already has a focused chain in view;
-  // adding the hovered card's parents and children on top is noisy.
-  // Hover stays a single-card preview in that mode.
-  state.hoverNeighbors = [];
-  if (!state.pinnedId) {
-    const related = state.links.filter(
-      (l) => l.source.id === d.id || l.target.id === d.id
-    );
-    for (const l of related) {
-      if (l.source.id === d.id) {
-        state.hoverNeighbors.push({ node: l.target, kind: "child" });
-      } else {
-        state.hoverNeighbors.push({ node: l.source, kind: "parent" });
+  // sameNode means we're re-entering the same logical node — typically
+  // the cursor crossing between a dot and its overlapping sticky label
+  // (or hover card). The promote timer is already counting toward this
+  // node, so leave it running and let the staging continue.
+  if (sameNode) return;
+
+  // Switching to a new node: kill BOTH the promote and the expand timers so
+  // a stale "open the fold" callback from the previous hover can't fire
+  // mid-handoff and force the new card into the wrong fold state.
+  clearHoverPromoteTimer();
+  clearHoverExpandTimer();
+  // Tear down the previous hover overlay properly — at IMG tier this means
+  // a reverse-fold animation, not just a fade. Without this, the previous
+  // card stays at fold=1 while fading, then snaps closed when the baseline
+  // pops back; with this the transition reads as a clean handoff.
+  dismissHoverOverlay();
+  renderOffscreenIndicators();
+
+  hoverPromoteTimer = setTimeout(() => {
+    hoverPromoteTimer = null;
+    if (state.hoverId !== d.id) return;
+
+    // Populate neighbors now (deferred so the offscreen chips and the
+    // overlay cards appear together). When a card is pinned, the user
+    // already has a focused chain in view; adding hover neighbors on
+    // top is noisy, so hover stays a single-card preview.
+    state.hoverNeighbors = [];
+    if (!state.pinnedId) {
+      for (const l of state.links) {
+        if (l.source.id === d.id) {
+          state.hoverNeighbors.push({ node: l.target, kind: "child" });
+        } else if (l.target.id === d.id) {
+          state.hoverNeighbors.push({ node: l.source, kind: "parent" });
+        }
       }
     }
-  }
 
-  state.hoverExpanded = true;
-
-  if (state.tier === TIER_LABEL) {
-    // Pin this node's label in gStickyLabels so it stays after hover ends.
-    if (!sameNode && !state.stickyLabels.some((n) => n.id === d.id)) {
-      state.stickyLabels.push(d);
-      appendLabels(gStickyLabels, state.stickyLabels);
+    // At LABEL tier, surface the dot's text label too (sticky so it
+    // persists after the hover ends).
+    if (state.tier === TIER_LABEL) {
+      if (!state.stickyLabels.some((n) => n.id === d.id)) {
+        state.stickyLabels.push(d);
+        appendLabels(gStickyLabels, state.stickyLabels);
+      }
     }
-    state.hoverFoldOpen = true;
-  } else if (state.tier === TIER_IMG) {
-    // Hovered image expands. First render at fold=0 so the fold animation
-    // plays from the matching baseline state.
-    if (!sameNode) state.hoverFoldOpen = false;
-    scheduleHoverExpand(0);
-  } else {
-    state.hoverFoldOpen = true;
-  }
 
-  updateHoverArtifacts();
-  renderOffscreenIndicators();
+    state.hoverExpanded = true;
+    if (state.tier === TIER_IMG) {
+      // Render folded first, then animate fold open on the next tick.
+      state.hoverFoldOpen = false;
+      updateHoverArtifacts();
+      scheduleHoverExpand(0);
+    } else {
+      state.hoverFoldOpen = true;
+      updateHoverArtifacts();
+    }
+    renderOffscreenIndicators();
+  }, HOVER_PROMOTE_DELAY_MS);
 }
 
 export function onHoverMove() {
-  // No-op: hover expansion is immediate at every tier now (LABEL fires
-  // straight to the full card, IMG schedules a 0ms-delayed fold-open).
+  // No-op: hover expansion is immediate at IMG/FULL tiers; LABEL tier
+  // is staged and driven by timers in onHoverEnter.
 }
 
 export function onHoverLeave() {
-  if (hoverExpandTimer) {
-    clearTimeout(hoverExpandTimer);
-    hoverExpandTimer = null;
-  }
-  // Debounce — moving from a tiny dot onto the overlapping hover card briefly
-  // fires mouseleave before the card's mouseenter cancels it.
+  // Debounce — when the hover overlay renders on top of the baseline card,
+  // the browser fires baseline-mouseleave + overlay-mouseenter back-to-back.
+  // The sameNode mouseenter cancels this leave timeout, so any timers
+  // (promote, expand) keep ticking and the overlay opens normally. Do NOT
+  // clear hoverExpandTimer outside the setTimeout — at IMG tier the expand
+  // timer is set with delay 0 right after promote, and if we kill it here
+  // before the sameNode mouseenter rescues us, the new card never opens.
   if (hoverLeaveTimeout) clearTimeout(hoverLeaveTimeout);
   hoverLeaveTimeout = setTimeout(() => {
     hoverLeaveTimeout = null;
+    clearHoverPromoteTimer();
+    clearHoverExpandTimer();
     state.hoverId = null;
-    state.hoverNeighbors = [];
-    state.hoverLayout = new Map();
-    state.hoverExpanded = false;
-    gHoverLines.selectAll("line").remove();
-    // Pinned baselines stay hidden (the pinned overlay covers them); every
-    // other suppressed baseline pops back to opacity 1.
-    const pinnedSet = new Set(state.pinnedLayout.keys());
-    const restoreBaselines = () => {
-      gCards.selectAll("g.card")
-        .interrupt()
-        .style("opacity", (n) => (pinnedSet.has(n.id) ? 0 : 1));
-      gStickyLabels.selectAll("g.dag-label")
-        .style("opacity", (d) => (pinnedSet.has(d.id) ? 0 : 1));
-    };
-    // FULL tier: baseline overlaps perfectly, snap-remove.
-    // IMG tier: reverse the fold-open animation (tween fold 1→0), then
-    //   remove — symmetric with the hover-enter expand.
-    // LABEL tier: fade out to reveal the dot underneath.
-    const hoverCards = gHoverCards.selectAll("g.card");
-    if (hoverCards.empty()) {
-      restoreBaselines();
-    } else if (state.tier === TIER_FULL) {
-      gHoverCards.selectAll("*").interrupt().remove();
-      restoreBaselines();
-    } else if (state.tier === TIER_IMG) {
-      tweenFold(hoverCards, 0)
-        .on("end", () => {
-          gHoverCards.selectAll("*").interrupt().remove();
-          restoreBaselines();
-        })
-        .on("interrupt", () => {
-          gHoverCards.selectAll("*").interrupt().remove();
-          restoreBaselines();
-        });
-    } else {
-      gHoverCards.selectAll("*").interrupt()
-        .transition().duration(TIER_FADE_MS).style("opacity", 0).remove()
-        .on("end", restoreBaselines).on("interrupt", restoreBaselines);
-    }
-    offscreenContainer
-      .querySelectorAll(".offscreen-indicator:not(.pinned)")
-      .forEach((el) => el.remove());
+    dismissHoverOverlay();
   }, 50);
 }
 

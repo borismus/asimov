@@ -134,7 +134,7 @@
 
   .row-body {
     display: grid;
-    grid-template-columns: 1fr 244px 244px;
+    grid-template-columns: 1fr var(--card-w) var(--card-w);
     gap: 18px;
     padding: 14px;
     align-items: start;
@@ -142,7 +142,7 @@
   .desc {
     font-size: 13px;
     line-height: 1.5;
-    max-height: 361px;
+    max-height: var(--card-full-h);
     overflow: auto;
     padding-right: 6px;
     color: #2a2a2a;
@@ -164,10 +164,12 @@
   /* Fold animation. The wrapper clips the SVG; clicking toggles .folded
      which simultaneously shrinks the wrapper to image-card height and slides
      the body panel up behind the image (clipped by an in-SVG clipPath). */
+  /* --card-w / --card-full-h / --card-fold-h / --card-fold-slide are set
+     from JS based on cardGeom in static/card.js. */
   .card-wrap {
     box-sizing: border-box;
-    width: 244px;            /* 240 SVG + 2px border on each side */
-    height: 364.667px;       /* 360.667 SVG + 4px */
+    width: var(--card-w);
+    height: var(--card-full-h);
     overflow: hidden;
     border: 2px solid #000;
     border-radius: 4px;
@@ -175,13 +177,13 @@
     cursor: pointer;
     transition: height 340ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .card-wrap.folded { height: 182.667px; }   /* 178.667 + 4px */
+  .card-wrap.folded { height: var(--card-fold-h); }
   svg.card { display: block; }
   svg.card .fold-panel {
     transition: transform 340ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .card-wrap.folded svg.card .fold-panel {
-    transform: translateY(-202px);
+    transform: translateY(calc(-1 * var(--card-fold-slide)));
   }
   svg.card.missing { opacity: 0.55; }
   svg.card.missing .container { stroke-dasharray: 4 3; }
@@ -242,7 +244,20 @@
   </header>
   <main id="list"><p class="empty">loading data…</p></main>
 
-<script>
+<script type="module">
+import { cardGeom } from "/static/card.js";
+
+// Push the card's actual dimensions into CSS so .card-wrap tracks any
+// geometry tweak in static/card.js without preview.html knowing the numbers.
+// Border is 2px on each side → +4px on width / heights.
+const _root = document.documentElement;
+_root.style.setProperty("--card-w", `${cardGeom.width + 4}px`);
+_root.style.setProperty("--card-full-h", `${cardGeom.fullHeight + 4}px`);
+_root.style.setProperty("--card-fold-h", `${cardGeom.imgHeight + 4}px`);
+// Panel translate distance when folded: enough to push the panel above the
+// image-bottom clip line so it disappears entirely.
+_root.style.setProperty("--card-fold-slide", `${cardGeom.fullHeight - cardGeom.imgBottomY}px`);
+
 const ERAS = [
   ['ancient', 500],
   ['medieval', 1450],
@@ -396,67 +411,58 @@ function formatYear(year) {
   return String(year);
 }
 
-// Static SVG mirroring renderFullCard's final-state geometry. Image area is
-// 3:2, full text-band wide (208) — see static/card.js for the source of truth.
-const CARD_W = 240;
-const CARD_MARGIN_IN = 16;
-const CARD_TITLE_BAR_H = 20;
-const CARD_IMG_W = CARD_W - CARD_MARGIN_IN * 2;          // 208
-const CARD_IMG_H = CARD_IMG_W * 2 / 3;                   // 138.667
-const CARD_IMG_BOTTOM_Y = CARD_TITLE_BAR_H + CARD_IMG_H; // 158.667
-const CARD_INVENTOR_Y = CARD_IMG_BOTTOM_Y + 11;
-const CARD_BODY_Y = CARD_INVENTOR_Y + 5;
-const CARD_FOOTER_H = 20;
-const CARD_BODY_FOOTER_H = 182;
-const CARD_FULL_H = CARD_TITLE_BAR_H + CARD_IMG_H + CARD_TITLE_BAR_H + CARD_BODY_FOOTER_H; // ~360.67
-const CARD_BODY_H = CARD_FULL_H - CARD_BODY_Y - CARD_FOOTER_H;
-
+// Static SVG mirroring renderFullCard's final-state geometry. All coordinates
+// pulled from cardGeom (static/card.js) — preview tracks any geometry tweak
+// there without duplicate constants here.
 let _cardSerial = 0;
 
 function renderCardSVG(inv, dir, missing) {
   const f = fieldKey(inv.field);
-  const W = CARD_W, H = CARD_FULL_H;
+  const g = cardGeom;
+  const W = g.width;
+  const H = g.fullHeight;
+  const bodyH = H - g.bodyY - g.footerH;
+  const fieldIconCX = W - g.margin - 12 + 6;       // matches card.js renderFullCard
   const clipId = `fold-clip-${++_cardSerial}`;
   const imageHref = `static/images/${dir}/${encodeURIComponent(inv.id)}.jpg`;
   const fieldIconHref = `static/images/fields/${f}.png`;
   const imageBlock = missing
-    ? `<rect class="image-rect" x="${CARD_MARGIN_IN}" y="${CARD_TITLE_BAR_H}" width="${CARD_IMG_W}" height="${CARD_IMG_H}" fill="#f5f0df" stroke="black"/>
-       <text x="${W / 2}" y="${CARD_TITLE_BAR_H + CARD_IMG_H / 2 + 4}" font-size="11" text-anchor="middle" fill="#9b9079" font-family="Lora, serif">not generated</text>`
-    : `<rect class="image-rect" x="${CARD_MARGIN_IN}" y="${CARD_TITLE_BAR_H}" width="${CARD_IMG_W}" height="${CARD_IMG_H}" fill="transparent" stroke="black"/>
-       <image x="${CARD_MARGIN_IN}" y="${CARD_TITLE_BAR_H}" width="${CARD_IMG_W}" height="${CARD_IMG_H}" preserveAspectRatio="xMidYMid slice" data-src="${imageHref}"/>`;
+    ? `<rect class="image-rect" x="${g.marginIn}" y="${g.titleBarH}" width="${g.imgW}" height="${g.imgH}" fill="#f5f0df" stroke="black"/>
+       <text x="${W / 2}" y="${g.titleBarH + g.imgH / 2 + 4}" font-size="11" text-anchor="middle" fill="#9b9079" font-family="Lora, serif">not generated</text>`
+    : `<rect class="image-rect" x="${g.marginIn}" y="${g.titleBarH}" width="${g.imgW}" height="${g.imgH}" fill="transparent" stroke="black"/>
+       <image x="${g.marginIn}" y="${g.titleBarH}" width="${g.imgW}" height="${g.imgH}" preserveAspectRatio="xMidYMid slice" data-src="${imageHref}"/>`;
 
   // Clip is applied to the outer <g class="fold-clip"> (which has no
-  // transform), so its rect at y=CARD_IMG_BOTTOM_Y stays fixed in SVG-root
-  // coords. The inner .fold-panel has the CSS transform — when it translates
-  // up by CARD_FULL_H - CARD_IMG_BOTTOM_Y, its rendered content lands above
-  // the clip line and the outer clip masks it cleanly. Putting the clip on
-  // the panel itself doesn't work: CSS transforms on SVG happen after the
-  // clip-path is resolved, so the clip rides along with the translated
-  // content instead of staying in place.
+  // transform), so its rect at y=imgBottomY stays fixed in SVG-root coords.
+  // The inner .fold-panel has the CSS transform — when it translates up by
+  // (fullHeight - imgBottomY), its rendered content lands above the clip
+  // line and the outer clip masks it cleanly. Putting the clip on the panel
+  // itself doesn't work: CSS transforms on SVG resolve after clip-path, so
+  // the clip would ride along with the translated content.
   return `
     <svg class="card field-${f}${missing ? ' missing' : ''}" data-img="${missing ? '' : imageHref}" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <clipPath id="${clipId}" clipPathUnits="userSpaceOnUse">
-          <rect x="0" y="${CARD_IMG_BOTTOM_Y}" width="${W}" height="${H - CARD_IMG_BOTTOM_Y}"/>
+          <rect x="0" y="${g.imgBottomY}" width="${W}" height="${H - g.imgBottomY}"/>
         </clipPath>
       </defs>
       <rect class="container" width="${W}" height="${H}" fill="white"/>
       <g class="fold-clip" clip-path="url(#${clipId})">
         <g class="fold-panel">
-          <rect class="body-rect" x="${CARD_MARGIN_IN}" y="${CARD_BODY_Y}" width="${CARD_IMG_W}" height="${CARD_BODY_H}" fill="transparent" stroke="black"/>
-          <foreignObject class="body-text" x="${CARD_MARGIN_IN + 2}" y="${CARD_BODY_Y + 2}" width="${CARD_IMG_W - 4}" height="${CARD_BODY_H - 4}" font-size="9">
+          <rect class="body-rect" x="${g.marginIn}" y="${g.bodyY}" width="${g.imgW}" height="${bodyH}" fill="transparent" stroke="black"/>
+          <foreignObject class="body-text" x="${g.marginIn + 2}" y="${g.bodyY + 2}" width="${g.imgW - 4}" height="${bodyH - 4}" font-size="9">
             <div xmlns="http://www.w3.org/1999/xhtml" style="padding:1px;height:100%;font-family:Lora,serif;font-size:9px;line-height:1.35;color:#1a1a1a;hyphens:auto">${escapeHtml(inv.summary || '')}</div>
           </foreignObject>
-          <text class="middle-text" x="${CARD_MARGIN_IN}" y="${CARD_INVENTOR_Y}" font-size="10" fill="#111" font-family="Lora, serif">${escapeHtml(inv.inventor || '')}</text>
-          <text class="bottom-left" x="${CARD_MARGIN_IN}" y="${H - CARD_FOOTER_H + 14}" font-size="12" fill="#111" font-family="Lora, serif">${escapeHtml(inv.location || '')}</text>
-          <text class="bottom-right" x="${W - CARD_MARGIN_IN}" y="${H - CARD_FOOTER_H + 14}" font-size="12" text-anchor="end" fill="#111" font-family="Lora, serif">${escapeHtml(formatYear(inv.year))}</text>
+          <text class="middle-text" x="${g.marginIn}" y="${g.inventorY}" font-size="10" fill="#111" font-family="Lora, serif">${escapeHtml(inv.inventor || '')}</text>
+          <text class="bottom-left" x="${g.marginIn}" y="${H - g.footerH + 14}" font-size="12" fill="#111" font-family="Lora, serif">${escapeHtml(inv.location || '')}</text>
+          <text class="bottom-right" x="${W - g.marginIn}" y="${H - g.footerH + 14}" font-size="12" text-anchor="end" fill="#111" font-family="Lora, serif">${escapeHtml(formatYear(inv.year))}</text>
         </g>
       </g>
       <g class="image-layer">
         ${imageBlock}
-        <text class="title" x="${CARD_MARGIN_IN}" y="13" font-size="13" fill="#111" font-family="DM Serif Display, serif">${escapeHtml(inv.title || inv.id)}</text>
-        <circle class="field-icon-bg" cx="${W - 18 - 12 + 6}" cy="10" r="6" fill="white" stroke="black"/>
-        <image class="field-icon" x="${W - 18 - 12 + 1}" y="5" width="10" height="10" href="${fieldIconHref}"/>
+        <text class="title" x="${g.marginIn}" y="13" font-size="13" fill="#111" font-family="DM Serif Display, serif">${escapeHtml(inv.title || inv.id)}</text>
+        <circle class="field-icon-bg" cx="${fieldIconCX}" cy="10" r="6" fill="white" stroke="black"/>
+        <image class="field-icon" x="${fieldIconCX - 5}" y="5" width="10" height="10" href="${fieldIconHref}"/>
       </g>
     </svg>
   `;

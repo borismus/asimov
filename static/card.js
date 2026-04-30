@@ -19,10 +19,30 @@ const IMG_W = cardWidth - MARGIN_IN * 2;           // 208 — matches text band
 const IMG_H = IMG_W * 2 / 3;                       // 138.667 — locks 3:2
 export const cardHeight = IMG_H + TITLE_BAR_H * 2; // 178.667
 
-// Body + footer panel height (description + inventor row + footer). Kept the
-// same as before the image grew so the description box isn't cramped.
-const BODY_FOOTER_H = 182;
+// Body + footer panel height (description + inventor row + footer). Matches
+// the image height so the unfolded card is visually balanced top-to-bottom.
+const BODY_FOOTER_H = IMG_H;
 export const fullCardHeight = cardHeight + BODY_FOOTER_H;
+
+// Single source of truth for every coordinate inside a card. Anything
+// re-rendering cards outside of this module (e.g. preview.html's static SVG)
+// should pull values from here so geometry tweaks here don't drift.
+const FOOTER_H = 20;
+const IMG_BOTTOM_Y = TITLE_BAR_H + IMG_H;
+export const cardGeom = Object.freeze({
+  width: cardWidth,
+  imgHeight: cardHeight,        // outer height in folded / IMG state
+  fullHeight: fullCardHeight,   // outer height in unfolded / FULL state
+  margin: MARGIN,
+  marginIn: MARGIN_IN,
+  titleBarH: TITLE_BAR_H,
+  imgW: IMG_W,
+  imgH: IMG_H,
+  imgBottomY: IMG_BOTTOM_Y,
+  inventorY: IMG_BOTTOM_Y + 11,
+  bodyY: IMG_BOTTOM_Y + 16,
+  footerH: FOOTER_H,
+});
 
 const BUG_BODY = `**Describe the issue**
 

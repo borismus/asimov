@@ -1,13 +1,18 @@
 import { loadGraph, formatField, formatYear } from "./utils.js";
 import { cardWidth, fullCardHeight, renderFullCard } from "./card.js";
+import { searchHelper } from "./search.js";
+import { parsePathPin, pushPath } from "./routing.js";
 
-const SORT_OPTIONS = [
-  { key: "year", label: "Chronological" },
-  { key: "field", label: "By field" },
-  { key: "random", label: "Random" },
-];
 
 const DECK_DEPTH = 4;
+const SEARCH_MIN_CHARS = 2;
+const SEARCH_MAX_RESULTS = 30;
+
+// Number of era ticks on the timeline. Stops are derived at init from the
+// data — placed at evenly-spaced percentiles of the chronological sort so the
+// bar always reads as "uniformly distributed inventions." 5 ticks at 0/25/
+// 50/75/100% gives readable labels without crowding.
+const ERA_TICK_COUNT = 5;
 const SWIPE_DIST = 80;
 const SWIPE_MAX_VERT = 60;
 const TAP_MAX_MOVE = 8;
@@ -33,9 +38,16 @@ const ENTERING_FROM_LEFT_POSE = { txPct: -130, ty: -8, rot: -14, scale: 0.94, op
 
 const state = {
   nodes: [],
-  sortKey: "year",
+  // null = all fields. When set (e.g. "space"), state.sorted is filtered to
+  // that field. The deck is always chronological.
+  fieldFilter: null,
+  fieldOptions: [],
   sorted: [],
   index: 0,
+  // Total count of nodes in the dataset — used to normalize the timeline
+  // marker's position. Marker uses each node's chronoIndex so the dot moves
+  // by an equal step per swipe regardless of how clustered the years are.
+  chronoTotal: 0,
 };
 
 let deckEl = null;
@@ -82,84 +94,427 @@ function compareYear(a, b) {
   return a.year - b.year || a.id.localeCompare(b.id);
 }
 
-function compareField(a, b) {
-  return (
-    formatField(a.field).localeCompare(formatField(b.field)) ||
-    compareYear(a, b)
-  );
+// Apply the active field filter (if any). The mobile deck always reads
+// chronologically — randomness is now a dedicated button (which sets index)
+// rather than a sort mode.
+function deriveSorted() {
+  const pool = state.fieldFilter
+    ? state.nodes.filter((n) => formatField(n.field) === state.fieldFilter)
+    : state.nodes;
+  return pool.slice().sort(compareYear);
 }
 
-function shuffled(arr) {
-  const out = arr.slice();
-  for (let i = out.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [out[i], out[j]] = [out[j], out[i]];
+// Compact year label for tick + counter use. Avoids "4,000,000 BCE" eating the
+// whole tick column when years go deep into prehistory.
+function formatYearShort(y) {
+  if (y <= -1000000) return Math.round(y / 1000000) + "M";
+  if (y <= -1000) return Math.round(y / 1000) + "K";
+  if (y < 0) return Math.abs(y) + " BCE";
+  return String(y);
+}
+
+// In a sorted-by-year list, find the index of the entry closest to `node`'s
+// year. Same id wins when present; otherwise minimum |year difference|.
+// Linear scan over <2k items is fine, no need for a binary search.
+function nearestIndexByYear(node, list) {
+  if (!list.length) return 0;
+  if (!node) return 0;
+  let best = 0;
+  let bestDelta = Infinity;
+  for (let i = 0; i < list.length; i++) {
+    if (list[i].id === node.id) return i;
+    const d = Math.abs(list[i].year - node.year);
+    if (d < bestDelta) {
+      bestDelta = d;
+      best = i;
+    }
   }
-  return out;
+  return best;
 }
 
-function sortNodes(key) {
-  if (key === "field") return state.nodes.slice().sort(compareField);
-  if (key === "random") return shuffled(state.nodes);
-  return state.nodes.slice().sort(compareYear);
+// Selector value encoding: "all" = no filter, "field:<name>" = filter to that
+// field. Single flat list — no sort option since the deck is always
+// chronological and randomness is a separate button.
+function selectorValue() {
+  return state.fieldFilter ? `field:${state.fieldFilter}` : "all";
+}
+
+function applySelectorValue(value) {
+  if (value.startsWith("field:")) {
+    state.fieldFilter = value.slice("field:".length);
+  } else {
+    state.fieldFilter = null;
+  }
 }
 
 function parseHash() {
   const h = location.hash.replace(/^#/, "");
   if (!h) return null;
   const params = new URLSearchParams(h);
-  const sort = params.get("sort");
+  const field = params.get("field");
   const i = parseInt(params.get("i") || "", 10);
   const out = {};
-  if (sort && SORT_OPTIONS.some((o) => o.key === sort)) out.sortKey = sort;
+  if (field) out.fieldFilter = field;
   if (Number.isFinite(i) && i >= 0) out.index = i;
   return out;
 }
 
 function writeHash() {
   const params = new URLSearchParams();
-  params.set("sort", state.sortKey);
+  if (state.fieldFilter) params.set("field", state.fieldFilter);
   params.set("i", String(state.index));
   const next = "#" + params.toString();
   if (next !== location.hash) history.replaceState(null, "", next);
 }
 
+// pushState the canonical /<id> path for the currently visible card so
+// back/forward navigates between visited cards, and reload restores you.
+function pushCurrentPath() {
+  const node = state.sorted[state.index];
+  if (node) pushPath(`/${node.id}`);
+}
+
+// Position the timeline marker on a specific node — independent of
+// state.index so the scrubber can drive it during a drag without a full
+// deck rebuild on every pointermove.
+function updateMarkerForNode(node) {
+  const marker = document.getElementById("mobile-timeline-marker");
+  if (!marker || !node) return;
+  const pct = state.chronoTotal > 1
+    ? (node.chronoIndex / (state.chronoTotal - 1)) * 100
+    : 0;
+  marker.style.left = pct + "%";
+  const mlabel = marker.querySelector(".marker-label");
+  if (!mlabel) return;
+  mlabel.textContent = formatYearShort(node.year);
+  // Edge-anchor the label when the dot is near 0% or 100% so the text doesn't
+  // get clipped off the side of the timeline.
+  if (pct < 8) {
+    mlabel.style.left = "0";
+    mlabel.style.right = "auto";
+    mlabel.style.transform = "translateX(-4px)";
+  } else if (pct > 92) {
+    mlabel.style.left = "auto";
+    mlabel.style.right = "0";
+    mlabel.style.transform = "translateX(4px)";
+  } else {
+    mlabel.style.left = "50%";
+    mlabel.style.right = "auto";
+    mlabel.style.transform = "translateX(-50%)";
+  }
+}
+
 function updateCounter() {
   const node = state.sorted[state.index];
-  const counter = document.getElementById("mobile-counter");
-  if (!counter || !node) return;
-  counter.textContent = `${state.index + 1} / ${state.sorted.length} · ${formatYear(node.year)}`;
+  if (node) updateMarkerForNode(node);
 }
 
 function buildBar() {
   const bar = document.createElement("div");
   bar.id = "mobile-bar";
 
+  // Flat one-level list: "All" (no filter) followed by each field. Picking a
+  // field filters the deck; the deck always reads chronologically.
   const select = document.createElement("select");
   select.id = "mobile-sort";
-  for (const opt of SORT_OPTIONS) {
+  const allOpt = document.createElement("option");
+  allOpt.value = "all";
+  allOpt.textContent = "All";
+  select.appendChild(allOpt);
+  for (const f of state.fieldOptions) {
     const o = document.createElement("option");
-    o.value = opt.key;
-    o.textContent = opt.label;
+    o.value = `field:${f}`;
+    // Capitalize the field name for display; underlying value stays lowercase.
+    o.textContent = f.charAt(0).toUpperCase() + f.slice(1);
     select.appendChild(o);
   }
-  select.value = state.sortKey;
+  select.value = selectorValue();
   select.addEventListener("change", () => {
     if (committing) return;
-    state.sortKey = select.value;
-    state.sorted = sortNodes(state.sortKey);
-    state.index = 0;
+    // Preserve location across filter/sort changes: same card if it's in the
+    // new view; otherwise the closest neighbor by year. Jumping to index 0 on
+    // every category change loses the user's place in time, which is what
+    // they care about — antiquity vs. modernity is the axis they're navigating.
+    const currentNode = state.sorted[state.index] || null;
+    applySelectorValue(select.value);
+    state.sorted = deriveSorted();
+    state.index = nearestIndexByYear(currentNode, state.sorted);
     writeHash();
+    pushCurrentPath();
     rebuildDeck();
   });
   bar.appendChild(select);
 
-  const counter = document.createElement("span");
-  counter.className = "counter";
-  counter.id = "mobile-counter";
-  bar.appendChild(counter);
+  // Spacer to push the action buttons to the right end of the bar.
+  const spacer = document.createElement("span");
+  spacer.className = "spacer";
+  bar.appendChild(spacer);
+
+  const randomBtn = document.createElement("button");
+  randomBtn.className = "random-button";
+  randomBtn.type = "button";
+  randomBtn.setAttribute("aria-label", "Random card");
+  randomBtn.innerHTML =
+    `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+       <rect x="3" y="3" width="18" height="18" rx="3"/>
+       <circle cx="8" cy="8" r="1.2" fill="#444"/>
+       <circle cx="16" cy="16" r="1.2" fill="#444"/>
+       <circle cx="16" cy="8" r="1.2" fill="#444"/>
+       <circle cx="8" cy="16" r="1.2" fill="#444"/>
+     </svg>`;
+  randomBtn.addEventListener("click", jumpToRandom);
+  bar.appendChild(randomBtn);
+
+  const searchBtn = document.createElement("button");
+  searchBtn.className = "search-toggle";
+  searchBtn.type = "button";
+  searchBtn.setAttribute("aria-label", "Search");
+  // Inline magnifier SVG so the button has no external asset dependency.
+  searchBtn.innerHTML =
+    `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+       <circle cx="11" cy="11" r="7"/>
+       <line x1="16.5" y1="16.5" x2="21" y2="21"/>
+     </svg>`;
+  searchBtn.addEventListener("click", openSearch);
+  bar.appendChild(searchBtn);
 
   document.body.insertBefore(bar, document.body.firstChild);
+
+  // Timeline strip underneath the bar: era ticks for orientation, plus a
+  // movable marker that shows the current card's year. Position is by year
+  // across the full dataset (piecewise-linear over ERA_STOPS) so it's
+  // independent of sort/filter — antiquity vs. modernity at a glance.
+  const tl = document.createElement("div");
+  tl.id = "mobile-timeline";
+  // Inner wrapper has horizontal margin so 0% and 100% positions land slightly
+  // inside the screen edges — keeps the leftmost/rightmost tick labels from
+  // clipping. All children position against this wrapper.
+  const inner = document.createElement("div");
+  inner.className = "inner";
+  tl.appendChild(inner);
+  const track = document.createElement("div");
+  track.className = "track";
+  inner.appendChild(track);
+  for (const stop of state.eraStops) {
+    const tick = document.createElement("div");
+    tick.className = "tick";
+    tick.style.left = stop.pct + "%";
+    const tlabel = document.createElement("span");
+    tlabel.className = "tick-label";
+    tlabel.textContent = stop.label;
+    tick.appendChild(tlabel);
+    inner.appendChild(tick);
+  }
+  const marker = document.createElement("div");
+  marker.id = "mobile-timeline-marker";
+  const mlabel = document.createElement("span");
+  mlabel.className = "marker-label";
+  marker.appendChild(mlabel);
+  inner.appendChild(marker);
+  // Mount at the end of the body so the body's flex-column lays it out below
+  // the card container — feels more like the deck "advances along" the
+  // timeline beneath it than a chrome strip pushing the deck down.
+  document.body.appendChild(tl);
+}
+
+let searchInputEl = null;
+let searchResultsEl = null;
+
+function initSearch() {
+  searchInputEl = document.getElementById("search-input");
+  searchResultsEl = document.getElementById("search-results");
+  if (!searchInputEl || !searchResultsEl) return;
+  searchInputEl.addEventListener("input", renderSearchResults);
+  searchInputEl.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      e.preventDefault();
+      closeSearch();
+    }
+  });
+  // Tap outside the results / input to dismiss. Listening on results' parent
+  // would miss the "tap on faded deck" case, so we listen on the document and
+  // gate on whether the target is inside the search UI.
+  document.addEventListener("click", (e) => {
+    if (!document.body.classList.contains("mobile-searching")) return;
+    if (
+      e.target === searchInputEl ||
+      searchInputEl.contains(e.target) ||
+      searchResultsEl.contains(e.target) ||
+      e.target.closest(".search-toggle")
+    ) return;
+    closeSearch();
+  });
+}
+
+function openSearch() {
+  if (!searchInputEl) return;
+  document.body.classList.add("mobile-searching");
+  searchInputEl.value = "";
+  renderSearchResults();
+  // Defer focus until the input is actually display:block — focus on a hidden
+  // input is a no-op on iOS Safari.
+  requestAnimationFrame(() => searchInputEl.focus());
+}
+
+function closeSearch() {
+  if (!searchInputEl) return;
+  document.body.classList.remove("mobile-searching");
+  searchInputEl.value = "";
+  searchInputEl.blur();
+  searchResultsEl.innerHTML = "";
+}
+
+function renderSearchResults() {
+  if (!searchResultsEl || !searchInputEl) return;
+  const q = searchInputEl.value.trim();
+  searchResultsEl.innerHTML = "";
+  if (q.length < SEARCH_MIN_CHARS) return;
+
+  const matches = [];
+  for (const n of state.nodes) {
+    if (searchHelper(n, q)) {
+      matches.push(n);
+      if (matches.length >= SEARCH_MAX_RESULTS) break;
+    }
+  }
+  if (matches.length === 0) {
+    const empty = document.createElement("div");
+    empty.className = "mobile-result empty";
+    empty.textContent = "No matches.";
+    searchResultsEl.appendChild(empty);
+    return;
+  }
+  for (const n of matches) {
+    const row = document.createElement("div");
+    row.className = "mobile-result";
+    const title = document.createElement("div");
+    title.className = "title";
+    title.textContent = n.title;
+    const meta = document.createElement("div");
+    meta.className = "meta";
+    const fieldLabel = formatField(n.field);
+    meta.textContent = `${formatYear(n.year)} · ${fieldLabel}`;
+    row.appendChild(title);
+    row.appendChild(meta);
+    row.addEventListener("click", () => jumpToNode(n));
+    searchResultsEl.appendChild(row);
+  }
+}
+
+// Drag-to-scrub on the timeline. The dot follows the finger; on release we
+// commit the deck to the chosen card. We don't rebuild the deck mid-drag —
+// rendering 4 SVG cards every pointermove would jank — so the marker label
+// is the live preview during the gesture.
+let scrubbing = false;
+let scrubbedIndex = -1;
+let scrubInner = null;
+
+function attachTimelineScrubber() {
+  const inner = document.querySelector("#mobile-timeline .inner");
+  if (!inner) return;
+  scrubInner = inner;
+  inner.style.touchAction = "none";
+  inner.addEventListener("pointerdown", onScrubDown);
+}
+
+function onScrubDown(e) {
+  if (committing) return;
+  e.preventDefault();
+  scrubbing = true;
+  scrubbedIndex = -1;
+  scrubInner.setPointerCapture?.(e.pointerId);
+  document.body.classList.add("mobile-scrubbing");
+  scrubInner.addEventListener("pointermove", onScrubMove);
+  scrubInner.addEventListener("pointerup", onScrubUp);
+  scrubInner.addEventListener("pointercancel", onScrubCancel);
+  onScrubMove(e);
+}
+
+function onScrubMove(e) {
+  if (!scrubbing || !state.sorted.length) return;
+  const rect = scrubInner.getBoundingClientRect();
+  if (rect.width <= 0) return;
+  const pct = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
+  // Map screen position → chronoIndex of full dataset → nearest card in the
+  // current filtered + sorted view. Filter-aware: scrubbing inside Field —
+  // Space lands on space cards.
+  const target = pct * (state.chronoTotal - 1);
+  let best = 0;
+  let bestDelta = Infinity;
+  for (let i = 0; i < state.sorted.length; i++) {
+    const d = Math.abs(state.sorted[i].chronoIndex - target);
+    if (d < bestDelta) {
+      bestDelta = d;
+      best = i;
+    }
+  }
+  scrubbedIndex = best;
+  updateMarkerForNode(state.sorted[scrubbedIndex]);
+}
+
+function onScrubUp() {
+  detachScrub();
+  if (scrubbedIndex >= 0 && scrubbedIndex !== state.index) {
+    state.index = scrubbedIndex;
+    writeHash();
+    pushCurrentPath();
+    rebuildDeck();
+  } else {
+    // No-op release (didn't move): snap marker back to authoritative state.
+    updateCounter();
+  }
+  scrubbedIndex = -1;
+}
+
+function onScrubCancel() {
+  detachScrub();
+  scrubbedIndex = -1;
+  updateCounter();
+}
+
+function detachScrub() {
+  scrubbing = false;
+  document.body.classList.remove("mobile-scrubbing");
+  if (!scrubInner) return;
+  scrubInner.removeEventListener("pointermove", onScrubMove);
+  scrubInner.removeEventListener("pointerup", onScrubUp);
+  scrubInner.removeEventListener("pointercancel", onScrubCancel);
+}
+
+// Pick a uniform random card within the current view (filter respected).
+function jumpToRandom() {
+  if (committing || !state.sorted.length) return;
+  let next = Math.floor(Math.random() * state.sorted.length);
+  if (state.sorted.length > 1 && next === state.index) {
+    // Avoid the no-op "random" that lands on the card you're already viewing.
+    next = (next + 1) % state.sorted.length;
+  }
+  state.index = next;
+  writeHash();
+  pushCurrentPath();
+  rebuildDeck();
+}
+
+// Jumping to a result drops any active field filter when the target falls
+// outside it — same logic as init's path-vs-filter reconciliation.
+function jumpToNode(node) {
+  if (state.fieldFilter && formatField(node.field) !== state.fieldFilter) {
+    state.fieldFilter = null;
+    state.sorted = deriveSorted();
+    syncSelectorUI();
+  }
+  const idx = state.sorted.findIndex((n) => n.id === node.id);
+  if (idx < 0) return;
+  state.index = idx;
+  closeSearch();
+  writeHash();
+  pushCurrentPath();
+  rebuildDeck();
+}
+
+function syncSelectorUI() {
+  const sel = document.getElementById("mobile-sort");
+  if (sel) sel.value = selectorValue();
 }
 
 function buildDeck() {
@@ -211,6 +566,17 @@ function attachDragHandlers() {
   if (!top) return;
   top.addEventListener("pointerdown", onPointerDown);
   topWithHandlers = top;
+}
+
+// After a commit's CSS transition finishes the in-DOM slots are already at the
+// right depths (we promote/demote during the transition). Just drop the slot
+// that's now off-deck and re-bind drag handlers — no full rebuild, so the new
+// top card keeps the same <image> element it had at depth=1 and doesn't blink.
+function cleanupAfterCommit(disposed) {
+  if (disposed && disposed.parentNode) disposed.remove();
+  detachDragHandlers();
+  attachDragHandlers();
+  updateCounter();
 }
 
 function detachDragHandlers() {
@@ -483,7 +849,8 @@ function commitForward(exitSide, snap) {
   setTimeout(() => {
     state.index += 1;
     writeHash();
-    rebuildDeck();
+    pushCurrentPath();
+    cleanupAfterCommit(top);
     committing = false;
   }, TRANSITION_MS);
 }
@@ -496,6 +863,9 @@ function commitBackward(_enterSide, snap) {
   }
 
   const real = realSlotsByDepth();
+  // The deepest slot gets pushed out of the deck and faded; capture it so we
+  // can drop it after the transition without rebuilding the rest.
+  const exiting = real[real.length - 1];
   for (let i = 0; i < real.length; i++) {
     clearInlinePose(real[i]);
     const newDepth = i + 1;
@@ -526,7 +896,8 @@ function commitBackward(_enterSide, snap) {
   setTimeout(() => {
     state.index -= 1;
     writeHash();
-    rebuildDeck();
+    pushCurrentPath();
+    cleanupAfterCommit(exiting);
     committing = false;
   }, TRANSITION_MS);
 }
@@ -548,11 +919,54 @@ async function init() {
   state.nodes = nodes;
 
   const fromHash = parseHash();
-  if (fromHash?.sortKey) state.sortKey = fromHash.sortKey;
-  state.sorted = sortNodes(state.sortKey);
+  if (fromHash?.fieldFilter) state.fieldFilter = fromHash.fieldFilter;
+
+  // Field options come from the data so they're always in sync — no hardcoded
+  // list to drift. Sorted alphabetically so the optgroup reads predictably.
+  state.fieldOptions = [...new Set(state.nodes.map((n) => formatField(n.field)))]
+    .filter((f) => f && f !== "unknown")
+    .sort();
+
+  // Each node's chronoIndex is its rank in the chronologically-sorted full
+  // dataset. The timeline marker uses this so consecutive swipes always move
+  // the dot by exactly 1/(N-1) of the bar — regardless of sort/filter.
+  const byYear = state.nodes.slice().sort(compareYear);
+  byYear.forEach((n, i) => { n.chronoIndex = i; });
+  state.chronoTotal = byYear.length;
+
+  // Era ticks derived from the data, at evenly-spaced percentile points. The
+  // tick years come straight out of the chronological sort, so e.g. the 50%
+  // tick is the year of the median invention — labels never crowd because
+  // their bar positions are 0/25/50/75/100% by construction.
+  state.eraStops = [];
+  for (let i = 0; i < ERA_TICK_COUNT; i++) {
+    const t = i / (ERA_TICK_COUNT - 1);
+    const idx = Math.min(byYear.length - 1, Math.round(t * (byYear.length - 1)));
+    state.eraStops.push({
+      year: byYear[idx].year,
+      label: formatYearShort(byYear[idx].year),
+      pct: t * 100,
+    });
+  }
+  // If the hash asked for a filter that doesn't actually exist in the data,
+  // drop it rather than rendering an empty deck.
+  if (state.fieldFilter && !state.fieldOptions.includes(state.fieldFilter)) {
+    state.fieldFilter = null;
+  }
+
+  state.sorted = deriveSorted();
 
   // Path is canonical: /<id> jumps to that card; hash index is the fallback.
-  const pathId = window.location.pathname.replace(/^\/+|\/+$/g, "");
+  // If a field filter is active and the path points to a card outside it, drop
+  // the filter so the user lands on the card they explicitly navigated to.
+  const pathId = parsePathPin(window.location.pathname);
+  if (pathId && state.fieldFilter) {
+    const inFilter = state.sorted.some((n) => n.id === pathId);
+    if (!inFilter && state.nodes.some((n) => n.id === pathId)) {
+      state.fieldFilter = null;
+      state.sorted = deriveSorted();
+    }
+  }
   const pathIdx = pathId ? state.sorted.findIndex((n) => n.id === pathId) : -1;
   if (pathIdx >= 0) {
     state.index = pathIdx;
@@ -561,13 +975,42 @@ async function init() {
       Math.max(0, fromHash.index),
       state.sorted.length - 1
     );
+  } else if (state.sorted.length) {
+    // Nothing pointed us at a card → land somewhere random so / always feels
+    // alive. The path push at the end of init reflects the choice in the URL.
+    state.index = Math.floor(Math.random() * state.sorted.length);
   }
 
   buildBar();
   buildDeck();
+  initSearch();
   attachKeyboard();
+  attachTimelineScrubber();
   rebuildDeck();
   writeHash();
+  pushCurrentPath();
+
+  // Browser back/forward navigates between visited cards. Find the path's id
+  // in the current sorted view; if it's not there (filter excluded it), drop
+  // the filter so the URL still resolves. No pushPath here — popstate already
+  // moved us to that URL.
+  window.addEventListener("popstate", () => {
+    const id = parsePathPin(window.location.pathname);
+    if (!id) return;
+    const currentId = state.sorted[state.index]?.id || null;
+    if (id === currentId) return;
+    let idx = state.sorted.findIndex((n) => n.id === id);
+    if (idx < 0 && state.fieldFilter && state.nodes.some((n) => n.id === id)) {
+      state.fieldFilter = null;
+      state.sorted = deriveSorted();
+      syncSelectorUI();
+      idx = state.sorted.findIndex((n) => n.id === id);
+    }
+    if (idx < 0) return;
+    state.index = idx;
+    writeHash();
+    rebuildDeck();
+  });
 }
 
 init();

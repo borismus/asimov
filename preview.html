@@ -1,0 +1,620 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Invention images: old vs new</title>
+<link rel="stylesheet" href="static/card.css">
+<style>
+  :root {
+    --bg: #faf8f3;
+    --fg: #1a1a1a;
+    --muted: #6b6b6b;
+    --border: #d8d3c5;
+    --accent: #2d6a4f;
+    --danger: #b53d2a;
+    --pill-bg: #fff;
+    --pill-active: #1a1a1a;
+    --row-bg: #fff;
+    --shadow: 0 1px 3px rgba(0,0,0,0.04);
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font: 14px/1.45 -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    color: var(--fg);
+    background: var(--bg);
+  }
+
+  header.bar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: rgba(250, 248, 243, 0.92);
+    backdrop-filter: saturate(140%) blur(8px);
+    border-bottom: 1px solid var(--border);
+    padding: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 20px;
+    align-items: center;
+  }
+  header.bar h1 {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 16px 0 0;
+    letter-spacing: 0.2px;
+  }
+  .pills { display: flex; flex-wrap: wrap; gap: 6px; }
+  .pill {
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: var(--pill-bg);
+    border: 1px solid var(--border);
+    cursor: pointer;
+    user-select: none;
+  }
+  .pill.active { background: var(--pill-active); color: #fff; border-color: var(--pill-active); }
+  select, button.btn {
+    font: inherit;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    background: var(--pill-bg);
+    border: 1px solid var(--border);
+    cursor: pointer;
+  }
+  button.btn:hover, select:hover { border-color: #999; }
+  .spacer { flex: 1; }
+  .counter {
+    font-size: 12px;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+  .counter strong { color: var(--fg); font-weight: 600; }
+
+  main { padding: 18px 20px 60px; max-width: 1480px; margin: 0 auto; }
+
+  .row {
+    background: var(--row-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    margin-bottom: 14px;
+    overflow: hidden;
+  }
+  .row.kept   { border-color: var(--accent); border-width: 2px; }
+  .row.redo   { border-color: var(--danger); border-width: 2px; opacity: 0.85; }
+
+  .row-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--border);
+    background: #fbfaf6;
+  }
+  .row-head .title {
+    font-weight: 600;
+    font-size: 15px;
+  }
+  .row-head .meta {
+    color: var(--muted);
+    font-size: 12px;
+  }
+  .row-head .meta .dot { margin: 0 6px; opacity: 0.4; }
+  .row-head .grow { flex: 1; min-width: 0; }
+  .era-tag {
+    font-size: 11px;
+    padding: 2px 7px;
+    border-radius: 4px;
+    background: #efeadb;
+    color: #4a4632;
+    text-transform: lowercase;
+    letter-spacing: 0.2px;
+    white-space: nowrap;
+  }
+
+  .actions { display: flex; gap: 4px; }
+  .actions button {
+    font-size: 16px;
+    line-height: 1;
+    padding: 4px 8px;
+    border-radius: 5px;
+    border: 1px solid var(--border);
+    background: #fff;
+    cursor: pointer;
+    color: var(--muted);
+  }
+  .actions button:hover { border-color: #999; color: var(--fg); }
+  .actions button.on-keep { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .actions button.on-redo { background: var(--danger); color: #fff; border-color: var(--danger); }
+  .actions button.toggle  { font-size: 12px; padding: 4px 8px; }
+
+  .row-body {
+    display: grid;
+    grid-template-columns: 1fr 244px 244px;
+    gap: 18px;
+    padding: 14px;
+    align-items: start;
+  }
+  .desc {
+    font-size: 13px;
+    line-height: 1.5;
+    max-height: 361px;
+    overflow: auto;
+    padding-right: 6px;
+    color: #2a2a2a;
+  }
+  .desc .field { color: var(--muted); font-size: 11px; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.4px; }
+
+  .card-cell {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: flex-start;
+  }
+  .card-cell .cap {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: var(--muted);
+  }
+  /* Fold animation. The wrapper clips the SVG; clicking toggles .folded
+     which simultaneously shrinks the wrapper to image-card height and slides
+     the body panel up behind the image (clipped by an in-SVG clipPath). */
+  .card-wrap {
+    box-sizing: border-box;
+    width: 244px;            /* 240 SVG + 2px border on each side */
+    height: 364.667px;       /* 360.667 SVG + 4px */
+    overflow: hidden;
+    border: 2px solid #000;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+    cursor: pointer;
+    transition: height 340ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .card-wrap.folded { height: 182.667px; }   /* 178.667 + 4px */
+  svg.card { display: block; }
+  svg.card .fold-panel {
+    transition: transform 340ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .card-wrap.folded svg.card .fold-panel {
+    transform: translateY(-202px);
+  }
+  svg.card.missing { opacity: 0.55; }
+  svg.card.missing .container { stroke-dasharray: 4 3; }
+
+  .prompt-drawer {
+    border-top: 1px solid var(--border);
+    background: #fbfaf6;
+    padding: 14px;
+    font-size: 12px;
+    color: #2a2a2a;
+    display: none;
+  }
+  .row.expanded .prompt-drawer { display: block; }
+  .prompt-drawer .meta-grid {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 4px 14px;
+    margin-bottom: 10px;
+  }
+  .prompt-drawer .meta-grid dt { color: var(--muted); }
+  .prompt-drawer pre {
+    font: 12px/1.45 ui-monospace, SFMono-Regular, Menlo, monospace;
+    background: #fff;
+    border: 1px solid var(--border);
+    padding: 10px;
+    border-radius: 4px;
+    white-space: pre-wrap;
+    margin: 0;
+  }
+
+  .empty { color: var(--muted); padding: 40px; text-align: center; }
+
+  @media (max-width: 1100px) {
+    .row-body { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+  <header class="bar">
+    <h1>Invention images · old vs new</h1>
+    <div class="pills" id="era-pills"></div>
+    <select id="status">
+      <option value="all">all</option>
+      <option value="generated">generated</option>
+      <option value="pending">pending</option>
+      <option value="marked-redo">marked redo</option>
+      <option value="marked-keep">marked keep</option>
+    </select>
+    <select id="sort">
+      <option value="chrono">chronological</option>
+      <option value="era">by era</option>
+      <option value="id">by id</option>
+      <option value="random">random</option>
+    </select>
+    <div class="spacer"></div>
+    <div class="counter" id="counter">loading…</div>
+    <button class="btn" id="export">export redo list</button>
+  </header>
+  <main id="list"><p class="empty">loading data…</p></main>
+
+<script>
+const ERAS = [
+  ['ancient', 500],
+  ['medieval', 1450],
+  ['renaissance', 1700],
+  ['enlightenment_industrial', 1900],
+  ['early_20c', 1945],
+  ['modern', Infinity],
+];
+
+const state = {
+  inventions: [],
+  generated: new Set(),
+  provenance: new Map(),
+  decisions: loadDecisions(),
+  filters: {
+    eras: new Set(),
+    status: 'all',
+    sort: 'chrono',
+  },
+};
+
+function parseYear(raw) {
+  const s = (raw || '').trim().replace(/,/g, '');
+  const m = s.match(/^(-?\d+)\s*(BCE|CE)?$/i);
+  if (!m) return null;
+  const n = parseInt(m[1], 10);
+  return (m[2] || '').toUpperCase() === 'BCE' ? -n : n;
+}
+
+function classifyEra(year) {
+  for (const [key, upper] of ERAS) if (year < upper) return key;
+  return 'modern';
+}
+
+function parseTSV(text) {
+  const lines = text.split('\n').filter(l => l.length > 0);
+  if (!lines.length) return [];
+  const headers = lines[0].split('\t').map(h => h.trim());
+  return lines.slice(1).map(line => {
+    const cols = line.split('\t');
+    const row = {};
+    headers.forEach((h, i) => row[h] = (cols[i] ?? '').trim());
+    return row;
+  });
+}
+
+function loadDecisions() {
+  try { return JSON.parse(localStorage.getItem('preview.decisions') || '{}'); }
+  catch { return {}; }
+}
+function saveDecisions() {
+  localStorage.setItem('preview.decisions', JSON.stringify(state.decisions));
+}
+
+async function loadAll() {
+  const [tsvText, logText] = await Promise.all([
+    fetch('static/asimov.tsv').then(r => r.text()),
+    fetch('static/images/entries-v2/_log.tsv').then(r => r.ok ? r.text() : '').catch(() => ''),
+  ]);
+
+  state.inventions = parseTSV(tsvText)
+    .filter(r => r.ID)
+    .map(r => {
+      const year = parseYear(r.Year);
+      return {
+        id: r.ID,
+        year_raw: r.Year,
+        year: year ?? 0,
+        title: r.Title,
+        summary: r.Description,
+        inventor: r.Inventor,
+        location: r.Location,
+        field: r.Field,
+        era: year == null ? 'modern' : classifyEra(year),
+      };
+    });
+
+  // Last log row per id wins.
+  const latest = new Map();
+  logText.split('\n').slice(1).forEach(line => {
+    if (!line) return;
+    const [, id, , status] = line.split('\t');
+    if (id) latest.set(id, status);
+  });
+  for (const [id, status] of latest) {
+    if (status && status.startsWith('ok')) state.generated.add(id);
+  }
+}
+
+function applyFilters(list) {
+  let out = list;
+  if (state.filters.eras.size > 0) {
+    out = out.filter(i => state.filters.eras.has(i.era));
+  }
+  switch (state.filters.status) {
+    case 'generated':   out = out.filter(i => state.generated.has(i.id)); break;
+    case 'pending':     out = out.filter(i => !state.generated.has(i.id)); break;
+    case 'marked-redo': out = out.filter(i => state.decisions[i.id] === 'redo'); break;
+    case 'marked-keep': out = out.filter(i => state.decisions[i.id] === 'keep'); break;
+  }
+  switch (state.filters.sort) {
+    case 'chrono': out = [...out].sort((a, b) => a.year - b.year); break;
+    case 'era':    {
+      const order = Object.fromEntries(ERAS.map(([k], i) => [k, i]));
+      out = [...out].sort((a, b) => (order[a.era] - order[b.era]) || a.year - b.year);
+      break;
+    }
+    case 'id':     out = [...out].sort((a, b) => a.id.localeCompare(b.id)); break;
+    case 'random': out = [...out].sort(() => Math.random() - 0.5); break;
+  }
+  return out;
+}
+
+function renderEraPills() {
+  const wrap = document.getElementById('era-pills');
+  wrap.innerHTML = '';
+  for (const [key] of ERAS) {
+    const el = document.createElement('span');
+    el.className = 'pill';
+    el.textContent = key;
+    el.onclick = () => {
+      if (state.filters.eras.has(key)) state.filters.eras.delete(key);
+      else state.filters.eras.add(key);
+      el.classList.toggle('active');
+      renderList();
+    };
+    wrap.appendChild(el);
+  }
+}
+
+function updateCounter(visible) {
+  const total = state.inventions.length;
+  const gen = state.generated.size;
+  const redo = Object.values(state.decisions).filter(v => v === 'redo').length;
+  const keep = Object.values(state.decisions).filter(v => v === 'keep').length;
+  document.getElementById('counter').innerHTML =
+    `<strong>${visible}</strong> / ${total} shown · <strong>${gen}</strong> generated · ` +
+    `<strong>${total - gen}</strong> pending · <strong>${redo}</strong> redo · <strong>${keep}</strong> keep`;
+}
+
+function escapeHtml(s) {
+  return (s || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function fieldKey(field) {
+  return ((field || '').split(':')[0] || 'unknown').toLowerCase().trim() || 'unknown';
+}
+
+function formatYear(year) {
+  if (year < 0) return `${(-year).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')} BCE`;
+  return String(year);
+}
+
+// Static SVG mirroring renderFullCard's final-state geometry. Image area is
+// 3:2, full text-band wide (208) — see static/card.js for the source of truth.
+const CARD_W = 240;
+const CARD_MARGIN_IN = 16;
+const CARD_TITLE_BAR_H = 20;
+const CARD_IMG_W = CARD_W - CARD_MARGIN_IN * 2;          // 208
+const CARD_IMG_H = CARD_IMG_W * 2 / 3;                   // 138.667
+const CARD_IMG_BOTTOM_Y = CARD_TITLE_BAR_H + CARD_IMG_H; // 158.667
+const CARD_INVENTOR_Y = CARD_IMG_BOTTOM_Y + 11;
+const CARD_BODY_Y = CARD_INVENTOR_Y + 5;
+const CARD_FOOTER_H = 20;
+const CARD_BODY_FOOTER_H = 182;
+const CARD_FULL_H = CARD_TITLE_BAR_H + CARD_IMG_H + CARD_TITLE_BAR_H + CARD_BODY_FOOTER_H; // ~360.67
+const CARD_BODY_H = CARD_FULL_H - CARD_BODY_Y - CARD_FOOTER_H;
+
+let _cardSerial = 0;
+
+function renderCardSVG(inv, dir, missing) {
+  const f = fieldKey(inv.field);
+  const W = CARD_W, H = CARD_FULL_H;
+  const clipId = `fold-clip-${++_cardSerial}`;
+  const imageHref = `static/images/${dir}/${encodeURIComponent(inv.id)}.jpg`;
+  const fieldIconHref = `static/images/fields/${f}.png`;
+  const imageBlock = missing
+    ? `<rect class="image-rect" x="${CARD_MARGIN_IN}" y="${CARD_TITLE_BAR_H}" width="${CARD_IMG_W}" height="${CARD_IMG_H}" fill="#f5f0df" stroke="black"/>
+       <text x="${W / 2}" y="${CARD_TITLE_BAR_H + CARD_IMG_H / 2 + 4}" font-size="11" text-anchor="middle" fill="#9b9079" font-family="Lora, serif">not generated</text>`
+    : `<rect class="image-rect" x="${CARD_MARGIN_IN}" y="${CARD_TITLE_BAR_H}" width="${CARD_IMG_W}" height="${CARD_IMG_H}" fill="transparent" stroke="black"/>
+       <image x="${CARD_MARGIN_IN}" y="${CARD_TITLE_BAR_H}" width="${CARD_IMG_W}" height="${CARD_IMG_H}" preserveAspectRatio="xMidYMid slice" data-src="${imageHref}"/>`;
+
+  // Clip is applied to the outer <g class="fold-clip"> (which has no
+  // transform), so its rect at y=CARD_IMG_BOTTOM_Y stays fixed in SVG-root
+  // coords. The inner .fold-panel has the CSS transform — when it translates
+  // up by CARD_FULL_H - CARD_IMG_BOTTOM_Y, its rendered content lands above
+  // the clip line and the outer clip masks it cleanly. Putting the clip on
+  // the panel itself doesn't work: CSS transforms on SVG happen after the
+  // clip-path is resolved, so the clip rides along with the translated
+  // content instead of staying in place.
+  return `
+    <svg class="card field-${f}${missing ? ' missing' : ''}" data-img="${missing ? '' : imageHref}" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <clipPath id="${clipId}" clipPathUnits="userSpaceOnUse">
+          <rect x="0" y="${CARD_IMG_BOTTOM_Y}" width="${W}" height="${H - CARD_IMG_BOTTOM_Y}"/>
+        </clipPath>
+      </defs>
+      <rect class="container" width="${W}" height="${H}" fill="white"/>
+      <g class="fold-clip" clip-path="url(#${clipId})">
+        <g class="fold-panel">
+          <rect class="body-rect" x="${CARD_MARGIN_IN}" y="${CARD_BODY_Y}" width="${CARD_IMG_W}" height="${CARD_BODY_H}" fill="transparent" stroke="black"/>
+          <foreignObject class="body-text" x="${CARD_MARGIN_IN + 2}" y="${CARD_BODY_Y + 2}" width="${CARD_IMG_W - 4}" height="${CARD_BODY_H - 4}" font-size="9">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="padding:1px;height:100%;font-family:Lora,serif;font-size:9px;line-height:1.35;color:#1a1a1a;hyphens:auto">${escapeHtml(inv.summary || '')}</div>
+          </foreignObject>
+          <text class="middle-text" x="${CARD_MARGIN_IN}" y="${CARD_INVENTOR_Y}" font-size="10" fill="#111" font-family="Lora, serif">${escapeHtml(inv.inventor || '')}</text>
+          <text class="bottom-left" x="${CARD_MARGIN_IN}" y="${H - CARD_FOOTER_H + 14}" font-size="12" fill="#111" font-family="Lora, serif">${escapeHtml(inv.location || '')}</text>
+          <text class="bottom-right" x="${W - CARD_MARGIN_IN}" y="${H - CARD_FOOTER_H + 14}" font-size="12" text-anchor="end" fill="#111" font-family="Lora, serif">${escapeHtml(formatYear(inv.year))}</text>
+        </g>
+      </g>
+      <g class="image-layer">
+        ${imageBlock}
+        <text class="title" x="${CARD_MARGIN_IN}" y="13" font-size="13" fill="#111" font-family="DM Serif Display, serif">${escapeHtml(inv.title || inv.id)}</text>
+        <circle class="field-icon-bg" cx="${W - 18 - 12 + 6}" cy="10" r="6" fill="white" stroke="black"/>
+        <image class="field-icon" x="${W - 18 - 12 + 1}" y="5" width="10" height="10" href="${fieldIconHref}"/>
+      </g>
+    </svg>
+  `;
+}
+
+function renderRow(inv) {
+  const decision = state.decisions[inv.id];
+  const generated = state.generated.has(inv.id);
+
+  const row = document.createElement('div');
+  row.className = 'row' + (decision === 'keep' ? ' kept' : decision === 'redo' ? ' redo' : '');
+  row.dataset.id = inv.id;
+
+  const subline = [inv.inventor, inv.location, inv.field].filter(Boolean).join(' · ');
+
+  row.innerHTML = `
+    <div class="row-head">
+      <div class="actions">
+        <button class="${decision === 'keep' ? 'on-keep' : ''}" data-act="keep" title="keep">✓</button>
+        <button class="${decision === 'redo' ? 'on-redo' : ''}" data-act="redo" title="redo">✗</button>
+      </div>
+      <div class="grow">
+        <span class="title">${escapeHtml(inv.title || inv.id)}</span>
+        <span class="meta">
+          <span class="dot">·</span>${escapeHtml(inv.year_raw)}
+          ${subline ? `<span class="dot">·</span>${escapeHtml(subline)}` : ''}
+        </span>
+      </div>
+      <span class="era-tag">${inv.era.replace(/_/g, ' ')}</span>
+      <button class="toggle" data-act="prompt" ${generated ? '' : 'disabled'}>▼ prompt</button>
+    </div>
+    <div class="row-body">
+      <div class="desc">
+        <div class="field">${escapeHtml(inv.id)}</div>
+        ${escapeHtml(inv.summary)}
+      </div>
+      <div class="card-cell">
+        <span class="cap">old</span>
+        <div class="card-wrap">${renderCardSVG(inv, 'entries', false)}</div>
+      </div>
+      <div class="card-cell">
+        <span class="cap">new</span>
+        <div class="card-wrap">${renderCardSVG(inv, 'entries-v2', !generated)}</div>
+      </div>
+    </div>
+    <div class="prompt-drawer"><em>loading provenance…</em></div>
+  `;
+
+  row.addEventListener('click', (e) => {
+    const btn = e.target.closest('button');
+    if (btn) {
+      const act = btn.dataset.act;
+      if (act === 'keep' || act === 'redo') {
+        if (state.decisions[inv.id] === act) delete state.decisions[inv.id];
+        else state.decisions[inv.id] = act;
+        saveDecisions();
+        renderList();
+      } else if (act === 'prompt') {
+        togglePrompt(row, inv.id);
+      }
+      return;
+    }
+    const wrap = e.target.closest('.card-wrap');
+    if (wrap) wrap.classList.toggle('folded');
+  });
+
+  return row;
+}
+
+async function togglePrompt(row, id) {
+  if (row.classList.contains('expanded')) {
+    row.classList.remove('expanded');
+    return;
+  }
+  row.classList.add('expanded');
+  const drawer = row.querySelector('.prompt-drawer');
+  if (!state.provenance.has(id)) {
+    try {
+      const r = await fetch(`static/images/entries-v2/originals/${encodeURIComponent(id)}.json`);
+      if (!r.ok) throw new Error(r.statusText);
+      state.provenance.set(id, await r.json());
+    } catch (e) {
+      drawer.innerHTML = `<em>provenance not available (${escapeHtml(e.message)})</em>`;
+      return;
+    }
+  }
+  const p = state.provenance.get(id);
+  drawer.innerHTML = `
+    <dl class="meta-grid">
+      <dt>provider</dt><dd>${escapeHtml(p.provider)} · ${escapeHtml(p.model)}</dd>
+      <dt>generated</dt><dd>${escapeHtml(p.generated_at)}</dd>
+      <dt>cost</dt><dd>$${(p.cost_usd ?? 0).toFixed(4)}</dd>
+      <dt>era</dt><dd>${escapeHtml(p.era)}</dd>
+      <dt>prompt hash</dt><dd>${escapeHtml(p.prompt_hash)}</dd>
+    </dl>
+    <pre>${escapeHtml(p.prompt)}</pre>
+  `;
+}
+
+let imageObserver = null;
+function ensureImageObserver() {
+  if (imageObserver) imageObserver.disconnect();
+  imageObserver = new IntersectionObserver((entries) => {
+    for (const entry of entries) {
+      if (!entry.isIntersecting) continue;
+      const card = entry.target;
+      card.querySelectorAll('image[data-src]').forEach(img => {
+        img.setAttribute('href', img.dataset.src);
+        img.removeAttribute('data-src');
+      });
+      imageObserver.unobserve(card);
+    }
+  }, { rootMargin: '300px 0px' });
+}
+
+function renderList() {
+  const filtered = applyFilters(state.inventions);
+  const main = document.getElementById('list');
+  main.innerHTML = '';
+  if (!filtered.length) {
+    main.innerHTML = '<p class="empty">nothing matches the current filters.</p>';
+  } else {
+    const frag = document.createDocumentFragment();
+    for (const inv of filtered) frag.appendChild(renderRow(inv));
+    main.appendChild(frag);
+    ensureImageObserver();
+    main.querySelectorAll('svg.card').forEach(c => imageObserver.observe(c));
+  }
+  updateCounter(filtered.length);
+}
+
+function exportRedoList() {
+  const ids = Object.entries(state.decisions).filter(([, v]) => v === 'redo').map(([k]) => k);
+  const blob = new Blob([JSON.stringify(ids, null, 2)], { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'redo-list.json';
+  a.click();
+  URL.revokeObjectURL(a.href);
+}
+
+async function init() {
+  renderEraPills();
+  document.getElementById('status').onchange = (e) => {
+    state.filters.status = e.target.value;
+    renderList();
+  };
+  document.getElementById('sort').onchange = (e) => {
+    state.filters.sort = e.target.value;
+    renderList();
+  };
+  document.getElementById('export').onclick = exportRedoList;
+
+  await loadAll();
+  renderList();
+}
+
+init();
+</script>
+</body>
+</html>

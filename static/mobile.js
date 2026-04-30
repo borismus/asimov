@@ -285,17 +285,24 @@ function buildBar() {
   searchBtn.addEventListener("click", openSearch);
   bar.appendChild(searchBtn);
 
-  document.body.insertBefore(bar, document.body.firstChild);
+  // The header sits above this controls bar — keep the controls bar in the
+  // body flow but insert it after #site-header rather than as the first
+  // child of body.
+  const header = document.getElementById("site-header");
+  if (header) {
+    header.insertAdjacentElement("afterend", bar);
+  } else {
+    document.body.insertBefore(bar, document.body.firstChild);
+  }
 
-  // Timeline strip underneath the bar: era ticks for orientation, plus a
-  // movable marker that shows the current card's year. Position is by year
-  // across the full dataset (piecewise-linear over ERA_STOPS) so it's
-  // independent of sort/filter — antiquity vs. modernity at a glance.
+  // Timeline strip lives INSIDE the header (#site-timeline placeholder).
+  // Era ticks for orientation, plus a movable marker that shows the
+  // current card's year. Position is by year across the full dataset
+  // (piecewise-linear over ERA_STOPS) so it's independent of
+  // sort/filter — antiquity vs. modernity at a glance.
+  const slot = document.getElementById("site-timeline");
   const tl = document.createElement("div");
   tl.id = "mobile-timeline";
-  // Inner wrapper has horizontal margin so 0% and 100% positions land slightly
-  // inside the screen edges — keeps the leftmost/rightmost tick labels from
-  // clipping. All children position against this wrapper.
   const inner = document.createElement("div");
   inner.className = "inner";
   tl.appendChild(inner);
@@ -318,10 +325,11 @@ function buildBar() {
   mlabel.className = "marker-label";
   marker.appendChild(mlabel);
   inner.appendChild(marker);
-  // Mount at the end of the body so the body's flex-column lays it out below
-  // the card container — feels more like the deck "advances along" the
-  // timeline beneath it than a chrome strip pushing the deck down.
-  document.body.appendChild(tl);
+  if (slot) {
+    slot.appendChild(tl);
+  } else {
+    document.body.appendChild(tl);
+  }
 }
 
 let searchInputEl = null;

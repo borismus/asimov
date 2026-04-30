@@ -1,4 +1,4 @@
-import { loadGraph } from "./utils.js";
+import { loadGraph, formatYear } from "./utils.js";
 import {
   cardWidth,
   cardHeight,
@@ -269,7 +269,13 @@ initWorld({
   gAxis,
   gDots,
   ctx,
-  handlers: { onHoverEnter, onHoverMove, onHoverLeave, onPinClick },
+  handlers: {
+    onHoverEnter,
+    onHoverMove,
+    onHoverLeave,
+    onPinClick,
+    onAxisRendered: renderHeaderAxisLabels,
+  },
   TIER_LABEL,
 });
 
@@ -419,6 +425,8 @@ async function init() {
   }
 
   layout();
+  measureHeader();
+  window.addEventListener("resize", measureHeader);
   // Clamp panning to the timeline's bounding box plus a few columns/rows of
   // breathing room on each side so the user can drift past the edges (which
   // helps with hover overflow at the extremes) without losing the graph.
@@ -432,6 +440,41 @@ async function init() {
   renderDots();
   initialCenter();
   scheduleRedraw();
+}
+
+// Cache the header's rendered height into both state (read by renderAxis
+// in world.js to push the year-axis labels below the header) and the
+// --header-h CSS variable (read by .css rules that need to inset content).
+function measureHeader() {
+  const header = document.getElementById("site-header");
+  if (!header) return;
+  const h = Math.ceil(header.getBoundingClientRect().height);
+  state.headerHeight = h;
+  document.documentElement.style.setProperty("--header-h", h + "px");
+  scheduleRedraw();
+}
+
+// Render the year labels into #site-timeline (the bottom row of the
+// header), one per axis tick passed up from world.js renderAxis. Each
+// label is positioned at the tick's screen-X so it sits directly above
+// the dashed line that extends down from there. world.js no longer
+// renders text in the SVG — the labels live in HTML so they stay
+// crisp and never get clipped by the header background.
+function renderHeaderAxisLabels(placed) {
+  const slot = document.getElementById("site-timeline");
+  if (!slot) return;
+  const sel = d3
+    .select(slot)
+    .selectAll("span.axis-label")
+    .data(placed, (d) => d.year);
+  sel.exit().remove();
+  sel
+    .enter()
+    .append("span")
+    .attr("class", "axis-label")
+    .merge(sel)
+    .style("left", (d) => d.screenX + "px")
+    .text((d) => formatYear(d.year));
 }
 
 // Center `node` in the viewport at FULL-tier zoom — used when arriving via

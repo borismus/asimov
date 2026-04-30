@@ -194,34 +194,35 @@ export function renderAxis() {
   const sel = gAxis.selectAll("g.dag-tick").data(placed, (d) => d.year);
   sel.exit().remove();
 
+  // Only the dashed line lives in the SVG — the year label is drawn in
+  // the page header (handlers.onAxisRendered) so it can stay above the
+  // SVG region with crisp HTML rendering, and so it never gets clipped
+  // by the header backdrop.
   const entered = sel.enter().append("g").attr("class", "dag-tick");
   entered
     .append("line")
     .attr("class", "dag-axis-tick")
     .attr("y2", state.worldHeight);
-  entered
-    .append("text")
-    .attr("class", "dag-axis-label")
-    .text((d) => formatYear(d.year));
 
-  // Always pin the date label + tick top to the top of the viewport so the
-  // user can orient on the timeline at any zoom or pan.
+  // Pin the dashed-line top just below the site header so it appears to
+  // descend from the year label in the header.
   const ty = state.transform.y;
-  const screenTopWorld = -ty / k;
+  const headerH = state.headerHeight || 0;
+  const screenTopWorld = (-ty + headerH) / k;
   const lineTopY = screenTopWorld;
-  const labelY = screenTopWorld + 30 / k; // 30 screen px below the top edge
 
-  // Position lines + labels for both new and existing ticks (bucketIdx can
-  // change between renders as the user pans).
   const all = entered.merge(sel);
   all.select("line.dag-axis-tick")
     .attr("x1", (d) => xForBucket(d.bucketIdx))
     .attr("x2", (d) => xForBucket(d.bucketIdx))
     .attr("y1", lineTopY);
-  all.select("text.dag-axis-label").attr(
-    "transform",
-    (d) => `translate(${xForBucket(d.bucketIdx)}, ${labelY}) rotate(-25)`
-  );
+
+  // Hand off to whoever's painting the matching year labels in the
+  // header. screenX is already computed above (per-tick); pass it on
+  // so the label can sit directly above the dashed line.
+  if (handlers && handlers.onAxisRendered) {
+    handlers.onAxisRendered(placed);
+  }
 }
 
 export function renderDots() {

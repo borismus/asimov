@@ -26,6 +26,7 @@ body {
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   background: rgba(250, 248, 243, 0.95);
   font: 13px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  z-index: 5;
 }
 
 #mobile-bar select {
@@ -45,26 +46,127 @@ body {
 
 #container {
   flex: 1 1 auto;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 12px;
+  padding: 24px 16px 48px;
   min-height: 0;
+  overflow: hidden;
+}
+
+/* The deck wraps three slots and reserves space for the card plus the
+   stacked-card peek-out at the bottom. Width is the visible card width;
+   height is the card height plus the deepest depth's vertical offset so
+   the back cards don't get clipped at the bottom of #container. */
+#deck {
+  position: relative;
+  width: min(100vw - 32px, 360px);
+  /* aspect-ratio is set inline by mobile.js from card.js's cardWidth /
+     fullCardHeight so the deck box tracks card geometry changes. */
+  /* Reserve a little extra height so the deepest depth's translateY peek
+     isn't clipped at the bottom of #container. */
+  margin-bottom: 56px;
   touch-action: none;
   user-select: none;
   -webkit-user-select: none;
 }
 
-#container svg.mobile-card {
-  cursor: default;
-  width: min(100vw - 24px, 360px);
-  height: auto;
-  max-height: 100%;
-  display: block;
-  filter: drop-shadow(0 4px 14px rgba(0, 0, 0, 0.12));
-  transition: transform 80ms ease-out, opacity 80ms ease-out;
+.slot {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-origin: 50% 100%;
+  transition:
+    transform 320ms cubic-bezier(0.22, 0.85, 0.32, 1),
+    opacity 320ms cubic-bezier(0.22, 0.85, 0.32, 1),
+    filter 320ms cubic-bezier(0.22, 0.85, 0.32, 1);
+  will-change: transform, opacity;
+  pointer-events: none;
+  touch-action: none;
 }
 
-#container svg.mobile-card.dragging {
+.slot svg.mobile-card {
+  width: 100%;
+  height: 100%;
+  display: block;
+  cursor: default;
+}
+
+/* Depth tiers: 0 = top (interactive), 1 = peek beneath, 2 = far back.
+   Each tier offsets down + scales down + dims, with progressively
+   softer drop shadows so the stack feels physical. */
+.slot[data-depth="0"] {
+  z-index: 4;
+  transform: translateY(0) scale(1);
+  opacity: 1;
+  filter: drop-shadow(0 10px 22px rgba(0, 0, 0, 0.22));
+  pointer-events: auto;
+  cursor: grab;
+}
+
+.slot[data-depth="0"]:active {
+  cursor: grabbing;
+}
+
+.slot[data-depth="1"] {
+  z-index: 3;
+  transform: translateY(14px) scale(0.955);
+  opacity: 0.96;
+  filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.14));
+}
+
+.slot[data-depth="2"] {
+  z-index: 2;
+  transform: translateY(28px) scale(0.91);
+  opacity: 0.88;
+  filter: drop-shadow(0 4px 9px rgba(0, 0, 0, 0.10));
+}
+
+.slot[data-depth="3"] {
+  z-index: 1;
+  transform: translateY(42px) scale(0.865);
+  opacity: 0.78;
+  filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.08));
+}
+
+/* While dragging the top card we drive transform inline with no transition
+   so it tracks the finger 1:1. */
+.slot.dragging {
   transition: none;
+  cursor: grabbing;
+}
+
+/* New far card animating in below the deck on forward commit. Initial
+   state is offset further down + smaller + invisible; removing this
+   class lets the slot transition to its data-depth="2" rest pose.
+   Specificity must match `.slot[data-depth]` and live later in the
+   stylesheet so it overrides the depth transform. */
+.slot.entering-bottom {
+  transform: translateY(80px) scale(0.8);
+  opacity: 0;
+}
+
+/* New top card sliding in from off-screen on backward commit. Starts
+   tilted off the side of the viewport and transitions to depth-0. */
+.slot.enter-from-left {
+  transform: translate(-130%, -8px) rotate(-14deg) scale(0.94);
+  opacity: 0;
+  z-index: 5;
+}
+
+.slot.enter-from-right {
+  transform: translate(130%, -8px) rotate(14deg) scale(0.94);
+  opacity: 0;
+  z-index: 5;
+}
+
+/* The card that gets pushed out of the visible deck on backward commit
+   (it was at depth-2 and the stack is sinking by one). Fade + push
+   further down. */
+.slot.exit-bottom {
+  transform: translateY(86px) scale(0.78);
+  opacity: 0;
 }

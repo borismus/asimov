@@ -39,9 +39,9 @@ SAVE_W, SAVE_H = 720, 480
 JPG_QUALITY = 88
 CONCURRENCY = 4
 
-# USD per generated image. Rough values from public pricing — update as needed.
+# USD per generated image. Calibrated from real billing where possible.
 COST_PER_IMAGE: dict[tuple[str, str], float] = {
-    ("openai", "gpt-image-2"): 0.04,           # gpt-image-1 medium-quality 1536x1024 reference
+    ("openai", "gpt-image-2"): 0.0479,          # observed: $6.18 / 129 images at 1536x1024
     ("openai", "gpt-image-1"): 0.04,
     ("gemini", "imagen-4.0-generate-001"): 0.04,
     ("gemini", "imagen-4.0-fast-generate-001"): 0.02,

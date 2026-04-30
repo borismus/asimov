@@ -2,6 +2,7 @@
 import argparse
 import csv
 import dataclasses
+import json
 import os
 import re
 import sys
@@ -51,8 +52,11 @@ def load_inventions(tsv_path):
 
 
 def copy_static(out_dir):
-  # Copy the static directory to the output directory.
-  os.system(f"cp -r ./static {out_dir}")
+  # Mirror static/ into out_dir/static/. rsync with --exclude=originals/ keeps
+  # the multi-GB image-gen originals (static/images/entries-v2/originals/) out
+  # of the deploy artifact — the site only serves the 720x480 JPGs alongside.
+  os.makedirs(os.path.join(out_dir, "static"), exist_ok=True)
+  os.system(f"rsync -a --delete --exclude='originals/' ./static/ {out_dir}/static/")
 
 
 def load_template(template_path):
@@ -62,23 +66,25 @@ def load_template(template_path):
   return template
 
 def generate_sitemap(inventions):
-  header = '''<?xml version="1.0" encoding="UTF-8"?>
-    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  '''
-  out = header
+  # Trailing slash on each <loc> matches the canonical_url emitted in the
+  # template (and the URL GitHub Pages actually serves) so search engines
+  # see one URL, not two.
+  out = '''<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>{root}/</loc>
+  </url>
+'''.format(root=SITE_ROOT)
   for invention in inventions:
-    invention_xml = f'''
-    <url>
-      <loc>{SITE_ROOT}/{invention.id}</loc>
-      <image:image>
-        <image:loc>{SITE_ROOT}/{invention.id}/card.jpg</image:loc>
-      </image:image>
-    </url>
-    '''
-    out += invention_xml
-  footer = '</urlset>'
-  out += footer
+    out += f'''  <url>
+    <loc>{SITE_ROOT}/{invention.id}/</loc>
+    <image:image>
+      <image:loc>{SITE_ROOT}/static/images/entries-v2/{invention.id}.jpg</image:loc>
+    </image:image>
+  </url>
+'''
+  out += '</urlset>\n'
   return out
 
 
@@ -87,18 +93,6 @@ if __name__ == "__main__":
   parser = argparse.ArgumentParser()
   parser.add_argument(
     "--out_dir", "-o", help="The path to the output directory.", default="/tmp/asimov"
-  )
-  parser.add_argument(
-    "--force_screenshots",
-    "-f",
-    help="Force the generation of screenshots.",
-    action="store_true",
-  )
-  parser.add_argument(
-    "--no-screenshots",
-    "-n",
-    help="Skip generating screenshots.",
-    action="store_true",
   )
   args = parser.parse_args()
 
@@ -118,38 +112,65 @@ if __name__ == "__main__":
   template = load_template("index.jinja")
 
   # For each invention, create a directory for it in the output dir.
+  # The og:image is the AI-generated card artwork (one shared file under
+  # /static/images/entries-v2/<id>.jpg) — no per-invention card.jpg
+  # screenshot is generated.
   for invention in inventions:
     print(f"Processing {invention.id} ({invention.year})...")
     invention_dir = os.path.join(args.out_dir, invention.id)
     os.makedirs(invention_dir, exist_ok=True)
-    card_image_path = f"{invention_dir}/card.jpg"
 
-    # Generate an image for the invention using the screenshot command line tool.
-    if (not os.path.exists(card_image_path) or args.force_screenshots) and not args.no_screenshots:
-      print("Generating card screenshot...")
-      os.system(f"screenshot/card-screenshot.mjs {invention.id} {card_image_path}")
-
-    # Generate the index.html file from the index.jinja template, using the invention data.
+    page_title = f"{invention.title} | {SITE_NAME}"
+    canonical = f"{SITE_ROOT}/{invention.id}/"
+    image_url = f"{SITE_ROOT}/static/images/entries-v2/{invention.id}.jpg"
+    jsonld = {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": invention.title,
+      "description": invention.summary,
+      "image": image_url,
+      "url": canonical,
+      "author": {"@type": "Person", "name": "Boris Smus"},
+      "publisher": {"@type": "Organization", "name": SITE_NAME},
+    }
     data = {
-      "title": f"{invention.title} | {SITE_NAME}",
+      "title": page_title,
+      "heading": invention.title,
       "site_name": SITE_NAME,
       "description": invention.summary,
-      "canonical_url": f"{SITE_ROOT}/{invention.id}",
-      "card_image": "card.jpg",
+      # Trailing slash matches the URL GitHub Pages actually serves
+      # (/<id>/index.html → /<id>/), avoiding a canonical/sitemap mismatch.
+      "canonical_url": canonical,
+      "card_image_url": image_url,
+      "og_type": "article",
+      "jsonld": json.dumps(jsonld, ensure_ascii=False),
     }
     html = template.render(data)
 
-    # Create the index.html file.
     with open(f"{invention_dir}/index.html", "w") as f:
       f.write(html)
 
-  # Create the index for the overall site too, which will load a random invention.
+  # Root index. Use a curated invention's artwork as the social-card hero
+  # so the og:image isn't broken when the site itself is shared.
   print("Creating root index.html...")
+  root_canonical = f"{SITE_ROOT}/"
+  root_image = f"{SITE_ROOT}/static/images/entries-v2/fire.jpg"
+  root_jsonld = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": SITE_NAME,
+    "description": SITE_DESCRIPTION,
+    "url": root_canonical,
+  }
   data = {
     "title": SITE_NAME,
+    "heading": SITE_NAME,
     "site_name": SITE_NAME,
     "description": SITE_DESCRIPTION,
-    "canonical_url": SITE_ROOT,
+    "canonical_url": root_canonical,
+    "card_image_url": root_image,
+    "og_type": "website",
+    "jsonld": json.dumps(root_jsonld, ensure_ascii=False),
   }
   html = template.render(data)
 
@@ -163,4 +184,4 @@ if __name__ == "__main__":
 
   # Create a robots.txt
   with open(f"{args.out_dir}/robots.txt", "w") as f:
-    f.write('Sitemap: http://invention.cards/sitemap.xml')
+    f.write(f"Sitemap: {SITE_ROOT}/sitemap.xml\n")

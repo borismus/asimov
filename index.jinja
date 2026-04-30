@@ -1,22 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <!--
   Generated per invention at /<id>/index.html and at the site root.
   Body is the universe shell; the pinned invention is read from location.pathname by universe.js.
 -->
 
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>{{title}}</title>
-  <meta property="og:title" content="{{title}}" />
-  <meta property="og:site_name" content="{{site_name}}" />
-  <meta property="og:image" content="{{canonical_url}}/{{card_image}}" />
   <meta name="description" content="{{description}}">
-  <meta property="og:description" content="{{description}}" />
   <link rel="canonical" href="{{canonical_url}}">
   <meta name="author" content="Boris Smus">
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="{{og_type}}" />
+  <meta property="og:title" content="{{title}}" />
+  <meta property="og:site_name" content="{{site_name}}" />
+  <meta property="og:url" content="{{canonical_url}}" />
+  <meta property="og:image" content="{{card_image_url}}" />
+  <meta property="og:description" content="{{description}}" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{title}}" />
+  <meta name="twitter:description" content="{{description}}" />
+  <meta name="twitter:image" content="{{card_image_url}}" />
+
+  <script type="application/ld+json">{{jsonld | safe}}</script>
+
   <link rel="stylesheet" href="/static/style.css">
   <link rel="stylesheet" href="/static/card.css">
   <link rel="stylesheet" href="/static/universe.css" media="(min-width: 721px)">
@@ -25,7 +35,11 @@
 </head>
 
 <body>
-  <noscript><img src="{{card_image}}" /></noscript>
+  <noscript>
+    <h1>{{heading}}</h1>
+    <p>{{description}}</p>
+    <img src="{{card_image_url}}" alt="{{description}}" />
+  </noscript>
 
   <canvas id="links-canvas"></canvas>
   <div id="container"></div>
@@ -35,8 +49,13 @@
 
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script type="module">
-    const isMobile = matchMedia("(max-width: 720px)").matches;
-    import(isMobile ? "/static/mobile.js" : "/static/universe.js");
+    const mq = matchMedia("(max-width: 720px)");
+    import(mq.matches ? "/static/mobile.js" : "/static/universe.js");
+    // Crossing the breakpoint mid-session means the wrong bundle is loaded
+    // (universe's D3 graph in a phone viewport, or mobile's flipper on a
+    // wide one). Reload to pick up the right entry. Same-tab reload preserves
+    // the URL hash so view state survives.
+    mq.addEventListener("change", () => location.reload());
   </script>
 
   <!-- Google tag (gtag.js) -->

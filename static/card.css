@@ -198,3 +198,12 @@ footer {
 .card .title {
   font-family: "DM Serif Display", serif;
 }
+
+/* Counter-scale the card content so it renders at constant screen pixels even
+   inside a zoom-transformed SVG (universe view sets --zoom on
+   documentElement). Without --zoom the fallback scale=1 makes this a no-op,
+   so non-zoomed contexts (main.js cross view) are unaffected. */
+g.card-scaler {
+  transform: scale(calc(var(--card-screen-scale, 1) / var(--zoom, 1)));
+  transform-origin: 0 0;
+}

@@ -431,16 +431,45 @@ async function init() {
   layout();
   measureHeader();
   window.addEventListener("resize", measureHeader);
-  // Clamp panning to the timeline's bounding box plus a few columns/rows of
-  // breathing room on each side so the user can drift past the edges (which
-  // helps with hover overflow at the extremes) without losing the graph.
-  const { minX, maxX, minY, maxY } = state.bbox;
-  const padX = COL_WIDTH * 3;
-  const padY = ROW_STRIDE * 3;
-  zoom.translateExtent([
-    [minX - padX, minY - padY],
-    [maxX + padX, maxY + padY],
-  ]);
+  // Custom zoom constraint. Replaces the default `translateExtent`-based
+  // clamp because that one's "padding" is in world units — at high zoom
+  // it lets the user pan far enough off the data that nothing is visible.
+  // This version keeps at least RESERVE_X / RESERVE_Y world units of
+  // data on screen when zoomed in, and centers the data with a bit of
+  // pixel-space slack when zoomed out enough that everything fits.
+  zoom.constrain((transform, viewport) => {
+    if (!state.bbox) return transform;
+    const k = transform.k;
+    const w = viewport[1][0] - viewport[0][0];
+    const h = viewport[1][1] - viewport[0][1];
+    const { minX, maxX, minY, maxY } = state.bbox;
+    const dataW = maxX - minX;
+    const dataH = maxY - minY;
+    const viewW = w / k;
+    const viewH = h / k;
+    const reserveX = COL_WIDTH;
+    const reserveY = ROW_STRIDE;
+    const slackPx = 80;
+
+    let tx, ty;
+    if (viewW >= dataW) {
+      const center = (w - k * (minX + maxX)) / 2;
+      tx = Math.max(center - slackPx, Math.min(center + slackPx, transform.x));
+    } else {
+      const txMin = -k * (maxX - reserveX);
+      const txMax = w - k * (minX + reserveX);
+      tx = Math.max(txMin, Math.min(txMax, transform.x));
+    }
+    if (viewH >= dataH) {
+      const center = (h - k * (minY + maxY)) / 2;
+      ty = Math.max(center - slackPx, Math.min(center + slackPx, transform.y));
+    } else {
+      const tyMin = -k * (maxY - reserveY);
+      const tyMax = h - k * (minY + reserveY);
+      ty = Math.max(tyMin, Math.min(tyMax, transform.y));
+    }
+    return d3.zoomIdentity.translate(tx, ty).scale(k);
+  });
   renderDots();
   initialCenter();
   scheduleRedraw();

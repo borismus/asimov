@@ -1,15 +1,53 @@
 #!/usr/bin/env python3
-import os
 import argparse
+import csv
+import dataclasses
+import os
+import re
 import sys
 import jinja2
-
-sys.path.append("..")
-from asimov_gpt.src.utils import load_inventions
 
 SITE_NAME = "Invention & Discovery Cards"
 SITE_DESCRIPTION = """A Civilization-inspired tech tree but for the real life history of science and discovery. Inventions and discoveries presented in illustrated Magic-style cards."""
 SITE_ROOT = 'https://invention.cards'
+
+
+@dataclasses.dataclass(frozen=True)
+class Invention:
+  id: str
+  year: int
+  title: str
+  summary: str
+
+
+def _parse_year(raw):
+  s = raw.strip().replace(",", "")
+  m = re.match(r"^(-?\d+)\s*(BCE|CE)?$", s, flags=re.IGNORECASE)
+  if not m:
+    raise ValueError(f"unparseable year: {raw!r}")
+  n = int(m.group(1))
+  return -n if (m.group(2) or "").upper() == "BCE" else n
+
+
+def load_inventions(tsv_path):
+  out = []
+  with open(tsv_path, newline="", encoding="utf-8") as f:
+    for row in csv.DictReader(f, delimiter="\t"):
+      iid = (row.get("ID") or "").strip()
+      if not iid:
+        continue
+      try:
+        year = _parse_year((row.get("Year") or "").strip())
+      except ValueError as e:
+        print(f"  skipping {iid}: {e}", file=sys.stderr)
+        continue
+      out.append(Invention(
+        id=iid,
+        year=year,
+        title=(row.get("Title") or "").strip(),
+        summary=(row.get("Description") or "").strip(),
+      ))
+  return out
 
 
 def copy_static(out_dir):
@@ -98,7 +136,6 @@ if __name__ == "__main__":
       "description": invention.summary,
       "canonical_url": f"{SITE_ROOT}/{invention.id}",
       "card_image": "card.jpg",
-      "initial_javascript": f"""changeFocusId("{invention.id}")""",
     }
     html = template.render(data)
 
@@ -113,7 +150,6 @@ if __name__ == "__main__":
     "site_name": SITE_NAME,
     "description": SITE_DESCRIPTION,
     "canonical_url": SITE_ROOT,
-    "initial_javascript": "changeFocusId(randomCardWithDeps().id);",
   }
   html = template.render(data)
 

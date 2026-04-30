@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <!--
-  This template will be used to generate each individual invention page for SEO purposes.
-  The canonical URL for these pages look like /:slug, e.g. /germ-theory-of-disease/, so assets need to be served from .., for example /static/style.css.
+  Generated per invention at /<id>/index.html and at the site root.
+  Body is the universe shell; the pinned invention is read from location.pathname by universe.js.
 -->
 
 <head>
@@ -15,29 +15,28 @@
   <link rel="canonical" href="{{canonical_url}}">
   <meta name="author" content="Boris Smus">
 
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="stylesheet" href="/static/style.css">
   <link rel="stylesheet" href="/static/card.css">
+  <link rel="stylesheet" href="/static/universe.css" media="(min-width: 721px)">
+  <link rel="stylesheet" href="/static/mobile.css" media="(max-width: 720px)">
   <link rel="icon" type="image/x-icon" href="/static/images/icons/favicon.ico">
 </head>
 
 <body>
   <noscript><img src="{{card_image}}" /></noscript>
 
-  <div id="container">
-  </div>
-
-  <asimov-timeline></asimov-timeline>
-  <button id="reset-zoom">Reset zoom</button>
+  <canvas id="links-canvas"></canvas>
+  <div id="container"></div>
+  <div id="offscreen-indicators"></div>
+  <input id="search-input" type="search" placeholder="Search…" autocomplete="off" spellcheck="false" />
+  <div id="search-results"></div>
 
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script type="module">
-    import { changeFocusId, initChronology, randomCardWithDeps } from "/static/main.js";
-    async function onLoad() {
-      await initChronology();
-      {{initial_javascript}}
-    }
-    window.addEventListener("load", onLoad);
+    const isMobile = matchMedia("(max-width: 720px)").matches;
+    import(isMobile ? "/static/mobile.js" : "/static/universe.js");
   </script>
 
   <!-- Google tag (gtag.js) -->
@@ -48,218 +47,6 @@
     gtag('js', new Date());
     gtag('config', 'G-02307ST8RC');
   </script>
-
-  <template id=”asimov-timeline”>
-    <style>
-      section#container {
-        --container-width: 400px;
-
-        position: absolute;
-        top: 0;
-        margin-top: 4px;
-        left: 50%;
-        margin-left: calc(var(--container-width) / -2);
-        width: var(--container-width);
-        background: white;
-
-        display: flex;
-        flex-direction: column;
-      }
-
-      ul {
-        font-family: 'DM Serif Display', serif;
-        font-size: 14px;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-      }
-
-      li {
-        display: flex;
-        justify-content: space-between;
-        cursor: pointer;
-        padding: 4px;
-      }
-
-      li.focus {
-        background: #dc143c33;
-      }
-
-      li:hover:not(.focus) {
-        background: #d3d3d366;
-      }
-
-      .title {
-        margin-left: auto;
-      }
-
-      .field {
-        padding-top: 2px;
-        padding-left: 4px;
-        width: 16px;
-        height: 16px;
-      }
-
-      section.search-filter {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 6px;
-        padding-left: 0;
-        z-index: 1;
-        background: white;
-        border-bottom: 1px solid black;
-      }
-
-      header {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        border: 1px solid black;
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
-        background: white;
-        z-index: 1;
-      }
-
-      .collapsed header {
-        border-radius: 8px;
-      }
-
-      header h1 {
-        margin: 0;
-        font-family: 'DM Serif Display', serif;
-        font-size: 22px;
-        letter-spacing: .5px;
-        padding: 4px;
-        margin-right: auto;
-      }
-
-      .search {
-        margin-right: auto;
-        margin-left: 4px;
-      }
-
-      #query::-webkit-search-cancel-button {
-        cursor: pointer;
-      }
-
-      .clearing {
-        animation: glow 1s forwards ease-in-out;
-      }
-
-
-      @keyframes glow {
-        from {
-          box-shadow: 0 0 0 0 white;
-        }
-
-        50% {
-          box-shadow: 0 0 10px 2px #e95c29;
-        }
-
-        to {
-          box-shadow: 0 0 0 0 white;
-        }
-      }
-
-      button {
-        width: 24px;
-        border: 1px solid white;
-        cursor: pointer;
-        background-size: contain;
-        background-color: white;
-        background-repeat: no-repeat;
-      }
-
-      button:hover {
-        border: 0;
-      }
-
-      button#collapse-expand {
-        background-image: url(/static/images/icons/chevron-up.svg);
-      }
-
-      .collapsed button#collapse-expand {
-        background-image: url(/static/images/icons/chevron-down.svg);
-      }
-
-      button#random {
-        background-image: url(/static/images/icons/dices.svg);
-        margin-left: 5px;
-        margin-right: -5px;
-      }
-
-      #inventions-discoveries {
-        max-height: 200px;
-        overflow-y: auto;
-      }
-
-      li.total {
-        border-top: 1px solid black;
-      }
-
-      #drawer {
-        transition: margin-top 0.1s ease-in-out;
-        border: 1px solid black;
-        border-spacing: 0;
-        border-bottom-left-radius: 8px;
-        border-bottom-right-radius: 8px;
-      }
-
-      .collapsed #drawer {
-        margin-top: -100%;
-      }
-
-      :not(.collapsed) #drawer {
-        border-top: 0;
-      }
-
-      button#help {
-        margin-left: 8px;
-        background-image: url(/static/images/icons/help.svg);
-      }
-
-      select,
-      input,
-      button {
-        height: 22px;
-      }
-
-      @media only screen and (max-width: 600px) {
-        section#container {
-          top: 0;
-          left: 0;
-          margin-left: 0;
-          width: 100%;
-        }
-      }
-    </style>
-    <section id="container">
-      <header>
-        <button id="collapse-expand"></button>
-        <h1>Invention & Discovery Cards</a></h1>
-        <button id="help"
-          onclick="window.open('https://smus.com/visual-chronology-science-discovery-v2', '_blank')"></button>
-      </header>
-      <div id="drawer">
-        <section class="search-filter">
-          <div class="search">
-            <input id="query" type="search" placeholder="Search..."></input>
-          </div>
-          <div class="filter">
-            <select name="fields" id="fields">
-            </select>
-          </div>
-          <button id="random"></button>
-        </section>
-
-        <ul id="inventions-discoveries">
-        </ul>
-      </div>
-    </section>
-  </template>
 </body>
 
 </html>

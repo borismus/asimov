@@ -155,6 +155,7 @@
 .dag-axis-tick {
   stroke: rgba(0, 0, 0, 0.18);
   stroke-width: calc(1px / var(--zoom));
+  stroke-dasharray: calc(4px / var(--zoom)) calc(4px / var(--zoom));
 }
 
 .dag-axis-label {
@@ -195,3 +196,51 @@ body.searching #search-input { display: block; }
 .card.search-match {
   filter: drop-shadow(0 0 6px goldenrod) drop-shadow(0 0 6px goldenrod);
 }
+
+/* Goldenrod fill on matched dots so they pop at the lowest zooms where the
+   muted field colors are otherwise the only signal. */
+.dag-dot.search-match {
+  fill: goldenrod;
+  stroke: goldenrod;
+  stroke-width: calc(2px / var(--zoom));
+}
+
+/* While a query is active (>= MIN_SEARCH_CHARS), hide auto labels so matches
+   stand out. Sticky labels (user-pinned) and search labels stay visible. */
+body.search-active .labels .dag-label { display: none; }
+
+/* Pill list of off-screen search matches, anchored under the search bar.
+   Reuses .offscreen-indicator chip styling for visual consistency. */
+#search-results {
+  position: absolute;
+  top: 56px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  max-width: 80vw;
+  display: none;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+  pointer-events: none;
+}
+body.searching #search-results:not(:empty) { display: flex; }
+#search-results .offscreen-indicator { position: static; transform: none; }
+#search-results .more {
+  pointer-events: none;
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px dashed rgba(0, 0, 0, 0.25);
+  border-radius: 999px;
+  color: #555;
+  font: 13px "DM Serif Display", serif;
+  white-space: nowrap;
+}
+
+.offscreen-indicator.search {
+  border-color: goldenrod;
+  box-shadow: 0 2px 8px rgba(218, 165, 32, 0.35);
+}
+

@@ -304,6 +304,10 @@ function onZoom({ transform }) {
   state.transform = transform;
   gRoot.attr("transform", transform);
   document.documentElement.style.setProperty("--zoom", transform.k);
+  // The SVG content moved synchronously above — keep the header's year
+  // labels in sync the same frame so the dashed lines and the labels
+  // stay welded together (otherwise the labels lag by 1 rAF).
+  syncHeaderAxisLabels();
   scheduleRedraw();
   persistView();
 }
@@ -461,6 +465,7 @@ function measureHeader() {
 // renders text in the SVG — the labels live in HTML so they stay
 // crisp and never get clipped by the header background.
 function renderHeaderAxisLabels(placed) {
+  state.placedTicks = placed;
   const slot = document.getElementById("site-timeline");
   if (!slot) return;
   const sel = d3
@@ -475,6 +480,21 @@ function renderHeaderAxisLabels(placed) {
     .merge(sel)
     .style("left", (d) => d.screenX + "px")
     .text((d) => formatYear(d.year));
+}
+
+// Re-project the cached tick positions through the latest transform
+// without waiting for renderAxis to fire on the next rAF. Called
+// synchronously from onZoom so the header labels track the SVG
+// transform 1:1 — without this they lag the dashed lines below by
+// one frame, which reads as the lines moving but the labels not.
+function syncHeaderAxisLabels() {
+  if (!state.placedTicks || !state.transform) return;
+  const { x: tx, k } = state.transform;
+  d3.select("#site-timeline")
+    .selectAll("span.axis-label")
+    .style("left", function (d) {
+      return tx + d.worldX * k + "px";
+    });
 }
 
 // Center `node` in the viewport at FULL-tier zoom — used when arriving via

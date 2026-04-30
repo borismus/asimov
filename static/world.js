@@ -180,15 +180,19 @@ export function renderAxis() {
   }
 
   // Dedupe by year (rounding can collapse adjacent ticks) and by screen-x
-  // distance for safety.
+  // distance for safety. worldX = xForBucket(bucketIdx) is cached on each
+  // placed entry so the header label can be re-projected synchronously
+  // in onZoom (no rAF lag when the SVG transform updates live but the
+  // labels' left would otherwise wait for renderAxis to run).
   const seenYears = new Set();
   const placed = [];
   for (const c of candidates) {
     if (seenYears.has(c.year)) continue;
-    const screenX = tx + xForBucket(c.bucketIdx) * k;
+    const worldX = xForBucket(c.bucketIdx);
+    const screenX = tx + worldX * k;
     if (placed.some((p) => Math.abs(p.screenX - screenX) < MIN_TICK_PX)) continue;
     seenYears.add(c.year);
-    placed.push({ year: c.year, bucketIdx: c.bucketIdx, screenX });
+    placed.push({ year: c.year, bucketIdx: c.bucketIdx, worldX, screenX });
   }
 
   const sel = gAxis.selectAll("g.dag-tick").data(placed, (d) => d.year);

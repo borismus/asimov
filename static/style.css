@@ -27,30 +27,34 @@ body {
 
 .site-header-top {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 16px;
-  padding: 10px 14px 8px 18px;
+  padding: 6px 14px 4px 18px;
 }
 
 .site-titles {
   flex: 1 1 auto;
   min-width: 0;
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
 .site-title {
   font-family: "DM Serif Display", "Lora", Georgia, serif;
   font-weight: normal;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.1;
   letter-spacing: 0.2px;
   color: #1a1a1a;
+  white-space: nowrap;
 }
 
 .site-subtitle {
   font-size: 12px;
   line-height: 1.35;
   color: #6b6b6b;
-  margin-top: 3px;
 }
 
 #site-help {

@@ -13,8 +13,15 @@ const SEARCH_MAX_RESULTS = 30;
 // bar always reads as "uniformly distributed inventions." 5 ticks at 0/25/
 // 50/75/100% gives readable labels without crowding.
 const ERA_TICK_COUNT = 5;
-const SWIPE_DIST = 80;
-const SWIPE_MAX_VERT = 60;
+// A deliberate, slow swipe commits at SWIPE_DIST. A quick flick commits
+// once it crosses SWIPE_FLICK_DIST as long as it's moving fast enough
+// (SWIPE_FLICK_VELOCITY in px/ms) — same pattern as Tinder/Stories where
+// the user can flick the card off without dragging it half-way across
+// the screen.
+const SWIPE_DIST = 45;
+const SWIPE_FLICK_DIST = 18;
+const SWIPE_FLICK_VELOCITY = 0.4;
+const SWIPE_MAX_VERT = 100;
 const TAP_MAX_MOVE = 8;
 const TRANSITION_MS = 320;
 const ROTATE_PER_PX = 0.05;
@@ -604,6 +611,10 @@ function onPointerDown(e) {
     direction: 0, // +1 forward, -1 backward (set on first move past TAP_MAX_MOVE)
     enteringBottom: null,
     prev: null,
+    // Trailing window of the last few pointer samples; used to compute
+    // release velocity for the flick threshold (a single pointermove's
+    // dx/dt is too noisy to use directly).
+    samples: [{ x: e.clientX, t: performance.now() }],
   };
   slot.setPointerCapture?.(e.pointerId);
   slot.addEventListener("pointermove", onPointerMove);
@@ -657,6 +668,11 @@ function onPointerMove(e) {
   if (!drag || e.pointerId !== drag.pointerId) return;
   const dx = e.clientX - drag.startX;
   const dy = e.clientY - drag.startY;
+  // Keep a short trailing window of pointer samples so onPointerUp can
+  // compute release velocity. 5 samples is enough to smooth out jitter
+  // without dragging in stale data from earlier in the gesture.
+  drag.samples.push({ x: e.clientX, t: performance.now() });
+  if (drag.samples.length > 5) drag.samples.shift();
   if (!drag.moved && Math.hypot(dx, dy) > TAP_MAX_MOVE) {
     drag.moved = true;
     lockDragDirection(dx);
@@ -744,8 +760,20 @@ function onPointerUp(e) {
     return;
   }
 
-  const horizontalSwipe =
-    Math.abs(dx) >= SWIPE_DIST && Math.abs(dy) <= SWIPE_MAX_VERT;
+  // Velocity from the trailing pointer-sample window — first vs last is
+  // robust to a brief pause at release that can otherwise zero out the
+  // velocity even after a clear flick.
+  const tail = drag.samples;
+  const head = tail[0];
+  const last = tail[tail.length - 1];
+  const dt = Math.max(1, last.t - head.t);
+  const velocity = Math.abs(last.x - head.x) / dt;
+  const absDx = Math.abs(dx);
+
+  const verticalOk = Math.abs(dy) <= SWIPE_MAX_VERT;
+  const longSwipe = absDx >= SWIPE_DIST;
+  const flick = absDx >= SWIPE_FLICK_DIST && velocity >= SWIPE_FLICK_VELOCITY;
+  const horizontalSwipe = verticalOk && (longSwipe || flick);
   if (!horizontalSwipe) {
     snapBackAndCleanup();
     drag = null;

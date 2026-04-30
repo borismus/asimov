@@ -1,0 +1,70 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background: #faf8f3;
+  overscroll-behavior: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#links-canvas,
+#offscreen-indicators,
+#search-input,
+#search-results {
+  display: none !important;
+}
+
+#mobile-bar {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  background: rgba(250, 248, 243, 0.95);
+  font: 13px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+}
+
+#mobile-bar select {
+  font: inherit;
+  padding: 4px 8px;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  background: #fff;
+}
+
+#mobile-bar .counter {
+  margin-left: auto;
+  color: #6b6b6b;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+#container {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  min-height: 0;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+#container svg.mobile-card {
+  cursor: default;
+  width: min(100vw - 24px, 360px);
+  height: auto;
+  max-height: 100%;
+  display: block;
+  filter: drop-shadow(0 4px 14px rgba(0, 0, 0, 0.12));
+  transition: transform 80ms ease-out, opacity 80ms ease-out;
+}
+
+#container svg.mobile-card.dragging {
+  transition: none;
+}

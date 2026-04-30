@@ -7,7 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="stylesheet" href="/static/style.css">
   <link rel="stylesheet" href="/static/card.css">
-  <link rel="stylesheet" href="/static/universe.css">
+  <link rel="stylesheet" href="/static/universe.css" media="(min-width: 721px)">
+  <link rel="stylesheet" href="/static/mobile.css" media="(max-width: 720px)">
   <link rel="icon" type="image/x-icon" href="/static/images/icons/favicon.ico">
 </head>
 <body>
@@ -15,8 +16,12 @@
   <div id="container"></div>
   <div id="offscreen-indicators"></div>
   <input id="search-input" type="search" placeholder="Search…" autocomplete="off" spellcheck="false" />
+  <div id="search-results"></div>
 
   <script src="https://d3js.org/d3.v7.min.js"></script>
-  <script type="module" src="/static/universe.js"></script>
+  <script type="module">
+    const isMobile = matchMedia("(max-width: 720px)").matches;
+    import(isMobile ? "/static/mobile.js" : "/static/universe.js");
+  </script>
 </body>
 </html>

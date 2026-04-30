@@ -12,14 +12,14 @@ let hoverExpandTimer = null;
 
 let state, gCards, gHoverCards, gHoverLines, gPinnedCards, gPinnedLines;
 let gStickyLabels, offscreenContainer, svg, zoom;
-let persistView, tweenFold, appendLabels;
+let persistView, persistPin, tweenFold, appendLabels;
 let TIER_LABEL, TIER_IMG, TIER_FULL, TIER_FADE_MS;
 
 export function initOverlays(deps) {
   ({
     state, gCards, gHoverCards, gHoverLines, gPinnedCards, gPinnedLines,
     gStickyLabels, offscreenContainer, svg, zoom,
-    persistView, tweenFold, appendLabels,
+    persistView, persistPin, tweenFold, appendLabels,
     TIER_LABEL, TIER_IMG, TIER_FULL, TIER_FADE_MS,
   } = deps);
 }
@@ -222,16 +222,21 @@ export function onHoverEnter(event, d) {
 
   const sameNode = state.hoverId === d.id;
   state.hoverId = d.id;
-  const related = state.links.filter(
-    (l) => l.source.id === d.id || l.target.id === d.id
-  );
 
+  // When a card is pinned, the user already has a focused chain in view;
+  // adding the hovered card's parents and children on top is noisy.
+  // Hover stays a single-card preview in that mode.
   state.hoverNeighbors = [];
-  for (const l of related) {
-    if (l.source.id === d.id) {
-      state.hoverNeighbors.push({ node: l.target, kind: "child" });
-    } else {
-      state.hoverNeighbors.push({ node: l.source, kind: "parent" });
+  if (!state.pinnedId) {
+    const related = state.links.filter(
+      (l) => l.source.id === d.id || l.target.id === d.id
+    );
+    for (const l of related) {
+      if (l.source.id === d.id) {
+        state.hoverNeighbors.push({ node: l.target, kind: "child" });
+      } else {
+        state.hoverNeighbors.push({ node: l.source, kind: "parent" });
+      }
     }
   }
 
@@ -451,10 +456,11 @@ export function pin(rootNode) {
   renderPinnedOffscreenIndicators();
   // Refresh hover cards so the pin badge flips immediately on click.
   if (state.hoverId) updateHoverArtifacts();
+  persistPin();
   persistView();
 }
 
-function unpin() {
+export function unpin() {
   state.pinnedId = null;
   state.pinnedChain = [];
   state.pinnedLayout = new Map();
@@ -470,6 +476,7 @@ function unpin() {
     // visible at the position in the meantime — reads as a blink.
     gHoverCards.selectAll("g.card").interrupt().style("opacity", 1);
   }
+  persistPin();
   persistView();
 }
 

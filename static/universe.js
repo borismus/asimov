@@ -35,6 +35,7 @@ import {
   renderOffscreenIndicators,
   renderPinnedOffscreenIndicators,
   pin,
+  unpin,
   panToNode,
   escapeHtml,
 } from "./overlays.js";
@@ -215,17 +216,21 @@ svg.call(zoom);
 const VIEW_STORAGE_KEY = "universe-view";
 let saveViewTimeout = null;
 
-// URL hash + localStorage round-trip the current view + pin so it's shareable.
+// Path is the source of truth for the pinned invention: /<id>/ pins that node.
+// Hash carries view state (x/y/k) only; localStorage backs both up between visits.
+function parsePathPin(pathname) {
+  const id = pathname.replace(/^\/+|\/+$/g, "");
+  return id || null;
+}
+
 function serializeViewHash() {
   const t = state.transform;
   if (!t) return "";
-  const parts = [
+  return [
     `x=${t.x.toFixed(2)}`,
     `y=${t.y.toFixed(2)}`,
     `k=${t.k.toFixed(4)}`,
-  ];
-  if (state.pinnedId) parts.push(`pin=${encodeURIComponent(state.pinnedId)}`);
-  return parts.join("&");
+  ].join("&");
 }
 
 function parseViewHash(hash) {
@@ -235,7 +240,7 @@ function parseViewHash(hash) {
   const y = parseFloat(params.get("y"));
   const k = parseFloat(params.get("k"));
   if (!Number.isFinite(x) || !Number.isFinite(y) || !Number.isFinite(k)) return null;
-  return { x, y, k, pinnedId: params.get("pin") || null };
+  return { x, y, k };
 }
 
 // replaceState (not pushState) so the back button doesn't track every wheel tick.
@@ -245,7 +250,8 @@ function persistView() {
     saveViewTimeout = null;
     const hash = serializeViewHash();
     try {
-      history.replaceState(null, "", hash ? `#${hash}` : window.location.pathname);
+      const target = window.location.pathname + (hash ? `#${hash}` : "");
+      history.replaceState(null, "", target);
     } catch (e) {}
     try {
       const t = state.transform;
@@ -257,6 +263,16 @@ function persistView() {
       }
     } catch (e) {}
   }, 200);
+}
+
+// pushState (not replaceState) so back/forward navigates between pinned inventions.
+function persistPin() {
+  const path = state.pinnedId ? `/${state.pinnedId}` : "/";
+  const target = path + (window.location.hash || "");
+  if (window.location.pathname + window.location.hash === target) return;
+  try {
+    history.pushState(null, "", target);
+  } catch (e) {}
 }
 
 initWorld({
@@ -280,6 +296,7 @@ initOverlays({
   svg,
   zoom,
   persistView,
+  persistPin,
   tweenFold,
   appendLabels,
   TIER_LABEL,
@@ -364,6 +381,16 @@ async function init() {
     scheduleRedraw();
   });
 
+  // Browser back/forward between /<id> and / drives pin/unpin to match the path.
+  // pin()/unpin() will call persistPin, but it no-ops when the URL already
+  // matches (which it does post-popstate), so no extra history entry is pushed.
+  window.addEventListener("popstate", () => {
+    const id = parsePathPin(window.location.pathname);
+    if (id === state.pinnedId) return;
+    if (id && state.nodesById[id]) pin(state.nodesById[id]);
+    else if (state.pinnedId) unpin();
+  });
+
   const { nodes, links } = await loadGraph("/static/asimov.tsv");
   state.nodes = nodes;
   state.links = links;
@@ -418,14 +445,13 @@ function initialTransform() {
 }
 
 function initialCenter() {
-  // Priority: URL hash (shareable) → localStorage (last visit) → computed.
+  // Pin: pathname (canonical) → localStorage. View: hash → localStorage → computed.
   let transform = null;
-  let pinnedId = null;
+  let pinnedId = parsePathPin(window.location.pathname);
 
   const fromHash = parseViewHash(window.location.hash);
   if (fromHash) {
     transform = d3.zoomIdentity.translate(fromHash.x, fromHash.y).scale(fromHash.k);
-    pinnedId = fromHash.pinnedId;
   } else {
     try {
       const raw = localStorage.getItem(VIEW_STORAGE_KEY);
@@ -434,8 +460,8 @@ function initialCenter() {
         const { x, y, k } = saved;
         if (Number.isFinite(x) && Number.isFinite(y) && Number.isFinite(k)) {
           transform = d3.zoomIdentity.translate(x, y).scale(k);
-          if (saved.pinnedId) pinnedId = saved.pinnedId;
         }
+        if (!pinnedId && saved.pinnedId) pinnedId = saved.pinnedId;
       }
     } catch (e) {
       // Bad JSON / unavailable storage — fall through to computed initial.

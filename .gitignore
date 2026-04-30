@@ -2,3 +2,7 @@
 .Ulysses-Group.plist
 .DS_Store
 .env
+
+# Full-resolution image-gen originals + metadata; the site only ships the
+# 720x480 JPGs at static/images/entries-v2/<id>.jpg.
+static/images/entries-v2/originals/

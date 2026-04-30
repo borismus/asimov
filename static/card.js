@@ -94,7 +94,7 @@ export function renderMTGCard(card) {
     .attr("y", imageY)
     .attr("width", imageW)
     .attr("height", imageH)
-    .attr("href", (d) => `/static/images/entries/${d.id}.jpg`)
+    .attr("href", (d) => `/static/images/entries-v2/${d.id}.jpg`)
     .attr("preserveAspectRatio", "xMidYMid slice");
 
   // Title (top-left)
@@ -311,7 +311,7 @@ export function renderFullCard(card, initialFold = 1) {
   g.append("image")
     .attr("x", imageX).attr("y", imageY)
     .attr("width", imageW).attr("height", imageH)
-    .attr("href", (d) => `/static/images/entries/${d.id}.jpg`)
+    .attr("href", (d) => `/static/images/entries-v2/${d.id}.jpg`)
     .attr("preserveAspectRatio", "xMidYMid slice");
 
   g.append("text")

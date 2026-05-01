@@ -745,13 +745,36 @@ function renderCards() {
 
 // Cmd+F / Ctrl+F search overlay.
 const searchInput = document.getElementById("search-input");
+function openSearch() {
+  document.body.classList.add("searching");
+  searchInput.focus();
+  searchInput.select();
+}
+function closeSearch() {
+  state.searchQuery = "";
+  searchInput.value = "";
+  document.body.classList.remove("searching");
+  document.body.classList.remove("search-active");
+  searchInput.blur();
+  scheduleRedraw();
+}
 window.addEventListener("keydown", (e) => {
   if ((e.metaKey || e.ctrlKey) && !e.altKey && !e.shiftKey && e.key.toLowerCase() === "f") {
     e.preventDefault();
-    document.body.classList.add("searching");
-    searchInput.focus();
-    searchInput.select();
+    openSearch();
   }
+});
+
+document.getElementById("action-search")?.addEventListener("click", openSearch);
+document.getElementById("action-random")?.addEventListener("click", () => {
+  if (!state.nodes.length) return;
+  let next = state.nodes[Math.floor(Math.random() * state.nodes.length)];
+  if (state.nodes.length > 1 && next.id === state.pinnedId) {
+    const i = state.nodes.indexOf(next);
+    next = state.nodes[(i + 1) % state.nodes.length];
+  }
+  pin(next);
+  centerOnNode(next, { animate: true });
 });
 searchInput.addEventListener("input", () => {
   state.searchQuery = searchInput.value;
@@ -764,14 +787,14 @@ searchInput.addEventListener("input", () => {
   }
   scheduleRedraw();
 });
+// `<input type="search">`'s native X button fires the `search` event with an
+// empty value — treat that as "close the overlay" rather than just clearing.
+searchInput.addEventListener("search", () => {
+  if (!searchInput.value) closeSearch();
+});
 searchInput.addEventListener("keydown", (e) => {
   if (e.key === "Escape") {
     e.preventDefault();
-    state.searchQuery = "";
-    searchInput.value = "";
-    document.body.classList.remove("searching");
-    document.body.classList.remove("search-active");
-    searchInput.blur();
-    scheduleRedraw();
+    closeSearch();
   }
 });

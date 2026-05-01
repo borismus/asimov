@@ -45,10 +45,6 @@ const ENTERING_FROM_LEFT_POSE = { txPct: -130, ty: -8, rot: -14, scale: 0.94, op
 
 const state = {
   nodes: [],
-  // null = all fields. When set (e.g. "space"), state.sorted is filtered to
-  // that field. The deck is always chronological.
-  fieldFilter: null,
-  fieldOptions: [],
   sorted: [],
   index: 0,
   // Total count of nodes in the dataset — used to normalize the timeline
@@ -101,14 +97,10 @@ function compareYear(a, b) {
   return a.year - b.year || a.id.localeCompare(b.id);
 }
 
-// Apply the active field filter (if any). The mobile deck always reads
-// chronologically — randomness is now a dedicated button (which sets index)
-// rather than a sort mode.
+// Mobile deck always reads chronologically — randomness is a dedicated button
+// (which sets index) rather than a sort mode.
 function deriveSorted() {
-  const pool = state.fieldFilter
-    ? state.nodes.filter((n) => formatField(n.field) === state.fieldFilter)
-    : state.nodes;
-  return pool.slice().sort(compareYear);
+  return state.nodes.slice().sort(compareYear);
 }
 
 // Compact year label for tick + counter use. Avoids "4,000,000 BCE" eating the
@@ -120,48 +112,12 @@ function formatYearShort(y) {
   return String(y);
 }
 
-// In a sorted-by-year list, find the index of the entry closest to `node`'s
-// year. Same id wins when present; otherwise minimum |year difference|.
-// Linear scan over <2k items is fine, no need for a binary search.
-function nearestIndexByYear(node, list) {
-  if (!list.length) return 0;
-  if (!node) return 0;
-  let best = 0;
-  let bestDelta = Infinity;
-  for (let i = 0; i < list.length; i++) {
-    if (list[i].id === node.id) return i;
-    const d = Math.abs(list[i].year - node.year);
-    if (d < bestDelta) {
-      bestDelta = d;
-      best = i;
-    }
-  }
-  return best;
-}
-
-// Selector value encoding: "all" = no filter, "field:<name>" = filter to that
-// field. Single flat list — no sort option since the deck is always
-// chronological and randomness is a separate button.
-function selectorValue() {
-  return state.fieldFilter ? `field:${state.fieldFilter}` : "all";
-}
-
-function applySelectorValue(value) {
-  if (value.startsWith("field:")) {
-    state.fieldFilter = value.slice("field:".length);
-  } else {
-    state.fieldFilter = null;
-  }
-}
-
 function parseHash() {
   const h = location.hash.replace(/^#/, "");
   if (!h) return null;
   const params = new URLSearchParams(h);
-  const field = params.get("field");
   const i = parseInt(params.get("i") || "", 10);
   const out = {};
-  if (field) out.fieldFilter = field;
   if (Number.isFinite(i) && i >= 0) out.index = i;
   return out;
 }
@@ -169,7 +125,6 @@ function parseHash() {
 function writeHash() {
   if (isLocalhost()) return;
   const params = new URLSearchParams();
-  if (state.fieldFilter) params.set("field", state.fieldFilter);
   params.set("i", String(state.index));
   const next = "#" + params.toString();
   if (next !== location.hash) history.replaceState(null, "", next);
@@ -217,90 +172,15 @@ function updateCounter() {
   if (node) updateMarkerForNode(node);
 }
 
-function buildBar() {
-  const bar = document.createElement("div");
-  bar.id = "mobile-bar";
-
-  // Flat one-level list: "All" (no filter) followed by each field. Picking a
-  // field filters the deck; the deck always reads chronologically.
-  const select = document.createElement("select");
-  select.id = "mobile-sort";
-  const allOpt = document.createElement("option");
-  allOpt.value = "all";
-  allOpt.textContent = "All";
-  select.appendChild(allOpt);
-  for (const f of state.fieldOptions) {
-    const o = document.createElement("option");
-    o.value = `field:${f}`;
-    // Capitalize the field name for display; underlying value stays lowercase.
-    o.textContent = f.charAt(0).toUpperCase() + f.slice(1);
-    select.appendChild(o);
-  }
-  select.value = selectorValue();
-  select.addEventListener("change", () => {
-    if (committing) return;
-    // Preserve location across filter/sort changes: same card if it's in the
-    // new view; otherwise the closest neighbor by year. Jumping to index 0 on
-    // every category change loses the user's place in time, which is what
-    // they care about — antiquity vs. modernity is the axis they're navigating.
-    const currentNode = state.sorted[state.index] || null;
-    applySelectorValue(select.value);
-    state.sorted = deriveSorted();
-    state.index = nearestIndexByYear(currentNode, state.sorted);
-    writeHash();
-    pushCurrentPath();
-    rebuildDeck();
-  });
-  bar.appendChild(select);
-
-  // Spacer to push the action buttons to the right end of the bar.
-  const spacer = document.createElement("span");
-  spacer.className = "spacer";
-  bar.appendChild(spacer);
-
-  const randomBtn = document.createElement("button");
-  randomBtn.className = "random-button";
-  randomBtn.type = "button";
-  randomBtn.setAttribute("aria-label", "Random card");
-  randomBtn.innerHTML =
-    `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-       <rect x="3" y="3" width="18" height="18" rx="3"/>
-       <circle cx="8" cy="8" r="1.2" fill="#444"/>
-       <circle cx="16" cy="16" r="1.2" fill="#444"/>
-       <circle cx="16" cy="8" r="1.2" fill="#444"/>
-       <circle cx="8" cy="16" r="1.2" fill="#444"/>
-     </svg>`;
-  randomBtn.addEventListener("click", jumpToRandom);
-  bar.appendChild(randomBtn);
-
-  const searchBtn = document.createElement("button");
-  searchBtn.className = "search-toggle";
-  searchBtn.type = "button";
-  searchBtn.setAttribute("aria-label", "Search");
-  // Inline magnifier SVG so the button has no external asset dependency.
-  searchBtn.innerHTML =
-    `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-       <circle cx="11" cy="11" r="7"/>
-       <line x1="16.5" y1="16.5" x2="21" y2="21"/>
-     </svg>`;
-  searchBtn.addEventListener("click", openSearch);
-  bar.appendChild(searchBtn);
-
-  // The header sits above this controls bar — keep the controls bar in the
-  // body flow but insert it after #site-header rather than as the first
-  // child of body.
-  const header = document.getElementById("site-header");
-  if (header) {
-    header.insertAdjacentElement("afterend", bar);
-  } else {
-    document.body.insertBefore(bar, document.body.firstChild);
-  }
+function buildHeader() {
+  document.getElementById("action-random")?.addEventListener("click", jumpToRandom);
+  document.getElementById("action-search")?.addEventListener("click", openSearch);
 
   // Timeline strip lives INSIDE the header (#site-timeline placeholder).
   // Era ticks for orientation, plus a movable marker that shows the
   // current card's year. Position is by year across the full dataset
-  // (piecewise-linear over ERA_STOPS) so it's independent of
-  // sort/filter — antiquity vs. modernity at a glance.
+  // (piecewise-linear over ERA_STOPS) so the dot moves by an equal step
+  // per swipe regardless of clustering — antiquity vs. modernity at a glance.
   const slot = document.getElementById("site-timeline");
   const tl = document.createElement("div");
   tl.id = "mobile-timeline";
@@ -356,7 +236,7 @@ function initSearch() {
       e.target === searchInputEl ||
       searchInputEl.contains(e.target) ||
       searchResultsEl.contains(e.target) ||
-      e.target.closest(".search-toggle")
+      e.target.closest("#action-search")
     ) return;
     closeSearch();
   });
@@ -511,14 +391,7 @@ function jumpToRandom() {
   rebuildDeck();
 }
 
-// Jumping to a result drops any active field filter when the target falls
-// outside it — same logic as init's path-vs-filter reconciliation.
 function jumpToNode(node) {
-  if (state.fieldFilter && formatField(node.field) !== state.fieldFilter) {
-    state.fieldFilter = null;
-    state.sorted = deriveSorted();
-    syncSelectorUI();
-  }
   const idx = state.sorted.findIndex((n) => n.id === node.id);
   if (idx < 0) return;
   state.index = idx;
@@ -526,11 +399,6 @@ function jumpToNode(node) {
   writeHash();
   pushCurrentPath();
   rebuildDeck();
-}
-
-function syncSelectorUI() {
-  const sel = document.getElementById("mobile-sort");
-  if (sel) sel.value = selectorValue();
 }
 
 function buildDeck() {
@@ -960,17 +828,10 @@ async function init() {
   state.nodes = nodes;
 
   const fromHash = parseHash();
-  if (fromHash?.fieldFilter) state.fieldFilter = fromHash.fieldFilter;
-
-  // Field options come from the data so they're always in sync — no hardcoded
-  // list to drift. Sorted alphabetically so the optgroup reads predictably.
-  state.fieldOptions = [...new Set(state.nodes.map((n) => formatField(n.field)))]
-    .filter((f) => f && f !== "unknown")
-    .sort();
 
   // Each node's chronoIndex is its rank in the chronologically-sorted full
   // dataset. The timeline marker uses this so consecutive swipes always move
-  // the dot by exactly 1/(N-1) of the bar — regardless of sort/filter.
+  // the dot by exactly 1/(N-1) of the bar.
   const byYear = state.nodes.slice().sort(compareYear);
   byYear.forEach((n, i) => { n.chronoIndex = i; });
   state.chronoTotal = byYear.length;
@@ -989,25 +850,11 @@ async function init() {
       pct: t * 100,
     });
   }
-  // If the hash asked for a filter that doesn't actually exist in the data,
-  // drop it rather than rendering an empty deck.
-  if (state.fieldFilter && !state.fieldOptions.includes(state.fieldFilter)) {
-    state.fieldFilter = null;
-  }
 
   state.sorted = deriveSorted();
 
   // Path is canonical: /<id> jumps to that card; hash index is the fallback.
-  // If a field filter is active and the path points to a card outside it, drop
-  // the filter so the user lands on the card they explicitly navigated to.
   const pathId = parsePathPin(window.location.pathname);
-  if (pathId && state.fieldFilter) {
-    const inFilter = state.sorted.some((n) => n.id === pathId);
-    if (!inFilter && state.nodes.some((n) => n.id === pathId)) {
-      state.fieldFilter = null;
-      state.sorted = deriveSorted();
-    }
-  }
   const pathIdx = pathId ? state.sorted.findIndex((n) => n.id === pathId) : -1;
   if (pathIdx >= 0) {
     state.index = pathIdx;
@@ -1022,7 +869,7 @@ async function init() {
     state.index = Math.floor(Math.random() * state.sorted.length);
   }
 
-  buildBar();
+  buildHeader();
   buildDeck();
   initSearch();
   attachKeyboard();
@@ -1031,22 +878,14 @@ async function init() {
   writeHash();
   pushCurrentPath();
 
-  // Browser back/forward navigates between visited cards. Find the path's id
-  // in the current sorted view; if it's not there (filter excluded it), drop
-  // the filter so the URL still resolves. No pushPath here — popstate already
-  // moved us to that URL.
+  // Browser back/forward navigates between visited cards. No pushPath here —
+  // popstate already moved us to that URL.
   window.addEventListener("popstate", () => {
     const id = parsePathPin(window.location.pathname);
     if (!id) return;
     const currentId = state.sorted[state.index]?.id || null;
     if (id === currentId) return;
-    let idx = state.sorted.findIndex((n) => n.id === id);
-    if (idx < 0 && state.fieldFilter && state.nodes.some((n) => n.id === id)) {
-      state.fieldFilter = null;
-      state.sorted = deriveSorted();
-      syncSelectorUI();
-      idx = state.sorted.findIndex((n) => n.id === id);
-    }
+    const idx = state.sorted.findIndex((n) => n.id === id);
     if (idx < 0) return;
     state.index = idx;
     writeHash();

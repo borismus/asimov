@@ -581,7 +581,10 @@ function clearPinnedDom() {
     .forEach((el) => el.remove());
 }
 
-// Top-left pin glyph mirrors the field icon's position in the title bar.
+// Drawing pin driven into the card's top-left corner: an hourglass-shaped
+// colored body (bell on top, pinched waist, flared base) with a thin metal
+// needle and tip pressed into the title bar. Tilted 10° CCW so it doesn't
+// read as a static decoration.
 const PRIMARY_PIN_COLOR = "steelblue";
 const SECONDARY_PIN_COLOR = "#2a9d8f";
 
@@ -590,16 +593,32 @@ function appendPinBadge(cardSel) {
     .select("g.card-inner")
     .append("g")
     .attr("class", "pin-badge")
-    .attr("transform", "translate(8, 8)")
+    .attr("transform", "translate(8, 10) rotate(-10)")
     .attr("pointer-events", "none");
-  g.append("circle")
-    .attr("r", 6)
-    .attr("fill", (d) =>
-      pinKind(d.id) === "primary" ? PRIMARY_PIN_COLOR : SECONDARY_PIN_COLOR
-    )
+
+  const fill = (d) =>
+    pinKind(d.id) === "primary" ? PRIMARY_PIN_COLOR : SECONDARY_PIN_COLOR;
+
+  // Hourglass body: wide flat top, pinched waist, flared flat base.
+  g.append("path")
+    .attr("d", "M-7,-22 L7,-22 L1,-13 L7,-4 L-7,-4 L-1,-13 Z")
+    .attr("fill", fill)
     .attr("stroke", "white")
-    .attr("stroke-width", 1);
-  g.append("circle").attr("r", 1.8).attr("fill", "white");
+    .attr("stroke-width", 1.2)
+    .attr("stroke-linejoin", "miter");
+
+  // Highlight on the upper bell for a 3D feel.
+  g.append("path")
+    .attr("d", "M-5,-21 L-2,-21 L-2.5,-15 L-4.5,-15 Z")
+    .attr("fill", "rgba(255, 255, 255, 0.4)");
+
+  // Metal needle from the base down into the icon, ending in a sharp tip.
+  g.append("path")
+    .attr("d", "M-1.2,-4 L1.2,-4 L1.2,3 L0,7 L-1.2,3 Z")
+    .attr("fill", "#9a9a9a")
+    .attr("stroke", "rgba(0,0,0,0.4)")
+    .attr("stroke-width", 0.4)
+    .attr("stroke-linejoin", "miter");
 }
 
 // Keep pin badges in sync with the live pinned state on an arbitrary card

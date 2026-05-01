@@ -24,8 +24,7 @@ body {
 
 /* Mobile lays the header out as a normal flex item at the top, so the
    deck below sees a fixed amount of remaining space (rather than the
-   desktop overlay treatment). The timeline lives inside #site-header and
-   the controls bar sits between header and deck. */
+   desktop overlay treatment). The timeline lives inside #site-header. */
 #site-header {
   flex: 0 0 auto;
   z-index: 5;
@@ -39,51 +38,14 @@ body {
   font-size: 11px;
 }
 
-#mobile-bar {
-  flex: 0 0 auto;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 8px 12px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-  background: rgba(250, 248, 243, 0.95);
-  font: 13px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
-  z-index: 5;
-}
-
-/* 16px specifically: prevents iOS Safari from auto-zooming the viewport on
-   focus (it triggers when the focused control's font-size resolves <16px).
-   Touch target lands ~40px tall with the padding. */
-#mobile-bar select {
-  font: 16px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
-  padding: 8px 28px 8px 12px;
-  min-height: 40px;
-  border-radius: 8px;
-  border: 1px solid rgba(0, 0, 0, 0.18);
-  background-color: #fff;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'><path d='M1 1l4 4 4-4' fill='none' stroke='%23666' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/></svg>");
-  background-repeat: no-repeat;
-  background-position: right 10px center;
-  appearance: none;
-  -webkit-appearance: none;
-}
-
-#mobile-bar .spacer {
-  flex: 1 1 auto;
-}
-
-#mobile-bar button.random-button {
-  flex: 0 0 auto;
+/* Header action buttons get tap-friendly sizing on mobile. */
+.site-action {
   width: 40px;
-  min-height: 40px;
-  border-radius: 8px;
-  border: 1px solid rgba(0, 0, 0, 0.18);
-  background: #fff;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  cursor: pointer;
+  height: 40px;
+}
+
+#site-help {
+  font-size: 18px;
 }
 
 /* Era-stopped timeline. Each segment between ticks gets equal visual width,
@@ -333,29 +295,13 @@ body.mobile-scrubbing #mobile-timeline-marker {
   opacity: 0;
 }
 
-/* Search button sits in the bar next to the dropdown. Same touch target size
-   as the select. SVG magnifier inside is centered. */
-#mobile-bar button.search-toggle {
-  flex: 0 0 auto;
-  width: 40px;
-  min-height: 40px;
-  border-radius: 8px;
-  border: 1px solid rgba(0, 0, 0, 0.18);
-  background: #fff;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  cursor: pointer;
-}
-
-/* Search overlay: when active, the input docks under the bar and the results
-   scroll beneath it, covering the deck. Tapping a result jumps to that card
-   and closes the overlay. */
+/* Search overlay: when active, the input docks below the header and the
+   results scroll beneath it, covering the deck. Tapping a result jumps to
+   that card and closes the overlay. */
 body.mobile-searching #search-input {
   display: block;
   position: fixed;
-  top: 56px; /* below the bar; matches bar's vertical footprint */
+  top: 110px; /* below the header (title row + timeline) */
   left: 12px;
   right: 12px;
   padding: 10px 14px;
@@ -370,7 +316,7 @@ body.mobile-searching #search-input {
 body.mobile-searching #search-results {
   display: block;
   position: fixed;
-  top: 110px; /* under the docked input */
+  top: 164px; /* under the docked input */
   left: 12px;
   right: 12px;
   bottom: 12px;

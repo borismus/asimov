@@ -67,29 +67,42 @@ body {
   color: #6b6b6b;
 }
 
-#site-help {
+/* Header action group: random / search / help.
+   Shared button chrome — viewport-specific size lives in mobile.css. */
+.site-actions {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.site-action {
   flex: 0 0 auto;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 26px;
-  height: 26px;
-  margin-top: 2px;
-  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border-radius: 8px;
   border: 1px solid rgba(0, 0, 0, 0.18);
   background: #fff;
   color: #1a1a1a;
   text-decoration: none;
-  font-family: "DM Serif Display", "Lora", Georgia, serif;
-  font-size: 15px;
-  line-height: 1;
   cursor: pointer;
   transition: background 120ms, border-color 120ms;
 }
 
-#site-help:hover {
+.site-action:hover {
   background: #fffaf0;
   border-color: rgba(0, 0, 0, 0.4);
+}
+
+#site-help {
+  border-radius: 50%;
+  font-family: "DM Serif Display", "Lora", Georgia, serif;
+  font-size: 15px;
+  line-height: 1;
 }
 
 #site-help .site-help-mark {
@@ -148,6 +161,13 @@ line.highlight {
 
 .card.focus {
   filter: drop-shadow(0 0 1em crimson);
+}
+
+/* The currently pinned card lives in #pinned-cards and gets a steelblue
+   halo so it reads as pinned at a glance, even before the pushpin badge
+   is noticeable at low zoom. */
+.pinned-cards .card {
+  filter: drop-shadow(0 0 6px steelblue) drop-shadow(0 0 14px rgba(70, 130, 180, 0.45));
 }
 
 .card.lastFocus {

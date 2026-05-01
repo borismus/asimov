@@ -899,14 +899,18 @@ function commitBackward(_enterSide, snap) {
   }
 
   const real = realSlotsByDepth();
-  // The deepest slot gets pushed out of the deck and faded; capture it so we
-  // can drop it after the transition without rebuilding the rest.
-  const exiting = real[real.length - 1];
+  // Only the slot that demotes past DECK_DEPTH gets pushed out and
+  // disposed. Near the end of the deck (when there are < DECK_DEPTH
+  // real slots) every existing slot stays in the deck — picking
+  // real[real.length-1] unconditionally would drop the visible card
+  // and leave a smaller-than-correct deck after the next swipe.
+  let exiting = null;
   for (let i = 0; i < real.length; i++) {
     clearInlinePose(real[i]);
     const newDepth = i + 1;
     if (newDepth >= DECK_DEPTH) {
       real[i].classList.add("exit-bottom");
+      exiting = real[i];
     } else {
       real[i].dataset.depth = String(newDepth);
     }

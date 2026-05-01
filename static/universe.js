@@ -4,6 +4,7 @@ import {
   cardHeight,
   fullCardHeight,
   cardScreenScale,
+  cardFixedZoom,
   renderFullCard,
   foldPanelTransform,
   foldContainerHeight,
@@ -11,8 +12,12 @@ import {
   foldInnerY,
 } from "./card.js";
 
-// Push the screen-size multiplier into CSS so card-scaler picks it up.
+// Push the screen-size multiplier and the fixed-size zoom cap into CSS
+// so card.css's card-scaler can read them. card-scaler counter-scales
+// content by --card-screen-scale / min(--zoom, --card-fixed-zoom) — so
+// below the cap, cards stay constant size; above it, they grow with k.
 document.documentElement.style.setProperty("--card-screen-scale", cardScreenScale);
+document.documentElement.style.setProperty("--card-fixed-zoom", cardFixedZoom);
 import {
   initWorld,
   layout,
@@ -702,9 +707,13 @@ function appendLabels(group, nodes) {
 }
 
 function renderCards() {
-  // Margin in world units. Cards render at fixed screen size (cardWidth *
-  // cardScreenScale) so the world-space margin shrinks as zoom grows.
-  const margin = cardWidth * cardScreenScale / (state.transform?.k || 1);
+  // Margin in world units. Below cardFixedZoom the rendered card is a
+  // fixed cardWidth*cardScreenScale screen-px, so divide by k. Above it
+  // the card grows with k, so we cap k at cardFixedZoom — otherwise the
+  // margin shrinks past the visible card's actual size and entries pop
+  // in late at the screen edge.
+  const k = state.transform?.k || 1;
+  const margin = cardWidth * cardScreenScale / Math.min(k, cardFixedZoom);
   const visible = nodesInView(margin);
   const sel = gCards.selectAll("g.card").data(visible, (d) => d.id);
   sel.exit()

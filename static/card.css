@@ -212,11 +212,12 @@ footer {
   50% { fill: #d8d2bc; }
 }
 
-/* Counter-scale the card content so it renders at constant screen pixels even
-   inside a zoom-transformed SVG (universe view sets --zoom on
-   documentElement). Without --zoom the fallback scale=1 makes this a no-op,
-   so non-zoomed contexts (main.js cross view) are unaffected. */
+/* Counter-scale the card content so it renders at constant screen pixels
+   inside a zoom-transformed SVG. The scaler caps its inverse-zoom factor
+   at --card-fixed-zoom — below that zoom, cards stay constant size; above
+   it, the counter-scale plateaus and the cards visibly grow with k.
+   Defaults make non-zoomed contexts a no-op. */
 g.card-scaler {
-  transform: scale(calc(var(--card-screen-scale, 1) / var(--zoom, 1)));
+  transform: scale(calc(var(--card-screen-scale, 1) / min(var(--zoom, 1), var(--card-fixed-zoom, 1))));
   transform-origin: 0 0;
 }

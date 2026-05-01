@@ -4,7 +4,21 @@
 // overlayCardPos/Transform, layoutOverlayLines, lineRectIntersection,
 // makeOffscreenChip), which is why they live in the same module.
 
-import { cardWidth, fullCardHeight, cardScreenScale, renderFullCard } from "./card.js";
+import {
+  cardWidth,
+  fullCardHeight,
+  cardScreenScale,
+  cardFixedZoom,
+  renderFullCard,
+} from "./card.js";
+
+// Effective k for card-world-size math. card.css caps the inverse-zoom
+// at cardFixedZoom, so above that the visible card grows with k. Layout
+// (overlap detection, line endpoint clipping) mirrors that cap or hover
+// cards stop matching their visible bounds at high zoom.
+function effectiveK(k) {
+  return Math.min(k, cardFixedZoom);
+}
 
 const HOVER_EXPAND_DELAY_MS = 300;
 // All hover overlays (focused card + neighbors + sticky label at LABEL tier)
@@ -123,8 +137,8 @@ function clipToCardEdge(cx, cy, tx, ty, halfW, halfH) {
 // world-space half-extents are cardWidth/(2k) × fullCardHeight/(2k).
 function layoutOverlayLines(linesSel, layout) {
   const k = (state.transform && state.transform.k) || 1;
-  const halfW = cardWidth * cardScreenScale / 2 / k;
-  const halfH = fullCardHeight * cardScreenScale / 2 / k;
+  const halfW = cardWidth * cardScreenScale / 2 / effectiveK(k);
+  const halfH = fullCardHeight * cardScreenScale / 2 / effectiveK(k);
   // Stroke width in world units; divided by k so it lands at 3 screen px
   // regardless of zoom (matching the fixed screen size of the cards). The
   // SVG marker auto-scales with stroke-width (markerUnits='strokeWidth').
@@ -154,8 +168,8 @@ function computeHoverLayout(focused, layoutNeighbors) {
   // Cards render at cardWidth * cardScreenScale screen pixels (counter-scaled
   // by 1/k); divide by k to get the equivalent world-space dimensions.
   const k = state.transform.k || 1;
-  const wWorld = cardWidth * cardScreenScale / k;
-  const hWorld = fullCardHeight * cardScreenScale / k;
+  const wWorld = cardWidth * cardScreenScale / effectiveK(k);
+  const hWorld = fullCardHeight * cardScreenScale / effectiveK(k);
   const gap = Math.min(wWorld, hWorld) * 0.05;
   const minDx = wWorld + gap;
   const minDy = hWorld + gap;
@@ -214,11 +228,14 @@ export function updateHoverArtifacts() {
     return;
   }
 
-  const w = window.innerWidth, h = window.innerHeight, pad = 18;
+  const bounds = offscreenBounds();
   const { k, x: tx, y: ty } = state.transform;
   const onScreen = (n) => {
     const sx = tx + n.x * k, sy = ty + n.y * k;
-    return sx >= pad && sx <= w - pad && sy >= pad && sy <= h - pad;
+    return (
+      sx >= bounds.left && sx <= bounds.right &&
+      sy >= bounds.top && sy <= bounds.bottom
+    );
   };
   const layoutNeighbors = state.hoverNeighbors.filter((nb) => onScreen(nb.node));
   // Skip nodes the pinned chain is already drawing — avoids stacked duplicates.
@@ -381,55 +398,74 @@ export function onHoverLeave() {
 }
 
 // Returns the on-viewport intersection point of the segment from inside-point
-// (hx, hy) to outside-point (nx, ny). `pad` is an inset so the chip doesn't
-// sit exactly on the screen edge. Returns null if no valid intersection.
-function lineRectIntersection(hx, hy, nx, ny, w, h, pad) {
+// (hx, hy) to outside-point (nx, ny). `bounds` = {left, right, top, bottom}
+// gives the inset rectangle (so the chip doesn't sit exactly on the
+// screen edge). Top is bumped down by the header height so chips never
+// land underneath the fixed header. Returns null if no valid intersection.
+function lineRectIntersection(hx, hy, nx, ny, bounds) {
   const dx = nx - hx;
   const dy = ny - hy;
+  const { left, right, top, bottom } = bounds;
   const tValues = [];
   if (dx !== 0) {
-    tValues.push((pad - hx) / dx); // left edge
-    tValues.push((w - pad - hx) / dx); // right edge
+    tValues.push((left - hx) / dx);
+    tValues.push((right - hx) / dx);
   }
   if (dy !== 0) {
-    tValues.push((pad - hy) / dy); // top edge
-    tValues.push((h - pad - hy) / dy); // bottom edge
+    tValues.push((top - hy) / dy);
+    tValues.push((bottom - hy) / dy);
   }
   let bestT = Infinity;
   for (const t of tValues) {
     if (t <= 0 || t > 1) continue;
     const x = hx + t * dx;
     const y = hy + t * dy;
-    if (x < pad - 0.5 || x > w - pad + 0.5) continue;
-    if (y < pad - 0.5 || y > h - pad + 0.5) continue;
+    if (x < left - 0.5 || x > right + 0.5) continue;
+    if (y < top - 0.5 || y > bottom + 0.5) continue;
     if (t < bestT) bestT = t;
   }
   if (!isFinite(bestT)) return null;
   return { x: hx + bestT * dx, y: hy + bestT * dy };
 }
 
+// Inset rectangle used for both on-screen detection and chip placement.
+// Top inset includes the header height so chips that anchor to the top
+// edge sit below the header instead of being hidden behind it.
+function offscreenBounds() {
+  const pad = 18;
+  return {
+    left: pad,
+    right: window.innerWidth - pad,
+    top: (state.headerHeight || 0) + pad,
+    bottom: window.innerHeight - pad,
+  };
+}
+
 // Build a chip anchored to the screen edge where the line from (hx,hy) to
 // `node`'s screen position exits the viewport. Returns null when the node is
 // already on-screen or no exit point exists.
 function makeOffscreenChip(node, hx, hy, classes, onClick) {
-  const w = window.innerWidth;
-  const h = window.innerHeight;
-  const pad = 18;
+  const bounds = offscreenBounds();
   const { k, x: tx, y: ty } = state.transform;
   const nx = tx + node.x * k;
   const ny = ty + node.y * k;
-  if (nx >= pad && nx <= w - pad && ny >= pad && ny <= h - pad) return null;
-  const exit = lineRectIntersection(hx, hy, nx, ny, w, h, pad);
+  if (
+    nx >= bounds.left && nx <= bounds.right &&
+    ny >= bounds.top && ny <= bounds.bottom
+  ) {
+    return null;
+  }
+  const exit = lineRectIntersection(hx, hy, nx, ny, bounds);
   if (!exit) return null;
 
   // Anchor the chip to the inside of the screen edge so its label doesn't
   // extend past the viewport.
   let ax = -50, ay = -50;
   const eps = 1;
-  if (Math.abs(exit.x - pad) < eps) ax = 0;
-  else if (Math.abs(exit.x - (w - pad)) < eps) ax = -100;
-  if (Math.abs(exit.y - pad) < eps) ay = 0;
-  else if (Math.abs(exit.y - (h - pad)) < eps) ay = -100;
+  if (Math.abs(exit.x - bounds.left) < eps) ax = 0;
+  else if (Math.abs(exit.x - bounds.right) < eps) ax = -100;
+  if (Math.abs(exit.y - bounds.top) < eps) ay = 0;
+  else if (Math.abs(exit.y - bounds.bottom) < eps) ay = -100;
 
   const chip = document.createElement("button");
   chip.className = `offscreen-indicator ${classes}`;
@@ -580,11 +616,14 @@ export function updatePinnedArtifacts() {
   const root = state.nodesById[state.pinnedId];
   if (!root) return;
 
-  const w = window.innerWidth, h = window.innerHeight, pad = 18;
+  const bounds = offscreenBounds();
   const { k, x: tx, y: ty } = state.transform;
   const onScreen = (n) => {
     const sx = tx + n.x * k, sy = ty + n.y * k;
-    return sx >= pad && sx <= w - pad && sy >= pad && sy <= h - pad;
+    return (
+      sx >= bounds.left && sx <= bounds.right &&
+      sy >= bounds.top && sy <= bounds.bottom
+    );
   };
 
   // Both the root and the chain members get the same treatment: render as a
@@ -659,17 +698,17 @@ export function renderPinnedOffscreenIndicators() {
   const root = state.nodesById[state.pinnedId];
   if (!root) return;
 
-  const w = window.innerWidth;
-  const h = window.innerHeight;
-  const pad = 18;
+  const bounds = offscreenBounds();
   const { k, x: tx, y: ty } = state.transform;
   // Anchor on the root's screen position; fall back to the viewport center
-  // when the root itself has panned off-screen (so chips still resolve).
+  // (below the header) when the root itself has panned off-screen.
+  const rsx = tx + root.x * k;
+  const rsy = ty + root.y * k;
   const rootOnScreen =
-    tx + root.x * k >= pad && tx + root.x * k <= w - pad &&
-    ty + root.y * k >= pad && ty + root.y * k <= h - pad;
-  const hx = rootOnScreen ? tx + root.x * k : w / 2;
-  const hy = rootOnScreen ? ty + root.y * k : h / 2;
+    rsx >= bounds.left && rsx <= bounds.right &&
+    rsy >= bounds.top && rsy <= bounds.bottom;
+  const hx = rootOnScreen ? rsx : (bounds.left + bounds.right) / 2;
+  const hy = rootOnScreen ? rsy : (bounds.top + bounds.bottom) / 2;
 
   // Include the root in the chip set when it's off-screen — the user needs
   // a way to navigate back to it (and to unpin via its chip).

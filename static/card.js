@@ -11,6 +11,14 @@ export const cardWidth = 240;
 // changing the screen size doesn't reshape the world.
 export const cardScreenScale = 1.2;
 
+// Above this zoom level the card-scaler stops counter-scaling and the
+// card visibly grows on screen with k — gives a "magnify" reward past
+// the FULL-tier threshold (where the body text is already legible).
+// Below this, cards stay at a constant cardWidth * cardScreenScale.
+// Overlay layouts (hover/pin) also use this as the effective k cap so
+// overlap detection matches the visible card size.
+export const cardFixedZoom = 1.5;
+
 const MARGIN = 18;
 const MARGIN_IN = MARGIN - 2;                      // 16
 const HEADER_EXTRA = 4;

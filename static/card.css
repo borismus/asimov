@@ -199,6 +199,19 @@ footer {
   font-family: "DM Serif Display", serif;
 }
 
+/* While the card's <image> is fetching, swap the image-rect's white
+   placeholder fill for a parchment shimmer so the user sees an
+   "images loading" state instead of an empty white box. The class is
+   removed in card.js once the image fires its load (or error) event. */
+.card.loading .image-rect {
+  animation: card-image-loading 1.4s ease-in-out infinite;
+}
+
+@keyframes card-image-loading {
+  0%, 100% { fill: #ebe5cf; }
+  50% { fill: #d8d2bc; }
+}
+
 /* Counter-scale the card content so it renders at constant screen pixels even
    inside a zoom-transformed SVG (universe view sets --zoom on
    documentElement). Without --zoom the fallback scale=1 makes this a no-op,

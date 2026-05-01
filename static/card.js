@@ -94,8 +94,16 @@ export function renderMTGCard(card) {
     .attr("y", imageY)
     .attr("width", imageW)
     .attr("height", imageH)
-    .attr("href", (d) => `/static/images/entries-v2/${d.id}.jpg`)
-    .attr("preserveAspectRatio", "xMidYMid slice");
+    .attr("preserveAspectRatio", "xMidYMid slice")
+    .each(function () {
+      const card = this.closest("g.card");
+      if (!card) return;
+      card.classList.add("loading");
+      const done = () => card.classList.remove("loading");
+      this.addEventListener("load", done, { once: true });
+      this.addEventListener("error", done, { once: true });
+    })
+    .attr("href", (d) => `/static/images/entries-v2/${d.id}.jpg`);
 
   // Title (top-left)
   g.append("text")
@@ -308,11 +316,22 @@ export function renderFullCard(card, initialFold = 1) {
     .attr("width", imageW).attr("height", imageH)
     .attr("fill", "white").attr("stroke", "black");
 
+  // The <image> fetches asynchronously. Mark the outer card .loading
+  // until it resolves so card.css can shimmer the image-rect fill while
+  // the user waits — instead of staring at an empty white rectangle.
   g.append("image")
     .attr("x", imageX).attr("y", imageY)
     .attr("width", imageW).attr("height", imageH)
-    .attr("href", (d) => `/static/images/entries-v2/${d.id}.jpg`)
-    .attr("preserveAspectRatio", "xMidYMid slice");
+    .attr("preserveAspectRatio", "xMidYMid slice")
+    .each(function () {
+      const card = this.closest("g.card");
+      if (!card) return;
+      card.classList.add("loading");
+      const done = () => card.classList.remove("loading");
+      this.addEventListener("load", done, { once: true });
+      this.addEventListener("error", done, { once: true });
+    })
+    .attr("href", (d) => `/static/images/entries-v2/${d.id}.jpg`);
 
   g.append("text")
     .attr("x", marginIn).attr("y", 13).attr("font-size", 13)

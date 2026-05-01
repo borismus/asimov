@@ -1,7 +1,7 @@
 import { loadGraph, formatField, formatYear } from "./utils.js";
 import { cardWidth, fullCardHeight, renderFullCard } from "./card.js";
 import { searchHelper } from "./search.js";
-import { parsePathPin, pushPath } from "./routing.js";
+import { parsePathPin, pushPath, isLocalhost } from "./routing.js";
 
 
 const DECK_DEPTH = 4;
@@ -167,6 +167,7 @@ function parseHash() {
 }
 
 function writeHash() {
+  if (isLocalhost()) return;
   const params = new URLSearchParams();
   if (state.fieldFilter) params.set("field", state.fieldFilter);
   params.set("i", String(state.index));

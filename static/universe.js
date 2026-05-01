@@ -45,7 +45,7 @@ import {
   escapeHtml,
 } from "./overlays.js";
 import { searchHelper } from "./search.js";
-import { parsePathPin, pushPath } from "./routing.js";
+import { parsePathPin, pushPath, isLocalhost } from "./routing.js";
 
 const TIER_LABEL = 0;
 const TIER_IMG = 1;
@@ -248,10 +248,12 @@ function persistView() {
   saveViewTimeout = setTimeout(() => {
     saveViewTimeout = null;
     const hash = serializeViewHash();
-    try {
-      const target = window.location.pathname + (hash ? `#${hash}` : "");
-      history.replaceState(null, "", target);
-    } catch (e) {}
+    if (!isLocalhost()) {
+      try {
+        const target = window.location.pathname + (hash ? `#${hash}` : "");
+        history.replaceState(null, "", target);
+      } catch (e) {}
+    }
     try {
       const t = state.transform;
       if (t) {

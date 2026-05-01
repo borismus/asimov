@@ -1,5 +1,6 @@
 import { isMobile, loadGraph } from "./utils.js";
 import { cardWidth, fullCardHeight as cardHeight, renderCard, renderFullCard as renderMTGCard } from "./card.js";
+import { isLocalhost } from "./routing.js";
 import "./timeline.js";
 
 const cardPaddingX = 100;
@@ -601,7 +602,7 @@ export function changeFocusId(
     renderWithFocus(nextId);
   }
 
-  if (shouldPushState) {
+  if (shouldPushState && !isLocalhost()) {
     history.pushState({ id: nextId }, "", `/${nextId}`);
   }
 

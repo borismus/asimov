@@ -1,4 +1,4 @@
-import { loadGraph, formatYear } from "./utils.js";
+import { loadGraph, formatYear, isSpeculative } from "./utils.js";
 import {
   cardWidth,
   cardHeight,
@@ -194,6 +194,25 @@ const addArrow = (id, fill) =>
     .append("path").attr("d", "M0,0 L10,5 L0,10 Z").attr("fill", fill);
 addArrow("hover-arrow", "goldenrod");
 addArrow("pinned-arrow", "steelblue");
+
+// Diagonal pinstripe pattern for `kind-added` cards. Two 12-unit bands of
+// barely-off-white tints (cool blue + cool green) that alternate at 45°.
+// Pattern coords are in card-local userSpace so the bands stay at a
+// constant ~12px on screen (cards render at fixed screen size via the
+// card-scaler counter-scale). Tints are pale enough that body text still
+// reads at full contrast over them.
+const STRIPE_BLUE = "#eef3f9";  // near-white cool blue
+const STRIPE_GREEN = "#b8d4be"; // clearly-tinted sage
+const pinstripe = defs.append("pattern")
+  .attr("id", "pinstripe-added")
+  .attr("x", 0).attr("y", 0)
+  .attr("width", 24).attr("height", 24)
+  .attr("patternUnits", "userSpaceOnUse")
+  .attr("patternTransform", "rotate(45)");
+pinstripe.append("rect")
+  .attr("x", 0).attr("y", 0).attr("width", 12).attr("height", 24).attr("fill", STRIPE_BLUE);
+pinstripe.append("rect")
+  .attr("x", 12).attr("y", 0).attr("width", 12).attr("height", 24).attr("fill", STRIPE_GREEN);
 
 // Layer order matters: hover overlays paint over pinned, which paints over
 // baseline cards/labels/dots.
@@ -548,7 +567,9 @@ function centerOnNode(node, { animate = false } = {}) {
 function initialTransform() {
   const w = window.innerWidth;
   const h = window.innerHeight;
-  const { minX, minY, maxY } = state.bbox;
+  // Frame against the non-speculative bbox so first paint isn't dominated
+  // by speculative-future content extending the timeline.
+  const { minX, minY, maxY } = state.fitBbox || state.bbox;
   // Fit vertically (show all rows + the axis band); let horizontal overflow so
   // the user pans to explore the width.
   const TOP_PAD_VISUAL = 200; // matches world.js TOP_PAD; only used here for framing
@@ -696,7 +717,11 @@ function appendLabels(group, nodes) {
   const entered = sel
     .enter()
     .append("g")
-    .attr("class", "dag-label")
+    .attr("class", (d) => {
+      const parts = ["dag-label", `kind-${d.kind || "legacy"}`];
+      if (isSpeculative(d)) parts.push("is-speculative");
+      return parts.join(" ");
+    })
     .attr("transform", (d) => `translate(${d.x}, ${d.y + 12})`)
     .style("--label-css-width", (d) => `${d.titleWidthCss + 24}px`)
     .on("click", (event, d) => onPinClick(event, d))

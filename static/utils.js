@@ -33,6 +33,28 @@ const VALID_FIELDS = [
   "geography",
 ];
 
+// Card kinds. `legacy` (Asimov's corpus) and `added` (verified gap-fillers /
+// post-1993 entries that actually happened) are fixed; speculative future
+// cards use `scenario-<slug>` so each "cone of possibilities" has its own
+// kind. isSpeculative() is the catch-all predicate.
+const FIXED_KINDS = new Set(["legacy", "added"]);
+const seenUnknownKinds = new Set();
+
+export function normalizeKind(raw) {
+  const k = (raw || "").trim() || "legacy";
+  if (FIXED_KINDS.has(k) || k.startsWith("scenario-")) return k;
+  if (!seenUnknownKinds.has(k)) {
+    console.warn(`Unknown Kind value "${k}" — treating as legacy.`);
+    seenUnknownKinds.add(k);
+  }
+  return "legacy";
+}
+
+export const isSpeculative = (n) => n.kind && n.kind.startsWith("scenario-");
+
+export const scenarioOf = (n) =>
+  isSpeculative(n) ? n.kind.slice("scenario-".length) : null;
+
 export function validateData(nodes) {
   let isValid = true;
   // Check for duplicate IDs.
@@ -64,6 +86,17 @@ export function validateData(nodes) {
         );
         isValid = false;
       }
+    }
+  }
+
+  // Soft hint: a speculative card with a year already in the past is
+  // probably mislabeled and should be `added` (it actually happened).
+  const nowYear = new Date().getFullYear();
+  for (const node of nodes) {
+    if (isSpeculative(node) && node.year < nowYear) {
+      console.warn(
+        `Speculative node ${node.id} (${node.kind}) has year ${node.year} (in the past) — should it be 'added'?`
+      );
     }
   }
 
@@ -110,6 +143,7 @@ export async function loadGraph(tsvUrl) {
     location: row.Location,
     field: row.Field.toLowerCase() || "unknown",
     url: row.URL,
+    kind: normalizeKind(row.Kind),
   }));
 
   if (!validateData(nodes)) {

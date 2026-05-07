@@ -1,4 +1,10 @@
-import { formatField, formatYear } from "./utils.js";
+import { formatField, formatYear, isSpeculative } from "./utils.js";
+
+function cardClass(d) {
+  const parts = ["card", `field-${formatField(d.field)}`, `kind-${d.kind || "legacy"}`];
+  if (isSpeculative(d)) parts.push("is-speculative");
+  return parts.join(" ");
+}
 
 // Card geometry. The image area (not the outer container) is locked to 3:2
 // so the source images render uncropped. Image width spans the same band as
@@ -59,7 +65,7 @@ Is the description incorrect? Is the image missing? Are the dependencies weird? 
 export function renderMTGCard(card) {
   const outerG = card
     .append("g")
-    .attr("class", (d) => "card field-" + formatField(d.field));
+    .attr("class", cardClass);
 
   // Counter-scale wrapper: card.css sets `transform: scale(calc(1 / var(--zoom, 1)))`
   // so cards in the universe view (where --zoom is set on documentElement)
@@ -224,7 +230,7 @@ export function renderFullCard(card, initialFold = 1) {
 
   const outerG = card
     .append("g")
-    .attr("class", (d) => "card field-" + formatField(d.field));
+    .attr("class", cardClass);
 
   const scaler = outerG.append("g").attr("class", "card-scaler");
   const g = scaler.append("g").attr("class", "card-inner");

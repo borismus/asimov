@@ -2,7 +2,7 @@
 // viewport culling. Shares state + a few d3 selections with universe.js, set
 // once at boot via initWorld().
 
-import { formatField, formatYear } from "./utils.js";
+import { formatField, formatYear, isSpeculative } from "./utils.js";
 import { cardWidth, cardHeight } from "./card.js";
 
 const KNOWN_FIELDS = new Set([
@@ -90,6 +90,11 @@ export function layout() {
   }
 
   let minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
+  // Parallel non-speculative bbox so the initial camera fit isn't dominated
+  // by the speculative-future tail. Pan/zoom can still reach speculative
+  // content because state.bbox (the constraint extent) covers everything.
+  let fminX = Infinity, fmaxX = -Infinity, fminY = Infinity, fmaxY = -Infinity;
+  let fitCount = 0;
   for (const b of buckets) {
     const centerX = xForBucket(b.index);
     for (let r = 0; r < b.nodes.length; r++) {
@@ -103,11 +108,21 @@ export function layout() {
       if (n.x > maxX) maxX = n.x;
       if (n.y < minY) minY = n.y;
       if (n.y > maxY) maxY = n.y;
+      if (!isSpeculative(n)) {
+        if (n.x < fminX) fminX = n.x;
+        if (n.x > fmaxX) fmaxX = n.x;
+        if (n.y < fminY) fminY = n.y;
+        if (n.y > fmaxY) fmaxY = n.y;
+        fitCount++;
+      }
     }
   }
 
   state.buckets = buckets;
   state.bbox = { minX, maxX, minY, maxY };
+  state.fitBbox = fitCount
+    ? { minX: fminX, maxX: fmaxX, minY: fminY, maxY: fmaxY }
+    : state.bbox;
   state.worldWidth = LEFT_PAD + NUM_COLS * COL_WIDTH + LEFT_PAD;
   state.worldHeight =
     TOP_PAD + Math.max(...buckets.map((b) => b.nodes.length)) * ROW_STRIDE + 120;
@@ -236,7 +251,11 @@ export function renderDots() {
   dots
     .enter()
     .append("circle")
-    .attr("class", (d) => `dag-dot field-${d.fieldKey}`)
+    .attr("class", (d) => {
+      const parts = ["dag-dot", `field-${d.fieldKey}`, `kind-${d.kind || "legacy"}`];
+      if (isSpeculative(d)) parts.push("is-speculative");
+      return parts.join(" ");
+    })
     .attr("data-id", (d) => d.id)
     .attr("cx", (d) => d.x)
     .attr("cy", (d) => d.y)

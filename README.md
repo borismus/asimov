@@ -9,6 +9,30 @@ a [GH issue][issue].
 
 If you have questions, please [email Boris][email]
 
+## Editing the data
+
+The invention data lives in a [Google Sheet][sheet], one tab per kind:
+
+- `Asimov Prehistory to 1993` — the legacy corpus from Asimov's book.
+- `Boris additions` — gap-fillers and post-1993 entries that actually happened.
+- `Speculative: <name>` — one tab per future scenario (a "cone of possibilities").
+
+Each tab has the same columns (`ID, Year, Title, Description, Inventor, Location,
+Dependencies, Field, URL`). Tabs are mapped to a `Kind` value by `TAB_KIND_MAP`
+in [`scripts/fetch-tsv.py`](scripts/fetch-tsv.py); legacy and added are fixed,
+each speculative tab is `scenario-<slug>`.
+
+To pull edits from the sheet to the repo:
+
+```sh
+uv run scripts/fetch-tsv.py
+```
+
+This rewrites `static/asimov.tsv` with a `Kind` column derived from the source
+tab. `deploy.sh` runs this automatically before generating the site.
+
+[sheet]: https://docs.google.com/spreadsheets/d/1hDNXas7DzwglB95HV2_2u1utWAwBZR2hQHlMPz-fj5A/edit
+
 [demo]: https://borismus.github.io/asimov/web/cross-shape/#steel
 [blog]: https://smus.com/visual-chronology-science-discovery-v2/
 [book]: https://drive.google.com/file/d/190RDAxrUzu5m0d_zxQi98euIguBDb0qf/view?usp=sharing

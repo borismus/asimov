@@ -282,3 +282,36 @@ body.searching #search-results:not(:empty) { display: flex; }
   box-shadow: 0 2px 8px rgba(218, 165, 32, 0.35);
 }
 
+/* Card kinds. legacy = no extra rules (default look). added = thin amber
+   accent on the card border / dot stroke — visible on close inspection
+   without competing with the existing chrome. is-speculative is the
+   catch-all class for any kind-scenario-<slug>: dashed border + italic
+   title, so the reader sees at a glance "this is a thought experiment."
+   Per-scenario differentiation can later target .kind-scenario-<slug>
+   directly without touching the shared rule. */
+g.card.kind-added rect.container {
+  fill: url(#pinstripe-added);
+}
+.dag-dot.kind-added {
+  stroke: #c89b3c;
+  stroke-width: calc(2px / var(--zoom));
+}
+
+g.card.is-speculative rect.container {
+  stroke: #6b6b6b;
+  stroke-width: 1.5;
+  stroke-dasharray: 6 3;
+}
+g.card.is-speculative text.title {
+  font-style: italic;
+}
+.dag-dot.is-speculative {
+  fill: white;
+  stroke: #6b6b6b;
+  stroke-width: calc(2px / var(--zoom));
+  stroke-dasharray: calc(2px / var(--zoom)) calc(2px / var(--zoom));
+}
+.dag-label.is-speculative .dag-label-text {
+  font-style: italic;
+}
+

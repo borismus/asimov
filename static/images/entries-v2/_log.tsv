@@ -1608,3 +1608,12 @@ ts	id	era	status	prompt_hash
 1777566348	test-tube-baby	modern	ok:via=openai:model=gpt-image-2:n=1	214cb34cd2ca	0.0479
 1777566349	human-evolution	enlightenment_industrial	error:BadRequestError	1f0ad57e1408	0.0000
 1777566531	human-evolution	enlightenment_industrial	ok:via=openai:model=gpt-image-2:n=1	2f948c8ad0f8	0.0479
+1778363997	high-backed-saddle	medieval	ok:via=openai:model=gpt-image-2:n=1	84175a62294e	0.0479
+1778363998	bridle	ancient	ok:via=openai:model=gpt-image-2:n=1	cc7cc1dfecb7	0.0479
+1778363998	moldboard-plow	medieval	ok:via=openai:model=gpt-image-2:n=1	9df943d3ce1c	0.0479
+1778363999	standing-army	renaissance	ok:via=openai:model=gpt-image-2:n=1	c59cf82837a6	0.0479
+1778364034	wooden-stirrup	ancient	ok:via=openai:model=gpt-image-2:n=1	771d9ba87b1d	0.0479
+1778364040	saddle	ancient	ok:via=openai:model=gpt-image-2:n=1	87cd8cc1f638	0.0479
+1778364043	pike	medieval	ok:via=openai:model=gpt-image-2:n=1	cea1fa9ddc37	0.0479
+1778364050	chariot	ancient	ok:via=openai:model=gpt-image-2:n=1	ca818532c9e2	0.0479
+1778364105	couched-lance	medieval	ok:via=openai:model=gpt-image-2:n=1	9d9a46a7903d	0.0479

@@ -1,0 +1,245 @@
+/* Stories overlay. The visual hierarchy when a story is active:
+   - everything baseline dims so the story stands out
+   - story-member cards/dots/labels keep full opacity + a rose drop-shadow
+   - a rose ribbon path connects the steps in narrative order
+   - a banner below the header carries title, blurb, current step's note, refs,
+     and stepper controls (‹ › × Esc) */
+
+/* ---- spotlight: baseline content dims when has-story is set ---- */
+body.has-story #links-canvas { opacity: 0.18; }
+body.has-story .labels .dag-label,
+body.has-story .sticky-labels .dag-label { opacity: 0.35; }
+body.has-story g.cards > g.card:not(.story-member) { opacity: 0.25; }
+body.has-story g.dots circle.dag-dot:not(.story-member) { opacity: 0.4; }
+/* Hide the baseline copy of story members — gStoryCards renders a full
+   card on top, anchored to the same node coords. Without this you'd see
+   the folded baseline card peeking out from under the full story card. */
+body.has-story g.cards > g.card.story-member { opacity: 0; pointer-events: none; }
+/* Hide the dot too — the story card sits on top of it. */
+body.has-story g.dots circle.dag-dot.story-member { opacity: 0; }
+/* Story-card layers are fully interactive (click to pin, hover to peek).
+   The current step lives in gStoryCurrentCard, painted ABOVE the edge
+   stickies so it stays foregrounded even when stickies cluster nearby. */
+.story-cards,
+.story-current-card { pointer-events: auto; }
+
+/* ---- ribbon + step markers (live in gStoryTrace) ---- */
+.story-trace-ribbon {
+  fill: none;
+  stroke: #b8336a;
+  stroke-width: calc(4px / var(--zoom));
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  filter: drop-shadow(0 0 6px rgba(184, 51, 106, 0.45));
+  pointer-events: none;
+}
+
+.story-step circle {
+  fill: white;
+  stroke: #b8336a;
+  stroke-width: calc(2.5px / var(--zoom));
+  /* radius is set by JS via style so it's computed once at layout time */
+}
+.story-step text {
+  fill: #b8336a;
+  font-family: "DM Serif Display", serif;
+  font-weight: bold;
+  text-anchor: middle;
+  dominant-baseline: central;
+  pointer-events: none;
+}
+
+/* ---- story-member highlight + active-step emphasis ---- */
+/* Story-member cards get a thin rose border (visual cue that they're part
+   of the active story) but no drop-shadow. The CURRENT card pops out with
+   a thick rose border and a strong rose glow — at a glance the user
+   should never have to ask which card is "active". */
+g.card.story-member rect.container {
+  stroke: #b8336a;
+  stroke-width: 1.5;
+}
+g.card.story-member.story-current rect.container {
+  stroke: #b8336a;
+  stroke-width: 4;
+}
+g.card.story-member.story-current {
+  filter:
+    drop-shadow(0 0 14px rgba(184, 51, 106, 0.95))
+    drop-shadow(0 0 32px rgba(184, 51, 106, 0.55));
+}
+.dag-dot.story-member {
+  fill: #b8336a;
+  stroke: #b8336a;
+  stroke-width: calc(2px / var(--zoom));
+}
+.dag-label.story-member .dag-label-text {
+  fill: #b8336a;
+  font-weight: bold;
+}
+
+/* ---- header button chrome ---- */
+#action-stories { /* default site-action chrome takes care of it */ }
+
+/* ---- stories menu (dropdown listing all stories) ---- */
+#stories-menu {
+  position: fixed;
+  top: 56px;
+  right: 16px;
+  z-index: 11;
+  min-width: 240px;
+  max-width: 360px;
+  padding: 6px;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  display: none;
+  flex-direction: column;
+  gap: 2px;
+}
+#stories-menu[data-open="true"] { display: flex; }
+#stories-menu .story-link {
+  appearance: none;
+  background: white;
+  border: none;
+  padding: 8px 10px;
+  text-align: left;
+  border-radius: 6px;
+  font: 14px "DM Serif Display", serif;
+  color: #111;
+  cursor: pointer;
+}
+#stories-menu .story-link:hover {
+  background: #fdf3f7;
+  color: #b8336a;
+}
+#stories-menu .story-link .story-link-blurb {
+  display: block;
+  font-size: 11px;
+  color: #777;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  margin-top: 2px;
+}
+#stories-menu .empty {
+  padding: 10px;
+  font: 12px -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  color: #777;
+}
+
+/* ---- story banner (shown only while body.has-story) ---- */
+#story-banner {
+  position: fixed;
+  top: var(--header-h, 64px);
+  left: 16px;
+  right: 16px;
+  z-index: 9;
+  padding: 12px 14px;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid #b8336a;
+  border-top: 3px solid #b8336a;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  display: none;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+body.has-story #story-banner { display: flex; }
+
+#story-banner .story-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+#story-banner .story-title {
+  flex: 1;
+  margin: 0;
+  font: 18px/1.2 "DM Serif Display", serif;
+  color: #111;
+}
+#story-banner .story-close {
+  appearance: none;
+  background: transparent;
+  border: none;
+  padding: 0 4px;
+  font: 22px/1 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  color: #777;
+  cursor: pointer;
+}
+#story-banner .story-close:hover { color: #b8336a; }
+
+#story-banner .story-blurb {
+  margin: 0;
+  font: 13px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  color: #444;
+}
+
+/* Sticky notes — both kinds (card stickies = yellow paper, edge stickies =
+   pink paper) live in the gStoryStickies layer. The layout solver in
+   stories.js positions them in screen-pixel space to avoid overlapping
+   each other and the story cards. The .sticky-scaler counters world zoom
+   so foreignObject HTML renders at constant screen size at any zoom.
+   Both wrap multiline because the content is HTML inside foreignObject. */
+.story-sticky {
+  pointer-events: none;
+}
+.story-sticky .sticky-scaler {
+  transform: scale(calc(1 / var(--zoom, 1)));
+  transform-origin: 0 0;
+  transform-box: fill-box;
+}
+.sticky-note {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 8px 10px;
+  font: 12px/1.35 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  color: #2a1820;
+  border-radius: 2px;
+  filter: drop-shadow(1px 2px 3px rgba(60, 40, 0, 0.28));
+  overflow: hidden;
+}
+.sticky-note.card {
+  background: #fff7b2;
+  border-left: 3px solid #c4a35a;
+}
+.sticky-note.edge {
+  background: #ffd6e3;
+  border-left: 3px solid #b8336a;
+}
+
+/* On-screen step navigation. Two fixed-position chevron buttons at the
+   left and right viewport edges, vertically centered. Visible only while
+   a story is active. Mirror the keyboard ←/→ behavior. */
+.story-nav-btn {
+  position: fixed;
+  top: 50%;
+  z-index: 9;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 64px;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid #b8336a;
+  border-radius: 6px;
+  color: #b8336a;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  transform: translateY(-50%);
+  transition: background 120ms, color 120ms;
+}
+body.has-story .story-nav-btn { display: flex; }
+.story-nav-btn:hover:not(:disabled) {
+  background: #b8336a;
+  color: white;
+}
+.story-nav-btn:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+#story-prev-btn { left: 16px; }
+#story-next-btn { right: 16px; }
+

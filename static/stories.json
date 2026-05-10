@@ -1,0 +1,73 @@
+[
+  {
+    "slug": "horse-cavalry",
+    "title": "Rise and fall of heavy cavalry",
+    "blurb": "From a tame horse pulling a chariot to the salaried musketeer that retired the knight — 4000 years of military dominance, none of it planned.",
+    "steps": [
+      {
+        "id": "animal-dom",
+        "edge_note": null
+      },
+      {
+        "id": "horse",
+        "edge_note": "The first 8000 years of domestication left horses alone. Bigger, faster, more skittish than goats — they're hard."
+      },
+      {
+        "id": "chariot",
+        "edge_note": "Once domesticated, horses go to war immediately — as a draft animal pulling a fighting platform, not as a mount."
+      },
+      {
+        "id": "bridle",
+        "edge_note": "Charioteers had control via reins braced against the yoke. Real riding needs the bit working alone."
+      },
+      {
+        "id": "saddle",
+        "edge_note": "A bridle without a saddle gets you onto the horse; both together let you stay there long enough to fight."
+      },
+      {
+        "id": "wooden-stirrup",
+        "edge_note": "Once seated, the rider wants leverage. Wooden stirrups bring the foot into play — but they break."
+      },
+      {
+        "id": "metal-stirrup",
+        "edge_note": "Iron makes the same loop survive a lance impact. The Indian idea propagates west; the package finally works."
+      },
+      {
+        "id": "turnplow",
+        "edge_note": "Pause on the cavalry rig. The society that will field it is being built in parallel — the agricultural revolution that pays for armor starts here."
+      },
+      {
+        "id": "high-backed-saddle",
+        "edge_note": "Back to the cavalry rig. Stirrups give purchase but don't stop the rider getting punched out the back. The cantle is the missing piece."
+      },
+      {
+        "id": "iron-horseshoes",
+        "edge_note": "The rig is now stable. Now it has to last — hooves wear out fast on stone roads."
+      },
+      {
+        "id": "couched-lance",
+        "edge_note": "Stirrups don't just stabilize — they let you transfer all of horse + rider's momentum into a point. Knights are the result."
+      },
+      {
+        "id": "horse-collar",
+        "edge_note": "The knight exists. Now the economy that sustains him: the collar makes the turnplow's load economical and turns Northern European clay into the breadbasket of the High Middle Ages."
+      },
+      {
+        "id": "longbow",
+        "edge_note": "Three centuries of cavalry dominance. Then the cracks: a Welsh peasant with a six-foot bow puts an arrow through plate at 200 yards."
+      },
+      {
+        "id": "pike",
+        "edge_note": "Longbows kill from range. Pikes kill at contact — and don't need years of training. Either way the knight loses his monopoly."
+      },
+      {
+        "id": "arquebus",
+        "edge_note": "Gunpowder enters the package. Pike+shot formations require neither nobility nor decades of horsemanship."
+      },
+      {
+        "id": "standing-army",
+        "edge_note": "Pike-and-shot needs trained, paid, full-time soldiers. The salaried army replaces the feudal levy — and with it, the knight's role in the social order."
+      }
+    ]
+  }
+]

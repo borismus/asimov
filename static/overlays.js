@@ -304,6 +304,9 @@ function scheduleHoverExpand(delayMs = HOVER_EXPAND_DELAY_MS) {
 }
 
 export function onHoverEnter(event, d) {
+  // While a story is active, the hover overlay (goldenrod neighbors + chips)
+  // competes with the story's narrative focus — disable it entirely.
+  if (state.storyId) return;
   // Cancel any pending hover-leave so a quick traversal from a small dot to the
   // overlapping hover card doesn't tear everything down.
   if (hoverLeaveTimeout) {

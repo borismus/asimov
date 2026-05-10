@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="/static/style.css">
   <link rel="stylesheet" href="/static/card.css">
   <link rel="stylesheet" href="/static/universe.css" media="(min-width: 721px)">
+  <link rel="stylesheet" href="/static/stories.css" media="(min-width: 721px)">
   <link rel="stylesheet" href="/static/mobile.css" media="(max-width: 720px)">
   <link rel="icon" type="image/x-icon" href="/static/images/icons/favicon.ico">
 </head>
@@ -19,6 +20,11 @@
         <p class="site-subtitle">A visual chronology of Asimov's ~1500 scientific inventions and discoveries.</p>
       </div>
       <div class="site-actions">
+        <button id="action-stories" class="site-action" type="button" title="Stories" aria-label="Stories">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 19.5V5a2 2 0 0 1 2-2h12v18l-6-3-6 3z"/>
+          </svg>
+        </button>
         <button id="action-random" class="site-action" type="button" title="Random card" aria-label="Random card">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <rect x="3" y="3" width="18" height="18" rx="3"/>
@@ -47,6 +53,18 @@
   <div id="offscreen-indicators"></div>
   <input id="search-input" type="search" placeholder="Search…" autocomplete="off" spellcheck="false" />
   <div id="search-results"></div>
+  <div id="stories-menu" data-open="false"></div>
+  <div id="story-banner"></div>
+  <button id="story-prev-btn" class="story-nav-btn" type="button" aria-label="Previous step">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="15 18 9 12 15 6"/>
+    </svg>
+  </button>
+  <button id="story-next-btn" class="story-nav-btn" type="button" aria-label="Next step">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="9 18 15 12 9 6"/>
+    </svg>
+  </button>
 
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script type="module">

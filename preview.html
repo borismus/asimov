@@ -225,6 +225,7 @@
   <header class="bar">
     <h1>Invention images · old vs new</h1>
     <div class="pills" id="era-pills"></div>
+    <div class="pills" id="pack-pills"></div>
     <select id="status">
       <option value="all">all</option>
       <option value="generated">generated</option>
@@ -267,6 +268,20 @@ const ERAS = [
   ['modern', Infinity],
 ];
 
+// Friendly labels for the Kind column. Anything not in this map (e.g.
+// scenario-fusion) falls through to a humanize() helper.
+const PACK_LABELS = {
+  legacy: 'Asimov',
+  added: 'Boris additions',
+};
+function packLabel(kind) {
+  if (PACK_LABELS[kind]) return PACK_LABELS[kind];
+  if (kind && kind.startsWith('scenario-')) {
+    return 'scenario · ' + kind.slice('scenario-'.length).replace(/-/g, ' ');
+  }
+  return kind || 'unknown';
+}
+
 const state = {
   inventions: [],
   generated: new Set(),
@@ -274,6 +289,7 @@ const state = {
   decisions: loadDecisions(),
   filters: {
     eras: new Set(),
+    packs: new Set(),
     status: 'all',
     sort: 'chrono',
   },
@@ -331,6 +347,7 @@ async function loadAll() {
         inventor: r.Inventor,
         location: r.Location,
         field: r.Field,
+        kind: (r.Kind || 'legacy').trim() || 'legacy',
         era: year == null ? 'modern' : classifyEra(year),
       };
     });
@@ -351,6 +368,9 @@ function applyFilters(list) {
   let out = list;
   if (state.filters.eras.size > 0) {
     out = out.filter(i => state.filters.eras.has(i.era));
+  }
+  if (state.filters.packs.size > 0) {
+    out = out.filter(i => state.filters.packs.has(i.kind || 'legacy'));
   }
   switch (state.filters.status) {
     case 'generated':   out = out.filter(i => state.generated.has(i.id)); break;
@@ -381,6 +401,31 @@ function renderEraPills() {
     el.onclick = () => {
       if (state.filters.eras.has(key)) state.filters.eras.delete(key);
       else state.filters.eras.add(key);
+      el.classList.toggle('active');
+      renderList();
+    };
+    wrap.appendChild(el);
+  }
+}
+
+// Pack pills are derived from the unique kinds present in the data, so new
+// scenario tabs in the sheet show up here automatically once they're in
+// the merged TSV. Order: legacy first, then added, then scenarios sorted.
+function renderPackPills() {
+  const wrap = document.getElementById('pack-pills');
+  wrap.innerHTML = '';
+  const kinds = new Set(state.inventions.map(i => i.kind || 'legacy'));
+  const ordered = [...kinds].sort((a, b) => {
+    const rank = (k) => k === 'legacy' ? 0 : k === 'added' ? 1 : 2;
+    return rank(a) - rank(b) || a.localeCompare(b);
+  });
+  for (const kind of ordered) {
+    const el = document.createElement('span');
+    el.className = 'pill';
+    el.textContent = packLabel(kind);
+    el.onclick = () => {
+      if (state.filters.packs.has(kind)) state.filters.packs.delete(kind);
+      else state.filters.packs.add(kind);
       el.classList.toggle('active');
       renderList();
     };
@@ -617,6 +662,7 @@ async function init() {
   document.getElementById('export').onclick = exportRedoList;
 
   await loadAll();
+  renderPackPills();
   renderList();
 }
 

@@ -45,10 +45,65 @@ TAB_KIND_MAP = {
 STORY_TAB_PREFIX = "Story: "
 STORY_TABS = [
     "Story: Horse cavalry",
+    "Story: Steam diffusion",
 ]
 
 OUT = Path(__file__).resolve().parent.parent / "static" / "asimov.tsv"
 STORIES_OUT = Path(__file__).resolve().parent.parent / "static" / "stories.json"
+
+
+def parse_year_sort_key(raw):
+    """Map sheet Year string to int for timeline ordering (lower = earlier).
+
+    Corpus uses ``\\d+ BCE`` or CE ``\\d+`` only. Returns None if unparsable."""
+    y = (raw or "").strip()
+    if not y:
+        return None
+    m = re.match(r"^(\d+)\s*BCE\s*$", y, re.I)
+    if m:
+        return -int(m.group(1))
+    m = re.match(r"^(\d+)\s*$", y)
+    if m:
+        return int(m.group(1))
+    return None
+
+
+def warn_non_chronological_stories(stories, rows_by_id):
+    """Emit stderr warnings when a story's step order goes backward in time.
+
+    Cards are laid on the graph by calendar year; non-monotonic story order
+    makes the rose ribbon run backward along the x axis."""
+    for story in stories:
+        slug = story.get("slug", "")
+        prev_key = None
+        prev_id = None
+        prev_raw = None
+        for step in story.get("steps") or []:
+            sid = (step.get("id") or "").strip()
+            if not sid:
+                continue
+            row = rows_by_id.get(sid)
+            if row is None:
+                prev_key = prev_id = prev_raw = None
+                continue
+            raw = (row.get("Year") or "").strip()
+            key = parse_year_sort_key(raw)
+            if key is None:
+                print(
+                    f"    WARNING story {slug!r}: step {sid!r} has unparsable "
+                    f"Year {raw!r} — skipping chronology check for this segment",
+                    file=sys.stderr,
+                )
+                prev_key = prev_id = prev_raw = None
+                continue
+            if prev_key is not None and key < prev_key:
+                print(
+                    f"    WARNING story {slug!r}: non-chronological step order — "
+                    f"after {prev_id!r} (Year {prev_raw!r}) comes {sid!r} "
+                    f"(Year {raw!r}); ribbon will run backward in time on the graph",
+                    file=sys.stderr,
+                )
+            prev_key, prev_id, prev_raw = key, sid, raw
 
 
 def slug_from_tab(name):
@@ -223,6 +278,13 @@ def main():
             # tab's first row; very unlikely. Print and accept.
             pass
         stories.append(story)
+
+    rows_by_id = {
+        (r.get("ID") or "").strip(): r
+        for r in rows_out
+        if (r.get("ID") or "").strip()
+    }
+    warn_non_chronological_stories(stories, rows_by_id)
 
     STORIES_OUT.write_text(
         json.dumps(stories, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"

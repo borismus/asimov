@@ -9,64 +9,131 @@
         "edge_note": null
       },
       {
-        "id": "horse",
-        "edge_note": "The first 8000 years of domestication left horses alone. Bigger, faster, more skittish than goats — they're hard."
+        "id": "cart",
+        "edge_note": "Domestication turned occasional drags into daily logistics; sledges exhausted people and animals until rolling bearings amortized the load."
       },
       {
-        "id": "chariot",
-        "edge_note": "Once domesticated, horses go to war immediately — as a draft animal pulling a fighting platform, not as a mount."
+        "id": "horse",
+        "edge_note": "The cart already posed the question “what pulls this?” Horses were drafted into that existing vehicle economy—chariot warfare is cart-tech meeting a faster animal, not the invention of mounted combat."
       },
       {
         "id": "bridle",
-        "edge_note": "Charioteers had control via reins braced against the yoke. Real riding needs the bit working alone."
+        "edge_note": "Charioteers could brace reins on the yoke; a solo rider has no third hand, so steering has to migrate to the mouth or control falls apart at speed."
       },
       {
         "id": "saddle",
-        "edge_note": "A bridle without a saddle gets you onto the horse; both together let you stay there long enough to fight."
+        "edge_note": "Mouth control answers direction; it does not absorb fighting shocks or spare the spine—without a weight spreader the mount fails before the rider does."
       },
       {
         "id": "wooden-stirrup",
-        "edge_note": "Once seated, the rider wants leverage. Wooden stirrups bring the foot into play — but they break."
+        "edge_note": "A seat alone leaves the torso swimming sideways; hanging footholds buy the first real lateral purchase for archery—at the price of splintering under a melee hit."
       },
       {
         "id": "metal-stirrup",
-        "edge_note": "Iron makes the same loop survive a lance impact. The Indian idea propagates west; the package finally works."
+        "edge_note": "The geometry was already right; wood was the weak link. Metallurgy is what lets the same loop survive the impact that proved leather and timber could not."
       },
       {
         "id": "turnplow",
-        "edge_note": "Pause on the cavalry rig. The society that will field it is being built in parallel — the agricultural revolution that pays for armor starts here."
+        "edge_note": "This is not a detour: knight-weight mounts come from draft breeding, and draft breeding followed plow teams that could work northern clay—agrarian horsepower funds cavalry horsepower."
       },
       {
         "id": "high-backed-saddle",
-        "edge_note": "Back to the cavalry rig. Stirrups give purchase but don't stop the rider getting punched out the back. The cantle is the missing piece."
+        "edge_note": "Stirrups fix side-to-side; a couched lance still punches you out the back—so the next failure mode is longitudinal recoil, not leverage."
       },
       {
         "id": "iron-horseshoes",
-        "edge_note": "The rig is now stable. Now it has to last — hooves wear out fast on stone roads."
+        "edge_note": "Biomechanics solved, the bottleneck shifts to infrastructure: stone roads and campaigns grind hooves faster than unshod animals can sustain repeated charges."
       },
       {
         "id": "couched-lance",
-        "edge_note": "Stirrups don't just stabilize — they let you transfer all of horse + rider's momentum into a point. Knights are the result."
+        "edge_note": "Shod, braced, cantled riders can finally spend the horse’s momentum budget on one pointed impulse instead of husbanding the animal’s feet."
       },
       {
         "id": "horse-collar",
-        "edge_note": "The knight exists. Now the economy that sustains him: the collar makes the turnplow's load economical and turns Northern European clay into the breadbasket of the High Middle Ages."
+        "edge_note": "Shock cavalry is a calorie business; the collar is the farm-side multiplier that turns northern clay into surplus grain—and surplus grain into estates that can feed destriers."
       },
       {
         "id": "longbow",
-        "edge_note": "Three centuries of cavalry dominance. Then the cracks: a Welsh peasant with a six-foot bow puts an arrow through plate at 200 yards."
+        "edge_note": "The same centuries that perfected heavy cavalry also produced a weapon that ignores the contact zone entirely: plate and horse do not argue with yardage."
       },
       {
         "id": "pike",
-        "edge_note": "Longbows kill from range. Pikes kill at contact — and don't need years of training. Either way the knight loses his monopoly."
+        "edge_note": "If the knight’s advantage is reach at the gallop, answer with a longer static reach and cheap training—mass closes the distance economics against horse estates."
       },
       {
         "id": "arquebus",
-        "edge_note": "Gunpowder enters the package. Pike+shot formations require neither nobility nor decades of horsemanship."
+        "edge_note": "Close-order infantry was already normalized; chemical energy removes the decade-per-man skill curve and collapses the nobility monopoly on decisive shock."
       },
       {
         "id": "standing-army",
-        "edge_note": "Pike-and-shot needs trained, paid, full-time soldiers. The salaried army replaces the feudal levy — and with it, the knight's role in the social order."
+        "edge_note": "Pike-and-shot is a payroll and drill problem, not a seasonal vassal obligation—the social contract that fed knights yields to the contract that feeds volleys."
+      }
+    ]
+  },
+  {
+    "slug": "steam-diffusion",
+    "title": "Steam diffusion over seventeen centuries",
+    "blurb": "From Hero’s spinning toy to Watt’s machines — almost two millennia where the physics of gas and vacuum had to become thinkable, demonstrable, and paid for before “railroad time.”",
+    "steps": [
+      {
+        "id": "basic-steam-engine",
+        "edge_note": null
+      },
+      {
+        "id": "coal-mining",
+        "edge_note": "Hero proved sealed vapor can spin; coal is the long fuse—dense fuel stockpiled centuries before anyone earns a living optimizing a cylinder against it."
+      },
+      {
+        "id": "hydrostatics",
+        "edge_note": "Pits go where wood no longer reaches; lift limits turn into daily accounts—pressure as stacked geometry in liquids is the vocabulary later borrowed for air."
+      },
+      {
+        "id": "gas",
+        "edge_note": "Once water columns behave predictably, the sloppier lumping of every vapor as generic “air” becomes the next debt—distinct gases make experiments composable."
+      },
+      {
+        "id": "barometer",
+        "edge_note": "Classification meets a paying puzzle: lift pumps stalled at ~33 ft, so atmospheric weight stops being philosophy and becomes a number on a ruler."
+      },
+      {
+        "id": "air-pump",
+        "edge_note": "Torricelli measured the void; Guericke’s seals make it something you can manufacture, break, and repair—repeatable craft instead of one-off glassware luck."
+      },
+      {
+        "id": "air-pressure",
+        "edge_note": "Bench curiosity scales to theater: when teams of horses can’t pull hemispheres apart, sponsors—not just natural philosophers—see that vacuum does macroscopic work."
+      },
+      {
+        "id": "boyles-law",
+        "edge_note": "Public proofs of air’s strength invite the boring next step: squeeze the spring in a controlled way until volume and pressure trade off as a design rule."
+      },
+      {
+        "id": "pressure-cooker",
+        "edge_note": "Boyle hands designers a compressible rule; Papin bolts it onto Hero’s sealed-kettle intuition—the first sealed steam that earns dinner, not tenure."
+      },
+      {
+        "id": "miners-friend",
+        "edge_note": "Credible small boilers meet the customer who cannot refuse a bad pump—flooded English collieries pay for Savery’s violent shortcut because the fuel base is already coal."
+      },
+      {
+        "id": "gas-volume-temperature",
+        "edge_note": "A year later, still burning coal to argue with gravity, Amontons adds temperature to the gas-law family—another scalar for anyone who will soon count duty per bushel."
+      },
+      {
+        "id": "newcomen-steam-engine",
+        "edge_note": "Amontons finishes the ‘gas plus heat’ picture on the bench; the paying problem is still the flooded seam—Newcomen trades Savery’s high-pressure terror for a slower beat collieries will actually run underground."
+      },
+      {
+        "id": "latent-heat",
+        "edge_note": "Terrible duty per bushel makes “missing” heat in phase changes economically visible—Black gives accountants a place for heat that does not register on a thermometer yet."
+      },
+      {
+        "id": "steam-engine",
+        "edge_note": "Watt’s repair assignment applies that bookkeeping to geometry: always-hot versus always-cold space is how latent heat stops being wasted motion in the cylinder."
+      },
+      {
+        "id": "improved-steam-engine",
+        "edge_note": "Rotary output and steadier pressure fold the toy line into mills—the same fire that once entertained courts now signs factory ledgers."
       }
     ]
   }

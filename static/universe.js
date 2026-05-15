@@ -855,9 +855,9 @@ function renderSearchHighlights() {
     .classed("search-match", (n) => !!matchSet && matchSet.has(n.id));
 }
 
-// Pills under the search bar for every off-screen match. Click pans to the
-// node. Caps at MAX_SEARCH_PILLS with a "+N more" tail so a broad query
-// doesn't paint hundreds of chips.
+// Pills under the search bar for every off-screen match. Click pins and
+// centers the node. Caps at MAX_SEARCH_PILLS with a "+N more" tail so a
+// broad query doesn't paint hundreds of chips.
 function renderSearchOffscreenIndicators() {
   searchResultsContainer.innerHTML = "";
   if (!isActiveQuery() || !state.transform) return;
@@ -884,7 +884,9 @@ function renderSearchOffscreenIndicators() {
     chip.addEventListener("click", (e) => {
       e.preventDefault();
       e.stopPropagation();
-      panToNode(node);
+      if (state.story) exitStory({ keepUrl: true });
+      pin(node);
+      centerOnNode(node, { animate: true });
     });
     searchResultsContainer.appendChild(chip);
   }

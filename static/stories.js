@@ -350,9 +350,7 @@ export function enterStory(slug, { animate = false, keepUrl = false, keepCamera 
   if (state.hoverId) state.hoverId = null;
 
   // Single-shot session record so every story-state field moves together.
-  // `step` is null until syncCurrentStep resolves it from the camera on
-  // the next redraw (see renderStoryTrace). `missingIds` is intentionally
-  // dropped here — it was set on every enter and never read.
+  // `step` changes only via gotoStep (clicks, arrows, URL seed) — not pan/zoom.
   // `anchorNodeId` (when set) keeps that card's storyY = baselineY so the
   // entry point doesn't visibly jump as the band-jitter takes effect.
   const nodes = story.resolvedSteps.map((s) => s.node);
@@ -367,6 +365,7 @@ export function enterStory(slug, { animate = false, keepUrl = false, keepCamera 
     const anchorIdx = nodes.findIndex((n) => n.id === anchorNodeId);
     if (anchorIdx >= 0) initialStep = anchorIdx;
   }
+  if (initialStep == null && nodes.length) initialStep = 0;
   const fitTarget =
     !keepCamera && nodes.length ? computeStoryFitTransform(nodes) : null;
   state.story = {
@@ -383,11 +382,9 @@ export function enterStory(slug, { animate = false, keepUrl = false, keepCamera 
         ? state.transform.k
         : null,
     anchorNodeId,
+    cardLook: null,
   };
-  // Suppress syncCurrentStep's first override so band-cluster ambiguity
-  // doesn't snap our deliberately-set step back to the lowest index in the
-  // cluster. The lockout expires after the standard zoom-transition window.
-  if (initialStep != null) lockoutSyncStep();
+  syncStoryCardLook(state.transform?.k ?? 0);
   document.body.classList.add("has-story");
 
   renderStoryBanner();
@@ -463,25 +460,16 @@ function stepTargetCoord(step) {
   return { x: (a.x + b.x) / 2, y: (a.y + b.y) / 2 };
 }
 
-// Timestamp of the last gotoStep, used to suppress syncCurrentStep during
-// the camera transition that follows. Without this, the redraw triggered
-// immediately after gotoStep runs syncCurrentStep while the camera is
-// still at the OLD position — and the old focus is strictly closer, so
-// the new focus gets clobbered. enterStory also flips the lockout when it
-// seeds an initial step from the URL so the first sync doesn't overwrite
-// the deliberate value.
-let lastGotoStepTime = 0;
-const GOTO_STEP_LOCKOUT_MS = 550;  // covers the 500ms zoom transition + a buffer
 let storyCameraLockId = 0;
-function lockoutSyncStep() { lastGotoStepTime = performance.now(); }
 
 // Wheel / pinch updates this; arrow / prev-next always pan at this scale.
 export function onStoryUserZoom(k) {
   if (!state.story || !Number.isFinite(k)) return;
   state.story.navZoomK = k;
+  syncStoryCardLook(k);
 }
 
-export function gotoStep(step, { preserveZoom = false } = {}) {
+export function gotoStep(step, { preserveZoom = true } = {}) {
   if (!state.story) return;
   const n = state.story.nodes.length;
   if (!n) return;
@@ -489,7 +477,6 @@ export function gotoStep(step, { preserveZoom = false } = {}) {
   const snapped = Math.round(step * 2) / 2;
   const clamped = Math.max(0, Math.min(n - 1, snapped));
   state.story.step = clamped;
-  lastGotoStepTime = performance.now();
   renderStoryBanner();
   // Move the focused card layer before the camera — otherwise we pan to the
   // new storyCoord while the old card is still on screen for one frame.
@@ -562,14 +549,15 @@ function storyFocusCenterScreen() {
 function panToCenterStoryFocus(coord, k) {
   const focus = storyFocusCenterScreen();
   const cardEl = document.querySelector(".story-current-card g.card");
-  if (cardEl && isNodeStep(state.story?.step)) {
+  if (cardEl && isNodeStep(state.story?.step) && state.transform) {
     const r = cardEl.getBoundingClientRect();
     if (r.width > 0 && r.height > 0) {
-      const sx = r.left + r.width / 2;
-      const sy = r.top + r.height / 2;
+      const k0 = state.transform.k;
+      const wx = (r.left + r.width / 2 - state.transform.x) / k0;
+      const wy = (r.top + r.height / 2 - state.transform.y) / k0;
       return {
-        tx: state.transform.x + (focus.cx - sx),
-        ty: state.transform.y + (focus.cy - sy),
+        tx: focus.cx - wx * k,
+        ty: focus.cy - wy * k,
         k,
       };
     }
@@ -581,8 +569,8 @@ function panToCenterStoryFocus(coord, k) {
   };
 }
 
-// Pan to a story step. Clicks may bump zoom up to STORY_FULL_K when the user
-// is still at overview. Arrow / on-screen prev-next animate pan at navZoomK.
+// Pan to a story step. Clicks may bump zoom into the full-card band when the
+// user is still at overview. Arrow / on-screen prev-next animate pan at navZoomK.
 function zoomToStep(coord, { preserveZoom = false } = {}) {
   if (!state.transform || !svg || !zoom) return;
   let k;
@@ -592,16 +580,9 @@ function zoomToStep(coord, { preserveZoom = false } = {}) {
     }
     k = state.story.navZoomK;
   } else {
-    k = Math.max(state.transform.k, STORY_FULL_K);
+    k = Math.max(state.transform.k, STORY_NAV_MIN_K);
     state.story.navZoomK = k;
-  }
-  // Bbox centering assumes the target scale — correct drift before measuring.
-  if (Math.abs(state.transform.k - k) > 1e-6) {
-    svg.interrupt();
-    svg.call(
-      zoom.transform,
-      d3.zoomIdentity.translate(state.transform.x, state.transform.y).scale(k)
-    );
+    state.story.cardLook = "full";
   }
   const { tx, ty } = panToCenterStoryFocus(coord, k);
   const target = d3.zoomIdentity.translate(tx, ty).scale(k);
@@ -669,64 +650,6 @@ function updateStoryNavButtons() {
   next.disabled = cur >= total - 1;
 }
 
-// Set state.story.step to whichever focus point (node or edge) is closest
-// to the viewport center in screen px. Tracks the camera in real time so
-// .story-current glow transitions smoothly as the user pans/zooms.
-//
-// We SEED bestStep with the current state.story.step and only override on a
-// STRICT improvement — ties favor staying put. Without that, when two
-// consecutive story nodes share the same storyCoords (band cluster: edge
-// midpoint == both card centers), every focus point at that location has
-// d²=0 and the first-iterated focus wins. That would cause gotoStep(i+1)
-// to be undone by the very next syncCurrentStep, leaving the user
-// permanently stuck at the lowest-index focus in the cluster.
-function syncCurrentStep() {
-  if (!state.story || !state.story.nodes.length || !state.transform) return;
-  // Don't override the explicit focus while a gotoStep transition is in
-  // flight — the camera is mid-flight and the OLD focus is still closer.
-  if (performance.now() - lastGotoStepTime < GOTO_STEP_LOCKOUT_MS) return;
-  const cx = window.innerWidth / 2;
-  const cy = window.innerHeight / 2;
-  const { k, x: tx, y: ty } = state.transform;
-  const N = state.story.nodes.length;
-  const distOf = (worldX, worldY) => {
-    const sx = tx + worldX * k;
-    const sy = ty + worldY * k;
-    return (sx - cx) * (sx - cx) + (sy - cy) * (sy - cy);
-  };
-  // Seed with the current step so ties (e.g. cluster of collapsed nodes
-  // at the same coord) don't override a deliberate gotoStep result.
-  let bestStep = state.story.step;
-  let bestDist;
-  if (bestStep == null) {
-    bestStep = 0;
-    bestDist = Infinity;
-  } else if (isNodeStep(bestStep)) {
-    const c = storyCoord(state.story.nodes[bestStep]);
-    bestDist = distOf(c.x, c.y);
-  } else {
-    const i = Math.floor(bestStep);
-    const a = storyCoord(state.story.nodes[i]);
-    const b = storyCoord(state.story.nodes[i + 1]);
-    bestDist = distOf((a.x + b.x) / 2, (a.y + b.y) / 2);
-  }
-  // Nodes: integer steps. Strict less-than so the seed wins on ties.
-  for (let i = 0; i < N; i++) {
-    const c = storyCoord(state.story.nodes[i]);
-    const d2 = distOf(c.x, c.y);
-    if (d2 < bestDist) { bestDist = d2; bestStep = i; }
-  }
-  // Edges: half-integer steps at the midpoint of each segment.
-  for (let i = 0; i < N - 1; i++) {
-    const a = storyCoord(state.story.nodes[i]);
-    const b = storyCoord(state.story.nodes[i + 1]);
-    const d2 = distOf((a.x + b.x) / 2, (a.y + b.y) / 2);
-    if (d2 < bestDist) { bestDist = d2; bestStep = i + 0.5; }
-  }
-  state.story.step = bestStep;
-}
-
-
 // ---- camera fit -----------------------------------------------------------
 
 export function computeStoryFitTransform(nodes) {
@@ -771,10 +694,6 @@ export function computeStoryFitTransform(nodes) {
 // ---- render: ribbon + .story-member tagging ----------------------------
 
 export function renderStoryTrace() {
-  // Derive state.story.step from camera before tagging so .story-current tracks
-  // pan/zoom (including mid-gotoStep animation) without needing explicit
-  // updates from the navigation entry points.
-  syncCurrentStep();
   updateStoryNavButtons();
 
   // Always re-tag — fresh card/dot/label entries from the regular pipeline
@@ -1025,8 +944,8 @@ export function renderStickies() {
   }
   // Base layer: mini squares when zoomed out, full notes when zoomed in.
   // Focused edge (gStoryStickiesFocused): always full prose at any zoom.
-  const k = state.transform?.k ?? 0;
-  const baseMode = k < STORY_FULL_K ? "mini" : "full";
+  syncStoryCardLook(state.transform?.k ?? 0);
+  const baseMode = storyCardsAreThumb() ? "mini" : "full";
   const isFocusedEdge = (d) => {
     if (d.type !== "edge" || !isEdgeStep(state.story.step)) return false;
     return edgeIdxOf(state.story.step) === d.destStepIndex - 1;
@@ -1153,10 +1072,29 @@ function segmentIntersectsRect(x1, y1, x2, y2, vp) {
 
 // ---- render: cards / thumbnails for story members ----------------------
 
-// Below STORY_FULL_K (overview / wide-fit zoom) non-current members render as
-// fold=0 thumbnails; at k ≥ STORY_FULL_K everyone is full. The focused card
-// (gStoryCurrentCard) is always unfolded regardless of k.
-const STORY_FULL_K = 0.3;
+// Non-focused story cards / edge stickies use thumb vs full with hysteresis so
+// k hovering near one threshold (especially during step pans at ~0.3) does not
+// tear down and rebuild every card each frame.
+const STORY_ENTER_THUMB_K = 0.26;
+const STORY_ENTER_FULL_K = 0.34;
+const STORY_NAV_MIN_K = STORY_ENTER_FULL_K;
+
+function syncStoryCardLook(k) {
+  if (!state.story || !Number.isFinite(k)) return;
+  let look = state.story.cardLook;
+  if (look == null) {
+    look = k >= STORY_ENTER_FULL_K ? "full" : "thumb";
+  } else if (look === "full" && k < STORY_ENTER_THUMB_K) {
+    look = "thumb";
+  } else if (look === "thumb" && k > STORY_ENTER_FULL_K) {
+    look = "full";
+  }
+  state.story.cardLook = look;
+}
+
+function storyCardsAreThumb() {
+  return state.story?.cardLook === "thumb";
+}
 // Track the last "look" rendered per layer so we can detect thumb↔full
 // transitions and force a clean re-enter. A d3 key function alone is not
 // enough — the key is computed with the *current* closure for both old and
@@ -1164,7 +1102,7 @@ const STORY_FULL_K = 0.3;
 // fold even after isThumb flips.
 const lastLook = new WeakMap();
 function bindStoryCards(layer, nodes, isCurrent) {
-  const isThumb = !isCurrent && (state.transform?.k ?? 0) < STORY_FULL_K;
+  const isThumb = !isCurrent && storyCardsAreThumb();
   const fold = isThumb ? 0 : 1;
   const wantLook = isThumb ? "thumb" : "full";
   const layerNode = layer.node();
@@ -1203,6 +1141,7 @@ export function renderStoryCards() {
     if (gStoryCurrentCard) gStoryCurrentCard.selectAll("*").remove();
     return;
   }
+  syncStoryCardLook(state.transform?.k ?? 0);
   // Edge focus has no "current node" — all cards render in gStoryCards.
   const currentId = isNodeStep(state.story.step) && state.story.nodes[state.story.step]
     ? state.story.nodes[state.story.step].id

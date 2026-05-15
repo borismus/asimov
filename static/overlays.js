@@ -45,6 +45,12 @@ function clearHoverExpandTimer() {
   }
 }
 
+// Pin or an active story already frames a curated context; secondary hovers
+// preview one card only (no neighbor cards, no goldenrod connector lines).
+function hoverIsSoloPreview() {
+  return !!state.pinnedId || !!state.story;
+}
+
 // Reverse-fold + remove the current hover overlay and restore baselines, the
 // same dance onHoverLeave's debounce does. Pulled out so node-switching
 // (onHoverEnter on a different id) can run the same cleanup synchronously
@@ -241,10 +247,16 @@ export function updateHoverArtifacts() {
     );
   };
   const layoutNeighbors = state.hoverNeighbors.filter((nb) => onScreen(nb.node));
-  // Skip nodes the pinned chain is already drawing — avoids stacked duplicates.
+  // Skip nodes the pinned chain or story overlay already draws.
   const pinnedDisplayed = new Set(state.pinnedLayout.keys());
-  const cardNodes = [hovered, ...layoutNeighbors.map((nb) => nb.node)]
-    .filter((n) => !pinnedDisplayed.has(n.id));
+  const storyDisplayed = state.story
+    ? new Set(state.story.nodes.map((n) => n.id))
+    : null;
+  const cardNodes = [hovered, ...layoutNeighbors.map((nb) => nb.node)].filter(
+    (n) =>
+      !pinnedDisplayed.has(n.id) &&
+      !(storyDisplayed && storyDisplayed.has(n.id))
+  );
 
   const hoverSel = gHoverCards.selectAll("g.card").data(cardNodes, (n) => n.id);
   hoverSel.exit().interrupt().interrupt("fold")
@@ -261,24 +273,27 @@ export function updateHoverArtifacts() {
   }
   syncPinBadges(gHoverCards.selectAll("g.card"));
 
-  // Skip links the pinned chain already draws (both endpoints pinned).
-  const related = state.links.filter(
-    (l) =>
-      (l.source.id === hovered.id || l.target.id === hovered.id) &&
-      !(pinnedDisplayed.has(l.source.id) && pinnedDisplayed.has(l.target.id))
-  );
-  const lineSel = gHoverLines.selectAll("line")
-    .data(related, (l) => l.source.id + "->" + l.target.id);
-  lineSel.exit().remove();
-  lineSel.enter()
-    .append("line")
-    .attr("class", "highlight")
-    .attr("stroke", "goldenrod")
-    .attr("marker-end", "url(#hover-arrow)");
-
   state.hoverLayout = computeHoverLayout(hovered, layoutNeighbors);
   gHoverCards.selectAll("g.card").attr("transform", overlayCardTransform(state.hoverLayout));
-  layoutOverlayLines(gHoverLines.selectAll("line"), state.hoverLayout);
+
+  // Solo preview (pin or story): one card, no goldenrod edges — the focused
+  // context already has its own connectors (pinned chain or story ribbon).
+  if (hoverIsSoloPreview()) {
+    gHoverLines.selectAll("line").remove();
+  } else {
+    const related = state.links.filter(
+      (l) => l.source.id === hovered.id || l.target.id === hovered.id
+    );
+    const lineSel = gHoverLines.selectAll("line")
+      .data(related, (l) => l.source.id + "->" + l.target.id);
+    lineSel.exit().remove();
+    lineSel.enter()
+      .append("line")
+      .attr("class", "highlight")
+      .attr("stroke", "goldenrod")
+      .attr("marker-end", "url(#hover-arrow)");
+    layoutOverlayLines(gHoverLines.selectAll("line"), state.hoverLayout);
+  }
 
   // Hide baseline copies of anything the hover OR pinned overlay is drawing.
   const expandSet = new Set([...state.hoverLayout.keys(), ...state.pinnedLayout.keys()]);
@@ -314,9 +329,6 @@ function scheduleHoverExpand(delayMs = HOVER_EXPAND_DELAY_MS) {
 }
 
 export function onHoverEnter(event, d) {
-  // While a story is active, the hover overlay (goldenrod neighbors + chips)
-  // competes with the story's narrative focus — disable it entirely.
-  if (state.story) return;
   // Cancel any pending hover-leave so a quick traversal from a small dot to the
   // overlapping hover card doesn't tear everything down.
   if (hoverLeaveTimeout) {
@@ -350,11 +362,10 @@ export function onHoverEnter(event, d) {
     if (state.hoverId !== d.id) return;
 
     // Populate neighbors now (deferred so the offscreen chips and the
-    // overlay cards appear together). When a card is pinned, the user
-    // already has a focused chain in view; adding hover neighbors on
-    // top is noisy, so hover stays a single-card preview.
+    // overlay cards appear together). Solo preview (pin or story) skips
+    // neighbors — the focused context already shows the relevant chain.
     state.hoverNeighbors = [];
-    if (!state.pinnedId) {
+    if (!hoverIsSoloPreview()) {
       for (const l of state.links) {
         if (l.source.id === d.id) {
           state.hoverNeighbors.push({ node: l.target, kind: "child" });

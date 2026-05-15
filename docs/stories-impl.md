@@ -39,16 +39,7 @@ For the runtime architecture (focus model, layers, rendering, etc.) see [stories
 
    **Reminder — what belongs in `edge_note`:** the reader sees the **card** next; the sticky’s job is only the **transition**. Explain how the previous step made this link inevitable (new bottleneck, unintended load-bearing, who paid for the work, why a non-obvious hop is in the path). Do **not** restate the destination card’s title or body, or summarize “what this invention is” — that’s duplicate UI.
 
-3. Register the tab in [scripts/fetch-tsv.py](../scripts/fetch-tsv.py):
-
-   ```python
-   STORY_TABS = [
-       "Story: Horse cavalry",
-       # add new story tab names here
-   ]
-   ```
-
-4. Run `uv run scripts/fetch-tsv.py` to regenerate [static/stories.json](../static/stories.json) from the sheet. Review the diff and commit.
+3. Run `uv run scripts/fetch-tsv.py` to regenerate [static/stories.json](../static/stories.json) from the sheet. The script discovers every worksheet whose name matches `Story: <name>` (no manual list in code). Review the diff and commit.
 
    **Bulk paste into the sheet (optional):** the files under [scripts/sheet-paste/](../scripts/sheet-paste/) are clipboard helpers only—paste at **A1** on the matching **`Story: …`** tab in Google Sheets, then run `fetch-tsv.py` so the repo matches. Regenerate them from local JSON with `python3 scripts/story_tabs_for_sheet_paste.py` (e.g. after drafting in git); the sheet still wins on the next fetch unless you’ve pasted there first.
 
@@ -62,6 +53,6 @@ For the runtime architecture (focus model, layers, rendering, etc.) see [stories
 ## Files
 
 - [scripts/sheet-paste/](../scripts/sheet-paste/) — `story-tab-*.tsv` paste helpers (see README there); regenerate with [scripts/story_tabs_for_sheet_paste.py](../scripts/story_tabs_for_sheet_paste.py).
-- [scripts/fetch-tsv.py](../scripts/fetch-tsv.py) — `STORY_TABS` list, `parse_story_tab`, `slug_from_tab`, `STORIES_OUT` write.
+- [scripts/fetch-tsv.py](../scripts/fetch-tsv.py) — workbook tab discovery (`Story: …` prefix), `parse_story_tab`, `slug_from_tab`, `STORIES_OUT` write.
 - [static/stories.json](../static/stories.json) — derived artifact. Committed for deterministic deploy + cold dev start.
 - [static/stories.js](../static/stories.js) — runtime loader + everything downstream (see [stories.md](stories.md)).

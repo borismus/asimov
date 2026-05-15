@@ -57,6 +57,8 @@ import {
   renderStoryBanner,
   renderStoriesMenu,
   renderStoryCardChip,
+  constrainTransformInStory,
+  onStoryUserZoom,
 } from "./stories.js";
 
 const TIER_LABEL = 0;
@@ -422,10 +424,12 @@ initStories({
   TIER_FULL,
 });
 
-function onZoom({ transform }) {
+function onZoom(event) {
+  const { transform, sourceEvent } = event;
   state.transform = transform;
   gRoot.attr("transform", transform);
   document.documentElement.style.setProperty("--zoom", transform.k);
+  if (state.story && sourceEvent) onStoryUserZoom(transform.k);
   // The SVG content moved synchronously above — keep the header's year
   // labels in sync the same frame so the dashed lines and the labels
   // stay welded together (otherwise the labels lag by 1 rAF).
@@ -643,6 +647,8 @@ async function init() {
   // pixel-space slack when zoomed out enough that everything fits.
   zoom.constrain((transform, viewport) => {
     if (!state.bbox) return transform;
+    const storyTransform = constrainTransformInStory(transform, viewport);
+    if (storyTransform) return storyTransform;
     const k = transform.k;
     const w = viewport[1][0] - viewport[0][0];
     const h = viewport[1][1] - viewport[0][1];

@@ -8,7 +8,7 @@ Authored in the same Google Sheet as the cards (one tab per story, prefixed `Sto
 
 ## Authoring
 
-See [stories-impl.md](stories-impl.md) for the sheet-side recipe (tab layout, key/value top zone, `id, edge_note` bottom zone, and how `STORY_TABS` in [scripts/fetch-tsv.py](../scripts/fetch-tsv.py) maps tab names to JSON).
+See [stories-impl.md](stories-impl.md) for the sheet-side recipe (tab layout, key/value top zone, `id, edge_note` bottom zone, and how [scripts/fetch-tsv.py](../scripts/fetch-tsv.py) discovers `Story: …` tabs into JSON).
 
 Each step row in the sheet carries an **edge note** describing the transition *into* that step from the previous one. The note for step `i` is the prose on the segment between step `i-1` and step `i`.
 
@@ -73,8 +73,9 @@ Story members get a virtual y on a shared band (mean of baseline y's), with stab
 
 `STORY_FULL_K = 0.3` is the zoom threshold for the story overlay:
 
-- `k < 0.3` — story members render as **thumbnails** (fold=0 compact cards, `--card-screen-scale: 1` so the card is 240 CSS px wide vs. the normal 288). Stickies render as **mini squares** (28×28 cream-with-yellow-rim) at edge midpoints.
-- `k ≥ 0.3` — story members render as **full cards** with body text. Stickies render as full **paper notes** with edge prose.
+- `k < 0.3` — non-focused story members render as **thumbnails** (fold=0 compact cards, `--card-screen-scale: 1`). Non-focused edge stickies render as **mini squares** (28×28) at segment midpoints.
+- `k ≥ 0.3` — all story members and edge stickies use the full layout.
+- **Regardless of *k*** — the **focused** node (`.story-current` in `gStoryCurrentCard`) and the **focused** edge sticky (in `gStoryStickiesFocused`) always render expanded (full card + full prose note).
 
 `bindStoryCards` tracks the last "look" per layer in a `WeakMap` and explicitly rebuilds the DOM on transition so cards re-enter at the right initial fold.
 
@@ -92,7 +93,7 @@ Mini stickies (zoomed-out) skip the sliding clamp and just check that their midp
 
 ### Camera
 
-`gotoStep` calls `zoomToStep` which pans to the focus point at `max(current k, STORY_FULL_K)` — at overview zoom the camera bumps into full-card territory; once the user is already zoomed in, navigation preserves their level.
+`gotoStep` calls `zoomToStep`. Clicks and sticky jumps use `zoom.transform` with `max(current k, STORY_FULL_K)` so overview entry reveals full cards. Arrow keys and the on-screen prev/next buttons pass `preserveZoom: true` and pan via `zoom.translateBy` only — scale is never interpolated, so stepping does not cross the thumb↔full threshold.
 
 `computeStoryFitTransform` fits the bbox of the story members' band-aligned coords, with top inset for the banner.
 
@@ -129,7 +130,7 @@ URLs:
 - [static/stories.js](../static/stories.js) — all logic.
 - [static/stories.css](../static/stories.css) — visual treatment.
 - [static/stories.json](../static/stories.json) — derived artifact from `fetch-tsv.py`. Committed to the repo so dev server / deploy have data without an extra step.
-- [scripts/fetch-tsv.py](../scripts/fetch-tsv.py) — `STORY_TABS` config + `parse_story_tab` for the sheet-side workflow (see [stories-impl.md](stories-impl.md)).
+- [scripts/fetch-tsv.py](../scripts/fetch-tsv.py) — discovers `Story: …` worksheet tabs + `parse_story_tab` (see [stories-impl.md](stories-impl.md)).
 
 ## Known not-yet-implemented
 

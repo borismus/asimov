@@ -136,5 +136,84 @@
         "edge_note": "Rotary output and steadier pressure fold the toy line into mills—the same fire that once entertained courts now signs factory ledgers."
       }
     ]
+  },
+  {
+    "slug": "invisible-contagion",
+    "title": "Two centuries between seeing and believing",
+    "blurb": "From animalcules in ditch water to penicillin by the gram — two centuries where you could watch contagion swim and the hospital still blamed \"bad air\".",
+    "steps": [
+      {
+        "id": "microscope",
+        "edge_note": null
+      },
+      {
+        "id": "blood-circulation",
+        "edge_note": "Spectacle glass bought a second scale; Harvey’s loop made the body a closed plumbing problem—fevers had to live *somewhere* in the circuit, not in the four humors."
+      },
+      {
+        "id": "microorganisms",
+        "edge_note": "Stacked lenses were a toy until someone aimed them at ditch water: “animalcules” proved life at a scale physicians had no ward vocabulary for."
+      },
+      {
+        "id": "bacteria",
+        "edge_note": "Smaller still, and named before anyone had a theory of disease—visibility without a job description."
+      },
+      {
+        "id": "smallpox-vaccine",
+        "edge_note": "Empiricism runs ahead of theory: deliberate pus from a mild case stops the lethal one—Turkish practice, English controversy, no agreed germ in sight."
+      },
+      {
+        "id": "pathology",
+        "edge_note": "Morgagni’s 640 autopsies make death legible organ by organ; the corpse table becomes evidence even while the living patient is still explained by bad air."
+      },
+      {
+        "id": "vaccination",
+        "edge_note": "Jenner systematizes the trick—cowpox blisters as a manufactured shield—immunity without knowing what you are blocking."
+      },
+      {
+        "id": "anesthesia",
+        "edge_note": "Ether buys painless cutting; operations multiply, and the wound you cannot feel becomes the new killer—surgery’s bottleneck shifts from pain to what walks in on the hands."
+      },
+      {
+        "id": "puerperal-fever",
+        "edge_note": "Semmelweis counts bodies: the same doctor, different wards—contagion by contact, not miasma, years before anyone agrees on a microbe."
+      },
+      {
+        "id": "pasteurization",
+        "edge_note": "Wine merchants pay for spoilage answers; heating kills what the lens already showed—biology as quality control before biology as bedside doctrine."
+      },
+      {
+        "id": "spontaneous-generation-rip",
+        "edge_note": "The swan-neck flask kills “life from broth” on the bench; the open question moves from creation to *delivery*—germs ride dust, not vapor."
+      },
+      {
+        "id": "germ-theory-of-disease",
+        "edge_note": "Pasteur gathers the threads: contagious disease has agents; medicine finally has something to hunt besides humors and smells."
+      },
+      {
+        "id": "antiseptic-surgery",
+        "edge_note": "Lister weds phenol to Lister’s own problem—clean the cut, not just the air—anesthesia made the OR busy; antisepsis makes it survivable."
+      },
+      {
+        "id": "bacterial-cultivation",
+        "edge_note": "Koch grows anthrax outside the body and pins one shape to one plague—identification becomes laboratory craft, not bedside argument."
+      },
+      {
+        "id": "anthrax-inoculation",
+        "edge_note": "Jenner’s one-off becomes a recipe: attenuate in the lab when nature offers no mild cousin—manufactured weakness as armor."
+      },
+      {
+        "id": "rabies",
+        "edge_note": "The same factory ships a bite protocol across species lines—rabies, not smallpox, is the public proof that the pipeline generalizes."
+      },
+      {
+        "id": "penicillin",
+        "edge_note": "Fleming’s contaminated dish is a bench accident; the mold’s halo says some cells are killable without poisoning the patient—if anyone can purify it."
+      },
+      {
+        "id": "penicillin-practical",
+        "edge_note": "Florey and Chain turn halo into grams; WWII demand finishes what germ theory started—mass death finally pays for mass production of cure."
+      }
+    ]
   }
 ]

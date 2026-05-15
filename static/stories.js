@@ -367,12 +367,21 @@ export function enterStory(slug, { animate = false, keepUrl = false, keepCamera 
     const snapped = Math.round(step * 2) / 2;
     initialStep = Math.max(0, Math.min(nodes.length - 1, snapped));
   }
+  const fitTarget =
+    !keepCamera && nodes.length ? computeStoryFitTransform(nodes) : null;
   state.story = {
     id: slug,
     nodes,
     steps: story.resolvedSteps,
     step: initialStep,
     coordsById: buildStoryCoords(nodes, anchorNodeId),
+    // Pan-only navigation (←/→, prev/next) always uses this scale until the
+    // user zooms manually (wheel / pinch updates it via onStoryUserZoom).
+    navZoomK: fitTarget
+      ? fitTarget.k
+      : state.transform
+        ? state.transform.k
+        : null,
     // When entering via a card chip, the user's mental model is "I'm
     // still looking at this card, just now in story context." Hide the
     // other story cards + nav buttons until the user actively navigates
@@ -395,12 +404,9 @@ export function enterStory(slug, { animate = false, keepUrl = false, keepCamera 
   // Camera fit, then redraw so trace + spotlight render against the new view.
   // Skipped when keepCamera is set — chip clicks enter the story without
   // yanking the user's view away from the card they were looking at.
-  if (!keepCamera && nodes.length) {
-    const target = computeStoryFitTransform(nodes);
-    if (target) {
-      const sel = animate ? svg.transition().duration(700) : svg;
-      sel.call(zoom.transform, target);
-    }
+  if (fitTarget) {
+    const sel = animate ? svg.transition().duration(700) : svg;
+    sel.call(zoom.transform, fitTarget);
   }
   scheduleRedraw();
 
@@ -462,9 +468,16 @@ function stepTargetCoord(step) {
 // the deliberate value.
 let lastGotoStepTime = 0;
 const GOTO_STEP_LOCKOUT_MS = 550;  // covers the 500ms zoom transition + a buffer
+let storyCameraLockId = 0;
 function lockoutSyncStep() { lastGotoStepTime = performance.now(); }
 
-export function gotoStep(step) {
+// Wheel / pinch updates this; arrow / prev-next always pan at this scale.
+export function onStoryUserZoom(k) {
+  if (!state.story || !Number.isFinite(k)) return;
+  state.story.navZoomK = k;
+}
+
+export function gotoStep(step, { preserveZoom = false } = {}) {
   if (!state.story) return;
   const n = state.story.nodes.length;
   if (!n) return;
@@ -476,8 +489,11 @@ export function gotoStep(step) {
   // "anchor-only" mode set on chip entry.
   state.story.anchorOnly = false;
   lastGotoStepTime = performance.now();
-  zoomToStep(stepTargetCoord(clamped));
   renderStoryBanner();
+  // Move the focused card layer before the camera — otherwise we pan to the
+  // new storyCoord while the old card is still on screen for one frame.
+  renderStoryCards();
+  zoomToStep(stepTargetCoord(clamped), { preserveZoom });
   scheduleRedraw();
 }
 
@@ -493,21 +509,134 @@ export function gotoCardInStory(cardId) {
   return true;
 }
 
-// Pan to a story step. If the user is at overview zoom (below the thumb→
-// full threshold), bump zoom up to STORY_FULL_K so the destination card
-// reveals itself as a full card. Once the user is already zoomed in past
-// that threshold, preserve their current zoom — navigation between
-// adjacent steps shouldn't yank them to a fixed level.
-function zoomToStep(n) {
-  if (!state.transform || !svg || !zoom) return;
-  const k = Math.max(state.transform.k, STORY_FULL_K);
-  const tx = window.innerWidth / 2 - n.x * k;
+// While a story is open, allow panning so any step can reach the focus
+// point in the viewport. The global zoom.constrain centers the whole graph
+// when it fits on screen (±80px slack), which blocks centering individual
+// story nodes when zoomed out.
+export function constrainTransformInStory(transform, viewport) {
+  if (!state.story || !state.story.nodes.length) return null;
+  const lock = state.story.cameraLock;
+  // During arrow/prev-next pans, pin scale but let tx/ty interpolate.
+  const k =
+    lock && lock.panOnly && performance.now() < lock.until ? lock.k : transform.k;
+  if (lock && !lock.panOnly && performance.now() < lock.until) {
+    return d3.zoomIdentity.translate(lock.tx, lock.ty).scale(lock.k);
+  }
+  const { cx, cy } = storyFocusCenterScreen();
+  let minX = Infinity;
+  let maxX = -Infinity;
+  let minY = Infinity;
+  let maxY = -Infinity;
+  for (const n of state.story.nodes) {
+    const c = storyCoord(n);
+    if (c.x < minX) minX = c.x;
+    if (c.x > maxX) maxX = c.x;
+    if (c.y < minY) minY = c.y;
+    if (c.y > maxY) maxY = c.y;
+  }
+  // tx = cx - x*k places world x at screen cx; same for y.
+  const txMin = cx - maxX * k;
+  const txMax = cx - minX * k;
+  const tyMin = cy - maxY * k;
+  const tyMax = cy - minY * k;
+  const tx = Math.max(txMin, Math.min(txMax, transform.x));
+  const ty = Math.max(tyMin, Math.min(tyMax, transform.y));
+  return d3.zoomIdentity.translate(tx, ty).scale(k);
+}
+
+// Screen-space center for story step focus (below header + story banner).
+function storyFocusCenterScreen() {
   const banner = document.getElementById("story-banner");
   const bannerH = banner ? banner.getBoundingClientRect().height : 0;
   const topInset = (state.headerHeight || 0) + bannerH + HEADER_PAD;
-  const ty = topInset + (window.innerHeight - topInset) / 2 - n.y * k;
-  svg.transition().duration(500)
-    .call(zoom.transform, d3.zoomIdentity.translate(tx, ty).scale(k));
+  return {
+    cx: window.innerWidth / 2,
+    cy: topInset + (window.innerHeight - topInset) / 2,
+  };
+}
+
+// Pan so the focused story card's on-screen center lands in the focus region
+// (below the banner). Uses the rendered card bbox when available so counter-
+// scaling and full-fold geometry don't skew the anchor math.
+function panToCenterStoryFocus(coord, k) {
+  const focus = storyFocusCenterScreen();
+  const cardEl = document.querySelector(".story-current-card g.card");
+  if (cardEl && isNodeStep(state.story?.step)) {
+    const r = cardEl.getBoundingClientRect();
+    if (r.width > 0 && r.height > 0) {
+      const sx = r.left + r.width / 2;
+      const sy = r.top + r.height / 2;
+      return {
+        tx: state.transform.x + (focus.cx - sx),
+        ty: state.transform.y + (focus.cy - sy),
+        k,
+      };
+    }
+  }
+  return {
+    tx: focus.cx - coord.x * k,
+    ty: focus.cy - coord.y * k,
+    k,
+  };
+}
+
+// Pan to a story step. Clicks may bump zoom up to STORY_FULL_K when the user
+// is still at overview. Arrow / on-screen prev-next animate pan at navZoomK.
+function zoomToStep(coord, { preserveZoom = false } = {}) {
+  if (!state.transform || !svg || !zoom) return;
+  let k;
+  if (preserveZoom) {
+    if (state.story.navZoomK == null) {
+      state.story.navZoomK = state.transform.k;
+    }
+    k = state.story.navZoomK;
+  } else {
+    k = Math.max(state.transform.k, STORY_FULL_K);
+    state.story.navZoomK = k;
+  }
+  // Bbox centering assumes the target scale — correct drift before measuring.
+  if (Math.abs(state.transform.k - k) > 1e-6) {
+    svg.interrupt();
+    svg.call(
+      zoom.transform,
+      d3.zoomIdentity.translate(state.transform.x, state.transform.y).scale(k)
+    );
+  }
+  const { tx, ty } = panToCenterStoryFocus(coord, k);
+  const target = d3.zoomIdentity.translate(tx, ty).scale(k);
+  if (
+    Math.abs(tx - state.transform.x) < 0.5 &&
+    Math.abs(ty - state.transform.y) < 0.5 &&
+    Math.abs(k - state.transform.k) < 1e-6
+  ) {
+    return;
+  }
+  const duration = 500;
+  const lockId = ++storyCameraLockId;
+  if (preserveZoom) {
+    state.story.cameraLock = {
+      k,
+      panOnly: true,
+      until: performance.now() + duration + 100,
+      id: lockId,
+    };
+  } else {
+    state.story.cameraLock = {
+      tx,
+      ty,
+      k,
+      panOnly: false,
+      until: performance.now() + duration + 100,
+      id: lockId,
+    };
+  }
+  svg.interrupt();
+  svg.transition()
+    .duration(duration)
+    .on("end", () => {
+      if (state.story?.cameraLock?.id === lockId) state.story.cameraLock = null;
+    })
+    .call(zoom.transform, target);
 }
 
 // Step ±1 focus point — half-integer increments so each press cycles
@@ -519,7 +648,7 @@ function stepBy(delta) {
   const cur = state.story.step == null ? 0 : state.story.step;
   const next = Math.max(0, Math.min(total - 1, cur + delta * 0.5));
   if (next === cur) return;
-  gotoStep(next);
+  gotoStep(next, { preserveZoom: true });
 }
 
 // Disable prev at step 0 and next at the last step. Re-evaluated on every
@@ -898,38 +1027,31 @@ export function renderStickies() {
     if (gStoryStickiesFocused) gStoryStickiesFocused.selectAll("*").remove();
     return;
   }
-  // Two render modes, depending on zoom:
-  //   - "mini" (overview / wide-fit): each edge appears as a small colored
-  //     square at the segment midpoint — a hint that the edge has prose to
-  //     read, without crowding the screen.
-  //   - "full" (zoom past STORY_FULL_K): the normal sticky-note layout
-  //     with prose + viewport clamping.
-  // Mode changes invalidate the existing DOM (different inner markup), so
-  // wipe-and-rebuild rather than try to migrate elements in place.
+  // Base layer: mini squares when zoomed out, full notes when zoomed in.
+  // Focused edge (gStoryStickiesFocused): always full prose at any zoom.
   const k = state.transform?.k ?? 0;
-  const mode = k < STORY_FULL_K ? "mini" : "full";
-  if (gStoryStickies.attr("data-mode") !== mode) {
-    gStoryStickies.selectAll("*").remove();
-    if (gStoryStickiesFocused) gStoryStickiesFocused.selectAll("*").remove();
-    gStoryStickies.attr("data-mode", mode);
-    if (gStoryStickiesFocused) gStoryStickiesFocused.attr("data-mode", mode);
-  }
-
-  const items = mode === "mini" ? layoutMiniStickies() : layoutStickies();
-  // Split items: the focused edge sticky rides in gStoryStickiesFocused
-  // (above all cards), everything else stays in gStoryStickies (below
-  // cards). One single focused sticky at most — guard with the same edge-
-  // step test used for the .story-current class below.
-  const isFocused = (d) => {
+  const baseMode = k < STORY_FULL_K ? "mini" : "full";
+  const isFocusedEdge = (d) => {
     if (d.type !== "edge" || !isEdgeStep(state.story.step)) return false;
     return edgeIdxOf(state.story.step) === d.destStepIndex - 1;
   };
-  const focusedItems = items.filter(isFocused);
-  const baseItems = items.filter((d) => !isFocused(d));
+  const fullItems = layoutStickies();
+  const baseItems = (baseMode === "mini" ? layoutMiniStickies() : fullItems)
+    .filter((d) => !isFocusedEdge(d));
+  const focusedItems = fullItems.filter(isFocusedEdge);
 
-  bindStickyLayer(gStoryStickies, baseItems, mode, false);
+  if (gStoryStickies.attr("data-mode") !== baseMode) {
+    gStoryStickies.selectAll("*").remove();
+    gStoryStickies.attr("data-mode", baseMode);
+  }
+  if (gStoryStickiesFocused && gStoryStickiesFocused.attr("data-mode") !== "full") {
+    gStoryStickiesFocused.selectAll("*").remove();
+    gStoryStickiesFocused.attr("data-mode", "full");
+  }
+
+  bindStickyLayer(gStoryStickies, baseItems, baseMode, false);
   if (gStoryStickiesFocused) {
-    bindStickyLayer(gStoryStickiesFocused, focusedItems, mode, true);
+    bindStickyLayer(gStoryStickiesFocused, focusedItems, "full", true);
   }
 }
 
@@ -1050,7 +1172,9 @@ const STORY_FULL_K = 0.3;
 // fold even after isThumb flips.
 const lastLook = new WeakMap();
 function bindStoryCards(layer, nodes, isCurrent) {
-  const isThumb = (state.transform?.k ?? 0) < STORY_FULL_K;
+  // The focused card (gStoryCurrentCard) is always unfolded; only non-current
+  // members shrink to thumbnails when zoomed out.
+  const isThumb = !isCurrent && (state.transform?.k ?? 0) < STORY_FULL_K;
   const fold = isThumb ? 0 : 1;
   const wantLook = isThumb ? "thumb" : "full";
   const layerNode = layer.node();

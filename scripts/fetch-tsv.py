@@ -6,10 +6,12 @@ Card tabs are listed in TAB_KIND_MAP. Each card row is tagged with a
 Kind column derived from its source tab. The merged TSV is consumed by
 the runtime loader and by scripts/generate-site.py.
 
-Story tabs are listed in STORY_TABS. Each story tab follows a two-zone
-layout (key/value metadata + tabular id/edge_note steps, separated by a
-blank row); parse_story_tab parses each into a story object and the
-merged list is written as JSON.
+Story tabs are discovered from the workbook: any worksheet whose name
+matches ``Story: <name>`` (colon optional — ``Story <name>`` also matches
+legacy tabs). Each story tab follows a two-zone layout (key/value
+metadata + tabular id/edge_note steps, separated by a blank row);
+parse_story_tab parses each into a story object and the merged list is
+written as JSON.
 
 Tabs that don't exist yet are skipped with a printed warning, so the
 script is safe to run before the sheet has been fully set up.
@@ -22,6 +24,8 @@ import sys
 import urllib.error
 import urllib.parse
 import urllib.request
+import xml.etree.ElementTree as ET
+import zipfile
 from collections import Counter
 from pathlib import Path
 
@@ -39,14 +43,10 @@ TAB_KIND_MAP = {
     "Speculative: Fusion economy": "scenario-fusion",
 }
 
-# Story tabs — each follows the two-zone story-tab layout. Slug is derived
-# from the tab name (drop the "Story: " prefix, kebab-case). Adding a new
-# story = create the tab + add one entry here.
+# Worksheet names matching this pattern are ingested as stories (see
+# discover_story_tabs). Prefer the documented ``Story: <name>`` form.
 STORY_TAB_PREFIX = "Story: "
-STORY_TABS = [
-    "Story: Horse cavalry",
-    "Story: Steam diffusion",
-]
+STORY_TAB_NAME_RE = re.compile(r"^Story:?\s+(.+)$", re.I)
 
 OUT = Path(__file__).resolve().parent.parent / "static" / "asimov.tsv"
 STORIES_OUT = Path(__file__).resolve().parent.parent / "static" / "stories.json"
@@ -107,11 +107,69 @@ def warn_non_chronological_stories(stories, rows_by_id):
 
 
 def slug_from_tab(name):
-    rest = name
-    if rest.startswith(STORY_TAB_PREFIX):
-        rest = rest[len(STORY_TAB_PREFIX):]
+    m = STORY_TAB_NAME_RE.match((name or "").strip())
+    rest = m.group(1) if m else name
     rest = rest.strip().lower()
     return re.sub(r"[^a-z0-9]+", "-", rest).strip("-")
+
+
+def list_workbook_tabs(sheet_id):
+    """Return worksheet names in workbook order (public export, no API key)."""
+    url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/export?format=xlsx"
+    try:
+        with urllib.request.urlopen(url, timeout=60) as resp:
+            data = resp.read()
+    except urllib.error.HTTPError as e:
+        print(f"    workbook export HTTP {e.code} — cannot list story tabs", file=sys.stderr)
+        return []
+    except urllib.error.URLError as e:
+        print(f"    workbook export network error: {e}", file=sys.stderr)
+        return []
+    try:
+        with zipfile.ZipFile(io.BytesIO(data)) as zf:
+            root = ET.fromstring(zf.read("xl/workbook.xml"))
+    except (zipfile.BadZipFile, KeyError, ET.ParseError) as e:
+        print(f"    workbook export parse error: {e}", file=sys.stderr)
+        return []
+    # OOXML: sheets live under main namespace or unprefixed in some exports.
+    ns = {"main": "http://schemas.openxmlformats.org/spreadsheetml/2006/main"}
+    sheets = root.findall("main:sheets/main:sheet", ns)
+    if not sheets:
+        sheets = root.findall(".//{http://schemas.openxmlformats.org/spreadsheetml/2006/main}sheet")
+    return [(el.get("name") or "").strip() for el in sheets if (el.get("name") or "").strip()]
+
+
+def discover_story_tabs(all_tab_names):
+    """Filter workbook tab names to story worksheets, preserving order."""
+    out = []
+    for name in all_tab_names:
+        m = STORY_TAB_NAME_RE.match(name)
+        if not m or not m.group(1).strip():
+            continue
+        out.append(name)
+    return out
+
+
+def gviz_sheet_name(workbook_tab_name):
+    """gviz ``?sheet=`` uses the documented ``Story: <name>`` form.
+
+    The XLSX workbook export often drops the colon (``Story Horse cavalry``);
+    requesting that string silently returns the first worksheet instead."""
+    m = STORY_TAB_NAME_RE.match((workbook_tab_name or "").strip())
+    if not m:
+        return workbook_tab_name
+    return f"{STORY_TAB_PREFIX}{m.group(1).strip()}"
+
+
+def looks_like_card_corpus_fallback(story, seen_first_ids):
+    """True when gviz returned a card tab instead of the story worksheet."""
+    steps = story.get("steps") or []
+    if len(steps) > 100:
+        return True
+    if not steps:
+        return False
+    first_id = (steps[0].get("id") or "").strip()
+    return first_id in seen_first_ids
 
 
 def parse_story_tab(name, body):
@@ -257,26 +315,35 @@ def main():
         print(f"  {k:<28} {n}")
 
     # ---- stories ---------------------------------------------------------
+    workbook_tabs = list_workbook_tabs(SHEET_ID)
+    story_tab_names = discover_story_tabs(workbook_tabs)
+    if workbook_tabs:
+        print(
+            f"discovered {len(story_tab_names)} story tab(s) "
+            f"(prefix {STORY_TAB_PREFIX!r})"
+        )
+    else:
+        print("could not list workbook tabs — no stories fetched", file=sys.stderr)
+
     stories = []
-    for tab_name in STORY_TABS:
-        body = fetch_tab(tab_name)
+    for workbook_tab_name in story_tab_names:
+        fetch_name = gviz_sheet_name(workbook_tab_name)
+        body = fetch_tab(fetch_name)
         if body is None:
             continue
-        story = parse_story_tab(tab_name, body)
-        # gviz fallback heuristic: a missing story tab returns the legacy
-        # cards body (which has no `title` metadata key in row 1, just an
-        # `ID` column header). If the parsed story has no title and no
-        # steps that look like story steps, skip it.
-        if not story["title"] or not story["steps"]:
-            print(f"    story tab {tab_name!r} returned no recognizable story data — skipping")
+        story = parse_story_tab(workbook_tab_name, body)
+        if not story["steps"]:
+            print(
+                f"    story tab {workbook_tab_name!r} returned no steps — skipping"
+            )
             continue
-        # Extra safety: if step IDs match the legacy first-row IDs we just
-        # fetched, this is the gviz fallback.
-        first_step_id = story["steps"][0]["id"] if story["steps"] else None
-        if first_step_id and first_step_id in seen_first_ids:
-            # could be a real story whose first ID coincides with a card
-            # tab's first row; very unlikely. Print and accept.
-            pass
+        if looks_like_card_corpus_fallback(story, seen_first_ids):
+            print(
+                f"    story tab {workbook_tab_name!r} (gviz sheet {fetch_name!r}) "
+                f"looks like the card corpus fallback — skipping",
+                file=sys.stderr,
+            )
+            continue
         stories.append(story)
 
     rows_by_id = {

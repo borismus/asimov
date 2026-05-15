@@ -20,16 +20,23 @@ The invention data lives in a [Google Sheet][sheet], one tab per kind:
 Each tab has the same columns (`ID, Year, Title, Description, Inventor, Location,
 Dependencies, Field, URL`). Tabs are mapped to a `Kind` value by `TAB_KIND_MAP`
 in [`scripts/fetch-tsv.py`](scripts/fetch-tsv.py); legacy and added are fixed,
-each speculative tab is `scenario-<slug>`.
+each speculative tab is `scenario-<slug>`. See [docs/card-kinds.md](docs/card-kinds.md)
+for the data model.
 
-To pull edits from the sheet to the repo:
+The same sheet also carries **stories** — curated narrative paths through the
+tech tree, one tab per story prefixed `Story:`. See
+[docs/stories.md](docs/stories.md) for the runtime architecture and
+[docs/stories-impl.md](docs/stories-impl.md) for the authoring recipe.
+
+To pull edits (cards + stories) from the sheet to the repo:
 
 ```sh
 uv run scripts/fetch-tsv.py
 ```
 
-This rewrites `static/asimov.tsv` with a `Kind` column derived from the source
-tab. `deploy.sh` runs this automatically before generating the site.
+This rewrites `static/asimov.tsv` (with a `Kind` column derived from the
+source tab) and `static/stories.json`. `deploy.sh` runs this automatically
+before generating the site.
 
 [sheet]: https://docs.google.com/spreadsheets/d/1hDNXas7DzwglB95HV2_2u1utWAwBZR2hQHlMPz-fj5A/edit
 

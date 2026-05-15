@@ -1,5 +1,17 @@
 # Card kinds — legacy / added / speculative
 
+**Status:** shipped, except for data. The `Kind` column is on every TSV row,
+`kind-<value>` + `is-speculative` classes are applied at all three render
+sites ([card.js](../static/card.js), [world.js](../static/world.js) renderDots,
+[universe.js](../static/universe.js) appendLabels), `fitBbox` excludes
+speculative entries from the initial-fit, and `isSpeculative` /
+`scenarioOf` are exported from [utils.js](../static/utils.js).
+The TSV currently ships only `legacy` and `added` rows; no `scenario-*`
+data has been authored yet. The pipeline is ready for it.
+
+The document below is the original implementation plan, retained for
+reference.
+
 ## Context
 
 The asimov tech tree's data is currently a single TSV ([static/asimov.tsv](static/asimov.tsv), 1477 rows) exported from a Google Sheet ("[spreadsheet-new]" linked from the README). Both the runtime ([utils.js#L99](static/utils.js#L99) `loadGraph`) and the build script ([scripts/generate-site.py#L33](scripts/generate-site.py#L33) `load_inventions`) read that one TSV. The deploy flow is `deploy.sh` → `generate-site.py` → `rsync static/`.

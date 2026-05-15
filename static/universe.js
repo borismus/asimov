@@ -41,6 +41,7 @@ import {
   renderPinnedOffscreenIndicators,
   pin,
   unpin,
+  dismissHoverOverlay,
   panToNode,
   escapeHtml,
 } from "./overlays.js";
@@ -416,6 +417,7 @@ initStories({
   scheduleRedraw,
   pushPath,
   unpin,
+  dismissHover: dismissHoverOverlay,
   onPinClick,
   onHoverEnter,
   onHoverMove,

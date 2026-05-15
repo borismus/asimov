@@ -16,7 +16,7 @@ import { renderFullCard, cardWidth, cardHeight, fullCardHeight, cardScreenScale,
 import { initConfirm, showConfirm, isConfirmOpen } from "./confirm.js";
 
 let state, gStoryDim, gStoryTrace, gStoryCards, gStoryStickies, gStoryStickiesFocused, gStoryCurrentCard, svg, zoom;
-let panToNode, scheduleRedraw, pushPath, unpinFn;
+let panToNode, scheduleRedraw, pushPath, unpinFn, dismissHoverFn;
 let onPinClickFn, onHoverEnterFn, onHoverMoveFn, onHoverLeaveFn;
 let TIER_LABEL_VAL, TIER_FULL_VAL;
 
@@ -27,6 +27,7 @@ export function initStories(deps) {
     state, gStoryDim, gStoryTrace, gStoryCards, gStoryStickies, gStoryStickiesFocused, gStoryCurrentCard, svg, zoom,
     panToNode, scheduleRedraw, pushPath,
     unpin: unpinFn,
+    dismissHover: dismissHoverFn,
     onPinClick: onPinClickFn,
     onHoverEnter: onHoverEnterFn,
     onHoverMove: onHoverMoveFn,
@@ -166,7 +167,7 @@ export function renderStoryCardChip() {
   const { k, x: tx, y: ty } = state.transform;
   const fullH = fullCardHeight * cardScreenScale;
   const foldedH = cardHeight * cardScreenScale;
-  const GAP = 8;
+  const GAP = 2;
 
   container.innerHTML = "";
   for (const cardId of cardIds) {
@@ -190,6 +191,14 @@ export function renderStoryCardChip() {
     group.className = "story-chip-group";
     group.style.left = `${sx}px`;
     group.style.top = `${sy + cardScreenH / 2 + GAP}px`;
+    // Bridge hit area (stories.css) covers the gap to the card so hover
+    // doesn't collapse in the dead zone between SVG card and HTML chip.
+    group.addEventListener("mouseenter", () => {
+      if (onHoverEnterFn) onHoverEnterFn(null, node);
+    });
+    group.addEventListener("mouseleave", () => {
+      if (onHoverLeaveFn) onHoverLeaveFn();
+    });
 
     for (const s of stories) {
       const btn = document.createElement("button");
@@ -199,24 +208,9 @@ export function renderStoryCardChip() {
       btn.title = `Open the "${s.title}" story`;
       btn.addEventListener("click", (e) => {
         e.stopPropagation();
-        // keepCamera: chip click means "enter this story while staying on
-        // this card". Auto-fitting the whole story would yank the user
-        // away from the context they just clicked into.
-        // anchorNodeId: pin THIS card's storyY to its baseline y so the
-        // user's clicked card doesn't visibly hop to the band — others
-        // get jittered around it instead.
+        // Keep the current zoom; show the full story overlay and focus this
+        // card. anchorNodeId pins its storyY to baseline y.
         enterStory(s.slug, { keepCamera: true, anchorNodeId: cardId });
-      });
-      // Keep the hover state alive while the cursor is on the chip — the
-      // 50 ms hover-leave debounce would otherwise tear the chip down
-      // mid-traversal from the card. onHoverEnter on the same node is
-      // intentionally a no-op past the leave-timer cancel, so re-entering
-      // here doesn't restart any timers.
-      btn.addEventListener("mouseenter", () => {
-        if (onHoverEnterFn) onHoverEnterFn(null, node);
-      });
-      btn.addEventListener("mouseleave", () => {
-        if (onHoverLeaveFn) onHoverLeaveFn();
       });
       group.appendChild(btn);
     }
@@ -352,6 +346,8 @@ export function enterStory(slug, { animate = false, keepUrl = false, keepCamera 
 
   // Two heavy overlays on the same cards is just noise — drop the pin first.
   if (state.pinnedId && unpinFn) unpinFn();
+  if (dismissHoverFn) dismissHoverFn();
+  if (state.hoverId) state.hoverId = null;
 
   // Single-shot session record so every story-state field moves together.
   // `step` is null until syncCurrentStep resolves it from the camera on
@@ -366,6 +362,10 @@ export function enterStory(slug, { animate = false, keepUrl = false, keepCamera 
   if (step != null && Number.isFinite(step) && nodes.length) {
     const snapped = Math.round(step * 2) / 2;
     initialStep = Math.max(0, Math.min(nodes.length - 1, snapped));
+  }
+  if (initialStep == null && anchorNodeId && nodes.length) {
+    const anchorIdx = nodes.findIndex((n) => n.id === anchorNodeId);
+    if (anchorIdx >= 0) initialStep = anchorIdx;
   }
   const fitTarget =
     !keepCamera && nodes.length ? computeStoryFitTransform(nodes) : null;
@@ -382,12 +382,6 @@ export function enterStory(slug, { animate = false, keepUrl = false, keepCamera 
       : state.transform
         ? state.transform.k
         : null,
-    // When entering via a card chip, the user's mental model is "I'm
-    // still looking at this card, just now in story context." Hide the
-    // other story cards + nav buttons until the user actively navigates
-    // — the band of other cards / arrows would distract from the card
-    // they clicked. Cleared on the first gotoStep.
-    anchorOnly: !!anchorNodeId,
     anchorNodeId,
   };
   // Suppress syncCurrentStep's first override so band-cluster ambiguity
@@ -397,16 +391,27 @@ export function enterStory(slug, { animate = false, keepUrl = false, keepCamera 
   document.body.classList.add("has-story");
 
   renderStoryBanner();
+  renderStoryCards();
   // Close the dropdown if it's open.
   const menu = document.getElementById("stories-menu");
   if (menu) menu.dataset.open = "false";
 
   // Camera fit, then redraw so trace + spotlight render against the new view.
-  // Skipped when keepCamera is set — chip clicks enter the story without
-  // yanking the user's view away from the card they were looking at.
+  // Skipped when keepCamera is set (URL reload with an explicit transform).
+  const focusStep = () => {
+    if (!state.story || initialStep == null) return;
+    gotoStep(initialStep, { preserveZoom: keepCamera || !!fitTarget });
+  };
   if (fitTarget) {
     const sel = animate ? svg.transition().duration(700) : svg;
-    sel.call(zoom.transform, fitTarget);
+    if (initialStep != null && animate) {
+      sel.call(zoom.transform, fitTarget).on("end", focusStep);
+    } else {
+      sel.call(zoom.transform, fitTarget);
+      if (initialStep != null) requestAnimationFrame(focusStep);
+    }
+  } else if (initialStep != null) {
+    requestAnimationFrame(focusStep);
   }
   scheduleRedraw();
 
@@ -424,7 +429,6 @@ export function exitStory({ keepUrl = false } = {}) {
   // tier back to LABEL here makes the standard transition logic fire.)
   state.tier = TIER_LABEL_VAL;
   document.body.classList.remove("has-story");
-  document.body.classList.remove("story-nav-hidden");
 
   // Clear ribbon + story cards; .story-member classes are re-applied on
   // every render so they'll fall away on the next redraw.
@@ -485,9 +489,6 @@ export function gotoStep(step, { preserveZoom = false } = {}) {
   const snapped = Math.round(step * 2) / 2;
   const clamped = Math.max(0, Math.min(n - 1, snapped));
   state.story.step = clamped;
-  // First explicit navigation reveals the rest of the story — clears the
-  // "anchor-only" mode set on chip entry.
-  state.story.anchorOnly = false;
   lastGotoStepTime = performance.now();
   renderStoryBanner();
   // Move the focused card layer before the camera — otherwise we pan to the
@@ -666,11 +667,6 @@ function updateStoryNavButtons() {
   const cur = state.story.step == null ? 0 : state.story.step;
   prev.disabled = cur <= 0;
   next.disabled = cur >= total - 1;
-  // Anchor-only mode (chip entry, pre-navigation): keep the buttons out
-  // of the user's way until they actually start stepping. CSS keys off
-  // `body.has-story` to show the buttons; toggling `.story-nav-hidden`
-  // on body lets us override that without churning the buttons' display.
-  document.body.classList.toggle("story-nav-hidden", !!state.story.anchorOnly);
 }
 
 // Set state.story.step to whichever focus point (node or edge) is closest
@@ -1157,13 +1153,9 @@ function segmentIntersectsRect(x1, y1, x2, y2, vp) {
 
 // ---- render: cards / thumbnails for story members ----------------------
 
-// Below STORY_FULL_K (overview / wide-fit zoom) we render fold=0 compact
-// cards with the `.story-thumb` class — CSS shrinks them to ~120 CSS px
-// so they form a band of small image thumbnails over the surrounding text
-// labels. As soon as the user zooms in past STORY_FULL_K, the overlay
-// switches to fold=1 full cards (with descriptions). The threshold is
-// deliberately well below the baseline LABEL→IMG cutoff so full cards
-// don't feel withheld during normal exploration.
+// Below STORY_FULL_K (overview / wide-fit zoom) non-current members render as
+// fold=0 thumbnails; at k ≥ STORY_FULL_K everyone is full. The focused card
+// (gStoryCurrentCard) is always unfolded regardless of k.
 const STORY_FULL_K = 0.3;
 // Track the last "look" rendered per layer so we can detect thumb↔full
 // transitions and force a clean re-enter. A d3 key function alone is not
@@ -1172,8 +1164,6 @@ const STORY_FULL_K = 0.3;
 // fold even after isThumb flips.
 const lastLook = new WeakMap();
 function bindStoryCards(layer, nodes, isCurrent) {
-  // The focused card (gStoryCurrentCard) is always unfolded; only non-current
-  // members shrink to thumbnails when zoomed out.
   const isThumb = !isCurrent && (state.transform?.k ?? 0) < STORY_FULL_K;
   const fold = isThumb ? 0 : 1;
   const wantLook = isThumb ? "thumb" : "full";
@@ -1208,17 +1198,11 @@ function bindStoryCards(layer, nodes, isCurrent) {
 }
 
 export function renderStoryCards() {
-  // Story-overlay renders at every tier in story mode. At TIER_FULL we get
-  // full cards with descriptions; below that we get compact thumbnails so
-  // story members stand apart from surrounding text labels.
   if (!state.story || !state.story.nodes.length) {
     gStoryCards.selectAll("*").remove();
     if (gStoryCurrentCard) gStoryCurrentCard.selectAll("*").remove();
     return;
   }
-  // anchor-only mode (set on chip entry): until the user navigates,
-  // render only the anchor card. The other story members would otherwise
-  // pop in around the card the user just clicked into.
   // Edge focus has no "current node" — all cards render in gStoryCards.
   const currentId = isNodeStep(state.story.step) && state.story.nodes[state.story.step]
     ? state.story.nodes[state.story.step].id
@@ -1230,6 +1214,7 @@ export function renderStoryCards() {
     ? []
     : state.story.nodes.filter((n) => n.id === currentId);
 
+  gStoryCards.selectAll("g.story-cards-visible, g.story-cards-away").remove();
   bindStoryCards(gStoryCards, nonCurrent, false);
   if (gStoryCurrentCard) bindStoryCards(gStoryCurrentCard, current, true);
 }

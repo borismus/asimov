@@ -55,7 +55,7 @@ function hoverIsSoloPreview() {
 // same dance onHoverLeave's debounce does. Pulled out so node-switching
 // (onHoverEnter on a different id) can run the same cleanup synchronously
 // instead of relying on the debounced leave path that gets cancelled.
-function dismissHoverOverlay() {
+export function dismissHoverOverlay() {
   state.hoverNeighbors = [];
   state.hoverLayout = new Map();
   state.hoverExpanded = false;

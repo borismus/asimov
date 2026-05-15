@@ -322,7 +322,11 @@ body.has-story.story-nav-hidden .story-nav-btn { display: none; }
   flex-direction: column;
   align-items: center;
   gap: 4px;
-  pointer-events: none;
+  /* Invisible bridge upward so the cursor can reach the chip without
+     crossing a pointer-events dead zone (hover would otherwise dismiss). */
+  pointer-events: auto;
+  padding-top: 14px;
+  margin-top: -14px;
 }
 #story-card-chip .story-chip-link {
   pointer-events: auto;

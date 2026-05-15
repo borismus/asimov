@@ -12,36 +12,43 @@
 // Baseline copies of story members are hidden via CSS so we don't render
 // the same node twice when zoomed in.
 
-import { renderFullCard } from "./card.js";
+import { renderFullCard, cardWidth, cardHeight, fullCardHeight, cardScreenScale, cardFixedZoom } from "./card.js";
+import { initConfirm, showConfirm, isConfirmOpen } from "./confirm.js";
 
-let state, gStoryDim, gStoryTrace, gStoryCards, gStoryStickies, gStoryCurrentCard, svg, zoom;
-let panToNode, scheduleRedraw, pushPath, isLocalhost, unpinFn;
+let state, gStoryDim, gStoryTrace, gStoryCards, gStoryStickies, gStoryStickiesFocused, gStoryCurrentCard, svg, zoom;
+let panToNode, scheduleRedraw, pushPath, unpinFn;
 let onPinClickFn, onHoverEnterFn, onHoverMoveFn, onHoverLeaveFn;
+let TIER_LABEL_VAL, TIER_FULL_VAL;
 
 const HEADER_PAD = 12; // breathing room between banner and the fitted bbox
 
 export function initStories(deps) {
   ({
-    state, gStoryDim, gStoryTrace, gStoryCards, gStoryStickies, gStoryCurrentCard, svg, zoom,
-    panToNode, scheduleRedraw, pushPath, isLocalhost,
+    state, gStoryDim, gStoryTrace, gStoryCards, gStoryStickies, gStoryStickiesFocused, gStoryCurrentCard, svg, zoom,
+    panToNode, scheduleRedraw, pushPath,
     unpin: unpinFn,
     onPinClick: onPinClickFn,
     onHoverEnter: onHoverEnterFn,
     onHoverMove: onHoverMoveFn,
     onHoverLeave: onHoverLeaveFn,
+    TIER_LABEL: TIER_LABEL_VAL,
+    TIER_FULL: TIER_FULL_VAL,
   } = deps);
 
-  // Keyboard handling. Esc closes the active story; ←/→ step through it.
-  // All gated on storyId being set and focus NOT being in a text input.
+  // Keyboard handling. Esc closes the active story (via the confirm popover);
+  // ←/→ step through it. All gated on an active story session and focus NOT being
+  // in a text input. If the confirm popover is open, its own Esc handler
+  // owns the key — bail so we don't double-handle.
   window.addEventListener("keydown", (e) => {
-    if (!state.storyId) return;
+    if (!state.story) return;
+    if (isConfirmOpen()) return;
     const ae = document.activeElement;
     const tag = ae && ae.tagName;
     if (tag === "INPUT" || tag === "TEXTAREA" || (ae && ae.isContentEditable)) return;
 
     if (e.key === "Escape") {
       e.preventDefault();
-      exitStory();
+      requestExitStory();
       return;
     }
     if (e.key === "ArrowRight") { e.preventDefault(); stepBy(1); }
@@ -55,6 +62,8 @@ export function initStories(deps) {
   const nextBtn = document.getElementById("story-next-btn");
   if (prevBtn) prevBtn.addEventListener("click", () => stepBy(-1));
   if (nextBtn) nextBtn.addEventListener("click", () => stepBy(1));
+
+  initConfirm("app-confirm");
 
   // Header button toggles the dropdown.
   const btn = document.getElementById("action-stories");
@@ -91,8 +100,129 @@ export async function loadStories(url = "/static/stories.json") {
     state.stories.push(story);
     state.storiesById[story.slug] = story;
   }
+  buildStoriesByCardId();
   console.log(`Loaded ${state.stories.length} stor${state.stories.length === 1 ? "y" : "ies"}.`);
   renderStoriesMenu();
+  // Cold-load may have already restored a pin before stories arrived; if
+  // that card turns out to be a story member, surface its chip now.
+  renderStoryCardChip();
+}
+
+// Reverse index card id → story[]. Built once after loadStories; the click
+// handler reads from it on every card click, so a per-click scan over
+// state.stories would otherwise be wasted work.
+function buildStoriesByCardId() {
+  const idx = new Map();
+  for (const story of state.stories) {
+    for (const step of story.resolvedSteps) {
+      const cardId = step.node && step.node.id;
+      if (!cardId) continue;
+      let bucket = idx.get(cardId);
+      if (!bucket) { bucket = []; idx.set(cardId, bucket); }
+      bucket.push(story);
+    }
+  }
+  state.storiesByCardId = idx;
+}
+
+// Returns the stories that contain the given card id, or [] if none.
+export function getStoriesForCard(cardId) {
+  return state.storiesByCardId.get(cardId) || [];
+}
+
+// "Explore the <story name> story" chips below every story-member card
+// visible at IMG / FULL tier, plus below the pinned card at any tier
+// (pinned overlay always shows a full card). Hidden when a story is
+// already active. Called from overlays.js's updatePinnedArtifacts every
+// redraw so chip positions track pan/zoom, and once explicitly from
+// loadStories so cold-load with a pre-pinned card doesn't miss it.
+export function renderStoryCardChip() {
+  const container = document.getElementById("story-card-chip");
+  if (!container) return;
+
+  if (state.story || !state.transform) {
+    container.hidden = true;
+    container.innerHTML = "";
+    return;
+  }
+
+  // Chips appear only on cards the user is actively engaging with — the
+  // pinned card (steady state) and the hovered card (transient). Decorating
+  // every visible story-member card cluttered the canvas and meant the chip
+  // never "hid on hover out" because something always claimed it.
+  const cardIds = new Set();
+  if (state.pinnedId && state.storiesByCardId.has(state.pinnedId)) {
+    cardIds.add(state.pinnedId);
+  }
+  if (state.hoverId && state.hoverExpanded && state.storiesByCardId.has(state.hoverId)) {
+    cardIds.add(state.hoverId);
+  }
+  if (cardIds.size === 0) {
+    container.hidden = true;
+    container.innerHTML = "";
+    return;
+  }
+
+  const { k, x: tx, y: ty } = state.transform;
+  const fullH = fullCardHeight * cardScreenScale;
+  const foldedH = cardHeight * cardScreenScale;
+  const GAP = 8;
+
+  container.innerHTML = "";
+  for (const cardId of cardIds) {
+    const node = state.nodesById[cardId];
+    if (!node) continue;
+    const stories = state.storiesByCardId.get(cardId);
+    if (!stories || !stories.length) continue;
+
+    // Pinned overlay always paints a full card; hover overlay opens to full
+    // once the fold animation completes (state.hoverFoldOpen). Before that
+    // it's image-only — chip sits closer.
+    const isPinned = cardId === state.pinnedId;
+    const isHovered = cardId === state.hoverId;
+    const showsFull = isPinned || (isHovered && state.hoverFoldOpen);
+    const cardScreenH = showsFull ? fullH : foldedH;
+
+    const sx = tx + node.x * k;
+    const sy = ty + node.y * k;
+
+    const group = document.createElement("div");
+    group.className = "story-chip-group";
+    group.style.left = `${sx}px`;
+    group.style.top = `${sy + cardScreenH / 2 + GAP}px`;
+
+    for (const s of stories) {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "story-chip-link";
+      btn.textContent = `Explore the ${s.title} story`;
+      btn.title = `Open the "${s.title}" story`;
+      btn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        // keepCamera: chip click means "enter this story while staying on
+        // this card". Auto-fitting the whole story would yank the user
+        // away from the context they just clicked into.
+        // anchorNodeId: pin THIS card's storyY to its baseline y so the
+        // user's clicked card doesn't visibly hop to the band — others
+        // get jittered around it instead.
+        enterStory(s.slug, { keepCamera: true, anchorNodeId: cardId });
+      });
+      // Keep the hover state alive while the cursor is on the chip — the
+      // 50 ms hover-leave debounce would otherwise tear the chip down
+      // mid-traversal from the card. onHoverEnter on the same node is
+      // intentionally a no-op past the leave-timer cancel, so re-entering
+      // here doesn't restart any timers.
+      btn.addEventListener("mouseenter", () => {
+        if (onHoverEnterFn) onHoverEnterFn(null, node);
+      });
+      btn.addEventListener("mouseleave", () => {
+        if (onHoverLeaveFn) onHoverLeaveFn();
+      });
+      group.appendChild(btn);
+    }
+    container.appendChild(group);
+  }
+  container.hidden = false;
 }
 
 // Resolve step IDs against state.nodesById; drop missing IDs with a warning.
@@ -130,10 +260,90 @@ function normalizeStory(raw) {
   };
 }
 
+// ---- story-aligned coordinates -------------------------------------------
+
+// Story members get a virtual y near a shared band so the story reads as a
+// clean horizontal arc. We don't pin them to a single y — close-x neighbors
+// would stack on top of each other in dense eras — so each member gets a
+// stable hash-based offset within ±BAND_Y_JITTER. x stays at baseline
+// (already year-monotonic at the world layer).
+const BAND_Y_JITTER = 350;  // world units
+
+// `anchorNodeId`: pin this node's storyY to its baseline y (zero jitter)
+// and use that y as the band center for the rest. The card the user
+// clicked to enter the story stays exactly where it was on screen — no
+// jump, no duplicate-then-snap. Without an anchor we fall back to the
+// mean of baseline y's.
+function buildStoryCoords(nodes, anchorNodeId = null) {
+  if (!nodes.length) return {};
+  let y0;
+  const anchor = anchorNodeId
+    ? nodes.find((n) => n.id === anchorNodeId)
+    : null;
+  if (anchor) {
+    y0 = anchor.y;
+  } else {
+    let sumY = 0;
+    for (const n of nodes) sumY += n.y;
+    y0 = sumY / nodes.length;
+  }
+  const out = {};
+  for (const n of nodes) {
+    const jitter = (anchor && n.id === anchor.id)
+      ? 0
+      : hashUnit(n.id + "storyY") * BAND_Y_JITTER;
+    out[n.id] = { x: n.x, y: y0 + jitter };
+  }
+  return out;
+}
+
+function storyCoord(n) {
+  if (state.story) {
+    const c = state.story.coordsById && state.story.coordsById[n.id];
+    if (c) return c;
+  }
+  return { x: n.x, y: n.y };
+}
+
+// World-space endpoints for the ribbon segment between two story nodes.
+// Anchors sit on the midpoint of the card edge facing the neighbor so the
+// ribbon enters and exits each card silhouette cleanly, without stubs
+// dangling off in empty space. When consecutive cards overlap on screen
+// (band-cluster: close in x with band-y jitter scattering them on y), the
+// edge anchors would cross over each other and look broken — fall back to
+// plain center-to-center in that case.
+function edgeAnchors(a, b) {
+  const k = (state.transform && state.transform.k) || 1;
+  const ek = Math.min(k, cardFixedZoom);
+  const halfW = (cardWidth * cardScreenScale) / 2 / ek;
+  const halfH = (fullCardHeight * cardScreenScale) / 2 / ek;
+  const ca = storyCoord(a);
+  const cb = storyCoord(b);
+  const dx = cb.x - ca.x;
+  const dy = cb.y - ca.y;
+  const xGapScreen = (Math.abs(dx) - 2 * halfW) * ek;
+  const yGapScreen = (Math.abs(dy) - 2 * halfH) * ek;
+  if (xGapScreen < 0 && yGapScreen < 0) {
+    return { a: { x: ca.x, y: ca.y }, b: { x: cb.x, y: cb.y } };
+  }
+  if (Math.abs(dx) >= Math.abs(dy)) {
+    const sgn = dx >= 0 ? 1 : -1;
+    return {
+      a: { x: ca.x + sgn * halfW, y: ca.y },
+      b: { x: cb.x - sgn * halfW, y: cb.y },
+    };
+  }
+  const sgn = dy >= 0 ? 1 : -1;
+  return {
+    a: { x: ca.x, y: ca.y + sgn * halfH },
+    b: { x: cb.x, y: cb.y - sgn * halfH },
+  };
+}
+
 // ---- enter / exit ---------------------------------------------------------
 
-export function enterStory(slug, { animate = false, keepUrl = false } = {}) {
-  if (state.storyId === slug) return;
+export function enterStory(slug, { animate = false, keepUrl = false, keepCamera = false, anchorNodeId = null, step = null } = {}) {
+  if (state.story && state.story.id === slug) return;
   const story = state.storiesById[slug];
   if (!story) {
     console.warn(`enterStory: unknown slug "${slug}"`);
@@ -143,14 +353,38 @@ export function enterStory(slug, { animate = false, keepUrl = false } = {}) {
   // Two heavy overlays on the same cards is just noise — drop the pin first.
   if (state.pinnedId && unpinFn) unpinFn();
 
-  state.storyId = slug;
-  state.storyNodes = story.resolvedSteps.map((s) => s.node);
-  state.storySteps = story.resolvedSteps;
-  state.storyMissing = story.missingIds;
-  // storyStep is derived from camera position on every redraw — see
-  // syncCurrentStep at the top of renderStoryTrace. enterStory leaves it
-  // null until the first redraw resolves it.
-  state.storyStep = null;
+  // Single-shot session record so every story-state field moves together.
+  // `step` is null until syncCurrentStep resolves it from the camera on
+  // the next redraw (see renderStoryTrace). `missingIds` is intentionally
+  // dropped here — it was set on every enter and never read.
+  // `anchorNodeId` (when set) keeps that card's storyY = baselineY so the
+  // entry point doesn't visibly jump as the band-jitter takes effect.
+  const nodes = story.resolvedSteps.map((s) => s.node);
+  // Snap the URL-provided step to a valid half-integer in [0, N-1] so a
+  // stale or hand-edited URL can't put us out of range.
+  let initialStep = null;
+  if (step != null && Number.isFinite(step) && nodes.length) {
+    const snapped = Math.round(step * 2) / 2;
+    initialStep = Math.max(0, Math.min(nodes.length - 1, snapped));
+  }
+  state.story = {
+    id: slug,
+    nodes,
+    steps: story.resolvedSteps,
+    step: initialStep,
+    coordsById: buildStoryCoords(nodes, anchorNodeId),
+    // When entering via a card chip, the user's mental model is "I'm
+    // still looking at this card, just now in story context." Hide the
+    // other story cards + nav buttons until the user actively navigates
+    // — the band of other cards / arrows would distract from the card
+    // they clicked. Cleared on the first gotoStep.
+    anchorOnly: !!anchorNodeId,
+    anchorNodeId,
+  };
+  // Suppress syncCurrentStep's first override so band-cluster ambiguity
+  // doesn't snap our deliberately-set step back to the lowest index in the
+  // cluster. The lockout expires after the standard zoom-transition window.
+  if (initialStep != null) lockoutSyncStep();
   document.body.classList.add("has-story");
 
   renderStoryBanner();
@@ -159,8 +393,10 @@ export function enterStory(slug, { animate = false, keepUrl = false } = {}) {
   if (menu) menu.dataset.open = "false";
 
   // Camera fit, then redraw so trace + spotlight render against the new view.
-  if (state.storyNodes.length) {
-    const target = computeStoryFitTransform(state.storyNodes);
+  // Skipped when keepCamera is set — chip clicks enter the story without
+  // yanking the user's view away from the card they were looking at.
+  if (!keepCamera && nodes.length) {
+    const target = computeStoryFitTransform(nodes);
     if (target) {
       const sel = animate ? svg.transition().duration(700) : svg;
       sel.call(zoom.transform, target);
@@ -168,53 +404,120 @@ export function enterStory(slug, { animate = false, keepUrl = false } = {}) {
   }
   scheduleRedraw();
 
-  if (!keepUrl && pushPath && !isLocalhost()) {
+  if (!keepUrl && pushPath) {
     pushPath(`/story/${slug}`);
   }
 }
 
 export function exitStory({ keepUrl = false } = {}) {
-  if (!state.storyId) return;
-  state.storyId = null;
-  state.storyNodes = [];
-  state.storySteps = [];
-  state.storyMissing = [];
-  state.storyStep = null;
+  if (!state.story) return;
+  state.story = null;
+  // Force the next redraw to run a LABEL → IMG/FULL transition so labels
+  // fade out and cards fade in cleanly. (During the story, state.tier was
+  // tracking k as usual but labels were being rendered regardless; setting
+  // tier back to LABEL here makes the standard transition logic fire.)
+  state.tier = TIER_LABEL_VAL;
   document.body.classList.remove("has-story");
+  document.body.classList.remove("story-nav-hidden");
 
   // Clear ribbon + story cards; .story-member classes are re-applied on
   // every render so they'll fall away on the next redraw.
   gStoryTrace.selectAll("*").remove();
   gStoryCards.selectAll("*").remove();
+  if (gStoryStickiesFocused) gStoryStickiesFocused.selectAll("*").remove();
   renderStoryBanner();
   scheduleRedraw();
 
-  if (!keepUrl && pushPath && !isLocalhost()) {
+  if (!keepUrl && pushPath) {
     pushPath("/");
   }
 }
 
 // ---- step navigation ------------------------------------------------------
 
-export function gotoStep(i) {
-  if (!state.storyId) return;
-  const n = state.storyNodes.length;
+// state.story.step uses half-integers: 0, 0.5, 1, 1.5, ..., N-1. Integers
+// focus a node; halves focus the edge between node i (floor) and node
+// i+1. The user can step ←/→ through every focus point in sequence
+// (node → edge → node → edge ...) and click stickies / cards to jump.
+function isNodeStep(s) { return s != null && Number.isInteger(s); }
+function isEdgeStep(s) { return s != null && !Number.isInteger(s); }
+function edgeIdxOf(s) { return isEdgeStep(s) ? Math.floor(s) : null; }
+
+function stepTargetCoord(step) {
+  if (isNodeStep(step)) {
+    return storyCoord(state.story.nodes[step]);
+  }
+  const i = edgeIdxOf(step);
+  const a = storyCoord(state.story.nodes[i]);
+  const b = storyCoord(state.story.nodes[i + 1]);
+  return { x: (a.x + b.x) / 2, y: (a.y + b.y) / 2 };
+}
+
+// Timestamp of the last gotoStep, used to suppress syncCurrentStep during
+// the camera transition that follows. Without this, the redraw triggered
+// immediately after gotoStep runs syncCurrentStep while the camera is
+// still at the OLD position — and the old focus is strictly closer, so
+// the new focus gets clobbered. enterStory also flips the lockout when it
+// seeds an initial step from the URL so the first sync doesn't overwrite
+// the deliberate value.
+let lastGotoStepTime = 0;
+const GOTO_STEP_LOCKOUT_MS = 550;  // covers the 500ms zoom transition + a buffer
+function lockoutSyncStep() { lastGotoStepTime = performance.now(); }
+
+export function gotoStep(step) {
+  if (!state.story) return;
+  const n = state.story.nodes.length;
   if (!n) return;
-  const clamped = Math.max(0, Math.min(n - 1, i));
-  state.storyStep = clamped;
-  if (panToNode) panToNode(state.storyNodes[clamped]);
+  // Snap to nearest valid half-step and clamp to [0, n-1].
+  const snapped = Math.round(step * 2) / 2;
+  const clamped = Math.max(0, Math.min(n - 1, snapped));
+  state.story.step = clamped;
+  // First explicit navigation reveals the rest of the story — clears the
+  // "anchor-only" mode set on chip entry.
+  state.story.anchorOnly = false;
+  lastGotoStepTime = performance.now();
+  zoomToStep(stepTargetCoord(clamped));
   renderStoryBanner();
   scheduleRedraw();
 }
 
-// Step ±1 from the currently-derived storyStep, clamped to the ends. Shared
-// by the keyboard handler and the on-screen ‹ › buttons.
+// Step the camera to the step that holds the given card id, if it's a
+// member of the active story. Used by the in-story click on a baseline
+// dot (story member cards themselves are handled by the story-overlay's
+// own click handler).
+export function gotoCardInStory(cardId) {
+  if (!state.story) return false;
+  const idx = state.story.nodes.findIndex((n) => n.id === cardId);
+  if (idx < 0) return false;
+  gotoStep(idx);
+  return true;
+}
+
+// Pan to a story step. If the user is at overview zoom (below the thumb→
+// full threshold), bump zoom up to STORY_FULL_K so the destination card
+// reveals itself as a full card. Once the user is already zoomed in past
+// that threshold, preserve their current zoom — navigation between
+// adjacent steps shouldn't yank them to a fixed level.
+function zoomToStep(n) {
+  if (!state.transform || !svg || !zoom) return;
+  const k = Math.max(state.transform.k, STORY_FULL_K);
+  const tx = window.innerWidth / 2 - n.x * k;
+  const banner = document.getElementById("story-banner");
+  const bannerH = banner ? banner.getBoundingClientRect().height : 0;
+  const topInset = (state.headerHeight || 0) + bannerH + HEADER_PAD;
+  const ty = topInset + (window.innerHeight - topInset) / 2 - n.y * k;
+  svg.transition().duration(500)
+    .call(zoom.transform, d3.zoomIdentity.translate(tx, ty).scale(k));
+}
+
+// Step ±1 focus point — half-integer increments so each press cycles
+// node → edge → node → edge. Clamped to [0, N-1].
 function stepBy(delta) {
-  if (!state.storyId) return;
-  const total = state.storyNodes.length;
+  if (!state.story) return;
+  const total = state.story.nodes.length;
   if (!total) return;
-  const cur = state.storyStep == null ? 0 : state.storyStep;
-  const next = Math.max(0, Math.min(total - 1, cur + delta));
+  const cur = state.story.step == null ? 0 : state.story.step;
+  const next = Math.max(0, Math.min(total - 1, cur + delta * 0.5));
   if (next === cur) return;
   gotoStep(next);
 }
@@ -225,32 +528,77 @@ function updateStoryNavButtons() {
   const prev = document.getElementById("story-prev-btn");
   const next = document.getElementById("story-next-btn");
   if (!prev || !next) return;
-  const total = state.storyNodes.length;
-  const cur = state.storyStep == null ? 0 : state.storyStep;
-  prev.disabled = !state.storyId || cur <= 0;
-  next.disabled = !state.storyId || cur >= total - 1;
+  if (!state.story) {
+    prev.disabled = true;
+    next.disabled = true;
+    return;
+  }
+  const total = state.story.nodes.length;
+  const cur = state.story.step == null ? 0 : state.story.step;
+  prev.disabled = cur <= 0;
+  next.disabled = cur >= total - 1;
+  // Anchor-only mode (chip entry, pre-navigation): keep the buttons out
+  // of the user's way until they actually start stepping. CSS keys off
+  // `body.has-story` to show the buttons; toggling `.story-nav-hidden`
+  // on body lets us override that without churning the buttons' display.
+  document.body.classList.toggle("story-nav-hidden", !!state.story.anchorOnly);
 }
 
-// Set state.storyStep to whichever story node is closest (in screen px) to
-// the viewport center. Runs at the top of every story render so the
-// .story-current glow tracks the camera in real time — including during
-// the gotoStep animation, where the "current" naturally transitions as
-// the camera passes the midpoint between adjacent cards.
+// Set state.story.step to whichever focus point (node or edge) is closest
+// to the viewport center in screen px. Tracks the camera in real time so
+// .story-current glow transitions smoothly as the user pans/zooms.
+//
+// We SEED bestStep with the current state.story.step and only override on a
+// STRICT improvement — ties favor staying put. Without that, when two
+// consecutive story nodes share the same storyCoords (band cluster: edge
+// midpoint == both card centers), every focus point at that location has
+// d²=0 and the first-iterated focus wins. That would cause gotoStep(i+1)
+// to be undone by the very next syncCurrentStep, leaving the user
+// permanently stuck at the lowest-index focus in the cluster.
 function syncCurrentStep() {
-  if (!state.storyId || !state.storyNodes.length || !state.transform) return;
+  if (!state.story || !state.story.nodes.length || !state.transform) return;
+  // Don't override the explicit focus while a gotoStep transition is in
+  // flight — the camera is mid-flight and the OLD focus is still closer.
+  if (performance.now() - lastGotoStepTime < GOTO_STEP_LOCKOUT_MS) return;
   const cx = window.innerWidth / 2;
   const cy = window.innerHeight / 2;
   const { k, x: tx, y: ty } = state.transform;
-  let bestIdx = 0;
-  let bestDist = Infinity;
-  for (let i = 0; i < state.storyNodes.length; i++) {
-    const n = state.storyNodes[i];
-    const sx = tx + n.x * k;
-    const sy = ty + n.y * k;
-    const d2 = (sx - cx) * (sx - cx) + (sy - cy) * (sy - cy);
-    if (d2 < bestDist) { bestDist = d2; bestIdx = i; }
+  const N = state.story.nodes.length;
+  const distOf = (worldX, worldY) => {
+    const sx = tx + worldX * k;
+    const sy = ty + worldY * k;
+    return (sx - cx) * (sx - cx) + (sy - cy) * (sy - cy);
+  };
+  // Seed with the current step so ties (e.g. cluster of collapsed nodes
+  // at the same coord) don't override a deliberate gotoStep result.
+  let bestStep = state.story.step;
+  let bestDist;
+  if (bestStep == null) {
+    bestStep = 0;
+    bestDist = Infinity;
+  } else if (isNodeStep(bestStep)) {
+    const c = storyCoord(state.story.nodes[bestStep]);
+    bestDist = distOf(c.x, c.y);
+  } else {
+    const i = Math.floor(bestStep);
+    const a = storyCoord(state.story.nodes[i]);
+    const b = storyCoord(state.story.nodes[i + 1]);
+    bestDist = distOf((a.x + b.x) / 2, (a.y + b.y) / 2);
   }
-  state.storyStep = bestIdx;
+  // Nodes: integer steps. Strict less-than so the seed wins on ties.
+  for (let i = 0; i < N; i++) {
+    const c = storyCoord(state.story.nodes[i]);
+    const d2 = distOf(c.x, c.y);
+    if (d2 < bestDist) { bestDist = d2; bestStep = i; }
+  }
+  // Edges: half-integer steps at the midpoint of each segment.
+  for (let i = 0; i < N - 1; i++) {
+    const a = storyCoord(state.story.nodes[i]);
+    const b = storyCoord(state.story.nodes[i + 1]);
+    const d2 = distOf((a.x + b.x) / 2, (a.y + b.y) / 2);
+    if (d2 < bestDist) { bestDist = d2; bestStep = i + 0.5; }
+  }
+  state.story.step = bestStep;
 }
 
 
@@ -260,17 +608,18 @@ export function computeStoryFitTransform(nodes) {
   if (!nodes || !nodes.length) return null;
   if (nodes.length === 1) {
     const k = 1.5;
-    const n = nodes[0];
+    const c = storyCoord(nodes[0]);
     return d3.zoomIdentity
-      .translate(window.innerWidth / 2 - n.x * k, window.innerHeight / 2 - n.y * k)
+      .translate(window.innerWidth / 2 - c.x * k, window.innerHeight / 2 - c.y * k)
       .scale(k);
   }
   let minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
   for (const n of nodes) {
-    if (n.x < minX) minX = n.x;
-    if (n.x > maxX) maxX = n.x;
-    if (n.y < minY) minY = n.y;
-    if (n.y > maxY) maxY = n.y;
+    const c = storyCoord(n);
+    if (c.x < minX) minX = c.x;
+    if (c.x > maxX) maxX = c.x;
+    if (c.y < minY) minY = c.y;
+    if (c.y > maxY) maxY = c.y;
   }
   const w = window.innerWidth;
   const h = window.innerHeight;
@@ -297,17 +646,20 @@ export function computeStoryFitTransform(nodes) {
 // ---- render: ribbon + .story-member tagging ----------------------------
 
 export function renderStoryTrace() {
-  // Derive storyStep from camera before tagging so .story-current tracks
+  // Derive state.story.step from camera before tagging so .story-current tracks
   // pan/zoom (including mid-gotoStep animation) without needing explicit
   // updates from the navigation entry points.
   syncCurrentStep();
   updateStoryNavButtons();
 
   // Always re-tag — fresh card/dot/label entries from the regular pipeline
-  // need the .story-member class added; exits take care of removal.
-  const memberIds = new Set(state.storyId ? state.storyNodes.map((n) => n.id) : []);
-  const currentId = state.storyStep != null && state.storyNodes[state.storyStep]
-    ? state.storyNodes[state.storyStep].id
+  // need the .story-member class added; exits take care of removal. Node
+  // focus drives .story-current on the matching card; edge focus leaves
+  // all cards uncurrent (the sticky carries the highlight instead).
+  const session = state.story;
+  const memberIds = new Set(session ? session.nodes.map((n) => n.id) : []);
+  const currentId = session && isNodeStep(session.step) && session.nodes[session.step]
+    ? session.nodes[session.step].id
     : null;
 
   d3.selectAll("g.cards > g.card")
@@ -317,15 +669,23 @@ export function renderStoryTrace() {
   d3.selectAll(".labels g.dag-label, .sticky-labels g.dag-label, .search-labels g.dag-label")
     .classed("story-member", (d) => memberIds.has(d.id));
 
-  if (!state.storyId || !state.storyNodes.length) {
+  if (!state.story || !state.story.nodes.length) {
     gStoryTrace.selectAll("*").remove();
     return;
   }
 
-  // Ribbon: a single <path> through every step's world coords. Connects
-  // consecutive pairs regardless of canonical TSV deps — that's the point.
-  const d = state.storyNodes
-    .map((n, i) => `${i === 0 ? "M" : "L"} ${n.x} ${n.y}`)
+  // Ribbon: a single continuous polyline through every story node's
+  // center. Independent corner-offset segments leave visible gaps at each
+  // card — at zoomed-out band-cluster views the user sees only the long
+  // segments between separated cards and the cluster pairs look
+  // disconnected. A through-center polyline reads as one continuous
+  // arc; the ribbon paints above the story cards (see universe.js layer
+  // order) so cluster-internal connections are visible too.
+  const d = state.story.nodes
+    .map((n, i) => {
+      const c = storyCoord(n);
+      return `${i === 0 ? "M" : "L"} ${c.x} ${c.y}`;
+    })
     .join(" ");
   let ribbon = gStoryTrace.select("path.story-trace-ribbon");
   if (ribbon.empty()) {
@@ -354,15 +714,68 @@ const STICKY_TILT_DEG = 2.5;
 // every redraw, pushing stickies apart from each other and away from the
 // story cards. All math happens in screen-pixel space (where extents are
 // constant); world-coord transforms are derived at the end.
-const STICKY_CARD_W = 220;
-const STICKY_CARD_H = 110;
 const STICKY_EDGE_W = 240;
 const STICKY_EDGE_H = 110;
-// Cards render at fold=1 (full) at constant screen size = cardScreenScale * card-local size.
-const CARD_W_SCREEN = 240 * 1.2;       // cardWidth * cardScreenScale
-const CARD_H_SCREEN = 316.667 * 1.2;   // fullCardHeight * cardScreenScale (approx)
 const STICKY_GAP = 12;
 const STICKY_MAX_ITER = 60;
+
+// Screen-space rect representing where edge labels are allowed to sit.
+// Top edge respects header + story banner; the rest is window bounds with
+// a small padding so labels don't crowd the screen edge.
+function viewportRect() {
+  const w = window.innerWidth;
+  const h = window.innerHeight;
+  const banner = document.getElementById("story-banner");
+  const bannerH = banner ? banner.getBoundingClientRect().height : 0;
+  const topInset = (state.headerHeight || 0) + bannerH + HEADER_PAD;
+  const PAD = 8;
+  return { x0: PAD, y0: topInset + PAD, x1: w - PAD, y1: h - PAD };
+}
+
+// Clip segment (x1,y1)-(x2,y2) against rect. Returns the entry point (where
+// the segment first crosses into the rect from outside), with the inward
+// unit-normal so callers can pull a label off the screen edge. Returns null
+// if the segment doesn't intersect the rect.
+function clipSegmentToRect(x1, y1, x2, y2, rect) {
+  const dx = x2 - x1;
+  const dy = y2 - y1;
+  let tEnter = 0;
+  let tExit = 1;
+  let enterAxis = null; // "x" or "y" for the side that determined tEnter
+  const sides = [
+    { p: -dx, q: x1 - rect.x0, axis: "x", inward: 1 },  // left   (x >= x0)
+    { p:  dx, q: rect.x1 - x1, axis: "x", inward: -1 }, // right  (x <= x1)
+    { p: -dy, q: y1 - rect.y0, axis: "y", inward: 1 },  // top    (y >= y0)
+    { p:  dy, q: rect.y1 - y1, axis: "y", inward: -1 }, // bottom (y <= y1)
+  ];
+  let inwardX = 0, inwardY = 0;
+  for (const s of sides) {
+    if (s.p === 0) {
+      if (s.q < 0) return null; // parallel and outside
+      continue;
+    }
+    const t = s.q / s.p;
+    if (s.p < 0) {
+      if (t > tEnter) {
+        tEnter = t;
+        enterAxis = s.axis;
+        inwardX = s.axis === "x" ? s.inward : 0;
+        inwardY = s.axis === "y" ? s.inward : 0;
+      }
+    } else {
+      if (t < tExit) tExit = t;
+    }
+  }
+  if (tEnter > tExit) return null;
+  // tEnter === 0 means (x1, y1) is already inside; no edge crossing.
+  if (tEnter <= 0 || enterAxis == null) return null;
+  return {
+    x: x1 + dx * tEnter,
+    y: y1 + dy * tEnter,
+    inwardX,
+    inwardY,
+  };
+}
 
 function rectOverlap(a, b) {
   const dx = b.cx - a.cx;
@@ -379,48 +792,74 @@ function rectOverlap(a, b) {
 // Returns layout in screen coords; consumer converts back to world for the
 // SVG transform via state.transform. Bail to [] when no story is active.
 function layoutStickies() {
-  if (!state.transform || !state.storyId) return [];
+  if (!state.transform || !state.story) return [];
   const k = state.transform.k;
   const tx = state.transform.x;
   const ty = state.transform.y;
 
   const items = [];
-  // Edge stickies — anchored to each segment midpoint. (Card stickies
-  // were removed in v3.1: too noisy alongside the cards' own descriptions
-  // plus the edge labels.)
-  for (let i = 0; i < state.storyNodes.length - 1; i++) {
-    const a = state.storyNodes[i];
-    const b = state.storyNodes[i + 1];
-    const step = state.storySteps[i + 1];
+  // Edge stickies — anchored at the midpoint of the corner-offset ribbon
+  // segment. If the natural midpoint would land the sticky bbox even
+  // partly off-screen, slide along the segment to the closest t where the
+  // entire bbox fits. The valid t-range comes from intersecting the
+  // segment with the rectangle of allowed sticky centers (viewport inset
+  // by half-sticky); snap t=0.5 to that range. If no t works (segment
+  // doesn't pass through the safe area), skip the sticky entirely.
+  const vp = viewportRect();
+  const xMin = vp.x0 + STICKY_EDGE_W / 2;
+  const xMax = vp.x1 - STICKY_EDGE_W / 2;
+  const yMin = vp.y0 + STICKY_EDGE_H / 2;
+  const yMax = vp.y1 - STICKY_EDGE_H / 2;
+  for (let i = 0; i < state.story.nodes.length - 1; i++) {
+    const a = state.story.nodes[i];
+    const b = state.story.nodes[i + 1];
+    const step = state.story.steps[i + 1];
     if (!step || !step.edgeNote) continue;
-    const mx = tx + ((a.x + b.x) / 2) * k;
-    const my = ty + ((a.y + b.y) / 2) * k;
+    const { a: ea, b: eb } = edgeAnchors(a, b);
+    const ax = tx + ea.x * k;
+    const ay = ty + ea.y * k;
+    const bx = tx + eb.x * k;
+    const by = ty + eb.y * k;
+    const dx = bx - ax;
+    const dy = by - ay;
+    let tLo = 0, tHi = 1;
+    if (dx !== 0) {
+      const t1 = (xMin - ax) / dx;
+      const t2 = (xMax - ax) / dx;
+      tLo = Math.max(tLo, Math.min(t1, t2));
+      tHi = Math.min(tHi, Math.max(t1, t2));
+    } else if (ax < xMin || ax > xMax) {
+      continue;
+    }
+    if (dy !== 0) {
+      const t1 = (yMin - ay) / dy;
+      const t2 = (yMax - ay) / dy;
+      tLo = Math.max(tLo, Math.min(t1, t2));
+      tHi = Math.min(tHi, Math.max(t1, t2));
+    } else if (ay < yMin || ay > yMax) {
+      continue;
+    }
+    if (tLo > tHi) continue;
+    const t = Math.max(tLo, Math.min(tHi, 0.5));
+    const midX = ax + t * dx;
+    const midY = ay + t * dy;
     items.push({
       id: `edge-${a.id}-${b.id}`,
       type: "edge",
       note: step.edgeNote,
-      cx: mx, cy: my,
+      cx: midX, cy: midY,
       w: STICKY_EDGE_W, h: STICKY_EDGE_H,
-      // Click on this edge sticky → goto its destination step (the step
-      // whose edge_note this prose describes).
+      // Click on this edge sticky → goto its destination step.
       destStepIndex: i + 1,
     });
   }
 
-  // Cards are static obstacles — bbox computed in screen coords using
-  // their constant on-screen size.
-  const cardBoxes = state.storyNodes.map((n) => ({
-    cx: tx + n.x * k,
-    cy: ty + n.y * k,
-    w: CARD_W_SCREEN,
-    h: CARD_H_SCREEN,
-  }));
-
+  // Sticky-vs-sticky collision avoidance — push apart on the shorter
+  // overlap axis. We deliberately do NOT push stickies away from cards:
+  // the rule the user wants is "label always overlaps its edge", which
+  // outranks "never touch a card". Stickies stay anchored on the edge.
   for (let iter = 0; iter < STICKY_MAX_ITER; iter++) {
     let moved = false;
-
-    // Pairwise sticky vs sticky — move both by half the overlap on the
-    // shorter overlap axis.
     for (let i = 0; i < items.length; i++) {
       for (let j = i + 1; j < items.length; j++) {
         const a = items[i], b = items[j];
@@ -438,26 +877,6 @@ function layoutStickies() {
         moved = true;
       }
     }
-
-    // Sticky vs card — card stays put, sticky takes the full displacement
-    // away from the card on the shorter overlap axis.
-    for (const sticky of items) {
-      for (const c of cardBoxes) {
-        const o = rectOverlap(sticky, c);
-        if (o.overlapX <= 0 || o.overlapY <= 0) continue;
-        if (o.overlapX < o.overlapY) {
-          // dx = card.cx - sticky.cx; if positive, card is right of sticky,
-          // so sticky needs to move left (away).
-          const sign = o.dx >= 0 ? -1 : 1;
-          sticky.cx += sign * o.overlapX;
-        } else {
-          const sign = o.dy >= 0 ? -1 : 1;
-          sticky.cy += sign * o.overlapY;
-        }
-        moved = true;
-      }
-    }
-
     if (!moved) break;
   }
 
@@ -470,17 +889,59 @@ function layoutStickies() {
   return items;
 }
 
+const STICKY_MINI_W = 28;
+const STICKY_MINI_H = 28;
+
 export function renderStickies() {
-  if (!state.storyId) {
+  if (!state.story) {
     gStoryStickies.selectAll("*").remove();
+    if (gStoryStickiesFocused) gStoryStickiesFocused.selectAll("*").remove();
     return;
   }
-  const items = layoutStickies();
-  const sel = gStoryStickies.selectAll("g.story-sticky").data(items, (d) => d.id);
+  // Two render modes, depending on zoom:
+  //   - "mini" (overview / wide-fit): each edge appears as a small colored
+  //     square at the segment midpoint — a hint that the edge has prose to
+  //     read, without crowding the screen.
+  //   - "full" (zoom past STORY_FULL_K): the normal sticky-note layout
+  //     with prose + viewport clamping.
+  // Mode changes invalidate the existing DOM (different inner markup), so
+  // wipe-and-rebuild rather than try to migrate elements in place.
+  const k = state.transform?.k ?? 0;
+  const mode = k < STORY_FULL_K ? "mini" : "full";
+  if (gStoryStickies.attr("data-mode") !== mode) {
+    gStoryStickies.selectAll("*").remove();
+    if (gStoryStickiesFocused) gStoryStickiesFocused.selectAll("*").remove();
+    gStoryStickies.attr("data-mode", mode);
+    if (gStoryStickiesFocused) gStoryStickiesFocused.attr("data-mode", mode);
+  }
+
+  const items = mode === "mini" ? layoutMiniStickies() : layoutStickies();
+  // Split items: the focused edge sticky rides in gStoryStickiesFocused
+  // (above all cards), everything else stays in gStoryStickies (below
+  // cards). One single focused sticky at most — guard with the same edge-
+  // step test used for the .story-current class below.
+  const isFocused = (d) => {
+    if (d.type !== "edge" || !isEdgeStep(state.story.step)) return false;
+    return edgeIdxOf(state.story.step) === d.destStepIndex - 1;
+  };
+  const focusedItems = items.filter(isFocused);
+  const baseItems = items.filter((d) => !isFocused(d));
+
+  bindStickyLayer(gStoryStickies, baseItems, mode, false);
+  if (gStoryStickiesFocused) {
+    bindStickyLayer(gStoryStickiesFocused, focusedItems, mode, true);
+  }
+}
+
+// Shared bind for both sticky layers. `focusedLayer` is purely a class
+// hint — both layers carry identical markup, but only items in the
+// focused layer get the .story-current class (and thus the rose glow).
+function bindStickyLayer(layer, items, mode, focusedLayer) {
+  const sel = layer.selectAll("g.story-sticky").data(items, (d) => d.id);
   sel.exit().remove();
 
   const entered = sel.enter().append("g")
-    .attr("class", (d) => `story-sticky story-sticky-${d.type}`);
+    .attr("class", (d) => `story-sticky story-sticky-${d.type}${mode === "mini" ? " story-sticky-mini" : ""}`);
   const scaler = entered.append("g").attr("class", "sticky-scaler");
   scaler.append("foreignObject")
     .attr("x", (d) => -d.w / 2)
@@ -491,41 +952,159 @@ export function renderStickies() {
 
   const merged = entered.merge(sel);
   merged.attr("transform", (d) => `translate(${d.worldX}, ${d.worldY}) rotate(${d.tilt})`);
-  merged.select(".sticky-note").text((d) => d.note);
+  // In mini mode the square has no text; in full mode the prose fills it.
+  merged.select(".sticky-note").text(mode === "mini" ? "" : (d) => d.note);
+  // Only the focused-layer stickies get the highlight class.
+  merged.classed("story-current", focusedLayer);
+  // Click a sticky → focus that edge (camera centers between its cards).
+  merged.style("cursor", "pointer");
+  merged.on("click", (event, d) => {
+    if (d.type !== "edge" || typeof d.destStepIndex !== "number") return;
+    event.stopPropagation();
+    gotoStep(d.destStepIndex - 0.5);
+  });
 }
 
-// ---- render: full cards for story members (always at fold=1) ------------
+// Mini-sticky layout: small marker at the edge midpoint, but only when the
+// edge's segment actually crosses the viewport. Off-screen edges get
+// nothing — at overview zoom the marker only carries "there's prose here"
+// signal, and that signal is meaningless if the edge can't be reached
+// from where the user is looking.
+function layoutMiniStickies() {
+  if (!state.transform || !state.story) return [];
+  const k = state.transform.k;
+  const tx = state.transform.x;
+  const ty = state.transform.y;
+  const vp = viewportRect();
+  const items = [];
+  for (let i = 0; i < state.story.nodes.length - 1; i++) {
+    const a = state.story.nodes[i];
+    const b = state.story.nodes[i + 1];
+    const step = state.story.steps[i + 1];
+    if (!step || !step.edgeNote) continue;
+    const { a: ea, b: eb } = edgeAnchors(a, b);
+    const ax = tx + ea.x * k;
+    const ay = ty + ea.y * k;
+    const bx = tx + eb.x * k;
+    const by = ty + eb.y * k;
+    // Skip if the segment doesn't cross the viewport.
+    if (!segmentIntersectsRect(ax, ay, bx, by, vp)) continue;
+    const cx = (ax + bx) / 2;
+    const cy = (ay + by) / 2;
+    // Even if the segment touches the viewport, the midpoint might land
+    // outside it. Skip in that case — the marker should sit on the
+    // ribbon, not at a clipped position with a misleading anchor.
+    if (cx < vp.x0 || cx > vp.x1 || cy < vp.y0 || cy > vp.y1) continue;
+    items.push({
+      id: `edge-${a.id}-${b.id}`,
+      type: "edge",
+      note: step.edgeNote,
+      cx, cy,
+      w: STICKY_MINI_W, h: STICKY_MINI_H,
+      worldX: (cx - tx) / k,
+      worldY: (cy - ty) / k,
+      tilt: 0,
+      destStepIndex: i + 1,
+    });
+  }
+  return items;
+}
 
-// Split rendering across two layers so the active step always sits visually
-// on top of edge stickies. Non-current story cards live in gStoryCards
-// (below stickies); the single current card is rendered into
-// gStoryCurrentCard (above stickies). On every redraw both layers are
-// data-bound — d3.exit cleans up cards that switch teams.
+// Test whether the segment (x1,y1)–(x2,y2) intersects rect vp. Uses a
+// Liang–Barsky parametric clip: any non-empty t-range in [0, 1] within
+// all four half-plane constraints means there's overlap.
+function segmentIntersectsRect(x1, y1, x2, y2, vp) {
+  const dx = x2 - x1;
+  const dy = y2 - y1;
+  let tMin = 0;
+  let tMax = 1;
+  const p = [-dx, dx, -dy, dy];
+  const q = [x1 - vp.x0, vp.x1 - x1, y1 - vp.y0, vp.y1 - y1];
+  for (let i = 0; i < 4; i++) {
+    if (p[i] === 0) {
+      if (q[i] < 0) return false;
+      continue;
+    }
+    const t = q[i] / p[i];
+    if (p[i] < 0) { if (t > tMin) tMin = t; }
+    else          { if (t < tMax) tMax = t; }
+    if (tMin > tMax) return false;
+  }
+  return true;
+}
+
+// ---- render: cards / thumbnails for story members ----------------------
+
+// Below STORY_FULL_K (overview / wide-fit zoom) we render fold=0 compact
+// cards with the `.story-thumb` class — CSS shrinks them to ~120 CSS px
+// so they form a band of small image thumbnails over the surrounding text
+// labels. As soon as the user zooms in past STORY_FULL_K, the overlay
+// switches to fold=1 full cards (with descriptions). The threshold is
+// deliberately well below the baseline LABEL→IMG cutoff so full cards
+// don't feel withheld during normal exploration.
+const STORY_FULL_K = 0.3;
+// Track the last "look" rendered per layer so we can detect thumb↔full
+// transitions and force a clean re-enter. A d3 key function alone is not
+// enough — the key is computed with the *current* closure for both old and
+// new bound data, so existing cards get reused with their stale initial
+// fold even after isThumb flips.
+const lastLook = new WeakMap();
 function bindStoryCards(layer, nodes, isCurrent) {
+  const isThumb = (state.transform?.k ?? 0) < STORY_FULL_K;
+  const fold = isThumb ? 0 : 1;
+  const wantLook = isThumb ? "thumb" : "full";
+  const layerNode = layer.node();
+  if (lastLook.get(layerNode) !== wantLook) {
+    layer.selectAll("g.card").remove();
+    lastLook.set(layerNode, wantLook);
+  }
   const sel = layer.selectAll("g.card").data(nodes, (n) => n.id);
   sel.exit().remove();
-  renderFullCard(sel.enter(), 1)
-    .on("click", (event, n) => onPinClickFn && onPinClickFn(event, n))
+  renderFullCard(sel.enter(), fold)
+    .on("click", (event, n) => {
+      // Story-mode click: navigate to this step instead of toggling a pin
+      // (pinning is disabled in story mode — see overlays.js onPinClick).
+      event.preventDefault();
+      event.stopPropagation();
+      if (!state.story) return;
+      const idx = state.story.nodes.findIndex((sn) => sn.id === n.id);
+      if (idx >= 0) gotoStep(idx);
+    })
     .on("mouseenter", (event, n) => onHoverEnterFn && onHoverEnterFn(event, n))
     .on("mousemove", () => onHoverMoveFn && onHoverMoveFn())
     .on("mouseleave", (event, n) => onHoverLeaveFn && onHoverLeaveFn(event, n));
   layer.selectAll("g.card")
-    .attr("transform", (n) => `translate(${n.x}, ${n.y})`)
+    .attr("transform", (n) => {
+      const c = storyCoord(n);
+      return `translate(${c.x}, ${c.y})`;
+    })
     .classed("story-member", true)
-    .classed("story-current", isCurrent);
+    .classed("story-current", isCurrent)
+    .classed("story-thumb", isThumb);
 }
 
 export function renderStoryCards() {
-  if (!state.storyId || !state.storyNodes.length) {
+  // Story-overlay renders at every tier in story mode. At TIER_FULL we get
+  // full cards with descriptions; below that we get compact thumbnails so
+  // story members stand apart from surrounding text labels.
+  if (!state.story || !state.story.nodes.length) {
     gStoryCards.selectAll("*").remove();
     if (gStoryCurrentCard) gStoryCurrentCard.selectAll("*").remove();
     return;
   }
-  const currentId = state.storyStep != null && state.storyNodes[state.storyStep]
-    ? state.storyNodes[state.storyStep].id
+  // anchor-only mode (set on chip entry): until the user navigates,
+  // render only the anchor card. The other story members would otherwise
+  // pop in around the card the user just clicked into.
+  // Edge focus has no "current node" — all cards render in gStoryCards.
+  const currentId = isNodeStep(state.story.step) && state.story.nodes[state.story.step]
+    ? state.story.nodes[state.story.step].id
     : null;
-  const nonCurrent = state.storyNodes.filter((n) => n.id !== currentId);
-  const current = state.storyNodes.filter((n) => n.id === currentId);
+  const nonCurrent = currentId == null
+    ? state.story.nodes
+    : state.story.nodes.filter((n) => n.id !== currentId);
+  const current = currentId == null
+    ? []
+    : state.story.nodes.filter((n) => n.id === currentId);
 
   bindStoryCards(gStoryCards, nonCurrent, false);
   if (gStoryCurrentCard) bindStoryCards(gStoryCurrentCard, current, true);
@@ -569,9 +1148,9 @@ export function renderStoryBanner() {
   const banner = document.getElementById("story-banner");
   if (!banner) return;
   banner.innerHTML = "";
-  if (!state.storyId) return;
+  if (!state.story) return;
 
-  const story = state.storiesById[state.storyId];
+  const story = state.storiesById[state.story.id];
   if (!story) return;
 
   const head = document.createElement("div");
@@ -585,7 +1164,7 @@ export function renderStoryBanner() {
   close.type = "button";
   close.textContent = "×";
   close.title = "Close (Esc)";
-  close.addEventListener("click", () => exitStory());
+  close.addEventListener("click", () => requestExitStory());
   head.appendChild(close);
   banner.appendChild(head);
 
@@ -595,4 +1174,91 @@ export function renderStoryBanner() {
     blurb.textContent = story.blurb;
     banner.appendChild(blurb);
   }
+}
+
+// Public entry point for "leave the current story?" — used by Esc, the
+// banner ×, and the in-story click on a card outside the story. Always
+// goes through the confirm; only popstate / programmatic exits call
+// exitStory() directly.
+export function requestExitStory() {
+  if (!state.story) return;
+  const story = state.storiesById[state.story.id];
+  const title = (story && story.title) || "this story";
+  showConfirm({
+    title: `Leave "${title}"?`,
+    actions: [
+      { label: "Leave story", primary: true, onClick: () => exitStory() },
+      { label: "Stay", primary: false, onClick: () => {} },
+    ],
+    onDismiss: () => {},
+  });
+}
+
+// Orchestrates the story-aware behavior of a baseline card/dot click.
+// Returns true when the story system has consumed the click (either
+// jumped, opened a prompt, or otherwise handled it); the caller should
+// fall through to its default pin behavior only when this returns false.
+//
+//   pinFn — callback invoked if the user picks "Just pin" from an
+//   outside-story prompt. The caller passes its own pin/unpin closure so
+//   stories.js doesn't need to know about pin internals.
+export function handleCardClickInStoryContext(node, pinFn) {
+  // --- Inside a story -----------------------------------------------------
+  if (state.story) {
+    // Member of the current story → jump to its step. No prompt.
+    if (gotoCardInStory(node.id)) return true;
+
+    // Not a member. What other stories is this card in?
+    const others = getStoriesForCard(node.id).filter((s) => s.slug !== state.story);
+    if (others.length > 0) {
+      // anchorNodeId so the card the user clicked stays put when the new
+      // story's band-y kicks in (others jitter around it instead).
+      const actions = others.map((s) => ({
+        label: `Switch to "${s.title}"`,
+        primary: others.length === 1,
+        onClick: () => enterStory(s.slug, { animate: true, anchorNodeId: node.id }),
+      }));
+      actions.push({ label: "Stay", primary: false, onClick: () => {} });
+      showConfirm({
+        title: others.length === 1
+          ? `This card is part of a different story.`
+          : `This card is part of ${others.length} other stories.`,
+        actions,
+        onDismiss: () => {},
+      });
+      return true;
+    }
+
+    // Not in any other story → offer to leave the current one. Use the
+    // card's name in the title so the user knows exactly what they
+    // clicked, and pin the card on "Leave" (no point leaving the story
+    // only to be dropped at no pin — the user's intent was clearly to
+    // inspect THIS card).
+    const cur = state.storiesById[state.story.id];
+    const curTitle = (cur && cur.title) || "this story";
+    const cardName = node.title || node.id;
+    showConfirm({
+      title: `${cardName} isn't part of "${curTitle}". Leave the story?`,
+      actions: [
+        {
+          label: "Leave the story",
+          primary: true,
+          onClick: () => {
+            exitStory();
+            if (typeof pinFn === "function") pinFn();
+          },
+        },
+        { label: "Stay", primary: false, onClick: () => {} },
+      ],
+      onDismiss: () => {},
+    });
+    return true;
+  }
+
+  // --- Outside a story ----------------------------------------------------
+  // No modal here — the click pins as usual. If the pinned card is a story
+  // member, a "Part of the X" chip surfaces underneath it (see
+  // renderStoryCardChip). That keeps card inspection unobstructed while
+  // still surfacing the story as an opt-in next step.
+  return false;
 }

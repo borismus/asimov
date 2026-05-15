@@ -11,6 +11,7 @@ import {
   cardFixedZoom,
   renderFullCard,
 } from "./card.js";
+import { handleCardClickInStoryContext, renderStoryCardChip } from "./stories.js";
 
 // Effective k for card-world-size math. card.css caps the inverse-zoom
 // at cardFixedZoom, so above that the visible card grows with k. Layout
@@ -54,6 +55,8 @@ function dismissHoverOverlay() {
   state.hoverExpanded = false;
   state.hoverFoldOpen = false;
   gHoverLines.selectAll("line").remove();
+  // Pull the hover chip the same frame the hover overlay starts retracting.
+  renderStoryCardChip();
 
   const pinnedSet = new Set(state.pinnedLayout.keys());
   const restoreBaselines = () => {
@@ -285,6 +288,11 @@ export function updateHoverArtifacts() {
   }
   gStickyLabels.selectAll("g.dag-label")
     .style("opacity", (d) => (expandSet.has(d.id) ? 0 : 1));
+
+  // Refresh the story chip — hover state changes on its own timer and
+  // doesn't always trigger a scheduleRedraw, so without this the chip
+  // wouldn't appear for a card that's only visible via the hover overlay.
+  renderStoryCardChip();
 }
 
 // Schedules the hover overlay's fold-open animation. At LABEL tier the
@@ -300,13 +308,15 @@ function scheduleHoverExpand(delayMs = HOVER_EXPAND_DELAY_MS) {
     state.hoverFoldOpen = true;
     tweenFold(gHoverCards.selectAll("g.card"), 1);
     renderOffscreenIndicators();
+    // Card just grew to full height — bump the chip down to match.
+    renderStoryCardChip();
   }, delayMs);
 }
 
 export function onHoverEnter(event, d) {
   // While a story is active, the hover overlay (goldenrod neighbors + chips)
   // competes with the story's narrative focus — disable it entirely.
-  if (state.storyId) return;
+  if (state.story) return;
   // Cancel any pending hover-leave so a quick traversal from a small dot to the
   // overlapping hover card doesn't tear everything down.
   if (hoverLeaveTimeout) {
@@ -537,8 +547,20 @@ const isPinned = (id) => pinKind(id) !== null;
 export function onPinClick(event, d) {
   event.preventDefault();
   event.stopPropagation();
-  if (pinKind(d.id) === "primary") unpin();
-  else pin(d);
+  // The default behavior — toggle a pin. Closed over `d` so the story
+  // system can invoke it as a fallback ("Just pin") from its confirm
+  // prompt when the user declines to jump into a story.
+  const doPin = () => {
+    if (pinKind(d.id) === "primary") unpin();
+    else pin(d);
+  };
+  // Stories first: in-story clicks step / prompt-switch / prompt-leave,
+  // and outside-story clicks on a story member open the enter prompt.
+  // handleCardClickInStoryContext returns true when it has consumed the
+  // click; we only fall through to plain pinning when the card isn't
+  // entangled with any story.
+  if (handleCardClickInStoryContext(d, doPin)) return;
+  doPin();
 }
 
 export function pin(rootNode) {
@@ -561,6 +583,10 @@ export function unpin() {
   state.pinnedChain = [];
   state.pinnedLayout = new Map();
   clearPinnedDom();
+  // Drop the "Part of the X" chip the same frame we drop the pin.
+  // updatePinnedArtifacts won't run now that state.pinnedId is null, so
+  // without this the chip would linger until the next redraw.
+  renderStoryCardChip();
   // The baseline cards/labels for ex-pinned nodes were hidden — restore them.
   // Hover (if any) re-runs and will re-suppress whatever it needs.
   gCards.selectAll("g.card").style("opacity", 1);
@@ -697,6 +723,12 @@ export function updatePinnedArtifacts() {
     gStickyLabels.selectAll("g.dag-label")
       .style("opacity", (d) => (expandSet.has(d.id) ? 0 : 1));
   }
+
+  // Surface the "Part of the X" chip beneath the pinned card if the root
+  // is a story member. The chip is positioned in screen space; refreshing
+  // here keeps it glued to the card through pan/zoom (this function runs
+  // every redraw via universe.js's render loop).
+  renderStoryCardChip();
 }
 
 // Smooth pan to center `node` in the viewport without changing zoom. Used by

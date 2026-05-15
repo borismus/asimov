@@ -21,7 +21,16 @@ export const COL_WIDTH = cardWidth + 280;
 export const ROW_STRIDE = cardHeight + 150;
 const TOP_PAD = 200;
 const LEFT_PAD = 60;
-const X_JITTER = 220;
+// Within-bucket x spread. 85% of column width leaves a small gutter so cards
+// in adjacent buckets don't collide. The intra-bucket position is set by the
+// node's year-sort rank inside the bucket (see layout()), so x is strictly
+// monotonic in year both within and across buckets.
+const X_SPREAD = COL_WIDTH * 0.85;
+// Hash-based x jitter for organic spread. Bounded to 40% of the smaller of
+// (intra-bucket slot distance, inter-bucket gap), so even if adjacent cards
+// jitter in opposite directions the year-monotonicity constraint holds
+// (worst case: ~20% of the slot distance remains between neighbors).
+const X_JITTER_FRAC = 0.4;
 const Y_JITTER = 120;
 // Target label density in labels per screen area at any zoom (Google-Maps-style:
 // fewer labels when zoomed out, more as you zoom in, but on-screen text density
@@ -75,7 +84,12 @@ export function layout() {
     n.labelPriority = (hashUnit(n.id + "label") + 1) / 2;
   }
 
-  const sortedByYear = nodes.slice().sort((a, b) => a.year - b.year);
+  // Stable tiebreak on id keeps same-year cards in a deterministic order
+  // across engines/runs (V8 + JSC are stable but the spec doesn't strictly
+  // require it; the id fallback also disambiguates intra-bucket x positions).
+  const sortedByYear = nodes
+    .slice()
+    .sort((a, b) => a.year - b.year || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
   const buckets = [];
   for (let b = 0; b < NUM_COLS; b++) {
     const from = Math.floor((b * N) / NUM_COLS);
@@ -95,13 +109,21 @@ export function layout() {
   // content because state.bbox (the constraint extent) covers everything.
   let fminX = Infinity, fmaxX = -Infinity, fminY = Infinity, fmaxY = -Infinity;
   let fitCount = 0;
+  const interBucketGap = COL_WIDTH - X_SPREAD;
   for (const b of buckets) {
     const centerX = xForBucket(b.index);
-    for (let r = 0; r < b.nodes.length; r++) {
+    const N = b.nodes.length;
+    const slotDist = N > 1 ? X_SPREAD / (N - 1) : X_SPREAD;
+    const jitterHalf = Math.min(slotDist, interBucketGap) * X_JITTER_FRAC;
+    for (let r = 0; r < N; r++) {
       const n = b.nodes[r];
       n.bucketIdx = b.index;
       n.rowIdx = r;
-      n.x = centerX + hashUnit(n.id) * X_JITTER;
+      // x: year-sort rank within bucket → evenly-spaced slot, plus bounded
+      // hash jitter for organic spread. Year-monotonicity is preserved by
+      // the jitter bound (see X_JITTER_FRAC).
+      const frac = N === 1 ? 0 : r / (N - 1) - 0.5;
+      n.x = centerX + frac * X_SPREAD + hashUnit(n.id + "x") * jitterHalf;
       n.y =
         TOP_PAD + r * ROW_STRIDE + ROW_STRIDE / 2 + hashUnit(n.id + "y") * Y_JITTER;
       if (n.x < minX) minX = n.x;

@@ -55,6 +55,27 @@
   <div id="search-results"></div>
   <div id="stories-menu" data-open="false"></div>
   <div id="story-banner"></div>
+  <div id="story-card-chip" hidden></div>
+  <div id="onboard-hint" hidden>
+    <span class="onboard-hint-icon" aria-hidden="true">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 9l-3 3 3 3"/>
+        <path d="M9 5l3-3 3 3"/>
+        <path d="M15 19l-3 3-3-3"/>
+        <path d="M19 9l3 3-3 3"/>
+        <path d="M2 12h20"/>
+        <path d="M12 2v20"/>
+      </svg>
+    </span>
+    <span class="onboard-hint-text">Drag to pan, scroll to zoom</span>
+  </div>
+  <div id="app-confirm" hidden>
+    <div class="confirm-backdrop"></div>
+    <div class="confirm-card" role="dialog" aria-modal="true">
+      <p class="confirm-title"></p>
+      <div class="confirm-actions"></div>
+    </div>
+  </div>
   <button id="story-prev-btn" class="story-nav-btn" type="button" aria-label="Previous step">
     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
       <polyline points="15 18 9 12 15 6"/>

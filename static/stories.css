@@ -17,6 +17,19 @@ body.has-story g.dots circle.dag-dot:not(.story-member) { opacity: 0.4; }
 body.has-story g.cards > g.card.story-member { opacity: 0; pointer-events: none; }
 /* Hide the dot too — the story card sits on top of it. */
 body.has-story g.dots circle.dag-dot.story-member { opacity: 0; }
+/* Hide labels for story members in every label layer. The story overlay's
+   thumbnail/full card already carries the title; without this, sticky
+   labels carried over from pre-story hover (e.g. clicking the "Explore
+   the X story" chip on a pinned/hovered story card) would render right
+   next to their full card and look like a duplicate. !important because
+   appendLabels (universe.js) sets opacity inline via the fade-in
+   transition, and inline style otherwise beats any plain CSS rule. */
+body.has-story g.labels g.dag-label.story-member,
+body.has-story g.sticky-labels g.dag-label.story-member,
+body.has-story g.search-labels g.dag-label.story-member {
+  opacity: 0 !important;
+  pointer-events: none;
+}
 /* Story-card layers are fully interactive (click to pin, hover to peek).
    The current step lives in gStoryCurrentCard, painted ABOVE the edge
    stickies so it stays foregrounded even when stickies cluster nearby. */
@@ -75,6 +88,16 @@ g.card.story-member.story-current {
 .dag-label.story-member .dag-label-text {
   fill: #b8336a;
   font-weight: bold;
+}
+
+/* Compact thumbnails for story members at non-FULL tiers. The card scaler
+   reads --card-screen-scale (see card.css). At 1.0 the card renders at
+   its native 240 CSS px wide — meaningfully smaller than the full card's
+   288 (cardScreenScale=1.2), but large enough that the title font lands
+   at ~13 CSS px on its own, matching baseline labels without needing any
+   per-element font overrides. */
+g.card.story-thumb {
+  --card-screen-scale: 1;
 }
 
 /* ---- header button chrome ---- */
@@ -182,31 +205,60 @@ body.has-story #story-banner { display: flex; }
    so foreignObject HTML renders at constant screen size at any zoom.
    Both wrap multiline because the content is HTML inside foreignObject. */
 .story-sticky {
-  pointer-events: none;
+  pointer-events: auto;
+  cursor: pointer;
+}
+/* Focused edge sticky: same rose glow used on the focused card. SVG
+   `filter` on the outer <g> renders the shadow at world-coord scale (the
+   same approach as g.card.story-current), so the glow doesn't get
+   absorbed by the counter-scaler around the foreignObject. */
+.story-sticky.story-current {
+  filter:
+    drop-shadow(0 0 14px rgba(184, 51, 106, 0.95))
+    drop-shadow(0 0 32px rgba(184, 51, 106, 0.55));
 }
 .story-sticky .sticky-scaler {
+  /* Scale around the geometric center of the sticky so the foreignObject
+     center stays anchored at the g.story-sticky origin (which is where
+     layoutStickies positions the sticky in screen pixels). With
+     transform-origin: 0 0 + fill-box the scale would happen around the
+     bbox top-left and the rendered center would drift, especially at
+     larger zooms. */
   transform: scale(calc(1 / var(--zoom, 1)));
-  transform-origin: 0 0;
+  transform-origin: center;
   transform-box: fill-box;
 }
 .sticky-note {
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  padding: 8px 10px;
+  padding: 10px 12px;
   font: 12px/1.35 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
   color: #2a1820;
-  border-radius: 2px;
-  filter: drop-shadow(1px 2px 3px rgba(60, 40, 0, 0.28));
+  border-radius: 1px;
+  /* Faint warm gradient + bright-yellow rim give a paper-on-paper feel. */
+  background: linear-gradient(180deg, #fffbe5 0%, #fbf3cf 100%);
+  border: 1px solid #ecc94b;
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.6) inset,
+    1px 2px 3px rgba(60, 40, 0, 0.22),
+    3px 5px 12px rgba(60, 40, 0, 0.18);
   overflow: hidden;
 }
-.sticky-note.card {
-  background: #fff7b2;
-  border-left: 3px solid #c4a35a;
-}
+.sticky-note.card,
 .sticky-note.edge {
-  background: #ffd6e3;
-  border-left: 3px solid #b8336a;
+  background: linear-gradient(180deg, #fffbe5 0%, #fbf3cf 100%);
+}
+
+/* Mini sticky: small colored square at the edge midpoint. Same warm
+   cream + yellow rim as the full sticky so the user reads them as the
+   same surface, just collapsed. No text, no shadow stack — just the
+   marker. */
+.story-sticky-mini .sticky-note {
+  padding: 0;
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.6) inset,
+    1px 1px 2px rgba(60, 40, 0, 0.22);
 }
 
 /* On-screen step navigation. Two fixed-position chevron buttons at the
@@ -232,6 +284,9 @@ body.has-story #story-banner { display: flex; }
   transition: background 120ms, color 120ms;
 }
 body.has-story .story-nav-btn { display: flex; }
+/* Chip-entry hides the prev/next buttons until the user explicitly
+   navigates (first gotoStep clears state.story.anchorOnly). */
+body.has-story.story-nav-hidden .story-nav-btn { display: none; }
 .story-nav-btn:hover:not(:disabled) {
   background: #b8336a;
   color: white;
@@ -242,4 +297,117 @@ body.has-story .story-nav-btn { display: flex; }
 }
 #story-prev-btn { left: 16px; }
 #story-next-btn { right: 16px; }
+
+/* ---- story chips below cards ------------------------------------------
+   "Explore the <story name> story" chips surface below every story-member
+   card visible at IMG/FULL tier (and below the pinned card at any tier).
+   Positioned in screen space by JS — one .story-chip-group per card,
+   left/top recomputed each redraw so the chips track pan/zoom.
+
+   Container is fixed inset:0 with pointer-events:none so it doesn't eat
+   clicks meant for the underlying SVG. Each chip group is a flex column
+   positioned at the card's bottom-center; only the buttons re-enable
+   pointer events. */
+#story-card-chip[hidden] { display: none; }
+#story-card-chip {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  pointer-events: none;
+}
+#story-card-chip .story-chip-group {
+  position: absolute;
+  transform: translate(-50%, 0);  /* center on the card's x */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  pointer-events: none;
+}
+#story-card-chip .story-chip-link {
+  pointer-events: auto;
+  appearance: none;
+  padding: 4px 10px;
+  font: 12px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  color: white;
+  background: #b8336a;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+  max-width: 280px;
+  text-align: center;
+  text-wrap: balance;
+  transition: background 120ms, transform 120ms;
+}
+#story-card-chip .story-chip-link:hover {
+  background: #9c2659;
+  transform: translateY(-1px);
+}
+
+/* ---- generic confirm popover -------------------------------------------
+   Backed by static/confirm.js. Stories is the only current caller so the
+   palette stays rose to fit the rest of the story chrome; if a second
+   caller arrives with a different brand color, pull these into their own
+   stylesheet and parameterize via CSS vars. */
+#app-confirm[hidden] { display: none; }
+#app-confirm {
+  position: fixed;
+  inset: 0;
+  z-index: 12;  /* above banner (9), below nothing else */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#app-confirm .confirm-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(20, 12, 16, 0.32);
+}
+#app-confirm .confirm-card {
+  position: relative;
+  min-width: 280px;
+  max-width: 360px;
+  padding: 18px 18px 14px;
+  background: white;
+  border: 1px solid #b8336a;
+  border-top: 3px solid #b8336a;
+  border-radius: 8px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.24);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+#app-confirm .confirm-title {
+  margin: 0;
+  font: 15px/1.35 "DM Serif Display", serif;
+  color: #111;
+}
+#app-confirm .confirm-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+#app-confirm .confirm-btn {
+  appearance: none;
+  padding: 8px 12px;
+  font: 13px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  color: #b8336a;
+  background: white;
+  border: 1px solid #b8336a;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+  transition: background 120ms, color 120ms;
+}
+#app-confirm .confirm-btn:hover {
+  background: #fdf3f7;
+}
+#app-confirm .confirm-btn.primary {
+  background: #b8336a;
+  color: white;
+}
+#app-confirm .confirm-btn.primary:hover {
+  background: #9c2659;
+}
 

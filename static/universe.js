@@ -45,7 +45,7 @@ import {
   escapeHtml,
 } from "./overlays.js";
 import { searchHelper } from "./search.js";
-import { parsePath, pushPath, isLocalhost } from "./routing.js";
+import { parseLocation, pushPath, isLocalhost } from "./routing.js";
 import {
   initStories,
   loadStories,
@@ -56,6 +56,7 @@ import {
   renderStickies,
   renderStoryBanner,
   renderStoriesMenu,
+  renderStoryCardChip,
 } from "./stories.js";
 
 const TIER_LABEL = 0;
@@ -168,16 +169,23 @@ const state = {
   // Live search query (empty / under MIN_SEARCH_CHARS = inactive).
   searchQuery: "",
   nodesById: {},
-  // Active story state. storyId is null when no story is open. storyNodes
-  // mirrors the resolved step nodes (in order); storyStep is null for the
-  // whole-trace overview, or 0..N-1 when the stepper is focused on a step.
-  storyId: null,
-  storyNodes: [],
-  storySteps: [],
-  storyMissing: [],
-  storyStep: null,
+  // Active story session. null when no story is open. When a story is
+  // active this is { id, nodes, steps, step, coordsById }:
+  //   id          — slug of the active story
+  //   nodes       — resolved step nodes in order
+  //   steps       — same length, each {node, edgeNote}
+  //   step        — null for whole-trace overview, or 0, 0.5, 1, 1.5...N-1
+  //                 (half-integers focus the edge between node ⌊s⌋ and ⌈s⌉)
+  //   coordsById  — per-member virtual coords so the ribbon reads as a
+  //                 centered y-band while baseline cards keep world coords
+  // All six fields live or die together; treating them as one object stops
+  // partial-set bugs from a hypothetical future "switch story" path.
+  story: null,
+  // Catalog (loaded once, immutable). The reverse index lets the click
+  // handler answer "what stories is this card part of?" in O(1).
   stories: [],
   storiesById: {},
+  storiesByCardId: new Map(),
 };
 
 function isActiveQuery() {
@@ -195,8 +203,13 @@ let firstTierResolve = true;
 
 // When the cold-load path is /story/<slug>/, stash the slug here so we can
 // call enterStory() once stories.json finishes loading (loadStories is
-// fire-and-forget — see loadGraph). Cleared once consumed.
+// fire-and-forget — see loadGraph). Cleared once consumed. If the URL
+// also carried an explicit x/y/k transform, deferredStoryKeepCamera is
+// set so enterStory preserves it instead of auto-fitting the story; and
+// `deferredStoryStep` carries the step index forward to enterStory.
 let deferredStorySlug = null;
+let deferredStoryKeepCamera = false;
+let deferredStoryStep = null;
 
 const canvas = document.getElementById("links-canvas");
 const ctx = canvas.getContext("2d");
@@ -250,10 +263,21 @@ const gLabels = gRoot.append("g").attr("class", "labels");
 const gStickyLabels = gRoot.append("g").attr("class", "sticky-labels");
 const gSearchLabels = gRoot.append("g").attr("class", "search-labels");
 const gCards = gRoot.append("g").attr("class", "cards");
+// Layer stack, bottom → top:
+//   1. ribbon — polyline through node centers, tucked behind everything
+//   2. edge stickies — paper notes behind cards so card text always wins
+//      when a sticky would otherwise overlap the card
+//   3. story cards (non-current) — opaque cards mask the ribbon + sticky
+//      under them
+//   4. current card — focused card sits above all of the above
+//   5. focused edge sticky — the one sticky tied to the active edge step
+//      paints on top of everything else so the user can always read the
+//      prose that's driving the current moment in the story
 const gStoryTrace = gRoot.append("g").attr("class", "story-trace");
-const gStoryCards = gRoot.append("g").attr("class", "story-cards");
 const gStoryStickies = gRoot.append("g").attr("class", "story-stickies");
+const gStoryCards = gRoot.append("g").attr("class", "story-cards");
 const gStoryCurrentCard = gRoot.append("g").attr("class", "story-current-card");
+const gStoryStickiesFocused = gRoot.append("g").attr("class", "story-stickies-focused");
 const gPinnedLines = gRoot.append("g").attr("class", "pinned-lines");
 const gPinnedCards = gRoot.append("g").attr("class", "pinned-cards");
 const gHoverLines = gRoot.append("g").attr("class", "hover-lines");
@@ -266,20 +290,41 @@ const zoom = d3
 
 svg.call(zoom);
 
-const VIEW_STORAGE_KEY = "universe-view";
 let saveViewTimeout = null;
 
-// Path is the source of truth for the pinned invention: /<id>/ pins that node.
-// Hash carries view state (x/y/k) only; localStorage backs both up between visits.
+// The URL is the single source of truth for everything restorable:
+// - Pin / story (prod): pathname is `/<id>/` or `/story/<slug>/`.
+// - Pin / story (localhost): hash carries `pin=<id>` or `story=<slug>`
+//   (the path can't change because a plain dev server would 404 on reload).
+// - View transform (x/y/k): always in the hash.
+//
+// No localStorage — a fresh tab with no URL state lands on the default
+// (random invention). Closing and reopening with the same URL restores
+// everything; closing and reopening without it is a fresh session.
 
 function serializeViewHash() {
   const t = state.transform;
   if (!t) return "";
-  return [
+  const parts = [
     `x=${t.x.toFixed(2)}`,
     `y=${t.y.toFixed(2)}`,
     `k=${t.k.toFixed(4)}`,
-  ].join("&");
+  ];
+  // While in a story, persist the current step (integer = node focus,
+  // half-integer = edge focus) so reload restores the exact step the user
+  // was on — band-cluster ambiguity in syncCurrentStep would otherwise pick
+  // the lowest-index focus and clobber a deliberate position.
+  if (state.story && state.story.step != null) {
+    parts.push(`step=${state.story.step}`);
+  }
+  // On localhost, mirror the path scheme into the hash so the URL reflects
+  // pin/story selection. Mutually exclusive — pin and story can't both be
+  // active (enterStory clears the pin; persistPin no-ops while in a story).
+  if (isLocalhost()) {
+    if (state.story) parts.push(`story=${encodeURIComponent(state.story.id)}`);
+    else if (state.pinnedId) parts.push(`pin=${encodeURIComponent(state.pinnedId)}`);
+  }
+  return parts.join("&");
 }
 
 function parseViewHash(hash) {
@@ -289,7 +334,13 @@ function parseViewHash(hash) {
   const y = parseFloat(params.get("y"));
   const k = parseFloat(params.get("k"));
   if (!Number.isFinite(x) || !Number.isFinite(y) || !Number.isFinite(k)) return null;
-  return { x, y, k };
+  // `step` is optional — only present when the URL captured an active story
+  // session. null when absent so callers can distinguish "no step" from "step 0".
+  const stepRaw = params.get("step");
+  const step = stepRaw != null && Number.isFinite(parseFloat(stepRaw))
+    ? parseFloat(stepRaw)
+    : null;
+  return { x, y, k, step };
 }
 
 // replaceState (not pushState) so the back button doesn't track every wheel tick.
@@ -298,20 +349,9 @@ function persistView() {
   saveViewTimeout = setTimeout(() => {
     saveViewTimeout = null;
     const hash = serializeViewHash();
-    if (!isLocalhost()) {
-      try {
-        const target = window.location.pathname + (hash ? `#${hash}` : "");
-        history.replaceState(null, "", target);
-      } catch (e) {}
-    }
     try {
-      const t = state.transform;
-      if (t) {
-        localStorage.setItem(
-          VIEW_STORAGE_KEY,
-          JSON.stringify({ x: t.x, y: t.y, k: t.k, pinnedId: state.pinnedId })
-        );
-      }
+      const target = window.location.pathname + (hash ? `#${hash}` : "");
+      history.replaceState(null, "", target);
     } catch (e) {}
   }, 200);
 }
@@ -320,7 +360,7 @@ function persistView() {
 // While a story is active the URL is /story/<slug>/ — pinning a card for
 // inspection inside a story should not change that, so we no-op.
 function persistPin() {
-  if (state.storyId) return;
+  if (state.story) return;
   pushPath(state.pinnedId ? `/${state.pinnedId}` : "/");
 }
 
@@ -366,18 +406,20 @@ initStories({
   gStoryTrace,
   gStoryCards,
   gStoryStickies,
+  gStoryStickiesFocused,
   gStoryCurrentCard,
   svg,
   zoom,
   panToNode,
   scheduleRedraw,
   pushPath,
-  isLocalhost,
   unpin,
   onPinClick,
   onHoverEnter,
   onHoverMove,
   onHoverLeave,
+  TIER_LABEL,
+  TIER_FULL,
 });
 
 function onZoom({ transform }) {
@@ -410,12 +452,17 @@ function scheduleRedraw() {
       } else if (oldTier === TIER_LABEL) {
         // LABEL → IMG/FULL: fade labels out, then hold for a beat before
         // bringing cards in so the two transitions don't collide. Skipped
-        // on first resolve so the initial page load lands instantly.
-        gLabels.selectAll("*").interrupt()
-          .transition().duration(TIER_FADE_MS).style("opacity", 0).remove();
-        if (!firstTierResolve) {
-          state.cardsHiddenUntil = performance.now() + TIER_HOLD_MS;
-          setTimeout(scheduleRedraw, TIER_HOLD_MS);
+        // on first resolve so the initial page load lands instantly. While
+        // a story is open we keep labels visible at every zoom (story view
+        // pins everything except story members to label representation),
+        // so skip the fade entirely.
+        if (!state.story) {
+          gLabels.selectAll("*").interrupt()
+            .transition().duration(TIER_FADE_MS).style("opacity", 0).remove();
+          if (!firstTierResolve) {
+            state.cardsHiddenUntil = performance.now() + TIER_HOLD_MS;
+            setTimeout(scheduleRedraw, TIER_HOLD_MS);
+          }
         }
       } else {
         // IMG ↔ FULL: tween fold on existing cards. New cards entering on the
@@ -426,7 +473,15 @@ function scheduleRedraw() {
     }
     firstTierResolve = false;
 
-    if (state.tier === TIER_LABEL) {
+    if (state.story) {
+      // Story mode: only story members render as full cards (via the
+      // gStoryCards overlay). Baseline cards stay collapsed to labels at
+      // every zoom — flush any cards left over from before the story
+      // opened, and let labelThreshold pick out which titles to show.
+      gCards.selectAll("g.card").interrupt()
+        .transition().duration(TIER_FADE_MS).style("opacity", 0).remove();
+      renderLabels(labelThreshold(state.transform.k));
+    } else if (state.tier === TIER_LABEL) {
       renderLabels(labelThreshold(state.transform.k));
     } else if (
       state.cardsHiddenUntil &&
@@ -458,6 +513,10 @@ function scheduleRedraw() {
     renderStoryTrace();
     renderStoryCards();
     renderStickies();
+    // "Explore the X story" chips below every visible story-member card.
+    // Runs unconditionally — chip itself decides when to hide (in a story,
+    // at LABEL tier with no pin, etc).
+    renderStoryCardChip();
   });
 }
 
@@ -483,17 +542,19 @@ async function init() {
   });
 
   // Browser back/forward across /, /<id>/, /story/<slug>/ drives pin/story
-  // state to match the path. {keepUrl:true} prevents enter/exit from
-  // pushing a redundant history entry.
-  window.addEventListener("popstate", () => {
-    const r = parsePath(window.location.pathname);
+  // state to match the URL. On localhost the same nav lives in the hash —
+  // popstate still fires on back/forward (pushState was used), and a
+  // hashchange listener catches direct URL-bar edits. {keepUrl: true}
+  // prevents enter/exit from pushing a redundant history entry.
+  const syncFromLocation = () => {
+    const r = parseLocation();
     if (!r) {
-      if (state.storyId) exitStory({ keepUrl: true });
+      if (state.story) exitStory({ keepUrl: true });
       if (state.pinnedId) unpin();
       return;
     }
     if (r.kind === "pin") {
-      if (state.storyId) exitStory({ keepUrl: true });
+      if (state.story) exitStory({ keepUrl: true });
       if (r.id === state.pinnedId) return;
       if (state.nodesById[r.id]) {
         const node = state.nodesById[r.id];
@@ -506,9 +567,33 @@ async function init() {
     }
     if (r.kind === "story") {
       if (state.pinnedId) unpin();
-      enterStory(r.slug, { animate: true, keepUrl: true });
+      // Preserve the URL's x/y/k and step if present — back/forward into a
+      // story should restore whatever view that history entry captured,
+      // not re-fit the camera and clobber it.
+      const fromHash = parseViewHash(window.location.hash);
+      if (fromHash) {
+        svg.transition().duration(500).call(
+          zoom.transform,
+          d3.zoomIdentity.translate(fromHash.x, fromHash.y).scale(fromHash.k),
+        );
+      }
+      enterStory(r.slug, {
+        animate: true,
+        keepUrl: true,
+        keepCamera: !!fromHash,
+        step: fromHash ? fromHash.step : null,
+      });
     }
-  });
+  };
+  window.addEventListener("popstate", syncFromLocation);
+  // hashchange fires for direct URL-bar edits that pushState/replaceState
+  // didn't make (and on localhost that's how nav lives in the URL).
+  // persistView writes the hash via replaceState, which does NOT fire
+  // hashchange, so this listener only runs for genuine user-initiated
+  // hash edits — exactly what we want.
+  if (isLocalhost()) {
+    window.addEventListener("hashchange", syncFromLocation);
+  }
 
   const { nodes, links } = await loadGraph("/static/asimov.tsv");
   state.nodes = nodes;
@@ -522,9 +607,16 @@ async function init() {
   // story list is in.
   loadStories().then(() => {
     if (deferredStorySlug && state.storiesById[deferredStorySlug]) {
-      enterStory(deferredStorySlug, { animate: true, keepUrl: true });
+      enterStory(deferredStorySlug, {
+        animate: true,
+        keepUrl: true,
+        keepCamera: deferredStoryKeepCamera,
+        step: deferredStoryStep,
+      });
     }
     deferredStorySlug = null;
+    deferredStoryKeepCamera = false;
+    deferredStoryStep = null;
   });
 
   // Measure each title's screen-space width once. Labels render rect + text;
@@ -651,68 +743,52 @@ function centerOnNode(node, { animate = false } = {}) {
 }
 
 function initialTransform() {
-  const w = window.innerWidth;
-  const h = window.innerHeight;
   // Frame against the non-speculative bbox so first paint isn't dominated
   // by speculative-future content extending the timeline.
-  const { minX, minY, maxY } = state.fitBbox || state.bbox;
-  // Fit vertically (show all rows + the axis band); let horizontal overflow so
-  // the user pans to explore the width.
-  const TOP_PAD_VISUAL = 200; // matches world.js TOP_PAD; only used here for framing
-  const top = minY - (TOP_PAD_VISUAL - 20);
-  const pad = 0.04;
-  const contentH = (maxY - top) * (1 + pad * 2);
-  const k = h / contentH;
-  const cy = (top + maxY) / 2;
-  // Start the camera at the left edge of the content with a small left margin.
+  const { minX, minY } = state.fitBbox || state.bbox;
+  // Land the user at the dawn of time — the earliest invention (bipedal
+  // species) sits in the upper-left of the viewport, with folded image
+  // cards visible (TIER_IMG: 1.0 ≤ k < 1.5). A fit-vertical view would
+  // put us at k<1 → labels only, which hides what the site is actually
+  // about. 1.4 keeps us inside IMG with comfortable headroom for the
+  // user to drag/zoom from there.
+  const k = 1.4;
   const leftMargin = 40;
+  const topMargin = (state.headerHeight || 0) + 40;
   const tx = leftMargin - (minX - COL_WIDTH / 2) * k;
-  const ty = h / 2 - cy * k;
+  const ty = topMargin - minY * k;
   return d3.zoomIdentity.translate(tx, ty).scale(k);
 }
 
 function initialCenter() {
-  // Path: parse first — /story/<slug>/ short-circuits the pin logic and
-  // hands off to enterStory once stories are loaded. Otherwise: pin from
-  // pathname → localStorage → random. View: hash → localStorage →
-  // centered-on-pin → computed.
-  const pathParse = parsePath(window.location.pathname);
-  if (pathParse && pathParse.kind === "story") {
-    deferredStorySlug = pathParse.slug;
-    // Initial framing falls back to the computed default; enterStory will
-    // re-fit once it resolves. Don't fight it with a localStorage view.
-    svg.call(zoom.transform, initialTransform());
+  // Location: parse first — /story/<slug>/ (or #story=… on localhost)
+  // short-circuits the pin logic and hands off to enterStory once stories
+  // are loaded. Otherwise: pin from URL (if any). View: hash if present,
+  // else centered-on-pin, else the computed default. A bare URL with no
+  // pin/story stays unpinned — the user lands in the overview.
+  const navParse = parseLocation();
+  if (navParse && navParse.kind === "story") {
+    deferredStorySlug = navParse.slug;
+    // If the URL carries an explicit transform, honor it AND tell enterStory
+    // to keep the camera (otherwise its auto-fit would yank the user away
+    // from the view they came in with — eg. clicking a chip + reload).
+    // `step` rides along so band-cluster ambiguity in syncCurrentStep
+    // doesn't snap us to the lowest-index focus on the first redraw.
+    const fromHash = parseViewHash(window.location.hash);
+    if (fromHash) {
+      svg.call(zoom.transform, d3.zoomIdentity.translate(fromHash.x, fromHash.y).scale(fromHash.k));
+      deferredStoryKeepCamera = true;
+      deferredStoryStep = fromHash.step;
+    } else {
+      svg.call(zoom.transform, initialTransform());
+    }
     return;
   }
-  let transform = null;
-  const pathPin = pathParse && pathParse.kind === "pin" ? pathParse.id : null;
-  let pinnedId = pathPin;
-
+  const pinnedId = navParse && navParse.kind === "pin" ? navParse.id : null;
   const fromHash = parseViewHash(window.location.hash);
-  if (fromHash) {
-    transform = d3.zoomIdentity.translate(fromHash.x, fromHash.y).scale(fromHash.k);
-  } else {
-    try {
-      const raw = localStorage.getItem(VIEW_STORAGE_KEY);
-      if (raw) {
-        const saved = JSON.parse(raw);
-        const { x, y, k } = saved;
-        if (Number.isFinite(x) && Number.isFinite(y) && Number.isFinite(k)) {
-          transform = d3.zoomIdentity.translate(x, y).scale(k);
-        }
-        if (!pinnedId && saved.pinnedId) pinnedId = saved.pinnedId;
-      }
-    } catch (e) {
-      // Bad JSON / unavailable storage — fall through to computed initial.
-    }
-  }
-
-  // Nothing told us where to go → pick a random invention. Drop any saved
-  // transform too; it won't match a random card's location.
-  if (!pinnedId && state.nodes.length) {
-    pinnedId = state.nodes[Math.floor(Math.random() * state.nodes.length)].id;
-    transform = null;
-  }
+  const transform = fromHash
+    ? d3.zoomIdentity.translate(fromHash.x, fromHash.y).scale(fromHash.k)
+    : null;
 
   const pinnedNode = pinnedId ? state.nodesById[pinnedId] : null;
   if (pinnedNode && !transform) {
@@ -728,8 +804,14 @@ function renderLabels(threshold) {
   // Margin is in world units; with cards at fixed screen size, convert
   // a card-screen-width margin into world units via the current zoom.
   const margin = cardWidth * cardScreenScale / (state.transform?.k || 1);
+  // Story members are rendered as thumbnails in the story overlay — exclude
+  // them from the baseline labels entirely so we don't get a doubled title
+  // (label + thumbnail title) for the same node.
+  const storyMembers = state.story
+    ? new Set(state.story.nodes.map((n) => n.id))
+    : null;
   const visible = nodesInView(margin).filter(
-    (n) => n.labelPriority <= threshold
+    (n) => n.labelPriority <= threshold && !(storyMembers && storyMembers.has(n.id))
   );
   appendLabels(gLabels, visible);
 }

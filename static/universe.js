@@ -46,6 +46,7 @@ import {
   escapeHtml,
 } from "./overlays.js";
 import { searchHelper } from "./search.js";
+import { isConfirmOpen } from "./confirm.js";
 import { parseLocation, pushPath, isLocalhost } from "./routing.js";
 import {
   initStories,
@@ -1007,6 +1008,27 @@ searchInput.addEventListener("search", () => {
 searchInput.addEventListener("keydown", (e) => {
   if (e.key === "Escape") {
     e.preventDefault();
+    e.stopPropagation();
     closeSearch();
+  }
+});
+
+// Esc: close search overlay, then unpin (story mode owns Esc via stories.js).
+window.addEventListener("keydown", (e) => {
+  if (e.key !== "Escape") return;
+  if (isConfirmOpen()) return;
+  const ae = document.activeElement;
+  const tag = ae && ae.tagName;
+  if (tag === "INPUT" || tag === "TEXTAREA" || (ae && ae.isContentEditable)) return;
+  if (state.story) return;
+
+  if (document.body.classList.contains("searching")) {
+    e.preventDefault();
+    closeSearch();
+    return;
+  }
+  if (state.pinnedId) {
+    e.preventDefault();
+    unpin();
   }
 });

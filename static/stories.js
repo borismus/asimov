@@ -450,6 +450,45 @@ function isNodeStep(s) { return s != null && Number.isInteger(s); }
 function isEdgeStep(s) { return s != null && !Number.isInteger(s); }
 function edgeIdxOf(s) { return isEdgeStep(s) ? Math.floor(s) : null; }
 
+// Edge step i+0.5 sits between nodes i and i+1; prose lives on steps[i+1].
+function edgeNoteForStep(step) {
+  if (!state.story || !isEdgeStep(step)) return null;
+  const i = edgeIdxOf(step);
+  const rec = state.story.steps[i + 1];
+  const note = rec && rec.edgeNote;
+  return note && String(note).trim() ? note : null;
+}
+
+function hasEdgeNoteAt(step) {
+  return !!edgeNoteForStep(step);
+}
+
+// Arrow / prev-next only visit nodes and edges that have sticky prose.
+function navigableFocusPoints() {
+  const n = state.story.nodes.length;
+  const points = [];
+  for (let i = 0; i < n; i++) {
+    points.push(i);
+    if (i < n - 1 && hasEdgeNoteAt(i + 0.5)) points.push(i + 0.5);
+  }
+  return points;
+}
+
+function navigableIndex(step, delta) {
+  const points = navigableFocusPoints();
+  if (!points.length) return -1;
+  let idx = points.indexOf(step);
+  if (idx >= 0) return idx;
+  if (delta > 0) {
+    idx = points.findIndex((s) => s > step);
+    return idx < 0 ? points.length - 1 : idx;
+  }
+  for (let i = points.length - 1; i >= 0; i--) {
+    if (points[i] < step) return i;
+  }
+  return 0;
+}
+
 function stepTargetCoord(step) {
   if (isNodeStep(step)) {
     return storyCoord(state.story.nodes[step]);
@@ -621,14 +660,16 @@ function zoomToStep(coord, { preserveZoom = false } = {}) {
     .call(zoom.transform, target);
 }
 
-// Step ±1 focus point — half-integer increments so each press cycles
-// node → edge → node → edge. Clamped to [0, N-1].
+// Step to the next/previous navigable focus (nodes always; edges only with edge_note).
 function stepBy(delta) {
   if (!state.story) return;
-  const total = state.story.nodes.length;
-  if (!total) return;
-  const cur = state.story.step == null ? 0 : state.story.step;
-  const next = Math.max(0, Math.min(total - 1, cur + delta * 0.5));
+  const points = navigableFocusPoints();
+  if (!points.length) return;
+  const cur = state.story.step == null ? points[0] : state.story.step;
+  const idx = navigableIndex(cur, delta);
+  const nextIdx = idx + delta;
+  if (nextIdx < 0 || nextIdx >= points.length) return;
+  const next = points[nextIdx];
   if (next === cur) return;
   gotoStep(next, { preserveZoom: true });
 }
@@ -644,10 +685,16 @@ function updateStoryNavButtons() {
     next.disabled = true;
     return;
   }
-  const total = state.story.nodes.length;
-  const cur = state.story.step == null ? 0 : state.story.step;
-  prev.disabled = cur <= 0;
-  next.disabled = cur >= total - 1;
+  const points = navigableFocusPoints();
+  if (!points.length) {
+    prev.disabled = true;
+    next.disabled = true;
+    return;
+  }
+  const cur = state.story.step == null ? points[0] : state.story.step;
+  const idx = navigableIndex(cur, 0);
+  prev.disabled = idx <= 0;
+  next.disabled = idx >= points.length - 1;
 }
 
 // ---- camera fit -----------------------------------------------------------

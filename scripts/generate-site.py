@@ -30,6 +30,11 @@ def _parse_year(raw):
   return -n if (m.group(2) or "").upper() == "BCE" else n
 
 
+def load_stories(json_path):
+  with open(json_path, encoding="utf-8") as f:
+    return json.load(f)
+
+
 def load_inventions(tsv_path):
   out = []
   with open(tsv_path, newline="", encoding="utf-8") as f:
@@ -65,7 +70,7 @@ def load_template(template_path):
   template = templateEnv.get_template(template_path)
   return template
 
-def generate_sitemap(inventions):
+def generate_sitemap(inventions, stories):
   # Trailing slash on each <loc> matches the canonical_url emitted in the
   # template (and the URL GitHub Pages actually serves) so search engines
   # see one URL, not two.
@@ -76,6 +81,14 @@ def generate_sitemap(inventions):
     <loc>{root}/</loc>
   </url>
 '''.format(root=SITE_ROOT)
+  for story in stories:
+    slug = (story.get("slug") or "").strip()
+    if not slug:
+      continue
+    out += f'''  <url>
+    <loc>{SITE_ROOT}/story/{slug}/</loc>
+  </url>
+'''
   for invention in inventions:
     out += f'''  <url>
     <loc>{SITE_ROOT}/{invention.id}/</loc>
@@ -96,8 +109,9 @@ if __name__ == "__main__":
   )
   args = parser.parse_args()
 
-  # Load inventions
+  # Load inventions and stories
   inventions = load_inventions("static/asimov.tsv")
+  stories = load_stories("static/stories.json")
   # inventions = [invention for invention in inventions if invention.id == "fire"]
   # print(inventions)
 
@@ -178,9 +192,47 @@ if __name__ == "__main__":
   with open(f"{args.out_dir}/index.html", "w") as f:
     f.write(html)
 
+  # GitHub Pages serves 404.html for unknown paths; reuse the app shell so
+  # cold loads on /story/<slug>/ (and any future client-routed path) still boot.
+  with open(os.path.join(args.out_dir, "404.html"), "w") as f:
+    f.write(html)
+
+  # Story deep links — GitHub Pages needs a physical index.html per path;
+  # universe.js reads /story/<slug>/ from pathname on cold load.
+  for story in stories:
+    slug = (story.get("slug") or "").strip()
+    if not slug:
+      continue
+    title = (story.get("title") or slug).strip()
+    blurb = (story.get("blurb") or SITE_DESCRIPTION).strip()
+    print(f"Processing story {slug}...")
+    story_dir = os.path.join(args.out_dir, "story", slug)
+    os.makedirs(story_dir, exist_ok=True)
+    canonical = f"{SITE_ROOT}/story/{slug}/"
+    story_jsonld = {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": title,
+      "description": blurb,
+      "url": canonical,
+      "isPartOf": {"@type": "WebSite", "name": SITE_NAME, "url": f"{SITE_ROOT}/"},
+    }
+    story_data = {
+      "title": f"{title} | {SITE_NAME}",
+      "heading": title,
+      "site_name": SITE_NAME,
+      "description": blurb,
+      "canonical_url": canonical,
+      "card_image_url": root_image,
+      "og_type": "website",
+      "jsonld": json.dumps(story_jsonld, ensure_ascii=False),
+    }
+    with open(os.path.join(story_dir, "index.html"), "w") as f:
+      f.write(template.render(story_data))
+
   # Create a sitemap.
   with open(f"{args.out_dir}/sitemap.xml", "w") as f:
-    f.write(generate_sitemap(inventions))
+    f.write(generate_sitemap(inventions, stories))
 
   # Create a robots.txt
   with open(f"{args.out_dir}/robots.txt", "w") as f:

@@ -10,70 +10,70 @@
       },
       {
         "id": "cart",
-        "edge_note": "Domestication turned occasional drags into daily logistics; sledges exhausted people and animals until rolling bearings amortized the load."
+        "edge_note": null
       },
       {
         "id": "horse",
-        "edge_note": "The cart already posed the question “what pulls this?” Horses were drafted into that existing vehicle economy—chariot warfare is cart-tech meeting a faster animal, not the invention of mounted combat."
+        "edge_note": "Carts were initially pulled by oxen and donkeys. Then horses were drafted into that existing vehicle economy."
       },
       {
         "id": "bridle",
-        "edge_note": "Charioteers could brace reins on the yoke; a solo rider has no third hand, so steering has to migrate to the mouth or control falls apart at speed."
+        "edge_note": "Horses pulling a cart were now weaponized into chariots, but they were hard to control."
       },
       {
         "id": "saddle",
-        "edge_note": "Mouth control answers direction; it does not absorb fighting shocks or spare the spine—without a weight spreader the mount fails before the rider does."
+        "edge_note": "Charioteers now had more control, but what if you could mount a horse without an awkward chariot?"
       },
       {
         "id": "wooden-stirrup",
-        "edge_note": "A seat alone leaves the torso swimming sideways; hanging footholds buy the first real lateral purchase for archery—at the price of splintering under a melee hit."
+        "edge_note": "A saddle helps with stability but not lateral stability. Hanging wooden footholds buy the first real lateral support at the price of splintering under a melee hit."
       },
       {
         "id": "metal-stirrup",
-        "edge_note": "The geometry was already right; wood was the weak link. Metallurgy is what lets the same loop survive the impact that proved leather and timber could not."
+        "edge_note": "The geometry was already right, but the wooden material was the weak link."
       },
       {
         "id": "turnplow",
-        "edge_note": "This is not a detour: knight-weight mounts come from draft breeding, and draft breeding followed plow teams that could work northern clay—agrarian horsepower funds cavalry horsepower."
+        "edge_note": "Rider gear became heavier and so did the deeper plows horses had to pull."
       },
       {
         "id": "high-backed-saddle",
-        "edge_note": "Stirrups fix side-to-side; a couched lance still punches you out the back—so the next failure mode is longitudinal recoil, not leverage."
+        "edge_note": "Combat on horseback required additional stability."
       },
       {
         "id": "iron-horseshoes",
-        "edge_note": "Biomechanics solved, the bottleneck shifts to infrastructure: stone roads and campaigns grind hooves faster than unshod animals can sustain repeated charges."
+        "edge_note": "Biomechanics solved, the bottleneck shifted to infrastructure: stone roads and campaigns caused wear and tear on horses hooves."
       },
       {
         "id": "couched-lance",
-        "edge_note": "Shod, braced, cantled riders can finally spend the horse’s momentum budget on one pointed impulse instead of husbanding the animal’s feet."
+        "edge_note": "Heavy riders could finally transfer all of that weight and strength into shock combat, causing armies to scatter in fear."
       },
       {
         "id": "horse-collar",
-        "edge_note": "Shock cavalry is a calorie business; the collar is the farm-side multiplier that turns northern clay into surplus grain—and surplus grain into estates that can feed destriers."
+        "edge_note": "Farming improvements led to surplus grain, and surplus grain could feed destriers."
       },
       {
         "id": "longbow",
-        "edge_note": "The same centuries that perfected heavy cavalry also produced a weapon that ignores the contact zone entirely: plate and horse do not argue with yardage."
+        "edge_note": "And so knights enjoyed a period of military superiority, until new inventions disrupted their dominance."
       },
       {
         "id": "pike",
-        "edge_note": "If the knight’s advantage is reach at the gallop, answer with a longer static reach and cheap training—mass closes the distance economics against horse estates."
+        "edge_note": null
       },
       {
         "id": "arquebus",
-        "edge_note": "Close-order infantry was already normalized; chemical energy removes the decade-per-man skill curve and collapses the nobility monopoly on decisive shock."
+        "edge_note": "Requiring less skill than a bow and packing a bigger punch, ranged weapons and very long weapons were effective against charging knights."
       },
       {
         "id": "standing-army",
-        "edge_note": "Pike-and-shot is a payroll and drill problem, not a seasonal vassal obligation—the social contract that fed knights yields to the contract that feeds volleys."
+        "edge_note": null
       }
     ]
   },
   {
     "slug": "steam-diffusion",
     "title": "Steam diffusion over seventeen centuries",
-    "blurb": "From Hero’s spinning toy to Watt’s machines — almost two millennia where the physics of gas and vacuum had to become thinkable, demonstrable, and paid for before “railroad time.”",
+    "blurb": "From Hero’s toy to Watt’s engines: a two-millennia ping-pong match between the laboratory and the coal mine, where practical crises forced breakthroughs in physics, and theoretical gas laws powered the Industrial Revolution",
     "steps": [
       {
         "id": "basic-steam-engine",
@@ -81,138 +81,59 @@
       },
       {
         "id": "coal-mining",
-        "edge_note": "Hero proved sealed vapor can spin; coal is the long fuse—dense fuel stockpiled centuries before anyone earns a living optimizing a cylinder against it."
+        "edge_note": "More than a millenium later..."
       },
       {
         "id": "hydrostatics",
-        "edge_note": "Pits go where wood no longer reaches; lift limits turn into daily accounts—pressure as stacked geometry in liquids is the vocabulary later borrowed for air."
+        "edge_note": "Early scientists began to lay a theoretical foundation, not anticipating practical applications."
       },
       {
         "id": "gas",
-        "edge_note": "Once water columns behave predictably, the sloppier lumping of every vapor as generic “air” becomes the next debt—distinct gases make experiments composable."
+        "edge_note": "If we can understand the basics of liquids, how about gases?"
       },
       {
         "id": "barometer",
-        "edge_note": "Classification meets a paying puzzle: lift pumps stalled at ~33 ft, so atmospheric weight stops being philosophy and becomes a number on a ruler."
+        "edge_note": "Helmont discovered air's chemical variety."
       },
       {
         "id": "air-pump",
-        "edge_note": "Torricelli measured the void; Guericke’s seals make it something you can manufacture, break, and repair—repeatable craft instead of one-off glassware luck."
+        "edge_note": "Torricelli discovered air's physical mass."
       },
       {
         "id": "air-pressure",
-        "edge_note": "Bench curiosity scales to theater: when teams of horses can’t pull hemispheres apart, sponsors—not just natural philosophers—see that vacuum does macroscopic work."
+        "edge_note": "Turns out vacuums can be powerful"
       },
       {
         "id": "boyles-law",
-        "edge_note": "Public proofs of air’s strength invite the boring next step: squeeze the spring in a controlled way until volume and pressure trade off as a design rule."
-      },
-      {
-        "id": "pressure-cooker",
-        "edge_note": "Boyle hands designers a compressible rule; Papin bolts it onto Hero’s sealed-kettle intuition—the first sealed steam that earns dinner, not tenure."
-      },
-      {
-        "id": "miners-friend",
-        "edge_note": "Credible small boilers meet the customer who cannot refuse a bad pump—flooded English collieries pay for Savery’s violent shortcut because the fuel base is already coal."
-      },
-      {
-        "id": "gas-volume-temperature",
-        "edge_note": "A year later, still burning coal to argue with gravity, Amontons adds temperature to the gas-law family—another scalar for anyone who will soon count duty per bushel."
-      },
-      {
-        "id": "newcomen-steam-engine",
-        "edge_note": "Amontons finishes the ‘gas plus heat’ picture on the bench; the paying problem is still the flooded seam—Newcomen trades Savery’s high-pressure terror for a slower beat collieries will actually run underground."
-      },
-      {
-        "id": "latent-heat",
-        "edge_note": "Terrible duty per bushel makes “missing” heat in phase changes economically visible—Black gives accountants a place for heat that does not register on a thermometer yet."
-      },
-      {
-        "id": "steam-engine",
-        "edge_note": "Watt’s repair assignment applies that bookkeeping to geometry: always-hot versus always-cold space is how latent heat stops being wasted motion in the cylinder."
-      },
-      {
-        "id": "improved-steam-engine",
-        "edge_note": "Rotary output and steadier pressure fold the toy line into mills—the same fire that once entertained courts now signs factory ledgers."
-      }
-    ]
-  },
-  {
-    "slug": "invisible-contagion",
-    "title": "Two centuries between seeing and believing",
-    "blurb": "From animalcules in ditch water to penicillin by the gram — two centuries where you could watch contagion swim and the hospital still blamed \"bad air\".",
-    "steps": [
-      {
-        "id": "microscope",
         "edge_note": null
       },
       {
-        "id": "blood-circulation",
-        "edge_note": "Spectacle glass bought a second scale; Harvey’s loop made the body a closed plumbing problem—fevers had to live *somewhere* in the circuit, not in the four humors."
+        "id": "pressure-cooker",
+        "edge_note": "Boyle hands designers a compressible rule; Papin implements."
       },
       {
-        "id": "microorganisms",
-        "edge_note": "Stacked lenses were a toy until someone aimed them at ditch water: “animalcules” proved life at a scale physicians had no ward vocabulary for."
+        "id": "miners-friend",
+        "edge_note": "A second practical application involved pumping water out of coal shafts. The pump was coal powered, setting off a feedback loop."
       },
       {
-        "id": "bacteria",
-        "edge_note": "Smaller still, and named before anyone had a theory of disease—visibility without a job description."
+        "id": "gas-volume-temperature",
+        "edge_note": "Amontons links gas volume to temperature, finishing the theoretical \"gas plus heat\" picture"
       },
       {
-        "id": "smallpox-vaccine",
-        "edge_note": "Empiricism runs ahead of theory: deliberate pus from a mild case stops the lethal one—Turkish practice, English controversy, no agreed germ in sight."
+        "id": "newcomen-steam-engine",
+        "edge_note": "Newcomen prioritizes safety and slow reliability over high-pressure theory to keep the coal pits dry"
       },
       {
-        "id": "pathology",
-        "edge_note": "Morgagni’s 640 autopsies make death legible organ by organ; the corpse table becomes evidence even while the living patient is still explained by bad air."
+        "id": "latent-heat",
+        "edge_note": "\"Latent heat,\" explained why engines consume so much fuel just to change water into steam"
       },
       {
-        "id": "vaccination",
-        "edge_note": "Jenner systematizes the trick—cowpox blisters as a manufactured shield—immunity without knowing what you are blocking."
+        "id": "steam-engine",
+        "edge_note": "James Watt applies Black’s discovery to invent the separate condenser, ending the \"missing heat\" waste"
       },
       {
-        "id": "anesthesia",
-        "edge_note": "Ether buys painless cutting; operations multiply, and the wound you cannot feel becomes the new killer—surgery’s bottleneck shifts from pain to what walks in on the hands."
-      },
-      {
-        "id": "puerperal-fever",
-        "edge_note": "Semmelweis counts bodies: the same doctor, different wards—contagion by contact, not miasma, years before anyone agrees on a microbe."
-      },
-      {
-        "id": "pasteurization",
-        "edge_note": "Wine merchants pay for spoilage answers; heating kills what the lens already showed—biology as quality control before biology as bedside doctrine."
-      },
-      {
-        "id": "spontaneous-generation-rip",
-        "edge_note": "The swan-neck flask kills “life from broth” on the bench; the open question moves from creation to *delivery*—germs ride dust, not vapor."
-      },
-      {
-        "id": "germ-theory-of-disease",
-        "edge_note": "Pasteur gathers the threads: contagious disease has agents; medicine finally has something to hunt besides humors and smells."
-      },
-      {
-        "id": "antiseptic-surgery",
-        "edge_note": "Lister weds phenol to Lister’s own problem—clean the cut, not just the air—anesthesia made the OR busy; antisepsis makes it survivable."
-      },
-      {
-        "id": "bacterial-cultivation",
-        "edge_note": "Koch grows anthrax outside the body and pins one shape to one plague—identification becomes laboratory craft, not bedside argument."
-      },
-      {
-        "id": "anthrax-inoculation",
-        "edge_note": "Jenner’s one-off becomes a recipe: attenuate in the lab when nature offers no mild cousin—manufactured weakness as armor."
-      },
-      {
-        "id": "rabies",
-        "edge_note": "The same factory ships a bite protocol across species lines—rabies, not smallpox, is the public proof that the pipeline generalizes."
-      },
-      {
-        "id": "penicillin",
-        "edge_note": "Fleming’s contaminated dish is a bench accident; the mold’s halo says some cells are killable without poisoning the patient—if anyone can purify it."
-      },
-      {
-        "id": "penicillin-practical",
-        "edge_note": "Florey and Chain turn halo into grams; WWII demand finishes what germ theory started—mass death finally pays for mass production of cure."
+        "id": "improved-steam-engine",
+        "edge_note": "Theoretical precision meets rotary output, turning the \"steam toy\" into the universal engine of factories and mills"
       }
     ]
   }

@@ -172,6 +172,15 @@ def looks_like_card_corpus_fallback(story, seen_first_ids):
     return first_id in seen_first_ids
 
 
+# Story tabs are authored in columns A–B only (title/blurb, then id/edge_note).
+# Extra sheet columns (e.g. notes in C) are ignored so gviz export stays stable.
+STORY_COLS = 2
+
+
+def _story_row(row):
+    return ((row or []) + ["", ""])[:STORY_COLS]
+
+
 def parse_story_tab(name, body):
     """Two-zone parser. Top: key/value metadata. Bottom: tabular header
     row + step rows (`id, edge_note`). Zones are separated by either
@@ -186,6 +195,7 @@ def parse_story_tab(name, body):
     step_cols = ["id", "edge_note"]  # default if header is missing
 
     for row in rows:
+        row = _story_row(row)
         first = (row[0] or "").strip() if row else ""
         if all((c or "").strip() == "" for c in row):
             in_steps = True
@@ -195,7 +205,11 @@ def parse_story_tab(name, body):
         if not in_steps and first.lower() == "id":
             in_steps = True
             seen_step_header = True
-            step_cols = [(c or "").strip().lower() for c in row]
+            step_cols = [
+                (c or "").strip().lower()
+                for c in row
+                if (c or "").strip().lower() in ("id", "edge_note")
+            ] or ["id", "edge_note"]
             continue
         if not in_steps:
             key = first
@@ -206,7 +220,11 @@ def parse_story_tab(name, body):
         # Bottom zone. The first non-blank row defines the column names.
         if not seen_step_header:
             seen_step_header = True
-            step_cols = [(c or "").strip().lower() for c in row]
+            step_cols = [
+                (c or "").strip().lower()
+                for c in row
+                if (c or "").strip().lower() in ("id", "edge_note")
+            ] or ["id", "edge_note"]
             continue
         sid = (row[0] or "").strip()
         if not sid:
@@ -233,15 +251,15 @@ def parse_story_tab(name, body):
     }
 
 
-def fetch_tab(name):
+def fetch_tab(name, *, use_gviz_headers=True):
     # gviz/tq accepts ?sheet=<tab-name> so we never need to look up gids.
-    # tqx=out:csv returns CSV; headers=1 forces gviz to treat row 1 as headers
-    # (without it, gviz tries to auto-detect data ranges and may collapse
-    # whole columns into a single value when the sheet has trailing empties).
+    # tqx=out:csv returns CSV. headers=1 suits card tabs (row 1 = ID, Year, …).
+    # Story tabs use row 1 as data (title/blurb), so fetch them without it.
     encoded = urllib.parse.quote(name)
+    headers_q = "&headers=1" if use_gviz_headers else ""
     url = (
         f"https://docs.google.com/spreadsheets/d/{SHEET_ID}/gviz/tq"
-        f"?tqx=out:csv&headers=1&sheet={encoded}"
+        f"?tqx=out:csv{headers_q}&sheet={encoded}"
     )
     print(f"  fetching tab {name!r}")
     try:
@@ -328,7 +346,7 @@ def main():
     stories = []
     for workbook_tab_name in story_tab_names:
         fetch_name = gviz_sheet_name(workbook_tab_name)
-        body = fetch_tab(fetch_name)
+        body = fetch_tab(fetch_name, use_gviz_headers=False)
         if body is None:
             continue
         story = parse_story_tab(workbook_tab_name, body)

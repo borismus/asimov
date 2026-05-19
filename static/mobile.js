@@ -1,4 +1,5 @@
 import { loadGraph, formatField, formatYear } from "./utils.js";
+import { initFeedback, setFeedbackContext } from "./feedback.js";
 import { cardWidth, fullCardHeight, renderFullCard } from "./card.js";
 import { searchHelper } from "./search.js";
 import { parsePathPin, pushPath, isLocalhost } from "./routing.js";
@@ -869,9 +870,16 @@ async function init() {
     state.index = Math.floor(Math.random() * state.sorted.length);
   }
 
+  setFeedbackContext(() => {
+    const node = state.sorted[state.index];
+    if (!node) return {};
+    return { card_id: node.id, card_title: node.title || "" };
+  });
+
   buildHeader();
   buildDeck();
   initSearch();
+  initFeedback();
   attachKeyboard();
   attachTimelineScrubber();
   rebuildDeck();

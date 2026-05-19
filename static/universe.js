@@ -1,4 +1,5 @@
 import { loadGraph, formatYear, isSpeculative } from "./utils.js";
+import { initFeedback, isFeedbackOpen, setFeedbackContext } from "./feedback.js";
 import {
   cardWidth,
   cardHeight,
@@ -609,6 +610,22 @@ async function init() {
   state.links = links;
   for (const n of nodes) state.nodesById[n.id] = n;
 
+  setFeedbackContext(() => {
+    const out = {};
+    if (state.pinnedId) {
+      out.card_id = state.pinnedId;
+      const n = state.nodesById[state.pinnedId];
+      if (n?.title) out.card_title = n.title;
+    }
+    if (state.story) {
+      out.story_slug = state.story.id;
+      if (state.story.step != null) out.story_step = String(state.story.step);
+      const meta = state.storiesById[state.story.id];
+      if (meta?.title) out.story_title = meta.title;
+    }
+    return out;
+  });
+
   // Stories depend on nodesById (their step IDs resolve against it). Load
   // after cards but don't await — stories are an enhancement; if the JSON
   // is slow or missing the rest of the page should still come up. If the
@@ -991,6 +1008,7 @@ window.addEventListener("keydown", (e) => {
 });
 
 document.getElementById("action-search")?.addEventListener("click", openSearch);
+initFeedback();
 document.getElementById("action-random")?.addEventListener("click", () => {
   if (!state.nodes.length) return;
   let next = state.nodes[Math.floor(Math.random() * state.nodes.length)];
@@ -1029,6 +1047,7 @@ searchInput.addEventListener("keydown", (e) => {
 window.addEventListener("keydown", (e) => {
   if (e.key !== "Escape") return;
   if (isConfirmOpen()) return;
+  if (isFeedbackOpen()) return;
   const ae = document.activeElement;
   const tag = ae && ae.tagName;
   if (tag === "INPUT" || tag === "TEXTAREA" || (ae && ae.isContentEditable)) return;

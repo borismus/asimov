@@ -15,6 +15,13 @@ body {
   display: none !important;
 }
 
+/* Story step chevrons are desktop-only (styled in stories.css). Without this
+   rule they render as unstyled buttons at the end of the document on mobile,
+   where mobile.js — not stories.js — is the entry bundle. */
+.story-nav-btn {
+  display: none !important;
+}
+
 /* Search input + results are part of the universe shell DOM and surface in
    mobile only when the user taps the search button (body.mobile-searching). */
 #search-input,

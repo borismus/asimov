@@ -633,8 +633,14 @@ function onPointerUp(e) {
     drag = null;
     const rect = slot.getBoundingClientRect();
     const xRel = e.clientX - rect.left;
-    if (xRel < rect.width / 2) tapCommit(-1, "right");
-    else tapCommit(+1, "left");
+    // Middle band of the card is inert so a tap to read doesn't flip cards.
+    const deadLo = rect.width * 0.35;
+    const deadHi = rect.width * 0.65;
+    if (xRel >= deadLo && xRel <= deadHi) return;
+    // Screen halves (chronological prev/next), not card halves.
+    const screenMid = window.innerWidth / 2;
+    if (e.clientX >= screenMid) tapCommit(+1, "left");
+    else tapCommit(-1, "right");
     return;
   }
 

@@ -99,6 +99,8 @@ Mini stickies (zoomed-out) skip the sliding clamp and just check that their midp
 
 ### Visual treatment
 
+Non-story inventions stay **dots + automatic labels** (quota boosted in story mode via `storyBaselineLabelThreshold` in [world.js](../static/world.js)); baseline MTG cards still appear **only on hover/pin**, same as before.
+
 In [static/stories.css](../static/stories.css):
 
 - Rose `#b8336a` for the ribbon, focused-card glow, focused-sticky glow, and `.story-member` accents.

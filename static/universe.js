@@ -26,6 +26,7 @@ import {
   drawLinks,
   nodesInView,
   labelThreshold,
+  storyBaselineLabelThreshold,
   COL_WIDTH,
   ROW_STRIDE,
 } from "./world.js";
@@ -481,13 +482,14 @@ function scheduleRedraw() {
     firstTierResolve = false;
 
     if (state.story) {
-      // Story mode: only story members render as full cards (via the
-      // gStoryCards overlay). Baseline cards stay collapsed to labels at
-      // every zoom — flush any cards left over from before the story
-      // opened, and let labelThreshold pick out which titles to show.
+      // Story overlay owns member cards; baseline stays dots + labels only
+      // (cards appear on hover). Labels must render at every zoom tier —
+      // otherwise k≥1 would leave non-members with neither card nor title.
       gCards.selectAll("g.card").interrupt()
         .transition().duration(TIER_FADE_MS).style("opacity", 0).remove();
-      renderLabels(labelThreshold(state.transform.k));
+      renderLabels(storyBaselineLabelThreshold(state.transform.k), {
+        instantOpacity: true,
+      });
     } else if (state.tier === TIER_LABEL) {
       renderLabels(labelThreshold(state.transform.k));
     } else if (
@@ -809,7 +811,7 @@ function initialCenter() {
   if (pinnedNode) pin(pinnedNode);
 }
 
-function renderLabels(threshold) {
+function renderLabels(threshold, { instantOpacity = false } = {}) {
   // Margin is in world units; with cards at fixed screen size, convert
   // a card-screen-width margin into world units via the current zoom.
   const margin = cardWidth * cardScreenScale / (state.transform?.k || 1);
@@ -822,7 +824,7 @@ function renderLabels(threshold) {
   const visible = nodesInView(margin).filter(
     (n) => n.labelPriority <= threshold && !(storyMembers && storyMembers.has(n.id))
   );
-  appendLabels(gLabels, visible);
+  appendLabels(gLabels, visible, instantOpacity);
 }
 
 // Show titles for matched nodes that are currently on-screen at TIER_LABEL —
@@ -830,7 +832,13 @@ function renderLabels(threshold) {
 // the title, so an extra search label would just be a duplicate. Off-screen
 // matches go to the pill list under the search bar instead.
 function renderSearchLabels() {
-  if (!isActiveQuery() || state.tier !== TIER_LABEL || !state.transform) {
+  if (!isActiveQuery() || !state.transform) {
+    gSearchLabels.selectAll("g.dag-label").remove();
+    return;
+  }
+  // During a story, baseline cards stay hidden until hover — keep match labels
+  // at every zoom so search still works when k ≥ 1.
+  if (!state.story && state.tier !== TIER_LABEL) {
     gSearchLabels.selectAll("g.dag-label").remove();
     return;
   }
@@ -899,7 +907,7 @@ function renderSearchOffscreenIndicators() {
   }
 }
 
-function appendLabels(group, nodes) {
+function appendLabels(group, nodes, instantOpacity = false) {
   const sel = group.selectAll("g.dag-label").data(nodes, (d) => d.id);
   sel.exit().remove();
   const entered = sel
@@ -918,7 +926,11 @@ function appendLabels(group, nodes) {
     .on("mouseleave", (event, d) => onHoverLeave(event, d));
   entered.append("rect").attr("class", "dag-label-bg");
   entered.append("text").attr("class", "dag-label-text").text((d) => d.title);
-  entered.style("opacity", 0).transition().duration(TIER_FADE_MS).style("opacity", 1);
+  if (instantOpacity) {
+    entered.style("opacity", 1);
+  } else {
+    entered.style("opacity", 0).transition().duration(TIER_FADE_MS).style("opacity", 1);
+  }
 }
 
 function renderCards() {

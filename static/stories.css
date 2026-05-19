@@ -7,8 +7,11 @@
 
 /* ---- spotlight: baseline content dims when has-story is set ---- */
 body.has-story #links-canvas { opacity: 0.18; }
-body.has-story .labels .dag-label,
-body.has-story .sticky-labels .dag-label { opacity: 0.35; }
+body.has-story .labels .dag-label:not(.story-member),
+body.has-story .sticky-labels .dag-label:not(.story-member),
+body.has-story .search-labels .dag-label:not(.story-member) {
+  opacity: 0.72;
+}
 body.has-story g.cards > g.card:not(.story-member) { opacity: 0.25; }
 body.has-story g.dots circle.dag-dot:not(.story-member) { opacity: 0.4; }
 /* Hide the baseline copy of story members — gStoryCards renders a full

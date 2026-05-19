@@ -58,6 +58,11 @@ export function labelThreshold(k) {
   return Math.min(1, Math.max(0, t));
 }
 
+/** In story mode we keep baseline cards hidden (hover only); boost label quota so the graph stays readable. */
+export function storyBaselineLabelThreshold(k) {
+  return Math.min(1, labelThreshold(k) * 3);
+}
+
 function hashUnit(s) {
   let h = 2166136261;
   for (let i = 0; i < s.length; i++) {

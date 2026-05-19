@@ -38,7 +38,12 @@ def load_stories(json_path):
 def load_inventions(tsv_path):
   out = []
   with open(tsv_path, newline="", encoding="utf-8") as f:
-    for row in csv.DictReader(f, delimiter="\t"):
+    for row in csv.DictReader(
+        f,
+        delimiter="\t",
+        quoting=csv.QUOTE_NONE,
+        escapechar="\\",
+    ):
       iid = (row.get("ID") or "").strip()
       if not iid:
         continue

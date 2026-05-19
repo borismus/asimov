@@ -91,7 +91,12 @@ def classify_era(year: int) -> str:
 def load_inventions(tsv: Path) -> list[Invention]:
     out: list[Invention] = []
     with tsv.open(newline="", encoding="utf-8") as f:
-        reader = csv.DictReader(f, delimiter="\t")
+        reader = csv.DictReader(
+            f,
+            delimiter="\t",
+            quoting=csv.QUOTE_NONE,
+            escapechar="\\",
+        )
         for row in reader:
             iid = (row.get("ID") or "").strip()
             if not iid:

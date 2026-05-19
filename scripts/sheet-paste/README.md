@@ -6,6 +6,7 @@ These files are **only** for pasting into the **Google Sheet** (the source of tr
 |------|------------------|
 | [story-tab-horse-cavalry.tsv](story-tab-horse-cavalry.tsv) | `Story: Horse cavalry` |
 | [story-tab-steam-diffusion.tsv](story-tab-steam-diffusion.tsv) | `Story: Steam diffusion` |
+| [story-tab-republic-of-letters.tsv](story-tab-republic-of-letters.tsv) | `Story: Republic of Letters` |
 
 Workflow: **paste into the sheet →** `uv run scripts/fetch-tsv.py` **→** committed `static/stories.json` (and `asimov.tsv`) update. Do not rely on editing the repo JSON alone if you use fetch regularly.
 

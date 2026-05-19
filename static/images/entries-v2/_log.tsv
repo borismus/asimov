@@ -1617,3 +1617,7 @@ ts	id	era	status	prompt_hash
 1778364043	pike	medieval	ok:via=openai:model=gpt-image-2:n=1	cea1fa9ddc37	0.0479
 1778364050	chariot	ancient	ok:via=openai:model=gpt-image-2:n=1	ca818532c9e2	0.0479
 1778364105	couched-lance	medieval	ok:via=openai:model=gpt-image-2:n=1	9d9a46a7903d	0.0479
+1779154020	papyrus	ancient	ok:via=openai:model=gpt-image-2:n=1	ab35001f3ce4	0.0479
+1779154027	block-printing	medieval	ok:via=openai:model=gpt-image-2:n=1	6d423411dc9f	0.0479
+1779203496	block-printing	medieval	ok:via=openai:model=gpt-image-2:n=1	6d423411dc9f	0.0479
+1779203561	papyrus	ancient	ok:via=openai:model=gpt-image-2:n=1	ab35001f3ce4	0.0479

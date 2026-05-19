@@ -128,6 +128,11 @@ export function validateData(nodes) {
   return isValid;
 }
 
+// fetch-tsv.py writes with escapechar="\\"; d3.tsv does not unescape on read.
+function unescapeTsvCell(value) {
+  if (value == null || value === "") return value ?? "";
+  return String(value).replace(/\\"/g, '"').replace(/\\\\/g, "\\");
+}
 
 export async function loadGraph(tsvUrl) {
   const rows = await d3.tsv(tsvUrl);
@@ -137,12 +142,12 @@ export async function loadGraph(tsvUrl) {
     id: row.ID,
     year: parseYear(row.Year),
     deps: parseDeps(row.Dependencies),
-    title: row.Title,
-    description: row.Description,
-    inventor: row.Inventor,
-    location: row.Location,
-    field: row.Field.toLowerCase() || "unknown",
-    url: row.URL,
+    title: unescapeTsvCell(row.Title),
+    description: unescapeTsvCell(row.Description),
+    inventor: unescapeTsvCell(row.Inventor),
+    location: unescapeTsvCell(row.Location),
+    field: (unescapeTsvCell(row.Field) || "unknown").toLowerCase(),
+    url: unescapeTsvCell(row.URL),
     kind: normalizeKind(row.Kind),
   }));
 

@@ -136,5 +136,52 @@
         "edge_note": "Theoretical precision meets rotary output, turning the \"steam toy\" into the universal engine of factories and mills"
       }
     ]
+  },
+  {
+    "slug": "republic-of-letters",
+    "title": "Toward a Republic of Letters",
+    "blurb": "From Sumerian ledgers toward a republic of letters. Egypt held the reed, Pergamum the hide, China the cheap sheet. Print and learned societies turned copying into correspondence.",
+    "steps": [
+      {
+        "id": "writing",
+        "edge_note": null
+      },
+      {
+        "id": "papyrus",
+        "edge_note": "Sumer wedged cuneiform signs into clay. Egypt had mud too, but the delta grew a reed made for ink."
+      },
+      {
+        "id": "literature",
+        "edge_note": "Ledgers were only the first job. Once marks can live on a portable sheet, the epic outlives the bard."
+      },
+      {
+        "id": "alphabet",
+        "edge_note": "A phonetic handful of signs lets a scribe write any word he can say."
+      },
+      {
+        "id": "library",
+        "edge_note": "Hand-copying and expensive processes make books a luxury. Libraries are more a symbol of power than a source of knowledge."
+      },
+      {
+        "id": "parchment",
+        "edge_note": "Legend blamed an Egyptian papyrus export ban during the rivalry with Pergamum’s library. Pergamum dresses animal skins on frames. The sheet is costly enough to scrape and reuse."
+      },
+      {
+        "id": "paper",
+        "edge_note": "Cheaper than scraped skin, but papermaking still drifts west for centuries."
+      },
+      {
+        "id": "block-printing",
+        "edge_note": "Carved blocks and rubbings in China meant one plate could generate hundreds of identical pages. Europe was still copying by hand."
+      },
+      {
+        "id": "printing-press",
+        "edge_note": "China already stamped blocks; Gutenberg’s win is movable type combined with a wine press."
+      },
+      {
+        "id": "scientific-societies",
+        "edge_note": "Cheap pamphlets turned private letters into public arguments. The Greek Academy is reborn as mail, not marble."
+      }
+    ]
   }
 ]

@@ -175,7 +175,10 @@ function updateCounter() {
 
 function buildHeader() {
   document.getElementById("action-random")?.addEventListener("click", jumpToRandom);
-  document.getElementById("action-search")?.addEventListener("click", openSearch);
+  document.getElementById("action-search")?.addEventListener("click", (e) => {
+    e.preventDefault();
+    openSearch();
+  });
 
   // Timeline strip lives INSIDE the header (#site-timeline placeholder).
   // Era ticks for orientation, plus a movable marker that shows the
@@ -248,9 +251,12 @@ function openSearch() {
   document.body.classList.add("mobile-searching");
   searchInputEl.value = "";
   renderSearchResults();
-  // Defer focus until the input is actually display:block — focus on a hidden
-  // input is a no-op on iOS Safari.
-  requestAnimationFrame(() => searchInputEl.focus());
+  // Focus must run in the same turn as the search-button click or iOS Safari
+  // won't open the keyboard (requestAnimationFrame breaks the user-gesture
+  // chain). Force layout so display:block from .mobile-searching is applied
+  // before focus — focus on display:none is a no-op.
+  void searchInputEl.offsetWidth;
+  searchInputEl.focus({ preventScroll: true });
 }
 
 function closeSearch() {

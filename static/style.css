@@ -17,6 +17,34 @@ body {
 html:not(.js) body {
   overflow: auto;
 }
+/* With no JS the .js class is never set, so the app shell never initialises.
+   #container is a transparent position:absolute 100%x100% overlay (universe.css)
+   that would sit on top of #page-content and swallow scroll/clicks. Hide every
+   shell element when JS is off so only the readable content remains. */
+html:not(.js) body > *:not(#page-content) {
+  display: none !important;
+}
+/* Visually hidden but readable by crawlers / screen readers. */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+/* The server-rendered MTG card (same markup the canvas draws, styled by
+   card.css). Fixed 240-unit artwork, centered, scaling down on narrow screens. */
+#page-content svg.card {
+  display: block;
+  width: 240px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 1.25rem;
+}
 #page-content {
   max-width: 42rem;
   margin: 0 auto;

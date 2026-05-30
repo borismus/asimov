@@ -49,11 +49,12 @@
   <main id="page-content">
     {% if content_kind == "card" %}
     <article>
-      <h1>{{ heading }}</h1>
-      <p class="page-meta">{{ year_display }}{% if field %} &middot; {{ field }}{% endif %}{% if inventor %} &middot; {{ inventor }}{% endif %}{% if location %} &middot; {{ location }}{% endif %}</p>
-      <img class="page-art" src="{{ card_image_url }}" alt="{{ heading }}" />
+      {# The card SVG (same look as the canvas) carries the title/image/year/
+         inventor/location visually; keep an sr-only h1 for heading semantics
+         and a readable description + related links below for humans and SEO. #}
+      <h1 class="sr-only">{{ heading }}</h1>
+      {{ card_svg | safe }}
       <p>{{ description }}</p>
-      {% if external_url %}<p><a href="{{ external_url }}" rel="noopener">Read more</a></p>{% endif %}
       {% if built_on %}
       <nav class="page-related" aria-label="Built on">
         <h2>Built on</h2>

@@ -2,6 +2,7 @@
 import argparse
 import csv
 import dataclasses
+import html
 import json
 import os
 import re
@@ -42,6 +43,76 @@ def format_year(year):
   if year < 0:
     return f"{-year:,} BCE"
   return str(year)
+
+
+# Card geometry mirrors cardGeom in static/card.js (the single source of truth);
+# keep these in sync if the card layout there changes. The SVG below is a Python
+# port of the static renderCardSVG() in preview.html, so the no-JS page shows the
+# same Magic-the-Gathering card the canvas draws (styled by static/card.css).
+_CARD_W = 240
+_CARD_MARGIN = 18
+_CARD_MARGIN_IN = 16
+_CARD_TITLE_BAR_H = 20
+_CARD_IMG_W = 208
+_CARD_IMG_H = _CARD_IMG_W * 2 / 3                            # 138.667 (locks 3:2)
+_CARD_IMG_BOTTOM_Y = _CARD_TITLE_BAR_H + _CARD_IMG_H         # 158.667
+_CARD_FULL_H = (_CARD_IMG_H + _CARD_TITLE_BAR_H * 2) + _CARD_IMG_H  # 317.333
+_CARD_INVENTOR_Y = _CARD_IMG_BOTTOM_Y + 11                   # 169.667
+_CARD_BODY_Y = _CARD_IMG_BOTTOM_Y + 16                       # 174.667
+_CARD_FOOTER_H = 20
+_CARD_FIELD_ICON_CX = _CARD_W - _CARD_MARGIN - 12 + 6        # 216
+
+
+def _num(v):
+  # Compact SVG coordinate (drop trailing zeros so 138.667 not 138.66666...).
+  return f"{v:.3f}".rstrip("0").rstrip(".")
+
+
+def _field_key(field):
+  # Mirrors formatField() in static/utils.js (text before ':', lowercased) with
+  # an 'unknown' fallback so the field-<key> class is never empty.
+  return (field.split(":")[0] or "unknown").lower()
+
+
+def render_card_svg(inv):
+  W = _CARD_W
+  H = _CARD_FULL_H
+  body_h = H - _CARD_BODY_Y - _CARD_FOOTER_H
+  f = _field_key(inv.field)
+
+  def e(s):
+    return html.escape(s or "", quote=True)
+
+  image_href = f"/static/images/entries-v2/{inv.id}.jpg"
+  field_icon_href = f"/static/images/fields/{f}.png"
+  # One card per page, so a fixed clipPath id can't collide.
+  clip_id = "card-fold-clip"
+  return f'''<svg class="card field-{e(f)}" viewBox="0 0 {_num(W)} {_num(H)}" width="{_num(W)}" height="{_num(H)}" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="{clip_id}" clipPathUnits="userSpaceOnUse">
+      <rect x="0" y="{_num(_CARD_IMG_BOTTOM_Y)}" width="{_num(W)}" height="{_num(H - _CARD_IMG_BOTTOM_Y)}"/>
+    </clipPath>
+  </defs>
+  <rect class="container" x="1" y="1" width="{_num(W - 2)}" height="{_num(H - 2)}" fill="white" stroke="black" stroke-width="2" rx="4"/>
+  <g class="fold-clip" clip-path="url(#{clip_id})">
+    <g class="fold-panel">
+      <rect class="body-rect" x="{_num(_CARD_MARGIN_IN)}" y="{_num(_CARD_BODY_Y)}" width="{_num(_CARD_IMG_W)}" height="{_num(body_h)}" fill="transparent" stroke="black"/>
+      <foreignObject class="body-text" x="{_num(_CARD_MARGIN_IN + 2)}" y="{_num(_CARD_BODY_Y + 2)}" width="{_num(_CARD_IMG_W - 4)}" height="{_num(body_h - 4)}" font-size="9">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="padding:1px;height:100%;font-family:Lora,serif;font-size:9px;line-height:1.35;color:#1a1a1a;hyphens:auto">{e(inv.summary)}</div>
+      </foreignObject>
+      <text class="middle-text" x="{_num(_CARD_MARGIN_IN)}" y="{_num(_CARD_INVENTOR_Y)}" font-size="10" fill="#111" font-family="Lora, serif">{e(inv.inventor)}</text>
+      <text class="bottom-left" x="{_num(_CARD_MARGIN_IN)}" y="{_num(H - _CARD_FOOTER_H + 14)}" font-size="12" fill="#111" font-family="Lora, serif">{e(inv.location)}</text>
+      <text class="bottom-right" x="{_num(W - _CARD_MARGIN_IN)}" y="{_num(H - _CARD_FOOTER_H + 14)}" font-size="12" text-anchor="end" fill="#111" font-family="Lora, serif">{e(format_year(inv.year))}</text>
+    </g>
+  </g>
+  <g class="image-layer">
+    <rect class="image-rect" x="{_num(_CARD_MARGIN_IN)}" y="{_num(_CARD_TITLE_BAR_H)}" width="{_num(_CARD_IMG_W)}" height="{_num(_CARD_IMG_H)}" fill="transparent" stroke="black"/>
+    <image x="{_num(_CARD_MARGIN_IN)}" y="{_num(_CARD_TITLE_BAR_H)}" width="{_num(_CARD_IMG_W)}" height="{_num(_CARD_IMG_H)}" preserveAspectRatio="xMidYMid slice" href="{e(image_href)}"/>
+    <text class="title" x="{_num(_CARD_MARGIN_IN)}" y="13" font-size="13" fill="#111" font-family="DM Serif Display, serif">{e(inv.title or inv.id)}</text>
+    <circle class="field-icon-bg" cx="{_num(_CARD_FIELD_ICON_CX)}" cy="10" r="6" fill="white" stroke="black"/>
+    <image class="field-icon" x="{_num(_CARD_FIELD_ICON_CX - 5)}" y="5" width="10" height="10" href="{e(field_icon_href)}"/>
+  </g>
+</svg>'''
 
 
 def load_stories(json_path):
@@ -213,14 +284,14 @@ if __name__ == "__main__":
       "field": invention.field,
       "inventor": invention.inventor,
       "location": invention.location,
-      "external_url": invention.url,
       "built_on": link_list(invention.dependencies),
       "led_to": link_list(reverse_deps.get(invention.id, [])),
+      "card_svg": render_card_svg(invention),
     }
-    html = template.render(data)
+    html_out = template.render(data)
 
     with open(f"{invention_dir}/index.html", "w") as f:
-      f.write(html)
+      f.write(html_out)
 
   # Root index. Use a curated invention's artwork as the social-card hero
   # so the og:image isn't broken when the site itself is shared.
@@ -254,16 +325,16 @@ if __name__ == "__main__":
       if (s.get("slug") or "").strip()
     ],
   }
-  html = template.render(data)
+  html_out = template.render(data)
 
   # Create the index.html file.
   with open(f"{args.out_dir}/index.html", "w") as f:
-    f.write(html)
+    f.write(html_out)
 
   # GitHub Pages serves 404.html for unknown paths; reuse the app shell so
   # cold loads on /story/<slug>/ (and any future client-routed path) still boot.
   with open(os.path.join(args.out_dir, "404.html"), "w") as f:
-    f.write(html)
+    f.write(html_out)
 
   # Story deep links — GitHub Pages needs a physical index.html per path;
   # universe.js reads /story/<slug>/ from pathname on cold load.

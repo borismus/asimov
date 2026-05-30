@@ -23,7 +23,10 @@ class Invention:
   inventor: str = ""
   location: str = ""
   field: str = ""
-  url: str = ""
+  # The TSV's "URL" column is misnamed: it actually holds a fuller, prose
+  # paragraph (verbatim/near-verbatim source text), not a link. Rendered as
+  # the card page's SEO body beneath the card when present.
+  detail: str = ""
   dependencies: tuple = ()
 
 
@@ -150,7 +153,7 @@ def load_inventions(tsv_path):
         inventor=(row.get("Inventor") or "").strip(),
         location=(row.get("Location") or "").strip(),
         field=(row.get("Field") or "").strip(),
-        url=(row.get("URL") or "").strip(),
+        detail=(row.get("URL") or "").strip(),
         dependencies=deps,
       ))
   return out
@@ -235,6 +238,22 @@ if __name__ == "__main__":
     # the template only ever emits links to pages that actually exist.
     return [{"id": i, "title": by_id[i].title} for i in ids if i in by_id]
 
+  # story_membership maps a card id to the stories that include it as a step,
+  # so each card page can link to the stories it's "Part of".
+  story_membership = {}
+  for story in stories:
+    slug = (story.get("slug") or "").strip()
+    title = (story.get("title") or slug).strip()
+    if not slug:
+      continue
+    seen = set()
+    for step in story.get("steps", []):
+      sid = (step.get("id") or "").strip()
+      if sid in seen:
+        continue
+      seen.add(sid)
+      story_membership.setdefault(sid, []).append({"slug": slug, "title": title})
+
   print(f"Deploying to {args.out_dir}...")
 
   os.makedirs(args.out_dir, exist_ok=True)
@@ -284,8 +303,12 @@ if __name__ == "__main__":
       "field": invention.field,
       "inventor": invention.inventor,
       "location": invention.location,
+      # Fuller prose paragraph (from the misnamed TSV "URL" column), shown as
+      # the page body beneath the card when present — see Invention.detail.
+      "detail": invention.detail,
       "built_on": link_list(invention.dependencies),
       "led_to": link_list(reverse_deps.get(invention.id, [])),
+      "part_of": story_membership.get(invention.id, []),
       "card_svg": render_card_svg(invention),
     }
     html_out = template.render(data)

@@ -54,7 +54,9 @@
          and a readable description + related links below for humans and SEO. #}
       <h1 class="sr-only">{{ heading }}</h1>
       {{ card_svg | safe }}
-      <p>{{ description }}</p>
+      {# The card SVG already shows the short summary; beneath it render the
+         fuller prose when present (most cards), else fall back to the summary. #}
+      <p>{{ detail or description }}</p>
       {% if built_on %}
       <nav class="page-related" aria-label="Built on">
         <h2>Built on</h2>
@@ -65,6 +67,12 @@
       <nav class="page-related" aria-label="Led to">
         <h2>Led to</h2>
         <ul>{% for c in led_to %}<li><a href="/{{ c.id }}/">{{ c.title }}</a></li>{% endfor %}</ul>
+      </nav>
+      {% endif %}
+      {% if part_of %}
+      <nav class="page-related" aria-label="Stories">
+        <h2>Stories</h2>
+        <ul>{% for s in part_of %}<li><a href="/story/{{ s.slug }}/">{{ s.title }}</a></li>{% endfor %}</ul>
       </nav>
       {% endif %}
     </article>

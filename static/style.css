@@ -7,6 +7,48 @@ body {
   overflow: hidden;
 }
 
+/* Server-rendered fallback content (index.jinja #page-content). It's in the
+   HTML for crawlers and no-JS visitors; once the app boots, .js is set on
+   <html> (synchronously in <head>) and we hide it so JS visitors see only the
+   canvas. No-JS visitors get a readable, scrollable article. */
+.js #page-content {
+  display: none;
+}
+html:not(.js) body {
+  overflow: auto;
+}
+#page-content {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 4rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui,
+    sans-serif;
+  line-height: 1.5;
+  color: #222;
+}
+#page-content .page-art {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin: 0.5rem 0;
+}
+#page-content h1 {
+  margin: 0 0 0.25rem;
+}
+#page-content .page-meta {
+  color: #666;
+  margin-bottom: 1rem;
+}
+#page-content .page-related,
+#page-content section {
+  margin-top: 1.25rem;
+}
+#page-content .page-footer {
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  color: #666;
+}
+
 /* Site header — title + subtitle + help on the top row, year-axis
    labels on the bottom row. The bottom row aligns with the dashed
    tick lines drawn in the universe SVG below, so the header reads as a

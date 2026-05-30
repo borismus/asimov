@@ -7,6 +7,10 @@
 
 <head>
   <meta charset="utf-8">
+  <!-- Set .js synchronously, before the body paints, so JS visitors never see
+       the server-rendered #page-content fallback (hidden via html.js in
+       style.css). The content stays in the DOM for crawlers and no-JS users. -->
+  <script>document.documentElement.classList.add('js')</script>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>{{title}}</title>
   <meta name="description" content="{{description}}">
@@ -36,11 +40,73 @@
 </head>
 
 <body>
-  <noscript>
-    <h1>{{heading}}</h1>
-    <p>{{description}}</p>
-    <img src="{{card_image_url}}" alt="{{description}}" />
-  </noscript>
+  <!--
+    Server-rendered, crawlable content. Present in the HTML for search engines
+    and no-JS visitors; hidden via `html.js #page-content` once the app boots
+    (see static/style.css). The same information is shown interactively on the
+    canvas, so this is the no-JS fallback, not cloaked content.
+  -->
+  <main id="page-content">
+    {% if content_kind == "card" %}
+    <article>
+      <h1>{{ heading }}</h1>
+      <p class="page-meta">{{ year_display }}{% if field %} &middot; {{ field }}{% endif %}{% if inventor %} &middot; {{ inventor }}{% endif %}{% if location %} &middot; {{ location }}{% endif %}</p>
+      <img class="page-art" src="{{ card_image_url }}" alt="{{ heading }}" />
+      <p>{{ description }}</p>
+      {% if external_url %}<p><a href="{{ external_url }}" rel="noopener">Read more</a></p>{% endif %}
+      {% if built_on %}
+      <nav class="page-related" aria-label="Built on">
+        <h2>Built on</h2>
+        <ul>{% for c in built_on %}<li><a href="/{{ c.id }}/">{{ c.title }}</a></li>{% endfor %}</ul>
+      </nav>
+      {% endif %}
+      {% if led_to %}
+      <nav class="page-related" aria-label="Led to">
+        <h2>Led to</h2>
+        <ul>{% for c in led_to %}<li><a href="/{{ c.id }}/">{{ c.title }}</a></li>{% endfor %}</ul>
+      </nav>
+      {% endif %}
+    </article>
+
+    {% elif content_kind == "story" %}
+    <article>
+      <h1>{{ heading }}</h1>
+      <p>{{ description }}</p>
+      <ol class="story-steps">
+        {% for s in steps %}<li><a href="/{{ s.id }}/">{{ s.title }}</a>{% if s.edge_note %} &mdash; {{ s.edge_note }}{% endif %}</li>{% endfor %}
+      </ol>
+    </article>
+
+    {% elif content_kind == "browse" %}
+    <article>
+      <h1>{{ heading }}</h1>
+      <p>{{ description }}</p>
+      {% for g in browse_groups %}
+      <section>
+        <h2>{{ g.field }}</h2>
+        <ul>{% for c in g.cards %}<li><a href="/{{ c.id }}/">{{ c.title }}</a> <span class="browse-year">{{ c.year_display }}</span></li>{% endfor %}</ul>
+      </section>
+      {% endfor %}
+    </article>
+
+    {% else %}{# root #}
+    <article>
+      <h1>{{ heading }}</h1>
+      <p>{{ description }}</p>
+      {% if stories %}
+      <nav class="page-related" aria-label="Stories">
+        <h2>Stories</h2>
+        <ul>{% for st in stories %}<li><a href="/story/{{ st.slug }}/">{{ st.title }}</a>{% if st.blurb %} &mdash; {{ st.blurb }}{% endif %}</li>{% endfor %}</ul>
+      </nav>
+      {% endif %}
+      <p><a href="/browse/">Browse all cards</a></p>
+    </article>
+    {% endif %}
+
+    <footer class="page-footer">
+      <p><a href="/">Invention &amp; Discovery Cards</a> &middot; <a href="/browse/">Browse all</a></p>
+    </footer>
+  </main>
 
   <header id="site-header">
     <div class="site-header-top">

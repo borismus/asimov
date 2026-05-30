@@ -19,6 +19,11 @@ class Invention:
   year: int
   title: str
   summary: str
+  inventor: str = ""
+  location: str = ""
+  field: str = ""
+  url: str = ""
+  dependencies: tuple = ()
 
 
 def _parse_year(raw):
@@ -28,6 +33,15 @@ def _parse_year(raw):
     raise ValueError(f"unparseable year: {raw!r}")
   n = int(m.group(1))
   return -n if (m.group(2) or "").upper() == "BCE" else n
+
+
+def format_year(year):
+  # Mirror formatYear() in static/utils.js: BCE years get comma grouping and a
+  # "BCE" suffix; CE years are shown as the bare number, matching the on-canvas
+  # card labels so the server-rendered text reads the same as the live app.
+  if year < 0:
+    return f"{-year:,} BCE"
+  return str(year)
 
 
 def load_stories(json_path):
@@ -52,11 +66,21 @@ def load_inventions(tsv_path):
       except ValueError as e:
         print(f"  skipping {iid}: {e}", file=sys.stderr)
         continue
+      deps = tuple(
+        d.strip()
+        for d in (row.get("Dependencies") or "").split(",")
+        if d.strip()
+      )
       out.append(Invention(
         id=iid,
         year=year,
         title=(row.get("Title") or "").strip(),
         summary=(row.get("Description") or "").strip(),
+        inventor=(row.get("Inventor") or "").strip(),
+        location=(row.get("Location") or "").strip(),
+        field=(row.get("Field") or "").strip(),
+        url=(row.get("URL") or "").strip(),
+        dependencies=deps,
       ))
   return out
 
@@ -71,7 +95,10 @@ def copy_static(out_dir):
 
 def load_template(template_path):
   templateLoader = jinja2.FileSystemLoader(searchpath="./")
-  templateEnv = jinja2.Environment(loader=templateLoader)
+  # autoescape so card titles/descriptions with &, <, or quotes are safe in
+  # both attributes (e.g. <meta content="...">) and the body content block.
+  # The JSON-LD block opts out via the `| safe` filter.
+  templateEnv = jinja2.Environment(loader=templateLoader, autoescape=True)
   template = templateEnv.get_template(template_path)
   return template
 
@@ -84,6 +111,9 @@ def generate_sitemap(inventions, stories):
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>{root}/</loc>
+  </url>
+  <url>
+    <loc>{root}/browse/</loc>
   </url>
 '''.format(root=SITE_ROOT)
   for story in stories:
@@ -120,6 +150,20 @@ if __name__ == "__main__":
   # inventions = [invention for invention in inventions if invention.id == "fire"]
   # print(inventions)
 
+  # Lookups for the crawlable internal link graph: by_id resolves a dependency
+  # id to its Invention (for the link text); reverse_deps maps an id to every
+  # invention that lists it as a dependency ("what this led to").
+  by_id = {inv.id: inv for inv in inventions}
+  reverse_deps = {}
+  for inv in inventions:
+    for dep in inv.dependencies:
+      reverse_deps.setdefault(dep, []).append(inv.id)
+
+  def link_list(ids):
+    # Resolve ids to {id, title} dicts, dropping any that aren't in the data so
+    # the template only ever emits links to pages that actually exist.
+    return [{"id": i, "title": by_id[i].title} for i in ids if i in by_id]
+
   print(f"Deploying to {args.out_dir}...")
 
   os.makedirs(args.out_dir, exist_ok=True)
@@ -153,6 +197,7 @@ if __name__ == "__main__":
       "publisher": {"@type": "Organization", "name": SITE_NAME},
     }
     data = {
+      "content_kind": "card",
       "title": page_title,
       "heading": invention.title,
       "site_name": SITE_NAME,
@@ -163,6 +208,14 @@ if __name__ == "__main__":
       "card_image_url": image_url,
       "og_type": "article",
       "jsonld": json.dumps(jsonld, ensure_ascii=False),
+      # Server-rendered crawlable content (hidden once JS boots).
+      "year_display": format_year(invention.year),
+      "field": invention.field,
+      "inventor": invention.inventor,
+      "location": invention.location,
+      "external_url": invention.url,
+      "built_on": link_list(invention.dependencies),
+      "led_to": link_list(reverse_deps.get(invention.id, [])),
     }
     html = template.render(data)
 
@@ -182,6 +235,7 @@ if __name__ == "__main__":
     "url": root_canonical,
   }
   data = {
+    "content_kind": "root",
     "title": SITE_NAME,
     "heading": SITE_NAME,
     "site_name": SITE_NAME,
@@ -190,6 +244,15 @@ if __name__ == "__main__":
     "card_image_url": root_image,
     "og_type": "website",
     "jsonld": json.dumps(root_jsonld, ensure_ascii=False),
+    "stories": [
+      {
+        "slug": (s.get("slug") or "").strip(),
+        "title": (s.get("title") or "").strip(),
+        "blurb": (s.get("blurb") or "").strip(),
+      }
+      for s in stories
+      if (s.get("slug") or "").strip()
+    ],
   }
   html = template.render(data)
 
@@ -214,6 +277,23 @@ if __name__ == "__main__":
     story_dir = os.path.join(args.out_dir, "story", slug)
     os.makedirs(story_dir, exist_ok=True)
     canonical = f"{SITE_ROOT}/story/{slug}/"
+    # Resolve each step to its invention so the narrative (title + edge note +
+    # crawlable link) is server-rendered into the HTML.
+    steps = []
+    for step in story.get("steps", []):
+      sid = (step.get("id") or "").strip()
+      if sid not in by_id:
+        continue
+      steps.append({
+        "id": sid,
+        "title": by_id[sid].title,
+        "edge_note": (step.get("edge_note") or "").strip(),
+      })
+    # og:image: the first resolvable step's artwork, not the shared fire.jpg.
+    story_image = (
+      f"{SITE_ROOT}/static/images/entries-v2/{steps[0]['id']}.jpg"
+      if steps else root_image
+    )
     story_jsonld = {
       "@context": "https://schema.org",
       "@type": "WebPage",
@@ -223,17 +303,63 @@ if __name__ == "__main__":
       "isPartOf": {"@type": "WebSite", "name": SITE_NAME, "url": f"{SITE_ROOT}/"},
     }
     story_data = {
+      "content_kind": "story",
       "title": f"{title} | {SITE_NAME}",
       "heading": title,
       "site_name": SITE_NAME,
       "description": blurb,
       "canonical_url": canonical,
-      "card_image_url": root_image,
+      "card_image_url": story_image,
       "og_type": "website",
       "jsonld": json.dumps(story_jsonld, ensure_ascii=False),
+      "steps": steps,
     }
     with open(os.path.join(story_dir, "index.html"), "w") as f:
       f.write(template.render(story_data))
+
+  # Crawlable browse index: every card as an <a href>, grouped by top-level
+  # field and ordered chronologically. Guarantees that orphan cards (no
+  # dependencies and nothing depending on them) are still reachable by crawl.
+  print("Creating /browse/index.html...")
+  groups = {}
+  for inv in inventions:
+    top_field = (inv.field.split(":", 1)[0].strip() or "Other")
+    groups.setdefault(top_field, []).append(inv)
+  browse_groups = [
+    {
+      "field": field,
+      "cards": [
+        {"id": inv.id, "title": inv.title, "year_display": format_year(inv.year)}
+        for inv in sorted(items, key=lambda i: i.year)
+      ],
+    }
+    for field, items in sorted(groups.items())
+  ]
+  browse_canonical = f"{SITE_ROOT}/browse/"
+  browse_jsonld = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": f"Browse all cards | {SITE_NAME}",
+    "description": SITE_DESCRIPTION,
+    "url": browse_canonical,
+    "isPartOf": {"@type": "WebSite", "name": SITE_NAME, "url": f"{SITE_ROOT}/"},
+  }
+  browse_data = {
+    "content_kind": "browse",
+    "title": f"Browse all cards | {SITE_NAME}",
+    "heading": "Browse all cards",
+    "site_name": SITE_NAME,
+    "description": SITE_DESCRIPTION,
+    "canonical_url": browse_canonical,
+    "card_image_url": root_image,
+    "og_type": "website",
+    "jsonld": json.dumps(browse_jsonld, ensure_ascii=False),
+    "browse_groups": browse_groups,
+  }
+  browse_dir = os.path.join(args.out_dir, "browse")
+  os.makedirs(browse_dir, exist_ok=True)
+  with open(os.path.join(browse_dir, "index.html"), "w") as f:
+    f.write(template.render(browse_data))
 
   # Create a sitemap.
   with open(f"{args.out_dir}/sitemap.xml", "w") as f:

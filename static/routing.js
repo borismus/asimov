@@ -71,7 +71,13 @@ export function pushPath(pathname) {
     try { history.pushState(null, "", next); } catch (e) {}
     return;
   }
-  const target = pathname + (window.location.hash || "");
+  // Ensure a trailing slash so the address-bar URL matches the server's
+  // canonical (/<id>/ and /story/<slug>/). Callers pass slashless paths like
+  // `/thermometer`; without this the app rewrites the canonical URL to a
+  // slashless one that 301-redirects on reload/share and muddies crawler
+  // canonicalization. Root "/" already ends in a slash.
+  const path = pathname.endsWith("/") ? pathname : pathname + "/";
+  const target = path + (window.location.hash || "");
   if (window.location.pathname + window.location.hash === target) return;
   try {
     history.pushState(null, "", target);

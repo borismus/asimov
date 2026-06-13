@@ -12,6 +12,12 @@ import jinja2
 SITE_NAME = "Invention & Discovery Cards"
 SITE_DESCRIPTION = """A Civilization-inspired tech tree but for the real life history of science and discovery. Inventions and discoveries presented in illustrated Magic-style cards."""
 SITE_ROOT = 'https://invention.cards'
+# Sitemap <lastmod>. Bump this (YYYY-MM-DD) whenever card/story page content
+# materially changes — it's the signal that tells Google to re-crawl pages it
+# last fetched months ago. Keep it a hand-set constant rather than today's date
+# so every rebuild doesn't falsely claim every page just changed (which Google
+# learns to ignore).
+CONTENT_LASTMOD = '2026-06-13'
 
 
 @dataclasses.dataclass(frozen=True)
@@ -185,22 +191,26 @@ def generate_sitemap(inventions, stories):
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>{root}/</loc>
+    <lastmod>{lastmod}</lastmod>
   </url>
   <url>
     <loc>{root}/browse/</loc>
+    <lastmod>{lastmod}</lastmod>
   </url>
-'''.format(root=SITE_ROOT)
+'''.format(root=SITE_ROOT, lastmod=CONTENT_LASTMOD)
   for story in stories:
     slug = (story.get("slug") or "").strip()
     if not slug:
       continue
     out += f'''  <url>
     <loc>{SITE_ROOT}/story/{slug}/</loc>
+    <lastmod>{CONTENT_LASTMOD}</lastmod>
   </url>
 '''
   for invention in inventions:
     out += f'''  <url>
     <loc>{SITE_ROOT}/{invention.id}/</loc>
+    <lastmod>{CONTENT_LASTMOD}</lastmod>
     <image:image>
       <image:loc>{SITE_ROOT}/static/images/entries-v2/{invention.id}.jpg</image:loc>
     </image:image>

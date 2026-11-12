@@ -74,7 +74,7 @@ for cid, (job, slots, ph) in CARDS.items():
     lists[cid] = {
         'job': job,
         'listKind': 'recipe' if cid == 'vitamin-pills' else 'assembly',
-        'slots': [{'label': s[0], 'job': s[1], 'fill': s[2], 'gap': s[3], 'type': s[4]} for s in slots],
+        'slots': [{'label': s[0], 'job': s[1], 'fill': s[2], 'gap': s[3], 'type': s[4], 'note': s[5] if len(s) > 5 else None} for s in slots],
         'phen': [{'gap': p[1]} if isinstance(p, tuple) else {'id': p} for p in ph],
     }
 json.dump(lists, open(f'{OUT}/static/lists.json', 'w'), ensure_ascii=False)
@@ -128,6 +128,11 @@ patch(f'{S}/utils.js', [
   try {
     const lists = await (await fetch("static/lists.json", { cache: "no-store" })).json();
     for (const n of nodes) if (lists[n.id]) Object.assign(n, lists[n.id]);
+    // Which jobs each card does as a part somewhere (for "job:" searches).
+    const byId = Object.fromEntries(nodes.map((n) => [n.id, n]));
+    for (const n of nodes) {
+      for (const s of n.slots || []) if (s.fill && byId[s.fill]) (byId[s.fill].fillsJobs ||= new Set()).add(s.job);
+    }
   } catch (e) {
     console.warn("lists.json missing", e);
   }
@@ -174,6 +179,20 @@ patch(f'{S}/card.js', [(
     'let cardSerial = 0;\n' + open(os.path.join(HERE, 'card_back.js')).read(),
 )])
 
+patch(f'{S}/search.js', [(
+    'export function searchHelper(node, query) {\n  const q = query.toLowerCase();',
+    '''export function searchHelper(node, query) {
+  // Prototype: "job:<job>" matches cards that do that job, as their own job or as a part.
+  if (query.startsWith("job:")) {
+    const job = query.slice(4).trim().toLowerCase();
+    if (!job) return false;
+    if ((node.job || "").toLowerCase() === job) return true;
+    for (const j of node.fillsJobs || []) if (j.toLowerCase() === job) return true;
+    return false;
+  }
+  const q = query.toLowerCase();''',
+)])
+
 patch(f'{S}/universe.js', [
     ('loadGraph("static/asimov.tsv")', 'loadGraph("static/cards.json")'),
     ('} from "./stories.js";', """} from "./stories.js";
@@ -197,6 +216,7 @@ function backLookup() {
     partOf,
     capturedBy,
     // A bullet jumps to its card and opens it on the back, so you can keep drilling down.
+    onJob: (job) => showJob(job),
     onLink: (id) => {
       const n = state.nodesById[id];
       if (!n) return;
@@ -215,7 +235,60 @@ function toggleFlip(event, d) {
   else flippedIds.delete(d.id);
   flipCard(gCards.selectAll("g.card").filter((x) => x.id === d.id), toBack);
 }
-window.__centerOnNode = (d) => centerOnNode(d, { animate: true });"""),
+window.__centerOnNode = (d) => centerOnNode(d, { animate: true });
+
+// Jobs panel: every job a card or slot does. Picking one lights up the cards that can do it,
+// using the search highlight with a "job:" query (see search.js).
+function jobIndex() {
+  const jobs = new Map();
+  const get = (j) => jobs.get(j) || jobs.set(j, { slots: 0, cards: new Set() }).get(j);
+  for (const n of state.nodes) {
+    if (n.job) get(n.job).cards.add(n.id);
+    for (const s of n.slots || []) {
+      const v = get(s.job);
+      v.slots++;
+      if (s.fill) v.cards.add(s.fill);
+    }
+  }
+  return [...jobs.entries()].sort((a, b) => b[1].slots - a[1].slots || b[1].cards.size - a[1].cards.size || a[0].localeCompare(b[0]));
+}
+function showJob(job) {
+  const input = document.getElementById("search-input");
+  input.value = `job:${job}`;
+  state.searchQuery = input.value;
+  document.body.classList.add("searching", "search-active");
+  document.getElementById("jobs-panel")?.setAttribute("hidden", "");
+  scheduleRedraw();
+}
+function toggleJobsPanel(event) {
+  event.stopPropagation();
+  let panel = document.getElementById("jobs-panel");
+  if (!panel) {
+    const rows = jobIndex();
+    const plural = (n, w) => `${n} ${w}${n === 1 ? "" : "s"}`;
+    panel = document.createElement("div");
+    panel.id = "jobs-panel";
+    panel.setAttribute("hidden", "");
+    panel.innerHTML =
+      `<div class="jobs-head"><b>${rows.length} jobs</b><span>Tap one to light up every card that can do it.</span></div>` +
+      rows.map(([j, v]) => `<button type="button" class="job-row" data-job="${escapeHtml(j)}"><span>${escapeHtml(j)}</span><span class="job-n">${plural(v.slots, "slot")} · ${plural(v.cards.size, "card")}</span></button>`).join("");
+    panel.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const b = e.target.closest("[data-job]");
+      if (b) showJob(b.getAttribute("data-job"));
+    });
+    document.body.appendChild(panel);
+  }
+  const header = document.getElementById("site-header");
+  panel.style.top = `${(header ? header.getBoundingClientRect().bottom : 60) + 8}px`;
+  if (panel.hasAttribute("hidden")) panel.removeAttribute("hidden");
+  else panel.setAttribute("hidden", "");
+}
+document.getElementById("action-jobs")?.addEventListener("click", toggleJobsPanel);
+document.addEventListener("click", (e) => {
+  const panel = document.getElementById("jobs-panel");
+  if (panel && !panel.hasAttribute("hidden") && !e.target.closest("#jobs-panel, #action-jobs")) panel.setAttribute("hidden", "");
+});"""),
     ('  return tier === TIER_FULL ? 1 : 0;', '  return 1; // prototype: cards never collapse into half cards'),
     ("""  const entered = renderFullCard(sel.enter(), foldForTier(state.tier));
   entered
@@ -278,8 +351,11 @@ html = html.replace(' media="(min-width: 721px)"', '')
 html = re.sub(r'\s*<link rel="stylesheet" href="static/mobile.css"[^>]*>', '', html)
 html = re.sub(r'<script type="module">.*?</script>', '<script type="module">import("./static/universe.js");</script>', html, flags=re.S)
 html = re.sub(r'<title>.*?</title>', '<title>Assembly Cards</title>', html)
+search_btn = '<button id="action-search" class="site-action" type="button" title="Search" aria-label="Search">'
+assert html.count(search_btn) == 1
+html = html.replace(search_btn, '<button id="action-jobs" class="site-action" type="button" title="Jobs to be done" aria-label="Jobs to be done">\n          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>\n        </button>\n        ' + search_btn)
 html = html.replace('<h1 class="site-title">Invention Cards</h1>', '<h1 class="site-title">Assembly Cards</h1>')
-html = re.sub(r'<p class="site-subtitle">.*?</p>', '<p class="site-subtitle">Prototype. Tap a card to flip it: the back lists its parts and the natural phenomena it uses. Tap a bullet to jump to that card.</p>', html, count=1)
+html = re.sub(r'<p class="site-subtitle">.*?</p>', '<p class="site-subtitle">Prototype. Tap a card to flip it: the back lists its parts and the natural phenomena it uses. Tap a bullet to jump to that card, or a slot name to see every card that does its job.</p>', html, count=1)
 open(f'{OUT}/index.html', 'w').write(html)
 
 files = sum(len(f) for _, _, f in os.walk(OUT))

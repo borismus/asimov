@@ -1,5 +1,6 @@
 # Pilot assembly + phenomenon lists for the Assembly Cards prototype.
-# Slot: (label, job, filler_id or None, gap_name or None, kind)  kind: part | ingredient | step
+# Slot: (label, job, filler_id or None, gap_name or None, kind[, note])  kind: part | ingredient | step
+# Jobs are kept generic (see the "Job merges" audit); a slot's specifics go in the optional note.
 # Phenomenon entry: card id, or ("GAP", "name") for a phenomenon with no card in the deck.
 
 NEW_CARDS = {
@@ -39,7 +40,7 @@ CARDS = {
   "valve": ("controls flow", [], ["air-pressure"]),
   "boiler": ("makes steam", [], ["latent-heat", "boyles-law", "combustion-and-phlogiston-theory-refinement"]),
   "piston-and-cylinder": ("turns pressure into motion", [], ["air-pressure", "boyles-law"]),
-  "spring": ("stores mechanical energy", [], [G("Elasticity (Hooke's law)")]),
+  "spring": ("stores energy", [], [G("Elasticity (Hooke's law)")]),
   "ball-bearing": ("reduces friction", [], [G("Rolling friction")]),
   "wing": ("provides lift", [], ["aerodynamics"]),
   "insulated-wire": ("carries current", [], ["electrical-conductance"]),
@@ -53,13 +54,13 @@ CARDS = {
   "miners-friend": ("pumps water", [
       ("steam", "makes steam", "boiler", None, P),
       ("control", "controls flow", "valve", None, P),
-      ("vessel", "holds steam to condense", None, "Receiving vessel", P),
+      ("vessel", "condenses steam", None, "Receiving vessel", P),
   ], ["air-pressure", "latent-heat"]),
   "newcomen-steam-engine": ("provides power", [
       ("steam", "makes steam", "boiler", None, P),
       ("power stroke", "turns pressure into motion", "piston-and-cylinder", None, P),
       ("control", "controls flow", "valve", None, P),
-      ("linkage", "transmits motion", None, "Rocking beam", P),
+      ("linkage", "transmits rotation", None, "Rocking beam", P),
   ], ["air-pressure", "latent-heat"]),
   "steam-engine": ("provides power", [
       ("steam", "makes steam", "boiler", None, P),
@@ -67,7 +68,7 @@ CARDS = {
       ("control", "controls flow", "valve", None, P),
       ("condensing", "condenses steam", None, "Separate condenser", P),
   ], ["latent-heat", "air-pressure"]),
-  "improved-steam-engine": ("provides rotary power", [
+  "improved-steam-engine": ("provides power", [
       ("steam", "makes steam", "boiler", None, P),
       ("power stroke", "turns pressure into motion", "piston-and-cylinder", None, P),
       ("control", "controls flow", "valve", None, P),
@@ -77,7 +78,7 @@ CARDS = {
   "turbines": ("turns flow into rotation", [
       ("support", "reduces friction", "ball-bearing", None, P),
   ], ["laws-motion", "conservation-momentum"]),
-  "steam-turbine": ("provides rotary power", [
+  "steam-turbine": ("provides power", [
       ("steam", "makes steam", "boiler", None, P),
       ("rotor", "turns flow into rotation", "turbines", None, P),
       ("control", "controls flow", "valve", None, P),
@@ -112,17 +113,17 @@ CARDS = {
   ], ["conservation-momentum", "laws-motion", "space-flight"]),
 
   # ---- land and water ----
-  "cart": ("carries loads", [
+  "cart": ("transports people or goods", [
       ("wheels", "rolls a load along the ground", "wheel-and-axle", None, P),
       ("motive force", "provides power", "animal-dom", None, P),
   ], ["lever-math"]),
-  "stagecoach": ("carries passengers", [
+  "stagecoach": ("transports people or goods", [
       ("wheels", "rolls a load along the ground", "wheel-and-axle", None, P),
       ("suspension", "absorbs shocks", "carriage-springs", None, P),
       ("motive force", "provides power", "horse", None, P),
   ], ["laws-motion"]),
   "carriage-springs": ("absorbs shocks", [], [G("Elasticity (Hooke's law)")]),
-  "bicycle": ("carries a person", [
+  "bicycle": ("transports people or goods", [
       ("wheels", "rolls a load along the ground", "wheel-and-axle", None, P),
       ("drive", "transmits rotation", "gear-train", None, P),
       ("tires", "absorbs shocks", "rubber-tire", None, P),
@@ -134,7 +135,7 @@ CARDS = {
       ("casing", "seals air", "vulcanization-of-rubber", None, I),
       ("inflation", "controls flow", "valve", None, P),
   ], ["air-pressure"]),
-  "first-automobile": ("carries people on roads", [
+  "first-automobile": ("transports people or goods", [
       ("engine", "provides power", "four-stroke-engine", None, P),
       ("wheels", "rolls a load along the ground", "wheel-and-axle", None, P),
       ("tires", "absorbs shocks", "rubber-tire", None, P),
@@ -145,22 +146,22 @@ CARDS = {
       ("steering", "steers", None, "Steering wheel", P),
   ], ["laws-motion"]),
   "self-starter": ("starts the engine", [
-      ("motor", "provides rotary power", "electric-motors", None, P),
+      ("motor", "provides power", "electric-motors", None, P),
       ("power", "stores electricity", "storage-battery", None, P),
       ("wiring", "carries current", "insulated-wire", None, P),
   ], ["electromagnetism"]),
-  "steam-locomotive": ("pulls loads on rails", [
-      ("engine", "provides rotary power", "improved-steam-engine", None, P),
+  "steam-locomotive": ("transports people or goods", [
+      ("engine", "provides power", "improved-steam-engine", None, P),
       ("wheels", "rolls a load along the ground", "wheel-and-axle", None, P),
       ("track", "guides the wheels", None, "Iron rails", P),
   ], ["laws-motion"]),
-  "steamboat": ("moves a boat without wind", [
-      ("engine", "provides rotary power", "improved-steam-engine", None, P),
+  "steamboat": ("transports people or goods", [
+      ("engine", "provides power", "improved-steam-engine", None, P),
       ("hull", "floats a load", "river-boat", None, P),
       ("thrust", "provides thrust", None, "Paddle wheel", P),
   ], ["hydrostatics", "laws-motion"]),
-  "steamship": ("crosses oceans under steam", [
-      ("engine", "provides rotary power", "improved-steam-engine", None, P),
+  "steamship": ("transports people or goods", [
+      ("engine", "provides power", "improved-steam-engine", None, P),
       ("thrust", "provides thrust", "screw-propeller", None, P),
       ("backup thrust", "provides thrust", "sail", None, P),
       ("navigation", "finds direction", "compass", None, P),
@@ -170,42 +171,42 @@ CARDS = {
 
   # ---- flight ----
   "hot-air-balloon": ("provides lift", [
-      ("lift gas", "is lighter than air", "hydrogen", None, I),
+      ("lift gas", "provides lift", "hydrogen", None, I),
       ("envelope", "holds the gas", None, "Gas-tight envelope", P),
   ], ["hydrostatics", "charles-law"]),
   "parachute": ("slows a fall", [
       ("canopy", "makes drag", None, "Canopy", P),
   ], ["aerodynamics", "air-pressure"]),
-  "glider": ("flies without power", [
+  "glider": ("flies", [
       ("lift", "provides lift", "wing", None, P),
   ], ["aerodynamics"]),
-  "glider-improved": ("flies without power", [
+  "glider-improved": ("flies", [
       ("lift", "provides lift", "wing", None, P),
       ("control", "steers", None, "Weight-shift control", P),
   ], ["aerodynamics"]),
-  "dirigible": ("flies powered and steered", [
-      ("lift gas", "is lighter than air", "hydrogen", None, I),
+  "dirigible": ("flies", [
+      ("lift gas", "provides lift", "hydrogen", None, I),
       ("engine", "provides power", "four-stroke-engine", None, P),
       ("thrust", "provides thrust", "screw-propeller", None, P),
       ("frame", "bears the load", "aluminum", None, I),
   ], ["hydrostatics", "aerodynamics"]),
-  "airplane": ("flies powered", [
+  "airplane": ("flies", [
       ("lift", "provides lift", "wing", None, P),
       ("engine", "provides power", "four-stroke-engine", None, P),
       ("thrust", "provides thrust", "screw-propeller", None, P),
       ("control", "steers", None, "Wing warping", P),
   ], ["aerodynamics", "laws-motion"]),
-  "seaplanes": ("flies from water", [
-      ("airframe", "flies powered", "airplane", None, P),
+  "seaplanes": ("flies", [
+      ("airframe", "flies", "airplane", None, P),
       ("floats", "floats a load", None, "Floats", P),
   ], ["hydrostatics"]),
-  "helicopter": ("flies vertically", [
+  "helicopter": ("flies", [
       ("rotor", "provides lift", "wing", None, P),
       ("engine", "provides power", "four-stroke-engine", None, P),
       ("transmission", "transmits rotation", "gear-train", None, P),
       ("anti-torque", "steers", None, "Tail rotor", P),
   ], ["aerodynamics", "conservation-momentum"]),
-  "jet-planes": ("flies fast", [
+  "jet-planes": ("flies", [
       ("lift", "provides lift", "wing", None, P),
       ("thrust", "provides thrust", None, "Jet engine", P),
   ], ["aerodynamics", "laws-motion", "conservation-momentum"]),
@@ -228,7 +229,7 @@ CARDS = {
       ("core", "concentrates the field", None, "Soft iron core", P),
       ("power", "stores electricity", "electric-battery", None, P),
   ], ["electromagnetism"]),
-  "electric-motors": ("provides rotary power", [
+  "electric-motors": ("provides power", [
       ("field", "makes a magnetic field", "electromagnets", None, P),
       ("windings", "carries current", "insulated-wire", None, P),
       ("bearings", "reduces friction", "ball-bearing", None, P),
@@ -239,12 +240,12 @@ CARDS = {
       ("windings", "carries current", "insulated-wire", None, P),
       ("bearings", "reduces friction", "ball-bearing", None, P),
   ], ["electromagnetism", "electrical-motion"]),
-  "electronic-rectifier": ("lets current flow one way", [
+  "electronic-rectifier": ("controls the current", [
       ("bulb", "emits electrons", "electric-light", None, P),
       ("plate", "collects electrons", None, "Metal plate", P),
   ], ["edison-effect"]),
   "triode": ("amplifies a signal", [
-      ("tube", "lets current flow one way", "electronic-rectifier", None, P),
+      ("tube", "controls the current", "electronic-rectifier", None, P),
       ("grid", "controls the current", None, "Control grid", P),
   ], ["edison-effect", "electron-emission"]),
   "radio": ("sends and receives signals", [
@@ -266,7 +267,7 @@ CARDS = {
       ("clock", "keeps time", None, "Quartz oscillator", P),
   ], ["binary-system", "symbolic-logic"]),
   "photovoltaic-cells": ("makes electricity", [
-      ("semiconductor", "turns light into current", "silicon", None, I),
+      ("semiconductor", "makes electricity", "silicon", None, I),
   ], ["photoelectric-effect"]),
 
   # ---- space and GPS ----
@@ -274,12 +275,12 @@ CARDS = {
       ("engine", "provides thrust", "liquid-fuel-rockets", None, P),
       ("guidance", "holds direction", "gyroscope", None, P),
   ], ["conservation-momentum", "universal-gravitation"]),
-  "sputnik": ("orbits and transmits", [
+  "sputnik": ("sends and receives signals", [
       ("launcher", "provides thrust", "liquid-fuel-rockets", None, P),
       ("transmitter", "sends and receives signals", "radio", None, P),
       ("power", "stores electricity", "electric-battery", None, P),
   ], ["universal-gravitation", "laws-motion", "radio-waves"]),
-  "communications-satellites": ("relays signals", [
+  "communications-satellites": ("sends and receives signals", [
       ("launcher", "provides thrust", "liquid-fuel-rockets", None, P),
       ("transponder", "sends and receives signals", "radio", None, P),
       ("amplifier", "amplifies a signal", "transistor", None, P),
@@ -290,7 +291,7 @@ CARDS = {
       ("oscillator", "keeps time", None, "Quartz oscillator", P),
   ], ["molecular-beams", "magnetic-resonance"]),
   "gps": ("finds position", [
-      ("satellites", "relays signals", "communications-satellites", None, P),
+      ("satellites", "sends and receives signals", "communications-satellites", None, P),
       ("clocks", "keeps time", "atomic-clock", None, P),
       ("signal", "sends and receives signals", "radio", None, P),
       ("receiver", "computes and switches", "microchips", None, P),
@@ -298,19 +299,19 @@ CARDS = {
 
   # ---- nutrition (a recipe: ingredients and a step) ----
   "vitamin-pills": ("prevents deficiency disease", [
-      ("vitamin A", "prevents night blindness", "vitamins-a-and-b", None, I),
-      ("vitamin D", "prevents rickets", None, None, S),  # placeholder replaced below
-      ("vitamin E", "protects cells", "vitamin-e", None, I),
-      ("vitamin C", "prevents scurvy", "ascorbic-acid", None, I),
-      ("vitamin B2", "supports metabolism", "riboflavin", None, I),
-      ("vitamin B1", "prevents beriberi", "thiamine", None, I),
-      ("niacin", "prevents pellagra", "niacin", None, I),
-      ("vitamin K", "lets blood clot", "vitamin-k", None, I),
-      ("iodine", "prevents goiter", "essential-minerals", None, I),
-      ("biotin", "supports metabolism", "biotin", None, I),
-      ("vitamin B12", "prevents pernicious anemia", "cyanocobalamin", None, I),
+      ("vitamin A", "supplies a nutrient", "vitamins-a-and-b", None, I, "prevents night blindness"),
+      ("vitamin D", "supplies a nutrient", None, None, S),  # placeholder replaced below
+      ("vitamin E", "supplies a nutrient", "vitamin-e", None, I, "protects cells"),
+      ("vitamin C", "supplies a nutrient", "ascorbic-acid", None, I, "prevents scurvy"),
+      ("vitamin B2", "supplies a nutrient", "riboflavin", None, I, "supports metabolism"),
+      ("vitamin B1", "supplies a nutrient", "thiamine", None, I, "prevents beriberi"),
+      ("niacin", "supplies a nutrient", "niacin", None, I, "prevents pellagra"),
+      ("vitamin K", "supplies a nutrient", "vitamin-k", None, I, "lets blood clot"),
+      ("iodine", "supplies a nutrient", "essential-minerals", None, I, "prevents goiter"),
+      ("biotin", "supplies a nutrient", "biotin", None, I, "supports metabolism"),
+      ("vitamin B12", "supplies a nutrient", "cyanocobalamin", None, I, "prevents pernicious anemia"),
   ], ["vitamin-concept", "dietary-deficiency-diseases", "rickets", "scurvy", "pellagra"]),
 }
 
 # Vitamin D comes from irradiating food: a process step filled by the Irradiation card.
-CARDS["vitamin-pills"][1][1] = ("vitamin D", "prevents rickets", "irradiation", None, S)
+CARDS["vitamin-pills"][1][1] = ("vitamin D", "supplies a nutrient", "irradiation", None, S, "prevents rickets")

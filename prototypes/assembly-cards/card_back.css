@@ -28,3 +28,34 @@
 
 /* While a card shows its back, its bullets do the navigating: hide the offscreen neighbor chips that would cover them. */
 body.card-flipped .offscreen-indicator.pinned { display: none; }
+
+/* Job links on the back: slot names and the card's own job. */
+.card-back a.back-joblink { color: inherit; text-decoration: underline dotted; text-underline-offset: 1px; }
+.card-back a.back-slot.back-joblink { color: #777; }
+.card-back .back-why { color: #777; font-size: 7.5px; font-style: italic; }
+
+/* Jobs panel */
+#jobs-panel {
+  position: fixed;
+  z-index: 50;
+  right: 12px;
+  width: min(340px, calc(100vw - 24px));
+  max-height: min(70vh, 560px);
+  overflow-y: auto;
+  background: #fffdf6;
+  border: 2px solid #000;
+  border-radius: 6px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.18);
+  padding: 6px 0;
+  font-size: 14px;
+}
+#jobs-panel[hidden] { display: none; }
+#jobs-panel .jobs-head { display: flex; flex-direction: column; gap: 2px; padding: 4px 14px 8px; border-bottom: 1px solid #ddd; }
+#jobs-panel .jobs-head span { color: #666; font-size: 12px; font-style: italic; }
+#jobs-panel .job-row {
+  display: flex; justify-content: space-between; gap: 12px; width: 100%;
+  padding: 7px 14px; background: none; border: 0; border-bottom: 1px solid #eee;
+  text-align: left; font: inherit; color: #222; cursor: pointer;
+}
+#jobs-panel .job-row:hover, #jobs-panel .job-row:focus-visible { background: #f3eedf; outline: none; }
+#jobs-panel .job-n { color: #777; font-size: 12px; white-space: nowrap; }

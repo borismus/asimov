@@ -11,19 +11,22 @@ function backHTML(d, L) {
     return n ? `<a data-pin="${escBack(id)}" href="#">${escBack(n.title)}</a>` : escBack(id);
   };
   let h = "";
-  if (d.job) h += `<div class="back-job">Job: ${escBack(d.job)}</div>`;
+  const jobLink = (job, text, cls = "") =>
+    `<a class="back-joblink ${cls}" data-job="${escBack(job)}" href="#" title="Job: ${escBack(job)}">${escBack(text)}</a>`;
+  if (d.job) h += `<div class="back-job">Job: ${jobLink(d.job, d.job)}</div>`;
   if (d.slots) {
     h += `<div class="back-h">${d.listKind === "recipe" ? "Ingredients" : "Assembly"}</div>`;
     if (d.slots.length) {
       h += "<ul>";
       for (const s of d.slots) {
-        const slot = `<span class="back-slot">${escBack(s.label)}</span> `;
+        const slot = `${jobLink(s.job, s.label, "back-slot")} `;
+        const why = s.note ? ` <span class="back-why">${escBack(s.note)}</span>` : "";
         if (s.fill) {
           const n = L.byId[s.fill];
           const later = n && n.year > d.year ? ` <span class="back-note">added later</span>` : "";
-          h += `<li>${slot}${link(s.fill)}${later}</li>`;
+          h += `<li>${slot}${link(s.fill)}${why}${later}</li>`;
         } else {
-          h += `<li class="back-gap">${slot}${escBack(s.gap)} <span class="back-note">no card yet</span></li>`;
+          h += `<li class="back-gap">${slot}${escBack(s.gap)}${why} <span class="back-note">no card yet</span></li>`;
         }
       }
       h += "</ul>";
@@ -104,6 +107,13 @@ export function addBackFace(sel, L) {
       .attr("class", "back-body")
       .html(backHTML(d, L));
     body.on("click", (event) => {
+      const jobA = event.target.closest("a[data-job]");
+      if (jobA) {
+        event.preventDefault();
+        event.stopPropagation();
+        L.onJob(jobA.getAttribute("data-job"));
+        return;
+      }
       const a = event.target.closest("a[data-pin]");
       if (!a) return;
       event.preventDefault();

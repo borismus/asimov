@@ -11,6 +11,9 @@ It reuses the universe view, with three changes:
   - **Part of**: the inventions that use this card as a subassembly, and in which slot.
   - **Used by**: for phenomenon cards, the inventions that use them.
 - **Tapping a bullet** jumps to that card and opens it on its back, so you can drill down the parts tree.
+- **Jobs.** Every card and slot has a job ("provides thrust", "controls flow"). The wrench button lists all
+  of them with counts; picking one, or tapping a slot name on a card's back, lights up every card that
+  can do that job. Jobs are kept generic; a slot's specifics ("prevents scurvy") go in its note.
 - **No pinning, no hover, no half cards.** Cards are always full size.
 
 Edges: parts are solid, parts added later are dashed, phenomena are amber.
@@ -30,7 +33,7 @@ images into `site/`, which is gitignored.
 ## Files
 
 - `pilot_data.py`: the lists. For each invention: its job, its slots (label, job, filling card or
-  missing card name, and kind: part, ingredient or step), and its phenomena. Also the new
+  missing card name, kind: part, ingredient or step, and an optional note), and its phenomena. Also the new
   supporting cards (Valve, Boiler, Gear train, GPS…) that aren't in Asimov's deck.
 - `build.py`: builds `site/`. New cards get placeholder art.
 - `card_back.js`, `card_back.css`: the back of the card and the flip animation, spliced into

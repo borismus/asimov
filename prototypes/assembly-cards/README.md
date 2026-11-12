@@ -4,7 +4,8 @@ A separate visualization of the deck where every invention is built from other c
 It reuses the universe view, with these changes:
 
 - **Tap a card to pin it**, as on invention.cards: it comes to the front and its links light up.
-  **Tap it again to flip it.** Tap the background, or press Escape, to unpin. The back lists:
+  **Tap it again to flip it.** Tap the background, or press Escape, to unpin. Only the pinned card
+  shows its back: moving or dropping the pin turns it face up again. The back lists:
   - **Inside**, **Runs on**, **Made with**: one bullet per slot, grouped by kind. Each bullet is the
     slot's job and the card that does it ("bends light: Glass"), plus the part's name when it adds
     something ("(objective)"). *Inside* is what's physically in it, parts and materials alike; *runs on*

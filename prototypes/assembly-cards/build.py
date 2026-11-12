@@ -274,6 +274,14 @@ function onCardTap(event, d) {
 // overlays.js draws the pinned cards; these give them a back and the same tap.
 window.__assembly = {
   onCardTap,
+  // Only the pinned card shows its back: moving or dropping the pin turns the rest face up.
+  unflipExcept(keep) {
+    for (const id of [...flippedIds]) {
+      if (id === keep) continue;
+      flippedIds.delete(id);
+      flipAll(id, false);
+    }
+  },
   decorate(sel) {
     addBackFace(sel, backLookup());
     sel.filter((d) => flippedIds.has(d.id)).each(function () { flipCard(d3.select(this), true, false); });
@@ -373,7 +381,12 @@ patch(f'{S}/world.js', [(
     """    .on("click", (event, d) => window.__assembly.onCardTap(event, d));""",
 )])
 
-patch(f'{S}/overlays.js', [(
+patch(f'{S}/overlays.js', [
+  ("""export function pin(rootNode) {""", """export function pin(rootNode) {
+  window.__assembly?.unflipExcept(rootNode.id);"""),
+  ("""export function unpin() {""", """export function unpin() {
+  window.__assembly?.unflipExcept(null);"""),
+  (
     """  renderFullCard(sel.enter())
     .on("mouseenter", (event, n) => onHoverEnter(event, n))
     .on("mouseleave", () => onHoverLeave())

@@ -27,7 +27,6 @@
 .card-back .back-none { color: #777; font-style: italic; }
 
 /* While a card shows its back, its bullets do the navigating: hide the offscreen neighbor chips that would cover them. */
-body.card-flipped .offscreen-indicator.pinned { display: none; }
 
 /* Job links on the back: slot names and the card's own job. */
 .card-back a.back-joblink { color: inherit; text-decoration: underline dotted; text-underline-offset: 1px; }

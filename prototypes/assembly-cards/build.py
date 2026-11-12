@@ -219,7 +219,7 @@ patch(f'{S}/universe.js', [
     ('} from "./stories.js";', """} from "./stories.js";
 import { addBackFace, flipCard } from "./card.js";
 
-// ---- Prototype: tap flips a card; no pinning, no half cards ----
+// ---- Prototype: tap pins a card, tap it again to flip it; no hover, no half cards ----
 const flippedIds = new Set();
 let partOf = null;
 let capturedBy = null;
@@ -242,25 +242,48 @@ function backLookup() {
       const n = state.nodesById[id];
       if (!n) return;
       flippedIds.add(id);
+      pin(n);
       centerOnNode(n, { animate: true });
-      const g = gCards.selectAll("g.card").filter((x) => x.id === id);
-      if (!g.empty()) flipCard(g, true);
+      flipAll(id, true);
     },
   };
 }
-function toggleFlip(event, d) {
-  event.preventDefault();
-  event.stopPropagation();
+// Flip every copy of a card: the one on the board and the pinned one drawn over it.
+function flipAll(id, toBack, animate = true) {
+  flipCard(d3.selectAll("g.card").filter((x) => x && x.id === id), toBack, animate);
+}
+function toggleFlip(d) {
   const toBack = !flippedIds.has(d.id);
   if (toBack) flippedIds.add(d.id);
   else flippedIds.delete(d.id);
-  flipCard(gCards.selectAll("g.card").filter((x) => x.id === d.id), toBack);
+  flipAll(d.id, toBack);
+}
+// The first tap pins a card: it comes to the front and its links light up. Tapping the
+// pinned card flips it. Tapping the background (or Escape) unpins.
+function onCardTap(event, d) {
+  event.preventDefault();
+  event.stopPropagation();
+  if (state.pinnedId === d.id) toggleFlip(d);
+  else pin(d);
   // Tapping a card that matches the search makes it the active result.
   if (isActiveQuery() && searchHelper(d, state.searchQuery.trim())) {
     activeSearchId = d.id;
     renderSearchOffscreenIndicators();
   }
 }
+// overlays.js draws the pinned cards; these give them a back and the same tap.
+window.__assembly = {
+  onCardTap,
+  decorate(sel) {
+    addBackFace(sel, backLookup());
+    sel.filter((d) => flippedIds.has(d.id)).each(function () { flipCard(d3.select(this), true, false); });
+  },
+};
+document.addEventListener("click", (e) => {
+  if (!state.pinnedId || !e.target.closest("svg")) return;
+  if (e.target.closest("g.card, g.dag-label, circle")) return;
+  unpin();
+});
 window.__centerOnNode = (d) => centerOnNode(d, { animate: true });
 
 // Jobs panel: every job a card or slot does. Picking one lights up the cards that can do it,
@@ -326,7 +349,7 @@ document.addEventListener("click", (e) => {
      """  const entered = renderFullCard(sel.enter(), foldForTier(state.tier));
   entered
     .attr("transform", (d) => `translate(${d.x}, ${d.y})`)
-    .on("click", (event, d) => toggleFlip(event, d));
+    .on("click", (event, d) => onCardTap(event, d));
   addBackFace(entered, backLookup());
   entered.filter((d) => flippedIds.has(d.id)).each(function () {
     flipCard(d3.select(this), true, false);
@@ -339,19 +362,7 @@ document.addEventListener("click", (e) => {
     .on("mouseleave", (event, d) => onHoverLeave(event, d));""",
      """    .attr("transform", (d) => `translate(${d.x}, ${d.y + 12})`)
     .style("--label-css-width", (d) => `${d.titleWidthCss + 24}px`)
-    .on("click", (event, d) => { event.stopPropagation(); centerOnNode(d, { animate: true }); });"""),
-    ("""      pin(node);
-      centerOnNode(node, { animate: true });
-    });
-    searchResultsContainer.appendChild(chip);""",
-     """      centerOnNode(node, { animate: true });
-    });
-    searchResultsContainer.appendChild(chip);"""),
-    ("""  pin(next);
-  centerOnNode(next, { animate: true });""", """  centerOnNode(next, { animate: true });"""),
-    ("""        pin(node);
-        centerOnNode(node, { animate: true });""", """        centerOnNode(node, { animate: true });"""),
-    ('  if (pinnedNode) pin(pinnedNode);\n}', '}'),
+    .on("click", (event, d) => onCardTap(event, d));"""),
 ])
 
 patch(f'{S}/world.js', [(
@@ -359,7 +370,17 @@ patch(f'{S}/world.js', [(
     .on("mousemove", handlers.onHoverMove)
     .on("mouseleave", handlers.onHoverLeave)
     .on("click", handlers.onPinClick);""",
-    """    .on("click", (event, d) => { event.stopPropagation(); window.__centerOnNode && window.__centerOnNode(d); });""",
+    """    .on("click", (event, d) => window.__assembly.onCardTap(event, d));""",
+)])
+
+patch(f'{S}/overlays.js', [(
+    """  renderFullCard(sel.enter())
+    .on("mouseenter", (event, n) => onHoverEnter(event, n))
+    .on("mouseleave", () => onHoverLeave())
+    .on("click", (event, n) => onPinClick(event, n));""",
+    """  const enteredPinned = renderFullCard(sel.enter())
+    .on("click", (event, n) => window.__assembly.onCardTap(event, n));
+  window.__assembly.decorate(enteredPinned);""",
 )])
 
 # Search results: list every match, not just the off-screen ones, so the list stays put
@@ -398,11 +419,13 @@ patch(f'{S}/universe.js', [
       + (node.id === activeSearchId ? " active" : "")
       + (here.has(node.id) ? " here" : "");"""),
     ("""      if (state.story) exitStory({ keepUrl: true });
+      pin(node);
       centerOnNode(node, { animate: true });
     });
     searchResultsContainer.appendChild(chip);""",
      """      if (state.story) exitStory({ keepUrl: true });
       activeSearchId = node.id;
+      pin(node);
       centerOnNode(node, { animate: true });
       renderSearchOffscreenIndicators();
     });
@@ -432,7 +455,7 @@ search_btn = '<button id="action-search" class="site-action" type="button" title
 assert html.count(search_btn) == 1
 html = html.replace(search_btn, '<button id="action-jobs" class="site-action" type="button" title="Jobs to be done" aria-label="Jobs to be done">\n          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>\n        </button>\n        ' + search_btn)
 html = html.replace('<h1 class="site-title">Invention Cards</h1>', '<h1 class="site-title">Assembly Cards</h1>')
-html = re.sub(r'<p class="site-subtitle">.*?</p>', '<p class="site-subtitle">Prototype. Tap a card to flip it: the back lists its parts and the natural phenomena it uses. Tap a bullet to jump to that card, or a job to see every card that does it.</p>', html, count=1)
+html = re.sub(r'<p class="site-subtitle">.*?</p>', '<p class="site-subtitle">Prototype. Tap a card to pin it and light up its links; tap it again to flip it. The back lists its parts and the natural phenomena it uses. Tap a bullet to jump to that card, or a job to see every card that does it.</p>', html, count=1)
 open(f'{OUT}/index.html', 'w').write(html)
 
 files = sum(len(f) for _, _, f in os.walk(OUT))

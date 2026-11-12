@@ -156,15 +156,17 @@ export function addBackFace(sel, L) {
 
 // Shrink the back's text until it fits the card (down to a floor; past that it scrolls).
 function fitBack(cardSel) {
-  const el = cardSel.select(".back-body").node();
-  if (!el || el.dataset.fitted) return;
-  let size = 9;
-  el.style.fontSize = size + "px";
-  while (el.scrollHeight > el.clientHeight + 1 && size > 6.5) {
-    size -= 0.5;
+  cardSel.selectAll(".back-body").each(function () {
+    const el = this;
+    if (el.dataset.fitted) return;
+    let size = 9;
     el.style.fontSize = size + "px";
-  }
-  el.dataset.fitted = "1";
+    while (el.scrollHeight > el.clientHeight + 1 && size > 6.5) {
+      size -= 0.5;
+      el.style.fontSize = size + "px";
+    }
+    el.dataset.fitted = "1";
+  });
 }
 
 const reduceMotion = () => window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -175,7 +177,6 @@ export function flipCard(cardSel, toBack, animate = true) {
   const apply = () => {
     cardSel.select("g.card-back").style("display", toBack ? null : "none");
     cardSel.classed("flipped", toBack);
-    document.body.classList.toggle("card-flipped", toBack);
     if (toBack) fitBack(cardSel);
   };
   if (!animate || reduceMotion()) {

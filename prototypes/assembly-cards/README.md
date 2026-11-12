@@ -1,9 +1,10 @@
 # Assembly Cards (prototype)
 
 A separate visualization of the deck where every invention is built from other cards.
-It reuses the universe view, with three changes:
+It reuses the universe view, with these changes:
 
-- **Tap a card to flip it.** The back lists:
+- **Tap a card to pin it**, as on invention.cards: it comes to the front and its links light up.
+  **Tap it again to flip it.** Tap the background, or press Escape, to unpin. The back lists:
   - **Inside**, **Runs on**, **Made with**: one bullet per slot, grouped by kind. Each bullet is the
     slot's job and the card that does it ("bends light: Glass"), plus the part's name when it adds
     something ("(objective)"). *Inside* is what's physically in it, parts and materials alike; *runs on*
@@ -14,11 +15,12 @@ It reuses the universe view, with three changes:
     One explained after the invention existed is marked *explained later*.
   - **Used in**: the inventions where this card fills a slot, and the job it does there.
   - **Harnessed by**: for phenomenon cards, the inventions that use them.
-- **Tapping a bullet** jumps to that card and opens it on its back, so you can drill down the parts tree.
+- **Tapping a bullet** pins that card and opens it on its back, so you can drill down the parts tree.
 - **Jobs.** Every card and slot has a job ("provides thrust", "controls flow"). The wrench button lists all
   of them with counts; picking one, or tapping a job on a card's back, lights up every card that
   can do that job. Jobs are kept generic; a slot's specifics ("prevents scurvy") go in its note.
-- **No pinning, no hover, no half cards.** Cards are always full size.
+- **Search** lists every match under the search bar, on screen or not; the one you picked is blue.
+- **No hover, no half cards.** Cards are always full size.
 
 Edges: parts are solid, parts added later are dashed, phenomena are amber.
 

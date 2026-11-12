@@ -61,3 +61,7 @@ body.card-flipped .offscreen-indicator.pinned { display: none; }
 #jobs-panel .job-n { color: #777; font-size: 12px; white-space: nowrap; }
 .card-back .back-part { color: #888; font-size: 0.83em; }
 .card-back ul.back-sub { padding-left: 9px; list-style: circle; }
+
+/* Search results list every match: the one you picked is filled, ones on screen are tinted. */
+#search-results .offscreen-indicator.search.here { background: #fff6dc; }
+#search-results .offscreen-indicator.search.active { background: steelblue; border-color: steelblue; color: white; box-shadow: 0 2px 8px rgba(70, 130, 180, 0.45); }

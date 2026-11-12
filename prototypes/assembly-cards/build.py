@@ -255,6 +255,11 @@ function toggleFlip(event, d) {
   if (toBack) flippedIds.add(d.id);
   else flippedIds.delete(d.id);
   flipCard(gCards.selectAll("g.card").filter((x) => x.id === d.id), toBack);
+  // Tapping a card that matches the search makes it the active result.
+  if (isActiveQuery() && searchHelper(d, state.searchQuery.trim())) {
+    activeSearchId = d.id;
+    renderSearchOffscreenIndicators();
+  }
 }
 window.__centerOnNode = (d) => centerOnNode(d, { animate: true });
 
@@ -356,6 +361,57 @@ patch(f'{S}/world.js', [(
     .on("click", handlers.onPinClick);""",
     """    .on("click", (event, d) => { event.stopPropagation(); window.__centerOnNode && window.__centerOnNode(d); });""",
 )])
+
+# Search results: list every match, not just the off-screen ones, so the list stays put
+# as you jump between results. The one you picked is marked; ones on screen are outlined.
+patch(f'{S}/universe.js', [
+    ("""  const offscreen = [];
+  for (const n of state.nodes) {
+    if (!searchHelper(n, q)) continue;
+    const sx = tx + n.x * k;
+    const sy = ty + n.y * k;
+    const onScreen = sx >= 0 && sx <= w && sy >= 0 && sy <= h;
+    if (!onScreen) offscreen.push(n);
+  }
+
+  const shown = offscreen.slice(0, MAX_SEARCH_PILLS);
+  for (const node of shown) {
+    const chip = document.createElement("button");
+    chip.className = "offscreen-indicator search";""",
+     """  if (q !== activeSearchQuery) { activeSearchQuery = q; activeSearchId = null; }
+  const offscreen = [];  // every match, on screen or not
+  const here = new Set();
+  for (const n of state.nodes) {
+    if (!searchHelper(n, q)) continue;
+    const sx = tx + n.x * k;
+    const sy = ty + n.y * k;
+    if (sx >= 0 && sx <= w && sy >= 0 && sy <= h) here.add(n.id);
+    offscreen.push(n);
+  }
+
+  const shown = offscreen.slice(0, MAX_SEARCH_PILLS);
+  const picked = offscreen.find((n) => n.id === activeSearchId);
+  if (picked && !shown.includes(picked)) shown.push(picked);
+  for (const node of shown) {
+    const chip = document.createElement("button");
+    chip.className = "offscreen-indicator search"
+      + (node.id === activeSearchId ? " active" : "")
+      + (here.has(node.id) ? " here" : "");"""),
+    ("""      if (state.story) exitStory({ keepUrl: true });
+      centerOnNode(node, { animate: true });
+    });
+    searchResultsContainer.appendChild(chip);""",
+     """      if (state.story) exitStory({ keepUrl: true });
+      activeSearchId = node.id;
+      centerOnNode(node, { animate: true });
+      renderSearchOffscreenIndicators();
+    });
+    searchResultsContainer.appendChild(chip);"""),
+    ("""function renderSearchOffscreenIndicators() {""",
+     """let activeSearchId = null;
+let activeSearchQuery = "";
+function renderSearchOffscreenIndicators() {"""),
+])
 
 open(f'{S}/card.css', 'a').write(open(os.path.join(HERE, 'card_back.css')).read())
 

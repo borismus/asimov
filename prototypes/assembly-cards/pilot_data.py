@@ -1,5 +1,6 @@
 # Pilot assembly + phenomenon lists for the Assembly Cards prototype.
-# Slot: (label, job, filler_id or None, gap_name or None, kind[, note])  kind: part | ingredient | step
+# Slot: (part name, job, filler_id or None, gap_name or None, kind[, note])  kind: inside | runs on | made with
+# The job is the key. The part name is shown only when it adds something (see build.py part_name).
 # Jobs are kept generic (see the "Job merges" audit); a slot's specifics go in the optional note.
 # Phenomenon entry: card id, or ("GAP", "name") for a phenomenon with no card in the deck.
 
@@ -14,13 +15,14 @@ NEW_CARDS = {
     "insulated-wire": ("Insulated wire & cable", "1840", "Copper wire wrapped in insulation so current goes only where it is sent."),
     "spring": ("Spring (coil & mainspring)", "1500", "Coiled metal that stores energy when it is bent and gives it back."),
     "sail": ("Sail", "-3500", "Cloth set to the wind to push a boat or turn a mill."),
+    "rare-earth-magnet": ("Rare-earth magnet", "1966", "A permanent magnet made from rare-earth metals, far stronger than steel. Samarium-cobalt came first; neodymium magnets followed in 1984."),
     "loudspeaker": ("Loudspeaker", "1876", "A coil and magnet move a diaphragm to turn current back into sound. Starts life as the telephone receiver."),
     "gps": ("GPS", "1978", "Satellites with atomic clocks broadcast the time; a receiver turns the delays into a position. It only works with relativity corrections."),
     "vitamin-pills": ("Vitamin pills & food fortification", "1924", "Adds the nutrients whose lack causes deficiency diseases: first to salt and milk, later as pills."),
 }
 
 DOMAINS = [
-    ("Shared parts", "wheel-and-axle gear-train valve boiler piston-and-cylinder spring ball-bearing wing insulated-wire sail loudspeaker"),
+    ("Shared parts", "wheel-and-axle gear-train valve boiler piston-and-cylinder spring ball-bearing wing insulated-wire sail loudspeaker rare-earth-magnet"),
     ("Steam power", "miners-friend newcomen-steam-engine steam-engine improved-steam-engine turbines steam-turbine"),
     ("Engines", "internal-combustion-engine four-stroke-engine diesel-engine liquid-fuel-rockets"),
     ("On land and water", "cart stagecoach carriage-springs bicycle rubber-tire first-automobile self-starter steam-locomotive steamboat steamship screw-propeller"),
@@ -30,26 +32,52 @@ DOMAINS = [
     ("Nutrition", "vitamin-pills"),
 ]
 
-P, I, S = "part", "ingredient", "step"
+IN = "inside"       # physically in the finished thing: parts and materials
+RUNS = "runs on"    # used up while it works: fuel, propellant, film
+WITH = "made with"  # used to make or do it, but not in the result
+P = I = IN          # older shorthand: parts and materials are both "inside"
+S = WITH
 G = lambda name: ("GAP", name)
 
 CARDS = {
   # ---- shared parts ----
   "wheel-and-axle": ("rolls a load along the ground", [], ["lever-math"]),
-  "gear-train": ("transmits rotation", [], ["lever-math"]),
-  "valve": ("controls flow", [], ["air-pressure"]),
-  "boiler": ("makes steam", [], ["latent-heat", "boyles-law", "combustion-and-phlogiston-theory-refinement"]),
-  "piston-and-cylinder": ("turns pressure into motion", [], ["air-pressure", "boyles-law"]),
-  "spring": ("stores energy", [], [G("Elasticity (Hooke's law)")]),
-  "ball-bearing": ("reduces friction", [], [G("Rolling friction")]),
-  "wing": ("provides lift", [], ["aerodynamics"]),
+  "gear-train": ("transmits rotation", [
+      ("material", "forms the body", "bronze", None, IN, "The Antikythera mechanism's gears are bronze."),
+  ], ["lever-math"]),
+  "valve": ("controls flow", [
+      ("material", "forms the body", "bronze", None, IN),
+  ], ["air-pressure"]),
+  "boiler": ("makes steam", [
+      ("shell", "forms the body", "copper", None, IN, "Early boilers were copper, later wrought iron."),
+  ], ["latent-heat", "boyles-law", "combustion-and-phlogiston-theory-refinement"]),
+  "piston-and-cylinder": ("turns pressure into motion", [
+      ("material", "forms the body", "bronze", None, IN, "Early cylinders were brass, later cast iron."),
+  ], ["air-pressure", "boyles-law"]),
+  "spring": ("stores energy", [
+      ("material", "forms the body", "steel", None, IN),
+  ], [G("Elasticity (Hooke's law)")]),
+  "ball-bearing": ("reduces friction", [
+      ("material", "forms the body", "steel", None, IN),
+  ], [G("Rolling friction")]),
+  "wing": ("provides lift", [
+      ("skin and spars", "forms the body", "aluminum", None, IN, "All-metal wings came later; early wings were cloth on wood."),
+  ], ["aerodynamics"]),
   "insulated-wire": ("carries current", [
       ("conductor", "carries current", "copper", None, I),
       ("insulation", "insulates", "vulcanization-of-rubber", None, I, "Gutta-percha, used for submarine cable, has no card."),
   ], ["electrical-conductance"]),
-  "sail": ("provides thrust", [], ["aerodynamics", "trade-winds"]),
+  "sail": ("provides thrust", [
+      ("cloth", "forms the body", "fish-nets", None, IN),
+  ], ["aerodynamics", "trade-winds"]),
+  "rare-earth-magnet": ("makes a magnetic field", [
+      ("samarium", "forms the body", "thulium-holmium-samarium", None, IN),
+      ("cobalt", "forms the body", "cobalt", None, IN),
+      ("neodymium", "forms the body", "praseodymium-and-neodymium", None, IN, "Neodymium magnets came in 1984."),
+      ("dysprosium", "forms the body", "dysprosium", None, IN, "Keeps neodymium magnets strong when hot."),
+  ], ["magnetic-moments"]),
   "loudspeaker": ("turns current into sound", [
-      ("magnet", "makes a magnetic field", None, "Permanent magnet", P),
+      ("magnet", "makes a magnetic field", "rare-earth-magnet", None, IN, "Early speakers used electromagnets or steel magnets."),
       ("coil", "carries current", "insulated-wire", None, P),
   ], ["electromagnetism", "acoustics"]),
 
@@ -93,24 +121,24 @@ CARDS = {
       ("power stroke", "turns pressure into motion", "piston-and-cylinder", None, P),
       ("control", "controls flow", "valve", None, P),
       ("ignition", "ignites fuel", None, "Spark plug", P),
-      ("fuel", "stores chemical energy", None, "Coal gas", I),
+      ("fuel", "stores chemical energy", "gas-lighting", None, RUNS, "Lenoir burned coal gas from the gas works."),
   ], ["combustion-and-phlogiston-theory-refinement", "gas-laws", "steam-engine-efficiency"]),
   "four-stroke-engine": ("provides power", [
       ("power stroke", "turns pressure into motion", "piston-and-cylinder", None, P),
       ("intake and exhaust", "controls flow", "valve", None, P),
       ("crank", "transmits rotation", None, "Crankshaft", P),
       ("ignition", "ignites fuel", None, "Spark plug", P),
-      ("fuel", "stores chemical energy", None, "Gasoline", I),
+      ("fuel", "stores chemical energy", None, "Gasoline", RUNS),
   ], ["combustion-and-phlogiston-theory-refinement", "gas-laws", "boyles-law"]),
   "diesel-engine": ("provides power", [
       ("power stroke", "turns pressure into motion", "piston-and-cylinder", None, P),
       ("intake and exhaust", "controls flow", "valve", None, P),
       ("injection", "meters fuel", None, "Fuel injector", P),
-      ("fuel", "stores chemical energy", None, "Diesel oil", I),
+      ("fuel", "stores chemical energy", "kerosene", None, RUNS, "Diesel's 1897 engine ran on kerosene."),
   ], ["gas-laws", "boyles-law", "high-pressure", "steam-engine-efficiency"]),
   "liquid-fuel-rockets": ("provides thrust", [
-      ("oxidizer", "supplies oxygen", "liquid-oxygen", None, I),
-      ("fuel", "stores chemical energy", None, "Gasoline", I),
+      ("oxidizer", "supplies oxygen", "liquid-oxygen", None, RUNS),
+      ("fuel", "stores chemical energy", None, "Gasoline", RUNS),
       ("feed", "controls flow", "valve", None, P),
       ("chamber", "contains combustion", None, "Combustion chamber and nozzle", P),
   ], ["conservation-momentum", "laws-motion", "space-flight"]),
@@ -125,7 +153,9 @@ CARDS = {
       ("suspension", "absorbs shocks", "carriage-springs", None, P),
       ("motive force", "provides power", "horse", None, P),
   ], ["laws-motion"]),
-  "carriage-springs": ("absorbs shocks", [], [G("Elasticity (Hooke's law)")]),
+  "carriage-springs": ("absorbs shocks", [
+      ("material", "forms the body", "steel", None, IN),
+  ], [G("Elasticity (Hooke's law)")]),
   "bicycle": ("transports people or goods", [
       ("wheels", "rolls a load along the ground", "wheel-and-axle", None, P),
       ("drive", "transmits rotation", "gear-train", None, P),
@@ -170,15 +200,17 @@ CARDS = {
       ("navigation", "finds direction", "compass", None, P),
       ("hull", "floats a load", None, "Iron hull", P),
   ], ["hydrostatics"]),
-  "screw-propeller": ("provides thrust", [], ["laws-motion", "conservation-momentum"]),
+  "screw-propeller": ("provides thrust", [
+      ("material", "forms the body", "bronze", None, IN),
+  ], ["laws-motion", "conservation-momentum"]),
 
   # ---- flight ----
   "hot-air-balloon": ("provides lift", [
       ("lift gas", "provides lift", "hydrogen", None, I),
-      ("envelope", "holds the gas", None, "Gas-tight envelope", P),
+      ("envelope", "holds the gas", "silk-europe", None, IN, "Charles's hydrogen balloon used rubberized silk."),
   ], ["hydrostatics", "charles-law"]),
   "parachute": ("slows a fall", [
-      ("canopy", "makes drag", None, "Canopy", P),
+      ("canopy", "makes drag", "silk-europe", None, IN),
   ], ["aerodynamics", "air-pressure"]),
   "glider": ("flies", [
       ("lift", "provides lift", "wing", None, P),

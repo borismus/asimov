@@ -11,7 +11,7 @@
 .card-back .back-job { font-style: italic; color: #444; margin-bottom: 3px; }
 .card-back .back-h {
   font-weight: 700;
-  font-size: 8px;
+  font-size: 0.9em;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin: 5px 0 2px;
@@ -21,8 +21,8 @@
 .card-back ul { margin: 0; padding-left: 11px; }
 .card-back li { margin: 1px 0; }
 .card-back a { color: steelblue; text-decoration: underline; cursor: pointer; }
-.card-back .back-slot { color: #777; font-size: 7.5px; text-transform: uppercase; letter-spacing: 0.03em; }
-.card-back .back-note { color: #a0661a; font-size: 7.5px; font-style: italic; }
+.card-back .back-slot { color: #777; font-size: 0.83em; text-transform: uppercase; letter-spacing: 0.03em; }
+.card-back .back-note { color: #a0661a; font-size: 0.83em; font-style: italic; }
 .card-back .back-gap { color: #8a8a8a; }
 .card-back .back-none { color: #777; font-style: italic; }
 
@@ -32,7 +32,7 @@ body.card-flipped .offscreen-indicator.pinned { display: none; }
 /* Job links on the back: slot names and the card's own job. */
 .card-back a.back-joblink { color: inherit; text-decoration: underline dotted; text-underline-offset: 1px; }
 .card-back a.back-slot.back-joblink { color: #777; }
-.card-back .back-why { color: #777; font-size: 7.5px; font-style: italic; }
+.card-back .back-why { color: #777; font-size: 0.83em; font-style: italic; }
 
 /* Jobs panel */
 #jobs-panel {
@@ -59,3 +59,5 @@ body.card-flipped .offscreen-indicator.pinned { display: none; }
 }
 #jobs-panel .job-row:hover, #jobs-panel .job-row:focus-visible { background: #f3eedf; outline: none; }
 #jobs-panel .job-n { color: #777; font-size: 12px; white-space: nowrap; }
+.card-back .back-part { color: #888; font-size: 0.83em; }
+.card-back ul.back-sub { padding-left: 9px; list-style: circle; }

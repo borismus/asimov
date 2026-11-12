@@ -1,8 +1,8 @@
 
 // ---- Prototype: card backs -------------------------------------------------
-// The back of a card lists its assembly (each bullet links to the card that
-// fills that slot) and the natural phenomena it uses (each links to that
-// phenomenon's card), then where the card is used as a part, and which inventions use it as a phenomenon.
+// The back of a card lists its slots by kind (inside / runs on / made with;
+// each bullet is a job and the card that does it) and the natural phenomena it
+// uses, then where the card fills a slot elsewhere, and which inventions harness it.
 const escBack = (s) => String(s ?? "").replace(/[&<>"]/g, (m) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[m]));
 
 function backHTML(d, L) {
@@ -14,24 +14,35 @@ function backHTML(d, L) {
   const jobLink = (job, text, cls = "") =>
     `<a class="back-joblink ${cls}" data-job="${escBack(job)}" href="#" title="Job: ${escBack(job)}">${escBack(text)}</a>`;
   if (d.job) h += `<div class="back-job">Job: ${jobLink(d.job, d.job)}</div>`;
+  // Slots, grouped by kind: what's physically inside it, what it uses up
+  // while it works, and what's used to make it but isn't in the result.
+  const KINDS = [["inside", "Inside"], ["runs on", "Runs on"], ["made with", "Made with"]];
   if (d.slots) {
-    h += `<div class="back-h">${d.listKind === "recipe" ? "Ingredients" : "Assembly"}</div>`;
-    if (d.slots.length) {
-      h += "<ul>";
-      for (const s of d.slots) {
-        const slot = `${jobLink(s.job, s.label, "back-slot")} `;
-        const why = s.note ? ` <span class="back-why">${escBack(s.note)}</span>` : "";
-        if (s.fill) {
-          const n = L.byId[s.fill];
-          const later = n && n.year > d.year ? ` <span class="back-note">added later</span>` : "";
-          h += `<li>${slot}${link(s.fill)}${why}${later}</li>`;
-        } else {
-          h += `<li class="back-gap">${slot}${escBack(s.gap)}${why} <span class="back-note">no card yet</span></li>`;
-        }
+    if (!d.slots.length) {
+      h += `<div class="back-h">Inside</div><div class="back-none">A basic part: nothing in the deck goes inside it.</div>`;
+    }
+    const filler = (s) => {
+      const part = s.part ? ` <span class="back-part">(${escBack(s.part)})</span>` : "";
+      const why = s.note ? ` <span class="back-why">${escBack(s.note)}</span>` : "";
+      if (!s.fill) return `<span class="back-gap">${escBack(s.gap)}${part}${why} <span class="back-note">no card yet</span></span>`;
+      const n = L.byId[s.fill];
+      const later = n && n.year > d.year ? ` <span class="back-note">added later</span>` : "";
+      return `${link(s.fill)}${part}${why}${later}`;
+    };
+    for (const [kind, heading] of KINDS) {
+      const group = d.slots.filter((s) => s.kind === kind);
+      if (!group.length) continue;
+      // One bullet per job; a job done by several cards lists them underneath.
+      const byJob = new Map();
+      for (const s of group) (byJob.get(s.job) || byJob.set(s.job, []).get(s.job)).push(s);
+      h += `<div class="back-h">${heading}</div><ul>`;
+      for (const [job, ss] of byJob) {
+        const j = jobLink(job, job, "back-slot");
+        h += ss.length === 1
+          ? `<li>${j}: ${filler(ss[0])}</li>`
+          : `<li>${j}:<ul class="back-sub">${ss.map((x) => `<li>${filler(x)}</li>`).join("")}</ul></li>`;
       }
       h += "</ul>";
-    } else {
-      h += `<div class="back-none">A basic part: nothing in the deck goes inside it.</div>`;
     }
   }
   if (d.phen) {
@@ -52,21 +63,22 @@ function backHTML(d, L) {
       h += `<div class="back-none">None listed.</div>`;
     }
   }
-  // Where this card is used as a subassembly (a part in another card's assembly).
+  // Where this card fills a slot in another card: inside it, fuel for it, or used to make it.
   const parts = L.partOf[d.id] || [];
   if (parts.length) {
-    h += `<div class="back-h">Part of</div><ul>`;
+    h += `<div class="back-h">Used in</div><ul>`;
     for (const u of parts) {
       const n = L.byId[u.id];
       const later = n && d.year > n.year ? ` <span class="back-note">added later</span>` : "";
-      h += `<li>${link(u.id)} <span class="back-slot">as ${escBack(u.as)}</span>${later}</li>`;
+      const how = u.kind === "inside" ? "" : ` <span class="back-part">(${escBack(u.kind)})</span>`;
+      h += `<li>${link(u.id)}: ${jobLink(u.job, u.job, "back-slot")}${how}${later}</li>`;
     }
     h += "</ul>";
   }
   // Inventions that list this card among their natural phenomena.
   const users = L.capturedBy[d.id] || [];
   if (users.length) {
-    h += `<div class="back-h">Used by</div><ul>${users.map((id) => `<li>${link(id)}</li>`).join("")}</ul>`;
+    h += `<div class="back-h">Harnessed by</div><ul>${users.map((id) => `<li>${link(id)}</li>`).join("")}</ul>`;
   }
   if (!d.slots && !d.phen && !parts.length && !users.length) {
     h += `<div class="back-none">Nothing in this pilot uses it yet.</div>`;
@@ -132,6 +144,19 @@ export function addBackFace(sel, L) {
   });
 }
 
+// Shrink the back's text until it fits the card (down to a floor; past that it scrolls).
+function fitBack(cardSel) {
+  const el = cardSel.select(".back-body").node();
+  if (!el || el.dataset.fitted) return;
+  let size = 9;
+  el.style.fontSize = size + "px";
+  while (el.scrollHeight > el.clientHeight + 1 && size > 6.5) {
+    size -= 0.5;
+    el.style.fontSize = size + "px";
+  }
+  el.dataset.fitted = "1";
+}
+
 const reduceMotion = () => window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 export function flipCard(cardSel, toBack, animate = true) {
@@ -141,6 +166,7 @@ export function flipCard(cardSel, toBack, animate = true) {
     cardSel.select("g.card-back").style("display", toBack ? null : "none");
     cardSel.classed("flipped", toBack);
     document.body.classList.toggle("card-flipped", toBack);
+    if (toBack) fitBack(cardSel);
   };
   if (!animate || reduceMotion()) {
     apply();

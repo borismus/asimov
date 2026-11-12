@@ -4,15 +4,19 @@ A separate visualization of the deck where every invention is built from other c
 It reuses the universe view, with three changes:
 
 - **Tap a card to flip it.** The back lists:
-  - **Assembly**: one bullet per slot (a part, ingredient or step), linking to the card that fills it.
-    A part newer than the invention is marked *added later*; an empty slot is marked *no card yet*.
+  - **Inside**, **Runs on**, **Made with**: one bullet per slot, grouped by kind. Each bullet is the
+    slot's job and the card that does it ("bends light: Glass"), plus the part's name when it adds
+    something ("(objective)"). *Inside* is what's physically in it, parts and materials alike; *runs on*
+    is what it uses up while working (fuel, propellant, film); *made with* is used to make it but isn't
+    in the result. A filler newer than the invention is marked *added later*; an empty slot is marked
+    *no card yet*.
   - **Natural phenomena**: the phenomena the card uses at its own level, each linking to its card.
     One explained after the invention existed is marked *explained later*.
-  - **Part of**: the inventions that use this card as a subassembly, and in which slot.
-  - **Used by**: for phenomenon cards, the inventions that use them.
+  - **Used in**: the inventions where this card fills a slot, and the job it does there.
+  - **Harnessed by**: for phenomenon cards, the inventions that use them.
 - **Tapping a bullet** jumps to that card and opens it on its back, so you can drill down the parts tree.
 - **Jobs.** Every card and slot has a job ("provides thrust", "controls flow"). The wrench button lists all
-  of them with counts; picking one, or tapping a slot name on a card's back, lights up every card that
+  of them with counts; picking one, or tapping a job on a card's back, lights up every card that
   can do that job. Jobs are kept generic; a slot's specifics ("prevents scurvy") go in its note.
 - **No pinning, no hover, no half cards.** Cards are always full size.
 
@@ -32,8 +36,9 @@ images into `site/`, which is gitignored.
 
 ## Files
 
-- `pilot_data.py`: the lists. For each invention: its job, its slots (label, job, filling card or
-  missing card name, kind: part, ingredient or step, and an optional note), and its phenomena. Also the new
+- `pilot_data.py`: the lists. For each invention: its job, its slots (part name, job, filling card or
+  missing card name, kind: inside, runs on or made with, and an optional note; the part name is shown
+  only when it isn't just the job or the filler's name), and its phenomena. Also the new
   supporting cards (Valve, Boiler, Gear train, GPS…) that aren't in Asimov's deck.
 - `build.py`: builds `site/`. New cards get placeholder art.
 - `card_back.js`, `card_back.css`: the back of the card and the flip animation, spliced into

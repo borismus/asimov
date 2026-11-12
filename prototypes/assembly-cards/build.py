@@ -69,12 +69,32 @@ with open(f'{OUT}/static/asimov.tsv') as fh:
     json.dump(list(csv.DictReader(fh, delimiter='\t')), open(f'{OUT}/static/cards.json', 'w'), ensure_ascii=False)
 os.remove(f'{OUT}/static/asimov.tsv')
 
+# A slot's job is its key. The part name ("barrel", "eyepiece") is kept only
+# when it says something the job and the filler card don't.
+GENERIC_PARTS = {'material', 'fuel', 'propellant', 'power', 'motive force', 'magnet', 'magnets', 'gears',
+                 'oxidizer', 'thrust', 'explosive', 'steam', 'drive', 'motor', 'engine', 'generator', 'battery',
+                 'amplifier', 'launcher', 'anesthetic', 'culture', 'conductor', 'insulation', 'base metal'}
+def _stem(w):
+    for suf in ('es', 's'):
+        if w.endswith(suf) and len(w) > 4: return w[:-len(suf)]
+    return w
+def part_name(slot, filler_title):
+    name = slot[0].strip()
+    low = name.lower()
+    if low in GENERIC_PARTS: return None
+    toks = [_stem(t) for t in re.findall(r'[a-z]+', low)]
+    if toks and all(t in filler_title.lower() for t in toks): return None
+    if toks and all(t in slot[1].lower() for t in toks): return None
+    return name
+
+def card_title(i):
+    return NEW_CARDS[i][0] if i in NEW_CARDS else rows[i]['Title']
+
 lists = {}
 for cid, (job, slots, ph) in CARDS.items():
     lists[cid] = {
         'job': job,
-        'listKind': 'recipe' if cid == 'vitamin-pills' else 'assembly',
-        'slots': [{'label': s[0], 'job': s[1], 'fill': s[2], 'gap': s[3], 'type': s[4], 'note': s[5] if len(s) > 5 else None} for s in slots],
+        'slots': [{'part': part_name(s, card_title(s[2]) if s[2] else (s[3] or '')), 'job': s[1], 'fill': s[2], 'gap': s[3], 'kind': s[4], 'note': s[5] if len(s) > 5 else None} for s in slots],
         'phen': [{'gap': p[1]} if isinstance(p, tuple) else {'id': p} for p in ph],
     }
 json.dump(lists, open(f'{OUT}/static/lists.json', 'w'), ensure_ascii=False)
@@ -207,7 +227,7 @@ function backLookup() {
     partOf = {};
     capturedBy = {};
     for (const n of state.nodes) {
-      for (const s of n.slots || []) if (s.fill) (partOf[s.fill] ||= []).push({ id: n.id, as: s.label });
+      for (const s of n.slots || []) if (s.fill) (partOf[s.fill] ||= []).push({ id: n.id, job: s.job, kind: s.kind });
       for (const p of n.phen || []) if (p.id) (capturedBy[p.id] ||= []).push(n.id);
     }
   }
@@ -355,7 +375,7 @@ search_btn = '<button id="action-search" class="site-action" type="button" title
 assert html.count(search_btn) == 1
 html = html.replace(search_btn, '<button id="action-jobs" class="site-action" type="button" title="Jobs to be done" aria-label="Jobs to be done">\n          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>\n        </button>\n        ' + search_btn)
 html = html.replace('<h1 class="site-title">Invention Cards</h1>', '<h1 class="site-title">Assembly Cards</h1>')
-html = re.sub(r'<p class="site-subtitle">.*?</p>', '<p class="site-subtitle">Prototype. Tap a card to flip it: the back lists its parts and the natural phenomena it uses. Tap a bullet to jump to that card, or a slot name to see every card that does its job.</p>', html, count=1)
+html = re.sub(r'<p class="site-subtitle">.*?</p>', '<p class="site-subtitle">Prototype. Tap a card to flip it: the back lists its parts and the natural phenomena it uses. Tap a bullet to jump to that card, or a job to see every card that does it.</p>', html, count=1)
 open(f'{OUT}/index.html', 'w').write(html)
 
 files = sum(len(f) for _, _, f in os.walk(OUT))

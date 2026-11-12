@@ -279,7 +279,7 @@ CARDS = {
       ("bulb", "emits electrons", "electric-light", None, P),
       ("plate", "collects electrons", None, "Metal plate", P),
   ], ["edison-effect"]),
-  "triode": ("amplifies a signal", [
+  "triode": ("controls the current", [
       ("tube", "controls the current", "electronic-rectifier", None, P),
       ("grid", "controls the current", None, "Control grid", P),
   ], ["edison-effect", "electron-emission"]),
@@ -289,12 +289,12 @@ CARDS = {
       ("output", "turns current into sound", "loudspeaker", None, P),
       ("power", "stores electricity", "electric-battery", None, P),
   ], ["radio-waves", "maxwells-equations", "kennelly-heaviside-layer"]),
-  "transistor": ("amplifies a signal", [
+  "transistor": ("controls the current", [
       ("semiconductor", "controls the current", "germanium", None, I),
       ("leads", "carries current", None, "Contact wires", P),
   ], ["fermi-dirac-statistics"]),
   "integrated-circuits": ("computes and switches", [
-      ("switches", "amplifies a signal", "transistor", None, P),
+      ("switches", "controls the current", "transistor", None, P),
       ("substrate", "holds the circuit", "silicon", None, I),
   ], ["fermi-dirac-statistics"]),
   "microchips": ("computes and switches", [

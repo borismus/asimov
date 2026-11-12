@@ -2,7 +2,7 @@
 
 A copy of the invention.cards universe view, patched so cards flip on tap and the
 back lists the card's assembly, its natural phenomena, and where it is used as a part.
-Data comes from pilot_data.py plus card text and images from the repo's static/.
+Data comes from lists.py (pilot_data.py, batches.py, links.csv) plus card text and images from the repo's static/.
 
   uv run prototypes/assembly-cards/build.py
   python3 -m http.server -d prototypes/assembly-cards/site 8000
@@ -13,7 +13,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.abspath(os.path.join(HERE, '..', '..'))
 OUT = os.path.join(HERE, 'site')
 sys.path.insert(0, HERE)
-from pilot_data import NEW_CARDS, CARDS
+from lists import NEW_CARDS, CARDS
 
 shutil.rmtree(OUT, ignore_errors=True)
 os.makedirs(f'{OUT}/static/images/entries-v2')
@@ -79,7 +79,8 @@ def _stem(w):
         if w.endswith(suf) and len(w) > 4: return w[:-len(suf)]
     return w
 def part_name(slot, filler_title):
-    name = slot[0].strip()
+    name = (slot[0] or '').strip()
+    if not name: return None
     low = name.lower()
     if low in GENERIC_PARTS: return None
     toks = [_stem(t) for t in re.findall(r'[a-z]+', low)]

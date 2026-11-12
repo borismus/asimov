@@ -36,10 +36,15 @@ images into `site/`, which is gitignored.
 
 ## Files
 
-- `pilot_data.py`: the lists. For each invention: its job, its slots (part name, job, filling card or
+- `pilot_data.py`: the pilot lists. For each invention: its job, its slots (part name, job, filling card or
   missing card name, kind: inside, runs on or made with, and an optional note; the part name is shown
   only when it isn't just the job or the filler's name), and its phenomena. Also the new
   supporting cards (Valve, Boiler, Gear train, GPS…) that aren't in Asimov's deck.
+- `links.csv`: links between existing cards approved in the "Missing parts" audit (invention, job, part,
+  filler, kind, note).
+- `batches.py`: the deck's own inventions, added one area at a time. Each gets its slots from
+  `links.csv`, plus its own job, slots for parts with no card yet, and its phenomena.
+- `lists.py`: puts the pilot and the batches together for the build.
 - `build.py`: builds `site/`. New cards get placeholder art.
 - `card_back.js`, `card_back.css`: the back of the card and the flip animation, spliced into
   `card.js` and `card.css`.
@@ -47,5 +52,9 @@ images into `site/`, which is gitignored.
 ## Scope
 
 A pilot of 60 inventions (steam, engines, vehicles, flight, electricity and radio, a path to GPS,
-and vitamin pills as a recipe) plus the 68 parts, materials and phenomena they reference: 128 cards.
-The rest of the deck has no lists yet.
+and vitamin pills as a recipe), plus batches of the deck's own inventions:
+
+1. Electricity and communication: 24 inventions, from Hauksbee's static generator to the LED.
+
+With the parts, materials and phenomena they reference, that's 187 cards. The rest of the deck has
+no lists yet.

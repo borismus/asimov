@@ -207,7 +207,7 @@ CARDS = {
   # ---- flight ----
   "hot-air-balloon": ("provides lift", [
       ("lift gas", "provides lift", "hydrogen", None, I),
-      ("envelope", "holds the gas", "silk-europe", None, IN, "Charles's hydrogen balloon used rubberized silk."),
+      ("envelope", "holds the contents", "silk-europe", None, IN, "Charles's hydrogen balloon used rubberized silk."),
   ], ["hydrostatics", "charles-law"]),
   "parachute": ("slows a fall", [
       ("canopy", "makes drag", "silk-europe", None, IN),

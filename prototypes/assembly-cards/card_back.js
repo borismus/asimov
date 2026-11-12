@@ -66,12 +66,22 @@ function backHTML(d, L) {
   // Where this card fills a slot in another card: inside it, fuel for it, or used to make it.
   const parts = L.partOf[d.id] || [];
   if (parts.length) {
-    h += `<div class="back-h">Used in</div><ul>`;
+    // One bullet per job it does elsewhere, listing the cards it does it in.
+    const byJob = new Map();
     for (const u of parts) {
-      const n = L.byId[u.id];
-      const later = n && d.year > n.year ? ` <span class="back-note">added later</span>` : "";
-      const how = u.kind === "inside" ? "" : ` <span class="back-part">(${escBack(u.kind)})</span>`;
-      h += `<li>${link(u.id)}: ${jobLink(u.job, u.job, "back-slot")}${how}${later}</li>`;
+      const key = `${u.job}|${u.kind}`;
+      (byJob.get(key) || byJob.set(key, []).get(key)).push(u);
+    }
+    h += `<div class="back-h">Used in</div><ul>`;
+    for (const us of byJob.values()) {
+      const { job, kind } = us[0];
+      const how = kind === "inside" ? "" : ` <span class="back-part">(${escBack(kind)})</span>`;
+      const cards = us.map((u) => {
+        const n = L.byId[u.id];
+        const later = n && d.year > n.year ? ` <span class="back-note">added later</span>` : "";
+        return `${link(u.id)}${later}`;
+      }).join(", ");
+      h += `<li>${jobLink(job, job, "back-slot")}${how}: ${cards}</li>`;
     }
     h += "</ul>";
   }

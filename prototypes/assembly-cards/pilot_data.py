@@ -43,7 +43,10 @@ CARDS = {
   "spring": ("stores energy", [], [G("Elasticity (Hooke's law)")]),
   "ball-bearing": ("reduces friction", [], [G("Rolling friction")]),
   "wing": ("provides lift", [], ["aerodynamics"]),
-  "insulated-wire": ("carries current", [], ["electrical-conductance"]),
+  "insulated-wire": ("carries current", [
+      ("conductor", "carries current", "copper", None, I),
+      ("insulation", "insulates", "vulcanization-of-rubber", None, I, "Gutta-percha, used for submarine cable, has no card."),
+  ], ["electrical-conductance"]),
   "sail": ("provides thrust", [], ["aerodynamics", "trade-winds"]),
   "loudspeaker": ("turns current into sound", [
       ("magnet", "makes a magnetic field", None, "Permanent magnet", P),

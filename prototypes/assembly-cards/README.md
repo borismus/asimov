@@ -22,6 +22,8 @@ It reuses the universe view, with these changes:
   can do that job. Jobs are kept generic; a slot's specifics ("prevents scurvy") go in its note.
 - **Search** lists every match under the search bar, on screen or not; the one you picked is blue.
 - **No hover, no half cards.** Cards are always full size.
+- **Phenomena are set aside for now** while the assemblies get to a good place. The lists are kept
+  in the data; `SHOW_PHENOMENA` in `build.py` brings them back.
 
 Edges: parts are solid, parts added later are dashed, phenomena are amber.
 

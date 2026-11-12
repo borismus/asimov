@@ -15,6 +15,12 @@ OUT = os.path.join(HERE, 'site')
 sys.path.insert(0, HERE)
 from lists import NEW_CARDS, CARDS
 
+# Phenomena are set aside while the assemblies get to a good place. The lists are kept in
+# pilot_data.py and batches.py; set this to True to show them again.
+SHOW_PHENOMENA = False
+if not SHOW_PHENOMENA:
+    CARDS = {cid: (job, slots, []) for cid, (job, slots, ph) in CARDS.items()}
+
 shutil.rmtree(OUT, ignore_errors=True)
 os.makedirs(f'{OUT}/static/images/entries-v2')
 
@@ -96,7 +102,7 @@ for cid, (job, slots, ph) in CARDS.items():
     lists[cid] = {
         'job': job,
         'slots': [{'part': part_name(s, card_title(s[2]) if s[2] else (s[3] or '')), 'job': s[1], 'fill': s[2], 'gap': s[3], 'kind': s[4], 'note': s[5] if len(s) > 5 else None} for s in slots],
-        'phen': [{'gap': p[1]} if isinstance(p, tuple) else {'id': p} for p in ph],
+        **({'phen': [{'gap': p[1]} if isinstance(p, tuple) else {'id': p} for p in ph]} if SHOW_PHENOMENA else {}),
     }
 json.dump(lists, open(f'{OUT}/static/lists.json', 'w'), ensure_ascii=False)
 
@@ -468,7 +474,7 @@ search_btn = '<button id="action-search" class="site-action" type="button" title
 assert html.count(search_btn) == 1
 html = html.replace(search_btn, '<button id="action-jobs" class="site-action" type="button" title="Jobs to be done" aria-label="Jobs to be done">\n          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>\n        </button>\n        ' + search_btn)
 html = html.replace('<h1 class="site-title">Invention Cards</h1>', '<h1 class="site-title">Assembly Cards</h1>')
-html = re.sub(r'<p class="site-subtitle">.*?</p>', '<p class="site-subtitle">Prototype. Tap a card to pin it and light up its links; tap it again to flip it. The back lists its parts and the natural phenomena it uses. Tap a bullet to jump to that card, or a job to see every card that does it.</p>', html, count=1)
+html = re.sub(r'<p class="site-subtitle">.*?</p>', '<p class="site-subtitle">Prototype. Tap a card to pin it and light up its links; tap it again to flip it. The back lists its parts. Tap a bullet to jump to that card, or a job to see every card that does it.</p>', html, count=1)
 open(f'{OUT}/index.html', 'w').write(html)
 
 files = sum(len(f) for _, _, f in os.walk(OUT))

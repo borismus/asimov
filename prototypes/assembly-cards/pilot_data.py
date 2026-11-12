@@ -311,12 +311,12 @@ CARDS = {
       ("guidance", "holds direction", "gyroscope", None, P),
   ], ["conservation-momentum", "universal-gravitation"]),
   "sputnik": ("sends and receives signals", [
-      ("launcher", "provides thrust", "liquid-fuel-rockets", None, P),
+      ("launcher", "provides thrust", "liquid-fuel-rockets", None, WITH, "The rocket puts it in orbit but isn't part of it."),
       ("transmitter", "sends and receives signals", "radio", None, P),
       ("power", "stores electricity", "electric-battery", None, P),
   ], ["universal-gravitation", "laws-motion", "radio-waves"]),
   "communications-satellites": ("sends and receives signals", [
-      ("launcher", "provides thrust", "liquid-fuel-rockets", None, P),
+      ("launcher", "provides thrust", "liquid-fuel-rockets", None, WITH, "The rocket puts it in orbit but isn't part of it."),
       ("transponder", "sends and receives signals", "radio", None, P),
       ("amplifier", "amplifies a signal", "transistor", None, P),
       ("power", "makes electricity", "photovoltaic-cells", None, P),

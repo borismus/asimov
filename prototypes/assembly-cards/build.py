@@ -468,6 +468,14 @@ function renderSearchOffscreenIndicators() {"""),
 
 open(f'{S}/card.css', 'a').write(open(os.path.join(HERE, 'card_back.css')).read())
 open(f'{S}/universe.css', 'a').write(open(os.path.join(HERE, 'phone.css')).read())
+open(f'{S}/universe.css', 'a').write(open(os.path.join(HERE, 'theme.css')).read())
+# Link lines take their colour from the theme (--ink-rgb in theme.css): dark on light, light on dark.
+_w = open(f'{S}/world.js').read()
+_anchor = '  const opacity = state.tier === TIER_LABEL ? 0.28 : 0.55;\n'
+assert _w.count(_anchor) == 1 and _w.count('rgba(0, 0, 0, ${opacity})') == 4
+_w = _w.replace(_anchor, _anchor + '  const ink = getComputedStyle(document.documentElement).getPropertyValue("--ink-rgb").trim() || "0, 0, 0";\n')
+_w = _w.replace('rgba(0, 0, 0, ${opacity})', 'rgba(${ink}, ${opacity})')
+open(f'{S}/world.js', 'w').write(_w)
 
 # Phones: a close button for search, a sheet of results that folds away after you pick one,
 # a closer first view, and pinned cards centred below the header instead of under it.
@@ -501,6 +509,9 @@ searchResultsContainer.addEventListener("click", (e) => {
   searchInput.blur();
 }, true);  // capture: each result's own handler stops the click from bubbling
 searchInput.addEventListener("focus", () => document.body.classList.remove("search-collapsed"));
+// Redraw the link lines when the theme flips (the viewer's data-theme, or the system setting).
+new MutationObserver(scheduleRedraw).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+window.matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change", scheduleRedraw);
 searchInput.addEventListener("click", () => document.body.classList.remove("search-collapsed"));'''),
     ('''  const k = 1.4;
   const leftMargin = 40;''',

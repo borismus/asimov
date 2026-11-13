@@ -1,0 +1,61 @@
+
+/* ---- Prototype: light and dark ---------------------------------------------
+   The cards, search box, results and panels are paper objects and stay light in
+   both themes, with their own dark text. Only the table they sit on changes: the
+   background, header, link lines, dots and time ruler. The viewer may set
+   data-theme on <html>; without it, prefers-color-scheme decides. */
+:root {
+  color-scheme: light;  /* the paper objects keep light form controls */
+  --table: #ffffff;
+  --ink-rgb: 0, 0, 0;  /* link lines, dots and ruler, drawn at varying opacity */
+  --header-bg: rgba(250, 248, 243, 0.92);
+  --header-line: rgba(0, 0, 0, 0.08);
+  --header-ink: #1a1a1a;
+  --header-muted: #6b6b6b;
+  --btn-bg: #ffffff;
+  --btn-hover: #fffaf0;
+  --btn-line: rgba(0, 0, 0, 0.18);
+  --btn-ink: #1a1a1a;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --table: #1d1e21;
+    --ink-rgb: 236, 232, 222;
+    --header-bg: rgba(33, 34, 38, 0.92);
+    --header-line: rgba(255, 255, 255, 0.08);
+    --header-ink: #ece8de;
+    --header-muted: #a39f95;
+    --btn-bg: #2b2c31;
+    --btn-hover: #35363c;
+    --btn-line: rgba(255, 255, 255, 0.16);
+    --btn-ink: #ece8de;
+  }
+}
+:root[data-theme="dark"] {
+  --table: #1d1e21;
+  --ink-rgb: 236, 232, 222;
+  --header-bg: rgba(33, 34, 38, 0.92);
+  --header-line: rgba(255, 255, 255, 0.08);
+  --header-ink: #ece8de;
+  --header-muted: #a39f95;
+  --btn-bg: #2b2c31;
+  --btn-hover: #35363c;
+  --btn-line: rgba(255, 255, 255, 0.16);
+  --btn-ink: #ece8de;
+}
+
+html, body { background: var(--table); }
+body { color: #1a1a1a; }
+#site-header { background: var(--header-bg); border-bottom-color: var(--header-line); }
+.site-title { color: var(--header-ink); }
+.site-subtitle, .site-subtitle-short { color: var(--header-muted); }
+#site-header #site-timeline .axis-label { color: var(--header-muted); }
+.site-action { background: var(--btn-bg); border-color: var(--btn-line); color: var(--btn-ink); }
+.site-action:hover { background: var(--btn-hover); }
+.site-action svg[stroke="#444"], .site-action svg [stroke="#444"] { stroke: var(--btn-ink); }
+.site-action svg[fill="#444"], .site-action svg [fill="#444"] { fill: var(--btn-ink); }
+.site-action svg line { stroke: var(--btn-ink); }  /* style.css paints every <line> black */
+.dag-axis-tick { stroke: rgba(var(--ink-rgb), 0.18); }
+.dag-axis-label { fill: rgba(var(--ink-rgb), 0.75); }
+.dag-dot { stroke: rgba(var(--ink-rgb), 0.35); }
+#search-input, #jobs-panel, #search-results { color: #1a1a1a; }

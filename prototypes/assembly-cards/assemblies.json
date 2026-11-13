@@ -5976,7 +5976,7 @@
    ]
   },
   "stellarator": {
-   "job": "holds the contents",
+   "job": "makes heat",
    "slots": [
     {
      "part": "",

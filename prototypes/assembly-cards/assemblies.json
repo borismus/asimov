@@ -553,12 +553,15 @@
      "note": null
     },
     {
-     "part": "suspension",
+     "part": "strap suspension",
      "job": "absorbs shocks",
-     "fill": "carriage-springs",
+     "fill": "leather",
      "gap": null,
      "kind": "inside",
-     "note": null
+     "note": null,
+     "later": [
+      "carriage-springs"
+     ]
     },
     {
      "part": "motive force",
@@ -839,12 +842,15 @@
      "note": null
     },
     {
-     "part": "hull",
+     "part": "wooden hull",
      "job": "floats a load",
-     "fill": "coke-iron",
+     "fill": "river-boat",
      "gap": null,
      "kind": "inside",
-     "note": null
+     "note": null,
+     "later": [
+      "coke-iron"
+     ]
     }
    ]
   },
@@ -865,12 +871,15 @@
    "job": "provides lift",
    "slots": [
     {
-     "part": "lift gas",
+     "part": "hot air",
      "job": "provides lift",
-     "fill": "hydrogen",
+     "fill": "fire",
      "gap": null,
      "kind": "inside",
-     "note": null
+     "note": null,
+     "later": [
+      "hydrogen"
+     ]
     },
     {
      "part": "envelope",
@@ -1506,12 +1515,12 @@
      "note": null
     },
     {
-     "part": "reference",
+     "part": "ammonia gas",
      "job": "keeps time",
-     "fill": null,
-     "gap": "Cesium beam tube",
+     "fill": "liquid-ammonia",
+     "gap": null,
      "kind": "inside",
-     "note": null
+     "note": "The 1949 clock counted ammonia molecules; cesium came in 1955."
     }
    ]
   },
@@ -1774,6 +1783,14 @@
      "gap": null,
      "kind": "inside",
      "note": null
+    },
+    {
+     "part": "key",
+     "job": "takes input",
+     "fill": "keys",
+     "gap": null,
+     "kind": "inside",
+     "note": null
     }
    ]
   },
@@ -1983,6 +2000,14 @@
      "job": "makes light",
      "fill": null,
      "gap": "Phosphor screen",
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "emits electrons",
+     "fill": "electron-gun",
+     "gap": null,
      "kind": "inside",
      "note": null
     }
@@ -2495,20 +2520,20 @@
      "note": "Silver iodide."
     },
     {
-     "part": "lens",
-     "job": "bends light",
-     "fill": "achromatic-lens",
-     "gap": null,
-     "kind": "made with",
-     "note": "Daguerre's camera used a Chevalier achromat."
-    },
-    {
      "part": "plate",
      "job": "records media",
      "fill": "copper",
      "gap": null,
      "kind": "made with",
      "note": "Silver-plated copper."
+    },
+    {
+     "part": "",
+     "job": "records media",
+     "fill": "camera",
+     "gap": null,
+     "kind": "made with",
+     "note": null
     }
    ]
   },
@@ -2677,11 +2702,11 @@
      "note": null
     },
     {
-     "part": "camera",
+     "part": "",
      "job": "records media",
-     "fill": "photography",
+     "fill": "camera",
      "gap": null,
-     "kind": "runs on",
+     "kind": "inside",
      "note": null
     }
    ]
@@ -2719,6 +2744,14 @@
      "fill": "air-pump",
      "gap": null,
      "kind": "made with",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "emits electrons",
+     "fill": "electron-gun",
+     "gap": null,
+     "kind": "inside",
      "note": null
     }
    ]
@@ -2842,11 +2875,11 @@
      "note": null
     },
     {
-     "part": "camera",
+     "part": "",
      "job": "records media",
-     "fill": "photography",
+     "fill": "camera",
      "gap": null,
-     "kind": "runs on",
+     "kind": "inside",
      "note": null
     }
    ]
@@ -3046,7 +3079,16 @@
   },
   "dome": {
    "job": "bears the load",
-   "slots": []
+   "slots": [
+    {
+     "part": "four arches",
+     "job": "bears the load",
+     "fill": "arch",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
   },
   "flying-buttress": {
    "job": "bears the load",
@@ -3282,15 +3324,10 @@
      "fill": "improved-steam-engine",
      "gap": null,
      "kind": "inside",
-     "note": null
-    },
-    {
-     "part": "electric hoist",
-     "job": "provides power",
-     "fill": "electric-motors",
-     "gap": null,
-     "kind": "inside",
-     "note": null
+     "note": null,
+     "later": [
+      "electric-motors"
+     ]
     }
    ]
   },
@@ -3432,12 +3469,15 @@
    "job": "transports people or goods",
    "slots": [
     {
-     "part": "surface engine",
+     "part": "gasoline engine",
      "job": "provides power",
-     "fill": "diesel-engine",
+     "fill": "four-stroke-engine",
      "gap": null,
      "kind": "inside",
-     "note": null
+     "note": null,
+     "later": [
+      "diesel-engine"
+     ]
     },
     {
      "part": "submerged motor",
@@ -3587,9 +3627,17 @@
    "job": "prints",
    "slots": [
     {
-     "part": "process",
-     "job": "prints",
-     "fill": "xerography",
+     "part": "drum",
+     "job": "records media",
+     "fill": "cadmium-lithium-selenium",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "lamp",
+     "job": "makes light",
+     "fill": "electric-light",
      "gap": null,
      "kind": "inside",
      "note": null
@@ -3608,12 +3656,15 @@
      "note": null
     },
     {
-     "part": "chip",
-     "job": "computes",
-     "fill": "integrated-circuits",
+     "part": "",
+     "job": "controls the current",
+     "fill": "transistor",
      "gap": null,
      "kind": "inside",
-     "note": null
+     "note": null,
+     "later": [
+      "integrated-circuits"
+     ]
     },
     {
      "part": "",
@@ -3627,12 +3678,15 @@
      ]
     },
     {
-     "part": "oscillator",
+     "part": "",
      "job": "keeps time",
-     "fill": "quartz-oscillator",
-     "gap": null,
+     "fill": null,
+     "gap": "Tuning fork",
      "kind": "inside",
-     "note": null
+     "note": null,
+     "later": [
+      "quartz-oscillator"
+     ]
     }
    ]
   },
@@ -3838,13 +3892,14 @@
    "job": "makes light",
    "slots": [
     {
-     "part": "",
+     "part": "burning wood",
      "job": "makes light",
-     "fill": "oil-lamp",
+     "fill": "fire",
      "gap": null,
      "kind": "inside",
      "note": null,
      "later": [
+      "oil-lamp",
       "electric-light"
      ]
     }
@@ -3917,7 +3972,16 @@
   },
   "horse-collar": {
    "job": "provides power",
-   "slots": []
+   "slots": [
+    {
+     "part": "padding",
+     "job": "forms the body",
+     "fill": "leather",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
   },
   "windmill": {
    "job": "provides power",
@@ -4046,14 +4110,6 @@
      "gap": null,
      "kind": "inside",
      "note": "Cast iron."
-    },
-    {
-     "part": "fuel",
-     "job": "stores chemical energy",
-     "fill": "coal-mining",
-     "gap": null,
-     "kind": "runs on",
-     "note": null
     }
    ]
   },
@@ -4143,6 +4199,14 @@
      "gap": null,
      "kind": "made with",
      "note": null
+    },
+    {
+     "part": "",
+     "job": "records media",
+     "fill": "camera",
+     "gap": null,
+     "kind": "made with",
+     "note": null
     }
    ]
   },
@@ -4176,10 +4240,13 @@
     {
      "part": "",
      "job": "provides power",
-     "fill": "electric-motors",
+     "fill": "improved-steam-engine",
      "gap": null,
      "kind": "inside",
-     "note": null
+     "note": null,
+     "later": [
+      "electric-motors"
+     ]
     }
    ]
   },
@@ -4930,7 +4997,16 @@
   },
   "antiseptic-surgery": {
    "job": "treats illness",
-   "slots": []
+   "slots": [
+    {
+     "part": "coal tar",
+     "job": "reacts",
+     "fill": "coal-mining",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
   },
   "clinical-thermometer": {
    "job": "measures",
@@ -5002,6 +5078,14 @@
      "gap": null,
      "kind": "inside",
      "note": null
+    },
+    {
+     "part": "vacuum",
+     "job": "makes a vacuum",
+     "fill": "air-pump",
+     "gap": null,
+     "kind": "made with",
+     "note": null
     }
    ]
   },
@@ -5024,7 +5108,16 @@
   },
   "modern-seismograph": {
    "job": "measures",
-   "slots": []
+   "slots": [
+    {
+     "part": "horizontal pendulum",
+     "job": "measures",
+     "fill": "pendulum",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
   },
   "electromechanical-calculator": {
    "job": "computes",
@@ -5159,6 +5252,14 @@
      "gap": null,
      "kind": "inside",
      "note": null
+    },
+    {
+     "part": "vacuum",
+     "job": "makes a vacuum",
+     "fill": "air-pump",
+     "gap": null,
+     "kind": "made with",
+     "note": null
     }
    ]
   },
@@ -5177,7 +5278,16 @@
   },
   "sutures": {
    "job": "fastens",
-   "slots": []
+   "slots": [
+    {
+     "part": "thread",
+     "job": "forms the body",
+     "fill": "silk-europe",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
   },
   "electrocardiogram": {
    "job": "diagnoses",
@@ -5273,7 +5383,16 @@
   },
   "bakelite": {
    "job": "insulates",
-   "slots": []
+   "slots": [
+    {
+     "part": "coal tar",
+     "job": "reacts",
+     "fill": "coal-mining",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
   },
   "coal-hydrogenation": {
    "job": "stores chemical energy",
@@ -5716,12 +5835,15 @@
    "job": "prints",
    "slots": [
     {
-     "part": "drum",
+     "part": "coated plate",
      "job": "records media",
-     "fill": "cadmium-lithium-selenium",
+     "fill": "sulfur",
      "gap": null,
      "kind": "inside",
-     "note": "Selenium-coated drums came in the late 1940s."
+     "note": "Selenium-coated drums came in the late 1940s.",
+     "later": [
+      "cadmium-lithium-selenium"
+     ]
     }
    ]
   },
@@ -5920,8 +6042,8 @@
    "slots": [
     {
      "part": "",
-     "job": "bends light",
-     "fill": "achromatic-lens",
+     "job": "records media",
+     "fill": "camera",
      "gap": null,
      "kind": "inside",
      "note": null
@@ -6145,18 +6267,27 @@
      "note": null
     },
     {
-     "part": "camera",
+     "part": "",
      "job": "records media",
-     "fill": "photography",
+     "fill": "camera",
      "gap": null,
-     "kind": "runs on",
+     "kind": "inside",
      "note": null
     }
    ]
   },
   "masers": {
    "job": "amplifies a signal",
-   "slots": []
+   "slots": [
+    {
+     "part": "ammonia gas",
+     "job": "amplifies a signal",
+     "fill": "liquid-ammonia",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
   },
   "isotactic-polymers": {
    "job": "forms the body",
@@ -6582,6 +6713,14 @@
      "gap": null,
      "kind": "inside",
      "note": null
+    },
+    {
+     "part": "reader",
+     "job": "turns light into current",
+     "fill": "photocell",
+     "gap": null,
+     "kind": "inside",
+     "note": null
     }
    ]
   },
@@ -6617,6 +6756,14 @@
      "part": "transmitter",
      "job": "makes light",
      "fill": "laser",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "receiver",
+     "job": "turns light into current",
+     "fill": "photocell",
      "gap": null,
      "kind": "inside",
      "note": null
@@ -7044,7 +7191,16 @@
   },
   "bow": {
    "job": "fires projectiles",
-   "slots": []
+   "slots": [
+    {
+     "part": "arrowheads",
+     "job": "impales",
+     "fill": "stone-tool",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
   },
   "bridle": {
    "job": "steers",
@@ -7056,16 +7212,42 @@
      "gap": null,
      "kind": "inside",
      "note": null
+    },
+    {
+     "part": "straps",
+     "job": "forms the body",
+     "fill": "leather",
+     "gap": null,
+     "kind": "inside",
+     "note": null
     }
    ]
   },
   "saddle": {
    "job": "steadies the rider",
-   "slots": []
+   "slots": [
+    {
+     "part": "seat",
+     "job": "forms the body",
+     "fill": "leather",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
   },
   "catapult": {
    "job": "fires projectiles",
-   "slots": []
+   "slots": [
+    {
+     "part": "bow",
+     "job": "stores energy",
+     "fill": "bow",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
   },
   "wooden-stirrup": {
    "job": "steadies the rider",
@@ -7095,6 +7277,14 @@
      "part": "",
      "job": "steadies the rider",
      "fill": "metal-stirrup",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "base",
+     "job": "steadies the rider",
+     "fill": "saddle",
      "gap": null,
      "kind": "inside",
      "note": null
@@ -7319,6 +7509,14 @@
      "gap": null,
      "kind": "inside",
      "note": null
+    },
+    {
+     "part": "barrel",
+     "job": "forms the body",
+     "fill": "steel",
+     "gap": null,
+     "kind": "inside",
+     "note": null
     }
    ]
   },
@@ -7345,6 +7543,14 @@
      "part": "needle",
      "job": "ignites fuel",
      "fill": "gun-lock",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "barrel",
+     "job": "forms the body",
+     "fill": "steel",
      "gap": null,
      "kind": "inside",
      "note": null
@@ -7542,11 +7748,29 @@
   },
   "photocell": {
    "job": "turns light into current",
-   "slots": []
+   "slots": [
+    {
+     "part": "cathode",
+     "job": "emits electrons",
+     "fill": "sodium-and-potassium",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
   },
   "lithium-battery": {
    "job": "stores electricity",
-   "slots": []
+   "slots": [
+    {
+     "part": "lithium anode",
+     "job": "stores chemical energy",
+     "fill": "cadmium-lithium-selenium",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
   },
   "mercury": {
    "job": "forms the body",
@@ -7600,6 +7824,19 @@
   "quartz-oscillator": {
    "job": "keeps time",
    "slots": []
+  },
+  "leather": {
+   "job": "forms the body",
+   "slots": [
+    {
+     "part": "hide",
+     "job": "forms the body",
+     "fill": "animal-dom",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
   }
  },
  "key_parts": {
@@ -7648,9 +7885,6 @@
   "transistor": [
    "Contact wires"
   ],
-  "atomic-clock": [
-   "Cesium beam tube"
-  ],
   "leyden-jar": [
    "Metal foil"
   ],
@@ -7683,6 +7917,9 @@
   ],
   "paper": [
    "Plant fiber"
+  ],
+  "electronic-watch": [
+   "Tuning fork"
   ]
  },
  "excluded": {
@@ -7769,6 +8006,11 @@
    "Quartz oscillator",
    "1921",
    "A sliver of quartz that vibrates at a steady frequency when driven by a current. Cady built one in 1921; quartz clocks followed in 1927."
+  ],
+  "leather": [
+   "Leather",
+   -3500,
+   "Animal hide tanned so it stays supple and doesn't rot. A leather shoe from Armenia's Areni-1 cave is about 5,500 years old."
   ]
  }
 }

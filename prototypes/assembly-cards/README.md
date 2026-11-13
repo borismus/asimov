@@ -55,9 +55,9 @@ images into `site/`, which is gitignored.
 
 ## Scope
 
-Every invention in Asimov's deck has a list: 434 cards with lists, including 31 supporting cards
+Every invention in Asimov's deck has a list: 435 cards with lists, including 32 supporting cards
 that aren't in the deck (Valve, Boiler, Escapement, Ink, Punched cards…). With the materials they
-reference, the board shows 493 cards. The rules the lists follow are in `RULES.md` (copied from the sheet's Rules tab): a
+reference, the board shows 494 cards. The rules the lists follow are in `RULES.md` (copied from the sheet's Rules tab): a
 part with no card is listed only if 3 or more inventions share it (then it gets a card), or if it is
 the card's own key part, the new thing it brought. Left out: the Great Wall (a named wonder) and
 the Torsion balance (a phenomenon).

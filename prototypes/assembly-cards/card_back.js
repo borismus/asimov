@@ -24,10 +24,13 @@ function backHTML(d, L) {
     const filler = (s) => {
       const part = s.part ? ` <span class="back-part">(${escBack(s.part)})</span>` : "";
       const why = s.note ? ` <span class="back-why">${escBack(s.note)}</span>` : "";
-      if (!s.fill) return `<span class="back-gap">${escBack(s.gap)}${part}${why} <span class="back-note">its key part, no card</span></span>`;
+      // Newer cards that took over this job: "Carriage springs, later Rubber tire".
+      const swaps = (s.later || []).filter((id) => L.byId[id]);
+      const then = swaps.length ? `<span class="back-later">, later ${swaps.map(link).join(" and ")}</span>` : "";
+      if (!s.fill) return `<span class="back-gap">${escBack(s.gap)}${part}${why} <span class="back-note">its key part, no card</span></span>${then}`;
       const n = L.byId[s.fill];
       const later = n && n.year > d.year ? ` <span class="back-note">added later</span>` : "";
-      return `${link(s.fill)}${part}${why}${later}`;
+      return `${link(s.fill)}${part}${why}${later}${then}`;
     };
     for (const [kind, heading] of KINDS) {
       const group = d.slots.filter((s) => s.kind === kind);

@@ -48,6 +48,7 @@ open(f'{OUT}/static/stories.json', 'w').write('[]')
 ids = set(CARDS)
 for cid, (job, slots, ph) in CARDS.items():
     ids |= {s[2] for s in slots if s[2]}
+    ids |= {l for s in slots for l in s[6]}
     ids |= {p for p in ph if not isinstance(p, tuple)}
 
 def fmt_year(y):
@@ -61,7 +62,7 @@ with open(f'{OUT}/static/asimov.tsv', 'w', newline='') as fh:
         deps = []
         if i in CARDS:
             job, slots, ph = CARDS[i]
-            for d in [s[2] for s in slots if s[2]] + [p for p in ph if not isinstance(p, tuple)]:
+            for d in [s[2] for s in slots if s[2]] + [l for s in slots for l in s[6]] + [p for p in ph if not isinstance(p, tuple)]:
                 if d not in deps: deps.append(d)
         if i in NEW_CARDS:
             t, y, d = NEW_CARDS[i]
@@ -101,7 +102,7 @@ lists = {}
 for cid, (job, slots, ph) in CARDS.items():
     lists[cid] = {
         'job': job,
-        'slots': [{'part': part_name(s, card_title(s[2]) if s[2] else (s[3] or '')), 'job': s[1], 'fill': s[2], 'gap': s[3], 'kind': s[4], 'note': s[5] if len(s) > 5 else None} for s in slots],
+        'slots': [{'part': part_name(s, card_title(s[2]) if s[2] else (s[3] or '')), 'job': s[1], 'fill': s[2], 'gap': s[3], 'kind': s[4], 'note': s[5], **({'later': s[6]} if s[6] else {})} for s in slots],
         **({'phen': [{'gap': p[1]} if isinstance(p, tuple) else {'id': p} for p in ph]} if SHOW_PHENOMENA else {}),
     }
 json.dump(lists, open(f'{OUT}/static/lists.json', 'w'), ensure_ascii=False)
@@ -151,7 +152,7 @@ patch(f'{S}/utils.js', [
     // Which jobs each card does as a part somewhere (for "job:" searches).
     const byId = Object.fromEntries(nodes.map((n) => [n.id, n]));
     for (const n of nodes) {
-      for (const s of n.slots || []) if (s.fill && byId[s.fill]) (byId[s.fill].fillsJobs ||= new Set()).add(s.job);
+      for (const s of n.slots || []) for (const f of [s.fill, ...(s.later || [])]) if (f && byId[f]) (byId[f].fillsJobs ||= new Set()).add(s.job);
     }
   } catch (e) {
     console.warn("lists.json missing", e);
@@ -233,7 +234,7 @@ function backLookup() {
     partOf = {};
     capturedBy = {};
     for (const n of state.nodes) {
-      for (const s of n.slots || []) if (s.fill) (partOf[s.fill] ||= []).push({ id: n.id, job: s.job, kind: s.kind });
+      for (const s of n.slots || []) for (const f of [s.fill, ...(s.later || [])]) if (f) (partOf[f] ||= []).push({ id: n.id, job: s.job, kind: s.kind });
       for (const p of n.phen || []) if (p.id) (capturedBy[p.id] ||= []).push(n.id);
     }
   }
@@ -309,7 +310,7 @@ function jobIndex() {
     for (const s of n.slots || []) {
       const v = get(s.job);
       v.slots++;
-      if (s.fill) v.cards.add(s.fill);
+      for (const f of [s.fill, ...(s.later || [])]) if (f) v.cards.add(f);
     }
   }
   return [...jobs.entries()].sort((a, b) => b[1].slots - a[1].slots || b[1].cards.size - a[1].cards.size || a[0].localeCompare(b[0]));

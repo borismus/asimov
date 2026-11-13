@@ -64,3 +64,4 @@
 /* Search results list every match: the one you picked is filled, ones on screen are tinted. */
 #search-results .offscreen-indicator.search.here { background: #fff6dc; }
 #search-results .offscreen-indicator.search.active { background: steelblue; border-color: steelblue; color: white; box-shadow: 0 2px 8px rgba(70, 130, 180, 0.45); }
+.card-back .back-later { color: #555; }

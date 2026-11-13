@@ -19,7 +19,7 @@ Boris set the rule or Claude proposed it and Boris accepted it.
 | 11 | Jobs | Jobs are short, generic verb phrases shared across cards, chosen to answer "what else could fill this slot?" Don't merge jobs whose fillers can't stand in for each other. | Valve: controls flow; Transistor: controls the current (kept apart) | Boris |
 | 12 | Jobs | One job for one function: merge wordings that mean the same thing. | holds the gas, holds fuel, holds the food → holds the contents | Boris |
 | 13 | Parts | The part name is optional. Show it only when it says something the job and the filler card don't. | bends light: Glass (objective) | Boris |
-| 14 | Time | A filler newer than the card is fine. It shows as added later; links carry no dates. (Under review: see below.) | Wing ← Aluminum (added later) | Boris |
+| 14 | Time | A filler newer than the card: if an older card did the same job first, the older card fills the slot and the newer one shows after it as "later". Otherwise the newer card stays, marked "added later". A part used long before the deck's card explained it is the card's key part with no card. | Steamship ← Waterwheels (paddle wheels), later Screw propeller; Wing ← Aluminum (added later); Gunpowder ← Saltpeter (no card) | Boris |
 | 15 | Scope | Assemblies only for now. Natural phenomena, "revealed by" and "version of" links are out of scope. | | Boris |
 | 16 | Slots | A part with no card gets a slot only if 3 or more inventions would use it, which earns it a supporting card. Otherwise leave it off. Exception: a card's own key part, the new thing it brought, stays even unshared. Links to cards that already exist don't need this. | Escapement (5 clocks and watches) ✓; Wick ✗; Watt's separate condenser ✓ (key part) | Boris |
 | 17 | Jobs | Jobs come from the shared list. Add a new one only if 3 or more cards or slots would use it; otherwise use the nearest broader job. Own jobs are broad. | makes textiles, not "spins thread" or "throws the shuttle" | Boris |
@@ -27,23 +27,12 @@ Boris set the rule or Claude proposed it and Boris accepted it.
 | 19 | Scope | Left out by name: the Great Wall, a specific named wonder rather than a technology. Ordinary structures stay. Torsion balance is also left out, as a phenomenon. | Great Wall ✗; Stone monuments, Architectural arches ✓ | Boris |
 | 20 | Time | Dates come from Asimov's chronology and stay fixed. A part newer than its card is handled in the list, never by changing a date. Supporting cards keep the date they were given. | Bicycle (1839) ← Rubber tire (1887): fix the slot, not the years | Boris |
 
-## Under review: parts newer than the card (rule 14)
+## Parts newer than the card (rule 14, settled)
 
-The proposals are on the sheet's Date check tab.
-
-52 slots in 36 cards have a filler dated after the card (for example, Bicycle 1839 ← Rubber tire 1887).
-Rule 14 shows these as "added later". The idea being considered instead: fill the slot with what the
-first version actually used, an older card doing the same job, and show the newer card as a later swap.
-
-- About 22 of the 52 already have an older card in the deck that does the same job (Steamship's
-  screw propeller → Waterwheels as paddle wheels; insulated wire → Copper; Maxim gun's cordite → Gunpowder).
-- No new card for the five pre-1869 ball bearings (Turbines, Bicycle, Electric motors, Electric
-  generators, Gyroscope): a Plain bearing card was too obscure and would need a made-up date. They
-  stay "added later".
-- A few are deck cards dated by a discovery, not first use (Paper ← Cellulose, Fermentation ← Yeast
-  cells, Gunpowder ← Sodium and potassium).
-- Dates don't change (rule 20), so supporting cards newer than their card stay "added later".
-- The rest had no earlier part doing that job (the radio's triode, the first car's self-starter).
+The Date check tab on the sheet went through the 52 slots whose filler was newer than its card.
+19 now have an older card with "later" for the newer one (a slot's `later` list in
+`assemblies.json`), 3 became key parts with no card (saltpeter, yeast, plant fiber), 1 was dropped
+(the Couched lance's Pike), and 28 stay "added later" because nothing older with a card did the job.
 
 ## The review workflow
 

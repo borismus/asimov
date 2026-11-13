@@ -10,8 +10,9 @@ It reuses the universe view, with these changes:
     slot's job and the card that does it ("bends light: Glass"), plus the part's name when it adds
     something ("(objective)"). *Inside* is what's physically in it, parts and materials alike; *runs on*
     is what it uses up while working (fuel, propellant, film); *made with* is used to make it but isn't
-    in the result. A filler newer than the invention is marked *added later*; an empty slot is marked
-    *no card yet*.
+    in the result. When a newer card later took over the job, it follows the first one ("absorbs
+    shocks: Carriage springs, later Rubber tire"). A filler newer than the invention with nothing older
+    before it is marked *added later*; a key part with no card is marked *its key part, no card*.
   - **Natural phenomena**: the phenomena the card uses at its own level, each linking to its card.
     One explained after the invention existed is marked *explained later*.
   - **Used in**: the inventions where this card fills a slot, and the job it does there.
@@ -56,7 +57,7 @@ images into `site/`, which is gitignored.
 
 Every invention in Asimov's deck has a list: 434 cards with lists, including 31 supporting cards
 that aren't in the deck (Valve, Boiler, Escapement, Ink, Punched cards…). With the materials they
-reference, the board shows 494 cards. The rules the lists follow are in `RULES.md` (copied from the sheet's Rules tab): a
+reference, the board shows 493 cards. The rules the lists follow are in `RULES.md` (copied from the sheet's Rules tab): a
 part with no card is listed only if 3 or more inventions share it (then it gets a card), or if it is
 the card's own key part, the new thing it brought. Left out: the Great Wall (a named wonder) and
 the Torsion balance (a phenomenon).

@@ -172,10 +172,13 @@
     {
      "part": "magnet",
      "job": "makes a magnetic field",
-     "fill": "rare-earth-magnet",
+     "fill": "electromagnets",
      "gap": null,
      "kind": "inside",
-     "note": "Early speakers used electromagnets or steel magnets."
+     "note": null,
+     "later": [
+      "rare-earth-magnet"
+     ]
     },
     {
      "part": "coil",
@@ -666,12 +669,15 @@
      "note": null
     },
     {
-     "part": "tires",
+     "part": "solid tires",
      "job": "absorbs shocks",
-     "fill": "rubber-tire",
+     "fill": "vulcanization-of-rubber",
      "gap": null,
      "kind": "inside",
-     "note": null
+     "note": null,
+     "later": [
+      "rubber-tire"
+     ]
     },
     {
      "part": "suspension",
@@ -806,12 +812,15 @@
      "note": null
     },
     {
-     "part": "thrust",
+     "part": "paddle wheels",
      "job": "provides thrust",
-     "fill": "screw-propeller",
+     "fill": "water-wheel",
      "gap": null,
      "kind": "inside",
-     "note": null
+     "note": null,
+     "later": [
+      "screw-propeller"
+     ]
     },
     {
      "part": "backup thrust",
@@ -1121,10 +1130,13 @@
     {
      "part": "coil",
      "job": "carries current",
-     "fill": "insulated-wire",
+     "fill": "copper",
      "gap": null,
      "kind": "inside",
-     "note": null
+     "note": null,
+     "later": [
+      "insulated-wire"
+     ]
     },
     {
      "part": "power",
@@ -1142,10 +1154,13 @@
     {
      "part": "coil",
      "job": "carries current",
-     "fill": "insulated-wire",
+     "fill": "copper",
      "gap": null,
      "kind": "inside",
-     "note": null
+     "note": null,
+     "later": [
+      "insulated-wire"
+     ]
     },
     {
      "part": "power",
@@ -1179,10 +1194,13 @@
     {
      "part": "windings",
      "job": "carries current",
-     "fill": "insulated-wire",
+     "fill": "copper",
      "gap": null,
      "kind": "inside",
-     "note": null
+     "note": null,
+     "later": [
+      "insulated-wire"
+     ]
     },
     {
      "part": "bearings",
@@ -1216,10 +1234,13 @@
     {
      "part": "windings",
      "job": "carries current",
-     "fill": "insulated-wire",
+     "fill": "copper",
      "gap": null,
      "kind": "inside",
-     "note": null
+     "note": null,
+     "later": [
+      "insulated-wire"
+     ]
     },
     {
      "part": "bearings",
@@ -1601,10 +1622,13 @@
     {
      "part": "iodine",
      "job": "supplies a nutrient",
-     "fill": "essential-minerals",
+     "fill": "iodine",
      "gap": null,
      "kind": "inside",
-     "note": "prevents goiter"
+     "note": "prevents goiter",
+     "later": [
+      "essential-minerals"
+     ]
     },
     {
      "part": "biotin",
@@ -1844,12 +1868,15 @@
      "note": null
     },
     {
-     "part": "filament",
+     "part": "",
      "job": "makes light",
-     "fill": "tungsten-wire",
-     "gap": null,
+     "fill": null,
+     "gap": "Carbon filament",
      "kind": "inside",
-     "note": "Edison's filament was carbon; tungsten came later."
+     "note": null,
+     "later": [
+      "tungsten-wire"
+     ]
     },
     {
      "part": "vacuum",
@@ -2312,15 +2339,10 @@
      "fill": "animal-dom",
      "gap": null,
      "kind": "inside",
-     "note": null
-    },
-    {
-     "part": "harness",
-     "job": "provides power",
-     "fill": "horse-collar",
-     "gap": null,
-     "kind": "inside",
-     "note": null
+     "note": null,
+     "later": [
+      "horse-collar"
+     ]
     },
     {
      "part": "wheels",
@@ -2405,10 +2427,13 @@
     {
      "part": "fillings",
      "job": "forms the body",
-     "fill": "silver-fillings",
+     "fill": "lead",
      "gap": null,
      "kind": "made with",
-     "note": null
+     "note": null,
+     "later": [
+      "silver-fillings"
+     ]
     },
     {
      "part": "anesthetic",
@@ -3593,10 +3618,13 @@
     {
      "part": "",
      "job": "stores electricity",
-     "fill": "lithium-battery",
+     "fill": "dry-cell",
      "gap": null,
      "kind": "inside",
-     "note": null
+     "note": null,
+     "later": [
+      "lithium-battery"
+     ]
     },
     {
      "part": "oscillator",
@@ -3666,25 +3694,21 @@
    "job": "grows food",
    "slots": [
     {
-     "part": "tilling",
+     "part": "tilling and harvest",
      "job": "cuts",
-     "fill": "plow",
+     "fill": "stone-tool",
      "gap": null,
      "kind": "made with",
-     "note": null
+     "note": null,
+     "later": [
+      "plow",
+      "sickle"
+     ]
     },
     {
      "part": "watering",
      "job": "supplies water",
      "fill": "irrigation",
-     "gap": null,
-     "kind": "made with",
-     "note": null
-    },
-    {
-     "part": "harvest",
-     "job": "cuts",
-     "fill": "sickle",
      "gap": null,
      "kind": "made with",
      "note": null
@@ -3819,15 +3843,10 @@
      "fill": "oil-lamp",
      "gap": null,
      "kind": "inside",
-     "note": null
-    },
-    {
-     "part": "",
-     "job": "makes light",
-     "fill": "electric-light",
-     "gap": null,
-     "kind": "inside",
-     "note": null
+     "note": null,
+     "later": [
+      "electric-light"
+     ]
     }
    ]
   },
@@ -3876,8 +3895,8 @@
     {
      "part": "pulp",
      "job": "forms the body",
-     "fill": "cellulose",
-     "gap": null,
+     "fill": null,
+     "gap": "Plant fiber",
      "kind": "inside",
      "note": null
     }
@@ -4279,8 +4298,8 @@
     {
      "part": "",
      "job": "prepares food",
-     "fill": "yeast-cells",
-     "gap": null,
+     "fill": null,
+     "gap": "Yeast",
      "kind": "made with",
      "note": null
     }
@@ -4799,12 +4818,15 @@
    "job": "stores chemical energy",
    "slots": [
     {
-     "part": "crude oil",
+     "part": "coal and shale",
      "job": "stores chemical energy",
-     "fill": "oil-wells",
+     "fill": "coal-mining",
      "gap": null,
      "kind": "made with",
-     "note": "First made from coal and shale; oil wells came later."
+     "note": null,
+     "later": [
+      "oil-wells"
+     ]
     },
     {
      "part": "refining",
@@ -6296,10 +6318,13 @@
     {
      "part": "",
      "job": "stores electricity",
-     "fill": "lithium-battery",
+     "fill": "dry-cell",
      "gap": null,
      "kind": "inside",
-     "note": "Lithium cells from 1972; the first ones used mercury cells."
+     "note": null,
+     "later": [
+      "lithium-battery"
+     ]
     },
     {
      "part": "leads",
@@ -7094,14 +7119,6 @@
      "gap": null,
      "kind": "made with",
      "note": null
-    },
-    {
-     "part": "lance",
-     "job": "impales",
-     "fill": "pike",
-     "gap": null,
-     "kind": "made with",
-     "note": null
     }
    ]
   },
@@ -7130,10 +7147,10 @@
    "job": "explodes",
    "slots": [
     {
-     "part": "saltpeter",
+     "part": "",
      "job": "supplies oxygen",
-     "fill": "sodium-and-potassium",
-     "gap": null,
+     "fill": null,
+     "gap": "Saltpeter",
      "kind": "inside",
      "note": "Saltpeter is potassium nitrate."
     },
@@ -7369,10 +7386,13 @@
     {
      "part": "",
      "job": "stores chemical energy",
-     "fill": "cordite",
+     "fill": "gunpowder",
      "gap": null,
      "kind": "runs on",
-     "note": null
+     "note": null,
+     "later": [
+      "cordite"
+     ]
     },
     {
      "part": "recoil spring",
@@ -7469,10 +7489,13 @@
     {
      "part": "coil",
      "job": "carries current",
-     "fill": "insulated-wire",
+     "fill": "copper",
      "gap": null,
      "kind": "inside",
-     "note": null
+     "note": null,
+     "later": [
+      "insulated-wire"
+     ]
     },
     {
      "part": "needle",
@@ -7490,10 +7513,13 @@
     {
      "part": "lens",
      "job": "bends light",
-     "fill": "achromatic-lens",
+     "fill": "glass",
      "gap": null,
      "kind": "inside",
-     "note": null
+     "note": null,
+     "later": [
+      "achromatic-lens"
+     ]
     }
    ]
   },
@@ -7645,6 +7671,18 @@
   ],
   "printing-press": [
    "Movable type"
+  ],
+  "electric-light": [
+   "Carbon filament"
+  ],
+  "gunpowder": [
+   "Saltpeter"
+  ],
+  "fermentation": [
+   "Yeast"
+  ],
+  "paper": [
+   "Plant fiber"
   ]
  },
  "excluded": {

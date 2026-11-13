@@ -293,12 +293,12 @@ CARDS = {
       ("semiconductor", "controls the current", "germanium", None, I),
       ("leads", "carries current", None, "Contact wires", P),
   ], ["fermi-dirac-statistics"]),
-  "integrated-circuits": ("computes and switches", [
+  "integrated-circuits": ("computes", [
       ("switches", "controls the current", "transistor", None, P),
       ("substrate", "holds the circuit", "silicon", None, I),
   ], ["fermi-dirac-statistics"]),
-  "microchips": ("computes and switches", [
-      ("circuit", "computes and switches", "integrated-circuits", None, P),
+  "microchips": ("computes", [
+      ("circuit", "computes", "integrated-circuits", None, P),
       ("clock", "keeps time", None, "Quartz oscillator", P),
   ], ["binary-system", "symbolic-logic"]),
   "photovoltaic-cells": ("makes electricity", [
@@ -329,7 +329,7 @@ CARDS = {
       ("satellites", "sends and receives signals", "communications-satellites", None, P),
       ("clocks", "keeps time", "atomic-clock", None, P),
       ("signal", "sends and receives signals", "radio", None, P),
-      ("receiver", "computes and switches", "microchips", None, P),
+      ("receiver", "computes", "microchips", None, P),
   ], ["general-relativity", "special-relativity", "gravitational-red-shift", "geometry", "radio-waves"]),
 
   # ---- nutrition (a recipe: ingredients and a step) ----

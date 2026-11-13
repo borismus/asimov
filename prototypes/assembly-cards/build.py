@@ -270,7 +270,18 @@ function onCardTap(event, d) {
   event.preventDefault();
   event.stopPropagation();
   if (state.pinnedId === d.id) toggleFlip(d);
-  else pin(d);
+  else {
+    pin(d);
+    // A pinned card is drawn at a fixed size, wider than a phone's view at most zooms:
+    // slide the view so the whole card shows, without changing the zoom.
+    if (window.matchMedia("(max-width: 720px)").matches) {
+      const k = state.transform ? state.transform.k : 1;
+      const top = state.headerHeight || 0;
+      const tx = window.innerWidth / 2 - d.x * k;
+      const ty = top + (window.innerHeight - top) / 2 - d.y * k;
+      svg.transition().duration(350).call(zoom.transform, d3.zoomIdentity.translate(tx, ty).scale(k));
+    }
+  }
   // Tapping a card that matches the search makes it the active result.
   if (isActiveQuery() && searchHelper(d, state.searchQuery.trim())) {
     activeSearchId = d.id;
@@ -456,6 +467,54 @@ function renderSearchOffscreenIndicators() {"""),
 ])
 
 open(f'{S}/card.css', 'a').write(open(os.path.join(HERE, 'card_back.css')).read())
+open(f'{S}/universe.css', 'a').write(open(os.path.join(HERE, 'phone.css')).read())
+
+# Phones: a close button for search, a sheet of results that folds away after you pick one,
+# a closer first view, and pinned cards centred below the header instead of under it.
+patch(f'{S}/universe.js', [
+    ('''function closeSearch() {
+  state.searchQuery = "";''',
+     '''const isPhone = () => window.matchMedia("(max-width: 720px)").matches;
+function closeSearch() {
+  document.body.classList.remove("search-collapsed");
+  state.searchQuery = "";'''),
+    ('''function openSearch() {
+  document.body.classList.add("searching");''',
+     '''function openSearch() {
+  document.body.classList.remove("search-collapsed");
+  document.body.classList.add("searching");'''),
+    ('''searchInput.addEventListener("search", () => {
+  if (!searchInput.value) closeSearch();
+});''',
+     '''searchInput.addEventListener("search", () => {
+  if (!searchInput.value) closeSearch();
+});
+document.getElementById("search-close")?.addEventListener("click", (e) => {
+  e.stopPropagation();
+  closeSearch();
+});
+// On a phone, picking a result folds the list away so the card shows; tapping the
+// box brings it back.
+searchResultsContainer.addEventListener("click", (e) => {
+  if (!isPhone() || !e.target.closest("button")) return;
+  document.body.classList.add("search-collapsed");
+  searchInput.blur();
+}, true);  // capture: each result's own handler stops the click from bubbling
+searchInput.addEventListener("focus", () => document.body.classList.remove("search-collapsed"));
+searchInput.addEventListener("click", () => document.body.classList.remove("search-collapsed"));'''),
+    ('''  const k = 1.4;
+  const leftMargin = 40;''',
+     '''  const k = window.matchMedia("(max-width: 720px)").matches ? 0.7 : 1.4;
+  const leftMargin = 40;'''),
+    ('''  const k = 1.5;
+  const tx = window.innerWidth / 2 - node.x * k;
+  const ty = window.innerHeight / 2 - node.y * k;''',
+     '''  const k = 1.5;
+  const tx = window.innerWidth / 2 - node.x * k;
+  // Centre in the space below the header, so a tall card isn't tucked under it.
+  const top = state.headerHeight || 0;
+  const ty = top + (window.innerHeight - top) / 2 - node.y * k;'''),
+])
 
 for f in ['mobile.js', 'mobile.css', 'main.js', 'timeline.js']:
     os.remove(f'{S}/{f}')
@@ -475,6 +534,11 @@ assert html.count(search_btn) == 1
 html = html.replace(search_btn, '<button id="action-jobs" class="site-action" type="button" title="Jobs to be done" aria-label="Jobs to be done">\n          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>\n        </button>\n        ' + search_btn)
 html = html.replace('<h1 class="site-title">Invention Cards</h1>', '<h1 class="site-title">Assembly Cards</h1>')
 html = re.sub(r'<p class="site-subtitle">.*?</p>', '<p class="site-subtitle">Prototype. Tap a card to pin it and light up its links; tap it again to flip it. The back lists its parts. Tap a bullet to jump to that card, or a job to see every card that does it.</p>', html, count=1)
+html = html.replace('</h1>', '</h1>\n        <p class="site-subtitle-short">Tap a card to pin it, tap again to flip it.</p>', 1)
+search_in = '<input id="search-input"'
+assert html.count(search_in) == 1
+i = html.index(search_in); j = html.index('/>', i) + 2
+html = html[:i] + '<div id="search-bar">' + html[i:j] + '<button id="search-close" type="button" aria-label="Close search" title="Close search">&times;</button></div>' + html[j:]
 open(f'{OUT}/index.html', 'w').write(html)
 
 files = sum(len(f) for _, _, f in os.walk(OUT))

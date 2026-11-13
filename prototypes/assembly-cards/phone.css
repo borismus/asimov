@@ -1,0 +1,115 @@
+
+/* ---- Prototype: search bar with its own close button ------------------------
+   The input and an always-visible x live in #search-bar, which takes over the
+   input's old position. The browser's own clear button only shows while the
+   input has focus, so on a phone it vanished with the keyboard. */
+#search-bar {
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: none;
+}
+body.searching #search-bar { display: block; }
+#search-bar #search-input {
+  position: static;
+  transform: none;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding-right: 40px;
+}
+#search-input::-webkit-search-cancel-button { -webkit-appearance: none; appearance: none; display: none; }
+#search-close {
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.06);
+  color: #444;
+  font: 18px/1 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+#search-close:hover { background: rgba(0, 0, 0, 0.12); }
+
+.site-subtitle-short { display: none; }
+
+/* ---- Prototype: phones ------------------------------------------------------- */
+@media (max-width: 720px) {
+  /* Header: title and buttons on one row, a one-line hint under them. The full
+     instructions stay on wider screens. */
+  .site-header-top {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "title actions" "hint hint";
+    align-items: center;
+    column-gap: 8px;
+    row-gap: 2px;
+    padding: 6px 10px 4px;
+  }
+  .site-titles { display: contents; }
+  .site-title { grid-area: title; font-size: 19px; }
+  .site-subtitle { display: none; }
+  .site-subtitle-short {
+    display: block;
+    grid-area: hint;
+    margin: 0;
+    font-family: "DM Serif Display", "Lora", Georgia, serif;
+    font-style: italic;
+    font-size: 12.5px;
+    line-height: 1.3;
+    color: #6b6b6b;
+  }
+  .site-actions { grid-area: actions; gap: 5px; }
+  .site-action { width: 30px; height: 30px; }
+
+  /* Search: full width, under the notch-safe top edge. 16px text keeps iOS from
+     zooming the page when the box gets focus. */
+  #search-bar { top: 8px; width: calc(100vw - 16px); }
+  #search-bar #search-input {
+    min-width: 0;
+    font-size: 16px;
+    padding: 9px 44px 9px 14px;
+  }
+  #search-close { width: 32px; height: 32px; }
+
+  /* Results: a scrollable sheet under the bar instead of pills spilling over
+     the whole screen. */
+  #search-results {
+    top: 58px;
+    width: calc(100vw - 16px);
+    max-width: none;
+    max-height: 42vh;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    pointer-events: auto;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    padding: 8px;
+    background: rgba(250, 248, 243, 0.97);
+    border-radius: 14px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.18);
+  }
+  /* After you pick a result the sheet folds away so you can see the card; tap
+     the box to bring the list back, or x to end the search. */
+  body.search-collapsed #search-results { display: none !important; }
+
+  /* While a pinned card shows its back, the edge chips for its off-screen
+     links would sit on top of the list; the back links to all of them anyway. */
+  body:has(.pinned-cards .card.flipped) #offscreen-indicators { display: none; }
+
+  #jobs-panel { left: 8px; right: 8px; width: auto; max-width: none; }
+
+  /* Edge chips for off-screen links: smaller, so they cover less of a pinned card. */
+  #offscreen-indicators .offscreen-indicator { padding: 2px 8px; }
+  #offscreen-indicators .offscreen-indicator .label { font-size: 12px; }
+}

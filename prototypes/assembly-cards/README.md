@@ -17,6 +17,8 @@ It reuses the universe view, with these changes:
     One explained after the invention existed is marked *explained later*.
   - **Used in**: the inventions where this card fills a slot, and the job it does there.
   - **Harnessed by**: for phenomenon cards, the inventions that use them.
+- **Search** has its own close button. On a phone the results are a scrollable sheet that folds away
+  once you pick one (tap the box to bring it back), and a tapped card slides fully into view.
 - **Tapping a bullet** pins that card and opens it on its back, so you can drill down the parts tree.
 - **Jobs.** Every card and slot has a job ("provides thrust", "controls flow"). The wrench button lists all
   of them with counts; picking one, or tapping a job on a card's back, lights up every card that

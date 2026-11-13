@@ -37,8 +37,9 @@ first version actually used, an older card doing the same job, and show the newe
 
 - About 22 of the 52 already have an older card in the deck that does the same job (Steamship's
   screw propeller → Waterwheels as paddle wheels; insulated wire → Copper; Maxim gun's cordite → Gunpowder).
-- One new supporting card would cover 5 more: an older plain bearing for "reduces friction"
-  (Turbines, Bicycle, Electric motors, Electric generators, Gyroscope).
+- No new card for the five pre-1869 ball bearings (Turbines, Bicycle, Electric motors, Electric
+  generators, Gyroscope): a Plain bearing card was too obscure and would need a made-up date. They
+  stay "added later".
 - A few are deck cards dated by a discovery, not first use (Paper ← Cellulose, Fermentation ← Yeast
   cells, Gunpowder ← Sodium and potassium).
 - Dates don't change (rule 20), so supporting cards newer than their card stay "added later".

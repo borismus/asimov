@@ -412,7 +412,7 @@
      "job": "stores chemical energy",
      "fill": "gas-lighting",
      "gap": null,
-     "kind": "runs on",
+     "kind": "inside",
      "note": "Lenoir burned coal gas from the gas works."
     }
    ]
@@ -441,7 +441,7 @@
      "job": "stores chemical energy",
      "fill": "gasoline",
      "gap": null,
-     "kind": "runs on",
+     "kind": "inside",
      "note": null
     }
    ]
@@ -470,7 +470,7 @@
      "job": "stores chemical energy",
      "fill": "kerosene",
      "gap": null,
-     "kind": "runs on",
+     "kind": "inside",
      "note": "Diesel's 1897 engine ran on kerosene."
     },
     {
@@ -491,7 +491,7 @@
      "job": "supplies oxygen",
      "fill": "liquid-oxygen",
      "gap": null,
-     "kind": "runs on",
+     "kind": "inside",
      "note": null
     },
     {
@@ -499,7 +499,7 @@
      "job": "stores chemical energy",
      "fill": "gasoline",
      "gap": null,
-     "kind": "runs on",
+     "kind": "inside",
      "note": null
     },
     {
@@ -1441,14 +1441,6 @@
    "job": "sends and receives signals",
    "slots": [
     {
-     "part": "launcher",
-     "job": "provides thrust",
-     "fill": "liquid-fuel-rockets",
-     "gap": null,
-     "kind": "made with",
-     "note": "The rocket puts it in orbit but isn't part of it."
-    },
-    {
      "part": "transmitter",
      "job": "sends and receives signals",
      "fill": "radio",
@@ -1469,14 +1461,6 @@
   "communications-satellites": {
    "job": "sends and receives signals",
    "slots": [
-    {
-     "part": "launcher",
-     "job": "provides thrust",
-     "fill": "liquid-fuel-rockets",
-     "gap": null,
-     "kind": "made with",
-     "note": "The rocket puts it in orbit but isn't part of it."
-    },
     {
      "part": "transponder",
      "job": "sends and receives signals",
@@ -1577,7 +1561,7 @@
      "job": "supplies a nutrient",
      "fill": "irradiation",
      "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": "prevents rickets"
     },
     {
@@ -1736,7 +1720,7 @@
      "job": "stores chemical energy",
      "fill": "hydrogen",
      "gap": null,
-     "kind": "runs on",
+     "kind": "inside",
      "note": null
     },
     {
@@ -1744,7 +1728,7 @@
      "job": "supplies oxygen",
      "fill": "oxygen",
      "gap": null,
-     "kind": "runs on",
+     "kind": "inside",
      "note": null
     },
     {
@@ -1894,14 +1878,6 @@
      "later": [
       "tungsten-wire"
      ]
-    },
-    {
-     "part": "vacuum",
-     "job": "makes a vacuum",
-     "fill": "air-pump",
-     "gap": null,
-     "kind": "made with",
-     "note": "Edison's bulbs were pumped out with a mercury pump."
     }
    ]
   },
@@ -2168,14 +2144,6 @@
      "gap": null,
      "kind": "inside",
      "note": null
-    },
-    {
-     "part": "vacuum",
-     "job": "makes a vacuum",
-     "fill": "air-pump",
-     "gap": null,
-     "kind": "made with",
-     "note": "Geissler also invented the mercury pump he emptied them with."
     }
    ]
   },
@@ -2263,14 +2231,6 @@
      "gap": null,
      "kind": "inside",
      "note": "A block of tungsten that the electrons strike."
-    },
-    {
-     "part": "vacuum",
-     "job": "makes a vacuum",
-     "fill": "air-pump",
-     "gap": null,
-     "kind": "made with",
-     "note": null
     }
    ]
   },
@@ -2321,7 +2281,7 @@
      "job": "stores chemical energy",
      "fill": "animal-dom",
      "gap": null,
-     "kind": "runs on",
+     "kind": "inside",
      "note": "Tallow, rendered animal fat."
     }
    ]
@@ -2454,7 +2414,7 @@
      "job": "forms the body",
      "fill": "lead",
      "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": null,
      "later": [
       "silver-fillings"
@@ -2465,7 +2425,7 @@
      "job": "numbs pain",
      "fill": "anesthesia",
      "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": null
     }
    ]
@@ -2503,7 +2463,7 @@
      "job": "holds the contents",
      "fill": "glass",
      "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": "Appert used glass jars."
     }
    ]
@@ -2516,7 +2476,7 @@
      "job": "records media",
      "fill": "iodine",
      "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": "Silver iodide."
     },
     {
@@ -2524,7 +2484,7 @@
      "job": "records media",
      "fill": "copper",
      "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": "Silver-plated copper."
     },
     {
@@ -2532,7 +2492,7 @@
      "job": "records media",
      "fill": "camera",
      "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": null
     }
    ]
@@ -2598,7 +2558,7 @@
      "job": "stores chemical energy",
      "fill": "gunpowder",
      "gap": null,
-     "kind": "runs on",
+     "kind": "inside",
      "note": null
     },
     {
@@ -2627,7 +2587,7 @@
      "job": "forms the body",
      "fill": "pyroxylin",
      "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": "Chardonnet's silk was denitrated nitrocellulose."
     }
    ]
@@ -2656,7 +2616,7 @@
      "job": "makes marks",
      "fill": "ink",
      "gap": null,
-     "kind": "runs on",
+     "kind": "inside",
      "note": null
     }
    ]
@@ -2735,15 +2695,7 @@
      "job": "records media",
      "fill": "dry-plates",
      "gap": null,
-     "kind": "runs on",
-     "note": null
-    },
-    {
-     "part": "vacuum",
-     "job": "makes a vacuum",
-     "fill": "air-pump",
-     "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": null
     },
     {
@@ -2768,7 +2720,7 @@
      "job": "kills bacteria",
      "fill": "penicillin",
      "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": null
     }
    ]
@@ -2811,14 +2763,6 @@
      "gap": null,
      "kind": "inside",
      "note": "Ivy Mike's casing was natural uranium."
-    },
-    {
-     "part": "calculations",
-     "job": "computes",
-     "fill": "univac",
-     "gap": null,
-     "kind": "made with",
-     "note": null
     }
    ]
   },
@@ -2838,7 +2782,7 @@
      "job": "supplies oxygen",
      "fill": "oxygen",
      "gap": null,
-     "kind": "runs on",
+     "kind": "inside",
      "note": null
     },
     {
@@ -2892,23 +2836,14 @@
      "job": "magnifies",
      "fill": "microscope",
      "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": null
     }
    ]
   },
   "pottery": {
    "job": "holds the contents",
-   "slots": [
-    {
-     "part": "firing",
-     "job": "makes heat",
-     "fill": "fire",
-     "gap": null,
-     "kind": "made with",
-     "note": null
-    }
-   ]
+   "slots": []
   },
   "papyrus": {
    "job": "takes the print",
@@ -2937,16 +2872,7 @@
   },
   "porcelain": {
    "job": "holds the contents",
-   "slots": [
-    {
-     "part": "firing",
-     "job": "makes heat",
-     "fill": "fire",
-     "gap": null,
-     "kind": "made with",
-     "note": null
-    }
-   ]
+   "slots": []
   },
   "block-printing": {
    "job": "prints",
@@ -2956,7 +2882,7 @@
      "job": "takes the print",
      "fill": "paper",
      "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": null
     },
     {
@@ -2964,7 +2890,7 @@
      "job": "makes marks",
      "fill": "ink",
      "gap": null,
-     "kind": "runs on",
+     "kind": "inside",
      "note": null
     }
    ]
@@ -3132,7 +3058,7 @@
      "job": "stores chemical energy",
      "fill": "coal-mining",
      "gap": null,
-     "kind": "runs on",
+     "kind": "inside",
      "note": null
     },
     {
@@ -3368,7 +3294,7 @@
      "job": "makes marks",
      "fill": "ink",
      "gap": null,
-     "kind": "runs on",
+     "kind": "inside",
      "note": null
     }
    ]
@@ -3423,7 +3349,7 @@
      "job": "records media",
      "fill": "celluloid",
      "gap": null,
-     "kind": "runs on",
+     "kind": "inside",
      "note": "Kodak's first film was paper-backed; celluloid followed."
     },
     {
@@ -3452,7 +3378,7 @@
      "job": "records media",
      "fill": "celluloid",
      "gap": null,
-     "kind": "runs on",
+     "kind": "inside",
      "note": null
     },
     {
@@ -3513,7 +3439,7 @@
      "job": "manufactures",
      "fill": "interchangeable-parts",
      "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": null
     }
    ]
@@ -3555,7 +3481,7 @@
      "job": "makes marks",
      "fill": "ink",
      "gap": null,
-     "kind": "runs on",
+     "kind": "inside",
      "note": null
     }
    ]
@@ -3610,7 +3536,7 @@
      "job": "provides thrust",
      "fill": "freon",
      "gap": null,
-     "kind": "runs on",
+     "kind": "inside",
      "note": null
     },
     {
@@ -3739,7 +3665,7 @@
      "job": "stores chemical energy",
      "fill": "animal-dom",
      "gap": null,
-     "kind": "runs on",
+     "kind": "inside",
      "note": "Animal fat, or olive oil."
     }
    ]
@@ -3752,7 +3678,7 @@
      "job": "cuts",
      "fill": "stone-tool",
      "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": null,
      "later": [
       "plow",
@@ -3764,7 +3690,7 @@
      "job": "supplies water",
      "fill": "irrigation",
      "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": null
     }
    ]
@@ -3800,16 +3726,7 @@
   },
   "copper": {
    "job": "forms the body",
-   "slots": [
-    {
-     "part": "smelting",
-     "job": "makes heat",
-     "fill": "fire",
-     "gap": null,
-     "kind": "made with",
-     "note": null
-    }
-   ]
+   "slots": []
   },
   "bronze": {
    "job": "forms the body",
@@ -3860,29 +3777,11 @@
   },
   "glass": {
    "job": "forms the body",
-   "slots": [
-    {
-     "part": "melting",
-     "job": "makes heat",
-     "fill": "fire",
-     "gap": null,
-     "kind": "made with",
-     "note": null
-    }
-   ]
+   "slots": []
   },
   "steel": {
    "job": "forms the body",
-   "slots": [
-    {
-     "part": "smelting",
-     "job": "makes heat",
-     "fill": "fire",
-     "gap": null,
-     "kind": "made with",
-     "note": null
-    }
-   ]
+   "slots": []
   },
   "paved-road": {
    "job": "carries traffic",
@@ -3913,7 +3812,7 @@
      "job": "forms the body",
      "fill": "glass",
      "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": null
     }
    ]
@@ -4010,16 +3909,7 @@
   },
   "coal-mining": {
    "job": "stores chemical energy",
-   "slots": [
-    {
-     "part": "drainage",
-     "job": "pumps water",
-     "fill": "newcomen-steam-engine",
-     "gap": null,
-     "kind": "made with",
-     "note": null
-    }
-   ]
+   "slots": []
   },
   "rudder": {
    "job": "steers",
@@ -4046,7 +3936,7 @@
      "job": "takes the print",
      "fill": "paper",
      "gap": null,
-     "kind": "runs on",
+     "kind": "inside",
      "note": null
     },
     {
@@ -4054,7 +3944,7 @@
      "job": "makes marks",
      "fill": "ink",
      "gap": null,
-     "kind": "runs on",
+     "kind": "inside",
      "note": null
     },
     {
@@ -4136,16 +4026,7 @@
   },
   "portland-cement": {
    "job": "forms the body",
-   "slots": [
-    {
-     "part": "kiln",
-     "job": "makes heat",
-     "fill": "fire",
-     "gap": null,
-     "kind": "made with",
-     "note": null
-    }
-   ]
+   "slots": []
   },
   "steam-locomotive-improved": {
    "job": "transports people or goods",
@@ -4197,7 +4078,7 @@
      "job": "records media",
      "fill": "paper",
      "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": null
     },
     {
@@ -4205,7 +4086,7 @@
      "job": "records media",
      "fill": "camera",
      "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": null
     }
    ]
@@ -4270,7 +4151,7 @@
      "job": "forms the body",
      "fill": "lead",
      "gap": null,
-     "kind": "runs on",
+     "kind": "inside",
      "note": null
     }
    ]
@@ -4367,7 +4248,7 @@
      "job": "prepares food",
      "fill": null,
      "gap": "Yeast",
-     "kind": "made with",
+     "kind": "inside",
      "note": null
     }
    ]
@@ -4397,23 +4278,14 @@
      "job": "reacts",
      "fill": "sulfur",
      "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": null
     }
    ]
   },
   "distillation": {
    "job": "separates mixtures",
-   "slots": [
-    {
-     "part": "heat",
-     "job": "makes heat",
-     "fill": "fire",
-     "gap": null,
-     "kind": "made with",
-     "note": null
-    }
-   ]
+   "slots": []
   },
   "concave-lenses": {
    "job": "bends light",
@@ -4436,7 +4308,7 @@
      "job": "cuts",
      "fill": "steel",
      "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": null
     }
    ]
@@ -4625,16 +4497,7 @@
   },
   "coke-iron": {
    "job": "forms the body",
-   "slots": [
-    {
-     "part": "",
-     "job": "stores chemical energy",
-     "fill": "coal-mining",
-     "gap": null,
-     "kind": "made with",
-     "note": null
-    }
-   ]
+   "slots": []
   },
   "smallpox-vaccine": {
    "job": "prevents disease",
@@ -4774,7 +4637,7 @@
      "job": "reacts",
      "fill": "sulfur",
      "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": null
     }
    ]
@@ -4816,7 +4679,7 @@
      "job": "numbs pain",
      "fill": "nitrous-oxide",
      "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": null
     },
     {
@@ -4824,23 +4687,14 @@
      "job": "numbs pain",
      "fill": "chloroform",
      "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": null
     }
    ]
   },
   "nitroglycerine": {
    "job": "explodes",
-   "slots": [
-    {
-     "part": "nitrating acid",
-     "job": "reacts",
-     "fill": "sulfuric-acid",
-     "gap": null,
-     "kind": "made with",
-     "note": null
-    }
-   ]
+   "slots": []
   },
   "silver-fillings": {
    "job": "treats illness",
@@ -4863,7 +4717,7 @@
      "job": "numbs pain",
      "fill": "chloroform",
      "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": null
     }
    ]
@@ -4889,19 +4743,11 @@
      "job": "stores chemical energy",
      "fill": "coal-mining",
      "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": null,
      "later": [
       "oil-wells"
      ]
-    },
-    {
-     "part": "refining",
-     "job": "separates mixtures",
-     "fill": "distillation",
-     "gap": null,
-     "kind": "made with",
-     "note": null
     }
    ]
   },
@@ -4928,14 +4774,6 @@
      "gap": null,
      "kind": "inside",
      "note": null
-    },
-    {
-     "part": "nitrating acid",
-     "job": "reacts",
-     "fill": "sulfuric-acid",
-     "gap": null,
-     "kind": "made with",
-     "note": null
     }
    ]
   },
@@ -4947,7 +4785,7 @@
      "job": "forms the body",
      "fill": "coke-iron",
      "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": null
     }
    ]
@@ -4960,7 +4798,7 @@
      "job": "reacts",
      "fill": "coal-mining",
      "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": "Perkin's mauve came from coal tar."
     }
    ]
@@ -4971,16 +4809,7 @@
   },
   "oil-wells": {
    "job": "stores chemical energy",
-   "slots": [
-    {
-     "part": "drill power",
-     "job": "provides power",
-     "fill": "steam-engine",
-     "gap": null,
-     "kind": "made with",
-     "note": "Drake drove the drill with a steam engine."
-    }
-   ]
+   "slots": []
   },
   "barbiturates": {
    "job": "treats illness",
@@ -5003,7 +4832,7 @@
      "job": "reacts",
      "fill": "coal-mining",
      "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": null
     }
    ]
@@ -5078,14 +4907,6 @@
      "gap": null,
      "kind": "inside",
      "note": null
-    },
-    {
-     "part": "vacuum",
-     "job": "makes a vacuum",
-     "fill": "air-pump",
-     "gap": null,
-     "kind": "made with",
-     "note": null
     }
    ]
   },
@@ -5101,7 +4922,7 @@
      "job": "reacts",
      "fill": "coal-mining",
      "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": null
     }
    ]
@@ -5173,7 +4994,7 @@
      "job": "colors",
      "fill": "synthetic-dyes",
      "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": "Aniline dyes."
     }
    ]
@@ -5184,16 +5005,7 @@
   },
   "aluminum-process": {
    "job": "forms the body",
-   "slots": [
-    {
-     "part": "",
-     "job": "makes electricity",
-     "fill": "electric-generators",
-     "gap": null,
-     "kind": "made with",
-     "note": "Dynamos made the electrolysis practical."
-    }
-   ]
+   "slots": []
   },
   "surgical-gloves": {
    "job": "protects",
@@ -5216,7 +5028,7 @@
      "job": "treats illness",
      "fill": "horse",
      "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": "Raised in horses."
     }
    ]
@@ -5251,14 +5063,6 @@
      "fill": "mirror",
      "gap": null,
      "kind": "inside",
-     "note": null
-    },
-    {
-     "part": "vacuum",
-     "job": "makes a vacuum",
-     "fill": "air-pump",
-     "gap": null,
-     "kind": "made with",
      "note": null
     }
    ]
@@ -5351,7 +5155,7 @@
      "job": "reacts",
      "fill": "hydrogen",
      "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": null
     },
     {
@@ -5359,7 +5163,7 @@
      "job": "reacts",
      "fill": "nitrogen",
      "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": null
     }
    ]
@@ -5389,7 +5193,7 @@
      "job": "reacts",
      "fill": "coal-mining",
      "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": null
     }
    ]
@@ -5402,7 +5206,7 @@
      "job": "reacts",
      "fill": "hydrogen",
      "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": null
     },
     {
@@ -5410,7 +5214,7 @@
      "job": "stores chemical energy",
      "fill": "coal-mining",
      "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": null
     }
    ]
@@ -5431,7 +5235,7 @@
      "job": "records media",
      "fill": "dry-plates",
      "gap": null,
-     "kind": "runs on",
+     "kind": "inside",
      "note": "Aston recorded the spectra on photographic plates."
     }
    ]
@@ -5654,7 +5458,7 @@
      "job": "records media",
      "fill": "dry-plates",
      "gap": null,
-     "kind": "runs on",
+     "kind": "inside",
      "note": null
     },
     {
@@ -5741,7 +5545,7 @@
      "job": "supplies oxygen",
      "fill": "oxygen",
      "gap": null,
-     "kind": "runs on",
+     "kind": "inside",
      "note": null
     }
    ]
@@ -5782,16 +5586,7 @@
   },
   "yellow-fever-vaccine": {
    "job": "prevents disease",
-   "slots": [
-    {
-     "part": "",
-     "job": "grows cultures",
-     "fill": "virus-culture",
-     "gap": null,
-     "kind": "made with",
-     "note": null
-    }
-   ]
+   "slots": []
   },
   "electrophoresis": {
    "job": "separates mixtures",
@@ -5880,7 +5675,7 @@
      "job": "makes x-rays",
      "fill": "coolidge-tube",
      "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": null
     }
    ]
@@ -5893,7 +5688,7 @@
      "job": "stores nuclear energy",
      "fill": "uranium",
      "gap": null,
-     "kind": "runs on",
+     "kind": "inside",
      "note": null
     },
     {
@@ -5922,7 +5717,7 @@
      "job": "supplies oxygen",
      "fill": "oxygen",
      "gap": null,
-     "kind": "runs on",
+     "kind": "inside",
      "note": null
     }
    ]
@@ -5956,7 +5751,7 @@
      "job": "separates mixtures",
      "fill": "paper",
      "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": null
     }
    ]
@@ -6024,7 +5819,7 @@
      "job": "makes rain",
      "fill": "dry-ice",
      "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": null
     },
     {
@@ -6032,7 +5827,7 @@
      "job": "makes rain",
      "fill": "iodine",
      "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": "Silver iodide."
     }
    ]
@@ -6108,7 +5903,7 @@
      "job": "records media",
      "fill": "dry-plates",
      "gap": null,
-     "kind": "runs on",
+     "kind": "inside",
      "note": null
     }
    ]
@@ -6142,7 +5937,7 @@
      "job": "kills bacteria",
      "fill": "penicillin-practical",
      "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": null
     }
    ]
@@ -6159,7 +5954,7 @@
      "job": "stores nuclear energy",
      "fill": "neptunium-and-plutonium",
      "gap": null,
-     "kind": "runs on",
+     "kind": "inside",
      "note": null
     },
     {
@@ -6167,7 +5962,7 @@
      "job": "stores nuclear energy",
      "fill": "uranium",
      "gap": null,
-     "kind": "runs on",
+     "kind": "inside",
      "note": null
     },
     {
@@ -6196,7 +5991,7 @@
      "job": "stores nuclear energy",
      "fill": "deuterium",
      "gap": null,
-     "kind": "runs on",
+     "kind": "inside",
      "note": null
     }
    ]
@@ -6213,7 +6008,7 @@
      "job": "supplies a nutrient",
      "fill": "fluorine",
      "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": null
     }
    ]
@@ -6226,7 +6021,7 @@
      "job": "detects radiation",
      "fill": "radioactive-tracers",
      "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": null
     }
    ]
@@ -6374,24 +6169,7 @@
   },
   "salk-vaccine": {
    "job": "prevents disease",
-   "slots": [
-    {
-     "part": "",
-     "job": "grows cultures",
-     "fill": "virus-culture",
-     "gap": null,
-     "kind": "made with",
-     "note": null
-    },
-    {
-     "part": "cells",
-     "job": "grows cultures",
-     "fill": "tissue-culture",
-     "gap": null,
-     "kind": "made with",
-     "note": null
-    }
-   ]
+   "slots": []
   },
   "kidney-transplant": {
    "job": "treats illness",
@@ -6401,7 +6179,7 @@
      "job": "treats illness",
      "fill": "artificial-kidneys",
      "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": null
     }
    ]
@@ -6482,16 +6260,7 @@
   },
   "sabin-vaccine": {
    "job": "prevents disease",
-   "slots": [
-    {
-     "part": "",
-     "job": "grows cultures",
-     "fill": "virus-culture",
-     "gap": null,
-     "kind": "made with",
-     "note": null
-    }
-   ]
+   "slots": []
   },
   "laser": {
    "job": "makes light",
@@ -6530,7 +6299,7 @@
      "job": "makes light",
      "fill": "laser",
      "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": null
     }
    ]
@@ -6543,7 +6312,7 @@
      "job": "pumps blood",
      "fill": "heart-lung-machine",
      "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": null
     }
    ]
@@ -6569,7 +6338,7 @@
      "job": "pumps blood",
      "fill": "heart-lung-machine",
      "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": null
     }
    ]
@@ -6663,14 +6432,6 @@
      "gap": null,
      "kind": "inside",
      "note": null
-    },
-    {
-     "part": "",
-     "job": "provides thrust",
-     "fill": "liquid-fuel-rockets",
-     "gap": null,
-     "kind": "made with",
-     "note": null
     }
    ]
   },
@@ -6736,7 +6497,7 @@
      "job": "builds molecules",
      "fill": "recombinant-dna",
      "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": null
     }
    ]
@@ -6778,7 +6539,7 @@
      "job": "builds molecules",
      "fill": "gene-synthesis",
      "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": null
     }
    ]
@@ -6791,7 +6552,7 @@
      "job": "treats illness",
      "fill": "cardiac-catheter",
      "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": null
     }
    ]
@@ -6804,7 +6565,7 @@
      "job": "magnifies",
      "fill": "microscope",
      "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": null
     }
    ]
@@ -6830,7 +6591,7 @@
      "job": "builds molecules",
      "fill": "recombinant-dna",
      "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": null
     }
    ]
@@ -6859,7 +6620,7 @@
      "job": "records media",
      "fill": "dry-plates",
      "gap": null,
-     "kind": "runs on",
+     "kind": "inside",
      "note": null
     }
    ]
@@ -6927,7 +6688,7 @@
      "job": "records media",
      "fill": "dry-plates",
      "gap": null,
-     "kind": "runs on",
+     "kind": "inside",
      "note": null
     }
    ]
@@ -7000,14 +6761,6 @@
      "gap": null,
      "kind": "inside",
      "note": null
-    },
-    {
-     "part": "",
-     "job": "provides thrust",
-     "fill": "liquid-fuel-rockets",
-     "gap": null,
-     "kind": "made with",
-     "note": null
     }
    ]
   },
@@ -7041,14 +6794,6 @@
    "slots": [
     {
      "part": "",
-     "job": "provides thrust",
-     "fill": "liquid-fuel-rockets",
-     "gap": null,
-     "kind": "made with",
-     "note": null
-    },
-    {
-     "part": "",
      "job": "makes electricity",
      "fill": "photovoltaic-cells",
      "gap": null,
@@ -7068,14 +6813,6 @@
   "skylab": {
    "job": "measures",
    "slots": [
-    {
-     "part": "",
-     "job": "provides thrust",
-     "fill": "liquid-fuel-rockets",
-     "gap": null,
-     "kind": "made with",
-     "note": null
-    },
     {
      "part": "",
      "job": "makes electricity",
@@ -7110,7 +6847,7 @@
      "job": "stores chemical energy",
      "fill": "liquid-hydrogen",
      "gap": null,
-     "kind": "runs on",
+     "kind": "inside",
      "note": null
     },
     {
@@ -7118,7 +6855,7 @@
      "job": "supplies oxygen",
      "fill": "liquid-oxygen",
      "gap": null,
-     "kind": "runs on",
+     "kind": "inside",
      "note": null
     },
     {
@@ -7299,7 +7036,7 @@
      "job": "steadies the rider",
      "fill": "high-backed-saddle",
      "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": null
     },
     {
@@ -7307,7 +7044,7 @@
      "job": "steadies the rider",
      "fill": "metal-stirrup",
      "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": null
     }
    ]
@@ -7379,7 +7116,7 @@
      "job": "stores chemical energy",
      "fill": "gunpowder",
      "gap": null,
-     "kind": "runs on",
+     "kind": "inside",
      "note": null
     },
     {
@@ -7404,7 +7141,7 @@
      "job": "stores chemical energy",
      "fill": "gunpowder",
      "gap": null,
-     "kind": "runs on",
+     "kind": "inside",
      "note": null
     },
     {
@@ -7433,7 +7170,7 @@
      "job": "stores chemical energy",
      "fill": "gunpowder",
      "gap": null,
-     "kind": "runs on",
+     "kind": "inside",
      "note": null
     },
     {
@@ -7462,7 +7199,7 @@
      "job": "stores chemical energy",
      "fill": "gunpowder",
      "gap": null,
-     "kind": "runs on",
+     "kind": "inside",
      "note": null
     },
     {
@@ -7491,7 +7228,7 @@
      "job": "stores chemical energy",
      "fill": "gunpowder",
      "gap": null,
-     "kind": "runs on",
+     "kind": "inside",
      "note": null
     },
     {
@@ -7528,7 +7265,7 @@
      "job": "stores chemical energy",
      "fill": "gunpowder",
      "gap": null,
-     "kind": "runs on",
+     "kind": "inside",
      "note": null
     },
     {
@@ -7536,7 +7273,7 @@
      "job": "forms the body",
      "fill": "paper",
      "gap": null,
-     "kind": "runs on",
+     "kind": "inside",
      "note": null
     },
     {
@@ -7594,7 +7331,7 @@
      "job": "stores chemical energy",
      "fill": "gunpowder",
      "gap": null,
-     "kind": "runs on",
+     "kind": "inside",
      "note": null,
      "later": [
       "cordite"
@@ -7808,15 +7545,7 @@
      "job": "stores chemical energy",
      "fill": "oil-wells",
      "gap": null,
-     "kind": "made with",
-     "note": null
-    },
-    {
-     "part": "refining",
-     "job": "separates mixtures",
-     "fill": "distillation",
-     "gap": null,
-     "kind": "made with",
+     "kind": "inside",
      "note": null
     }
    ]
@@ -8011,6 +7740,227 @@
    "Leather",
    -3500,
    "Animal hide tanned so it stays supple and doesn't rot. A leather shoe from Armenia's Areni-1 cave is about 5,500 years old."
+  ]
+ },
+ "production": {
+  "sputnik": [
+   {
+    "part": "launcher",
+    "job": "provides thrust",
+    "fill": "liquid-fuel-rockets",
+    "note": "The rocket puts it in orbit but isn't part of it."
+   }
+  ],
+  "communications-satellites": [
+   {
+    "part": "launcher",
+    "job": "provides thrust",
+    "fill": "liquid-fuel-rockets",
+    "note": "The rocket puts it in orbit but isn't part of it."
+   }
+  ],
+  "electric-light": [
+   {
+    "part": "vacuum",
+    "job": "makes a vacuum",
+    "fill": "air-pump",
+    "note": "Edison's bulbs were pumped out with a mercury pump."
+   }
+  ],
+  "geissler-tubes": [
+   {
+    "part": "vacuum",
+    "job": "makes a vacuum",
+    "fill": "air-pump",
+    "note": "Geissler also invented the mercury pump he emptied them with."
+   }
+  ],
+  "coolidge-tube": [
+   {
+    "part": "vacuum",
+    "job": "makes a vacuum",
+    "fill": "air-pump"
+   }
+  ],
+  "electron-microscope-improved": [
+   {
+    "part": "vacuum",
+    "job": "makes a vacuum",
+    "fill": "air-pump"
+   }
+  ],
+  "nuclear-fusion-bomb": [
+   {
+    "part": "calculations",
+    "job": "computes",
+    "fill": "univac"
+   }
+  ],
+  "pottery": [
+   {
+    "part": "firing",
+    "job": "makes heat",
+    "fill": "fire"
+   }
+  ],
+  "porcelain": [
+   {
+    "part": "firing",
+    "job": "makes heat",
+    "fill": "fire"
+   }
+  ],
+  "copper": [
+   {
+    "part": "smelting",
+    "job": "makes heat",
+    "fill": "fire"
+   }
+  ],
+  "glass": [
+   {
+    "part": "melting",
+    "job": "makes heat",
+    "fill": "fire"
+   }
+  ],
+  "steel": [
+   {
+    "part": "smelting",
+    "job": "makes heat",
+    "fill": "fire"
+   }
+  ],
+  "coal-mining": [
+   {
+    "part": "drainage",
+    "job": "pumps water",
+    "fill": "newcomen-steam-engine"
+   }
+  ],
+  "portland-cement": [
+   {
+    "part": "kiln",
+    "job": "makes heat",
+    "fill": "fire"
+   }
+  ],
+  "distillation": [
+   {
+    "part": "heat",
+    "job": "makes heat",
+    "fill": "fire"
+   }
+  ],
+  "coke-iron": [
+   {
+    "job": "stores chemical energy",
+    "fill": "coal-mining"
+   }
+  ],
+  "nitroglycerine": [
+   {
+    "part": "nitrating acid",
+    "job": "reacts",
+    "fill": "sulfuric-acid"
+   }
+  ],
+  "kerosene": [
+   {
+    "part": "refining",
+    "job": "separates mixtures",
+    "fill": "distillation"
+   }
+  ],
+  "pyroxylin": [
+   {
+    "part": "nitrating acid",
+    "job": "reacts",
+    "fill": "sulfuric-acid"
+   }
+  ],
+  "oil-wells": [
+   {
+    "part": "drill power",
+    "job": "provides power",
+    "fill": "steam-engine",
+    "note": "Drake drove the drill with a steam engine."
+   }
+  ],
+  "radiometer": [
+   {
+    "part": "vacuum",
+    "job": "makes a vacuum",
+    "fill": "air-pump"
+   }
+  ],
+  "aluminum-process": [
+   {
+    "job": "makes electricity",
+    "fill": "electric-generators",
+    "note": "Dynamos made the electrolysis practical."
+   }
+  ],
+  "dewar-flask": [
+   {
+    "part": "vacuum",
+    "job": "makes a vacuum",
+    "fill": "air-pump"
+   }
+  ],
+  "yellow-fever-vaccine": [
+   {
+    "job": "grows cultures",
+    "fill": "virus-culture"
+   }
+  ],
+  "salk-vaccine": [
+   {
+    "job": "grows cultures",
+    "fill": "virus-culture"
+   },
+   {
+    "part": "cells",
+    "job": "grows cultures",
+    "fill": "tissue-culture"
+   }
+  ],
+  "sabin-vaccine": [
+   {
+    "job": "grows cultures",
+    "fill": "virus-culture"
+   }
+  ],
+  "earth-resources-satellites": [
+   {
+    "job": "provides thrust",
+    "fill": "liquid-fuel-rockets"
+   }
+  ],
+  "weather-satellites": [
+   {
+    "job": "provides thrust",
+    "fill": "liquid-fuel-rockets"
+   }
+  ],
+  "space-station": [
+   {
+    "job": "provides thrust",
+    "fill": "liquid-fuel-rockets"
+   }
+  ],
+  "skylab": [
+   {
+    "job": "provides thrust",
+    "fill": "liquid-fuel-rockets"
+   }
+  ],
+  "gasoline": [
+   {
+    "part": "refining",
+    "job": "separates mixtures",
+    "fill": "distillation"
+   }
   ]
  }
 }

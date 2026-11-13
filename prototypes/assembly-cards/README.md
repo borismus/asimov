@@ -6,16 +6,17 @@ It reuses the universe view, with these changes:
 - **Tap a card to pin it**, as on invention.cards: it comes to the front and its links light up.
   **Tap it again to flip it.** Tap the background, or press Escape, to unpin. Only the pinned card
   shows its back: moving or dropping the pin turns it face up again. The back lists:
-  - **Inside**, **Runs on**, **Made with**: one bullet per slot, grouped by kind. Each bullet is the
-    slot's job and the card that does it ("bends light: Glass"), plus the part's name when it adds
-    something ("(objective)"). *Inside* is what's physically in it, parts and materials alike; *runs on*
-    is what it uses up while working (fuel, propellant, film); *made with* is used to make it but isn't
-    in the result. When a newer card later took over the job, it follows the first one ("absorbs
-    shocks: Carriage springs, later Rubber tire"). A filler newer than the invention with nothing older
-    before it is marked *added later*; a key part with no card is marked *its key part, no card*.
+  - **Parts**: the assembly, one bullet per part. Each bullet is the part's job and the card that
+    does it ("bends light: Glass"), plus the part's name when it adds something ("(objective)"). An
+    object's parts are what's in it when it works, including what it uses up (fuel, powder, film); a
+    material's are its ingredients; a practice's are the techniques and devices it's carried out with.
+    How something is produced (the kiln, the air pump, the launch rocket) isn't listed. When a newer
+    card later took over a part's job, it follows the first one ("absorbs shocks: Carriage springs,
+    later Rubber tire"). A part newer than the invention with nothing older before it is marked
+    *added later*; a key part with no card is marked *its key part, no card*.
   - **Natural phenomena**: the phenomena the card uses at its own level, each linking to its card.
     One explained after the invention existed is marked *explained later*.
-  - **Used in**: the inventions where this card fills a slot, and the job it does there.
+  - **Part of**: the inventions this card is a part of, and the job it does in each.
   - **Harnessed by**: for phenomenon cards, the inventions that use them.
 - **Search** has its own close button. On a phone the results are a scrollable sheet that folds away
   once you pick one (tap the box to bring it back), and a tapped card slides fully into view.

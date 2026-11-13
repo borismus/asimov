@@ -1,8 +1,8 @@
 
 // ---- Prototype: card backs -------------------------------------------------
-// The back of a card lists its slots by kind (inside / runs on / made with;
-// each bullet is a job and the card that does it) and the natural phenomena it
-// uses, then where the card fills a slot elsewhere, and which inventions harness it.
+// The back of a card lists its parts (each bullet is a job and the card that does
+// it) and the natural phenomena it uses, then the assemblies it is a part of, and
+// which inventions harness it.
 const escBack = (s) => String(s ?? "").replace(/[&<>"]/g, (m) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[m]));
 
 function backHTML(d, L) {
@@ -14,12 +14,10 @@ function backHTML(d, L) {
   const jobLink = (job, text, cls = "") =>
     `<a class="back-joblink ${cls}" data-job="${escBack(job)}" href="#" title="Job: ${escBack(job)}">${escBack(text)}</a>`;
   if (d.job) h += `<div class="back-job">Job: ${jobLink(d.job, d.job)}</div>`;
-  // Slots, grouped by kind: what's physically inside it, what it uses up
-  // while it works, and what's used to make it but isn't in the result.
-  const KINDS = [["inside", "Inside"], ["runs on", "Runs on"], ["made with", "Made with"]];
+  // Its parts: one list, the assembly. (How a thing is produced isn't listed.)
   if (d.slots) {
     if (!d.slots.length) {
-      h += `<div class="back-h">Inside</div><div class="back-none">A basic part: nothing in the deck goes inside it.</div>`;
+      h += `<div class="back-h">Parts</div><div class="back-none">A basic part: none of its parts are in the deck.</div>`;
     }
     const filler = (s) => {
       const part = s.part ? ` <span class="back-part">(${escBack(s.part)})</span>` : "";
@@ -32,13 +30,11 @@ function backHTML(d, L) {
       const later = n && n.year > d.year ? ` <span class="back-note">added later</span>` : "";
       return `${link(s.fill)}${part}${why}${later}${then}`;
     };
-    for (const [kind, heading] of KINDS) {
-      const group = d.slots.filter((s) => s.kind === kind);
-      if (!group.length) continue;
+    if (d.slots.length) {
       // One bullet per job; a job done by several cards lists them underneath.
       const byJob = new Map();
-      for (const s of group) (byJob.get(s.job) || byJob.set(s.job, []).get(s.job)).push(s);
-      h += `<div class="back-h">${heading}</div><ul>`;
+      for (const s of d.slots) (byJob.get(s.job) || byJob.set(s.job, []).get(s.job)).push(s);
+      h += `<div class="back-h">Parts</div><ul>`;
       for (const [job, ss] of byJob) {
         const j = jobLink(job, job, "back-slot");
         h += ss.length === 1
@@ -66,25 +62,24 @@ function backHTML(d, L) {
       h += `<div class="back-none">None listed.</div>`;
     }
   }
-  // Where this card fills a slot in another card: inside it, fuel for it, or used to make it.
+  // The assemblies this card is a part of.
   const parts = L.partOf[d.id] || [];
   if (parts.length) {
     // One bullet per job it does elsewhere, listing the cards it does it in.
     const byJob = new Map();
     for (const u of parts) {
-      const key = `${u.job}|${u.kind}`;
+      const key = u.job;
       (byJob.get(key) || byJob.set(key, []).get(key)).push(u);
     }
-    h += `<div class="back-h">Used in</div><ul>`;
+    h += `<div class="back-h">Part of</div><ul>`;
     for (const us of byJob.values()) {
-      const { job, kind } = us[0];
-      const how = kind === "inside" ? "" : ` <span class="back-part">(${escBack(kind)})</span>`;
+      const { job } = us[0];
       const cards = us.map((u) => {
         const n = L.byId[u.id];
         const later = n && d.year > n.year ? ` <span class="back-note">added later</span>` : "";
         return `${link(u.id)}${later}`;
       }).join(", ");
-      h += `<li>${jobLink(job, job, "back-slot")}${how}: ${cards}</li>`;
+      h += `<li>${jobLink(job, job, "back-slot")}: ${cards}</li>`;
     }
     h += "</ul>";
   }

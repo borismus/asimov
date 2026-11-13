@@ -1,7 +1,7 @@
 {
  "cards": {
   "wheel-and-axle": {
-   "job": "rolls a load along the ground",
+   "job": "rolls",
    "slots": []
   },
   "gear-train": {
@@ -525,7 +525,7 @@
    "slots": [
     {
      "part": "wheels",
-     "job": "rolls a load along the ground",
+     "job": "rolls",
      "fill": "wheel-and-axle",
      "gap": null,
      "kind": "inside",
@@ -546,7 +546,7 @@
    "slots": [
     {
      "part": "wheels",
-     "job": "rolls a load along the ground",
+     "job": "rolls",
      "fill": "wheel-and-axle",
      "gap": null,
      "kind": "inside",
@@ -591,7 +591,7 @@
    "slots": [
     {
      "part": "wheels",
-     "job": "rolls a load along the ground",
+     "job": "rolls",
      "fill": "wheel-and-axle",
      "gap": null,
      "kind": "inside",
@@ -665,7 +665,7 @@
     },
     {
      "part": "wheels",
-     "job": "rolls a load along the ground",
+     "job": "rolls",
      "fill": "wheel-and-axle",
      "gap": null,
      "kind": "inside",
@@ -758,7 +758,7 @@
     },
     {
      "part": "wheels",
-     "job": "rolls a load along the ground",
+     "job": "rolls",
      "fill": "wheel-and-axle",
      "gap": null,
      "kind": "inside",
@@ -2299,7 +2299,7 @@
    "slots": [
     {
      "part": "",
-     "job": "rolls a load along the ground",
+     "job": "rolls",
      "fill": "wheel-and-axle",
      "gap": null,
      "kind": "inside",
@@ -2331,7 +2331,7 @@
     },
     {
      "part": "wheels",
-     "job": "rolls a load along the ground",
+     "job": "rolls",
      "fill": "wheel-and-axle",
      "gap": null,
      "kind": "inside",
@@ -3146,7 +3146,7 @@
     },
     {
      "part": "drive wheel",
-     "job": "rolls a load along the ground",
+     "job": "rolls",
      "fill": "wheel-and-axle",
      "gap": null,
      "kind": "inside",
@@ -4049,7 +4049,7 @@
     },
     {
      "part": "",
-     "job": "rolls a load along the ground",
+     "job": "rolls",
      "fill": "wheel-and-axle",
      "gap": null,
      "kind": "inside",

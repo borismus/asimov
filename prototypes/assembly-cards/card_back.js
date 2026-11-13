@@ -24,7 +24,7 @@ function backHTML(d, L) {
     const filler = (s) => {
       const part = s.part ? ` <span class="back-part">(${escBack(s.part)})</span>` : "";
       const why = s.note ? ` <span class="back-why">${escBack(s.note)}</span>` : "";
-      if (!s.fill) return `<span class="back-gap">${escBack(s.gap)}${part}${why} <span class="back-note">no card yet</span></span>`;
+      if (!s.fill) return `<span class="back-gap">${escBack(s.gap)}${part}${why} <span class="back-note">its key part, no card</span></span>`;
       const n = L.byId[s.fill];
       const later = n && n.year > d.year ? ` <span class="back-note">added later</span>` : "";
       return `${link(s.fill)}${part}${why}${later}`;

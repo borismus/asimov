@@ -41,25 +41,22 @@ images into `site/`, which is gitignored.
 
 ## Files
 
-- `pilot_data.py`: the pilot lists. For each invention: its job, its slots (part name, job, filling card or
-  missing card name, kind: inside, runs on or made with, and an optional note; the part name is shown
-  only when it isn't just the job or the filler's name), and its phenomena. Also the new
-  supporting cards (Valve, Boiler, Gear train, GPS…) that aren't in Asimov's deck.
-- `links.csv`: links between existing cards approved in the "Missing parts" audit (invention, job, part,
-  filler, kind, note).
-- `batches.py`: the deck's own inventions, added one area at a time. Each gets its slots from
-  `links.csv`, plus its own job, slots for parts with no card yet, and its phenomena.
-- `lists.py`: puts the pilot and the batches together for the build.
+- `assemblies.json`: the source for every list: each invention's own job and slots (part name, job,
+  filling card or the name of a key part with no card, kind, note), as reviewed in the sheet's
+  Calibration and Full pass tabs, plus the supporting cards those lists brought in (`new_cards`).
+- `pilot_data.py`, `batches.py`: the pilot and batch 1 as first drafted. They still hold the natural
+  phenomena, which are set aside for now; their slots are superseded by `assemblies.json`.
+- `links.csv`: the links between existing cards approved in the "Missing parts" audit.
+- `lists.py`: puts `assemblies.json` and the phenomena together for the build.
 - `build.py`: builds `site/`. New cards get placeholder art.
 - `card_back.js`, `card_back.css`: the back of the card and the flip animation, spliced into
   `card.js` and `card.css`.
 
 ## Scope
 
-A pilot of 60 inventions (steam, engines, vehicles, flight, electricity and radio, a path to GPS,
-and vitamin pills as a recipe), plus batches of the deck's own inventions:
-
-1. Electricity and communication: 24 inventions, from Hauksbee's static generator to the LED.
-
-With the parts, materials and phenomena they reference, that's 187 cards. The rest of the deck has
-no lists yet.
+Every invention in Asimov's deck has a list: 434 cards with lists, including 31 supporting cards
+that aren't in the deck (Valve, Boiler, Escapement, Ink, Punched cards…). With the materials they
+reference, the board shows 494 cards. The rules the lists follow are on the sheet's Rules tab: a
+part with no card is listed only if 3 or more inventions share it (then it gets a card), or if it is
+the card's own key part, the new thing it brought. Left out: the Great Wall (a named wonder) and
+the Torsion balance (a phenomenon).

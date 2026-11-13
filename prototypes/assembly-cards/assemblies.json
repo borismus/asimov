@@ -1,0 +1,7736 @@
+{
+ "cards": {
+  "wheel-and-axle": {
+   "job": "rolls a load along the ground",
+   "slots": []
+  },
+  "gear-train": {
+   "job": "transmits rotation",
+   "slots": [
+    {
+     "part": "material",
+     "job": "forms the body",
+     "fill": "bronze",
+     "gap": null,
+     "kind": "inside",
+     "note": "The Antikythera mechanism's gears are bronze."
+    }
+   ]
+  },
+  "valve": {
+   "job": "controls flow",
+   "slots": [
+    {
+     "part": "material",
+     "job": "forms the body",
+     "fill": "bronze",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "boiler": {
+   "job": "makes steam",
+   "slots": [
+    {
+     "part": "shell",
+     "job": "forms the body",
+     "fill": "copper",
+     "gap": null,
+     "kind": "inside",
+     "note": "Early boilers were copper, later wrought iron."
+    }
+   ]
+  },
+  "piston-and-cylinder": {
+   "job": "turns pressure into motion",
+   "slots": [
+    {
+     "part": "material",
+     "job": "forms the body",
+     "fill": "bronze",
+     "gap": null,
+     "kind": "inside",
+     "note": "Early cylinders were brass, later cast iron."
+    }
+   ]
+  },
+  "spring": {
+   "job": "stores energy",
+   "slots": [
+    {
+     "part": "material",
+     "job": "forms the body",
+     "fill": "steel",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "ball-bearing": {
+   "job": "reduces friction",
+   "slots": [
+    {
+     "part": "material",
+     "job": "forms the body",
+     "fill": "steel",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "wing": {
+   "job": "provides lift",
+   "slots": [
+    {
+     "part": "skin and spars",
+     "job": "forms the body",
+     "fill": "aluminum",
+     "gap": null,
+     "kind": "inside",
+     "note": "All-metal wings came later; early wings were cloth on wood."
+    }
+   ]
+  },
+  "insulated-wire": {
+   "job": "carries current",
+   "slots": [
+    {
+     "part": "conductor",
+     "job": "carries current",
+     "fill": "copper",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "insulation",
+     "job": "insulates",
+     "fill": "vulcanization-of-rubber",
+     "gap": null,
+     "kind": "inside",
+     "note": "Gutta-percha, used for submarine cable, has no card."
+    }
+   ]
+  },
+  "sail": {
+   "job": "provides thrust",
+   "slots": [
+    {
+     "part": "cloth",
+     "job": "forms the body",
+     "fill": "fish-nets",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "rare-earth-magnet": {
+   "job": "makes a magnetic field",
+   "slots": [
+    {
+     "part": "samarium",
+     "job": "forms the body",
+     "fill": "thulium-holmium-samarium",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "cobalt",
+     "job": "forms the body",
+     "fill": "cobalt",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "neodymium",
+     "job": "forms the body",
+     "fill": "praseodymium-and-neodymium",
+     "gap": null,
+     "kind": "inside",
+     "note": "Neodymium magnets came in 1984."
+    },
+    {
+     "part": "dysprosium",
+     "job": "forms the body",
+     "fill": "dysprosium",
+     "gap": null,
+     "kind": "inside",
+     "note": "Keeps neodymium magnets strong when hot."
+    }
+   ]
+  },
+  "loudspeaker": {
+   "job": "turns current into sound",
+   "slots": [
+    {
+     "part": "magnet",
+     "job": "makes a magnetic field",
+     "fill": "rare-earth-magnet",
+     "gap": null,
+     "kind": "inside",
+     "note": "Early speakers used electromagnets or steel magnets."
+    },
+    {
+     "part": "coil",
+     "job": "carries current",
+     "fill": "insulated-wire",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "miners-friend": {
+   "job": "pumps water",
+   "slots": [
+    {
+     "part": "steam",
+     "job": "makes steam",
+     "fill": "boiler",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "control",
+     "job": "controls flow",
+     "fill": "valve",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "vessel",
+     "job": "carries heat",
+     "fill": null,
+     "gap": "Receiving vessel",
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "newcomen-steam-engine": {
+   "job": "provides power",
+   "slots": [
+    {
+     "part": "steam",
+     "job": "makes steam",
+     "fill": "boiler",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "power stroke",
+     "job": "turns pressure into motion",
+     "fill": "piston-and-cylinder",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "control",
+     "job": "controls flow",
+     "fill": "valve",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "linkage",
+     "job": "transmits rotation",
+     "fill": null,
+     "gap": "Rocking beam",
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "steam-engine": {
+   "job": "provides power",
+   "slots": [
+    {
+     "part": "steam",
+     "job": "makes steam",
+     "fill": "boiler",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "power stroke",
+     "job": "turns pressure into motion",
+     "fill": "piston-and-cylinder",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "control",
+     "job": "controls flow",
+     "fill": "valve",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "condensing",
+     "job": "carries heat",
+     "fill": null,
+     "gap": "Separate condenser",
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "improved-steam-engine": {
+   "job": "provides power",
+   "slots": [
+    {
+     "part": "steam",
+     "job": "makes steam",
+     "fill": "boiler",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "power stroke",
+     "job": "turns pressure into motion",
+     "fill": "piston-and-cylinder",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "control",
+     "job": "controls flow",
+     "fill": "valve",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "rotary drive",
+     "job": "transmits rotation",
+     "fill": "gear-train",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "speed control",
+     "job": "regulates speed",
+     "fill": null,
+     "gap": "Centrifugal governor",
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "turbines": {
+   "job": "turns flow into rotation",
+   "slots": [
+    {
+     "part": "support",
+     "job": "reduces friction",
+     "fill": "ball-bearing",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "steam-turbine": {
+   "job": "provides power",
+   "slots": [
+    {
+     "part": "steam",
+     "job": "makes steam",
+     "fill": "boiler",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "rotor",
+     "job": "turns flow into rotation",
+     "fill": "turbines",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "control",
+     "job": "controls flow",
+     "fill": "valve",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "support",
+     "job": "reduces friction",
+     "fill": "ball-bearing",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "internal-combustion-engine": {
+   "job": "provides power",
+   "slots": [
+    {
+     "part": "power stroke",
+     "job": "turns pressure into motion",
+     "fill": "piston-and-cylinder",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "control",
+     "job": "controls flow",
+     "fill": "valve",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "fuel",
+     "job": "stores chemical energy",
+     "fill": "gas-lighting",
+     "gap": null,
+     "kind": "runs on",
+     "note": "Lenoir burned coal gas from the gas works."
+    }
+   ]
+  },
+  "four-stroke-engine": {
+   "job": "provides power",
+   "slots": [
+    {
+     "part": "power stroke",
+     "job": "turns pressure into motion",
+     "fill": "piston-and-cylinder",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "intake and exhaust",
+     "job": "controls flow",
+     "fill": "valve",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "fuel",
+     "job": "stores chemical energy",
+     "fill": "gasoline",
+     "gap": null,
+     "kind": "runs on",
+     "note": null
+    }
+   ]
+  },
+  "diesel-engine": {
+   "job": "provides power",
+   "slots": [
+    {
+     "part": "power stroke",
+     "job": "turns pressure into motion",
+     "fill": "piston-and-cylinder",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "intake and exhaust",
+     "job": "controls flow",
+     "fill": "valve",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "fuel",
+     "job": "stores chemical energy",
+     "fill": "kerosene",
+     "gap": null,
+     "kind": "runs on",
+     "note": "Diesel's 1897 engine ran on kerosene."
+    },
+    {
+     "part": "injection",
+     "job": "controls flow",
+     "fill": null,
+     "gap": "Fuel injector",
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "liquid-fuel-rockets": {
+   "job": "provides thrust",
+   "slots": [
+    {
+     "part": "oxidizer",
+     "job": "supplies oxygen",
+     "fill": "liquid-oxygen",
+     "gap": null,
+     "kind": "runs on",
+     "note": null
+    },
+    {
+     "part": "fuel",
+     "job": "stores chemical energy",
+     "fill": "gasoline",
+     "gap": null,
+     "kind": "runs on",
+     "note": null
+    },
+    {
+     "part": "feed",
+     "job": "controls flow",
+     "fill": "valve",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "chamber",
+     "job": "holds the contents",
+     "fill": null,
+     "gap": "Combustion chamber and nozzle",
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "cart": {
+   "job": "transports people or goods",
+   "slots": [
+    {
+     "part": "wheels",
+     "job": "rolls a load along the ground",
+     "fill": "wheel-and-axle",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "motive force",
+     "job": "provides power",
+     "fill": "animal-dom",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "stagecoach": {
+   "job": "transports people or goods",
+   "slots": [
+    {
+     "part": "wheels",
+     "job": "rolls a load along the ground",
+     "fill": "wheel-and-axle",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "suspension",
+     "job": "absorbs shocks",
+     "fill": "carriage-springs",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "motive force",
+     "job": "provides power",
+     "fill": "horse",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "carriage-springs": {
+   "job": "absorbs shocks",
+   "slots": [
+    {
+     "part": "material",
+     "job": "forms the body",
+     "fill": "steel",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "bicycle": {
+   "job": "transports people or goods",
+   "slots": [
+    {
+     "part": "wheels",
+     "job": "rolls a load along the ground",
+     "fill": "wheel-and-axle",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "drive",
+     "job": "transmits rotation",
+     "fill": "gear-train",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "tires",
+     "job": "absorbs shocks",
+     "fill": "rubber-tire",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "bearings",
+     "job": "reduces friction",
+     "fill": "ball-bearing",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "frame",
+     "job": "bears the load",
+     "fill": "steel",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "rubber-tire": {
+   "job": "absorbs shocks",
+   "slots": [
+    {
+     "part": "casing",
+     "job": "holds the contents",
+     "fill": "vulcanization-of-rubber",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "inflation",
+     "job": "controls flow",
+     "fill": "valve",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "first-automobile": {
+   "job": "transports people or goods",
+   "slots": [
+    {
+     "part": "engine",
+     "job": "provides power",
+     "fill": "four-stroke-engine",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "wheels",
+     "job": "rolls a load along the ground",
+     "fill": "wheel-and-axle",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "tires",
+     "job": "absorbs shocks",
+     "fill": "rubber-tire",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "suspension",
+     "job": "absorbs shocks",
+     "fill": "carriage-springs",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "transmission",
+     "job": "transmits rotation",
+     "fill": "gear-train",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "bearings",
+     "job": "reduces friction",
+     "fill": "ball-bearing",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "starter",
+     "job": "provides power",
+     "fill": "self-starter",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "self-starter": {
+   "job": "provides power",
+   "slots": [
+    {
+     "part": "motor",
+     "job": "provides power",
+     "fill": "electric-motors",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "power",
+     "job": "stores electricity",
+     "fill": "storage-battery",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "wiring",
+     "job": "carries current",
+     "fill": "insulated-wire",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "steam-locomotive": {
+   "job": "transports people or goods",
+   "slots": [
+    {
+     "part": "engine",
+     "job": "provides power",
+     "fill": "improved-steam-engine",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "wheels",
+     "job": "rolls a load along the ground",
+     "fill": "wheel-and-axle",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "track",
+     "job": "carries traffic",
+     "fill": "coke-iron",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "steamboat": {
+   "job": "transports people or goods",
+   "slots": [
+    {
+     "part": "engine",
+     "job": "provides power",
+     "fill": "improved-steam-engine",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "hull",
+     "job": "floats a load",
+     "fill": "river-boat",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "thrust",
+     "job": "provides thrust",
+     "fill": "water-wheel",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "steamship": {
+   "job": "transports people or goods",
+   "slots": [
+    {
+     "part": "engine",
+     "job": "provides power",
+     "fill": "improved-steam-engine",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "thrust",
+     "job": "provides thrust",
+     "fill": "screw-propeller",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "backup thrust",
+     "job": "provides thrust",
+     "fill": "sail",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "navigation",
+     "job": "finds direction",
+     "fill": "compass",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "hull",
+     "job": "floats a load",
+     "fill": "coke-iron",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "screw-propeller": {
+   "job": "provides thrust",
+   "slots": [
+    {
+     "part": "material",
+     "job": "forms the body",
+     "fill": "bronze",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "hot-air-balloon": {
+   "job": "provides lift",
+   "slots": [
+    {
+     "part": "lift gas",
+     "job": "provides lift",
+     "fill": "hydrogen",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "envelope",
+     "job": "holds the contents",
+     "fill": "silk-europe",
+     "gap": null,
+     "kind": "inside",
+     "note": "Charles's hydrogen balloon used rubberized silk."
+    }
+   ]
+  },
+  "parachute": {
+   "job": "slows motion",
+   "slots": [
+    {
+     "part": "canopy",
+     "job": "slows motion",
+     "fill": "silk-europe",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "glider": {
+   "job": "flies",
+   "slots": [
+    {
+     "part": "lift",
+     "job": "provides lift",
+     "fill": "wing",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "glider-improved": {
+   "job": "flies",
+   "slots": [
+    {
+     "part": "lift",
+     "job": "provides lift",
+     "fill": "wing",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "control",
+     "job": "steers",
+     "fill": null,
+     "gap": "Weight-shift control",
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "dirigible": {
+   "job": "flies",
+   "slots": [
+    {
+     "part": "lift gas",
+     "job": "provides lift",
+     "fill": "hydrogen",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "engine",
+     "job": "provides power",
+     "fill": "four-stroke-engine",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "thrust",
+     "job": "provides thrust",
+     "fill": "screw-propeller",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "frame",
+     "job": "bears the load",
+     "fill": "aluminum",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "airplane": {
+   "job": "flies",
+   "slots": [
+    {
+     "part": "lift",
+     "job": "provides lift",
+     "fill": "wing",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "engine",
+     "job": "provides power",
+     "fill": "four-stroke-engine",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "thrust",
+     "job": "provides thrust",
+     "fill": "screw-propeller",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "control",
+     "job": "steers",
+     "fill": null,
+     "gap": "Wing warping",
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "seaplanes": {
+   "job": "flies",
+   "slots": [
+    {
+     "part": "airframe",
+     "job": "flies",
+     "fill": "airplane",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "floats",
+     "job": "floats a load",
+     "fill": null,
+     "gap": "Floats",
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "helicopter": {
+   "job": "flies",
+   "slots": [
+    {
+     "part": "rotor",
+     "job": "provides lift",
+     "fill": "wing",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "engine",
+     "job": "provides power",
+     "fill": "four-stroke-engine",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "transmission",
+     "job": "transmits rotation",
+     "fill": "gear-train",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "anti-torque",
+     "job": "steers",
+     "fill": null,
+     "gap": "Tail rotor",
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "jet-planes": {
+   "job": "flies",
+   "slots": [
+    {
+     "part": "lift",
+     "job": "provides lift",
+     "fill": "wing",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "thrust",
+     "job": "provides thrust",
+     "fill": null,
+     "gap": "Jet engine",
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "electric-battery": {
+   "job": "stores electricity",
+   "slots": [
+    {
+     "part": "electrodes",
+     "job": "carries current",
+     "fill": "copper",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "electrodes",
+     "job": "stores chemical energy",
+     "fill": "zinc",
+     "gap": null,
+     "kind": "inside",
+     "note": "Volta's pile stacked zinc and copper."
+    }
+   ]
+  },
+  "storage-battery": {
+   "job": "stores electricity",
+   "slots": [
+    {
+     "part": "plates",
+     "job": "stores chemical energy",
+     "fill": "lead",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "electrolyte",
+     "job": "conducts ions",
+     "fill": "sulfuric-acid",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "simple-electromagnet": {
+   "job": "makes a magnetic field",
+   "slots": [
+    {
+     "part": "coil",
+     "job": "carries current",
+     "fill": "insulated-wire",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "power",
+     "job": "stores electricity",
+     "fill": "electric-battery",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "electromagnets": {
+   "job": "makes a magnetic field",
+   "slots": [
+    {
+     "part": "coil",
+     "job": "carries current",
+     "fill": "insulated-wire",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "power",
+     "job": "stores electricity",
+     "fill": "electric-battery",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "core",
+     "job": "makes a magnetic field",
+     "fill": null,
+     "gap": "Soft iron core",
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "electric-motors": {
+   "job": "provides power",
+   "slots": [
+    {
+     "part": "field",
+     "job": "makes a magnetic field",
+     "fill": "electromagnets",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "windings",
+     "job": "carries current",
+     "fill": "insulated-wire",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "bearings",
+     "job": "reduces friction",
+     "fill": "ball-bearing",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "power",
+     "job": "stores electricity",
+     "fill": "electric-battery",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "electric-generators": {
+   "job": "makes electricity",
+   "slots": [
+    {
+     "part": "field",
+     "job": "makes a magnetic field",
+     "fill": "electromagnets",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "windings",
+     "job": "carries current",
+     "fill": "insulated-wire",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "bearings",
+     "job": "reduces friction",
+     "fill": "ball-bearing",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "electronic-rectifier": {
+   "job": "controls the current",
+   "slots": [
+    {
+     "part": "bulb",
+     "job": "emits electrons",
+     "fill": "electric-light",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "plate",
+     "job": "carries current",
+     "fill": null,
+     "gap": "Metal plate",
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "triode": {
+   "job": "controls the current",
+   "slots": [
+    {
+     "part": "tube",
+     "job": "controls the current",
+     "fill": "electronic-rectifier",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "grid",
+     "job": "controls the current",
+     "fill": null,
+     "gap": "Control grid",
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "radio": {
+   "job": "sends and receives signals",
+   "slots": [
+    {
+     "part": "antenna",
+     "job": "radiates and catches waves",
+     "fill": "radio-antennas",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "amplifier",
+     "job": "amplifies a signal",
+     "fill": "triode",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "output",
+     "job": "turns current into sound",
+     "fill": "loudspeaker",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "power",
+     "job": "stores electricity",
+     "fill": "electric-battery",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "transistor": {
+   "job": "controls the current",
+   "slots": [
+    {
+     "part": "semiconductor",
+     "job": "controls the current",
+     "fill": "germanium",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "leads",
+     "job": "carries current",
+     "fill": null,
+     "gap": "Contact wires",
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "integrated-circuits": {
+   "job": "computes",
+   "slots": [
+    {
+     "part": "switches",
+     "job": "controls the current",
+     "fill": "transistor",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "substrate",
+     "job": "forms the body",
+     "fill": "silicon",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "microchips": {
+   "job": "computes",
+   "slots": [
+    {
+     "part": "circuit",
+     "job": "computes",
+     "fill": "integrated-circuits",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "clock",
+     "job": "keeps time",
+     "fill": "quartz-oscillator",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "photovoltaic-cells": {
+   "job": "makes electricity",
+   "slots": [
+    {
+     "part": "semiconductor",
+     "job": "makes electricity",
+     "fill": "silicon",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "v-two": {
+   "job": "explodes",
+   "slots": [
+    {
+     "part": "engine",
+     "job": "provides thrust",
+     "fill": "liquid-fuel-rockets",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "guidance",
+     "job": "holds direction",
+     "fill": "gyroscope",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "sputnik": {
+   "job": "sends and receives signals",
+   "slots": [
+    {
+     "part": "launcher",
+     "job": "provides thrust",
+     "fill": "liquid-fuel-rockets",
+     "gap": null,
+     "kind": "made with",
+     "note": "The rocket puts it in orbit but isn't part of it."
+    },
+    {
+     "part": "transmitter",
+     "job": "sends and receives signals",
+     "fill": "radio",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "power",
+     "job": "stores electricity",
+     "fill": "electric-battery",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "communications-satellites": {
+   "job": "sends and receives signals",
+   "slots": [
+    {
+     "part": "launcher",
+     "job": "provides thrust",
+     "fill": "liquid-fuel-rockets",
+     "gap": null,
+     "kind": "made with",
+     "note": "The rocket puts it in orbit but isn't part of it."
+    },
+    {
+     "part": "transponder",
+     "job": "sends and receives signals",
+     "fill": "radio",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "amplifier",
+     "job": "amplifies a signal",
+     "fill": "transistor",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "power",
+     "job": "makes electricity",
+     "fill": "photovoltaic-cells",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "atomic-clock": {
+   "job": "keeps time",
+   "slots": [
+    {
+     "part": "oscillator",
+     "job": "keeps time",
+     "fill": "quartz-oscillator",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "reference",
+     "job": "keeps time",
+     "fill": null,
+     "gap": "Cesium beam tube",
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "gps": {
+   "job": "finds direction",
+   "slots": [
+    {
+     "part": "satellites",
+     "job": "sends and receives signals",
+     "fill": "communications-satellites",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "clocks",
+     "job": "keeps time",
+     "fill": "atomic-clock",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "signal",
+     "job": "sends and receives signals",
+     "fill": "radio",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "receiver",
+     "job": "computes",
+     "fill": "microchips",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "vitamin-pills": {
+   "job": "prevents disease",
+   "slots": [
+    {
+     "part": "vitamin A",
+     "job": "supplies a nutrient",
+     "fill": "vitamins-a-and-b",
+     "gap": null,
+     "kind": "inside",
+     "note": "prevents night blindness"
+    },
+    {
+     "part": "vitamin D",
+     "job": "supplies a nutrient",
+     "fill": "irradiation",
+     "gap": null,
+     "kind": "made with",
+     "note": "prevents rickets"
+    },
+    {
+     "part": "vitamin E",
+     "job": "supplies a nutrient",
+     "fill": "vitamin-e",
+     "gap": null,
+     "kind": "inside",
+     "note": "protects cells"
+    },
+    {
+     "part": "vitamin C",
+     "job": "supplies a nutrient",
+     "fill": "ascorbic-acid",
+     "gap": null,
+     "kind": "inside",
+     "note": "prevents scurvy"
+    },
+    {
+     "part": "vitamin B2",
+     "job": "supplies a nutrient",
+     "fill": "riboflavin",
+     "gap": null,
+     "kind": "inside",
+     "note": "supports metabolism"
+    },
+    {
+     "part": "vitamin B1",
+     "job": "supplies a nutrient",
+     "fill": "thiamine",
+     "gap": null,
+     "kind": "inside",
+     "note": "prevents beriberi"
+    },
+    {
+     "part": "niacin",
+     "job": "supplies a nutrient",
+     "fill": "niacin",
+     "gap": null,
+     "kind": "inside",
+     "note": "prevents pellagra"
+    },
+    {
+     "part": "vitamin K",
+     "job": "supplies a nutrient",
+     "fill": "vitamin-k",
+     "gap": null,
+     "kind": "inside",
+     "note": "lets blood clot"
+    },
+    {
+     "part": "iodine",
+     "job": "supplies a nutrient",
+     "fill": "essential-minerals",
+     "gap": null,
+     "kind": "inside",
+     "note": "prevents goiter"
+    },
+    {
+     "part": "biotin",
+     "job": "supplies a nutrient",
+     "fill": "biotin",
+     "gap": null,
+     "kind": "inside",
+     "note": "supports metabolism"
+    },
+    {
+     "part": "vitamin B12",
+     "job": "supplies a nutrient",
+     "fill": "cyanocobalamin",
+     "gap": null,
+     "kind": "inside",
+     "note": "prevents pernicious anemia"
+    }
+   ]
+  },
+  "static-electricity-improved": {
+   "job": "makes electricity",
+   "slots": [
+    {
+     "part": "globe",
+     "job": "forms the body",
+     "fill": "glass",
+     "gap": null,
+     "kind": "inside",
+     "note": "Hauksbee's machine spun a glass globe."
+    }
+   ]
+  },
+  "leyden-jar": {
+   "job": "stores electricity",
+   "slots": [
+    {
+     "part": "jar",
+     "job": "forms the body",
+     "fill": "glass",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "coating",
+     "job": "carries current",
+     "fill": null,
+     "gap": "Metal foil",
+     "kind": "inside",
+     "note": "Foil inside and out; the glass between them holds the charge."
+    }
+   ]
+  },
+  "daniell-cell": {
+   "job": "stores electricity",
+   "slots": [
+    {
+     "part": "electrodes",
+     "job": "carries current",
+     "fill": "copper",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "electrolyte",
+     "job": "conducts ions",
+     "fill": "sulfuric-acid",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "electrodes",
+     "job": "stores chemical energy",
+     "fill": "zinc",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "fuel-cell": {
+   "job": "makes electricity",
+   "slots": [
+    {
+     "part": "electrodes",
+     "job": "carries current",
+     "fill": "platinum",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "stores chemical energy",
+     "fill": "hydrogen",
+     "gap": null,
+     "kind": "runs on",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "supplies oxygen",
+     "fill": "oxygen",
+     "gap": null,
+     "kind": "runs on",
+     "note": null
+    },
+    {
+     "part": "electrolyte",
+     "job": "conducts ions",
+     "fill": "sulfuric-acid",
+     "gap": null,
+     "kind": "inside",
+     "note": "Grove's gas battery used dilute sulfuric acid."
+    }
+   ]
+  },
+  "telegraph": {
+   "job": "sends and receives signals",
+   "slots": [
+    {
+     "part": "line",
+     "job": "carries current",
+     "fill": "insulated-wire",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "sounder",
+     "job": "makes a magnetic field",
+     "fill": "electromagnets",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "stores electricity",
+     "fill": "electric-battery",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "wheatstone-bridge": {
+   "job": "measures",
+   "slots": [
+    {
+     "part": "wiring",
+     "job": "carries current",
+     "fill": "insulated-wire",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "meter",
+     "job": "measures",
+     "fill": "galvanometer",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "stock-ticker": {
+   "job": "sends and receives signals",
+   "slots": [
+    {
+     "part": "line",
+     "job": "carries current",
+     "fill": "insulated-wire",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "printing magnets",
+     "job": "makes a magnetic field",
+     "fill": "electromagnets",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "telephone": {
+   "job": "sends and receives signals",
+   "slots": [
+    {
+     "part": "transmitter",
+     "job": "turns sound into current",
+     "fill": "microphone",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "receiver",
+     "job": "turns current into sound",
+     "fill": "loudspeaker",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "line",
+     "job": "carries current",
+     "fill": "insulated-wire",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "stores electricity",
+     "fill": "electric-battery",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "electric-light": {
+   "job": "makes light",
+   "slots": [
+    {
+     "part": "bulb",
+     "job": "holds the contents",
+     "fill": "glass",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "filament",
+     "job": "makes light",
+     "fill": "tungsten-wire",
+     "gap": null,
+     "kind": "inside",
+     "note": "Edison's filament was carbon; tungsten came later."
+    },
+    {
+     "part": "vacuum",
+     "job": "makes a vacuum",
+     "fill": "air-pump",
+     "gap": null,
+     "kind": "made with",
+     "note": "Edison's bulbs were pumped out with a mercury pump."
+    }
+   ]
+  },
+  "alternating-currents": {
+   "job": "carries current",
+   "slots": [
+    {
+     "part": "",
+     "job": "makes electricity",
+     "fill": "electric-generators",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "changes voltage",
+     "fill": "transformer",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "provides power",
+     "fill": "electric-motors",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "transformer": {
+   "job": "changes voltage",
+   "slots": [
+    {
+     "part": "coils",
+     "job": "carries current",
+     "fill": "insulated-wire",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "core",
+     "job": "makes a magnetic field",
+     "fill": null,
+     "gap": "Soft iron core",
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "radio-antennas": {
+   "job": "radiates and catches waves",
+   "slots": [
+    {
+     "part": "",
+     "job": "stores electricity",
+     "fill": "electric-battery",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "detector",
+     "job": "detects radiation",
+     "fill": null,
+     "gap": "Coherer",
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "oscilloscope": {
+   "job": "shows the image",
+   "slots": [
+    {
+     "part": "tube",
+     "job": "holds the contents",
+     "fill": "glass",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "deflection",
+     "job": "makes a magnetic field",
+     "fill": "electromagnets",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "screen",
+     "job": "makes light",
+     "fill": null,
+     "gap": "Phosphor screen",
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "radio-waves-and-sound": {
+   "job": "sends and receives signals",
+   "slots": [
+    {
+     "part": "",
+     "job": "turns sound into current",
+     "fill": "microphone",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "superheterodyne-receiver": {
+   "job": "amplifies a signal",
+   "slots": [
+    {
+     "part": "",
+     "job": "amplifies a signal",
+     "fill": "triode",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "radiates and catches waves",
+     "fill": "radio-antennas",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "output",
+     "job": "turns current into sound",
+     "fill": "loudspeaker",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "sonar": {
+   "job": "detects objects",
+   "slots": [
+    {
+     "part": "hydrophone",
+     "job": "turns sound into current",
+     "fill": "microphone",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "amplifies a signal",
+     "fill": "triode",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "transducer",
+     "job": "turns current into sound",
+     "fill": null,
+     "gap": "Quartz transducer",
+     "kind": "inside",
+     "note": "Langevin's quartz sent the ultrasonic ping."
+    }
+   ]
+  },
+  "magnetrons": {
+   "job": "amplifies a signal",
+   "slots": [
+    {
+     "part": "",
+     "job": "makes a magnetic field",
+     "fill": "electromagnets",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "cathode",
+     "job": "emits electrons",
+     "fill": "tungsten-wire",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "tube",
+     "job": "holds the contents",
+     "fill": "glass",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "radar": {
+   "job": "detects objects",
+   "slots": [
+    {
+     "part": "transmitter",
+     "job": "amplifies a signal",
+     "fill": "magnetrons",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "display",
+     "job": "shows the image",
+     "fill": "oscilloscope",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "radiates and catches waves",
+     "fill": "radio-antennas",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "receiver",
+     "job": "amplifies a signal",
+     "fill": "triode",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "geissler-tubes": {
+   "job": "makes light",
+   "slots": [
+    {
+     "part": "tube",
+     "job": "holds the contents",
+     "fill": "glass",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "electrodes",
+     "job": "carries current",
+     "fill": "platinum",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "vacuum",
+     "job": "makes a vacuum",
+     "fill": "air-pump",
+     "gap": null,
+     "kind": "made with",
+     "note": "Geissler also invented the mercury pump he emptied them with."
+    }
+   ]
+  },
+  "neon-lights": {
+   "job": "makes light",
+   "slots": [
+    {
+     "part": "tube",
+     "job": "holds the contents",
+     "fill": "glass",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "fill gas",
+     "job": "makes light",
+     "fill": "neon-krypton-xenon",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "changes voltage",
+     "fill": "transformer",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "nitrogen-filled-light-bulbs": {
+   "job": "makes light",
+   "slots": [
+    {
+     "part": "filament",
+     "job": "makes light",
+     "fill": "tungsten-wire",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "fill gas",
+     "job": "protects",
+     "fill": "nitrogen",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "bulb",
+     "job": "holds the contents",
+     "fill": "glass",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "coolidge-tube": {
+   "job": "makes x-rays",
+   "slots": [
+    {
+     "part": "filament",
+     "job": "emits electrons",
+     "fill": "tungsten-wire",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "tube",
+     "job": "holds the contents",
+     "fill": "glass",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "anode",
+     "job": "makes x-rays",
+     "fill": "tungsten",
+     "gap": null,
+     "kind": "inside",
+     "note": "A block of tungsten that the electrons strike."
+    },
+    {
+     "part": "vacuum",
+     "job": "makes a vacuum",
+     "fill": "air-pump",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
+  },
+  "tunnel-diode": {
+   "job": "controls the current",
+   "slots": [
+    {
+     "part": "semiconductor",
+     "job": "controls the current",
+     "fill": "germanium",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "light-emitting-diodes": {
+   "job": "makes light",
+   "slots": [
+    {
+     "part": "semiconductor",
+     "job": "makes light",
+     "fill": "gallium",
+     "gap": null,
+     "kind": "inside",
+     "note": "Gallium arsenide phosphide."
+    }
+   ]
+  },
+  "microphone": {
+   "job": "turns sound into current",
+   "slots": [
+    {
+     "part": "carbon",
+     "job": "controls the current",
+     "fill": null,
+     "gap": "Carbon granules",
+     "kind": "inside",
+     "note": "Pressed carbon changes its resistance with the sound."
+    }
+   ]
+  },
+  "candle": {
+   "job": "makes light",
+   "slots": [
+    {
+     "part": "wax",
+     "job": "stores chemical energy",
+     "fill": "animal-dom",
+     "gap": null,
+     "kind": "runs on",
+     "note": "Tallow, rendered animal fat."
+    }
+   ]
+  },
+  "abacus": {
+   "job": "computes",
+   "slots": []
+  },
+  "stone-tool": {
+   "job": "cuts",
+   "slots": []
+  },
+  "wheelbarrow": {
+   "job": "transports people or goods",
+   "slots": [
+    {
+     "part": "",
+     "job": "rolls a load along the ground",
+     "fill": "wheel-and-axle",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "turnplow": {
+   "job": "cuts",
+   "slots": [
+    {
+     "part": "share",
+     "job": "cuts",
+     "fill": "steel",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "provides power",
+     "fill": "animal-dom",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "harness",
+     "job": "provides power",
+     "fill": "horse-collar",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "wheels",
+     "job": "rolls a load along the ground",
+     "fill": "wheel-and-axle",
+     "gap": null,
+     "kind": "inside",
+     "note": "Heavy plows ran on wheels."
+    }
+   ]
+  },
+  "fork": {
+   "job": "holds the contents",
+   "slots": []
+  },
+  "mechanical-clock": {
+   "job": "keeps time",
+   "slots": [
+    {
+     "part": "",
+     "job": "transmits rotation",
+     "fill": "gear-train",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "escapement",
+     "job": "regulates speed",
+     "fill": "escapement",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "telescope": {
+   "job": "gathers light",
+   "slots": [
+    {
+     "part": "eyepiece",
+     "job": "bends light",
+     "fill": "concave-lenses",
+     "gap": null,
+     "kind": "inside",
+     "note": "Galileo's eyepiece was a concave lens."
+    },
+    {
+     "part": "objective",
+     "job": "bends light",
+     "fill": "glass",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "pressure-cooker": {
+   "job": "prepares food",
+   "slots": [
+    {
+     "part": "safety valve",
+     "job": "controls flow",
+     "fill": "valve",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "vessel",
+     "job": "holds the contents",
+     "fill": "steel",
+     "gap": null,
+     "kind": "inside",
+     "note": "Papin's digester was cast iron."
+    }
+   ]
+  },
+  "dentistry": {
+   "job": "treats illness",
+   "slots": [
+    {
+     "part": "fillings",
+     "job": "forms the body",
+     "fill": "silver-fillings",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    },
+    {
+     "part": "anesthetic",
+     "job": "numbs pain",
+     "fill": "anesthesia",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
+  },
+  "flying-shuttle": {
+   "job": "makes textiles",
+   "slots": []
+  },
+  "spinning-frame": {
+   "job": "makes textiles",
+   "slots": [
+    {
+     "part": "",
+     "job": "provides power",
+     "fill": "water-wheel",
+     "gap": null,
+     "kind": "inside",
+     "note": "Arkwright's water frame."
+    },
+    {
+     "part": "",
+     "job": "transmits rotation",
+     "fill": "gear-train",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "canning-food": {
+   "job": "preserves food",
+   "slots": [
+    {
+     "part": "jars",
+     "job": "holds the contents",
+     "fill": "glass",
+     "gap": null,
+     "kind": "made with",
+     "note": "Appert used glass jars."
+    }
+   ]
+  },
+  "photography": {
+   "job": "records media",
+   "slots": [
+    {
+     "part": "plate coating",
+     "job": "records media",
+     "fill": "iodine",
+     "gap": null,
+     "kind": "made with",
+     "note": "Silver iodide."
+    },
+    {
+     "part": "lens",
+     "job": "bends light",
+     "fill": "achromatic-lens",
+     "gap": null,
+     "kind": "made with",
+     "note": "Daguerre's camera used a Chevalier achromat."
+    },
+    {
+     "part": "plate",
+     "job": "records media",
+     "fill": "copper",
+     "gap": null,
+     "kind": "made with",
+     "note": "Silver-plated copper."
+    }
+   ]
+  },
+  "transatlantic-liner": {
+   "job": "transports people or goods",
+   "slots": [
+    {
+     "part": "",
+     "job": "provides power",
+     "fill": "improved-steam-engine",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "provides thrust",
+     "fill": "screw-propeller",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "hull",
+     "job": "floats a load",
+     "fill": "coke-iron",
+     "gap": null,
+     "kind": "inside",
+     "note": "The SS Great Britain had an iron hull."
+    },
+    {
+     "part": "steam",
+     "job": "makes steam",
+     "fill": "boiler",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "sails",
+     "job": "provides thrust",
+     "fill": "sail",
+     "gap": null,
+     "kind": "inside",
+     "note": "She also carried six masts of sail."
+    },
+    {
+     "part": "navigation",
+     "job": "finds direction",
+     "fill": "compass",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "machine-guns": {
+   "job": "fires projectiles",
+   "slots": [
+    {
+     "part": "",
+     "job": "stores chemical energy",
+     "fill": "gunpowder",
+     "gap": null,
+     "kind": "runs on",
+     "note": null
+    },
+    {
+     "part": "barrels",
+     "job": "forms the body",
+     "fill": "steel",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "rayon": {
+   "job": "forms the body",
+   "slots": [
+    {
+     "part": "fiber",
+     "job": "forms the body",
+     "fill": "cellulose",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "nitrocellulose",
+     "job": "forms the body",
+     "fill": "pyroxylin",
+     "gap": null,
+     "kind": "made with",
+     "note": "Chardonnet's silk was denitrated nitrocellulose."
+    }
+   ]
+  },
+  "fountain-pen": {
+   "job": "writes",
+   "slots": [
+    {
+     "part": "nib",
+     "job": "forms the body",
+     "fill": "steel",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "barrel",
+     "job": "holds the contents",
+     "fill": "vulcanization-of-rubber",
+     "gap": null,
+     "kind": "inside",
+     "note": "Waterman's barrels were hard rubber."
+    },
+    {
+     "part": "ink",
+     "job": "makes marks",
+     "fill": "ink",
+     "gap": null,
+     "kind": "runs on",
+     "note": null
+    }
+   ]
+  },
+  "welsbach-mantle": {
+   "job": "makes light",
+   "slots": [
+    {
+     "part": "oxide",
+     "job": "makes light",
+     "fill": "thorium",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "oxide",
+     "job": "makes light",
+     "fill": "cerium-osmium-iridium",
+     "gap": null,
+     "kind": "inside",
+     "note": "Cerium."
+    }
+   ]
+  },
+  "cloud-chamber": {
+   "job": "detects radiation",
+   "slots": [
+    {
+     "part": "chamber",
+     "job": "holds the contents",
+     "fill": "glass",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "expansion piston",
+     "job": "turns pressure into motion",
+     "fill": "piston-and-cylinder",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "camera",
+     "job": "records media",
+     "fill": "photography",
+     "gap": null,
+     "kind": "runs on",
+     "note": null
+    }
+   ]
+  },
+  "electron-microscope-improved": {
+   "job": "magnifies",
+   "slots": [
+    {
+     "part": "lenses",
+     "job": "makes a magnetic field",
+     "fill": "electromagnets",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "filament",
+     "job": "emits electrons",
+     "fill": "tungsten-wire",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "plate",
+     "job": "records media",
+     "fill": "dry-plates",
+     "gap": null,
+     "kind": "runs on",
+     "note": null
+    },
+    {
+     "part": "vacuum",
+     "job": "makes a vacuum",
+     "fill": "air-pump",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
+  },
+  "vitamin-e-synthesis": {
+   "job": "supplies a nutrient",
+   "slots": []
+  },
+  "penicillin-practical": {
+   "job": "kills bacteria",
+   "slots": [
+    {
+     "part": "mold",
+     "job": "kills bacteria",
+     "fill": "penicillin",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
+  },
+  "long-playing-records": {
+   "job": "records media",
+   "slots": []
+  },
+  "nuclear-fusion-bomb": {
+   "job": "explodes",
+   "slots": [
+    {
+     "part": "primary",
+     "job": "stores nuclear energy",
+     "fill": "nuclear-fission-bomb",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "fusion fuel",
+     "job": "stores nuclear energy",
+     "fill": "deuterium",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "fusion fuel",
+     "job": "stores nuclear energy",
+     "fill": "cadmium-lithium-selenium",
+     "gap": null,
+     "kind": "inside",
+     "note": "Lithium deuteride."
+    },
+    {
+     "part": "tamper",
+     "job": "holds the contents",
+     "fill": "uranium",
+     "gap": null,
+     "kind": "inside",
+     "note": "Ivy Mike's casing was natural uranium."
+    },
+    {
+     "part": "calculations",
+     "job": "computes",
+     "fill": "univac",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
+  },
+  "heart-lung-machine": {
+   "job": "pumps blood",
+   "slots": [
+    {
+     "part": "",
+     "job": "pumps blood",
+     "fill": "perfusion-pump",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "oxygenator",
+     "job": "supplies oxygen",
+     "fill": "oxygen",
+     "gap": null,
+     "kind": "runs on",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "provides power",
+     "fill": "electric-motors",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "contact-lenses": {
+   "job": "bends light",
+   "slots": []
+  },
+  "spark-chamber": {
+   "job": "detects radiation",
+   "slots": [
+    {
+     "part": "gas",
+     "job": "detects radiation",
+     "fill": "neon-krypton-xenon",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "trigger",
+     "job": "controls the current",
+     "fill": "coincidence-counter",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "camera",
+     "job": "records media",
+     "fill": "photography",
+     "gap": null,
+     "kind": "runs on",
+     "note": null
+    }
+   ]
+  },
+  "vertebrate-clones": {
+   "job": "modifies organisms",
+   "slots": [
+    {
+     "part": "microscope",
+     "job": "magnifies",
+     "fill": "microscope",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
+  },
+  "pottery": {
+   "job": "holds the contents",
+   "slots": [
+    {
+     "part": "firing",
+     "job": "makes heat",
+     "fill": "fire",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
+  },
+  "papyrus": {
+   "job": "takes the print",
+   "slots": []
+  },
+  "dye": {
+   "job": "colors",
+   "slots": []
+  },
+  "coin": {
+   "job": "measures",
+   "slots": []
+  },
+  "parchment": {
+   "job": "takes the print",
+   "slots": [
+    {
+     "part": "skin",
+     "job": "forms the body",
+     "fill": "animal-dom",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "porcelain": {
+   "job": "holds the contents",
+   "slots": [
+    {
+     "part": "firing",
+     "job": "makes heat",
+     "fill": "fire",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
+  },
+  "block-printing": {
+   "job": "prints",
+   "slots": [
+    {
+     "part": "",
+     "job": "takes the print",
+     "fill": "paper",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    },
+    {
+     "part": "ink",
+     "job": "makes marks",
+     "fill": "ink",
+     "gap": null,
+     "kind": "runs on",
+     "note": null
+    }
+   ]
+  },
+  "mirror": {
+   "job": "reflects light",
+   "slots": [
+    {
+     "part": "",
+     "job": "forms the body",
+     "fill": "glass",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "silvering",
+     "job": "reflects light",
+     "fill": "mercury",
+     "gap": null,
+     "kind": "inside",
+     "note": "Venetian mirrors were backed with tin-mercury amalgam."
+    }
+   ]
+  },
+  "hand-watch": {
+   "job": "keeps time",
+   "slots": [
+    {
+     "part": "",
+     "job": "stores energy",
+     "fill": "spring",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "transmits rotation",
+     "fill": "gear-train",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "escapement",
+     "job": "regulates speed",
+     "fill": "escapement",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "talking-pictures": {
+   "job": "shows the image",
+   "slots": [
+    {
+     "part": "projector",
+     "job": "shows the image",
+     "fill": "motion-pictures",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "sound reader",
+     "job": "turns light into current",
+     "fill": "photocell",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "amplifies a signal",
+     "fill": "triode",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "turns current into sound",
+     "fill": "loudspeaker",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "stone-monument": {
+   "job": "commemorates",
+   "slots": []
+  },
+  "arch": {
+   "job": "bears the load",
+   "slots": []
+  },
+  "aqueduct": {
+   "job": "supplies water",
+   "slots": [
+    {
+     "part": "arcade",
+     "job": "bears the load",
+     "fill": "arch",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "dome": {
+   "job": "bears the load",
+   "slots": []
+  },
+  "flying-buttress": {
+   "job": "bears the load",
+   "slots": [
+    {
+     "part": "flyer",
+     "job": "bears the load",
+     "fill": "arch",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "bifocal-lenses": {
+   "job": "bends light",
+   "slots": [
+    {
+     "part": "reading lens",
+     "job": "bends light",
+     "fill": "eyeglass",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "distance lens",
+     "job": "bends light",
+     "fill": "concave-lenses",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "gas-lighting": {
+   "job": "makes light",
+   "slots": [
+    {
+     "part": "",
+     "job": "stores chemical energy",
+     "fill": "coal-mining",
+     "gap": null,
+     "kind": "runs on",
+     "note": null
+    },
+    {
+     "part": "mantle",
+     "job": "makes light",
+     "fill": "welsbach-mantle",
+     "gap": null,
+     "kind": "inside",
+     "note": "Gas lamps took Welsbach mantles from 1885."
+    }
+   ]
+  },
+  "jacquard-loom": {
+   "job": "makes textiles",
+   "slots": [
+    {
+     "part": "",
+     "job": "makes textiles",
+     "fill": "flying-shuttle",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "program",
+     "job": "stores data",
+     "fill": "punched-cards",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "working-steamboat": {
+   "job": "transports people or goods",
+   "slots": [
+    {
+     "part": "",
+     "job": "provides power",
+     "fill": "improved-steam-engine",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "hull",
+     "job": "floats a load",
+     "fill": "river-boat",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "steam",
+     "job": "makes steam",
+     "fill": "boiler",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "paddle wheels",
+     "job": "provides thrust",
+     "fill": "water-wheel",
+     "gap": null,
+     "kind": "inside",
+     "note": "A waterwheel run backwards."
+    }
+   ]
+  },
+  "macadamized-roads": {
+   "job": "carries traffic",
+   "slots": []
+  },
+  "mechanical-reaper": {
+   "job": "cuts",
+   "slots": [
+    {
+     "part": "cutter",
+     "job": "cuts",
+     "fill": "sickle",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "drive wheel",
+     "job": "rolls a load along the ground",
+     "fill": "wheel-and-axle",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "transmits rotation",
+     "fill": "gear-train",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "provides power",
+     "fill": "horse",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "sewing-machine": {
+   "job": "makes textiles",
+   "slots": [
+    {
+     "part": "needle",
+     "job": "forms the body",
+     "fill": "steel",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "transmits rotation",
+     "fill": "gear-train",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "safety-pin": {
+   "job": "fastens",
+   "slots": [
+    {
+     "part": "wire",
+     "job": "forms the body",
+     "fill": "steel",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "coil",
+     "job": "stores energy",
+     "fill": "spring",
+     "gap": null,
+     "kind": "inside",
+     "note": "The twist at the end is a spring."
+    }
+   ]
+  },
+  "reinforced-concrete": {
+   "job": "bears the load",
+   "slots": [
+    {
+     "part": "matrix",
+     "job": "bears the load",
+     "fill": "portland-cement",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "rebar",
+     "job": "bears the load",
+     "fill": "steel",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "elevators": {
+   "job": "transports people or goods",
+   "slots": [
+    {
+     "part": "safety brake",
+     "job": "stores energy",
+     "fill": "spring",
+     "gap": null,
+     "kind": "inside",
+     "note": "Otis's brake was a spring that sprang out when the rope went slack."
+    },
+    {
+     "part": "hoist",
+     "job": "provides power",
+     "fill": "improved-steam-engine",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "electric hoist",
+     "job": "provides power",
+     "fill": "electric-motors",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "cylinder-locks": {
+   "job": "protects",
+   "slots": [
+    {
+     "part": "pin springs",
+     "job": "stores energy",
+     "fill": "spring",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "typewriters": {
+   "job": "writes",
+   "slots": [
+    {
+     "part": "",
+     "job": "stores energy",
+     "fill": "spring",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "keys",
+     "job": "takes input",
+     "fill": "keys",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "ribbon",
+     "job": "makes marks",
+     "fill": "ink",
+     "gap": null,
+     "kind": "runs on",
+     "note": null
+    }
+   ]
+  },
+  "air-brake": {
+   "job": "slows motion",
+   "slots": [
+    {
+     "part": "compressor",
+     "job": "turns pressure into motion",
+     "fill": "piston-and-cylinder",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "triple valve",
+     "job": "controls flow",
+     "fill": "valve",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "dry-plates": {
+   "job": "records media",
+   "slots": [
+    {
+     "part": "plate",
+     "job": "forms the body",
+     "fill": "glass",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "emulsion",
+     "job": "records media",
+     "fill": "discovery-of-bromine",
+     "gap": null,
+     "kind": "inside",
+     "note": "Silver bromide in gelatin."
+    }
+   ]
+  },
+  "home-photography": {
+   "job": "records media",
+   "slots": [
+    {
+     "part": "film",
+     "job": "records media",
+     "fill": "celluloid",
+     "gap": null,
+     "kind": "runs on",
+     "note": "Kodak's first film was paper-backed; celluloid followed."
+    },
+    {
+     "part": "",
+     "job": "bends light",
+     "fill": "achromatic-lens",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "camera",
+     "job": "records media",
+     "fill": "camera",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "motion-pictures": {
+   "job": "shows the image",
+   "slots": [
+    {
+     "part": "film",
+     "job": "records media",
+     "fill": "celluloid",
+     "gap": null,
+     "kind": "runs on",
+     "note": null
+    },
+    {
+     "part": "camera",
+     "job": "records media",
+     "fill": "camera",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "submarine": {
+   "job": "transports people or goods",
+   "slots": [
+    {
+     "part": "surface engine",
+     "job": "provides power",
+     "fill": "diesel-engine",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "submerged motor",
+     "job": "provides power",
+     "fill": "electric-motors",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "batteries",
+     "job": "stores electricity",
+     "fill": "storage-battery",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "provides thrust",
+     "fill": "screw-propeller",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "assembly-line": {
+   "job": "manufactures",
+   "slots": [
+    {
+     "part": "",
+     "job": "manufactures",
+     "fill": "interchangeable-parts",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
+  },
+  "computer": {
+   "job": "computes",
+   "slots": [
+    {
+     "part": "integrators",
+     "job": "transmits rotation",
+     "fill": "gear-train",
+     "gap": null,
+     "kind": "inside",
+     "note": "Bush's differential analyzer: wheel-and-disc integrators."
+    },
+    {
+     "part": "",
+     "job": "provides power",
+     "fill": "electric-motors",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "ballpoint-pen": {
+   "job": "writes",
+   "slots": [
+    {
+     "part": "",
+     "job": "reduces friction",
+     "fill": "ball-bearing",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "ink",
+     "job": "makes marks",
+     "fill": "ink",
+     "gap": null,
+     "kind": "runs on",
+     "note": null
+    }
+   ]
+  },
+  "color-television": {
+   "job": "shows the image",
+   "slots": [
+    {
+     "part": "camera",
+     "job": "records media",
+     "fill": "iconoscope",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "display",
+     "job": "shows the image",
+     "fill": "oscilloscope",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "phosphor",
+     "job": "makes light",
+     "fill": "europium",
+     "gap": null,
+     "kind": "inside",
+     "note": "Red phosphor, later."
+    }
+   ]
+  },
+  "univac": {
+   "job": "computes",
+   "slots": [
+    {
+     "part": "switches",
+     "job": "controls the current",
+     "fill": "triode",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "spray-cans": {
+   "job": "sprays",
+   "slots": [
+    {
+     "part": "",
+     "job": "provides thrust",
+     "fill": "freon",
+     "gap": null,
+     "kind": "runs on",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "controls flow",
+     "fill": "valve",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "photocopying": {
+   "job": "prints",
+   "slots": [
+    {
+     "part": "process",
+     "job": "prints",
+     "fill": "xerography",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "electronic-watch": {
+   "job": "keeps time",
+   "slots": [
+    {
+     "part": "display",
+     "job": "makes light",
+     "fill": "light-emitting-diodes",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "chip",
+     "job": "computes",
+     "fill": "integrated-circuits",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "stores electricity",
+     "fill": "lithium-battery",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "oscillator",
+     "job": "keeps time",
+     "fill": "quartz-oscillator",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "laser-printers": {
+   "job": "prints",
+   "slots": [
+    {
+     "part": "",
+     "job": "prints",
+     "fill": "laser",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "printing",
+     "job": "prints",
+     "fill": "xerography",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "controller",
+     "job": "computes",
+     "fill": "microchips",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "fire": {
+   "job": "prepares food",
+   "slots": []
+  },
+  "oil-lamp": {
+   "job": "makes light",
+   "slots": [
+    {
+     "part": "reservoir",
+     "job": "holds the contents",
+     "fill": "pottery",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "fuel",
+     "job": "stores chemical energy",
+     "fill": "animal-dom",
+     "gap": null,
+     "kind": "runs on",
+     "note": "Animal fat, or olive oil."
+    }
+   ]
+  },
+  "agriculture": {
+   "job": "grows food",
+   "slots": [
+    {
+     "part": "tilling",
+     "job": "cuts",
+     "fill": "plow",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    },
+    {
+     "part": "watering",
+     "job": "supplies water",
+     "fill": "irrigation",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    },
+    {
+     "part": "harvest",
+     "job": "cuts",
+     "fill": "sickle",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
+  },
+  "raft": {
+   "job": "transports people or goods",
+   "slots": []
+  },
+  "sickle": {
+   "job": "cuts",
+   "slots": [
+    {
+     "part": "blade",
+     "job": "cuts",
+     "fill": "stone-tool",
+     "gap": null,
+     "kind": "inside",
+     "note": "Flint blades set in a wooden handle."
+    }
+   ]
+  },
+  "fish-nets": {
+   "job": "forms the body",
+   "slots": []
+  },
+  "irrigation": {
+   "job": "supplies water",
+   "slots": []
+  },
+  "simple-sundial": {
+   "job": "keeps time",
+   "slots": []
+  },
+  "copper": {
+   "job": "forms the body",
+   "slots": [
+    {
+     "part": "smelting",
+     "job": "makes heat",
+     "fill": "fire",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
+  },
+  "bronze": {
+   "job": "forms the body",
+   "slots": [
+    {
+     "part": "",
+     "job": "forms the body",
+     "fill": "copper",
+     "gap": null,
+     "kind": "inside",
+     "note": "Tin has no card."
+    }
+   ]
+  },
+  "river-boat": {
+   "job": "transports people or goods",
+   "slots": [
+    {
+     "part": "",
+     "job": "provides thrust",
+     "fill": "sail",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "steering",
+     "job": "steers",
+     "fill": "rudder",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "plow": {
+   "job": "cuts",
+   "slots": [
+    {
+     "part": "",
+     "job": "provides power",
+     "fill": "animal-dom",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "glass": {
+   "job": "forms the body",
+   "slots": [
+    {
+     "part": "melting",
+     "job": "makes heat",
+     "fill": "fire",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
+  },
+  "steel": {
+   "job": "forms the body",
+   "slots": [
+    {
+     "part": "smelting",
+     "job": "makes heat",
+     "fill": "fire",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
+  },
+  "paved-road": {
+   "job": "carries traffic",
+   "slots": []
+  },
+  "lighthouse": {
+   "job": "makes light",
+   "slots": [
+    {
+     "part": "",
+     "job": "makes light",
+     "fill": "oil-lamp",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "makes light",
+     "fill": "electric-light",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "glass-blowing": {
+   "job": "forms the body",
+   "slots": [
+    {
+     "part": "",
+     "job": "forms the body",
+     "fill": "glass",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
+  },
+  "water-wheel": {
+   "job": "provides power",
+   "slots": [
+    {
+     "part": "transmission",
+     "job": "transmits rotation",
+     "fill": "gear-train",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "basic-steam-engine": {
+   "job": "turns flow into rotation",
+   "slots": [
+    {
+     "part": "",
+     "job": "makes steam",
+     "fill": "boiler",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "paper": {
+   "job": "takes the print",
+   "slots": [
+    {
+     "part": "pulp",
+     "job": "forms the body",
+     "fill": "cellulose",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "iron-horseshoes": {
+   "job": "protects",
+   "slots": [
+    {
+     "part": "",
+     "job": "forms the body",
+     "fill": "steel",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "horse-collar": {
+   "job": "provides power",
+   "slots": []
+  },
+  "windmill": {
+   "job": "provides power",
+   "slots": [
+    {
+     "part": "",
+     "job": "turns flow into rotation",
+     "fill": "sail",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "transmission",
+     "job": "transmits rotation",
+     "fill": "gear-train",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "compass": {
+   "job": "finds direction",
+   "slots": []
+  },
+  "coal-mining": {
+   "job": "stores chemical energy",
+   "slots": [
+    {
+     "part": "drainage",
+     "job": "pumps water",
+     "fill": "newcomen-steam-engine",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
+  },
+  "rudder": {
+   "job": "steers",
+   "slots": []
+  },
+  "spinning-wheel": {
+   "job": "makes textiles",
+   "slots": [
+    {
+     "part": "drive wheel",
+     "job": "transmits rotation",
+     "fill": "wheel-and-axle",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "printing-press": {
+   "job": "prints",
+   "slots": [
+    {
+     "part": "medium",
+     "job": "takes the print",
+     "fill": "paper",
+     "gap": null,
+     "kind": "runs on",
+     "note": null
+    },
+    {
+     "part": "ink",
+     "job": "makes marks",
+     "fill": "ink",
+     "gap": null,
+     "kind": "runs on",
+     "note": null
+    },
+    {
+     "part": "type",
+     "job": "makes marks",
+     "fill": null,
+     "gap": "Movable type",
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "plate-glass": {
+   "job": "forms the body",
+   "slots": []
+  },
+  "longitude": {
+   "job": "keeps time",
+   "slots": [
+    {
+     "part": "",
+     "job": "stores energy",
+     "fill": "spring",
+     "gap": null,
+     "kind": "inside",
+     "note": "Harrison's chronometer."
+    },
+    {
+     "part": "",
+     "job": "transmits rotation",
+     "fill": "gear-train",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "escapement",
+     "job": "regulates speed",
+     "fill": "escapement",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "franklin-stove": {
+   "job": "makes heat",
+   "slots": [
+    {
+     "part": "",
+     "job": "forms the body",
+     "fill": "coke-iron",
+     "gap": null,
+     "kind": "inside",
+     "note": "Cast iron."
+    },
+    {
+     "part": "fuel",
+     "job": "stores chemical energy",
+     "fill": "coal-mining",
+     "gap": null,
+     "kind": "runs on",
+     "note": null
+    }
+   ]
+  },
+  "carbonated-water": {
+   "job": "prepares food",
+   "slots": [
+    {
+     "part": "gas",
+     "job": "forms the body",
+     "fill": "carbon-dioxide",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "cotton-gin": {
+   "job": "makes textiles",
+   "slots": []
+  },
+  "interchangeable-parts": {
+   "job": "manufactures",
+   "slots": []
+  },
+  "portland-cement": {
+   "job": "forms the body",
+   "slots": [
+    {
+     "part": "kiln",
+     "job": "makes heat",
+     "fill": "fire",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
+  },
+  "steam-locomotive-improved": {
+   "job": "transports people or goods",
+   "slots": [
+    {
+     "part": "",
+     "job": "makes steam",
+     "fill": "boiler",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "power stroke",
+     "job": "turns pressure into motion",
+     "fill": "piston-and-cylinder",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "rolls a load along the ground",
+     "fill": "wheel-and-axle",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "matches": {
+   "job": "ignites fuel",
+   "slots": [
+    {
+     "part": "head",
+     "job": "ignites fuel",
+     "fill": "phosphorus",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "photographic-negative": {
+   "job": "records media",
+   "slots": [
+    {
+     "part": "negative",
+     "job": "records media",
+     "fill": "paper",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
+  },
+  "refrigerators": {
+   "job": "preserves food",
+   "slots": [
+    {
+     "part": "compressor",
+     "job": "turns pressure into motion",
+     "fill": "piston-and-cylinder",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "refrigerant",
+     "job": "carries heat",
+     "fill": "liquid-ammonia",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "expansion valve",
+     "job": "controls flow",
+     "fill": "valve",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "provides power",
+     "fill": "electric-motors",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "phonograph": {
+   "job": "records media",
+   "slots": []
+  },
+  "linotype": {
+   "job": "prints",
+   "slots": [
+    {
+     "part": "keyboard",
+     "job": "takes input",
+     "fill": "keys",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "type metal",
+     "job": "forms the body",
+     "fill": "lead",
+     "gap": null,
+     "kind": "runs on",
+     "note": null
+    }
+   ]
+  },
+  "robots": {
+   "job": "manufactures",
+   "slots": [
+    {
+     "part": "actuators",
+     "job": "turns pressure into motion",
+     "fill": "piston-and-cylinder",
+     "gap": null,
+     "kind": "inside",
+     "note": "Unimate's arm was hydraulic."
+    }
+   ]
+  },
+  "pocket-calculators": {
+   "job": "computes",
+   "slots": [
+    {
+     "part": "chip",
+     "job": "computes",
+     "fill": "integrated-circuits",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "display",
+     "job": "makes light",
+     "fill": "light-emitting-diodes",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "stores electricity",
+     "fill": "dry-cell",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "keypad",
+     "job": "takes input",
+     "fill": "keys",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "scale": {
+   "job": "measures",
+   "slots": []
+  },
+  "water-clock": {
+   "job": "keeps time",
+   "slots": [
+    {
+     "part": "vessel",
+     "job": "holds the contents",
+     "fill": "pottery",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "slide-rules": {
+   "job": "computes",
+   "slots": []
+  },
+  "calculating-machines": {
+   "job": "computes",
+   "slots": [
+    {
+     "part": "",
+     "job": "transmits rotation",
+     "fill": "gear-train",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "fermentation": {
+   "job": "prepares food",
+   "slots": [
+    {
+     "part": "",
+     "job": "prepares food",
+     "fill": "yeast-cells",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
+  },
+  "sundial": {
+   "job": "keeps time",
+   "slots": []
+  },
+  "eyeglass": {
+   "job": "bends light",
+   "slots": [
+    {
+     "part": "lenses",
+     "job": "bends light",
+     "fill": "glass",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "sulfuric-acid": {
+   "job": "reacts",
+   "slots": [
+    {
+     "part": "sulfur",
+     "job": "reacts",
+     "fill": "sulfur",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
+  },
+  "distillation": {
+   "job": "separates mixtures",
+   "slots": [
+    {
+     "part": "heat",
+     "job": "makes heat",
+     "fill": "fire",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
+  },
+  "concave-lenses": {
+   "job": "bends light",
+   "slots": [
+    {
+     "part": "lens",
+     "job": "forms the body",
+     "fill": "glass",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "surgery": {
+   "job": "treats illness",
+   "slots": [
+    {
+     "part": "scalpel",
+     "job": "cuts",
+     "fill": "steel",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
+  },
+  "stocking-frame": {
+   "job": "makes textiles",
+   "slots": [
+    {
+     "part": "needles",
+     "job": "forms the body",
+     "fill": "steel",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "microscope": {
+   "job": "magnifies",
+   "slots": [
+    {
+     "part": "lenses",
+     "job": "bends light",
+     "fill": "glass",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "thermometer": {
+   "job": "measures",
+   "slots": [
+    {
+     "part": "tube",
+     "job": "holds the contents",
+     "fill": "glass",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "cross-hairs": {
+   "job": "finds direction",
+   "slots": []
+  },
+  "adding-machine": {
+   "job": "computes",
+   "slots": [
+    {
+     "part": "",
+     "job": "transmits rotation",
+     "fill": "gear-train",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "barometer": {
+   "job": "measures",
+   "slots": [
+    {
+     "part": "tube",
+     "job": "holds the contents",
+     "fill": "glass",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "mercury",
+     "job": "measures",
+     "fill": "mercury",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "air-pump": {
+   "job": "makes a vacuum",
+   "slots": [
+    {
+     "part": "pump",
+     "job": "turns pressure into motion",
+     "fill": "piston-and-cylinder",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "controls flow",
+     "fill": "valve",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "pendulum-clock": {
+   "job": "keeps time",
+   "slots": [
+    {
+     "part": "",
+     "job": "transmits rotation",
+     "fill": "gear-train",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "escapement",
+     "job": "regulates speed",
+     "fill": "escapement",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "pendulum",
+     "job": "regulates speed",
+     "fill": "pendulum",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "static-electricity": {
+   "job": "makes electricity",
+   "slots": [
+    {
+     "part": "globe",
+     "job": "forms the body",
+     "fill": "sulfur",
+     "gap": null,
+     "kind": "inside",
+     "note": "Guericke's globe was sulfur."
+    }
+   ]
+  },
+  "reflecting-telescope": {
+   "job": "gathers light",
+   "slots": [
+    {
+     "part": "primary mirror",
+     "job": "reflects light",
+     "fill": "mirror",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "pulse-watch": {
+   "job": "keeps time",
+   "slots": [
+    {
+     "part": "",
+     "job": "stores energy",
+     "fill": "spring",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "transmits rotation",
+     "fill": "gear-train",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "escapement",
+     "job": "regulates speed",
+     "fill": "escapement",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "coke-iron": {
+   "job": "forms the body",
+   "slots": [
+    {
+     "part": "",
+     "job": "stores chemical energy",
+     "fill": "coal-mining",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
+  },
+  "smallpox-vaccine": {
+   "job": "prevents disease",
+   "slots": []
+  },
+  "mercury-thermometer": {
+   "job": "measures",
+   "slots": [
+    {
+     "part": "tube",
+     "job": "holds the contents",
+     "fill": "glass",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "mercury",
+     "job": "measures",
+     "fill": "mercury",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "achromatic-lens": {
+   "job": "bends light",
+   "slots": [
+    {
+     "part": "flint element",
+     "job": "bends light",
+     "fill": "concave-lenses",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "crown element",
+     "job": "bends light",
+     "fill": "glass",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "lightning-rod": {
+   "job": "protects",
+   "slots": [
+    {
+     "part": "rod",
+     "job": "carries current",
+     "fill": "steel",
+     "gap": null,
+     "kind": "inside",
+     "note": "Franklin's rods were iron."
+    }
+   ]
+  },
+  "vaccination": {
+   "job": "prevents disease",
+   "slots": []
+  },
+  "malleable-platinum": {
+   "job": "forms the body",
+   "slots": []
+  },
+  "stethoscope": {
+   "job": "diagnoses",
+   "slots": []
+  },
+  "diffraction-gratings": {
+   "job": "bends light",
+   "slots": [
+    {
+     "part": "plate",
+     "job": "forms the body",
+     "fill": "glass",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "analytical-engine": {
+   "job": "computes",
+   "slots": [
+    {
+     "part": "",
+     "job": "transmits rotation",
+     "fill": "gear-train",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "program",
+     "job": "stores data",
+     "fill": "punched-cards",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "modern-candles": {
+   "job": "makes light",
+   "slots": []
+  },
+  "synthetic-urea": {
+   "job": "forms the body",
+   "slots": []
+  },
+  "nicol-prism": {
+   "job": "polarizes light",
+   "slots": []
+  },
+  "achromatic-microscopes": {
+   "job": "magnifies",
+   "slots": [
+    {
+     "part": "objective",
+     "job": "bends light",
+     "fill": "achromatic-lens",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "vulcanization-of-rubber": {
+   "job": "forms the body",
+   "slots": [
+    {
+     "part": "sulfur",
+     "job": "reacts",
+     "fill": "sulfur",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
+  },
+  "chemical-fertilizer": {
+   "job": "grows food",
+   "slots": [
+    {
+     "part": "",
+     "job": "supplies a nutrient",
+     "fill": "nitrogen",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "phosphate",
+     "job": "supplies a nutrient",
+     "fill": "phosphorus",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "potash",
+     "job": "supplies a nutrient",
+     "fill": "sodium-and-potassium",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "anesthesia": {
+   "job": "numbs pain",
+   "slots": [
+    {
+     "part": "",
+     "job": "numbs pain",
+     "fill": "nitrous-oxide",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "numbs pain",
+     "fill": "chloroform",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
+  },
+  "nitroglycerine": {
+   "job": "explodes",
+   "slots": [
+    {
+     "part": "nitrating acid",
+     "job": "reacts",
+     "fill": "sulfuric-acid",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
+  },
+  "silver-fillings": {
+   "job": "treats illness",
+   "slots": [
+    {
+     "part": "amalgam",
+     "job": "forms the body",
+     "fill": "mercury",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "painless-childbirth": {
+   "job": "numbs pain",
+   "slots": [
+    {
+     "part": "",
+     "job": "numbs pain",
+     "fill": "chloroform",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
+  },
+  "gyroscope": {
+   "job": "holds direction",
+   "slots": [
+    {
+     "part": "",
+     "job": "reduces friction",
+     "fill": "ball-bearing",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "kerosene": {
+   "job": "stores chemical energy",
+   "slots": [
+    {
+     "part": "crude oil",
+     "job": "stores chemical energy",
+     "fill": "oil-wells",
+     "gap": null,
+     "kind": "made with",
+     "note": "First made from coal and shale; oil wells came later."
+    },
+    {
+     "part": "refining",
+     "job": "separates mixtures",
+     "fill": "distillation",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
+  },
+  "seismograph": {
+   "job": "measures",
+   "slots": [
+    {
+     "part": "mercury",
+     "job": "measures",
+     "fill": "mercury",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "pyroxylin": {
+   "job": "forms the body",
+   "slots": [
+    {
+     "part": "fiber",
+     "job": "forms the body",
+     "fill": "cellulose",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "nitrating acid",
+     "job": "reacts",
+     "fill": "sulfuric-acid",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
+  },
+  "bessemer-steel": {
+   "job": "forms the body",
+   "slots": [
+    {
+     "part": "pig iron",
+     "job": "forms the body",
+     "fill": "coke-iron",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
+  },
+  "synthetic-dyes": {
+   "job": "colors",
+   "slots": [
+    {
+     "part": "coal tar",
+     "job": "reacts",
+     "fill": "coal-mining",
+     "gap": null,
+     "kind": "made with",
+     "note": "Perkin's mauve came from coal tar."
+    }
+   ]
+  },
+  "pasteurization": {
+   "job": "preserves food",
+   "slots": []
+  },
+  "oil-wells": {
+   "job": "stores chemical energy",
+   "slots": [
+    {
+     "part": "drill power",
+     "job": "provides power",
+     "fill": "steam-engine",
+     "gap": null,
+     "kind": "made with",
+     "note": "Drake drove the drill with a steam engine."
+    }
+   ]
+  },
+  "barbiturates": {
+   "job": "treats illness",
+   "slots": [
+    {
+     "part": "",
+     "job": "forms the body",
+     "fill": "synthetic-urea",
+     "gap": null,
+     "kind": "inside",
+     "note": "Barbituric acid is made from urea."
+    }
+   ]
+  },
+  "antiseptic-surgery": {
+   "job": "treats illness",
+   "slots": []
+  },
+  "clinical-thermometer": {
+   "job": "measures",
+   "slots": [
+    {
+     "part": "tube",
+     "job": "holds the contents",
+     "fill": "glass",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "mercury",
+     "job": "measures",
+     "fill": "mercury",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "dynamite": {
+   "job": "explodes",
+   "slots": [
+    {
+     "part": "",
+     "job": "stores chemical energy",
+     "fill": "nitroglycerine",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "dry-cell": {
+   "job": "stores electricity",
+   "slots": [
+    {
+     "part": "electrode",
+     "job": "stores chemical energy",
+     "fill": "zinc",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "celluloid": {
+   "job": "forms the body",
+   "slots": [
+    {
+     "part": "base",
+     "job": "forms the body",
+     "fill": "pyroxylin",
+     "gap": null,
+     "kind": "inside",
+     "note": "Plus camphor, which has no card."
+    }
+   ]
+  },
+  "radiometer": {
+   "job": "detects radiation",
+   "slots": [
+    {
+     "part": "bulb",
+     "job": "holds the contents",
+     "fill": "glass",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "bacterial-cultivation": {
+   "job": "grows cultures",
+   "slots": []
+  },
+  "saccharin": {
+   "job": "prepares food",
+   "slots": [
+    {
+     "part": "coal tar",
+     "job": "reacts",
+     "fill": "coal-mining",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
+  },
+  "modern-seismograph": {
+   "job": "measures",
+   "slots": []
+  },
+  "electromechanical-calculator": {
+   "job": "computes",
+   "slots": [
+    {
+     "part": "counters",
+     "job": "makes a magnetic field",
+     "fill": "electromagnets",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "cards",
+     "job": "stores data",
+     "fill": "punched-cards",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "interferometer": {
+   "job": "measures",
+   "slots": [
+    {
+     "part": "",
+     "job": "reflects light",
+     "fill": "mirror",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "anthrax-inoculation": {
+   "job": "prevents disease",
+   "slots": []
+  },
+  "diffraction-gratings-improved": {
+   "job": "bends light",
+   "slots": []
+  },
+  "alloy-steel": {
+   "job": "forms the body",
+   "slots": []
+  },
+  "bacterial-staining": {
+   "job": "colors",
+   "slots": [
+    {
+     "part": "stain",
+     "job": "colors",
+     "fill": "synthetic-dyes",
+     "gap": null,
+     "kind": "made with",
+     "note": "Aniline dyes."
+    }
+   ]
+  },
+  "rabies": {
+   "job": "prevents disease",
+   "slots": []
+  },
+  "aluminum-process": {
+   "job": "forms the body",
+   "slots": [
+    {
+     "part": "",
+     "job": "makes electricity",
+     "fill": "electric-generators",
+     "gap": null,
+     "kind": "made with",
+     "note": "Dynamos made the electrolysis practical."
+    }
+   ]
+  },
+  "surgical-gloves": {
+   "job": "protects",
+   "slots": [
+    {
+     "part": "rubber",
+     "job": "forms the body",
+     "fill": "vulcanization-of-rubber",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "antitoxin": {
+   "job": "treats illness",
+   "slots": [
+    {
+     "part": "serum",
+     "job": "treats illness",
+     "fill": "horse",
+     "gap": null,
+     "kind": "made with",
+     "note": "Raised in horses."
+    }
+   ]
+  },
+  "carborundum": {
+   "job": "grinds",
+   "slots": [
+    {
+     "part": "",
+     "job": "forms the body",
+     "fill": "silicon",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "dewar-flask": {
+   "job": "insulates",
+   "slots": [
+    {
+     "part": "walls",
+     "job": "forms the body",
+     "fill": "glass",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "silvering",
+     "job": "reflects light",
+     "fill": "mirror",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "ultramicroscope": {
+   "job": "magnifies",
+   "slots": [
+    {
+     "part": "",
+     "job": "bends light",
+     "fill": "microscope",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "sutures": {
+   "job": "fastens",
+   "slots": []
+  },
+  "electrocardiogram": {
+   "job": "diagnoses",
+   "slots": [
+    {
+     "part": "recorder",
+     "job": "measures",
+     "fill": "galvanometer",
+     "gap": null,
+     "kind": "inside",
+     "note": "Einthoven's string galvanometer."
+    }
+   ]
+  },
+  "novocaine": {
+   "job": "numbs pain",
+   "slots": []
+  },
+  "chromatography": {
+   "job": "separates mixtures",
+   "slots": []
+  },
+  "synthetic-peptides": {
+   "job": "builds molecules",
+   "slots": []
+  },
+  "chemotherapy": {
+   "job": "treats illness",
+   "slots": []
+  },
+  "tissue-culture": {
+   "job": "grows cultures",
+   "slots": []
+  },
+  "geiger-counter": {
+   "job": "detects radiation",
+   "slots": [
+    {
+     "part": "fill gas",
+     "job": "detects radiation",
+     "fill": "argon",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "stores electricity",
+     "fill": "electric-battery",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "haber-process": {
+   "job": "grows food",
+   "slots": [
+    {
+     "part": "",
+     "job": "reacts",
+     "fill": "hydrogen",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "reacts",
+     "fill": "nitrogen",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
+  },
+  "syphilis-treatment": {
+   "job": "kills bacteria",
+   "slots": []
+  },
+  "tungsten-wire": {
+   "job": "makes light",
+   "slots": [
+    {
+     "part": "metal",
+     "job": "forms the body",
+     "fill": "tungsten",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "bakelite": {
+   "job": "insulates",
+   "slots": []
+  },
+  "coal-hydrogenation": {
+   "job": "stores chemical energy",
+   "slots": [
+    {
+     "part": "",
+     "job": "reacts",
+     "fill": "hydrogen",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "stores chemical energy",
+     "fill": "coal-mining",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
+  },
+  "mass-spectrometer": {
+   "job": "measures",
+   "slots": [
+    {
+     "part": "",
+     "job": "makes a magnetic field",
+     "fill": "electromagnets",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "detector",
+     "job": "records media",
+     "fill": "dry-plates",
+     "gap": null,
+     "kind": "runs on",
+     "note": "Aston recorded the spectra on photographic plates."
+    }
+   ]
+  },
+  "tetraethyl-lead": {
+   "job": "regulates speed",
+   "slots": [
+    {
+     "part": "lead",
+     "job": "regulates speed",
+     "fill": "lead",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "ultracentrifuge": {
+   "job": "separates mixtures",
+   "slots": [
+    {
+     "part": "",
+     "job": "turns flow into rotation",
+     "fill": "turbines",
+     "gap": null,
+     "kind": "inside",
+     "note": "Svedberg's rotors were driven by oil turbines."
+    },
+    {
+     "part": "",
+     "job": "reduces friction",
+     "fill": "ball-bearing",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "irradiation": {
+   "job": "supplies a nutrient",
+   "slots": []
+  },
+  "morphine-synthesis": {
+   "job": "numbs pain",
+   "slots": []
+  },
+  "coincidence-counter": {
+   "job": "detects radiation",
+   "slots": [
+    {
+     "part": "detectors",
+     "job": "detects radiation",
+     "fill": "geiger-counter",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "circuit",
+     "job": "amplifies a signal",
+     "fill": "triode",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "particle-accelerator": {
+   "job": "accelerates particles",
+   "slots": [
+    {
+     "part": "",
+     "job": "changes voltage",
+     "fill": "transformer",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "controls the current",
+     "fill": "electronic-rectifier",
+     "gap": null,
+     "kind": "inside",
+     "note": "The Cockcroft-Walton voltage multiplier is a stack of rectifiers."
+    }
+   ]
+  },
+  "cardiac-catheter": {
+   "job": "diagnoses",
+   "slots": [
+    {
+     "part": "tube",
+     "job": "forms the body",
+     "fill": "vulcanization-of-rubber",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "electroencephalography": {
+   "job": "diagnoses",
+   "slots": [
+    {
+     "part": "recorder",
+     "job": "measures",
+     "fill": "galvanometer",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "cyclotron": {
+   "job": "accelerates particles",
+   "slots": [
+    {
+     "part": "",
+     "job": "makes a magnetic field",
+     "fill": "electromagnets",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "oscillator",
+     "job": "amplifies a signal",
+     "fill": "triode",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "freon": {
+   "job": "carries heat",
+   "slots": [
+    {
+     "part": "",
+     "job": "forms the body",
+     "fill": "fluorine",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "forms the body",
+     "fill": "chlorine",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "stratospheric-balloons": {
+   "job": "flies",
+   "slots": [
+    {
+     "part": "lift gas",
+     "job": "provides lift",
+     "fill": "hydrogen",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "gondola",
+     "job": "forms the body",
+     "fill": "aluminum",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "neoprene": {
+   "job": "forms the body",
+   "slots": [
+    {
+     "part": "",
+     "job": "forms the body",
+     "fill": "chlorine",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "nylon": {
+   "job": "forms the body",
+   "slots": []
+  },
+  "virus-culture": {
+   "job": "grows cultures",
+   "slots": []
+  },
+  "electron-microscope": {
+   "job": "magnifies",
+   "slots": [
+    {
+     "part": "lenses",
+     "job": "makes a magnetic field",
+     "fill": "electromagnets",
+     "gap": null,
+     "kind": "inside",
+     "note": "Magnetic lenses."
+    },
+    {
+     "part": "filament",
+     "job": "emits electrons",
+     "fill": "tungsten-wire",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "records media",
+     "fill": "dry-plates",
+     "gap": null,
+     "kind": "runs on",
+     "note": null
+    },
+    {
+     "part": "gun",
+     "job": "emits electrons",
+     "fill": "electron-gun",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "prontosil": {
+   "job": "kills bacteria",
+   "slots": [
+    {
+     "part": "dye",
+     "job": "forms the body",
+     "fill": "synthetic-dyes",
+     "gap": null,
+     "kind": "inside",
+     "note": "Prontosil was a red dye."
+    }
+   ]
+  },
+  "polaroid": {
+   "job": "polarizes light",
+   "slots": [
+    {
+     "part": "crystals",
+     "job": "polarizes light",
+     "fill": "quinine",
+     "gap": null,
+     "kind": "inside",
+     "note": "Herapathite: iodine and quinine."
+    },
+    {
+     "part": "crystals",
+     "job": "polarizes light",
+     "fill": "iodine",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "sheet",
+     "job": "forms the body",
+     "fill": "celluloid",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "quinacrine": {
+   "job": "treats illness",
+   "slots": []
+  },
+  "synthetic-vitamin-c": {
+   "job": "supplies a nutrient",
+   "slots": []
+  },
+  "bathysphere": {
+   "job": "transports people or goods",
+   "slots": [
+    {
+     "part": "sphere",
+     "job": "forms the body",
+     "fill": "steel",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "windows",
+     "job": "forms the body",
+     "fill": "glass",
+     "gap": null,
+     "kind": "inside",
+     "note": "Fused quartz."
+    },
+    {
+     "part": "air",
+     "job": "supplies oxygen",
+     "fill": "oxygen",
+     "gap": null,
+     "kind": "runs on",
+     "note": null
+    }
+   ]
+  },
+  "perfusion-pump": {
+   "job": "pumps blood",
+   "slots": [
+    {
+     "part": "chambers",
+     "job": "forms the body",
+     "fill": "glass",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "controls flow",
+     "fill": "valve",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "field-emission-microscope": {
+   "job": "magnifies",
+   "slots": [
+    {
+     "part": "tip",
+     "job": "emits electrons",
+     "fill": "tungsten-wire",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "yellow-fever-vaccine": {
+   "job": "prevents disease",
+   "slots": [
+    {
+     "part": "",
+     "job": "grows cultures",
+     "fill": "virus-culture",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
+  },
+  "electrophoresis": {
+   "job": "separates mixtures",
+   "slots": []
+  },
+  "phase-contrast-microscope": {
+   "job": "magnifies",
+   "slots": [
+    {
+     "part": "",
+     "job": "bends light",
+     "fill": "microscope",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "iconoscope": {
+   "job": "records media",
+   "slots": [
+    {
+     "part": "gun",
+     "job": "emits electrons",
+     "fill": "electron-gun",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "mosaic",
+     "job": "turns light into current",
+     "fill": "photocell",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "xerography": {
+   "job": "prints",
+   "slots": [
+    {
+     "part": "drum",
+     "job": "records media",
+     "fill": "cadmium-lithium-selenium",
+     "gap": null,
+     "kind": "inside",
+     "note": "Selenium-coated drums came in the late 1940s."
+    }
+   ]
+  },
+  "frequency-modulation": {
+   "job": "sends and receives signals",
+   "slots": []
+  },
+  "betatron": {
+   "job": "accelerates particles",
+   "slots": [
+    {
+     "part": "magnet",
+     "job": "makes a magnetic field",
+     "fill": "electromagnets",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "core",
+     "job": "changes voltage",
+     "fill": "transformer",
+     "gap": null,
+     "kind": "inside",
+     "note": "The electron beam is the transformer's secondary."
+    }
+   ]
+  },
+  "cardiac-catheterization-practice": {
+   "job": "diagnoses",
+   "slots": [
+    {
+     "part": "imaging",
+     "job": "makes x-rays",
+     "fill": "coolidge-tube",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
+  },
+  "nuclear-reactor": {
+   "job": "makes heat",
+   "slots": [
+    {
+     "part": "",
+     "job": "stores nuclear energy",
+     "fill": "uranium",
+     "gap": null,
+     "kind": "runs on",
+     "note": null
+    },
+    {
+     "part": "control rods",
+     "job": "regulates speed",
+     "fill": "cadmium-lithium-selenium",
+     "gap": null,
+     "kind": "inside",
+     "note": "Cadmium."
+    }
+   ]
+  },
+  "aqualung": {
+   "job": "supplies oxygen",
+   "slots": [
+    {
+     "part": "demand regulator",
+     "job": "controls flow",
+     "fill": "valve",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "breathing gas",
+     "job": "supplies oxygen",
+     "fill": "oxygen",
+     "gap": null,
+     "kind": "runs on",
+     "note": null
+    }
+   ]
+  },
+  "teflon": {
+   "job": "forms the body",
+   "slots": [
+    {
+     "part": "",
+     "job": "forms the body",
+     "fill": "fluorine",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "synthesis-of-quinine": {
+   "job": "treats illness",
+   "slots": []
+  },
+  "2,4-d": {
+   "job": "grows food",
+   "slots": []
+  },
+  "paper-chromatography": {
+   "job": "separates mixtures",
+   "slots": [
+    {
+     "part": "",
+     "job": "separates mixtures",
+     "fill": "paper",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
+  },
+  "synchrocyclotron": {
+   "job": "accelerates particles",
+   "slots": [
+    {
+     "part": "magnet",
+     "job": "makes a magnetic field",
+     "fill": "electromagnets",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "oscillator",
+     "job": "amplifies a signal",
+     "fill": "triode",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "artificial-kidneys": {
+   "job": "treats illness",
+   "slots": [
+    {
+     "part": "membrane",
+     "job": "separates mixtures",
+     "fill": "cellulose",
+     "gap": null,
+     "kind": "inside",
+     "note": "Cellophane tubing."
+    }
+   ]
+  },
+  "eniac": {
+   "job": "computes",
+   "slots": [
+    {
+     "part": "switches",
+     "job": "controls the current",
+     "fill": "triode",
+     "gap": null,
+     "kind": "inside",
+     "note": "About 17,500 vacuum tubes."
+    },
+    {
+     "part": "input",
+     "job": "stores data",
+     "fill": "punched-cards",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "cloud-seeding": {
+   "job": "makes rain",
+   "slots": [
+    {
+     "part": "seed",
+     "job": "makes rain",
+     "fill": "dry-ice",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    },
+    {
+     "part": "seed",
+     "job": "makes rain",
+     "fill": "iodine",
+     "gap": null,
+     "kind": "made with",
+     "note": "Silver iodide."
+    }
+   ]
+  },
+  "land-camera": {
+   "job": "records media",
+   "slots": [
+    {
+     "part": "",
+     "job": "bends light",
+     "fill": "achromatic-lens",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "supersonic-flight": {
+   "job": "flies",
+   "slots": [
+    {
+     "part": "",
+     "job": "provides thrust",
+     "fill": "liquid-fuel-rockets",
+     "gap": null,
+     "kind": "inside",
+     "note": "The Bell X-1 was rocket-powered."
+    },
+    {
+     "part": "",
+     "job": "provides lift",
+     "fill": "wing",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "television-in-the-home": {
+   "job": "shows the image",
+   "slots": [
+    {
+     "part": "display",
+     "job": "shows the image",
+     "fill": "oscilloscope",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "tuner",
+     "job": "amplifies a signal",
+     "fill": "superheterodyne-receiver",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "turns current into sound",
+     "fill": "loudspeaker",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "holography": {
+   "job": "records media",
+   "slots": [
+    {
+     "part": "plate",
+     "job": "records media",
+     "fill": "dry-plates",
+     "gap": null,
+     "kind": "runs on",
+     "note": null
+    }
+   ]
+  },
+  "bathyscaphe": {
+   "job": "transports people or goods",
+   "slots": [
+    {
+     "part": "cabin",
+     "job": "forms the body",
+     "fill": "steel",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "float",
+     "job": "provides lift",
+     "fill": "gasoline",
+     "gap": null,
+     "kind": "inside",
+     "note": "Gasoline is lighter than water."
+    }
+   ]
+  },
+  "virus-culture-penicillin": {
+   "job": "grows cultures",
+   "slots": [
+    {
+     "part": "antibiotic",
+     "job": "kills bacteria",
+     "fill": "penicillin-practical",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
+  },
+  "starch-chromatography": {
+   "job": "separates mixtures",
+   "slots": []
+  },
+  "breeder-reactors": {
+   "job": "makes heat",
+   "slots": [
+    {
+     "part": "",
+     "job": "stores nuclear energy",
+     "fill": "neptunium-and-plutonium",
+     "gap": null,
+     "kind": "runs on",
+     "note": null
+    },
+    {
+     "part": "blanket",
+     "job": "stores nuclear energy",
+     "fill": "uranium",
+     "gap": null,
+     "kind": "runs on",
+     "note": null
+    },
+    {
+     "part": "coolant",
+     "job": "carries heat",
+     "fill": "sodium-and-potassium",
+     "gap": null,
+     "kind": "inside",
+     "note": "EBR-I used sodium-potassium coolant."
+    }
+   ]
+  },
+  "stellarator": {
+   "job": "holds the contents",
+   "slots": [
+    {
+     "part": "",
+     "job": "makes a magnetic field",
+     "fill": "electromagnets",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "stores nuclear energy",
+     "fill": "deuterium",
+     "gap": null,
+     "kind": "runs on",
+     "note": null
+    }
+   ]
+  },
+  "steroid-synthesis": {
+   "job": "regulates the body",
+   "slots": []
+  },
+  "fluoridation": {
+   "job": "prevents disease",
+   "slots": [
+    {
+     "part": "fluoride",
+     "job": "supplies a nutrient",
+     "fill": "fluorine",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
+  },
+  "radioimmune-assay": {
+   "job": "diagnoses",
+   "slots": [
+    {
+     "part": "tracer",
+     "job": "detects radiation",
+     "fill": "radioactive-tracers",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
+  },
+  "gas-chromatography": {
+   "job": "separates mixtures",
+   "slots": []
+  },
+  "zone-refining": {
+   "job": "separates mixtures",
+   "slots": []
+  },
+  "bubble-chambers": {
+   "job": "detects radiation",
+   "slots": [
+    {
+     "part": "",
+     "job": "detects radiation",
+     "fill": "liquid-hydrogen",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "makes a magnetic field",
+     "fill": "electromagnets",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "expansion piston",
+     "job": "turns pressure into motion",
+     "fill": "piston-and-cylinder",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "camera",
+     "job": "records media",
+     "fill": "photography",
+     "gap": null,
+     "kind": "runs on",
+     "note": null
+    }
+   ]
+  },
+  "masers": {
+   "job": "amplifies a signal",
+   "slots": []
+  },
+  "isotactic-polymers": {
+   "job": "forms the body",
+   "slots": []
+  },
+  "controlled-fission-reactors": {
+   "job": "makes electricity",
+   "slots": [
+    {
+     "part": "",
+     "job": "makes heat",
+     "fill": "nuclear-reactor",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "steam generator",
+     "job": "makes steam",
+     "fill": "boiler",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "turns flow into rotation",
+     "fill": "steam-turbine",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "makes electricity",
+     "fill": "electric-generators",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "bevatron": {
+   "job": "accelerates particles",
+   "slots": [
+    {
+     "part": "",
+     "job": "makes a magnetic field",
+     "fill": "electromagnets",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "injector",
+     "job": "accelerates particles",
+     "fill": "particle-accelerator",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "oxytocin-synthesis": {
+   "job": "regulates the body",
+   "slots": []
+  },
+  "strychnine-synthesis": {
+   "job": "builds molecules",
+   "slots": []
+  },
+  "oral-contraceptives": {
+   "job": "regulates the body",
+   "slots": [
+    {
+     "part": "",
+     "job": "regulates the body",
+     "fill": "sex-hormones",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "salk-vaccine": {
+   "job": "prevents disease",
+   "slots": [
+    {
+     "part": "",
+     "job": "grows cultures",
+     "fill": "virus-culture",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    },
+    {
+     "part": "cells",
+     "job": "grows cultures",
+     "fill": "tissue-culture",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
+  },
+  "kidney-transplant": {
+   "job": "treats illness",
+   "slots": [
+    {
+     "part": "dialysis",
+     "job": "treats illness",
+     "fill": "artificial-kidneys",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
+  },
+  "field-ion-microscopes": {
+   "job": "magnifies",
+   "slots": [
+    {
+     "part": "tip",
+     "job": "emits electrons",
+     "fill": "tungsten-wire",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "imaging gas",
+     "job": "shows the image",
+     "fill": "helium-on-earth",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "synthetic-diamonds": {
+   "job": "grinds",
+   "slots": []
+  },
+  "continuous-maser": {
+   "job": "amplifies a signal",
+   "slots": []
+  },
+  "pacemaker": {
+   "job": "regulates the body",
+   "slots": [
+    {
+     "part": "pulse circuit",
+     "job": "amplifies a signal",
+     "fill": "transistor",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "stores electricity",
+     "fill": "lithium-battery",
+     "gap": null,
+     "kind": "inside",
+     "note": "Lithium cells from 1972; the first ones used mercury cells."
+    },
+    {
+     "part": "leads",
+     "job": "carries current",
+     "fill": "insulated-wire",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "borazon": {
+   "job": "grinds",
+   "slots": [
+    {
+     "part": "",
+     "job": "forms the body",
+     "fill": "nitrogen",
+     "gap": null,
+     "kind": "inside",
+     "note": "Boron nitride."
+    }
+   ]
+  },
+  "sabin-vaccine": {
+   "job": "prevents disease",
+   "slots": [
+    {
+     "part": "",
+     "job": "grows cultures",
+     "fill": "virus-culture",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
+  },
+  "laser": {
+   "job": "makes light",
+   "slots": [
+    {
+     "part": "ruby rod",
+     "job": "amplifies a signal",
+     "fill": "chromium",
+     "gap": null,
+     "kind": "inside",
+     "note": "Ruby is aluminum oxide with a trace of chromium."
+    },
+    {
+     "part": "end mirrors",
+     "job": "reflects light",
+     "fill": "mirror",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "chlorophyll-synthesis": {
+   "job": "builds molecules",
+   "slots": []
+  },
+  "protein-synthesis": {
+   "job": "builds molecules",
+   "slots": []
+  },
+  "practical-hologram": {
+   "job": "records media",
+   "slots": [
+    {
+     "part": "light source",
+     "job": "makes light",
+     "fill": "laser",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
+  },
+  "heart-transplants": {
+   "job": "treats illness",
+   "slots": [
+    {
+     "part": "bypass",
+     "job": "pumps blood",
+     "fill": "heart-lung-machine",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
+  },
+  "artificial-heart-implant": {
+   "job": "pumps blood",
+   "slots": [
+    {
+     "part": "",
+     "job": "controls flow",
+     "fill": "valve",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "coronary-bypass-surgery": {
+   "job": "treats illness",
+   "slots": [
+    {
+     "part": "bypass",
+     "job": "pumps blood",
+     "fill": "heart-lung-machine",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
+  },
+  "scanning-electron-microscope": {
+   "job": "magnifies",
+   "slots": [
+    {
+     "part": "lenses",
+     "job": "makes a magnetic field",
+     "fill": "electromagnets",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "display",
+     "job": "shows the image",
+     "fill": "oscilloscope",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "filament",
+     "job": "emits electrons",
+     "fill": "tungsten-wire",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "gun",
+     "job": "emits electrons",
+     "fill": "electron-gun",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "supersonic-transport": {
+   "job": "transports people or goods",
+   "slots": [
+    {
+     "part": "wings",
+     "job": "provides lift",
+     "fill": "wing",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "fiber-optics": {
+   "job": "carries light",
+   "slots": [
+    {
+     "part": "fiber",
+     "job": "carries light",
+     "fill": "glass",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "gene-synthesis": {
+   "job": "builds molecules",
+   "slots": []
+  },
+  "recombinant-dna": {
+   "job": "builds molecules",
+   "slots": []
+  },
+  "earth-resources-satellites": {
+   "job": "measures",
+   "slots": [
+    {
+     "part": "",
+     "job": "makes electricity",
+     "fill": "photovoltaic-cells",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "downlink",
+     "job": "sends and receives signals",
+     "fill": "radio",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "provides thrust",
+     "fill": "liquid-fuel-rockets",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
+  },
+  "cat-scan": {
+   "job": "diagnoses",
+   "slots": [
+    {
+     "part": "x-ray source",
+     "job": "makes x-rays",
+     "fill": "coolidge-tube",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "computes",
+     "fill": "integrated-circuits",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "laser-disks": {
+   "job": "records media",
+   "slots": [
+    {
+     "part": "",
+     "job": "records media",
+     "fill": "laser",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "spindle",
+     "job": "provides power",
+     "fill": "electric-motors",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "vitamin-b-12-synthesis": {
+   "job": "supplies a nutrient",
+   "slots": []
+  },
+  "genetic-engineering": {
+   "job": "modifies organisms",
+   "slots": [
+    {
+     "part": "splicing",
+     "job": "builds molecules",
+     "fill": "recombinant-dna",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
+  },
+  "fiber-optic-communication": {
+   "job": "sends and receives signals",
+   "slots": [
+    {
+     "part": "",
+     "job": "carries light",
+     "fill": "fiber-optics",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "transmitter",
+     "job": "makes light",
+     "fill": "laser",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "synthetic-gene": {
+   "job": "modifies organisms",
+   "slots": [
+    {
+     "part": "",
+     "job": "builds molecules",
+     "fill": "gene-synthesis",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
+  },
+  "balloon-angioplasty": {
+   "job": "treats illness",
+   "slots": [
+    {
+     "part": "",
+     "job": "treats illness",
+     "fill": "cardiac-catheter",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
+  },
+  "test-tube-baby": {
+   "job": "treats illness",
+   "slots": [
+    {
+     "part": "microscope",
+     "job": "magnifies",
+     "fill": "microscope",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
+  },
+  "jarvik-hearts": {
+   "job": "pumps blood",
+   "slots": [
+    {
+     "part": "",
+     "job": "controls flow",
+     "fill": "valve",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "genetic-medicine": {
+   "job": "treats illness",
+   "slots": [
+    {
+     "part": "splicing",
+     "job": "builds molecules",
+     "fill": "recombinant-dna",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
+  },
+  "spectroheliograph": {
+   "job": "records media",
+   "slots": [
+    {
+     "part": "",
+     "job": "gathers light",
+     "fill": "telescope",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "bends light",
+     "fill": "diffraction-gratings",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "records media",
+     "fill": "dry-plates",
+     "gap": null,
+     "kind": "runs on",
+     "note": null
+    }
+   ]
+  },
+  "large-refracting-telescope": {
+   "job": "gathers light",
+   "slots": [
+    {
+     "part": "objective",
+     "job": "bends light",
+     "fill": "achromatic-lens",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "100-inch-telescope": {
+   "job": "gathers light",
+   "slots": [
+    {
+     "part": "primary mirror",
+     "job": "reflects light",
+     "fill": "mirror",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "coronagraph": {
+   "job": "gathers light",
+   "slots": [
+    {
+     "part": "",
+     "job": "gathers light",
+     "fill": "telescope",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "schmidt-camera": {
+   "job": "records media",
+   "slots": [
+    {
+     "part": "primary mirror",
+     "job": "reflects light",
+     "fill": "mirror",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "corrector plate",
+     "job": "bends light",
+     "fill": "glass",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "records media",
+     "fill": "dry-plates",
+     "gap": null,
+     "kind": "runs on",
+     "note": null
+    }
+   ]
+  },
+  "radio-telescope": {
+   "job": "gathers light",
+   "slots": [
+    {
+     "part": "dish",
+     "job": "reflects light",
+     "fill": "mirror",
+     "gap": null,
+     "kind": "inside",
+     "note": "A radio mirror."
+    },
+    {
+     "part": "",
+     "job": "amplifies a signal",
+     "fill": "superheterodyne-receiver",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "jodrell-bank": {
+   "job": "gathers light",
+   "slots": [
+    {
+     "part": "",
+     "job": "amplifies a signal",
+     "fill": "superheterodyne-receiver",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "dish",
+     "job": "reflects light",
+     "fill": "mirror",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "weather-satellites": {
+   "job": "measures",
+   "slots": [
+    {
+     "part": "camera",
+     "job": "records media",
+     "fill": "iconoscope",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "makes electricity",
+     "fill": "photovoltaic-cells",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "downlink",
+     "job": "sends and receives signals",
+     "fill": "radio",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "provides thrust",
+     "fill": "liquid-fuel-rockets",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
+  },
+  "arecibo-radio-telescope": {
+   "job": "gathers light",
+   "slots": [
+    {
+     "part": "",
+     "job": "amplifies a signal",
+     "fill": "superheterodyne-receiver",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "dish",
+     "job": "reflects light",
+     "fill": "mirror",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "commercial-communications-satellites": {
+   "job": "sends and receives signals",
+   "slots": []
+  },
+  "space-station": {
+   "job": "measures",
+   "slots": [
+    {
+     "part": "",
+     "job": "provides thrust",
+     "fill": "liquid-fuel-rockets",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "makes electricity",
+     "fill": "photovoltaic-cells",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "sends and receives signals",
+     "fill": "radio",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "skylab": {
+   "job": "measures",
+   "slots": [
+    {
+     "part": "",
+     "job": "provides thrust",
+     "fill": "liquid-fuel-rockets",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "makes electricity",
+     "fill": "photovoltaic-cells",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "space-shuttle": {
+   "job": "transports people or goods",
+   "slots": [
+    {
+     "part": "engines",
+     "job": "provides thrust",
+     "fill": "liquid-fuel-rockets",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "provides lift",
+     "fill": "wing",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "stores chemical energy",
+     "fill": "liquid-hydrogen",
+     "gap": null,
+     "kind": "runs on",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "supplies oxygen",
+     "fill": "liquid-oxygen",
+     "gap": null,
+     "kind": "runs on",
+     "note": null
+    },
+    {
+     "part": "computers",
+     "job": "computes",
+     "fill": "microchips",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "hubble-space-telescope": {
+   "job": "gathers light",
+   "slots": [
+    {
+     "part": "primary mirror",
+     "job": "reflects light",
+     "fill": "mirror",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "makes electricity",
+     "fill": "photovoltaic-cells",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "pointing",
+     "job": "holds direction",
+     "fill": "gyroscope",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "downlink",
+     "job": "sends and receives signals",
+     "fill": "radio",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "very-long-baseline-array": {
+   "job": "gathers light",
+   "slots": [
+    {
+     "part": "antennas",
+     "job": "gathers light",
+     "fill": "radio-telescope",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "clocks",
+     "job": "keeps time",
+     "fill": "masers",
+     "gap": null,
+     "kind": "inside",
+     "note": "Hydrogen masers keep the time."
+    }
+   ]
+  },
+  "bow": {
+   "job": "fires projectiles",
+   "slots": []
+  },
+  "bridle": {
+   "job": "steers",
+   "slots": [
+    {
+     "part": "bit",
+     "job": "forms the body",
+     "fill": "bronze",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "saddle": {
+   "job": "steadies the rider",
+   "slots": []
+  },
+  "catapult": {
+   "job": "fires projectiles",
+   "slots": []
+  },
+  "wooden-stirrup": {
+   "job": "steadies the rider",
+   "slots": []
+  },
+  "metal-stirrup": {
+   "job": "steadies the rider",
+   "slots": [
+    {
+     "part": "iron",
+     "job": "forms the body",
+     "fill": "steel",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "greek-fire": {
+   "job": "explodes",
+   "slots": []
+  },
+  "high-backed-saddle": {
+   "job": "steadies the rider",
+   "slots": [
+    {
+     "part": "",
+     "job": "steadies the rider",
+     "fill": "metal-stirrup",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "couched-lance": {
+   "job": "impales",
+   "slots": [
+    {
+     "part": "",
+     "job": "steadies the rider",
+     "fill": "high-backed-saddle",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "steadies the rider",
+     "fill": "metal-stirrup",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    },
+    {
+     "part": "lance",
+     "job": "impales",
+     "fill": "pike",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
+  },
+  "crossbow": {
+   "job": "fires projectiles",
+   "slots": [
+    {
+     "part": "",
+     "job": "stores energy",
+     "fill": "bow",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "prod",
+     "job": "forms the body",
+     "fill": "steel",
+     "gap": null,
+     "kind": "inside",
+     "note": "Later crossbows had steel prods."
+    }
+   ]
+  },
+  "gunpowder": {
+   "job": "explodes",
+   "slots": [
+    {
+     "part": "saltpeter",
+     "job": "supplies oxygen",
+     "fill": "sodium-and-potassium",
+     "gap": null,
+     "kind": "inside",
+     "note": "Saltpeter is potassium nitrate."
+    },
+    {
+     "part": "sulfur",
+     "job": "stores chemical energy",
+     "fill": "sulfur",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "longbow": {
+   "job": "fires projectiles",
+   "slots": []
+  },
+  "pike": {
+   "job": "impales",
+   "slots": [
+    {
+     "part": "head",
+     "job": "forms the body",
+     "fill": "steel",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "cannon": {
+   "job": "fires projectiles",
+   "slots": [
+    {
+     "part": "",
+     "job": "stores chemical energy",
+     "fill": "gunpowder",
+     "gap": null,
+     "kind": "runs on",
+     "note": null
+    },
+    {
+     "part": "barrel",
+     "job": "forms the body",
+     "fill": "bronze",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "artillery": {
+   "job": "fires projectiles",
+   "slots": []
+  },
+  "arquebus": {
+   "job": "fires projectiles",
+   "slots": [
+    {
+     "part": "",
+     "job": "stores chemical energy",
+     "fill": "gunpowder",
+     "gap": null,
+     "kind": "runs on",
+     "note": null
+    },
+    {
+     "part": "barrel",
+     "job": "forms the body",
+     "fill": "steel",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "matchlock",
+     "job": "ignites fuel",
+     "fill": "gun-lock",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "musket": {
+   "job": "fires projectiles",
+   "slots": [
+    {
+     "part": "",
+     "job": "stores chemical energy",
+     "fill": "gunpowder",
+     "gap": null,
+     "kind": "runs on",
+     "note": null
+    },
+    {
+     "part": "barrel",
+     "job": "forms the body",
+     "fill": "steel",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "lock",
+     "job": "ignites fuel",
+     "fill": "gun-lock",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "rifle": {
+   "job": "fires projectiles",
+   "slots": [
+    {
+     "part": "",
+     "job": "stores chemical energy",
+     "fill": "gunpowder",
+     "gap": null,
+     "kind": "runs on",
+     "note": null
+    },
+    {
+     "part": "barrel",
+     "job": "forms the body",
+     "fill": "steel",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "lock",
+     "job": "ignites fuel",
+     "fill": "gun-lock",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "revolvers": {
+   "job": "fires projectiles",
+   "slots": [
+    {
+     "part": "",
+     "job": "stores chemical energy",
+     "fill": "gunpowder",
+     "gap": null,
+     "kind": "runs on",
+     "note": null
+    },
+    {
+     "part": "",
+     "job": "stores energy",
+     "fill": "spring",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "lock",
+     "job": "ignites fuel",
+     "fill": "gun-lock",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "needle-gun": {
+   "job": "fires projectiles",
+   "slots": [
+    {
+     "part": "cartridge",
+     "job": "stores chemical energy",
+     "fill": "gunpowder",
+     "gap": null,
+     "kind": "runs on",
+     "note": null
+    },
+    {
+     "part": "cartridge case",
+     "job": "forms the body",
+     "fill": "paper",
+     "gap": null,
+     "kind": "runs on",
+     "note": null
+    },
+    {
+     "part": "needle",
+     "job": "ignites fuel",
+     "fill": "gun-lock",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "ironclad-warships": {
+   "job": "fires projectiles",
+   "slots": [
+    {
+     "part": "armor",
+     "job": "protects",
+     "fill": "steel",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "engine",
+     "job": "provides power",
+     "fill": "improved-steam-engine",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "guns",
+     "job": "fires projectiles",
+     "fill": "cannon",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "maxim-gun": {
+   "job": "fires projectiles",
+   "slots": [
+    {
+     "part": "",
+     "job": "stores chemical energy",
+     "fill": "cordite",
+     "gap": null,
+     "kind": "runs on",
+     "note": null
+    },
+    {
+     "part": "recoil spring",
+     "job": "stores energy",
+     "fill": "spring",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "barrel",
+     "job": "forms the body",
+     "fill": "steel",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "cordite": {
+   "job": "explodes",
+   "slots": [
+    {
+     "part": "",
+     "job": "stores chemical energy",
+     "fill": "nitroglycerine",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "guncotton",
+     "job": "stores chemical energy",
+     "fill": "pyroxylin",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "nuclear-fission-bomb": {
+   "job": "explodes",
+   "slots": [
+    {
+     "part": "fissile core",
+     "job": "stores nuclear energy",
+     "fill": "uranium-two-three-five",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "plutonium core",
+     "job": "stores nuclear energy",
+     "fill": "neptunium-and-plutonium",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "initiator",
+     "job": "emits neutrons",
+     "fill": "polonium-and-radium",
+     "gap": null,
+     "kind": "inside",
+     "note": "Polonium-beryllium initiator."
+    },
+    {
+     "part": "initiator",
+     "job": "emits neutrons",
+     "fill": "beryllium",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "punched-cards": {
+   "job": "stores data",
+   "slots": [
+    {
+     "part": "card",
+     "job": "forms the body",
+     "fill": "paper",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "galvanometer": {
+   "job": "measures",
+   "slots": [
+    {
+     "part": "coil",
+     "job": "carries current",
+     "fill": "insulated-wire",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    },
+    {
+     "part": "needle",
+     "job": "finds direction",
+     "fill": "compass",
+     "gap": null,
+     "kind": "inside",
+     "note": "A compass needle that the coil's field swings."
+    }
+   ]
+  },
+  "camera": {
+   "job": "records media",
+   "slots": [
+    {
+     "part": "lens",
+     "job": "bends light",
+     "fill": "achromatic-lens",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "keys": {
+   "job": "takes input",
+   "slots": [
+    {
+     "part": "return springs",
+     "job": "stores energy",
+     "fill": "spring",
+     "gap": null,
+     "kind": "inside",
+     "note": null
+    }
+   ]
+  },
+  "electron-gun": {
+   "job": "emits electrons",
+   "slots": []
+  },
+  "photocell": {
+   "job": "turns light into current",
+   "slots": []
+  },
+  "lithium-battery": {
+   "job": "stores electricity",
+   "slots": []
+  },
+  "mercury": {
+   "job": "forms the body",
+   "slots": []
+  },
+  "escapement": {
+   "job": "regulates speed",
+   "slots": []
+  },
+  "ink": {
+   "job": "makes marks",
+   "slots": []
+  },
+  "gun-lock": {
+   "job": "ignites fuel",
+   "slots": []
+  },
+  "sulfur": {
+   "job": "forms the body",
+   "slots": []
+  },
+  "zinc": {
+   "job": "forms the body",
+   "slots": []
+  },
+  "lead": {
+   "job": "forms the body",
+   "slots": []
+  },
+  "gasoline": {
+   "job": "stores chemical energy",
+   "slots": [
+    {
+     "part": "crude oil",
+     "job": "stores chemical energy",
+     "fill": "oil-wells",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    },
+    {
+     "part": "refining",
+     "job": "separates mixtures",
+     "fill": "distillation",
+     "gap": null,
+     "kind": "made with",
+     "note": null
+    }
+   ]
+  },
+  "quartz-oscillator": {
+   "job": "keeps time",
+   "slots": []
+  }
+ },
+ "key_parts": {
+  "miners-friend": [
+   "Receiving vessel"
+  ],
+  "newcomen-steam-engine": [
+   "Rocking beam"
+  ],
+  "steam-engine": [
+   "Separate condenser"
+  ],
+  "improved-steam-engine": [
+   "Centrifugal governor"
+  ],
+  "diesel-engine": [
+   "Fuel injector"
+  ],
+  "liquid-fuel-rockets": [
+   "Combustion chamber and nozzle"
+  ],
+  "glider-improved": [
+   "Weight-shift control"
+  ],
+  "airplane": [
+   "Wing warping"
+  ],
+  "seaplanes": [
+   "Floats"
+  ],
+  "helicopter": [
+   "Tail rotor"
+  ],
+  "jet-planes": [
+   "Jet engine"
+  ],
+  "electromagnets": [
+   "Soft iron core"
+  ],
+  "electronic-rectifier": [
+   "Metal plate"
+  ],
+  "triode": [
+   "Control grid"
+  ],
+  "transistor": [
+   "Contact wires"
+  ],
+  "atomic-clock": [
+   "Cesium beam tube"
+  ],
+  "leyden-jar": [
+   "Metal foil"
+  ],
+  "transformer": [
+   "Soft iron core"
+  ],
+  "radio-antennas": [
+   "Coherer"
+  ],
+  "oscilloscope": [
+   "Phosphor screen"
+  ],
+  "sonar": [
+   "Quartz transducer"
+  ],
+  "microphone": [
+   "Carbon granules"
+  ],
+  "printing-press": [
+   "Movable type"
+  ]
+ },
+ "excluded": {
+  "great-wall": "a named wonder",
+  "torsion-balance": "a phenomenon: a twisted fiber's pull"
+ },
+ "new_cards": {
+  "punched-cards": [
+   "Punched cards",
+   "1725",
+   "Holes punched in card or paper that a machine reads as instructions or data. Bouchon steered a loom with punched paper in 1725; Jacquard, Babbage and Hollerith built on it."
+  ],
+  "galvanometer": [
+   "Galvanometer",
+   "1820",
+   "A coil of wire around a magnetized needle: current through the coil swings the needle. Schweigger's 1820 multiplier made weak currents measurable."
+  ],
+  "camera": [
+   "Camera",
+   "1685",
+   "A light-tight box with a lens that throws an image onto a screen, plate or film. Zahn's 1685 portable camera obscura was the box Niépce and Daguerre put their plates in."
+  ],
+  "keys": [
+   "Keys",
+   "1837",
+   "A hand-pressed lever or switch that turns a press of the finger into a signal or a stroke. Vail's 1837 telegraph key was one; a keyboard is a row of them."
+  ],
+  "electron-gun": [
+   "Electron gun",
+   "1897",
+   "A cathode and charged plates that shoot a narrow beam of electrons. Braun's 1897 tube had one; picture tubes, camera tubes and electron microscopes are built around it."
+  ],
+  "photocell": [
+   "Photocell",
+   "1893",
+   "A cell that turns light into an electric current. Elster and Geitel made a practical one in 1893."
+  ],
+  "lithium-battery": [
+   "Lithium battery",
+   "1972",
+   "A small, long-lasting battery with a lithium anode, first sold in the early 1970s."
+  ],
+  "mercury": [
+   "Mercury",
+   "-1500",
+   "A metal that is liquid at room temperature, known since antiquity. It went into barometers, thermometers, mirror backing and amalgam fillings."
+  ],
+  "escapement": [
+   "Escapement",
+   "1275",
+   "Lets a clock's stored energy out in equal ticks. The verge escapement made weight-driven clocks possible in the late 1200s; the anchor escapement followed in 1657."
+  ],
+  "ink": [
+   "Ink",
+   "-2500",
+   "Pigment or dye in a liquid that marks a surface. Egyptian and Chinese scribes made carbon ink by 2500 BCE; Gutenberg needed an oil-based one for his press."
+  ],
+  "gun-lock": [
+   "Gun lock",
+   "1411",
+   "The mechanism that sets off a gun's charge: the matchlock (about 1411), then the wheellock, flintlock and percussion cap."
+  ],
+  "sulfur": [
+   "Sulfur",
+   "-2000",
+   "A yellow element known since antiquity as brimstone. It goes into gunpowder, sulfuric acid and vulcanized rubber."
+  ],
+  "gasoline": [
+   "Gasoline",
+   "1860",
+   "A light fraction of petroleum, at first a waste product of kerosene refining, that became the fuel for car engines and early rockets."
+  ],
+  "zinc": [
+   "Zinc",
+   "1746",
+   "A metal smelted in India for centuries and isolated in Europe by Marggraf in 1746. Batteries use it up to make current."
+  ],
+  "lead": [
+   "Lead",
+   "-4000",
+   "A soft, heavy metal worked since prehistory. It went into type metal, storage-battery plates and leaded gasoline."
+  ],
+  "quartz-oscillator": [
+   "Quartz oscillator",
+   "1921",
+   "A sliver of quartz that vibrates at a steady frequency when driven by a current. Cady built one in 1921; quartz clocks followed in 1927."
+  ]
+ }
+}

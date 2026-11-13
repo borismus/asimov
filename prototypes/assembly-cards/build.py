@@ -266,21 +266,37 @@ function toggleFlip(d) {
 }
 // The first tap pins a card: it comes to the front and its links light up. Tapping the
 // pinned card flips it. Tapping the background (or Escape) unpins.
+// A pinned card is drawn centred on its node at a fixed size. If the node sits near an
+// edge or under the header, the card would only show as a chip at the edge (the way a
+// pinned card you've panned away from does). So after a tap, slide the view just enough
+// for the whole card to show, keeping the zoom.
+function keepPinnedCardInView(d) {
+  const t = state.transform;
+  if (!t) return;
+  let w = 300, h = 410;  // the pinned card's size on screen, if none is drawn yet
+  const el = document.querySelector("g.pinned-cards g.card");
+  if (el) {
+    const r = el.getBoundingClientRect();
+    if (r.width && r.height) { w = r.width; h = r.height; }
+  }
+  const pad = 16;
+  const left = pad, right = window.innerWidth - pad;
+  const top = (state.headerHeight || 0) + pad, bottom = window.innerHeight - pad;
+  const sx = t.x + d.x * t.k, sy = t.y + d.y * t.k;
+  const fit = (v, lo, hi) => (lo > hi ? (lo + hi) / 2 : Math.min(Math.max(v, lo), hi));
+  const nx = fit(sx, left + w / 2, right - w / 2);
+  const ny = fit(sy, top + h / 2, bottom - h / 2);
+  if (Math.abs(nx - sx) < 1 && Math.abs(ny - sy) < 1) return;
+  svg.transition().duration(350)
+    .call(zoom.transform, d3.zoomIdentity.translate(t.x + nx - sx, t.y + ny - sy).scale(t.k));
+}
 function onCardTap(event, d) {
   event.preventDefault();
   event.stopPropagation();
   if (state.pinnedId === d.id) toggleFlip(d);
   else {
     pin(d);
-    // A pinned card is drawn at a fixed size, wider than a phone's view at most zooms:
-    // slide the view so the whole card shows, without changing the zoom.
-    if (window.matchMedia("(max-width: 720px)").matches) {
-      const k = state.transform ? state.transform.k : 1;
-      const top = state.headerHeight || 0;
-      const tx = window.innerWidth / 2 - d.x * k;
-      const ty = top + (window.innerHeight - top) / 2 - d.y * k;
-      svg.transition().duration(350).call(zoom.transform, d3.zoomIdentity.translate(tx, ty).scale(k));
-    }
+    keepPinnedCardInView(d);
   }
   // Tapping a card that matches the search makes it the active result.
   if (isActiveQuery() && searchHelper(d, state.searchQuery.trim())) {

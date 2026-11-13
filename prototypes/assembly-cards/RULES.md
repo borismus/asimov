@@ -25,8 +25,11 @@ Boris set the rule or Claude proposed it and Boris accepted it.
 | 17 | Jobs | Jobs come from the shared list. Add a new one only if 3 or more cards or slots would use it; otherwise use the nearest broader job. Own jobs are broad. | makes textiles, not "spins thread" or "throws the shuttle" | Boris |
 | 18 | Slots | Design tools count as made with, and a practice can be made with another practice. | Nuclear fusion bomb ← UNIVAC; Dentistry ← Anesthesia | Boris |
 | 19 | Scope | Left out by name: the Great Wall, a specific named wonder rather than a technology. Ordinary structures stay. Torsion balance is also left out, as a phenomenon. | Great Wall ✗; Stone monuments, Architectural arches ✓ | Boris |
+| 20 | Time | Dates come from Asimov's chronology and stay fixed. A part newer than its card is handled in the list, never by changing a date. Supporting cards keep the date they were given. | Bicycle (1839) ← Rubber tire (1887): fix the slot, not the years | Boris |
 
 ## Under review: parts newer than the card (rule 14)
+
+The proposals are on the sheet's Date check tab.
 
 52 slots in 36 cards have a filler dated after the card (for example, Bicycle 1839 ← Rubber tire 1887).
 Rule 14 shows these as "added later". The idea being considered instead: fill the slot with what the
@@ -38,7 +41,7 @@ first version actually used, an older card doing the same job, and show the newe
   (Turbines, Bicycle, Electric motors, Electric generators, Gyroscope).
 - A few are deck cards dated by a discovery, not first use (Paper ← Cellulose, Fermentation ← Yeast
   cells, Gunpowder ← Sodium and potassium).
-- A few are supporting cards Claude dated too late (Piston and cylinder, Boiler, Vitamin pills).
+- Dates don't change (rule 20), so supporting cards newer than their card stay "added later".
 - The rest had no earlier part doing that job (the radio's triode, the first car's self-starter).
 
 ## The review workflow

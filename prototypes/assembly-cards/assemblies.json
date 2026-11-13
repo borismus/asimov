@@ -44,7 +44,7 @@
    ]
   },
   "piston-and-cylinder": {
-   "job": "turns pressure into motion",
+   "job": "pushes",
    "slots": [
     {
      "part": "material",
@@ -232,7 +232,7 @@
     },
     {
      "part": "power stroke",
-     "job": "turns pressure into motion",
+     "job": "pushes",
      "fill": "piston-and-cylinder",
      "gap": null,
      "kind": "inside",
@@ -269,7 +269,7 @@
     },
     {
      "part": "power stroke",
-     "job": "turns pressure into motion",
+     "job": "pushes",
      "fill": "piston-and-cylinder",
      "gap": null,
      "kind": "inside",
@@ -306,7 +306,7 @@
     },
     {
      "part": "power stroke",
-     "job": "turns pressure into motion",
+     "job": "pushes",
      "fill": "piston-and-cylinder",
      "gap": null,
      "kind": "inside",
@@ -393,7 +393,7 @@
    "slots": [
     {
      "part": "power stroke",
-     "job": "turns pressure into motion",
+     "job": "pushes",
      "fill": "piston-and-cylinder",
      "gap": null,
      "kind": "inside",
@@ -422,7 +422,7 @@
    "slots": [
     {
      "part": "power stroke",
-     "job": "turns pressure into motion",
+     "job": "pushes",
      "fill": "piston-and-cylinder",
      "gap": null,
      "kind": "inside",
@@ -451,7 +451,7 @@
    "slots": [
     {
      "part": "power stroke",
-     "job": "turns pressure into motion",
+     "job": "pushes",
      "fill": "piston-and-cylinder",
      "gap": null,
      "kind": "inside",
@@ -521,7 +521,7 @@
    ]
   },
   "cart": {
-   "job": "transports people or goods",
+   "job": "transports",
    "slots": [
     {
      "part": "wheels",
@@ -542,7 +542,7 @@
    ]
   },
   "stagecoach": {
-   "job": "transports people or goods",
+   "job": "transports",
    "slots": [
     {
      "part": "wheels",
@@ -587,7 +587,7 @@
    ]
   },
   "bicycle": {
-   "job": "transports people or goods",
+   "job": "transports",
    "slots": [
     {
      "part": "wheels",
@@ -653,7 +653,7 @@
    ]
   },
   "first-automobile": {
-   "job": "transports people or goods",
+   "job": "transports",
    "slots": [
     {
      "part": "engine",
@@ -746,7 +746,7 @@
    ]
   },
   "steam-locomotive": {
-   "job": "transports people or goods",
+   "job": "transports",
    "slots": [
     {
      "part": "engine",
@@ -775,7 +775,7 @@
    ]
   },
   "steamboat": {
-   "job": "transports people or goods",
+   "job": "transports",
    "slots": [
     {
      "part": "engine",
@@ -804,7 +804,7 @@
    ]
   },
   "steamship": {
-   "job": "transports people or goods",
+   "job": "transports",
    "slots": [
     {
      "part": "engine",
@@ -1304,11 +1304,11 @@
    ]
   },
   "radio": {
-   "job": "sends and receives signals",
+   "job": "communicates",
    "slots": [
     {
      "part": "antenna",
-     "job": "radiates and catches waves",
+     "job": "radiates waves",
      "fill": "radio-antennas",
      "gap": null,
      "kind": "inside",
@@ -1438,11 +1438,11 @@
    ]
   },
   "sputnik": {
-   "job": "sends and receives signals",
+   "job": "communicates",
    "slots": [
     {
      "part": "transmitter",
-     "job": "sends and receives signals",
+     "job": "communicates",
      "fill": "radio",
      "gap": null,
      "kind": "inside",
@@ -1459,11 +1459,11 @@
    ]
   },
   "communications-satellites": {
-   "job": "sends and receives signals",
+   "job": "communicates",
    "slots": [
     {
      "part": "transponder",
-     "job": "sends and receives signals",
+     "job": "communicates",
      "fill": "radio",
      "gap": null,
      "kind": "inside",
@@ -1513,7 +1513,7 @@
    "slots": [
     {
      "part": "satellites",
-     "job": "sends and receives signals",
+     "job": "communicates",
      "fill": "communications-satellites",
      "gap": null,
      "kind": "inside",
@@ -1529,7 +1529,7 @@
     },
     {
      "part": "signal",
-     "job": "sends and receives signals",
+     "job": "communicates",
      "fill": "radio",
      "gap": null,
      "kind": "inside",
@@ -1742,7 +1742,7 @@
    ]
   },
   "telegraph": {
-   "job": "sends and receives signals",
+   "job": "communicates",
    "slots": [
     {
      "part": "line",
@@ -1800,7 +1800,7 @@
    ]
   },
   "stock-ticker": {
-   "job": "sends and receives signals",
+   "job": "communicates",
    "slots": [
     {
      "part": "line",
@@ -1821,7 +1821,7 @@
    ]
   },
   "telephone": {
-   "job": "sends and receives signals",
+   "job": "communicates",
    "slots": [
     {
      "part": "transmitter",
@@ -1932,7 +1932,7 @@
    ]
   },
   "radio-antennas": {
-   "job": "radiates and catches waves",
+   "job": "radiates waves",
    "slots": [
     {
      "part": "",
@@ -1990,7 +1990,7 @@
    ]
   },
   "radio-waves-and-sound": {
-   "job": "sends and receives signals",
+   "job": "communicates",
    "slots": [
     {
      "part": "",
@@ -2015,7 +2015,7 @@
     },
     {
      "part": "",
-     "job": "radiates and catches waves",
+     "job": "radiates waves",
      "fill": "radio-antennas",
      "gap": null,
      "kind": "inside",
@@ -2110,7 +2110,7 @@
     },
     {
      "part": "",
-     "job": "radiates and catches waves",
+     "job": "radiates waves",
      "fill": "radio-antennas",
      "gap": null,
      "kind": "inside",
@@ -2295,7 +2295,7 @@
    "slots": []
   },
   "wheelbarrow": {
-   "job": "transports people or goods",
+   "job": "transports",
    "slots": [
     {
      "part": "",
@@ -2498,7 +2498,7 @@
    ]
   },
   "transatlantic-liner": {
-   "job": "transports people or goods",
+   "job": "transports",
    "slots": [
     {
      "part": "",
@@ -2655,7 +2655,7 @@
     },
     {
      "part": "expansion piston",
-     "job": "turns pressure into motion",
+     "job": "pushes",
      "fill": "piston-and-cylinder",
      "gap": null,
      "kind": "inside",
@@ -3093,7 +3093,7 @@
    ]
   },
   "working-steamboat": {
-   "job": "transports people or goods",
+   "job": "transports",
    "slots": [
     {
      "part": "",
@@ -3234,7 +3234,7 @@
    ]
   },
   "elevators": {
-   "job": "transports people or goods",
+   "job": "transports",
    "slots": [
     {
      "part": "safety brake",
@@ -3304,7 +3304,7 @@
    "slots": [
     {
      "part": "compressor",
-     "job": "turns pressure into motion",
+     "job": "pushes",
      "fill": "piston-and-cylinder",
      "gap": null,
      "kind": "inside",
@@ -3392,7 +3392,7 @@
    ]
   },
   "submarine": {
-   "job": "transports people or goods",
+   "job": "transports",
    "slots": [
     {
      "part": "gasoline engine",
@@ -3696,7 +3696,7 @@
    ]
   },
   "raft": {
-   "job": "transports people or goods",
+   "job": "transports",
    "slots": []
   },
   "sickle": {
@@ -3742,7 +3742,7 @@
    ]
   },
   "river-boat": {
-   "job": "transports people or goods",
+   "job": "transports",
    "slots": [
     {
      "part": "",
@@ -4029,7 +4029,7 @@
    "slots": []
   },
   "steam-locomotive-improved": {
-   "job": "transports people or goods",
+   "job": "transports",
    "slots": [
     {
      "part": "",
@@ -4041,7 +4041,7 @@
     },
     {
      "part": "power stroke",
-     "job": "turns pressure into motion",
+     "job": "pushes",
      "fill": "piston-and-cylinder",
      "gap": null,
      "kind": "inside",
@@ -4096,7 +4096,7 @@
    "slots": [
     {
      "part": "compressor",
-     "job": "turns pressure into motion",
+     "job": "pushes",
      "fill": "piston-and-cylinder",
      "gap": null,
      "kind": "inside",
@@ -4161,7 +4161,7 @@
    "slots": [
     {
      "part": "actuators",
-     "job": "turns pressure into motion",
+     "job": "pushes",
      "fill": "piston-and-cylinder",
      "gap": null,
      "kind": "inside",
@@ -4395,7 +4395,7 @@
    "slots": [
     {
      "part": "pump",
-     "job": "turns pressure into motion",
+     "job": "pushes",
      "fill": "piston-and-cylinder",
      "gap": null,
      "kind": "inside",
@@ -5522,7 +5522,7 @@
    "slots": []
   },
   "bathysphere": {
-   "job": "transports people or goods",
+   "job": "transports",
    "slots": [
     {
      "part": "sphere",
@@ -5643,7 +5643,7 @@
    ]
   },
   "frequency-modulation": {
-   "job": "sends and receives signals",
+   "job": "communicates",
    "slots": []
   },
   "betatron": {
@@ -5909,7 +5909,7 @@
    ]
   },
   "bathyscaphe": {
-   "job": "transports people or goods",
+   "job": "transports",
    "slots": [
     {
      "part": "cabin",
@@ -6055,7 +6055,7 @@
     },
     {
      "part": "expansion piston",
-     "job": "turns pressure into motion",
+     "job": "pushes",
      "fill": "piston-and-cylinder",
      "gap": null,
      "kind": "inside",
@@ -6381,7 +6381,7 @@
    ]
   },
   "supersonic-transport": {
-   "job": "transports people or goods",
+   "job": "transports",
    "slots": [
     {
      "part": "wings",
@@ -6427,7 +6427,7 @@
     },
     {
      "part": "downlink",
-     "job": "sends and receives signals",
+     "job": "communicates",
      "fill": "radio",
      "gap": null,
      "kind": "inside",
@@ -6503,7 +6503,7 @@
    ]
   },
   "fiber-optic-communication": {
-   "job": "sends and receives signals",
+   "job": "communicates",
    "slots": [
     {
      "part": "",
@@ -6756,7 +6756,7 @@
     },
     {
      "part": "downlink",
-     "job": "sends and receives signals",
+     "job": "communicates",
      "fill": "radio",
      "gap": null,
      "kind": "inside",
@@ -6786,7 +6786,7 @@
    ]
   },
   "commercial-communications-satellites": {
-   "job": "sends and receives signals",
+   "job": "communicates",
    "slots": []
   },
   "space-station": {
@@ -6802,7 +6802,7 @@
     },
     {
      "part": "",
-     "job": "sends and receives signals",
+     "job": "communicates",
      "fill": "radio",
      "gap": null,
      "kind": "inside",
@@ -6824,7 +6824,7 @@
    ]
   },
   "space-shuttle": {
-   "job": "transports people or goods",
+   "job": "transports",
    "slots": [
     {
      "part": "engines",
@@ -6897,7 +6897,7 @@
     },
     {
      "part": "downlink",
-     "job": "sends and receives signals",
+     "job": "communicates",
      "fill": "radio",
      "gap": null,
      "kind": "inside",

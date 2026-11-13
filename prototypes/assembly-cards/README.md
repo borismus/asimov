@@ -45,14 +45,17 @@ images into `site/`, which is gitignored.
 
 ## Files
 
-- `assemblies.json`: the source for every list: each invention's own job and slots (part name, job,
-  filling card or the name of a key part with no card, kind, note), as reviewed in the sheet's
-  Calibration and Full pass tabs, plus the supporting cards those lists brought in (`new_cards`).
+- `assemblies.json`: the source for every list: each invention's own job and parts (part name, job,
+  filling card or the name of a key part with no card, note, and `later`: newer cards that took
+  over the job), as reviewed in the sheet's Calibration, Full pass, Date check and Audit tabs; the
+  supporting cards those lists brought in (`new_cards`); and `production`, the "how it was made"
+  links taken off the board (kilns, air pumps, launch rockets), kept in case they come back.
 - `pilot_data.py`, `batches.py`: the pilot and batch 1 as first drafted. They still hold the natural
   phenomena, which are set aside for now; their slots are superseded by `assemblies.json`.
 - `links.csv`: the links between existing cards approved in the "Missing parts" audit.
 - `lists.py`: puts `assemblies.json` and the phenomena together for the build.
-- `build.py`: builds `site/`. New cards get placeholder art.
+- `build.py`: builds `site/`. Cards with no deck art share one "art to come" image.
+- `phone.css`, `theme.css`: the phone layout (search sheet, compact header) and light/dark themes.
 - `card_back.js`, `card_back.css`: the back of the card and the flip animation, spliced into
   `card.js` and `card.css`.
 
@@ -64,3 +67,19 @@ reference, the board shows 494 cards. The rules the lists follow are in `RULES.m
 part with no card is listed only if 3 or more inventions share it (then it gets a card), or if it is
 the card's own key part, the new thing it brought. Left out: the Great Wall (a named wonder) and
 the Torsion balance (a phenomenon).
+
+## Where it stands, and what's next
+
+The lists are reviewed and settled; `RULES.md` has the 20 rules. Next, roughly in order:
+
+1. **Card type instead of genre.** Replace the field icon and colours with what kind of card it is:
+   object, material, practice or phenomenon (the parts rules already tell the first three apart).
+2. **Bring the natural phenomena back.** Only the pilot and batch 1 (86 inventions, 155 links in
+   `pilot_data.py` and `batches.py`) have them. The rest need a pass, drafted and then reviewed by
+   exception like the assembly lists. "Harnesses" is a second kind of link, so it needs its own look
+   and probably a switch; phenomenon cards would come back (about 100) in their own style.
+3. **Hosting.** The claude.ai artifact this has been previewed in caps a version at 512 files and
+   blocks images from other sites, so it carries copies of all card images. Publishing next to
+   invention.cards instead would reuse the live images and drop the cap.
+4. **Swaps over time.** The `later` data is in place: a job's view could list every card that did it,
+   by year (oil lamps, gas lighting, the electric light).

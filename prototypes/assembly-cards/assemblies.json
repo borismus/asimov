@@ -134,7 +134,7 @@
    "slots": [
     {
      "part": "samarium",
-     "job": "forms the body",
+     "job": "makes a magnetic field",
      "fill": "thulium-holmium-samarium",
      "gap": null,
      "kind": "inside",
@@ -142,7 +142,7 @@
     },
     {
      "part": "cobalt",
-     "job": "forms the body",
+     "job": "makes a magnetic field",
      "fill": "cobalt",
      "gap": null,
      "kind": "inside",
@@ -150,7 +150,7 @@
     },
     {
      "part": "neodymium",
-     "job": "forms the body",
+     "job": "makes a magnetic field",
      "fill": "praseodymium-and-neodymium",
      "gap": null,
      "kind": "inside",
@@ -158,7 +158,7 @@
     },
     {
      "part": "dysprosium",
-     "job": "forms the body",
+     "job": "makes a magnetic field",
      "fill": "dysprosium",
      "gap": null,
      "kind": "inside",
@@ -1646,7 +1646,7 @@
    "slots": [
     {
      "part": "globe",
-     "job": "forms the body",
+     "job": "makes electricity",
      "fill": "glass",
      "gap": null,
      "kind": "inside",
@@ -1659,7 +1659,7 @@
    "slots": [
     {
      "part": "jar",
-     "job": "forms the body",
+     "job": "insulates",
      "fill": "glass",
      "gap": null,
      "kind": "inside",
@@ -2576,7 +2576,7 @@
    "slots": [
     {
      "part": "fiber",
-     "job": "forms the body",
+     "job": "is an ingredient",
      "fill": "cellulose",
      "gap": null,
      "kind": "inside",
@@ -2584,7 +2584,7 @@
     },
     {
      "part": "nitrocellulose",
-     "job": "forms the body",
+     "job": "is an ingredient",
      "fill": "pyroxylin",
      "gap": null,
      "kind": "inside",
@@ -2862,7 +2862,7 @@
    "slots": [
     {
      "part": "skin",
-     "job": "forms the body",
+     "job": "is an ingredient",
      "fill": "animal-dom",
      "gap": null,
      "kind": "inside",
@@ -3733,7 +3733,7 @@
    "slots": [
     {
      "part": "",
-     "job": "forms the body",
+     "job": "is an ingredient",
      "fill": "copper",
      "gap": null,
      "kind": "inside",
@@ -3848,7 +3848,7 @@
    "slots": [
     {
      "part": "pulp",
-     "job": "forms the body",
+     "job": "is an ingredient",
      "fill": null,
      "gap": "Plant fiber",
      "kind": "inside",
@@ -4008,7 +4008,7 @@
    "slots": [
     {
      "part": "gas",
-     "job": "forms the body",
+     "job": "is an ingredient",
      "fill": "carbon-dioxide",
      "gap": null,
      "kind": "inside",
@@ -4271,11 +4271,11 @@
    ]
   },
   "sulfuric-acid": {
-   "job": "reacts",
+   "job": "is an ingredient",
    "slots": [
     {
      "part": "sulfur",
-     "job": "reacts",
+     "job": "is an ingredient",
      "fill": "sulfur",
      "gap": null,
      "kind": "inside",
@@ -4292,7 +4292,7 @@
    "slots": [
     {
      "part": "lens",
-     "job": "forms the body",
+     "job": "bends light",
      "fill": "glass",
      "gap": null,
      "kind": "inside",
@@ -4445,7 +4445,7 @@
    "slots": [
     {
      "part": "globe",
-     "job": "forms the body",
+     "job": "makes electricity",
      "fill": "sulfur",
      "gap": null,
      "kind": "inside",
@@ -4609,7 +4609,7 @@
    "slots": []
   },
   "synthetic-urea": {
-   "job": "forms the body",
+   "job": "is an ingredient",
    "slots": []
   },
   "nicol-prism": {
@@ -4634,7 +4634,7 @@
    "slots": [
     {
      "part": "sulfur",
-     "job": "reacts",
+     "job": "is an ingredient",
      "fill": "sulfur",
      "gap": null,
      "kind": "inside",
@@ -4701,7 +4701,7 @@
    "slots": [
     {
      "part": "amalgam",
-     "job": "forms the body",
+     "job": "is an ingredient",
      "fill": "mercury",
      "gap": null,
      "kind": "inside",
@@ -4765,11 +4765,11 @@
    ]
   },
   "pyroxylin": {
-   "job": "forms the body",
+   "job": "is an ingredient",
    "slots": [
     {
      "part": "fiber",
-     "job": "forms the body",
+     "job": "is an ingredient",
      "fill": "cellulose",
      "gap": null,
      "kind": "inside",
@@ -4782,7 +4782,7 @@
    "slots": [
     {
      "part": "pig iron",
-     "job": "forms the body",
+     "job": "is an ingredient",
      "fill": "coke-iron",
      "gap": null,
      "kind": "inside",
@@ -4795,7 +4795,7 @@
    "slots": [
     {
      "part": "coal tar",
-     "job": "reacts",
+     "job": "is an ingredient",
      "fill": "coal-mining",
      "gap": null,
      "kind": "inside",
@@ -4816,7 +4816,7 @@
    "slots": [
     {
      "part": "",
-     "job": "forms the body",
+     "job": "is an ingredient",
      "fill": "synthetic-urea",
      "gap": null,
      "kind": "inside",
@@ -4829,7 +4829,7 @@
    "slots": [
     {
      "part": "coal tar",
-     "job": "reacts",
+     "job": "is an ingredient",
      "fill": "coal-mining",
      "gap": null,
      "kind": "inside",
@@ -4889,7 +4889,7 @@
    "slots": [
     {
      "part": "base",
-     "job": "forms the body",
+     "job": "is an ingredient",
      "fill": "pyroxylin",
      "gap": null,
      "kind": "inside",
@@ -4919,7 +4919,7 @@
    "slots": [
     {
      "part": "coal tar",
-     "job": "reacts",
+     "job": "is an ingredient",
      "fill": "coal-mining",
      "gap": null,
      "kind": "inside",
@@ -5038,7 +5038,7 @@
    "slots": [
     {
      "part": "",
-     "job": "forms the body",
+     "job": "is an ingredient",
      "fill": "silicon",
      "gap": null,
      "kind": "inside",
@@ -5152,7 +5152,7 @@
    "slots": [
     {
      "part": "",
-     "job": "reacts",
+     "job": "is an ingredient",
      "fill": "hydrogen",
      "gap": null,
      "kind": "inside",
@@ -5160,7 +5160,7 @@
     },
     {
      "part": "",
-     "job": "reacts",
+     "job": "is an ingredient",
      "fill": "nitrogen",
      "gap": null,
      "kind": "inside",
@@ -5190,7 +5190,7 @@
    "slots": [
     {
      "part": "coal tar",
-     "job": "reacts",
+     "job": "is an ingredient",
      "fill": "coal-mining",
      "gap": null,
      "kind": "inside",
@@ -5203,7 +5203,7 @@
    "slots": [
     {
      "part": "",
-     "job": "reacts",
+     "job": "is an ingredient",
      "fill": "hydrogen",
      "gap": null,
      "kind": "inside",
@@ -5376,7 +5376,7 @@
    "slots": [
     {
      "part": "",
-     "job": "forms the body",
+     "job": "is an ingredient",
      "fill": "fluorine",
      "gap": null,
      "kind": "inside",
@@ -5384,7 +5384,7 @@
     },
     {
      "part": "",
-     "job": "forms the body",
+     "job": "is an ingredient",
      "fill": "chlorine",
      "gap": null,
      "kind": "inside",
@@ -5418,7 +5418,7 @@
    "slots": [
     {
      "part": "",
-     "job": "forms the body",
+     "job": "is an ingredient",
      "fill": "chlorine",
      "gap": null,
      "kind": "inside",
@@ -5476,7 +5476,7 @@
    "slots": [
     {
      "part": "dye",
-     "job": "forms the body",
+     "job": "kills bacteria",
      "fill": "synthetic-dyes",
      "gap": null,
      "kind": "inside",
@@ -5727,7 +5727,7 @@
    "slots": [
     {
      "part": "",
-     "job": "forms the body",
+     "job": "is an ingredient",
      "fill": "fluorine",
      "gap": null,
      "kind": "inside",
@@ -6250,7 +6250,7 @@
    "slots": [
     {
      "part": "",
-     "job": "forms the body",
+     "job": "is an ingredient",
      "fill": "nitrogen",
      "gap": null,
      "kind": "inside",
@@ -7526,7 +7526,7 @@
    "slots": []
   },
   "sulfur": {
-   "job": "forms the body",
+   "job": "is an ingredient",
    "slots": []
   },
   "zinc": {
@@ -7559,7 +7559,7 @@
    "slots": [
     {
      "part": "hide",
-     "job": "forms the body",
+     "job": "is an ingredient",
      "fill": "animal-dom",
      "gap": null,
      "kind": "inside",

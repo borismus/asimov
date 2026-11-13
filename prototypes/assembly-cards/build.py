@@ -107,6 +107,8 @@ for cid, (job, slots, ph) in CARDS.items():
 json.dump(lists, open(f'{OUT}/static/lists.json', 'w'), ensure_ascii=False)
 
 # ---------- images ----------
+# Cards with no deck art share one "art to come" image (the card frame already shows the title).
+# One file instead of one per card keeps the artifact under its 512-file limit.
 from PIL import Image, ImageDraw, ImageFont
 missing = []
 for i in ids:
@@ -115,29 +117,20 @@ for i in ids:
         shutil.copy(src, f'{OUT}/static/images/entries-v2/{i}.jpg')
     else:
         missing.append(i)
-        title = NEW_CARDS[i][0] if i in NEW_CARDS else rows[i]['Title']
-        im = Image.new('RGB', (624, 416), (236, 233, 226))
-        dr = ImageDraw.Draw(im)
-        for x in range(0, 624, 24):
-            dr.line([(x, 0), (x, 416)], fill=(226, 222, 213))
-        for y in range(0, 416, 24):
-            dr.line([(0, y), (624, y)], fill=(226, 222, 213))
-        try:
-            f1 = ImageFont.load_default(size=40); f2 = ImageFont.load_default(size=20)
-        except TypeError:  # Pillow < 10.1 has no sized default font
-            f1 = f2 = ImageFont.load_default()
-        tw = dr.textlength(title, font=f1)
-        if tw > 580:
-            try:
-                f1 = ImageFont.load_default(size=int(40 * 580 / tw))
-            except TypeError:
-                pass
-            tw = dr.textlength(title, font=f1)
-        dr.text(((624 - tw) / 2, 170), title, font=f1, fill=(60, 60, 60))
-        sub = 'supporting invention · art to come'
-        dr.text(((624 - dr.textlength(sub, font=f2)) / 2, 230), sub, font=f2, fill=(120, 120, 120))
-        im.save(f'{OUT}/static/images/entries-v2/{i}.jpg', quality=85)
-print('placeholder images for', sorted(missing))
+im = Image.new('RGB', (624, 416), (236, 233, 226))
+dr = ImageDraw.Draw(im)
+for x in range(0, 624, 24):
+    dr.line([(x, 0), (x, 416)], fill=(226, 222, 213))
+for y in range(0, 416, 24):
+    dr.line([(0, y), (624, y)], fill=(226, 222, 213))
+try:
+    f1 = ImageFont.load_default(size=34); f2 = ImageFont.load_default(size=20)
+except TypeError:  # Pillow < 10.1 has no sized default font
+    f1 = f2 = ImageFont.load_default()
+for text, font, y, fill in (('supporting invention', f1, 172, (90, 90, 90)), ('art to come', f2, 226, (130, 130, 130))):
+    dr.text(((624 - dr.textlength(text, font=font)) / 2, y), text, font=font, fill=fill)
+im.save(f'{OUT}/static/images/entries-v2/_art-to-come.jpg', quality=85)
+print('no art for', len(missing), 'cards:', sorted(missing))
 
 # ---------- patches ----------
 S = f'{OUT}/static'
@@ -205,6 +198,12 @@ patch(f'{S}/card.js', [(
     'let cardSerial = 0;',
     'let cardSerial = 0;\n' + open(os.path.join(HERE, 'card_back.js')).read(),
 )])
+_cj = open(f'{S}/card.js').read()
+_href = '.attr("href", (d) => `static/images/entries-v2/${d.id}.jpg`);'
+assert _cj.count(_href) == 2, _cj.count(_href)
+_cj = _cj.replace(_href, '.attr("href", (d) => NO_ART.has(d.id) ? "static/images/entries-v2/_art-to-come.jpg" : `static/images/entries-v2/${d.id}.jpg`);')
+_cj = _cj.replace('let cardSerial = 0;', 'let cardSerial = 0;\nconst NO_ART = new Set(' + json.dumps(sorted(missing)) + ');', 1)
+open(f'{S}/card.js', 'w').write(_cj)
 
 patch(f'{S}/search.js', [(
     'export function searchHelper(node, query) {\n  const q = query.toLowerCase();',

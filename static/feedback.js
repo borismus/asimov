@@ -1,4 +1,4 @@
-// Feedback panel: one-tap reactions + optional note, Formspree + GA.
+// Feedback panel: reactions, each with an optional note (Formspree + GA).
 // Timed bottom nudge (once per browser) and header "Say hi" popover.
 
 import { parseLocation } from "./routing.js";
@@ -27,6 +27,14 @@ const COPY_STEP2 = {
   emailPlaceholder: "Email (optional, if you'd like a reply)",
   skip: "No thanks",
   send: "Send",
+};
+
+// "Enjoying this" gets its own note prompt; the reaction is sent either way.
+const COPY_STEP2_BY_REACTION = {
+  enjoying: {
+    title: "Glad you're enjoying it! Anything in particular?",
+    placeholder: "A favorite card, something that surprised you… totally optional.",
+  },
 };
 
 const CHIPS = [
@@ -232,24 +240,14 @@ function dismissNudge() {
 
 async function onChipClick(reaction) {
   gtagEvent("feedback_reaction", { reaction, source: source || "unknown" });
-  if (reaction === "enjoying") {
-    try {
-      await postFeedback({ reaction });
-      markPromptSeen();
-      showToast(TOAST.enjoying);
-      closePanel();
-    } catch {
-      showToast("Couldn't send — try again later.");
-    }
-    return;
-  }
   pendingReaction = reaction;
   panelEl.querySelector('.feedback-step[data-step="1"]').hidden = true;
   const step2 = panelEl.querySelector('.feedback-step[data-step="2"]');
   step2.hidden = false;
-  step2.querySelector(".feedback-lede").textContent = COPY_STEP2.title;
+  const copy = { ...COPY_STEP2, ...(COPY_STEP2_BY_REACTION[reaction] || {}) };
+  step2.querySelector(".feedback-lede").textContent = copy.title;
   const note = step2.querySelector(".feedback-note");
-  note.placeholder = COPY_STEP2.placeholder;
+  note.placeholder = copy.placeholder;
   const email = step2.querySelector(".feedback-email");
   if (email) email.placeholder = COPY_STEP2.emailPlaceholder;
   note.focus();
@@ -266,7 +264,8 @@ async function completeStep2(includeNote) {
     await postFeedback({ reaction: pendingReaction, message, email });
     if (message) gtagEvent("feedback_note", { reaction: pendingReaction });
     markPromptSeen();
-    showToast(TOAST.default);
+    showToast(pendingReaction === "enjoying" ? TOAST.enjoying : TOAST.default);
+    pendingReaction = null;
     closePanel();
   } catch {
     showToast("Couldn't send — try again later.");
@@ -296,7 +295,17 @@ function onFirstEngagement() {
   startEngagementTimer();
 }
 
+// "Enjoying this" used to send on tap. Now that it opens the note step, closing that step
+// (x, Escape, backdrop) without Send or No thanks still sends the reaction, so the tap counts.
+function flushPendingEnjoying() {
+  if (pendingReaction !== "enjoying") return;
+  pendingReaction = null;
+  markPromptSeen();
+  postFeedback({ reaction: "enjoying" }).catch(() => {});
+}
+
 function onDismissClick() {
+  flushPendingEnjoying();
   if (mode === "nudge") dismissNudge();
   else closePanel();
 }
@@ -320,6 +329,7 @@ export function initFeedback() {
 
   btnEl?.addEventListener("click", () => {
     if (isPanelOpen() && mode === "popover") {
+      flushPendingEnjoying();
       closePanel();
       return;
     }
@@ -327,7 +337,10 @@ export function initFeedback() {
   });
 
   panelEl.querySelector(".feedback-dismiss")?.addEventListener("click", onDismissClick);
-  backdropEl.addEventListener("click", closePanel);
+  backdropEl.addEventListener("click", () => {
+    flushPendingEnjoying();
+    closePanel();
+  });
 
   step2.querySelector(".feedback-skip")?.addEventListener("click", () => completeStep2(false));
   step2.querySelector(".feedback-send")?.addEventListener("click", () => completeStep2(true));

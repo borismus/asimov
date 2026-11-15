@@ -26,13 +26,11 @@ OUT = os.path.join(ARGS.deploy_dir, 'assembly') if ARGS.deploy else os.path.join
 if ARGS.deploy and not os.path.isdir(os.path.join(ARGS.deploy_dir, '.git')):
     raise SystemExit(f'{ARGS.deploy_dir} is not the invention.cards checkout')
 sys.path.insert(0, HERE)
-from lists import NEW_CARDS, CARDS, TYPES
+from lists import NEW_CARDS, CARDS, TYPES, PHEN
 
-# Phenomena are set aside while the assemblies get to a good place. The lists are kept in
-# pilot_data.py and batches.py; set this to True to show them again.
-SHOW_PHENOMENA = False
-if not SHOW_PHENOMENA:
-    CARDS = {cid: (job, slots, []) for cid, (job, slots, ph) in CARDS.items()}
+# Two views of the same board, switched in the header (?phen=1): parts only (cards.json,
+# lists.json), and parts + phenomena (cards-phen.json, lists-phen.json), which adds the
+# phenomenon cards and every card's phenomena from assemblies.json "phenomena".
 
 shutil.rmtree(OUT, ignore_errors=True)
 os.makedirs(f'{OUT}/static/images/entries-v2')
@@ -67,73 +65,78 @@ for t, body in TYPE_ICONS.items():
 open(f'{OUT}/static/stories.json', 'w').write('[]')
 
 # ---------- data ----------
-ids = set(CARDS)
-for cid, (job, slots, ph) in CARDS.items():
-    ids |= {s[2] for s in slots if s[2]}
-    ids |= {l for s in slots for l in s[6]}
-    ids |= {p for p in ph if not isinstance(p, tuple)}
+ALL_PHEN, all_ids = PHEN, set()
+for suffix, PHEN in (('', {}), ('-phen', ALL_PHEN)):  # noqa: F402 (each view sees its own PHEN)
+    ids = set(CARDS)
+    for cid, (job, slots, ph) in CARDS.items():
+        ids |= {s[2] for s in slots if s[2]}
+        ids |= {l for s in slots for l in s[6]}
+    phen_ids = {p['card'] for ph in PHEN.values() for p in ph if 'card' in p}
+    ids |= phen_ids
+    def card_type(i):
+        if i in TYPES: return TYPES[i]
+        if i in phen_ids: return 'phenomenon'
+        raise SystemExit(f'{i}: no type in assemblies.json "types"')
 
-phen_ids = {p for _, _, ph in CARDS.values() for p in ph if not isinstance(p, tuple)}
-def card_type(i):
-    if i in TYPES: return TYPES[i]
-    if i in phen_ids: return 'phenomenon'
-    raise SystemExit(f'{i}: no type in assemblies.json "types"')
+    def fmt_year(y):
+        y = int(y)
+        return f'{-y} BCE' if y < 0 else str(y)
 
-def fmt_year(y):
-    y = int(y)
-    return f'{-y} BCE' if y < 0 else str(y)
-
-with open(f'{OUT}/static/asimov.tsv', 'w', newline='') as fh:
-    w = csv.writer(fh, delimiter='\t', quoting=csv.QUOTE_MINIMAL, lineterminator='\n')
-    w.writerow(['ID', 'Year', 'Title', 'Description', 'Inventor', 'Location', 'Dependencies', 'Field', 'URL', 'Kind'])
-    for i in sorted(ids):
-        deps = []
-        if i in CARDS:
-            job, slots, ph = CARDS[i]
-            for d in [s[2] for s in slots if s[2]] + [l for s in slots for l in s[6]] + [p for p in ph if not isinstance(p, tuple)]:
+    with open(f'{OUT}/static/asimov.tsv', 'w', newline='') as fh:
+        w = csv.writer(fh, delimiter='\t', quoting=csv.QUOTE_MINIMAL, lineterminator='\n')
+        w.writerow(['ID', 'Year', 'Title', 'Description', 'Inventor', 'Location', 'Dependencies', 'Field', 'URL', 'Kind'])
+        for i in sorted(ids):
+            deps = []
+            job, slots, _ = CARDS.get(i, (None, [], []))
+            for d in [s[2] for s in slots if s[2]] + [l for s in slots for l in s[6]] + [p['card'] for p in PHEN.get(i, []) if 'card' in p]:
                 if d not in deps: deps.append(d)
-        if i in NEW_CARDS:
-            t, y, d = NEW_CARDS[i]
-            w.writerow([i, fmt_year(y), t, d, '', '', ', '.join(deps), card_type(i).title(), '', 'added'])
-        else:
-            r = rows[i]
-            w.writerow([i, r['Year'], r['Title'], r['Description'], r['Inventor'], r['Location'], ', '.join(deps), card_type(i).title(), r.get('URL', ''), r.get('Kind', '') or 'legacy'])
+            if i in NEW_CARDS:
+                t, y, d = NEW_CARDS[i]
+                w.writerow([i, fmt_year(y), t, d, '', '', ', '.join(deps), card_type(i).title(), '', 'added'])
+            else:
+                r = rows[i]
+                w.writerow([i, r['Year'], r['Title'], r['Description'], r['Inventor'], r['Location'], ', '.join(deps), card_type(i).title(), r.get('URL', ''), r.get('Kind', '') or 'legacy'])
 
-# The artifact host won't serve .tsv, so ship the same rows as JSON.
-with open(f'{OUT}/static/asimov.tsv') as fh:
-    json.dump(list(csv.DictReader(fh, delimiter='\t')), open(f'{OUT}/static/cards.json', 'w'), ensure_ascii=False)
-os.remove(f'{OUT}/static/asimov.tsv')
+    # The artifact host won't serve .tsv, so ship the same rows as JSON.
+    with open(f'{OUT}/static/asimov.tsv') as fh:
+        json.dump(list(csv.DictReader(fh, delimiter='\t')), open(f'{OUT}/static/cards{suffix}.json', 'w'), ensure_ascii=False)
+    os.remove(f'{OUT}/static/asimov.tsv')
 
-# A slot's job is its key. The part name ("barrel", "eyepiece") is kept only
-# when it says something the job and the filler card don't.
-GENERIC_PARTS = {'material', 'fuel', 'propellant', 'power', 'motive force', 'magnet', 'magnets', 'gears',
-                 'oxidizer', 'thrust', 'explosive', 'steam', 'drive', 'motor', 'engine', 'generator', 'battery',
-                 'amplifier', 'launcher', 'anesthetic', 'culture', 'conductor', 'insulation', 'base metal'}
-def _stem(w):
-    for suf in ('es', 's'):
-        if w.endswith(suf) and len(w) > 4: return w[:-len(suf)]
-    return w
-def part_name(slot, filler_title):
-    name = (slot[0] or '').strip()
-    if not name: return None
-    low = name.lower()
-    if low in GENERIC_PARTS: return None
-    toks = [_stem(t) for t in re.findall(r'[a-z]+', low)]
-    if toks and all(t in filler_title.lower() for t in toks): return None
-    if toks and all(t in slot[1].lower() for t in toks): return None
-    return name
+    # A slot's job is its key. The part name ("barrel", "eyepiece") is kept only
+    # when it says something the job and the filler card don't.
+    GENERIC_PARTS = {'material', 'fuel', 'propellant', 'power', 'motive force', 'magnet', 'magnets', 'gears',
+                     'oxidizer', 'thrust', 'explosive', 'steam', 'drive', 'motor', 'engine', 'generator', 'battery',
+                     'amplifier', 'launcher', 'anesthetic', 'culture', 'conductor', 'insulation', 'base metal'}
+    def _stem(w):
+        for suf in ('es', 's'):
+            if w.endswith(suf) and len(w) > 4: return w[:-len(suf)]
+        return w
+    def part_name(slot, filler_title):
+        name = (slot[0] or '').strip()
+        if not name: return None
+        low = name.lower()
+        if low in GENERIC_PARTS: return None
+        toks = [_stem(t) for t in re.findall(r'[a-z]+', low)]
+        if toks and all(t in filler_title.lower() for t in toks): return None
+        if toks and all(t in slot[1].lower() for t in toks): return None
+        return name
 
-def card_title(i):
-    return NEW_CARDS[i][0] if i in NEW_CARDS else rows[i]['Title']
+    def card_title(i):
+        return NEW_CARDS[i][0] if i in NEW_CARDS else rows[i]['Title']
 
-lists = {}
-for cid, (job, slots, ph) in CARDS.items():
-    lists[cid] = {
-        'job': job,
-        'slots': [{'part': part_name(s, card_title(s[2]) if s[2] else (s[3] or '')), 'job': s[1], 'fill': s[2], 'gap': s[3], 'kind': s[4], 'note': s[5], **({'later': s[6]} if s[6] else {})} for s in slots],
-        **({'phen': [{'gap': p[1]} if isinstance(p, tuple) else {'id': p} for p in ph]} if SHOW_PHENOMENA else {}),
-    }
-json.dump(lists, open(f'{OUT}/static/lists.json', 'w'), ensure_ascii=False)
+    phen_json = lambda ph: [{'effect': p['effect'], **({'id': p['card']} if 'card' in p else {'gap': p['gap']})} for p in ph]
+    lists = {}
+    for cid, (job, slots, _) in CARDS.items():
+        lists[cid] = {
+            'job': job,
+            'slots': [{'part': part_name(s, card_title(s[2]) if s[2] else (s[3] or '')), 'job': s[1], 'fill': s[2], 'gap': s[3], 'kind': s[4], 'note': s[5], **({'later': s[6]} if s[6] else {})} for s in slots],
+            **({'phen': phen_json(PHEN[cid])} if cid in PHEN else {}),
+        }
+    for cid, ph in PHEN.items():  # cards with phenomena but no list of their own (Penicillin, the vitamins)
+        if cid not in lists: lists[cid] = {'phen': phen_json(ph)}
+    json.dump(lists, open(f'{OUT}/static/lists{suffix}.json', 'w'), ensure_ascii=False)
+    all_ids |= ids
+ids = all_ids
 
 # ---------- images ----------
 # Cards with no deck art share one "art to come" image (the card frame already shows the title).
@@ -178,7 +181,7 @@ patch(f'{S}/utils.js', [
     '  console.log(`Found ${links.length} links.`);',
     '''  // Prototype: assembly + phenomenon lists, and a kind for every edge.
   try {
-    const lists = await (await fetch("static/lists.json", { cache: "no-store" })).json();
+    const lists = await (await fetch(window.__PHEN_VIEW ? "static/lists-phen.json" : "static/lists.json", { cache: "no-store" })).json();
     for (const n of nodes) if (lists[n.id]) Object.assign(n, lists[n.id]);
     // Which jobs each card does as a part somewhere (for "job:" searches).
     const byId = Object.fromEntries(nodes.map((n) => [n.id, n]));
@@ -189,7 +192,10 @@ patch(f'{S}/utils.js', [
     console.warn("lists.json missing", e);
   }
   for (const l of links) {
-    l.type = (l.target.phen || []).some((p) => p.id === l.source.id) ? "phen" : "part";
+    const ph = (l.target.phen || []).find((p) => p.id === l.source.id);
+    l.type = ph ? "phen" : "part";
+    const slot = ph ? null : (l.target.slots || []).find((s) => s.fill === l.source.id || (s.later || []).includes(l.source.id));
+    l.label = ph ? ph.effect : slot ? slot.job : "";
     l.later = l.source.year > l.target.year;
   }
   console.log(`Found ${links.length} links.`);''',
@@ -237,6 +243,96 @@ patch(f'{S}/world.js', [
   ctx.setLineDash([]);''',
 )])
 
+patch(f'{S}/overlays.js', [
+    ('''    .attr("class", "highlight pinned")
+    .attr("stroke", "steelblue")
+    .attr("marker-end", "url(#pinned-arrow)");''',
+     '''    .attr("class", (l) => "highlight pinned" + (l.type === "phen" ? " phen" : ""))
+    .attr("stroke", (l) => (l.type === "phen" ? "#b8741a" : "steelblue"))
+    .attr("marker-end", (l) => (l.type === "phen" ? "url(#pinned-arrow-phen)" : "url(#pinned-arrow)"));'''),
+    ('''  layoutOverlayLines(gPinnedLines.selectAll("line"), state.pinnedLayout);''',
+     '''  layoutOverlayLines(gPinnedLines.selectAll("line"), state.pinnedLayout);
+  // Prototype: label each link of the pinned card with its job (a part) or its effect (a
+  // phenomenon), next to the card. Links between two other cards in the pin's chain get none.
+  {
+    const kk = (state.transform && state.transform.k) || 1;
+    const pid = state.pinnedId;
+    const lines = gPinnedLines.selectAll("line");
+    // Parts added later stay dashed, as on the board.
+    lines.style("stroke-dasharray", (l) => (l.type !== "phen" && l.later ? `${9 / kk} ${6 / kk}` : null));
+    let items = lines.nodes().map((el) => ({ el, l: d3.select(el).datum() }))
+      .filter((d) => d.l.label && (d.l.source.id === pid || d.l.target.id === pid));
+    for (const d of items) {
+      const x1 = +d.el.getAttribute("x1"), y1 = +d.el.getAttribute("y1"), x2 = +d.el.getAttribute("x2"), y2 = +d.el.getAttribute("y2");
+      d.out = d.l.source.id === pid;  // the pinned card is the part (or describes the effect)
+      d.ax = d.out ? x1 : x2; d.ay = d.out ? y1 : y2;
+      d.bx = d.out ? x2 : x1; d.by = d.out ? y2 : y1;
+      d.len = Math.hypot(d.bx - d.ax, d.by - d.ay) || 1;
+      d.ang = Math.atan2(d.by - d.ay, d.bx - d.ax);
+    }
+    // The same label on several links going the same way (Zinc stores chemical energy in three
+    // batteries) shows once, on the middle line of the group.
+    const groups = new Map();
+    for (const d of items) {
+      const key = (d.out ? "out:" : "in:") + d.l.label;
+      (groups.get(key) || groups.set(key, []).get(key)).push(d);
+    }
+    const dropped = new Set();
+    for (const g of groups.values()) {
+      g.sort((a, b) => a.ang - b.ang);
+      g.forEach((d, i) => { if (i !== Math.floor(g.length / 2)) dropped.add(d); });
+    }
+    items = items.filter((d) => !dropped.has(d));
+    // The pinned card's outline in world units (read from the page), so no label covers it.
+    const t = state.transform || { x: 0, y: 0, k: 1 };
+    const cardEl = gPinnedCards.selectAll("g.card").filter((n) => n.id === pid).node();
+    let card = null;
+    if (cardEl) {
+      const r = cardEl.getBoundingClientRect();
+      card = { x0: (r.left - t.x) / kk, y0: (r.top - t.y) / kk, x1: (r.right - t.x) / kk, y1: (r.bottom - t.y) / kk };
+    }
+    const gap = 6 / kk;
+    const onCard = (x, y, w, h) => card && x + w / 2 > card.x0 - gap && x - w / 2 < card.x1 + gap && y + h / 2 > card.y0 - gap && y - h / 2 < card.y1 + gap;
+    const placed = [];
+    const hits = (x, y, w, h) => placed.some((p) => Math.abs(p.x - x) * 2 < p.w + w && Math.abs(p.y - y) * 2 < p.h + h);
+    // Slide each label out along its line from the card's edge until it's clear of the card and
+    // of the labels already placed. Where lines bunch up (GPS), a label may also step a row or two
+    // off its line, so the labels stack in a column by the card instead of trailing away. After
+    // 320px it gives up on the other labels (never on the card).
+    const shifts = [0, 16, -16, 32, -32];
+    for (const d of items.sort((a, b) => a.ang - b.ang)) {
+      const w = (d.l.label.length * 6.6 + 8) / kk, h = 14 / kk;
+      const nx = -(d.by - d.ay) / d.len, ny = (d.bx - d.ax) / d.len;
+      let best = null, fallback = null;
+      for (let off = 0; off < d.len && !best; off += 6 / kk) {
+        const f = Math.min(0.95, off / d.len);
+        const px = d.ax + (d.bx - d.ax) * f, py = d.ay + (d.by - d.ay) * f;
+        for (const sh of shifts) {
+          const x = px + nx * sh / kk, y = py + ny * sh / kk;
+          if (onCard(x, y, w, h)) continue;
+          if (!fallback && sh === 0) fallback = { x, y };
+          if (!hits(x, y, w, h)) { best = { x, y }; break; }
+        }
+        if (off * kk > 320 && fallback) break;
+      }
+      const pos = best || fallback || { x: d.bx, y: d.by };
+      d.x = pos.x; d.y = pos.y;
+      placed.push({ x: pos.x, y: pos.y, w, h });
+    }
+    const lab = gPinnedLines.selectAll("text.edge-label").data(items, (d) => d.l.source.id + "->" + d.l.target.id);
+    lab.exit().remove();
+    lab.enter().append("text").attr("class", "edge-label").attr("text-anchor", "middle").attr("dominant-baseline", "middle")
+      .merge(lab)
+      .classed("phen", (d) => d.l.type === "phen")
+      .text((d) => d.l.label)
+      .attr("x", (d) => d.x)
+      .attr("y", (d) => d.y)
+      .attr("font-size", 11 / kk)
+      .attr("stroke-width", 3 / kk)
+      .raise();
+  }'''),
+])
+
 patch(f'{S}/card.js', [(
     'let cardSerial = 0;',
     'let cardSerial = 0;\n' + open(os.path.join(HERE, 'card_back.js')).read(),
@@ -267,7 +363,8 @@ patch(f'{S}/search.js', [(
 )])
 
 patch(f'{S}/universe.js', [
-    ('loadGraph("static/asimov.tsv")', 'loadGraph("static/cards.json")'),
+    ('loadGraph("static/asimov.tsv")', 'loadGraph(window.__PHEN_VIEW ? "static/cards-phen.json" : "static/cards.json")'),
+    ('addArrow("pinned-arrow", "steelblue");', 'addArrow("pinned-arrow", "steelblue");\naddArrow("pinned-arrow-phen", "#b8741a"); // prototype: phenomenon links'),
     ('} from "./stories.js";', """} from "./stories.js";
 import { addBackFace, flipCard } from "./card.js";
 
@@ -281,7 +378,7 @@ function backLookup() {
     capturedBy = {};
     for (const n of state.nodes) {
       for (const s of n.slots || []) for (const f of [s.fill, ...(s.later || [])]) if (f) (partOf[f] ||= []).push({ id: n.id, job: s.job, kind: s.kind });
-      for (const p of n.phen || []) if (p.id) (capturedBy[p.id] ||= []).push(n.id);
+      for (const p of n.phen || []) if (p.id) (capturedBy[p.id] ||= []).push({ id: n.id, effect: p.effect });
     }
   }
   return {
@@ -421,6 +518,18 @@ function toggleJobsPanel(event) {
   else panel.setAttribute("hidden", "");
 }
 document.getElementById("action-jobs")?.addEventListener("click", toggleJobsPanel);
+// Parts / Parts + phenomena: two builds of the board, switched by ?phen=1 (the pin stays in the hash).
+const phenBtn = document.getElementById("action-phen");
+if (phenBtn) {
+  phenBtn.setAttribute("aria-pressed", String(!!window.__PHEN_VIEW));
+  phenBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    const u = new URL(location.href);
+    if (window.__PHEN_VIEW) u.searchParams.delete("phen");
+    else u.searchParams.set("phen", "1");
+    location.href = u.toString();
+  });
+}
 document.addEventListener("click", (e) => {
   const panel = document.getElementById("jobs-panel");
   if (panel && !panel.hasAttribute("hidden") && !e.target.closest("#jobs-panel, #action-jobs")) panel.setAttribute("hidden", "");
@@ -604,16 +713,16 @@ assert 'cdnjs.cloudflare.com/ajax/libs/d3/7.9.0' in html
 html = re.sub(r'\s*<script async src="https://www.googletagmanager.com.*?</script>\s*<script>.*?</script>', '', html, flags=re.S)
 html = html.replace(' media="(min-width: 721px)"', '')
 html = re.sub(r'\s*<link rel="stylesheet" href="static/mobile.css"[^>]*>', '', html)
-html = re.sub(r'<script type="module">.*?</script>', '<script type="module">import("./static/universe.js");</script>', html, flags=re.S)
+html = re.sub(r'<script type="module">.*?</script>', '<script>window.__PHEN_VIEW = new URLSearchParams(location.search).has("phen"); document.documentElement.classList.toggle("phen-view", window.__PHEN_VIEW);</script>\n  <script type="module">import("./static/universe.js");</script>', html, flags=re.S)
 html = re.sub(r'<title>.*?</title>', '<title>Assembly Cards</title>\n  <meta name="robots" content="noindex">', html)
 search_btn = '<button id="action-search" class="site-action" type="button" title="Search" aria-label="Search">'
 assert html.count(search_btn) == 1
-html = html.replace(search_btn, '<button id="action-jobs" class="site-action" type="button" title="Jobs to be done" aria-label="Jobs to be done">\n          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>\n        </button>\n        ' + search_btn)
+html = html.replace(search_btn, '<button id="action-phen" class="site-action" type="button" title="Show phenomena: the effects each card works by" aria-label="Show phenomena">\n          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="#444" d="M14 1 3.5 14H11l-2 9L20.5 9.5H13z"/></svg>\n        </button>\n        <button id="action-jobs" class="site-action" type="button" title="Jobs to be done" aria-label="Jobs to be done">\n          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>\n        </button>\n        ' + search_btn)
 html = html.replace('<h1 class="site-title">Invention Cards</h1>', '<h1 class="site-title">Assembly Cards</h1>')
 html = re.sub(r'<p class="site-subtitle">.*?</p>', '<p class="site-subtitle">Prototype. Tap a card to pin it and light up its links; tap it again to flip it. The back lists its parts. Tap a bullet to jump to that card, or a job to see every card that does it.</p>', html, count=1)
 html = html.replace('to see every card that does it.</p>', 'to see every card that does it.'
                     + '<span class="type-key"><span class="object">object</span><span class="material">material</span><span class="practice">practice</span>'
-                    + ('<span class="phenomenon">phenomenon</span>' if SHOW_PHENOMENA else '') + '</span></p>', 1)
+                    + '<span class="phenomenon">phenomenon</span>' + '</span></p>', 1)
 html = html.replace('</h1>', '</h1>\n        <p class="site-subtitle-short">Tap a card to pin it, tap again to flip it.</p>', 1)
 search_in = '<input id="search-input"'
 assert html.count(search_in) == 1

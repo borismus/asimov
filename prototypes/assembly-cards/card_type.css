@@ -27,3 +27,14 @@
 .type-key .material::before { background: hsl(var(--type-material), 68%); }
 .type-key .practice::before { background: hsl(var(--type-practice), 62%); }
 .type-key .phenomenon::before { background: hsl(var(--type-phenomenon), 62%); }
+
+/* Parts / Parts + phenomena switch, and the labels on a pinned card's links. */
+.type-key .phenomenon { display: none; }
+.phen-view .type-key .phenomenon { display: inline; }
+#action-phen[aria-pressed="true"] { background: hsl(var(--type-phenomenon), 88%); border-radius: 6px; }
+#action-phen[aria-pressed="true"] path { fill: hsl(36, 70%, 32%); }
+text.edge-label { fill: #234; paint-order: stroke; stroke: #fff; stroke-linejoin: round; font-family: system-ui, sans-serif; pointer-events: none; }
+text.edge-label.phen { fill: hsl(36, 70%, 30%); font-style: italic; }
+.back-effect { font-style: italic; color: hsl(36, 60%, 30%); }
+line.highlight.pinned { stroke: steelblue; }
+line.highlight.pinned.phen { stroke: #b8741a; }

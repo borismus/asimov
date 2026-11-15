@@ -36,7 +36,15 @@ lance; Rudders), and Arches now get Laws of motion (stones push back: action and
 Domes, Aqueducts and Flying buttresses get through the arch. Every card is now triaged. `phenomena_effects.final_links()` combines all batches and applies rule 23;
 the sheet's Effects tab was rebuilt from it (Nov 14: 300 links on 265 of 491 board cards, 129 effects,
 25 with no card yet, 8 of them new cards at 3+ uses; Photosynthesis and Genetics drop off). The old tab
-is kept as "Effects (Nov 13)". Next: move the data into `assemblies.json` and build the display. Nothing committed yet.
+is kept as "Effects (Nov 13)". The links are now in `assemblies.json` under "phenomena" (card ->
+[{effect, card | gap}], own level applied; `python3 phenomena_effects.py export` rewrites them from the
+decisions), and `lists.py`/`build.py` read them from there, including cards with no list of their own.
+The build writes two views: parts only (cards.json, lists.json; 491 cards) and parts + phenomena
+(cards-phen.json, lists-phen.json; 579 cards, adding 88 phenomenon cards). The lightning button in the
+header switches them (?phen=1). A pinned card's links are labelled with the job (parts, steelblue) or
+the effect (phenomena, amber, italic), placed near the card and slid apart so they don't overlap. A card
+back lists "Works by" (effect: card, "explained later" when the card is newer) and, on a card whose
+effect others use, "Harnessed by" grouped by effect. Nothing committed yet.
 
 ## Where it stands (before the effect model)
 

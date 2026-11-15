@@ -14,10 +14,12 @@ It reuses the universe view, with these changes:
     card later took over a part's job, it follows the first one ("absorbs shocks: Carriage springs,
     later Rubber tire"). A part newer than the invention with nothing older before it is marked
     *added later*; a key part with no card is marked *its key part, no card*.
-  - **Natural phenomena**: the phenomena the card uses at its own level, each linking to its card.
-    One explained after the invention existed is marked *explained later*.
+  - **Works by** (phenomena view): the effects the card uses at its own level, each with the card
+    that describes it, or a name with "no card yet". One explained after the invention existed is
+    marked *explained later*.
   - **Part of**: the inventions this card is a part of, and the job it does in each.
-  - **Harnessed by**: for phenomenon cards, the inventions that use them.
+  - **Harnessed by** (phenomena view): the inventions that work by an effect this card describes,
+    one bullet per effect.
 - **Search** has its own close button. On a phone the results are a scrollable sheet that folds away
   once you pick one (tap the box to bring it back), and a tapped card slides fully into view.
 - **Tapping a bullet** pins that card and opens it on its back, so you can drill down the parts tree.
@@ -30,8 +32,10 @@ It reuses the universe view, with these changes:
   (blue, gear), material (red, ingots), practice (green, cycle) or phenomenon (amber, bolt). The
   back starts with the type. Types are in `assemblies.json` (`types`); a card reached only through a
   phenomenon list is a phenomenon.
-- **Phenomena are set aside for now** (plan to bring them back: `PHENOMENA.md`). The lists are kept
-  in the data; `SHOW_PHENOMENA` in `build.py` brings them back.
+- **Two views**: the lightning button in the header switches between parts only and parts +
+  phenomena (`?phen=1`), which adds the 88 phenomenon cards and their amber links. A pinned card's
+  links are labelled with the job or the effect. The phenomena are in `assemblies.json` under
+  "phenomena"; how they were decided is in `PHENOMENA.md`.
 
 Edges: parts are solid, parts added later are dashed, phenomena are amber (matching phenomenon cards).
 

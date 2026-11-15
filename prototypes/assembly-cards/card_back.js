@@ -1,8 +1,8 @@
 
 // ---- Prototype: card backs -------------------------------------------------
 // The back of a card lists its parts (each bullet is a job and the card that does
-// it) and the natural phenomena it uses, then the assemblies it is a part of, and
-// which inventions harness it.
+// it) and the effects it works by (each an effect and the card that describes it),
+// then the assemblies it is a part of, and which inventions harness its effects.
 const escBack = (s) => String(s ?? "").replace(/[&<>"]/g, (m) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[m]));
 
 function backHTML(d, L) {
@@ -46,23 +46,20 @@ function backHTML(d, L) {
       h += "</ul>";
     }
   }
-  if (d.phen) {
-    h += `<div class="back-h">Natural phenomena</div>`;
-    if (d.phen.length) {
-      h += "<ul>";
-      for (const p of d.phen) {
-        if (p.id) {
-          const n = L.byId[p.id];
-          const later = n && n.year > d.year ? ` <span class="back-note">explained later</span>` : "";
-          h += `<li>${link(p.id)}${later}</li>`;
-        } else {
-          h += `<li class="back-gap">${escBack(p.gap)} <span class="back-note">not in the deck</span></li>`;
-        }
+  // The effects it works by: each bullet is an effect and the card that describes it.
+  if (d.phen && d.phen.length) {
+    h += `<div class="back-h">Works by</div><ul>`;
+    for (const p of d.phen) {
+      const fx = `<span class="back-effect">${escBack(p.effect)}</span>`;
+      if (p.id) {
+        const n = L.byId[p.id];
+        const later = n && n.year > d.year ? ` <span class="back-note">explained later</span>` : "";
+        h += `<li>${fx}: ${link(p.id)}${later}</li>`;
+      } else {
+        h += `<li>${fx}: <span class="back-gap">${escBack(p.gap)}</span> <span class="back-note">no card yet</span></li>`;
       }
-      h += "</ul>";
-    } else {
-      h += `<div class="back-none">None listed.</div>`;
     }
+    h += "</ul>";
   }
   // The assemblies this card is a part of.
   const parts = L.partOf[d.id] || [];
@@ -85,10 +82,21 @@ function backHTML(d, L) {
     }
     h += "</ul>";
   }
-  // Inventions that list this card among their natural phenomena.
+  // Inventions that work by an effect this card describes, one bullet per effect.
   const users = L.capturedBy[d.id] || [];
   if (users.length) {
-    h += `<div class="back-h">Harnessed by</div><ul>${users.map((id) => `<li>${link(id)}</li>`).join("")}</ul>`;
+    const byFx = new Map();
+    for (const u of users) (byFx.get(u.effect) || byFx.set(u.effect, []).get(u.effect)).push(u.id);
+    h += `<div class="back-h">Harnessed by</div><ul>`;
+    for (const [fx, ids] of byFx) {
+      const cards = ids.map((id) => {
+        const n = L.byId[id];
+        const early = n && n.year < d.year ? ` <span class="back-note">before it was explained</span>` : "";
+        return `${link(id)}${early}`;
+      }).join(", ");
+      h += `<li><span class="back-effect">${escBack(fx)}</span>: ${cards}</li>`;
+    }
+    h += "</ul>";
   }
   if (!d.slots && !d.phen && !parts.length && !users.length) {
     h += `<div class="back-none">Nothing in this pilot uses it yet.</div>`;

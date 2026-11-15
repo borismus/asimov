@@ -15,7 +15,9 @@ A = json.load(open(os.path.join(HERE, 'assemblies.json')))
 # a phenomenon list aren't in it; the build types them as phenomena.
 TYPES = A['types']
 
-NEW_CARDS = {**pilot_data.NEW_CARDS, **batches.NEW_CARDS, **{k: tuple(v) for k, v in A['new_cards'].items()}}
+NEW_CARDS = {**pilot_data.NEW_CARDS, **batches.NEW_CARDS, **{k: tuple(v[:3]) for k, v in A['new_cards'].items()}}
+# Who a new card is associated with and where, when known (the phenomenon cards have them).
+NEW_CARD_WHO = {k: (v[3], v[4]) for k, v in A['new_cards'].items() if len(v) >= 5}
 
 # Every card's phenomena, including cards with no list of their own (Penicillin, the vitamins).
 PHEN = A.get('phenomena', {})

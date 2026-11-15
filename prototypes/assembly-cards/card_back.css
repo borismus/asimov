@@ -58,6 +58,14 @@
 }
 #jobs-panel .job-row:hover, #jobs-panel .job-row:focus-visible { background: #f3eedf; outline: none; }
 #jobs-panel .job-n { color: #777; font-size: 12px; white-space: nowrap; }
+#jobs-panel .jobs-tabs { display: flex; gap: 4px; padding: 2px 10px 6px; border-bottom: 1px solid #ddd; }
+#jobs-panel .jobs-tabs button { flex: 1; padding: 5px 8px; font: inherit; font-weight: 600; background: none; border: 1px solid transparent; border-radius: 5px; color: #555; cursor: pointer; }
+#jobs-panel .jobs-tabs button[aria-selected="true"] { background: #f3eedf; border-color: #d8cfb8; color: #111; }
+#jobs-panel .jobs-list[hidden] { display: none; }
+#jobs-panel .fx-row > span:first-child { display: flex; flex-direction: column; gap: 1px; }
+#jobs-panel .fx-name { color: hsl(36, 60%, 28%); }
+#jobs-panel .fx-card { color: #777; font-size: 12px; }
+#jobs-panel .jobs-switch { align-self: flex-start; margin-top: 6px; padding: 4px 10px; font: inherit; font-size: 13px; background: hsl(36, 82%, 90%); border: 1px solid hsl(36, 50%, 60%); border-radius: 5px; cursor: pointer; }
 .card-back .back-part { color: #888; font-size: 0.83em; }
 .card-back ul.back-sub { padding-left: 9px; list-style: circle; }
 

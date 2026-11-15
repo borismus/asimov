@@ -13,6 +13,9 @@ function backHTML(d, L) {
   let h = "";
   const jobLink = (job, text, cls = "") =>
     `<a class="back-joblink ${cls}" data-job="${escBack(job)}" href="#" title="Job: ${escBack(job)}">${escBack(text)}</a>`;
+  // An effect is tappable like a job: it lights up every card that works by it.
+  const fxLink = (fx) =>
+    `<a class="back-effect back-slot back-joblink" data-effect="${escBack(fx)}" href="#" title="Effect: ${escBack(fx)}">${escBack(fx)}</a>`;
   const type = d.field ? `<span class="back-type">${escBack(d.field.toLowerCase())}</span>` : "";
   if (d.job) h += `<div class="back-job">${type ? type + " · " : ""}Job: ${jobLink(d.job, d.job)}</div>`;
   else if (type) h += `<div class="back-job">${type}</div>`;
@@ -50,7 +53,7 @@ function backHTML(d, L) {
   if (d.phen && d.phen.length) {
     h += `<div class="back-h">Works by</div><ul>`;
     for (const p of d.phen) {
-      const fx = `<span class="back-effect">${escBack(p.effect)}</span>`;
+      const fx = fxLink(p.effect);
       if (p.id) {
         const n = L.byId[p.id];
         const later = n && n.year > d.year ? ` <span class="back-note">explained later</span>` : "";
@@ -94,7 +97,7 @@ function backHTML(d, L) {
         const early = n && n.year < d.year ? ` <span class="back-note">before it was explained</span>` : "";
         return `${link(id)}${early}`;
       }).join(", ");
-      h += `<li><span class="back-effect">${escBack(fx)}</span>: ${cards}</li>`;
+      h += `<li>${fxLink(fx)}: ${cards}</li>`;
     }
     h += "</ul>";
   }
@@ -137,11 +140,18 @@ export function addBackFace(sel, L) {
       .attr("class", "back-body")
       .html(backHTML(d, L));
     body.on("click", (event) => {
-      const jobA = event.target.closest("a[data-job]");
+      const jobA = event.target.closest("a[data-job]:not([data-effect])");
       if (jobA) {
         event.preventDefault();
         event.stopPropagation();
         L.onJob(jobA.getAttribute("data-job"));
+        return;
+      }
+      const fxA = event.target.closest("a[data-effect]");
+      if (fxA) {
+        event.preventDefault();
+        event.stopPropagation();
+        L.onEffect(fxA.getAttribute("data-effect"));
         return;
       }
       const a = event.target.closest("a[data-pin]");

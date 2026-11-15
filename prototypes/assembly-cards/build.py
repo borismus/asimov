@@ -26,11 +26,11 @@ OUT = os.path.join(ARGS.deploy_dir, 'assembly') if ARGS.deploy else os.path.join
 if ARGS.deploy and not os.path.isdir(os.path.join(ARGS.deploy_dir, '.git')):
     raise SystemExit(f'{ARGS.deploy_dir} is not the invention.cards checkout')
 sys.path.insert(0, HERE)
-from lists import NEW_CARDS, CARDS, TYPES, PHEN
+from lists import NEW_CARDS, NEW_CARD_WHO, CARDS, TYPES, PHEN
 
-# Two views of the same board, switched in the header (?phen=1): parts only (cards.json,
-# lists.json), and parts + phenomena (cards-phen.json, lists-phen.json), which adds the
-# phenomenon cards and every card's phenomena from assemblies.json "phenomena".
+# Two views of the same board: parts + phenomena, the default (cards-phen.json, lists-phen.json),
+# which adds the phenomenon cards and every card's phenomena from assemblies.json "phenomena";
+# and parts only, by link (?parts=1; cards.json, lists.json).
 
 shutil.rmtree(OUT, ignore_errors=True)
 os.makedirs(f'{OUT}/static/images/entries-v2')
@@ -92,7 +92,8 @@ for suffix, PHEN in (('', {}), ('-phen', ALL_PHEN)):  # noqa: F402 (each view se
                 if d not in deps: deps.append(d)
             if i in NEW_CARDS:
                 t, y, d = NEW_CARDS[i]
-                w.writerow([i, fmt_year(y), t, d, '', '', ', '.join(deps), card_type(i).title(), '', 'added'])
+                who, where = NEW_CARD_WHO.get(i, ('', ''))
+                w.writerow([i, fmt_year(y), t, d, who, where, ', '.join(deps), card_type(i).title(), '', 'added'])
             else:
                 r = rows[i]
                 w.writerow([i, r['Year'], r['Title'], r['Description'], r['Inventor'], r['Location'], ', '.join(deps), card_type(i).title(), r.get('URL', ''), r.get('Kind', '') or 'legacy'])
@@ -187,6 +188,7 @@ patch(f'{S}/utils.js', [
     const byId = Object.fromEntries(nodes.map((n) => [n.id, n]));
     for (const n of nodes) {
       for (const s of n.slots || []) for (const f of [s.fill, ...(s.later || [])]) if (f && byId[f]) (byId[f].fillsJobs ||= new Set()).add(s.job);
+      for (const p of n.phen || []) if (p.id && byId[p.id]) (byId[p.id].describes ||= new Set()).add(p.effect);
     }
   } catch (e) {
     console.warn("lists.json missing", e);
@@ -351,12 +353,27 @@ open(f'{S}/card.js', 'w').write(_cj)
 patch(f'{S}/search.js', [(
     'export function searchHelper(node, query) {\n  const q = query.toLowerCase();',
     '''export function searchHelper(node, query) {
-  // Prototype: "job:<job>" matches cards that do that job, as their own job or as a part.
+  // Prototype: "job:energy" matches cards that do a job containing "energy", as their own job or
+  // as a part; "effect:light" matches cards that work by an effect containing "light", and the
+  // cards that describe one. Quoted (job:"cuts", as the panel and card backs send) matches exactly.
+  const field = (prefix) => {
+    const v = query.slice(prefix.length).trim().toLowerCase();
+    const exact = v.length > 1 && v.startsWith('"') && v.endsWith('"');
+    const want = exact ? v.slice(1, -1) : v;
+    return want ? (text) => (exact ? text.toLowerCase() === want : text.toLowerCase().includes(want)) : null;
+  };
   if (query.startsWith("job:")) {
-    const job = query.slice(4).trim().toLowerCase();
-    if (!job) return false;
-    if ((node.job || "").toLowerCase() === job) return true;
-    for (const j of node.fillsJobs || []) if (j.toLowerCase() === job) return true;
+    const m = field("job:");
+    if (!m) return false;
+    if (node.job && m(node.job)) return true;
+    for (const j of node.fillsJobs || []) if (m(j)) return true;
+    return false;
+  }
+  if (query.startsWith("effect:")) {
+    const m = field("effect:");
+    if (!m) return false;
+    if ((node.phen || []).some((p) => m(p.effect))) return true;
+    for (const e of node.describes || []) if (m(e)) return true;
     return false;
   }
   const q = query.toLowerCase();''',
@@ -387,6 +404,7 @@ function backLookup() {
     capturedBy,
     // A bullet jumps to its card and opens it on the back, so you can keep drilling down.
     onJob: (job) => showJob(job),
+    onEffect: (fx) => showQuery(`effect:"${fx}"`),
     onLink: (id) => {
       const n = state.nodesById[id];
       if (!n) return;
@@ -485,50 +503,92 @@ function jobIndex() {
   }
   return [...jobs.entries()].sort((a, b) => b[1].slots - a[1].slots || b[1].cards.size - a[1].cards.size || a[0].localeCompare(b[0]));
 }
-function showJob(job) {
+// Every effect: the card that describes it (or its name, with no card yet) and the cards that work by it.
+function effectIndex() {
+  const fx = new Map();
+  for (const n of state.nodes) {
+    for (const p of n.phen || []) {
+      const v = fx.get(p.effect) || fx.set(p.effect, { card: p.id || null, gap: p.gap || null, users: new Set() }).get(p.effect);
+      v.users.add(n.id);
+    }
+  }
+  return [...fx.entries()].sort((a, b) => b[1].users.size - a[1].users.size || a[0].localeCompare(b[0]));
+}
+function showQuery(q) {
   const input = document.getElementById("search-input");
-  input.value = `job:${job}`;
+  input.value = q;
   state.searchQuery = input.value;
   document.body.classList.add("searching", "search-active");
   document.getElementById("jobs-panel")?.setAttribute("hidden", "");
   scheduleRedraw();
 }
-function toggleJobsPanel(event) {
-  event.stopPropagation();
-  let panel = document.getElementById("jobs-panel");
-  if (!panel) {
-    const rows = jobIndex();
-    const plural = (n, w) => `${n} ${w}${n === 1 ? "" : "s"}`;
-    panel = document.createElement("div");
-    panel.id = "jobs-panel";
-    panel.setAttribute("hidden", "");
-    panel.innerHTML =
-      `<div class="jobs-head"><b>${rows.length} jobs</b><span>Tap one to light up every card that can do it.</span></div>` +
-      rows.map(([j, v]) => `<button type="button" class="job-row" data-job="${escapeHtml(j)}"><span>${escapeHtml(j)}</span><span class="job-n">${plural(v.slots, "slot")} · ${plural(v.cards.size, "card")}</span></button>`).join("");
-    panel.addEventListener("click", (e) => {
-      e.stopPropagation();
-      const b = e.target.closest("[data-job]");
-      if (b) showJob(b.getAttribute("data-job"));
-    });
-    document.body.appendChild(panel);
-  }
+function showJob(job) { showQuery(`job:"${job}"`); }
+// The panel has two tabs: Jobs (every job a card or slot does) and Effects (every effect a card
+// works by). The effects come with the phenomena view; in the parts view the tab offers to switch.
+function buildJobsPanel(tab) {
+  const plural = (n, w) => `${n} ${w}${n === 1 ? "" : "s"}`;
+  const jobs = jobIndex();
+  const effects = window.__PHEN_VIEW ? effectIndex() : [];
+  const panel = document.createElement("div");
+  panel.id = "jobs-panel";
+  panel.setAttribute("hidden", "");
+  const tabs = `<div class="jobs-tabs" role="tablist">` +
+    `<button type="button" role="tab" data-tab="jobs">Jobs <span class="job-n">${jobs.length}</span></button>` +
+    `<button type="button" role="tab" data-tab="effects">Effects${effects.length ? ` <span class="job-n">${effects.length}</span>` : ""}</button></div>`;
+  const jobsHtml = `<div class="jobs-list" data-list="jobs"><div class="jobs-head"><span>Tap a job to light up every card that can do it.</span></div>` +
+    jobs.map(([j, v]) => `<button type="button" class="job-row" data-job="${escapeHtml(j)}"><span>${escapeHtml(j)}</span><span class="job-n">${plural(v.slots, "slot")} · ${plural(v.cards.size, "card")}</span></button>`).join("") + `</div>`;
+  const fxHtml = `<div class="jobs-list" data-list="effects">` + (window.__PHEN_VIEW
+    ? `<div class="jobs-head"><span>Tap an effect to light up the cards that work by it, and the card that describes it.</span></div>` +
+      effects.map(([e, v]) => {
+        const card = v.card ? escapeHtml(state.nodesById[v.card]?.title || v.card) : `${escapeHtml(v.gap)} <i>(no card yet)</i>`;
+        return `<button type="button" class="job-row fx-row" data-effect="${escapeHtml(e)}"><span><span class="fx-name">${escapeHtml(e)}</span><span class="fx-card">${card}</span></span><span class="job-n">${plural(v.users.size, "card")}</span></button>`;
+      }).join("")
+    : `<div class="jobs-head"><span>Effects come with the phenomena view.</span><button type="button" class="jobs-switch" data-switch>Show phenomena</button></div>`) + `</div>`;
+  panel.innerHTML = tabs + jobsHtml + fxHtml;
+  const select = (t) => {
+    for (const b of panel.querySelectorAll("[data-tab]")) b.setAttribute("aria-selected", String(b.dataset.tab === t));
+    for (const l of panel.querySelectorAll("[data-list]")) l.hidden = l.dataset.list !== t;
+  };
+  select(tab);
+  panel.addEventListener("click", (e) => {
+    e.stopPropagation();
+    const t = e.target.closest("[data-tab]");
+    if (t) return select(t.dataset.tab);
+    if (e.target.closest("[data-switch]")) {
+      const u = new URL(location.href);
+      u.searchParams.delete("parts");
+      u.searchParams.set("panel", "effects");
+      location.href = u.toString();
+      return;
+    }
+    const j = e.target.closest("[data-job]");
+    if (j) return showJob(j.getAttribute("data-job"));
+    const f = e.target.closest("[data-effect]");
+    if (f) return showQuery(`effect:"${f.getAttribute("data-effect")}"`);
+  });
+  document.body.appendChild(panel);
+  return panel;
+}
+function toggleJobsPanel(event, tab = "jobs") {
+  event?.stopPropagation();
+  const panel = document.getElementById("jobs-panel") || buildJobsPanel(tab);
   const header = document.getElementById("site-header");
   panel.style.top = `${(header ? header.getBoundingClientRect().bottom : 60) + 8}px`;
   if (panel.hasAttribute("hidden")) panel.removeAttribute("hidden");
   else panel.setAttribute("hidden", "");
 }
 document.getElementById("action-jobs")?.addEventListener("click", toggleJobsPanel);
-// Parts / Parts + phenomena: two builds of the board, switched by ?phen=1 (the pin stays in the hash).
-const phenBtn = document.getElementById("action-phen");
-if (phenBtn) {
-  phenBtn.setAttribute("aria-pressed", String(!!window.__PHEN_VIEW));
-  phenBtn.addEventListener("click", (e) => {
-    e.stopPropagation();
+// Arriving from "Show phenomena" in the panel: open it on Effects once the cards are in.
+if (new URLSearchParams(location.search).get("panel") === "effects") {
+  const wait = setInterval(() => {
+    if (!state.nodes || !state.nodes.length || !state.nodes.some((n) => n.phen)) return;
+    clearInterval(wait);
+    toggleJobsPanel(null, "effects");
     const u = new URL(location.href);
-    if (window.__PHEN_VIEW) u.searchParams.delete("phen");
-    else u.searchParams.set("phen", "1");
-    location.href = u.toString();
-  });
+    u.searchParams.delete("panel");
+    history.replaceState(null, "", u.toString());
+  }, 200);
+  setTimeout(() => clearInterval(wait), 10000);
 }
 document.addEventListener("click", (e) => {
   const panel = document.getElementById("jobs-panel");
@@ -713,14 +773,14 @@ assert 'cdnjs.cloudflare.com/ajax/libs/d3/7.9.0' in html
 html = re.sub(r'\s*<script async src="https://www.googletagmanager.com.*?</script>\s*<script>.*?</script>', '', html, flags=re.S)
 html = html.replace(' media="(min-width: 721px)"', '')
 html = re.sub(r'\s*<link rel="stylesheet" href="static/mobile.css"[^>]*>', '', html)
-html = re.sub(r'<script type="module">.*?</script>', '<script>window.__PHEN_VIEW = new URLSearchParams(location.search).has("phen"); document.documentElement.classList.toggle("phen-view", window.__PHEN_VIEW);</script>\n  <script type="module">import("./static/universe.js");</script>', html, flags=re.S)
+html = re.sub(r'<script type="module">.*?</script>', '<script>window.__PHEN_VIEW = !new URLSearchParams(location.search).has("parts"); document.documentElement.classList.toggle("phen-view", window.__PHEN_VIEW);</script>\n  <script type="module">import("./static/universe.js");</script>', html, flags=re.S)
 html = re.sub(r'<title>.*?</title>', '<title>Assembly Cards</title>\n  <meta name="robots" content="noindex">', html)
 search_btn = '<button id="action-search" class="site-action" type="button" title="Search" aria-label="Search">'
 assert html.count(search_btn) == 1
-html = html.replace(search_btn, '<button id="action-phen" class="site-action" type="button" title="Show phenomena: the effects each card works by" aria-label="Show phenomena">\n          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="#444" d="M14 1 3.5 14H11l-2 9L20.5 9.5H13z"/></svg>\n        </button>\n        <button id="action-jobs" class="site-action" type="button" title="Jobs to be done" aria-label="Jobs to be done">\n          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>\n        </button>\n        ' + search_btn)
+html = html.replace(search_btn, '<button id="action-jobs" class="site-action" type="button" title="Jobs and effects" aria-label="Jobs and effects">\n          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>\n        </button>\n        ' + search_btn)
 html = html.replace('<h1 class="site-title">Invention Cards</h1>', '<h1 class="site-title">Assembly Cards</h1>')
-html = re.sub(r'<p class="site-subtitle">.*?</p>', '<p class="site-subtitle">Prototype. Tap a card to pin it and light up its links; tap it again to flip it. The back lists its parts. Tap a bullet to jump to that card, or a job to see every card that does it.</p>', html, count=1)
-html = html.replace('to see every card that does it.</p>', 'to see every card that does it.'
+html = re.sub(r'<p class="site-subtitle">.*?</p>', '<p class="site-subtitle">Prototype. Tap a card to pin it and light up its links; tap it again to flip it. The back lists its parts and the effects it works by. Tap a bullet to jump to that card, or a job or an effect to see every card that shares it.</p>', html, count=1)
+html = html.replace('to see every card that shares it.</p>', 'to see every card that shares it.'
                     + '<span class="type-key"><span class="object">object</span><span class="material">material</span><span class="practice">practice</span>'
                     + '<span class="phenomenon">phenomenon</span>' + '</span></p>', 1)
 html = html.replace('</h1>', '</h1>\n        <p class="site-subtitle-short">Tap a card to pin it, tap again to flip it.</p>', 1)

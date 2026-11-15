@@ -26,14 +26,19 @@ It reuses the universe view, with these changes:
 - **Jobs.** Every card and slot has a job ("provides thrust", "controls flow"). The wrench button lists all
   of them with counts; picking one, or tapping a job on a card's back, lights up every card that
   can do that job. Jobs are kept generic; a slot's specifics ("prevents scurvy") go in its note.
+- **Effects.** The same panel's Effects tab lists every effect, most used first, with the card that
+  describes it; picking one lights up the cards that work by it and that card.
+- **Search** takes `job:` and `effect:` filters that match part of a name (`job:energy`,
+  `effect:light`); in quotes (`job:"cuts"`) they match exactly, which is what the panel and card
+  backs send.
 - **Search** lists every match under the search bar, on screen or not; the one you picked is blue.
 - **No hover, no half cards.** Cards are always full size.
 - **Card type instead of genre.** A card's tint and corner icon say what kind of card it is: object
   (blue, gear), material (red, ingots), practice (green, cycle) or phenomenon (amber, bolt). The
   back starts with the type. Types are in `assemblies.json` (`types`); a card reached only through a
   phenomenon list is a phenomenon.
-- **Two views**: the lightning button in the header switches between parts only and parts +
-  phenomena (`?phen=1`), which adds the 88 phenomenon cards and their amber links. A pinned card's
+- **Phenomena** are shown: the 88 phenomenon cards and their amber links. `?parts=1` opens a
+  parts-only view of the board. A pinned card's
   links are labelled with the job or the effect. The phenomena are in `assemblies.json` under
   "phenomena"; how they were decided is in `PHENOMENA.md`.
 

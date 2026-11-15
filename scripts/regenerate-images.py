@@ -120,6 +120,25 @@ def load_inventions(tsv: Path) -> list[Invention]:
     return out
 
 
+def load_cards_json(path: Path) -> list[Invention]:
+    """Cards that aren't in the deck TSV (the assembly prototype's supporting and phenomenon
+    cards), in the same shape, so they get the same prompt as a deck card."""
+    out: list[Invention] = []
+    for c in json.loads(path.read_text(encoding="utf-8")):
+        year_raw = str(c["year"]).strip()
+        out.append(Invention(
+            id=c["id"],
+            year_raw=year_raw,
+            year=parse_year(year_raw),
+            title=c["title"].strip(),
+            summary=c.get("summary", "").strip(),
+            inventor=c.get("inventor", "").strip(),
+            location=c.get("location", "").strip(),
+            field=c.get("field", "").strip(),
+        ))
+    return out
+
+
 @functools.cache
 def _read_prompt(name: str) -> str:
     return (PROMPTS_DIR / f"{name}.md").read_text(encoding="utf-8").strip()
@@ -435,12 +454,29 @@ def main() -> None:
     p.add_argument("--out-dir", type=Path, default=DEFAULT_OUT_DIR)
     p.add_argument("--provider", choices=("openai", "gemini"), default="openai",
                    help="image provider (default openai)")
+    p.add_argument("--cards-json", type=Path,
+                   help="also load cards not in the deck TSV from a JSON list of "
+                        "{id, year, title, summary, inventor, location, field} "
+                        "(e.g. prototypes/assembly-cards/art_cards.py writes one)")
     args = p.parse_args()
+    args.out_dir = args.out_dir.resolve()  # a relative --out-dir works too
 
     ids = [s.strip() for s in args.ids.split(",")] if args.ids else None
 
     all_inv = load_inventions(TSV_PATH)
     print(f"loaded {len(all_inv)} inventions from {TSV_PATH.relative_to(ROOT)}")
+    if args.cards_json:
+        extra = load_cards_json(args.cards_json)
+        known = {inv.id for inv in all_inv}
+        clash = [inv.id for inv in extra if inv.id in known]
+        if clash:
+            print(f"--cards-json ids already in the deck: {', '.join(clash)}", file=sys.stderr)
+            sys.exit(2)
+        all_inv += extra
+        print(f"loaded {len(extra)} more from {args.cards_json}")
+        if not ids:
+            # Only the JSON's cards, never the whole deck, unless --ids says otherwise.
+            ids = [inv.id for inv in extra]
 
     picked = select_inventions(all_inv, ids, args.sample, args.out_dir, args.force)
     if not picked:

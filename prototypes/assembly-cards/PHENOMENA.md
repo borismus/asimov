@@ -40,11 +40,19 @@ is kept as "Effects (Nov 13)". The links are now in `assemblies.json` under "phe
 [{effect, card | gap}], own level applied; `python3 phenomena_effects.py export` rewrites them from the
 decisions), and `lists.py`/`build.py` read them from there, including cards with no list of their own.
 The build writes two views: parts only (cards.json, lists.json; 491 cards) and parts + phenomena
-(cards-phen.json, lists-phen.json; 579 cards, adding 88 phenomenon cards). The lightning button in the
-header switches them (?phen=1). A pinned card's links are labelled with the job (parts, steelblue) or
+(cards-phen.json, lists-phen.json; 579 cards, adding 88 phenomenon cards). The phenomena view is the
+default; ?parts=1 opens parts only (there's no button for it). A pinned card's links are labelled with the job (parts, steelblue) or
 the effect (phenomena, amber, italic), placed near the card and slid apart so they don't overlap. A card
 back lists "Works by" (effect: card, "explained later" when the card is newer) and, on a card whose
-effect others use, "Harnessed by" grouped by effect. Nothing committed yet.
+effect others use, "Harnessed by" grouped by effect.
+
+Nov 14: the 8 effects with 3+ uses got phenomenon cards, drafted and edited on the sheet tab "New phenomenon
+cards": Archimedes' principle, Hooke's law, Capillary action, Rolling friction, Thermal expansion,
+Electromagnetic induction, Ionizing radiation and Stimulated emission. They're in `assemblies.json`
+"new_cards" with who and where (shown on the card front), and their effects now link to them; 17 gaps
+remain, each a card's key effect. They have no art yet: next is generating it, with the 32 supporting
+cards that also show "art to come" (scripts/regenerate-images.py, once it can read cards from
+assemblies.json and there's an OpenAI key in .env). Nothing committed yet.
 
 ## Where it stands (before the effect model)
 

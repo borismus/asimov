@@ -19,19 +19,19 @@ sys.path.insert(0, HERE)
 EFFECTS = {
     # mechanics and fluids
     "mechanical advantage": "lever-math",
-    "rolling friction": "no card: Rolling friction",
-    "elasticity": "no card: Hooke's law",
+    "rolling friction": "rolling-friction",
+    "elasticity": "hookes-law",
     "reaction thrust": "conservation-momentum",
     "orbit": "universal-gravitation",
     "lift": "aerodynamics",
     "drag": "aerodynamics",
-    "buoyancy": "no card: Archimedes' principle",
+    "buoyancy": "archimedes-principle",
     "atmospheric pressure": "air-pressure",
     "compressed gas pushes back": "boyles-law",
     "heating a gas expands it": "charles-law",
     "compressing a gas heats it": "gas-laws",
     "latent heat": "latent-heat",
-    "capillary action": "no card: Capillary action",
+    "capillary action": "capillary-action",
     "sound echoes": "acoustics",
     "water pressure grows with depth": "hydrostatics",
     # electricity and magnetism
@@ -42,7 +42,7 @@ EFFECTS = {
     "a reaction drives a current": "laws-of-electrolysis",
     "a current makes a magnet": "electromagnetism",
     "a magnet pushes a current": "electrical-motion",
-    "induction": "no card: Electromagnetic induction",
+    "induction": "electromagnetic-induction",
     "atoms are tiny magnets": "magnetic-moments",
     "radio waves": "radio-waves",
     "the ionosphere reflects radio": "kennelly-heaviside-layer",
@@ -62,7 +62,7 @@ EFFECTS = {
     "X-rays pass through tissue unevenly": "x-rays",
     "atomic resonance": "magnetic-resonance",
     "energy levels": "quantized-atom",
-    "excited atoms copy the light passing through": "no card: Stimulated emission",
+    "excited atoms copy the light passing through": "stimulated-emission",
     "gravity slows clocks": "gravitational-red-shift",
     "motion slows clocks": "special-relativity",
     "refraction": "refraction",
@@ -272,7 +272,7 @@ def build():
     rows = {r['ID']: r for r in csv.DictReader(open(os.path.join(HERE, '..', '..', 'static', 'asimov.tsv')), delimiter='\t')}
     title = lambda i: i[len('no card: '):] if i.startswith('no card: ') else NEW_CARDS[i][0] if i in NEW_CARDS else rows[i]['Title']
     for fx, card in EFFECTS.items():
-        assert card.startswith('no card: ') or card in rows, card
+        assert card.startswith('no card: ') or card in rows or card in NEW_CARDS, card
 
     # Effects per invention: drafted links mapped, then calibration rows replace theirs.
     own = collections.defaultdict(set)

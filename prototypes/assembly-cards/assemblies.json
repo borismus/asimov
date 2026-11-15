@@ -7647,6 +7647,62 @@
   "chromatography": "a phenomenon: parts of a mixture travel at different speeds"
  },
  "new_cards": {
+  "archimedes-principle": [
+   "Archimedes' principle",
+   "-250",
+   "A body in water is pushed up by a force equal to the weight of the water it pushes aside. Archimedes is said to have seen it in his bath while working out whether a gold crown had been mixed with silver.",
+   "Archimedes",
+   "Greece"
+  ],
+  "hookes-law": [
+   "Hooke's law",
+   "1676",
+   "A spring stretches in proportion to the force pulling it, and springs back when let go. Hooke first published it as an anagram, ceiiinosssttuv: 'ut tensio, sic vis' (as the stretch, so the force).",
+   "Robert Hooke",
+   "England"
+  ],
+  "capillary-action": [
+   "Capillary action",
+   "1709",
+   "Water climbs up a narrow glass tube, higher the narrower the tube, drawn by the pull between the liquid and the glass. It's what lifts oil up a lamp's wick and ink into a pen's nib.",
+   "Francis Hauksbee",
+   "England"
+  ],
+  "rolling-friction": [
+   "Rolling friction",
+   "1781",
+   "Coulomb measured the drag of rolling rollers and found it far smaller than sliding friction: it grows with the load and shrinks with a bigger wheel. Rolling instead of sliding is why wheels and ball bearings save so much effort.",
+   "Charles-Augustin de Coulomb",
+   "France"
+  ],
+  "thermal-expansion": [
+   "Thermal expansion",
+   "1654",
+   "Liquids swell when warmed and shrink when cooled, by a small, steady amount. Sealing alcohol in a thin glass tube turned that into the first thermometer that didn't change with the weather's air pressure.",
+   "Ferdinand II de' Medici",
+   "Italy"
+  ],
+  "electromagnetic-induction": [
+   "Electromagnetic induction",
+   "1831",
+   "A changing magnetic field drives a current in a nearby wire: push a magnet into a coil, or switch on the current in a second coil, and the needle jumps. Generators and transformers work by it.",
+   "Michael Faraday",
+   "England"
+  ],
+  "ionizing-radiation": [
+   "Ionizing radiation",
+   "1896",
+   "X-rays and the rays from uranium knock electrons off the atoms of a gas they pass through, leaving it charged and able to carry a current. Counters and chambers that track particles all work by it.",
+   "J. J. Thomson and Ernest Rutherford",
+   "England"
+  ],
+  "stimulated-emission": [
+   "Stimulated emission",
+   "1917",
+   "An excited atom, struck by light of just the right frequency, gives off a second photon identical to the first. With enough excited atoms the light is amplified: the principle of the maser and the laser.",
+   "Albert Einstein",
+   "Germany"
+  ],
   "punched-cards": [
    "Punched cards",
    "1725",
@@ -8500,10 +8556,10 @@
    {"effect": "dyes stain some parts of a cell and not others", "card": "chromatin"}
   ],
   "ball-bearing": [
-   {"effect": "rolling friction", "gap": "Rolling friction"}
+   {"effect": "rolling friction", "card": "rolling-friction"}
   ],
   "ballpoint-pen": [
-   {"effect": "capillary action", "gap": "Capillary action"}
+   {"effect": "capillary action", "card": "capillary-action"}
   ],
   "barbiturates": [
    {"effect": "chemicals carry signals between nerves", "card": "vagusstoffe"}
@@ -8515,7 +8571,7 @@
    {"effect": "reaction thrust", "card": "conservation-momentum"}
   ],
   "bathyscaphe": [
-   {"effect": "buoyancy", "gap": "Archimedes' principle"},
+   {"effect": "buoyancy", "card": "archimedes-principle"},
    {"effect": "water pressure grows with depth", "card": "hydrostatics"}
   ],
   "bathysphere": [
@@ -8539,13 +8595,13 @@
    {"effect": "latent heat", "card": "latent-heat"}
   ],
   "bow": [
-   {"effect": "elasticity", "gap": "Hooke's law"}
+   {"effect": "elasticity", "card": "hookes-law"}
   ],
   "breeder-reactors": [
    {"effect": "a neutron turns one element into another", "card": "neutron-bombardment"}
   ],
   "bubble-chambers": [
-   {"effect": "radiation ionizes what it passes through", "gap": "Ionizing radiation"}
+   {"effect": "radiation ionizes what it passes through", "card": "ionizing-radiation"}
   ],
   "calculating-machines": [
    {"effect": "place value", "card": "decimal-notation"}
@@ -8555,7 +8611,7 @@
   ],
   "candle": [
    {"effect": "burns with oxygen from the air", "card": "combustion-and-phlogiston-theory-refinement"},
-   {"effect": "capillary action", "gap": "Capillary action"}
+   {"effect": "capillary action", "card": "capillary-action"}
   ],
   "canning-food": [
    {"effect": "heat kills microbes", "card": "no-spontaneous-generation-redux"}
@@ -8567,7 +8623,7 @@
    {"effect": "X-rays pass through tissue unevenly", "card": "x-rays"}
   ],
   "carriage-springs": [
-   {"effect": "elasticity", "gap": "Hooke's law"}
+   {"effect": "elasticity", "card": "hookes-law"}
   ],
   "cat-scan": [
    {"effect": "X-rays pass through tissue unevenly", "card": "x-rays"},
@@ -8580,7 +8636,7 @@
    {"effect": "an inhaled drug puts the patient beyond pain", "gap": "General anesthesia"}
   ],
   "clinical-thermometer": [
-   {"effect": "liquids expand when heated", "gap": "Thermal expansion"}
+   {"effect": "liquids expand when heated", "card": "thermal-expansion"}
   ],
   "cloud-seeding": [
    {"effect": "droplets form around a seed", "card": "cloud-chamber"}
@@ -8611,7 +8667,7 @@
   ],
   "continuous-maser": [
    {"effect": "energy levels", "card": "quantized-atom"},
-   {"effect": "excited atoms copy the light passing through", "gap": "Stimulated emission"}
+   {"effect": "excited atoms copy the light passing through", "card": "stimulated-emission"}
   ],
   "coolidge-tube": [
    {"effect": "electrons hitting metal make X-rays", "card": "x-rays"},
@@ -8646,7 +8702,7 @@
    {"effect": "light waves interfere", "card": "light-waves"}
   ],
   "dirigible": [
-   {"effect": "buoyancy", "gap": "Archimedes' principle"}
+   {"effect": "buoyancy", "card": "archimedes-principle"}
   ],
   "distillation": [
    {"effect": "alcohol boils before water", "gap": "Boiling points"}
@@ -8664,7 +8720,7 @@
    {"effect": "a reaction drives a current", "card": "laws-of-electrolysis"}
   ],
   "electric-generators": [
-   {"effect": "induction", "gap": "Electromagnetic induction"}
+   {"effect": "induction", "card": "electromagnetic-induction"}
   ],
   "electric-light": [
    {"effect": "hot things glow", "card": "black-bodies"}
@@ -8723,7 +8779,7 @@
    {"effect": "fluoride protects teeth from decay", "gap": "Fluoride and teeth"}
   ],
   "fountain-pen": [
-   {"effect": "capillary action", "gap": "Capillary action"}
+   {"effect": "capillary action", "card": "capillary-action"}
   ],
   "freon": [
    {"effect": "latent heat", "card": "latent-heat"}
@@ -8751,7 +8807,7 @@
    {"effect": "mechanical advantage", "card": "lever-math"}
   ],
   "geiger-counter": [
-   {"effect": "radiation ionizes what it passes through", "gap": "Ionizing radiation"}
+   {"effect": "radiation ionizes what it passes through", "card": "ionizing-radiation"}
   ],
   "geissler-tubes": [
    {"effect": "gas glows when current passes", "card": "electricity-in-a-vacuum"}
@@ -8790,7 +8846,7 @@
    {"effect": "light darkens silver salts", "card": "photography"}
   ],
   "hot-air-balloon": [
-   {"effect": "buoyancy", "gap": "Archimedes' principle"},
+   {"effect": "buoyancy", "card": "archimedes-principle"},
    {"effect": "heating a gas expands it", "card": "charles-law"}
   ],
   "hubble-space-telescope": [
@@ -8804,7 +8860,7 @@
    {"effect": "light waves interfere", "card": "light-waves"}
   ],
   "ironclad-warships": [
-   {"effect": "buoyancy", "gap": "Archimedes' principle"}
+   {"effect": "buoyancy", "card": "archimedes-principle"}
   ],
   "irradiation": [
    {"effect": "ultraviolet light makes vitamin D", "card": "ultraviolet"}
@@ -8829,7 +8885,7 @@
    {"effect": "the body rejects foreign tissue", "card": "tissue-transplantation"}
   ],
   "laser": [
-   {"effect": "excited atoms copy the light passing through", "gap": "Stimulated emission"}
+   {"effect": "excited atoms copy the light passing through", "card": "stimulated-emission"}
   ],
   "laser-disks": [
    {"effect": "binary numbers", "card": "binary-system"}
@@ -8852,20 +8908,20 @@
    {"effect": "a reaction drives a current", "card": "laws-of-electrolysis"}
   ],
   "longbow": [
-   {"effect": "elasticity", "gap": "Hooke's law"}
+   {"effect": "elasticity", "card": "hookes-law"}
   ],
   "loudspeaker": [
    {"effect": "a magnet pushes a current", "card": "electrical-motion"}
   ],
   "macadamized-roads": [
-   {"effect": "rolling friction", "gap": "Rolling friction"}
+   {"effect": "rolling friction", "card": "rolling-friction"}
   ],
   "magnetrons": [
    {"effect": "radio waves", "card": "radio-waves"},
    {"effect": "thermionic emission", "card": "edison-effect"}
   ],
   "masers": [
-   {"effect": "excited atoms copy the light passing through", "gap": "Stimulated emission"}
+   {"effect": "excited atoms copy the light passing through", "card": "stimulated-emission"}
   ],
   "mass-spectrometer": [
    {"effect": "a magnet pushes a current", "card": "electrical-motion"}
@@ -8878,7 +8934,7 @@
    {"effect": "reaction thrust", "card": "conservation-momentum"}
   ],
   "mercury-thermometer": [
-   {"effect": "liquids expand when heated", "gap": "Thermal expansion"}
+   {"effect": "liquids expand when heated", "card": "thermal-expansion"}
   ],
   "microchips": [
    {"effect": "Boolean logic", "card": "symbolic-logic"},
@@ -8895,7 +8951,7 @@
   ],
   "modern-candles": [
    {"effect": "burns with oxygen from the air", "card": "combustion-and-phlogiston-theory-refinement"},
-   {"effect": "capillary action", "gap": "Capillary action"}
+   {"effect": "capillary action", "card": "capillary-action"}
   ],
   "modern-seismograph": [
    {"effect": "a heavy mass stays put while the ground moves", "card": "laws-motion"}
@@ -8940,7 +8996,7 @@
   ],
   "oil-lamp": [
    {"effect": "burns with oxygen from the air", "card": "combustion-and-phlogiston-theory-refinement"},
-   {"effect": "capillary action", "gap": "Capillary action"}
+   {"effect": "capillary action", "card": "capillary-action"}
   ],
   "oxytocin-synthesis": [
    {"effect": "hormones regulate the body", "card": "hormones"}
@@ -8958,7 +9014,7 @@
    {"effect": "heat kills microbes", "card": "no-spontaneous-generation-redux"}
   ],
   "paved-road": [
-   {"effect": "rolling friction", "gap": "Rolling friction"}
+   {"effect": "rolling friction", "card": "rolling-friction"}
   ],
   "penicillin": [
    {"effect": "a chemical kills the germ but not the patient", "card": "chemotherapy"}
@@ -9043,7 +9099,7 @@
    {"effect": "gas molecules push harder off the warm side", "card": "kinetic-theory-of-gases"}
   ],
   "raft": [
-   {"effect": "buoyancy", "gap": "Archimedes' principle"}
+   {"effect": "buoyancy", "card": "archimedes-principle"}
   ],
   "rare-earth-magnet": [
    {"effect": "atoms are tiny magnets", "card": "magnetic-moments"}
@@ -9061,7 +9117,7 @@
    {"effect": "a spinning body holds its axis", "card": "gyroscope"}
   ],
   "river-boat": [
-   {"effect": "buoyancy", "gap": "Archimedes' principle"}
+   {"effect": "buoyancy", "card": "archimedes-principle"}
   ],
   "rubber-tire": [
    {"effect": "compressed gas pushes back", "card": "boyles-law"}
@@ -9089,7 +9145,7 @@
    {"effect": "reaction thrust", "card": "conservation-momentum"}
   ],
   "seaplanes": [
-   {"effect": "buoyancy", "gap": "Archimedes' principle"}
+   {"effect": "buoyancy", "card": "archimedes-principle"}
   ],
   "seismograph": [
    {"effect": "a heavy mass stays put while the ground moves", "card": "laws-motion"}
@@ -9126,7 +9182,7 @@
    {"effect": "each gas glows its own colours", "card": "spectral-lines"}
   ],
   "spring": [
-   {"effect": "elasticity", "gap": "Hooke's law"}
+   {"effect": "elasticity", "card": "hookes-law"}
   ],
   "sputnik": [
    {"effect": "orbit", "card": "universal-gravitation"}
@@ -9157,10 +9213,10 @@
    {"effect": "a reaction drives a current", "card": "laws-of-electrolysis"}
   ],
   "stratospheric-balloons": [
-   {"effect": "buoyancy", "gap": "Archimedes' principle"}
+   {"effect": "buoyancy", "card": "archimedes-principle"}
   ],
   "submarine": [
-   {"effect": "buoyancy", "gap": "Archimedes' principle"},
+   {"effect": "buoyancy", "card": "archimedes-principle"},
    {"effect": "water pressure grows with depth", "card": "hydrostatics"}
   ],
   "sundial": [
@@ -9192,7 +9248,7 @@
    {"effect": "slows the burning in the cylinder", "gap": "Knock suppression"}
   ],
   "thermometer": [
-   {"effect": "liquids expand when heated", "gap": "Thermal expansion"}
+   {"effect": "liquids expand when heated", "card": "thermal-expansion"}
   ],
   "thiamine": [
    {"effect": "the body needs trace nutrients", "card": "vitamin-concept"}
@@ -9201,10 +9257,10 @@
    {"effect": "cells live outside the body", "card": "cell-theory"}
   ],
   "transatlantic-liner": [
-   {"effect": "buoyancy", "gap": "Archimedes' principle"}
+   {"effect": "buoyancy", "card": "archimedes-principle"}
   ],
   "transformer": [
-   {"effect": "induction", "gap": "Electromagnetic induction"}
+   {"effect": "induction", "card": "electromagnetic-induction"}
   ],
   "transistor": [
    {"effect": "one-way conduction in crystals", "card": "current-and-crystals"}
@@ -9263,7 +9319,7 @@
   ],
   "wheel-and-axle": [
    {"effect": "mechanical advantage", "card": "lever-math"},
-   {"effect": "rolling friction", "gap": "Rolling friction"}
+   {"effect": "rolling friction", "card": "rolling-friction"}
   ],
   "wing": [
    {"effect": "lift", "card": "aerodynamics"}

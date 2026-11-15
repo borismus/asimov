@@ -257,8 +257,18 @@ CALIB = [
 ]
 
 
+def drafted_phen():
+    """The pilot and batch 1 phenomenon lists, as drafted (card ids, or ('gap', name))."""
+    import pilot_data, batches
+    phen = {cid: ph for cid, (j, sl, ph) in pilot_data.CARDS.items()}
+    phen.update({cid: ph for _, b in batches.BATCHES for cid, (j, ex, ph) in b.items()})
+    phen.update({cid: ph for cid, (j, sl, ph) in batches.SUPPORT.items()})
+    return phen
+
+
 def build():
-    from lists import PHEN, CARDS, NEW_CARDS
+    from lists import CARDS, NEW_CARDS
+    PHEN = drafted_phen()
     rows = {r['ID']: r for r in csv.DictReader(open(os.path.join(HERE, '..', '..', 'static', 'asimov.tsv')), delimiter='\t')}
     title = lambda i: i[len('no card: '):] if i.startswith('no card: ') else NEW_CARDS[i][0] if i in NEW_CARDS else rows[i]['Title']
     for fx, card in EFFECTS.items():
@@ -364,7 +374,8 @@ def final_links():
     Returns (effects: effect -> card id or 'no card: Name',
              final: inv -> {effect: note}, through: inv -> {effect} its parts already carry)."""
     import phenomena_drafts as D
-    from lists import PHEN, CARDS
+    from lists import CARDS
+    PHEN = drafted_phen()
     fxmap = dict(EFFECTS)
     fxmap.update(D.NEW_EFFECTS)
     own = collections.defaultdict(dict)
@@ -407,7 +418,37 @@ def final_links():
     return fxmap, final, through
 
 
+def export():
+    """Write every card's phenomena into assemblies.json as "phenomena": card -> [{effect, card | gap}].
+    Own level applied; a card that isn't listed has none. Replaces the key if it's there."""
+    fx, final, _ = final_links()
+    path = os.path.join(HERE, 'assemblies.json')
+    s = open(path).read()
+    if '\n "phenomena": {' in s:
+        i = s.index(',\n "phenomena": {')
+        j = s.index('\n }', i) + 3
+        s = s[:i] + s[j:]
+    lines = []
+    for inv in sorted(k for k, v in final.items() if v):
+        items = []
+        for e in sorted(final[inv]):
+            c = fx[e]
+            ref = {'gap': c[len('no card: '):]} if c.startswith('no card: ') else {'card': c}
+            items.append('   ' + json.dumps({'effect': e, **ref}, ensure_ascii=False))
+        lines.append(f'  {json.dumps(inv)}: [\n' + ',\n'.join(items) + '\n  ]')
+    block = ',\n "phenomena": {\n' + ',\n'.join(lines) + '\n }'
+    assert s.endswith('\n }\n}\n') or s.endswith('\n }\n}'), s[-20:]
+    k = s.rstrip().rindex('\n}')
+    s = s[:k] + block + s[k:]
+    json.loads(s)
+    open(path, 'w').write(s)
+    return sum(len(v) for v in final.values()), sum(1 for v in final.values() if v)
+
+
 if __name__ == '__main__':
+    if sys.argv[1:] == ['export']:
+        print('exported %d links on %d cards' % export())
+        sys.exit()
     changed, out, headers = build()
     o = os.environ.get('OUT', '.')
     json.dump({"changed": changed, "effects": out, "headers": headers}, open(os.path.join(o, 'effects.json'), 'w'), ensure_ascii=False, indent=1)

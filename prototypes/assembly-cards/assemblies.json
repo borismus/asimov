@@ -8446,5 +8446,837 @@
   "yellow-fever-vaccine": "material",
   "zinc": "material",
   "zone-refining": "practice"
+ },
+ "phenomena": {
+  "100-inch-telescope": [
+   {"effect": "a curved mirror focuses light", "card": "optics"}
+  ],
+  "2,4-d": [
+   {"effect": "a plant hormone drives growth", "card": "gibberellins"}
+  ],
+  "abacus": [
+   {"effect": "place value", "card": "decimal-notation"}
+  ],
+  "achromatic-lens": [
+   {"effect": "dispersion", "card": "light-spectrum"}
+  ],
+  "adding-machine": [
+   {"effect": "place value", "card": "decimal-notation"}
+  ],
+  "analytical-engine": [
+   {"effect": "place value", "card": "decimal-notation"}
+  ],
+  "anthrax-inoculation": [
+   {"effect": "the body learns to fight a germ", "card": "vaccination"}
+  ],
+  "antiseptic-surgery": [
+   {"effect": "a chemical kills germs on contact", "gap": "Antisepsis"}
+  ],
+  "antitoxin": [
+   {"effect": "antibodies in serum neutralize a toxin", "card": "vaccination"}
+  ],
+  "aqualung": [
+   {"effect": "water pressure grows with depth", "card": "hydrostatics"}
+  ],
+  "arch": [
+   {"effect": "each stone pushes back as hard as it's pushed", "card": "laws-motion"}
+  ],
+  "arecibo-radio-telescope": [
+   {"effect": "a curved mirror focuses light", "card": "optics"}
+  ],
+  "artificial-heart-implant": [
+   {"effect": "the heart pumps blood around the body", "card": "blood-circulation"}
+  ],
+  "artificial-kidneys": [
+   {"effect": "small molecules seep through a membrane", "card": "osmosis"}
+  ],
+  "ascorbic-acid": [
+   {"effect": "the body needs trace nutrients", "card": "vitamin-concept"}
+  ],
+  "atomic-clock": [
+   {"effect": "atomic resonance", "card": "magnetic-resonance"}
+  ],
+  "bacterial-staining": [
+   {"effect": "dyes stain some parts of a cell and not others", "card": "chromatin"}
+  ],
+  "ball-bearing": [
+   {"effect": "rolling friction", "gap": "Rolling friction"}
+  ],
+  "ballpoint-pen": [
+   {"effect": "capillary action", "gap": "Capillary action"}
+  ],
+  "barbiturates": [
+   {"effect": "chemicals carry signals between nerves", "card": "vagusstoffe"}
+  ],
+  "barometer": [
+   {"effect": "atmospheric pressure", "card": "air-pressure"}
+  ],
+  "basic-steam-engine": [
+   {"effect": "reaction thrust", "card": "conservation-momentum"}
+  ],
+  "bathyscaphe": [
+   {"effect": "buoyancy", "gap": "Archimedes' principle"},
+   {"effect": "water pressure grows with depth", "card": "hydrostatics"}
+  ],
+  "bathysphere": [
+   {"effect": "water pressure grows with depth", "card": "hydrostatics"}
+  ],
+  "beryllium": [
+   {"effect": "alpha rays knock neutrons out of beryllium", "card": "neutron"}
+  ],
+  "betatron": [
+   {"effect": "a magnet pushes a current", "card": "electrical-motion"},
+   {"effect": "mass grows with speed", "card": "mass-increase"}
+  ],
+  "bevatron": [
+   {"effect": "a magnet pushes a current", "card": "electrical-motion"},
+   {"effect": "mass grows with speed", "card": "mass-increase"}
+  ],
+  "biotin": [
+   {"effect": "the body needs trace nutrients", "card": "vitamin-concept"}
+  ],
+  "boiler": [
+   {"effect": "latent heat", "card": "latent-heat"}
+  ],
+  "bow": [
+   {"effect": "elasticity", "gap": "Hooke's law"}
+  ],
+  "breeder-reactors": [
+   {"effect": "a neutron turns one element into another", "card": "neutron-bombardment"}
+  ],
+  "bubble-chambers": [
+   {"effect": "radiation ionizes what it passes through", "gap": "Ionizing radiation"}
+  ],
+  "calculating-machines": [
+   {"effect": "place value", "card": "decimal-notation"}
+  ],
+  "camera": [
+   {"effect": "refraction", "card": "refraction"}
+  ],
+  "candle": [
+   {"effect": "burns with oxygen from the air", "card": "combustion-and-phlogiston-theory-refinement"},
+   {"effect": "capillary action", "gap": "Capillary action"}
+  ],
+  "canning-food": [
+   {"effect": "heat kills microbes", "card": "no-spontaneous-generation-redux"}
+  ],
+  "carbonated-water": [
+   {"effect": "gas dissolves in water under pressure", "card": "soluble-gases"}
+  ],
+  "cardiac-catheter": [
+   {"effect": "X-rays pass through tissue unevenly", "card": "x-rays"}
+  ],
+  "carriage-springs": [
+   {"effect": "elasticity", "gap": "Hooke's law"}
+  ],
+  "cat-scan": [
+   {"effect": "X-rays pass through tissue unevenly", "card": "x-rays"},
+   {"effect": "reconstruction from projections", "card": "fourier-analysis"}
+  ],
+  "chemical-fertilizer": [
+   {"effect": "plants need nitrogen from the soil", "card": "nitrogen-fixation"}
+  ],
+  "chloroform": [
+   {"effect": "an inhaled drug puts the patient beyond pain", "gap": "General anesthesia"}
+  ],
+  "clinical-thermometer": [
+   {"effect": "liquids expand when heated", "gap": "Thermal expansion"}
+  ],
+  "cloud-seeding": [
+   {"effect": "droplets form around a seed", "card": "cloud-chamber"}
+  ],
+  "coal-hydrogenation": [
+   {"effect": "burns with oxygen from the air", "card": "combustion-and-phlogiston-theory-refinement"}
+  ],
+  "color-television": [
+   {"effect": "three colours of light mix to make any colour", "card": "color-vision"}
+  ],
+  "commercial-communications-satellites": [
+   {"effect": "orbit", "card": "universal-gravitation"}
+  ],
+  "communications-satellites": [
+   {"effect": "orbit", "card": "universal-gravitation"}
+  ],
+  "compass": [
+   {"effect": "the Earth is a magnet", "card": "earth-magnet"}
+  ],
+  "computer": [
+   {"effect": "integration", "card": "calculus"}
+  ],
+  "concave-lenses": [
+   {"effect": "refraction", "card": "refraction"}
+  ],
+  "contact-lenses": [
+   {"effect": "refraction", "card": "refraction"}
+  ],
+  "continuous-maser": [
+   {"effect": "energy levels", "card": "quantized-atom"},
+   {"effect": "excited atoms copy the light passing through", "gap": "Stimulated emission"}
+  ],
+  "coolidge-tube": [
+   {"effect": "electrons hitting metal make X-rays", "card": "x-rays"},
+   {"effect": "thermionic emission", "card": "edison-effect"}
+  ],
+  "couched-lance": [
+   {"effect": "momentum carries into the strike", "card": "conservation-momentum"}
+  ],
+  "cyanocobalamin": [
+   {"effect": "the body needs trace nutrients", "card": "vitamin-concept"}
+  ],
+  "cyclotron": [
+   {"effect": "a magnet pushes a current", "card": "electrical-motion"}
+  ],
+  "daniell-cell": [
+   {"effect": "a reaction drives a current", "card": "laws-of-electrolysis"}
+  ],
+  "deuterium": [
+   {"effect": "light atoms fuse, releasing energy", "card": "solar-energy-source"}
+  ],
+  "dewar-flask": [
+   {"effect": "a vacuum stops heat passing", "gap": "Vacuum insulation"},
+   {"effect": "heat radiates as invisible light", "card": "infrared-radiation"}
+  ],
+  "diesel-engine": [
+   {"effect": "compressing a gas heats it", "card": "gas-laws"}
+  ],
+  "diffraction-gratings": [
+   {"effect": "light waves interfere", "card": "light-waves"}
+  ],
+  "diffraction-gratings-improved": [
+   {"effect": "light waves interfere", "card": "light-waves"}
+  ],
+  "dirigible": [
+   {"effect": "buoyancy", "gap": "Archimedes' principle"}
+  ],
+  "distillation": [
+   {"effect": "alcohol boils before water", "gap": "Boiling points"}
+  ],
+  "dry-cell": [
+   {"effect": "a reaction drives a current", "card": "laws-of-electrolysis"}
+  ],
+  "dry-plates": [
+   {"effect": "light darkens silver salts", "card": "photography"}
+  ],
+  "earth-resources-satellites": [
+   {"effect": "orbit", "card": "universal-gravitation"}
+  ],
+  "electric-battery": [
+   {"effect": "a reaction drives a current", "card": "laws-of-electrolysis"}
+  ],
+  "electric-generators": [
+   {"effect": "induction", "gap": "Electromagnetic induction"}
+  ],
+  "electric-light": [
+   {"effect": "hot things glow", "card": "black-bodies"}
+  ],
+  "electric-motors": [
+   {"effect": "a magnet pushes a current", "card": "electrical-motion"}
+  ],
+  "electrocardiogram": [
+   {"effect": "muscles work by electrical impulses", "card": "electrical-stimulation"}
+  ],
+  "electroencephalography": [
+   {"effect": "nerve signals are electrical", "card": "electric-nerve-fibers"}
+  ],
+  "electromagnets": [
+   {"effect": "a current makes a magnet", "card": "electromagnetism"}
+  ],
+  "electron-gun": [
+   {"effect": "electron beams", "card": "cathode-rays"},
+   {"effect": "thermionic emission", "card": "edison-effect"}
+  ],
+  "electron-microscope": [
+   {"effect": "electrons travel as waves", "card": "particles-as-waves"}
+  ],
+  "electron-microscope-improved": [
+   {"effect": "electrons travel as waves", "card": "particles-as-waves"}
+  ],
+  "electronic-rectifier": [
+   {"effect": "thermionic emission", "card": "edison-effect"}
+  ],
+  "electrophoresis": [
+   {"effect": "charged particles move through a solution", "card": "ionic-dissociation"}
+  ],
+  "essential-minerals": [
+   {"effect": "the body needs trace nutrients", "card": "vitamin-concept"}
+  ],
+  "eyeglass": [
+   {"effect": "refraction", "card": "refraction"}
+  ],
+  "fermentation": [
+   {"effect": "yeast turns sugar into alcohol", "card": "ferments-and-enzymes"}
+  ],
+  "fiber-optics": [
+   {"effect": "total internal reflection", "card": "refraction"}
+  ],
+  "field-emission-microscope": [
+   {"effect": "quantum tunnelling", "card": "particles-as-waves"}
+  ],
+  "field-ion-microscopes": [
+   {"effect": "quantum tunnelling", "card": "particles-as-waves"}
+  ],
+  "fire": [
+   {"effect": "burns with oxygen from the air", "card": "combustion-and-phlogiston-theory-refinement"},
+   {"effect": "rubbing makes heat", "card": "mechanical-equivalent-of-heat"}
+  ],
+  "fluoridation": [
+   {"effect": "fluoride protects teeth from decay", "gap": "Fluoride and teeth"}
+  ],
+  "fountain-pen": [
+   {"effect": "capillary action", "gap": "Capillary action"}
+  ],
+  "freon": [
+   {"effect": "latent heat", "card": "latent-heat"}
+  ],
+  "frequency-modulation": [
+   {"effect": "radio waves", "card": "radio-waves"}
+  ],
+  "fuel-cell": [
+   {"effect": "a reaction drives a current", "card": "laws-of-electrolysis"},
+   {"effect": "catalysis", "card": "catalysis"}
+  ],
+  "galvanometer": [
+   {"effect": "a current makes a magnet", "card": "electromagnetism"}
+  ],
+  "gas-chromatography": [
+   {"effect": "parts of a mixture travel at different speeds", "card": "chromatography"}
+  ],
+  "gas-lighting": [
+   {"effect": "burns with oxygen from the air", "card": "combustion-and-phlogiston-theory-refinement"}
+  ],
+  "gasoline": [
+   {"effect": "burns with oxygen from the air", "card": "combustion-and-phlogiston-theory-refinement"}
+  ],
+  "gear-train": [
+   {"effect": "mechanical advantage", "card": "lever-math"}
+  ],
+  "geiger-counter": [
+   {"effect": "radiation ionizes what it passes through", "gap": "Ionizing radiation"}
+  ],
+  "geissler-tubes": [
+   {"effect": "gas glows when current passes", "card": "electricity-in-a-vacuum"}
+  ],
+  "genetic-engineering": [
+   {"effect": "a cell follows genes put into it", "card": "virus-transduction"}
+  ],
+  "genetic-medicine": [
+   {"effect": "a cell follows genes put into it", "card": "virus-transduction"}
+  ],
+  "gps": [
+   {"effect": "gravity slows clocks", "card": "gravitational-red-shift"},
+   {"effect": "motion slows clocks", "card": "special-relativity"},
+   {"effect": "signal delay gives distance", "card": "speed-of-light"},
+   {"effect": "trilateration", "card": "geometry"}
+  ],
+  "greek-fire": [
+   {"effect": "burns with oxygen from the air", "card": "combustion-and-phlogiston-theory-refinement"}
+  ],
+  "gunpowder": [
+   {"effect": "burns all at once, without air", "card": "oxygen"}
+  ],
+  "haber-process": [
+   {"effect": "plants need nitrogen from the soil", "card": "nitrogen-fixation"}
+  ],
+  "heart-lung-machine": [
+   {"effect": "the heart pumps blood around the body", "card": "blood-circulation"}
+  ],
+  "heart-transplants": [
+   {"effect": "the body rejects foreign tissue", "card": "tissue-transplantation"}
+  ],
+  "holography": [
+   {"effect": "light waves interfere", "card": "light-waves"}
+  ],
+  "home-photography": [
+   {"effect": "light darkens silver salts", "card": "photography"}
+  ],
+  "hot-air-balloon": [
+   {"effect": "buoyancy", "gap": "Archimedes' principle"},
+   {"effect": "heating a gas expands it", "card": "charles-law"}
+  ],
+  "hubble-space-telescope": [
+   {"effect": "a curved mirror focuses light", "card": "optics"},
+   {"effect": "orbit", "card": "universal-gravitation"}
+  ],
+  "insulated-wire": [
+   {"effect": "conduction", "card": "electrical-conductance"}
+  ],
+  "interferometer": [
+   {"effect": "light waves interfere", "card": "light-waves"}
+  ],
+  "ironclad-warships": [
+   {"effect": "buoyancy", "gap": "Archimedes' principle"}
+  ],
+  "irradiation": [
+   {"effect": "ultraviolet light makes vitamin D", "card": "ultraviolet"}
+  ],
+  "irrigation": [
+   {"effect": "plants need water", "gap": "Plants need water"}
+  ],
+  "jarvik-hearts": [
+   {"effect": "compressed gas pushes back", "card": "boyles-law"},
+   {"effect": "the heart pumps blood around the body", "card": "blood-circulation"}
+  ],
+  "jet-planes": [
+   {"effect": "reaction thrust", "card": "conservation-momentum"}
+  ],
+  "jodrell-bank": [
+   {"effect": "a curved mirror focuses light", "card": "optics"}
+  ],
+  "kerosene": [
+   {"effect": "burns with oxygen from the air", "card": "combustion-and-phlogiston-theory-refinement"}
+  ],
+  "kidney-transplant": [
+   {"effect": "the body rejects foreign tissue", "card": "tissue-transplantation"}
+  ],
+  "laser": [
+   {"effect": "excited atoms copy the light passing through", "gap": "Stimulated emission"}
+  ],
+  "laser-disks": [
+   {"effect": "binary numbers", "card": "binary-system"}
+  ],
+  "leyden-jar": [
+   {"effect": "conduction", "card": "electrical-conductance"},
+   {"effect": "static charge", "card": "positive-negative-charge"}
+  ],
+  "light-emitting-diodes": [
+   {"effect": "light comes in photons", "card": "waves-as-particles"},
+   {"effect": "one-way conduction in crystals", "card": "current-and-crystals"}
+  ],
+  "lightning-rod": [
+   {"effect": "conduction", "card": "electrical-conductance"}
+  ],
+  "liquid-fuel-rockets": [
+   {"effect": "reaction thrust", "card": "conservation-momentum"}
+  ],
+  "lithium-battery": [
+   {"effect": "a reaction drives a current", "card": "laws-of-electrolysis"}
+  ],
+  "longbow": [
+   {"effect": "elasticity", "gap": "Hooke's law"}
+  ],
+  "loudspeaker": [
+   {"effect": "a magnet pushes a current", "card": "electrical-motion"}
+  ],
+  "macadamized-roads": [
+   {"effect": "rolling friction", "gap": "Rolling friction"}
+  ],
+  "magnetrons": [
+   {"effect": "radio waves", "card": "radio-waves"},
+   {"effect": "thermionic emission", "card": "edison-effect"}
+  ],
+  "masers": [
+   {"effect": "excited atoms copy the light passing through", "gap": "Stimulated emission"}
+  ],
+  "mass-spectrometer": [
+   {"effect": "a magnet pushes a current", "card": "electrical-motion"}
+  ],
+  "matches": [
+   {"effect": "burns with oxygen from the air", "card": "combustion-and-phlogiston-theory-refinement"},
+   {"effect": "rubbing makes heat", "card": "mechanical-equivalent-of-heat"}
+  ],
+  "maxim-gun": [
+   {"effect": "reaction thrust", "card": "conservation-momentum"}
+  ],
+  "mercury-thermometer": [
+   {"effect": "liquids expand when heated", "gap": "Thermal expansion"}
+  ],
+  "microchips": [
+   {"effect": "Boolean logic", "card": "symbolic-logic"},
+   {"effect": "binary numbers", "card": "binary-system"}
+  ],
+  "microphone": [
+   {"effect": "pressure changes carbon's resistance", "gap": "Contact resistance"}
+  ],
+  "microscope": [
+   {"effect": "refraction", "card": "refraction"}
+  ],
+  "miners-friend": [
+   {"effect": "atmospheric pressure", "card": "air-pressure"}
+  ],
+  "modern-candles": [
+   {"effect": "burns with oxygen from the air", "card": "combustion-and-phlogiston-theory-refinement"},
+   {"effect": "capillary action", "gap": "Capillary action"}
+  ],
+  "modern-seismograph": [
+   {"effect": "a heavy mass stays put while the ground moves", "card": "laws-motion"}
+  ],
+  "morphine-synthesis": [
+   {"effect": "a drug fits the nerves' pain receptors", "card": "endorphins"}
+  ],
+  "motion-pictures": [
+   {"effect": "light darkens silver salts", "card": "photography"},
+   {"effect": "the eye blends quick still pictures into motion", "gap": "Persistence of vision"}
+  ],
+  "neon-lights": [
+   {"effect": "each gas glows its own colours", "card": "spectral-lines"}
+  ],
+  "neptunium-and-plutonium": [
+   {"effect": "a neutron splits a heavy atom, freeing more neutrons", "card": "nuclear-chain-reaction"}
+  ],
+  "newcomen-steam-engine": [
+   {"effect": "atmospheric pressure", "card": "air-pressure"}
+  ],
+  "niacin": [
+   {"effect": "the body needs trace nutrients", "card": "vitamin-concept"}
+  ],
+  "nicol-prism": [
+   {"effect": "some crystals split light in two", "card": "double-refraction"}
+  ],
+  "nitrogen-filled-light-bulbs": [
+   {"effect": "hot things glow", "card": "black-bodies"}
+  ],
+  "nitroglycerine": [
+   {"effect": "burns all at once, without air", "card": "oxygen"}
+  ],
+  "nitrous-oxide": [
+   {"effect": "an inhaled drug puts the patient beyond pain", "gap": "General anesthesia"}
+  ],
+  "novocaine": [
+   {"effect": "nerve signals are electrical", "card": "electric-nerve-fibers"}
+  ],
+  "nuclear-reactor": [
+   {"effect": "a neutron splits a heavy atom, freeing more neutrons", "card": "nuclear-chain-reaction"},
+   {"effect": "some atoms soak up neutrons", "card": "neutron-absorption"}
+  ],
+  "oil-lamp": [
+   {"effect": "burns with oxygen from the air", "card": "combustion-and-phlogiston-theory-refinement"},
+   {"effect": "capillary action", "gap": "Capillary action"}
+  ],
+  "oxytocin-synthesis": [
+   {"effect": "hormones regulate the body", "card": "hormones"}
+  ],
+  "pacemaker": [
+   {"effect": "muscles work by electrical impulses", "card": "electrical-stimulation"}
+  ],
+  "paper-chromatography": [
+   {"effect": "parts of a mixture travel at different speeds", "card": "chromatography"}
+  ],
+  "parachute": [
+   {"effect": "drag", "card": "aerodynamics"}
+  ],
+  "pasteurization": [
+   {"effect": "heat kills microbes", "card": "no-spontaneous-generation-redux"}
+  ],
+  "paved-road": [
+   {"effect": "rolling friction", "gap": "Rolling friction"}
+  ],
+  "penicillin": [
+   {"effect": "a chemical kills the germ but not the patient", "card": "chemotherapy"}
+  ],
+  "perfusion-pump": [
+   {"effect": "cells live outside the body", "card": "cell-theory"}
+  ],
+  "phase-contrast-microscope": [
+   {"effect": "light waves interfere", "card": "light-waves"}
+  ],
+  "phonograph": [
+   {"effect": "sound is a vibration", "card": "acoustics"}
+  ],
+  "photocell": [
+   {"effect": "photoelectric effect", "card": "photoelectric-effect"}
+  ],
+  "photocopying": [
+   {"effect": "light lets a coating conduct", "card": "photovoltaic-cells"},
+   {"effect": "static charge", "card": "positive-negative-charge"}
+  ],
+  "photographic-negative": [
+   {"effect": "light darkens silver salts", "card": "photography"}
+  ],
+  "photovoltaic-cells": [
+   {"effect": "photoelectric effect", "card": "photoelectric-effect"}
+  ],
+  "piston-and-cylinder": [
+   {"effect": "compressed gas pushes back", "card": "boyles-law"}
+  ],
+  "polaroid": [
+   {"effect": "some crystals pass light vibrating one way only", "card": "polarized-light"}
+  ],
+  "polonium-and-radium": [
+   {"effect": "radioactive atoms give off radiation", "card": "uranium-radiations"}
+  ],
+  "portland-cement": [
+   {"effect": "sets hard by reacting with water", "gap": "Hydration"}
+  ],
+  "practical-hologram": [
+   {"effect": "light waves interfere", "card": "light-waves"}
+  ],
+  "pressure-cooker": [
+   {"effect": "pressure raises water's boiling point", "gap": "Boiling points"}
+  ],
+  "prontosil": [
+   {"effect": "a chemical kills the germ but not the patient", "card": "chemotherapy"}
+  ],
+  "pyroxylin": [
+   {"effect": "burns all at once, without air", "card": "oxygen"}
+  ],
+  "quartz-oscillator": [
+   {"effect": "piezoelectricity", "card": "piezoelectricity"}
+  ],
+  "quinacrine": [
+   {"effect": "a chemical kills the germ but not the patient", "card": "chemotherapy"}
+  ],
+  "rabies": [
+   {"effect": "the body learns to fight a germ", "card": "vaccination"}
+  ],
+  "radar": [
+   {"effect": "signal delay gives distance", "card": "speed-of-light"}
+  ],
+  "radio": [
+   {"effect": "the ionosphere reflects radio", "card": "kennelly-heaviside-layer"}
+  ],
+  "radio-antennas": [
+   {"effect": "radio waves", "card": "radio-waves"}
+  ],
+  "radio-telescope": [
+   {"effect": "a curved mirror focuses light", "card": "optics"}
+  ],
+  "radio-waves-and-sound": [
+   {"effect": "radio waves", "card": "radio-waves"}
+  ],
+  "radioactive-tracers": [
+   {"effect": "radioactive atoms give off radiation", "card": "uranium-radiations"}
+  ],
+  "radioimmune-assay": [
+   {"effect": "an antibody binds only its own target", "gap": "Antibody specificity"}
+  ],
+  "radiometer": [
+   {"effect": "gas molecules push harder off the warm side", "card": "kinetic-theory-of-gases"}
+  ],
+  "raft": [
+   {"effect": "buoyancy", "gap": "Archimedes' principle"}
+  ],
+  "rare-earth-magnet": [
+   {"effect": "atoms are tiny magnets", "card": "magnetic-moments"}
+  ],
+  "recombinant-dna": [
+   {"effect": "an enzyme cuts DNA at set places", "gap": "Restriction enzymes"}
+  ],
+  "reflecting-telescope": [
+   {"effect": "a curved mirror focuses light", "card": "optics"}
+  ],
+  "riboflavin": [
+   {"effect": "the body needs trace nutrients", "card": "vitamin-concept"}
+  ],
+  "rifle": [
+   {"effect": "a spinning body holds its axis", "card": "gyroscope"}
+  ],
+  "river-boat": [
+   {"effect": "buoyancy", "gap": "Archimedes' principle"}
+  ],
+  "rubber-tire": [
+   {"effect": "compressed gas pushes back", "card": "boyles-law"}
+  ],
+  "rudder": [
+   {"effect": "lift", "card": "aerodynamics"}
+  ],
+  "sabin-vaccine": [
+   {"effect": "the body learns to fight a germ", "card": "vaccination"}
+  ],
+  "sail": [
+   {"effect": "lift", "card": "aerodynamics"}
+  ],
+  "salk-vaccine": [
+   {"effect": "the body learns to fight a germ", "card": "vaccination"}
+  ],
+  "scale": [
+   {"effect": "a lever balances equal weights", "card": "lever-math"}
+  ],
+  "schmidt-camera": [
+   {"effect": "a curved mirror focuses light", "card": "optics"},
+   {"effect": "refraction", "card": "refraction"}
+  ],
+  "screw-propeller": [
+   {"effect": "reaction thrust", "card": "conservation-momentum"}
+  ],
+  "seaplanes": [
+   {"effect": "buoyancy", "gap": "Archimedes' principle"}
+  ],
+  "seismograph": [
+   {"effect": "a heavy mass stays put while the ground moves", "card": "laws-motion"}
+  ],
+  "sex-hormones": [
+   {"effect": "hormones regulate the body", "card": "hormones"}
+  ],
+  "simple-electromagnet": [
+   {"effect": "a current makes a magnet", "card": "electromagnetism"}
+  ],
+  "simple-sundial": [
+   {"effect": "the Earth's turning moves the shadow", "card": "rotation-of-the-earth"}
+  ],
+  "skylab": [
+   {"effect": "orbit", "card": "universal-gravitation"}
+  ],
+  "slide-rules": [
+   {"effect": "adding logarithms multiplies numbers", "card": "logarithms"}
+  ],
+  "smallpox-vaccine": [
+   {"effect": "the body learns to fight a germ", "card": "vaccination"}
+  ],
+  "sonar": [
+   {"effect": "piezoelectricity", "card": "piezoelectricity"},
+   {"effect": "sound echoes", "card": "acoustics"}
+  ],
+  "space-shuttle": [
+   {"effect": "orbit", "card": "universal-gravitation"}
+  ],
+  "space-station": [
+   {"effect": "orbit", "card": "universal-gravitation"}
+  ],
+  "spectroheliograph": [
+   {"effect": "each gas glows its own colours", "card": "spectral-lines"}
+  ],
+  "spring": [
+   {"effect": "elasticity", "gap": "Hooke's law"}
+  ],
+  "sputnik": [
+   {"effect": "orbit", "card": "universal-gravitation"}
+  ],
+  "starch-chromatography": [
+   {"effect": "parts of a mixture travel at different speeds", "card": "chromatography"}
+  ],
+  "static-electricity": [
+   {"effect": "static charge", "card": "positive-negative-charge"}
+  ],
+  "static-electricity-improved": [
+   {"effect": "conduction", "card": "electrical-conductance"},
+   {"effect": "static charge", "card": "positive-negative-charge"}
+  ],
+  "steam-engine": [
+   {"effect": "atmospheric pressure", "card": "air-pressure"}
+  ],
+  "stellarator": [
+   {"effect": "a magnet pushes a current", "card": "electrical-motion"}
+  ],
+  "steroid-synthesis": [
+   {"effect": "hormones regulate the body", "card": "hormones"}
+  ],
+  "stethoscope": [
+   {"effect": "sound is a vibration", "card": "acoustics"}
+  ],
+  "storage-battery": [
+   {"effect": "a reaction drives a current", "card": "laws-of-electrolysis"}
+  ],
+  "stratospheric-balloons": [
+   {"effect": "buoyancy", "gap": "Archimedes' principle"}
+  ],
+  "submarine": [
+   {"effect": "buoyancy", "gap": "Archimedes' principle"},
+   {"effect": "water pressure grows with depth", "card": "hydrostatics"}
+  ],
+  "sundial": [
+   {"effect": "the Earth's turning moves the shadow", "card": "rotation-of-the-earth"}
+  ],
+  "surgery": [
+   {"effect": "blood flows in closed vessels", "card": "blood-circulation"}
+  ],
+  "synchrocyclotron": [
+   {"effect": "a magnet pushes a current", "card": "electrical-motion"},
+   {"effect": "mass grows with speed", "card": "mass-increase"}
+  ],
+  "synthesis-of-quinine": [
+   {"effect": "a chemical kills the germ but not the patient", "card": "chemotherapy"}
+  ],
+  "synthetic-gene": [
+   {"effect": "a cell follows genes put into it", "card": "virus-transduction"}
+  ],
+  "synthetic-vitamin-c": [
+   {"effect": "the body needs trace nutrients", "card": "vitamin-concept"}
+  ],
+  "syphilis-treatment": [
+   {"effect": "a chemical kills the germ but not the patient", "card": "chemotherapy"}
+  ],
+  "test-tube-baby": [
+   {"effect": "an egg can be fertilized outside the body", "card": "fertilization-observed"}
+  ],
+  "tetraethyl-lead": [
+   {"effect": "slows the burning in the cylinder", "gap": "Knock suppression"}
+  ],
+  "thermometer": [
+   {"effect": "liquids expand when heated", "gap": "Thermal expansion"}
+  ],
+  "thiamine": [
+   {"effect": "the body needs trace nutrients", "card": "vitamin-concept"}
+  ],
+  "tissue-culture": [
+   {"effect": "cells live outside the body", "card": "cell-theory"}
+  ],
+  "transatlantic-liner": [
+   {"effect": "buoyancy", "gap": "Archimedes' principle"}
+  ],
+  "transformer": [
+   {"effect": "induction", "gap": "Electromagnetic induction"}
+  ],
+  "transistor": [
+   {"effect": "one-way conduction in crystals", "card": "current-and-crystals"}
+  ],
+  "tunnel-diode": [
+   {"effect": "one-way conduction in crystals", "card": "current-and-crystals"},
+   {"effect": "quantum tunnelling", "card": "particles-as-waves"}
+  ],
+  "turbines": [
+   {"effect": "reaction thrust", "card": "conservation-momentum"}
+  ],
+  "ultracentrifuge": [
+   {"effect": "spinning pulls heavier particles outward", "gap": "Sedimentation"}
+  ],
+  "ultramicroscope": [
+   {"effect": "small particles scatter light", "gap": "Light scattering"}
+  ],
+  "uranium-two-three-five": [
+   {"effect": "a neutron splits a heavy atom, freeing more neutrons", "card": "nuclear-chain-reaction"}
+  ],
+  "vertebrate-clones": [
+   {"effect": "a body cell's nucleus can grow a whole animal", "gap": "Nuclear transfer"}
+  ],
+  "very-long-baseline-array": [
+   {"effect": "light waves interfere", "card": "light-waves"}
+  ],
+  "virus-culture": [
+   {"effect": "viruses multiply only inside living cells", "card": "virus-transduction"}
+  ],
+  "virus-culture-penicillin": [
+   {"effect": "viruses multiply only inside living cells", "card": "virus-transduction"}
+  ],
+  "vitamin-b-12-synthesis": [
+   {"effect": "the body needs trace nutrients", "card": "vitamin-concept"}
+  ],
+  "vitamin-e": [
+   {"effect": "the body needs trace nutrients", "card": "vitamin-concept"}
+  ],
+  "vitamin-e-synthesis": [
+   {"effect": "the body needs trace nutrients", "card": "vitamin-concept"}
+  ],
+  "vitamin-k": [
+   {"effect": "the body needs trace nutrients", "card": "vitamin-concept"}
+  ],
+  "vitamins-a-and-b": [
+   {"effect": "the body needs trace nutrients", "card": "vitamin-concept"}
+  ],
+  "weather-satellites": [
+   {"effect": "orbit", "card": "universal-gravitation"}
+  ],
+  "welsbach-mantle": [
+   {"effect": "hot things glow", "card": "black-bodies"}
+  ],
+  "wheatstone-bridge": [
+   {"effect": "resistance", "card": "ohms-law"}
+  ],
+  "wheel-and-axle": [
+   {"effect": "mechanical advantage", "card": "lever-math"},
+   {"effect": "rolling friction", "gap": "Rolling friction"}
+  ],
+  "wing": [
+   {"effect": "lift", "card": "aerodynamics"}
+  ],
+  "xerography": [
+   {"effect": "light lets a coating conduct", "card": "photovoltaic-cells"},
+   {"effect": "static charge", "card": "positive-negative-charge"}
+  ],
+  "yellow-fever-vaccine": [
+   {"effect": "the body learns to fight a germ", "card": "vaccination"}
+  ],
+  "zone-refining": [
+   {"effect": "impurities stay in the melted part", "gap": "Impurity segregation"}
+  ]
  }
 }

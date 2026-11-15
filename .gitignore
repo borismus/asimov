@@ -3,6 +3,12 @@
 .DS_Store
 .env
 
+# Google OAuth secrets/token + GSC status reports (never commit credentials)
+client_secret.json
+token.json
+service-account.json
+gsc-status*.csv
+
 # Full-resolution image-gen originals + metadata; the site only ships the
 # 720x480 JPGs at static/images/entries-v2/<id>.jpg.
 static/images/entries-v2/originals/

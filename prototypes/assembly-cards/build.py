@@ -96,7 +96,7 @@ for suffix, PHEN in (('', {}), ('-phen', ALL_PHEN)):  # noqa: F402 (each view se
                 w.writerow([i, fmt_year(y), t, d, who, where, ', '.join(deps), card_type(i).title(), '', 'added'])
             else:
                 r = rows[i]
-                w.writerow([i, r['Year'], r['Title'], r['Description'], r['Inventor'], r['Location'], ', '.join(deps), card_type(i).title(), r.get('URL', ''), r.get('Kind', '') or 'legacy'])
+                w.writerow([i, r['Year'], r['Title'], r['Description'], r['Inventor'], r['Location'], ', '.join(deps), card_type(i).title(), r.get('Long Description') or r.get('URL', ''), r.get('Kind', '') or 'legacy'])
 
     # The artifact host won't serve .tsv, so ship the same rows as JSON.
     with open(f'{OUT}/static/asimov.tsv') as fh:

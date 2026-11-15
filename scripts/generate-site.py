@@ -29,9 +29,9 @@ class Invention:
   inventor: str = ""
   location: str = ""
   field: str = ""
-  # The TSV's "URL" column is misnamed: it actually holds a fuller, prose
-  # paragraph (verbatim/near-verbatim source text), not a link. Rendered as
-  # the card page's SEO body beneath the card when present.
+  # The TSV's "Long Description" column (called "URL" until the sheet renamed
+  # it): a fuller prose paragraph (verbatim/near-verbatim source text).
+  # Rendered as the card page's SEO body beneath the card when present.
   detail: str = ""
   dependencies: tuple = ()
 
@@ -159,7 +159,7 @@ def load_inventions(tsv_path):
         inventor=(row.get("Inventor") or "").strip(),
         location=(row.get("Location") or "").strip(),
         field=(row.get("Field") or "").strip(),
-        detail=(row.get("URL") or "").strip(),
+        detail=(row.get("Long Description") or row.get("URL") or "").strip(),
         dependencies=deps,
       ))
   return out
@@ -313,7 +313,7 @@ if __name__ == "__main__":
       "field": invention.field,
       "inventor": invention.inventor,
       "location": invention.location,
-      # Fuller prose paragraph (from the misnamed TSV "URL" column), shown as
+      # Fuller prose paragraph (the TSV's "Long Description" column), shown as
       # the page body beneath the card when present — see Invention.detail.
       "detail": invention.detail,
       "built_on": link_list(invention.dependencies),

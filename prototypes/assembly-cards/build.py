@@ -6,14 +6,27 @@ Data comes from lists.py (pilot_data.py, batches.py, links.csv) plus card text a
 
   uv run prototypes/assembly-cards/build.py
   python3 -m http.server -d prototypes/assembly-cards/site 8000
+
+  uv run prototypes/assembly-cards/build.py --deploy   # into ~/Projects/invention.cards/assembly/
+
+--deploy builds next to the live site (see deploy.sh): the cards use the images invention.cards
+already serves at /static/images/entries-v2/, so only the placeholder is copied. It doesn't
+commit or push.
 """
-import csv, json, os, re, shutil, sys
+import argparse, csv, json, os, re, shutil, sys
+
+ap = argparse.ArgumentParser()
+ap.add_argument('--deploy', action='store_true', help='build into the invention.cards checkout, using its images')
+ap.add_argument('--deploy-dir', default=os.path.expanduser('~/Projects/invention.cards'))
+ARGS = ap.parse_args()
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.abspath(os.path.join(HERE, '..', '..'))
-OUT = os.path.join(HERE, 'site')
+OUT = os.path.join(ARGS.deploy_dir, 'assembly') if ARGS.deploy else os.path.join(HERE, 'site')
+if ARGS.deploy and not os.path.isdir(os.path.join(ARGS.deploy_dir, '.git')):
+    raise SystemExit(f'{ARGS.deploy_dir} is not the invention.cards checkout')
 sys.path.insert(0, HERE)
-from lists import NEW_CARDS, CARDS
+from lists import NEW_CARDS, CARDS, TYPES
 
 # Phenomena are set aside while the assemblies get to a good place. The lists are kept in
 # pilot_data.py and batches.py; set this to True to show them again.
@@ -40,8 +53,17 @@ for f in os.listdir(f'{REPO}/static'):
     if f.endswith(('.js', '.css')):
         s = open(f'{REPO}/static/{f}').read().replace('"/static/', '"static/').replace('`/static/', '`static/').replace("'/static/", "'static/").replace('(/static/', '(static/')
         open(f'{OUT}/static/{f}', 'w').write(s)
-for d in ['fields', 'icons']:
-    shutil.copytree(f'{REPO}/static/images/{d}', f'{OUT}/static/images/{d}')
+shutil.copytree(f'{REPO}/static/images/icons', f'{OUT}/static/images/icons')
+# The card's type replaces its genre: one icon per type, drawn here (24x24, shown at 10px).
+TYPE_ICONS = {
+    'object': '<path fill-rule="evenodd" d="M10.3 2h3.4l.5 2.7 1.9.8 2.3-1.6 2.4 2.4-1.6 2.3.8 1.9 2.7.5v3.4l-2.7.5-.8 1.9 1.6 2.3-2.4 2.4-2.3-1.6-1.9.8-.5 2.7h-3.4l-.5-2.7-1.9-.8-2.3 1.6-2.4-2.4 1.6-2.3-.8-1.9L2 13.7v-3.4l2.7-.5.8-1.9-1.6-2.3 2.4-2.4 2.3 1.6 1.9-.8zM12 8.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7z"/>',
+    'material': '<path d="M7 4h10l2 6H5zM1.5 12h10l2 7h-14zM12.5 12h10l1.5 7h-13.5z"/>',
+    'practice': '<path d="M12 3a9 9 0 1 0 9 9" fill="none" stroke="#000" stroke-width="3.2" stroke-linecap="round"/><path d="M15.5 1.5 23 6l-7.5 4.5z"/>',
+    'phenomenon': '<path d="M14 1 3.5 14H11l-2 9L20.5 9.5H13z"/>',
+}
+os.makedirs(f'{OUT}/static/images/fields')
+for t, body in TYPE_ICONS.items():
+    open(f'{OUT}/static/images/fields/{t}.svg', 'w').write(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">{body}</svg>')
 open(f'{OUT}/static/stories.json', 'w').write('[]')
 
 # ---------- data ----------
@@ -50,6 +72,12 @@ for cid, (job, slots, ph) in CARDS.items():
     ids |= {s[2] for s in slots if s[2]}
     ids |= {l for s in slots for l in s[6]}
     ids |= {p for p in ph if not isinstance(p, tuple)}
+
+phen_ids = {p for _, _, ph in CARDS.values() for p in ph if not isinstance(p, tuple)}
+def card_type(i):
+    if i in TYPES: return TYPES[i]
+    if i in phen_ids: return 'phenomenon'
+    raise SystemExit(f'{i}: no type in assemblies.json "types"')
 
 def fmt_year(y):
     y = int(y)
@@ -66,10 +94,10 @@ with open(f'{OUT}/static/asimov.tsv', 'w', newline='') as fh:
                 if d not in deps: deps.append(d)
         if i in NEW_CARDS:
             t, y, d = NEW_CARDS[i]
-            w.writerow([i, fmt_year(y), t, d, '', '', ', '.join(deps), 'Design', '', 'added'])
+            w.writerow([i, fmt_year(y), t, d, '', '', ', '.join(deps), card_type(i).title(), '', 'added'])
         else:
             r = rows[i]
-            w.writerow([i, r['Year'], r['Title'], r['Description'], r['Inventor'], r['Location'], ', '.join(deps), r['Field'], r['URL'], r.get('Kind', '') or 'legacy'])
+            w.writerow([i, r['Year'], r['Title'], r['Description'], r['Inventor'], r['Location'], ', '.join(deps), card_type(i).title(), r.get('URL', ''), r.get('Kind', '') or 'legacy'])
 
 # The artifact host won't serve .tsv, so ship the same rows as JSON.
 with open(f'{OUT}/static/asimov.tsv') as fh:
@@ -109,13 +137,15 @@ json.dump(lists, open(f'{OUT}/static/lists.json', 'w'), ensure_ascii=False)
 
 # ---------- images ----------
 # Cards with no deck art share one "art to come" image (the card frame already shows the title).
-# One file instead of one per card keeps the artifact under its 512-file limit.
+# One file instead of one per card kept the claude.ai artifact under its 512-file limit.
 from PIL import Image, ImageDraw, ImageFont
 missing = []
 for i in ids:
     src = f'{REPO}/static/images/entries-v2/{i}.jpg'
     if os.path.exists(src):
-        shutil.copy(src, f'{OUT}/static/images/entries-v2/{i}.jpg')
+        if not ARGS.deploy: shutil.copy(src, f'{OUT}/static/images/entries-v2/{i}.jpg')
+        elif not os.path.exists(f'{ARGS.deploy_dir}/static/images/entries-v2/{i}.jpg'):
+            print(f'warning: {i}.jpg is not in the deployed site yet; run deploy.sh first')
     else:
         missing.append(i)
 im = Image.new('RGB', (624, 416), (236, 233, 226))
@@ -142,6 +172,7 @@ patch(f'{S}/routing.js', [(
 )])
 
 patch(f'{S}/utils.js', [
+    ('const VALID_FIELDS = [', 'const VALID_FIELDS = ["object", "material", "practice", "phenomenon", // prototype: card types'),
     ('  const rows = await d3.tsv(tsvUrl);', '  const rows = await (tsvUrl.endsWith(".json") ? d3.json(tsvUrl) : d3.tsv(tsvUrl));'),
     (
     '  console.log(`Found ${links.length} links.`);',
@@ -165,6 +196,17 @@ patch(f'{S}/utils.js', [
 )])
 
 patch(f'{S}/world.js', [
+    ('''const KNOWN_FIELDS = new Set([
+  "general",
+  "geography",
+  "culture",
+  "war",
+  "design",
+  "math",
+  "science",
+  "space",
+]);''', 'const KNOWN_FIELDS = new Set(["object", "material", "practice", "phenomenon"]); // prototype: card types'),
+    ('n.fieldKey = KNOWN_FIELDS.has(key) ? key : "general";', 'n.fieldKey = KNOWN_FIELDS.has(key) ? key : "object";'),
     ('const NUM_COLS = 240;', 'let NUM_COLS = 240; // prototype: sized to the deck in layout()'),
     ('  const N = nodes.length;\n  state.maxYear', '  const N = nodes.length;\n  NUM_COLS = Math.max(8, Math.round(N / 5)); // keep ~5 cards per column, like the full deck\n  state.maxYear'),
     (
@@ -200,9 +242,13 @@ patch(f'{S}/card.js', [(
     'let cardSerial = 0;\n' + open(os.path.join(HERE, 'card_back.js')).read(),
 )])
 _cj = open(f'{S}/card.js').read()
+_icon = 'fields/${formatField(d.field)}.png'
+assert _cj.count(_icon) == 3 and _cj.count('fields/${formatField(\n') == 1, (_cj.count(_icon),)
+_cj = _cj.replace(_icon, 'fields/${formatField(d.field)}.svg').replace(')}.png" />', ')}.svg" />')
 _href = '.attr("href", (d) => `static/images/entries-v2/${d.id}.jpg`);'
 assert _cj.count(_href) == 2, _cj.count(_href)
-_cj = _cj.replace(_href, '.attr("href", (d) => NO_ART.has(d.id) ? "static/images/entries-v2/_art-to-come.jpg" : `static/images/entries-v2/${d.id}.jpg`);')
+_live = '/' if ARGS.deploy else ''  # deployed: the live site's own copy of each image
+_cj = _cj.replace(_href, '.attr("href", (d) => NO_ART.has(d.id) ? "static/images/entries-v2/_art-to-come.jpg" : `' + _live + 'static/images/entries-v2/${d.id}.jpg`);')
 _cj = _cj.replace('let cardSerial = 0;', 'let cardSerial = 0;\nconst NO_ART = new Set(' + json.dumps(sorted(missing)) + ');', 1)
 open(f'{S}/card.js', 'w').write(_cj)
 
@@ -483,6 +529,7 @@ function renderSearchOffscreenIndicators() {"""),
 ])
 
 open(f'{S}/card.css', 'a').write(open(os.path.join(HERE, 'card_back.css')).read())
+open(f'{S}/card.css', 'a').write(open(os.path.join(HERE, 'card_type.css')).read())
 open(f'{S}/universe.css', 'a').write(open(os.path.join(HERE, 'phone.css')).read())
 open(f'{S}/universe.css', 'a').write(open(os.path.join(HERE, 'theme.css')).read())
 # Link lines take their colour from the theme (--ink-rgb in theme.css): dark on light, light on dark.
@@ -549,18 +596,24 @@ for f in ['mobile.js', 'mobile.css', 'main.js', 'timeline.js']:
 # ---------- page ----------
 html = open(f'{REPO}/universe.html').read()
 html = html.replace('"/static/', '"static/')
+# style.css hides the app shell unless <html> has the "js" class (the live page sets it in index.jinja).
+assert html.count('<html lang="en">') == 1
+html = html.replace('<html lang="en">', '<html lang="en" class="js">')
 html = html.replace('https://d3js.org/d3.v7.min.js', 'https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js')
 assert 'cdnjs.cloudflare.com/ajax/libs/d3/7.9.0' in html
 html = re.sub(r'\s*<script async src="https://www.googletagmanager.com.*?</script>\s*<script>.*?</script>', '', html, flags=re.S)
 html = html.replace(' media="(min-width: 721px)"', '')
 html = re.sub(r'\s*<link rel="stylesheet" href="static/mobile.css"[^>]*>', '', html)
 html = re.sub(r'<script type="module">.*?</script>', '<script type="module">import("./static/universe.js");</script>', html, flags=re.S)
-html = re.sub(r'<title>.*?</title>', '<title>Assembly Cards</title>', html)
+html = re.sub(r'<title>.*?</title>', '<title>Assembly Cards</title>\n  <meta name="robots" content="noindex">', html)
 search_btn = '<button id="action-search" class="site-action" type="button" title="Search" aria-label="Search">'
 assert html.count(search_btn) == 1
 html = html.replace(search_btn, '<button id="action-jobs" class="site-action" type="button" title="Jobs to be done" aria-label="Jobs to be done">\n          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>\n        </button>\n        ' + search_btn)
 html = html.replace('<h1 class="site-title">Invention Cards</h1>', '<h1 class="site-title">Assembly Cards</h1>')
 html = re.sub(r'<p class="site-subtitle">.*?</p>', '<p class="site-subtitle">Prototype. Tap a card to pin it and light up its links; tap it again to flip it. The back lists its parts. Tap a bullet to jump to that card, or a job to see every card that does it.</p>', html, count=1)
+html = html.replace('to see every card that does it.</p>', 'to see every card that does it.'
+                    + '<span class="type-key"><span class="object">object</span><span class="material">material</span><span class="practice">practice</span>'
+                    + ('<span class="phenomenon">phenomenon</span>' if SHOW_PHENOMENA else '') + '</span></p>', 1)
 html = html.replace('</h1>', '</h1>\n        <p class="site-subtitle-short">Tap a card to pin it, tap again to flip it.</p>', 1)
 search_in = '<input id="search-input"'
 assert html.count(search_in) == 1

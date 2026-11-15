@@ -26,10 +26,14 @@ It reuses the universe view, with these changes:
   can do that job. Jobs are kept generic; a slot's specifics ("prevents scurvy") go in its note.
 - **Search** lists every match under the search bar, on screen or not; the one you picked is blue.
 - **No hover, no half cards.** Cards are always full size.
-- **Phenomena are set aside for now** while the assemblies get to a good place. The lists are kept
+- **Card type instead of genre.** A card's tint and corner icon say what kind of card it is: object
+  (blue, gear), material (red, ingots), practice (green, cycle) or phenomenon (amber, bolt). The
+  back starts with the type. Types are in `assemblies.json` (`types`); a card reached only through a
+  phenomenon list is a phenomenon.
+- **Phenomena are set aside for now** (plan to bring them back: `PHENOMENA.md`). The lists are kept
   in the data; `SHOW_PHENOMENA` in `build.py` brings them back.
 
-Edges: parts are solid, parts added later are dashed, phenomena are amber.
+Edges: parts are solid, parts added later are dashed, phenomena are amber (matching phenomenon cards).
 
 ## Run it
 
@@ -38,6 +42,20 @@ uv run prototypes/assembly-cards/build.py
 python3 -m http.server -d prototypes/assembly-cards/site 8000
 # open http://localhost:8000
 ```
+
+To publish it next to invention.cards, at `invention.cards/assembly/`:
+
+```sh
+uv run prototypes/assembly-cards/build.py --deploy   # writes ~/Projects/invention.cards/assembly/
+cd ~/Projects/invention.cards && git add assembly && git commit -m 'Assembly cards prototype' && git push
+```
+
+invention.cards is GitHub Pages serving `borismus/invention.cards` (branch `main`); the repo's
+`deploy.sh` regenerates the site into that checkout and pushes it. `generate-site.py` only replaces
+`static/` and the per-card pages, so `assembly/` survives later deploys (and `git add -A` there keeps
+it). The deployed build loads card art from the live `/static/images/entries-v2/`, so it is 35 files
+instead of ~500; it uses its own patched copy of the site's JS under `assembly/static/`, uses hash
+navigation (no server paths), and is marked `noindex`.
 
 The build copies the site's `static/*.js` and `*.css`, applies small patches (each one must match
 exactly, so a change to the site code fails the build loudly), and writes the pilot cards and their
@@ -55,31 +73,29 @@ images into `site/`, which is gitignored.
 - `links.csv`: the links between existing cards approved in the "Missing parts" audit.
 - `lists.py`: puts `assemblies.json` and the phenomena together for the build.
 - `build.py`: builds `site/`. Cards with no deck art share one "art to come" image.
+- `card_type.css`: the type colours (tint, timeline dots, header key); the type icons are drawn in
+  `build.py`.
 - `phone.css`, `theme.css`: the phone layout (search sheet, compact header) and light/dark themes.
 - `card_back.js`, `card_back.css`: the back of the card and the flip animation, spliced into
   `card.js` and `card.css`.
 
 ## Scope
 
-Every invention in Asimov's deck has a list: 435 cards with lists, including 32 supporting cards
+Every invention in Asimov's deck has a list: 432 cards with lists, including 32 supporting cards
 that aren't in the deck (Valve, Boiler, Escapement, Ink, Punched cards…). With the materials they
-reference, the board shows 494 cards. The rules the lists follow are in `RULES.md` (copied from the sheet's Rules tab): a
+reference, the board shows 491 cards. The rules the lists follow are in `RULES.md` (copied from the sheet's Rules tab): a
 part with no card is listed only if 3 or more inventions share it (then it gets a card), or if it is
-the card's own key part, the new thing it brought. Left out: the Great Wall (a named wonder) and
-the Torsion balance (a phenomenon).
+the card's own key part, the new thing it brought. Left out: the Great Wall (a named wonder), and
+the Torsion balance, Vaccination, Chemotherapy and Chromatography (phenomena: no parts, and their text
+describes an effect other cards link to).
 
 ## Where it stands, and what's next
 
 The lists are reviewed and settled; `RULES.md` has the 20 rules. Next, roughly in order:
 
-1. **Card type instead of genre.** Replace the field icon and colours with what kind of card it is:
-   object, material, practice or phenomenon (the parts rules already tell the first three apart).
-2. **Bring the natural phenomena back.** Only the pilot and batch 1 (86 inventions, 155 links in
-   `pilot_data.py` and `batches.py`) have them. The rest need a pass, drafted and then reviewed by
-   exception like the assembly lists. "Harnesses" is a second kind of link, so it needs its own look
-   and probably a switch; phenomenon cards would come back (about 100) in their own style.
-3. **Hosting.** The claude.ai artifact this has been previewed in caps a version at 512 files and
-   blocks images from other sites, so it carries copies of all card images. Publishing next to
-   invention.cards instead would reuse the live images and drop the cap.
+1. ~~**Card type instead of genre.**~~ Done. The types were assigned in one pass and haven't been
+   reviewed; the judgment calls are listed in `PHENOMENA.md` under "Types to check".
+2. **Bring the natural phenomena back.** The plan is in `PHENOMENA.md`.
+3. ~~**Hosting.**~~ `build.py --deploy` (see "Run it"). Not pushed yet.
 4. **Swaps over time.** The `later` data is in place: a job's view could list every card that did it,
    by year (oil lamps, gas lighting, the electric light).

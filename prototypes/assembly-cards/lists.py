@@ -10,6 +10,10 @@ import pilot_data, batches
 HERE = os.path.dirname(os.path.abspath(__file__))
 A = json.load(open(os.path.join(HERE, 'assemblies.json')))
 
+# What kind of card each one is: object, material or practice. Cards reached only through
+# a phenomenon list aren't in it; the build types them as phenomena.
+TYPES = A['types']
+
 NEW_CARDS = {**pilot_data.NEW_CARDS, **batches.NEW_CARDS, **{k: tuple(v) for k, v in A['new_cards'].items()}}
 
 PHEN = {cid: ph for cid, (j, sl, ph) in pilot_data.CARDS.items()}

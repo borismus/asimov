@@ -1,0 +1,29 @@
+
+/* ---- Prototype: card type instead of genre ----------------------------------
+   The build writes each card's type (object, material, practice, phenomenon) into
+   the Field column, so the site's field-* classes and icons now show the type.
+   Phenomenon is amber to match the phenomenon link lines in world.js. */
+:root {
+  --type-object: 212, 58%;
+  --type-material: 14, 62%;
+  --type-practice: 140, 42%;
+  --type-phenomenon: 36, 82%;
+}
+.field-object rect { fill: hsl(var(--type-object), 95%); }
+.field-material rect { fill: hsl(var(--type-material), 95%); }
+.field-practice rect { fill: hsl(var(--type-practice), 95%); }
+.field-phenomenon rect { fill: hsl(var(--type-phenomenon), 93%); }
+.dag-dot.field-object { fill: hsl(var(--type-object), 68%); }
+.dag-dot.field-material { fill: hsl(var(--type-material), 68%); }
+.dag-dot.field-practice { fill: hsl(var(--type-practice), 62%); }
+.dag-dot.field-phenomenon { fill: hsl(var(--type-phenomenon), 62%); }
+.back-type { font-variant: small-caps; letter-spacing: 0.04em; color: #555; }
+.type-key { display: inline-flex; gap: 10px; margin-left: 8px; white-space: nowrap; }
+.type-key span::before {
+  content: ""; display: inline-block; width: 8px; height: 8px; border-radius: 50%;
+  margin-right: 4px; vertical-align: 0; border: 1px solid rgba(0, 0, 0, 0.35);
+}
+.type-key .object::before { background: hsl(var(--type-object), 68%); }
+.type-key .material::before { background: hsl(var(--type-material), 68%); }
+.type-key .practice::before { background: hsl(var(--type-practice), 62%); }
+.type-key .phenomenon::before { background: hsl(var(--type-phenomenon), 62%); }

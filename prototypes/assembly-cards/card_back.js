@@ -13,7 +13,9 @@ function backHTML(d, L) {
   let h = "";
   const jobLink = (job, text, cls = "") =>
     `<a class="back-joblink ${cls}" data-job="${escBack(job)}" href="#" title="Job: ${escBack(job)}">${escBack(text)}</a>`;
-  if (d.job) h += `<div class="back-job">Job: ${jobLink(d.job, d.job)}</div>`;
+  const type = d.field ? `<span class="back-type">${escBack(d.field.toLowerCase())}</span>` : "";
+  if (d.job) h += `<div class="back-job">${type ? type + " · " : ""}Job: ${jobLink(d.job, d.job)}</div>`;
+  else if (type) h += `<div class="back-job">${type}</div>`;
   // Its parts: one list, the assembly. (How a thing is produced isn't listed.)
   if (d.slots) {
     if (!d.slots.length) {

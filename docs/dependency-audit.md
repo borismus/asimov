@@ -3,12 +3,11 @@
 **Status:** authoring notes, not auto-applied. Each row below is a
 direct, non-transitive predecessor → successor edge that is missing
 from `static/asimov.tsv` as of last fetch. The “current deps” column
-is what `Dependencies` already has on the successor card so you can
-paste the addition straight into the sheet.
+is what `Dependencies` already has on the successor card, so you can
+add the missing one to it.
 
-The corresponding `Dependencies` cells live in the Google Sheet (see
-[stories.md](stories.md) for fetch flow); fix them there and re-run
-`uv run scripts/fetch-tsv.py`. The site does **not** reduce transitive
+The `Dependencies` column lives in [static/asimov.tsv](../static/asimov.tsv),
+edited in the repo (the Google Sheet is retired; see the README). The site does **not** reduce transitive
 edges at runtime, so adding a redundant ancestor will visibly clutter
 the graph — keep edges direct.
 
@@ -157,6 +156,6 @@ These are tempting but were rejected by the audit:
   diff stays readable, and each row in Tier 3 is a **replacement**
   rather than an addition, which means more careful review.
 
-After applying any subset, re-run `uv run scripts/fetch-tsv.py` and
-then `python3 scripts/suggest-deps.py` to confirm the new edges are
+After applying any subset to `static/asimov.tsv`, run
+`python3 scripts/suggest-deps.py` to confirm the new edges are
 no longer flagged as `NEW`.

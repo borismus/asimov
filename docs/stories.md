@@ -4,13 +4,13 @@
 
 A **story** is a curated, ordered path through the tech tree — an authored narrative ribbon connecting cards with per-edge prose. The architecture is designed around "greatness cannot be planned": each step describes how the previous one turned out to be load-bearing for something its inventors never imagined.
 
-Authored in the same Google Sheet as the cards (one tab per story, prefixed `Story:`). The fetch script writes [static/stories.json](../static/stories.json); the runtime loads it on startup.
+Authored by editing [static/stories.json](../static/stories.json) in the repo; the runtime loads it on startup. (They were first written in the Google Sheet, which is now retired as an authoring tool; see the README.)
 
 ## Authoring
 
-See [stories-impl.md](stories-impl.md) for the sheet-side recipe (tab layout, key/value top zone, `id, edge_note` bottom zone, and how [scripts/fetch-tsv.py](../scripts/fetch-tsv.py) discovers `Story: …` tabs into JSON).
+See [stories-impl.md](stories-impl.md) for the JSON shape and the authoring rules (the sheet-side recipe there is historical).
 
-Each step row in the sheet carries an **edge note** describing the transition *into* that step from the previous one. The note for step `i` is the prose on the segment between step `i-1` and step `i`.
+Each step carries an **edge note** describing the transition *into* that step from the previous one. The note for step `i` is the prose on the segment between step `i-1` and step `i`.
 
 ## Runtime architecture
 

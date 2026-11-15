@@ -2,6 +2,10 @@
 """Pull the asimov inventions sheet to static/asimov.tsv (cards) and
 static/stories.json (stories).
 
+RETIRED (Nov 2026): the sheet is no longer the source of truth and deploy.sh no longer
+runs this. static/asimov.tsv and static/stories.json are edited in the repo. Running it
+overwrites both with whatever the sheet holds; keep it only for a deliberate one-off pull.
+
 Card tabs are listed in TAB_KIND_MAP. Each card row is tagged with a
 Kind column derived from its source tab. The merged TSV is consumed by
 the runtime loader and by scripts/generate-site.py.

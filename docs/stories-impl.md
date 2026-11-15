@@ -2,15 +2,17 @@
 
 **Status:** shipped.
 
-**Source of truth:** the **Google Sheet** (same workbook as the cards). [static/stories.json](../static/stories.json) and [static/asimov.tsv](../static/asimov.tsv) are **exports** produced by `fetch-tsv.py`—edit the sheet, then run the script to refresh the repo; do not treat the committed TSV/JSON as something to hand-edit instead of the sheet.
+**Source of truth: [static/stories.json](../static/stories.json), edited in the repo.** The Google Sheet is retired as an authoring tool (Nov 2026; see the README's "Editing the data"). Edits made in the sheet won't reach the site, and `deploy.sh` no longer fetches it.
 
-Stories live in the same Google Sheet as the cards, one tab per story, prefixed `Story:`. The fetch script reads each story tab and writes [static/stories.json](../static/stories.json), which the runtime loads on startup.
+To add or edit a story, edit `static/stories.json` directly. It's a list of stories, each `{slug, title, blurb, steps}`, where `steps` is a list of `{id, edge_note}` in timeline order: `id` is a card ID from [static/asimov.tsv](../static/asimov.tsv), and `edge_note` is the prose on the transition *into* that step (`null` for the first). The rules below about step order and edge notes still apply.
+
+The sheet-side recipe that follows is kept for history: it's how the existing stories were first written.
 
 For the runtime architecture (focus model, layers, rendering, etc.) see [stories.md](stories.md). This file is the **authoring** half: how to add or edit a story.
 
 ---
 
-## Sheet-side recipe
+## Sheet-side recipe (historical: the sheet is retired)
 
 1. Create a new tab named `Story: <Story title>`. The prefix is required; the slug is derived from the rest of the name (`Story: Horse cavalry` → `horse-cavalry`).
 2. Lay out two zones in the tab, separated by a blank row.

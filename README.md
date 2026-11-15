@@ -4,28 +4,28 @@ If there's an issue with the visualization or text you'd like addressed, please 
 
 ## Editing the data
 
-The invention data lives in a [Google Sheet](https://docs.google.com/spreadsheets/d/1hDNXas7DzwglB95HV2_2u1utWAwBZR2hQHlMPz-fj5A/edit), one tab per kind:
+**The repo is the source of truth. The Google Sheet is no longer used for authoring** (retired
+Nov 2026: it was meant for crowdsourcing, but few people used it and syncing from it caused
+trouble). Edit these files directly and commit:
 
-- `Asimov Prehistory to 1993` — the legacy corpus from Asimov's book.
-- `Boris additions` — gap-fillers and post-1993 entries that actually happened.
-- `Speculative: <name>` — one tab per future scenario (a "cone of possibilities").
+- [static/asimov.tsv](static/asimov.tsv) — every card, tab-separated, one row per card:
+  `ID, Year, Title, Description, Inventor, Location, Dependencies, Field, Long Description, Kind`.
+  `Description` is the text on the card; `Long Description` is the fuller paragraph shown on the
+  card's no-JS page (for search engines). `Kind` is `legacy` (Asimov's book), `added` (gap-fillers
+  and post-1993 entries) or `scenario-<slug>` (a speculative future); see
+  [docs/card-kinds.md](docs/card-kinds.md). Keep tabs and line breaks out of cells.
+- [static/stories.json](static/stories.json) — the stories: a list of
+  `{slug, title, blurb, steps: [{id, edge_note}]}`, steps in timeline order. See
+  [docs/stories.md](docs/stories.md) and [docs/stories-impl.md](docs/stories-impl.md).
+- [prototypes/assembly-cards/assemblies.json](prototypes/assembly-cards/assemblies.json) — the
+  assembly prototype's parts, phenomena, card types and its own new cards
+  ([prototypes/assembly-cards/README.md](prototypes/assembly-cards/README.md)).
 
-Each tab has the same columns (`ID, Year, Title, Description, Inventor, Location, Dependencies, Field, URL`). Tabs are mapped to a `Kind` value by `TAB_KIND_MAP`
-in `[scripts/fetch-tsv.py](scripts/fetch-tsv.py)`; legacy and added are fixed,
-each speculative tab is `scenario-<slug>`. See [docs/card-kinds.md](docs/card-kinds.md)
-for the data model.
+For a big round of edits that needs a second pair of eyes, put the proposals on a temporary review
+sheet and bring the decisions back into these files (that's how the assembly lists were reviewed).
 
-The same sheet also carries **stories** — curated narrative paths through the
-tech tree, one tab per story prefixed `Story:`. See
-[docs/stories.md](docs/stories.md) for the runtime architecture and
-[docs/stories-impl.md](docs/stories-impl.md) for the authoring recipe.
-
-To pull edits (cards + stories) from the sheet to the repo:
-
-```sh
-uv run scripts/fetch-tsv.py
-```
-
-This rewrites `static/asimov.tsv` (with a `Kind` column derived from the
-source tab) and `static/stories.json`. `deploy.sh` runs this automatically
-before generating the site.
+The [old Google Sheet](https://docs.google.com/spreadsheets/d/1hDNXas7DzwglB95HV2_2u1utWAwBZR2hQHlMPz-fj5A/edit)
+stays up as a historical copy only: **edits made there won't reach the site**. `deploy.sh` no
+longer fetches it. [scripts/fetch-tsv.py](scripts/fetch-tsv.py) is kept for a one-off pull, but
+don't run it casually: it overwrites `static/asimov.tsv` and `static/stories.json` with whatever
+the sheet holds.

@@ -408,9 +408,9 @@ function renderEraPills() {
   }
 }
 
-// Pack pills are derived from the unique kinds present in the data, so new
-// scenario tabs in the sheet show up here automatically once they're in
-// the merged TSV. Order: legacy first, then added, then scenarios sorted.
+// Pack pills are derived from the unique kinds present in the data, so a new
+// scenario (rows with Kind scenario-<slug> in static/asimov.tsv) shows up here
+// automatically. Order: legacy first, then added, then scenarios sorted.
 function renderPackPills() {
   const wrap = document.getElementById('pack-pills');
   wrap.innerHTML = '';

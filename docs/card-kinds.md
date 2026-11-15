@@ -1,5 +1,7 @@
 # Card kinds — legacy / added / speculative
 
+> **Note (Nov 2026):** this is the original design doc. The Google Sheet and the fetch script it describes are retired as the way to author cards: `static/asimov.tsv` is now edited in the repo, with the `Kind` column set by hand. See the README's "Editing the data".
+
 **Status:** shipped, except for data. The `Kind` column is on every TSV row,
 `kind-<value>` + `is-speculative` classes are applied at all three render
 sites ([card.js](../static/card.js), [world.js](../static/world.js) renderDots,

@@ -295,6 +295,12 @@ let eraCache = null;
 function eraLines() {
   if (eraCache && eraCache.nodes === state.nodes) return eraCache.lines;
   const thisYear = new Date().getFullYear();
+  // Only worth drawing where the timeline goes past Asimov's chronology (the assembly board);
+  // on Asimov's own timeline nothing comes after 1993, so the lines would just mark its end.
+  if (!state.nodes.some((n) => n.year > ASIMOV_END)) {
+    eraCache = { nodes: state.nodes, lines: [] };
+    return [];
+  }
   const lines = [
     { id: "asimov", label: `${ASIMOV_END} · end of Asimov's chronology`, x: boundaryX(ASIMOV_END) },
     { id: "today", label: `Today · ${thisYear}`, x: boundaryX(thisYear) },

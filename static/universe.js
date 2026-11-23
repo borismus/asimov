@@ -48,6 +48,7 @@ import {
   escapeHtml,
 } from "./overlays.js";
 import { searchHelper } from "./search.js";
+import { initMinimap, updateMinimap } from "./minimap.js";
 import { isConfirmOpen } from "./confirm.js";
 import { parseLocation, pushPath, isLocalhost } from "./routing.js";
 import {
@@ -451,6 +452,7 @@ function scheduleRedraw() {
     if (!state.transform) return;
     renderAxis();
     drawLinks();
+    updateMinimap();
     const newTier = tierFor(state.transform.k);
     if (newTier !== state.tier) {
       const oldTier = state.tier;
@@ -703,6 +705,7 @@ async function init() {
     return d3.zoomIdentity.translate(tx, ty).scale(k);
   });
   renderDots();
+  initMinimap({ svg, zoom, state, isActiveQuery, searchHelper });
   initialCenter();
   scheduleRedraw();
 }

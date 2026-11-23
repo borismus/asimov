@@ -263,12 +263,63 @@ export function renderAxis() {
     .attr("x2", (d) => xForBucket(d.bucketIdx))
     .attr("y1", lineTopY);
 
+  renderEraLines(lineTopY, k);
+
   // Hand off to whoever's painting the matching year labels in the
   // header. screenX is already computed above (per-tick); pass it on
   // so the label can sit directly above the dashed line.
   if (handlers && handlers.onAxisRendered) {
     handlers.onAxisRendered(placed);
   }
+}
+
+// Two fixed lines across the board: TODAY (bold), and the end of Asimov's
+// chronology in 1993 (faint), after which the cards are later additions.
+// The x axis isn't linear in time, so each line sits in the gap between the last
+// card up to that year and the first card after it, placed by year within the gap
+// (the deck has nothing between 1993 and 2030, so both lines share one gap).
+const ASIMOV_END = 1993;
+function boundaryX(year) {
+  let before = null, after = null;
+  for (const n of state.nodes) {
+    if (n.x == null) continue;
+    if (n.year <= year) { if (!before || n.x > before.x) before = n; }
+    else if (!after || n.x < after.x) after = n;
+  }
+  if (!before) return null;
+  if (!after) return before.x + COL_WIDTH / 2;
+  const t = Math.max(0.15, Math.min(0.85, (year + 1 - before.year) / Math.max(1, after.year - before.year)));
+  return before.x + (after.x - before.x) * t;
+}
+let eraCache = null;
+function eraLines() {
+  if (eraCache && eraCache.nodes === state.nodes) return eraCache.lines;
+  const thisYear = new Date().getFullYear();
+  const lines = [
+    { id: "asimov", label: `${ASIMOV_END} · end of Asimov's chronology`, x: boundaryX(ASIMOV_END) },
+    { id: "today", label: `Today · ${thisYear}`, x: boundaryX(thisYear) },
+  ].filter((l) => l.x != null);
+  eraCache = { nodes: state.nodes, lines };
+  return lines;
+}
+function renderEraLines(lineTopY, k) {
+  const lines = eraLines();
+  const sel = gAxis.selectAll("g.era-line").data(lines, (d) => d.id);
+  sel.exit().remove();
+  const entered = sel.enter().append("g").attr("class", (d) => `era-line era-${d.id}`);
+  entered.append("line");
+  entered.append("text");
+  const all = entered.merge(sel);
+  all.select("line")
+    .attr("x1", (d) => d.x).attr("x2", (d) => d.x)
+    .attr("y1", lineTopY).attr("y2", state.worldHeight);
+  // The two lines can sit close together (the deck jumps from 1993 to 2030), so
+  // Asimov's label reads leftwards from its line, a step lower, and TODAY's rightwards.
+  all.select("text")
+    .attr("x", (d) => d.x + (d.id === "asimov" ? -6 : 6) / k)
+    .attr("y", (d) => lineTopY + (d.id === "asimov" ? 24 : 8) / k)
+    .attr("text-anchor", (d) => (d.id === "asimov" ? "end" : "start"))
+    .text((d) => d.label);
 }
 
 export function renderDots() {

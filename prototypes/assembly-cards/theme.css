@@ -56,6 +56,8 @@ body { color: #1a1a1a; }
 .site-action svg[fill="#444"], .site-action svg [fill="#444"] { fill: var(--btn-ink); }
 .site-action svg line { stroke: var(--btn-ink); }  /* style.css paints every <line> black */
 .dag-axis-tick { stroke: rgba(var(--ink-rgb), 0.18); }
+.era-asimov line { stroke: rgba(var(--ink-rgb), 0.35); }
+.era-asimov text { fill: rgba(var(--ink-rgb), 0.55); }
 .dag-axis-label { fill: rgba(var(--ink-rgb), 0.75); }
 .dag-dot { stroke: rgba(var(--ink-rgb), 0.35); }
 #search-input, #jobs-panel, #search-results { color: #1a1a1a; }

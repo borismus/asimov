@@ -196,6 +196,19 @@
   stroke-dasharray: calc(4px / var(--zoom)) calc(4px / var(--zoom));
 }
 
+/* TODAY and the end of Asimov's chronology (world.js renderEraLines). */
+.era-line { pointer-events: none; }
+.era-line line { stroke-width: calc(1px / var(--zoom)); }
+.era-line text {
+  font: 600 calc(11px / var(--zoom)) / 1 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  dominant-baseline: hanging;
+  letter-spacing: 0.04em;
+}
+.era-today line { stroke: #c0392b; stroke-width: calc(3px / var(--zoom)); }
+.era-today text { fill: #c0392b; text-transform: uppercase; font-weight: 700; }
+.era-asimov line { stroke: rgba(0, 0, 0, 0.35); stroke-dasharray: calc(10px / var(--zoom)) calc(5px / var(--zoom)); }
+.era-asimov text { fill: rgba(0, 0, 0, 0.5); font-weight: 500; }
+
 .dag-axis-label {
   font-family: "DM Serif Display", serif;
   font-size: calc(14px / var(--zoom));
@@ -315,3 +328,30 @@ g.card.is-speculative text.title {
   font-style: italic;
 }
 
+
+/* Minimap (minimap.js): the whole timeline in the bottom-right corner. It takes the
+   header's colours when the page defines them (the assembly prototype's light/dark
+   themes) and falls back to light. */
+#minimap {
+  --minimap-view: steelblue;
+  --minimap-view-fill: rgba(70, 130, 180, 0.14);
+  --minimap-match: #d4a017;
+  --minimap-pin: #c0392b;
+  --minimap-ink: var(--header-muted, #6b6b6b);
+  position: fixed;
+  right: 16px;
+  bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+  z-index: 6;
+  background: var(--header-bg, rgba(250, 248, 243, 0.92));
+  border: 1px solid var(--header-line, rgba(0, 0, 0, 0.12));
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  overflow: hidden;
+}
+#minimap canvas { display: block; cursor: crosshair; touch-action: none; }
+/* Phones: the screen is too small to spare the corner. */
+@media (max-width: 720px) {
+  #minimap { display: none; }
+}

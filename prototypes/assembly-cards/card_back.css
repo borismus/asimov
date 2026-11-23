@@ -73,3 +73,14 @@
 #search-results .offscreen-indicator.search.here { background: #fff6dc; }
 #search-results .offscreen-indicator.search.active { background: steelblue; border-color: steelblue; color: white; box-shadow: 0 2px 8px rgba(70, 130, 180, 0.45); }
 .card-back .back-later { color: #555; }
+
+/* Mini pictures of part and phenomenon cards, in one column at the left edge. */
+.card-back ul.back-thumbs { list-style: none; padding-left: 0; }
+/* Text sits centred on its picture: one line in the middle, two lines about as tall as it. */
+.card-back li.has-thumb { display: flex; align-items: center; gap: 0.4em; margin: 3px 0; min-height: 2.2em; }
+.card-back li.has-thumb > span { min-width: 0; line-height: 1.1; }
+.card-back .back-thumb {
+  flex: none; display: inline-block; width: 3.3em; height: 2.2em;
+  object-fit: cover; border-radius: 2px; border: 0.5px solid rgba(0, 0, 0, 0.35); background: #eee;
+}
+.card-back .back-thumb-none { border-style: dashed; background: transparent; }

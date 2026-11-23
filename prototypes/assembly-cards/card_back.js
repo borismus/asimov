@@ -10,6 +10,10 @@ function backHTML(d, L) {
     const n = L.byId[id];
     return n ? `<a data-pin="${escBack(id)}" href="#">${escBack(n.title)}</a>` : escBack(id);
   };
+  // A small picture of a part or phenomenon card, beside its name.
+  const thumb = (id) => L.byId[id]
+    ? `<img class="back-thumb" src="/static/images/entries-v2/${encodeURIComponent(id)}.jpg" alt="" loading="lazy" onerror="this.style.visibility='hidden'">`
+    : `<span class="back-thumb back-thumb-none"></span>`;
   let h = "";
   const jobLink = (job, text, cls = "") =>
     `<a class="back-joblink ${cls}" data-job="${escBack(job)}" href="#" title="Job: ${escBack(job)}">${escBack(text)}</a>`;
@@ -24,42 +28,34 @@ function backHTML(d, L) {
     if (!d.slots.length) {
       h += `<div class="back-h">Parts</div><div class="back-none">A basic part: none of its parts are in the deck.</div>`;
     }
-    const filler = (s) => {
+    // One row per part, in a column of pictures at the left: [picture] Card: job.
+    const row = (s) => {
+      const j = jobLink(s.job, s.job, "back-slot");
       const part = s.part ? ` <span class="back-part">(${escBack(s.part)})</span>` : "";
       const why = s.note ? ` <span class="back-why">${escBack(s.note)}</span>` : "";
       // Newer cards that took over this job: "Carriage springs, later Rubber tire".
       const swaps = (s.later || []).filter((id) => L.byId[id]);
       const then = swaps.length ? `<span class="back-later">, later ${swaps.map(link).join(" and ")}</span>` : "";
-      if (!s.fill) return `<span class="back-gap">${escBack(s.gap)}${part}${why} <span class="back-note">its key part, no card</span></span>${then}`;
+      if (!s.fill) {
+        return `<li class="has-thumb">${thumb(null)}<span><span class="back-gap">${escBack(s.gap)}</span>: ${j}${part}${why} <span class="back-note">its key part, no card</span>${then}</span></li>`;
+      }
       const n = L.byId[s.fill];
       const later = n && n.year > d.year ? ` <span class="back-note">added later</span>` : "";
-      return `${link(s.fill)}${part}${why}${later}${then}`;
+      return `<li class="has-thumb">${thumb(s.fill)}<span>${link(s.fill)}: ${j}${part}${why}${later}${then}</span></li>`;
     };
-    if (d.slots.length) {
-      // One bullet per job; a job done by several cards lists them underneath.
-      const byJob = new Map();
-      for (const s of d.slots) (byJob.get(s.job) || byJob.set(s.job, []).get(s.job)).push(s);
-      h += `<div class="back-h">Parts</div><ul>`;
-      for (const [job, ss] of byJob) {
-        const j = jobLink(job, job, "back-slot");
-        h += ss.length === 1
-          ? `<li>${j}: ${filler(ss[0])}</li>`
-          : `<li>${j}:<ul class="back-sub">${ss.map((x) => `<li>${filler(x)}</li>`).join("")}</ul></li>`;
-      }
-      h += "</ul>";
-    }
+    if (d.slots.length) h += `<div class="back-h">Parts</div><ul class="back-thumbs">${d.slots.map(row).join("")}</ul>`;
   }
   // The effects it works by: each bullet is an effect and the card that describes it.
   if (d.phen && d.phen.length) {
-    h += `<div class="back-h">Works by</div><ul>`;
+    h += `<div class="back-h">Works by</div><ul class="back-thumbs">`;
     for (const p of d.phen) {
       const fx = fxLink(p.effect);
       if (p.id) {
         const n = L.byId[p.id];
         const later = n && n.year > d.year ? ` <span class="back-note">explained later</span>` : "";
-        h += `<li>${fx}: ${link(p.id)}${later}</li>`;
+        h += `<li class="has-thumb">${thumb(p.id)}<span>${link(p.id)}: ${fx}${later}</span></li>`;
       } else {
-        h += `<li>${fx}: <span class="back-gap">${escBack(p.gap)}</span> <span class="back-note">no card yet</span></li>`;
+        h += `<li class="has-thumb">${thumb(null)}<span><span class="back-gap">${escBack(p.gap)}</span>: ${fx} <span class="back-note">no card yet</span></span></li>`;
       }
     }
     h += "</ul>";

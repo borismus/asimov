@@ -1,5 +1,9 @@
 """Regenerate per-invention images using gpt-image-2, era-styled, 3:2 landscape.
 
+By default the images come from Codex's built-in image generation, on Boris's ChatGPT
+subscription (`--provider codex`): no API key, no per-image bill. `--provider openai` uses the
+paid API with OPENAI_API_KEY instead, and `--provider gemini` uses Imagen.
+
 See /Users/boris/.claude/plans/polymorphic-skipping-sifakis.md for the design.
 Edit the prompts in scripts/prompts/ to iterate on style; no code changes needed.
 """
@@ -18,7 +22,10 @@ import json
 import os
 import random
 import re
+import shutil
+import subprocess
 import sys
+import tempfile
 import time
 from pathlib import Path
 
@@ -38,9 +45,12 @@ GEMINI_ASPECT = "3:2"
 SAVE_W, SAVE_H = 720, 480
 JPG_QUALITY = 88
 CONCURRENCY = 4
+CODEX_TIMEOUT_S = 6 * 60   # about a minute an image; generous for busy hours
+CODEX_IMAGES = Path.home() / ".codex" / "generated_images"
 
 # USD per generated image. Calibrated from real billing where possible.
 COST_PER_IMAGE: dict[tuple[str, str], float] = {
+    ("codex", "chatgpt-subscription"): 0.0,     # counts against the ChatGPT plan's usage limits
     ("openai", "gpt-image-2"): 0.0479,          # observed: $6.18 / 129 images at 1536x1024
     ("openai", "gpt-image-1"): 0.04,
     ("gemini", "imagen-4.0-generate-001"): 0.04,
@@ -54,7 +64,8 @@ ERAS: list[tuple[str, int]] = [
     ("renaissance", 1700),
     ("enlightenment_industrial", 1900),
     ("early_20c", 1945),
-    ("modern", 10_000),
+    ("modern", 1994),          # mid-century editorial gouache, up to the end of Asimov's chronology
+    ("contemporary", 10_000),  # flat vector: everything after 1993, including the Future Technologies
 ]
 
 
@@ -122,16 +133,20 @@ def load_inventions(tsv: Path) -> list[Invention]:
 
 def load_cards_json(path: Path) -> list[Invention]:
     """Cards that aren't in the deck TSV (the assembly prototype's supporting and phenomenon
-    cards), in the same shape, so they get the same prompt as a deck card."""
+    cards), in the same shape, so they get the same prompt as a deck card. An optional `draw`
+    says exactly what to picture (geometry illustrators get wrong); it's added after the summary."""
     out: list[Invention] = []
     for c in json.loads(path.read_text(encoding="utf-8")):
         year_raw = str(c["year"]).strip()
+        summary = (c.get("summary") or c.get("description") or "").strip()
+        if c.get("draw"):
+            summary = f"{summary} Draw it like this: {c['draw'].strip()}"
         out.append(Invention(
             id=c["id"],
             year_raw=year_raw,
             year=parse_year(year_raw),
             title=c["title"].strip(),
-            summary=c.get("summary", "").strip(),
+            summary=summary,
             inventor=c.get("inventor", "").strip(),
             location=c.get("location", "").strip(),
             field=c.get("field", "").strip(),
@@ -293,7 +308,76 @@ class GeminiProvider:
         return [g.image.image_bytes for g in resp.generated_images]
 
 
+class CodexFailed(RuntimeError):
+    pass
+
+
+class CodexProvider:
+    """Codex's built-in image tool, signed in with ChatGPT, so it runs on the subscription.
+
+    Each image is one `codex exec` in an empty temp folder, asked to draw the prompt and save it
+    there as picture.png. OPENAI_API_KEY and friends are removed from its environment so it can
+    never fall back to API billing. Codex also keeps a copy under
+    ~/.codex/generated_images/<thread id>/, used if nothing was saved in the folder; the thread id
+    comes from its --json events, so parallel runs can't pick up each other's images.
+    Ported from zwicky's CodexImageBackend (app/pictures.ts).
+    """
+    name = "codex"
+    model = "chatgpt-subscription"
+
+    def __init__(self) -> None:
+        if not shutil.which("codex"):
+            raise RuntimeError("codex CLI not found (brew install codex, then `codex login`)")
+        try:
+            mode = json.loads((Path.home() / ".codex" / "auth.json").read_text()).get("auth_mode")
+        except (OSError, ValueError):
+            mode = None
+        if mode != "chatgpt":
+            raise RuntimeError(f"codex isn't signed in with ChatGPT (auth_mode={mode!r}); run `codex login`")
+
+    async def generate(self, prompt: str, n: int) -> list[bytes]:
+        return [await asyncio.to_thread(self._one, prompt) for _ in range(n)]
+
+    def _one(self, prompt: str) -> bytes:
+        ask = (
+            "Use your built-in image generation tool to make exactly one image from the description "
+            "below, as a 3:2 landscape image (1536x1024), then save the image file in the current "
+            "folder as picture.png. Don't write any code, and don't draw it yourself any other way."
+            f"\n\nDescription:\n{prompt}"
+        )
+        env = {k: v for k, v in os.environ.items() if not re.match(r"^(OPENAI_|AZURE_OPENAI|CODEX_API_KEY)", k)}
+        with tempfile.TemporaryDirectory(prefix="codex-image-") as cwd:
+            try:
+                out = subprocess.run(
+                    ["codex", "exec", "--skip-git-repo-check", "--sandbox", "workspace-write",
+                     "--ephemeral", "--json", "-C", cwd, "-"],
+                    input=ask, cwd=cwd, env=env, capture_output=True, text=True, timeout=CODEX_TIMEOUT_S,
+                )
+            except subprocess.TimeoutExpired:
+                raise CodexFailed(f"codex timed out after {CODEX_TIMEOUT_S}s")
+            thread = None
+            for line in out.stdout.splitlines():
+                try:
+                    ev = json.loads(line)
+                except ValueError:
+                    continue
+                if ev.get("type") == "thread.started":
+                    thread = ev.get("thread_id")
+            found = Path(cwd) / "picture.png"
+            if not found.exists():
+                pics = sorted(Path(cwd).glob("*.png")) + sorted(Path(cwd).glob("*.jp*g")) + sorted(Path(cwd).glob("*.webp"))
+                if not pics and thread and (CODEX_IMAGES / thread).is_dir():
+                    pics = sorted((CODEX_IMAGES / thread).iterdir(), key=lambda f: f.stat().st_mtime)
+                if not pics:
+                    tail = (out.stderr or out.stdout)[-400:].strip()
+                    raise CodexFailed(f"codex made no image (exit {out.returncode}): {tail}")
+                found = pics[-1]
+            return found.read_bytes()
+
+
 def build_provider(name: str):
+    if name == "codex":
+        return CodexProvider()
     if name == "openai":
         if not os.getenv("OPENAI_API_KEY"):
             raise RuntimeError("OPENAI_API_KEY not set")
@@ -310,7 +394,7 @@ async def _generate_with_retry(provider, prompt: str, n: int) -> list[bytes]:
     for attempt in range(3):
         try:
             return await provider.generate(prompt, n)
-        except (RateLimitError, APITimeoutError, asyncio.TimeoutError) as e:
+        except (RateLimitError, APITimeoutError, asyncio.TimeoutError, CodexFailed) as e:
             if attempt == 2:
                 raise
             await asyncio.sleep(backoff)
@@ -378,7 +462,7 @@ async def run(
     load_dotenv(ROOT / ".env")
     provider = build_provider(provider_name)
     per_image = COST_PER_IMAGE.get((provider.name, provider.model), 0.0)
-    if per_image == 0.0:
+    if (provider.name, provider.model) not in COST_PER_IMAGE:
         print(f"warning: no cost entry for ({provider.name}, {provider.model}); cost will report $0.00", file=sys.stderr)
     estimated = per_image * len(inventions) * n
     print(f"provider={provider.name} model={provider.model} per-image=${per_image:.4f} estimated_total=${estimated:.2f}")
@@ -452,8 +536,9 @@ def main() -> None:
     p.add_argument("--force", action="store_true", help="overwrite existing output")
     p.add_argument("--dry-run", action="store_true", help="print prompts, generate nothing")
     p.add_argument("--out-dir", type=Path, default=DEFAULT_OUT_DIR)
-    p.add_argument("--provider", choices=("openai", "gemini"), default="openai",
-                   help="image provider (default openai)")
+    p.add_argument("--provider", choices=("codex", "openai", "gemini"), default="codex",
+                   help="image provider: codex (default; ChatGPT subscription, no API key), "
+                        "openai (paid API, OPENAI_API_KEY) or gemini")
     p.add_argument("--cards-json", type=Path,
                    help="also load cards not in the deck TSV from a JSON list of "
                         "{id, year, title, summary, inventor, location, field} "
@@ -483,7 +568,7 @@ def main() -> None:
         print("nothing to do.")
         return
 
-    print(f"target: {len(picked)} inventions, n={args.n} each, out={args.out_dir.relative_to(ROOT)}")
+    print(f"target: {len(picked)} inventions, n={args.n} each, out={args.out_dir.relative_to(ROOT) if args.out_dir.is_relative_to(ROOT) else args.out_dir}")
     confirm_full_run(picked, args.force)
 
     asyncio.run(run(picked, args.out_dir, args.n, args.dry_run, args.provider))

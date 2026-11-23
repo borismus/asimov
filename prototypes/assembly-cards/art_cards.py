@@ -22,7 +22,7 @@ for i in sorted(NEW_CARDS):
         continue
     title, year, text = NEW_CARDS[i]
     who, where = NEW_CARD_WHO.get(i, ('', ''))
-    phenomenon = i not in TYPES
+    phenomenon = TYPES.get(i, 'phenomenon') == 'phenomenon'
     cards.append({'id': i, 'year': year_raw(year), 'title': title, 'summary': text,
                   'inventor': who, 'location': where, 'field': 'Science' if phenomenon else 'Design'})
 out = os.path.join(HERE, 'art_cards.json')

@@ -1,0 +1,884 @@
+[
+ {
+  "id": "flush-toilet",
+  "name": "Flush toilet",
+  "year": 1775,
+  "how": "Valve, S-bend trap; ★ standing water in the bend seals out sewer gas",
+  "note": ""
+ },
+ {
+  "id": "refrigerated-transport",
+  "name": "Refrigerated transport",
+  "year": 1880,
+  "how": "Refrigerators, steamship, railroad (the cold chain)",
+  "note": ""
+ },
+ {
+  "id": "hydroelectric-power-station",
+  "name": "Hydroelectric power station",
+  "year": 1882,
+  "how": "Dam, water turbine, generator; electromagnetic induction",
+  "note": ""
+ },
+ {
+  "id": "dishwasher",
+  "name": "Dishwasher",
+  "year": 1886,
+  "how": "Electric motor, pump, spray arms",
+  "note": ""
+ },
+ {
+  "id": "tractor",
+  "name": "Tractor",
+  "year": 1892,
+  "how": "Internal-combustion engine, rubber tires",
+  "note": ""
+ },
+ {
+  "id": "escalator",
+  "name": "Escalator",
+  "year": 1896,
+  "how": "Electric motor, chain, steps",
+  "note": ""
+ },
+ {
+  "id": "vacuum-cleaner",
+  "name": "Vacuum cleaner",
+  "year": 1901,
+  "how": "Electric motor, fan, filter",
+  "note": ""
+ },
+ {
+  "id": "air-conditioning",
+  "name": "Air conditioning",
+  "year": 1902,
+  "how": "Compressor, refrigerant; evaporation soaks up heat",
+  "note": ""
+ },
+ {
+  "id": "geothermal-power",
+  "name": "Geothermal power",
+  "year": 1904,
+  "how": "Steam turbine, generator",
+  "note": ""
+ },
+ {
+  "id": "water-chlorination",
+  "name": "Water chlorination",
+  "year": 1908,
+  "how": "Chlorine kills germs in drinking water",
+  "note": ""
+ },
+ {
+  "id": "washing-machine",
+  "name": "Washing machine",
+  "year": 1908,
+  "how": "Electric motor, drum",
+  "note": ""
+ },
+ {
+  "id": "traffic-light",
+  "name": "Traffic light",
+  "year": 1912,
+  "how": "Electric light, timer",
+  "note": ""
+ },
+ {
+  "id": "stainless-steel",
+  "name": "Stainless steel",
+  "year": 1913,
+  "how": "Steel, chromium; ★ chromium forms a thin self-healing oxide skin",
+  "note": ""
+ },
+ {
+  "id": "zipper",
+  "name": "Zipper",
+  "year": 1913,
+  "how": "Interlocking teeth, slider",
+  "note": ""
+ },
+ {
+  "id": "sewage-treatment",
+  "name": "Sewage treatment",
+  "year": 1914,
+  "how": "★ bacteria eat the waste in aerated tanks (activated sludge)",
+  "note": ""
+ },
+ {
+  "id": "drywall",
+  "name": "Drywall",
+  "year": 1916,
+  "how": "Gypsum board",
+  "note": ""
+ },
+ {
+  "id": "frozen-food",
+  "name": "Frozen food",
+  "year": 1924,
+  "how": "Refrigerators; ★ quick freezing makes small ice crystals that don't burst cells",
+  "note": ""
+ },
+ {
+  "id": "prestressed-concrete",
+  "name": "Prestressed concrete",
+  "year": 1928,
+  "how": "Reinforced concrete, steel tendons",
+  "note": ""
+ },
+ {
+  "id": "hybrid-corn",
+  "name": "Hybrid corn",
+  "year": 1930,
+  "how": "★ crossing two inbred lines gives a vigorous hybrid",
+  "note": ""
+ },
+ {
+  "id": "fibreglass",
+  "name": "Fibreglass",
+  "year": 1932,
+  "how": "Glass drawn into fine fibres",
+  "note": ""
+ },
+ {
+  "id": "plastics-polyethylene",
+  "name": "Plastics (polyethylene)",
+  "year": 1933,
+  "how": "Ethylene; isotactic polymers",
+  "note": ""
+ },
+ {
+  "id": "blood-bank",
+  "name": "Blood bank",
+  "year": 1937,
+  "how": "Refrigerators, anticoagulant; blood types",
+  "note": ""
+ },
+ {
+  "id": "heat-pump",
+  "name": "Heat pump",
+  "year": 1940,
+  "how": "Compressor; evaporation soaks up heat",
+  "note": ""
+ },
+ {
+  "id": "offshore-oil-platform",
+  "name": "Offshore oil platform",
+  "year": 1947,
+  "how": "Oil wells at sea",
+  "note": ""
+ },
+ {
+  "id": "disposable-diaper",
+  "name": "Disposable diaper",
+  "year": 1948,
+  "how": "Absorbent pad, plastic cover",
+  "note": ""
+ },
+ {
+  "id": "randomized-controlled-trial",
+  "name": "Randomized controlled trial",
+  "year": 1948,
+  "how": "★ chance assignment cancels out hidden differences (statistics)",
+  "note": ""
+ },
+ {
+  "id": "tower-crane",
+  "name": "Tower crane",
+  "year": 1949,
+  "how": "Steel, electric motors, counterweight",
+  "note": ""
+ },
+ {
+  "id": "cataract-lens-implant",
+  "name": "Cataract lens implant",
+  "year": 1949,
+  "how": "Plastic lens; bends light",
+  "note": ""
+ },
+ {
+  "id": "credit-card",
+  "name": "Credit card",
+  "year": 1950,
+  "how": "Magnetic stripe (later chip)",
+  "note": ""
+ },
+ {
+  "id": "centre-pivot-irrigation",
+  "name": "Centre-pivot irrigation",
+  "year": 1952,
+  "how": "Irrigation, sprinklers",
+  "note": ""
+ },
+ {
+  "id": "hearing-aid",
+  "name": "Hearing aid",
+  "year": 1952,
+  "how": "Transistor, microphone, earphone",
+  "note": ""
+ },
+ {
+  "id": "tunnel-boring-machine",
+  "name": "Tunnel boring machine",
+  "year": 1952,
+  "how": "Rotating cutter head, conveyor",
+  "note": ""
+ },
+ {
+  "id": "radiotherapy",
+  "name": "Radiotherapy",
+  "year": 1953,
+  "how": "Linear accelerator, X-rays",
+  "note": ""
+ },
+ {
+  "id": "hvdc-power-lines",
+  "name": "HVDC power lines",
+  "year": 1954,
+  "how": "Thyristors; direct current over long distances",
+  "note": ""
+ },
+ {
+  "id": "nuclear-submarine",
+  "name": "Nuclear submarine",
+  "year": 1954,
+  "how": "Nuclear reactor, submarine",
+  "note": ""
+ },
+ {
+  "id": "transistor-radio",
+  "name": "Transistor radio",
+  "year": 1954,
+  "how": "Transistor, radio",
+  "note": ""
+ },
+ {
+  "id": "container-shipping",
+  "name": "Container shipping",
+  "year": 1956,
+  "how": "Standard boxes, cranes, ships",
+  "note": ""
+ },
+ {
+  "id": "disposable-syringe",
+  "name": "Disposable syringe",
+  "year": 1956,
+  "how": "Plastic barrel, steel needle",
+  "note": ""
+ },
+ {
+  "id": "flexible-endoscope",
+  "name": "Flexible endoscope",
+  "year": 1957,
+  "how": "Fiber optics; total internal reflection",
+  "note": ""
+ },
+ {
+  "id": "intercontinental-ballistic-missile",
+  "name": "Intercontinental ballistic missile",
+  "year": 1957,
+  "how": "Liquid-fuel rockets, nuclear fusion bomb, inertial guidance",
+  "note": ""
+ },
+ {
+  "id": "spandex",
+  "name": "Spandex",
+  "year": 1958,
+  "how": "Polyurethane fibre",
+  "note": "not sure if this is important"
+ },
+ {
+  "id": "aluminium-drink-can",
+  "name": "Aluminium drink can",
+  "year": 1959,
+  "how": "Aluminum",
+  "note": ""
+ },
+ {
+  "id": "liquefied-natural-gas-tanker",
+  "name": "Liquefied natural gas tanker",
+  "year": 1959,
+  "how": "Refrigeration; ★ cooling gas to a liquid shrinks it 600 times",
+  "note": ""
+ },
+ {
+  "id": "three-point-seat-belt",
+  "name": "Three-point seat belt",
+  "year": 1959,
+  "how": "—",
+  "note": ""
+ },
+ {
+  "id": "turbofan-jet-engine",
+  "name": "Turbofan jet engine",
+  "year": 1960,
+  "how": "Jet engine with a big front fan",
+  "note": ""
+ },
+ {
+  "id": "planetary-space-probes",
+  "name": "Planetary space probes",
+  "year": 1962,
+  "how": "Rockets, radio, photovoltaic cells",
+  "note": ""
+ },
+ {
+  "id": "artificial-hip-joint-replacement",
+  "name": "Artificial hip / joint replacement",
+  "year": 1962,
+  "how": "Steel or titanium, plastic",
+  "note": ""
+ },
+ {
+  "id": "carbon-fibre-composites",
+  "name": "Carbon-fibre composites",
+  "year": 1963,
+  "how": "★ stiff fibres set in resin",
+  "note": ""
+ },
+ {
+  "id": "beta-blockers",
+  "name": "Beta blockers",
+  "year": 1964,
+  "how": "★ blocks adrenaline's signal to the heart",
+  "note": ""
+ },
+ {
+  "id": "fax-machine",
+  "name": "Fax machine",
+  "year": 1964,
+  "how": "Photoelectric scanner, telephone line",
+  "note": ""
+ },
+ {
+  "id": "high-speed-rail",
+  "name": "High-speed rail",
+  "year": 1964,
+  "how": "Electric motors, overhead power",
+  "note": ""
+ },
+ {
+  "id": "drip-irrigation",
+  "name": "Drip irrigation",
+  "year": 1965,
+  "how": "—",
+  "note": ""
+ },
+ {
+  "id": "night-vision-goggles",
+  "name": "Night-vision goggles",
+  "year": 1965,
+  "how": "★ an image intensifier multiplies faint light",
+  "note": ""
+ },
+ {
+  "id": "dental-implant",
+  "name": "Dental implant",
+  "year": 1965,
+  "how": "Titanium; ★ bone grows onto titanium (osseointegration)",
+  "note": ""
+ },
+ {
+  "id": "high-yield-dwarf-wheat-and-rice",
+  "name": "High-yield dwarf wheat and rice",
+  "year": 1966,
+  "how": "Chemical fertilizer (the Green Revolution)",
+  "note": ""
+ },
+ {
+  "id": "mammography",
+  "name": "Mammography",
+  "year": 1966,
+  "how": "X-rays, photographic film",
+  "note": ""
+ },
+ {
+  "id": "atm-cash-machine",
+  "name": "ATM cash machine",
+  "year": 1967,
+  "how": "Microchips, magnetic stripe",
+  "note": ""
+ },
+ {
+  "id": "oral-rehydration-therapy",
+  "name": "Oral rehydration therapy",
+  "year": 1968,
+  "how": "★ sugar helps the gut soak up salt and water",
+  "note": ""
+ },
+ {
+  "id": "quartz-watch",
+  "name": "Quartz watch",
+  "year": 1969,
+  "how": "Piezoelectricity, microchips",
+  "note": ""
+ },
+ {
+  "id": "waterproof-breathable-fabric",
+  "name": "Waterproof breathable fabric",
+  "year": 1969,
+  "how": "★ pores too small for water drops, big enough for vapour",
+  "note": ""
+ },
+ {
+  "id": "email",
+  "name": "Email",
+  "year": 1971,
+  "how": "Internet",
+  "note": ""
+ },
+ {
+  "id": "precision-guided-bombs",
+  "name": "Precision-guided bombs",
+  "year": 1972,
+  "how": "Laser, GPS",
+  "note": ""
+ },
+ {
+  "id": "artemisinin-malaria-drug",
+  "name": "Artemisinin malaria drug",
+  "year": 1972,
+  "how": "★ a wormwood compound kills malaria parasites",
+  "note": ""
+ },
+ {
+  "id": "video-game-console",
+  "name": "Video game console",
+  "year": 1972,
+  "how": "Microchips, television",
+  "note": ""
+ },
+ {
+  "id": "graphical-user-interface",
+  "name": "Graphical user interface",
+  "year": 1973,
+  "how": "Computer mouse, display",
+  "note": ""
+ },
+ {
+  "id": "plastic-bottle",
+  "name": "Plastic bottle",
+  "year": 1973,
+  "how": "PET plastic",
+  "note": ""
+ },
+ {
+  "id": "pulse-oximeter",
+  "name": "Pulse oximeter",
+  "year": 1974,
+  "how": "LEDs, photodiode; ★ oxygen-rich blood absorbs red and infrared light differently",
+  "note": ""
+ },
+ {
+  "id": "digital-camera",
+  "name": "Digital camera",
+  "year": 1975,
+  "how": "CCD, microchips, flash memory",
+  "note": ""
+ },
+ {
+  "id": "pet-scanner",
+  "name": "PET scanner",
+  "year": 1975,
+  "how": "★ a positron and an electron vanish into two gamma rays",
+  "note": ""
+ },
+ {
+  "id": "cruise-missile",
+  "name": "Cruise missile",
+  "year": 1977,
+  "how": "Jet engine, terrain-matching guidance",
+  "note": ""
+ },
+ {
+  "id": "personal-computer",
+  "name": "Personal computer",
+  "year": 1977,
+  "how": "Microchips, DRAM, computer mouse, hard disk drive",
+  "note": ""
+ },
+ {
+  "id": "public-key-encryption",
+  "name": "Public-key encryption",
+  "year": 1977,
+  "how": "★ multiplying primes is easy, factoring the product is hard (maths)",
+  "note": ""
+ },
+ {
+  "id": "anti-lock-brakes",
+  "name": "Anti-lock brakes",
+  "year": 1978,
+  "how": "Microchips, valves, wheel sensors",
+  "note": ""
+ },
+ {
+  "id": "portable-music-player",
+  "name": "Portable music player",
+  "year": 1979,
+  "how": "Cassette or flash memory, earphones",
+  "note": ""
+ },
+ {
+  "id": "spreadsheet",
+  "name": "Spreadsheet",
+  "year": 1979,
+  "how": "Personal computer",
+  "note": ""
+ },
+ {
+  "id": "wind-turbine",
+  "name": "Wind turbine",
+  "year": 1980,
+  "how": "Generator; lift (aerodynamics)",
+  "note": "need it to be distinct from windmill? but this maybe fine"
+ },
+ {
+  "id": "airbag",
+  "name": "Airbag",
+  "year": 1981,
+  "how": "Accelerometer; ★ a fast reaction makes a burst of gas",
+  "note": ""
+ },
+ {
+  "id": "hepatitis-b-vaccine",
+  "name": "Hepatitis B vaccine",
+  "year": 1981,
+  "how": "Recombinant DNA; vaccination",
+  "note": ""
+ },
+ {
+  "id": "compact-disc",
+  "name": "Compact disc",
+  "year": 1982,
+  "how": "Laser, photodiode; ★ error-correcting codes (maths)",
+  "note": ""
+ },
+ {
+  "id": "mobile-phone",
+  "name": "Mobile phone",
+  "year": 1983,
+  "how": "Microchips, radio antenna, lithium battery; ★ cellular frequency reuse",
+  "note": ""
+ },
+ {
+  "id": "insecticide-treated-bed-nets",
+  "name": "Insecticide-treated bed nets",
+  "year": 1983,
+  "how": "Netting, insecticide",
+  "note": ""
+ },
+ {
+  "id": "pcr-dna-copying",
+  "name": "PCR (DNA copying)",
+  "year": 1983,
+  "how": "★ a heat-proof enzyme copies DNA, doubling it each cycle",
+  "note": ""
+ },
+ {
+  "id": "stealth-aircraft",
+  "name": "Stealth aircraft",
+  "year": 1983,
+  "how": "★ shapes and coatings that scatter radar away",
+  "note": ""
+ },
+ {
+  "id": "internet",
+  "name": "Internet",
+  "year": 1983,
+  "how": "Fiber optic communication, microchips",
+  "note": ""
+ },
+ {
+  "id": "3d-printing",
+  "name": "3D printing",
+  "year": 1986,
+  "how": "Laser, inkjet printer",
+  "note": ""
+ },
+ {
+  "id": "flash-memory",
+  "name": "Flash memory",
+  "year": 1987,
+  "how": "Quantum tunnelling",
+  "note": ""
+ },
+ {
+  "id": "antidepressants-ssris",
+  "name": "Antidepressants (SSRIs)",
+  "year": 1987,
+  "how": "★ blocks the reuptake of serotonin between nerve cells",
+  "note": ""
+ },
+ {
+  "id": "statins",
+  "name": "Statins",
+  "year": 1987,
+  "how": "★ blocks the liver's cholesterol-making enzyme",
+  "note": ""
+ },
+ {
+  "id": "keyhole-surgery",
+  "name": "Keyhole surgery",
+  "year": 1987,
+  "how": "Fiber optics, video camera",
+  "note": ""
+ },
+ {
+  "id": "rapid-test-strip",
+  "name": "Rapid test strip",
+  "year": 1988,
+  "how": "Monoclonal antibodies, capillary action",
+  "note": ""
+ },
+ {
+  "id": "gas-turbine-power-station",
+  "name": "Gas-turbine power station",
+  "year": 1990,
+  "how": "Jet engine on the ground, steam turbine (combined cycle)",
+  "note": "are these common?"
+ },
+ {
+  "id": "lithium-ion-battery",
+  "name": "Lithium-ion battery",
+  "year": 1991,
+  "how": "★ lithium ions slip between graphite layers",
+  "note": ""
+ },
+ {
+  "id": "world-wide-web",
+  "name": "World Wide Web",
+  "year": 1991,
+  "how": "Internet",
+  "note": ""
+ },
+ {
+  "id": "compressed-media",
+  "name": "Compressed media",
+  "year": 1992,
+  "how": "★ the ear misses quiet sounds next to loud ones; Fourier analysis",
+  "note": "Boris: the title, not MP3"
+ },
+ {
+  "id": "military-drones",
+  "name": "Military drones",
+  "year": 1995,
+  "how": "Aircraft, satellite link, cameras",
+  "note": ""
+ },
+ {
+  "id": "online-shopping",
+  "name": "Online shopping",
+  "year": 1995,
+  "how": "Internet, credit card",
+  "note": ""
+ },
+ {
+  "id": "laser-eye-surgery",
+  "name": "Laser eye surgery",
+  "year": 1995,
+  "how": "Laser; photodissociation",
+  "note": "Boris: LASIK is a brand"
+ },
+ {
+  "id": "antiretroviral-hiv-therapy",
+  "name": "Antiretroviral HIV therapy",
+  "year": 1996,
+  "how": "★ the virus copies itself with reverse transcriptase",
+  "note": ""
+ },
+ {
+  "id": "white-led-lighting",
+  "name": "White LED lighting",
+  "year": 1996,
+  "how": "LEDs, phosphor; fluorescence",
+  "note": ""
+ },
+ {
+  "id": "genetically-modified-crops",
+  "name": "Genetically modified crops",
+  "year": 1996,
+  "how": "Recombinant DNA",
+  "note": ""
+ },
+ {
+  "id": "wi-fi",
+  "name": "Wi-Fi",
+  "year": 1997,
+  "how": "Radio antenna, microchips; Fourier analysis",
+  "note": ""
+ },
+ {
+  "id": "hybrid-car",
+  "name": "Hybrid car",
+  "year": 1997,
+  "how": "Gasoline engine, electric motor, battery",
+  "note": ""
+ },
+ {
+  "id": "mars-rovers",
+  "name": "Mars rovers",
+  "year": 1997,
+  "how": "Robots, radio, photovoltaic cells",
+  "note": ""
+ },
+ {
+  "id": "ion-thruster",
+  "name": "Ion thruster",
+  "year": 1998,
+  "how": "★ an electric field flings ions out the back",
+  "note": "is this effective? what does it power?"
+ },
+ {
+  "id": "search-engine",
+  "name": "Search engine",
+  "year": 1998,
+  "how": "★ pages ranked by the links pointing at them (maths)",
+  "note": ""
+ },
+ {
+  "id": "continuous-glucose-monitor-insulin-pump",
+  "name": "Continuous glucose monitor / insulin pump",
+  "year": 1999,
+  "how": "Microchips, enzyme sensor",
+  "note": ""
+ },
+ {
+  "id": "short-range-wireless-link",
+  "name": "Short-range wireless link",
+  "year": 1999,
+  "how": "Radio, microchips",
+  "note": ""
+ },
+ {
+  "id": "fracking",
+  "name": "Fracking",
+  "year": 2000,
+  "how": "Oil wells, horizontal drilling",
+  "note": ""
+ },
+ {
+  "id": "robotic-surgery",
+  "name": "Robotic surgery",
+  "year": 2000,
+  "how": "Robots, video camera",
+  "note": ""
+ },
+ {
+  "id": "video-calling",
+  "name": "Video calling",
+  "year": 2003,
+  "how": "Internet, digital camera",
+  "note": ""
+ },
+ {
+  "id": "social-media",
+  "name": "Social media",
+  "year": 2004,
+  "how": "Internet, smartphone",
+  "note": ""
+ },
+ {
+  "id": "streaming-video",
+  "name": "Streaming video",
+  "year": 2005,
+  "how": "Internet, compressed media",
+  "note": ""
+ },
+ {
+  "id": "cloud-data-centres",
+  "name": "Cloud data centres",
+  "year": 2006,
+  "how": "Personal computers by the thousand, internet",
+  "note": ""
+ },
+ {
+  "id": "mobile-money",
+  "name": "Mobile payments",
+  "year": 2007,
+  "how": "Mobile phone, text messages",
+  "note": "i am reacting to the title. mobile payments maybe? or smartphone payments?"
+ },
+ {
+  "id": "smartphone",
+  "name": "Smartphone",
+  "year": 2007,
+  "how": "Microchips, touchscreen, LCD, lithium-ion battery, GPS, CCD; ★ MEMS accelerometer",
+  "note": ""
+ },
+ {
+  "id": "electric-car",
+  "name": "Electric car",
+  "year": 2008,
+  "how": "Lithium-ion battery, electric motors, rare-earth magnet; electromagnetic induction",
+  "note": ""
+ },
+ {
+  "id": "quadcopter-drone",
+  "name": "Quadcopter drone",
+  "year": 2010,
+  "how": "Electric motors, lithium-ion battery, gyroscope, GPS",
+  "note": ""
+ },
+ {
+  "id": "voice-assistants",
+  "name": "Voice assistants",
+  "year": 2011,
+  "how": "Speech recognition, deep learning",
+  "note": ""
+ },
+ {
+  "id": "crispr-gene-editing",
+  "name": "CRISPR gene editing",
+  "year": 2012,
+  "how": "Recombinant DNA; ★ bacteria cut and remember viral DNA",
+  "note": ""
+ },
+ {
+  "id": "deep-learning",
+  "name": "Deep learning",
+  "year": 2012,
+  "how": "Microchips; ★ gradient descent (maths)",
+  "note": ""
+ },
+ {
+  "id": "reusable-rocket-booster",
+  "name": "Reusable rocket booster",
+  "year": 2015,
+  "how": "Liquid-fuel rockets, GPS",
+  "note": ""
+ },
+ {
+  "id": "glp-1-drugs",
+  "name": "GLP-1 drugs",
+  "year": 2017,
+  "how": "★ a gut hormone tells the brain you're full",
+  "note": ""
+ },
+ {
+  "id": "satellite-internet-constellations",
+  "name": "Satellite internet constellations",
+  "year": 2019,
+  "how": "Communications satellites, reusable rockets",
+  "note": ""
+ },
+ {
+  "id": "self-driving-cars",
+  "name": "Self-driving cars",
+  "year": 2020,
+  "how": "Laser rangefinder, GPS, deep learning",
+  "note": ""
+ },
+ {
+  "id": "mrna-vaccines",
+  "name": "mRNA vaccines",
+  "year": 2020,
+  "how": "Synthetic gene; protein synthesis, vaccination",
+  "note": ""
+ },
+ {
+  "id": "large-language-models",
+  "name": "Large language models",
+  "year": 2022,
+  "how": "Deep learning, microchips",
+  "note": ""
+ }
+]

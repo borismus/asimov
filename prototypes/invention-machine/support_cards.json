@@ -1,0 +1,20 @@
+[
+ {"id": "centrifugal-pump", "gap": "centrifugal pump", "title": "Centrifugal pump", "year": 1851, "inventor": "John Appold", "location": "England", "type": "object",
+  "description": "Moves water by flinging it. A spinning wheel of curved vanes throws water outward into a snail-shaped casing, which slows it into pressure, while more water is drawn into the centre. Appold's pump at the 1851 Great Exhibition made it practical; it now drains, waters and circulates almost everything.",
+  "draw": "Cutaway of a pump: a snail-shell casing with a curved-vane wheel inside, water entering at the centre of the wheel and leaving from the rim along the widening spiral to an outlet pipe at the top."},
+ {"id": "jet-engine", "gap": "jet engine", "title": "Jet engine", "year": 1937, "inventor": "Frank Whittle; Hans von Ohain", "location": "England and Germany", "type": "object",
+  "description": "Pushes an aircraft by throwing hot gas backward. A compressor at the front squeezes air, fuel burns in it, and the hot gas spins a turbine that drives the compressor before rushing out of the nozzle. Whittle ran the first one on a test bench in 1937; von Ohain's flew first, in 1939.",
+  "draw": "Cutaway side view of a jet engine: intake on the left, a fan-like compressor, a combustion chamber with flame, a turbine wheel on the same shaft as the compressor, and hot exhaust leaving the nozzle on the right."},
+ {"id": "phosphor", "gap": "phosphor", "title": "Phosphor", "year": 1866, "inventor": "Théodore Sidot", "location": "France", "type": "material",
+  "description": "A powder that glows when struck. Crystals such as zinc sulphide soak up electrons, ultraviolet or blue light and give the energy back as visible light of their own colour. Sidot made the first lasting one in 1866; phosphors lit every television tube and now turn blue LEDs white.",
+  "draw": "A glass dish of pale powder glowing green in a dark room where a beam of invisible light (shown only as a faint violet haze) falls on it."},
+ {"id": "accelerometer", "gap": "accelerometer", "title": "Accelerometer", "year": 1923, "inventor": "Burton McCollum and Orville Peters", "location": "United States", "type": "object",
+  "description": "Senses speeding up, slowing down and tilting. A small mass on a spring lags behind when its case moves, and the stretch of the spring, read electrically, measures the acceleration. Early ones guided missiles; shrunk onto chips in the 1990s, they fire airbags and turn phone screens.",
+  "draw": "Cutaway of a small box with a weight hanging between two springs inside it; the box is moving to the right and the weight lags to the left, stretching one spring and squeezing the other."},
+ {"id": "boiling-points", "gap": "boiling point", "title": "Boiling points", "year": 1724, "inventor": "Daniel Gabriel Fahrenheit", "location": "Netherlands", "type": "phenomenon",
+  "description": "Every liquid boils at its own temperature, and that temperature rises when the pressure on it rises and falls when it drops. Fahrenheit found in 1724 that water's boiling point shifts with the weather's air pressure. It's why stills can separate liquids, pressure cookers cook faster and hot water underground flashes into steam.",
+  "draw": "Two flasks of water over identical flames: one open and boiling hard, the other sealed under a heavy weighted lid with a thermometer reading higher and the water still only simmering."},
+ {"id": "plants-need-water", "gap": "plants need water", "title": "Plants need water", "year": 1727, "inventor": "Stephen Hales", "location": "England", "type": "phenomenon",
+  "description": "A growing plant draws a great deal of water up from its roots and breathes most of it out through its leaves; without a steady supply it wilts and stops growing. Hales weighed potted plants in 1727 and measured how much water they pass. Irrigation of every kind exists to meet that need.",
+  "draw": "Two potted sunflowers side by side: one upright and green in moist dark soil with droplets on its leaves, the other wilted and drooping in dry cracked soil."}
+]

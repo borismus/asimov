@@ -1,0 +1,275 @@
+[
+ {
+  "id": "defibrillator",
+  "name": "Defibrillator",
+  "year": 1979,
+  "how": "Capacitor, electrodes; electric nerve fibers",
+  "note": ""
+ },
+ {
+  "id": "polar-fleece",
+  "name": "Polar fleece",
+  "year": 1981,
+  "how": "Polyester fibre (often recycled PET), napped knit; developed 1979, first garments 1981",
+  "note": ""
+ },
+ {
+  "id": "ace-inhibitors",
+  "name": "ACE inhibitors",
+  "year": 1981,
+  "how": "Organic synthesis of a peptide-mimic drug; ★ enzyme inhibition of the renin-angiotensin hormone system",
+  "note": ""
+ },
+ {
+  "id": "semiconductor-laser",
+  "name": "Semiconductor laser",
+  "year": 1982,
+  "how": "Laser, light-emitting diodes, ★ quantum-well heterojunction; first mass-produced for CD players",
+  "note": ""
+ },
+ {
+  "id": "recombinant-protein-drugs",
+  "name": "Recombinant protein drugs",
+  "year": 1982,
+  "how": "Recombinant DNA, bacterial/yeast fermentation, protein purification; engineered microbes made to secrete human insulin, growth hormone, EPO",
+  "note": ""
+ },
+ {
+  "id": "anti-rejection-drugs",
+  "name": "Anti-rejection drugs",
+  "year": 1983,
+  "how": "Fungal fermentation, organic chemistry; ★ calcineurin blocking of T-cell activation (cyclosporine)",
+  "note": ""
+ },
+ {
+  "id": "word-processor-software",
+  "name": "Word processor software",
+  "year": 1983,
+  "how": "Personal computer, keyboard, screen, printer; editable text in memory",
+  "note": ""
+ },
+ {
+  "id": "digital-synthesizer-and-midi",
+  "name": "Digital synthesizer and MIDI",
+  "year": 1983,
+  "how": "Microchips, ★ FM/digital sound synthesis, a serial control protocol linking instruments and computers",
+  "note": ""
+ },
+ {
+  "id": "active-matrix-lcd",
+  "name": "Active-matrix LCD",
+  "year": 1984,
+  "how": "Liquid crystal display, ★ thin-film transistors printed on glass, one per pixel",
+  "note": ""
+ },
+ {
+  "id": "coronary-stent",
+  "name": "Coronary stent",
+  "year": 1986,
+  "how": "Balloon angioplasty; ★ shape-memory metal",
+  "note": "dont we have this?"
+ },
+ {
+  "id": "conjugate-vaccines",
+  "name": "Conjugate vaccines",
+  "year": 1987,
+  "how": "Vaccination, protein chemistry; ★ sugar antigen chemically linked to a carrier protein so infants' immune systems respond",
+  "note": ""
+ },
+ {
+  "id": "proton-pump-inhibitors",
+  "name": "Proton-pump inhibitors",
+  "year": 1988,
+  "how": "Organic synthesis, enteric-coated capsule; ★ acid-activated drug that blocks the stomach's proton pump",
+  "note": ""
+ },
+ {
+  "id": "fly-by-wire-airliner",
+  "name": "Fly-by-wire airliner",
+  "year": 1988,
+  "how": "Computers, sensors, actuators, glass-cockpit displays; flight-envelope protection in software",
+  "note": ""
+ },
+ {
+  "id": "unicode-text-encoding",
+  "name": "Unicode text encoding",
+  "year": 1991,
+  "how": "Character tables, software standards",
+  "note": ""
+ },
+ {
+  "id": "open-source-operating-system",
+  "name": "Open-source operating system",
+  "year": 1991,
+  "how": "Personal computer, compilers, the Internet for distributed volunteer development",
+  "note": ""
+ },
+ {
+  "id": "text-messaging-sms",
+  "name": "Text messaging (SMS)",
+  "year": 1993,
+  "how": "Mobile phone, digital cellular signalling channel, store-and-forward message centre",
+  "note": ""
+ },
+ {
+  "id": "secure-web-connection-ssl-tls",
+  "name": "Secure web connection (SSL/TLS)",
+  "year": 1995,
+  "how": "Public-key encryption, certificate authorities, the Web",
+  "note": ""
+ },
+ {
+  "id": "online-banking",
+  "name": "Online banking",
+  "year": 1995,
+  "how": "The Web, secure web connection, bank databases",
+  "note": ""
+ },
+ {
+  "id": "universal-serial-port-usb",
+  "name": "Universal serial port (USB)",
+  "year": 1996,
+  "how": "Insulated wire & cable, microchips, standard plug; ★ device announces itself to the host (plug and play)",
+  "note": ""
+ },
+ {
+  "id": "cmos-camera-chip",
+  "name": "CMOS camera chip",
+  "year": 1998,
+  "how": "Microchips, photodiode in each pixel with its own amplifier; photoelectric effect",
+  "note": ""
+ },
+ {
+  "id": "electronic-voting-machine",
+  "name": "Electronic voting machine",
+  "year": 2000,
+  "how": "Microchips, keypad, sealed memory, results sent over the network",
+  "note": ""
+ },
+ {
+  "id": "mobile-broadband-3g-data",
+  "name": "Mobile broadband (3G data)",
+  "year": 2001,
+  "how": "Mobile phone network, packet radio, compressed media; ★ spread-spectrum code-division radio (CDMA)",
+  "note": ""
+ },
+ {
+  "id": "online-encyclopedia-wiki",
+  "name": "Online encyclopedia (wiki)",
+  "year": 2001,
+  "how": "Web pages anyone can edit, revision history, volunteer moderation",
+  "note": ""
+ },
+ {
+  "id": "podcasting",
+  "name": "Podcasting",
+  "year": 2004,
+  "how": "Compressed media, web feeds, portable music player",
+  "note": ""
+ },
+ {
+  "id": "distributed-version-control",
+  "name": "Distributed version control",
+  "year": 2005,
+  "how": "Hashes of file contents, merge algorithms, the Internet",
+  "note": ""
+ },
+ {
+  "id": "hpv-vaccine",
+  "name": "HPV vaccine",
+  "year": 2006,
+  "how": "Virus-like particles made in yeast, vaccination; ★ self-assembling virus-like particles",
+  "note": ""
+ },
+ {
+  "id": "rotavirus-vaccine",
+  "name": "Rotavirus vaccine",
+  "year": 2006,
+  "how": "Live attenuated oral vaccine, vaccination",
+  "note": ""
+ },
+ {
+  "id": "ready-to-use-therapeutic-food",
+  "name": "Ready-to-use therapeutic food",
+  "year": 2007,
+  "how": "Peanut paste, milk powder, vitamins and minerals in a sealed packet",
+  "note": ""
+ },
+ {
+  "id": "off-grid-solar-lighting",
+  "name": "Off-grid solar lighting",
+  "year": 2008,
+  "how": "Small photovoltaic panel, white LED, lithium-ion battery",
+  "note": ""
+ },
+ {
+  "id": "cyberweapons",
+  "name": "Cyberweapons",
+  "year": 2010,
+  "how": "Computers, internet, software exploits",
+  "note": ""
+ },
+ {
+  "id": "biometric-digital-id",
+  "name": "Biometric digital ID",
+  "year": 2010,
+  "how": "Fingerprints, iris scanners, cloud data centres, mobile phone",
+  "note": ""
+ },
+ {
+  "id": "prenatal-dna-blood-test",
+  "name": "Prenatal DNA blood test",
+  "year": 2011,
+  "how": "DNA sequencing, blood draw; ★ fetal DNA fragments circulating in the mother's blood",
+  "note": ""
+ },
+ {
+  "id": "ride-hailing-apps",
+  "name": "Ride-hailing apps",
+  "year": 2012,
+  "how": "Smartphone, GPS, mobile payments, cloud data centres; real-time matching",
+  "note": ""
+ },
+ {
+  "id": "sglt2-inhibitors",
+  "name": "SGLT2 inhibitors",
+  "year": 2013,
+  "how": "Synthetic drugs; ★ blocking glucose re-uptake in the kidney so sugar leaves in urine",
+  "note": ""
+ },
+ {
+  "id": "stroke-clot-retrieval",
+  "name": "Stroke clot retrieval",
+  "year": 2015,
+  "how": "Catheter, stent, X-ray imaging; ★ mechanical thrombectomy (pulling the clot out with a stent-mesh)",
+  "note": ""
+ },
+ {
+  "id": "end-to-end-encrypted-messaging",
+  "name": "End-to-end encrypted messaging",
+  "year": 2016,
+  "how": "Smartphone, internet, public-key encryption; ★ double-ratchet key exchange (fresh keys for every message)",
+  "note": ""
+ },
+ {
+  "id": "grid-battery-storage",
+  "name": "Grid battery storage",
+  "year": 2017,
+  "how": "Lithium-ion battery, inverters, power grid; fast frequency response",
+  "note": ""
+ },
+ {
+  "id": "viral-vector-vaccines",
+  "name": "Viral-vector vaccines",
+  "year": 2021,
+  "how": "Harmless adenovirus shell carrying a gene, cell-culture bioreactors; ★ a virus used as a delivery vehicle for a foreign gene",
+  "note": ""
+ },
+ {
+  "id": "fpv-attack-drone",
+  "name": "FPV attack drone",
+  "year": 2022,
+  "how": "Quadcopter drone, video goggles, explosive charge, cheap radio; ★ none new",
+  "note": ""
+ }
+]

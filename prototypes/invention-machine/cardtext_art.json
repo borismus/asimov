@@ -1,0 +1,1262 @@
+[
+ {
+  "id": "flush-toilet",
+  "year": "1775",
+  "title": "Flush toilet",
+  "summary": "Carries waste away and keeps the smell out of the house. Pulling a handle opens a valve so water from a cistern rushes through the bowl and down the drain. Afterwards some water stays trapped in a bend of the pipe, a plug of liquid that sewer gas cannot get past.",
+  "draw": "Cutaway side view of a toilet with a cistern above it and the drain pipe beneath curving down, up and over in an S shape; the water standing in the bowl and in the lowest bend of the S is one continuous pool, level on both sides, and a lever on the cistern lifts a valve in its base.",
+  "inventor": "Alexander Cumming",
+  "location": "England",
+  "field": "Design"
+ },
+ {
+  "id": "refrigerated-transport",
+  "year": "1880",
+  "title": "Refrigerated transport",
+  "summary": "Lets meat, fruit and milk cross oceans without spoiling, which is why shops sell food from the other side of the world. A machine on board squeezes air, cools it with seawater, then lets it expand; air that expands gets very cold, and it is blown through an insulated hold kept below freezing.",
+  "draw": "Cutaway of a late-1800s steamship's hold: an insulated room with thick walls, frosty carcasses of mutton hanging from hooks, and cold-air ducts along the ceiling leading from a steam-driven compressor engine in the next compartment. Show the outer hull and the sea outside so it is clearly a ship.",
+  "inventor": "Bell-Coleman Mechanical Refrigeration Company",
+  "location": "Scotland",
+  "field": "Design"
+ },
+ {
+  "id": "hydroelectric-power-station",
+  "year": "1882",
+  "title": "Hydroelectric power station",
+  "summary": "Makes electricity from falling water. A dam holds back a river, and water rushing down a pipe through the dam spins the curved blades of a turbine; the turbine's shaft turns a generator above it, where magnets sweep past coils of copper wire and push a current through them.",
+  "draw": "Cutaway of a concrete dam with the deep reservoir on one side: a large pipe slopes down through the dam to a turbine at its foot, a bladed wheel turned by the water on a vertical shaft that rises to a round generator in the power house above; spent water flows out downstream at river level.",
+  "inventor": "H. J. Rogers",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "dishwasher",
+  "year": "1886",
+  "title": "Dishwasher",
+  "summary": "Washes a load of plates without anyone scrubbing them. Dishes stand in wire racks while a pump sprays very hot, soapy water up at them from arms below; the jets push the arms round so the spray sweeps every plate. Cochrane's first machine turned a wheel of racks through jets of hot water instead.",
+  "draw": "Cutaway front view of a dishwasher with its door open: plates standing upright in a wire rack, and below them a flat spray arm on a central pivot with angled nozzles, jets of water fanning upward onto the plates; the arm spins horizontally, parallel to the floor.",
+  "inventor": "Josephine Cochrane",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "tractor",
+  "year": "1892",
+  "title": "Tractor",
+  "summary": "Pulls ploughs, harvesters and trailers, doing the work of a team of horses without fields of oats to feed them. A petrol or diesel engine turns the big rear wheels through low gears that trade speed for pulling force, and deep treads dig into the soil so the wheels grip instead of spinning.",
+  "draw": "An early farm tractor seen from the side, pulling a plough through a field: engine at the front, driver's seat over the rear axle, huge rear wheels with angled cleats or chevron treads biting into the soil, and small steerable front wheels. A drawbar links the back of the tractor to the plough, whose blades turn the soil over behind.",
+  "inventor": "John Froelich",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "escalator",
+  "year": "1896",
+  "title": "Escalator",
+  "summary": "Carries a steady stream of people between floors. A motor drives a loop of chain linking a staircase of metal steps; each step rides on two pairs of wheels in separate tracks, so its tread stays level as it climbs and folds flat into a moving floor at top and bottom. A rubber handrail runs alongside at the same speed.",
+  "draw": "Side cutaway of an escalator between two floors: a continuous loop of linked steps, treads level on the incline and flattening out at each end, wrapping round large chain sprockets at top and bottom, with the return run of upside-down steps underneath; a black handrail loops along the top of the side panel.",
+  "inventor": "Jesse W. Reno",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "vacuum-cleaner",
+  "year": "1901",
+  "title": "Vacuum cleaner",
+  "summary": "Sucks dust out of carpets instead of just stirring it into the air. A motor spins a fan that throws air out of the machine, lowering the pressure inside, so outside air rushes in through the nozzle, dragging dirt with it. A cloth bag or filter lets the air out but keeps the dust.",
+  "draw": "Cutaway of an upright vacuum cleaner on a carpet: an electric motor turning a fan in a housing just above the floor nozzle, the fan blowing air up into a tall cloth bag on the handle; arrows show air going from the carpet into the nozzle, and dust is caught inside the bag.",
+  "inventor": "Hubert Cecil Booth",
+  "location": "England",
+  "field": "Design"
+ },
+ {
+  "id": "air-conditioning",
+  "year": "1902",
+  "title": "Air conditioning",
+  "summary": "Keeps buildings cool and dry in hot weather. A liquid refrigerant evaporates inside a coil indoors, soaking up heat from the air blown across it, while water from the air condenses on the cold fins; a compressor then squeezes the vapour so it gets hot and dumps that heat outdoors through a second coil.",
+  "draw": "A cutaway window air conditioner set in a window frame: on the room side a fan blows air through a cold finned coil beaded with condensation; in the middle sits a round compressor; on the outdoor side a second fan pushes air through a hot finned coil. Copper tubes join the two coils and the compressor in one closed loop.",
+  "inventor": "Willis Carrier",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "geothermal-power",
+  "year": "1904",
+  "title": "Geothermal power",
+  "summary": "Makes electricity from the heat inside the Earth. Wells drilled deep into hot rock bring up steam, or water hot enough to flash into steam, and the steam spins a turbine that drives a generator. The cooled water is pumped back underground to be heated again.",
+  "draw": "Cross-section of the ground with a layer of hot rock glowing deep below: one well pipe rises from it to a power house at the surface where steam drives a turbine and generator, white steam billows from a cooling tower beside it, and a second well pipe carries water back down into the hot rock.",
+  "inventor": "Piero Ginori Conti",
+  "location": "Italy",
+  "field": "Design"
+ },
+ {
+  "id": "water-chlorination",
+  "year": "1905",
+  "title": "Water chlorination",
+  "summary": "Makes tap water safe from cholera and typhoid. A small, measured dose of chlorine is mixed into the water at the treatment works, where it chemically burns through the outer walls and enzymes of bacteria and kills them. A faint trace stays in the pipes, so germs that get in later die too.",
+  "draw": "A water treatment works: a dosing pipe from a tank of chlorine solution dripping steadily into the channel where water flows into a large open concrete basin of clear water, with a pipe leading on from the basin toward a distant town.",
+  "inventor": "Alexander Houston",
+  "location": "England",
+  "field": "Design"
+ },
+ {
+  "id": "washing-machine",
+  "year": "1908",
+  "title": "Washing machine",
+  "summary": "Washes a load of clothes without anyone scrubbing or wringing by hand. An electric motor turns a perforated drum, or a paddle in a tub, back and forth so soapy water is pushed through the cloth again and again; then the drum spins fast, flinging the water out through its holes.",
+  "draw": "A front-loading washing machine with its round glass door shut and a cutaway side: a perforated steel drum turning on a horizontal axle, with raised ribs inside that lift the clothes and drop them into soapy water pooled at the bottom. A belt runs from an electric motor under the tub to a pulley on the back of the drum.",
+  "inventor": "Alva J. Fisher, Hurley Machine Company",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "stainless-steel",
+  "year": "1913",
+  "title": "Stainless steel",
+  "summary": "Steel that does not rust, for cutlery, sinks and surgical tools. About an eighth of it is chromium, which reacts with oxygen in the air to form a clear layer of chromium oxide only a few atoms thick. The film seals the iron off from water, and if it is scratched it forms again within moments.",
+  "draw": "Two kitchen knife blades lying side by side in a shallow puddle of water: one bright, shiny and unmarked (stainless), the other an ordinary steel blade blotched with orange rust.",
+  "inventor": "Harry Brearley",
+  "location": "England",
+  "field": "Design"
+ },
+ {
+  "id": "zipper",
+  "year": "1913",
+  "title": "Zipper",
+  "summary": "Closes a jacket, bag or tent in one pull. Each metal or plastic tooth has a bump on top and a hollow underneath; the Y-shaped slider bends the two rows apart and feeds them together at an angle, so each tooth nests between two teeth on the other side and the bumps lock into the hollows.",
+  "draw": "Close-up of a metal zip half done up on a jacket, closed end at the bottom: below the slider the two rows of teeth are meshed in a single tight line; above it they spread apart in a V. The slider is a small Y-shaped channel with a wedge inside its wide top end that pushes the rows apart, and a pull tab hanging from its front.",
+  "inventor": "Gideon Sundback",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "tower-crane",
+  "year": "1913",
+  "title": "Tower crane",
+  "summary": "Lifts steel and concrete to the top of tall buildings as they go up. A slim lattice mast carries a long horizontal arm that swings round; electric motors wind a steel cable over a trolley that runs out along the arm, and heavy concrete blocks on a short arm at the back balance the load.",
+  "draw": "A tall tower crane against the sky: a lattice mast with an operator's cab at the top, a long horizontal jib reaching one way with a trolley and hook carrying a steel beam, and a short counter-jib the other way loaded with stacked concrete counterweight blocks.",
+  "inventor": "Julius Wolff & Co.",
+  "location": "Germany",
+  "field": "Design"
+ },
+ {
+  "id": "traffic-light",
+  "year": "1914",
+  "title": "Traffic light",
+  "summary": "Lets cars at a crossroads take turns instead of colliding. Coloured lamps, red for stop and green for go with amber in between, switch in a fixed cycle set by a timer or by sensors buried in the road, so each direction of traffic gets its turn.",
+  "draw": "A single traffic signal on a pole at a street corner: a vertical black box with three round lamps under hooded visors, red at the top, amber in the middle, green at the bottom, with only the green lit.",
+  "inventor": "James Hoge",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "sewage-treatment",
+  "year": "1914",
+  "title": "Sewage treatment",
+  "summary": "Cleans a town's waste water before it goes back into a river. Sewage is held in tanks while air is bubbled through it, and swarms of bacteria eat the dissolved filth; the bacteria clump into a sludge that settles out, leaving clear water, and some of the sludge is fed back to start on the next batch.",
+  "draw": "A long rectangular open concrete tank of brown water seen from slightly above, with air bubbles boiling up evenly across the whole surface from pipes along the bottom; beside it a round settling tank with a slowly rotating bridge arm and clear water spilling over its rim.",
+  "inventor": "Edward Ardern, William Lockett",
+  "location": "England",
+  "field": "Design"
+ },
+ {
+  "id": "drywall",
+  "year": "1916",
+  "title": "Drywall",
+  "summary": "Lets builders put up smooth indoor walls in a day instead of plastering for a week. Wet gypsum plaster is spread between two sheets of thick paper and sets hard as its crystals regrow. Those crystals hold water locked inside them, so in a fire the board gives off steam and slows the flames.",
+  "draw": "A worker holding a large pale panel against a wooden stud wall frame and driving a screw through it into a stud; the panel's cut edge faces the viewer, showing a white chalky core sandwiched between two thin layers of paper.",
+  "inventor": "Augustine Sackett; United States Gypsum",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "hybrid-corn",
+  "year": "1924",
+  "title": "Hybrid corn",
+  "summary": "Gave farmers maize that grows bigger and yields far more grain. Breeders self-pollinate corn for several generations to make pure but weak inbred lines, then cross two unrelated lines. The seed from that cross grows unusually vigorous and even, but its own seed does not, so farmers buy fresh seed every year.",
+  "draw": "The edge of a seed field: a row of tall maize plants whose tassels have been pulled off their tops stands beside a row with tassels still on, shedding yellow pollen that drifts across onto the silks of the detasselled plants.",
+  "inventor": "George Shull, Donald Jones, Henry A. Wallace",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "frozen-food",
+  "year": "1924",
+  "title": "Frozen food",
+  "summary": "Keeps food tasting fresh for months. Packed food is pressed between metal plates or belts chilled far below freezing, so it freezes solid in minutes rather than hours. Fast freezing forms ice crystals too small to burst the food's cells, so it is not mushy when thawed.",
+  "draw": "Two long stainless-steel conveyor belts running one above the other, sandwiching a row of flat cardboard cartons of food between them; the belts are thick with frost, and icy brine sprays onto their outer faces from pipes above and below. At the far end the cartons come out frozen hard.",
+  "inventor": "Clarence Birdseye",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "prestressed-concrete",
+  "year": "1928",
+  "title": "Prestressed concrete",
+  "summary": "Lets concrete beams span long gaps without cracking. Steel cables running through the beam are stretched tight and anchored at the ends, squeezing the concrete hard; concrete is strong when squeezed but weak when stretched, so when a load bends the beam, its underside only loses some of that squeeze instead of being pulled apart.",
+  "draw": "Cutaway of a long concrete bridge beam with steel cables running through ducts inside it, sagging low in the middle and rising toward the ends, and a hydraulic jack at one end pulling a cable tight against a steel anchor plate on the beam's end face.",
+  "inventor": "Eugène Freyssinet",
+  "location": "France",
+  "field": "Design"
+ },
+ {
+  "id": "fibreglass",
+  "year": "1932",
+  "title": "Fibreglass",
+  "summary": "Glass spun into strands finer than a hair. A loose wool of it traps air and insulates houses; strands set in plastic resin make light, strong boats, car bodies and wind-turbine blades. Molten glass runs through hundreds of tiny holes in a hot metal plate and is pulled out into threads so thin they bend instead of snapping.",
+  "draw": "Underneath a glowing-hot metal box, hundreds of fine streams of molten glass drip from rows of tiny nozzles and are drawn down into shining filaments, which converge through a guide into a single strand that winds onto a fast-spinning drum below.",
+  "inventor": "Games Slayter and Dale Kleist, Owens-Illinois",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "plastics-polyethylene",
+  "year": "1933",
+  "title": "Polyethylene",
+  "summary": "The commonest plastic, used for bags, bottles, film and cable insulation. It is made by linking thousands of small molecules of ethylene gas end to end into long chains of carbon atoms; the tangled chains slide past each other when warm, so it can be moulded, but hold together as a tough, waxy solid when cool.",
+  "draw": "A crinkled, translucent milky-white plastic carrier bag lying open beside a small heap of the white plastic pellets it is made from.",
+  "inventor": "Eric Fawcett, Reginald Gibson, ICI",
+  "location": "England",
+  "field": "Design"
+ },
+ {
+  "id": "blood-bank",
+  "year": "1937",
+  "title": "Blood bank",
+  "summary": "Keeps donated blood ready for operations and emergencies. The blood is mixed with sodium citrate, which stops it clotting by mopping up the calcium that clotting needs, and kept in a refrigerator just above freezing. Each bottle is marked with its blood type so it can go to a patient whose body won't attack it.",
+  "draw": "An open hospital refrigerator with rows of glass bottles of dark red blood on wire shelves, each bottle with a plain coloured tag tied round its neck, and a little frost on the back wall.",
+  "inventor": "Bernard Fantus",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "heat-pump",
+  "year": "1938",
+  "title": "Heat pump",
+  "summary": "Heats a building with a third or less of the electricity a heater would use. It is a refrigerator run backwards: a cold refrigerant evaporates in an outdoor coil, soaking up warmth even from chilly air, ground or river water; a compressor squeezes the vapour hot, and it gives that heat up indoors as it condenses.",
+  "draw": "An outdoor heat-pump unit on short feet beside a house wall: a metal box with a large round fan grille on its front and thin aluminium fins along its back, lightly frosted. Two insulated copper pipes run from its side through the wall into the house.",
+  "inventor": "Escher Wyss (Zurich town hall)",
+  "location": "Switzerland",
+  "field": "Design"
+ },
+ {
+  "id": "gas-turbine-power-station",
+  "year": "1939",
+  "title": "Gas-turbine power station",
+  "summary": "Makes electricity from natural gas with what is essentially a jet engine bolted to the ground. A compressor squeezes air, gas burns in it, and the hot blast spins a turbine that drives a generator. Most modern plants then use the exhaust to boil water for a second, steam turbine, turning about 60 percent of the fuel's energy into electricity.",
+  "draw": "Cutaway of a long horizontal gas turbine in a power hall: rows of compressor blades narrowing from the air inlet, a ring of flames in the middle, larger turbine blades after it, all on one shaft that continues into a large generator, with a duct from the hot exhaust end leading to a boiler.",
+  "inventor": "Brown Boveri",
+  "location": "Switzerland",
+  "field": "Design"
+ },
+ {
+  "id": "cruise-missile",
+  "year": "1944",
+  "title": "Cruise missile",
+  "summary": "A pilotless jet plane that flies itself to its target. A jet engine keeps it flying low on short wings while an autopilot holds the course. The first ones simply counted the distance flown with a little propeller in the nose; modern ones steer by matching radar readings of the hills below to a stored map, and by GPS.",
+  "draw": "A small pilotless plane with short straight wings flying low over countryside, a long stovepipe-shaped jet engine mounted on its back above the tail with a flame at its open rear end, and a small propeller on the tip of its nose.",
+  "inventor": "Robert Lusser, Fieseler",
+  "location": "Germany",
+  "field": "Design"
+ },
+ {
+  "id": "offshore-oil-platform",
+  "year": "1947",
+  "title": "Offshore oil platform",
+  "summary": "Pumps oil and gas from beneath the sea floor. A steel tower stands on legs pinned into the seabed, holding a deck above the waves with a drilling rig on top; a pipe is turned down through the water into the rock, and the oil and gas that come up are piped or shipped to shore.",
+  "draw": "An offshore oil platform in open sea: a lattice of steel legs rising from the water to a flat deck carrying a tall derrick, cranes and a gas flare, with a cutaway below the waterline showing the legs reaching down to the seabed and a drill pipe going on into the rock.",
+  "inventor": "Kerr-McGee",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "randomized-controlled-trial",
+  "year": "1948",
+  "title": "Randomized controlled trial",
+  "summary": "A fair test of whether a treatment works. Patients are split into two groups purely by chance, for instance by sealed envelopes, and one group gets the treatment while the other does not. Chance spreads age, health and every hidden difference evenly, so any gap in how the groups fare is down to the treatment.",
+  "draw": "On a hospital bedside table, a doctor's hand draws a card out of one of a stack of identical sealed envelopes; beside it stand two identical medicine bottles, one with a white cap and one with a blue cap, standing for the two groups. A hospital bed is softly visible behind.",
+  "inventor": "Austin Bradford Hill, Medical Research Council",
+  "location": "England",
+  "field": "Design"
+ },
+ {
+  "id": "disposable-diaper",
+  "year": "1949",
+  "title": "Disposable diaper",
+  "summary": "A diaper you throw away instead of washing. A pad of fluffy, absorbent fibre wicks urine away from the baby's skin and holds it, and a waterproof plastic outer layer stops it leaking. Modern ones add grains of a powder that swells into a gel, holding many times its own weight of liquid.",
+  "draw": "A disposable diaper cut in half and laid open to show its layers: a soft white top sheet, a thick fluffy white core of fibres flecked with tiny clear grains, and a thin shiny plastic back sheet, with a drop of water soaking into the core.",
+  "inventor": "Valerie Hunter Gordon",
+  "location": "England",
+  "field": "Design"
+ },
+ {
+  "id": "cataract-lens-implant",
+  "year": "1949",
+  "title": "Cataract lens implant",
+  "summary": "Restores sight to people whose own lens has clouded over with age. The surgeon removes the cloudy lens and slips a small, clear plastic one into its place behind the iris, where it bends incoming light to a sharp focus on the retina. Ridley chose the plastic of fighter-plane canopies after seeing splinters of it lie harmlessly in pilots' eyes.",
+  "draw": "Cutaway side view of a human eye: a small, clear, round plastic lens with two thin curved spring arms sits just behind the iris, and light rays enter through the clear cornea and pupil, pass through the implant and converge to a point on the retina at the back.",
+  "inventor": "Harold Ridley",
+  "location": "England",
+  "field": "Design"
+ },
+ {
+  "id": "credit-card",
+  "year": "1950",
+  "title": "Credit card",
+  "summary": "Lets you buy now and pay later without carrying cash. The card names your account; the shop passes the charge to the card company, which pays the shop and sends you one bill a month. Later cards held the account number in a magnetic stripe, as tiny magnetised patches a reader senses, and now in a chip.",
+  "draw": "A hand swiping a plain plastic card through the slot of a countertop card reader, the dark magnetic stripe on the back of the card facing into the slot where the reading head sits. No lettering or logos on the card or the reader.",
+  "inventor": "Frank McNamara and Ralph Schneider, Diners Club",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "hearing-aid",
+  "year": "1952",
+  "title": "Transistor hearing aid",
+  "summary": "Makes sounds louder for people who are hard of hearing. A tiny microphone turns sound into a weak electric current, transistors amplify it, and a small earphone turns it back into louder sound in the ear. Transistors need far less battery power than the vacuum tubes they replaced, so aids shrank to fit in a pocket, then behind the ear.",
+  "draw": "A hearing aid worn behind a person's ear, partly cut away: a small curved case tucked behind the ear holds a tiny microphone, a button battery and a little circuit board, and a thin clear tube runs over the top of the ear into the ear canal.",
+  "inventor": "Sonotone",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "tunnel-boring-machine",
+  "year": "1952",
+  "title": "Tunnel boring machine",
+  "summary": "Digs tunnels for railways, roads and water through solid rock. A wheel as wide as the tunnel, studded with hard steel cutters, turns while hydraulic rams press it into the rock face; rolling disc cutters crack off chips, a conveyor carries them back, and the machine braces against the walls to push itself forward.",
+  "draw": "Three-quarter view inside a part-dug rock tunnel: the machine's round cutterhead fills the tunnel face, a flat steel disc studded with rows of small steel cutting wheels set in concentric rings, with slots between them for broken rock. Behind it a long trailing frame carries a conveyor belt heaped with rock back along the tunnel.",
+  "inventor": "James S. Robbins",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "centre-pivot-irrigation",
+  "year": "1952",
+  "title": "Centre-pivot irrigation",
+  "summary": "Waters a whole field with almost no labour. A long pipe carried on wheeled steel towers turns slowly round a well at the centre like the hand of a clock, spraying water from sprinklers along its length; each tower is driven forward by its own motor, so the arm sweeps out a giant green circle.",
+  "draw": "A centre-pivot irrigator in a crop field seen from a low angle: a long horizontal water pipe held up by tall A-frame towers on pairs of large rubber-tyred wheels, braced by trusses underneath, with sprinklers hanging down spraying water, and the fixed central pivot tower at the far end.",
+  "inventor": "Frank Zybach",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "radiotherapy",
+  "year": "1953",
+  "title": "Radiotherapy",
+  "summary": "Kills cancer cells with beams of radiation. In a linear accelerator, radio waves drive electrons along a tube to nearly the speed of light and smash them into a metal target to make powerful X-rays; the beam is shaped and swung round the patient from many angles, so it hits the tumour hardest and healthy tissue least.",
+  "draw": "A patient lying on a treatment couch beneath a medical linear accelerator: a large C-shaped gantry whose head arches over the patient and points its beam down at the chest, the gantry able to rotate in a circle around the couch.",
+  "inventor": "Hammersmith Hospital, Metropolitan-Vickers",
+  "location": "England",
+  "field": "Design"
+ },
+ {
+  "id": "hvdc-power-lines",
+  "year": "1954",
+  "title": "High-voltage DC power line",
+  "summary": "Sends electricity hundreds of kilometres overland, or under the sea, losing less on the way than ordinary alternating current. At each end, banks of electronic switches turn AC into steady direct current and back. A steady current doesn't waste energy charging and discharging the cable's surroundings many times a second, and two wires do the work of three.",
+  "draw": "A long overhead power line on tall steel pylons carrying just two thick conductor bundles, one on each side (not the three of an AC line), running from a large plain converter building toward the horizon.",
+  "inventor": "Uno Lamm, ASEA",
+  "location": "Sweden",
+  "field": "Design"
+ },
+ {
+  "id": "nuclear-submarine",
+  "year": "1954",
+  "title": "Nuclear submarine",
+  "summary": "A submarine that can stay underwater for months, not hours. In its reactor, splitting uranium heats water in a sealed loop; that water boils water in a second loop into steam, which spins a turbine to drive the propeller. Because nothing burns, it needs no air, and its time submerged is limited mainly by the crew's food.",
+  "draw": "Cutaway side view of a long, rounded submarine underwater: a reactor in a thick shielded compartment amidships, steam pipes running aft to a turbine, and a single shaft from the turbine to one propeller at the stern. The sail (conning tower) rises from the top of the hull ahead of the reactor.",
+  "inventor": "Hyman Rickover, US Navy",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "transistor-radio",
+  "year": "1954",
+  "title": "Transistor radio",
+  "summary": "A radio small enough for a pocket that runs for weeks on one battery. Four transistors, tiny slivers of crystal that act as amplifiers, boost the faint signal picked up by a coil wound on a ferrite rod, doing the job of hot, power-hungry vacuum tubes, so the set needs no warm-up.",
+  "draw": "A pocket-sized transistor radio with its back opened: a round speaker, a tuning dial, a small battery, a black ferrite rod wound with copper wire, and a little circuit board with a few transistors like tiny metal cans on three wire legs.",
+  "inventor": "Texas Instruments, Regency",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "container-shipping",
+  "year": "1956",
+  "title": "Container shipping",
+  "summary": "Moves the world's goods cheaply in steel boxes of standard sizes. Goods are packed once at the factory, and the same sealed box rides a truck, a ship and a train without being unpacked. Cranes grab each box by locking twist-fittings into its four top corners, so a ship is unloaded in hours instead of days.",
+  "draw": "A dockside gantry crane lifting a single steel shipping container off a ship stacked high with containers; the crane's rectangular lifting frame sits flat on the container's roof, locked into it at each of the four top corners, and the container hangs level beneath it on cables.",
+  "inventor": "Malcom McLean",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "disposable-syringe",
+  "year": "1956",
+  "title": "Disposable syringe",
+  "summary": "Gives injections with a needle used once and thrown away, so it cannot carry disease from one patient to the next. A rubber-tipped plunger seals against the wall of a clear plastic barrel: pulling it back lowers the pressure inside, and the outside air pressure pushes medicine up through the hollow steel needle.",
+  "draw": "A clear plastic syringe with fine graduation lines (no numbers), its rubber-tipped plunger pulled halfway back, held upright beneath an upside-down glass vial; the steel needle pierces the vial's rubber stopper and liquid is rising into the barrel.",
+  "inventor": "Colin Murdoch",
+  "location": "New Zealand",
+  "field": "Design"
+ },
+ {
+  "id": "intercontinental-ballistic-missile",
+  "year": "1957",
+  "title": "Intercontinental ballistic missile",
+  "summary": "A rocket that can carry a nuclear warhead to another continent in about half an hour. Its liquid-fuel engines burn for only a few minutes, flinging the warhead above the atmosphere to coast down a long arc like a thrown stone. Gyroscopes sense every turn, so the guidance can cut the engines at exactly the right speed and direction.",
+  "draw": "A tall, slender missile standing on its launch pad, shown in cutaway: tanks of fuel and oxidiser fill most of the body, rocket engines sit at the base, and a small guidance compartment and a blunt cone-shaped warhead are at the top.",
+  "inventor": "Sergei Korolev",
+  "location": "Russia",
+  "field": "Design"
+ },
+ {
+  "id": "wind-turbine",
+  "year": "1957",
+  "title": "Wind turbine",
+  "summary": "Makes electricity from the wind. Its long blades are shaped like aeroplane wings: air flowing past them creates lift that pulls each blade sideways, turning the rotor. A gearbox speeds up the slow spin to drive a generator at the top of the tower, and the whole head turns to face into the wind.",
+  "draw": "A tall white tower with three long, slender blades on a hub facing into the wind; the housing at the top is cut away to show a shaft, gearbox and generator in a line. The blades are twisted along their length and wider near the hub.",
+  "inventor": "Johannes Juul",
+  "location": "Denmark",
+  "field": "Design"
+ },
+ {
+  "id": "flexible-endoscope",
+  "year": "1957",
+  "title": "Flexible endoscope",
+  "summary": "Lets a doctor look inside the stomach without surgery. A bendable tube holds a bundle of thousands of glass fibres, each thinner than a hair and kept in the same order at both ends; light bounces along inside each fibre without escaping, so together they carry a picture round corners, while other fibres carry light in.",
+  "draw": "A long black flexible tube curving in a loop, its tip glowing with light, with the tip cut away to show a dense bundle of hair-thin glass fibres inside; at the other end a control handle with an eyepiece for the doctor.",
+  "inventor": "Basil Hirschowitz, Larry Curtiss, Wilbur Peters",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "spandex",
+  "year": "1958",
+  "title": "Spandex",
+  "summary": "A fibre that stretches to several times its length and springs back, used in sportswear, socks, waistbands and most stretch jeans. Its long molecules alternate soft, coiled, rubbery stretches with short stiff ones that stick to their neighbours; pulling uncoils the soft parts, and the stiff parts hold everything together so it snaps back.",
+  "draw": "Two hands pulling a strip of shiny knitted stretch fabric to about twice its length, the knit loops visibly elongated in the stretched middle while the ends stay loose and gathered.",
+  "inventor": "Joseph Shivers, DuPont",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "liquefied-natural-gas-tanker",
+  "year": "1959",
+  "title": "Liquefied natural gas tanker",
+  "summary": "Carries natural gas across oceans where no pipeline can reach. Cooled to minus 162 °C, the gas turns to liquid and takes up only a six-hundredth of the space. It rides in heavily insulated tanks; the little that boils off carries heat away and keeps the rest cold, and the ship can burn it as fuel.",
+  "draw": "A tanker ship with four large round spherical tanks rising in a row above its deck; one sphere is cut open to show a thick layer of insulation lining its wall and pale clear liquid inside giving off a wisp of vapour at the top.",
+  "inventor": "Constock and the British Gas Council",
+  "location": "United States and England",
+  "field": "Design"
+ },
+ {
+  "id": "three-point-seat-belt",
+  "year": "1959",
+  "title": "Three-point seat belt",
+  "summary": "Holds you in your seat in a crash instead of letting you fly into the windscreen. One belt runs low across the hips and diagonally across the chest, anchored at three points, so the force lands on the strong pelvis and ribcage. A weighted catch in the reel locks the belt when the car brakes hard.",
+  "draw": "A driver sitting in a car seat wearing a three-point belt: the lap part lies low across the hips, and the shoulder part runs diagonally from a mount on the door pillar above the outer shoulder, across the chest, down to a buckle beside the inner hip. The belt comes out of a reel low on the door pillar.",
+  "inventor": "Nils Bohlin, Volvo",
+  "location": "Sweden",
+  "field": "Design"
+ },
+ {
+  "id": "aluminium-drink-can",
+  "year": "1959",
+  "title": "Aluminium drink can",
+  "summary": "A light, unbreakable can for drinks that chills quickly and is easily recycled. A disc of aluminium is pressed into a shallow cup and then ironed up into a tall, thin-walled body in one piece; the domed bottom and the pressure of the drink inside keep the thin walls stiff, and a separate lid is folded onto the top.",
+  "draw": "A single aluminium drink can cut in half lengthwise to show its seamless one-piece body with walls as thin as paper, the bottom domed inward, and the separate lid with its ring-pull tab crimped onto the rim.",
+  "inventor": "Bill Coors",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "turbofan-jet-engine",
+  "year": "1960",
+  "title": "Turbofan jet engine",
+  "summary": "Pushes airliners along with less fuel and less noise than a plain jet. A big fan at the front, driven by a turbine at the back, blows most of its air around the outside of the engine's core; this broad, slower stream does most of the pushing, while the core burns fuel to keep the fan turning.",
+  "draw": "Cutaway side view of a turbofan engine: a large many-bladed fan at the front inside a round cowling, a narrow inner core behind it with compressor stages, a combustion chamber and turbine wheels on a shared shaft, and most of the fan's air flowing around the core through the outer duct.",
+  "inventor": "Rolls-Royce",
+  "location": "England",
+  "field": "Design"
+ },
+ {
+  "id": "planetary-space-probes",
+  "year": "1962",
+  "title": "Planetary space probe",
+  "summary": "A robot spacecraft sent to fly past or orbit another planet and report back. Solar panels turn sunlight into electricity, small thrusters keep it pointed the right way, and instruments measure what it passes. A dish antenna aimed at Earth sends the readings home as a faint radio signal that giant dishes pick up.",
+  "draw": "A spacecraft in space with a central boxy body, two flat rectangular solar panels spread out like wings, and a dish antenna on an arm pointed back toward a small blue Earth, while a large, cloud-covered pale yellow planet fills the other side of the frame.",
+  "inventor": "NASA Jet Propulsion Laboratory",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "high-yield-dwarf-wheat-and-rice",
+  "year": "1962",
+  "title": "High-yield dwarf wheat and rice",
+  "summary": "Short, stiff grain plants that sharply raised harvests in Mexico and Asia in the 1960s. Fed with fertilizer, old tall varieties grew heavy heads and toppled over. Dwarfing genes from Japanese wheat and Taiwanese rice make the plant ignore part of a growth hormone's signal, so stalks stay short and upright and more of the plant goes into grain.",
+  "draw": "Two wheat plants side by side in one field: a short, sturdy plant standing upright under a fat, heavy head of grain, next to a tall, thin old-style plant bent over and lying flat under its own head.",
+  "inventor": "Norman Borlaug",
+  "location": "Mexico",
+  "field": "Design"
+ },
+ {
+  "id": "artificial-hip-joint-replacement",
+  "year": "1962",
+  "title": "Hip replacement",
+  "summary": "Replaces a hip joint worn out by arthritis, so people can walk again without pain. A polished steel ball on a stem is fixed into the hollow of the thigh bone with bone cement and turns inside a plastic cup cemented into the pelvis. The small ball and slippery plastic keep friction and wear low for decades.",
+  "draw": "Cutaway of a human hip, front view: the pelvis with a white plastic cup set into its socket, and a polished metal ball sitting in that cup, mounted on a tapered metal stem pushed down into the hollow centre of the thigh bone. The ball points up and inward toward the pelvis.",
+  "inventor": "John Charnley",
+  "location": "England",
+  "field": "Design"
+ },
+ {
+  "id": "carbon-fibre-composites",
+  "year": "1963",
+  "title": "Carbon-fibre composites",
+  "summary": "Makes parts stiffer and stronger than steel for their weight, for aircraft, racing bikes and tennis rackets. Threads of nearly pure carbon, each finer than a hair, are laid in the directions the load will pull and set in a hard, glue-like resin; the fibres carry the force and the resin holds them in shape.",
+  "draw": "Close-up of a sheet of carbon-fibre composite with a broken edge: a glossy black resin surface showing the woven checkerboard of fibre bundles, and at the snapped edge individual hair-fine black fibres sticking out of the resin.",
+  "inventor": "William Watt, Leslie Phillips, William Johnson, Royal Aircraft Establishment",
+  "location": "England",
+  "field": "Design"
+ },
+ {
+  "id": "beta-blockers",
+  "year": "1964",
+  "title": "Beta blockers",
+  "summary": "Pills that calm the heart, used for angina, high blood pressure and irregular heartbeats. Adrenaline speeds and strengthens the heartbeat by fitting into receptor molecules on heart cells called beta receptors. A beta blocker fits into the same receptors without switching them on, so adrenaline can't get in and the heart beats slower and more gently.",
+  "draw": "A close-up of the surface of a heart muscle cell, drawn as a curved wall dotted with cup-shaped receptor molecules; some cups are plugged by small white drug molecules, while adrenaline molecules drift nearby unable to fit, and a faint outline of the heart is in the background.",
+  "inventor": "James Black, ICI",
+  "location": "England",
+  "field": "Design"
+ },
+ {
+  "id": "high-speed-rail",
+  "year": "1964",
+  "title": "High-speed rail",
+  "summary": "Carries passengers between cities at over 200 kilometres an hour, often faster door to door than flying. Electric motors on every carriage draw power from an overhead wire through a sprung arm on the roof; the line is built with gentle curves, no level crossings and welded rails, so the train can run flat out.",
+  "draw": "A streamlined bullet-nosed electric train speeding along an elevated straight track, with a spring-loaded pantograph arm on its roof pressed up against the overhead wire, which hangs from supports along the line.",
+  "inventor": "Japanese National Railways, Hideo Shima",
+  "location": "Japan",
+  "field": "Design"
+ },
+ {
+  "id": "drip-irrigation",
+  "year": "1965",
+  "title": "Drip irrigation",
+  "summary": "Waters crops a drop at a time right at the roots, using far less water than flooding or sprinklers. Plastic tubes run along each row with small drippers set into them. Inside each dripper the water squeezes through a long, narrow zigzag channel whose friction soaks up the pressure, so it seeps out slowly and evenly all along the line.",
+  "draw": "Ground-level close-up of a black plastic tube lying along a row of young plants in dry soil; a small dripper in the tube releases a single drop beside one plant's stem, where a dark circle of damp soil has spread.",
+  "inventor": "Simcha Blass",
+  "location": "Israel",
+  "field": "Design"
+ },
+ {
+  "id": "night-vision-goggles",
+  "year": "1965",
+  "title": "Night vision",
+  "summary": "Lets soldiers, rescuers and wildlife watchers see by starlight. A lens focuses the faint light onto a coated plate where each particle of light knocks out an electron; a high voltage speeds the electrons up and multiplies them thousands of times, and they strike a phosphor screen that glows green with a bright copy of the scene.",
+  "draw": "A pair of night-vision goggles mounted on the front of a helmet and flipped down: two short tubes with objective lenses facing forward and eyepieces at the back, each eyepiece glowing faint green. Dark night background.",
+  "inventor": "US Army Night Vision Laboratory",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "dental-implant",
+  "year": "1965",
+  "title": "Dental implant",
+  "summary": "Replaces a lost tooth with one that stays put. A small titanium screw is set into a hole drilled in the jawbone and left for some months; bone cells grow right up against the titanium and lock onto it, after which a false tooth is fixed to the top.",
+  "draw": "Cross-section of a jaw showing a threaded titanium screw sunk upright into the bone between two natural teeth, the bone grown tight into its threads, a short connector post on top and a white porcelain crown fixed onto it at gum level.",
+  "inventor": "Per-Ingvar Brånemark",
+  "location": "Sweden",
+  "field": "Design"
+ },
+ {
+  "id": "fax-machine",
+  "year": "1966",
+  "title": "Fax machine",
+  "summary": "Sends a copy of a page across the world over an ordinary phone line. The sending machine scans the page line by line, a light-sensitive cell turning each spot's lightness or darkness into an electrical tone; the receiving machine listens to the tones and prints matching dots, line by line, to rebuild the page.",
+  "draw": "A desktop fax machine with a telephone handset resting on top, a sheet of paper being drawn face-down into its slot over a narrow bright strip of scanning light that shines across the full width of the page.",
+  "inventor": "Xerox",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "mammography",
+  "year": "1966",
+  "title": "Mammography",
+  "summary": "Finds breast cancer early, often before a lump can be felt. The breast is pressed flat between two plastic plates, and low-energy X-rays pass through it onto film or a detector. Tumours and tiny specks of calcium absorb more X-rays than the soft tissue around them, so they show up as white spots.",
+  "draw": "A mammography machine on its own: an upright column holding an arm with the X-ray tube head at the top, a flat detector plate at chest height below it, and a clear plastic compression paddle lowered close above the plate. No patient.",
+  "inventor": "Charles Gros",
+  "location": "France",
+  "field": "Design"
+ },
+ {
+  "id": "atm-cash-machine",
+  "year": "1967",
+  "title": "Cash machine",
+  "summary": "Hands out banknotes at any hour. The machine reads the customer's card, from its magnetic stripe or chip, asks for a secret number and checks both with the bank's computer over a phone line; then rollers pull notes one by one from a stack, count them and push them out through a slot.",
+  "draw": "A cash machine set into a bank wall, cut away to show inside: a card slot with its reader, a keypad and screen on the front, and behind them cassettes of stacked banknotes feeding through rubber rollers up to the note slot.",
+  "inventor": "John Shepherd-Barron, De La Rue",
+  "location": "England",
+  "field": "Design"
+ },
+ {
+  "id": "oral-rehydration-therapy",
+  "year": "1968",
+  "title": "Oral rehydration therapy",
+  "summary": "Saves people dying of diarrhoea with a drink of clean water, salt and sugar. Cholera makes the gut pour out water faster than a body can safely lose it. But the gut lining has carriers that pull salt and sugar in together, and water follows them by osmosis, so the drink is soaked up even while the diarrhoea goes on.",
+  "draw": "A mother holding a cup to a small child's lips; on the table beside them are a jug of water, a little heap of salt, a heap of sugar and a spoon.",
+  "inventor": "David Nalin and Richard Cash",
+  "location": "Bangladesh",
+  "field": "Design"
+ },
+ {
+  "id": "precision-guided-bombs",
+  "year": "1968",
+  "title": "Precision-guided bomb",
+  "summary": "A bomb that steers itself onto its target, landing within a few metres instead of hundreds. A laser beam lights the target with invisible pulses; a sensor in the bomb's nose sees the reflected spot and moves small fins to keep it centred as the bomb glides down. Later kinds steer by satellite navigation instead.",
+  "draw": "A laser-guided bomb gliding down at a slant against the sky: a plain bomb body with a sensor head on its nose ringed by a short open collar, four small steering fins just behind the nose, and four larger fixed fins at the tail. No markings.",
+  "inventor": "Texas Instruments and the US Air Force",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "quartz-watch",
+  "year": "1969",
+  "title": "Quartz watch",
+  "summary": "A watch accurate to a few seconds a month. A tiny quartz crystal rings thousands of times a second: squeezing quartz makes a voltage and a voltage makes it flex, so a battery-powered circuit can keep it ringing. A chip counts the vibrations and gives a little stepping motor one pulse a second to move the hands.",
+  "draw": "The inside of a quartz wristwatch with the back removed: a round button battery, a small metal cylinder holding the tuning-fork-shaped quartz crystal, a microchip, and the copper coil of the stepping motor beside a train of tiny gears that turns the hands.",
+  "inventor": "Seiko",
+  "location": "Japan",
+  "field": "Design"
+ },
+ {
+  "id": "email",
+  "year": "1971",
+  "title": "Email",
+  "summary": "Sends a written message to someone's computer mailbox in seconds. The message is addressed with a person's name, an @ sign and the name of their computer, and is passed from machine to machine over the network until it reaches that one. There it waits in the person's mailbox file until they log in to read it.",
+  "draw": "A 1970s computer terminal: a typewriter-style keyboard with a roll of paper rising above it, a printed message shown as rows of indistinct grey lines on the paper, and a thick cable running from it to a tall cabinet of computer equipment.",
+  "inventor": "Ray Tomlinson, BBN",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "video-game-console",
+  "year": "1972",
+  "title": "Video game console",
+  "summary": "Plays games on the family television. A TV draws its picture with a beam that sweeps across the screen line by line, and the console's circuits send a bright pulse at just the right moment in each sweep to put a square in a chosen spot. Turning a knob on a controller shifts that timing, so the square moves.",
+  "draw": "A plain box-shaped game console on the floor wired to a 1970s wooden-cased television, with two hand controllers on cables, each with knobs on top; the screen shows two white vertical bars and a small white square ball on a black background.",
+  "inventor": "Ralph Baer, Sanders Associates",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "artemisinin-malaria-drug",
+  "year": "1972",
+  "title": "Artemisinin malaria drug",
+  "summary": "Cures malaria fast, including strains that resist older drugs. It is extracted from sweet wormwood, a herb in old Chinese fever remedies; inside the red blood cells where the parasite lives, iron from digested blood snaps a fragile oxygen bridge in the molecule, releasing reactive fragments that wreck the parasite.",
+  "draw": "A leafy stem of sweet wormwood with feathery, fern-like green leaves and tiny yellow ball-shaped flowers, lying beside a glass flask of pale extract and a few white tablets.",
+  "inventor": "Tu Youyou",
+  "location": "China",
+  "field": "Design"
+ },
+ {
+  "id": "graphical-user-interface",
+  "year": "1973",
+  "title": "Graphical user interface",
+  "summary": "Lets people use a computer by pointing at pictures instead of typing commands. Every dot on the screen is a bit in the computer's memory, so it can draw overlapping windows, icons and menus; a hand-held mouse moves an arrow across them, and clicking a picture carries out its command.",
+  "draw": "A desktop computer with an upright, portrait-shaped screen showing overlapping rectangular windows, small icons and an arrow pointer (no readable text), with a keyboard in front and a three-button mouse on the desk beside it, its cable running to the computer.",
+  "inventor": "Xerox PARC",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "airbag",
+  "year": "1973",
+  "title": "Airbag",
+  "summary": "A cushion that bursts out of the steering wheel in a crash and catches the head before it hits. A sensor feels the sudden slowing and fires a pellet of chemicals that turns, in about a thirtieth of a second, into nitrogen gas filling a nylon bag; vents let the bag deflate as you land on it.",
+  "draw": "A car's steering wheel with a fully inflated round airbag bursting out of its centre, the torn cover flaps folded open around the hub, and the bag's fabric showing its stitched seams. Empty driver's seat behind, no person.",
+  "inventor": "General Motors",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "plastic-bottle",
+  "year": "1973",
+  "title": "Plastic drinks bottle",
+  "summary": "A light, shatterproof bottle that can hold fizzy drinks. A small test-tube shape of PET plastic is heated, stretched lengthwise by a rod and blown out against a mould by compressed air; the stretching lines up the plastic's long molecules in both directions, making the thin wall strong enough to hold the gas pressure.",
+  "draw": "A clear plastic fizzy-drink bottle standing beside the small, thick-walled test-tube-shaped preform it was blown from, both with the same screw-thread neck, the bottle having a petal-shaped base with five feet.",
+  "inventor": "Nathaniel Wyeth, DuPont",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "pulse-oximeter",
+  "year": "1975",
+  "title": "Pulse oximeter",
+  "summary": "Clips on a fingertip and shows how much oxygen the blood is carrying. Two tiny lights, one red and one infrared, shine through the finger to a light sensor on the other side. Oxygen-rich blood lets more red light through than oxygen-poor blood does, so comparing the two colours as each heartbeat swells the arteries gives the reading.",
+  "draw": "Cutaway of a clip-on sensor gripping a fingertip: two tiny lights in the upper jaw (one glowing red, one infrared shown as a faint dark-red glow) shine down through the finger, past its small arteries, onto a light sensor in the lower jaw.",
+  "inventor": "Takuo Aoyagi, Nihon Kohden",
+  "location": "Japan",
+  "field": "Design"
+ },
+ {
+  "id": "digital-camera",
+  "year": "1975",
+  "title": "Digital camera",
+  "summary": "Takes photographs without film, so pictures can be seen at once and shared by computer. The lens focuses the scene onto an image-sensor chip, where light knocks electrons loose in each of millions of tiny squares; the camera measures the charge in each square and stores the numbers on a memory card.",
+  "draw": "A compact digital camera cut away from the side: a lens barrel at the front, a flat rectangular sensor chip directly behind the lens, a circuit board behind that, a small memory card half pushed into its slot, and a screen on the back showing the scene in front of the lens.",
+  "inventor": "Steven Sasson, Kodak",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "pet-scanner",
+  "year": "1975",
+  "title": "PET scanner",
+  "summary": "Shows which parts of the body are busiest, such as a tumour or a working patch of brain. The patient is injected with sugar carrying a radioactive tag that shoots out positrons, the antimatter twins of electrons; each meets an electron and both vanish into two gamma rays flying in opposite directions, which a ring of detectors catches.",
+  "draw": "A patient lying on a bed that slides into a short doughnut-shaped scanner; a cutaway of the ring shows a circle of detector blocks, with two straight gamma-ray paths shooting out in exactly opposite directions from one point in the patient's head to opposite sides of the ring.",
+  "inventor": "Michael Phelps, Edward Hoffman, Michel Ter-Pogossian",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "waterproof-breathable-fabric",
+  "year": "1976",
+  "title": "Waterproof breathable fabric",
+  "summary": "Keeps rain out while letting sweat escape, so a jacket stays dry inside. A thin film of stretched non-stick plastic (PTFE) is bonded inside the cloth; it is full of billions of tiny pores, far too small for a raindrop to squeeze through but much bigger than single molecules of water vapour, which drift out.",
+  "draw": "Magnified cross-section of a jacket fabric: an outer woven layer with round raindrops beaded on top, a thin white membrane beneath riddled with tiny pores, and wisps of water vapour rising up through the pores from the warm body side below, while the drops stay on top.",
+  "inventor": "Bob Gore, W. L. Gore & Associates",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "personal-computer",
+  "year": "1977",
+  "title": "Personal computer",
+  "summary": "A whole computer for one person, on a desk at home or work. At its heart a single microprocessor chip fetches instructions from memory chips and carries them out one after another, from hundreds of thousands to billions of times a second. A keyboard and mouse put information in, a screen shows the results, and a disk keeps files.",
+  "draw": "A home desk computer: a monitor showing a simple picture, a keyboard and a mouse in front, and a tower case beside it with its side panel off to show the main circuit board, a square processor chip under a finned cooler, slim memory sticks in slots, and a disk drive in a bay.",
+  "inventor": "Apple, Commodore and Tandy",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "public-key-encryption",
+  "year": "1977",
+  "title": "Public-key encryption",
+  "summary": "Lets strangers exchange secrets over an open line; it guards every secure website and card payment. Each person hands out a lock anyone can close but keeps the only key; the lock is made by multiplying two huge prime numbers, which is easy, while recovering the primes from their product would take computers longer than the age of the universe.",
+  "draw": "A pile of identical open padlocks on a table, free for anyone to take, one of them snapped shut on a small metal box, and a single key on a chain held in its owner's hand.",
+  "inventor": "Ron Rivest, Adi Shamir, Leonard Adleman",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "anti-lock-brakes",
+  "year": "1978",
+  "title": "Anti-lock brakes",
+  "summary": "Stops a car's wheels locking and skidding in hard braking, so the car can still be steered. A toothed ring and a magnetic sensor at each wheel report how fast it turns. If one wheel slows much faster than the car, a microchip has valves release and reapply its brake many times a second, keeping the tyre just short of skidding.",
+  "draw": "Close-up behind a car wheel: a brake disc gripped by its caliper, and beside the hub a toothed metal ring turning with the wheel, with a small sensor tip mounted just clear of the teeth and a wire leading away from it.",
+  "inventor": "Bosch",
+  "location": "Germany",
+  "field": "Design"
+ },
+ {
+  "id": "portable-music-player",
+  "year": "1979",
+  "title": "Portable music player",
+  "summary": "Carries your music with you, played into lightweight headphones as you walk. The first ones played cassettes: a thin plastic tape coated with magnetised particles slides past a playback head, and the changing magnetism makes a tiny current that is amplified for the earphones. Later players store music as numbers in flash memory.",
+  "draw": "A pocket cassette player with its lid open: the cassette inside, its tape running past a small metal playback head pressed against it, and a steel capstan with a rubber pinch roller squeezing the tape to pull it along. A pair of lightweight headphones on a thin wire plugged into the side.",
+  "inventor": "Nobutoshi Kihara, Sony",
+  "location": "Japan",
+  "field": "Design"
+ },
+ {
+  "id": "spreadsheet",
+  "year": "1979",
+  "title": "Spreadsheet",
+  "summary": "Does a business's sums on screen and redoes them instantly when any figure changes. The screen is a grid of cells, each holding a number, a label or a formula that refers to other cells; change one number and the computer recalculates every cell that depends on it, so people can ask 'what if?'.",
+  "draw": "An early personal computer with a boxy monitor showing a grid of glowing green digits in rows and columns with one cell highlighted, and an office worker's hands typing on the keyboard in front.",
+  "inventor": "Dan Bricklin, Bob Frankston",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "hepatitis-b-vaccine",
+  "year": "1981",
+  "title": "Hepatitis B vaccine",
+  "summary": "Protects against a virus that causes liver failure and liver cancer; it was the first vaccine to prevent a cancer. It contains harmless copies of the virus's outer protein, which train the immune system to recognise the real thing; since 1986 that protein has been made by yeast cells given the virus gene, instead of purified from infected blood.",
+  "draw": "A nurse's gloved hand giving a baby a vaccine injection in the thigh, with a small glass vial of cloudy white vaccine and a syringe on a tray beside them.",
+  "inventor": "Baruch Blumberg, Irving Millman; Maurice Hilleman, Merck",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "compact-disc",
+  "year": "1982",
+  "title": "Compact disc",
+  "summary": "Plays music stored as numbers on a shiny disc. A spiral track of microscopic pits is pressed into the plastic, and a laser shines up onto it while a light sensor reads the flicker of the reflection at each pit's edges. Extra check numbers mixed in let the player rebuild sound hidden by a scratch or a speck of dust.",
+  "draw": "Side cutaway of a compact disc spinning in a player: a tiny laser and lens beneath the disc focus a thin beam up onto its underside, with a magnified inset of the track showing rows of microscopic pits of different lengths.",
+  "inventor": "Philips and Sony",
+  "location": "Netherlands and Japan",
+  "field": "Design"
+ },
+ {
+  "id": "pcr-dna-copying",
+  "year": "1983",
+  "title": "PCR (DNA copying)",
+  "summary": "Makes billions of copies of a chosen piece of DNA in a few hours, enough to test or read. The sample is heated so the two DNA strands come apart, then cooled so short starter pieces stick to each end of the target. An enzyme from hot-spring bacteria builds a new partner strand on each, doubling the target every cycle.",
+  "draw": "A benchtop DNA-copying machine with its lid open, showing a metal heating block with rows of small holes, each holding a tiny capped plastic tube of clear liquid.",
+  "inventor": "Kary Mullis, Cetus",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "mobile-phone",
+  "year": "1983",
+  "title": "Mobile phone",
+  "summary": "A telephone you carry, so you can call from almost anywhere. The land is divided into small cells, each with its own radio mast; the phone talks to the nearest one and is handed on to the next as you move. Cells far enough apart reuse the same frequencies, so millions of people can call at once.",
+  "draw": "A hand holding a large brick-shaped handheld phone with a keypad and a stubby rubber antenna on top, raised toward the ear; behind, out of focus, a lattice-steel radio mast with flat panel antennas near its top.",
+  "inventor": "Martin Cooper, Motorola",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "stealth-aircraft",
+  "year": "1983",
+  "title": "Stealth aircraft",
+  "summary": "A warplane that radar can barely see. Its skin is made of flat, angled panels that bounce radar waves off in a few directions away from the transmitter, like a tilted mirror, instead of back to it; special coatings soak up much of the rest as heat, so even a large jet returns only a faint echo.",
+  "draw": "A black jet seen from slightly below and ahead, built entirely of flat triangular and trapezoidal panels meeting at sharp angles, with sharply swept wings, a cockpit canopy of flat angled panes, and two tail fins splayed outward in a V. No rounded surfaces.",
+  "inventor": "Lockheed Skunk Works",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "insecticide-treated-bed-nets",
+  "year": "1983",
+  "title": "Insecticide-treated bed nets",
+  "summary": "Protects sleepers from the night-biting mosquitoes that spread malaria. A net over the bed keeps mosquitoes off, and its fibres are soaked or coated with insecticide, so mosquitoes that land on the mesh trying to get in are killed or driven away, even where the net is torn; when most homes use them, malaria falls for the whole village.",
+  "draw": "A child asleep on a bed under a white mosquito net hanging from a ring above and tucked under the mattress on all sides, a few mosquitoes clinging to the outside of the mesh and one lying dead on the floor below.",
+  "inventor": "Frédéric Darriet, Pierre Carnevale",
+  "location": "Burkina Faso",
+  "field": "Design"
+ },
+ {
+  "id": "internet",
+  "year": "1983",
+  "title": "Internet",
+  "summary": "Links the world's computer networks into one. Every message is chopped into small packets, each labelled with where it is going; routers along the way pass each packet on toward its destination by whatever path is free, and the receiving computer puts them back in order and asks again for any that went missing.",
+  "draw": "A single network router box with blinking lights and many cables plugged into its back, the cables fanning out to a laptop, a desktop computer and a fibre-optic cable whose cut end glows with light.",
+  "inventor": "Vint Cerf, Bob Kahn",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "3d-printing",
+  "year": "1987",
+  "title": "3D printing",
+  "summary": "Builds a solid object straight from a computer design, one thin layer at a time. In the first machines an ultraviolet laser traces the shape of one slice on the surface of a vat of liquid plastic, which hardens where the light falls. The platform then sinks a fraction of a millimetre and the next slice is drawn on top.",
+  "draw": "Cutaway of a vat of liquid resin with a flat perforated platform just below the surface, holding a half-built object; a thin violet laser beam comes down from a mirror above and traces on the resin surface, hardening a new layer on top of the object.",
+  "inventor": "Chuck Hull, 3D Systems",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "statins",
+  "year": "1987",
+  "title": "Statins",
+  "summary": "Pills that lower blood cholesterol and cut the risk of heart attacks and strokes. The liver makes much of the body's cholesterol through a chain of chemical steps. A statin jams the enzyme that runs one early step, so the liver makes less and pulls more cholesterol out of the blood to make up the shortfall.",
+  "draw": "A cutaway of an artery with a yellow fatty bulge in its wall narrowing the channel and red blood cells squeezing past, with a single small white pill in the foreground.",
+  "inventor": "Akira Endo; Merck",
+  "location": "Japan and United States",
+  "field": "Design"
+ },
+ {
+  "id": "flash-memory",
+  "year": "1987",
+  "title": "Flash memory",
+  "summary": "Keeps photos, music and files when the power is off, in phones, cameras and memory sticks. Each bit is a little charge of electrons trapped on an island of conductor sealed in very thin insulation above a transistor. A high voltage pushes electrons through the insulation by quantum tunnelling, and the trapped charge decides whether the transistor switches on.",
+  "draw": "A memory stick with its plastic casing opened: a small green circuit board carrying a flat black memory chip, a smaller controller chip, and a metal plug connector at one end.",
+  "inventor": "Fujio Masuoka, Toshiba",
+  "location": "Japan",
+  "field": "Design"
+ },
+ {
+  "id": "keyhole-surgery",
+  "year": "1987",
+  "title": "Keyhole surgery",
+  "summary": "Operations through cuts a centimetre long instead of opening the body, so patients go home in days rather than weeks. The belly is puffed up with carbon dioxide to make room; a thin telescope lit through glass fibres sends a camera picture to a screen, while the surgeon works with long, slender instruments through other small holes.",
+  "draw": "An operating table seen from the side: a patient's draped, gently domed belly with three or four slim metal tubes entering it, a surgeon's gloved hands holding long thin instruments through two of them, and a video screen above showing a pink view of the inside.",
+  "inventor": "Philippe Mouret",
+  "location": "France",
+  "field": "Design"
+ },
+ {
+  "id": "antidepressants-ssris",
+  "year": "1987",
+  "title": "Antidepressants (SSRIs)",
+  "summary": "Eases depression and anxiety with fewer side effects than older pills. Nerve cells pass signals by releasing a messenger chemical, serotonin, into the narrow gap between them and then soaking it back up; the drug blocks that soaking-up pump, so serotonin lingers in the gap and keeps passing its signal.",
+  "draw": "Magnified view of the junction between two nerve cells: the bulb-shaped end of one cell releasing small dots of serotonin across a narrow gap to receptors on the next cell, with the pump channels on the first cell's surface plugged by drug molecules so the dots stay in the gap.",
+  "inventor": "David Wong, Bryan Molloy, Ray Fuller, Eli Lilly",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "rapid-test-strip",
+  "year": "1988",
+  "title": "Rapid test strip",
+  "summary": "Gives a yes-or-no medical answer in minutes at home, as in pregnancy and Covid tests. A drop of urine or swab fluid soaks along a paper strip, picking up antibodies stuck to tiny coloured particles; if the substance being tested for is there, it links those particles to a line of other antibodies fixed across the strip, and a coloured line appears.",
+  "draw": "A plastic test cassette lying flat, cut away to show the paper strip inside: a pad at one end with a drop of liquid soaking in, the wet front creeping along the strip, and two coloured lines showing in the result window.",
+  "inventor": "Unipath, Unilever (Keith May, Mick Prior, Ian Richards)",
+  "location": "England",
+  "field": "Design"
+ },
+ {
+  "id": "laser-eye-surgery",
+  "year": "1989",
+  "title": "Laser eye surgery",
+  "summary": "Corrects short sight so people can do without glasses. An ultraviolet laser fires short pulses at the clear front of the eye; each pulse breaks the chemical bonds in a layer of tissue far thinner than a hair, vaporising it without heating what's around it. Flattening the cornea's curve this way moves the eye's focus back onto the retina.",
+  "draw": "Close-up of a patient lying back with one eye held open under a laser head pointing straight down; a thin flap of the clear front of the eye is folded back like a hinged lid, and the laser is reshaping the exposed tissue underneath.",
+  "inventor": "Stephen Trokel; Theo Seiler",
+  "location": "United States and Germany",
+  "field": "Design"
+ },
+ {
+  "id": "lithium-ion-battery",
+  "year": "1991",
+  "title": "Lithium-ion battery",
+  "summary": "The light, rechargeable battery in phones, laptops and electric cars. Charging drives lithium ions out of a layered metal-oxide crystal, through a liquid, and slips them between the layers of graphite in the other electrode; using the battery lets them drift back while electrons flow the long way round, through the device.",
+  "draw": "A cylindrical battery cell cut open lengthwise: inside the steel can, long thin strips (copper foil coated black with graphite, a paper-thin separator, aluminium foil coated with grey metal oxide, another separator) wound together into a tight spiral roll, with the positive cap on top.",
+  "inventor": "Akira Yoshino, John Goodenough, Stanley Whittingham; Sony",
+  "location": "Japan",
+  "field": "Design"
+ },
+ {
+  "id": "world-wide-web",
+  "year": "1991",
+  "title": "World Wide Web",
+  "summary": "Turns the internet into a library anyone can browse. Pages are stored on computers called servers, each page with its own address; a browser program asks for a page, gets back text marked up with formatting and links, and clicking a link fetches another page from wherever in the world it lives.",
+  "draw": "A boxy 1990s desktop computer whose screen shows a page of pictures and blocks of grey lines standing for text, a few highlighted links among them, with a hand on the mouse about to click one.",
+  "inventor": "Tim Berners-Lee, CERN",
+  "location": "Switzerland",
+  "field": "Design"
+ },
+ {
+  "id": "compressed-media",
+  "year": "1992",
+  "title": "Compressed media",
+  "summary": "Squeezes music and pictures to a tenth of their size or less, so they fit on small devices and travel quickly over the internet. Sound is split into narrow bands of pitch, and quiet sounds that the ear can't hear next to louder ones are thrown away. Photos are trimmed the same way, dropping fine detail the eye won't miss.",
+  "draw": "A pair of over-ear headphones lying beside a small, plain rectangular pocket music player with a blank screen, the cable connecting them.",
+  "inventor": "Karlheinz Brandenburg, Fraunhofer Institute",
+  "location": "Germany",
+  "field": "Design"
+ },
+ {
+  "id": "genetically-modified-crops",
+  "year": "1994",
+  "title": "Genetically modified crops",
+  "summary": "Crops given a useful gene borrowed from another living thing. The gene is slipped into plant cells by a bacterium that naturally inserts DNA into plants, or shot in on tiny gold beads, and whole plants are grown from the changed cells. A common example makes a bacterial protein that poisons caterpillars, so the plant protects itself.",
+  "draw": "An ear of corn with its husk partly peeled back, the kernels whole and undamaged, and a small caterpillar lying dead on the leaf beside it after taking a single bite.",
+  "inventor": "Calgene",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "online-shopping",
+  "year": "1994",
+  "title": "Online shopping",
+  "summary": "Lets people buy almost anything from home and have it delivered. A shop's website lists its goods; the customer's card number is scrambled by encryption on its way to the shop's computer, which checks it with the bank, and a warehouse then picks, packs and posts the order.",
+  "draw": "A cardboard parcel just delivered on a doorstep, beside it through the open door a laptop on a hall table whose screen shows a grid of product pictures with one highlighted, and a bank card resting by the keyboard.",
+  "inventor": "",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "military-drones",
+  "year": "1995",
+  "title": "Military drone",
+  "summary": "An aircraft with no one aboard that watches or strikes from far away, flown by a crew on the ground, perhaps on another continent. A camera ball under the nose sends live video up to a satellite and down to the crew, whose commands return the same way; long, thin wings let it circle for a day.",
+  "draw": "A slender unmanned aircraft in flight, seen from below and to the side: a long thin body with a bulging rounded nose and no cockpit windows, a camera ball hanging under the nose, very long narrow straight wings, an inverted-V tail with its fins pointing downward, and a propeller at the very back pushing it along.",
+  "inventor": "Abraham Karem, General Atomics",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "antiretroviral-hiv-therapy",
+  "year": "1996",
+  "title": "Antiretroviral HIV therapy",
+  "summary": "Turns HIV infection from a death sentence into a condition people live with. The virus copies its genes into the cell's DNA with an enzyme called reverse transcriptase, then needs a second enzyme, protease, to finish new viruses; the drugs jam these enzymes. Taking three at once means the virus would need several lucky mutations together to escape.",
+  "draw": "A weekly pill organiser with its lids open, each day's compartment holding the same trio of pills: one white oval tablet, one blue capsule and one small yellow round tablet.",
+  "inventor": "David Ho and others",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "white-led-lighting",
+  "year": "1996",
+  "title": "White LED lighting",
+  "summary": "Lights homes and streets on a fraction of a bulb's electricity and lasts for decades. A tiny chip of gallium nitride glows blue when current flows through it; a coating of yellow phosphor over the chip turns some of that blue light into yellow, and the blue and yellow together look white.",
+  "draw": "Close-up cutaway of a single white LED: a tiny square chip glowing blue in a small metal cup, a blob of yellow phosphor covering it, and white light spreading out of the top, with two wire legs leading out below.",
+  "inventor": "Nichia (Shuji Nakamura, Yoshinori Shimizu)",
+  "location": "Japan",
+  "field": "Design"
+ },
+ {
+  "id": "mars-rovers",
+  "year": "1997",
+  "title": "Mars rover",
+  "summary": "A robot car that drives across Mars studying rocks. Solar panels power it, and its six wheels ride on pivoting arms that let it climb over stones while keeping every wheel on the ground. Radio signals take minutes to reach Earth, so between commands it steers itself around obstacles using its own cameras.",
+  "draw": "A small six-wheeled rover on red, rocky Martian ground with a flat solar panel on top; on each side a long arm pivots on the body, carrying one wheel at one end and a shorter pivoting arm with two wheels at the other, and one wheel is tilted up over a rock while the others stay down.",
+  "inventor": "NASA Jet Propulsion Laboratory",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "streaming-video",
+  "year": "1997",
+  "title": "Streaming video",
+  "summary": "Plays video over the internet as it arrives, instead of waiting for the whole file to download. The video is heavily compressed and sent as a stream of small packets; the player keeps a few seconds in hand and shows them in order while more arrive. Modern players drop to lower quality on the fly when the connection slows.",
+  "draw": "A laptop on a kitchen table playing a film, the screen showing a person's face, with a thin progress bar along the bottom where a lighter shaded section runs ahead of the playback point.",
+  "inventor": "RealNetworks",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "wi-fi",
+  "year": "1997",
+  "title": "Wireless network",
+  "summary": "Connects laptops, phones and printers to the internet without cables, across a home or office. A router and each device trade short radio bursts at a few billion waves a second. Newer versions split the data across dozens of neighbouring frequencies sent at once, which the receiving chip separates by Fourier analysis, so echoes off walls do not scramble it.",
+  "draw": "A home wireless router on a wooden shelf: a flat box with three upright antennas and a row of small indicator lights, a laptop open on a table nearby, with faint concentric ripples spreading from the antennas to suggest radio waves.",
+  "inventor": "Vic Hayes, NCR",
+  "location": "Netherlands",
+  "field": "Design"
+ },
+ {
+  "id": "hybrid-car",
+  "year": "1997",
+  "title": "Hybrid car",
+  "summary": "Burns much less fuel in stop-start town driving. A petrol engine and an electric motor share the job of turning the wheels; when the car brakes, the motor runs as a generator and charges a battery instead of wasting the energy as heat, and that stored power helps the car pull away again.",
+  "draw": "Cutaway of a small car showing a petrol engine and an electric motor-generator side by side under the bonnet, both coupled through one gearbox to the front wheels, with thick orange cables running back to a battery pack under the rear seat.",
+  "inventor": "Toyota (Takeshi Uchiyamada)",
+  "location": "Japan",
+  "field": "Design"
+ },
+ {
+  "id": "social-media",
+  "year": "1997",
+  "title": "Social media",
+  "summary": "Lets people keep up with friends and share news, photos and opinions with anyone. Each person makes a profile and links to friends; a central website stores everyone's posts and, every time someone looks, a program assembles a fresh feed from the people they follow, picking and ordering what to show.",
+  "draw": "A smartphone held in one hand, its screen showing a scrolling column of square photos, each with a small round profile picture beside it, the thumb in mid-scroll.",
+  "inventor": "Andrew Weinreich",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "ion-thruster",
+  "year": "1998",
+  "title": "Ion thruster",
+  "summary": "Pushes a spacecraft for months on end using a tenth of a rocket's fuel. Powered by solar panels, it strips electrons off xenon atoms, and charged metal grids at the back fling the ions out at about 30 kilometres a second. The push is as gentle as a sheet of paper resting on your hand, but never lets up.",
+  "draw": "The back of a spacecraft with large solar panels: a round thruster whose face is a slightly domed metal grid pierced with thousands of tiny holes, from which a faint glowing blue plume streams straight back into black space.",
+  "inventor": "Harold Kaufman, NASA",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "search-engine",
+  "year": "1998",
+  "title": "Search engine",
+  "summary": "Finds the few pages that answer a question among billions on the web. Programs crawl the web, copying every page and indexing every word; pages matching the question are then ranked, each scoring higher the more links point to it, especially links from pages that themselves rank high.",
+  "draw": "A web of small rectangular pages joined by arrows, one page in the middle receiving arrows from many others and drawn larger and brighter than the rest, with a magnifying glass hovering over it.",
+  "inventor": "Larry Page, Sergey Brin",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "fracking",
+  "year": "1998",
+  "title": "Fracking",
+  "summary": "Gets gas and oil out of dense shale rock that would otherwise hold on to it. A well is drilled down and then sideways along the rock layer; water with sand is pumped in at enormous pressure to split the rock into fine cracks, and the sand grains wedge the cracks open so the gas can seep out.",
+  "draw": "Underground cross-section: a small drilling rig at the surface with a vertical well pipe that bends into a long horizontal pipe running inside a dark layer of shale far below, with fine cracks branching out from the horizontal section and grains of sand holding them open.",
+  "inventor": "George Mitchell, Mitchell Energy",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "continuous-glucose-monitor-insulin-pump",
+  "year": "1999",
+  "title": "Continuous glucose monitor",
+  "summary": "Tracks blood sugar day and night for people with diabetes, without finger-prick tests. A hair-thin wire under the skin is coated with an enzyme that reacts with sugar in the body's fluid, making a tiny electric current: more sugar, more current. A small transmitter turns that into a reading every few minutes and can pass it to an insulin pump.",
+  "draw": "Cutaway of the skin of a person's upper arm: a small round disc stuck on the surface, with a single hair-thin flexible wire running from it down into the fatty layer just below the skin, surrounded by cells bathed in fluid.",
+  "inventor": "MiniMed",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "short-range-wireless-link",
+  "year": "1999",
+  "title": "Short-range wireless link",
+  "summary": "Links earbuds, keyboards, watches and speakers to a phone or computer across a room. Each device sends weak radio signals at 2.4 billion waves a second and hops between 79 channels 1,600 times a second, in a pattern both ends know, so it dodges interference from other gadgets nearby.",
+  "draw": "A pair of small wireless earbuds lifted out of their open charging case on a table, with a smartphone lying beside them; no wires anywhere.",
+  "inventor": "Jaap Haartsen, Ericsson",
+  "location": "Sweden",
+  "field": "Design"
+ },
+ {
+  "id": "robotic-surgery",
+  "year": "2000",
+  "title": "Robotic surgery",
+  "summary": "Lets a surgeon operate through a few small cuts using robot arms. Thin instruments and a 3D camera on long rods go in through the cuts, while the surgeon sits at a console watching the magnified view and working hand controls. Computers scale down every movement and filter out tremor, and tiny wrists at the instrument tips bend like a hand.",
+  "draw": "An operating room: a patient under drapes with a large robot standing over them, its three or four slender arms angled down, each holding a long thin rod that enters the body through a small round port; a few steps away a surgeon sits at a console with face to a viewer and hands on the controls.",
+  "inventor": "Intuitive Surgical",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "video-calling",
+  "year": "2003",
+  "title": "Video calling",
+  "summary": "Lets people talk face to face across the world, seeing each other as they speak. A small camera captures about thirty pictures a second; software squeezes them by sending mostly what changed since the last picture, breaks them into packets and sends them over the internet, where the other computer rebuilds and shows them alongside the sound.",
+  "draw": "A laptop open on a kitchen table, a small camera lens in the frame above its screen; on the screen a grandmother's face, smiling and waving, while a child sitting in front of the laptop waves back.",
+  "inventor": "",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "glp-1-drugs",
+  "year": "2005",
+  "title": "GLP-1 drugs",
+  "summary": "Medicines that help people with diabetes control their blood sugar, and help many lose weight. They copy a gut hormone released after meals that tells the pancreas to release insulin, slows the stomach, and tells the brain you are full. The body's own hormone is broken down in minutes; the drugs are altered to last a day or a week.",
+  "draw": "A pen-shaped injector with a dose dial at one end, its cap off and a very short fine needle at the tip, held against the skin of a person's belly.",
+  "inventor": "John Eng; Amylin and Eli Lilly",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "cloud-data-centres",
+  "year": "2006",
+  "title": "Cloud data centre",
+  "summary": "Lets people and companies rent computing power and storage over the internet instead of owning machines. Warehouse-sized buildings hold tens of thousands of computers in racks; software spreads each job and copies each file across many of them, so any one can fail unnoticed. Most of the electricity ends up as heat, which fans and chilled water carry away.",
+  "draw": "A long, narrow aisle between two rows of tall black server racks, each packed with flat computers stacked like trays, rows of tiny green and blue lights, bundled cables, and perforated floor tiles in front of the racks blowing cool air up into them.",
+  "inventor": "Amazon Web Services",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "smartphone",
+  "year": "2007",
+  "title": "Smartphone",
+  "summary": "A pocket computer that is also a telephone, camera, map and music player. A glass touchscreen senses fingers by the electric charge they draw, and inside are radios for calls, data and satellite positioning, a camera chip and a lithium-ion battery. A microscopic weight on springs inside a chip senses tilt, so the screen turns to match the phone.",
+  "draw": "A plain smartphone with no logos or buttons held sideways in a hand, partly cut away to show its thin layers: the glass screen on top, a flat battery filling most of the body, and a small circuit board with chips near one end beside a camera lens.",
+  "inventor": "Apple",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "mobile-money",
+  "year": "2007",
+  "title": "Mobile payments",
+  "summary": "Lets people without a bank account send and keep money using a basic mobile phone. Cash handed to a local shop agent becomes credit held by the phone company; the owner sends it to anyone with a short text message and a PIN, and the receiver turns it back into cash at another agent.",
+  "draw": "Two people at the counter of a small roadside shop: a customer handing paper banknotes to the shopkeeper while holding up a simple keypad mobile phone with a short message on its tiny screen.",
+  "inventor": "Safaricom, Vodafone (Nick Hughes, Susie Lonie)",
+  "location": "Kenya",
+  "field": "Design"
+ },
+ {
+  "id": "electric-car",
+  "year": "1888",
+  "title": "Electric car",
+  "summary": "A carriage that runs on stored electricity instead of horses or petrol, quiet and without exhaust. A bank of lead-acid batteries feeds an electric motor that turns the wheels; around 1900 electric cars outsold petrol ones in some cities. Today's carry lithium-ion cells under the floor, and their motors run as generators when braking.",
+  "draw": "A tall four-wheeled open carriage of the late 1880s with large spoked wooden wheels and no horse or shafts, a driver on a padded bench steering with a tiller; a box under the seat holds rows of battery cells, connected by wires to a small electric motor driving the rear axle by a chain.",
+  "inventor": "Andreas Flocken",
+  "location": "Germany",
+  "field": "Design"
+ },
+ {
+  "id": "quadcopter-drone",
+  "year": "2010",
+  "title": "Quadcopter drone",
+  "summary": "A small flying camera that anyone can steer. Four propellers on electric motors lift it, two spinning clockwise and two anticlockwise so the craft doesn't twirl; a computer reads tiny gyroscopes hundreds of times a second and speeds up or slows each motor to keep it level, tilt it and steer.",
+  "draw": "A small quadcopter hovering, seen from slightly above: an X-shaped frame with a motor and two-bladed propeller at the tip of each of its four arms, diagonally opposite propellers turning the same way and neighbouring ones the opposite way, and a camera hanging below the central body.",
+  "inventor": "Parrot",
+  "location": "France",
+  "field": "Design"
+ },
+ {
+  "id": "voice-assistants",
+  "year": "2011",
+  "title": "Voice assistant",
+  "summary": "Answers spoken questions and carries out spoken requests. A microphone records the voice, and software trained on huge amounts of recorded speech turns the sounds into words. Other programs work out what was meant, find an answer or take an action, and a speech synthesiser reads the reply aloud.",
+  "draw": "A person holding a phone close to their mouth and speaking into it, the phone's screen showing only a glowing, pulsing wavy line.",
+  "inventor": "SRI International; Apple",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "crispr-gene-editing",
+  "year": "2012",
+  "title": "CRISPR gene editing",
+  "summary": "Lets scientists change a chosen spot in the DNA of a living cell, to breed crops or treat inherited disease. A protein called Cas9 carries a short strand of RNA that matches the target; it slides along the DNA until the letters pair up, then cuts both strands. As the cell repairs the cut, the gene is disabled or rewritten.",
+  "draw": "A molecular-scale view: a large rounded protein clamped around a stretch of DNA double helix; inside it the helix is unzipped, and a short single strand of guide RNA lies paired with one DNA strand, while just beside it both DNA strands are snipped through.",
+  "inventor": "Jennifer Doudna and Emmanuelle Charpentier",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "deep-learning",
+  "year": "2012",
+  "title": "Deep learning",
+  "summary": "Lets computers recognise faces, speech and objects in photos by learning from examples rather than rules. Each example passes through many stacked layers of simple number-crunching units; whenever the answer comes out wrong, every connection is nudged slightly in the direction that would have shrunk the error, millions of times over.",
+  "draw": "A photo of a cat on the left feeding into a column of glowing dots, then several more columns of dots joined by a dense mesh of fine lines, narrowing to a single bright dot on the right; the lines carrying strong signals glow brighter.",
+  "inventor": "Alex Krizhevsky, Ilya Sutskever, Geoffrey Hinton",
+  "location": "Canada",
+  "field": "Design"
+ },
+ {
+  "id": "reusable-rocket-booster",
+  "year": "2015",
+  "title": "Reusable rocket booster",
+  "summary": "Brings a rocket's first stage back to land after launch, so it can fly again and spaceflight costs less. The booster flips around and relights its engines to slow down, steering through the air with lattice fins near its top. It fires once more just before touchdown, unfolds four legs and settles upright on a pad or a floating barge.",
+  "draw": "A tall, slim rocket booster coming down tail-first onto a flat barge at sea, a single bright engine flame pointing down at the deck, four landing legs spread out at its base, and four small lattice fins sticking out near its top.",
+  "inventor": "SpaceX",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "self-driving-cars",
+  "year": "2020",
+  "title": "Self-driving car",
+  "summary": "A car that drives itself with nobody at the wheel. A spinning laser rangefinder on the roof measures the distance to everything around it millions of times a second, building a 3D picture, while cameras and radar add more. Deep-learning software picks out cars, people and lanes in that picture and plans a path, steering and braking on its own.",
+  "draw": "An ordinary car seen from the front three-quarters driving along a city street with nobody in the driver's seat, a dome-shaped sensor housing on its roof and small sensors at its corners, with faint lines of laser light fanning out from the dome to nearby objects.",
+  "inventor": "Waymo",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "mrna-vaccines",
+  "year": "2020",
+  "title": "mRNA vaccines",
+  "summary": "Teaches the immune system to recognise a virus without meeting it. The injection carries genetic instructions for one virus protein, wrapped in tiny bubbles of fat; muscle cells read the instructions and make the protein, which the immune system learns to attack. The instructions fall apart within days, and the vaccine can be redesigned for a new virus in weeks.",
+  "draw": "A molecular-scale view at the edge of a cell: a tiny sphere made of fat molecules, partly merged with the cell's outer membrane, releasing coiled single strands of mRNA inside; nearby a ribosome threads along one strand, and spike-shaped proteins stand out on the cell's surface.",
+  "inventor": "Katalin Karikó and Drew Weissman; BioNTech, Moderna",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "satellite-internet-constellations",
+  "year": "2020",
+  "title": "Low-orbit satellite internet",
+  "summary": "Brings fast internet to remote places with no cables. Thousands of small satellites circle only about 550 kilometres up, so signals make the trip quickly; a flat dish on the roof steers its beam electronically to whichever satellite is passing overhead, handing over to the next every few minutes, and the satellites relay the data to ground stations.",
+  "draw": "A flat rectangular satellite dish on a farmhouse roof in open country, tilted toward the sky, with a line of small flat-panel satellites passing overhead against a starry dusk sky.",
+  "inventor": "SpaceX",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "large-language-models",
+  "year": "2022",
+  "title": "Large language models",
+  "summary": "Answers questions, writes and translates in everyday language. A huge neural network is trained on a vast library of text to predict the next word, adjusting billions of internal settings until it gets good at it; to reply, it predicts one word after another, each time feeding everything so far back in.",
+  "draw": "A person typing at a laptop in a dim room, the screen showing a chat of alternating message bubbles with a long reply streaming in as unreadable grey lines, the screen's glow lighting their face.",
+  "inventor": "OpenAI",
+  "location": "United States",
+  "field": "Design"
+ }
+]

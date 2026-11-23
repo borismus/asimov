@@ -1,0 +1,782 @@
+[
+ {
+  "id": "monoclonal-antibodies",
+  "year": "1975",
+  "title": "Monoclonal antibodies",
+  "summary": "Antibody medicines and tests aimed at one exact target, now used against cancers, arthritis and many other diseases. A white blood cell that makes one chosen antibody is fused with a cancer cell, giving a hybrid that divides forever; all its descendants pour out identical Y-shaped antibodies whose tips lock onto one molecule and nothing else.",
+  "draw": "A Y-shaped antibody drawn as a folded protein, the tips of both arms gripping matching knobs on the surface of a cell like keys in locks; several more identical Y shapes drift nearby, all the same size and shape.",
+  "inventor": "Georges Köhler and César Milstein",
+  "location": "England",
+  "field": "Design"
+ },
+ {
+  "id": "home-blood-glucose-meter",
+  "year": "1981",
+  "title": "Home blood-glucose meter",
+  "summary": "Lets people with diabetes check their own blood sugar several times a day and adjust their insulin. A pricked finger puts a drop of blood on a strip whose pad holds an enzyme that reacts with sugar and darkens a dye; the meter shines a light on the pad and reads how much comes back, darker meaning more sugar.",
+  "draw": "A hand-held meter with a small digital screen, a test strip pushed into its slot; a fingertip with a bead of blood touches the pad at the strip's free end, and a light inside the meter shines on the underside of the coloured pad.",
+  "inventor": "Ames, Miles Laboratories",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "ivermectin",
+  "year": "1981",
+  "title": "Ivermectin",
+  "summary": "Kills parasitic worms, mites and lice; yearly doses have nearly wiped out river blindness in parts of Africa. Made from a substance a soil bacterium produces, it jams open a gate found only in the nerve and muscle cells of worms and insects, so charged chlorine atoms flood in and the parasite is paralysed.",
+  "draw": "A village health worker holding out two small white tablets on an open palm to a child who stands against a tall wooden measuring pole painted in coloured bands, the band level with the child's head deciding the dose.",
+  "inventor": "Satoshi Ōmura; William Campbell, Merck",
+  "location": "Japan and United States",
+  "field": "Design"
+ },
+ {
+  "id": "geographic-information-system",
+  "year": "1968",
+  "title": "Geographic information system",
+  "summary": "Lets planners, utilities, farmers and armies ask questions of maps by computer, such as which homes lie on flood-prone ground near a river. Each kind of information, from roads and soils to pipes and land use, is stored as its own layer pinned to the same map coordinates, so the computer can overlay them and pick out where conditions coincide.",
+  "draw": "A stack of transparent map sheets floating one above another, perfectly aligned over the same patch of land: the bottom one coloured by soil type, then one with a winding river, then one with roads, then one with house outlines; a few houses on the top layer glow where they sit above the river's flood zone.",
+  "inventor": "Roger Tomlinson",
+  "location": "Canada",
+  "field": "Design"
+ },
+ {
+  "id": "computer-aided-design",
+  "year": "1982",
+  "title": "Computer-aided design",
+  "summary": "Lets engineers and architects draw on a computer instead of a drawing board. Each line, arc and surface is stored as exact numbers, the coordinates of its ends and the curve between them, rather than as ink, so a drawing can be zoomed, measured, changed and copied without redrawing, and sent straight to machines that cut the parts.",
+  "draw": "An office desk with a 1980s personal computer: the screen shows a machine part as a clean line drawing in white on black, with thin dimension lines and arrows but no readable numbers; a hand on a mouse beside the keyboard, a crosshair cursor on the screen snapping to a corner of the part.",
+  "inventor": "Autodesk",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "computer-generated-imagery",
+  "year": "1982",
+  "title": "Computer-generated imagery",
+  "summary": "Puts on screen things that were never in front of a camera, from film monsters to whole animated films. Every object is built as a mesh of tiny flat triangles; for each dot of the picture the computer works out how light from the lamps bounces off those surfaces into the camera, giving colour, shine and shadow, 24 pictures for every second of film.",
+  "draw": "A teapot sitting on a chequered floor under a single lamp, its left half drawn as a bare wire mesh of small triangles and its right half smoothly rendered, glossy, with a bright highlight on its belly and a soft shadow falling on the floor away from the lamp.",
+  "inventor": "",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "relational-database",
+  "year": "1979",
+  "title": "Relational database",
+  "summary": "Keeps the records of banks, airlines, hospitals and websites, letting thousands of people search and update them at once. Data sits in plain tables of rows and columns, linked by shared values such as a customer number; you state what you want in a short query language, and the software works out the fastest way to find and join the matching rows.",
+  "draw": "Two grids of cells floating side by side like small spreadsheets with blank cells, one row in each highlighted, a glowing line joining the first cell of one highlighted row to the matching cell in the other; behind them, a tall server cabinet with stacked disk drives and blinking lights.",
+  "inventor": "Edgar F. Codd, IBM; Oracle",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "local-area-network-ethernet",
+  "year": "1973",
+  "title": "Local area network",
+  "summary": "Wires the computers in an office or home together so they can share files, printers and the internet. Each machine sends data in short packets over a shared cable, listening first; if two start at the same moment, they hear the clash, both stop, and each waits a random instant before trying again. Today a switch usually gives each its own cable.",
+  "draw": "An office wall with one thick cable running along it at desk height; several desktop computers sit below, each joined to it by a thin drop cable clamped on with a small box, and a bright pulse of light travels along the thick cable from one computer toward the others.",
+  "inventor": "Robert Metcalfe and David Boggs, Xerox PARC",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "neodymium-magnet",
+  "year": "1984",
+  "title": "Neodymium magnet",
+  "summary": "The strongest permanent magnet, small enough for earbuds and strong enough for electric-car motors and wind turbines. An alloy of neodymium, iron and boron is ground to powder, lined up in a magnetic field, pressed and baked solid, then magnetised; its crystals hold their magnetism so stubbornly that a disc the size of a coin can lift several kilograms of steel.",
+  "draw": "A shiny silver, coin-sized disc magnet held between finger and thumb, a heavy steel spanner hanging from its underside by magnetism alone, with a few iron filings bristling up from the disc's edge.",
+  "inventor": "Masato Sagawa, Sumitomo Special Metals; John Croat, General Motors",
+  "location": "Japan and United States",
+  "field": "Design"
+ },
+ {
+  "id": "desktop-publishing",
+  "year": "1985",
+  "title": "Desktop publishing",
+  "summary": "Lets one person with a computer lay out a newsletter, magazine or book that prints looking professionally typeset. Text and pictures are arranged on an on-screen page that matches the printed one; the page goes to a laser printer as a description of shapes, so each letter is drawn from its outline at the printer's full sharpness.",
+  "draw": "A beige 1980s desktop computer with a separate square monitor showing a two-column newsletter page, its text as grey lines and one picture box; beside it a desktop laser printer feeding out the same page, the printed sheet half emerged.",
+  "inventor": "Paul Brainerd, Aldus; Apple; Adobe",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "dna-fingerprinting",
+  "year": "1985",
+  "title": "DNA fingerprinting",
+  "summary": "Identifies a person, or their parents, from a speck of blood, hair or saliva. Everyone's DNA has short stretches repeated over and over, the number of repeats differing between people. The DNA is cut up and pulled through jelly by an electric current, which sorts the pieces by length into a pattern of bands unique to each person.",
+  "draw": "A gloved hand pointing at a sheet of film laid on a glowing light box; the film shows several vertical lanes of dark horizontal bands like barcodes, and two neighbouring lanes have their bands at exactly the same heights.",
+  "inventor": "Alec Jeffreys, University of Leicester",
+  "location": "England",
+  "field": "Design"
+ },
+ {
+  "id": "rolling-suitcase",
+  "year": "1987",
+  "title": "Rolling suitcase",
+  "summary": "Lets travellers pull their luggage instead of carrying it. Two small wheels are set into the bottom corners of an upright case, and a handle slides up out of the top on telescoping tubes; tipping the case back onto its wheels puts most of its weight over the axle, so the hand only steadies it and pulls.",
+  "draw": "Side view of a traveller walking away from the viewer through an airport hall, an upright suitcase trailing behind them and leaning toward them, resting only on the two small wheels at the bottom edge of its face nearest them; the long metal handle rises out of the top of that same face to their hand.",
+  "inventor": "Robert Plath",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "medical-abortion-pill",
+  "year": "1988",
+  "title": "Medical abortion pill",
+  "summary": "Ends an early pregnancy with pills instead of surgery. A pregnancy needs the hormone progesterone to keep the lining of the womb in place; mifepristone fits into the cells' progesterone receptors without switching them on, so the lining breaks down. A second drug, misoprostol, taken a day or two later makes the womb contract and empty.",
+  "draw": "A clinic table with a glass of water and a blister pack holding one pale yellow tablet, and beside it four smaller white tablets in a separate strip; a hand rests on the table next to them.",
+  "inventor": "Étienne-Émile Baulieu, Roussel Uclaf",
+  "location": "France",
+  "field": "Design"
+ },
+ {
+  "id": "direct-to-home-satellite-tv",
+  "year": "1989",
+  "title": "Direct-to-home satellite TV",
+  "summary": "Brings hundreds of TV channels to any home with a clear view of the sky. A satellite 36,000 km above the equator circles once a day, so it hangs over one spot and beams down microwaves; a small dish focuses them onto a receiver head, which amplifies the faint signal and lowers its frequency so it can run down a cable to the TV.",
+  "draw": "A small satellite dish fixed to the wall of a house: an oval dish facing up toward the sky at a slant, with a short arm sticking out from its lower edge holding a small receiver head that points back at the middle of the dish, and a cable running from the head down the wall.",
+  "inventor": "SES (Astra satellite) and Sky Television",
+  "location": "Luxembourg and England",
+  "field": "Design"
+ },
+ {
+  "id": "digital-cellular-network-2g",
+  "year": "1991",
+  "title": "Digital cellular network (2G)",
+  "summary": "Made mobile phones cheap enough for billions of people, with clearer calls and text messages. The phone turns speech into compressed numbers and sends them in short bursts; each radio channel is shared by eight calls taking turns, each getting one time slot in eight. A small chip card in the phone, the SIM, proves who is paying.",
+  "draw": "A small 1990s mobile phone lying face down with its back cover and battery taken off, showing a thumbnail-sized card with gold contacts slotted into a holder inside; a stubby antenna on top and a keypad visible at the edge.",
+  "inventor": "European GSM group",
+  "location": "Finland",
+  "field": "Design"
+ },
+ {
+  "id": "mems-motion-sensors",
+  "year": "1993",
+  "title": "Motion-sensor chip (MEMS)",
+  "summary": "The accelerometer shrunk onto a silicon chip, cheap enough to fire airbags and turn phone screens. Etching carves a tiny weight hung on silicon springs, with comb-like fingers interleaved with fixed ones; when the chip speeds up or tilts, the weight lags, the gaps between the fingers change, and the chip senses the change in stored electric charge.",
+  "draw": "A greatly magnified view inside a chip: a flat silicon plate suspended above the base on thin zigzag springs anchored at its corners, with rows of comb fingers sticking out of its sides that slot, without touching, between rows of fixed fingers; the plate is shifted slightly to one side, narrowing the gaps on that side.",
+  "inventor": "Analog Devices",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "qr-code",
+  "year": "1994",
+  "title": "Matrix barcode (QR code)",
+  "summary": "Stores a web address, ticket or payment in a square of black and white blocks that any phone camera can read. Three large corner squares tell the reader where the code is and which way up it lies, so it reads at any angle; extra error-correcting blocks let it be read even with nearly a third of it smudged or torn.",
+  "draw": "A phone held over a café table, its camera screen framing a square pattern of small black and white blocks printed on a card lying at an angle on the table; the pattern has three larger nested squares, in its top-left, top-right and bottom-left corners only.",
+  "inventor": "Masahiro Hara, Denso Wave",
+  "location": "Japan",
+  "field": "Design"
+ },
+ {
+  "id": "contactless-card",
+  "year": "1996",
+  "title": "Contactless card",
+  "summary": "Pays a fare or a bill with a tap, with no battery in the card. A coil of wire loops around the card's edge; the reader's coil makes a rapidly changing magnetic field that induces a current in it, powering the chip, which answers by switching its coil's load on and off, a flicker the reader detects.",
+  "draw": "A see-through view of a plastic card held flat a few centimetres in front of a reader on a bus: a flat coil of wire looping several times around inside the card's edge, its two ends joined to a tiny chip, and a matching coil visible behind the reader's face.",
+  "inventor": "Mikron (Austria); Seoul Bus Union",
+  "location": "South Korea",
+  "field": "Design"
+ },
+ {
+  "id": "electronic-stability-control",
+  "year": "1995",
+  "title": "Electronic stability control",
+  "summary": "Stops a car skidding out of a bend. Sensors compare where the driver is steering with how fast the car is really turning; if it starts to spin or plough straight on, a computer brakes one wheel, the outer front to stop a spin or the inner rear to tighten the turn, pulling the car back onto line.",
+  "draw": "View from above of a car on a curving wet road, its tail starting to slide toward the outside of the bend; only the front wheel on the outside of the bend has its brake disc glowing, and a curved arrow shows the car's nose being pulled back toward the bend.",
+  "inventor": "Anton van Zanten, Bosch; Mercedes-Benz",
+  "location": "Germany",
+  "field": "Design"
+ },
+ {
+  "id": "home-broadband-dsl-and-cable-modem",
+  "year": "1995",
+  "title": "Home broadband",
+  "summary": "Gives homes an always-on internet connection tens of times faster than dialling up, over wires already there. A cable-TV line carries data in a few spare TV channels. A phone line, built for voice, is split into hundreds of narrow frequency bands above the pitch of speech, each carrying as much data as its noise allows, while calls go on underneath.",
+  "draw": "A phone socket on a living-room wall with a small splitter plugged in, one lead going to a corded telephone and the other to a small modem box whose lights glow; a cable runs from the modem to an open laptop on a table.",
+  "inventor": "",
+  "location": "United States and Canada",
+  "field": "Design"
+ },
+ {
+  "id": "graphics-processor-gpu",
+  "year": "1999",
+  "title": "Graphics processor (GPU)",
+  "summary": "Draws the moving pictures of video games, and now does the heavy arithmetic of artificial intelligence. A screen has millions of dots, and working out each one's colour is the same small sum done over and over, so the chip packs hundreds or thousands of simple arithmetic units side by side, each taking a share and all working at once.",
+  "draw": "A graphics card lying flat, its cooler and fan lifted away to show a large square chip in the centre ringed by smaller memory chips, with gold contact fingers along its bottom edge; the big chip's lid is cut away to reveal a dense, regular grid of thousands of tiny identical blocks.",
+  "inventor": "Nvidia",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "kinase-inhibitor-cancer-drugs",
+  "year": "2001",
+  "title": "Kinase-inhibitor cancer drugs",
+  "summary": "Pills that hold some cancers in check for years, first of all a leukaemia that used to be fatal. Some cancers are driven by one faulty enzyme, a kinase stuck 'on', that keeps telling cells to divide. The drug is a small molecule shaped to fit the pocket where that kinase takes in its fuel, plugging it so the signal stops.",
+  "draw": "A folded protein drawn as a twisting ribbon with a deep cleft in one side, and a small drug molecule, shown as linked balls, sitting snugly in the cleft, filling it.",
+  "inventor": "Brian Druker; Nicholas Lydon, Ciba-Geigy (Novartis)",
+  "location": "United States and Switzerland",
+  "field": "Design"
+ },
+ {
+  "id": "smart-electricity-meter",
+  "year": "2001",
+  "title": "Smart electricity meter",
+  "summary": "Measures a home's electricity and reports it to the power company by itself, so no one has to read the dial and prices can change by the hour. A chip samples the voltage and current thousands of times a second and multiplies them to get the power used; a modem sends the totals back over the power wires or by radio.",
+  "draw": "A wall-mounted electricity meter with a small digital display and no spinning disc, its cover cut away to show a circuit board inside with a chip, a few thick wires from the house supply passing through a current-sensing ring, and a short antenna.",
+  "inventor": "Enel",
+  "location": "Italy",
+  "field": "Design"
+ },
+ {
+  "id": "electronic-cigarette",
+  "year": "2004",
+  "title": "Electronic cigarette",
+  "summary": "Delivers nicotine in a mist instead of smoke, with nothing burning. A battery heats a small wire coil wound around a wick soaked in liquid: propylene glycol, glycerine, flavouring and nicotine. The liquid flash-boils off the hot wick, and the vapour cools in the air being sucked through into tiny droplets that the user breathes in.",
+  "draw": "Cutaway of a pen-shaped device: a battery in the lower half; above it a small clear tank of liquid; a cotton wick passing through holes in the tank wall with a coil of thin wire wound around its middle; an air hole just below the coil and a channel from the coil up to the mouthpiece, with a wisp of mist rising.",
+  "inventor": "Hon Lik",
+  "location": "China",
+  "field": "Design"
+ },
+ {
+  "id": "electric-bicycle-2000s",
+  "year": "1993",
+  "title": "Electric bicycle",
+  "summary": "A bicycle with a battery-powered motor that adds to the rider's push, making hills and long commutes easy for hundreds of millions of people. A sensor in the pedal crank measures how hard the rider presses and the motor adds a matching push; many, especially in China, are simply worked by a twist grip like a scooter's.",
+  "draw": "Side view of a bicycle with a slim battery pack fixed along the frame's down tube and a wire running to a thick motor hub in the centre of the rear wheel; the chain, cranks and pedals are those of an ordinary bicycle.",
+  "inventor": "Yamaha",
+  "location": "Japan",
+  "field": "Design"
+ },
+ {
+  "id": "online-maps-and-navigation",
+  "year": "2005",
+  "title": "Online maps and navigation",
+  "summary": "Shows any street on Earth, finds the way there and talks you through each turn. The world's maps and satellite photos are cut into square tiles at many zoom levels, so a phone fetches only the few it needs; satellite positioning places you on them, and distant computers plan the route using speed reports from millions of other phones to avoid traffic jams.",
+  "draw": "A smartphone in a holder on a car dashboard, its screen showing a street map with one route drawn as a thick coloured line and an arrow marking the car's position at a junction; the same junction is visible through the windscreen ahead.",
+  "inventor": "Lars and Jens Rasmussen, Google",
+  "location": "Australia and United States",
+  "field": "Design"
+ },
+ {
+  "id": "machine-translation",
+  "year": "2006",
+  "title": "Machine translation",
+  "summary": "Translates text, signs and speech between dozens of languages in an instant, for free. The computer learns from millions of documents that exist in two languages, such as United Nations records, finding which words and phrases usually match which; given new text, it assembles the most likely translation. Since 2016 neural networks have done this a whole sentence at a time.",
+  "draw": "A traveller holding a phone up in front of a street sign in a foreign script; on the phone screen the same sign appears, perfectly placed, but with different lettering in its place (all lettering indistinct and unreadable).",
+  "inventor": "Franz Och, Google",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "oled-display-2000s",
+  "year": "2007",
+  "title": "OLED display",
+  "summary": "The screen in most smartphones and many TVs, thin enough to bend, where each dot makes its own light. Every pixel is a sandwich of thin films of carbon-based molecules between two electrodes; current pushed through makes them glow red, green or blue, and a tiny transistor behind each one sets its brightness. With no backlight, black pixels are simply off.",
+  "draw": "A thin screen panel bent in a gentle curve, one corner cut away to show its layers: a plastic base, a layer of tiny transistors, a thin glowing layer between two electrode films, and a clear cover on top; the front shows tiny red, green and blue dots glowing.",
+  "inventor": "Ching Tang and Steven Van Slyke, Kodak",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "direct-oral-anticoagulants",
+  "year": "2008",
+  "title": "Direct oral anticoagulants",
+  "summary": "Pills that prevent dangerous blood clots and strokes without the blood tests and diet rules of the older warfarin. Clotting is a chain of enzymes, each switching on the next until threads of fibrin knit a clot. These drugs fit into one enzyme near the end of the chain, thrombin or factor Xa, and block it directly, so a fixed dose works predictably.",
+  "draw": "Cutaway of a leg vein with red blood cells streaming freely along it; at one spot on the wall a few sticky platelets cling, trailing only short, loose strands of fibrin that never knit into a mesh; a small white tablet in the foreground.",
+  "inventor": "Boehringer Ingelheim; Bayer",
+  "location": "Germany",
+  "field": "Design"
+ },
+ {
+  "id": "emoji",
+  "year": "1999",
+  "title": "Emoji",
+  "summary": "Little pictures typed into messages, so a smile, a heart or a thumbs-up travels with the words. Each emoji is stored as a number code, just like a letter, so any phone can send it; the receiving phone looks the code up in its own font and draws its own picture, which is why the same emoji looks slightly different on different phones.",
+  "draw": "A hand holding a smartphone showing a chat of message bubbles that contain small round yellow smiling faces, a red heart and a thumbs-up, with the on-screen keyboard open below showing a grid of such little pictures; no readable text.",
+  "inventor": "Shigetaka Kurita, NTT Docomo",
+  "location": "Japan",
+  "field": "Design"
+ },
+ {
+  "id": "solar-farm",
+  "year": "1982",
+  "title": "Solar farm",
+  "summary": "Makes electricity from sunlight on the scale of a power station, now the cheapest new power in most of the world. Fields of silicon-cell panels turn light into direct current, each particle of light knocking an electron loose; inverters turn it into alternating current for the grid, and many panels sit on motorised mounts that tilt to follow the sun.",
+  "draw": "Long rows of dark blue solar panels across flat desert, each row mounted on a single horizontal beam running north-south and tilted so the panels face the low morning sun in the east; at the edge, a fenced box of electrical equipment and a line of power pylons.",
+  "inventor": "ARCO Solar",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "rocket-interceptor-system",
+  "year": "2011",
+  "title": "Rocket interceptor system",
+  "summary": "Shoots down rockets fired at towns, while ignoring those headed for empty ground. A radar tracks each rocket moments after launch and a computer predicts where it will land; only if that is a populated area does it fire an interceptor missile, steered by radio updates and then its own radar to explode beside the rocket in mid-air.",
+  "draw": "A ground launcher, a box of twenty tubes tilted steeply upward, with one interceptor missile just leaving a tube on a white smoke trail; high in the sky its trail curves to meet a small incoming rocket at a bright burst.",
+  "inventor": "Rafael Advanced Defense Systems",
+  "location": "Israel",
+  "field": "Design"
+ },
+ {
+  "id": "cancer-immunotherapy",
+  "year": "2011",
+  "title": "Cancer immunotherapy",
+  "summary": "Lets the body's own immune system destroy cancer, sometimes for good, even after it has spread. Killer white blood cells carry brakes, switch proteins that stop them attacking the body's own tissue, and many tumours press those brakes. The drugs are antibodies that cover the brake switches, so the killer cells go back to attacking the tumour.",
+  "draw": "A microscope-style view of a small round white blood cell, its surface studded with receptors, pressed against a larger, lumpy tumour cell; Y-shaped antibodies sit on the receptors of the white blood cell, blocking a knob on the tumour cell from reaching them.",
+  "inventor": "James Allison",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "software-containers",
+  "year": "2013",
+  "title": "Software containers",
+  "summary": "Packs a program with everything it needs, so it runs the same on a laptop as on a thousand servers. The operating system walls each container off, giving it its own view of files and network and a fixed share of memory and processor, while all of them share one system underneath, so they start in a second and pack many to a machine.",
+  "draw": "A rack-mounted server pulled out of its cabinet with its lid off, its circuit board covered by a neat row of small identical sealed boxes like miniature shipping containers, each a different colour, all sitting on the same board and drawing on the same shared bank of memory chips.",
+  "inventor": "Solomon Hykes, dotCloud",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "hepatitis-c-cure",
+  "year": "2013",
+  "title": "Hepatitis C cure",
+  "summary": "Cures a liver virus carried by tens of millions with two or three months of daily pills. The virus copies its genes with its own enzyme; the drug mimics one of the building blocks that enzyme uses, so the enzyme builds it into the new copy and copying stops dead. Paired with a second drug, it clears the virus in over 95% of people.",
+  "draw": "A strand of viral genetic material, a long chain of beads, being copied by an enzyme drawn as a clamp sliding along it, the new matching chain trailing out behind; the new chain ends abruptly where one differently coloured bead has just been added.",
+  "inventor": "Michael Sofia, Pharmasset; Gilead",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "smartwatch-and-fitness-tracker",
+  "year": "2015",
+  "title": "Smartwatch",
+  "summary": "A wristwatch that counts steps, tracks sleep, measures the heartbeat and shows messages from the phone. A tiny accelerometer chip feels every step and movement; on the back, green lights shine into the wrist and a light sensor picks up the faint pulsing as blood, which soaks up green light, surges through the vessels with each heartbeat.",
+  "draw": "A smartwatch on a wrist, shown in cutaway: on the underside of the watch two small green lights glow into the skin beside a dark light sensor, and beneath the skin a blood vessel swells with a pulse; the watch face on top shows a small heart shape.",
+  "inventor": "",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "short-video-feed-apps",
+  "year": "2016",
+  "title": "Short-video feed",
+  "summary": "An endless stream of short phone videos, picked for each viewer by a learning program. Every swipe, replay and pause is recorded; the program compares it with the behaviour of millions of others to predict which clip will hold this viewer longest, shows that one next, and keeps retraining itself on what people actually watch.",
+  "draw": "A hand holding a phone upright, the thumb mid-swipe upward; one full-screen video of a dancer slides off the top of the screen as the next, of a cooking pan, slides in from the bottom.",
+  "inventor": "ByteDance (Zhang Yiming)",
+  "location": "China",
+  "field": "Design"
+ },
+ {
+  "id": "facial-recognition",
+  "year": "2017",
+  "title": "Facial recognition",
+  "summary": "Recognises a person from their face, to unlock a phone, check a passport or pick someone out of a crowd. A neural network trained on millions of photos turns each face into a list of numbers, a point in a space where pictures of the same person land close together; the system checks how close a new face is to stored ones.",
+  "draw": "A person in a dim room holding a phone up in front of their face, a fine grid of faint red dots projected from the top edge of the phone and curving over their nose, cheeks and forehead to show the face's shape.",
+  "inventor": "",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "ai-image-generation",
+  "year": "2022",
+  "title": "AI image generation",
+  "summary": "Makes a picture of whatever you describe in words. A neural network is trained by taking millions of captioned images, adding random speckle, and learning to remove it; to make a new picture it starts from pure speckle and cleans it away in dozens of small steps, each guided by the words, until an image appears.",
+  "draw": "A row of five squares, left to right: the first is pure grey static; in the next a blurry patch of colour appears; then rough shapes; then a soft picture; the last is a crisp painting of a cat sitting on a sunny windowsill.",
+  "inventor": "OpenAI; LMU Munich and Stability AI",
+  "location": "United States and Germany",
+  "field": "Design"
+ },
+ {
+  "id": "defibrillator",
+  "year": "1947",
+  "title": "Defibrillator",
+  "summary": "Shocks a quivering heart back into a steady beat. When the heart's muscle fibres twitch out of step it pumps no blood; a capacitor charged to a few thousand volts dumps its charge through two pads on the chest in an instant, stopping every fibre at once so the heart's natural rhythm-setter can restart them together.",
+  "draw": "A portable defibrillator box open on the floor beside a person lying on their back, two flat adhesive pads stuck on the bare chest, one just below the right collarbone and one on the left side below the armpit, wires running from both pads to the box, and a kneeling rescuer's hands held clear of the body.",
+  "inventor": "Claude Beck",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "polar-fleece",
+  "year": "1981",
+  "title": "Polyester fleece",
+  "summary": "A light, warm fabric that stays warm when wet and dries fast. Polyester fibres, often spun from melted-down plastic drinks bottles, are knitted into cloth whose surface is brushed up into a dense fuzz; the fuzz traps still air, which holds in body heat, and polyester soaks up almost no water.",
+  "draw": "A folded fleece jacket with its zip half open, one corner turned back and shown magnified: a thin knitted base fabric with a thick pile of soft, curly fibres brushed up from both of its faces.",
+  "inventor": "Malden Mills, with Patagonia",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "ace-inhibitors",
+  "year": "1981",
+  "title": "ACE inhibitors",
+  "summary": "Pills that lower blood pressure and ease the strain on a failing heart. The body makes a hormone that squeezes blood vessels narrow, and an enzyme snips it into its active form. The drug, modelled on a peptide from a Brazilian snake's venom, plugs that enzyme, so the vessels relax and blood flows at lower pressure.",
+  "draw": "A cutaway of a small artery drawn twice side by side: on the left its muscular wall clenched tight around a narrow channel, on the right the same artery relaxed and wide with red blood cells flowing freely through it.",
+  "inventor": "Miguel Ondetti and David Cushman, Squibb",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "semiconductor-laser",
+  "year": "1982",
+  "title": "Semiconductor laser",
+  "summary": "A laser smaller than a grain of salt, cheap enough for every CD player and fibre-optic link. Current pushed into a thin layer of crystal, sandwiched between different crystals, makes electrons drop into holes and give off light; the sandwich traps both, and the polished ends act as mirrors, so the light bounces back and forth and builds into a narrow beam.",
+  "draw": "A magnified tiny rectangular crystal chip sitting on a metal heat-sink block, built of flat stacked layers with one very thin layer in the middle; a fine gold wire is bonded to its top, and a narrow red beam leaves from the thin middle layer at one cut end face, spreading into an oval cone.",
+  "inventor": "Robert N. Hall; Zhores Alferov; Izuo Hayashi and Morton Panish",
+  "location": "United States and Soviet Union",
+  "field": "Design"
+ },
+ {
+  "id": "recombinant-protein-drugs",
+  "year": "1982",
+  "title": "Recombinant protein drugs",
+  "summary": "Human hormones and proteins made in bulk by microbes, starting with insulin for diabetes, which until then came from pig and cow pancreases. The human gene is spliced into bacteria or yeast, which read it as one of their own and make the human protein; huge fermentation tanks grow them, and the protein is filtered out and purified.",
+  "draw": "A tall stainless-steel fermentation tank in a factory, cut away to show a frothy broth inside stirred by a central shaft with paddle blades, air bubbling up from a ring at the bottom, pipes and gauges on the outside.",
+  "inventor": "Genentech; Eli Lilly",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "anti-rejection-drugs",
+  "year": "1983",
+  "title": "Cyclosporine",
+  "summary": "Stops the body rejecting a transplanted kidney, liver or heart, and made those operations routine. It comes from a fungus found in a Norwegian soil sample. Inside the immune system's T cells it shuts down a signalling enzyme, so the cells that would attack the foreign organ never switch on; unlike older drugs it spares the bone marrow.",
+  "draw": "A donor kidney resting in a steel dish of crushed ice in an operating theatre, its artery and vein cut short ready to be stitched in, with a row of soft oval drug capsules lying on the green surgical cloth beside the dish.",
+  "inventor": "Jean-François Borel, Sandoz",
+  "location": "Switzerland",
+  "field": "Design"
+ },
+ {
+  "id": "word-processor-software",
+  "year": "1976",
+  "title": "Word processor",
+  "summary": "Lets people type, correct and rearrange writing on a screen before anything is printed. The words sit in the computer's memory as a long string of character codes; inserting or deleting a letter just shifts the rest along, and the program re-flows the lines to fit the page, so a document can be revised endlessly and printed clean.",
+  "draw": "A late-1970s personal computer with a boxy monitor showing lines of glowing green text with a blinking block cursor in the middle of a line, and beside it a printer with a sheet of neatly typed paper feeding out.",
+  "inventor": "Michael Shrayer",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "digital-synthesizer-and-midi",
+  "year": "1983",
+  "title": "Digital synthesizer and MIDI",
+  "summary": "Lets one keyboard or computer play and record a whole band of electronic instruments. A digital synthesizer builds sounds by arithmetic: in the common FM method, one fast wave wobbles the pitch of another, making rich bell- and brass-like tones. A standard cable sends notes as short numbered messages, which key and how hard, so any instrument can play any other.",
+  "draw": "A slim electronic keyboard with a small digital display and rows of flat buttons, a hand pressing a chord on it, and a single cable with round plugs running from a socket on its back to a second keyboard behind it.",
+  "inventor": "John Chowning, Yamaha; Dave Smith and Ikutaro Kakehashi",
+  "location": "United States and Japan",
+  "field": "Design"
+ },
+ {
+  "id": "active-matrix-lcd",
+  "year": "1984",
+  "title": "Active-matrix LCD",
+  "summary": "The flat colour screen of laptops, televisions and phones. Each dot of the picture is a tiny window of liquid crystal between polarising filters, which twists light more or less to let it through. Printed on the glass behind each dot is its own transistor switch, which holds the voltage steady between refreshes, so a big screen stays sharp, fast and bright.",
+  "draw": "A flat screen with one corner peeled apart into its layers: a white backlight at the bottom, a glass sheet with a fine grid of wires and a tiny transistor at the corner of each square cell, a thin liquid-crystal layer, and a top glass sheet with red, green and blue filter stripes.",
+  "inventor": "T. Peter Brody; Seiko Epson",
+  "location": "United States and Japan",
+  "field": "Design"
+ },
+ {
+  "id": "coronary-stent",
+  "year": "1986",
+  "title": "Coronary stent",
+  "summary": "Keeps a clogged heart artery open after it has been widened, without open-heart surgery. A tiny tube of metal mesh, crimped onto a deflated balloon, is threaded up through an artery from the wrist or groin; at the narrowing the balloon inflates, pressing the mesh into the wall, then deflates and is pulled out, leaving the mesh as permanent scaffolding.",
+  "draw": "A cutaway of a heart artery with a yellowish fatty narrowing in its wall, a thin guide wire running through it, and a cylindrical metal-mesh tube on an inflated sausage-shaped balloon pressing the fatty deposit back, the mesh in full contact with the artery's inner wall.",
+  "inventor": "Jacques Puel; Ulrich Sigwart",
+  "location": "France and Switzerland",
+  "field": "Design"
+ },
+ {
+  "id": "conjugate-vaccines",
+  "year": "1987",
+  "title": "Conjugate vaccines",
+  "summary": "Protects babies from meningitis and pneumonia caused by bacteria with a sugary coat. Young children's immune systems ignore sugars, so a vaccine of the coat alone fails them; chemically bolting the sugar onto a harmless protein brings the immune system's helper cells in, and the child makes lasting antibodies against the coat.",
+  "draw": "A molecular-scale view of a single bacterium wrapped in a fuzzy layer of branching sugar chains; beside it, a vaccine particle: a compact, folded protein with several short sugar chains chemically attached to its surface like tassels.",
+  "inventor": "John Robbins and Rachel Schneerson, US National Institutes of Health",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "proton-pump-inhibitors",
+  "year": "1988",
+  "title": "Proton-pump inhibitors",
+  "summary": "Pills that heal stomach ulcers and stop heartburn by cutting stomach acid. Cells in the stomach lining push acid out with tiny molecular pumps. The drug passes the stomach inside an acid-proof coating and is absorbed into the blood; in the acid around those cells it turns into a form that locks onto the pumps and jams them for a day.",
+  "draw": "A cutaway of an acid-making cell in the stomach lining, its surface facing the stomach studded with small pump proteins pushing acid particles out, several of the pumps blocked by a small wedge-shaped drug molecule locked into them.",
+  "inventor": "Astra Hässle",
+  "location": "Sweden",
+  "field": "Design"
+ },
+ {
+  "id": "fly-by-wire-airliner",
+  "year": "1988",
+  "title": "Fly-by-wire airliner",
+  "summary": "An airliner whose controls are worked by computers instead of cables and pulleys. The pilot's small side-stick sends electrical signals to computers, which also read gyroscopes and accelerometers; they then drive hydraulic rams that move the wing and tail surfaces, and refuse any command that would stall the plane or overstress it.",
+  "draw": "The left side of an airliner cockpit: the captain's hand on a small joystick mounted on the side console beside the window, no control column in front of the seat, and screens across the panel ahead; sky through the windscreen.",
+  "inventor": "Airbus",
+  "location": "France",
+  "field": "Design"
+ },
+ {
+  "id": "unicode-text-encoding",
+  "year": "1991",
+  "title": "Unicode text encoding",
+  "summary": "Lets computers store and show text in every writing system, from English and Arabic to Chinese and emoji, without garbling it. Each character in the world's scripts gets its own number, over 150,000 so far, and every computer agrees on them; a compact scheme stores common letters in one byte and rarer ones in up to four.",
+  "draw": "A smartphone screen showing a message thread whose bubbles hold short lines in several clearly different scripts, Latin, Arabic, Chinese and Devanagari, drawn as recognisable script shapes but not real words, with one small round smiley emoji.",
+  "inventor": "Joe Becker, Lee Collins and Mark Davis",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "open-source-operating-system",
+  "year": "1991",
+  "title": "Open-source operating system",
+  "summary": "Free software that runs most of the world's servers, supercomputers and phones, written by thousands of volunteers and companies. Its source code, the human-readable instructions, is published for anyone to read, change and share; changes are sent in over the Internet, reviewed, and merged by maintainers into the next version, which anyone can download.",
+  "draw": "A plain beige 1990s desktop computer and monitor on a student's desk, the screen showing a black background filled with lines of light-grey start-up text, a stack of floppy disks beside the keyboard.",
+  "inventor": "Linus Torvalds; Richard Stallman",
+  "location": "Finland",
+  "field": "Design"
+ },
+ {
+  "id": "text-messaging-sms",
+  "year": "1993",
+  "title": "Text messaging (SMS)",
+  "summary": "Sends a short typed message from one mobile phone to another, delivered even if the other phone is switched off. The message, up to 160 characters, rides on the radio channel the network already uses to set up calls; a message centre holds it and keeps trying until the phone reappears, then passes it on.",
+  "draw": "A hand holding a 1990s mobile phone with a small grey screen and a numeric keypad, the thumb pressing a key, the screen showing a few lines of tiny indistinct block characters.",
+  "inventor": "Friedhelm Hillebrand and Bernard Ghillebaert",
+  "location": "Germany and France",
+  "field": "Design"
+ },
+ {
+  "id": "secure-web-connection-ssl-tls",
+  "year": "1995",
+  "title": "Secure web connection (SSL/TLS)",
+  "summary": "Keeps passwords and card numbers secret on their way between your browser and a website, and proves the site is genuine. The site presents a certificate vouched for by a trusted authority; the browser uses public-key encryption to agree a fresh secret key with the site, then scrambles everything sent both ways with that key.",
+  "draw": "A laptop screen showing a web payment form of empty boxes, with a small closed padlock symbol at the left end of the address bar at the top; a hand holds a plain payment card in front of the screen.",
+  "inventor": "Taher Elgamal, Netscape",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "online-banking",
+  "year": "1994",
+  "title": "Online banking",
+  "summary": "Lets people check balances, pay bills and move money from home at any hour. The bank's website, reached over a secure web connection, asks for a password, then reads the bank's own account records for that customer, and turns each payment typed in into an instruction that the bank's computers carry out.",
+  "draw": "A person at a kitchen table at night with a laptop open, its screen showing a web page with a list of account entries as grey lines and a balance figure; a paper bill and a bank card lie on the table beside it.",
+  "inventor": "Stanford Federal Credit Union",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "universal-serial-port-usb",
+  "year": "1996",
+  "title": "Universal serial bus (USB)",
+  "summary": "One plug that connects keyboards, mice, drives and chargers to any computer. When a device is plugged in, the computer asks what it is; the device answers with a description of itself, and the computer loads the right software, no restart needed. Data then travels one bit after another down a pair of twisted wires, while two more wires carry power.",
+  "draw": "A close-up of a flat rectangular plug being pushed into a matching socket on the side of a laptop, the plug's metal shell cut away to show four flat gold contacts on a plastic tongue inside, the two outer contacts slightly longer than the two inner ones.",
+  "inventor": "Ajay Bhatt, Intel",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "cmos-camera-chip",
+  "year": "1998",
+  "title": "CMOS camera chip",
+  "summary": "The camera inside every phone, laptop and car. A grid of millions of light-sensitive spots on a silicon chip turns light into electric charge; unlike the older CCD chip, each spot has its own tiny amplifier, and the same cheap chip carries the circuits that read out and digitise the picture, so it needs little power.",
+  "draw": "A bare image-sensor chip seen at an angle: a rectangular, mirror-like grid of tiny pixels shimmering in rainbow colours from their coloured filters, set on a small green circuit board with fine gold wires bonded around its edge, its tiny lens housing lifted off and lying beside it.",
+  "inventor": "Eric Fossum, NASA Jet Propulsion Laboratory",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "electronic-voting-machine",
+  "year": "1996",
+  "title": "Electronic voting machine",
+  "summary": "Counts a whole country's votes within hours, with no paper ballots to lose or misread. The voter presses numbered keys for a candidate and sees their name and photo on a small screen before confirming; each vote is stored in sealed memory, and when the polls close the machine prints a tally and its encrypted results are sent on for adding up.",
+  "draw": "A small grey voting machine on a table behind a cardboard privacy screen, with a telephone-style numeric keypad, a coloured confirm key, and a small screen above showing a candidate's photo; a voter's finger presses one of the keys.",
+  "inventor": "Brazil's Superior Electoral Court",
+  "location": "Brazil",
+  "field": "Design"
+ },
+ {
+  "id": "mobile-broadband-3g-data",
+  "year": "2001",
+  "title": "Mobile broadband (3G data)",
+  "summary": "Brings the internet to a phone, fast enough for web pages, maps and video calls. Every phone transmits across the same wide band of radio at once, each signal mixed with its own fast code; the mast picks out each phone by matching that code, and data moves in packets only when there is something to send.",
+  "draw": "A hand holding an early-2000s flip phone open, its small colour screen showing a tiny web page of coloured blocks, with a mast topped by flat panel antennas in the background and faint ripples of radio waves between them.",
+  "inventor": "NTT Docomo",
+  "location": "Japan",
+  "field": "Design"
+ },
+ {
+  "id": "online-encyclopedia-wiki",
+  "year": "2001",
+  "title": "Online encyclopedia (wiki)",
+  "summary": "A free encyclopedia that anyone with a web browser can read and edit, with millions of articles in hundreds of languages. Every page has an edit button; each change is saved as a new version, so nothing is lost and a bad edit can be undone in one click, while volunteers watch the stream of recent changes and argue out disputes on discussion pages.",
+  "draw": "A laptop screen showing an encyclopedia-style page split into two columns of the same paragraph side by side, comparing two versions: one line highlighted in pale red on the left and its replacement in pale green on the right, the text drawn as grey lines.",
+  "inventor": "Jimmy Wales and Larry Sanger",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "podcasting",
+  "year": "2004",
+  "title": "Podcasting",
+  "summary": "Free audio shows, made by anyone, that arrive on your phone or music player by themselves. The maker records an episode, saves it as a compressed sound file and adds it to a web feed, a running list on their website; the listener's app checks the feed every few hours and downloads anything new, ready to play offline.",
+  "draw": "A home recording setup: a microphone on a desk arm with a round foam pop filter in front of it, a laptop showing a sound waveform, and a pair of headphones lying on the desk.",
+  "inventor": "Dave Winer and Adam Curry",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "distributed-version-control",
+  "year": "2005",
+  "title": "Distributed version control",
+  "summary": "Lets thousands of programmers work on the same code at once without overwriting each other. Every programmer keeps a full copy of the project and its whole history; each saved change is labelled with a fingerprint calculated from its contents, so copies can be compared and swapped over the Internet, and the software merges different people's edits line by line.",
+  "draw": "A programmer's monitor showing a dark screen with a branching chart: a vertical line of coloured dots, side lines splitting off from it and later merging back in, each dot a saved version.",
+  "inventor": "Linus Torvalds",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "hpv-vaccine",
+  "year": "2006",
+  "title": "HPV vaccine",
+  "summary": "Prevents infection with the viruses behind most cervical cancers and several others. Yeast given one virus gene makes the virus's outer-shell protein, which assembles itself into empty shells that look just like the real virus but carry no genes. The immune system learns to recognise the shells and later blocks the real virus.",
+  "draw": "A molecular-scale view of several identical round virus-like particles, each a ball made of 72 small five-lobed protein knobs and empty inside, floating next to a budding yeast cell.",
+  "inventor": "Ian Frazer and Jian Zhou",
+  "location": "Australia",
+  "field": "Design"
+ },
+ {
+  "id": "rotavirus-vaccine",
+  "year": "2004",
+  "title": "Rotavirus vaccine",
+  "summary": "Drops swallowed by babies that protect them from rotavirus, the commonest cause of deadly diarrhoea in young children. The drops hold live but weakened virus, grown in the lab until it barely makes anyone ill; it multiplies a little in the baby's gut and trains the immune system to fight off the real thing.",
+  "draw": "A health worker squeezing liquid drops from a small plastic tube into the open mouth of a baby held on its mother's lap.",
+  "inventor": "Richard Ward and David Bernstein",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "ready-to-use-therapeutic-food",
+  "year": "2000",
+  "title": "Ready-to-use therapeutic food",
+  "summary": "Lets starving children recover at home instead of in a hospital ward. It is a thick paste of peanuts, milk powder, sugar, oil, vitamins and minerals in a sealed foil packet; because it holds almost no water, germs cannot grow in it, so it keeps for two years without a fridge and a child can eat it straight from the packet.",
+  "draw": "A mother holding a small child on her lap, the child squeezing and sucking thick brown paste from a torn-open foil sachet.",
+  "inventor": "André Briend and Michel Lescanne",
+  "location": "France",
+  "field": "Design"
+ },
+ {
+  "id": "off-grid-solar-lighting",
+  "year": "2008",
+  "title": "Off-grid solar lighting",
+  "summary": "Gives homes without electricity clean, bright light in place of smoky kerosene lamps. A small solar panel charges a lithium-ion battery during the day; at night the battery powers a white LED, which turns electricity into light so efficiently that a few hours of sunshine runs the lamp all evening, and often charges a phone too.",
+  "draw": "A child doing homework at night by the light of a small plastic lantern on the table, its white LED shining down; a thin cable runs from the lantern to a small flat solar panel leaning against the wall by the window.",
+  "inventor": "Sam Goldman and Ned Tozun, d.light",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "cyberweapons",
+  "year": "2010",
+  "title": "Cyberweapons",
+  "summary": "Software built to wreck a country's machinery, not just steal its secrets. The first known one, found in 2010, slipped into Iran's uranium plant on memory sticks through software flaws nobody knew of, hunted for the controllers of its centrifuges and made them spin too fast and then too slow, breaking them, while showing the operators normal readings.",
+  "draw": "A long row of tall, slim silver cylinders standing upright in an industrial hall, joined by overhead pipes, with a laptop on a desk in the foreground that has a small memory stick plugged into its side.",
+  "inventor": "United States and Israel (attributed)",
+  "location": "United States and Israel",
+  "field": "Design"
+ },
+ {
+  "id": "biometric-digital-id",
+  "year": "2010",
+  "title": "Biometric digital ID",
+  "summary": "Gives each person a number they can prove is theirs with a fingertip or an eye, even with no papers. At enrolment ten fingerprints, both irises and the face are recorded and checked against everyone on file, so nobody gets two numbers; later a scanner at a bank or shop sends a fingerprint to the central computers, which answer yes or no.",
+  "draw": "A woman pressing her fingertip onto the small glass window of a hand-held fingerprint scanner held out across a shop counter, the scanner wired to a phone, the ridges of her fingertip visible where it presses on the glass.",
+  "inventor": "Unique Identification Authority of India, Nandan Nilekani",
+  "location": "India",
+  "field": "Design"
+ },
+ {
+  "id": "prenatal-dna-blood-test",
+  "year": "2011",
+  "title": "Prenatal DNA blood test",
+  "summary": "Checks an unborn baby for Down syndrome and some other conditions from a sample of the mother's blood, with no needle into the womb. Tiny fragments of the baby's DNA, shed by the placenta, float in her blood; the test reads millions of fragments and counts which chromosome each came from, so an extra copy of one shows up as a small surplus.",
+  "draw": "A nurse drawing blood from the arm of a visibly pregnant woman seated in a clinic chair, dark red blood filling a small glass tube.",
+  "inventor": "Dennis Lo",
+  "location": "Hong Kong",
+  "field": "Design"
+ },
+ {
+  "id": "ride-hailing-apps",
+  "year": "2010",
+  "title": "Ride-hailing apps",
+  "summary": "Summons a car to wherever you are standing with a tap on a phone. The phone sends its satellite-positioning fix to the company's computers, which track every nearby driver on a live map, pick the closest free one, set the fare from distance and demand, and charge your card when the ride ends. Most drivers are ordinary people in their own cars.",
+  "draw": "A hand holding a smartphone showing a street map with a small car symbol moving along a road toward a pin, while in the background a car pulls up at the kerb of a city street at dusk.",
+  "inventor": "Garrett Camp and Travis Kalanick",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "sglt2-inhibitors",
+  "year": "2012",
+  "title": "SGLT2 inhibitors",
+  "summary": "Pills for diabetes that also protect the heart and kidneys. The kidneys filter sugar out of the blood and then pull nearly all of it back in through tiny pumps lining their tubes. The drug blocks the main pump, so around 70 grams of surplus sugar a day leaves in the urine instead of staying in the blood.",
+  "draw": "A cutaway of a single kidney tubule, a narrow tube lined with cells, with sugar molecules flowing along inside it; the pumps in the cells' inner wall are plugged by small drug molecules, so the sugar carries on down the tube.",
+  "inventor": "Bristol-Myers Squibb and AstraZeneca",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "stroke-clot-retrieval",
+  "year": "2015",
+  "title": "Stroke clot retrieval",
+  "summary": "Pulls the blood clot out of a blocked brain artery during a stroke, often sparing the patient lasting disability. Guided by X-ray, a doctor threads a thin tube from the groin up into the brain and pushes a folded wire-mesh tube through the clot; the mesh springs open, the clot gets caught in it, and both are drawn back out.",
+  "draw": "A cutaway of a brain artery blocked by a dark red clot; a thin catheter reaches the clot from below, and a cylindrical tube of open metal mesh has expanded inside the clot, the clot's material bulging through the mesh, as it is pulled back toward the catheter.",
+  "inventor": "",
+  "location": "Netherlands",
+  "field": "Design"
+ },
+ {
+  "id": "end-to-end-encrypted-messaging",
+  "year": "2016",
+  "title": "End-to-end encrypted messaging",
+  "summary": "Lets people text and call so that nobody in between, not even the company running the service, can read the messages. Each phone keeps its own secret keys and uses public-key encryption to agree a shared key with the other phone; the key changes with every message, so a key stolen today cannot unlock older messages.",
+  "draw": "Two smartphones lying face up some distance apart on a table, each showing a chat of message bubbles as grey lines, linked by a dotted arc of tiny jumbled coloured blocks with a small closed padlock at the middle of the arc.",
+  "inventor": "Moxie Marlinspike and Trevor Perrin",
+  "location": "United States",
+  "field": "Design"
+ },
+ {
+  "id": "grid-battery-storage",
+  "year": "2009",
+  "title": "Grid battery storage",
+  "summary": "Steadies the electricity grid and stores cheap solar and wind power for later. Thousands of lithium-ion cells fill rows of container-sized cabinets, and inverters turn their direct current into the grid's alternating current. When a power station trips and the grid's frequency starts to sag, they push out power within a fraction of a second, far faster than any spinning generator.",
+  "draw": "Rows of identical white container-sized metal cabinets standing on gravel in open country, cooling fans on their sides, cables running to a small substation with transformers and power lines, a wind turbine in the distance.",
+  "inventor": "AES and A123 Systems",
+  "location": "Chile",
+  "field": "Design"
+ },
+ {
+  "id": "viral-vector-vaccines",
+  "year": "2019",
+  "title": "Viral-vector vaccines",
+  "summary": "Vaccines that use a harmless virus to deliver one gene from a dangerous one. The carrier virus, stripped so it cannot cause disease, gets into cells near the injection and makes them build the target virus's surface protein, which the immune system learns to attack. An Ebola vaccine and some Covid-19 vaccines, given billions of times, work this way.",
+  "draw": "A molecular-scale view: a 20-sided virus shell with thin fibres ending in knobs sticking out from its corners, docked on the surface of a human cell and passing a coiled strand of DNA inside, while a few spike-shaped proteins already stand out on the cell's surface nearby.",
+  "inventor": "Public Health Agency of Canada; Merck",
+  "location": "Canada",
+  "field": "Design"
+ },
+ {
+  "id": "fpv-attack-drone",
+  "year": "2022",
+  "title": "FPV attack drone",
+  "summary": "A cheap racing drone turned into a guided bomb. The pilot wears video goggles showing the live view from a small camera in the drone's nose, as if sitting aboard, and steers it by radio straight into a tank, trench or vehicle, where an explosive charge strapped under it goes off. Each costs a few hundred dollars.",
+  "draw": "A soldier crouching in a trench wearing boxy video goggles and holding a two-stick radio controller, while just above him a small four-propeller drone flies off with a cylindrical explosive charge strapped beneath its frame and a tiny camera pointing forward from its front.",
+  "inventor": "",
+  "location": "Ukraine",
+  "field": "Design"
+ }
+]

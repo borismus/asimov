@@ -1,0 +1,526 @@
+[
+{
+"id": "ft-air-to-starch-reactor",
+"name": "Air-to-starch reactor",
+"job": "grows food",
+"effect": "life's molecules can be made from non-living chemicals",
+"effectCard": "organic-synthesis",
+"effectCardTitle": "Organic synthesis",
+"how": "Carbon dioxide from the air is combined with hydrogen to make a simple alcohol, which is purified and fed through a chain of chemical and enzyme steps that build it up into starch, the main food in grain. No plant, soil or field is involved. Such a plant could grow staple food in a building, far faster per acre than wheat.",
+"why": "Food grown with no plants at all, a direct heir of Wöhler's urea.",
+"real": "Lab only: CO2-to-starch synthesis, 2021",
+"maturity": "lab",
+"plausibility": 2,
+"parts": [
+"valve",
+"distillation"
+],
+"borisNote": null
+},
+{
+"id": "ft-algae-oxygen-garden",
+"name": "Algae oxygen garden for spacecraft",
+"job": "supplies oxygen",
+"effect": "plants turn sunlight, water and carbon dioxide into sugar",
+"effectCard": "photosynthesis",
+"effectCardTitle": "Photosynthesis",
+"how": "Lit glass tubes of green algae sit in a spacecraft's air loop. As the algae turn lamp light, water and the crew's exhaled carbon dioxide into sugar, they release fresh oxygen, so a long voyage needs far less stored oxygen.",
+"why": "A pond's chemistry as the life support for a trip to Mars.",
+"real": "Soviet BIOS-3 tests, 1972; space algae reactors still experimental",
+"maturity": "lab",
+"plausibility": 4,
+"parts": [
+"glass",
+"light-emitting-diodes",
+"valve"
+],
+"borisNote": null
+},
+{
+"id": "ft-arsenic-sensing-bacteria",
+"name": "Arsenic-sensing glowing bacteria",
+"job": "measures",
+"effect": "regulator genes switch other genes on and off",
+"effectCard": "gene-regulators",
+"effectCardTitle": "Gene regulators",
+"how": "A vial of harmless bacteria that tests well water for arsenic poisoning. A natural regulator gene that reacts to arsenic is wired to a gene that makes the cells glow, so the more arsenic is present, the more genes get switched on and the brighter the sample.",
+"why": "Living cells as cheap chemical meters, using nature's own on/off switches.",
+"real": "Bacterial arsenic biosensors, lab and field kits 2000s",
+"maturity": "lab",
+"plausibility": 4,
+"parts": [
+"recombinant-dna"
+],
+"borisNote": "doesnt seem that important (rejected)"
+},
+{
+"id": "ft-artificial-vein-valve",
+"name": "Implanted artificial vein valve",
+"job": "treats illness",
+"effect": "flap valves let blood flow only one way",
+"effectCard": "vein-valves",
+"effectCardTitle": "Vein valves",
+"how": "When the valves in leg veins fail, blood pools instead of climbing back to the heart, causing swollen legs and sores that won't heal. A small flap valve of slippery plastic placed inside a leg vein opens when the calf muscles squeeze blood upward and snaps shut when it tries to fall back.",
+"why": "Harvey's anatomy lesson turned into a spare part.",
+"real": "Prosthetic vein valves, in clinical trials 2020s",
+"maturity": "lab",
+"plausibility": 4,
+"parts": [
+"valve",
+"teflon"
+],
+"borisNote": null
+},
+{
+"id": "ft-bee-explosive-sniffer",
+"name": "Trained-bee explosive sniffer",
+"job": "detects objects",
+"effect": "pairing a signal with a reward trains a reflex",
+"effectCard": "conditioned-response",
+"effectCardTitle": "Conditioned response",
+"how": "Honeybees are trained in minutes by giving sugar water each time they smell a trace of explosive, until the smell alone makes them stick out their tongues. A handheld box pumps air past a few harnessed bees while a camera and computer watch for the reflex. They beat many electronic noses for sensitivity.",
+"why": "A Pavlovian reflex turned into a living chemical sensor.",
+"real": "Inscentinel trained-bee detector prototypes, 2000s",
+"maturity": "lab",
+"plausibility": 4,
+"parts": [
+"air-pump",
+"camera",
+"computer"
+],
+"borisNote": null
+},
+{
+"id": "ft-brine-air-well",
+"name": "Salt-brine air well",
+"job": "supplies water",
+"effect": "dissolved stuff lowers a liquid's vapor pressure",
+"effectCard": "raoults-law",
+"effectCardTitle": "Raoult's law",
+"how": "A tray of strong salt brine sits open to the night air, and because dissolved salt lowers the brine's vapor pressure, water vapor from even dry desert air condenses into it. By day the sun warms the sealed tray under a glass lid, driving the water back out as vapor that condenses on the cool glass and drips into a jar. The salt never leaves, so the same brine harvests drinking water night after night.",
+"why": "Pulls drinking water from desert air with no power, just salt and sunshine.",
+"real": "liquid-desiccant water harvesters, lab prototypes 2010s",
+"maturity": "lab",
+"plausibility": 4,
+"parts": [
+"pottery",
+"glass",
+"valve"
+],
+"borisNote": null
+},
+{
+"id": "ft-brine-heat-battery",
+"name": "Salt-brine heat battery",
+"job": "stores energy",
+"effect": "dissolved stuff lowers a liquid's vapor pressure",
+"effectCard": "raoults-law",
+"effectCardTitle": "Raoult's law",
+"how": "Summer heat boils water out of a lye solution, leaving thick concentrated brine in a steel tank. In winter a valve lets cool water vapor reach the brine, which grabs it eagerly because dissolved stuff lowers its own vapor pressure, and the absorption releases heat warm enough for a house. Kept apart, the brine and water hold their energy for months without loss.",
+"why": "Stores summer sunshine as a chemical thirst, released as winter warmth.",
+"real": "sodium-hydroxide seasonal heat storage, lab prototypes 2010s",
+"maturity": "lab",
+"plausibility": 3,
+"parts": [
+"steel",
+"valve"
+],
+"borisNote": null
+},
+{
+"id": "ft-cell-flight-recorder",
+"name": "Cellular flight-recorder bacteria",
+"job": "records media",
+"effect": "an enzyme copies RNA back into DNA",
+"effectCard": "reverse-transcriptase",
+"effectCardTitle": "Reverse transcriptase",
+"how": "Gut bacteria that keep a diary of what they meet on their way through the body. An enzyme copies snippets of the cell's working RNA back into DNA and files them in a memory region of the genome in order, so sequencing the bacteria afterwards reveals what happened and when.",
+"why": "A tape recorder made from a virus's enzyme, writing history into DNA.",
+"real": "Record-seq RNA recorders in E. coli, lab 2018",
+"maturity": "lab",
+"plausibility": 3,
+"parts": [
+"recombinant-dna"
+],
+"borisNote": null
+},
+{
+"id": "ft-chemical-heat-pipe",
+"name": "Chemical heat pipeline",
+"job": "carries heat",
+"effect": "a system at balance shifts to resist any push",
+"effectCard": "le-chateliers-principle",
+"effectCardTitle": "Le Châtelier's principle",
+"how": "A gas mixture flows through a steel pipe loop between a hot source and a distant user. At the hot end the reaction is pushed toward the side that soaks up heat, and at the cold end the balance shifts back, giving that heat out again. Because the energy travels as chemistry rather than warmth, it can cross many kilometres cold without loss.",
+"why": "Ships heat cold, as chemical bonds, across a whole city.",
+"real": "EVA-ADAM methane heat-transport loop, Jülich pilot 1980s",
+"maturity": "lab",
+"plausibility": 3,
+"parts": [
+"steel",
+"valve"
+],
+"borisNote": null
+},
+{
+"id": "ft-coin-flip-chip",
+"name": "Coin-flip probabilistic chip",
+"job": "computes",
+"effect": "random events are predictable in large numbers",
+"effectCard": "probability",
+"effectCardTitle": "Probability",
+"how": "A chip is built from thousands of deliberately jittery bits that flip between 0 and 1 at random, each nudged by its neighbours. Watched over many flips, the crowd settles into the most likely patterns, solving scheduling and optimisation puzzles with far less energy than ordinary logic.",
+"why": "Randomness, normally a chip's enemy, becomes the computing engine.",
+"real": "Probabilistic-bit (p-bit) chips, lab prototypes 2019 on",
+"maturity": "lab",
+"plausibility": 3,
+"parts": [
+"integrated-circuits",
+"transistor"
+],
+"borisNote": null
+},
+{
+"id": "ft-curie-heat-generator",
+"name": "Curie-point waste-heat generator",
+"job": "makes electricity",
+"effect": "a magnet loses its magnetism when hot enough",
+"effectCard": "curie-temperature",
+"effectCardTitle": "Curie temperature",
+"how": "A strip of special alloy with a low Curie temperature sits in a magnet's field, wrapped in a coil of wire. Waste heat and cooling water alternately warm and cool it past its Curie point, so it keeps losing and regaining its magnetism. Each switch makes the field through the coil jump, pushing a current with no moving parts.",
+"why": "Edison tried it in 1887; new alloys could harvest lukewarm factory heat.",
+"real": "Edison's pyromagnetic generator, demonstrated 1887",
+"maturity": "lab",
+"plausibility": 3,
+"parts": [
+"rare-earth-magnet",
+"insulated-wire"
+],
+"borisNote": null
+},
+{
+"id": "ft-curie-thermoseeds",
+"name": "Self-limiting tumor-heating seeds",
+"job": "treats illness",
+"effect": "a magnet loses its magnetism when hot enough",
+"effectCard": "curie-temperature",
+"effectCardTitle": "Curie temperature",
+"how": "Tiny alloy seeds are placed in a tumor and a coil around the patient makes a fast-changing magnetic field that heats them. Once a seed reaches its Curie temperature it stops being magnetic and stops heating, so it holds itself at a fever-like temperature that harms cancer cells but not healthy ones. No thermometer inside the body is needed.",
+"why": "A built-in thermostat made of physics, inside the body.",
+"real": "Curie-point thermoseed hyperthermia, clinical trials 1990s",
+"maturity": "lab",
+"plausibility": 4,
+"parts": [
+"electromagnets"
+],
+"borisNote": null
+},
+{
+"id": "ft-encapsulated-islet-implant",
+"name": "Encapsulated islet implant",
+"job": "regulates the body",
+"effect": "islet cells sense blood sugar and release matching insulin",
+"effectCard": "islets-of-langerhans",
+"effectCardTitle": "Islets of langerhans",
+"how": "Lab-grown pancreas islet cells are sealed in a small porous pouch implanted under the skin. Sugar and insulin pass through the pores, but immune cells are too big to get in and attack. The living cells measure blood sugar and release just the right amount of insulin, doing the job of a diabetic's lost pancreas automatically.",
+"why": "A self-regulating insulin source instead of injections and guesswork.",
+"real": "Clinical trials, 2010s-2020s",
+"maturity": "lab",
+"plausibility": 3,
+"parts": [
+"tissue-culture"
+],
+"borisNote": null
+},
+{
+"id": "ft-enzyme-dna-data-drive",
+"name": "Enzyme-written DNA data drive",
+"job": "stores data",
+"effect": "an enzyme strings loose nucleotides into DNA or RNA",
+"effectCard": "nucleic-acid-formation",
+"effectCardTitle": "Nucleic acid formation",
+"how": "An archive that stores computer files as DNA, written by an enzyme instead of harsh chemistry. A chip with tiny electrodes tells the enzyme which DNA letter to add at each spot, building strands that spell out the data; a sugar cube's worth could hold every film ever made for thousands of years.",
+"why": "Biology's own writing machine becomes the densest, longest-lasting storage.",
+"real": "Enzymatic DNA synthesis for data storage, lab 2020s",
+"maturity": "lab",
+"plausibility": 3,
+"parts": [
+"integrated-circuits"
+],
+"borisNote": null
+},
+{
+"id": "ft-falling-atom-tunnel-finder",
+"name": "Falling-atom tunnel finder",
+"job": "detects objects",
+"effect": "heavy and light things fall at the same rate",
+"effectCard": "falling-motion",
+"effectCardTitle": "Falling motion",
+"how": "Inside two vacuum tubes, one above the other, tiny clouds of atoms are dropped and their fall is timed with laser light. Because everything falls at the same rate, any difference between the two drops can only come from extra or missing mass nearby, revealing buried pipes, tunnels or caves without digging.",
+"why": "Galileo's tower drop turned into an X-ray for the ground.",
+"real": "Atom-interferometer gravity sensors, lab field demo 2022",
+"maturity": "lab",
+"plausibility": 4,
+"parts": [
+"laser",
+"air-pump",
+"interferometer",
+"microchips"
+],
+"borisNote": null
+},
+{
+"id": "ft-gene-drive-mosquito",
+"name": "Gene-drive malaria mosquitoes",
+"job": "prevents disease",
+"effect": "traits pass on in predictable ratios",
+"effectCard": "genetics",
+"effectCardTitle": "Genetics",
+"how": "Normally a gene reaches half of an animal's offspring, so an added trait fades out of a wild population. A gene drive is an added gene that copies itself onto the partner chromosome, so nearly all offspring inherit it, for example a gene that stops mosquitoes carrying malaria. Released mosquitoes would spread the trait through the wild population in a few years.",
+"why": "Rewrites Mendel's ratios on purpose to protect people from disease.",
+"real": "Lab and caged trials, 2015-2018",
+"maturity": "lab",
+"plausibility": 3,
+"parts": [
+"synthetic-gene"
+],
+"borisNote": null
+},
+{
+"id": "ft-glowing-block-heat-battery",
+"name": "Glowing-block heat battery",
+"job": "makes electricity",
+"effect": "glow rises with the fourth power of temperature",
+"effectCard": "heat-and-radiation",
+"effectCardTitle": "Heat and radiation",
+"how": "Cheap surplus electricity heats insulated blocks of ceramic until they glow white-hot. Solar-type cells facing the blocks turn their light back into electricity on demand. Because glow climbs with the fourth power of temperature, a very hot block shines so brightly that a small panel of cells can deliver a lot of power.",
+"why": "Light from stored heat, made practical by the steep fourth-power law.",
+"real": "Thermophotovoltaic heat batteries, lab and pilots 2020s",
+"maturity": "lab",
+"plausibility": 3,
+"parts": [
+"photovoltaic-cells",
+"carborundum"
+],
+"borisNote": null
+},
+{
+"id": "ft-glowing-phage-test",
+"name": "Glowing-phage germ test",
+"job": "diagnoses",
+"effect": "some viruses kill only bacteria",
+"effectCard": "bacteriophages",
+"effectCardTitle": "Bacteriophages",
+"how": "A phage that infects only one kind of bacterium is engineered to carry a firefly glow gene. Mixed with a patient sample, it infects only the target germ, which then lights up, and a light sensor detects the glow. It shows within hours whether that germ is present and alive.",
+"why": "A germ's own enemy becomes a pinpoint, fast detector for it.",
+"real": "luciferase reporter phage tests, 1990s-2010s",
+"maturity": "lab",
+"plausibility": 4,
+"parts": [
+"genetic-engineering",
+"photocell"
+],
+"borisNote": null
+},
+{
+"id": "ft-greenhouse-pollinating-robot",
+"name": "Greenhouse pollinating robot",
+"job": "grows food",
+"effect": "pollen fertilizes a flower to make seed",
+"effectCard": "plant-sexuality",
+"effectCardTitle": "Plant sexuality",
+"how": "In greenhouses and orchards where bees are scarce, a robot arm with a camera finds open flowers and dabs pollen from one onto another with a soft brush or puff of air. Each pollinated flower can then set fruit and seed, so the harvest no longer depends on insects.",
+"why": "An insurance policy for crops if bees keep disappearing.",
+"real": "Robot pollinator prototypes, 2010s-2020s",
+"maturity": "lab",
+"plausibility": 4,
+"parts": [
+"robots",
+"camera",
+"microchips"
+],
+"borisNote": "interesting for sure. not sure about minituarization tho, and energy density (needs work)"
+},
+{
+"id": "ft-heat-release-glue",
+"name": "Heat-release molecular glue joint",
+"job": "fastens",
+"effect": "two molecules snap together into a ring",
+"effectCard": "diels-alder-reaction",
+"effectCardTitle": "Diels-Alder reaction",
+"how": "A glue whose molecules lock across the joint by snapping together into rings, with a fine heating wire buried in the bond line. Passing current warms the joint so the rings pop open and the parts come apart cleanly, and on cooling the rings snap shut again so the same glue can be reused.",
+"why": "A reversible ring-forming reaction makes fastenings that undo on command, easing repair and recycling.",
+"real": "Reversible Diels-Alder adhesives, lab 2000s",
+"maturity": "lab",
+"plausibility": 4,
+"parts": [
+"insulated-wire"
+],
+"borisNote": null
+},
+{
+"id": "ft-hemoglobin-artificial-gill",
+"name": "Hemoglobin artificial gill",
+"job": "supplies oxygen",
+"effect": "hemoglobin carries oxygen in the blood",
+"effectCard": "hemoglobin",
+"effectCardTitle": "Hemoglobin",
+"how": "Seawater is pumped past a thin membrane with a hemoglobin-like carrier on the other side, which grabs the little oxygen dissolved in the water. The loaded carrier is pumped to a second chamber where it is made to let go, releasing breathable oxygen. Seawater holds little oxygen, so it suits an underwater habitat with big pumps better than a diver.",
+"why": "Breathing from the sea itself, the way fish blood does.",
+"real": "Lab prototypes (Aquanautics, 1980s)",
+"maturity": "lab",
+"plausibility": 2,
+"parts": [
+"perfusion-pump",
+"valve"
+],
+"borisNote": null
+},
+{
+"id": "ft-hydrogen-bacteria-protein",
+"name": "Air-and-hydrogen protein farm",
+"job": "grows food",
+"effect": "vent bacteria live on chemicals, without light or oxygen",
+"effectCard": "deep-sea-ecosystems",
+"effectCardTitle": "Deep-sea ecosystems",
+"how": "A tank of bacteria that make protein-rich flour from hydrogen, carbon dioxide and minerals, with no fields or sunlight. Like the microbes at deep-sea vents, they live on chemical energy, so pumping the gases through the tank grows food anywhere, even in a desert or on a spaceship.",
+"why": "Food grown without photosynthesis, like life at the sea-floor vents.",
+"real": "Solar Foods Solein, pilot plant 2020s",
+"maturity": "lab",
+"plausibility": 4,
+"parts": [
+"air-pump"
+],
+"borisNote": null
+},
+{
+"id": "ft-hydrogen-round-trip-battery",
+"name": "Hydrogen round-trip battery",
+"job": "stores electricity",
+"effect": "a current splits water into hydrogen and oxygen",
+"effectCard": "decomposition-of-water",
+"effectCardTitle": "Decomposition of water",
+"how": "Surplus electricity from a sunny or windy day splits water into hydrogen, which is piped into tanks and can wait for weeks. When power is needed, a fuel cell recombines the hydrogen with oxygen from the air and gives the electricity back. Unlike a chemical battery, adding more storage just means adding more tanks.",
+"why": "Stores electricity as a gas, so capacity scales with tank size, not electrode area.",
+"real": "Regenerative fuel cells and power-to-gas pilots, 1990s-2010s",
+"maturity": "lab",
+"plausibility": 4,
+"parts": [
+"fuel-cell",
+"malleable-platinum",
+"valve"
+],
+"borisNote": null
+},
+{
+"id": "ft-hydrogen-steam-generator",
+"name": "Hydrogen flame steam generator",
+"job": "makes steam",
+"effect": "burning hydrogen makes nothing but water",
+"effectCard": "hydrogen-and-water",
+"effectCardTitle": "Hydrogen and water",
+"how": "A small rocket-style combustion chamber burns hydrogen with pure oxygen and sprays extra water into the flame. Because the only thing hydrogen burning makes is water, the exhaust is clean, superheated steam that can go straight into a turbine with no boiler or heat exchanger. It can start in seconds, so it suits backing up a power grid.",
+"why": "The exhaust is the product: a flame whose smoke is pure steam replaces the whole boiler.",
+"real": "DLR hydrogen/oxygen steam generator, 1990s (experimental)",
+"maturity": "lab",
+"plausibility": 4,
+"parts": [
+"liquid-fuel-rockets",
+"valve"
+],
+"borisNote": null
+},
+{
+"id": "ft-interferon-nasal-spray",
+"name": "Interferon cold-prevention spray",
+"job": "prevents disease",
+"effect": "infected cells release a protein that blocks other viruses",
+"effectCard": "interferon",
+"effectCardTitle": "Interferon",
+"how": "A nasal spray of interferon used when a cold or flu is going round the household. The protein tells the cells lining the nose to switch on their antiviral defences before any virus arrives, so the infection never takes hold.",
+"why": "Borrows the body's emergency alarm signal before infection, instead of training immunity.",
+"real": "Interferon nasal spray trials against colds, 1980s",
+"maturity": "lab",
+"plausibility": 3,
+"parts": [
+"spray-cans"
+],
+"borisNote": null
+},
+{
+"id": "ft-jet-stream-kite-generator",
+"name": "Jet-stream kite power station",
+"job": "makes electricity",
+"effect": "fast steady winds blow high in the sky",
+"effectCard": "jet-streams",
+"effectCardTitle": "Jet streams",
+"how": "A huge tethered kite wing flown kilometres up in the jet stream, where winds are fast and almost never stop. Small generators on the wing are spun by the wind and send power down a long tether cable, giving steadier output than ground windmills.",
+"why": "Taps the planet's steadiest wind, out of reach of every tower.",
+"real": "Airborne wind kites (Makani and others), prototypes 2010s",
+"maturity": "lab",
+"plausibility": 2,
+"parts": [
+"wing",
+"electric-generators",
+"insulated-wire"
+],
+"borisNote": null
+},
+{
+"id": "ft-lensless-diffraction-microscope",
+"name": "Lensless diffraction microscope",
+"job": "magnifies",
+"effect": "light bends around edges",
+"effectCard": "light-diffraction",
+"effectCardTitle": "Diffraction",
+"how": "A laser lights a tiny sample with no lens at all, and the light that bends around its edges spreads into a speckled pattern on a camera chip. A computer works backwards from the pattern to the shape that must have made it, giving a sharp magnified image with no glass to blur it.",
+"why": "The blurring that limits every lens becomes the image itself.",
+"real": "Coherent diffraction imaging, labs since 1999",
+"maturity": "lab",
+"plausibility": 4,
+"parts": [
+"laser",
+"camera",
+"computer"
+],
+"borisNote": null
+},
+{
+"id": "ft-limestone-heat-battery",
+"name": "Limestone heat battery",
+"job": "stores energy",
+"effect": "heating limestone frees a gas that lime soaks back up",
+"effectCard": "carbon-dioxide",
+"effectCardTitle": "Carbon dioxide",
+"how": "Concentrated sunlight bakes limestone, driving off carbon dioxide, and the lime and gas are kept in separate tanks, holding the energy. When power is wanted, the gas is let back onto the lime, which soaks it up and gets very hot, raising steam to spin a turbine at night.",
+"why": "Black's 1750s lime experiment as a battery for solar power.",
+"real": "Calcium-looping storage, pilot plants 2020s",
+"maturity": "lab",
+"plausibility": 4,
+"parts": [
+"mirror",
+"boiler",
+"steam-turbine"
+],
+"borisNote": "very interesting. not sure about feasibility (kept)"
+},
+{
+"id": "ft-liquid-air-energy-store",
+"name": "Liquid air energy store",
+"job": "stores energy",
+"effect": "cold plus pressure turns gases into liquids",
+"effectCard": "liquefying-gases",
+"effectCardTitle": "Liquefying gases",
+"how": "When power is cheap, a plant squeezes and chills ordinary air until it turns into a liquid, then keeps it in large vacuum-insulated tanks. Later, letting it warm makes it boil back into a gas about 700 times bigger, and that rush of gas spins a turbine. The stored 'fuel' is just air, so nothing burns and nothing needs mining.",
+"why": "Energy stored by squashing air into a liquid, released by letting it boil.",
+"real": "Liquid-air energy storage pilot plants, 2010s",
+"maturity": "lab",
+"plausibility": 4,
+"parts": [
+"dewar-flask",
+"turbines",
+"valve"
+],
+"borisNote": null
+}
+]

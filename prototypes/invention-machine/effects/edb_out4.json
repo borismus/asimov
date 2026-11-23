@@ -1,0 +1,1157 @@
+[
+ {
+  "edb": "Moiré Effect",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "A specific, nameable optical effect that does a clear job (magnifying and detecting tiny shifts); not in the deck.",
+  "id": "moire-effect",
+  "title": "Moiré effect",
+  "year": 1874,
+  "inventor": "Lord Rayleigh",
+  "location": "England",
+  "field": "Science: Physics",
+  "description": "Lay one fine grid or striped screen over another at a slight angle and broad wavy bands appear that neither pattern has, sweeping across when one layer moves a hair. Lord Rayleigh pointed out in 1874 that these bands could test how evenly a diffraction grating was ruled. Because the bands magnify tiny shifts, they are used to measure small movements and strains and to make banknotes hard to copy.",
+  "effect": "two overlaid fine patterns make broad bands that magnify any small shift between them",
+  "usedIn": [
+   "Moiré fringe gratings in machine-tool position encoders",
+   "Moiré strain measurement on bridges and machine parts",
+   "Anti-copy line patterns on banknotes and ID cards",
+   "Moiré alignment marks in chip lithography"
+  ],
+  "strength": "Two gratings with lines 0.1 mm apart crossed at 1 degree make bands about 6 mm wide, so a shift between them is magnified about 50 times.",
+  "deps": [
+   "diffraction-gratings"
+  ]
+ },
+ {
+  "edb": "Moment of Inertia",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A quantity (rotational mass), not an effect; the job it does in flywheels is ordinary inertia, covered by Laws of motion."
+ },
+ {
+  "edb": "Nagaoka-Honda Effect",
+  "verdict": "merge",
+  "rule": "e4",
+  "borderline": false,
+  "why": "The inverse of the magnetovolume effect, one of the magnetoelastic family; folded into Magnetostriction, whose card is in another batch.",
+  "into": "magnetostriction"
+ },
+ {
+  "edb": "Negative Refraction",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Specific, nameable effect with an imaginable and partly real job (focusing, steering waves); deck has only ordinary refraction.",
+  "id": "negative-refraction",
+  "title": "Negative refraction",
+  "year": 1967,
+  "inventor": "Victor Veselago",
+  "location": "Russia",
+  "field": "Science: Physics",
+  "description": "In specially built materials a light or radio wave bends the 'wrong' way at the surface, ending up on the same side of the perpendicular it came from, so a flat slab can focus like a lens. Victor Veselago predicted it in 1967, and David Smith's team first showed it with microwaves in 2000 using a metamaterial made of tiny copper rings and wires. It drives work on 'superlenses' that see finer detail than ordinary lenses and on cloaks that steer waves around objects.",
+  "effect": "a wave entering a specially structured material bends backward to the same side it came from",
+  "usedIn": [
+   "Superlens experiments imaging details finer than the wavelength",
+   "Flat metamaterial lenses for microwave and radar antennas",
+   "Research cloaks that steer microwaves around an object"
+  ],
+  "strength": "Works well for microwaves in lab metamaterials; for visible light it is still weak and lossy, absorbing most of the light within a few wavelengths.",
+  "deps": [
+   "refraction"
+  ]
+ },
+ {
+  "edb": "Nernst Effect",
+  "verdict": "drop",
+  "rule": "e2",
+  "borderline": true,
+  "why": "Voltage from heat flow across a magnetic field is only microvolts per degree per tesla in ordinary metals; judgment call: too weak to do a job outside bismuth lab samples, so drop (alternative: keep as heat-to-electricity in a magnet)."
+ },
+ {
+  "edb": "Newton's Rings",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Newton's rings are thin-film interference of light, which the deck's Light waves card (Young's interference) already covers.",
+  "card": "light-waves"
+ },
+ {
+  "edb": "Non-Newtonian Fluids",
+  "verdict": "merge",
+  "rule": "e4",
+  "borderline": false,
+  "why": "Umbrella term for several opposite behaviours; its listed uses (body armour) are shear thickening, whose card is in another batch, while shear thinning cases like thixotropy are their own entries.",
+  "into": "shear-thickening"
+ },
+ {
+  "edb": "Nuclear Fission",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Deck has Nuclear fission.",
+  "card": "nuclear-fission"
+ },
+ {
+  "edb": "Nuclear Fusion",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Deck covers fusion with Hydrogen-Helium conversion (plus Solar energy source and Nuclear fusion bomb).",
+  "card": "hydrogen-helium-conversion"
+ },
+ {
+  "edb": "Nucleation",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Specific effect with clear jobs (triggering condensation, crystals, bubbles); the deck's Cloud chamber uses it but has no card for the effect itself. Dated to Aitken's dust-nuclei work; Gibbs gave the theory about the same time.",
+  "id": "nucleation",
+  "title": "Nucleation",
+  "year": 1880,
+  "inventor": "John Aitken",
+  "location": "Scotland",
+  "field": "Science: Physics",
+  "description": "Bubbles, droplets and crystals don't form evenly through a liquid or gas; they start on a speck, a scratch or a seed, which is why soda fizzes from the same spots on a glass. John Aitken showed around 1880 that water vapour won't form fog droplets without dust specks to start on. Supplying the right seeds makes rain, crystals or bubbles appear on command, from cloud seeding to click-to-start hand warmers.",
+  "effect": "a new bubble, droplet or crystal starts only on a tiny seed or rough spot",
+  "usedIn": [
+   "Cloud chambers, where droplets form on particle tracks",
+   "Silver iodide cloud seeding",
+   "Reusable sodium acetate hand warmers triggered by clicking a metal disc",
+   "Bubble chambers"
+  ],
+  "strength": "Without any specks, air must hold several times its normal limit of water vapour before droplets form; one seed can set a whole pouch of supercooled solution crystallising in seconds.",
+  "deps": []
+ },
+ {
+  "edb": "Oblique Shock Wave",
+  "verdict": "merge",
+  "rule": "e4",
+  "borderline": false,
+  "why": "A geometric variant of a shock wave (one that meets the flow at an angle); folded into Shock wave, whose card is in another batch.",
+  "into": "shock-wave"
+ },
+ {
+  "edb": "Ohm's Law",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Deck has Ohm's Law.",
+  "card": "ohms-law"
+ },
+ {
+  "edb": "Onnes Effect",
+  "verdict": "drop",
+  "rule": "e2",
+  "borderline": false,
+  "why": "Film creep that only happens in superfluid helium near absolute zero."
+ },
+ {
+  "edb": "Opto-hydraulic Effect",
+  "verdict": "merge",
+  "rule": "e4",
+  "borderline": false,
+  "why": "The high-power version of the photoacoustic effect in liquids (absorbed laser light makes a pressure pulse); folded into Photoacoustic effect.",
+  "into": "photoacoustic-effect"
+ },
+ {
+  "edb": "Osmosis",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Deck has Osmosis.",
+  "card": "osmosis"
+ },
+ {
+  "edb": "Osmotic Pressure",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "The deck's Protein size card (Pfeffer) introduces osmotic pressure; it is also part of the Osmosis card's effect.",
+  "card": "protein-size"
+ },
+ {
+  "edb": "Ostwald Ripening",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Specific named effect that does a job (growing or coarsening particles) and is controlled in real products.",
+  "id": "ostwald-ripening",
+  "title": "Ostwald ripening",
+  "year": 1896,
+  "inventor": "Wilhelm Ostwald",
+  "location": "Germany",
+  "field": "Science: Chemistry",
+  "description": "In a mix of small and large crystals or droplets, the small ones slowly dissolve and their material builds onto the big ones, so the mix gets coarser over time. Wilhelm Ostwald described it in 1896. It is why ice cream turns gritty after weeks in the freezer, and chemists use it on purpose to grow crystals big enough to filter or to make fast photographic film.",
+  "effect": "small crystals or droplets shrink and feed their material to larger neighbours",
+  "usedIn": [
+   "'Digesting' precipitates so they can be filtered in chemical analysis",
+   "Physical ripening of silver halide grains in photographic emulsions",
+   "Ice-cream stabilisers designed to slow it",
+   "Controlling particle size in nanoparticle and catalyst making"
+  ],
+  "strength": "Slow but steady: ice crystals in stored ice cream grow from about 0.03 mm to over 0.05 mm in a few weeks, big enough to feel on the tongue.",
+  "deps": [
+   "diffusion"
+  ]
+ },
+ {
+  "edb": "Ouzo Effect",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Specific, nameable effect that does a clear job (emulsifying with no energy); dated to when it was first explained and named.",
+  "id": "ouzo-effect",
+  "title": "Ouzo effect",
+  "year": 2003,
+  "inventor": "Stephen Vitale and Joseph Katz",
+  "location": "United States",
+  "field": "Science: Chemistry",
+  "description": "Pour water into clear ouzo or absinthe and it instantly turns milky: the anise oil, dissolved in the alcohol, comes out as countless tiny droplets that stay suspended without any shaking. Stephen Vitale and Joseph Katz studied and named it in 2003. The same trick makes fine, stable emulsions with no mixing energy, and is used to make nanoparticles and drug capsules.",
+  "effect": "adding water to an oil dissolved in alcohol makes the oil burst into a stable cloud of tiny droplets",
+  "usedIn": [
+   "Nanoprecipitation of polymer nanocapsules for drug delivery",
+   "The clouding ('louche') of ouzo, pastis and absinthe",
+   "Solvent-shifting to make pigment and nanoparticle dispersions"
+  ],
+  "strength": "Droplets are about a thousandth of a millimetre across and can stay suspended for days without stirring.",
+  "deps": []
+ },
+ {
+  "edb": "Oxidation",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A whole branch of chemistry (any loss of electrons), not a specific effect."
+ },
+ {
+  "edb": "Parallax",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Deck's Distance of stars card is Bessel's stellar parallax (parallax also appears in Distance to moon estimate).",
+  "card": "distance-of-stars"
+ },
+ {
+  "edb": "Parasitic Capacitance",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "Generic engineering term for unwanted capacitance; the underlying effect is capacitance, already in the deck via the Leyden jar."
+ },
+ {
+  "edb": "Pascal's Law",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Specific named effect with a huge job (multiplying force); deck's Hydrostatics (Stevin) is the different depth-pressure law and Air pressure altitude is a different Pascal work.",
+  "id": "pascals-law",
+  "title": "Pascal's law",
+  "year": 1653,
+  "inventor": "Blaise Pascal",
+  "location": "France",
+  "field": "Science: Physics",
+  "description": "Push on a liquid sealed in a container and the push spreads equally to every part of it, so a small piston pressing on oil can lift a car resting on a large one. Blaise Pascal worked it out around 1653 and imagined the hydraulic press; Joseph Bramah built a working one in 1795. Every hydraulic brake, jack, lift and digger arm runs on it.",
+  "effect": "pressure applied anywhere to a confined liquid is passed on undiminished everywhere",
+  "usedIn": [
+   "Bramah's hydraulic press (1795)",
+   "Hydraulic car brakes",
+   "Car jacks and garage lifts",
+   "Excavator and crane arms"
+  ],
+  "strength": "A piston with 100 times the area gets 100 times the force: a 20 kg push on a hand jack can lift a 2-tonne car.",
+  "deps": [
+   "hydrostatics"
+  ]
+ },
+ {
+  "edb": "Peltier Effect",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Different discoverer and effect from the deck's Seebeck effect; does a clear job (cooling).",
+  "id": "peltier-effect",
+  "title": "Peltier effect",
+  "year": 1834,
+  "inventor": "Jean Charles Athanase Peltier",
+  "location": "France",
+  "field": "Science: Physics",
+  "description": "Run a current through a junction of two different metals or semiconductors and one side gets cold while the other gets hot; reverse the current and they swap. Jean Peltier noticed it in 1834, thirteen years after Seebeck found the reverse effect. It is the solid-state cooler, with no moving parts or gas, inside plug-in picnic coolers, small wine fridges and laser temperature controllers.",
+  "effect": "an electric current through a junction of two materials pumps heat from one side to the other",
+  "usedIn": [
+   "Plug-in car picnic coolers",
+   "Temperature control of laser diodes in fibre-optic transmitters",
+   "Compact wine fridges and hotel minibars",
+   "Cooled cameras for astronomy"
+  ],
+  "strength": "A matchbook-sized module can pump about 50 watts and hold one face up to about 70°C colder than the other, but it uses several times more power than a fridge compressor for the same cooling.",
+  "deps": [
+   "seebeck-effect"
+  ]
+ },
+ {
+  "edb": "Penning Effect",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": true,
+  "why": "Specific effect doing a real job (easier gas discharge); the exact year (1927) is my best recollection of Penning's papers, so marked borderline.",
+  "id": "penning-effect",
+  "title": "Penning effect",
+  "year": 1927,
+  "inventor": "Frans Michel Penning",
+  "location": "Netherlands",
+  "field": "Science: Physics",
+  "description": "A pinch of a second gas makes a gas-filled tube light up at a much lower voltage: neon with half a percent of argon strikes far more easily than pure neon. Frans Penning explained it in the late 1920s: energy stored in excited neon atoms is handed to argon atoms and knocks electrons off them. Neon indicator lamps, plasma TV panels and radiation counter tubes use such 'Penning mixtures'.",
+  "effect": "a trace of a second gas lets an electric discharge start at a much lower voltage",
+  "usedIn": [
+   "Neon indicator lamps (neon with about 0.5% argon)",
+   "Neon-xenon fill in plasma TV panels",
+   "Gas mixtures in radiation detector tubes"
+  ],
+  "strength": "A fraction of a percent of argon can cut the voltage needed to light a neon tube by a third or more.",
+  "deps": [
+   "neon-lights"
+  ]
+ },
+ {
+  "edb": "Permeation",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Gas or liquid seeping through a solid is diffusion through it; the deck's Diffusion card (Graham) covers it.",
+  "card": "diffusion"
+ },
+ {
+  "edb": "Phase Change",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "Umbrella for everyday processes (melting, boiling, freezing); the useful part, latent heat, is already in the deck."
+ },
+ {
+  "edb": "Phononic Crystal",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": true,
+  "why": "Judgment call: a designed structure rather than a natural effect (e1 drops shapes), and Kushwaha's country is from memory; picked keep because its job, blocking chosen pitches, is clear and growing.",
+  "id": "phononic-crystal",
+  "title": "Phononic crystal",
+  "year": 1993,
+  "inventor": "Manvyr Kushwaha",
+  "location": "Mexico",
+  "field": "Science: Physics",
+  "description": "A regular array of rods, holes or lumps spaced about one wavelength apart completely blocks sound or vibration over a band of pitches while letting others pass. Manvyr Kushwaha and colleagues worked out the theory in 1993, and in 1995 researchers found that a steel-tube sculpture in Madrid did exactly this to traffic noise. It is used for acoustic mirrors in phone radio filters and for vibration-proof mounts, and proposed for 'seismic shields' of buried pillars.",
+  "effect": "a regular array of objects blocks sound or vibration over a band of pitches",
+  "usedIn": [
+   "Acoustic Bragg mirrors under radio filters in mobile phones",
+   "Eusebio Sempere's steel-tube sculpture in Madrid, the first observed sound barrier of this kind",
+   "Vibration-isolating mounts and noise barriers",
+   "Proposed seismic shields of buried pillars"
+  ],
+  "strength": "A periodic slab a few wavelengths thick can cut sound in its blocked band by 20 decibels or more, to a hundredth of the power.",
+  "deps": [
+   "x-ray-diffraction"
+  ]
+ },
+ {
+  "edb": "Phosphorescence",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": true,
+  "why": "Judgment call: strictly a variant of photoluminescence, so e4 could merge it into Fluorescence; picked keep as its own card because its afterglow does a different job (storing light for hours).",
+  "id": "phosphorescence",
+  "title": "Phosphorescence",
+  "year": 1602,
+  "inventor": "Vincenzo Cascariolo",
+  "location": "Italy",
+  "field": "Science: Physics",
+  "description": "Some materials soak up light and keep glowing after the light goes off, slowly fading over minutes or hours. In 1602 Vincenzo Cascariolo, a Bologna shoemaker and alchemist, baked a stone that glowed in the dark after sitting in sunlight, the 'Bologna stone'. Glow-in-the-dark watch dials, power-free exit signs, toys and long-glow radar screens use it.",
+  "effect": "a material stores absorbed light and slowly gives it back as a glow in the dark",
+  "usedIn": [
+   "Glow-in-the-dark watch dials",
+   "Photoluminescent exit signs that need no power",
+   "Long-persistence phosphor screens in radar displays",
+   "Glow-in-the-dark toys and stickers"
+  ],
+  "strength": "Modern strontium aluminate pigment, charged by ten minutes of light, stays visible in the dark for up to about 10 hours, though dimly.",
+  "deps": []
+ },
+ {
+  "edb": "Photo-oxidation",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "Generic label for any oxidation sped up by light; the light-breaks-molecules step is Photodissociation."
+ },
+ {
+  "edb": "Photoacoustic Doppler Effect",
+  "verdict": "merge",
+  "rule": "e4",
+  "borderline": false,
+  "why": "The photoacoustic effect combined with the Doppler shift on moving particles, a measuring technique rather than a new effect; folded into Photoacoustic effect.",
+  "into": "photoacoustic-effect"
+ },
+ {
+  "edb": "Photoacoustic Effect",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Canonical card for the photoacoustic family (opto-hydraulic and photoacoustic Doppler merge here); Bell's telephone is a different work, so not an attach.",
+  "id": "photoacoustic-effect",
+  "title": "Photoacoustic effect",
+  "year": 1880,
+  "inventor": "Alexander Graham Bell",
+  "location": "United States",
+  "field": "Science: Physics",
+  "description": "Flicker a light on a material and it gives off sound at the flicker rate, because each flash heats it slightly and makes it swell and shrink. Alexander Graham Bell discovered this in 1880 while building his photophone, which sent speech on a beam of sunlight. Today pulsed lasers use it to 'hear' blood vessels and tumours inside the body and to sniff tiny amounts of gas.",
+  "effect": "flickering light absorbed by a material makes it give off sound",
+  "usedIn": [
+   "Photoacoustic imaging of blood vessels and tumours",
+   "Photoacoustic CO2 sensors for building ventilation",
+   "Trace-gas analysers for air pollution",
+   "Bell's photophone (1880)"
+  ],
+  "strength": "With sunlight it is a faint hum you need an ear tube to hear; with a pulsed laser it can detect a gas at a few parts per billion.",
+  "deps": [
+   "telephone"
+  ]
+ },
+ {
+  "edb": "Photochromism",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Specific, nameable effect with a clear job (light-controlled tinting) and room to do more.",
+  "id": "photochromism",
+  "title": "Photochromism",
+  "year": 1867,
+  "inventor": "Carl Julius Fritzsche",
+  "location": "Russia",
+  "field": "Science: Chemistry",
+  "description": "Some substances change colour in bright light and change back in the dark, over and over. Carl Fritzsche reported in 1867 that an orange solution of tetracene bleached in daylight and regained its colour in the dark. It is what makes eyeglass lenses that darken outdoors and clear indoors.",
+  "effect": "light switches a material to a different colour, and it switches back in the dark",
+  "usedIn": [
+   "Self-darkening eyeglass lenses (Corning photochromic glass, 1964; Transitions lenses)",
+   "UV-sensing colour-changing beads and inks",
+   "Rewritable optical data storage research"
+  ],
+  "strength": "Eyeglass lenses go from clear to sunglass-dark, passing only about 15-20% of light, within a minute in sunshine, and take a few minutes to clear.",
+  "deps": []
+ },
+ {
+  "edb": "Photoconductivity",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Not in the deck as its own card (Photovoltaic cells only mentions it as background); clear detecting job.",
+  "id": "photoconductivity",
+  "title": "Photoconductivity",
+  "year": 1873,
+  "inventor": "Willoughby Smith",
+  "location": "England",
+  "field": "Science: Physics",
+  "description": "Some materials, like selenium, let electricity through far more easily in light than in the dark. Willoughby Smith noticed in 1873 that the selenium resistors he used to test undersea telegraph cables gave readings that changed with the sunlight. Light meters, dusk-to-dawn streetlight switches, early TV cameras and the drum in every photocopier and laser printer use it.",
+  "effect": "a material conducts electricity much better when light falls on it",
+  "usedIn": [
+   "Photoconductive drums in photocopiers and laser printers",
+   "Cadmium sulfide sensors that switch streetlights on at dusk",
+   "Vidicon TV camera tubes",
+   "Infrared detectors in heat-seeking sensors"
+  ],
+  "strength": "A cheap cadmium sulfide cell drops from millions of ohms in darkness to a few hundred ohms in daylight, a thousandfold change.",
+  "deps": [
+   "cadmium-lithium-selenium",
+   "telegraph"
+  ]
+ },
+ {
+  "edb": "Photodissociation",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Specific named effect (also called photolysis) with clear jobs; dated to Schulze's silver-salt experiment as the first clear observation.",
+  "id": "photodissociation",
+  "title": "Photodissociation",
+  "year": 1717,
+  "inventor": "Johann Heinrich Schulze",
+  "location": "Germany",
+  "field": "Science: Chemistry",
+  "description": "Light with enough energy can snap molecules apart, which is why sunlight fades dyes and turns some silver salts black. Johann Heinrich Schulze found in 1717 that silver salts darkened where light hit them, not where heat did, the effect photography later built on. High in the sky, ultraviolet light splitting oxygen molecules is what makes the ozone layer.",
+  "effect": "light with enough energy breaks molecules into pieces",
+  "usedIn": [
+   "Silver halide photographic film",
+   "UV lamps that make ozone for water treatment",
+   "Photoresists in chip lithography",
+   "Light-cured dental fillings and gel nails (photoinitiators)"
+  ],
+  "strength": "Mostly needs ultraviolet or blue light; each photon breaks at most one bond, so it is slow in daylight but fast under a strong UV lamp.",
+  "deps": []
+ },
+ {
+  "edb": "Photoelectric Effect",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Deck has Photoelectric effect.",
+  "card": "photoelectric-effect"
+ },
+ {
+  "edb": "Photoionisation",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "The database itself calls it essentially the photoelectric effect, in atoms and gases rather than metals; deck has Photoelectric effect.",
+  "card": "photoelectric-effect"
+ },
+ {
+  "edb": "Photoluminescence",
+  "verdict": "merge",
+  "rule": "e4",
+  "borderline": false,
+  "why": "Umbrella for light-in, light-out glow; its main case is Fluorescence, whose card is in another batch (Phosphorescence kept separately).",
+  "into": "fluorescence"
+ },
+ {
+  "edb": "Photophoresis",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": true,
+  "why": "Judgment call: same gas push as the deck's Crookes radiometer, so in-deck is arguable; picked keep because it moves free particles, a different job with new uses.",
+  "id": "photophoresis",
+  "title": "Photophoresis",
+  "year": 1918,
+  "inventor": "Felix Ehrenhaft",
+  "location": "Austria",
+  "field": "Science: Physics",
+  "description": "Tiny specks of dust or smoke drift along a strong light beam, or even against it, because the side the light heats pushes harder on the surrounding gas. Felix Ehrenhaft described it in 1918. Researchers use it to trap and steer single particles in mid-air, including a 2018 display that draws glowing 3D images with a laser-held speck.",
+  "effect": "light heating one side of a tiny particle in a gas pushes the particle along",
+  "usedIn": [
+   "Optical-trap volumetric 3D displays (Brigham Young University, 2018)",
+   "Sorting aerosol particles by how they absorb light",
+   "Proposed light-lofted micro-flyers in the upper atmosphere"
+  ],
+  "strength": "Only works on specks smaller than about a hair's width, but there it can beat gravity and hold soot particles aloft.",
+  "deps": [
+   "radiometer"
+  ]
+ },
+ {
+  "edb": "Photovoltaic Effect",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Deck has Photovoltaic cells (and Photocell); the effect is what they run on.",
+  "card": "photovoltaic-cells"
+ },
+ {
+  "edb": "Physical Containment",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "Enclosing something; a generic idea, not an effect."
+ },
+ {
+  "edb": "Physisorption",
+  "verdict": "merge",
+  "rule": "e4",
+  "borderline": false,
+  "why": "A variant of adsorption (sticking by weak van der Waals forces); folded into Adsorption, whose card is in another batch.",
+  "into": "adsorption"
+ },
+ {
+  "edb": "Piezoluminescence",
+  "verdict": "merge",
+  "rule": "e4",
+  "borderline": false,
+  "why": "Light from pressure on solids is one form of mechanoluminescence, the canonical name the curator chose; card in another batch.",
+  "into": "mechanoluminescence"
+ },
+ {
+  "edb": "Piezomagnetism",
+  "verdict": "drop",
+  "rule": "e2",
+  "borderline": false,
+  "why": "Appears only in a few rare antiferromagnetic crystals and is far too weak to do a job."
+ },
+ {
+  "edb": "Piezoresistive Effect",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Specific effect with a big detecting job; Kelvin's other deck cards (Absolute zero, Joule-Thomson) are different works.",
+  "id": "piezoresistive-effect",
+  "title": "Piezoresistive effect",
+  "year": 1856,
+  "inventor": "Lord Kelvin",
+  "location": "Scotland",
+  "field": "Science: Physics",
+  "description": "Stretch or squeeze a wire or a chip of silicon and its electrical resistance changes, so measuring the resistance tells you the force. Lord Kelvin found it in metals in 1856, and in 1954 Charles Smith found it is many times stronger in silicon and germanium. Strain gauges in scales and bridges, car engine pressure sensors and airbag crash sensors use it.",
+  "effect": "squeezing or stretching a material changes its electrical resistance",
+  "usedIn": [
+   "Metal-foil strain gauges in bathroom and truck scales",
+   "Silicon pressure sensors in car engines and blood-pressure monitors",
+   "Early airbag crash accelerometers",
+   "Atomic force microscope cantilevers"
+  ],
+  "strength": "In metal foil a stretch of one part in a thousand changes resistance by about 0.2%; in silicon the same stretch changes it by 10% or more.",
+  "deps": [
+   "ohms-law"
+  ]
+ },
+ {
+  "edb": "Plasma",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": true,
+  "why": "Judgment call: plasma is a state of matter and a whole field, like Vacuum is a condition; picked drop, though its jobs (lamps, cutting, chip etching) are real."
+ },
+ {
+  "edb": "Plasticity",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A basic material property (bending permanently), as everyday as melting."
+ },
+ {
+  "edb": "Plateau-Rayleigh Instability",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Specific named effect with a clear job (making even drops).",
+  "id": "plateau-rayleigh-instability",
+  "title": "Plateau-Rayleigh instability",
+  "year": 1873,
+  "inventor": "Joseph Plateau",
+  "location": "Belgium",
+  "field": "Science: Physics",
+  "description": "A thin stream of water from a tap doesn't stay a smooth thread: it wobbles and breaks into a row of drops, because surface tension pulls it into shapes with less surface. Joseph Plateau measured it in 1873 and Lord Rayleigh explained its timing in 1878. Vibrating the jet at the right pitch makes perfectly even drops, the basis of the inkjet printers that mark dates on cans.",
+  "effect": "a thin stream of liquid breaks itself into a row of equal drops",
+  "usedIn": [
+   "Continuous inkjet printers that print dates on cans and bottles",
+   "Flow-cytometry cell sorters",
+   "Making uniform droplets for capsules and beads"
+  ],
+  "strength": "A stream breaks into drops spaced about 4.5 stream-widths apart, each roughly twice the stream's width; an inkjet nozzle makes over 60,000 drops a second this way.",
+  "deps": [
+   "capillary-action"
+  ]
+ },
+ {
+  "edb": "Poisson's Effect",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Specific named effect doing a job (gripping, sealing); not in the deck, which has only Hooke's law.",
+  "id": "poisson-effect",
+  "title": "Poisson effect",
+  "year": 1829,
+  "inventor": "Siméon Denis Poisson",
+  "location": "France",
+  "field": "Science: Physics",
+  "description": "Squash a rubber block from the top and it bulges out at the sides; stretch a rubber band and it gets thinner. Siméon Poisson put a number on this sideways swelling in 1829. Rubber seals and wall anchors grip tighter by bulging when squeezed, and cork makes good wine stoppers because it barely bulges at all.",
+  "effect": "a material squeezed in one direction swells in the other two",
+  "usedIn": [
+   "O-rings and rubber stoppers that seal tighter when compressed",
+   "Rubber expansion anchors (well nuts) that grip a hole when tightened",
+   "Cork wine stoppers, which hardly bulge"
+  ],
+  "strength": "Rubber swells sideways by about half as much as it is squashed, steel by about 0.3 times, cork almost not at all.",
+  "deps": [
+   "hookes-law"
+  ]
+ },
+ {
+  "edb": "Polarisation",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Deck has Polarized light (and related polarization cards).",
+  "card": "polarized-light"
+ },
+ {
+  "edb": "Pool-Frenkel Effect",
+  "verdict": "drop",
+  "rule": "e2",
+  "borderline": false,
+  "why": "A leakage current that only matters at enormous electric fields in nanometre-thin insulating films; no job at a useful size."
+ },
+ {
+  "edb": "Porosity",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A property (having holes), not an effect."
+ },
+ {
+  "edb": "Potential Well",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "An abstract physics concept, not an effect."
+ },
+ {
+  "edb": "Precession",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": true,
+  "why": "Judgment call: Hipparchus found it as the precession of the equinoxes from his star catalogue, so attach to Better star maps is arguable; picked keep, dated to d'Alembert's 1749 explanation, because the gyroscopic uses need their own card.",
+  "id": "precession",
+  "title": "Precession",
+  "year": 1749,
+  "inventor": "Jean le Rond d'Alembert",
+  "location": "France",
+  "field": "Science: Physics",
+  "description": "Push sideways on the axis of a spinning top or wheel and, instead of tipping over, the axis slowly swings around in a circle. Hipparchus saw it in the sky around 130 BCE as the slow drift of the stars, caused by Earth's tilted axis circling once every 26,000 years, and d'Alembert explained it with Newton's mechanics in 1749. Gyrocompasses, the self-steering of a leaning bicycle and MRI scanners, which read the precession of atomic nuclei, rely on it.",
+  "effect": "a sideways push on a spinning object's axis makes the axis swing around instead of tipping",
+  "usedIn": [
+   "Ship gyrocompasses (Anschütz, 1908)",
+   "MRI scanners, which detect precessing hydrogen nuclei",
+   "Self-steering of a leaning bicycle"
+  ],
+  "strength": "A fast toy gyroscope precesses about once a second; Earth's axis takes 26,000 years for one circle.",
+  "deps": [
+   "laws-motion"
+  ]
+ },
+ {
+  "edb": "Precipitation",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A generic chemistry process (a solid forming in solution)."
+ },
+ {
+  "edb": "Pressure Drop",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "Generic engineering term, too general."
+ },
+ {
+  "edb": "Pressure Gradient",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "Generic engineering term, too general."
+ },
+ {
+  "edb": "Pressure Increase",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "Generic engineering term, too general."
+ },
+ {
+  "edb": "Pressurisation",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "Generic engineering term; the curator listed it as too general."
+ },
+ {
+  "edb": "Pseudoelasticity",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": true,
+  "why": "Judgment call: comes from the same crystal flip as shape memory alloys (another batch), so a merge is arguable; picked a separate card named Superelasticity (clearer than pseudoelasticity) since springing back is a different job from remembering a shape when heated. The 1932 Ölander date is from memory.",
+  "id": "superelasticity",
+  "title": "Superelasticity",
+  "year": 1932,
+  "inventor": "Arne Ölander",
+  "location": "Sweden",
+  "field": "Science: Physics",
+  "description": "Certain alloys, above all nickel-titanium, can be bent or stretched far more than ordinary metal and spring right back, because the strain flips their crystals into another arrangement that flips back when let go. Arne Ölander first saw such rubbery behaviour in a gold-cadmium alloy in 1932; nickel-titanium ('Nitinol') came from the US Naval Ordnance Laboratory in 1962. It is used in eyeglass frames you can twist, orthodontic wires and artery stents.",
+  "effect": "an alloy bent far out of shape springs fully back as its crystals change form and change back",
+  "usedIn": [
+   "Bendable nickel-titanium eyeglass frames",
+   "Orthodontic archwires",
+   "Self-expanding artery stents",
+   "Kink-proof catheter guidewires"
+  ],
+  "strength": "Nitinol springs back from about 8% stretch, roughly ten times more than spring steel.",
+  "deps": []
+ },
+ {
+  "edb": "Purkinje effect",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": true,
+  "why": "Judgment call: a quirk of human vision rather than a physical effect a device exploits; picked keep because it guides real lighting design, but drop is defensible.",
+  "id": "purkinje-effect",
+  "title": "Purkinje effect",
+  "year": 1819,
+  "inventor": "Jan Evangelista Purkyně",
+  "location": "Czech Republic",
+  "field": "Science: Biology",
+  "description": "As light fades at dusk, reds look darker and blues and greens look brighter, because the eye switches from colour-sensing cones to rods, which see blue-green best and red hardly at all. Jan Purkyně noticed it in 1819 when red flowers in his garden turned dark at dawn while the leaves stayed bright. It is why red lamps protect night vision in submarines, ship bridges and observatories, and why bluish-white street lights look brighter at night.",
+  "effect": "in dim light the eye becomes more sensitive to blue-green and nearly blind to red",
+  "usedIn": [
+   "Red night lighting in submarines, ship bridges and observatories",
+   "Red astronomers' torches",
+   "Street-lighting standards that rate lamps for night-time (mesopic) vision"
+  ],
+  "strength": "In near-darkness the eye's peak sensitivity shifts from yellow-green (555 nm) to blue-green (507 nm), so deep red becomes nearly invisible to the rods.",
+  "deps": []
+ },
+ {
+  "edb": "Pyroelectric Effect",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Specific effect with a big detecting job; dated to Theophrastus's account of a heated attracting stone (his deck card, Botany book, is a different work).",
+  "id": "pyroelectric-effect",
+  "title": "Pyroelectric effect",
+  "year": -314,
+  "inventor": "Theophrastus",
+  "location": "Greece",
+  "field": "Science: Physics",
+  "description": "Some crystals, like tourmaline, become electrically charged at their ends whenever they are warmed or cooled. Theophrastus wrote around 314 BCE of a stone that attracted straw and ash when heated, and David Brewster named the effect in 1824. Motion-sensor lights and burglar alarms use it to feel the warmth of a passing person.",
+  "effect": "a crystal produces a voltage when its temperature changes",
+  "usedIn": [
+   "Passive infrared (PIR) motion sensors in alarms and automatic lights",
+   "Flame detectors in industrial fire alarms",
+   "Thermal-imaging cameras for firefighters",
+   "Laser power meters"
+  ],
+  "strength": "A pyroelectric sensor notices temperature changes of a thousandth of a degree, enough to sense a person's body heat 10 metres away.",
+  "deps": []
+ },
+ {
+  "edb": "Pyrolysis",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": true,
+  "why": "Judgment call: an ancient craft with no discoverer, and arguably covered by the deck's Coke and iron card; picked keep because it does a clear separating job, with year and discoverer null.",
+  "id": "pyrolysis",
+  "title": "Pyrolysis",
+  "year": null,
+  "inventor": null,
+  "location": null,
+  "field": "Science: Chemistry",
+  "description": "Heat wood, coal or plastic strongly without letting air in and it doesn't burn: it breaks down into charcoal, tar, oil and burnable gas. People have made charcoal this way in covered pits and mounds for thousands of years. It makes coke for steelmaking and charcoal and biochar, made the coal gas that lit 19th-century cities, and turns waste plastic and tyres back into oil.",
+  "effect": "heating organic material without air breaks it into char, oil and gas",
+  "usedIn": [
+   "Coke ovens for iron smelting",
+   "Coal-gas works for 19th-century street lighting",
+   "Charcoal and biochar kilns",
+   "Plastic and tyre recycling into fuel oil"
+  ],
+  "strength": "Starts at around 400°C; a tonne of dry wood gives roughly 200-300 kg of charcoal.",
+  "deps": []
+ },
+ {
+  "edb": "Pyrophoricity",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": true,
+  "why": "Judgment call on date: no single discoverer (Homberg described a self-igniting powder around 1711; Auer von Welsbach made it useful in 1903), so year and discoverer left null; the effect itself is a clear keep.",
+  "id": "pyrophoricity",
+  "title": "Pyrophoricity",
+  "year": null,
+  "inventor": null,
+  "location": null,
+  "field": "Science: Chemistry",
+  "description": "Some materials burst into flame by themselves the moment they touch air, usually finely powdered metals or very reactive chemicals. Scraping a hard cerium-iron alloy flings off tiny shavings that ignite instantly, the spark of a lighter flint; Carl Auer von Welsbach patented this ferrocerium in 1903. Rocket engines use pyrophoric liquids to light their fuel without a spark plug.",
+  "effect": "a substance catches fire by itself on contact with air",
+  "usedIn": [
+   "Ferrocerium lighter flints and fire-starter rods",
+   "Triethylborane igniter in the SR-71's engines and SpaceX Merlin engines",
+   "Tracer and incendiary ammunition"
+  ],
+  "strength": "Ferrocerium sparks burn at about 3,000°C, and triethylborane ignites in air even at -20°C.",
+  "deps": [
+   "cerium-osmium-iridium"
+  ]
+ },
+ {
+  "edb": "Radiation Pressure",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Deck has Light pressure (Lebedev).",
+  "card": "light-pressure"
+ },
+ {
+  "edb": "Radioactive Decay",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Deck has Uranium radiations (Becquerel's discovery of radioactivity) and many follow-ups.",
+  "card": "uranium-radiations"
+ },
+ {
+  "edb": "Radioluminescence",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Canonical card for radiation-made light (Scintillation merges here); broadest common name. Crookes's deck cards are different works.",
+  "id": "radioluminescence",
+  "title": "Radioluminescence",
+  "year": 1903,
+  "inventor": "William Crookes",
+  "location": "England",
+  "field": "Science: Physics",
+  "description": "Some materials glow when struck by radiation from radioactive substances, each particle making a tiny flash of light. In 1903 William Crookes looked through a lens at a zinc sulfide screen near a speck of radium, saw it sparkle with countless separate flashes, and built the spinthariscope to show it. Tritium-lit watch hands and exit signs, and the scintillation counters that detect radiation, use it.",
+  "effect": "radiation hitting certain materials makes them flash or glow with light",
+  "usedIn": [
+   "Tritium-lit watch hands, gun sights and exit signs",
+   "Scintillation counters and hospital gamma cameras",
+   "Detectors in PET and CT scanners",
+   "Crookes's spinthariscope (1903)"
+  ],
+  "strength": "Each alpha particle makes a flash just visible to dark-adapted eyes; a tritium exit sign glows with no power for 10-20 years, but only bright enough to see in the dark.",
+  "deps": [
+   "polonium-and-radium"
+  ]
+ },
+ {
+  "edb": "Rarefaction",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "Generic term (the opposite of compression), too general."
+ },
+ {
+  "edb": "Rayleigh Scattering",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Specific named effect with real measuring jobs; not in the deck (Tyndall's deck card is the greenhouse effect).",
+  "id": "rayleigh-scattering",
+  "title": "Rayleigh scattering",
+  "year": 1871,
+  "inventor": "Lord Rayleigh",
+  "location": "England",
+  "field": "Science: Physics",
+  "description": "Air molecules scatter blue light far more than red, so the sky looks blue in every direction and the setting sun, whose light has lost its blue on the long way through the air, looks red. John Tyndall saw blue light scattered by fine haze in the 1860s, and Lord Rayleigh worked out in 1871 that the shorter the wavelength, the much stronger the scattering. It sets how clear optical fibres can be and lets lasers measure the air high above.",
+  "effect": "particles much smaller than the light's wavelength scatter blue light far more than red",
+  "usedIn": [
+   "Loss limit of optical fibres",
+   "Rayleigh lidar that measures upper-air temperature",
+   "Light-scattering instruments that weigh polymer molecules",
+   "Explains the blue sky and red sunsets"
+  ],
+  "strength": "Blue light is scattered about five times more than red; in the best glass fibre it still costs half the light every 20 km or so.",
+  "deps": [
+   "light-spectrum"
+  ]
+ },
+ {
+  "edb": "Rayleigh-Bénard Convection",
+  "verdict": "merge",
+  "rule": "e4",
+  "borderline": false,
+  "why": "Convection cells in a liquid heated from below are one form of convection; folded into Convection per the curator's example, card in another batch.",
+  "into": "convection"
+ },
+ {
+  "edb": "Rayleigh-Taylor Instability",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Specific named effect; its job is mostly mixing and something to design against, but uses are imaginable. Canonical card for the family (Richtmyer-Meshkov merges here).",
+  "id": "rayleigh-taylor-instability",
+  "title": "Rayleigh-Taylor instability",
+  "year": 1883,
+  "inventor": "Lord Rayleigh",
+  "location": "England",
+  "field": "Science: Physics",
+  "description": "When a heavy fluid sits on a light one, or a light fluid pushes on a heavy one, the boundary can't stay flat: it grows fingers and mushroom shapes that sink and rise into each other. Lord Rayleigh worked it out in 1883 and G. I. Taylor extended it in 1950 to accelerating fluids. It is why water spills from an upside-down glass even though air pressure could hold it up, why big explosions make mushroom clouds, and the main thing laser-fusion fuel capsules must be designed to resist.",
+  "effect": "a heavy fluid resting on a lighter one breaks into growing fingers and plumes",
+  "usedIn": [
+   "Fuel-capsule design for laser fusion at the National Ignition Facility",
+   "Rising wax blobs in lava lamps",
+   "Simulations of supernovas and mushroom clouds"
+  ],
+  "strength": "Fast: ripples on the surface of water held upside down grow and spill in a fraction of a second; in a fusion capsule tiny ripples grow a thousandfold in billionths of a second.",
+  "deps": [
+   "archimedes-principle"
+  ]
+ },
+ {
+  "edb": "Reaction (physics)",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Newton's third law is in the deck's Laws of motion card.",
+  "card": "laws-motion"
+ },
+ {
+  "edb": "Redox Reactions",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A whole branch of chemistry, not a specific effect."
+ },
+ {
+  "edb": "Reduction",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A whole branch of chemistry (any gain of electrons), not a specific effect."
+ },
+ {
+  "edb": "Reflection",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Reflection is the effect behind the deck's Mirrors card (and Reflecting telescopes).",
+  "card": "mirror"
+ },
+ {
+  "edb": "Refraction",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Deck has Light refraction.",
+  "card": "refraction"
+ },
+ {
+  "edb": "Regelation",
+  "verdict": "drop",
+  "rule": "e2",
+  "borderline": true,
+  "why": "Judgment call: pressure lowers ice's melting point only about 0.007°C per atmosphere, too weak to do practical work beyond snowballs and a slow wire-through-ice demo; picked drop, though it is a vivid, nameable effect (Faraday, 1850)."
+ },
+ {
+  "edb": "Resonance",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Not in the deck: the deck's 'Resonance' card is Pauling's chemical-bond resonance, unrelated, so this uses a distinct slug. Galileo's Pendulums card is earlier, different work.",
+  "id": "resonance-vibration",
+  "title": "Resonance",
+  "year": 1638,
+  "inventor": "Galileo Galilei",
+  "location": "Italy",
+  "field": "Science: Physics",
+  "description": "Push a swing in time with its own rhythm and each small push adds up until it flies high; anything that can vibrate, from a wine glass to a bridge to an electric circuit, responds hugely to pushes at its own natural frequency and hardly at all to others. Galileo described it in 1638, noting that well-timed puffs of breath could set a heavy pendulum swinging. Radios tune to one station this way, quartz watches keep time by it, and MRI scanners use it to pick out hydrogen atoms.",
+  "effect": "small pushes at an object's natural rhythm build up into very large vibrations",
+  "usedIn": [
+   "Tuned circuits that select one station in radios",
+   "Quartz crystal oscillators in watches",
+   "MRI and NMR scanners",
+   "Tuned mass dampers that steady skyscrapers such as Taipei 101"
+  ],
+  "strength": "A good quartz crystal or tuning fork builds its swing up thousands of times over from tiny pushes; a singer matching a wine glass's pitch can shatter it.",
+  "deps": [
+   "pendulum"
+  ]
+ },
+ {
+  "edb": "Reverberation",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Deck's Acoustics card (Sabine) is about reverberation in rooms.",
+  "card": "acoustics"
+ },
+ {
+  "edb": "Reverse Brazil Nut Effect",
+  "verdict": "merge",
+  "rule": "e4",
+  "borderline": false,
+  "why": "The reverse case of granular size separation; folded into Brazil nut effect, card in another batch.",
+  "into": "brazil-nut-effect"
+ },
+ {
+  "edb": "Reverse Diffusion",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "An unusual special case of diffusion seen in some alloys and mixtures, not a standalone effect with a job; Diffusion is already in the deck."
+ },
+ {
+  "edb": "Reverse Osmosis",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": true,
+  "why": "Judgment call: reverse osmosis is osmosis driven backward by pressure, so it counts as the deck's Osmosis card, with desalination as a use; a separate keep (Loeb and Sourirajan's 1960 membrane) is defensible since it is the famous application.",
+  "card": "osmosis"
+ },
+ {
+  "edb": "Rheopecty",
+  "verdict": "merge",
+  "rule": "e4",
+  "borderline": false,
+  "why": "A time-dependent form of thickening under shear, with the same listed use (body armour); folded into Shear thickening, card in another batch.",
+  "into": "shear-thickening"
+ },
+ {
+  "edb": "Richtmyer-Meshkov Instability",
+  "verdict": "merge",
+  "rule": "e4",
+  "borderline": false,
+  "why": "The shock-driven version of the Rayleigh-Taylor instability; folded into that card.",
+  "into": "rayleigh-taylor-instability"
+ },
+ {
+  "edb": "Righi-Leduc Effect",
+  "verdict": "drop",
+  "rule": "e2",
+  "borderline": false,
+  "why": "The thermal Hall effect: the sideways temperature difference is tiny in ordinary conductors and does no job."
+ },
+ {
+  "edb": "Ruled Surface",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A geometric shape, not an effect."
+ },
+ {
+  "edb": "Saltation (geology)",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": true,
+  "why": "Judgment call: the hopping of wind-blown sand is a geology transport process rather than an effect devices exploit; picked drop, though it is specific (Bagnold, 1941) and does move material."
+ },
+ {
+  "edb": "Scattering",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A whole-field word for waves being deflected; the specific useful case is Rayleigh scattering."
+ },
+ {
+  "edb": "Scintillation",
+  "verdict": "merge",
+  "rule": "e4",
+  "borderline": false,
+  "why": "A flash of light from each ionising particle is the same effect as radioluminescence; folded into that card.",
+  "into": "radioluminescence"
+ },
+ {
+  "edb": "Second Harmonic Generation",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Specific effect with a clear job (making new laser colours); titled by its plainer common name, frequency doubling.",
+  "id": "frequency-doubling",
+  "title": "Frequency doubling",
+  "year": 1961,
+  "inventor": "Peter Franken",
+  "location": "United States",
+  "field": "Science: Physics",
+  "description": "Shine a very intense laser through certain crystals and some of the light comes out at exactly half the wavelength, so invisible infrared turns into green light. Peter Franken's team found it in 1961 by focusing a ruby laser into quartz, just a year after the laser was invented. Green laser pointers make their light this way from an infrared laser, and microscopes use it to image collagen without dyes.",
+  "effect": "intense light passing through certain crystals partly comes out at double the frequency",
+  "usedIn": [
+   "Green laser pointers (1064 nm infrared doubled to 532 nm)",
+   "Green and ultraviolet lasers for eye surgery and chip inspection",
+   "Second-harmonic microscopy of collagen and muscle"
+  ],
+  "strength": "Franken's first try converted about one part in a hundred million; modern crystals convert more than half of a strong pulsed laser beam.",
+  "deps": [
+   "laser"
+  ]
+ },
+ {
+  "edb": "Sedimentation",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "An everyday process (particles settling out); the deck already has the Ultracentrifuge that exploits it."
+ }
+]

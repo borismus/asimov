@@ -1,0 +1,682 @@
+[
+ {
+  "name": "Online maps and navigation",
+  "year": 2005,
+  "rank": 1,
+  "how": "Satellite and aerial imagery, GPS, cloud data centres, tiled web rendering; turn-by-turn routing over live traffic",
+  "impact": "Used by about two billion people a month to find places and get around; paper maps and standalone satnavs largely gone.",
+  "verdict": "keep",
+  "rule": "m1",
+  "why": ""
+ },
+ {
+  "name": "Mobile broadband (3G data)",
+  "year": 2001,
+  "rank": 2,
+  "how": "Mobile phone network, packet radio, compressed media; ★ spread-spectrum code-division radio (CDMA)",
+  "impact": "Put the internet in most adults' pockets: today over five billion people get online mainly over cellular data.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "A new generation of the mobile-phone network, but it changed what the phone does (internet, not just calls), so I hedged under m4."
+ },
+ {
+  "name": "Camera phone",
+  "year": 2000,
+  "rank": 3,
+  "how": "CMOS image sensor, mobile phone, flash memory; ★ active-pixel sensor (CMOS) the board probably lacks",
+  "impact": "Over a trillion photos a year are now taken on phones; it ended the film and compact-camera era and made everyone a photographer and witness.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "Digital camera plus mobile phone put together, but it changed who takes pictures and how they're shared; m4 says borderline."
+ },
+ {
+  "name": "Utility-scale solar power",
+  "year": 2004,
+  "rank": 4,
+  "how": "Mass-produced crystalline-silicon photovoltaic panels, inverters, tracking mounts",
+  "impact": "Solar went from a niche to roughly 7% of world electricity and the cheapest new power in most countries.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "Photovoltaic cells (1954) are in the deck; cheap panels on the grid changed who uses it (whole power systems, not satellites), so borderline under m4."
+ },
+ {
+  "name": "Pneumococcal conjugate vaccine",
+  "year": 2000,
+  "rank": 5,
+  "how": "Polysaccharide-protein conjugate, vaccination",
+  "impact": "Given to most of the world's babies; prevents a leading cause of child pneumonia and meningitis deaths.",
+  "verdict": "keep",
+  "rule": "m1",
+  "why": ""
+ },
+ {
+  "name": "Text messaging",
+  "year": 2000,
+  "rank": 6,
+  "how": "Mobile phone network, signalling channel, later internet messaging apps",
+  "impact": "Billions of people send short messages every day; it changed how people coordinate everything from dates to protests.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "SMS was first sent in 1992 and is arguably part of the Mobile phone card; mass use came around 2000 and apps followed in 2009, so check the date and whether it's distinct."
+ },
+ {
+  "name": "Machine translation",
+  "year": 2006,
+  "rank": 7,
+  "how": "Statistical (later neural) language models trained on bilingual text, cloud data centres",
+  "impact": "Over half a billion people a month translate text, signs and speech for free.",
+  "verdict": "keep",
+  "rule": "m5",
+  "why": ""
+ },
+ {
+  "name": "Rotavirus vaccine",
+  "year": 2006,
+  "rank": 8,
+  "how": "Live attenuated oral vaccine, vaccination",
+  "impact": "In the schedules of 100+ countries; cuts deaths from the leading cause of severe child diarrhoea.",
+  "verdict": "keep",
+  "rule": "m1",
+  "why": ""
+ },
+ {
+  "name": "Online encyclopedia (wiki)",
+  "year": 2001,
+  "rank": 9,
+  "how": "Web pages anyone can edit, revision history, volunteer moderation",
+  "impact": "Wikipedia is among the ten most visited websites, read by billions and the reference behind search and AI answers.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "The Encyclopedia (1751) is in the deck; moved online and written by anyone, it changed who writes and reads it, so borderline under m4."
+ },
+ {
+  "name": "Kinase-inhibitor cancer drugs",
+  "year": 2001,
+  "rank": 10,
+  "how": "Small molecules that block a mutated signalling enzyme; ★ targeted inhibition of a cancer's driver protein",
+  "impact": "Turned some leukaemias into chronic conditions and started targeted cancer therapy, now a large share of cancer drugs.",
+  "verdict": "keep",
+  "rule": "m1",
+  "why": ""
+ },
+ {
+  "name": "App store",
+  "year": 2008,
+  "rank": 11,
+  "how": "Smartphone, online shopping, mobile payments, code signing",
+  "impact": "Billions of people install software through phone app stores; it created the mobile app economy.",
+  "verdict": "borderline",
+  "rule": "m5",
+  "why": "It's more a distribution business than a device; is it an invention?"
+ },
+ {
+  "name": "GPU computing",
+  "year": 2007,
+  "rank": 12,
+  "how": "Graphics processors with thousands of parallel cores, general-purpose programming toolkit",
+  "impact": "The hardware that deep learning, LLMs and supercomputing run on; one of the most valuable industries of the 2020s.",
+  "verdict": "keep",
+  "rule": "m1",
+  "why": ""
+ },
+ {
+  "name": "HPV vaccine",
+  "year": 2006,
+  "rank": 13,
+  "how": "Virus-like particles made in yeast, vaccination; ★ self-assembling virus-like particles",
+  "impact": "Given to hundreds of millions of girls (and boys); expected to nearly eliminate cervical cancer where coverage is high.",
+  "verdict": "keep",
+  "rule": "m1",
+  "why": ""
+ },
+ {
+  "name": "Artemisinin combination therapy",
+  "year": 2001,
+  "rank": 14,
+  "how": "Artemisinin malaria drug plus a slower partner drug",
+  "impact": "The standard malaria cure worldwide; hundreds of millions of courses a year and a large share of the malaria deaths averted since 2000.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "A pairing of the artemisinin drug that's already kept; it changed how well the drug works (resistance protection), so borderline under m4."
+ },
+ {
+  "name": "Electronic cigarette",
+  "year": 2004,
+  "rank": 15,
+  "how": "Lithium-ion battery, heating coil, nicotine solution; ★ aerosol made by flash-boiling liquid on a wick",
+  "impact": "About 80-100 million vapers worldwide; it reshaped how people smoke and quit.",
+  "verdict": "keep",
+  "rule": "m1",
+  "why": ""
+ },
+ {
+  "name": "Broadband internet (DSL and cable)",
+  "year": 2000,
+  "rank": 16,
+  "how": "Copper phone lines or TV cable, modems; ★ discrete multitone modulation over twisted pair",
+  "impact": "Took home internet from dial-up to always-on, which video, cloud and online work depend on.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "A faster way to reach the existing Internet; it changed how it's used (always on, video), so I hedged under m4."
+ },
+ {
+  "name": "Search advertising",
+  "year": 2000,
+  "rank": 17,
+  "how": "Search engine, auction pricing per click, user data",
+  "impact": "Funds most of the free web; online ads are now over half of all ad spending.",
+  "verdict": "borderline",
+  "rule": "m1",
+  "why": "Invention or business? Pay-per-click was tried in 1998; AdWords made it the norm in 2000-2002."
+ },
+ {
+  "name": "OLED display",
+  "year": 2007,
+  "rank": 18,
+  "how": "Thin-film transistors, organic semiconductor layers; ★ organic electroluminescence",
+  "impact": "In most premium phones, watches and TVs: billions of screens a year.",
+  "verdict": "keep",
+  "rule": "m1",
+  "why": ""
+ },
+ {
+  "name": "Electric bicycle",
+  "year": 2004,
+  "rank": 19,
+  "how": "Bicycle, electric motor, lead-acid or lithium-ion battery",
+  "impact": "Hundreds of millions in use, mostly in China; the main way many urban commuters travel.",
+  "verdict": "keep",
+  "rule": "m1",
+  "why": ""
+ },
+ {
+  "name": "Direct oral anticoagulants",
+  "year": 2008,
+  "rank": 20,
+  "how": "Small molecules that block a single clotting factor; ★ direct inhibition of a clotting enzyme",
+  "impact": "Tens of millions take them daily against stroke and clots; they replaced warfarin and its blood tests.",
+  "verdict": "keep",
+  "rule": "m1",
+  "why": ""
+ },
+ {
+  "name": "Smart electricity meter",
+  "year": 2001,
+  "rank": 21,
+  "how": "Microchip, meter, two-way communication over power lines or radio",
+  "impact": "About a billion installed; utilities bill remotely and price power by the hour.",
+  "verdict": "keep",
+  "rule": "m1",
+  "why": ""
+ },
+ {
+  "name": "Ready-to-use therapeutic food",
+  "year": 2007,
+  "rank": 22,
+  "how": "Peanut paste, milk powder, vitamins and minerals in a sealed packet",
+  "impact": "Treats millions of starving children a year at home instead of in hospital, with cure rates above 90%.",
+  "verdict": "keep",
+  "rule": "m1",
+  "why": ""
+ },
+ {
+  "name": "Multi-touch screen",
+  "year": 2007,
+  "rank": 23,
+  "how": "Capacitive touchscreen, gesture software; mutual-capacitance sensing grid",
+  "impact": "On every smartphone and tablet; pinch and swipe became how billions use computers.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "A version of the Capacitive touchscreen card; it changed how it's used (many fingers, no stylus), so borderline under m4."
+ },
+ {
+  "name": "Music streaming",
+  "year": 2008,
+  "rank": 24,
+  "how": "Compressed media, cloud data centres, licensing, recommendation algorithms",
+  "impact": "Over 700 million subscribers; now most of the music industry's revenue.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "Same thing as the kept Streaming video card, applied to music."
+ },
+ {
+  "name": "Drug-eluting stent",
+  "year": 2003,
+  "rank": 25,
+  "how": "Coronary stent coated with a cell-growth-blocking drug in a polymer",
+  "impact": "Millions implanted each year; it made stenting the default over bypass surgery for many patients.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "A version of the Coronary stent; the drug coating changed how it works (no re-narrowing), so borderline under m4."
+ },
+ {
+  "name": "Podcasting",
+  "year": 2004,
+  "rank": 26,
+  "how": "Compressed media, web feeds, portable music player",
+  "impact": "Hundreds of millions of people listen to podcasts every week.",
+  "verdict": "keep",
+  "rule": "m5",
+  "why": ""
+ },
+ {
+  "name": "Machine-learning spam filter",
+  "year": 2002,
+  "rank": 27,
+  "how": "Email, statistical classifier trained on users' marked mail",
+  "impact": "Blocks most of the world's email, which is spam; without it email would be unusable.",
+  "verdict": "keep",
+  "rule": "m1",
+  "why": ""
+ },
+ {
+  "name": "Biometric passport",
+  "year": 2006,
+  "rank": 28,
+  "how": "Contactless card chip, photo and fingerprint data, public-key encryption",
+  "impact": "Over a billion in circulation; the basis of automated border gates.",
+  "verdict": "keep",
+  "rule": "m1",
+  "why": ""
+ },
+ {
+  "name": "Lithium iron phosphate battery",
+  "year": 2005,
+  "rank": 29,
+  "how": "Lithium-ion battery with an iron-phosphate cathode",
+  "impact": "Now in roughly half of new electric cars and most grid batteries, because it's cheap and doesn't catch fire easily.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "A chemistry change to the Lithium-ion battery; it changed who can afford it (cheap cars, grid storage), so borderline under m4."
+ },
+ {
+  "name": "Distributed version control",
+  "year": 2005,
+  "rank": 30,
+  "how": "Hashes of file contents, merge algorithms, the Internet",
+  "impact": "The standard way software is built; over 100 million developers use it daily.",
+  "verdict": "keep",
+  "rule": "m1",
+  "why": ""
+ },
+ {
+  "name": "USB flash drive",
+  "year": 2000,
+  "rank": 31,
+  "how": "Flash memory, USB connector",
+  "impact": "Replaced floppy disks and CDs for carrying files; billions sold.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "Flash memory in a pocket stick; it changed how people carried files, but it's now fading, so hedged under m4."
+ },
+ {
+  "name": "Electronic voting machine",
+  "year": 2000,
+  "rank": 32,
+  "how": "Microchips, keypad, sealed memory, results sent over the network",
+  "impact": "Used by Brazil's and India's whole electorates, close to a billion voters.",
+  "verdict": "keep",
+  "rule": "m1",
+  "why": ""
+ },
+ {
+  "name": "GPS auto-steer tractor",
+  "year": 2000,
+  "rank": 33,
+  "how": "Tractor, GPS with ground correction signals, hydraulic steering",
+  "impact": "Steers most large-farm tractors in rich countries, cutting overlap, fuel and fertiliser.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "GPS put on the Tractor; changed how farming works (precision agriculture), so borderline under m4."
+ },
+ {
+  "name": "GPS-guided bomb kit",
+  "year": 2001,
+  "rank": 34,
+  "how": "Precision-guided bomb, GPS, inertial navigation, strap-on tail fins",
+  "impact": "Made almost every bomb dropped since 2001 precise in any weather, cheaply.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "A version of the kept Precision-guided bombs (first used 1999, routine from 2001); GPS made it cheap and usable in any weather."
+ },
+ {
+  "name": "Long-acting insulin",
+  "year": 2000,
+  "rank": 35,
+  "how": "Insulin with altered amino acids made by genetic engineering; slow release from the injection site",
+  "impact": "Tens of millions with diabetes use it once a day instead of several unpredictable doses.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "A modified form of Insulin (1921); it changed how it's dosed, so borderline under m4."
+ },
+ {
+  "name": "Anti-VEGF eye injections",
+  "year": 2006,
+  "rank": 36,
+  "how": "Monoclonal antibodies injected into the eye that stop leaky blood-vessel growth",
+  "impact": "The leading reason age-related macular degeneration no longer usually causes blindness; millions of injections a year.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "A use of the kept Monoclonal antibodies; new target and route of delivery, so borderline under m4."
+ },
+ {
+  "name": "CAPTCHA",
+  "year": 2003,
+  "rank": 37,
+  "how": "Distorted text or image puzzles a computer can't yet solve, website login",
+  "impact": "Hundreds of millions solved each day; it kept bots off sign-ups and helped digitise books.",
+  "verdict": "keep",
+  "rule": "m1",
+  "why": ""
+ },
+ {
+  "name": "Fitness tracker",
+  "year": 2009,
+  "rank": 38,
+  "how": "Accelerometer, lithium-ion battery, short-range wireless link, phone app",
+  "impact": "Hundreds of millions wear step and heart-rate trackers, now mostly in smartwatches.",
+  "verdict": "borderline",
+  "rule": "cut",
+  "why": "Around the decade's cut, and the 2015 smartwatch overshadows it."
+ },
+ {
+  "name": "Off-grid solar lighting",
+  "year": 2008,
+  "rank": 39,
+  "how": "Small photovoltaic panel, white LED, lithium-ion battery",
+  "impact": "Gives light and phone charging to roughly half a billion people without grid power.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "Solar panel plus LED at a tiny scale; it changed who has electric light, so borderline under m4 and around the cut."
+ },
+ {
+  "name": "Peer-to-peer file sharing",
+  "year": 2001,
+  "rank": 40,
+  "how": "Internet, compressed media, swarms of users' computers sharing pieces of each file",
+  "impact": "At its peak a third of internet traffic; it broke the music industry's business model.",
+  "verdict": "borderline",
+  "rule": "cut",
+  "why": "Huge in 2005 but mostly replaced by streaming; around the cut."
+ },
+ {
+  "name": "Robot vacuum cleaner",
+  "year": 2002,
+  "rank": 41,
+  "how": "Vacuum cleaner, bump and infrared sensors, rechargeable battery, mapping software",
+  "impact": "Tens of millions of homes; the first home robot most people own.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "The Vacuum cleaner made autonomous; it changed how it works, so borderline under m4."
+ },
+ {
+  "name": "Surgical safety checklist",
+  "year": 2008,
+  "rank": 42,
+  "how": "A one-page checklist and a team pause before surgery",
+  "impact": "Used in thousands of hospitals worldwide; cut surgical deaths by about a third in trials.",
+  "verdict": "borderline",
+  "rule": "cut",
+  "why": "A practice rather than a device, and around the decade's cut."
+ },
+ {
+  "name": "E-reader",
+  "year": 2007,
+  "rank": 43,
+  "how": "Microchips, wireless link, online shopping; ★ electrophoretic display (electronic paper)",
+  "impact": "Tens of millions of devices; made e-books a fifth to a third of book sales in some markets.",
+  "verdict": "borderline",
+  "rule": "m3",
+  "why": "Not in most people's daily lives; included for the electronic paper effect."
+ },
+ {
+  "name": "Noise-cancelling headphones",
+  "year": 2000,
+  "rank": 44,
+  "how": "Microphone, loudspeaker, signal processing; ★ destructive interference of sound",
+  "impact": "Now standard in hundreds of millions of headphones and earbuds.",
+  "verdict": "borderline",
+  "rule": "m3",
+  "why": "Bose sold aviation sets in 1989 and consumer ones in 2000; popular, but only recently everyday."
+ },
+ {
+  "name": "High-frequency trading",
+  "year": 2005,
+  "rank": 45,
+  "how": "Computers in exchange data centres, fast fibre and microwave links, trading algorithms",
+  "impact": "About half of US stock trades; it shrank trading costs and changed how markets work.",
+  "verdict": "borderline",
+  "rule": "cut",
+  "why": "Invention or business? It's also invisible to most people."
+ },
+ {
+  "name": "Earthquake early warning",
+  "year": 2007,
+  "rank": 46,
+  "how": "Seismometer network, fast detection of the first P-wave, phone and TV alerts",
+  "impact": "Japan since 2007; now in Android phones worldwide, warning billions seconds before shaking.",
+  "verdict": "borderline",
+  "rule": "cut",
+  "why": "Around the decade's cut; the global phone version came only in 2020."
+ },
+ {
+  "name": "CubeSat",
+  "year": 2003,
+  "rank": 47,
+  "how": "Standard 10 cm satellite modules, off-the-shelf electronics, shared rocket launches",
+  "impact": "Thousands launched; universities, start-ups and small countries reached orbit cheaply.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "A smaller Communications/Earth satellite; it changed who can launch one, so borderline under m4."
+ },
+ {
+  "name": "Transcatheter heart valve",
+  "year": 2007,
+  "rank": 48,
+  "how": "Collapsible valve on a stent, catheter",
+  "impact": "Hundreds of thousands a year get a new heart valve without open-heart surgery.",
+  "verdict": "drop",
+  "rule": "cut",
+  "why": "Below the decade's cut."
+ },
+ {
+  "name": "Bike sharing",
+  "year": 2008,
+  "rank": 49,
+  "how": "Bicycle, smart-card or phone unlocking, docking stations",
+  "impact": "Hundreds of cities, especially in China and Europe.",
+  "verdict": "drop",
+  "rule": "cut",
+  "why": "Below the decade's cut, and more a service than an invention."
+ },
+ {
+  "name": "Genomic selection in livestock",
+  "year": 2009,
+  "rank": 50,
+  "how": "DNA chips reading thousands of markers, statistical breeding values",
+  "impact": "Now how most dairy bulls are chosen; doubled the rate of genetic gain.",
+  "verdict": "drop",
+  "rule": "cut",
+  "why": "Below the decade's cut; invisible to most people."
+ },
+ {
+  "name": "Mine-resistant armoured vehicle",
+  "year": 2007,
+  "rank": 51,
+  "how": "V-shaped armoured hull, truck chassis",
+  "impact": "Tens of thousands built; cut IED deaths in Iraq and Afghanistan.",
+  "verdict": "drop",
+  "rule": "cut",
+  "why": "Below the decade's cut; a version of armoured vehicles."
+ },
+ {
+  "name": "Buprenorphine addiction treatment",
+  "year": 2002,
+  "rank": 52,
+  "how": "Partial opioid agonist taken from a doctor's office instead of a clinic",
+  "impact": "Millions treated for opioid addiction.",
+  "verdict": "drop",
+  "rule": "cut",
+  "why": "Below the decade's cut; methadone did the same job earlier."
+ },
+ {
+  "name": "Flex-fuel car",
+  "year": 2003,
+  "rank": 53,
+  "how": "Car, ethanol sensor, adjustable fuel injection",
+  "impact": "Most new cars in Brazil run on any ethanol-gasoline mix.",
+  "verdict": "drop",
+  "rule": "cut",
+  "why": "Below the decade's cut; mostly one country."
+ },
+ {
+  "name": "Shingles vaccine",
+  "year": 2006,
+  "rank": 54,
+  "how": "Live attenuated (later protein) vaccine, vaccination",
+  "impact": "Given to tens of millions of older adults.",
+  "verdict": "drop",
+  "rule": "cut",
+  "why": "Below the decade's cut."
+ },
+ {
+  "name": "Automatic number-plate recognition",
+  "year": 2003,
+  "rank": 55,
+  "how": "Cameras, optical character recognition, vehicle databases",
+  "impact": "Runs congestion charges, tolls and police tracking in many countries.",
+  "verdict": "drop",
+  "rule": "cut",
+  "why": "Below the decade's cut; the cameras existed from the 1970s."
+ },
+ {
+  "name": "Airport body scanner",
+  "year": 2007,
+  "rank": 56,
+  "how": "Millimetre-wave radio imaging, software that flags objects",
+  "impact": "Hundreds of millions of travellers screened a year.",
+  "verdict": "drop",
+  "rule": "cut",
+  "why": "Below the decade's cut."
+ },
+ {
+  "name": "Online video sharing",
+  "year": 2005,
+  "rank": 57,
+  "how": "Compressed media, cloud data centres, web browser",
+  "impact": "Billions watch user-uploaded video.",
+  "verdict": "drop",
+  "rule": "m4",
+  "why": "Same as the kept Streaming video (2005) card."
+ },
+ {
+  "name": "Internet phone calls (VoIP)",
+  "year": 2003,
+  "rank": 58,
+  "how": "Internet, compressed media, microphone",
+  "impact": "Most phone calls now travel as internet packets.",
+  "verdict": "drop",
+  "rule": "m4",
+  "why": "Covered by the kept Video calling (2003) card."
+ },
+ {
+  "name": "International Space Station",
+  "year": 2000,
+  "rank": 59,
+  "how": "Space station modules, solar panels, docking",
+  "impact": "Continuously crewed since 2000.",
+  "verdict": "drop",
+  "rule": "m4",
+  "why": "Same job, same way as Space station (1971); just bigger."
+ },
+ {
+  "name": "Armed drone",
+  "year": 2001,
+  "rank": 60,
+  "how": "Military drone, laser-guided missile",
+  "impact": "Changed how wars are fought, from Afghanistan to Ukraine.",
+  "verdict": "drop",
+  "rule": "m4",
+  "why": "Covered by Military drones (1995); same aircraft with a missile."
+ },
+ {
+  "name": "Flat-panel TV",
+  "year": 2003,
+  "rank": 61,
+  "how": "Liquid crystal display, LED backlight",
+  "impact": "Replaced the tube TV in almost every home.",
+  "verdict": "drop",
+  "rule": "m4",
+  "why": "The Liquid crystal display made larger; same job, same way."
+ },
+ {
+  "name": "Offshore wind farm",
+  "year": 2002,
+  "rank": 62,
+  "how": "Wind turbines on sea-floor foundations, subsea cables",
+  "impact": "Supplies a sizeable share of power in the UK, Denmark and China.",
+  "verdict": "drop",
+  "rule": "m4",
+  "why": "Wind turbine put somewhere new; same job, same way."
+ },
+ {
+  "name": "4G mobile network",
+  "year": 2009,
+  "rank": 63,
+  "how": "Mobile broadband, OFDM radio, all-IP core",
+  "impact": "Carries most of the world's mobile data.",
+  "verdict": "drop",
+  "rule": "m4",
+  "why": "A faster version of Mobile broadband; same job, same way."
+ },
+ {
+  "name": "Solid-state drive",
+  "year": 2008,
+  "rank": 64,
+  "how": "Flash memory, controller chip",
+  "impact": "Replaced hard disks in most laptops.",
+  "verdict": "drop",
+  "rule": "m4",
+  "why": "Flash memory as a disk; same job, same way."
+ },
+ {
+  "name": "Server virtualization",
+  "year": 2001,
+  "rank": 65,
+  "how": "Hypervisor software, x86 servers",
+  "impact": "Lets one server run many machines; underpins cloud computing.",
+  "verdict": "drop",
+  "rule": "m4",
+  "why": "Part of the kept Cloud data centres card."
+ },
+ {
+  "name": "PET-CT scanner",
+  "year": 2001,
+  "rank": 66,
+  "how": "PET scanner and CAT scan in one gantry",
+  "impact": "Standard for cancer staging.",
+  "verdict": "drop",
+  "rule": "m4",
+  "why": "Two cards already on the board in one machine; same job."
+ },
+ {
+  "name": "Capsule endoscopy",
+  "year": 2001,
+  "rank": 67,
+  "how": "Swallowed camera pill, radio link",
+  "impact": "Used for small-bowel exams.",
+  "verdict": "drop",
+  "rule": "m3",
+  "why": "Niche medical tool."
+ },
+ {
+  "name": "Cosmetic botulinum injections",
+  "year": 2002,
+  "rank": 68,
+  "how": "Botulinum toxin injected into facial muscles",
+  "impact": "Millions of procedures a year.",
+  "verdict": "drop",
+  "rule": "m3",
+  "why": "Not in most people's daily lives."
+ }
+]

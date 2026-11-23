@@ -1,0 +1,200 @@
+{"id": "joule-thomson-effect", "verdict": "effect", "effect": "an expanding gas cools itself", "does": "expansion -> cold", "strength": "strong", "note": "basis of gas liquefaction and refrigeration"}
+{"id": "valence-theory", "verdict": "not-an-effect", "note": "bonding rules; classification, not a harnessable effect"}
+{"id": "sunspots-and-earth", "verdict": "effect", "effect": "sunspots disturb the Earth's magnetic field", "does": "solar activity -> magnetic swings", "strength": "weak", "note": "could forecast geomagnetic storms"}
+{"id": "age-of-the-sun", "verdict": "effect", "effect": "a shrinking star heats up as it falls inward", "does": "gravitational collapse -> heat", "strength": "tiny", "note": "only at star scale; superseded as the Sun's source"}
+{"id": "cholera", "verdict": "not-an-effect", "note": "shows water carries disease; epidemiology, covered by germ effects"}
+{"id": "telegraph-plateau", "verdict": "not-an-effect", "note": "ocean-floor mapping"}
+{"id": "riemann-geometry", "verdict": "not-an-effect", "note": "pure geometry; usable consequence only via relativity"}
+{"id": "lines-of-force", "verdict": "not-an-effect", "note": "a way of picturing fields"}
+{"id": "glycogen", "verdict": "effect", "effect": "the liver stores sugar as glycogen and releases it", "does": "stored starch -> glucose", "strength": "weak"}
+{"id": "neanderthal-man", "verdict": "not-an-effect"}
+{"id": "saturns-rings-composition", "verdict": "effect", "effect": "tides tear apart a moon that comes too close", "does": "gravity gradient -> breakup", "strength": "tiny", "note": "Roche limit; planetary scale only"}
+{"id": "evolution-by-natural-selection", "verdict": "not-an-effect", "note": "theory; selection effect could drive directed evolution, but card is theory"}
+{"id": "organic-molecular-structure", "verdict": "not-an-effect", "note": "notation for structure"}
+{"id": "cellular-pathology", "verdict": "not-an-effect", "note": "theory of disease"}
+{"id": "spectral-lines-and-elements", "verdict": "effect", "effect": "each element's light has its own lines", "does": "light -> chemical identity", "strength": "strong", "note": "close to 'each gas glows its own colours'; this is elements in flames"}
+{"id": "solar-flares", "verdict": "not-an-effect", "note": "astronomical sighting"}
+{"id": "spontaneous-generation-rip", "verdict": "same-as", "sameAs": "heat kills microbes"}
+{"id": "organic-synthesis", "verdict": "effect", "effect": "life's molecules can be made from non-living chemicals", "does": "simple chemicals -> organic compounds", "strength": "strong"}
+{"id": "solar-prominences", "verdict": "not-an-effect", "note": "astronomical sighting"}
+{"id": "avogadro-revived", "verdict": "not-an-effect", "note": "method for molecular weights; not an effect"}
+{"id": "archeopteryx", "verdict": "not-an-effect"}
+{"id": "brocas-area", "verdict": "effect", "effect": "one brain patch controls speech", "does": "brain region -> function", "strength": "weak", "note": "localization; could guide brain mapping or stimulation"}
+{"id": "thallium", "verdict": "not-an-effect", "note": "element found by spectroscopy; no property described"}
+{"id": "germ-theory-of-disease", "verdict": "effect", "effect": "microbes cause contagious disease", "does": "germ -> disease", "strength": "strong", "note": "umbrella for many existing germ effects"}
+{"id": "dim-companion-of-sirius", "verdict": "not-an-effect", "note": "astronomical sighting"}
+{"id": "hydrogen-in-the-sun", "verdict": "not-an-effect", "note": "astronomical finding"}
+{"id": "chloroplasts", "verdict": "effect", "effect": "chloroplasts turn light into stored starch", "does": "light -> sugar", "strength": "strong", "note": "photosynthesis"}
+{"id": "source-of-the-white-nile", "verdict": "not-an-effect"}
+{"id": "hemoglobin", "verdict": "effect", "effect": "hemoglobin carries oxygen in the blood", "does": "oxygen -> bound carrier", "strength": "strong"}
+{"id": "greenhouse-effect", "verdict": "effect", "effect": "some gases let sunlight in but trap heat", "does": "light -> trapped heat", "strength": "strong"}
+{"id": "law-of-octaves", "verdict": "not-an-effect", "note": "failed classification"}
+{"id": "constitution-of-the-stars", "verdict": "not-an-effect", "note": "astronomical finding"}
+{"id": "indium", "verdict": "not-an-effect", "note": "element found by spectroscopy; no property described"}
+{"id": "nature-of-orion-nebula", "verdict": "not-an-effect", "note": "astronomical finding"}
+{"id": "genetics", "verdict": "effect", "effect": "traits pass on in predictable ratios", "does": "parent genes -> offspring traits", "strength": "strong", "note": "Mendelian inheritance; breeding predictions"}
+{"id": "benzene-ring", "verdict": "effect", "effect": "a ring of six carbons is unusually stable", "does": "ring structure -> stability", "strength": "weak"}
+{"id": "avogadros-number", "verdict": "not-an-effect", "note": "a constant; a measurement"}
+{"id": "maxwells-equations", "verdict": "effect", "effect": "electric oscillations send out light-speed waves", "does": "oscillating charge -> radiated wave", "strength": "strong", "note": "close to 'radio waves'"}
+{"id": "mobius-strip", "verdict": "effect", "effect": "a twisted loop has only one side", "does": "twist -> one-sided surface", "strength": "weak", "note": "used for belts that wear evenly"}
+{"id": "kirkwood-gaps", "verdict": "effect", "effect": "repeated tugs at matching periods clear an orbit", "does": "resonance -> orbital gaps", "strength": "tiny", "note": "orbital resonance; astronomy scale"}
+{"id": "earths-iron-core", "verdict": "not-an-effect", "note": "geology finding"}
+{"id": "composition-of-a-nova", "verdict": "not-an-effect", "note": "astronomical finding"}
+{"id": "law-of-mass-action", "verdict": "effect", "effect": "adding more of one chemical pushes a reaction forward", "does": "concentration -> reaction direction", "strength": "strong"}
+{"id": "helium", "verdict": "not-an-effect", "note": "new spectral line; sighting of an element"}
+{"id": "cro-magnon-man", "verdict": "not-an-effect"}
+{"id": "deep-sea-life", "verdict": "effect", "effect": "life thrives in dark, crushing depths", "does": "extreme pressure -> survival", "strength": "weak", "note": "organisms with pressure-proof biology"}
+{"id": "periodic-table-of-the-elements", "verdict": "not-an-effect", "note": "classification"}
+{"id": "nucleic-acid", "verdict": "effect", "effect": "cells hold a nitrogen and phosphorus rich acid", "does": "cell -> extractable nucleic acid", "strength": "weak", "note": "only isolation; usable properties come later"}
+{"id": "critical-temperature", "verdict": "effect", "effect": "above a set temperature no pressure liquefies a gas", "does": "temperature -> limit of liquefying", "strength": "weak", "note": "supercritical fluids; design rule for liquefiers"}
+{"id": "biogeography", "verdict": "not-an-effect"}
+{"id": "islets-of-langerhans", "verdict": "effect", "effect": "pancreas cell clusters control blood sugar", "does": "hormone -> blood sugar level", "strength": "strong", "note": "source of insulin"}
+{"id": "troy", "verdict": "not-an-effect"}
+{"id": "human-evolution", "verdict": "not-an-effect"}
+{"id": "plant-strains", "verdict": "effect", "effect": "careful selection breeds new plant varieties", "does": "selection -> new strains", "strength": "strong"}
+{"id": "gilgamesh", "verdict": "not-an-effect"}
+{"id": "bacteriology", "verdict": "effect", "effect": "some bacteria survive drying and boiling", "does": "harsh conditions -> survival", "strength": "weak", "note": "spores; sterilization design"}
+{"id": "stellar-photography", "verdict": "effect", "effect": "a photo of a spectrum records light's makeup", "does": "spectrum -> lasting record", "strength": "weak", "note": "method; near 'light darkens silver salts'"}
+{"id": "experimental-psychology", "verdict": "not-an-effect", "note": "a discipline"}
+{"id": "leprosy", "verdict": "not-an-effect", "note": "identification of a germ"}
+{"id": "transcendental-e", "verdict": "effect", "effect": "e solves no polynomial equation", "does": "number -> not algebraic", "strength": "tiny", "note": "pure math; little procedural use"}
+{"id": "platelets", "verdict": "effect", "effect": "platelets clump to clot blood", "does": "wound -> clot", "strength": "strong"}
+{"id": "gallium", "verdict": "not-an-effect", "note": "validates periodic table; no property described"}
+{"id": "tetrahedral-carbon-atom", "verdict": "effect", "effect": "mirror-image molecules twist polarized light opposite ways", "does": "molecular handedness -> light rotation", "strength": "weak", "note": "polarimetry to tell molecules apart"}
+{"id": "transfinite-numbers", "verdict": "effect", "effect": "some infinities are bigger than others", "does": "counting -> infinity sizes", "strength": "tiny", "note": "pure math"}
+{"id": "chemical-thermodynamics", "verdict": "effect", "effect": "temperature, pressure and mix decide which phase is stable", "does": "conditions -> phase equilibrium", "strength": "weak", "note": "phase rule; process design"}
+{"id": "protein-size", "verdict": "effect", "effect": "big molecules trapped behind a membrane draw water in", "does": "trapped solute -> osmotic pressure", "strength": "strong", "note": "osmotic pressure; can lift water or weigh molecules"}
+{"id": "liquid-oxygen", "verdict": "effect", "effect": "oxygen turns liquid when cooled far enough", "does": "extreme cold -> liquid gas", "strength": "strong", "note": "dense storage of oxygen"}
+{"id": "martian-canals", "verdict": "not-an-effect", "note": "illusion"}
+{"id": "martian-satellites", "verdict": "not-an-effect", "note": "astronomical sighting"}
+{"id": "enzyme", "verdict": "same-as", "sameAs": "catalysis", "note": "naming of biological catalysts"}
+{"id": "varves", "verdict": "effect", "effect": "lakes lay down one sediment layer a year", "does": "seasons -> countable layers", "strength": "weak", "note": "natural clock for dating"}
+{"id": "ytterbium", "verdict": "not-an-effect", "note": "element discovery; no property described"}
+{"id": "origin-of-the-moon", "verdict": "effect", "effect": "tides slowly trade spin between Earth and Moon", "does": "tidal drag -> slower spin", "strength": "tiny"}
+{"id": "scandium", "verdict": "not-an-effect", "note": "validates periodic table; no property described"}
+{"id": "thulium-holmium-samarium", "verdict": "not-an-effect", "note": "element discovery; no property described"}
+{"id": "heat-and-radiation", "verdict": "effect", "effect": "glow rises with the fourth power of temperature", "does": "temperature -> radiated power", "strength": "strong", "note": "Stefan's law; non-contact thermometry"}
+{"id": "malaria", "verdict": "not-an-effect", "note": "identification of a germ"}
+{"id": "nebular-photography", "verdict": "not-an-effect", "note": "astronomical photography"}
+{"id": "gadolinium", "verdict": "not-an-effect", "note": "element discovery; no property described"}
+{"id": "unconscious-mind", "verdict": "effect", "effect": "talking out hidden thoughts can ease symptoms", "does": "verbalizing -> relief", "strength": "weak", "note": "talking cure; soft effect"}
+{"id": "charged-cathode-rays", "verdict": "effect", "effect": "electron beams carry negative charge", "does": "charge -> steerable beam", "strength": "strong", "note": "beams can be bent by fields"}
+{"id": "high-pressure", "verdict": "effect", "effect": "materials change behavior under extreme pressure", "does": "pressure -> new material properties", "strength": "weak", "note": "card is a record, not a specific effect"}
+{"id": "pneumococcus", "verdict": "not-an-effect", "note": "identification of a germ"}
+{"id": "venn-diagram", "verdict": "effect", "effect": "overlapping circles show logical relations", "does": "logic -> picture", "strength": "weak", "note": "close to Boolean logic"}
+{"id": "speed-of-light-interferometer", "verdict": "same-as", "sameAs": "signal delay gives distance", "note": "measurement of light speed"}
+{"id": "tuberculosis", "verdict": "not-an-effect", "note": "identification of a germ"}
+{"id": "transcendental-pi", "verdict": "effect", "effect": "you cannot square the circle with ruler and compass", "does": "pi -> impossible construction", "strength": "tiny", "note": "pure math"}
+{"id": "meiosis", "verdict": "effect", "effect": "sex cells carry half the chromosomes", "does": "cell division -> halved chromosomes", "strength": "weak"}
+{"id": "phagocytes", "verdict": "effect", "effect": "white cells swallow bacteria", "does": "bacteria -> engulfed", "strength": "strong"}
+{"id": "diphtheria", "verdict": "not-an-effect", "note": "identification of a germ"}
+{"id": "eugenics", "verdict": "not-an-effect", "note": "discredited social program"}
+{"id": "stefan-boltzmann-law", "verdict": "same-as", "sameAs": "hot things glow", "note": "refines glow vs temperature"}
+{"id": "sugar-structure", "verdict": "effect", "effect": "sugars come in mirror-image forms", "does": "molecular handedness -> distinct varieties", "strength": "weak"}
+{"id": "cocaine", "verdict": "effect", "effect": "a drug numbs nerves where it is applied", "does": "drug -> local numbness", "strength": "strong", "note": "local anesthesia"}
+{"id": "purines-and-pyrimidines", "verdict": "effect", "effect": "nucleic acids are built from five base letters", "does": "bases -> coded chain", "strength": "weak", "note": "later the genetic code"}
+{"id": "praseodymium-and-neodymium", "verdict": "not-an-effect", "note": "element separation; magnet use not on card"}
+{"id": "fingerprints", "verdict": "effect", "effect": "everyone's fingerprints are unique", "does": "finger ridges -> identity", "strength": "strong"}
+{"id": "germanium", "verdict": "not-an-effect", "note": "validates periodic table; semiconductor use not on card"}
+{"id": "fluorine", "verdict": "effect", "effect": "fluorine grabs onto almost anything", "does": "contact -> violent reaction", "strength": "strong", "note": "most reactive element"}
+{"id": "dysprosium", "verdict": "not-an-effect", "note": "element discovery; no property described"}
+{"id": "canal-rays", "verdict": "effect", "effect": "positive rays stream back through holes in the cathode", "does": "electric field -> positive ion beam", "strength": "weak", "note": "ion beams"}
+{"id": "raoults-law", "verdict": "effect", "effect": "dissolved stuff lowers a liquid's vapor pressure", "does": "solute -> lower vapor, shifted boiling", "strength": "strong", "note": "freezing point depression; antifreeze, molecular weights"}
+{"id": "michelson-morley-experiment", "verdict": "not-an-effect", "note": "null result"}
+{"id": "mach-number", "verdict": "effect", "effect": "above the speed of sound air resistance jumps", "does": "speed -> shock wave", "strength": "strong"}
+{"id": "le-chateliers-principle", "verdict": "effect", "effect": "a system at balance shifts to resist any push", "does": "imposed change -> counteracting shift", "strength": "strong", "note": "used to push yields in chemical plants"}
+{"id": "chromosome", "verdict": "not-an-effect", "note": "naming"}
+{"id": "greenland-ice-cap", "verdict": "not-an-effect", "note": "expedition"}
+{"id": "neuron-theory", "verdict": "effect", "effect": "nerves are separate cells that nearly touch", "does": "cell -> cell signal gap", "strength": "weak"}
+{"id": "tetanus", "verdict": "not-an-effect", "note": "history of science in Japan"}
+{"id": "axiomatics", "verdict": "not-an-effect", "note": "foundations of math"}
+{"id": "energy-of-activation", "verdict": "effect", "effect": "a reaction needs a starting kick of energy", "does": "input energy -> reaction starts", "strength": "strong", "note": "why catalysts and sparks work"}
+{"id": "spectroscopic-binaries", "verdict": "effect", "effect": "a moving light's spectral lines shift", "does": "motion -> line shift", "strength": "strong", "note": "Doppler shift in light; speed measurement"}
+{"id": "mercurys-rotation", "verdict": "not-an-effect", "note": "astronomical finding (also wrong)"}
+{"id": "java-man", "verdict": "not-an-effect"}
+{"id": "gravitational-and-inertial-mass", "verdict": "effect", "effect": "everything falls at the same rate", "does": "mass -> equal acceleration", "strength": "weak", "note": "equivalence principle"}
+{"id": "asteroid-photography", "verdict": "not-an-effect", "note": "astronomical method"}
+{"id": "fundamental-unit-of-electricity", "verdict": "not-an-effect", "note": "unproven hypothesis; see electron cards"}
+{"id": "amalthea", "verdict": "not-an-effect", "note": "astronomical sighting"}
+{"id": "light-pressure", "verdict": "effect", "effect": "light pushes on what it hits", "does": "light -> push", "strength": "tiny", "note": "solar sails"}
+{"id": "fitzgerald-contraction", "verdict": "effect", "effect": "moving things shrink along their motion", "does": "speed -> shorter length", "strength": "tiny"}
+{"id": "psychoanalysis", "verdict": "effect", "effect": "free association surfaces repressed memories", "does": "talk -> recall", "strength": "weak", "note": "soft effect"}
+{"id": "cattle-fever", "verdict": "effect", "effect": "ticks carry disease between animals", "does": "bite -> infection", "strength": "weak", "note": "vector control"}
+{"id": "wavelengths-and-temperature", "verdict": "effect", "effect": "hotter things glow bluer", "does": "temperature -> glow color", "strength": "strong", "note": "Wien's law; color thermometry"}
+{"id": "alternating-current-theory", "verdict": "not-an-effect", "note": "engineering math for AC equipment"}
+{"id": "arctic-ocean", "verdict": "not-an-effect", "note": "expedition"}
+{"id": "argon", "verdict": "effect", "effect": "argon reacts with nothing", "does": "inert gas -> no reaction", "strength": "strong", "note": "shielding gas for welding, bulbs"}
+{"id": "cathode-ray-particles", "verdict": "same-as", "sameAs": "electron beams"}
+{"id": "velocity-and-mass", "verdict": "same-as", "sameAs": "mass grows with speed"}
+{"id": "helium-on-earth", "verdict": "effect", "effect": "radioactive rocks trap helium", "does": "decay -> helium gas", "strength": "weak", "note": "source of helium"}
+{"id": "curie-temperature", "verdict": "effect", "effect": "a magnet loses its magnetism when hot enough", "does": "heat -> no magnetism", "strength": "strong", "note": "thermal switches"}
+{"id": "dietary-deficiency-diseases", "verdict": "same-as", "sameAs": "the body needs trace nutrients"}
+{"id": "light-and-magnetism", "verdict": "effect", "effect": "a magnet splits an atom's spectral lines", "does": "magnetic field -> split lines", "strength": "weak", "note": "Zeeman effect; measures magnetic fields remotely"}
+{"id": "electron-as-subatomic-particle", "verdict": "effect", "effect": "an electric field bends an electron beam", "does": "voltage -> beam deflection", "strength": "strong", "note": "basis of cathode-ray displays"}
+{"id": "uranium-radiation-quantified", "verdict": "effect", "effect": "radiation strength tracks the amount of radioactive atoms", "does": "amount -> radiation intensity", "strength": "weak", "note": "measure quantity by counts"}
+{"id": "alpha-rays-and-beta-rays", "verdict": "effect", "effect": "radiation splits into heavy positive and light negative rays", "does": "decay -> alpha and beta rays", "strength": "weak"}
+{"id": "nickel-as-catalyst", "verdict": "effect", "effect": "nickel adds hydrogen to oils, hardening them", "does": "oil + hydrogen -> solid fat", "strength": "strong"}
+{"id": "mosquitoes-and-malaria", "verdict": "effect", "effect": "mosquitoes carry malaria", "does": "bite -> infection", "strength": "strong", "note": "vector control, nets"}
+{"id": "polonium-and-radium", "verdict": "effect", "effect": "radium is intensely radioactive", "does": "radium -> strong radiation", "strength": "strong", "note": "near 'radioactive atoms give off radiation'"}
+{"id": "neon-krypton-xenon", "verdict": "effect", "effect": "noble gases never react", "does": "inert gas -> no reaction", "strength": "weak", "note": "glow colors come later; overlaps argon"}
+{"id": "liquid-hydrogen", "verdict": "effect", "effect": "hydrogen liquefies only far below freezing", "does": "extreme cold -> liquid hydrogen", "strength": "weak"}
+{"id": "phoebe", "verdict": "not-an-effect", "note": "astronomical sighting"}
+{"id": "eros", "verdict": "not-an-effect", "note": "astronomical sighting"}
+{"id": "filtrable-virus", "verdict": "effect", "effect": "viruses slip through filters that stop bacteria", "does": "filter -> separates virus from bacteria", "strength": "weak"}
+{"id": "mitochondria", "verdict": "not-an-effect", "note": "structure identified; function later"}
+{"id": "epinephrine", "verdict": "effect", "effect": "adrenaline sets the body to fight or flight", "does": "hormone -> racing heart", "strength": "strong"}
+{"id": "actinium", "verdict": "not-an-effect", "note": "element discovery; no property described"}
+{"id": "logic-and-geometry", "verdict": "not-an-effect", "note": "foundations of math"}
+{"id": "solid-hydrogen", "verdict": "effect", "effect": "hydrogen freezes solid near absolute zero", "does": "extreme cold -> solid hydrogen", "strength": "tiny"}
+{"id": "quanta", "verdict": "same-as", "sameAs": "energy levels", "note": "energy comes in discrete chunks"}
+{"id": "beta-particles", "verdict": "effect", "effect": "radioactive atoms shoot out electrons", "does": "decay -> fast electrons", "strength": "weak"}
+{"id": "gamma-rays", "verdict": "effect", "effect": "gamma rays go through more than X-rays", "does": "radiation -> deep penetration", "strength": "strong"}
+{"id": "radon", "verdict": "effect", "effect": "radium gives off a radioactive gas", "does": "decay -> radioactive gas", "strength": "weak"}
+{"id": "atomic-change", "verdict": "effect", "effect": "radioactive atoms turn into other elements", "does": "decay -> new element", "strength": "weak"}
+{"id": "electron-emission", "verdict": "same-as", "sameAs": "thermionic emission"}
+{"id": "mutations", "verdict": "effect", "effect": "heritable traits can change suddenly", "does": "mutation -> new trait", "strength": "weak"}
+{"id": "blood-types", "verdict": "effect", "effect": "mismatched blood types clump", "does": "wrong blood -> clotting", "strength": "strong", "note": "basis of safe transfusion"}
+{"id": "yellow-fever", "verdict": "effect", "effect": "mosquitoes carry yellow fever", "does": "bite -> infection", "strength": "strong"}
+{"id": "dreams", "verdict": "not-an-effect", "note": "interpretation, no harnessable effect"}
+{"id": "tryptophan", "verdict": "effect", "effect": "digestive enzymes break proteins into amino acids", "does": "enzyme -> amino acids", "strength": "weak"}
+{"id": "free-radicals", "verdict": "effect", "effect": "some molecules break into highly reactive halves", "does": "crowding -> reactive fragments", "strength": "weak"}
+{"id": "knossos-excavation", "verdict": "not-an-effect"}
+{"id": "radioactive-energy", "verdict": "effect", "effect": "radium gives off steady heat for centuries", "does": "decay -> heat", "strength": "strong", "note": "radioisotope heaters and batteries"}
+{"id": "europium", "verdict": "not-an-effect", "note": "element discovery; no property described"}
+{"id": "grignard-reagents", "verdict": "effect", "effect": "magnesium compounds stitch carbon groups onto molecules", "does": "reagent -> new carbon bond", "strength": "strong"}
+{"id": "chromosomes-and-inheritance", "verdict": "effect", "effect": "chromosomes carry the hereditary factors", "does": "chromosome -> inherited trait", "strength": "weak"}
+{"id": "secretin", "verdict": "effect", "effect": "the gut sends a chemical message to the pancreas", "does": "acid -> hormone -> digestive juice", "strength": "weak", "note": "overlaps 'hormones regulate the body'"}
+{"id": "animal-inheritance", "verdict": "not-an-effect", "note": "extension of genetics"}
+{"id": "anaphylactic-shock", "verdict": "effect", "effect": "a second exposure can trigger a violent allergic reaction", "does": "re-exposure -> shock", "strength": "strong", "note": "allergy testing"}
+{"id": "radioactive-series", "verdict": "effect", "effect": "radioactive atoms decay through a fixed chain", "does": "decay -> sequence of elements", "strength": "weak"}
+{"id": "photoelectric-effect-and-electrons", "verdict": "same-as", "sameAs": "photoelectric effect"}
+{"id": "stratosphere", "verdict": "effect", "effect": "above seven miles the air is still and weatherless", "does": "altitude -> calm cold air", "strength": "weak", "note": "smooth flight path"}
+{"id": "symbolic-logic-and-mathematics", "verdict": "not-an-effect", "note": "foundations of math"}
+{"id": "space-flight", "verdict": "not-an-effect", "note": "theory of rocketry; devices are jobs"}
+{"id": "atomic-structure", "verdict": "not-an-effect", "note": "model of the atom"}
+{"id": "coenzyme", "verdict": "effect", "effect": "some enzymes work only with a small helper molecule", "does": "helper -> active enzyme", "strength": "weak"}
+{"id": "organic-tracers", "verdict": "effect", "effect": "tagged molecules show where food goes in the body", "does": "tag -> traceable path", "strength": "strong", "note": "tracer method"}
+{"id": "star-streams", "verdict": "not-an-effect", "note": "astronomical finding"}
+{"id": "jupiters-outer-satellites", "verdict": "not-an-effect", "note": "astronomical sighting"}
+{"id": "mass-energy", "verdict": "effect", "effect": "a little mass holds a huge amount of energy", "does": "mass -> energy", "strength": "strong", "note": "E=mc^2"}
+{"id": "photoelectric-effect-and-quanta", "verdict": "same-as", "sameAs": "photoelectric effect"}
+{"id": "brownian-motion-atomic-size", "verdict": "effect", "effect": "molecules jostle small particles at random", "does": "heat -> random motion", "strength": "tiny"}
+{"id": "color-and-stellar-luminosity", "verdict": "not-an-effect", "note": "astronomical classification"}
+{"id": "planetesimal-hypothesis", "verdict": "not-an-effect", "note": "discarded theory"}
+{"id": "metabolic-intermediate", "verdict": "effect", "effect": "phosphate keeps sugar-burning enzymes running", "does": "phosphate -> sustained metabolism", "strength": "weak"}
+{"id": "linkage-of-characteristics", "verdict": "effect", "effect": "genes on one chromosome are inherited together", "does": "linkage -> traits travel together", "strength": "weak", "note": "gene mapping"}
+{"id": "higher-pressure", "verdict": "effect", "effect": "a tighter seal reaches 20,000 atmospheres", "does": "seal -> extreme pressure", "strength": "weak", "note": "more a device; pressure transforms materials"}
+{"id": "intelligence-quotient", "verdict": "effect", "effect": "test scores track mental age", "does": "test -> ability score", "strength": "weak", "note": "measurement method"}
+{"id": "trojan-asteroids", "verdict": "effect", "effect": "objects rest stably at points ahead of and behind a planet", "does": "gravity -> stable parking spot", "strength": "weak", "note": "Lagrange points; park spacecraft"}
+{"id": "alpha-particles", "verdict": "effect", "effect": "alpha particles are helium nuclei", "does": "decay -> helium nuclei", "strength": "weak"}
+{"id": "characteristic-x-rays", "verdict": "effect", "effect": "heavier atoms scatter X-rays more", "does": "atomic weight -> X-ray scatter", "strength": "strong", "note": "identify elements by X-rays"}
+{"id": "third-law-of-thermodynamics", "verdict": "effect", "effect": "absolute zero can be approached but never reached", "does": "cooling -> limit", "strength": "tiny"}
+{"id": "magnesium-and-chlorophyll", "verdict": "effect", "effect": "chlorophyll holds a magnesium atom at its heart", "does": "magnesium -> light-capturing molecule", "strength": "weak"}
+{"id": "radioactivity-and-earth", "verdict": "effect", "effect": "radioactivity heats the Earth's crust", "does": "decay -> underground heat", "strength": "strong", "note": "geothermal heat source"}
+{"id": "radioactive-dating", "verdict": "effect", "effect": "uranium decays to lead at a steady rate", "does": "time -> lead content", "strength": "strong", "note": "dates rocks"}
+{"id": "lutetium", "verdict": "not-an-effect", "note": "element discovery; no property described"}
+{"id": "fruit-flies", "verdict": "not-an-effect", "note": "a model organism, research practice"}
+{"id": "conditioned-response", "verdict": "effect", "effect": "pairing a signal with a reward trains a reflex", "does": "repeated pairing -> learned response", "strength": "strong", "note": "animal training"}
+{"id": "space-time", "verdict": "not-an-effect", "note": "theoretical framing"}
+{"id": "genes", "verdict": "not-an-effect", "note": "naming"}
+{"id": "atomic-size", "verdict": "not-an-effect", "note": "measurement of atom size via Brownian motion"}

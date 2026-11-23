@@ -1,0 +1,1602 @@
+[
+{
+"id": "goldbach",
+"year": 1742,
+"title": "Goldbach’s conjecture",
+"field": "Math",
+"desc": "Working in Russia, German mathematician formulated a conjecture, still unproven: \\\"Every even integer greater than 2 can be expressed as the sum of two primes.\\\"",
+"long": ""
+},
+{
+"id": "transcendental-numbers",
+"year": 1744,
+"title": "Transcendental numbers",
+"field": "Math",
+"desc": "In mathematics, a transcendental number is a complex number that is not an algebraic number—that is, not a root (i.e., solution) of a nonzero polynomial equation with integer coefficients. The best-known transcendental numbers are π and e.",
+"long": ""
+},
+{
+"id": "blood-and-iron",
+"year": 1745,
+"title": "Blood and iron",
+"field": "Science:Biology",
+"desc": "The chemical composition of blood was completely unknown until an experimenter fed iron to dogs to see if the iron would be incorporated in the blood. As a control, he checked the composition of regular dog blood and found that it already contained iron, specifically in red blood cells.",
+"long": ""
+},
+{
+"id": "scurvy",
+"year": 1747,
+"title": "Scurvy",
+"field": "Science:Biology",
+"desc": "More men were disabled by scurvy on long sea voyages than by any other cause. Lind served in the navy and knew how monotonous the diet was, and also knew that scurvy also appeared in other such environments (prisons, under siege). He studied the effect of fruits on scurvy and found citrus provided great relief.",
+"long": ""
+},
+{
+"id": "platinum",
+"year": 1749,
+"title": "Platinum",
+"field": "Science:Chemistry",
+"desc": "Existence of platnium was generally unknown since it is as rare as gold, but lacks its ostentatious beauty. It was scientifically studied by Ulloa, who found it to be denser than gold, higher melting and less reactive.",
+"long": ""
+},
+{
+"id": "biological-evolution",
+"year": 1749,
+"title": "Biological evolution",
+"field": "Science:Biology",
+"desc": "Buffon was the first to speculate openly about evolution in a book called \\\"Natural History\\\", where he imagined an evolution in reverse: apes as degenerate humans, donkeys as degenerate horses, jackals as degenerate wolves. He was wrong, but it implied that species could change over time.",
+"long": ""
+},
+{
+"id": "formation-earth",
+"year": 1749,
+"title": "Formation of the Earth",
+"field": "Space",
+"desc": "Buffon thought that there may have been a natural (not God) cause to Earth's creation, such as the collision of the Sun with a comet. He also estimated Earth's age by calculating how long it would take an Earth-sized object to cool from the temperature of the sun. His estimates of 75,000 years were wrong, but this was much greater than 6000.",
+"long": ""
+},
+{
+"id": "nickel",
+"year": 1751,
+"title": "Nickel",
+"field": "Science:Chemistry",
+"desc": "Cronstedt studied under Brandt, who isolated cobalt, and isolated another metal from ore that was neither copper nor cobalt. Colloquially known as kupfernickel by miners, he dubbed it nickel for short. Turned out nickel was also magnetic but weaker than iron.",
+"long": ""
+},
+{
+"id": "encyclopedia",
+"year": 1751,
+"title": "Encyclopedia",
+"field": "General",
+"desc": "Diderot compiled a multivolume summary of all knowledge for the general public, with alphabetical entries. This was fitting at a time that called itself the Age of Reason.",
+"long": ""
+},
+{
+"id": "digestion",
+"year": 1752,
+"title": "Digestion",
+"field": "Science:Biology",
+"desc": "Up to now, there was debate whether digestion was chemical or mechanical in nature. In an experiment on hawks and dogs, Reaumur showed that it had to be both. Thus in addition to behaving like a mechanical machine, the body also has a chemical aspect.",
+"long": ""
+},
+{
+"id": "earth-heat",
+"year": 1752,
+"title": "Earth and heat",
+"field": "Science:Geology",
+"desc": "Most Europeans up to now attributed changes to the Earth's surface to forces of water (called Neptunists). However Guettard challenged this after observing that rocks experienced great changes in temperature in the past.",
+"long": ""
+},
+{
+"id": "carbon-dioxide",
+"year": 1754,
+"title": "Carbon dioxide",
+"field": "Science:Chemistry",
+"desc": "Up to now, carbon dioxide had only been detected as a product of combustion or fermentation. Black described how to create a gas by heating limestone, calling it \\\"fixed air\\\" because it could be fixed back into a solid by combining with lime. He also found that calcium oxide turned into calcium carbonate naturally in the air, so there must be carbon dioxide in the atmosphere.",
+"long": ""
+},
+{
+"id": "galaxy",
+"year": 1755,
+"title": "Galaxy",
+"field": "Space",
+"desc": "Are the stars in the sky uniformly distributed, or are they contained in some particular shape? Based on the Milky Way, it seems like the latter. Kant suggested that the Sun was one of many stars in a lens-like shape, and that the Milky Way was what we see when we look along the long axis of the lens. He suggested that there were other galaxies, but this all remained unproven.",
+"long": ""
+},
+{
+"id": "land-bridges",
+"year": 1756,
+"title": "Land bridges",
+"field": "Science:Geology",
+"desc": "It was so far assumed that the shape of the continents was fixed and eternal, but Desmarest pointed out similarities of the shores across the English channel, suggesting that the two land masses drifted apart over time. He incorrectly believed these changes were caused by earthquakes.",
+"long": ""
+},
+{
+"id": "halley-comet",
+"year": 1758,
+"title": "Halley's comet",
+"field": "Space",
+"desc": "Halley predicted that the comet of 1682 would return in 1758. Amateur astronomer spotted it on Dec 25, 1758. Retrospectively, it turned out that this was the same comet seen by William the Conqueror, and the same one painted by Giotto.",
+"long": ""
+},
+{
+"id": "flame-tests",
+"year": 1758,
+"title": "Flame tests",
+"field": "Science:Chemistry",
+"desc": "It was a difficult task for chemists to distinguish one substance from another. For example, sodium and potassium look similar, but they burn yellow and violet respectively. Further improving the process, Cronstedt introduced a blowpipe which directed a jet of air, making more granular temperature possible.",
+"long": ""
+},
+{
+"id": "embryology",
+"year": 1759,
+"title": "Embryology",
+"field": "Science:Biology",
+"desc": "At the time, it was customary to think that seeds, eggs, pollen, sperm, etc, had miniature organisms in them that grew. Some thought that this was recursive! Wolff found that specialized organs developed out of unspecialized tissue.",
+"long": ""
+},
+{
+"id": "earthquakes",
+"year": 1760,
+"title": "Earthquakes",
+"field": "Science:Geology",
+"desc": "Early theories attributed earthquakes to relentless gods or pent-up air underground. The Lisbon quake of 1755 forced more scientifict hinking. Mitchell noted that quakes often correlated to volcanic areas, thought underground water was boiled by volcanic heat, and caused circular waves from the epicenter. Mitchell is considered founder of seismology.",
+"long": ""
+},
+{
+"id": "heat-capacity",
+"year": 1760,
+"title": "Heat capacity",
+"field": "Science:Chemistry",
+"desc": "Heat was considered a special fluid which filled all substances equally based on weight. Black showed that when heating equal weights of mercury and water, mercury's temperature went up twice as fast as the water temperature did.",
+"long": ""
+},
+{
+"id": "pathology",
+"year": 1760,
+"title": "Pathology",
+"field": "Science:Biology",
+"desc": "Morgagni published a list of 640 postmortems fully detailing the lives of his patience, development of disease and manner of death from the anatomical point of view.",
+"long": ""
+},
+{
+"id": "venus-atmosphere",
+"year": 1761,
+"title": "Venus’s atmosphere",
+"field": "Space",
+"desc": "Venus didn't appear to have any visual features except when passing directly between sun and earth (called transit of Venus). In an attempt to study Venus' parallax, an expedition was setup to observe it from many different places on earth. This effort failed because the time when venus entered and left the solar shadow could not be determined accurately. Lomonosov suggested this might be due to fuzziness caused by an atmosphere, and was right!",
+"long": ""
+},
+{
+"id": "percussion",
+"year": 1761,
+"title": "Medical percussion",
+"field": "Science",
+"desc": "Percussion is a method of tapping on a surface to determine the underlying structures, and is used in clinical examinations to assess the condition of the thorax or abdomen.",
+"long": ""
+},
+{
+"id": "pollination",
+"year": 1763,
+"title": "Pollination",
+"field": "Science",
+"desc": "Identification of the sexual reproduction process in plants and the role of wind and animals in pollination.",
+"long": ""
+},
+{
+"id": "plutonism",
+"year": 1765,
+"title": "Plutonism",
+"field": "Science",
+"desc": "Nicolas Desmarest suggested that valleys were formed by streams that ran through them, influenced by the heat from volcanic activity.",
+"long": ""
+},
+{
+"id": "hydrogen",
+"year": 1766,
+"title": "Hydrogen",
+"field": "Science",
+"desc": "Demarest discovered hydrogen (which he called 'fire air') through its properties, specifically its high flammability and low density, being one-fourteenth the density of air. His detailed studies on hydrogen's properties led to its eventual recognition as a distinct element.",
+"long": ""
+},
+{
+"id": "experiments-on-nerves",
+"year": 1766,
+"title": "Experiments on nerves",
+"field": "Science",
+"desc": "Albrecht von Haller conducted experiments that led to the conclusion of nerves being responsible for muscle movement, not a fluid transmitted through nerves. Haller’s work laid the foundations for modern neurology.",
+"long": ""
+},
+{
+"id": "quantitative-chemistry",
+"year": 1769,
+"title": "Quantitative chemistry",
+"field": "Science",
+"desc": "Lavoisier boiled water for 101 days, observing that sediment appeared and the water did not change its weight, refuting the Greek theory that water could be converted into earth. His precise, quantitative method provided clearer understanding and marked a significant advance in the field of chemistry.",
+"long": ""
+},
+{
+"id": "nile-river",
+"year": 1770,
+"title": "Nile river",
+"field": "Geography",
+"desc": "Bruce journeyed upstream to Khartoum in Sudan where he determined the confluence of the White Nile from the southwest and the Blue Nile from the southeast, identifying its source to Ethiopia, which was previously unknown to European explorers.",
+"long": ""
+},
+{
+"id": "gulf-stream",
+"year": 1770,
+"title": "Gulf stream",
+"field": "Geography",
+"desc": "Franklin, after traveling from America to Europe multiple times, became aware of the difference in eastward and westward sailing times due to ocean currents. He produced a map of the Gulf Stream, beginning of the scientific study of ocean currents.",
+"long": ""
+},
+{
+"id": "nebulas",
+"year": 1771,
+"title": "Nebulas",
+"field": "Science",
+"desc": "Initially frustrated by his findings of fuzzy objects that were not comets but rather \\\"nebulosities\\\" fixed in space, he compiled a list of these objects. This list of nebulas includes many star clusters and distant galaxies.",
+"long": ""
+},
+{
+"id": "plants-and-carbon-dioxide",
+"year": 1771,
+"title": "Plants and carbon dioxide",
+"field": "Science",
+"desc": "Carbon dioxide was understood to support the respiration of plants, with the notable experiment involving a plant surviving in carbon dioxide-rich air.",
+"long": ""
+},
+{
+"id": "diamond",
+"year": 1772,
+"title": "Diamond",
+"field": "Science",
+"desc": "Antoine Lavoisier burned diamond and observed it in a closed vessel, proving that it was a form of Carbon. He indicated that when it grew hot enough, it simply disappeared, contributing to disprove the phlogiston theory.",
+"long": ""
+},
+{
+"id": "nitrogen",
+"year": 1772,
+"title": "Nitrogen",
+"field": "Science",
+"desc": "Daniel Rutherford asked a question regarding what happens if a candle is burned until no further burning air is possible, which led him to discover a new gas eventually called nitrogen. This gas does not support combustion or sustain life, showing it was neither combustible like oxygen nor able to support life like carbon dioxide.",
+"long": ""
+},
+{
+"id": "antarctic-circle",
+"year": 1773,
+"title": "Antarctic Circle",
+"field": "Geography",
+"desc": "The Antarctic Circle was first crossed at sea by Captain James Cook.",
+"long": ""
+},
+{
+"id": "bacilli",
+"year": 1773,
+"title": "Bacilli",
+"field": "Science",
+"desc": "Bacteria could be seen more distinctly than before and categorized by their shapes. Microorganisms were classified into genera and species as per the methods of Linnaeus, particularly identifying rod-shaped bacteria as 'bacilli', spiral-shaped ones as 'spirilla'.",
+"long": ""
+},
+{
+"id": "chlorine-oxygen",
+"year": 1774,
+"title": "Chlorine oxygen",
+"field": "Science",
+"desc": "Scheele isolated the gas chlorine, which was colorless and greenish-yellow in color, named from the Greek word for 'green'. However, Scheele thought it was a combination of some substance with oxygen and did not recognize it as an element, which prevented him from obtaining the credit for its discovery until about thirty years later.",
+"long": ""
+},
+{
+"id": "mesmerism",
+"year": 1774,
+"title": "Mesmerism",
+"field": "Culture",
+"desc": "Messmer's waved magnets over his patients while reciting prayers, claiming the ability to cure various diseases. Though his methods were discredited, the mind's effect on the body was intriguing and his experiments became the basis of modern hypnosis.",
+"long": ""
+},
+{
+"id": "digitalis",
+"year": 1775,
+"title": "Digitalis",
+"field": "Science",
+"desc": "An English physician discovered the medicinal properties of the foxglove plant for heart conditions. The substance obtained was key in treating edema caused by a failing heart, reigniting interest in plant-based medicines.",
+"long": ""
+},
+{
+"id": "races",
+"year": 1776,
+"title": "Races",
+"field": "Culture",
+"desc": "A classification of the human species into five races was proposed, lead by descriptive criteria such as skin color and physical features without implying any important differences between these groups.",
+"long": ""
+},
+{
+"id": "torsion-balance",
+"year": 1777,
+"title": "Torsion balance",
+"field": "Science",
+"desc": "The torsion balance uses a fiber or wire's ability to twist under a force to measure weight, providing a way to more precisely measure weight.",
+"long": ""
+},
+{
+"id": "respiration-and-combustion",
+"year": 1777,
+"title": "Respiration and combustion",
+"field": "Science",
+"desc": "This discovery established the connection between respiration in animals and the process of combustion, demonstrating that both processes rely on the consumption of oxygen and the release of carbon dioxide.",
+"long": ""
+},
+{
+"id": "molybdenum",
+"year": 1778,
+"title": "Molybdenum",
+"field": "Science",
+"desc": "Scheele discovered molybdenum, a new chemical element, using methods he had previously applied to isolate another element, manganese.",
+"long": ""
+},
+{
+"id": "hawaiian-islands",
+"year": 1778,
+"title": "Hawaiian Islands",
+"field": "Geography",
+"desc": "Captain Cook explored the Pacific coast of North America and later claimed the Hawaiian Islands for Britain, naming them the Sandwich Islands. This discovery extended British claims in the Pacific region.",
+"long": ""
+},
+{
+"id": "fertilization",
+"year": 1779,
+"title": "Fertilization",
+"field": "Science",
+"desc": "It was discovered that fertilization in humans involved male sperms physically contacting the eggs within the female ovaries, contrary to the prior belief that males provided the 'seed' and females were simply the soil. This newfound understanding clarified that reproduction was a joint process involving contributions from both the mother and father.",
+"long": ""
+},
+{
+"id": "photosynthesis",
+"year": 1779,
+"title": "Photosynthesis",
+"field": "Science",
+"desc": "The process by which plants convert carbon dioxide and water into oxygen and glucose, using sunlight as the energy source, was further elucidated. This essential plant function that produces not only oxygen but also complex organic molecules.",
+"long": ""
+},
+{
+"id": "uranus",
+"year": 1781,
+"title": "Uranus",
+"field": "Space",
+"desc": "The discovery of Uranus expanded our knowledge of the solar system by revealing a seventh planet. This celestial body was initially mistaken for a comet but was identified due to its distinct circular and sharp-edged appearance.",
+"long": ""
+},
+{
+"id": "binary-stars",
+"year": 1781,
+"title": "Binary stars",
+"field": "Space",
+"desc": "Two stars sometimes orbit each other due to gravitational forces. The discovery contradicted the earlier belief that close pairs of stars were merely coincidentally aligned, showing that they could in fact be gravitationally bound and move in relation to each other.",
+"long": ""
+},
+{
+"id": "crystallography",
+"year": 1781,
+"title": "Crystallography",
+"field": "Science",
+"desc": "Modern crystallography were established through the discovery that crystal shapes are built from unit cells that stack in a regular pattern spontaneously. ",
+"long": ""
+},
+{
+"id": "mars-axial-tilt",
+"year": 1781,
+"title": "Axial inclination of mars",
+"field": "Space",
+"desc": "The axial inclination of Mars was identified, illustrating that like Earth, Mars has a tilted axis which causes seasonal variations similar to those on Earth. The discovery contributed to the understanding of planetary motions and their effects on climate.",
+"long": ""
+},
+{
+"id": "eclipsing-variables",
+"year": 1782,
+"title": "Eclipsing variables",
+"field": "Space",
+"desc": "Eclipsing variables are a type of star that experience fluctuations in brightness over time. The first such star was discovered centuries before but the reason for its variability was not tied to eclipses until now.",
+"long": ""
+},
+{
+"id": "tellurium",
+"year": 1782,
+"title": "Tellurium",
+"field": "Science",
+"desc": "Tellurium was discovered as a new chemical element during the examination of gold ore. It was initially confused with other elements, but upon further analysis, it was classified as a new element, contributing to the periodic table and chemical knowledge.",
+"long": ""
+},
+{
+"id": "motion-of-the-sun",
+"year": 1783,
+"title": "Motion of the Sun",
+"field": "Space",
+"desc": "Herschel's observations led to the revelation that the Sun was not stationary and that it was, in fact, moving towards a specific point in space. This systematic measurement of proper motion of nearby stars fundamentally changed the perception of celestial dynamics.",
+"long": ""
+},
+{
+"id": "tungsten",
+"year": 1783,
+"title": "Tungsten",
+"field": "Science",
+"desc": "A Spanish mineralogist discovered a new metal from a mineral named wolframite, identifying the metal as tungsten. This element has unique properties such as high density and robustness, significantly influencing the materials industry and various technological applications.",
+"long": ""
+},
+{
+"id": "volcanoes",
+"year": 1783,
+"title": "Volcanoes",
+"field": "Science",
+"desc": "The eruption of a volcano in Iceland in 1783 led to significant climate impact, causing severe cold and speculations on the relationship between volcanic ash and atmospheric cooling. This event highlighted the potential of volcanic activity to drastically affect earth's climate.",
+"long": ""
+},
+{
+"id": "hydrogen-and-water",
+"year": 1784,
+"title": "Hydrogen and water",
+"field": "Science",
+"desc": "This was the discovery that when hydrogen is burned, it produces water. This finding further elucidated the composition of water, demonstrating the process in which hydrogen gas combined with oxygen to form water.",
+"long": ""
+},
+{
+"id": "martian-ice-caps",
+"year": 1784,
+"title": "Martian ice caps",
+"field": "Space",
+"desc": "It was observed that Mars has polar ice caps, drawing another parallel between Mars and Earth. The axial tilt of Mars was used to infer the presence of ice caps as these regions had visible ice, suggesting a climate phenomenon somewhat similar to Earth's.",
+"long": ""
+},
+{
+"id": "alaska",
+"year": 1784,
+"title": "Alaska",
+"field": "Geography",
+"desc": "Russians from Siberia, venturing eastward, found large numbers of sea otters, whose pelts proved very profitable, and for the next eighty years Russian holdings expanded until all of the present-day state of Alaska was part of the Russian Empire.",
+"long": ""
+},
+{
+"id": "clusters-and-nebulas",
+"year": 1785,
+"title": "Clusters and nebulas",
+"field": "Space",
+"desc": "Nebulous objects in the sky not singular celestial bodies but tightly packed clusters of stars. Parts in the Milky Way that contained no stars, termed 'holes,' which allowed for viewing into starless space beyond.",
+"long": ""
+},
+{
+"id": "galaxy-observed",
+"year": 1785,
+"title": "Galaxy observed",
+"field": "Space",
+"desc": "The research defined the Milky Way as a lens-shaped collection of stars and was the first use of statistical methods in astronomy to estimate the shape of the star conglomerate we reside in, making it a foundational work for modern astronomy.",
+"long": ""
+},
+{
+"id": "uniformitarianism",
+"year": 1785,
+"title": "Uniformitarianism",
+"field": "Science",
+"desc": "James Hutton proposed that the age of the Earth could be understood through the slow and uniform processes of geological change, laying the groundwork for the science of geology by emphasizing the Earth's long history and gradual change.",
+"long": ""
+},
+{
+"id": "popular-mountain-climbing",
+"year": 1786,
+"title": "Popular mountain climbing",
+"field": "Culture",
+"desc": "Interest in climbing mountains for scientific study became more prevalent, with an emphasis on investigating the natural features, plants, and animals found in mountainous regions. Unlike the historical avoidance of mountains, this period marks the beginning of mountain climbing as a hobby.",
+"long": ""
+},
+{
+"id": "chemical-nomenclature",
+"year": 1787,
+"title": "Chemical nomenclature",
+"field": "Science",
+"desc": "Standardization of chemical naming conventions, promoting clearer communication in the scientific community.",
+"long": ""
+},
+{
+"id": "algebra-and-mechanics",
+"year": 1788,
+"title": "Algebra and mechanics",
+"field": "Math",
+"desc": "A significant advancement in the field of mechanics was published, which applied algebra and calculus to the field in a non-geometric method. This work allowed for the solving of mechanical problems through more general equations rather than solely relying on geometric principles.",
+"long": ""
+},
+{
+"id": "chemical-affinities",
+"year": 1789,
+"title": "Affinities",
+"field": "Science",
+"desc": "Bergmann classified minerals to understand how various chemicals interact with one another, based on the concept of 'affinities'. His work included tables designed to predict whether certain chemical reactions would occur, thus pioneering a systematic approach to chemical behavior.",
+"long": ""
+},
+{
+"id": "uranus-satellites",
+"year": 1789,
+"title": "Uranus satellites",
+"field": "Space",
+"desc": "New discoveries of the satellites of Saturn and Uranus expanded humankind's knowledge of our solar system, following a tradition of celestial observation established by earlier astronomers. These discoveries were made possible by improvements in telescopic technology.",
+"long": ""
+},
+{
+"id": "acids",
+"year": 1789,
+"title": "Acids",
+"field": "Science",
+"desc": "Lavoisier had named the active portion of the atmosphere oxygen (acid-producer) because it was thought that all acids containe d oxygen, but he was proven wrong with the discovery of hydrocyanic and hydrosulfuric acid.",
+"long": ""
+},
+{
+"id": "conservation-of-mass",
+"year": 1789,
+"title": "Conservation of mass",
+"field": "Science",
+"desc": "This principle established that in a closed system, mass is conserved regardless of the physical or chemical changes that occur. It has been a fundamental tenet of chemistry since its discovery.",
+"long": ""
+},
+{
+"id": "uranium",
+"year": 1789,
+"title": "Uranium",
+"field": "Science",
+"desc": "A newly discovered chemical element, Uranium was initially named after the planet Uranus. It later became famed for its nuclear properties and is now widely recognized for its use as a source of concentrated energy in nuclear reactors and weapons.",
+"long": ""
+},
+{
+"id": "industrial-revolution",
+"year": 1790,
+"title": "Industrial revolution",
+"field": "General",
+"desc": "The Industrial Revolution in Great Britain was fueled by innovations such as advanced textile machinery, leading to significant economic growth. Blueprints of the new technology were tightly controlled, but knowledge transfer to the United States was achieved surreptitiously to bolster its economic independence.",
+"long": ""
+},
+{
+"id": "the-metric-system",
+"year": 1790,
+"title": "The metric system",
+"field": "Science",
+"desc": "The meter was defined as one ten-millionth of the distance from the equator to the North Pole. This system simplified and unified measurements worldwide by adopting a decimal-based approach, greatly aiding scientific and commercial practices.",
+"long": ""
+},
+{
+"id": "titanium",
+"year": 1791,
+"title": "Titanium",
+"field": "Science",
+"desc": "Titanium is a chemical element discovered by William Gregor, who initially isolated it out of curiosity while analyzing various minerals. It was later named by Martin Heinrich Klaproth and has become known for its strength, low density, and high corrosion resistance.",
+"long": ""
+},
+{
+"id": "columbia-river",
+"year": 1792,
+"title": "Columbia River",
+"field": "Geography",
+"desc": "The Columbia River was named by American navigator Robert Gray who first circumnavigated the globe by an American and charted the river during his voyage. This discovery was significant for future exploration and territorial claims in the Pacific Northwest.",
+"long": ""
+},
+{
+"id": "vancouver-island",
+"year": 1792,
+"title": "Vancouver Island",
+"field": "Geography",
+"desc": "George Vancouver circumnavigated and mapped the coast of what is now known as Vancouver Island in 1792, contributing to the exploration and geographic understanding of the Pacific Northwest.",
+"long": ""
+},
+{
+"id": "insane-asylums",
+"year": 1793,
+"title": "Insane asylums",
+"field": "Culture",
+"desc": "During the late 18th century, changes in the approach to mental health occurred, as asylums began to move away from being places of mistreatment to becoming institutions focused on the care and study of mental health, establishing more humane treatment for the mentally ill.",
+"long": ""
+},
+{
+"id": "across-north-america",
+"year": 1793,
+"title": "Across North America",
+"field": "Geography",
+"desc": "Alexander Mackenzie traveled west to Alberta, crossed the Rocky mountains and arrived at the Pacific ocean. He was the first person to visit the Atlantic, Pacific, and Arctic shores-all three of North America",
+"long": ""
+},
+{
+"id": "meteorites-hypothesis",
+"year": 1794,
+"title": "Meteorites Hypothesis",
+"field": "Space",
+"desc": "Chladni hypothesized that meteorites originated from outer space, suggesting that the stones that fell from the sky were remnants of celestial bodies that had once orbited the Earth, a significant departure from the common beliefs and myths about meteorites, which often held religious or mystical significance.",
+"long": ""
+},
+{
+"id": "rare-earths",
+"year": 1794,
+"title": "Rare earths",
+"field": "Science",
+"desc": "The Earth's crust was largely a mixture of oxides called rare earths, heat resistant and insoluble in water. Gadolin recognized a new specimen obtained from a quarry in Ytterby (near Stockholm).",
+"long": ""
+},
+{
+"id": "nebular-hypothesis",
+"year": 1796,
+"title": "Nebular hypothesis",
+"field": "Space",
+"desc": "The Nebular Hypothesis is a theory suggesting that the Solar System formed from a large cloud of gas and dust. This formation process involves the cloud spinning faster and contracting to form planets, moons, and other celestial bodies.",
+"long": ""
+},
+{
+"id": "heptadecagon",
+"year": 1796,
+"title": "Heptadecagon",
+"field": "Math",
+"desc": "This mathematical breakthrough provided a method to construct a heptadecagon, a seventeen-sided polygon with equal length sides, using only a compass and straightedge. This was the first instance of a proof of impossibility in the field of geometric construction and solidified the importance of proof in mathematics.",
+"long": ""
+},
+{
+"id": "chromium",
+"year": 1797,
+"title": "Chromium",
+"field": "Science",
+"desc": "The discovery of chromium emerged from the isolation of a new metal that showcased a variety of colors in its compounds, which was quite striking. The metal's discovery contributed to advances in chemistry, particularly in the study of elements and their properties.",
+"long": ""
+},
+{
+"id": "mass-of-the-earth",
+"year": 1798,
+"title": "Mass of the Earth",
+"field": "Science",
+"desc": "The Earth's mass was calculated using gravitational constants and the principles of Newton's equation for gravitational attraction. It established a method to measure the gravitational pull between two masses and calculate the mass of the Earth from that information.",
+"long": ""
+},
+{
+"id": "comparative-anatomy",
+"year": 1798,
+"title": "Comparative anatomy",
+"field": "Science",
+"desc": "This French anatomist pioneered the field of comparative anatomy by analyzing how various animals' anatomies differed and related to each other. This work established the principles that are at the core of comparative anatomy.",
+"long": ""
+},
+{
+"id": "population-growth-theory",
+"year": 1798,
+"title": "Population growth theory",
+"field": "Science",
+"desc": "A new theory described how population tends to increase in a geometric progression, outstripping the arithmetic progression of food supply which could lead to famine, war, and disease. It was the first significant study to formally link population dynamics and resource limitations.",
+"long": ""
+},
+{
+"id": "liquid-ammonia",
+"year": 1798,
+"title": "Liquid ammonia",
+"field": "Science",
+"desc": "A breakthrough in chemistry allowed the conversion of a gas, ammonia, into a liquid by lowering the temperature significantly. This development opened up possibilities for refrigeration and becoming a foundational concept in thermodynamics.",
+"long": ""
+},
+{
+"id": "beryllium",
+"year": 1798,
+"title": "Beryllium",
+"field": "Science",
+"desc": "Beryllium was a new metal ub the periodic table, characterized by its lightness and high melting point. It helped expand the knowledge of elemental chemistry and yielded a metal with various applications due to its unique properties.",
+"long": ""
+},
+{
+"id": "law-of-definite-proportions",
+"year": 1799,
+"title": "Law of definite proportions",
+"field": "Science",
+"desc": "Careful analysis of copper carbonate demonstrated that, no matter how it was prepared or isolated, copper carbonate always contained five parts of copper to four parts of oxygen by weight. The resulting law \\\"Proust's law\\\" says chemical compounds always combine in definitive, fixed ratios of mass regardless of their method of preparation or source.",
+"long": ""
+},
+{
+"id": "strata",
+"year": 1799,
+"title": "Strata",
+"field": "Geography",
+"desc": "The concept of stratigraphy was refined by observing that rocks exist in layers, each with unique fossil assemblages, allowing for relative dating of geological strata. It highlighted the principle that the order and position of layers could be critical clues in establishing a timeline for Earth's geological and biological history.",
+"long": ""
+},
+{
+"id": "perturbations",
+"year": 1799,
+"title": "Perturbations",
+"field": "Space",
+"desc": "This insight into celestial mechanics described the small additional gravitational influences, known as perturbations, that celestial bodies exert on one another, influencing their orbits. It was crucial in proving that the Solar System is stable over long periods, despite these slight mutual influences.",
+"long": ""
+},
+{
+"id": "rosetta-stone",
+"year": 1799,
+"title": "Rosetta Stone",
+"field": "Culture",
+"desc": "The Rosetta Stone is an artifact discovered in 1799 bearing an inscription in three forms of writing: Greek, Demotic, and Hieroglyphic, which allowed scholars to begin deciphering ancient Egyptian hieroglyphs. Its discovery provided the key to understanding large portions of Egyptian history that were previously obscure.",
+"long": ""
+},
+{
+"id": "decomposition-of-water",
+"year": 1800,
+"title": "Decomposition of water",
+"field": "Science",
+"desc": "This process involved using an electric current to decompose water into hydrogen and oxygen gases, revealing the elemental composition of water. It was a foundational experiment demonstrating the use of electricity to drive a chemical reaction.",
+"long": "Following the invention of the Volta's pile, William Nicholson used the battery to pass an electric current through slightly acidified water. The process of electrolysis resulted in the production of hydrogen and oxygen gases, confirming that water was composed of these two elements."
+},
+{
+"id": "nitrous-oxide",
+"year": 1800,
+"title": "Nitrous oxide",
+"field": "Science",
+"desc": "Nitrous oxide is a gas that induces a state of exhilaration and anesthesia when inhaled, with effects including laughter and pain suppression. It was initially a novelty but found practical use in dentistry as an anesthetic.",
+"long": "A British chemist, Humphry Davy, discovered nitrous oxide in 1800. Through his experimental work with the gas, Davy identified its anesthetic properties, reporting a reduction in pain sensation when inhaled. Eventually, it became widely used in dentistry for its anesthetic qualities and was also popularized as a short-lived social fad for its euphoriant effects."
+},
+{
+"id": "tissues",
+"year": 1800,
+"title": "Tissues",
+"field": "Science",
+"desc": "Careful observations (without a microscope) showed Bichat that the various organs were built up out of a mixture of different types of simpler structures, each of which might occur in many different organs. Because these structures were usually flat and delicately thin, they were called tissues.",
+"long": "The French physician Marie François Xavier Bichat (1771-1802) was notable for the many postmortems he conducted in his very short profes- sional life. His careful ob- servations (without a microscope) showed him that the various organs were built up out of a mix- ture of different types of simpler structures, each of which might occur in many different organs. Because these structures were usu- ally flat and delicately thin, they were called tissues. In 1800 he published a book called Treatise on Membranes in which he listed and carefully de- scribed twenty-one differ- ent types of tissues. He is for this reason considered the founder of the science of histology (the study of tis-sues)."
+},
+{
+"id": "discovery-of-ceres",
+"year": 1801,
+"title": "Discovery of Ceres",
+"field": "Space",
+"desc": "Ceres was discovered by an Italian astronomer when he serendipitously spotted the object while working at an observatory, and it was notable for being the first known dwarf planet located in the asteroid belt between Mars and Jupiter. This discovery adhered to the predictions made by Bode's law regarding planetary distances.",
+"long": "Ceres was discovered on January 1, 1801, fitting within the framework of Bode's law, which suggested the placement of a planet between Mars and Jupiter. Ceres, though smaller than Mars and more slowly moving, however, turned out to be a dwarf planet and not a full-sized planet as Johann Elert Bode's law had predicted, marking an important contribution to astronomical understanding at the time."
+},
+{
+"id": "invertebrates",
+"year": 1801,
+"title": "Invertebrates",
+"field": "Science",
+"desc": "Up to now, less familiar and more diverse animals without backbones (invertebrates) were less carefully considered. Linnaeus had lumped them all into the class Vermes (Latin for 'worms\\\"). Lamarck divided the invertebrates into groups like the crustaceans, echinoderms, and distinguished between the eight-legged arachnids and the six-legged insects.",
+"long": "Linnaeus (see 1735) and others in the past three- quarters of a century had elaborated the taxonomy of vertebrates (those animals with backbones-mammals, birds, reptiles, amphibia, and fish) in considerable detail. The less familiar and more diverse animals without backbones (invertebrates) were less carefully considered. Linnaeus had lumped them all into the class Vermes (Latin for \\\" 'worms\\\"). The French naturalist Jean-Baptiste de Lamarck (1744-1829) tackled the problem in publications beginning in 1801. He divided the invertebrates into groups and created such di- visions as the crustaceans(crabs and lobsters) and echinoderms (starfish andsea urchins). He distin-guishedbetween the eight"
+},
+{
+"id": "discovery-of-niobium",
+"year": 1801,
+"title": "Discovery of niobium",
+"field": "Science",
+"desc": "An English chemist discovered a new element within a mineral from the British Museum, initially calling it Columbium (after Columbia, a name for the US), but it later became officially known as niobium. The element's establishment was contentious due to national pride and scientific debate.",
+"long": "Charles Hatchett analyzed a mineral from the British Museum, which was sent there from Connecticut, and identified a new element in 1801. There was a dispute over whether the substance was a new element, but it was finally accepted and officially named niobium, with Hatchett initially calling it columbium in honor of the 'Columbia' (a historical name for the United States). Despite the initial naming, the United States lost the honor of having the element named after it."
+},
+{
+"id": "asteroids",
+"year": 1802,
+"title": "Asteroids",
+"field": "Space",
+"desc": "This discovery refers to the identification of new celestial bodies between Mars and Jupiter, which were distinct from planets due to their smaller size. They were initially named after Greek deities and later became known as the asteroid belt.",
+"long": "In 1802, following the discovery of Ceres in 1801, German scientists led by Olbers found another celestial body between Mars and Jupiter, naming it Pallas. Further discoveries led to the identification of additional bodies, such as Athena in 1804, and Vesta and Juno in 1807. These bodies were smaller than planets and were eventually realized to be part of a larger collection that would be called asteroids, forming the asteroid belt."
+},
+{
+"id": "tantalum",
+"year": 1802,
+"title": "Tantalum",
+"field": "Science",
+"desc": "The invention is the discovery of a new metal, which was named after the Greek mythological figure Tantalus. It is a rare, hard, blue-gray metal known for its resistance to corrosion paralleling Tantalus's own unattainable desires.",
+"long": "Anders Gustav Ekeberg, a Swedish chemist, analyzed minerals from Finland and discovered a new metal in 1802, which he named tantalum. The name was inspired by the Greek mythological figure Tantalus, reflecting the metal's resistance to absorption and corrosion, paralleling Tantalus's own unattainable desires."
+},
+{
+"id": "atomic-theory",
+"year": 1803,
+"title": "Atomic theory",
+"field": "Science",
+"desc": "The Atomic Theory posits that matter is composed of discrete units called atoms, which combine in simple whole-number ratios to form chemical compounds. It laid the groundwork for modern chemistry and provided a systematic explanation for chemical reactions based on the combination and rearrangement of atoms.",
+"long": "In 1803, an English chemist put forth a comprehensive summary of atomic theory, which suggested that all matter is made up of atoms. This was a more defined, evidence-based approach that built upon Boyle's law and personal investigations. The chemist proposed the idea, for instance, that 8 grams of oxygen would combine with 1 gram of hydrogen to form 9 grams of water, implying that the compound would have a correlating weight. Dalton even utilized the term 'atom' from Democritus but provided a new theory based on experiments and careful chemical observation rather than speculation."
+},
+{
+"id": "meteorites",
+"year": 1803,
+"title": "Meteorites",
+"field": "Space",
+"desc": "Biot investigated hundreds of supposed meteorite sightings and concluded that the reports were correct and that meteorites did exist and did fall from the sky.",
+"long": "Scientist Chladni's work in the late 18th century prompted the scientific community to seriously consider the possibility of meteorites. Following this, Jean-Baptiste Biot confirmed reports of stone falls by examining falls in a region 100 miles west of Paris, arguably laying the foundation for modern planetary science."
+},
+{
+"id": "cerium-osmium-iridium",
+"year": 1803,
+"title": "Cerium, Osmium, Iridium",
+"field": "Science",
+"desc": "Three new elements were discovered, expanding the periodic table and contributing to the understanding of Earth's composition and the diversity of naturally occurring elements.",
+"long": "New chemical elements, specifically cerium, osmium, and iridium, were discovered in 1803 by the Swedish chemist Jöns Jacob Berzelius and his colleagues. The discovery of these elements not only broadened the scope of known elements during that period but also provided new substances for study and use in various chemical applications."
+},
+{
+"id": "scientific-ballooning",
+"year": 1804,
+"title": "Scientific ballooning",
+"field": "Science",
+"desc": "A balloon carrying Biote and Gay-Lussac ascent reached an alpine peak in the Alps (4 miles elevation) to test the composition of the air and to study Earth's magnetic field. This kicked off significant use of balloons for conducting scientific research and marked the beginning of high-altitude explorations.",
+"long": "Scientific ballooning began in 1804 when Biote and Joseph Louis Gay-Lussac made a balloon ascent reaching a height of 4 miles, reaching an alpine peak in the Alps. This endeavor enabled them to test the composition of the air and to study Earth's magnetic field, contrasting their findings with measurements at sea level, which showed no change, laying the groundwork for future atmospheric explorations."
+},
+{
+"id": "missouri-river",
+"year": 1804,
+"title": "Missouri River",
+"field": "Geography",
+"desc": "The Lewis and Clark Expedition explored the Missouri river to its source, onward to the Oregon Territory, then to the Columbia River into the Pacific ocean, the first ocean-to-ocean and back trip across the United States.",
+"long": ""
+},
+{
+"id": "morphine",
+"year": 1805,
+"title": "Morphine",
+"field": "Science",
+"desc": "An alcoholic extract of immature opium blooms was called laudanum and had first been introduced by Paracelsus. The chemical eventually named morphene and found much more effective in dulling pain and inducing sleep than the juice itself.",
+"long": "Morphine, extracted from opium poppies, was developed as a medication to alleviate severe pain without causing the patient to lose consciousness. It represented a major advancement in pain management and remains one of the most potent analgesics used in medicine today, although it also has the potential for addiction and abuse."
+},
+{
+"id": "asparagine",
+"year": 1806,
+"title": "Asparagine",
+"field": "Science",
+"desc": "Asparagine was the first amino acid to be isolated, marking a significant milestone in the field of organic chemistry and biochemistry. This discovery laid the groundwork for understanding the role of amino acids in biological systems.",
+"long": "In 1806, a substance called asparagine was isolated from asparagus, which was eventually realized to be the first of a set of compounds extremely important to life, known as amino acids. The isolation of asparagine pointed to a broader understanding of the biological importance of amino acids."
+},
+{
+"id": "sodium-and-potassium",
+"year": 1807,
+"title": "Sodium and potassium",
+"field": "Science",
+"desc": "New elemental metals, sodium and potassium, were isolated using electrolysis, a process that uses an electric current to decompose substances. This breakthrough enabled the isolation of several alkali metals, which had a significant impact on the development of the field of electrochemistry.",
+"long": "The isolation of sodium and potassium was achieved by passing an electric current through molten potassium carbonate and then through a solution of sodium carbonate. The electrolysis process resulted in the liberation of the metals which were previously unable to be isolated by conventional chemical means. This experiment led to the isolation of the alkali metals barium, strontium, calcium, and magnesium in the subsequent year and excited the scientific world, propelling the study of electrochemistry."
+},
+{
+"id": "mechanism-of-evolution",
+"year": 1809,
+"title": "Mechanism of evolution",
+"field": "Science",
+"desc": "Lamarck theorized that the use or disuse of certain body parts by animals could lead to the development of these parts and potentially be inherited by offspring, contributing to evolutionary changes.",
+"long": "The theory posited that biological evolution had taken place and could be influenced by organisms' interaction with their environment. For instance, the theory suggested that giraffes developed longer necks to reach leaves, and these traits could be passed on to their offspring. This idea stems from the concept of the inheritance of acquired characteristics, which was later shown not to be a mechanism of inheritance. Nonetheless, the publication stirred interest in the field of evolution."
+},
+{
+"id": "phrenology",
+"year": 1810,
+"title": "Phrenology",
+"field": "Culture",
+"desc": "Gall proposed that the brain's shape played a major role in its function, and that its shape could be determined by the irregularities and bumps externally visible on the skull. This pseudoscientific discipline was later discredited.",
+"long": "In 1810, German physician Franz Joseph Gall published the first volume of a four-volume treatise on the nervous system, which outlined the foundations of phrenology. Gall believed that mental capacities and different parts of the brain involved with different parts of the human body could be correlated with the shape of the brain. According to this theory, certain brain areas corresponding to certain traits resulted in bulges or indentations on the skull, allowing one to analyze a person’s psychological attributes by examining these bumps on the head."
+},
+{
+"id": "chlorine",
+"year": 1810,
+"title": "Chlorine",
+"field": "Science",
+"desc": "Up to now, chlorine was considered to be an oxygen-containing compound. Davy showed this was not so, and that chlorine was a distinct element. ",
+"long": "Chlorine was identified as an element by Davy, refuting prior beliefs that it was a compound containing oxygen as suggested by Scheele. Davy's work on hydrochloric acid showed that chlorine, present within the acid, did not contain oxygen, contrary to the common thought of the time which associated acid properties to the presence of oxygen."
+},
+{
+"id": "avogadro-hypothesis",
+"year": 1811,
+"title": "Avogadro's hypothesis",
+"field": "Science",
+"desc": "This hypothesis states that all gases, under the same conditions of temperature and pressure, contain the same number of particles, thereby explaining the relationship between the volume and number of particles of a gas. ",
+"long": "Avogadro's hypothesis posited that at equal temperature and pressure, equal volumes of gases contain an equal number of particles, regardless of the type of gas. This principle was foundational for developing a deeper understanding of molecular composition and stoichiometry in chemistry. Avogadro suggested that substances like water vapor were composed of molecules, specifically, in water's case, of two hydrogen atoms and one oxygen atom, and not as single atoms as John Dalton had previously suggested. This idea facilitated the conceptual separation of atoms and molecules and led to essential developments in the molecular theory of gases and compounds."
+},
+{
+"id": "iodine",
+"year": 1811,
+"title": "Iodine",
+"field": "Science",
+"desc": "Iodine was discovered by a French chemist when he was manufacturing potassium nitrate for gunpowder and accidentally added too much acid to potassium carbonate. This resulted in a beautiful violet vapor that condensed into dark, lustrous crystals. It was suspected to be a new element, confirmed by chemists, and named from the Greek word for 'violet'.",
+"long": "While manufacturing potassium nitrate needed in gunpowder, Bernard Courtois added too much acid to potassium carbonate and upon heating, obtained a violet vapor that condensed into dark crystals. After his discovery, he suspected it might be a new element and passed it on for confirmation. It was eventually confirmed and the name 'iodine' was suggested, originating from the Greek word for violet."
+},
+{
+"id": "catastrophism",
+"year": 1812,
+"title": "Catastrophism",
+"field": "Science",
+"desc": "Cuvier's concept of catastrophism was based on the observation that fossils seemed to represent extinct creatures and that the deeper the strata, the less the fossils resembled modern organisms, implying a succession of catastrophic events. Cuvier is considered the founder of paleontology.",
+"long": "Georges Cuvier's work on catastrophism involved the study of fossils to advance the idea that Earth's natural history was influenced by a series of catastrophic events that led to the mass extinctions of certain life forms, with new forms arising post these events. This challenged the previously dominant view of uniformitarianism and underlined the belief in successive creations in Earth's history."
+},
+{
+"id": "universe-as-machine",
+"year": 1812,
+"title": "Universe as machine",
+"field": "Science",
+"desc": "Laplace suggested a deterministic universe, proposing that if one knew the position and velocity of every particle, the future and past of the universe could be calculated, eliminating the need for divine intervention. This idea formalized the concept of a universe obeying mechanical laws without exception.",
+"long": "Pierre-Simon Laplace's theory posited that the universe operates like a vast automatic machine following a predetermined path. According to his hypothesis, by knowing the position and velocity of all particles, one could predict future events which led to the philosophical viewpoint that a mechanistic universe operates without the need for a Godly figure to guide or intervene in natural processes."
+},
+{
+"id": "chemical-symbols",
+"year": 1813,
+"title": "Chemical symbols",
+"field": "Science",
+"desc": "A system for representing atoms using simple letters was adopted, with single letters or letter pairs denoting elements like hydrogen (H), oxygen (O), and more complex symbols for compounds. The system simplified the communication and instruction of chemical compositions and continues to be standard in chemistry.",
+"long": "With the advancement of atomic theory, there arose the need for a simple method to represent atoms. In 1813, this led to the use of letters, such as H for a hydrogen atom and O for an oxygen atom, among others, as a standardized system for representing chemical elements and compounds, which simplified scientific communication and is still in use today."
+},
+{
+"id": "plant-classification",
+"year": 1813,
+"title": "Plant classification",
+"field": "Science",
+"desc": "This new plant classification system was a significant part of a large encyclopedia project that improved the system of plant classification beyond that of Linnaeus, providing a more detailed basis for the scientific understanding and categorization of plants.",
+"long": "In 1813, French botanist Augustin-Pyrame de Candolle began an ambitious project to catalog plant life, devising an improved system of classification. While only seven of the projected twenty volumes were published before his death, his work built upon and refined Linnaean taxonomy, offering a more detailed plant classification system still in use today."
+},
+{
+"id": "plane-of-polarized-light",
+"year": 1815,
+"title": "Plane of polarized light",
+"field": "Science",
+"desc": "An experiment showed that two pieces of Iceland spar, if lined up parallel, allow unpolarized light to pass through unimpeded, while if one piece is rotated, the plane of the polarized light must be turned for the light to pass through again. ",
+"long": "In 1815, it was discovered that polarized light could behave differently when it passed through organic substances. Specifically, when Iceland spar (calcite) was used to polarize light, and then the polarized light was passed through an organic liquid, the plane of polarization had to be rotated to allow the light to continue through another piece of Iceland spar. This effect was noted since certain organic liquids caused the light to twist, suggesting an asymmetry in the molecules of organic substances. Important connections were made regarding the interaction between light and the structure of organic molecules."
+},
+{
+"id": "organic-radicals",
+"year": 1815,
+"title": "Organic radicals",
+"field": "Science",
+"desc": "Through work with poisonous gas hydrogen cyanide, he discovered another gas cyanogen (CN_2), and went to show that carbon-nitrogen or cyano group is very stable and maintained integrity through various chemical changes. A significant contribution to organic chemistry.",
+"long": "In 1815, a scientific breakthrough occurred with the understanding of organic radicals, which are groups of atoms that remain consistent through different chemical reactions. The discovery that was highlighted is the identification of cyanogen, a carbon-nitrogen compound, which maintained its structural integrity as it transferred as a unit through various chemical reactions. This concept was instrumental in progressing the understanding of organic chemistry and the behavior of organic compounds during chemical changes."
+},
+{
+"id": "prouts-hypothesis",
+"year": 1815,
+"title": "Prout's hypothesis",
+"field": "Science",
+"desc": "Prout's Hypothesis suggested that all atomic weights are whole number multiples of hydrogen, proposing that hydrogen constitutes the fundamental atom and that other elements are composed of hydrogen atoms. This was a significant step in atomic theory, though it was later proven to be an oversimplification.",
+"long": "An English chemist in 1815 put forward a hypothesis that posited hydrogen as the primary building block of all other elements, suggesting that the atomic weights of elements are integral multiples of the atomic weight of hydrogen. While this theory greatly influenced the atomic theory, it was eventually refined as inaccuracies were discovered. The concept, however, helped pave the way for our current understanding of atomic structure and elemental composition."
+},
+{
+"id": "chlorophyll",
+"year": 1817,
+"title": "Chlorophyll",
+"field": "Science",
+"desc": "The discovery of chlorophyll marked a significant advancement in plant chemistry, identifying the substance responsible for the green pigmentation in plants that also plays a crucial role in photosynthesis by trapping sunlight and converting it into energy, which in turn creates plant tissue and oxygen.",
+"long": "Building on prior research into how plants restore the vitality of air, two scientists in 1817 isolated a green compound from plants that was critical for photosynthesis. This compound, later named chlorophyll, is essential for plants to capture light energy and convert carbon dioxide and water into glucose and oxygen, a process fundamental to plant life and the broader ecosystem."
+},
+{
+"id": "cadmium-lithium-selenium",
+"year": 1817,
+"title": "Cadmium, Lithium, Selenium",
+"field": "Science",
+"desc": "New chemical elements cadmium, lithium, and selenium were isolated, expanding the knowledge of the periodic table and contributing to various scientific and industrial applications.",
+"long": "Friedrich Strohmeyer discovered cadmium in zinc carbonate while analyzing an impurity that appeared during strong heating, naming it after the Latin word for calamine. Johan August Arfwedson identified lithium in mineral petalite, named after the Greek word for stone, and Jöns Jacob Berzelius discovered selenium in sulfuric acid chamber muds, naming it after the Greek word for moon."
+},
+{
+"id": "transverse-light-waves",
+"year": 1818,
+"title": "Transverse light waves",
+"field": "Science",
+"desc": "Fresnel suggested that light was a transverse wave, suggesting that it would explain reflection, refraction, and diffraction. Furthermore, a transverse wave would explain polarization.",
+"long": "In 1818, a French physicist published a treatise that considered transverse light waves in a detailed mathematical way, showing that such waves would account for reflection, refraction, and diffraction just as well as longitudinal waves. The discovery explained polarized light, which couldn't be elucidated by the previously accepted model of light purely consisting of longitudinal waves."
+},
+{
+"id": "enckes-comet",
+"year": 1818,
+"title": "Encke's comet",
+"field": "Space",
+"desc": "Encke's Comet was the second comet after Halley's whose cometary orbit had been worked out. This one was the first short-period comet, with a period of 3.3 years, which challenged previous celestial calculations.",
+"long": "German astronomer Johann Franz Encke calculated the orbit of a comet that was observed by the French astronomer Jean-Louis Pons and concluded that it had a short period of return. The comet, now known as Encke's Comet, had its orbit calculated precisely, something no previous comet had achieved."
+},
+{
+"id": "atomic-weights",
+"year": 1818,
+"title": "Atomic weights",
+"field": "Science",
+"desc": "After thousands of analyses on chemicals, Berzelius published a table of atomic weights. This marked a milestone in the field of chemistry, providing a systematic foundation for the identification and classification of elements.",
+"long": "In 1818, a chemist felt justified in publishing a table of atomic weights based on thousands of analyses on various chemicals after years of meticulous work. This table helped standardize chemical weights and contributed to the progress of chemical science by providing a more consistent way to classify and identify elements."
+},
+{
+"id": "specific-heat",
+"year": 1819,
+"title": "Specific heat",
+"field": "Science",
+"desc": "Each substance requires a certain amount of heat to raise its temperature by 1 degree C. This discovery showed that the specific heat of an element was inversely proportional to its atomic weight.",
+"long": ""
+},
+{
+"id": "glycine",
+"year": 1820,
+"title": "Glycine",
+"field": "Science",
+"desc": "Glycine is a simple amino acid discovered by heating gelatin with acids, which was eventually found to consist of bound substances that could split apart, revealing a hydrogen-oxygen-nitrogen combination distinct from sugars. This discovery was significant in the study of amino acids, which are the building blocks of proteins.",
+"long": "Following Friedrich Accum and others' work on isolating substances from complex compounds, the substance glycine was identified after gelatin, derived from animals, was heated with acids. It was named glycine from the Greek word for sweet, and it was eventually recognized as an amino acid, not a sugar, due to its chemical composition featuring hydrogen, oxygen, and nitrogen atoms, unlike sugars which do not contain nitrogen atoms."
+},
+{
+"id": "antarctic-land",
+"year": 1820,
+"title": "Antarctic land",
+"field": "Geography",
+"desc": "This discovery marked the first known sighting of the Antarctic peninsula, a significant landmass north of the Antarctic Circle, by a British naval commander and a Russian explorer in the same geographical region. It contributed to early 19th-century exploration efforts and laid the groundwork for future Antarctic expeditions.",
+"long": "In the year 1820, both a British naval commander named Edward Bransfield and a Russian explorer named Fabian Gottlieb von Bellingshausen claimed to have sighted land in the Antarctic region. While there was no way to know the exact nature of the landscape, it was later realized that they had encountered the Antarctic peninsula. This discovery played a key role in the history of Antarctic exploration and helped to expand geographic knowledge of the previously uncharted region."
+},
+{
+"id": "seebeck-effect",
+"year": 1821,
+"title": "Seebeck effect",
+"field": "Science",
+"desc": "The Seebeck effect is the first demonstration of thermoelectricity, generating a voltage difference in a circuit composed of two different metals that are connected at two places with different temperatures. This effect found applications in power generation and temperature measurement",
+"long": "German physicist Thomas Johann Seebeck discovered in 1821 that when two different metals were joined at two places and kept at different temperatures, an electric current would be generated. This finding is crucial for understanding thermoelectric effects and is the basis for technologies such as thermocouples and thermoelectric generators."
+},
+{
+"id": "glaciers",
+"year": 1821,
+"title": "Glaciers",
+"field": "Geography",
+"desc": "Venetz suggested that Glaciers must, at some time in the past, have extended far beyond their present limits, explaining why striation patterns resembling glacier movement were found so far from present glaciation.",
+"long": "The section on Glaciers discusses how these massive ice forms were observed to move like rivers of ice down mountainsides, with geologists also noting striations in rocks caused by their movement. A Swiss geologist published material in 1821 proposing that glaciers once extended much further than they do in modern times; however, the idea did not gain immediate traction."
+},
+{
+"id": "projective-geometry",
+"year": 1822,
+"title": "Projective geometry",
+"field": "Math",
+"desc": "Projective geometry is a foundational part of modern geometry dealing with properties and principles that are invariant under projection transformations. Roughly it is the study of the shadows cast by geometric figures.",
+"long": "While he was a prisoner of war during Napoleon’s invasion of Russia, Jean-Victor Poncelet reflected on the properties of geometric figures under projection, leading to publications that established the discipline of projective geometry, which studies the relationships between shapes as they appear in perspective or when projected onto various surfaces."
+},
+{
+"id": "iguanodon",
+"year": 1822,
+"title": "Iguanodon",
+"field": "Science",
+"desc": "The Iguanodon was a significant discovery in paleontology, being a large ancient reptile whose name reflects its iguana-like teeth. As it turned out, this was the first of what would eventually be called dinosaurs.",
+"long": "In 1822, Gideon Mantell made a groundbreaking discovery when he identified the bones and teeth resembling those of an iguana, but much larger, which turned out to be from a previously unknown large ancient reptile later named 'Iguanodon'. It was one of the earliest recognitions of what would become classified as dinosaurs."
+},
+{
+"id": "hieroglyphics",
+"year": 1822,
+"title": "Hieroglyphics",
+"field": "Culture",
+"desc": "The decipherment of hieroglyphics by Jean-François Champollion marked a breakthrough in Egyptology, allowing for the interpretation of ancient Egyptian script.",
+"long": "Jean-François Champollion made a monumental stride in 1822 by deciphering the Egyptian hieroglyphs, realizing some symbols were alphabetic, some syllabic, and others represented a whole word or idea. This discovery established the field of Egyptology, enabling the interpretation of texts from ancient Egyptian civilization."
+},
+{
+"id": "gastric-acidity",
+"year": 1823,
+"title": "Gastric acidity",
+"field": "Science",
+"desc": "Prout discovered that stomach hydrochloric acid is part of what permits digestion without harming the stomach lining. This challenged the vitalist theory by showing the presence of such a strong acid within living organisms.",
+"long": "In 1823, it was discovered that human stomach secretions contained hydrochloric acid, which is a strong acid involved in the digestive process. This acid is part of living beings and aids in digestion without damaging the stomach lining, posing a significant question against the vitalist theory which posited a clear distinction between the chemicals of living organisms and those of nonliving matter."
+},
+{
+"id": "platinum-as-catalyst",
+"year": 1823,
+"title": "Platinum as catalyst",
+"field": "Science",
+"desc": "Döbereiner discovered that hydrogen gas ignites in the presence of powdered platinum without the platinum being consumed, which laid the groundwork for the idea of metal catalysis in chemical reactions. This led to the innovation of an automatic lighter and has significant implications for industrial chemistry.",
+"long": "As early as 1816, it had been noted that platinum seemed to help ignite and burn hydrogen more readily, but in 1823, the effect of powdered platinum acting as a catalyst was observed. It was found that the platinum wasn't consumed in the process. Johann Wolfgang Döbereiner's observation of this phenomenon led to further developments in catalysis and the invention of an automatic lighter, propelling the use of catalysts in industrial chemical reactions."
+},
+{
+"id": "isomers",
+"year": 1823,
+"title": "Isomers",
+"field": "Science",
+"desc": "One chemist studying silver isocyanate, and another studying silver fulminate submitted their findings to a scientific journal whose editor realized that both compounds had the same number of atoms but vastly different properties because of their respective arrangement.",
+"long": "Isomerism was identified as a phenomenon where substances with the same molecular formula possess different chemical properties due to varying arrangements of atoms. This discovery has profound implications in the field of organic chemistry and molecular biology, helping to understand complex molecular structures and their functions."
+},
+{
+"id": "liquefying-gases",
+"year": 1823,
+"title": "Liquefying gases",
+"field": "Science",
+"desc": "The process of liquefying gases was refined using cold and pressure, leading to the ability to study gases in a different state of matter and opening up new possibilities in chemical storage and manipulation.",
+"long": "By applying cold temperatures and high pressure systematically, gases such as chlorine were successfully liquefied. This process allowed for more detailed studies of gases and facilitated advancements in various industrial and scientific applications, including refrigeration."
+},
+{
+"id": "steam-engine-efficiency",
+"year": 1824,
+"title": "Steam engine efficiency",
+"field": "Science",
+"desc": "The study of steam engine efficiency led to the understanding that the maximum efficiency of a steam engine is governed by the temperature difference between the steam at its hottest and the cold water at its coldest. This work laid the groundwork for thermodynamics and the principles of heat engines.",
+"long": "In 1824, a book titled 'On the Motive Power of Fire' elaborated on the principles governing steam engine efficiency, revealing that the vast majority of energy from fuel was wasted as heat. The insights gained from this work by a French physicist were critical in paving the way for future advancements in steam engine technology and the broader field of thermodynamics."
+},
+{
+"id": "distance-of-the-sun",
+"year": 1824,
+"title": "Distance of the Sun",
+"field": "Space",
+"desc": "The distance of the Sun from Earth was recalculated to be 95,300,000 miles, off by only 2.6%",
+"long": "Using the transit of Venus to calculate the Sun's parallax, the distance from Earth to the Sun was revised and provided a more accurate measurement than Cassini's prior estimation. This was a significant improvement in astronomical knowledge and helped refine further calculations in celestial mechanics."
+},
+{
+"id": "no-quintic-equation",
+"year": 1824,
+"title": "No quintic equation",
+"field": "Math",
+"desc": "It was conclusively determined that quintic equations, which are polynomial equations of the fifth degree, cannot be solved by radicals (general solutions using algebraic methods).",
+"long": "After prolonged efforts by mathematicians to solve quintic equations, or polynomial equations of the fifth degree, it became clear that these equations could not be solved by radicals. This discovery was an important milestone in the development of algebra and influenced the study of equations and their solvability."
+},
+{
+"id": "silicon",
+"year": 1824,
+"title": "Silicon",
+"field": "Science",
+"desc": "Silicon was isolated for the first time, highlighting its abundance as the second most common element in Earth's crust and its composition in many natural substances like sand and glass.",
+"long": "The element silicon, known to be abundant in the Earth's crust and a fundamental component of substances such as sand and glass, was successfully isolated. The ability to isolate silicon marked an important breakthrough in chemistry and materials science, which would later play a crucial role in the development of the semiconductor industry."
+},
+{
+"id": "aluminum",
+"year": 1825,
+"title": "Aluminum",
+"field": "Science",
+"desc": "The isolation of aluminum marked the beginning of the use of aluminum as a precious material, until a more cost-effective production method was discovered sixty years later.",
+"long": "The isolation of aluminum was a notable scientific achievement, considering that aluminum is extremely difficult to extract from its compounds. Being the first to isolate aluminum, this discovery laid the groundwork for subsequent research and led to aluminum becoming one of the most widely used metals once a cheaper method of obtaining it in quantity was devised."
+},
+{
+"id": "gastric-digestion",
+"year": 1825,
+"title": "Gastric digestion",
+"field": "Science",
+"desc": "The study of gastric digestion through observation of a Canadian patient with a unique wound and inch-wide fistula leading into his stomach provided early insights into the digestive process and sparked interest in the field.",
+"long": "Following a gunshot wound that resulted in a fistula, a patient's stomach became accessible for direct observations. This circumstance allowed for unprecedented observation and study of the digestive process in action, which led to greater understanding of digestion and had a significant impact on medical science."
+},
+{
+"id": "astigmatism",
+"year": 1825,
+"title": "Astigmatism",
+"field": "Science",
+"desc": "It is possible to have difficulty seeing even if one is neither near nor far sighted, if the cornea of the eye is not perfectly curved. Airy devised eyeglasses to correct for that condition.",
+"long": ""
+},
+{
+"id": "non-euclidean-geometry",
+"year": 1826,
+"title": "Non-Euclidean geometry",
+"field": "Math",
+"desc": "Non-Euclidean geometry is a type of geometry that rejects the common Euclidean postulate that only one line can be drawn parallel to a given line through a given point not on the line. Its development showed that new consistent geometries could exist outside of the traditional Euclidean framework, significantly impacting the field of mathematics.",
+"long": "The idea that Euclidean geometry, based on Euclid's parallel postulate, might not be the only possible self-consistent geometry was considered by various mathematicians. Nikolai Ivanovich Lobachevsky, a Russian mathematician, and János Bolyai, a Hungarian mathematician, independently developed non-Euclidean geometries where the parallel postulate was replaced, leading to different but self-consistent geometrical systems. Lobachevsky published his results in 1829, which asserted that multiple parallel lines could exist, and this new understanding of space later influenced various fields including the theory of relativity."
+},
+{
+"id": "discovery-of-bromine",
+"year": 1826,
+"title": "Discovery of bromine",
+"field": "Science",
+"desc": "Bromine is a chemical element with properties between those of chlorine and iodine, known for its strong, unpleasant odor. It was discovered in the ashes of seaweed.",
+"long": "The discovery of bromine was made by Antoine-Jérôme Balard, who initially thought he had found a compound of chlorine and iodine in a solution extracted from seaweed ashes. Further investigation led him to recognize it as a distinct element, which he named 'bromine' after the Greek word for 'smell' because of its characteristic strong odor. Bromine’s unique properties have found use in various industries and have expanded the understanding of the halogen group in the periodic table."
+},
+{
+"id": "mammalian-ova",
+"year": 1827,
+"title": "Mammalian ova",
+"field": "Science",
+"desc": "The discovery of the mammalian ova involved observing a smaller structure within a dog's ovarian follicles, altering previously held views on mammalian development. It highlighted that mammalian embryological processes were not fundamentally different from other animals.",
+"long": "In 1827, while examining the ovarian follicles of mammals as proposed by earlier work in 1779, a smaller structure within the follicles, identified as the mammalian ova, was observed under a microscope. This discovery was significant as it provided clarity that mammalian development, including human development, shared fundamental processes with other animals."
+},
+{
+"id": "food-classification",
+"year": 1827,
+"title": "Food classification",
+"field": "Science",
+"desc": "The classifications of foodstuffs into broad categories such as carbohydrates, fats, and proteins provided a foundational understanding of dietetics and the chemical nature of nutrition. This helped in identifying the different effects foods may have on the human body.",
+"long": "In 1827, the first broad classification of foodstuffs was established, distinguishing carbohydrates, fats, and proteins due to their different chemical natures and effects on the human body. This system was not exhaustive and acknowledged the existence of important substances within these groups, aiding in the advancement of dietary science."
+},
+{
+"id": "brownian-motion",
+"year": 1827,
+"title": "Brownian motion",
+"field": "Science",
+"desc": "Brownian Motion is the observation of the erratic movement of pollen grains in water, leading to a deeper understanding of particle motion and ultimately providing evidence for the existence of atoms. This phenomenon had no explanation at the time but intrigued many scientists.",
+"long": "British botanist Robert Brown observed in 1827 the random motion of pollen grains suspended in water, which was later named Brownian Motion. Initially puzzling and lacking an explanation, it was not until decades later that this phenomenon would be understood as evidence for atomic theory."
+},
+{
+"id": "notochord",
+"year": 1828,
+"title": "Notochord",
+"field": "Science",
+"desc": "The notochord, a flexible rod in the back, was observed in many fishlike vertebrates and was used to understand evolutionary relationships among species, playing a significant role in the study of comparative embryology.",
+"long": "Starting from 1828, the embryologist's work on the notochord began to reveal how various embryos, regardless of the adult creature's form, shared a basic structural element in their development. The notochord, a flexible rod in the back, was observed in many fishlike vertebrates and was used to understand evolutionary relationships among species, playing a significant role in the study of comparative embryology."
+},
+{
+"id": "thorium",
+"year": 1828,
+"title": "Thorium",
+"field": "Science",
+"desc": "Thorium was discovered as a new chemical element.",
+"long": "In 1828, the chemist identified thorium as a new chemical element, naming it after the Norse god of thunder due to its formidable properties. The identification of thorium added to the understanding of heavy elements in the periodic table and laid the groundwork for its eventual use in areas like nuclear energy and material sciences."
+},
+{
+"id": "group-theory",
+"year": 1830,
+"title": "Group theory",
+"field": "Math",
+"desc": "Group Theory is a mathematical concept that provides a system for studying symmetrical structures known as groups, forming the foundation for modern algebra and various applications in other fields.",
+"long": "French mathematician Évariste Galois developed Group Theory, which has grown to be a fundamental concept in abstract algebra. It's particularly influential in the understanding of symmetrical properties in various mathematical structures and has had extensive applications in physics, including the groundwork for quantum mechanics."
+},
+{
+"id": "uniformitarianism-lyell",
+"year": 1830,
+"title": "Uniformitarianism improved",
+"field": "Science",
+"desc": "Charles Lyell wrote \\\"Principles of Geology\\\", a much better written and clearer explanation of Hutton's ideas, pushing back against Cuvier's catastrophism. Earth's development is now viewed as mainly, uniformitarian.",
+"long": "Uniformitarianism, which was introduced half a century earlier, gained popularity with the publication of Charles Lyell's 'Principles of Geology', where he explained Earth's features and history through consistent, gradual processes rather than sudden, catastrophic events, influencing the development of geology as a science."
+},
+{
+"id": "north-magnetic-pole",
+"year": 1831,
+"title": "North magnetic pole",
+"field": "Geography",
+"desc": "The North Magnetic Pole was precisely located, marking an important geographical discovery in understanding Earth's magnetic properties. The determination of its location provided a reference for magnetic navigation.",
+"long": "The exact position of the Earth's North Magnetic Pole was identified after it was understood to not align with the geographic poles. The effort solved the mystery of Earth's magnetic poles and facilitated improvements in navigation."
+},
+{
+"id": "cell-nucleus",
+"year": 1831,
+"title": "Cell nucleus",
+"field": "Science",
+"desc": "The discovery of the cell nucleus provided fundamental insight into cellular structure and function. It was the first identified and named organelle within plant tissue cells.",
+"long": "The cell nucleus was observed as the central structure within cells, important in their function and biology, and coined with a term meaning 'little nut'. This precursor to genetic discovery was foundational for later developments in cell biology."
+},
+{
+"id": "diffusion",
+"year": 1831,
+"title": "Diffusion",
+"field": "Science",
+"desc": "The natural phenomenon of gas diffusion was characterized, explaining how gases spread out evenly in a space. This concept has broad applications in physics, chemistry, and various industries.",
+"long": "Diffusion describes the process where gas molecules move from areas of higher concentration to lower concentration until they are evenly distributed. This scientific principle is crucial to understanding how molecules interact in various environments."
+},
+{
+"id": "chloroform",
+"year": 1831,
+"title": "Chloroform",
+"field": "Science",
+"desc": "Chloroform is a chemical that was identified for usage in anesthesia. Its discovery opened a new era in medical operations allowing patients to undergo procedures without the pain they would otherwise experience.",
+"long": "Samuel Guthrie discovered chloroform (CHCl3) in 1831. In the following decade, it became an important compound in medical practices, particularly due to its application in anesthesia which revolutionized the way surgical operations could be performed."
+},
+{
+"id": "cyclonic-storms",
+"year": 1831,
+"title": "Cyclonic storms",
+"field": "Science",
+"desc": "Cyclonic storms in the Northern Hemisphere whirl counter-clockwise and that this is opposite to the direction they take in the Southern Hemisphere. This was a significant discovery in meteorology, influencing the understanding of storm systems.",
+"long": "William C. Redfield, an American meteorologist, observed the effects of a hurricane on Connecticut and deduced the pattern of cyclonic storms. He theorized that these storms spin counter-clockwise in the Northern Hemisphere and aligned with this theory; in the Southern Hemisphere, they spin clockwise."
+},
+{
+"id": "diastase",
+"year": 1833,
+"title": "Diastase",
+"field": "Science",
+"desc": "Diastase was the first enzyme to be isolated which has the property of hastening the conversion of starch to glucose, representing a significant leap in biochemical understanding. Because of it, the suffix -ase came to be used to name enzymes.",
+"long": "In 1833, a French chemist discovered diastase, an enzyme extracted from malt extract that accelerated the conversion of starch into glucose. This discovery proved significant by identifying a catalyst from organic material that wasn't a living organism, displaying catalytic activity on its own. The substance was named after the Greek word for 'separate', hinting at its role in breaking down starch into glucose molecules. This was an important milestone in the study of organic chemistry as well as enzymology, showing that yeast is an organic catalyst known since ancient times."
+},
+{
+"id": "cellulose",
+"year": 1833,
+"title": "Cellulose",
+"field": "Science",
+"desc": "Cellulose is a complex carbohydrate that constitutes the primary structural component of plant cell walls. It was discovered to be a distinct from starch, critical for production of paper. As a result, the -ose suffix spread to carbs generally.",
+"long": "The chemical composition of wood was analyzed, and a substance was found that was definitely not starch but could be broken down into glucose units as starch could. This substance, extracted from plant cell walls, was named cellulose. It forms the basis for understanding sugars and substances that can be broken down into sugars, consisting of carbon, hydrogen, and oxygen atoms. The discovery of carbohydrates being more complex than previously thought transformed several industries."
+},
+{
+"id": "dry-ice",
+"year": 1835,
+"title": "Dry ice",
+"field": "Science",
+"desc": "Dry ice is the solid form of carbon dioxide, which was discovered to be capable of cooling a liquid to the point of solidification without the need for lower ambient temperature. This was the lwest temperature reached in the laboratory, lower than any temperature ever recorded anywhere on Earth.",
+"long": "Building on the concept that energy is consumed in converting a liquid to a vapor, it was shown that a liquid could evaporate under conditions where no outside heat could enter, causing cooling. This principle underlies the process of making dry ice, introduced by French chemist C.S.A. Thilorier. Dry ice is widely used for cooling, preservation, and in the context of various scientific applications."
+},
+{
+"id": "coriolis-effect",
+"year": 1835,
+"title": "Coriolis effect",
+"field": "Science",
+"desc": "The Coriolis Effect explains the deflection of moving objects when they are viewed in a rotating reference frame, which significantly impacts meteorological and oceanic processes. It affects the curved paths of winds and water currents on the Earth, and must be taken into account for satellite launches.",
+"long": "A French physicist conceptualized the Coriolis Effect, which occurs due to the Earth's rotation causing an apparent deflection to the paths of moving objects. This concept is critical in understanding the behavior of atmospheric and oceanic circulations and contributes to the explanation of the rotation of cyclones and the general circulation of the atmosphere. The effect increases with latitude, and thus the movement of air or water is more pronounced closer to the poles and less evident at the Equator."
+},
+{
+"id": "pepsin",
+"year": 1836,
+"title": "Pepsin",
+"field": "Science",
+"desc": "Pepsin is an enzyme discovered to facilitate the digestion of food, in particular proteins, within the stomach. Pepsin was the first animal enzyme to be isolated.",
+"long": "The discovery of pepsin marked a significant advancement in medical science and biochemistry as it was one of the first enzymes to be identified. Previously, scientists believed that hydrochloric acid alone was responsible for digesting food in the stomach. The work by Theodor Schwann identified pepsin as the substance in gastric juice that enables the digestion of meat more effectively than acid alone. This discovery led to a greater understanding of the digestive system and helped in treating digestive disorders."
+},
+{
+"id": "ice-age",
+"year": 1837,
+"title": "Ice age",
+"field": "Geography",
+"desc": "The theory of the Ice Age proposed that extensive ice sheets had once covered vast mountainous and lowland areas and this concept was pivotal in advancing the understanding of Earth's climatic and geological history. It was a crucial development in geology and paleoclimatology.",
+"long": "In 1837, Swiss geologists, notably Venetz and subsequently Louis Agassiz, built upon earlier evidence and began advocating for the idea that large ice sheets had once covered more extensive areas than previously thought, including both mountainous terrains and lowlands in the northern parts of continents. This was a significant shift in the scientific understanding of Earth's natural history, implying extensive glaciation in the planet's past, which was later confirmed by further evidence found in Great Britain and North America."
+},
+{
+"id": "chlorophyll-and-cells",
+"year": 1837,
+"title": "Chlorophyll and cells",
+"field": "Science",
+"desc": "Dutrochet definitely showed that photosynthesis took place only in those plant cells that contained chlorophyll. ",
+"long": "The isolation of chlorophyll, which occurred in 1817, led to the widespread acceptance of its presence in plants and the realization of its significant function. By 1837, it was definitively shown that photosynthesis could only occur in plant cells containing chlorophyll, which is essential for converting sunlight into usable chemical energy for the plant, thus underlining the crucial role of chlorophyll in the sustenance of multicellular life."
+},
+{
+"id": "trisecting-an-angle",
+"year": 1837,
+"title": "Trisecting an angle",
+"field": "Math",
+"desc": "Wantzel proved that trisecting an angle solely with a compass and straightedge was impossible under the restrictions set by Greek rules. This result contributed to the field of mathematics by establishing the limitations of certain geometric constructions.",
+"long": "The task of trisecting an angle using only a compass and straightedge has been a problem since the time of the ancient Greeks. Despite numerous attempts, it was proven in 1837 that this construction is impossible to perform under the strict rules established by Greek geometry, which impacts the foundation of geometrical construction and the understanding of mathematical proofs."
+},
+{
+"id": "distance-of-stars",
+"year": 1838,
+"title": "Distance of stars",
+"field": "Science",
+"desc": "Improvements to telescopes enabled better estimation of the distance of stars from Earth by observing the parallax of stars such as Alpha Centauri. This highlighted the vast scale of the cosmos, measured in light years.",
+"long": "By observing the stars and considering the parallax effect due to the Earth's movement around the Sun, astronomers deduced that a displacement of nearby stars should occur. It was difficult to measure until the 1830s due to the parallax being so small. With refinement of techniques, astronomers were finally able to measure stellar distances, leading to the determination that Alpha Centauri is about 4.3 light-years away and Vega is about 11 light-years away."
+},
+{
+"id": "yeast-cells",
+"year": 1838,
+"title": "Yeast cells",
+"field": "Science",
+"desc": "The understanding of yeast cells was enhanced through the discovery of substances within these organisms, which are vital for the fermentation process. This fundamental knowledge of yeast cells contributed to the burgeoning field of microbiology and the study of living organisms at a cellular level.",
+"long": "In 1838, advancements were made in the study of yeast cells, which were found to engage in a process indispensible for the morphology and function of life. The observation under the microscope revealed their budding nature and active growth, affirming their status as living entities."
+},
+{
+"id": "protein",
+"year": 1838,
+"title": "Protein",
+"field": "Science",
+"desc": "Protein was established as a fundamental substance consisting of amino acids. Proteins play essential roles in the structure, function, and regulation of the body's cells and organs.",
+"long": "The elucidation of protein in 1838 involved the identification of a basic building block of living tissue that was more complex than fats or carbohydrates. The substance, named from the Greek word 'proteios' meaning 'first,' underscored the compound's significance in the composition and function of living tissue."
+},
+{
+"id": "morse-code",
+"year": 1838,
+"title": "Morse Code",
+"field": "Design",
+"desc": "Morse Code revolutionized communication by enabling the transmission of text through sequences of dots and dashes, sent over telegraph wires. This system underpinned the early era of electronic communication, facilitating rapid long-distance messaging.",
+"long": "Morse Code was developed as a method to encode text characters as standardized sequences of dots and dashes or short and long signals, respectively. It was designed for use with telegraph systems and greatly improved the speed and efficiency of remote communication across vast distances."
+},
+{
+"id": "photography-of-the-moon",
+"year": 1839,
+"title": "Photography of the moon",
+"field": "Space",
+"desc": "This was the first known instance of astronomical photography, where an image of the Moon was successfully captured, representing a pioneer fusion between photography and astronomy. The achievement marked the beginning of a new era in space observation and documentation.",
+"long": "As exposure times continued to decrease rapidly, photography began to be used for scientific purposes. In 1839, British-born American chemist John William Draper managed to take a photograph of the Moon, becoming the first person to successfully achieve astronomical photography. This achievement showcased the improved delicacy of photographic processes to the point where celestial bodies could be satisfyingly captured."
+},
+{
+"id": "antarctica",
+"year": 1839,
+"title": "Antarctica",
+"field": "Geography",
+"desc": "Cruising in the south Indian Ocean, Wilkes saw enough land at a distance to realize that there was a continent within the Antarctic Circle.",
+"long": ""
+},
+{
+"id": "ross-ice-shelf",
+"year": 1839,
+"title": "Ross ice shelf",
+"field": "Geography",
+"desc": "Following his discovery of the north magnetic pole, Ross ventured south, discovering a large oceanic inlet covered by a vast overhang of ice. He also discovered Mt. Erebus, the southernmost active volcano.",
+"long": ""
+},
+{
+"id": "discovery-of-lanthanum",
+"year": 1839,
+"title": "Lanthanum",
+"field": "Science",
+"desc": "Lanthanum is a chemical element first isolated from a compound of cerium, which was obtained from a rare earth mineral in 1839. It is noteworthy for being named from the Greek word meaning 'hidden' due to its obscurity within those minerals.",
+"long": "The discovery of lanthanum involved the isolation of an element from a compound of cerium, which originated from a rare earth mineral. After its extraction, it was recognized as a new element and called lanthanum, a name derived from a Greek term reflecting its previously overlooked presence amidst other minerals."
+},
+{
+"id": "thermochemistry",
+"year": 1840,
+"title": "Thermochemistry",
+"field": "Science",
+"desc": "Hess's law states that the total heat release or absorption in a chemical reaction is constant, regardless of the pathway taken. It was a significant contribution to the field of thermochemistry and hinted at the laws of thermodynamics.",
+"long": "In 1840, Hess's law was introduced, indicating that regardless of the intermediate steps involved in a chemical process, the total heat change when going from a specific set of reactants to products remains constant. This principle advanced the understanding of energy conservation in chemical reactions, aiding in calculations where direct measurements were impractical."
+},
+{
+"id": "ozone",
+"year": 1840,
+"title": "Ozone",
+"field": "Science",
+"desc": "Ozone (the greek word for \\\"smell\\\") is a gas that was tracked down and identified due to its unique smell in a laboratory, later recognized as a form of oxygen. It has significant implications for chemistry and atmospheric sciences.",
+"long": "In 1840, while working in a poorly ventilated laboratory, a German chemist noticed a unique odor associated with electrical equipment. After investigating, he was able to identify a new gas and named it ozone, after the Greek word for 'smell.' Eventually, an Irish physical chemist identified ozone as a form of oxygen."
+},
+{
+"id": "hypnotism",
+"year": 1841,
+"title": "Hypnotism",
+"field": "Science",
+"desc": "Hypnotism was determined to be a genuine state of mind resembling sleep, where the subject could be highly susceptible to suggestion. It was initially scrutinized following demonstrations of mesmerism.",
+"long": "A British physician investigated mesmerism in 1841 and concluded that hypnotism, a term coined by him from the Greek word for 'sleep', was a real state of trance-like sleep that could be induced through repetitive stimuli, making the patient highly open to suggestion and insensitive to pain. This discovery paved the way for the therapeutic uses of hypnotism in medicine."
+},
+{
+"id": "screw-threads",
+"year": 1841,
+"title": "Screw threads",
+"field": "Design",
+"desc": "Standardization of screw threads contributed to the efficiency and consistency in industrial production, enabling parts from different factories to be interchangeable.",
+"long": "Prior to the standardization, screws and bolts were not uniform, causing problems in fitting parts together across various manufacturers. Joseph Whitworth's techniques for creating standardized screw threads meant that parts could fit together universally, facilitating international trade and industrialization. This advancement was key for allowing widespread interchangeability and efficiency in industrial production."
+},
+{
+"id": "doppler-effect",
+"year": 1842,
+"title": "Doppler effect",
+"field": "Science",
+"desc": "The Doppler Effect is a scientific discovery that explains the change in frequency or wavelength of a wave in relation to an observer moving relative to the wave source, noting the change in pitch of a locomotive's whistle as it approaches and then recedes from the observer, as a primary example.",
+"long": "The discovery of the Doppler Effect was crucial in understanding how the perceived frequency of a wave, such as sound or light, changes when the source of the wave and the observer move relative to each other. An Austrian physicist named Christian Johann Doppler described this principle, noting the change in pitch of a locomotive's whistle as it approaches and then recedes from the observer, as a primary example. The Doppler Effect helps explain a variety of natural phenomena and has significant implications in areas like astronomy (e.g., redshift) and radar speed detection."
+},
+{
+"id": "cranial-index",
+"year": 1842,
+"title": "Cranial Index",
+"field": "Science",
+"desc": "Following Blumenbach's idea of races, Retzius suggested a using the ratio of skull width to skull length. An index of less than .8 was called dolichocephalic (long head) and greater was called brachycephalic (broad head). This failed attempt to split the human species into smaller groups only encouraged racism and ethnocentricity.",
+"long": ""
+},
+{
+"id": "sunspot-cycle",
+"year": 1843,
+"title": "Sunspot cycle",
+"field": "Space",
+"desc": "The periodic change in the sun's activity, including variations in the number of sunspots and a 10-year cycle (later refined to 11-year on average) was characterized during this time.",
+"long": "While sunspots were initially observed by Galileo, it wasn't until this period that the cyclic nature of sunspot activity began to attract attention. The understanding that sunspots increased and decreased in a somewhat regular cycle imparted vital insights into solar behavior and its potential impact on Earth."
+},
+{
+"id": "quaternions",
+"year": 1843,
+"title": "Quaternions",
+"field": "Math",
+"desc": "Quaternions are an extension of complex numbers represented as points involving four numbers, which revolutionized three-dimensional computations and physics. They provided a new mathematical framework, paving the way for future developments in algebra and geometry.",
+"long": "In 1843, it was shown that complex numbers could be treated as points in a plane, and that each could be represented by two numbers. Hamilton tried to deal with hypercomplex numbers that could be represented as points in three or more dimensions and devised quaternions, represented by four numbers."
+},
+{
+"id": "higher-analytic-geometry",
+"year": 1843,
+"title": "Higher analytic geometry",
+"field": "Math",
+"desc": "Higher analytic geometry is an extension to n-dimensional spaces, providing a fundamental tool in understanding geometric properties and behaviors beyond two and three dimensions. It built upon previous work in analytic geometry and increased the potential for mathematical exploration in multiple dimensions.",
+"long": "In 1843, Cayley worked out analytic geometry in three or more dimensions, which would be called n-dimensional analytic geometry. This was based on extending analytic geometry work in two dimensions, expressed by algebraic equations."
+},
+{
+"id": "companion-of-sirius",
+"year": 1844,
+"title": "Companion of Sirius",
+"field": "Space",
+"desc": "Astronomers discovered a companion star to Sirius, indicating that some stars have dark companions which are not luminous enough to be visible. This discovery suggested that stars can be influenced by gravitational pull from unseen objects, a concept which extended our understanding of stellar systems and their components.",
+"long": "The Companion of Sirius refers to the discovery of a star in close proximity to Sirius that followed an irregular path, suggesting the presence of an unseen gravitational influence. Astronomers like Bessel surmised that the erratic motions of certain stars near the end of their lives, such as Sirius and Procyon, indicated they were being influenced by unseen, non-luminous companions—later understood to be white dwarf stars or other dark celestial bodies."
+},
+{
+"id": "astraea",
+"year": 1845,
+"title": "Astraea",
+"field": "Space",
+"desc": "Astraea is an asteroid discovered after a long systematic search, marking the first newfound asteroid in nearly four decades and rekindling interest in asteroid hunting.",
+"long": "The German amateur astronomer Karl Ludwig Hencke conducted a systematic search after 1830 and, after fifteen years of failure, discovered the asteroid named Astraea in 1845. This discovery came after a significant hiatus since the discovery of the first four asteroids (Ceres, Pallas, Juno, and Vesta), challenging the assumption that no other asteroids existed."
+},
+{
+"id": "spiral-nebulas",
+"year": 1845,
+"title": "Spiral nebulas",
+"field": "Space",
+"desc": "Using a telescope with a 72\\\" wide mirror, Parsons observed spiral structures in certain nebulas provided a new understanding of galactic formations and laid the groundwork for future astronomical discoveries.",
+"long": "Before 1845, nebulae in the sky appeared amorphous without discernible structure. However, observations made in 1845, using more advanced telescopes, revealed that some nebulae had spiral structures, a significant breakthrough in astronomy that hinted at the complex composition of distant galaxies."
+},
+{
+"id": "permanent-gases",
+"year": 1845,
+"title": "Permanent gases",
+"field": "Science",
+"desc": "The term 'permanent gases' was coined for a group of gases that resisted liquefaction under higher pressures, challenging chemists with new boundaries of chemical experimentation.",
+"long": "In 1845, Michael Faraday's experiments to liquefy gases previously thought impossible to liquify, such as oxygen and nitrogen, resulted in the identification of these gases which remained gaseous under the conditions applied. This discovery influenced future research and methods for gas manipulation and contributed to the advancement of physical chemistry."
+},
+{
+"id": "neptune",
+"year": 1846,
+"title": "Neptune",
+"field": "Space",
+"desc": "Neptune is a distant planet discovered due to irregularities in Uranus's orbit, which suggested the gravitational influence of another planet. It was observed for the first time in 1846, helped by calculations of its possible location due to these perturbations.",
+"long": "The planet Uranus was found to have irregularities in its orbit, leading astronomers to predict the presence of Neptune based on gravitational influences on Uranus. Initial predictions were made and refined leading to the eventual observation of the planet in 1846, confirming the existence of the then-unknown planet. Neptune was named after the Roman god of the sea and was significant for showing that objects in our solar system could still be discovered."
+},
+{
+"id": "vulcan",
+"year": 1846,
+"title": "Vulcan",
+"field": "Space",
+"desc": "Vulcan was a hypothetical planet proposed to exist inside Mercury's orbit to account for peculiarities in Mercury's orbit, suggested by its perihelion shift. The planet was never found and the anomalies in Mercury's remained a mystery for seventy years.",
+"long": "The search for Vulcan arose from the observation of Mercury's orbit behaving in a way not entirely explained by Newtonian mechanics. The planet Vulcan was postulated to exist closer to the Sun than Mercury. The concept was seriously considered following its proposal, with an aim to seek the planet beginning in 1846, but it was ultimately concluded to not exist after the phenomenon was explained by Einstein's theory."
+},
+{
+"id": "crystal-asymmetry",
+"year": 1846,
+"title": "Crystal asymmetry",
+"field": "Science",
+"desc": "Molecular asymmetry was discovered as a fundamental characteristic in certain molecules that can cause polarized light to twist in different directions. This discovery laid the groundwork for the field of stereochemistry several decades later.",
+"long": "In 1846, a breakthrough in understanding molecular structure was achieved when it was found that certain organic molecules called tartarates could twist polarized light clockwise or counterclockwise depending on their asymmetrical structure. The study revealed that two forms of the same substance could have opposite optical effects, which was later understood to be due to the presence of chirality, a concept crucial to stereochemistry."
+},
+{
+"id": "protoplasm",
+"year": 1846,
+"title": "Protoplasm",
+"field": "Science",
+"desc": "Protoplasm was identified as the vital substance within plant cells responsible for various aspects of life, including growth and development. The discovery of protoplasm enhanced the understanding of the fundamental makeup of cell structure.",
+"long": "Hugo von Mohl (1805–1872), a German botanist, discovered that typical plant cells contain a granular colloidal substance, which he termed protoplasm in 1846. This material, which comprises the living part of the cell, was recognized for its essential role in cell function, representing a significant advancement in cell biology and physiology."
+},
+{
+"id": "cuneiform-decipherment",
+"year": 1846,
+"title": "Cuneiform decipherment",
+"field": "Geography",
+"desc": "The decipherment of cuneiform script opened up understanding of ancient Mesopotamian cultures, providing insight into their language, history, and civilization. This linguistic breakthrough enabled the translation of countless tablets and inscribed artifacts.",
+"long": "In the 19th century, cuneiform, an ancient writing system used in Mesopotamia, was deciphered by linguists and archaeologists. Henry Rawlinson, a British army officer and scholar, played a pivotal role in this achievement, leading to a significant expansion of knowledge about early human civilizations."
+},
+{
+"id": "conservation-of-energy",
+"year": 1847,
+"title": "Conservation of energy",
+"field": "Science",
+"desc": "This fundamental principle states that the total amount of energy in the Universe is constant, where energy cannot be created or destroyed but can change forms, such as between mechanical, electrical, and chemical energies. The law signifies a foundational concept in the field of physics and underscores the interconvertibility of various forms of energy.",
+"long": "The law of conservation of energy, proposed in the mid-19th century, asserts that the total amount of energy in a closed system remains constant over time. It indicates that energy can neither be created nor destroyed but can be transferred or transformed from one form to another. This principle has become a cornerstone of physics, guiding the understanding of energy dynamics across all natural processes."
+},
+{
+"id": "puerperal-fever",
+"year": 1847,
+"title": "Puerperal fever",
+"field": "Science",
+"desc": "Puerperal fever is an infection that historically affected childbearing women, often leading to severe illness and death, and it was discovered that cross-contamination from doctors treating multiple patients could exacerbate the spread of the disease. The recognition of this contagious nature of the fever prompted improved sanitary practices in medical care.",
+"long": "The recognition of puerperal fever, or childbed fever, as a contagious condition marked an important step in medical science, emphasizing the importance of hygiene and sanitation in the prevention of the spread of infections. This discovery led to the understanding that doctors could inadvertently transfer bacteria from one patient to another, influencing the development of antiseptic techniques and a shift toward better sanitary practices in hospitals and childbirth procedures."
+},
+{
+"id": "absolute-zero",
+"year": 1848,
+"title": "Absolute zero",
+"field": "Science",
+"desc": "Absolute Zero is the theoretical lowest temperature possible, where gas volume decreases to zero and all thermal motion ceases. The Kelvin scale measures the Celsius degree of heat that the freezing point of water would be 273.15 K, and it has since been essential in thermodynamics for providing an absolute scale.",
+"long": "British physicist William Thomson, later known as Baron Kelvin, pointed out in 1848 the significance of energy loss affecting not only gases but also liquids and solids. The concept of Absolute Zero reflects a state where temperature can be indefinitely lowered, and all kinetic activity halts, leading to the Kelvin scale of temperature."
+},
+{
+"id": "crab-nebula",
+"year": 1848,
+"title": "Crab Nebula",
+"field": "Space",
+"desc": "Using large new telescopes, the Crab Nebula was identified as a remnant of a bright new star first observed in 1054. It was noted for its irregular shape resembling a crab. Its study has been instrumental in astronomical research and has solidified the importance of the event it represents in history.",
+"long": "In 1848, using a giant telescope, Lord Rosse studied the first nebulosity (M1) on the list Messier had prepared since 1771. He observed a patch of a curiously irregular shape that seemed to have numerous crooked legs like those of a crab, leading him to call it the 'Crab nebula'—a name that has been preserved. This marked an important step in understanding the remnants of supernovas and their role in the cosmos."
+},
+{
+"id": "spectral-line-shift",
+"year": 1848,
+"title": "Spectral line shift",
+"field": "Science",
+"desc": "The spectral line shift or Doppler-Fizeau effect describes the change in wavelength and frequency of light from a source due to its relative motion, which impacts the study of motion and velocity in astronomy. The red shift indicates objects in space receding from the viewer, while the blue shift suggests an approaching motion.",
+"long": "Building on the Doppler effect with respect to sound that had been described in 1842, physicist Armand-Hippolyte-Louis Fizeau proposed in 1848 that the concept could be applied to the waves of light as well. This shift in light's spectral lines could show a shift towards red if the light source is receding or a shift towards blue in case of an approaching light source, enabling better understanding of the universe's expansion and motion of celestial bodies."
+},
+{
+"id": "speed-of-light-experiment",
+"year": 1849,
+"title": "Speed of light refraction",
+"field": "Science",
+"desc": "The speed of light was determined more accurately using an earthbound experiment involving a toothed wheel and mirrors. Foucault's best figure was off by just 0.7 percent. He also found that light traveling through water traveled only three-fourths as fast as through air.",
+"long": "Using an improved method involving a toothed wheel and two mirrors, one stationary and the other rotating, scientists were able to measure the speed of light with increased precision. Light was reflected from the stationary mirror to the rotating one and the timing of the reflection was measured, which allowed for a more accurate speed of light calculation."
+},
+{
+"id": "roche-limit",
+"year": 1849,
+"title": "Roche limit",
+"field": "Space",
+"desc": "The Roche limit refers to the critical distance within which celestial bodies, like Saturn's rings, would disintegrate due to tidal forces rather than accrete into a larger body due to gravitational attraction. This concept explains why certain astronomical bodies form rings instead of coalescing into moons or planets.",
+"long": "The Roche Limit is a concept in celestial mechanics introduced in 1849. It addresses the effect of tidal forces on an object when it is in a close orbital proximity to a larger body, such as a planet. If an object, such as a satellite or ring particle, orbits within this limit, tidal forces overcome the gravitational forces holding it together, and it may break up and disperse, often forming rings rather than a single body. The Roche Limit has helped to understand the formation and nature of rings around planets like Saturn."
+},
+{
+"id": "nerve-fibers",
+"year": 1849,
+"title": "Nerve fibers",
+"field": "Science",
+"desc": "Discovery that nerve fibers are prolonged outgrowths of cells strengthened the cell theory, highlighting the direct extension of cells in the formation of nerves. This finding contributed significantly to the understanding of the nervous system structure.",
+"long": "In 1849, it was revealed that nerve fibers are actually elongated outgrowths of cells. This discovery was pivotal as it supported and reinforced the developing cell theory, illustrating that not only do cells serve as the fundamental units of life, they also directly extend to form more complex structures such as the nerves in the nervous system. Prior to this, the composition of nerves and how they related to cells were not fully understood."
+},
+{
+"id": "second-law-of-thermodynamics",
+"year": 1850,
+"title": "Second law of thermodynamics",
+"field": "Science",
+"desc": "The Second Law of Thermodynamics formalizes the observation that energy in a closed system tends to become less useful over time, a concept also known as entropy. This principle is fundamental in predicting the direction of natural processes and understanding the limits of energy conversion and work.",
+"long": "After the establishment of the First Law of Thermodynamics, which is the law of conservation of energy, the Second Law points out that in any closed system, no energy can be destroyed, but it tends to be spread out and degraded over time, leaving less and less energy in a useful form. German physicist Rudolf Clausius, and later, physicist William Thomson, Lord Kelvin, contributed to refining this concept, stating that while energy remains constant, the entropy of the universe always increases, leading to a gradual decay of available energy for doing work."
+},
+{
+"id": "infrared-waves",
+"year": 1850,
+"title": "Infrared waves",
+"field": "Science",
+"desc": "The discovery of infrared waves unveiled a type of radiation beyond the visible spectrum, detectable due to its heating effects and possessing similar wave properties as visible light. This discovery broadened the understanding of electromagnetic radiation and led to the development of various applications utilizing infrared technology.",
+"long": "Infrared waves were discovered as a form of light that lies outside the visible spectrum, characterized by longer wavelengths that can cause heating effects and are detectable by sensitive instruments. The detection and study of infrared radiation opened new avenues in scientific research and practical applications, such as thermal imaging and remote sensing."
+},
+{
+"id": "ariel-and-umbriel",
+"year": 1851,
+"title": "Ariel and umbriel",
+"field": "Space",
+"desc": "Lassell discovered a third and fourth satellite of Uranus, naming them after spirits in English literature (Shakespeare and Pope).",
+"long": "The last large satellite, Triton, had been discovered five years before 1851, but there were smaller satellites to be found. In 1848, Lassell had discovered an eighth satellite of Saturn named Hyperion. The year 1851 saw the discovery of two more satellites by an American astronomer, Ariel and Umbriel, adding to the growing knowledge of planetary satellites."
+}
+]

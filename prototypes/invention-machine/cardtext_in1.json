@@ -1,0 +1,296 @@
+[
+ {
+  "id": "flush-toilet",
+  "name": "Flush toilet",
+  "year": 1775,
+  "how": "Valve, S-bend trap; ★ standing water in the bend seals out sewer gas",
+  "note": ""
+ },
+ {
+  "id": "dishwasher",
+  "name": "Dishwasher",
+  "year": 1886,
+  "how": "Electric motor, pump, spray arms",
+  "note": ""
+ },
+ {
+  "id": "vacuum-cleaner",
+  "name": "Vacuum cleaner",
+  "year": 1901,
+  "how": "Electric motor, fan, filter",
+  "note": ""
+ },
+ {
+  "id": "water-chlorination",
+  "name": "Water chlorination",
+  "year": 1908,
+  "how": "Chlorine kills germs in drinking water",
+  "note": ""
+ },
+ {
+  "id": "stainless-steel",
+  "name": "Stainless steel",
+  "year": 1913,
+  "how": "Steel, chromium; ★ chromium forms a thin self-healing oxide skin",
+  "note": ""
+ },
+ {
+  "id": "drywall",
+  "name": "Drywall",
+  "year": 1916,
+  "how": "Gypsum board",
+  "note": ""
+ },
+ {
+  "id": "hybrid-corn",
+  "name": "Hybrid corn",
+  "year": 1930,
+  "how": "★ crossing two inbred lines gives a vigorous hybrid",
+  "note": ""
+ },
+ {
+  "id": "blood-bank",
+  "name": "Blood bank",
+  "year": 1937,
+  "how": "Refrigerators, anticoagulant; blood types",
+  "note": ""
+ },
+ {
+  "id": "disposable-diaper",
+  "name": "Disposable diaper",
+  "year": 1948,
+  "how": "Absorbent pad, plastic cover",
+  "note": ""
+ },
+ {
+  "id": "cataract-lens-implant",
+  "name": "Cataract lens implant",
+  "year": 1949,
+  "how": "Plastic lens; bends light",
+  "note": ""
+ },
+ {
+  "id": "hearing-aid",
+  "name": "Hearing aid",
+  "year": 1952,
+  "how": "Transistor, microphone, earphone",
+  "note": ""
+ },
+ {
+  "id": "hvdc-power-lines",
+  "name": "HVDC power lines",
+  "year": 1954,
+  "how": "Thyristors; direct current over long distances",
+  "note": ""
+ },
+ {
+  "id": "container-shipping",
+  "name": "Container shipping",
+  "year": 1956,
+  "how": "Standard boxes, cranes, ships",
+  "note": ""
+ },
+ {
+  "id": "intercontinental-ballistic-missile",
+  "name": "Intercontinental ballistic missile",
+  "year": 1957,
+  "how": "Liquid-fuel rockets, nuclear fusion bomb, inertial guidance",
+  "note": ""
+ },
+ {
+  "id": "liquefied-natural-gas-tanker",
+  "name": "Liquefied natural gas tanker",
+  "year": 1959,
+  "how": "Refrigeration; ★ cooling gas to a liquid shrinks it 600 times",
+  "note": ""
+ },
+ {
+  "id": "planetary-space-probes",
+  "name": "Planetary space probes",
+  "year": 1962,
+  "how": "Rockets, radio, photovoltaic cells",
+  "note": ""
+ },
+ {
+  "id": "beta-blockers",
+  "name": "Beta blockers",
+  "year": 1964,
+  "how": "★ blocks adrenaline's signal to the heart",
+  "note": ""
+ },
+ {
+  "id": "drip-irrigation",
+  "name": "Drip irrigation",
+  "year": 1965,
+  "how": "—",
+  "note": ""
+ },
+ {
+  "id": "high-yield-dwarf-wheat-and-rice",
+  "name": "High-yield dwarf wheat and rice",
+  "year": 1966,
+  "how": "Chemical fertilizer (the Green Revolution)",
+  "note": ""
+ },
+ {
+  "id": "oral-rehydration-therapy",
+  "name": "Oral rehydration therapy",
+  "year": 1968,
+  "how": "★ sugar helps the gut soak up salt and water",
+  "note": ""
+ },
+ {
+  "id": "email",
+  "name": "Email",
+  "year": 1971,
+  "how": "Internet",
+  "note": ""
+ },
+ {
+  "id": "video-game-console",
+  "name": "Video game console",
+  "year": 1972,
+  "how": "Microchips, television",
+  "note": ""
+ },
+ {
+  "id": "pulse-oximeter",
+  "name": "Pulse oximeter",
+  "year": 1974,
+  "how": "LEDs, photodiode; ★ oxygen-rich blood absorbs red and infrared light differently",
+  "note": ""
+ },
+ {
+  "id": "cruise-missile",
+  "name": "Cruise missile",
+  "year": 1977,
+  "how": "Jet engine, terrain-matching guidance",
+  "note": ""
+ },
+ {
+  "id": "anti-lock-brakes",
+  "name": "Anti-lock brakes",
+  "year": 1978,
+  "how": "Microchips, valves, wheel sensors",
+  "note": ""
+ },
+ {
+  "id": "wind-turbine",
+  "name": "Wind turbine",
+  "year": 1980,
+  "how": "Generator; lift (aerodynamics)",
+  "note": "need it to be distinct from windmill? but this maybe fine"
+ },
+ {
+  "id": "compact-disc",
+  "name": "Compact disc",
+  "year": 1982,
+  "how": "Laser, photodiode; ★ error-correcting codes (maths)",
+  "note": ""
+ },
+ {
+  "id": "pcr-dna-copying",
+  "name": "PCR (DNA copying)",
+  "year": 1983,
+  "how": "★ a heat-proof enzyme copies DNA, doubling it each cycle",
+  "note": ""
+ },
+ {
+  "id": "3d-printing",
+  "name": "3D printing",
+  "year": 1986,
+  "how": "Laser, inkjet printer",
+  "note": ""
+ },
+ {
+  "id": "statins",
+  "name": "Statins",
+  "year": 1987,
+  "how": "★ blocks the liver's cholesterol-making enzyme",
+  "note": ""
+ },
+ {
+  "id": "gas-turbine-power-station",
+  "name": "Gas-turbine power station",
+  "year": 1990,
+  "how": "Jet engine on the ground, steam turbine (combined cycle)",
+  "note": "are these common?"
+ },
+ {
+  "id": "compressed-media",
+  "name": "Compressed media",
+  "year": 1992,
+  "how": "★ the ear misses quiet sounds next to loud ones; Fourier analysis",
+  "note": "Boris: the title, not MP3"
+ },
+ {
+  "id": "laser-eye-surgery",
+  "name": "Laser eye surgery",
+  "year": 1995,
+  "how": "Laser; photodissociation",
+  "note": "Boris: LASIK is a brand"
+ },
+ {
+  "id": "genetically-modified-crops",
+  "name": "Genetically modified crops",
+  "year": 1996,
+  "how": "Recombinant DNA",
+  "note": ""
+ },
+ {
+  "id": "mars-rovers",
+  "name": "Mars rovers",
+  "year": 1997,
+  "how": "Robots, radio, photovoltaic cells",
+  "note": ""
+ },
+ {
+  "id": "continuous-glucose-monitor-insulin-pump",
+  "name": "Continuous glucose monitor / insulin pump",
+  "year": 1999,
+  "how": "Microchips, enzyme sensor",
+  "note": ""
+ },
+ {
+  "id": "robotic-surgery",
+  "name": "Robotic surgery",
+  "year": 2000,
+  "how": "Robots, video camera",
+  "note": ""
+ },
+ {
+  "id": "streaming-video",
+  "name": "Streaming video",
+  "year": 2005,
+  "how": "Internet, compressed media",
+  "note": ""
+ },
+ {
+  "id": "smartphone",
+  "name": "Smartphone",
+  "year": 2007,
+  "how": "Microchips, touchscreen, LCD, lithium-ion battery, GPS, CCD; ★ MEMS accelerometer",
+  "note": ""
+ },
+ {
+  "id": "voice-assistants",
+  "name": "Voice assistants",
+  "year": 2011,
+  "how": "Speech recognition, deep learning",
+  "note": ""
+ },
+ {
+  "id": "reusable-rocket-booster",
+  "name": "Reusable rocket booster",
+  "year": 2015,
+  "how": "Liquid-fuel rockets, GPS",
+  "note": ""
+ },
+ {
+  "id": "self-driving-cars",
+  "name": "Self-driving cars",
+  "year": 2020,
+  "how": "Laser rangefinder, GPS, deep learning",
+  "note": ""
+ }
+]

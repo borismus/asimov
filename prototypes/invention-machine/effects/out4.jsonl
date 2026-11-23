@@ -1,0 +1,200 @@
+{"id": "liquid-helium", "verdict": "effect", "effect": "evaporating liquid helium chills things to near absolute zero", "does": "evaporation -> extreme cold", "strength": "strong"}
+{"id": "sunspots-and-magnetism", "verdict": "effect", "effect": "a magnetic field splits a glowing gas's colour lines", "does": "magnetic field -> split spectral lines", "strength": "weak", "note": "lets you read magnetic fields from a distance"}
+{"id": "rickettsia", "verdict": "effect", "effect": "ticks carry spotted fever from one host to another", "does": "tick bite -> infection", "strength": "weak", "note": "control the tick, stop the disease"}
+{"id": "typhus", "verdict": "effect", "effect": "body lice spread typhus", "does": "louse bite -> infection", "strength": "weak", "note": "delousing stops epidemics"}
+{"id": "ribose", "verdict": "not-an-effect"}
+{"id": "north-pole", "verdict": "not-an-effect"}
+{"id": "mohorovicic-discontinuity", "verdict": "effect", "effect": "earthquake waves travel faster in deeper, denser rock", "does": "seismic waves -> map of underground layers", "strength": "strong"}
+{"id": "sex-linked-characteristics", "verdict": "effect", "effect": "genes on the X chromosome show up mostly in males", "does": "inheritance -> sex-linked traits", "strength": "weak"}
+{"id": "mathematics-and-logic", "verdict": "not-an-effect"}
+{"id": "nuclear-atom", "verdict": "effect", "effect": "alpha particles bounce straight back off dense atomic nuclei", "does": "particle beam -> what atoms a surface holds", "strength": "weak"}
+{"id": "electron-charge", "verdict": "effect", "effect": "an electric field can float a charged droplet", "does": "electric field -> lifts charged drops", "strength": "weak"}
+{"id": "cosmic-rays", "verdict": "effect", "effect": "radiation from space grows stronger with altitude", "does": "altitude -> more ionization", "strength": "weak"}
+{"id": "superconductivity", "verdict": "effect", "effect": "very cold metals lose all electrical resistance", "does": "cold -> zero resistance", "strength": "strong"}
+{"id": "chromosome-maps", "verdict": "effect", "effect": "genes far apart on a chromosome get separated more often", "does": "crossover rate -> gene distance", "strength": "weak"}
+{"id": "tumor-virus", "verdict": "effect", "effect": "a virus can make cells grow into a tumour", "does": "virus -> uncontrolled cell growth", "strength": "weak", "note": "such viruses later used to carry genes"}
+{"id": "earthquakes-and-faults", "verdict": "effect", "effect": "strain builds on a fault until it suddenly slips", "does": "slow strain -> sudden quake", "strength": "weak"}
+{"id": "south-pole", "verdict": "not-an-effect"}
+{"id": "cepheid-variables", "verdict": "effect", "effect": "a pulsing star's period reveals its true brightness", "does": "pulse period -> distance", "strength": "strong", "note": "only for stars"}
+{"id": "nebular-velocities", "verdict": "effect", "effect": "light from an approaching source shifts toward blue", "does": "motion -> colour shift", "strength": "strong", "note": "Doppler shift; not yet on the board"}
+{"id": "continental-drift", "verdict": "not-an-effect", "note": "too slow to harness"}
+{"id": "x-ray-diffraction", "verdict": "effect", "effect": "crystals scatter X-rays into telltale patterns", "does": "X-rays -> crystal structure", "strength": "strong"}
+{"id": "neon-varieties", "verdict": "effect", "effect": "a magnetic field bends lighter ions more sharply", "does": "magnetic field -> sorts atoms by mass", "strength": "strong"}
+{"id": "dipole-moments", "verdict": "effect", "effect": "lopsided molecules twist to line up in an electric field", "does": "electric field -> molecules turn", "strength": "strong"}
+{"id": "vitamins", "verdict": "same-as", "sameAs": "the body needs trace nutrients"}
+{"id": "isotopes", "verdict": "effect", "effect": "a radioactive atom turns into a different element", "does": "decay -> new element", "strength": "weak"}
+{"id": "lead-isotopes", "verdict": "effect", "effect": "uranium decays into lead at a steady rate", "does": "lead-to-uranium ratio -> rock age", "strength": "strong"}
+{"id": "stark-effect", "verdict": "effect", "effect": "an electric field splits a glowing gas's colour lines", "does": "electric field -> split spectral lines", "strength": "weak"}
+{"id": "magellanic-cloud-distances", "verdict": "not-an-effect"}
+{"id": "ozonosphere", "verdict": "effect", "effect": "ozone soaks up ultraviolet light", "does": "ozone -> blocks UV", "strength": "strong"}
+{"id": "vitamins-a-and-b", "verdict": "same-as", "sameAs": "the body needs trace nutrients"}
+{"id": "michaelis-menten-equation", "verdict": "effect", "effect": "an enzyme's speed levels off as more fuel is added", "does": "more substrate -> capped rate", "strength": "weak"}
+{"id": "glycolysis", "verdict": "effect", "effect": "joining two metals turns a temperature difference into current", "does": "temperature difference -> current", "strength": "strong", "note": "thermocouple; card measures muscle heat with it"}
+{"id": "atomic-number", "verdict": "effect", "effect": "each element gives off its own X-ray frequency", "does": "X-rays -> identify element", "strength": "strong"}
+{"id": "x-ray-wavelength", "verdict": "effect", "effect": "crystal layer spacing sets the angle X-rays reflect", "does": "angle -> X-ray wavelength", "strength": "strong", "note": "overlaps x-ray-diffraction"}
+{"id": "ions-and-crystals", "verdict": "not-an-effect"}
+{"id": "beta-particle-energies", "verdict": "not-an-effect"}
+{"id": "proton", "verdict": "not-an-effect"}
+{"id": "main-sequence", "verdict": "not-an-effect"}
+{"id": "white-dwarfs", "verdict": "not-an-effect"}
+{"id": "jupiter-ix", "verdict": "not-an-effect"}
+{"id": "acetylcholine", "verdict": "same-as", "sameAs": "chemicals carry signals between nerves"}
+{"id": "earths-mantle-and-core", "verdict": "effect", "effect": "earthquake shear waves cannot pass through liquid", "does": "seismic waves -> find liquid layers", "strength": "weak"}
+{"id": "behaviorism", "verdict": "effect", "effect": "rewards and repetition train a response", "does": "repetition -> learned response", "strength": "weak"}
+{"id": "pellagra", "verdict": "same-as", "sameAs": "the body needs trace nutrients"}
+{"id": "thyroxine", "verdict": "effect", "effect": "thyroid hormone sets the body's metabolic rate", "does": "hormone -> faster metabolism", "strength": "strong", "note": "specific case of hormones regulating the body"}
+{"id": "bacteriophages", "verdict": "effect", "effect": "some viruses kill only bacteria", "does": "virus -> dead bacteria", "strength": "strong"}
+{"id": "elliptical-electron-orbits", "verdict": "not-an-effect"}
+{"id": "hydrogen-helium-conversion", "verdict": "same-as", "sameAs": "light atoms fuse, releasing energy"}
+{"id": "general-relativity", "verdict": "same-as", "sameAs": "gravity slows clocks"}
+{"id": "black-holes", "verdict": "not-an-effect"}
+{"id": "electrons-and-chemical-bonds", "verdict": "not-an-effect", "note": "theory of bonding"}
+{"id": "expanding-universe-theory", "verdict": "not-an-effect"}
+{"id": "microcrystalline-diffraction", "verdict": "effect", "effect": "powders scatter X-rays into patterns that identify them", "does": "X-rays -> what a powder is", "strength": "strong"}
+{"id": "protactinium", "verdict": "not-an-effect"}
+{"id": "center-of-the-galaxy", "verdict": "not-an-effect"}
+{"id": "spectral-classes", "verdict": "not-an-effect"}
+{"id": "radioactive-tracers", "verdict": "effect", "effect": "a radioactive atom behaves chemically like its stable twin", "does": "radiation -> tracks where a substance goes", "strength": "strong"}
+{"id": "embryo-organizer", "verdict": "effect", "effect": "some embryo cells steer how their neighbours develop", "does": "signal -> tissue type", "strength": "weak"}
+{"id": "nuclear-reaction", "verdict": "effect", "effect": "fast alpha particles turn nitrogen into oxygen", "does": "particle hit -> new element", "strength": "weak"}
+{"id": "gravitational-deflection-of-light", "verdict": "effect", "effect": "gravity bends light", "does": "mass -> bent light", "strength": "tiny", "note": "only star-sized masses"}
+{"id": "bee-communication", "verdict": "effect", "effect": "bees see ultraviolet and dance to show where food is", "does": "dance -> direction and distance", "strength": "weak"}
+{"id": "stellar-diameter", "verdict": "same-as", "sameAs": "light waves interfere"}
+{"id": "novas-in-andromeda", "verdict": "not-an-effect"}
+{"id": "hidalgo", "verdict": "not-an-effect"}
+{"id": "dendrochronology", "verdict": "effect", "effect": "trees grow one ring a year, wide or narrow by weather", "does": "ring pattern -> date", "strength": "strong"}
+{"id": "climatic-cycles", "verdict": "not-an-effect"}
+{"id": "anemia", "verdict": "effect", "effect": "iron in the diet rebuilds lost blood", "does": "iron -> more red blood", "strength": "strong"}
+{"id": "air-masses", "verdict": "effect", "effect": "weather changes where warm and cold air masses meet", "does": "fronts -> forecast", "strength": "weak"}
+{"id": "insulin", "verdict": "effect", "effect": "insulin lets the body use sugar", "does": "hormone -> lower blood sugar", "strength": "strong"}
+{"id": "rickets", "verdict": "same-as", "sameAs": "the body needs trace nutrients"}
+{"id": "glutathione", "verdict": "effect", "effect": "glutathione flips between two states, mopping up oxidants", "does": "oxidant -> neutralized", "strength": "weak"}
+{"id": "introvert-and-extrovert", "verdict": "not-an-effect"}
+{"id": "rorschach-test", "verdict": "not-an-effect"}
+{"id": "sumeria", "verdict": "not-an-effect"}
+{"id": "tutankhamens-tomb", "verdict": "not-an-effect"}
+{"id": "vitamin-e", "verdict": "same-as", "sameAs": "the body needs trace nutrients"}
+{"id": "growth-hormone", "verdict": "effect", "effect": "a pituitary hormone makes the body grow", "does": "hormone -> growth", "strength": "strong"}
+{"id": "lysozyme", "verdict": "effect", "effect": "an enzyme in tears breaks open bacteria", "does": "enzyme -> dead bacteria", "strength": "strong"}
+{"id": "origin-of-life", "verdict": "not-an-effect"}
+{"id": "expanding-universe-model", "verdict": "not-an-effect"}
+{"id": "debye-huckel-equations", "verdict": "effect", "effect": "ions in a strong solution hold each other back", "does": "concentration -> less free ions", "strength": "weak"}
+{"id": "acid-base-pairs", "verdict": "not-an-effect", "note": "a definition"}
+{"id": "coenzyme-structure", "verdict": "not-an-effect"}
+{"id": "cepheids-in-andromeda", "verdict": "not-an-effect"}
+{"id": "hafnium", "verdict": "not-an-effect"}
+{"id": "australopithecus", "verdict": "not-an-effect"}
+{"id": "bose-einstein-statistics", "verdict": "not-an-effect"}
+{"id": "ionosphere", "verdict": "same-as", "sameAs": "the ionosphere reflects radio"}
+{"id": "cytochrome", "verdict": "effect", "effect": "cytochrome changes colour as it gains and loses oxygen", "does": "oxygen -> colour change", "strength": "weak"}
+{"id": "packing-fraction", "verdict": "effect", "effect": "repacking an atom's nucleus turns a little mass into energy", "does": "mass -> energy", "strength": "strong", "note": "underlies fission and fusion"}
+{"id": "exclusion-principle", "verdict": "not-an-effect"}
+{"id": "particle-spin", "verdict": "same-as", "sameAs": "atoms are tiny magnets"}
+{"id": "matrix-mechanics", "verdict": "not-an-effect"}
+{"id": "magnetism-and-absolute-zero", "verdict": "effect", "effect": "demagnetizing a very cold salt cools it further", "does": "removing magnetic field -> cooling", "strength": "strong"}
+{"id": "rhenium", "verdict": "not-an-effect"}
+{"id": "parathormone", "verdict": "effect", "effect": "parathyroid hormone controls calcium in the blood", "does": "hormone -> blood calcium", "strength": "weak"}
+{"id": "iron-and-cytochrome", "verdict": "not-an-effect"}
+{"id": "wave-mechanics", "verdict": "same-as", "sameAs": "electrons travel as waves"}
+{"id": "wave-packets", "verdict": "not-an-effect"}
+{"id": "fermi-dirac-statistics", "verdict": "not-an-effect"}
+{"id": "galactic-rotation", "verdict": "not-an-effect"}
+{"id": "enzyme-crystallization", "verdict": "effect", "effect": "a concentrated enzyme forms pure crystals", "does": "concentration -> purified protein", "strength": "weak"}
+{"id": "pernicious-anemia", "verdict": "same-as", "sameAs": "the body needs trace nutrients"}
+{"id": "uncertainty-principle", "verdict": "not-an-effect", "note": "a limit, not a usable effect"}
+{"id": "electron-diffraction", "verdict": "same-as", "sameAs": "electrons travel as waves"}
+{"id": "speed-of-light-michelson", "verdict": "same-as", "sameAs": "signal delay gives distance"}
+{"id": "cosmic-egg", "verdict": "not-an-effect"}
+{"id": "electron-bonds", "verdict": "not-an-effect"}
+{"id": "peking-man", "verdict": "not-an-effect"}
+{"id": "x-rays-and-mutations", "verdict": "effect", "effect": "X-rays cause mutations", "does": "radiation -> genetic change", "strength": "strong"}
+{"id": "m-and-n-blood-groups", "verdict": "effect", "effect": "blood carries inherited markers", "does": "blood test -> family ties", "strength": "weak"}
+{"id": "penicillin", "verdict": "same-as", "sameAs": "a chemical kills the germ but not the patient"}
+{"id": "diels-alder-reaction", "verdict": "effect", "effect": "two molecules snap together into a ring", "does": "mixing -> ring molecules", "strength": "strong"}
+{"id": "raman-spectra", "verdict": "effect", "effect": "molecules shift the colour of light they scatter", "does": "light -> molecular fingerprint", "strength": "strong"}
+{"id": "game-theory", "verdict": "effect", "effect": "best strategies can be calculated for fixed-rule games", "does": "rules -> optimal strategy", "strength": "weak"}
+{"id": "hexuronic-acid", "verdict": "not-an-effect"}
+{"id": "receding-galaxies", "verdict": "not-an-effect"}
+{"id": "solar-composition", "verdict": "not-an-effect"}
+{"id": "solar-energy", "verdict": "same-as", "sameAs": "light atoms fuse, releasing energy"}
+{"id": "oxygen-isotopes-and-atomic-weights", "verdict": "not-an-effect"}
+{"id": "deoxyribose", "verdict": "not-an-effect"}
+{"id": "heme", "verdict": "effect", "effect": "heme carries oxygen in the blood", "does": "oxygen -> carried", "strength": "weak"}
+{"id": "estrone", "verdict": "effect", "effect": "sex hormones shape male and female bodies", "does": "hormone -> body development", "strength": "weak"}
+{"id": "intrinsic-factor", "verdict": "effect", "effect": "a stomach factor is needed to absorb vitamin B12", "does": "factor -> vitamin uptake", "strength": "weak"}
+{"id": "child-development", "verdict": "not-an-effect"}
+{"id": "pluto", "verdict": "effect", "effect": "comparing two pictures taken days apart reveals what moved", "does": "two images -> motion", "strength": "weak"}
+{"id": "surface-temperature-of-the-moon", "verdict": "effect", "effect": "the moon's dusty surface holds almost no heat", "does": "sunlight off -> fast cooling", "strength": "weak"}
+{"id": "interstellar-matter", "verdict": "same-as", "sameAs": "small particles scatter light"}
+{"id": "antimatter", "verdict": "not-an-effect", "note": "a prediction; see positron"}
+{"id": "enzyme-crystallization-confirmed", "verdict": "not-an-effect"}
+{"id": "vitamin-a-structure", "verdict": "effect", "effect": "the body makes vitamin A from carrot pigment", "does": "carotene -> vitamin A", "strength": "weak"}
+{"id": "godels-proof", "verdict": "not-an-effect"}
+{"id": "neutrino", "verdict": "effect", "effect": "neutrinos pass through almost anything", "does": "matter -> no stopping", "strength": "tiny"}
+{"id": "deuterium", "verdict": "effect", "effect": "heavy hydrogen evaporates more slowly than light hydrogen", "does": "evaporation -> separates isotopes", "strength": "strong"}
+{"id": "resonance", "verdict": "not-an-effect", "note": "theory of bonding"}
+{"id": "androsterone", "verdict": "effect", "effect": "a testicular hormone drives male development", "does": "hormone -> male traits", "strength": "weak"}
+{"id": "virus-particles", "verdict": "effect", "effect": "fine filters stop bacteria but let viruses through", "does": "filter -> sorts by size", "strength": "weak"}
+{"id": "proton-neutron-nucleus", "verdict": "not-an-effect"}
+{"id": "positron", "verdict": "effect", "effect": "electrons and positrons destroy each other, giving gamma rays", "does": "annihilation -> gamma rays", "strength": "strong", "note": "later basis of PET scans"}
+{"id": "particle-accelerator-and-nuclear-reaction", "verdict": "effect", "effect": "fast protons split lithium into alpha particles", "does": "accelerated protons -> nuclear reaction", "strength": "weak"}
+{"id": "radio-waves-from-space", "verdict": "not-an-effect"}
+{"id": "ascorbic-acid", "verdict": "not-an-effect"}
+{"id": "urea-cycle", "verdict": "effect", "effect": "the liver turns toxic ammonia into harmless urea", "does": "ammonia -> urea", "strength": "weak"}
+{"id": "molecular-beams", "verdict": "effect", "effect": "gas leaking through a pinhole into vacuum forms a tight beam", "does": "pinhole -> atom beam", "strength": "weak"}
+{"id": "approach-to-absolute-zero", "verdict": "effect", "effect": "demagnetizing a very cold salt cools it further", "does": "removing magnetic field -> cooling", "strength": "strong", "note": "same as magnetism-and-absolute-zero"}
+{"id": "weak-interaction", "verdict": "not-an-effect"}
+{"id": "artificial-radioactivity", "verdict": "effect", "effect": "bombarding stable atoms makes them radioactive", "does": "particle beam -> radioisotope", "strength": "strong"}
+{"id": "cherenkov-radiation", "verdict": "effect", "effect": "particles faster than light in a medium leave a glow", "does": "fast particle -> blue light", "strength": "weak"}
+{"id": "supernovas", "verdict": "not-an-effect"}
+{"id": "neutron-stars-hypothesis", "verdict": "not-an-effect"}
+{"id": "sex-hormones", "verdict": "effect", "effect": "progesterone keeps a pregnancy going", "does": "hormone -> pregnancy", "strength": "weak"}
+{"id": "uranium-two-three-five", "verdict": "not-an-effect"}
+{"id": "isotopic-tracers", "verdict": "effect", "effect": "heavy stable isotopes tag molecules without radiation", "does": "isotope tag -> tracks molecules", "strength": "strong"}
+{"id": "crystalline-viruses", "verdict": "effect", "effect": "viruses can crystallize and stay infectious", "does": "crystals -> stored virus", "strength": "weak"}
+{"id": "strong-interaction", "verdict": "not-an-effect"}
+{"id": "sulfanilamide", "verdict": "same-as", "sameAs": "a chemical kills the germ but not the patient"}
+{"id": "riboflavin", "verdict": "same-as", "sameAs": "the body needs trace nutrients"}
+{"id": "corticoids", "verdict": "effect", "effect": "cortisone calms inflammation", "does": "hormone -> less inflammation", "strength": "strong"}
+{"id": "prostaglandins", "verdict": "effect", "effect": "prostaglandins trigger muscle and tissue responses", "does": "signal -> body response", "strength": "weak"}
+{"id": "imprinting", "verdict": "effect", "effect": "hatchlings follow the first moving thing they see", "does": "first sight -> lasting bond", "strength": "weak"}
+{"id": "richter-scale", "verdict": "not-an-effect"}
+{"id": "thiamine", "verdict": "same-as", "sameAs": "the body needs trace nutrients"}
+{"id": "technetium", "verdict": "not-an-effect"}
+{"id": "muon", "verdict": "not-an-effect"}
+{"id": "virus-nucleic-acid", "verdict": "not-an-effect"}
+{"id": "citric-acid-cycle", "verdict": "effect", "effect": "cells burn sugar to carbon dioxide and water, step by step", "does": "sugar -> energy", "strength": "weak"}
+{"id": "niacin", "verdict": "same-as", "sameAs": "the body needs trace nutrients"}
+{"id": "evolution-and-mutation", "verdict": "effect", "effect": "mutation plus selection breeds new forms", "does": "variation -> adaptation", "strength": "weak"}
+{"id": "coelacanth", "verdict": "not-an-effect"}
+{"id": "nuclear-fission", "verdict": "same-as", "sameAs": "a neutron splits a heavy atom, freeing more neutrons"}
+{"id": "francium", "verdict": "not-an-effect"}
+{"id": "neutron-stars-theory", "verdict": "not-an-effect"}
+{"id": "vitamin-k", "verdict": "effect", "effect": "vitamin K makes blood clot", "does": "vitamin -> clotting", "strength": "strong"}
+{"id": "rh-factor", "verdict": "effect", "effect": "an Rh-negative mother's antibodies attack an Rh-positive baby's blood", "does": "mismatch -> immune attack", "strength": "weak", "note": "preventable once understood"}
+{"id": "tyrothricin", "verdict": "effect", "effect": "soil bacteria make germ-killing substances", "does": "soil microbe -> antibiotic", "strength": "strong"}
+{"id": "essential-minerals", "verdict": "same-as", "sameAs": "the body needs trace nutrients"}
+{"id": "ddt", "verdict": "effect", "effect": "a chemical kills insects on contact", "does": "chemical -> dead insects", "strength": "strong"}
+{"id": "neptunium-and-plutonium", "verdict": "not-an-effect"}
+{"id": "uranium-hexafluoride", "verdict": "effect", "effect": "lighter gas molecules seep through a porous barrier faster", "does": "porous barrier -> separates isotopes", "strength": "strong"}
+{"id": "astatine", "verdict": "not-an-effect"}
+{"id": "streptomycin", "verdict": "same-as", "sameAs": "a chemical kills the germ but not the patient"}
+{"id": "high-energy-phosphate", "verdict": "effect", "effect": "ATP's phosphate bond stores energy cells spend", "does": "bond -> energy", "strength": "weak"}
+{"id": "polarimetry", "verdict": "effect", "effect": "current through a solution plateaus at a height set by each substance", "does": "voltage sweep -> chemical amounts", "strength": "strong", "note": "the card describes polarography"}
+{"id": "distance-of-the-sun-eros", "verdict": "not-an-effect"}
+{"id": "neurospora", "verdict": "effect", "effect": "each gene makes one enzyme", "does": "gene knockout -> lost nutrient", "strength": "weak"}
+{"id": "biotin", "verdict": "same-as", "sameAs": "the body needs trace nutrients"}
+{"id": "bacteriophage-structure", "verdict": "not-an-effect"}
+{"id": "adrenocorticotrophic-hormone", "verdict": "effect", "effect": "a pituitary hormone switches on the adrenal glands", "does": "hormone -> adrenal hormones", "strength": "weak"}
+{"id": "lysergic-acid-diethylamide", "verdict": "effect", "effect": "a tiny dose of a chemical causes hallucinations", "does": "chemical -> altered perception", "strength": "weak"}
+{"id": "seyfert-galaxies", "verdict": "not-an-effect"}
+{"id": "dna-as-genetic-material", "verdict": "same-as", "sameAs": "a cell follows genes put into it"}
+{"id": "new-nebular-hypothesis", "verdict": "not-an-effect"}
+{"id": "radio-waves-from-hydrogen", "verdict": "effect", "effect": "cold hydrogen gives off 21-centimetre radio waves", "does": "hydrogen -> fixed radio frequency", "strength": "weak", "note": "later basis of hydrogen maser clocks"}
+{"id": "americium-and-curium", "verdict": "not-an-effect"}
+{"id": "promethium", "verdict": "not-an-effect"}
+{"id": "viral-mutations", "verdict": "effect", "effect": "viruses mutate and slip past immunity", "does": "mutation -> escapes immunity", "strength": "weak"}
+{"id": "jet-streams", "verdict": "effect", "effect": "fast steady winds blow high in the sky", "does": "altitude -> fast tailwind", "strength": "strong"}
+{"id": "microwave-reflection-from-the-moon", "verdict": "same-as", "sameAs": "signal delay gives distance"}
+{"id": "nuclear-magnetic-resonance", "verdict": "same-as", "sameAs": "atomic resonance"}
+{"id": "noradrenaline", "verdict": "same-as", "sameAs": "chemicals carry signals between nerves"}

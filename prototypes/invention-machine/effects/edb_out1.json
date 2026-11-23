@@ -1,0 +1,1077 @@
+[
+ {
+  "edb": "Abrasion",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "An everyday process (wearing a surface away), not a named effect; the deck has Carborundum for abrasives."
+ },
+ {
+  "edb": "Absorption (EM radiation)",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A word for a whole family of light-matter processes, too general to be one effect."
+ },
+ {
+  "edb": "Absorption (physical)",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "An everyday process (a sponge soaking up water, gas dissolving into a liquid), not a specific effect."
+ },
+ {
+  "edb": "Absorptive Filter",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A kind of device, not an effect."
+ },
+ {
+  "edb": "Acoustic Absorption",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Sabine's Acoustics card is about how room surfaces soak up sound and cut reverberation.",
+  "card": "acoustics"
+ },
+ {
+  "edb": "Acoustic Cavitation",
+  "verdict": "merge",
+  "rule": "e4",
+  "borderline": false,
+  "why": "Cavitation caused by sound rather than flow; one variant of Cavitation, which is kept in this batch.",
+  "into": "cavitation"
+ },
+ {
+  "edb": "Acoustic Emission",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "A specific effect with a clear detecting job (hearing cracks grow before a structure fails).",
+  "id": "acoustic-emission",
+  "title": "Acoustic emission",
+  "year": 1950,
+  "inventor": "Joseph Kaiser",
+  "location": "Germany",
+  "field": "Science: Physics",
+  "description": "A metal or rock under growing strain gives off tiny bursts of sound each time a crack jumps forward or a grain slips, like the 'cry' a bar of tin makes when bent. Joseph Kaiser studied it systematically in 1950, and now sensors stuck to tanks, bridges and aircraft listen for cracks before they become failures.",
+  "effect": "a material under strain clicks with tiny bursts of sound as cracks grow",
+  "usedIn": [
+   "Crack monitoring of pressure vessels and storage tanks",
+   "Bridge and aircraft-wing structural health monitoring",
+   "Pipeline leak detection"
+  ],
+  "strength": "The clicks are far too faint and high-pitched to hear, but a sensor glued to a steel tank can pick up a crack growing a fraction of a millimetre several metres away.",
+  "deps": [
+   "piezoelectricity"
+  ]
+ },
+ {
+  "edb": "Acoustic Radiation Pressure",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "A clear named effect that moves and holds things without touching them, with many uses still untried.",
+  "id": "acoustic-radiation-pressure",
+  "title": "Acoustic radiation pressure",
+  "year": 1902,
+  "inventor": "Lord Rayleigh",
+  "location": "England",
+  "field": "Science: Physics",
+  "description": "A strong sound wave pushes steadily on whatever it hits, and in a standing wave small beads or droplets get trapped and float in mid-air at the quiet spots. Lord Rayleigh worked out the push in 1902; today it levitates samples in labs, sorts cells on chips and lets you feel buttons in mid-air.",
+  "effect": "a strong sound wave pushes steadily on objects and can float them in mid-air",
+  "usedIn": [
+   "Acoustic levitators for containerless lab chemistry",
+   "Acoustic tweezers that sort blood cells on a chip",
+   "Mid-air ultrasonic haptics (Ultraleap)",
+   "Shear-wave elastography in ultrasound scanners"
+  ],
+  "strength": "Weak: ultrasound can float droplets and foam beads a few millimetres across, but the force is only a few thousandths of a newton.",
+  "deps": [
+   "acoustics",
+   "piezoelectricity"
+  ]
+ },
+ {
+  "edb": "Acousto-optic Effect",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Named effect with a clear job (steering and switching laser beams with sound); Brillouin scattering, in this batch, is the same light-off-sound interaction and merges here. Brillouin predicted it in 1922; Debye and Sears showed it in 1932.",
+  "id": "acousto-optic-effect",
+  "title": "Acousto-optic effect",
+  "year": 1922,
+  "inventor": "Léon Brillouin",
+  "location": "France",
+  "field": "Science: Physics",
+  "description": "A sound wave running through a clear crystal makes ripples of squeezed and stretched material that bend a light beam like a grating; change the sound's pitch and the beam swings to a new angle. Léon Brillouin predicted it in 1922, and it now switches and steers laser beams with no moving parts.",
+  "effect": "a sound wave in a crystal bends and shifts a light beam passing through",
+  "usedIn": [
+   "Acousto-optic modulators in laser printers and laser engravers",
+   "Q-switches that make pulsed lasers",
+   "Brillouin fibre sensors that measure strain along kilometres of pipeline"
+  ],
+  "strength": "An ultrasound wave in a crystal can redirect most of a laser beam in under a microsecond, millions of times faster than a moving mirror.",
+  "deps": [
+   "light-diffraction",
+   "piezoelectricity"
+  ]
+ },
+ {
+  "edb": "Added Mass",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A correction term in fluid engineering (the extra inertia of water dragged along), not an effect that does a job."
+ },
+ {
+  "edb": "Adiabatic Cooling",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Kept as one card with Adiabatic Heating (same effect run both ways). Dated to Erasmus Darwin's 1788 paper on air chilling as it expands; Dalton measured both directions in 1802.",
+  "id": "adiabatic-heating-and-cooling",
+  "title": "Adiabatic heating and cooling",
+  "year": 1788,
+  "inventor": "Erasmus Darwin",
+  "location": "England",
+  "field": "Science: Physics",
+  "description": "Squeeze air quickly and it gets hot; let it expand quickly and it gets cold, even with no heat going in or out. Erasmus Darwin described air chilling as it rushed out of an air gun in 1788. Squeezing ignites fuel in diesel engines, and expanding air cools airliner cabins and makes clouds.",
+  "effect": "a gas heats up when quickly squeezed and cools when it quickly expands",
+  "usedIn": [
+   "Diesel engines",
+   "Fire pistons",
+   "Air-cycle cooling packs on airliners",
+   "Wilson's cloud chamber"
+  ],
+  "strength": "Squeezing air to a twentieth of its volume, as a diesel engine does, heats it above 500 °C, hot enough to light fuel with no spark.",
+  "deps": [
+   "boyles-law"
+  ]
+ },
+ {
+  "edb": "Adiabatic Heating",
+  "verdict": "merge",
+  "rule": "e4",
+  "borderline": false,
+  "why": "The same effect as Adiabatic Cooling run the other way; both go on one card kept in this batch.",
+  "into": "adiabatic-heating-and-cooling"
+ },
+ {
+  "edb": "Adsorption",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "A specific effect with big jobs (filtering, drying, separating gases); Chemisorption here and Physisorption, Sorption and Desorption in other batches merge into it.",
+  "id": "adsorption",
+  "title": "Adsorption",
+  "year": 1773,
+  "inventor": "Carl Wilhelm Scheele",
+  "location": "Sweden",
+  "field": "Science: Chemistry",
+  "description": "Gas or dissolved molecules stick to the surface of a solid in a thin film, so a porous solid like charcoal soaks up huge amounts. Carl Scheele noticed charcoal taking up gases in 1773, and Felice Fontana saw the same in 1777. It's how gas masks, water-filter jugs and the silica-gel packets in shoe boxes work.",
+  "effect": "molecules from a gas or liquid stick to the surface of a solid",
+  "usedIn": [
+   "Activated-charcoal gas masks (Zelinsky, 1915)",
+   "Water-filter jugs",
+   "Silica-gel drying packets",
+   "Oxygen concentrators using zeolite beds"
+  ],
+  "strength": "A single gram of activated charcoal has the inner surface area of a few tennis courts, enough to soak up a large share of its own weight in vapour.",
+  "deps": []
+ },
+ {
+  "edb": "Advection",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A general word for stuff carried along by a moving fluid, too general to be one effect."
+ },
+ {
+  "edb": "Aerodynamic Heating",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A mix of air friction and compression heating on fast objects, mostly a hazard; the useful core is the adiabatic heating card."
+ },
+ {
+  "edb": "Aeroelastic Flutter",
+  "verdict": "merge",
+  "rule": "e4",
+  "borderline": false,
+  "why": "A variant of Flutter, which is in another batch and is the broader common name; I did not make a card here.",
+  "into": "flutter"
+ },
+ {
+  "edb": "Aerosol",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A kind of mixture (fine particles in a gas), not an effect."
+ },
+ {
+  "edb": "Aggregated Diamond Nanorod",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A material, not an effect."
+ },
+ {
+  "edb": "Amphiphiles",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": true,
+  "why": "Judgment call: 'amphiphiles' names a class of molecules, but the effect they cause (soap carrying grease into water) does a big job and the deck lacks it. I kept it under the effect's name, dated to Langmuir's 1917 explanation; Agnes Pockels studied these surface films from 1891.",
+  "id": "surfactant-action",
+  "title": "Surfactant action",
+  "year": 1917,
+  "inventor": "Irving Langmuir",
+  "location": "United States",
+  "field": "Science: Chemistry",
+  "description": "Soap and detergent molecules have one end that loves water and one that loves oil, so they line up at the edge between the two and let grease be carried away in water. Irving Langmuir showed in 1917 how these molecules stand on end at a surface. It's how soap cleans, and it lets oil and water mix in mayonnaise and paint.",
+  "effect": "molecules with a water-loving end and an oil-loving end let oil mix into water",
+  "usedIn": [
+   "Soaps and laundry detergents",
+   "Emulsion paints",
+   "Firefighting foam",
+   "Lung surfactant drugs for premature babies"
+  ],
+  "strength": "A few drops of washing-up liquid in a sink of water is enough to lift the grease off a pile of plates.",
+  "deps": []
+ },
+ {
+  "edb": "Ampère's Circuital Law",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "A law describing the magnetic field around a current, the effect on Ørsted's Electromagnetism card.",
+  "card": "electromagnetism"
+ },
+ {
+  "edb": "Ampère's Force Law",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "The deck's Electromagnetism card already says current-carrying wires attract or repel each other.",
+  "card": "electromagnetism"
+ },
+ {
+  "edb": "Angle of Repose",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A measure of friction for slopes and piles, not an effect that does a job."
+ },
+ {
+  "edb": "Angular Momentum",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "A quantity, not an effect; what it does (a spinning body holds its axis) is the Gyroscope card.",
+  "card": "gyroscope"
+ },
+ {
+  "edb": "Angular Momentum Conservation",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": true,
+  "why": "Judgment call: the deck has no card for the law itself, but the Gyroscope card carries its main effect (a spinning body holds its axis); I linked it there rather than making a new card.",
+  "card": "gyroscope"
+ },
+ {
+  "edb": "Antibubble",
+  "verdict": "drop",
+  "rule": "e2",
+  "borderline": false,
+  "why": "A fragile curiosity that lasts seconds to minutes, with no job at a useful size."
+ },
+ {
+  "edb": "Archimedes' Principle (Buoyancy)",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Already a card.",
+  "card": "archimedes-principle"
+ },
+ {
+  "edb": "Auger Effect",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "A specific named effect with a real detecting job (telling what a surface is made of). Lise Meitner described it in 1922, a year before Auger; I used Auger's name and date as the standard.",
+  "id": "auger-effect",
+  "title": "Auger effect",
+  "year": 1923,
+  "inventor": "Pierre Auger",
+  "location": "France",
+  "field": "Science: Physics",
+  "description": "When an atom loses an inner electron, it can fill the gap by flinging out a second electron with an energy that is a fingerprint of the element. Pierre Auger saw the tracks in a cloud chamber in 1923. Measuring these electrons tells which atoms sit on a surface, which is how chipmakers check wafers for contamination.",
+  "effect": "an atom that loses an inner electron throws out a second electron with a telltale energy",
+  "usedIn": [
+   "Auger electron spectroscopy for checking chip and metal surfaces",
+   "Surface analysis of catalysts and corrosion films"
+  ],
+  "strength": "The electrons only escape from the top few layers of atoms, so it reads a surface less than a hundred-thousandth of a hair's width deep; it needs a vacuum chamber and an electron beam.",
+  "deps": [
+   "x-rays",
+   "cloud-chamber"
+  ]
+ },
+ {
+  "edb": "Auxetic Materials",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "A material class, but the behaviour itself (stretch it and it gets fatter) is a specific effect with jobs; kept under the effect's name.",
+  "id": "auxetic-effect",
+  "title": "Auxetic effect",
+  "year": 1987,
+  "inventor": "Roderic Lakes",
+  "location": "United States",
+  "field": "Science: Physics",
+  "description": "Stretch most things and they get thinner; an auxetic material gets fatter instead, and squeezing it makes it shrink in every direction. Roderic Lakes made the first auxetic foam in 1987 by crushing ordinary foam so its cells buckled inward. It makes padding that firms up where it's hit and stents that open evenly.",
+  "effect": "a material gets fatter when stretched and thinner when squeezed",
+  "usedIn": [
+   "Impact padding in helmets and body armour",
+   "Shoe soles that widen as the foot pushes off (Nike Free RN, 2016)",
+   "Expanding medical stents"
+  ],
+  "strength": "Lakes's foam widened by about seven-tenths of how much it lengthened, where a rubber band narrows by about half.",
+  "deps": [
+   "hookes-law"
+  ]
+ },
+ {
+  "edb": "Avalanche Breakdown",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "A specific effect that amplifies a single electron into a usable current. Townsend Discharge in another batch is the same cascade in a gas and should merge here.",
+  "id": "avalanche-breakdown",
+  "title": "Avalanche breakdown",
+  "year": 1901,
+  "inventor": "John Sealy Townsend",
+  "location": "England",
+  "field": "Science: Physics",
+  "description": "In a strong enough electric field, one free electron speeds up, smashes loose another, and those two free two more, until a flood of current pours through a gas or crystal that normally blocks it. John Townsend explained the cascade in gases around 1901. It makes Geiger counters click and lets light sensors catch single photons.",
+  "effect": "one fast electron knocks loose others in a cascade that suddenly lets current flow",
+  "usedIn": [
+   "Geiger counters",
+   "Avalanche photodiodes in lidar and fibre-optic receivers",
+   "Surge-protection diodes"
+  ],
+  "strength": "One electron can multiply into millions in under a microsecond, enough to turn a single particle or photon into a pulse you can count.",
+  "deps": [
+   "electron-as-subatomic-particle",
+   "cathode-rays"
+  ]
+ },
+ {
+  "edb": "Barkhausen Effect",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Named effect with a real detecting job (non-destructive testing of steel) and the first direct evidence of magnetic domains.",
+  "id": "barkhausen-effect",
+  "title": "Barkhausen effect",
+  "year": 1919,
+  "inventor": "Heinrich Barkhausen",
+  "location": "Germany",
+  "field": "Science: Physics",
+  "description": "Magnetise a piece of iron slowly and it doesn't change smoothly: tiny regions flip one after another, and a coil wound round it hears them as a crackle in a loudspeaker. Heinrich Barkhausen heard it in 1919. Factories now use the crackle to spot stress and grinding burns in gears and crankshafts.",
+  "effect": "a magnetised piece of iron crackles as tiny regions inside it flip one by one",
+  "usedIn": [
+   "Barkhausen-noise inspection of gears, camshafts and bearings",
+   "Measuring stress in steel rails and pipes"
+  ],
+  "strength": "The crackle is faint, heard only through a sensitive coil and amplifier, but it reads stress in the top tenth of a millimetre of steel.",
+  "deps": [
+   "electromagnetic-induction"
+  ]
+ },
+ {
+  "edb": "Barnett Effect",
+  "verdict": "drop",
+  "rule": "e2",
+  "borderline": false,
+  "why": "Spinning a piece of iron magnetises it, but even at thousands of turns a second the effect is a billionth of a tesla, far too weak to do a job."
+ },
+ {
+  "edb": "Barus Effect",
+  "verdict": "drop",
+  "rule": "other",
+  "borderline": false,
+  "why": "Die swell is a quirk that extrusion designers correct for, with no job of its own I can imagine."
+ },
+ {
+  "edb": "Basset Force",
+  "verdict": "drop",
+  "rule": "e2",
+  "borderline": false,
+  "why": "A tiny correction to the drag on accelerating particles, too weak and specialised to do a job."
+ },
+ {
+  "edb": "Bingham Plastic",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "A specific named behaviour (solid until pushed hard enough, then flows) that does everyday jobs; distinct from shear thickening and the general Non-Newtonian entry.",
+  "id": "bingham-plastic",
+  "title": "Bingham plastic",
+  "year": 1916,
+  "inventor": "Eugene Bingham",
+  "location": "United States",
+  "field": "Science: Physics",
+  "description": "Some pastes act like a solid until you push hard enough, then flow like a liquid: toothpaste sits in a stripe on the brush but squirts out of the tube. Eugene Bingham described the behaviour in 1916 while studying paints. It's why paint doesn't drip and why drilling mud holds rock chips up when the pump stops.",
+  "effect": "a paste stays solid until pushed past a threshold, then flows",
+  "usedIn": [
+   "Toothpaste",
+   "Non-drip paint",
+   "Drilling mud that suspends rock cuttings",
+   "Pumped and 3D-printed concrete"
+  ],
+  "strength": "Toothpaste holds a stripe a centimetre tall without slumping, yet a gentle squeeze is enough to make it flow.",
+  "deps": []
+ },
+ {
+  "edb": "Bioluminescence",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Clear effect with real uses. Glowing animals were known since antiquity; I dated it to Raphaël Dubois's 1885 discovery of luciferin and luciferase, which explained it.",
+  "id": "bioluminescence",
+  "title": "Bioluminescence",
+  "year": 1885,
+  "inventor": "Raphaël Dubois",
+  "location": "France",
+  "field": "Science: Biology",
+  "description": "Fireflies, glowing mushrooms and deep-sea fish make their own light by a chemical reaction in their bodies, with almost no heat. Raphaël Dubois showed in 1885 that it takes two substances, which he named luciferin and luciferase. Firefly chemistry now lights up food-safety tests and shows biologists which genes are switched on.",
+  "effect": "a living thing makes light by a chemical reaction in its body",
+  "usedIn": [
+   "ATP hygiene swabs in food factories and hospitals",
+   "Luciferase reporter genes in biology labs",
+   "Glowing-bacteria tests for water toxicity (Microtox)"
+  ],
+  "strength": "Dim: a jar of fireflies barely lets you read, but almost all the reaction's energy comes out as light rather than heat.",
+  "deps": [
+   "enzyme"
+  ]
+ },
+ {
+  "edb": "Biot-Savart Effect",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "A current making a magnetic field is Ørsted's Electromagnetism card.",
+  "card": "electromagnetism"
+ },
+ {
+  "edb": "Birefringence",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Already a card (Double refraction, also known as birefringence).",
+  "card": "double-refraction"
+ },
+ {
+  "edb": "Boiling",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "An everyday process, not a discovery with a date."
+ },
+ {
+  "edb": "Boundary Layer",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A concept in fluid flow (the slow film of fluid next to a surface), not an effect that does a job by itself."
+ },
+ {
+  "edb": "Boyle's Law",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Already a card.",
+  "card": "boyles-law"
+ },
+ {
+  "edb": "Bragg Diffraction",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "The deck's X-ray wavelength card is the Braggs' own work on X-rays reflecting off crystal layers.",
+  "card": "x-ray-wavelength"
+ },
+ {
+  "edb": "Brazil Nut Effect",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Named, specific, and does a job (sorting by size); Reverse Brazil Nut Effect in another batch should merge here. Dated to Rosato's 1987 paper that named it, though grain handlers knew it earlier.",
+  "id": "brazil-nut-effect",
+  "title": "Brazil nut effect",
+  "year": 1987,
+  "inventor": "Anthony Rosato",
+  "location": "United States",
+  "field": "Science: Physics",
+  "description": "Shake a jar of mixed nuts and the big Brazil nuts rise to the top, even though they're heavier. Anthony Rosato and colleagues named and simulated it in 1987: small pieces slip into the gaps under big ones, ratcheting them upward. It sorts gravel and grain, and it's why mixed powders unmix on a bumpy truck ride.",
+  "effect": "shaking a mix of grains brings the biggest pieces to the top",
+  "usedIn": [
+   "Vibrating screens that sort gravel and seed by size",
+   "Controlling unmixing of pharmaceutical powders"
+  ],
+  "strength": "A few minutes of shaking is enough to bring a large nut from the bottom of a jar to the top.",
+  "deps": []
+ },
+ {
+  "edb": "Brewster's Angle",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": true,
+  "why": "Judgment call: Brewster found the exact angle in 1815, but the effect, light reflected off glass or water being polarised, is Malus's 1808 discovery on the Polarized light card; I linked it there.",
+  "card": "polarized-light"
+ },
+ {
+  "edb": "Bridgman Effect",
+  "verdict": "drop",
+  "rule": "e2",
+  "borderline": false,
+  "why": "A tiny heating or cooling inside anisotropic crystals when current flows, too weak to do a job."
+ },
+ {
+  "edb": "Brillouin Scattering",
+  "verdict": "merge",
+  "rule": "e4",
+  "borderline": false,
+  "why": "Light bouncing off sound waves in a material is the same interaction as the acousto-optic effect, from the same 1922 Brillouin prediction; merged into that card (kept in this batch).",
+  "into": "acousto-optic-effect"
+ },
+ {
+  "edb": "Brinelling",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A kind of wear damage, not an effect that does a job."
+ },
+ {
+  "edb": "Brownian Motion",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Already a card.",
+  "card": "brownian-motion"
+ },
+ {
+  "edb": "Bubble",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A thing, not an effect."
+ },
+ {
+  "edb": "Capacitance",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Storing charge between two conductors is the Leyden jar card.",
+  "card": "leyden-jar"
+ },
+ {
+  "edb": "Capillary Action",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Already a card.",
+  "card": "capillary-action"
+ },
+ {
+  "edb": "Capillary Condensation",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "A distinct, specific effect (vapour turns to liquid in tiny pores below normal saturation) with real jobs; not the same as plain capillary rise.",
+  "id": "capillary-condensation",
+  "title": "Capillary condensation",
+  "year": 1871,
+  "inventor": "Lord Kelvin",
+  "location": "Scotland",
+  "field": "Science: Physics",
+  "description": "In very narrow pores, water vapour turns to liquid even when the air isn't humid enough to make dew anywhere else, because the curved surface in the pore holds it more easily. Lord Kelvin worked out the rule in 1871. It helps drying packets pull moisture from air, makes powders clump on damp days and lets labs measure pore sizes.",
+  "effect": "water vapour condenses inside tiny pores before the air is saturated",
+  "usedIn": [
+   "Silica-gel and clay desiccants",
+   "Gas-sorption instruments that measure pore sizes in catalysts",
+   "Dip-pen nanolithography"
+  ],
+  "strength": "In a pore a few millionths of a millimetre wide, water condenses at about half the humidity needed for dew in open air.",
+  "deps": [
+   "capillary-action"
+  ]
+ },
+ {
+  "edb": "Capillary Evaporation",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A combination of capillary action (in the deck) and evaporation, not its own effect."
+ },
+ {
+  "edb": "Capillary Pressure",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "The pressure jump across a curved liquid surface is what drives capillary action; same effect.",
+  "card": "capillary-action"
+ },
+ {
+  "edb": "Capillary Wave Effect",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A type of ripple ruled by surface tension rather than an effect that does a job; its useful side (ultrasonic misting) belongs with Faraday waves in another batch."
+ },
+ {
+  "edb": "Catapult Effect",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "A current-carrying wire being shoved by a magnet is Faraday's Electrical motion card (the database guess 'catapult' is the siege weapon, not this).",
+  "card": "electrical-motion"
+ },
+ {
+  "edb": "Cathodoluminescence",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Plücker's Electricity in a vacuum card is the green glow when cathode rays strike glass.",
+  "card": "electricity-in-a-vacuum"
+ },
+ {
+  "edb": "Cavitation",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "A specific effect that does real work (cleaning, mixing, breaking things up); Acoustic Cavitation here and Hydrodynamic Cavitation and Supercavitation in other batches merge into it. Dated to Parsons's propeller trials on Turbinia, when it was first recognised and named.",
+  "id": "cavitation",
+  "title": "Cavitation",
+  "year": 1894,
+  "inventor": "Charles Parsons",
+  "location": "England",
+  "field": "Science: Physics",
+  "description": "Where a liquid moves fast or is shaken hard, its pressure drops so low that vapour bubbles appear, then collapse violently. Charles Parsons found in 1894 that this was what stopped his turbine ship Turbinia's propellers from gripping the water, and why they pitted. The same collapsing bubbles scrub jewellery clean in ultrasonic baths.",
+  "effect": "low pressure in a fast or shaken liquid makes bubbles that collapse violently",
+  "usedIn": [
+   "Ultrasonic cleaning baths",
+   "High-pressure homogenisers for milk",
+   "Supercavitating torpedoes (Shkval)"
+  ],
+  "strength": "Each collapsing bubble briefly reaches thousands of atmospheres, enough to pit a bronze propeller over weeks.",
+  "deps": [
+   "screw-propeller",
+   "steam-turbine"
+  ]
+ },
+ {
+  "edb": "Centrifugal Force",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "A clear effect with big jobs (separating, drying) that the deck lacks as a phenomenon; the Ultracentrifuge card is one invention using it.",
+  "id": "centrifugal-force",
+  "title": "Centrifugal force",
+  "year": 1659,
+  "inventor": "Christiaan Huygens",
+  "location": "Netherlands",
+  "field": "Science: Physics",
+  "description": "Anything going round in a circle seems flung outward, pressing harder the faster it spins: water stays in a bucket swung overhead. Christiaan Huygens worked out its size in 1659. Spin it fast enough and it squeezes water from clothes, cream from milk and heavy particles from light ones.",
+  "effect": "a spinning object presses outward, harder the faster it spins",
+  "usedIn": [
+   "Spin dryers in washing machines",
+   "Cream separators",
+   "Laboratory and blood centrifuges",
+   "Centrifugal governors on steam engines"
+  ],
+  "strength": "A washing machine spinning at 1,200 rpm presses the clothes against the drum with about 400 times their weight.",
+  "deps": [
+   "falling-motion"
+  ]
+ },
+ {
+  "edb": "Cheerio Effect",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": true,
+  "why": "Judgment call: a small-scale curiosity, but it does a clear job (gathering and arranging floating objects) and has driven self-assembly experiments; I kept it.",
+  "id": "cheerio-effect",
+  "title": "Cheerio effect",
+  "year": 2005,
+  "inventor": "Dominic Vella and L. Mahadevan",
+  "location": "United States",
+  "field": "Science: Physics",
+  "description": "Cereal floating in milk clumps together and sticks to the bowl's edge, because each piece dents the liquid surface and the dents slide into each other. Dominic Vella and L. Mahadevan explained and named it in 2005. It can pull small floating parts together into ordered patterns without any hands.",
+  "effect": "small floating objects drift together because of the dents they make in the surface",
+  "usedIn": [
+   "Bragg and Nye's bubble rafts that model crystal defects",
+   "Self-assembly of millimetre-sized floating parts"
+  ],
+  "strength": "Weak and short-range: it only pulls floating objects a few millimetres across, over a few centimetres, in a few seconds.",
+  "deps": [
+   "capillary-action",
+   "archimedes-principle"
+  ]
+ },
+ {
+  "edb": "Chemical Bonding",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Already covered by the deck's Electrons and chemical bonds card.",
+  "card": "electrons-and-chemical-bonds"
+ },
+ {
+  "edb": "Chemiluminescence",
+  "verdict": "attach",
+  "rule": "e3",
+  "borderline": true,
+  "why": "Judgment call: Brand's phosphorus was named 'light-bearer' for its glow in the dark, which is chemiluminescence, so the effect goes on that card; the alternative is a new card dated to Albrecht's luminol (1928).",
+  "card": "phosphorus"
+ },
+ {
+  "edb": "Chemisorption",
+  "verdict": "merge",
+  "rule": "e4",
+  "borderline": false,
+  "why": "Adsorption by chemical bonds is one variant of Adsorption, which is kept in this batch.",
+  "into": "adsorption"
+ },
+ {
+  "edb": "Cherenkov Effect",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Already a card.",
+  "card": "cherenkov-radiation"
+ },
+ {
+  "edb": "Christiansen Effect",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "A specific named effect with a clear job (picking one colour out of white light, tunable by temperature).",
+  "id": "christiansen-effect",
+  "title": "Christiansen effect",
+  "year": 1884,
+  "inventor": "Christian Christiansen",
+  "location": "Denmark",
+  "field": "Science: Physics",
+  "description": "A glass cell packed with crushed glass and a liquid looks milky, except for one colour that passes straight through: the one where glass and liquid bend light by exactly the same amount. Christian Christiansen found it in 1884. Warming the cell shifts which colour gets through, so it makes simple tunable colour filters.",
+  "effect": "crushed glass in a liquid lets through only the one colour where both bend light equally",
+  "usedIn": [
+   "Narrow-band Christiansen filters for light and infrared",
+   "Temperature-tuned colour filters"
+  ],
+  "strength": "A cell a few centimetres thick passes a band of light only a few nanometres wide, and warming it by a few degrees shifts the colour noticeably.",
+  "deps": [
+   "refraction",
+   "light-spectrum"
+  ]
+ },
+ {
+  "edb": "Coagulation",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": true,
+  "why": "Judgment call: the database entry means blood clotting (which the deck covers with Platelets), but the curator chose Coagulation as the name for particles clumping (Flocculation, in another batch, merges here). I wrote the card for clumping and dated it to Schulze's 1882 rule explaining it; alum has cleared water since antiquity.",
+  "id": "coagulation",
+  "title": "Coagulation",
+  "year": 1882,
+  "inventor": "Hans Schulze",
+  "location": "Germany",
+  "field": "Science: Chemistry",
+  "description": "A pinch of alum stirred into muddy water makes the fine floating particles clump into flakes that sink, leaving the water clear. Hans Schulze showed in 1882 that the salt works by cancelling the electric charge that keeps particles apart. Waterworks clear drinking water this way, and the same clumping turns soy milk into tofu and latex into rubber.",
+  "effect": "fine particles in a liquid clump together and settle when a salt is added",
+  "usedIn": [
+   "Drinking-water treatment with alum or ferric chloride",
+   "Tofu-making with nigari",
+   "Turning latex into natural rubber sheets",
+   "Styptic alum pencils for shaving cuts"
+  ],
+  "strength": "A few milligrams of alum per litre can clear cloudy water in under an hour.",
+  "deps": []
+ },
+ {
+  "edb": "Coanda Effect",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Named effect with clear jobs (steering air and water along a surface) and room for more.",
+  "id": "coanda-effect",
+  "title": "Coanda effect",
+  "year": 1910,
+  "inventor": "Henri Coandă",
+  "location": "France",
+  "field": "Science: Physics",
+  "description": "A jet of air or water bends to follow a curved surface beside it instead of shooting straight: hold the back of a spoon under a tap and the stream wraps around it. Henri Coandă noticed it in 1910 when exhaust from his experimental jet aircraft hugged its body. It's how bladeless fans blow and some helicopters steer without a tail rotor.",
+  "effect": "a jet of fluid clings to a curved surface beside it and follows its curve",
+  "usedIn": [
+   "Dyson Air Multiplier bladeless fan",
+   "NOTAR helicopters with no tail rotor",
+   "Blown wing flaps on short-takeoff planes (Antonov An-72)"
+  ],
+  "strength": "A thin jet can be bent through 90 degrees or more around a rounded edge, dragging along several times its own volume of surrounding air.",
+  "deps": [
+   "aerodynamics"
+  ]
+ },
+ {
+  "edb": "Coffee Ring Effect",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Named, specific effect that moves particles (to a drop's rim) and is already used in printing and diagnostics.",
+  "id": "coffee-ring-effect",
+  "title": "Coffee ring effect",
+  "year": 1997,
+  "inventor": "Robert Deegan",
+  "location": "United States",
+  "field": "Science: Physics",
+  "description": "A drop of coffee dries into a dark ring rather than an even spot, because liquid flows outward to replace what evaporates fastest at the edge and carries the grounds with it. Robert Deegan and colleagues explained it in 1997. Printers fight it to get even ink, and some cheap medical tests use it to sort particles by size.",
+  "effect": "a drying drop carries its particles to its edge and leaves a ring",
+  "usedIn": [
+   "Inkjet printing of electronics (suppressed or exploited for thin conductive rings)",
+   "Paper diagnostics that separate particles by size"
+  ],
+  "strength": "Within a few minutes a drying drop sweeps nearly all its particles to the rim.",
+  "deps": [
+   "capillary-action"
+  ]
+ },
+ {
+  "edb": "Coherent Light",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "A property of light, made by the Laser (and Stimulated emission) cards already in the deck.",
+  "card": "laser"
+ },
+ {
+  "edb": "Cohesion",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A general property of matter (like molecules sticking together), not one effect."
+ },
+ {
+  "edb": "Colloid",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A kind of mixture, not an effect; the deck's Ultramicroscope covers seeing colloids."
+ },
+ {
+  "edb": "Colloid Vibration Current",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": true,
+  "why": "Judgment call: weak and specialised, but it does a real detecting job (measuring particle charge in thick slurries). Named it 'electroacoustic effect' so Electric Sonic Amplitude (its reverse, in another batch) can merge here. Debye predicted the sound-made voltage in 1933; I'm not certain of the first measurement.",
+  "id": "electroacoustic-effect",
+  "title": "Electroacoustic effect",
+  "year": 1933,
+  "inventor": "Peter Debye",
+  "location": "Germany",
+  "field": "Science: Physics",
+  "description": "Send ultrasound through a liquid full of charged particles and the particles and the liquid around them jiggle by different amounts, making a tiny alternating voltage; push the other way and a voltage makes sound. Peter Debye predicted it in 1933. Instruments use it to measure the charge on particles in paints, ceramics and milk too thick to see through.",
+  "effect": "sound passing through a suspension of charged particles makes a small voltage",
+  "usedIn": [
+   "Zeta-potential analysers for concentrated slurries",
+   "Quality control of ceramic slips and paints"
+  ],
+  "strength": "Very weak: the voltages are millionths of a volt, readable only with sensitive electronics.",
+  "deps": [
+   "sonar"
+  ]
+ },
+ {
+  "edb": "Colloidal Crystal",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A structure or material, not an effect."
+ },
+ {
+  "edb": "Combustion",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Lavoisier's Combustion card covers burning.",
+  "card": "combustion-and-phlogiston-theory-refinement"
+ },
+ {
+  "edb": "Compression",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A generic engineering term."
+ },
+ {
+  "edb": "Compton Scattering",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "The deck's Waves as particles card is Compton's discovery.",
+  "card": "waves-as-particles"
+ },
+ {
+  "edb": "Condensation",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "An everyday process, not a discovery with a date."
+ },
+ {
+  "edb": "Conduction (electrical)",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Already a card (Stephen Gray's Electrical conductance).",
+  "card": "electrical-conductance"
+ },
+ {
+  "edb": "Conduction (thermal)",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Fourier's card is his theory of how heat flows through solids.",
+  "card": "fourier-analysis"
+ },
+ {
+  "edb": "Conic Capillary Effect",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "The same capillary pull, in a tapered tube, so the liquid moves toward the narrow end.",
+  "card": "capillary-action"
+ },
+ {
+  "edb": "Conservation of Momentum",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Already a card.",
+  "card": "conservation-momentum"
+ },
+ {
+  "edb": "Convection",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "The canonical card for the convection family (Forced, Free, Mixed and Rayleigh-Bénard Convection and Gravitational Convection in other batches merge here). Dated to Rumford's 1797 essay showing liquids carry heat by currents.",
+  "id": "convection",
+  "title": "Convection",
+  "year": 1797,
+  "inventor": "Benjamin Thompson (Count Rumford)",
+  "location": "Germany",
+  "field": "Science: Physics",
+  "description": "Warm air or water rises and cool sinks, so a fluid stirs itself and carries heat from place to place: the shimmer above a radiator or the rolling in a pot of soup. Count Rumford showed in 1797, watching particles swirl in heated liquids, that this is how liquids pass on heat. It warms rooms from radiators, draws smoke up chimneys and cools computer chips.",
+  "effect": "warm fluid rises and cool fluid sinks, carrying heat along",
+  "usedIn": [
+   "Hot-water radiators and central heating",
+   "Chimneys and solar chimneys",
+   "Passive heat sinks on electronics"
+  ],
+  "strength": "Air above a hot radiator rises at about half a metre a second, enough to turn a paper spiral.",
+  "deps": [
+   "thermal-expansion",
+   "franklin-stove"
+  ]
+ },
+ {
+  "edb": "Converse Piezoelectric Effect",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "The deck's Piezoelectricity card already describes the reverse effect (electricity makes the crystal flex).",
+  "card": "piezoelectricity"
+ },
+ {
+  "edb": "Cooling",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "An everyday process, not an effect."
+ },
+ {
+  "edb": "Corbino Effect",
+  "verdict": "merge",
+  "rule": "e4",
+  "borderline": false,
+  "why": "The Hall effect in a disc-shaped sample; Hall Effect is in another batch, so no card here.",
+  "into": "hall-effect"
+ },
+ {
+  "edb": "Coriolis Force",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Already a card.",
+  "card": "coriolis-effect"
+ },
+ {
+  "edb": "Corona Discharge",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": true,
+  "why": "Judgment call on the date: the glow (St Elmo's fire) has been seen since antiquity; I dated it to Frank Peek's 1915 measurements, which made it a designed-for effect. Distinct from Ion Wind, Spark and Arc, which are separate entries.",
+  "id": "corona-discharge",
+  "title": "Corona discharge",
+  "year": 1915,
+  "inventor": "Frank Peek",
+  "location": "United States",
+  "field": "Science: Physics",
+  "description": "Around a sharp point or thin wire at high voltage, the air starts to glow faintly blue and hiss as it becomes electrically charged, without a spark jumping. Sailors called it St Elmo's fire; Frank Peek worked out when it starts in 1915. It charges the drum in photocopiers, cleans soot from chimney smoke and makes ozone.",
+  "effect": "air around a sharp high-voltage point glows and becomes charged without sparking",
+  "usedIn": [
+   "Electrostatic precipitators in power-plant chimneys",
+   "Charging the drum in photocopiers and laser printers",
+   "Ozone generators for water treatment",
+   "Ionising air purifiers"
+  ],
+  "strength": "A few thousand volts on a needle point is enough to start it, and a precipitator built on it catches over 99% of the ash in smoke.",
+  "deps": [
+   "static-electricity",
+   "lightning-rod"
+  ]
+ },
+ {
+  "edb": "Coulomb's Law",
+  "verdict": "attach",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Coulomb measured the inverse-square electric force with his own torsion balance, so the law goes on that card.",
+  "card": "torsion-balance"
+ },
+ {
+  "edb": "Creep",
+  "verdict": "drop",
+  "rule": "other",
+  "borderline": false,
+  "why": "A slow failure mode that designers fight, not an effect that does a job."
+ },
+ {
+  "edb": "Creeping Wave",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "A kind of diffraction (waves bending into a shadow), already on the deck's Diffraction card.",
+  "card": "light-diffraction"
+ },
+ {
+  "edb": "Crevice Corrosion",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A kind of corrosion, an everyday process."
+ }
+]

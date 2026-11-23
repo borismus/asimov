@@ -1,0 +1,152 @@
+[
+ {
+  "id": "nanotube-skyhook",
+  "verdict": "studied",
+  "evidence": "Rotating momentum-exchange skyhooks with carbon nanotube tethers appear only in concept studies and papers; none has been built or flown.",
+  "url": "https://www.intechopen.com/chapters/68512"
+ },
+ {
+  "id": "nanotube-strait-bridge",
+  "verdict": "studied",
+  "evidence": "Carpinteri & Pugno (2008) and an MIT thesis model nanotube-cable super-bridges with spans of 5+ km, but no nanotube bridge cable has been built.",
+  "url": "https://arxiv.org/abs/0804.1446"
+ },
+ {
+  "id": "graphene-lined-hydrogen-pipe",
+  "verdict": "built",
+  "evidence": "Multilayer graphene grown in situ on X70 pipeline steel cut hydrogen diffusion about 123-fold, and slow-strain-rate tests showed resistance to embrittlement (lab demonstration); UK National Gas is also testing graphene internal barriers.",
+  "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12390031/"
+ },
+ {
+  "id": "hyperlens-microscope",
+  "verdict": "built",
+  "evidence": "Curved Ag/Al2O3 multilayer hyperlenses (cylindrical in 2007, spherical later) have imaged sub-diffraction objects (125-205 nm) in the far field; live-virus imaging has not been shown.",
+  "url": "https://www.Nature.com/articles/ncomms2176"
+ },
+ {
+  "id": "wave-steering-breakwater",
+  "verdict": "built",
+  "evidence": "Water-wave cloaks made of arrays of bottom-mounted pillars or shaped bathymetry steer waves around a protected region in lab tanks (Liverpool/CNRS 2008; Zhejiang 60 m wave-tank harbour tests); none has been installed in the field.",
+  "url": "https://physicsworld.com/a/broadband-cloak-controls-water-waves/"
+ },
+ {
+  "id": "glymphatic-sleep-headband",
+  "verdict": "studied",
+  "evidence": "A UCSF pilot trial (NCT07866768) is testing a wearable focused-ultrasound device for glymphatic clearance, and wearable glymphatic monitors exist, but no closed-loop sleep-triggered system with a skull-correcting lens has been demonstrated.",
+  "url": "https://clinicaltrials.ucsf.edu/trial/NCT07866768"
+ },
+ {
+  "id": "diamond-ledger",
+  "verdict": "none",
+  "evidence": "No isotope-patterned (12C/13C) diamond storage read by Raman shift was found; diamond storage work uses NV/ND1 defects, and 13C Raman barcodes have been shown only in polymers.",
+  "url": "https://arxiv.org/pdf/1610.09022"
+ },
+ {
+  "id": "self-sealing-perovskite-panel",
+  "verdict": "studied",
+  "evidence": "Self-healing perovskite encapsulants have been demonstrated only with intrinsic polymers (ion-aggregate epoxy, Science Advances 2025); no microcapsule-based crack-sealing encapsulant for perovskite modules was found.",
+  "url": "https://en.xjtu.edu.cn/2025-12/11/c_1151458.htm"
+ },
+ {
+  "id": "nanotube-deorbit-tether",
+  "verdict": "studied",
+  "evidence": "Carbon nanotube yarn and tape tethers for electrodynamic-tether deorbit kits are in development and were planned for CubeSats, but no confirmed in-orbit deorbit with a nanotube tether was found (TEPCE used a non-CNT tether).",
+  "url": "https://aminer.org/pub/5e5e19cb93d709897ce88fe3/performance-of-edt-system-for-deorbit-devices-using-new-materials"
+ },
+ {
+  "id": "mars-air-water-harvester",
+  "verdict": "studied",
+  "evidence": "Sorbent-bed extraction of water from Martian air (WAVAR with zeolite, MOFs pitched for Mars) exists only as concepts and technical reports; there is no Mars-condition demonstration.",
+  "url": "https://en.wikipedia.org/wiki/WAVAR"
+ },
+ {
+  "id": "wearable-ammonia-sponge-kidney",
+  "verdict": "studied",
+  "evidence": "MOFs (UiO-66, MOF-808/GO) are studied as urea and uremic-toxin sorbents for wearable-kidney dialysate regeneration, but no wearable unit with MOF ammonia adsorption was found.",
+  "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8485328/"
+ },
+ {
+  "id": "sky-cooled-carbon-capture-panel",
+  "verdict": "built",
+  "evidence": "Dang et al. (Green Energy & Environment 2024) demonstrated a CO2-capture temperature swing driven by passive radiative cooling and solar heating, using activated carbon rather than a MOF; a SUNY-Buffalo DOE project did the same for DAC with membrane sorbents.",
+  "url": "https://doaj.org/article/ed23fd73f88f4566b2b371cefad857c2"
+ },
+ {
+  "id": "sky-cooled-grain-store",
+  "verdict": "built",
+  "evidence": "A passive subambient daytime radiative cooling coating on a grain silo kept the wheat pile about 10 C cooler than an uncoated control (Heliyon 2023), and a radiative-cooling metafilm was field-tested on a real granary (Building and Environment 2024).",
+  "url": "https://doaj.org/article/8e0155ac32984c8e9f9e89758a44fc2e"
+ },
+ {
+  "id": "sky-cooling-crop-net",
+  "verdict": "none",
+  "evidence": "No overhead radiative-cooling shade net that passes photosynthetic light was found; the closest work is radiative-cooling soil mulch films field-tested to reduce plant heat stress.",
+  "url": "https://scholars.cityu.edu.hk/en/publications/alleviating-heat-stress-in-cultivated-plants-with-a-radiative-coo/"
+ },
+ {
+  "id": "breathing-scaffold",
+  "verdict": "studied",
+  "evidence": "Reviews list MOFs among emerging oxygen sources for thick engineered tissue, but demonstrated oxygen-releasing scaffolds use calcium peroxide or perfluorocarbons; no MOF oxygen-loaded scaffold was found.",
+  "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10295847/"
+ },
+ {
+  "id": "graphene-acid-recovery",
+  "verdict": "studied",
+  "evidence": "Graphene-oxide membranes have been studied as proton-permselective membranes for recovering acid from metal-laden waste (J. Membrane Sci. 2021), but no demonstration on battery-recycling leachate with pristine graphene proton transport was found.",
+  "url": "https://www.x-mol.com/paper/1438231654141063168"
+ },
+ {
+  "id": "solid-state-vaccine-fridge",
+  "verdict": "studied",
+  "evidence": "Electrocaloric cooling prototypes exist at lab scale (e.g. 20.9 C span, 4.2 W, Science), and solar vaccine fridges use compressors or thermoelectrics, but no electrocaloric vaccine fridge was found.",
+  "url": "https://spectrum.ieee.org/solid-state-refrigerator"
+ },
+ {
+  "id": "body-heat-health-patch",
+  "verdict": "studied",
+  "evidence": "Topological-insulator surface states have been studied for boosting thermoelectric zT, and wearable Bi2Te3 generators exist, but no wearable that exploits TI surface states was found.",
+  "url": "https://doaj.org/article/215448fe11dc469cbb6ea8434a825eae"
+ },
+ {
+  "id": "air-skin-stent",
+  "verdict": "studied",
+  "evidence": "Superhydrophobic air-trapping surfaces resisted thrombosis in rabbit carotid tube implants and in ex vivo blood tests, and patents describe superhydrophobic stents, but no air-layer stent has been demonstrated in vivo.",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/37010002/"
+ },
+ {
+  "id": "quantum-dot-voltage-probe",
+  "verdict": "studied",
+  "evidence": "Colloidal quantum dots in neuronal membranes detected depolarization optically in cultured cells (Nano Letters 2019), but no in vivo brain-interface use has been shown.",
+  "url": "https://www.repository.cam.ac.uk/handle/1810/298869"
+ },
+ {
+  "id": "enzyme-lint-filter",
+  "verdict": "built",
+  "evidence": "The University of Exeter iGEM PETexe project built a washing-machine outlet filter that traps microfibres and digests them with PETase/MHETase into terephthalic acid and ethylene glycol, reportedly about 75% of fibres.",
+  "url": "https://phys.org/news/2019-09-machine-filter-plastic-microfibres.html"
+ },
+ {
+  "id": "laser-sail-probe",
+  "verdict": "built",
+  "evidence": "A lab test showed a light sail made of opposing diffraction gratings being pushed by a laser beam and re-centring itself in it (Swartzlander, PRL 2019); metasurface versions so far exist only in simulation, and nothing has flown.",
+  "url": "https://link.aps.org/doi/10.1103/PhysRevLett.123.244302"
+ },
+ {
+  "id": "self-sealing-subsea-cable",
+  "verdict": "studied",
+  "evidence": "SINTEF has studied epoxy insulation with monomer-filled microcapsules that burst and fill electrical trees, for subsea connectors and offshore grids, but only at material or lab scale and not in a cable.",
+  "url": "https://www.sintef.no/en/selfhealing"
+ },
+ {
+  "id": "graphene-heavy-water-maker",
+  "verdict": "built",
+  "evidence": "Manchester (Nature Communications 2017) electrochemically pumped protons through graphene membranes, separating hydrogen from deuterium with a factor of about 8 and projecting plant-scale output; this is a lab demonstration with no pilot plant.",
+  "url": "https://www.doi.org/10.1038/NCOMMS15215"
+ },
+ {
+  "id": "skull-lens-ultrasound-scanner",
+  "verdict": "studied",
+  "evidence": "3D-printed binary acoustic metasurfaces corrected skull aberration to focus ultrasound through ex vivo human skulls (Frontiers in Neuroscience 2022), but none has been used for transcranial functional ultrasound imaging.",
+  "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9475195/"
+ }
+]

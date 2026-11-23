@@ -1,0 +1,533 @@
+[
+ {
+  "id": "closed-loop-insulin-pump",
+  "name": "Closed-loop insulin pump",
+  "job": "regulates the body",
+  "effect": "insulin lets the body use sugar",
+  "effectCard": "insulin",
+  "parts": [
+   "piston-and-cylinder",
+   "microchips",
+   "lithium-battery"
+  ],
+  "how": "A pager-sized pump worn on the belt keeps a diabetic's blood sugar steady around the clock. Its chip reads a sugar sensor and nudges a tiny piston to push insulin under the skin, and insulin makes the body's cells take sugar out of the blood.",
+  "real": "insulin pumps 1970s; closed-loop 'artificial pancreas' 2016",
+  "plausibility": 5,
+  "why": "Turns a hormone discovered in 1921 into a thermostat for the body."
+ },
+ {
+  "id": "growth-gene-salmon",
+  "name": "Fast-growing gene-modified salmon",
+  "job": "grows food",
+  "effect": "a pituitary hormone makes the body grow",
+  "effectCard": "growth-hormone",
+  "parts": [
+   "recombinant-dna"
+  ],
+  "how": "A farmed salmon carrying an extra growth-hormone gene from another fish that stays switched on all year. Ordinary salmon make the pituitary growth hormone only in warm months, so the modified fish keeps growing and reaches market size in about half the time.",
+  "real": "AquAdvantage salmon, approved 2015",
+  "plausibility": 5,
+  "why": "An animal hormone, not a plant one, put to work raising food."
+ },
+ {
+  "id": "lysozyme-food-wrap",
+  "name": "Tear-enzyme food wrap",
+  "job": "preserves food",
+  "effect": "an enzyme in tears breaks open bacteria",
+  "effectCard": "lysozyme",
+  "parts": [
+   "isotactic-polymers"
+  ],
+  "how": "A plastic food film whose inner face is coated with lysozyme, the enzyme that protects our eyes. Bacteria landing on the wrapped cheese or meat have their cell walls cut open by the enzyme, so the food spoils more slowly without heat or added preservatives.",
+  "real": null,
+  "plausibility": 4,
+  "why": "Borrows the eye's own germ defence to keep food fresh instead of heating or chilling it."
+ },
+ {
+  "id": "magnetic-refrigerator",
+  "name": "Magnetic kitchen refrigerator",
+  "job": "preserves food",
+  "effect": "demagnetizing a magnetic material cools it",
+  "effectCard": "magnetism-and-absolute-zero",
+  "parts": [
+   "rare-earth-magnet",
+   "electric-motors",
+   "valve"
+  ],
+  "how": "A refrigerator with no compressor gas, cooled instead by a wheel of special metal turning in and out of a strong magnet. The metal warms when magnetized and gives that heat away, then cools below room temperature when it leaves the field, and water pumped past it carries the cold into the food box.",
+  "real": "magnetocaloric fridge prototypes, 2000s-2010s",
+  "plausibility": 4,
+  "why": "A trick for reaching near absolute zero, scaled up to keep milk cold."
+ },
+ {
+  "id": "x-ray-mutation-breeding",
+  "name": "X-ray crop mutation breeding",
+  "job": "modifies organisms",
+  "effect": "X-rays cause mutations",
+  "effectCard": "x-rays-and-mutations",
+  "parts": [
+   "coolidge-tube"
+  ],
+  "how": "Seeds are exposed to an X-ray tube so that a few genes in each seed are changed at random. Breeders then grow thousands of plants and keep the rare ones with useful new traits, such as shorter stems or disease resistance.",
+  "real": "mutation breeding, 1920s onward",
+  "plausibility": 5,
+  "why": "Changes genes without inserting any, using damage as a source of variety."
+ },
+ {
+  "id": "x-ray-sterile-mosquitoes",
+  "name": "X-ray sterile mosquito release",
+  "job": "prevents disease",
+  "effect": "X-rays cause mutations",
+  "effectCard": "x-rays-and-mutations",
+  "parts": [
+   "coolidge-tube"
+  ],
+  "how": "Male mosquitoes are raised by the million and passed through an X-ray cabinet that scrambles the genes in their sperm. Released into the wild, they mate with females whose eggs then never hatch, so the mosquito population that spreads dengue or malaria shrinks.",
+  "real": "sterile insect technique, 1950s (X-ray mosquito trials 2010s)",
+  "plausibility": 5,
+  "why": "Prevents disease by breeding out the carrier, not by training the immune system."
+ },
+ {
+  "id": "heat-release-glue",
+  "name": "Heat-release molecular glue joint",
+  "job": "fastens",
+  "effect": "two molecules snap together into a ring",
+  "effectCard": "diels-alder-reaction",
+  "parts": [
+   "insulated-wire"
+  ],
+  "how": "A glue whose molecules lock across the joint by snapping together into rings, with a fine heating wire buried in the bond line. Passing current warms the joint so the rings pop open and the parts come apart cleanly, and on cooling the rings snap shut again so the same glue can be reused.",
+  "real": null,
+  "plausibility": 4,
+  "why": "A reversible ring-forming reaction makes fastenings that undo on command, easing repair and recycling."
+ },
+ {
+  "id": "raman-cancer-probe",
+  "name": "Laser cancer-finding surgical probe",
+  "job": "diagnoses",
+  "effect": "molecules shift the colour of light they scatter",
+  "effectCard": "raman-spectra",
+  "parts": [
+   "laser",
+   "fiber-optics",
+   "diffraction-gratings"
+  ],
+  "how": "A pen-like probe a surgeon touches to tissue during an operation to tell cancer from healthy brain. A laser shines down the fibre and the tissue scatters back a faint light whose colours are shifted by its molecules; a grating spreads that light so a computer can recognise the chemical fingerprint of a tumour in a second.",
+  "real": "Raman probes in brain-cancer surgery, clinical trials 2010s",
+  "plausibility": 4,
+  "why": "Reads tissue chemistry by colour, with no stain, sample or wait for a lab."
+ },
+ {
+  "id": "raman-glucose-meter",
+  "name": "Needle-free laser glucose meter",
+  "job": "measures",
+  "effect": "molecules shift the colour of light they scatter",
+  "effectCard": "raman-spectra",
+  "parts": [
+   "laser",
+   "diffraction-gratings",
+   "photocell"
+  ],
+  "how": "A wristband that measures blood sugar without a finger prick. It shines a laser into the skin and spreads the faintly colour-shifted light that comes back into a spectrum, where glucose molecules leave their own small signature that tracks how much sugar is in the blood.",
+  "real": null,
+  "plausibility": 3,
+  "why": "Would end finger pricks by reading sugar molecules through skin with light."
+ },
+ {
+  "id": "ice-core-thermometer",
+  "name": "Ice-core ancient thermometer",
+  "job": "measures",
+  "effect": "heavy hydrogen evaporates more slowly than light hydrogen",
+  "effectCard": "deuterium",
+  "parts": [
+   "mass-spectrometer"
+  ],
+  "how": "A method for reading the temperatures of past ice ages from layers of ancient polar ice. Water with heavy hydrogen evaporates less readily and falls out of clouds first, so snow formed in colder times holds less of it; a mass spectrometer weighs the hydrogen in each layer to give the temperature year by year.",
+  "real": "ice-core isotope paleothermometry, 1960s",
+  "plausibility": 5,
+  "why": "An isotope-separation quirk becomes a thermometer for climates hundreds of thousands of years old."
+ },
+ {
+  "id": "pet-scanner",
+  "name": "Positron body scanner",
+  "job": "diagnoses",
+  "effect": "electrons and positrons destroy each other, giving gamma rays",
+  "effectCard": "positron",
+  "parts": [
+   "coincidence-counter",
+   "computer"
+  ],
+  "how": "A ring-shaped scanner that shows where the body is burning sugar, which lights up tumours and active brain areas. The patient gets a sugar tagged with an atom that gives off positrons; each positron meets an electron and the pair vanish into two gamma rays flying opposite ways, and detectors that fire together let a computer trace back to the spot.",
+  "real": "PET scanner, 1970s",
+  "plausibility": 5,
+  "why": "Antimatter put to routine hospital use."
+ },
+ {
+  "id": "positron-metal-fatigue-tester",
+  "name": "Positron metal-fatigue tester",
+  "job": "measures",
+  "effect": "positrons last longer in atom-sized gaps before annihilating",
+  "effectCard": "positron",
+  "parts": [
+   "coincidence-counter",
+   "geiger-counter"
+  ],
+  "how": "A handheld tester that finds hidden fatigue in aircraft or reactor metal long before cracks appear. A tiny source fires positrons into the metal; in missing-atom gaps fewer electrons are around, so positrons survive slightly longer before turning into gamma rays, and timing those gamma rays reveals how damaged the metal is.",
+  "real": "positron annihilation spectroscopy, lab technique 1960s",
+  "plausibility": 3,
+  "why": "Times antimatter's lifetime to see damage too small for any microscope in the field."
+ },
+ {
+  "id": "activated-wear-tracer",
+  "name": "Radioactive engine-wear tracer",
+  "job": "measures",
+  "effect": "bombarding stable atoms makes them radioactive",
+  "effectCard": "artificial-radioactivity",
+  "parts": [
+   "piston-and-cylinder",
+   "geiger-counter"
+  ],
+  "how": "A way to measure engine wear while the engine runs. A thin surface layer of a piston ring is made faintly radioactive by a particle beam beforehand; as the ring wears, radioactive specks wash into the oil, and a counter on the oil line shows the wear minute by minute.",
+  "real": "thin-layer activation wear testing, 1970s",
+  "plausibility": 5,
+  "why": "Makes a part tattle on its own wear without stopping the engine."
+ },
+ {
+  "id": "steroid-eluting-contact-lens",
+  "name": "Anti-inflammation contact lens",
+  "job": "treats illness",
+  "effect": "cortisone calms inflammation",
+  "effectCard": "corticoids",
+  "parts": [
+   "contact-lenses"
+  ],
+  "how": "A soft contact lens loaded with a cortisone-type drug that seeps out slowly over days. It treats eye inflammation after surgery or injury far more steadily than eye drops, most of which wash away within minutes.",
+  "real": null,
+  "plausibility": 4,
+  "why": "Turns a vision aid into a slow-release drug pump sitting right on the sick tissue."
+ },
+ {
+  "id": "insecticide-bed-net",
+  "name": "Insecticide-treated bed net",
+  "job": "prevents disease",
+  "effect": "a chemical kills insects on contact",
+  "effectCard": "ddt",
+  "parts": [
+   "nylon"
+  ],
+  "how": "A nylon mesh hung over a bed at night, soaked with an insecticide. Mosquitoes that land on it trying to reach the sleeper die on contact, so fewer people get malaria and fewer infected mosquitoes survive to bite again.",
+  "real": "insecticide-treated bed nets, 1980s",
+  "plausibility": 5,
+  "why": "Prevents malaria with a curtain, not a vaccine."
+ },
+ {
+  "id": "insecticide-grain-bag",
+  "name": "Insect-killing grain sack",
+  "job": "preserves food",
+  "effect": "a chemical kills insects on contact",
+  "effectCard": "ddt",
+  "parts": [
+   "isotactic-polymers"
+  ],
+  "how": "A woven plastic sack for storing harvested grain whose fibres carry an insecticide. Weevils and moths that try to chew in die on contact with the fabric, so stored grain lasts months longer on the farm.",
+  "real": "insecticide-incorporated storage bags, 2010s",
+  "plausibility": 5,
+  "why": "Food spoiled by insects, not microbes, gets its own preserver."
+ },
+ {
+  "id": "porous-pot-gas-alarm",
+  "name": "Porous-pot mine gas alarm",
+  "job": "measures",
+  "effect": "lighter gas molecules seep through a porous barrier faster",
+  "effectCard": "uranium-hexafluoride",
+  "parts": [
+   "pottery",
+   "barometer"
+  ],
+  "how": "An alarm for explosive methane in coal mines. Methane is lighter than air, so it seeps into an unglazed clay pot faster than air seeps out, raising the pressure inside; a mercury gauge connected to the pot rises and rings a bell when enough methane is present.",
+  "real": "Ansell's firedamp indicator, 1867",
+  "plausibility": 5,
+  "why": "The same effect that enriched uranium, put in a clay pot to save miners."
+ },
+ {
+  "id": "jet-stream-kite-generator",
+  "name": "Jet-stream kite power station",
+  "job": "makes electricity",
+  "effect": "fast steady winds blow high in the sky",
+  "effectCard": "jet-streams",
+  "parts": [
+   "wing",
+   "electric-generators",
+   "insulated-wire"
+  ],
+  "how": "A huge tethered kite wing flown kilometres up in the jet stream, where winds are fast and almost never stop. Small generators on the wing are spun by the wind and send power down a long tether cable, giving steadier output than ground windmills.",
+  "real": null,
+  "plausibility": 2,
+  "why": "Taps the planet's steadiest wind, out of reach of every tower."
+ },
+ {
+  "id": "jet-stream-cargo-balloon",
+  "name": "Jet-stream cargo balloon",
+  "job": "transports",
+  "effect": "fast steady winds blow high in the sky",
+  "effectCard": "jet-streams",
+  "parts": [
+   "stratospheric-balloons",
+   "gps"
+  ],
+  "how": "An unpowered balloon that carries a parcel across an ocean by riding the jet stream eastward. It rises to the fast wind layer and drifts at hundreds of kilometres per hour, and when its satellite position says it is over the destination it releases the parcel on a parachute.",
+  "real": "Japanese Fu-Go balloons, 1944",
+  "plausibility": 3,
+  "why": "Free intercontinental freight carried by the wind alone."
+ },
+ {
+  "id": "self-balancing-scooter",
+  "name": "Self-balancing two-wheel scooter",
+  "job": "steadies the rider",
+  "effect": "feeding back the error lets a machine correct its own aim",
+  "effectCard": "cybernetics",
+  "parts": [
+   "gyroscope",
+   "electric-motors",
+   "wheel-and-axle",
+   "lithium-battery"
+  ],
+  "how": "A standing scooter on two side-by-side wheels that keeps its rider upright with no saddle or stirrup. Gyroscopes sense the slightest tip forward or back, and the motors instantly drive the wheels under the rider to cancel the error, hundreds of times a second.",
+  "real": "Segway, 2001",
+  "plausibility": 5,
+  "why": "Steadiness from constant correction rather than from a seat or a footrest."
+ },
+ {
+  "id": "active-earthquake-damper",
+  "name": "Active earthquake building damper",
+  "job": "absorbs shocks",
+  "effect": "feeding back the error lets a machine correct its own aim",
+  "effectCard": "cybernetics",
+  "parts": [
+   "seismograph",
+   "computer",
+   "piston-and-cylinder"
+  ],
+  "how": "A heavy weight near the top of a tall building, shoved by powered pistons. Sensors measure how the building is swaying and a computer drives the weight the opposite way to cancel the motion, so the tower stays still in wind and earthquakes.",
+  "real": "active mass dampers, 1989 Tokyo",
+  "plausibility": 5,
+  "why": "Absorbs shocks by pushing back intelligently, not just by springiness."
+ },
+ {
+  "id": "pcr-infection-test",
+  "name": "Gene-copying infection test",
+  "job": "diagnoses",
+  "effect": "each DNA strand is a template for copying its partner",
+  "effectCard": "the-double-helix",
+  "parts": [
+   "thermometer",
+   "electrophoresis"
+  ],
+  "how": "A test that finds a germ from just a few of its genes in a swab. Repeatedly heating and cooling the sample lets each DNA strand serve as a template for a new partner, doubling the germ's gene every cycle until there are billions of copies, enough to see on a gel.",
+  "real": "PCR diagnostic tests, 1980s",
+  "plausibility": 5,
+  "why": "Copying makes the invisible visible: one gene becomes a billion."
+ },
+ {
+  "id": "enzyme-dna-data-drive",
+  "name": "Enzyme-written DNA data drive",
+  "job": "stores data",
+  "effect": "an enzyme strings loose nucleotides into DNA or RNA",
+  "effectCard": "nucleic-acid-formation",
+  "parts": [
+   "integrated-circuits"
+  ],
+  "how": "An archive that stores computer files as DNA, written by an enzyme instead of harsh chemistry. A chip with tiny electrodes tells the enzyme which DNA letter to add at each spot, building strands that spell out the data; a sugar cube's worth could hold every film ever made for thousands of years.",
+  "real": null,
+  "plausibility": 3,
+  "why": "Biology's own writing machine becomes the densest, longest-lasting storage."
+ },
+ {
+  "id": "paper-protein-factory",
+  "name": "Freeze-dried paper medicine factory",
+  "job": "builds molecules",
+  "effect": "ribosomes build proteins by reading RNA instructions",
+  "effectCard": "ribosomes",
+  "parts": [
+   "paper"
+  ],
+  "how": "Paper spots soaked with ribosomes and the rest of a cell's protein-making machinery, then freeze-dried for storage without a fridge. A field medic adds water and the DNA recipe for a needed drug, and the ribosomes read its instructions and build that protein drug in an hour.",
+  "real": null,
+  "plausibility": 4,
+  "why": "Protein manufacture without cells, factories or cold chain."
+ },
+ {
+  "id": "paper-virus-test",
+  "name": "Paper colour-change virus test",
+  "job": "diagnoses",
+  "effect": "ribosomes build proteins by reading RNA instructions",
+  "effectCard": "ribosomes",
+  "parts": [
+   "paper"
+  ],
+  "how": "A cheap paper strip with freeze-dried ribosomes and a hidden gene circuit. When a virus's RNA from a sample is present it unlocks the circuit, so the ribosomes build a coloured protein and the spot changes colour.",
+  "real": null,
+  "plausibility": 4,
+  "why": "Clinic-grade virus detection on paper, with ribosomes doing the reporting."
+ },
+ {
+  "id": "interferon-nasal-spray",
+  "name": "Interferon cold-prevention spray",
+  "job": "prevents disease",
+  "effect": "infected cells release a protein that blocks other viruses",
+  "effectCard": "interferon",
+  "parts": [
+   "spray-cans"
+  ],
+  "how": "A nasal spray of interferon used when a cold or flu is going round the household. The protein tells the cells lining the nose to switch on their antiviral defences before any virus arrives, so the infection never takes hold.",
+  "real": null,
+  "plausibility": 3,
+  "why": "Borrows the body's emergency alarm signal before infection, instead of training immunity."
+ },
+ {
+  "id": "thorium-nuclear-clock",
+  "name": "Thorium nuclear clock",
+  "job": "keeps time",
+  "effect": "nuclei locked in a crystal absorb a razor-sharp frequency",
+  "effectCard": "mössbauer-effect",
+  "parts": [
+   "laser",
+   "quartz-oscillator"
+  ],
+  "how": "A clock that counts the ticks of an atom's nucleus instead of its electrons. Thorium nuclei held in a clear crystal absorb only one extremely precise colour of ultraviolet light, and a laser locked to that colour keeps time so steadily it would lose less than a second over the age of the universe.",
+  "real": null,
+  "plausibility": 3,
+  "why": "The next step beyond atomic clocks, counting nuclear rather than electron ticks."
+ },
+ {
+  "id": "mossbauer-mineral-analyzer",
+  "name": "Gamma-ray mineral analyzer",
+  "job": "measures",
+  "effect": "atoms locked in a crystal emit and absorb razor-sharp gamma rays",
+  "effectCard": "mössbauer-effect",
+  "parts": [
+   "electric-motors",
+   "geiger-counter"
+  ],
+  "how": "A small instrument that tells which iron minerals are in a rock, used even on Mars rovers. A radioactive source shakes back and forth on a motor to shift its gamma-ray colour by tiny amounts, and a counter sees which shifts the iron atoms in the rock absorb, a fingerprint of their chemical surroundings.",
+  "real": "Mössbauer spectrometer, 1960s; on Mars rovers 2004",
+  "plausibility": 5,
+  "why": "Gamma rays so sharp a walking-pace shake detunes them."
+ },
+ {
+  "id": "virus-proof-recoded-bacteria",
+  "name": "Virus-proof recoded factory bacteria",
+  "job": "modifies organisms",
+  "effect": "three RNA letters spell one amino acid",
+  "effectCard": "genetic-code",
+  "parts": [
+   "synthetic-gene"
+  ],
+  "how": "Factory bacteria whose whole genome has been rewritten so they never use certain three-letter codons, then the machinery that reads those codons is removed. Viruses still rely on those codons, so their proteins come out garbled inside the cell and they cannot spread through the fermentation tanks.",
+  "real": null,
+  "plausibility": 4,
+  "why": "Rewriting the genetic dictionary itself makes cells immune to every virus."
+ },
+ {
+  "id": "arsenic-sensing-bacteria",
+  "name": "Arsenic-sensing glowing bacteria",
+  "job": "measures",
+  "effect": "regulator genes switch other genes on and off",
+  "effectCard": "gene-regulators",
+  "parts": [
+   "recombinant-dna"
+  ],
+  "how": "A vial of harmless bacteria that tests well water for arsenic poisoning. A natural regulator gene that reacts to arsenic is wired to a gene that makes the cells glow, so the more arsenic is present, the more genes get switched on and the brighter the sample.",
+  "real": null,
+  "plausibility": 4,
+  "why": "Living cells as cheap chemical meters, using nature's own on/off switches."
+ },
+ {
+  "id": "living-logic-gate",
+  "name": "Living genetic logic circuit",
+  "job": "computes",
+  "effect": "regulator genes switch other genes on and off",
+  "effectCard": "gene-regulators",
+  "parts": [
+   "recombinant-dna"
+  ],
+  "how": "Bacteria carrying designed gene circuits that work like the logic gates of a computer. Each regulator gene turns others on or off depending on which chemicals are present, so the cell computes a simple answer, such as 'only if both signals', and shows it by making a coloured protein.",
+  "real": null,
+  "plausibility": 4,
+  "why": "Computation in living cells that can sense and act inside the body."
+ },
+ {
+  "id": "cell-flight-recorder",
+  "name": "Cellular flight-recorder bacteria",
+  "job": "records media",
+  "effect": "an enzyme copies RNA back into DNA",
+  "effectCard": "reverse-transcriptase",
+  "parts": [
+   "recombinant-dna"
+  ],
+  "how": "Gut bacteria that keep a diary of what they meet on their way through the body. An enzyme copies snippets of the cell's working RNA back into DNA and files them in a memory region of the genome in order, so sequencing the bacteria afterwards reveals what happened and when.",
+  "real": null,
+  "plausibility": 3,
+  "why": "A tape recorder made from a virus's enzyme, writing history into DNA."
+ },
+ {
+  "id": "hydrogen-bacteria-protein",
+  "name": "Air-and-hydrogen protein farm",
+  "job": "grows food",
+  "effect": "vent bacteria live on chemicals, without light or oxygen",
+  "effectCard": "deep-sea-ecosystems",
+  "parts": [
+   "air-pump"
+  ],
+  "how": "A tank of bacteria that make protein-rich flour from hydrogen, carbon dioxide and minerals, with no fields or sunlight. Like the microbes at deep-sea vents, they live on chemical energy, so pumping the gases through the tank grows food anywhere, even in a desert or on a spaceship.",
+  "real": "Solar Foods Solein, pilot plant 2020s",
+  "plausibility": 4,
+  "why": "Food grown without photosynthesis, like life at the sea-floor vents."
+ },
+ {
+  "id": "seabed-mud-battery",
+  "name": "Seabed mud power cell",
+  "job": "makes electricity",
+  "effect": "seabed bacteria living on chemicals hand electrons to an electrode",
+  "effectCard": "deep-sea-ecosystems",
+  "parts": [
+   "fuel-cell",
+   "insulated-wire"
+  ],
+  "how": "A power source for ocean sensors that sits in the seabed mud for years. Bacteria in the mud live off its chemicals and dump spare electrons onto a buried electrode, which flow through a wire to a second electrode in the water above, giving a small but endless current.",
+  "real": "benthic microbial fuel cells, prototypes 2000s",
+  "plausibility": 4,
+  "why": "Deep-sea chemical life as a battery that never needs replacing."
+ },
+ {
+  "id": "superconducting-city-cable",
+  "name": "Superconducting city power cable",
+  "job": "carries current",
+  "effect": "some ceramics lose all resistance at liquid-nitrogen cold",
+  "effectCard": "warm-superconductivity",
+  "parts": [
+   "insulated-wire",
+   "dewar-flask"
+  ],
+  "how": "An underground power cable made of ceramic tape kept cold with liquid nitrogen inside an insulated jacket. With zero resistance it carries several times the power of a copper cable of the same size and wastes none as heat, so a city can grow without digging new tunnels.",
+  "real": "HTS power cable pilots, 2000s-2010s",
+  "plausibility": 5,
+  "why": "Cheap liquid-nitrogen cold makes lossless power lines practical."
+ },
+ {
+  "id": "superconducting-energy-store",
+  "name": "Superconducting magnetic energy store",
+  "job": "stores electricity",
+  "effect": "some ceramics lose all resistance at liquid-nitrogen cold",
+  "effectCard": "warm-superconductivity",
+  "parts": [
+   "electromagnets",
+   "dewar-flask",
+   "transformer"
+  ],
+  "how": "A coil of superconducting ceramic in a liquid-nitrogen bath, holding electricity as a current that circles forever. Because there is no resistance the current never fades, and the grid can take the energy back out in a split second to cover sudden dips.",
+  "real": null,
+  "plausibility": 3,
+  "why": "Stores electricity as motion of charge with no chemistry and no wear."
+ }
+]

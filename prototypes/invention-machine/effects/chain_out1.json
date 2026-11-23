@@ -1,0 +1,415 @@
+[
+ {
+  "id": "tapping-vest",
+  "name": "Tapping Vest",
+  "subtitle": "a vest that taps the chest for pneumonia",
+  "job": "diagnoses",
+  "effects": [
+   {
+    "effect": "tapping sounds dull over solid parts, hollow over air",
+    "card": "percussion",
+    "newToJob": true
+   },
+   {
+    "effect": "piezoelectricity",
+    "card": "piezoelectricity",
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "microphone",
+   "microchips"
+  ],
+  "how": "Pneumonia kills hundreds of thousands of children a year, often where there is no X-ray machine or trained doctor. Small crystal tappers in the vest knock lightly on the chest, the way doctors once tapped with their fingers, and microphones listen: a lung full of fluid sounds dull, a healthy one hollow. A chip maps the dull patches and flags which side is sick.",
+  "obstacle": "Proving it is as reliable as a chest X-ray across children of different sizes and in noisy clinics.",
+  "real": "Doctors' finger percussion since 1761; lab prototypes of automated acoustic chest percussion, 2010s-2020s, but no clinical device",
+  "plausibility": 4,
+  "why": "Revives a forgotten bedside art by letting crystals tap and a chip listen, tirelessly."
+ },
+ {
+  "id": "polar-bowl",
+  "name": "Polar Bowl",
+  "subtitle": "a toilet that checks urine for sugar daily",
+  "job": "diagnoses",
+  "effects": [
+   {
+    "effect": "sugar in urine signals diabetes",
+    "card": "diabetes",
+    "newToJob": true
+   },
+   {
+    "effect": "mirror-image molecules twist polarized light opposite ways",
+    "card": "crystal-asymmetry",
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "polaroid",
+   "light-emitting-diodes",
+   "photocell"
+  ],
+  "how": "Hundreds of millions of people have diabetes and don't know it until damage is done. Sugar molecules are lopsided, so they twist light that has been filtered to vibrate one way; a light shining through the urine stream in the toilet, and a second filter, measure how much the light turned, which tells how much sugar is there. It checks every day with no strips and no effort.",
+  "obstacle": "Urine is a messy mix whose other twisting molecules, like protein, and its changing dilution, blur a small sugar signal.",
+  "real": "Polarimetric sugar meters in labs since the 1800s; research smart toilets, 2020 (Stanford), use dipsticks and cameras instead",
+  "plausibility": 3,
+  "why": "A Victorian lab trick for sugar, moved into the one appliance everyone visits daily."
+ },
+ {
+  "id": "pavlov-pillbox",
+  "name": "Pavlov's Pillbox",
+  "subtitle": "a pill dispenser that trains the body's response",
+  "job": "treats illness",
+  "effects": [
+   {
+    "effect": "pairing a signal with a reward trains a reflex",
+    "card": "conditioned-response",
+    "newToJob": true
+   },
+   {
+    "effect": "the body rejects foreign tissue",
+    "card": "tissue-transplantation",
+    "newToJob": false
+   }
+  ],
+  "parts": [
+   "microchips",
+   "valve"
+  ],
+  "how": "Transplant patients take drugs for life that stop their body rejecting the new organ, and those drugs slowly damage kidneys and invite infection and cancer. The dispenser pairs every dose with a distinctive taste and smell, so over months the body learns to dampen its immune response at that cue alone; it then swaps in some doses that carry only the cue, cutting the total drug a patient takes.",
+  "obstacle": "The learned response fades and varies from person to person, so it needs long trials to prove it is safe to cut doses.",
+  "real": "Conditioned immune suppression shown in rats (Ader, 1975) and small human trials with transplant drugs, 2010s; no dispenser product",
+  "plausibility": 3,
+  "why": "Uses a dog-bell reflex as a drug, so a smell carries part of the dose."
+ },
+ {
+  "id": "leaf-bandage",
+  "name": "Leaf Bandage",
+  "subtitle": "a dressing that breathes oxygen into wounds",
+  "job": "supplies oxygen",
+  "effects": [
+   {
+    "effect": "plants turn sunlight, water and carbon dioxide into sugar",
+    "card": "photosynthesis",
+    "newToJob": true
+   },
+   {
+    "effect": "small molecules seep through a membrane",
+    "card": "osmosis",
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "light-emitting-diodes",
+   "lithium-battery"
+  ],
+  "how": "Diabetic foot ulcers heal slowly because the wound starves for oxygen, and they lead to tens of thousands of amputations a year. This dressing holds a thin layer of green algae lit by tiny lights; the algae make oxygen right at the wound, and it seeps through a thin membrane into the skin, while the membrane keeps the algae out.",
+  "obstacle": "Keeping the algae alive and making steady oxygen for days in a warm, sealed bandage on a patient's foot.",
+  "real": "Lab and animal studies of algae-seeded wound dressings and scaffolds, 2014-2020s; no approved product",
+  "plausibility": 3,
+  "why": "Puts a tiny lit garden on the wound so oxygen is made where it's needed."
+ },
+ {
+  "id": "tolerance-teether",
+  "name": "Tolerance Teether",
+  "subtitle": "a teether that heads off food allergies",
+  "job": "prevents disease",
+  "effects": [
+   {
+    "effect": "an embryo's body accepts foreign tissue without rejecting it",
+    "card": "embryonic-immunological-tolerance",
+    "newToJob": true
+   },
+   {
+    "effect": "a second exposure can trigger a violent allergic reaction",
+    "card": "anaphylactic-shock",
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "vulcanization-of-rubber"
+  ],
+  "how": "Peanut and egg allergies are rising and can kill, and babies fed these foods early and steadily are far less likely to develop them, but parents struggle to give tiny regular doses. A rubber teether slowly releases trace amounts of common food proteins as the baby chews, so the young immune system learns to treat them as harmless before it can learn to attack them.",
+  "obstacle": "Getting doses steady and safe enough that doctors and regulators accept it for babies who may already be allergic.",
+  "real": "Early peanut feeding cut allergy by about 80% (LEAP trial, 2015); early-introduction powders sold since 2018, no slow-release teether",
+  "plausibility": 4,
+  "why": "Turns the window when young bodies accept strangers into a toy that prevents allergy."
+ },
+ {
+  "id": "sugar-gate",
+  "name": "Sugar Gate",
+  "subtitle": "a patch that releases insulin when sugar rises",
+  "job": "regulates the body",
+  "effects": [
+   {
+    "effect": "insulin lets the body use sugar",
+    "card": "insulin",
+    "newToJob": true
+   },
+   {
+    "effect": "big molecules trapped behind a membrane draw water in",
+    "card": "protein-size",
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "nylon"
+  ],
+  "how": "People with type 1 diabetes must guess their insulin doses all day, and too much can kill overnight. In this skin patch, an enzyme turns sugar into an acid; when blood sugar is high, the acid makes a gel full of trapped molecules draw in water and swell, which stretches open pores that let insulin out, and when sugar falls the gel shrinks and the gate closes.",
+  "obstacle": "Making the gel react fast enough, and the same way for weeks, to match the quick swings of blood sugar after meals.",
+  "real": "Glucose-responsive gels and 'smart insulin' patches in animal studies, 2015 onward; closed-loop pumps with electronics exist",
+  "plausibility": 3,
+  "why": "A chain of enzyme, acid and swelling makes a pancreas with no electronics."
+ },
+ {
+  "id": "ember-block",
+  "name": "Ember Block",
+  "subtitle": "a numbing implant you re-dose with a wand",
+  "job": "numbs pain",
+  "effects": [
+   {
+    "effect": "a drug numbs nerves where it is applied",
+    "card": "cocaine",
+    "newToJob": true
+   },
+   {
+    "effect": "induction",
+    "card": "electromagnetic-induction",
+    "newToJob": true
+   },
+   {
+    "effect": "a magnet loses its magnetism when hot enough",
+    "card": "curie-temperature",
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "novocaine",
+   "electromagnets"
+  ],
+  "how": "After surgery, a numbing injection wears off in hours and patients turn to opioids, which hook many of them. Wax beads holding a numbing drug are left by the nerve, mixed with tiny magnetic grains; holding a wand over the skin heats the grains, which melts a bit of wax and frees a dose. The grains stop heating once they get hot enough to lose their magnetism, so they can't burn the tissue.",
+  "obstacle": "Getting regulators to accept a drug store left beside a nerve that could, if it failed, release too much at once.",
+  "real": "Long-acting numbing drugs in fat bubbles (Exparel, 2011); light- and heat-triggered numbing capsules in rat studies, 2010s",
+  "plausibility": 3,
+  "why": "Wireless heat plus a built-in temperature limit makes pain relief available on demand."
+ },
+ {
+  "id": "phage-catheter",
+  "name": "Phage Catheter",
+  "subtitle": "a catheter whose coating multiplies against infection",
+  "job": "kills bacteria",
+  "effects": [
+   {
+    "effect": "some viruses kill only bacteria",
+    "card": "bacteriophages",
+    "newToJob": true
+   },
+   {
+    "effect": "viruses multiply only inside living cells",
+    "card": "virus-transduction",
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "vulcanization-of-rubber",
+   "valve"
+  ],
+  "how": "Urinary catheters are the most common cause of hospital infections, and the germs build slimy films that antibiotics can't get through. This catheter is coated with viruses that attack only bacteria; they lie still until germs settle, then multiply inside them and burst out to attack the next ones, so the dose grows exactly where and when the infection does.",
+  "obstacle": "Each virus kills only a few bacterial strains, so a coating must be matched to the germs in each hospital and kept up to date.",
+  "real": "Phage-coated catheters reduced biofilms in lab studies, 2000s-2010s; phage therapy used in Georgia since the 1920s",
+  "plausibility": 3,
+  "why": "A coating that breeds its own medicine only when germs arrive."
+ },
+ {
+  "id": "lime-breath",
+  "name": "Lime Breath",
+  "subtitle": "a greenhouse that feeds plants carbon from air",
+  "job": "grows food",
+  "effects": [
+   {
+    "effect": "heating limestone frees a gas that lime soaks back up",
+    "card": "carbon-dioxide",
+    "newToJob": true
+   },
+   {
+    "effect": "plants thrive on the carbon dioxide we breathe out",
+    "card": "plants-and-carbon-dioxide",
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "mirror",
+   "air-pump"
+  ],
+  "how": "Greenhouse crops grow about a quarter faster with extra carbon dioxide, but farmers buy it in tanks or burn gas to get it. Here a bed of lime soaks carbon dioxide out of the outside air at night; by day, mirrors focus sunlight to heat the lime, which gives the gas back into the greenhouse, and the cycle repeats.",
+  "obstacle": "Lime tires after many cycles and the mirrors and kiln cost more than bottled gas for most small farms.",
+  "real": "A direct-air-capture plant fed a Swiss greenhouse (Climeworks Hinwil, 2017) using a different absorber and grid power",
+  "plausibility": 3,
+  "why": "Chains an old limekiln trick to sunlight so the air itself fertilizes crops."
+ },
+ {
+  "id": "leaf-ribs",
+  "name": "Leaf Ribs",
+  "subtitle": "a spinach skeleton that feeds lab-grown tissue",
+  "job": "grows cultures",
+  "effects": [
+   {
+    "effect": "cellulose is the tough fibre in plant walls",
+    "card": "cellulose",
+    "newToJob": true
+   },
+   {
+    "effect": "capillary action",
+    "card": "capillary-action",
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "tissue-culture",
+   "valve"
+  ],
+  "how": "Grown tissue for patches of heart muscle, or for meat, can't be thicker than a few hairs because the inside starves with no blood vessels. A spinach leaf is washed until only its cellulose skeleton is left, veins and all; the leaf's own vein network wicks nutrients and oxygen through the tissue grown on it, like blood through capillaries.",
+  "obstacle": "Plant veins are larger and stiffer than ours, and stacking many leaves into a thick, well-fed organ is unsolved.",
+  "real": "Heart cells grown on washed-out spinach leaves (Worcester Polytechnic, 2017); still lab work",
+  "plausibility": 3,
+  "why": "Borrows a leaf's plumbing as ready-made blood vessels for growing tissue."
+ },
+ {
+  "id": "ice-sieve",
+  "name": "Ice Sieve",
+  "subtitle": "desalting seawater with a gas terminal's cold",
+  "job": "supplies water",
+  "effects": [
+   {
+    "effect": "an expanding gas cools itself",
+    "card": "joule-thomson-effect",
+    "newToJob": true
+   },
+   {
+    "effect": "crystals build themselves from identical repeating units",
+    "card": "crystallography",
+    "newToJob": true
+   },
+   {
+    "effect": "dissolved stuff lowers a liquid's vapor pressure",
+    "card": "raoults-law",
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "valve",
+   "copper"
+  ],
+  "how": "Coastal cities need fresh water, and today's desalting plants burn a lot of power pushing seawater through filters. Ports that import liquefied gas must warm it back up, and the expanding gas gets very cold; that cold freezes seawater, and because ice crystals build only from water molecules, the salt is left out. The ice is rinsed and melted into fresh water, using cold that would otherwise be wasted.",
+  "obstacle": "Brine clings to the ice crystals, and washing it off cheaply at large scale has defeated every pilot plant so far.",
+  "real": "Freeze-desalting pilot plants, 1950s-1980s; using gas-terminal cold for it proposed and studied but not built at scale",
+  "plausibility": 3,
+  "why": "Wasted cold from imported gas becomes a salt filter made of ice."
+ },
+ {
+  "id": "night-sweat",
+  "name": "Night Sweat",
+  "subtitle": "a panel that pulls dew from clear skies",
+  "job": "supplies water",
+  "effects": [
+   {
+    "effect": "glow rises with the fourth power of temperature",
+    "card": "heat-and-radiation",
+    "newToJob": true
+   },
+   {
+    "effect": "droplets form around a seed",
+    "card": "cloud-chamber",
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "teflon",
+   "aluminum-process"
+  ],
+  "how": "Billions of people face water shortages in dry places where it rarely rains but the air holds moisture. This panel sheds its own heat as invisible light straight up into the cold sky, so it cools below the air around it even with no power; water vapor condenses on tiny seeding bumps on its surface and runs into a gutter.",
+  "obstacle": "It gives well under a litre per square metre per night, so a family needs a roof-sized panel and clear, humid nights.",
+  "real": "Passive radiative dew condensers (OPUR, 2000s; ETH Zurich round-the-clock device, 2021); not yet widely used",
+  "plausibility": 4,
+  "why": "Uses the night sky as a free freezer to wring water from air."
+ },
+ {
+  "id": "supercool-drawer",
+  "name": "Supercool Drawer",
+  "subtitle": "keeps food below freezing without ice",
+  "job": "preserves food",
+  "effects": [
+   {
+    "effect": "water freezes and boils at fixed temperatures",
+    "card": "celsius",
+    "newToJob": true
+   },
+   {
+    "effect": "lopsided molecules twist to line up in an electric field",
+    "card": "dipole-moments",
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "refrigerators",
+   "transformer"
+  ],
+  "how": "A third of food is wasted, and freezing ruins the texture of fish, fruit and meat because ice crystals burst their cells. This fridge drawer holds food a few degrees below freezing while a gentle electric field keeps the water molecules turning to follow it, so they can't settle into ice; food stays as fresh as chilled food for weeks longer.",
+  "obstacle": "Evidence that the field reliably stops ice forming is thin, and a bump or a cold spot can still freeze the whole drawer.",
+  "real": "Electric-field 'supercooling' fridges sold in Japan, 2010s (DENBA), with disputed evidence",
+  "plausibility": 2,
+  "why": "Pairs a fixed freezing point with an electric nudge to dodge it."
+ },
+ {
+  "id": "smokeless-hearth",
+  "name": "Smokeless Hearth",
+  "subtitle": "a stove burning sun-made hydrogen at night",
+  "job": "prepares food",
+  "effects": [
+   {
+    "effect": "a current splits water into hydrogen and oxygen",
+    "card": "decomposition-of-water",
+    "newToJob": true
+   },
+   {
+    "effect": "burning hydrogen makes nothing but water",
+    "card": "hydrogen-and-water",
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "photovoltaic-cells",
+   "valve"
+  ],
+  "how": "Smoke from cooking fires kills over three million people a year, mostly women and children. A small solar panel splits water into hydrogen during the day and stores it in a tank; at dinnertime the hydrogen burns in a familiar flame that gives off only water vapor, so there is no smoke and no firewood to collect.",
+  "obstacle": "Storing hydrogen safely in a home costs far more than a gas cylinder or a battery-powered induction cooker today.",
+  "real": "Hydrogen cooking stoves trialled in small pilots, 2010s-2020s",
+  "plausibility": 3,
+  "why": "Sunlight becomes a clean flame for dinner by passing through water."
+ },
+ {
+  "id": "sky-vest",
+  "name": "Sky Vest",
+  "subtitle": "a vest that shields outdoor workers from heat",
+  "job": "protects",
+  "effects": [
+   {
+    "effect": "glow rises with the fourth power of temperature",
+    "card": "heat-and-radiation",
+    "newToJob": true
+   },
+   {
+    "effect": "latent heat",
+    "card": "latent-heat",
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "nylon"
+  ],
+  "how": "Heat kills thousands of farm and building workers each year, and the toll grows as summers get hotter. The vest's outer fabric reflects sunlight but lets body heat escape as invisible light to the sky, and pockets of wax that melt at just below skin temperature soak up the extra heat during the hottest hours, then harden again overnight.",
+  "obstacle": "Cooling fabrics only work well under open sky, and the wax runs out after a few hours of hard work.",
+  "real": "Sky-cooling textiles in labs (Stanford, 2016) and wax cooling vests sold separately; not combined in a product",
+  "plausibility": 4,
+  "why": "Two passive coolers, one by day-sky radiation and one by melting, with no power."
+ }
+]

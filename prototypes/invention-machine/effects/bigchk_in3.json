@@ -1,0 +1,300 @@
+[
+ {
+  "id": "laser-spike-airliner",
+  "name": "Laser-spike airliner",
+  "subtitle": "a supersonic plane that flies through laser-cleared air",
+  "bigJob": "continent-hour",
+  "job": "fly coast to coast in an hour without burning a fortune in fuel",
+  "effects": [
+   {
+    "effect": "a laser pulse heats a thin line of air ahead of the nose, leaving a hot, thin channel that the shock wave can't stand in",
+    "card": null,
+    "newToJob": true
+   },
+   {
+    "effect": "above the speed of sound air resistance jumps",
+    "card": "mach-number",
+    "newToJob": false
+   }
+  ],
+  "parts": [
+   "laser",
+   "mirror",
+   "electric-generators",
+   "wing"
+  ],
+  "how": "Above the speed of sound a plane has to shove a wall of air aside, the shock wave, and that wall costs several times the fuel of ordinary flight and makes the boom. This plane fires rapid laser pulses a few metres ahead of its nose; each one heats a thin line of air so it expands and thins out, and the nose rides down that low-density channel, so the shock stands off and weakens. Wind-tunnel tests show the drag falls by far more than the energy the laser spends.",
+  "obstacle": "No one has shown the saving holds on a full-size plane at Mach 4, where it would need a laser of megawatt class pulsing thousands of times a second for hours.",
+  "evidence": "Wind-tunnel results: Brazilian IEAv/Myrabo directed-energy air spike cut drag on a hypersonic model by up to ~40% (reviewed in J. Propulsion & Power, 2010); ONERA/ENSTA (Elias group, 2018-2024) measured drag reduction on a blunt body at Mach 3 from femtosecond laser filaments; Kremeyer (PM&AM Research with AFRL) simulations show up to 96% wave-drag cut on a 45-degree cone. https://www.twz.com/33859/blasting-the-air-in-front-of-hypersonic-vehicles-with-lasers-could-unlock-unprecedented-speeds",
+  "existsCheck": "Searched for companies and flight programmes on laser energy deposition for drag and boom: only small research contracts (PM&AM Research SBIRs, NASA Langley 2017 study, Boeing/Lockheed patents); no flight test and no airliner programme. Supersonic/hypersonic airliner startups (Boom, Hermeus, Venus, Destinus) don't use it.",
+  "familiar": true,
+  "tenX": "Wave drag, the main cost of supersonic flight: tunnel tests cut it ~40%, simulations far more; at Mach 4 that could bring fuel per seat close to today's business class, turning a 5-hour crossing into about an hour.",
+  "plausibility": 2,
+  "why": "It would let a plane switch off the shock wave that made supersonic flight costly and loud."
+ },
+ {
+  "id": "boom-cancelling-biplane",
+  "name": "Boom-cancelling biplane",
+  "subtitle": "two wings whose shock waves cancel out",
+  "bigJob": "continent-hour",
+  "job": "fly supersonic over land with no boom and little extra fuel",
+  "effects": [
+   {
+    "effect": "two facing wedge-shaped wings bounce their shock waves into each other, where they cancel",
+    "card": "edb-shock-wave",
+    "newToJob": true
+   },
+   {
+    "effect": "above the speed of sound air resistance jumps",
+    "card": "mach-number",
+    "newToJob": false
+   }
+  ],
+  "parts": [
+   "wing",
+   "turbines",
+   "piston-and-cylinder"
+  ],
+  "how": "Supersonic planes are banned or restricted over land because of the boom, and the same shock waves that make it eat most of their fuel. This plane flies on two flat-faced wings, one above the other, each shaped like a wedge pointing at its partner; the shock wave each wing sends out hits the other wing and is cancelled there, so almost nothing reaches the ground and the wave drag mostly vanishes. Hinged flaps reshape the gap while the plane speeds up, so the cancellation holds from take-off to cruise.",
+  "obstacle": "The shock waves cancel only at one speed, and below it the air chokes in the gap between the wings, so a working plane needs wings that reshape smoothly in flight.",
+  "evidence": "Busemann proposed it in 1935; JAXA/Tohoku wind-tunnel tests (2008-2013, Mach 0.3-2.3) confirmed the shock cancellation and mapped the choking problem; Hu, Wang (MIT) and Kusunoki 2012 optimised biplanes in simulation with about half the drag of Concorde at cruise. https://www.doi.org/10.1155/2013/231434",
+  "existsCheck": "Searched for any company or aircraft programme building a Busemann-type airliner: none; only university and JAXA studies. Boom Supersonic's 'boomless cruise' instead uses atmospheric refraction at Mach 1.1-1.3, and NASA's X-59 (flew 2025) softens the boom by shaping one wing rather than cancelling it.",
+  "familiar": true,
+  "tenX": "Ground boom from loud to near zero and supersonic wave drag roughly halved (simulations), opening overland routes to Mach 2+ flights where today only subsonic is allowed.",
+  "plausibility": 2,
+  "why": "It would make supersonic flight over land quiet by cancelling the boom at the wing, not by flying slower."
+ },
+ {
+  "id": "reef-bubble-shade",
+  "name": "Reef bubble shade",
+  "subtitle": "long-lasting bubbles that whiten the water over reefs",
+  "bigJob": "save-reefs",
+  "job": "shade a whole reef through a marine heatwave",
+  "effects": [
+   {
+    "effect": "small particles scatter light: a few parts per million of tiny bubbles whiten water and send sunlight back out",
+    "card": "tyndall-effect",
+    "newToJob": true
+   },
+   {
+    "effect": "a thin soapy skin stops tiny bubbles merging and rising, so they hang in the water for days",
+    "card": "surfactant-action",
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "air-pump",
+   "valve",
+   "photovoltaic-cells"
+  ],
+  "how": "Corals bleach when hot water and strong sunlight come together, and shading them by a third is enough to stop much of it, but no cloth or umbrella can cover a reef. Moored solar buoys upstream release a haze of bubbles a hundredth of a millimetre across, coated with a harmless soapy film so they last for days instead of seconds; the current carries them over the reef, the water turns faintly milky, and part of the sunlight is scattered back to the sky. They run only in the weeks a heatwave is forecast.",
+  "obstacle": "Nobody has yet made bubbles that last for days in open seawater with a coating that is safe for reef life, nor measured how far a current spreads them.",
+  "evidence": "Seitz (Harvard), Climatic Change 2011: microbubbles at parts-per-million volume roughly double water's reflectivity, and ship-wake microbubbles lasted ~15 times longer than theory for clean water; shading of 30% or more cut bleaching in tank and reef-pool trials, and seawater fog shading cut heat-stress mortality 55% (Southern Cross Univ.). https://dash.harvard.edu/server/api/core/bitstreams/7312037c-8308-6bd4-e053-0100007fdf3b/content",
+  "existsCheck": "Searched reef cooling/shading trials and companies: Australia's Reef Restoration and Adaptation Program lists microbubbles as a concept but reports only fogging and cloud-brightening trials (2020-2025); no microbubble trial or company found. Florida 'underwater umbrellas' shade only single colonies.",
+  "familiar": true,
+  "tenX": "Area shaded per unit effort: from single colonies under umbrellas to whole reef sections from a few buoys, cutting bleaching light by ~30% in a heatwave.",
+  "plausibility": 3,
+  "why": "It would let people shade living reefs at the scale of kilometres, the first sunshade for an ecosystem."
+ },
+ {
+  "id": "heat-hardened-coral-algae",
+  "name": "Heat-hardened coral algae",
+  "subtitle": "lab-toughened algae handed to newborn corals",
+  "bigJob": "save-reefs",
+  "job": "give a reef's next generation of corals partners that survive heat",
+  "effects": [
+   {
+    "effect": "mutation plus selection breeds new forms: algae kept for years in hot water evolve to cope with it",
+    "card": "evolution-and-mutation",
+    "newToJob": true
+   },
+   {
+    "effect": "young corals pick up their algae from the water around them, then keep them",
+    "card": null,
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "bacterial-cultivation",
+   "valve",
+   "refrigerators"
+  ],
+  "how": "Corals bleach because the tiny algae living inside them break down in hot water and the coral throws them out and starves; corals evolve far too slowly to keep up with warming, but the algae divide every few days. Algae grown for years in tanks kept above today's summer peak evolve to tolerate it; floating hatcheries release them into the slicks of coral larvae after mass spawning, and since many young corals take in whichever algae are around, a reef's new recruits start life with heat-proof partners.",
+  "obstacle": "Only some lab-evolved strains make their corals tougher, and nobody has yet shown they win out and stay put on a real reef over years of wild competition.",
+  "evidence": "Buerger et al. (van Oppen lab, Univ. Melbourne/AIMS), Science Advances 2020: algae evolved 4 years at 31C raised bleaching tolerance in coral larvae (3 of 10 strains); Chan et al., Global Change Biology 2023: a heat-evolved strain stayed in adult corals for 2 years, sped recovery and raised heat tolerance with no growth cost. https://www.unimelb.edu.au/newsroom/news/2023/november/new-treatment-could-enhance-coral-heat-tolerance-and-buy-time-for-threatened-reefs",
+  "existsCheck": "Searched for field deployment of heat-evolved symbionts: the Melbourne/AIMS programme says controlled field trials are the next step, with no reef-scale release reported; coral larval 'spawn slick' restoration (Southern Cross Univ.) seeds larvae but not with evolved algae. Familiar as a research programme; the reef-scale delivery is not built.",
+  "familiar": true,
+  "tenX": "Heat a reef can take: raising bleaching tolerance by about 1C, roughly a decade of warming, with corals still breeding naturally, at hatchery cost per hectare rather than per colony.",
+  "plausibility": 3,
+  "why": "The first time people evolved a wild ecosystem's partner species to outrun climate change."
+ },
+ {
+  "id": "glowing-minefield-scan",
+  "name": "Glowing-minefield scan",
+  "subtitle": "explosive-sensing bacteria read by a drone laser",
+  "bigJob": "landmines",
+  "job": "map exactly where the mines are in a field before anyone walks in",
+  "effects": [
+   {
+    "effect": "bacteria engineered to switch on a glowing protein when they meet traces of TNT seeping from a buried mine",
+    "card": null,
+    "newToJob": true
+   },
+   {
+    "effect": "fluorescence: the protein glows a different colour when lit by a laser",
+    "card": "fluorescence",
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "recombinant-dna",
+   "laser",
+   "telescope",
+   "helicopter"
+  ],
+  "how": "Metal detectors beep for every nail and shell fragment, about a thousand times per real mine, and each beep has to be dug out by hand. Every mine leaks a faint trace of its explosive into the soil above it; a drone sprays the field with tiny gel beads holding harmless bacteria that glow only where they meet that trace, and hours later it flies back at night sweeping a laser across the ground, mapping the glowing spots from the air. Only those spots get dug, and nobody steps on the field to find them.",
+  "obstacle": "The glow is faint and the bacteria must survive sun and rain long enough to work, and regulators must accept spreading engineered microbes on farmland.",
+  "evidence": "Belkin et al. (Hebrew University), Nature Biotechnology 2017: bead-encapsulated E. coli bioreporters on a real test field, read by a laser scanner from 20 m, revealed 14 of 18 buried mines; Elad et al. 2022 raised the reporter's sensitivity by directed evolution and detected buried DNT in sand. https://pubmed.ncbi.nlm.nih.gov/28398330",
+  "existsCheck": "Searched for drone-borne bioreporter demining and companies: none; the Hebrew University group has only lab and simulated-drone imaging. Ukraine's demining startups (Dropla, Ailand, UADamage) fly cameras, magnetometers and metal detectors; APOPO uses rats. Known since 2017, so familiar, but not built.",
+  "familiar": true,
+  "tenX": "False alarms per mine from ~1,000 to a handful, and area surveyed per day from a deminer's few hundred square metres to hectares by drone, with no one in the field.",
+  "plausibility": 3,
+  "why": "It would turn living microbes into a minefield map, ending the slow crawl of deminers on their knees."
+ },
+ {
+  "id": "two-tone-mine-listener",
+  "name": "Two-tone mine listener",
+  "subtitle": "hums at the ground and hears mines rattle",
+  "bigJob": "landmines",
+  "job": "tell a mine from a buried nail or stone without digging",
+  "effects": [
+   {
+    "effect": "a mine's springy lid and hollow body rattle against the soil, so two tones played at it come back mixed into new tones that rocks, roots and scrap metal don't make",
+    "card": null,
+    "newToJob": true
+   },
+   {
+    "effect": "light waves interfere: a laser reflected off the ground reads shakes a millionth of a millimetre high",
+    "card": "light-waves",
+    "newToJob": true
+   },
+   {
+    "effect": "resonance: the trapped air and lid ring at their own pitch",
+    "card": "resonance-vibration",
+    "newToJob": false
+   }
+  ],
+  "parts": [
+   "loudspeaker",
+   "laser",
+   "interferometer",
+   "cart"
+  ],
+  "how": "Metal detectors can't tell a mine from a nail and miss plastic mines entirely, so deminers dig up a thousand pieces of junk for every mine. A vehicle crawling along a safe lane plays two low hums into the ground beside it while a row of laser beams measures how the soil surface shakes; over a mine, the lid flexing on its hollow case beats the two hums together into extra tones, a signature that solid stones, roots and scrap don't give. It works the same for plastic, wood and metal mines because it hears the mine's shape, not its metal.",
+  "obstacle": "Scanning is still slow and needs the laser to sit steady over the ground, and wet or deep-buried mines ring too faintly to hear.",
+  "evidence": "Donskoy (Stevens Institute), US Army test sites, 2000s: dual-frequency nonlinear acoustics found mines with up to 40 dB contrast and few false alarms from rocks and roots; Univ. Mississippi NCPA (2019 SPIE; 2024 LAMBDIS): a multi-beam laser vibrometer on a moving vehicle scanned a 2 m by 1 km strip in under 30 minutes and found buried plastic mines. https://ui.adsabs.harvard.edu/abs/2019SPIE11012E..0WL/abstract",
+  "existsCheck": "Searched for products or deployments of acoustic/laser-vibrometer or nonlinear-acoustic mine detection: only research systems (Univ. Mississippi NCPA, MIT Lincoln Lab, Stevens patents); no humanitarian demining product. Demining drones and robots (Dropla, Ailand, HSTAMIDS) use metal detection and radar.",
+  "familiar": false,
+  "tenX": "False alarms per mine from ~1,000 to around ten, and plastic mines found as reliably as metal ones, so clearance speed rises roughly tenfold with the operator in a vehicle on a cleared lane.",
+  "plausibility": 3,
+  "why": "It would find mines by listening to their shape, ending the reliance on metal that let plastic mines hide."
+ },
+ {
+  "id": "atom-sensor-mine-scanner",
+  "name": "Atom-sensor mine scanner",
+  "subtitle": "hears the radio ring of explosive itself",
+  "bigJob": "landmines",
+  "job": "search a field for the explosive inside mines, not their metal",
+  "effects": [
+   {
+    "effect": "atomic resonance: nitrogen nuclei in TNT and RDX ring back at their own radio pitch after a radio pulse, a fingerprint no soil or scrap shares",
+    "card": "magnetic-resonance",
+    "newToJob": false
+   },
+   {
+    "effect": "a glass cell of laser-lit alkali atoms senses magnetic fields a billion times weaker than Earth's, far below what copper coils can hear at these pitches",
+    "card": null,
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "radio-antennas",
+   "laser",
+   "photocell",
+   "cart"
+  ],
+  "how": "Only the explosive makes a mine dangerous, yet today's detectors find metal, so every nail is a false alarm. The nitrogen in explosives answers a radio pulse with a faint ring at a pitch unique to each explosive; a row of laser-read atom sensors, each a small glass cell of vapour, picks up that ring far more sensitively than the copper coils of earlier detectors, so TNT, the most common and faintest-ringing mine filling, can be heard in seconds rather than minutes. That turns explosive detection from a slow check on suspected spots into a sweep across the whole field.",
+  "obstacle": "The ring from TNT is so faint and slow that even atom sensors need seconds per spot, and nearby radio noise and power lines drown it out.",
+  "evidence": "Lee, Sauer, Seltzer, Alem & Romalis (Princeton), PNAS 2006: a radio-frequency atomic magnetometer with 0.24 fT/sqrt(Hz) at the 423 kHz nitrogen resonance of ammonium nitrate, beating tuned copper coils; Sandia/LANL work combined polarisation enhancement with an atomic magnetometer for >20-fold signal gain. Earlier coil-based quadrupole-resonance prototypes found 100% of plastic mines in Bosnia field tests (1999). https://collaborate.princeton.edu/en/publications/subfemtotesla-radio-frequency-atomic-magnetometer-for-detection-o/",
+  "existsCheck": "Searched NQR landmine detectors: 1999-2004 US prototypes never fielded; mRead (Australia, with HALO Trust) field-tested a coil-based handheld resonance detector in Angola in 2024 as a confirmation tool for spots flagged by metal detectors. No one uses atom sensors to make it fast enough to search a field rather than confirm a spot.",
+  "familiar": true,
+  "tenX": "Time to hear a TNT mine from minutes to seconds (20-100x signal gain), turning explosive-specific detection from spot checks into a full sweep, so false alarms per mine fall from ~1,000 to near zero.",
+  "plausibility": 2,
+  "why": "Quantum sensors made explosive itself visible underground, so only real mines were ever dug."
+ },
+ {
+  "id": "sun-powered-tutor-slate",
+  "name": "Sun-powered tutor slate",
+  "subtitle": "a textbook-priced slate with a tutor inside",
+  "bigJob": "tutor-every-child",
+  "job": "give every child a patient tutor with no grid, no internet and no teacher to spare",
+  "effects": [
+   {
+    "effect": "resistance (Ohm's law): a memory cell's stored conductance multiplies the voltage on it, and currents add on a shared wire, so a memory array does an AI model's arithmetic where the numbers are stored",
+    "card": "ohms-law",
+    "newToJob": true
+   },
+   {
+    "effect": "light lets a coating conduct",
+    "card": "photovoltaic-cells",
+    "newToJob": false
+   }
+  ],
+  "parts": [
+   "photovoltaic-cells",
+   "integrated-circuits",
+   "microphone",
+   "loudspeaker"
+  ],
+  "how": "One-to-one tutoring roughly doubles how much a child learns, but AI tutors today need a phone, a data plan and a power socket, which the children who most need them don't have. In this slate the language model's numbers are stored as tiny resistances in a memory chip, and the chip computes by letting currents flow through them, so it never wastes energy shuttling data back and forth; that cuts power so far that a palm-sized solar panel runs a talking tutor all day, offline, in the child's own language.",
+  "obstacle": "Analog memory chips are still costly and drift as they age, and nobody has yet fitted a tutor-quality model on one cheap enough for a $20 device.",
+  "evidence": "IBM Research, Nature 2023: a 34-tile phase-change analog AI chip ran speech recognition at up to 12.4 TOPS/W; IBM 2025 (Nature Communications) ran a BERT-type language model on an analog in-memory chip near full accuracy; Nature Computational Science 2025 ran GPT-2 on analog in-memory attention; EnCharge EN100 (2025) claims 200 TOPS in 8 W for laptops. https://www.nature.com/articles/s41586-023-06337-5",
+  "existsCheck": "Searched offline/solar AI tutor devices: Beekee solar box (no AI yet), Intel offline-LLM laptops in Guatemala, an ESP32 toy tutor with a 20M-parameter model, MIT Solve entry for e-ink tablets; none uses analog in-memory compute or reaches tutor-quality models at textbook price on solar power. Analog chips (IBM, EnCharge) target laptops and data centres.",
+  "familiar": false,
+  "tenX": "Cost of a capable tutor per child from a ~$300 phone plus data and grid power to a ~$20 solar slate, about 15x cheaper and usable by the ~250 million children with no electricity or internet.",
+  "plausibility": 3,
+  "why": "Like the printed textbook, the device that put a tutor in every village, needing only sunlight."
+ },
+ {
+  "id": "pupil-reading-tutor",
+  "name": "Pupil-reading tutor",
+  "subtitle": "a tutor that reads effort in children's eyes",
+  "bigJob": "tutor-every-child",
+  "job": "let a machine tutor notice, as a human tutor does, when a child is lost or bored",
+  "effects": [
+   {
+    "effect": "the pupil widens within a second when the mind works hard, and narrows when it gives up or coasts",
+    "card": null,
+    "newToJob": true
+   },
+   {
+    "effect": "heat radiates as invisible light: in near-infrared light every iris looks pale, even dark brown ones, so the pupil stands out sharply",
+    "card": "infrared-radiation",
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "light-emitting-diodes",
+   "camera",
+   "microchips"
+  ],
+  "how": "A human tutor's edge is noticing, from a child's face, the moment they're lost or bored and changing course; AI tutors only see typed answers, often too late. A cheap camera beside the screen, lit by an invisible infrared LED so that even dark brown eyes show a crisp pupil, watches the pupil swell with effort and shrink with disengagement, and the tutor slows down, gives a hint or raises the challenge in the same moment, keeping the child at the edge of what they can do, where learning is fastest.",
+  "obstacle": "Pupils also react to light, excitement and fatigue, so turning them into a reliable reading of one child's effort, without making children feel watched, is unproven.",
+  "evidence": "Kahneman & Beatty, Science 1966: pupil diameter tracks mental load moment by moment; Huang, Woodruff & Lazic (2024): pupil measures from ordinary webcam video tracked effort and predicted problem-solving success in 64 adults; a 2025 randomised trial (J. Big Data) found a tutoring system adapting to moment-to-moment cognitive load beat a static one. https://www.intechopen.com/journals/1/articles/1065",
+  "existsCheck": "Searched for tutoring products using pupil or eye tracking: only research (GazeTutor, a 2026 gaze-aware smart-glasses assistant, student projects); no product. Commercial AI tutors (Khanmigo and others) and Chinese AI study lamps use text, voice or homework photos, not pupil effort.",
+  "familiar": false,
+  "tenX": "Gives an AI tutor the moment-to-moment feedback that is thought to explain much of one-to-one tutoring's doubling of learning, at the cost of a $2 camera and LED rather than a teacher per child.",
+  "plausibility": 3,
+  "why": "The first machine teacher that could see a child struggle, the missing half of tutoring."
+ }
+]

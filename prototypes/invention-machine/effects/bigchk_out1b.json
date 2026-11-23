@@ -1,0 +1,164 @@
+[
+ {
+  "id": "sulfur-air-battery",
+  "verdict": "pass",
+  "rule": "none",
+  "why": "A battery whose stored chemicals cost about a dollar per kilowatt-hour would make holding a whole season of power affordable, and nobody is building the sulfur-air version.",
+  "found": "Form Energy began on this MIT chemistry and pivoted to iron-air; Imperial's polysulfide-air spin-out RFC Power is now Certain Energy, commercialising manganese flow batteries instead; nothing deployed.",
+  "url": "https://tlo.mit.edu/technologies/oxygen-breathing-aqueous-sulfur-storage-battery",
+  "familiar": false
+ },
+ {
+  "id": "methane-cave-battery",
+  "verdict": "pass",
+  "rule": "none",
+  "why": "Running one ceramic cell both ways between a methane cavern and a CO2 cavern would let existing gas caverns hold months of power at about 70% round trip.",
+  "found": "Only the 2015 DTU/Stanford design study, a School of Mines model and a completed DOE lab project on reversible methane cells; no company or cavern pilot.",
+  "url": "https://pubs.rsc.org/en/content/articlelanding/2015/EE/C5EE01485A",
+  "familiar": false
+ },
+ {
+  "id": "aluminium-winter-fuel",
+  "verdict": "borderline",
+  "rule": "exists",
+  "why": "Found Energy already runs aluminium-water reactors that give hydrogen and heat and send the oxide back for re-smelting, so the question is whether using that loop seasonally, with summer power doing the smelting, is a new device. My pick: drop.",
+  "found": "Found Energy (Boston) runs a 100 kW-class aluminium-water demo plant making heat and hydrogen from treated scrap, with spent oxide recyclable to metal; seasonal use only in Swiss/EU research (SPF HybridStock, REVEAL).",
+  "url": "https://www.technologyreview.com/2025/10/23/1126397/startup-aluminum-zero-carbon-fuel/",
+  "familiar": false
+ },
+ {
+  "id": "sulfur-sun-store",
+  "verdict": "pass",
+  "rule": "none",
+  "why": "Saving desert sunshine as heaps of sulfur that keep for years would let solar plants sell summer power in winter, at a capacity cost hundreds of times below batteries.",
+  "found": "Only the EU PEGASUS research project (DLR, 2016-2021) with a 500 kWth particle receiver and sulfur burner tests; no commercial plant or company.",
+  "url": "https://www.dlr.de/en/latest/news/2021/04/20211209_solar-energy-storage-using-sulphur",
+  "familiar": false
+ },
+ {
+  "id": "borehole-reactor",
+  "verdict": "drop",
+  "rule": "exists",
+  "why": "Deep Fission is already building exactly this, a reactor in a mile-deep borehole with water pressure doing the vessel's job, at Parsons, Kansas.",
+  "found": "Deep Fission broke ground in December 2025 on a 15 MWe borehole reactor under the DOE reactor pilot programme.",
+  "url": "https://www.ans.org/news/2025-12-08/article-7601/deep-fission-to-break-ground-this-week/",
+  "familiar": true
+ },
+ {
+  "id": "turbine-free-fusion",
+  "verdict": "drop",
+  "rule": "exists",
+  "why": "Helion Energy is already building this machine, a pulsed magnetic-compression fusion plant that recovers electricity directly with no steam, for Microsoft.",
+  "found": "Helion broke ground on its 50 MW Orion plant in Malaga, Washington in July 2025 and secured state licences in June 2026; Polaris prototype operating since 2024.",
+  "url": "https://wnn.world-nuclear.org/articles/helion-begins-work-on-fusion-power-plant",
+  "familiar": true
+ },
+ {
+  "id": "muon-fusion-cell",
+  "verdict": "drop",
+  "rule": "exists",
+  "why": "Acceleron Fusion, with about $24M raised, is already designing a muon-catalysed fusion power plant, and the physics is still below breakeven.",
+  "found": "Acceleron Fusion (Lowercarbon-backed, ARPA-E grants) is designing a muon-catalysed fusion plant and plans a breakeven test at Brookhaven; Marathon Fusion also works on it.",
+  "url": "https://ans.org/news/article-6626/acceleron-fusion-raises-24m-in-seed-funding-to-advance-lowtemp-fusion",
+  "familiar": true
+ },
+ {
+  "id": "rock-hydrogen-well",
+  "verdict": "drop",
+  "rule": "exists",
+  "why": "Funded startups are already drilling wells that pump water into iron-rich rock to make hydrogen, so this is being built.",
+  "found": "Vema Hydrogen drilled pilot wells in Quebec and plans a commercial well; GeoRedox and Canada Nickel launched a stimulated hydrogen well in Ontario; Eden GeoPower and others have ARPA-E-funded pilots.",
+  "url": "https://techcrunch.com/2026/02/03/vema-predicts-cheap-hydrogen-could-change-where-data-centers-are-built/",
+  "familiar": true
+ },
+ {
+  "id": "electric-swing-co2-capture",
+  "verdict": "drop",
+  "rule": "exists",
+  "why": "Verdox, the funded MIT spin-out, holds a DOE award to build exactly this electro-swing electrode capture for air, and several electric DAC startups already run pilots.",
+  "found": "Verdox (Breakthrough Energy-backed) has a DOE project 'Electro-swing adsorption for high efficiency direct air capture'; Phlair, Ucaneo and RepAir run electrochemical capture pilots.",
+  "url": "https://www.energy.gov/node/4678039",
+  "familiar": true
+ },
+ {
+  "id": "sun-switched-co2-capture",
+  "verdict": "pass",
+  "rule": "none",
+  "why": "Letting sunlight itself release captured CO2 removes the heat bill that is most of air capture's cost; only ORNL lab cycles exist, though the light used so far is ultraviolet.",
+  "found": "Only ORNL lab work (metastable photoacid, Angewandte 2023; photobase photo-DAC, JACS 2026); Holocene licensed a different ORNL sorbent and was bought by Occidental; no light-driven pilot.",
+  "url": "https://www.ornl.gov/news/light-activated-acid-drives-energy-efficient-demand-release-captured-co2",
+  "familiar": false
+ },
+ {
+  "id": "mantle-rock-sea-well",
+  "verdict": "borderline",
+  "rule": "r5",
+  "why": "Surface seawater holds only about 90 grams of CO2 per cubic metre, so a gigaton a year means pushing roughly ten thousand cubic kilometres of water through tight rock; can any well field move that much? My pick: drop.",
+  "found": "44.01 mineralises already-captured CO2 dissolved in seawater in Oman and UAE peridotite (Series A $37M); nobody circulates plain seawater to draw CO2 from the air.",
+  "url": "https://techcrunch.com/2021/08/10/44-01-secures-5m-to-turn-billions-of-tons-of-carbon-dioxide-to-stone",
+  "familiar": false
+ },
+ {
+  "id": "ten-layer-solar-still",
+  "verdict": "borderline",
+  "rule": "big",
+  "why": "Small solar-powered reverse-osmosis units already give families drinking water from brackish ground off-grid, so is a still that needs no pump or membrane a 10x change or just a better still? My pick: drop.",
+  "found": "Only MIT/Shanghai Jiao Tong lab and rooftop prototypes (EES 2020) and research variants; no commercial multistage passive still found.",
+  "url": "https://news.mit.edu/2020/passive-solar-powered-water-desalination-0207",
+  "familiar": false
+ },
+ {
+  "id": "green-light-still",
+  "verdict": "drop",
+  "rule": "r5",
+  "why": "The effect it rests on is in doubt: a 2026 Max Planck PNAS study found visible light at solar intensity does not measurably speed evaporation.",
+  "found": "MIT photomolecular-effect papers (PNAS 2023, 2024) only; Max Planck Institute for Polymer Research replication in PNAS 2026 found no effect.",
+  "url": "https://www.sciencealert.com/scientists-blasted-water-with-light-10-billion-times-brighter-than-sunlight-it-still-didnt-evaporate-faster",
+  "familiar": false
+ },
+ {
+  "id": "solvent-swing-desalter",
+  "verdict": "drop",
+  "rule": "big",
+  "why": "For a family's drinking water from brackish ground, small solar reverse-osmosis units already work off-grid, and this method's real strength is very salty industrial brine while it leaves traces of amine solvent in the water.",
+  "found": "Columbia (Yip lab) TSSE papers and patents only; no spin-out, pilot or field unit.",
+  "url": "https://www.engineering.columbia.edu/new-approach-desalinating-hypersaline-brines",
+  "familiar": false
+ },
+ {
+  "id": "wall-socket-mri",
+  "verdict": "borderline",
+  "rule": "r5",
+  "why": "Nobody sells a cheap whole-body screening scanner, but can a 0.05 T image cleaned up by a model trained on strong-magnet scans show a few-millimetre stage-1 tumour without inventing or erasing detail? My pick: keep.",
+  "found": "HKU 0.05 T whole-body scanner (Science 2024) is a research prototype with no spin-off found; Hyperfine Swoop is head-only; low-field breast MRI is a 14-person study; whole-body screening (Prenuvo, Ezra) uses costly standard MRI.",
+  "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11496770/",
+  "familiar": false
+ },
+ {
+  "id": "tumour-finding-probiotic",
+  "verdict": "pass",
+  "rule": "none",
+  "why": "A swallowed probiotic that multiplies only inside tumours turns a millimetre growth into a urine signal on a paper strip, a cheap screen for cancers far smaller than blood tests can see.",
+  "found": "Only mouse studies (Danino, MIT 2015; Columbia/Adelaide colorectal 2024) and a human trial of unengineered E. coli Nissle colonising tumours; MIT lists the tech for licensing; no company or diagnostic trial.",
+  "url": "https://tlo.mit.edu/industry-entrepreneurs/available-technologies/engineered-probiotics-urinary-cancer-diagnosis",
+  "familiar": false
+ },
+ {
+  "id": "vein-magnet",
+  "verdict": "drop",
+  "rule": "r19",
+  "why": "A wire slipped into an arm vein to catch tumour cells already exists as the CE-marked GILUPI CellCollector, so magnets on the wire are a better catch for the same device and patients.",
+  "found": "GILUPI CellCollector, an antibody-coated wire left 30 minutes in a vein, used in prostate and colorectal cancer studies; MagWIRE (Stanford) is its magnetic successor, tested in pigs.",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6599844/",
+  "familiar": false
+ },
+ {
+  "id": "decoy-node",
+  "verdict": "drop",
+  "rule": "big",
+  "why": "It watches for spread in people already treated for cancer, so it doesn't make routine, cheap stage-1 detection possible for everyone else.",
+  "found": "Michigan/Northwestern mouse studies only; a human protocol for post-treatment breast cancer monitoring proposed since 2016; no registered trial found.",
+  "url": "https://www.michiganmedicine.org/health-lab/how-small-implanted-device-could-help-limit-metastatic-breast-cancer",
+  "familiar": false
+ }
+]

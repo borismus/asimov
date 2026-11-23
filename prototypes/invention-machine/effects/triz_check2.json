@@ -1,0 +1,432 @@
+[
+ {
+  "id": "ion-wind-carbon-capture",
+  "name": "Ion-wind carbon capture",
+  "subtitle": "a fanless machine that quietly captures carbon dioxide",
+  "job": "removes carbon dioxide",
+  "how": "Machines that pull carbon dioxide out of the air must push enormous volumes of air past a sorbent, and their big fans are loud and costly to run, which keeps them out of cities. Here rows of needle points at high voltage blow a steady, silent breeze (electric wind) through thin sorbent sheets, which catch the carbon dioxide on their surfaces until they are warmed to release it for storage.",
+  "effects": [
+   {
+    "effect": "a sharp point at high voltage blows a breeze",
+    "card": "electric-wind",
+    "triz": true,
+    "newToJob": true
+   },
+   {
+    "effect": "molecules from a gas stick to a solid's surface",
+    "card": "adsorption",
+    "triz": true,
+    "newToJob": false
+   }
+  ],
+  "searchQuery": "ionic wind electrohydrodynamic fan direct air capture contactor"
+ },
+ {
+  "id": "electro-osmotic-glaucoma-drain",
+  "name": "Electro-osmotic glaucoma drain",
+  "subtitle": "an eye drain with no moving parts",
+  "job": "regulates the body",
+  "how": "Glaucoma blinds slowly as fluid pressure builds inside the eye; drops get forgotten, and drain implants either drain too little or so much the eye goes soft. A grain-sized plug of porous glass sits in the eye wall with an electrode on each face: a small voltage makes the eye's fluid flow through its pores (electro-osmosis), so a chip reading a pressure sensor drains exactly enough to hold pressure steady.",
+  "effects": [
+   {
+    "effect": "a voltage across a wet porous material makes the liquid flow",
+    "card": "electro-osmosis",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "searchQuery": "electroosmotic pump glaucoma drainage implant intraocular pressure control"
+ },
+ {
+  "id": "electro-osmotic-wound-dressing",
+  "name": "Electro-osmotic wound dressing",
+  "subtitle": "a flat dressing that drains wounds without suction",
+  "job": "treats illness",
+  "how": "Deep and diabetic wounds heal faster when their fluid is drawn off, but today that takes a suction pump on a hose that patients carry everywhere. This thin dressing holds a porous layer between two mesh electrodes; a coin-cell voltage pulls the wound fluid up through the pores (electro-osmosis) into an absorbent pad, silently and with no airtight seal to leak.",
+  "effects": [
+   {
+    "effect": "a voltage across a wet porous material makes the liquid flow",
+    "card": "electro-osmosis",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "searchQuery": "electroosmotic wound dressing exudate removal without vacuum pump"
+ },
+ {
+  "id": "self-perfusing-tissue-scaffold",
+  "name": "Self-perfusing tissue scaffold",
+  "subtitle": "voltage feeds the inside of lab-grown tissue",
+  "job": "grows organs",
+  "how": "Lab-grown tissue thicker than a few millimetres dies in the middle, because food and oxygen can't seep in fast enough without blood vessels. Growing the cells on a spongy scaffold with electrodes on opposite faces lets a small voltage drive nutrient fluid straight through every pore (electro-osmosis), feeding the deep cells until they grow vessels of their own.",
+  "effects": [
+   {
+    "effect": "a voltage across a wet porous material makes the liquid flow",
+    "card": "electro-osmosis",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "searchQuery": "electroosmotic flow perfusion thick engineered tissue scaffold"
+ },
+ {
+  "id": "electric-dew-pump",
+  "name": "Electric dew pump",
+  "subtitle": "pulls water from dry air without heating",
+  "job": "supplies water",
+  "how": "Desert air holds water even when it is far too dry for dew, but most harvesters must heat their sponge to get the water back out, which wastes energy. Here water condenses inside the tiny pores of a ceramic sheet even at low humidity (capillary condensation), and a solar-powered voltage across the sheet pushes it straight through the pores to drip out the far side (electro-osmosis).",
+  "effects": [
+   {
+    "effect": "water vapour condenses inside tiny pores before the air is saturated",
+    "card": "capillary-condensation",
+    "triz": true,
+    "newToJob": true
+   },
+   {
+    "effect": "a voltage across a wet porous material makes the liquid flow",
+    "card": "electro-osmosis",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "searchQuery": "electroosmotic pumping water from nanopores atmospheric water harvesting"
+ },
+ {
+  "id": "vanishing-glass-sorter",
+  "name": "Vanishing-glass sorter",
+  "subtitle": "makes good glass invisible to catch contaminants",
+  "job": "recycles materials",
+  "how": "One chip of ovenproof glass or ceramic can ruin a furnace-load of new bottles, so much collected glass is landfilled instead. Crushed glass runs through an oil that, in the one colour of light used, bends light exactly as bottle glass does (Christiansen effect): bottle glass turns invisible, while ceramic, stone and heat-proof glass stay bright, and a camera tells air jets to blow them out.",
+  "effects": [
+   {
+    "effect": "crushed glass in a liquid lets through only the colour where both bend light equally",
+    "card": "christiansen-effect",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "searchQuery": "refractive index matching liquid sorting glass cullet ceramic contamination"
+ },
+ {
+  "id": "glowing-footprint-mat",
+  "name": "Glowing footprint mat",
+  "subtitle": "shows a diabetic's foot pressure hot spots",
+  "job": "diagnoses",
+  "how": "Diabetes numbs the feet, so pressure spots go unfelt until they turn into ulcers, the main cause of amputations, and the electronic plates that find them are too costly for most clinics. This clear rubber mat is filled with crystals that glow when squeezed (mechanoluminescence); a patient walks across it in a dim room and a phone camera underneath records where the footprint glows brightest.",
+  "effects": [
+   {
+    "effect": "some solids give off light when squeezed or strained",
+    "card": "triboluminescence",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "searchQuery": "mechanoluminescent film plantar pressure mapping diabetic foot"
+ },
+ {
+  "id": "moire-swelling-band",
+  "name": "Moiré swelling band",
+  "subtitle": "an armband that shows early lymphedema",
+  "job": "monitors health continuously",
+  "how": "About one in five breast-cancer survivors gets lymphedema, a lifelong arm swelling that is easiest to reverse in its first millimetres, yet it is checked with a tape measure at clinic visits. A stretchy band carries two overlapping fine-line prints; when the arm grows even a millimetre around, the lines shift and broad stripes slide visibly along the band (moiré), so the wearer sees the change every morning.",
+  "effects": [
+   {
+    "effect": "two overlaid fine patterns make broad bands that magnify a small shift",
+    "card": "moire-effect",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "searchQuery": "moire pattern wearable band limb circumference lymphedema"
+ },
+ {
+  "id": "swelling-alarm-cast",
+  "name": "Swelling-alarm cast",
+  "subtitle": "a cast that warns before swelling crushes muscle",
+  "job": "monitors health continuously",
+  "how": "After a broken leg, swelling inside a tight cast can choke the muscles (compartment syndrome) and cost the limb within hours, and the only warning is pain that sedated patients and small children can't report. A thin liner of linked, fluid-filled pockets sits under the cast; swelling anywhere squeezes it, the pressure spreads equally through the whole liner (Pascal's law), and one gauge at its edge sounds an alarm.",
+  "effects": [
+   {
+    "effect": "pressure on a confined liquid is passed on equally everywhere",
+    "card": "pascals-law",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "searchQuery": "cast liner fluid bladder pressure sensor compartment syndrome alarm"
+ },
+ {
+  "id": "swell-sensing-battery-pack",
+  "name": "Swell-sensing battery pack",
+  "subtitle": "a battery pack that feels a cell bulging",
+  "job": "protects",
+  "how": "Lithium cells often swell for hours or days before they catch fire, but a car or home battery holds hundreds of cells and a sensor on each costs too much. Thin, linked fluid pockets sit between the cells; a cell bulging anywhere squeezes them, the pressure spreads through all the pockets alike (Pascal's law), and one gauge tells the pack to shut down.",
+  "effects": [
+   {
+    "effect": "pressure on a confined liquid is passed on equally everywhere",
+    "card": "pascals-law",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "searchQuery": "battery fluid filled bladder pressure cell swelling thermal runaway"
+ },
+ {
+  "id": "flutter-pump",
+  "name": "Flutter pump",
+  "subtitle": "a canal pump driven by a swinging sheet",
+  "job": "pumps water",
+  "how": "Farms beside canals and streams often sit just a metre or two above the water, so they pay for diesel to lift it. A stiff, hinged sheet anchored in the current starts swinging harder and harder once the flow passes a certain speed (flutter), the way a bridge deck can in wind, and each swing works a piston that lifts water to the fields.",
+  "effects": [
+   {
+    "effect": "a flexible structure in moving water feeds on the flow and swings harder",
+    "card": "flutter",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "searchQuery": "flutter driven water pump stream irrigation oscillating flexible plate"
+ },
+ {
+  "id": "trojan-library",
+  "name": "Trojan Library",
+  "subtitle": "an archive that orbits with Earth, fuel-free",
+  "job": "keeps data for millennia",
+  "how": "Libraries on Earth burn, flood and are forgotten, and a store on the Moon sits in dust under constant bombardment. Glass discs etched with humanity's records are parked 60 degrees ahead of Earth along its orbit, a balance point between Sun and Earth (Lagrangian point) where an object stays put for thousands of years without fuel, beyond wars and weather and findable by anyone who knows where to look.",
+  "effects": [
+   {
+    "effect": "a small body stays put relative to two big orbiting bodies at balance points",
+    "card": "lagrangian-point",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "searchQuery": "knowledge archive spacecraft Sun-Earth L4 L5 long-term storage"
+ },
+ {
+  "id": "freshness-clock-label",
+  "name": "Freshness clock label",
+  "subtitle": "a label that clouds as food sits warm",
+  "job": "preserves food",
+  "how": "Use-by dates are guesses, so good food is thrown out while food left warm too long gets eaten, and tags that log real temperature cost too much for a pack of fish. This label holds a clear film of tiny oil droplets; the warmer it gets, the faster small droplets feed the big ones (Ostwald ripening), and once they grow large enough to scatter light (Tyndall effect) the window turns milky, just as the food has spent too long warm.",
+  "effects": [
+   {
+    "effect": "small droplets shrink and feed their material to larger neighbours",
+    "card": "ostwald-ripening",
+    "triz": true,
+    "newToJob": true
+   },
+   {
+    "effect": "small particles scatter a light beam so it shows",
+    "card": "tyndall-effect",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "searchQuery": "Ostwald ripening emulsion time temperature indicator food label"
+ },
+ {
+  "id": "light-switched-brain-grid",
+  "name": "Light-switched brain electrode grid",
+  "subtitle": "thousands of brain contacts read through one wire",
+  "job": "reads the brain",
+  "how": "Brain implants that let paralysed people type or move need thousands of contact points, but each needs its own wire through the skull, and wires break and scar. In this grid each contact sits on a spot that only conducts when lit (photoconductivity); a light beam brought in by a single fibre sweeps across the grid, switching contacts on one after another so one wire reads them all in turn.",
+  "effects": [
+   {
+    "effect": "a material conducts much better when light falls on it",
+    "card": "photoconductivity",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "searchQuery": "light addressable photoconductive electrode array neural recording in vivo"
+ },
+ {
+  "id": "floating-drop-brine-dryer",
+  "name": "Floating-drop brine dryer",
+  "subtitle": "turns desalination brine into dry salt and water",
+  "job": "cleans polluted water",
+  "how": "Every litre of fresh water made from the sea leaves salty brine that is usually dumped back, harming sea life, and boiling it dry fails because salt crusts over the heaters. Here brine is sprayed onto a very hot plate where each drop floats on a cushion of its own steam (Leidenfrost effect), never touching the metal; the drops shrink into balls of salt that roll off, and the steam is condensed into more fresh water.",
+  "effects": [
+   {
+    "effect": "a liquid on a very hot surface floats on a cushion of its own vapour",
+    "card": "leidenfrost-effect",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "searchQuery": "Leidenfrost evaporation brine crystallizer scaling-free zero liquid discharge"
+ },
+ {
+  "id": "ram-pump-water-purifier",
+  "name": "Ram-pump water purifier",
+  "subtitle": "a stream's force pushes water through a filter",
+  "job": "cleans polluted water",
+  "how": "Many hill villages have a stream but no clean water and no power to run a purifier. Water rushing down a pipe is slammed shut by a valve many times a minute; each sudden stop throws a pressure spike many times normal (water hammer), and those spikes push part of the water through a fine membrane that holds back germs and dissolved salts.",
+  "effects": [
+   {
+    "effect": "a moving liquid stopped suddenly sends a sharp pressure spike along its pipe",
+    "card": "water-hammer",
+    "triz": true,
+    "newToJob": true
+   },
+   {
+    "effect": "small molecules seep through a membrane",
+    "card": "osmosis",
+    "triz": false,
+    "newToJob": false
+   }
+  ],
+  "searchQuery": "hydraulic ram pump powered reverse osmosis membrane filtration village"
+ },
+ {
+  "id": "sound-trap-microplastic-breaker",
+  "name": "Sound-trap microplastic breaker",
+  "subtitle": "ultrasound holds plastic specks while light destroys them",
+  "job": "breaks down plastic",
+  "how": "Treated sewage still sends billions of plastic specks into rivers, too small for any screen to catch. As the water flows through a channel, standing ultrasound waves push the specks into thin sheets where the sound is quietest (acoustic radiation pressure), and strong ultraviolet light aimed at just those sheets snaps the plastic's chemical bonds (photodissociation) until it breaks down.",
+  "effects": [
+   {
+    "effect": "a strong sound wave pushes steadily on small objects",
+    "card": "acoustic-radiation-pressure",
+    "triz": true,
+    "newToJob": true
+   },
+   {
+    "effect": "energetic light breaks molecules into pieces",
+    "card": "photodissociation",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "searchQuery": "acoustic standing wave trapping microplastics wastewater ultraviolet degradation"
+ },
+ {
+  "id": "salt-misted-firebreak",
+  "name": "Salt-misted firebreak",
+  "subtitle": "a strip of brush kept damp by salt",
+  "job": "protects",
+  "how": "Wildfires race through grass and brush dried to a crisp, and firebreaks often aren't wide enough to stop the flames. Spraying a strip of vegetation with a salt such as calcium chloride, which pulls water from the air (hygroscopy), keeps that strip damp for weeks, so flames reaching it slow down and crews can hold them there.",
+  "effects": [
+   {
+    "effect": "some substances pull water out of the air",
+    "card": "hygroscopy",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "searchQuery": "calcium chloride hygroscopic fuel moisture firebreak wildfire"
+ },
+ {
+  "id": "magnetic-crackle-chip-fingerprint",
+  "name": "Magnetic-crackle chip fingerprint",
+  "subtitle": "chips that prove their identity by magnetic crackle",
+  "job": "secures communications",
+  "how": "Fake or tampered chips sneak into routers, cars and power grids, and a secret key stored in a chip can be copied out by a determined attacker. Each chip carries a speck of magnetic metal whose tiny regions flip in a random but repeatable order when magnetised, giving a unique crackle (Barkhausen effect) set by how the metal happened to grow, which nobody can copy because nobody can grow that metal again.",
+  "effects": [
+   {
+    "effect": "magnetised iron crackles as tiny regions inside it flip one by one",
+    "card": "barkhausen-effect",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "searchQuery": "Barkhausen noise physical unclonable function magnetic chip authentication"
+ },
+ {
+  "id": "dye-free-glass-fibre",
+  "name": "Dye-free coloured fibre",
+  "subtitle": "fabric coloured by glass instead of dye",
+  "job": "colors",
+  "how": "Dyeing cloth is one of the worst water polluters on Earth and dyes fade. These fibres hold glass powder in a clear plastic that bends light exactly like the glass at just one colour (Christiansen effect); that colour passes straight through and is lost while the rest scatters back, so the cloth shows a colour set only by the choice of glass and plastic, with nothing to wash out.",
+  "effects": [
+   {
+    "effect": "crushed glass in a clear material lets through only the colour where both bend light equally",
+    "card": "christiansen-effect",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "searchQuery": "Christiansen effect structural colour fibre textile without dye"
+ },
+ {
+  "id": "moire-stem-gauge",
+  "name": "Moiré stem gauge",
+  "subtitle": "a trunk clip that shows a thirsty tree",
+  "job": "protects crops",
+  "how": "Orchards waste water by irrigating on a schedule, and the electronic gauges that show when a tree actually needs water cost too much for most growers. A tree's trunk shrinks by a hair's width during the day when it is short of water; a clip around the trunk overlays two fine-line prints that turn that shrinkage into broad stripes sliding by centimetres (moiré), easy to read by eye or with a phone.",
+  "effects": [
+   {
+    "effect": "two overlaid fine patterns make broad bands that magnify a small shift",
+    "card": "moire-effect",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "searchQuery": "moire dendrometer trunk diameter water stress irrigation"
+ },
+ {
+  "id": "electrowetting-brain-shunt",
+  "name": "Electrowetting brain shunt",
+  "subtitle": "a hydrocephalus drain opened and closed by voltage",
+  "job": "treats illness",
+  "how": "Children with fluid building up in the brain (hydrocephalus) rely on a drain tube whose spring valve often clogs or drains wrongly, and about half need another operation within two years. This drain's valve has no moving parts: a plug with water-repelling pores stays shut until a small voltage lets the fluid wet them and flow through (electrocapillarity), so a pressure sensor and chip open it exactly when needed.",
+  "effects": [
+   {
+    "effect": "a voltage makes a liquid spread over a surface instead of beading up",
+    "card": "electrocapillarity",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "searchQuery": "electrowetting valve hydrocephalus shunt cerebrospinal fluid implant"
+ },
+ {
+  "id": "laser-meningitis-check",
+  "name": "Laser meningitis check",
+  "subtitle": "a laser beam spots bacteria in spinal fluid",
+  "job": "diagnoses",
+  "how": "Bacterial meningitis kills within a day, and many clinics can't count the cells in spinal fluid to tell it from the milder viral kind. A thin laser beam is sent through a tube of the fluid; the white cells and bacteria that bacterial meningitis floods it with make the beam show from the side (Tyndall effect), long before the fluid looks cloudy, and a phone camera measures how brightly.",
+  "effects": [
+   {
+    "effect": "small particles in a liquid scatter a light beam so it shows",
+    "card": "tyndall-effect",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "searchQuery": "light scattering smartphone cerebrospinal fluid cell count meningitis"
+ },
+ {
+  "id": "acoustic-mosquito-sorter",
+  "name": "Acoustic mosquito sorter",
+  "subtitle": "sound separates males for sterile-mosquito releases",
+  "job": "prevents disease",
+  "how": "Releasing sterile male mosquitoes can crash the swarms that spread dengue and malaria, but every female must be removed first since females bite, and today's sieves and camera sorters are slow. Pupae float through a water channel crossed by standing ultrasound; the sound's steady push (acoustic radiation pressure) grows with size, so the bigger female pupae are steered to one outlet and the smaller males to another.",
+  "effects": [
+   {
+    "effect": "a strong sound wave pushes steadily on objects",
+    "card": "acoustic-radiation-pressure",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "searchQuery": "acoustic radiation force sorting mosquito pupae sex separation"
+ },
+ {
+  "id": "water-shifting-storm-shelter",
+  "name": "Water-shifting storm shelter",
+  "subtitle": "a spacecraft's water moved to block solar storms",
+  "job": "shields from radiation",
+  "how": "Crews bound for Mars face solar storms that can deliver a dangerous dose in hours, and shielding the whole ship is too heavy to launch. The ship's water is kept in porous wall panels, and when a storm is spotted a voltage drives it through the pores (electro-osmosis) into the wall facing the Sun, building a thick shield on just that side with no pumps to fail.",
+  "effects": [
+   {
+    "effect": "a voltage across a wet porous material makes the liquid flow",
+    "card": "electro-osmosis",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "searchQuery": "electroosmotic water redistribution spacecraft radiation shielding solar storm"
+ }
+]

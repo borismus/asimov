@@ -1,0 +1,191 @@
+[
+ {
+  "id": "light-echo-breast-scanner",
+  "verdict": "drop",
+  "rule": "exists",
+  "why": "Photoacoustic breast imaging is already an FDA-approved product, and a Caltech spin-out is commercialising whole-breast PACT, so this is an existing device pointed at screening.",
+  "found": "Seno Medical's Imagio opto-acoustic/ultrasound breast system has FDA PMA approval (2021) for assessing breast masses; Lihong Wang founded a company to commercialise breast PACT.",
+  "url": "https://www.fda.gov/medical-devices/recently-approved-devices/imagior-breast-imaging-system-p200003",
+  "familiar": false
+ },
+ {
+  "id": "organ-bank",
+  "verdict": "drop",
+  "rule": "exists",
+  "why": "A funded startup is already building organ-scale vitrification with uniform rewarming for transplant.",
+  "found": "Until Labs raised a $58M Series A (Sept 2025, >$100M total) to vitrify donor organs and rewarm them uniformly, with large-animal organs and human trials in view.",
+  "url": "https://longevity.technology/news/cryopreservation-startup-lands-58m-to-pause-biological-time/",
+  "familiar": true
+ },
+ {
+  "id": "organ-reviver",
+  "verdict": "pass",
+  "rule": "none",
+  "why": "Recovering organs an hour after circulation stops would widen the donor pool far beyond today's minutes-long window.",
+  "found": "OrganEx (Yale, 2022) worked only in pigs; spin-out Bexorg perfuses brains for drug discovery, and no company is taking it to transplant.",
+  "url": "https://news.yale.edu/2022/08/03/yale-developed-technology-restores-cell-organ-function-pigs-after-death",
+  "familiar": true
+ },
+ {
+  "id": "lymph-node-liver",
+  "verdict": "drop",
+  "rule": "exists",
+  "why": "LyGenesis is already running a Phase 2a trial that grows liver tissue in patients' lymph nodes.",
+  "found": "LyGenesis Phase 2a (NCT04496479) dosed its first patient in March 2024 and is escalating doses through cohorts.",
+  "url": "https://classic.clinicaltrials.gov/show/NCT04496479",
+  "familiar": false
+ },
+ {
+  "id": "machine-edited-organ",
+  "verdict": "pass",
+  "rule": "none",
+  "why": "Editing a donor organ on the pump would let transplants go ahead without lifelong immunosuppression.",
+  "found": "Only preclinical and feasibility work: AAV delivered to pig hearts during perfusion, and CRISPR feasibility in perfused human donor lungs; no company or human transplant.",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12203020/",
+  "familiar": false
+ },
+ {
+  "id": "pig-grown-human-kidney",
+  "verdict": "borderline",
+  "rule": "none",
+  "why": "Is a humanised kidney that has only reached day 28, with pig blood vessels, plausible enough for a card? My pick: keep.",
+  "found": "Guangzhou group (Cell Stem Cell 2023) grew partly human mesonephros in pig embryos to day 28; no company or later-stage organ.",
+  "url": "https://www.sciencenews.org/article/grow-human-kidney-pig-embryo",
+  "familiar": true
+ },
+ {
+  "id": "dancing-molecule-gel",
+  "verdict": "drop",
+  "rule": "exists",
+  "why": "Amphix Bio is a funded startup taking this exact gel to spinal cord injury trials.",
+  "found": "Amphix Bio's AMFX-200 got FDA orphan drug designation in July 2025, with first human trials targeted for late 2026.",
+  "url": "https://www.biospace.com/press-releases/amphix-bio-receives-fda-orphan-drug-designation-for-neural-regeneration-therapeutic-to-treat-acute-spinal-cord-injury",
+  "familiar": false
+ },
+ {
+  "id": "guided-nerve-regrowth",
+  "verdict": "pass",
+  "rule": "none",
+  "why": "Steering regrown fibres back to their old targets is what turned regrowth into walking after a complete cord injury.",
+  "found": "EPFL/UCLA/Harvard Science 2023 work in mice, scaling to primates; no startup or trial for the gene therapy found.",
+  "url": "https://actu.epfl.ch/news/regeneration-across-complete-spinal-cord-injurie-2/",
+  "familiar": false
+ },
+ {
+  "id": "grafted-neuron-bridge",
+  "verdict": "drop",
+  "rule": "exists",
+  "why": "Science Corp is a funded startup building a biohybrid implant whose grafted neurons grow into the brain.",
+  "found": "Science Corp's biohybrid implant puts stem-cell-derived neurons on a chip; mouse prototypes grew into cortex, and its sensor is being prepared for first human use (2026).",
+  "url": "https://techcrunch.com/2026/04/14/max-hodaks-science-corp-is-preparing-to-place-its-first-sensor-in-a-human-brain/",
+  "familiar": false
+ },
+ {
+  "id": "nerve-dust",
+  "verdict": "drop",
+  "rule": "r19",
+  "why": "Electronic bridges across a cut cord already exist; wireless grains are a better electrode for the same device.",
+  "found": "ONWARD's brain-spine 'digital bridge' is in patients; Iota Biosciences (neural dust, Astellas), MintNeuro and Cahira are building wireless micro-implants.",
+  "url": "https://www.biospace.com/article/neural-dust-millimeter-sized-brain-stimulators/",
+  "familiar": false
+ },
+ {
+  "id": "electric-field-spine-patch",
+  "verdict": "drop",
+  "rule": "r5",
+  "why": "The 2025 rat study it rests on gave modest functional gains and found no extra axon regrowth, so the steering mechanism is unsupported.",
+  "found": "Chalmers/Auckland Nature Communications 2025: subdural field treatment improved rat function but did not change axon regeneration markers; nothing in humans.",
+  "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12202812/",
+  "familiar": false
+ },
+ {
+  "id": "microwave-beamed-rocket",
+  "verdict": "borderline",
+  "rule": "none",
+  "why": "Can a ground array of hundreds of megawatts of gyrotrons track a rocket and beat reusable chemical rockets enough to move toward $10/kg? My pick: keep.",
+  "found": "Escape Dynamics folded in 2015 after thruster tests; only academic and JAXA work since, nothing being built.",
+  "url": "https://aviationweek.com/awinspace/microwave-space-propulsion-startup-closes-doors",
+  "familiar": true
+ },
+ {
+  "id": "ram-accelerator-fuel-gun",
+  "verdict": "drop",
+  "rule": "exists",
+  "why": "HyperSciences (General Hypersonics) is building a reusable ram-accelerator tube aimed at launching payloads to space.",
+  "found": "General Hypersonics flew two Mach 4+ ram-accelerator launches from one reusable tube in 2026 and plans payloads to the Karman line.",
+  "url": "https://www.einpresswire.com/article/917485905?promo=4400",
+  "familiar": true
+ },
+ {
+  "id": "precooled-air-breathing-engine",
+  "verdict": "drop",
+  "rule": "exists",
+  "why": "This is SABRE: Reaction Engines built and tested the precooler, and ESA's Invictus programme now carries the engine forward.",
+  "found": "Reaction Engines tested SABRE precoolers before closing in 2024; ESA's Invictus (2025) is developing a precooled air-breathing hydrogen engine spaceplane.",
+  "url": "https://thenextweb.com/news/esa-spaceplane-project-revives-bankrupt-firms-hypersonic-engine",
+  "familiar": true
+ },
+ {
+  "id": "reversible-resonant-chip",
+  "verdict": "drop",
+  "rule": "exists",
+  "why": "Vaire Computing is a funded startup building resonator-driven reversible chips and has taped one out.",
+  "found": "Vaire's Ice River test chip (22 nm, 2025) recovers energy through an LC resonator, about 30% less energy on one task; second tapeout under way.",
+  "url": "https://spectrum.ieee.org/reversible-computing",
+  "familiar": false
+ },
+ {
+  "id": "nanotube-memory-skyscraper-chip",
+  "verdict": "borderline",
+  "rule": "none",
+  "why": "Does the DARPA 3DSoC chip already fabricated at SkyWater count as this being built? My pick: drop.",
+  "found": "SkyWater fabricates monolithic 3D chips stacking nanotube logic and RRAM in a commercial foundry under DARPA 3DSoC; CMU reported ~10x gains at IEDM 2025; no product.",
+  "url": "https://www.ece.cmu.edu/news-and-events/story/2025/12/3D-chip-breakthrough-to-accelerate-AI.html",
+  "familiar": true
+ },
+ {
+  "id": "proton-synapse-learning-chip",
+  "verdict": "pass",
+  "rule": "none",
+  "why": "Training by pulsing weights where they sit would cut the energy of AI training by orders of magnitude.",
+  "found": "Only research arrays (MIT, IBM, Illinois); IEEE Spectrum says a commercial ECRAM training chip is still some way off; no startup found.",
+  "url": "https://spectrum.ieee.org/analog-ai-ecram-artificial-synapse",
+  "familiar": false
+ },
+ {
+  "id": "magnetoelectric-logic-chip",
+  "verdict": "borderline",
+  "rule": "none",
+  "why": "With no material yet switching at 100 mV and a read-out too weak to drive the next gate, is it plausible enough? My pick: keep.",
+  "found": "Intel showed a single MESO device at IEDM 2021; no circuit or product since.",
+  "url": "https://www.wikipedia.org/wiki/Magneto-Electric_Spin-Orbit",
+  "familiar": true
+ },
+ {
+  "id": "plasma-element-sorter",
+  "verdict": "drop",
+  "rule": "r5",
+  "why": "A plasma mass filter splits waste into heavy and light groups, not 60 pure elements, since neighbours like nickel, cobalt and copper differ by under 10%, and ionising everything costs megawatt-hours per tonne.",
+  "found": "Only lab devices and proposals (PPPL, Gueroult/Fisch for NdFeB magnets); Archimedes never ran at scale; Radify uses plasma for reduction, not mass separation.",
+  "url": "https://lac913.epfl.ch/epsppd3/2018/pdf/P2.3013.pdf",
+  "familiar": false
+ },
+ {
+  "id": "copper-scrubbing-steel-cell",
+  "verdict": "pass",
+  "rule": "none",
+  "why": "Pulling copper out of molten scrap would let old scrap make top-grade flat steel instead of rebar.",
+  "found": "University of Toronto (Azimi) reported the first electrochemical removal of copper from molten steel below alloy level with an oxysulfide electrolyte; no startup or pilot.",
+  "url": "https://www.utoronto.ca/news/u-t-researchers-design-new-method-recycling-steel-could-reduce-industry-s-carbon-footprint",
+  "familiar": false
+ },
+ {
+  "id": "plastic-to-propylene-reactor",
+  "verdict": "pass",
+  "rule": "none",
+  "why": "Turning unsorted polyolefin waste into virgin-grade propylene would close the loop on most plastic.",
+  "found": "Berkeley Science 2022 tandem isomerising ethenolysis gave >80% propylene; only academic follow-ups, no pilot plant or company.",
+  "url": "https://www.cambridge.org/engage/coe/article-details/6331eff7fee74e83a04b709d",
+  "familiar": false
+ }
+]

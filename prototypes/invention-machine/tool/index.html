@@ -1,0 +1,822 @@
+<title>Future Technologies</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Lora:ital,wght@0,400..700;1,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: a table of paper cards, like the deck, under a sticky tab bar. Candidates, Rules, Log. */
+:root {
+  --table: #eef0ec;            /* the table the cards sit on */
+  --paper: #fffdf8;            /* card stock */
+  --ink: #1d1c1a;
+  --muted: #6c6a64;
+  --line: rgba(29, 28, 26, 0.14);
+  --part: #3f6f96;             /* parts: steel blue, as on the assembly board */
+  --effect: #a8670f;           /* effects: amber, as on the assembly board */
+  --effect-bg: #fbf1df;
+  --part-bg: #e8f0f6;
+  --keep: #2f7a4b; --keep-bg: #e3f2e8;
+  --reject: #a33a2c; --reject-bg: #f8e4e0;
+  --work: #8a6a12; --work-bg: #f7efd2;
+  --flag-bg: #fff6e5;
+  --display: "DM Serif Display", Georgia, serif;
+  --body: "Lora", Georgia, serif;
+  --ui: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --table: #1c1e1d; --paper: #2a2b29; --ink: #ece8de; --muted: #a8a49a; --line: rgba(236, 232, 222, 0.14);
+  --part: #8fb8da; --effect: #e2a752; --effect-bg: #3a2f1f; --part-bg: #24323d;
+  --keep: #7ccf98; --keep-bg: #203327; --reject: #f0907f; --reject-bg: #3d2420; --work: #e3c463; --work-bg: #37311c;
+  --flag-bg: #35301f; color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --table: #1c1e1d; --paper: #2a2b29; --ink: #ece8de; --muted: #a8a49a; --line: rgba(236, 232, 222, 0.14);
+  --part: #8fb8da; --effect: #e2a752; --effect-bg: #3a2f1f; --part-bg: #24323d;
+  --keep: #7ccf98; --keep-bg: #203327; --reject: #f0907f; --reject-bg: #3d2420; --work: #e3c463; --work-bg: #37311c;
+  --flag-bg: #35301f; color-scheme: dark; }
+
+* { box-sizing: border-box; }
+body { background: var(--table); color: var(--ink); font: 15px/1.5 var(--body); }
+.wrap { max-width: 1180px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+header.top { padding-block: 28px 12px; display: flex; flex-wrap: wrap; gap: 12px 32px; align-items: end; justify-content: space-between; }
+h1 { font: 34px/1.1 var(--display); margin: 0; text-wrap: balance; }
+.lede { margin: 6px 0 0; color: var(--muted); max-width: 62ch; }
+.tally { display: flex; gap: 20px; font-family: var(--ui); font-variant-numeric: tabular-nums; }
+.tally div { display: grid; }
+.tally b { font: 600 22px/1 var(--ui); }
+.tally span { font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--table); }
+nav.tabs { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--table); border-bottom: 1px solid var(--line); }
+nav.tabs .wrap { display: flex; gap: 4px; overflow-x: auto; }
+nav.tabs a { font: 500 14px var(--ui); color: var(--muted); text-decoration: none; padding: 12px 14px 10px; border-bottom: 2px solid transparent; white-space: nowrap; }
+nav.tabs a[aria-current="page"] { color: var(--ink); border-bottom-color: var(--ink); }
+nav.tabs a .n { font-variant-numeric: tabular-nums; opacity: .7; margin-left: 4px; }
+main { padding-block: 18px 60px; }
+
+.filters { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; margin-bottom: 16px; font-family: var(--ui); }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--paper); }
+.seg button { font: 500 13px var(--ui); border: 0; background: none; color: var(--muted); padding: 6px 11px; cursor: pointer; }
+.seg button + button { border-left: 1px solid var(--line); }
+.seg button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+input, textarea, select { font: 14px var(--ui); color: var(--ink); background: var(--paper); border: 1px solid var(--line); border-radius: 8px; padding: 7px 10px; }
+input[type="search"] { min-width: 0; flex: 1 1 200px; max-width: 320px; }
+button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible { outline: 2px solid var(--part); outline-offset: 2px; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 520px), 1fr)); gap: 16px; align-items: start; }
+.card { background: var(--paper); border: 1px solid var(--line); border-radius: 6px; padding: 16px 18px; display: grid; gap: 12px; min-width: 0; box-shadow: 0 1px 2px rgba(0,0,0,.05); }
+.card.kept { box-shadow: inset 4px 0 0 var(--keep), 0 1px 2px rgba(0,0,0,.05); }
+.card.rejected { box-shadow: inset 4px 0 0 var(--reject), 0 1px 2px rgba(0,0,0,.05); }
+.card.rejected .body { opacity: .62; }
+.card.needs-work { box-shadow: inset 4px 0 0 var(--work), 0 1px 2px rgba(0,0,0,.05); }
+.head { display: flex; gap: 10px; align-items: baseline; justify-content: space-between; flex-wrap: wrap; }
+.head h2 { font: 23px/1.15 var(--display); margin: 0; }
+.year { font: 500 13px var(--ui); color: var(--muted); font-variant-numeric: tabular-nums; margin-left: 6px; }
+.pill { font: 600 11px var(--ui); letter-spacing: .05em; text-transform: uppercase; padding: 3px 8px; border-radius: 99px; white-space: nowrap; }
+.pill.proposed { background: var(--line); color: var(--muted); }
+.pill.kept, .pill.approved { background: var(--keep-bg); color: var(--keep); }
+.pill.rejected, .pill.retired { background: var(--reject-bg); color: var(--reject); }
+.pill.needs-work { background: var(--work-bg); color: var(--work); }
+.who { font: 12px var(--ui); color: var(--muted); }
+.who b { font-weight: 600; color: var(--ink); }
+.body { display: grid; gap: 10px; }
+.row { display: grid; grid-template-columns: 92px 1fr; gap: 10px; align-items: start; }
+.row > .k { font: 600 11px/22px var(--ui); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.job { font: 600 15px var(--body); font-variant: small-caps; letter-spacing: .02em; }
+.newjob { font: 500 11px var(--ui); color: var(--work); margin-left: 6px; }
+.fx { display: flex; gap: 10px; align-items: center; background: var(--effect-bg); border-radius: 6px; padding: 6px 8px; min-width: 0; }
+.fx .t { color: var(--effect); font-weight: 600; }
+.fx small { display: block; font: 12px var(--ui); color: var(--muted); }
+.parts { display: flex; flex-wrap: wrap; gap: 8px; }
+.part { display: flex; gap: 8px; align-items: center; background: var(--part-bg); border-radius: 6px; padding: 4px 8px 4px 4px; min-width: 0; max-width: 100%; }
+.part .t { font-size: 14px; line-height: 1.2; }
+.part small { display: block; font: 11px var(--ui); color: var(--part); }
+.thumb { width: 48px; height: 32px; border-radius: 3px; object-fit: cover; flex: none; background: var(--line); }
+.how { margin: 0; font-style: italic; }
+.subtitle { display: block; font-family: "Lora", serif; font-size: 15px; font-style: italic; font-weight: 400; color: var(--muted); margin-top: 2px; }
+.obstacle { margin: 8px 0 0; font-size: 14px; padding: 6px 10px; border-radius: 6px; background: var(--work-bg); }
+.revised { margin: 6px 0 0; font-size: 13px; color: var(--muted, inherit); border-left: 3px solid var(--effect); padding-left: 8px; }
+.flags { display: grid; gap: 4px; margin: 0; padding: 8px 10px; background: var(--flag-bg); border-radius: 6px; list-style: none; font: 13px/1.4 var(--ui); }
+.flags li::before { content: "▲ "; color: var(--work); font-size: 10px; }
+.decide { display: grid; gap: 8px; border-top: 1px dashed var(--line); padding-top: 12px; font-family: var(--ui); }
+.verdicts { display: flex; gap: 6px; flex-wrap: wrap; }
+.verdicts button, .btn { font: 600 13px var(--ui); border: 1px solid var(--line); background: var(--paper); color: var(--ink); border-radius: 8px; padding: 6px 12px; cursor: pointer; }
+.verdicts button[data-v="kept"][aria-pressed="true"] { background: var(--keep); color: var(--paper); border-color: var(--keep); }
+.verdicts button[data-v="needs-work"][aria-pressed="true"] { background: var(--work); color: var(--paper); border-color: var(--work); }
+.verdicts button[data-v="rejected"][aria-pressed="true"] { background: var(--reject); color: var(--paper); border-color: var(--reject); }
+.btn.primary { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.btn:disabled { opacity: .5; cursor: default; }
+.tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.tags button { font: 12px var(--ui); border: 1px solid var(--line); background: none; color: var(--muted); border-radius: 99px; padding: 3px 10px; cursor: pointer; }
+.tags button[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.decide textarea { width: 100%; min-height: 54px; resize: vertical; }
+.decide .actions { display: flex; gap: 8px; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+.history { margin: 0; padding: 0; list-style: none; display: grid; gap: 4px; font: 12.5px/1.45 var(--ui); color: var(--muted); }
+.history b { color: var(--ink); font-weight: 600; }
+details.more summary { cursor: pointer; font: 12px var(--ui); color: var(--muted); }
+
+.empty { background: var(--paper); border: 1px dashed var(--line); border-radius: 6px; padding: 28px; text-align: center; color: var(--muted); font-family: var(--ui); }
+.rules { display: grid; gap: 12px; max-width: 820px; }
+.rule { background: var(--paper); border: 1px solid var(--line); border-radius: 6px; padding: 14px 16px; display: grid; gap: 8px; }
+.rule .text { font-size: 16px; }
+.rule .meta { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; font: 12px var(--ui); color: var(--muted); }
+.rule .ex { font: 12.5px var(--ui); color: var(--muted); }
+.rule .ex a { color: var(--part); }
+.section-h { font: 600 12px var(--ui); letter-spacing: .07em; text-transform: uppercase; color: var(--muted); margin: 18px 0 4px; }
+form.add { background: var(--paper); border: 1px solid var(--line); border-radius: 6px; padding: 14px 16px; display: grid; gap: 8px; font-family: var(--ui); max-width: 820px; }
+form.add label { display: grid; gap: 3px; font: 600 11px var(--ui); letter-spacing: .05em; text-transform: uppercase; color: var(--muted); }
+form.add .two { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 8px; }
+.log { list-style: none; margin: 0; padding: 0; max-width: 820px; display: grid; gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
+.log li { background: var(--paper); padding: 10px 14px; display: grid; grid-template-columns: 110px 1fr; gap: 12px; font: 13.5px/1.45 var(--ui); }
+.log time { color: var(--muted); font-variant-numeric: tabular-nums; font-size: 12px; }
+.log .what a { color: var(--ink); font-weight: 600; }
+.notice { font: 13px var(--ui); color: var(--muted); margin: 0 0 14px; }
+.toast { position: fixed; left: 50%; transform: translateX(-50%); bottom: calc(18px + env(safe-area-inset-bottom, 0px)); background: var(--ink); color: var(--paper); font: 500 13px var(--ui); padding: 8px 14px; border-radius: 8px; opacity: 0; transition: opacity .2s; pointer-events: none; }
+.toast.on { opacity: 1; }
+.vfx { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 12px; align-items: start; }
+.vfx .card { padding: 12px 14px; gap: 8px; }
+.vfx .card h2 { font-size: 19px; }
+.vfx .card p { margin: 0; font-size: 14px; }
+.vfx .fxline { color: var(--effect); font-weight: 600; font-size: 14px; }
+.vfx .meta { font: 12.5px/1.45 var(--ui); color: var(--muted); }
+.vfx .meta b { color: var(--ink); font-weight: 600; }
+.ncgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 12px; }
+.nc { background: var(--paper); border: 1px solid var(--line); border-radius: 6px; padding: 14px 16px; display: grid; gap: 8px; align-content: start; }
+.nc.kept { box-shadow: inset 4px 0 0 var(--keep); }
+.nc.needs-work { box-shadow: inset 4px 0 0 var(--work); }
+.nc h2 { font: 19px/1.15 var(--display); margin: 0; }
+.nc .who { font: 13px var(--ui); color: var(--muted); }
+.nc .desc { font: 15px/1.5 var(--body); margin: 0; }
+.nc .chg { font: 600 12.5px/1.4 var(--ui); color: var(--work); background: var(--work-bg); border-radius: 6px; padding: 6px 8px; }
+.nc .flag { font: 13px/1.45 var(--ui); color: var(--muted); }
+.nc details summary { font: 12.5px var(--ui); color: var(--muted); cursor: pointer; }
+.nc details p { font: 13px/1.45 var(--ui); margin: 6px 0 0; }
+.nc .mnote { font: 13px var(--ui); color: var(--ink); background: transparent; border: 1px solid var(--line); border-radius: 6px; padding: 5px 8px; }
+.mlist { display: grid; gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
+.mrow { background: var(--paper); padding: 10px 14px; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 6px 16px; align-items: center; }
+.mrow.kept { box-shadow: inset 4px 0 0 var(--keep); }
+.mrow.rejected { box-shadow: inset 4px 0 0 var(--reject); }
+.mrow.rejected .mt { opacity: .55; }
+.mrow .mt b { font: 600 15px var(--ui); }
+.mrow .src { font: 600 11px var(--ui); color: var(--muted); background: var(--line); border-radius: 99px; padding: 1px 7px; margin-left: 8px; vertical-align: 2px; }
+.mrow .rank { font: 600 12px var(--ui); color: var(--muted); font-variant-numeric: tabular-nums; }
+.mrow .mhow { font: 13px/1.4 var(--ui); color: var(--muted); margin-top: 2px; }
+.mrow .mwhy { font: italic 13px/1.4 var(--body); margin-top: 3px; }
+.mrow .mact { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; justify-content: flex-end; }
+.mrow .mnote { grid-column: 1 / -1; font: 13px var(--ui); color: var(--ink); background: transparent; border: 1px solid var(--line); border-radius: 6px; padding: 5px 8px; }
+.mrow .mnote:focus { outline: 2px solid var(--part); outline-offset: -1px; }
+@media (max-width: 560px) { .mrow { grid-template-columns: 1fr; } .mrow .mact { justify-content: flex-start; } }
+.vgap { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
+.vgap li { background: var(--paper); padding: 8px 12px; font: 13.5px/1.4 var(--ui); }
+.vgap li span { color: var(--muted); font-variant-numeric: tabular-nums; margin-right: 6px; }
+.bjob { margin: 34px 0 10px; padding-top: 14px; border-top: 1px solid var(--line); }
+.bjob h3 { font: 24px/1.15 var(--display); margin: 0 0 4px; }
+.bjob p { margin: 2px 0; font: 13.5px/1.45 var(--ui); color: var(--muted); }
+.bjob p b { color: var(--ink); font-weight: 600; }
+.mynote { margin: 0; font: 13px var(--ui); padding: 6px 10px; border-radius: 6px; background: var(--keep-bg); }
+@media (max-width: 520px) { .row { grid-template-columns: 1fr; gap: 4px; } .log li { grid-template-columns: 1fr; gap: 2px; } h1 { font-size: 28px; } }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<header class="wrap top">
+  <div>
+    <h1>Future Technologies</h1>
+    <p class="lede">New assemblies for the invention cards: an existing job, done with an effect nobody has used for it, built from cards already in the deck. Keep or reject each one and say why; the reasons become rules.</p>
+  </div>
+  <div class="tally" id="tally" aria-live="polite">
+    <div><b id="t-proposed">–</b><span>To review</span></div>
+    <div><b id="t-kept">–</b><span>Kept</span></div>
+    <div><b id="t-rejected">–</b><span>Rejected</span></div>
+    <div><b id="t-rules">–</b><span>Rules</span></div>
+  </div>
+</header>
+<nav class="tabs" aria-label="Views"><div class="wrap">
+  <a href="#cards" data-view="cards">New cards<span class="n" id="n-cards"></span></a>
+  <a href="#missing" data-view="missing">Missing<span class="n" id="n-missing"></span></a>
+  <a href="#big" data-view="big">Big jobs<span class="n" id="n-big"></span></a>
+  <a href="#vetted" data-view="vetted">Vetted<span class="n" id="n-vetted"></span></a>
+  <a href="#candidates" data-view="candidates">Candidates<span class="n" id="n-candidates"></span></a>
+  <a href="#effects" data-view="effects">Effects<span class="n" id="n-effects"></span></a>
+  <a href="#rules" data-view="rules">Rules<span class="n" id="n-rules"></span></a>
+  <a href="#log" data-view="log">Decisions<span class="n" id="n-log"></span></a>
+</div></nav>
+
+<main class="wrap">
+  <section id="view-candidates">
+    <div class="filters">
+      <div class="seg" id="f-status" role="group" aria-label="Status">
+        <button data-v="all">All</button><button data-v="proposed" aria-pressed="true">To review</button><button data-v="kept">Kept</button><button data-v="needs-work">Needs work</button><button data-v="rejected">Rejected</button>
+      </div>
+      <div class="seg" id="f-path" role="group" aria-label="Path">
+        <button data-v="all" aria-pressed="false">Both paths</button><button data-v="gap" aria-pressed="false">Fill the gap</button><button data-v="future" aria-pressed="true">Circa 2030</button>
+      </div>
+      <input type="search" id="f-q" placeholder="Search names, jobs, effects, parts" aria-label="Search candidates">
+    </div>
+    <p class="notice" id="c-notice"></p>
+    <div class="grid" id="c-list"><div class="empty">Loading candidates…</div></div>
+    <h3 class="section-h">Propose one yourself</h3>
+    <form class="add" id="add-cand">
+      <div class="two">
+        <label>Name<input id="ac-name" required placeholder="e.g. Tidal kite"></label>
+        <label>Year, if it exists<input id="ac-year" inputmode="numeric" placeholder="blank if new"></label>
+      </div>
+      <div class="two">
+        <label>Job<input id="ac-job" list="jobs" required placeholder="an existing job"></label>
+        <label>New effect<input id="ac-fx" list="effects" placeholder="an effect, or describe a new one"></label>
+      </div>
+      <label>Built from (card ids, comma separated)<input id="ac-parts" list="cardids" placeholder="electric-generators, wing"></label>
+      <label>How it works<textarea id="ac-how" rows="2"></textarea></label>
+      <div><button class="btn primary" type="submit">Add candidate</button></div>
+    </form>
+  </section>
+
+  <section id="view-effects" hidden>
+    <p class="notice">New phenomenon cards drafted from the <a href="https://www.triz.co.uk/triz-effects-database" target="_blank" rel="noopener">TRIZ Effects Database</a>, which lists physical effects by what they can do. Keep or drop each one and say why; your reasons become rules for sorting the other ~450.</p>
+    <div class="filters">
+      <div class="seg" id="fe-status" role="group" aria-label="Status">
+        <button data-v="all">All</button><button data-v="proposed" aria-pressed="true">To review</button><button data-v="kept">Kept</button><button data-v="needs-work">Needs work</button><button data-v="rejected">Dropped</button>
+      </div>
+    </div>
+    <p class="notice" id="e-notice"></p>
+    <div class="grid" id="e-list"><div class="empty">Loading effects…</div></div>
+  </section>
+
+  <section id="view-cards" hidden>
+    <p class="notice">The fronts of the new cards you kept on the Missing tab: title, year, who and where, and what it does and how. Claude's agents checked dates and inventors; where they changed the year or title you gave, the card is shown first. Mark each “Looks right” or “Needs a fix” (say what in the box). Pictures are being drawn from the “Draw” line; you'll pick them in the art picker.</p>
+    <h3 class="section-h" id="c-chg-h"></h3>
+    <div class="ncgrid" id="c-chg"></div>
+    <h3 class="section-h" id="c-un-h"></h3>
+    <div class="ncgrid" id="c-un"></div>
+    <details class="more" id="c-rest-box"><summary id="c-rest-h"></summary><div class="ncgrid" id="c-rest" style="margin-top:10px"></div></details>
+  </section>
+
+  <section id="view-missing" hidden>
+    <p class="notice">Real inventions the board is missing. Anything waiting on you is in the first list, whatever round or decade it came from; Keep or Drop saves straight away, and the box takes a note or a better name. Everything already settled (by you or by your rules m1–m6) is folded below, and one click overturns any of it.</p>
+    <h3 class="section-h" id="m-todo-h"></h3>
+    <div class="mlist" id="m-todo"></div>
+    <details class="more" id="m-done-box"><summary id="m-done-h"></summary><div id="m-done"></div></details>
+  </section>
+
+  <section id="view-big" hidden>
+    <p class="notice">This round starts from the job, not the effect. You picked civilisation-scale jobs; for each one, agents searched recent research and the deck's effects for something that breaks the job's bottleneck. First, a second draft of jobs to judge (transport, oceans, education, security, disasters, and ageing split into well-known problems). Below that, your jobs with their new Future Technologies.</p>
+    <h3 class="section-h" id="b-draft-h">New jobs to judge</h3>
+    <div class="grid" id="b-draft"><div class="empty">Loading…</div></div>
+    <div id="b-jobs"></div>
+    <h3 class="section-h" id="b-drop-h"></h3>
+    <ul class="vgap" id="b-drop"></ul>
+  </section>
+
+  <section id="view-vetted" hidden>
+    <p class="notice">What has survived curation so far, read only: the Future Technologies you kept, the effect cards kept by you or by your rules, and the real inventions added to fill the 1960–2020 gap. Make decisions on the other tabs.</p>
+    <h3 class="section-h" id="v-ft-h">Future Technologies</h3>
+    <div class="grid" id="v-ft"><div class="empty">Loading…</div></div>
+    <h3 class="section-h" id="v-fx-h">Effect cards</h3>
+    <div class="filters"><input type="search" id="v-q" placeholder="Search effects, uses, discoverers" aria-label="Search effect cards"></div>
+    <div class="vfx" id="v-fx"></div>
+    <h3 class="section-h" id="v-gap-h">Inventions added to fill the gap</h3>
+    <ul class="vgap" id="v-gap"></ul>
+  </section>
+
+  <section id="view-rules" hidden>
+    <p class="notice">Rules decide what reaches you. Claude proposes rules from your reasons; you approve them, and Claude reruns the generator with only the approved ones.</p>
+    <div class="rules" id="r-list"><div class="empty">Loading rules…</div></div>
+    <h3 class="section-h">Add a rule</h3>
+    <form class="add" id="add-rule">
+      <label>Rule<textarea id="ar-text" rows="2" required placeholder="e.g. Reject when the effect is far too weak to do the job at a useful size."></textarea></label>
+      <div class="two">
+        <label>What it does<select id="ar-kind"><option value="filters">Filters candidates out</option><option value="shapes">Shapes how they're built</option><option value="keeps">Keeps candidates in</option></select></label>
+      </div>
+      <div><button class="btn primary" type="submit">Add rule</button></div>
+    </form>
+  </section>
+
+  <section id="view-log" hidden>
+    <ol class="log" id="l-list"><li><span></span><span class="what">Loading decisions…</span></li></ol>
+  </section>
+</main>
+<datalist id="jobs"></datalist><datalist id="effects"></datalist><datalist id="cardids"></datalist>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+const $ = (s, el = document) => el.querySelector(s);
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const TAGS = ["too weak for the job", "job is a stretch", "effect is in a part", "not important enough", "already in the deck", "wrong parts", "improvement, not invention", "great example"];
+const VERDICT_WORD = { kept: "kept", rejected: "rejected", "needs-work": "marked needs work", proposed: "reopened" };
+const FX_STATUS = { "in graph": "used elsewhere in the graph", "card, unused": "has a card, never used yet", "needs card": "needs a new phenomenon card", none: "" };
+
+let ref = { cards: {}, effects: {}, jobs: [], deckCards: {} };
+let db = null, user = null, me = null, canWrite = true;
+let cands = [], rules = [], decisions = [], effs = [], jobs = [], missing = [], newcards = [];
+const JOB_TAGS = ["we can already do it", "not big enough", "too general", "unrealistic", "prescient", "great example"];
+const filt = { status: "proposed", path: "future", q: "" };
+const efilt = { status: "proposed" };
+const EFX_TAGS = ["not a phenomenon", "too general", "already in the deck", "merge with another", "no job it could do", "wrong date or discoverer", "description off", "great example"];
+const yr = (y) => y == null ? "" : y < 0 ? -y + " BCE" : String(y);
+const drafts = {};   // candidate id -> {verdict, tags:Set, note}
+
+function toast(msg) { const t = $("#toast"); t.textContent = msg; t.classList.add("on"); clearTimeout(toast.h); toast.h = setTimeout(() => t.classList.remove("on"), 2200); }
+function thumb(id) { return id ? `<img class="thumb" src="thumbs/${encodeURIComponent(id)}.jpg" alt="" loading="lazy" onerror="this.style.visibility='hidden'">` : ""; }
+function cardTitle(id) { return ref.cards[id]?.t || ref.deckCards[id]?.t || id; }
+function when(ts) { if (!ts) return ""; const d = new Date(ts); return d.toLocaleDateString(undefined, { month: "short", day: "numeric" }) + " " + d.toLocaleTimeString(undefined, { hour: "numeric", minute: "2-digit" }); }
+const names = {};
+async function whoName(by, byId) {
+  if (by === "ai") return "Claude";
+  if (!byId || !user) return "You";
+  if (!(byId in names)) { const ps = await user.profiles([byId]); names[byId] = ps[byId]?.isMe ? "You" : (ps[byId]?.name || "Someone"); }
+  return names[byId];
+}
+function whoSync(by, byId) { return by === "ai" ? "Claude" : (byId && names[byId]) || "You"; }
+
+/* ---------- views ---------- */
+function route() {
+  const views = ["cards", "missing", "big", "vetted", "candidates", "effects", "rules", "log"];
+  const v = views.includes(location.hash.slice(1)) ? location.hash.slice(1) : "missing";
+  for (const a of document.querySelectorAll("nav.tabs a")) a.dataset.view === v ? a.setAttribute("aria-current", "page") : a.removeAttribute("aria-current");
+  for (const s of views) $("#view-" + s).hidden = s !== v;
+}
+addEventListener("hashchange", route);
+
+function tally() {
+  const c = (s) => cands.filter((x) => x.status === s).length;
+  $("#t-proposed").textContent = c("proposed") + c("needs-work");
+  $("#t-kept").textContent = c("kept");
+  $("#t-rejected").textContent = c("rejected");
+  const ap = rules.filter((r) => r.status === "approved").length;
+  $("#t-rules").textContent = `${ap}/${rules.filter((r) => r.status !== "retired").length}`;
+  $("#n-candidates").textContent = cands.length || "";
+  $("#n-rules").textContent = rules.filter((r) => r.status === "proposed").length ? `· ${rules.filter((r) => r.status === "proposed").length} new` : "";
+  $("#n-log").textContent = decisions.length || "";
+  const ep = effs.filter((x) => x.status === "proposed").length;
+  $("#n-effects").textContent = ep ? `· ${ep} to review` : effs.length || "";
+}
+
+function matches(c) {
+  if (c.bigJob) return false;
+  if (filt.status !== "all" && c.status !== filt.status) return false;
+  if (filt.path !== "all" && (c.path || "gap") !== filt.path) return false;
+  if (!filt.q) return true;
+  const hay = [c.name, c.job, c.effect, c.how, ...(c.parts || []).map((p) => cardTitle(p.card) + " " + p.card)].join(" ").toLowerCase();
+  return filt.q.toLowerCase().split(/\s+/).every((w) => hay.includes(w));
+}
+
+function flagsFor(c) {
+  const f = [];
+  if (c.kind === "improvement") f.push("No new effect: an improvement on what already does this job, not an invention.");
+  if (c.kind !== "improvement" && c.pairNew === false) f.push("This job already works by this effect elsewhere on the board.");
+  if (c.inPart?.length) f.push(`The effect already belongs to a part (${c.inPart.map(cardTitle).join(", ")}), so by the board's rules the new card wouldn't own it.`);
+  if (c.jobNew) f.push(`“${c.job}” isn't a job on the board yet.`);
+  if (c.effectStatus === "needs card") f.push("The effect has no phenomenon card yet.");
+  if (!c.parts?.length) f.push("Built from no existing cards.");
+  for (const p of c.problems || []) f.push(p);
+  return f;
+}
+
+function candHTML(c) {
+  const d = drafts[c.id] || { verdict: c.status === "proposed" ? null : c.status, tags: new Set(c.tags || []), note: "" };
+  drafts[c.id] = d;
+  const fxCard = c.effectCard || ref.effects[c.effect]?.card;
+  const flags = flagsFor(c);
+  const hist = decisions.filter((x) => x.candidate === c.id);
+  const exists = c.path === "future"
+    ? `<span class="year">${c.number ? "Future Technology " + c.number + " · " : ""}${c.bigJob ? (c.familiar ? "known moonshot" : "new idea") : { lab: "lab only", idea: "no known match", related: "related work exists", paper: "on paper only" }[c.maturity] || "circa 2030"}${c.plausibility ? ` · buildable ${c.plausibility}/5` : ""}</span>`
+    : c.year ? `<span class="year">${c.year < 0 ? -c.year + " BCE" : c.year} · real</span>` : `<span class="year">no known match</span>`;
+  return `<article class="card ${esc(c.status)}" id="c-${esc(c.id)}">
+    <div class="head">
+      <h2>${esc(c.name)}${exists}${c.subtitle ? `<span class="subtitle">${esc(c.subtitle)}</span>` : ""}</h2>
+      <span class="pill ${esc(c.status)}">${esc(c.status === "needs-work" ? "needs work" : c.status === "proposed" ? "to review" : c.status)}</span>
+    </div>
+    <div class="who">Proposed by <b>${esc(whoSync(c.proposedBy, c.proposedById))}</b>${c.confirmedBy ? ` · ${c.status === "rejected" ? "rejected" : "confirmed"} by <b>${esc(whoSync(c.confirmedBy, c.confirmedById))}</b>` : " · not yet confirmed"}</div>
+    <div class="body">
+      <div class="row"><span class="k">Job</span><span><span class="job">${esc(c.job)}</span>${c.jobNew ? '<span class="newjob">new job</span>' : ""}</span></div>
+      ${c.effects?.length ? `<div class="row"><span class="k">Works by</span><span class="parts">${c.effects.map((e) => `<span class="fx">${thumb(e.card)}<span><span class="t">${esc(e.effect)}</span><small>${esc(e.t || cardTitle(e.card))}${e.y != null ? ` (${e.y < 0 ? -e.y + " BCE" : e.y})` : ""} · ${e.newToJob ? "new to this job" : "already used for this job"}</small></span></span>`).join("")}</span></div>` : `<div class="row"><span class="k">New effect</span>${c.effect ? `<span class="fx">${thumb(fxCard)}<span><span class="t">${esc(c.effect)}</span><small>${fxCard ? esc(c.effectCardTitle || cardTitle(fxCard)) + (c.effectCardNew ? " (new card)" : "") + (c.effectYear ? ` (${c.effectYear < 0 ? -c.effectYear + " BCE" : c.effectYear})` : "") + " · " : ""}${esc(FX_STATUS[c.effectStatus] || "")}</small></span></span>` : `<span class="who">none</span>`}</div>`}
+      <div class="row"><span class="k">Built from</span><span class="parts">${(c.parts || []).map((p) => `<span class="part">${thumb(p.card)}<span><span class="t">${esc(p.t || cardTitle(p.card))}</span><small>${esc(p.job || ref.cards[p.card]?.job || "")}${p.candidate ? " · Future Tech" : ""}</small></span></span>`).join("") || '<span class="who">nothing yet</span>'}</span></div>
+      ${c.how ? `<p class="how">${esc(c.how)}</p>` : ""}
+      ${c.obstacle ? `<p class="obstacle"><b>What's stopping it:</b> ${esc(c.obstacle)}</p>` : ""}
+      ${c.tenX ? `<p class="revised"><b>The 10×:</b> ${esc(c.tenX)}</p>` : ""}
+      ${c.why ? `<p class="revised"><b>${c.bigJob ? "Why a history book would name it" : "Why it's interesting"}:</b> ${esc(c.why)}</p>` : ""}
+      ${c.evidence ? `<p class="revised"><b>Rests on:</b> ${esc(c.evidence).replace(/(https?:\/\/[^\s)]+)/g, '<a href="$1" target="_blank" rel="noopener">source</a>')}</p>` : ""}
+      ${c.real ? `<p class="revised"><b>${c.maturity === "paper" || (c.maturity === "idea" && c.realUrl !== undefined) ? "What the search found" : "Already tried"}:</b> ${esc(c.real)}${c.realUrl && /^https?:\/\//.test(c.realUrl) ? ` <a href="${esc(c.realUrl)}" target="_blank" rel="noopener">source</a>` : ""}</p>` : ""}
+      ${c.effectCardNew ? `<p class="revised"><b>Proposed card, ${esc(c.effectCardTitle)}:</b> ${esc(c.effectCardNew)}</p>` : ""}
+      ${c.revision ? `<p class="revised"><b>${/^(Dropped|Borderline|Passes)/.test(c.revision) ? "Claude's note" : "Revised by Claude"}:</b> ${esc(c.revision)}</p>` : ""}
+      ${c.ruleNote ? `<p class="revised"><b>Claude's note:</b> ${esc(c.ruleNote)}</p>` : ""}
+      ${flags.length ? `<ul class="flags">${flags.map((f) => `<li>${esc(f)}</li>`).join("")}</ul>` : ""}
+    </div>
+    <div class="decide" data-id="${esc(c.id)}">
+      <div class="verdicts" role="group" aria-label="Verdict">
+        ${["kept", "needs-work", "rejected"].map((v) => `<button type="button" data-v="${v}" aria-pressed="${d.verdict === v}">${v === "kept" ? "Keep" : v === "rejected" ? "Reject" : "Needs work"}</button>`).join("")}
+      </div>
+      <div class="tags" role="group" aria-label="Reasons">${TAGS.map((t) => `<button type="button" data-tag="${esc(t)}" aria-pressed="${d.tags.has(t)}">${esc(t)}</button>`).join("")}</div>
+      <textarea id="note-${esc(c.id)}" placeholder="Why? A sentence helps more than a tag.">${esc(d.note)}</textarea>
+      <div class="actions">
+        <button type="button" class="btn primary save" ${canWrite ? "" : "disabled"}>Save decision</button>
+        ${hist.length ? `<span class="who">${hist.length} earlier decision${hist.length > 1 ? "s" : ""} below</span>` : ""}
+      </div>
+      ${hist.length ? `<ul class="history">${hist.map((h) => `<li><b>${esc(whoSync(h.by, h.byId))}</b> ${esc(VERDICT_WORD[h.verdict] || h.verdict)}${h.tags?.length ? " · " + esc(h.tags.join(", ")) : ""}${h.note ? ` — “${esc(h.note)}”` : ""} <span>${esc(when(h.at))}</span></li>`).join("")}</ul>` : ""}
+    </div>
+  </article>`;
+}
+
+function renderCands() {
+  const fut = (c) => c.path === "future";
+  const MAT = { idea: 0, paper: 1 };
+  const note = (c) => { const n = c.ruleNote || c.revision || ""; return /^Borderline/.test(n) ? 0 : /^Pass/.test(n) ? 1 : 2; };
+  const list = cands.filter(matches).sort((a, b) => fut(a) - fut(b) || (fut(a) ? note(a) - note(b) || (MAT[a.maturity] ?? 9) - (MAT[b.maturity] ?? 9) || (b.plausibility ?? 0) - (a.plausibility ?? 0) : (a.year ?? 9999) - (b.year ?? 9999)) || a.name.localeCompare(b.name));
+  const el = $("#c-list");
+  if (!db) { el.innerHTML = `<div class="empty">This page keeps its candidates in a shared store, which isn't available in this view. Open it on claude.ai while signed in.</div>`; return; }
+  if (!cands.length) { el.innerHTML = `<div class="empty">No candidates yet. Claude adds the first batch from the repo; you can also propose one below.</div>`; return; }
+  const order = filt.path === "future" ? "Never built first, then on paper only, then the rest; within each, most buildable first." : filt.path === "gap" ? "Sorted by year." : "Gap candidates by year, then circa-2030 ones by how buildable they look.";
+  $("#c-notice").textContent = `Showing ${list.length} of ${cands.length}. ${order}`;
+  el.innerHTML = list.length ? list.map(candHTML).join("") : `<div class="empty">Nothing matches these filters.</div>`;
+}
+
+function effHTML(e) {
+  const key = "e:" + e.id;
+  const d = drafts[key] || { verdict: e.status === "proposed" ? null : e.status, tags: new Set(e.tags || []), note: "" };
+  drafts[key] = d;
+  const hist = decisions.filter((x) => x.effect === e.id);
+  const who = [yr(e.year), e.inventor, e.location].filter(Boolean).join(" · ");
+  const fns = e.functions || [];
+  const pick = e.pick === "keep" ? "kept" : e.pick === "link" ? "needs-work" : "rejected";
+  return `<article class="card ${esc(e.status)}" id="e-${esc(e.id)}">
+    <div class="head">
+      <h2>${esc(e.title)}${who ? `<span class="year">${esc(who)}</span>` : `<span class="year">no date or discoverer</span>`}${e.field ? `<span class="subtitle">${esc(e.field)}</span>` : ""}</h2>
+      <span class="pill ${esc(e.status)}">${esc(e.status === "needs-work" ? "needs work" : e.status === "proposed" ? "to review" : e.status === "rejected" ? "dropped" : e.status)}</span>
+    </div>
+    <div class="body">
+      <div class="row"><span class="k">Effect</span><span class="fx"><span><span class="t">${esc(e.effect)}</span></span></span></div>
+      ${e.description ? `<p class="how">${esc(e.description)}</p>` : `<p class="who">No card text drafted, since I'd drop it.</p>`}
+      ${e.usedIn?.length ? `<div class="row"><span class="k">Used in</span><span>${e.usedIn.map(esc).join("; ")}</span></div>` : ""}
+      ${e.strength ? `<div class="row"><span class="k">Strength</span><span>${esc(e.strength)}</span></div>` : ""}
+      ${fns.length ? `<div class="row"><span class="k">Can</span><span class="who">${esc(fns.slice(0, 10).join(", "))}${fns.length > 10 ? ` and ${fns.length - 10} more` : ""}</span></div>` : ""}
+      ${e.deps?.length ? `<div class="row"><span class="k">After</span><span class="parts">${e.deps.map((p) => `<span class="part">${thumb(p)}<span><span class="t">${esc(cardTitle(p))}</span></span></span>`).join("")}</span></div>` : ""}
+      ${e.deckMatch ? `<p class="obstacle"><b>${e.pick === "link" ? "Attach to the deck's card" : "In the deck"}:</b> ${esc(e.deckMatchTitle || cardTitle(e.deckMatch))}</p>` : ""}
+      ${e.mergeInto ? `<p class="obstacle"><b>Merge into:</b> ${esc(effs.find((x) => x.id === e.mergeInto)?.title || e.mergeInto)}</p>` : ""}
+      <p class="revised"><b>Database entry “${esc(e.edb)}”:</b> ${esc(e.edbDesc)}${e.wiki ? ` <a href="${esc(e.wiki)}" target="_blank" rel="noopener">Wikipedia</a>` : ""}</p>
+      <p class="revised"><b>${e.decidedBy === "rule" ? `Decided by rule ${esc(e.rule || "")}` : "Claude's pick"}:</b> <span class="pill ${pick}">${{ keep: "keep", link: "attach to existing card", merge: "merge", "in-deck": "already in the deck" }[e.pick] || "drop"}</span> ${esc(e.pickWhy || "")}</p>
+      ${e.revision ? `<p class="revised"><b>Revised by Claude:</b> ${esc(e.revision)}</p>` : ""}
+    </div>
+    <div class="decide" data-id="${esc(key)}">
+      <div class="verdicts" role="group" aria-label="Verdict">
+        ${["kept", "needs-work", "rejected"].map((v) => `<button type="button" data-v="${v}" aria-pressed="${d.verdict === v}">${v === "kept" ? "Keep" : v === "rejected" ? "Drop" : "Needs work"}</button>`).join("")}
+      </div>
+      <div class="tags" role="group" aria-label="Reasons">${EFX_TAGS.map((t) => `<button type="button" data-tag="${esc(t)}" aria-pressed="${d.tags.has(t)}">${esc(t)}</button>`).join("")}</div>
+      <textarea id="note-${esc(key)}" placeholder="Why? A sentence helps more than a tag.">${esc(d.note)}</textarea>
+      <div class="actions"><button type="button" class="btn primary save" ${canWrite ? "" : "disabled"}>Save decision</button></div>
+      ${hist.length ? `<ul class="history">${hist.map((h) => `<li><b>${esc(whoSync(h.by, h.byId))}</b> ${esc(h.verdict === "rejected" ? "dropped" : VERDICT_WORD[h.verdict] || h.verdict)}${h.tags?.length ? " · " + esc(h.tags.join(", ")) : ""}${h.note ? ` — “${esc(h.note)}”` : ""} <span>${esc(when(h.at))}</span></li>`).join("")}</ul>` : ""}
+    </div>
+  </article>`;
+}
+function renderEffs() {
+  const el = $("#e-list");
+  if (!db) { el.innerHTML = `<div class="empty">The shared store isn't available in this view.</div>`; return; }
+  if (!effs.length) { el.innerHTML = `<div class="empty">No effects yet.</div>`; return; }
+  const rank = (e) => (/^Borderline/.test(e.pickWhy || "") ? 0 : e.pick === "keep" ? 1 : 2);
+  const list = effs.filter((e) => efilt.status === "all" || e.status === efilt.status).sort((a, b) => rank(a) - rank(b) || (a.year ?? 9999) - (b.year ?? 9999) || a.title.localeCompare(b.title));
+  const byRule = effs.filter((e) => e.decidedBy === "rule" && !e.confirmedBy);
+  $("#e-notice").textContent = `Showing ${list.length} of ${effs.length}. Borderline calls first, then the ones I'd keep, then the ones I'd drop.` +
+    (byRule.length ? ` The rules settled ${byRule.length} without you (${byRule.filter((e) => e.status === "kept").length} kept, ${byRule.filter((e) => e.status === "rejected").length} dropped); see them under Kept and Dropped.` : "");
+  el.innerHTML = list.length ? list.map(effHTML).join("") : `<div class="empty">Nothing matches this filter.</div>`;
+}
+
+/* ---------- big jobs ---------- */
+const JOB_WORD = { kept: "kept", rejected: "dropped", "needs-work": "too vague", proposed: "reopened" };
+function jobHTML(j) {
+  const key = "j:" + j.id;
+  const d = drafts[key] || { verdict: j.status === "proposed" ? null : j.status, tags: new Set(j.tags || []), note: "" };
+  drafts[key] = d;
+  const hist = decisions.filter((x) => x.job === j.id);
+  return `<article class="card ${esc(j.status)}" id="j-${esc(j.id)}">
+    <div class="head"><h2>${esc(j.job)}</h2><span class="pill ${esc(j.status)}">${esc(j.status === "proposed" ? "to review" : JOB_WORD[j.status] || j.status)}</span></div>
+    <div class="body">
+      <div class="row"><span class="k">Bottleneck</span><span>${esc(j.bottleneck)}</span></div>
+      <div class="row"><span class="k">10× win</span><span>${esc(j.target)}</span></div>
+      ${j.flag ? `<p class="obstacle"><b>Claude's flag:</b> ${esc(j.flag)}</p>` : ""}
+    </div>
+    <div class="decide" data-id="${esc(key)}">
+      <div class="verdicts" role="group" aria-label="Verdict">
+        ${["kept", "needs-work", "rejected"].map((v) => `<button type="button" data-v="${v}" aria-pressed="${d.verdict === v}">${v === "kept" ? "Keep" : v === "rejected" ? "Drop" : "Too vague"}</button>`).join("")}
+      </div>
+      <div class="tags" role="group" aria-label="Reasons">${JOB_TAGS.map((t) => `<button type="button" data-tag="${esc(t)}" aria-pressed="${d.tags.has(t)}">${esc(t)}</button>`).join("")}</div>
+      <textarea id="note-${esc(key)}" placeholder="Why? A few words is plenty.">${esc(d.note)}</textarea>
+      <div class="actions"><button type="button" class="btn primary save" ${canWrite ? "" : "disabled"}>Save decision</button></div>
+      ${hist.length ? `<ul class="history">${hist.map((h) => `<li><b>${esc(whoSync(h.by, h.byId))}</b> ${esc(JOB_WORD[h.verdict] || h.verdict)}${h.tags?.length ? " · " + esc(h.tags.join(", ")) : ""}${h.note ? ` — “${esc(h.note)}”` : ""} <span>${esc(when(h.at))}</span></li>`).join("")}</ul>` : ""}
+    </div>
+  </article>`;
+}
+function renderBig() {
+  if (!db) { $("#b-draft").innerHTML = `<div class="empty">The shared store isn't available in this view.</div>`; return; }
+  const draft = jobs.filter((j) => j.round === 2 && j.status !== "kept").sort((a, b) => (a.n ?? 99) - (b.n ?? 99));
+  const open = draft.filter((j) => j.status === "proposed").length;
+  $("#b-draft-h").textContent = `New jobs to judge · ${open} of ${draft.length} open`;
+  $("#b-draft").innerHTML = draft.length ? draft.map(jobHTML).join("") : `<div class="empty">No draft jobs.</div>`;
+  const big = cands.filter((c) => c.bigJob);
+  const mine = jobs.filter((j) => j.status === "kept").sort((a, b) => (a.n ?? 99) - (b.n ?? 99));
+  const rank = (c) => ({ proposed: /^Borderline/.test(c.ruleNote || "") ? 0 : 1, "needs-work": 2, kept: 3, rejected: 4 }[c.status] ?? 5);
+  $("#b-jobs").innerHTML = mine.map((j) => {
+    const cs = big.filter((c) => c.bigJob === j.id).sort((a, b) => rank(a) - rank(b) || (b.plausibility ?? 0) - (a.plausibility ?? 0));
+    const live = cs.filter((c) => c.status !== "rejected"), gone = cs.filter((c) => c.status === "rejected");
+    return `<div class="bjob" id="bj-${esc(j.id)}"><h3>${esc(j.job)}</h3><p><b>Bottleneck:</b> ${esc(j.bottleneck)}</p><p><b>10× win:</b> ${esc(j.target)}</p></div>
+      <div class="grid">${live.length ? live.map(candHTML).join("") : `<div class="empty">${cs.length ? "Every card for this job was dropped by your rules." : "No cards yet. Claude generates them after you keep the job."}</div>`}</div>
+      ${gone.length ? `<details class="more"><summary>${gone.length} dropped by rules or by you</summary><div class="grid">${gone.map(candHTML).join("")}</div></details>` : ""}`;
+  }).join("");
+  const dropped = jobs.filter((j) => j.round === 1 && j.status !== "kept");
+  $("#b-drop-h").textContent = dropped.length ? `Jobs you dropped from the first draft · ${dropped.length}` : "";
+  $("#b-drop").innerHTML = dropped.map((j) => `<li><b>${esc(j.job)}</b> · ${esc(j.note || "")}</li>`).join("");
+  const n = open + big.filter((c) => c.status === "proposed").length;
+  $("#n-big").textContent = n ? `· ${n} to review` : "";
+}
+
+/* ---------- missing real inventions ---------- */
+const M_WORD = { kept: "kept", rejected: "dropped", proposed: "reopened", noted: "noted on" };
+function mrowHTML(m, showSource) {
+  if (m.group === "rule" && m.confirmedBy === "human") m = { ...m, why: "" };
+  return `<div class="mrow ${esc(m.status)}" data-mid="${esc(m.id)}">
+    <div class="mt">${m.rank ? `<span class="rank">#${m.rank}</span> ` : ""}<b>${esc(m.name)}</b><span class="year">${esc(yr(m.year))}</span>${showSource ? `<span class="src">${esc(mSource(m))}</span>` : ""}<div class="mhow">${esc(m.how || "")}</div>${m.why ? `<div class="mwhy">${esc(m.why)}</div>` : ""}</div>
+    <div class="mact verdicts" role="group" aria-label="Verdict for ${esc(m.name)}">
+      <button type="button" data-v="kept" data-mv="kept" aria-pressed="${m.status === "kept"}" ${canWrite ? "" : "disabled"}>Keep</button>
+      <button type="button" data-v="rejected" data-mv="rejected" aria-pressed="${m.status === "rejected"}" ${canWrite ? "" : "disabled"}>Drop</button>
+    </div>
+    <input class="mnote" type="text" value="${esc(m.note || "")}" placeholder="Note, or a better name" aria-label="Note on ${esc(m.name)}" ${canWrite ? "" : "disabled"}>
+  </div>`;
+}
+const mSource = (m) => m.group === "decade" ? `Round 4 · ${m.decade}` : m.group === "round1" ? "Round 1" : m.round === 3 ? "Round 3" : m.round === 1 ? "Round 1" : "Round 2";
+const M_ORDER = ["Round 1", "Round 2", "Round 3", "Round 4 · 1980–1989", "Round 4 · 1990–1999", "Round 4 · 2000–2009", "Round 4 · 2010–2019", "Round 4 · 2020–2025"];
+function renderMissing() {
+  if (!db) { $("#m-todo").innerHTML = `<div class="empty">The shared store isn't available in this view.</div>`; return; }
+  if (document.activeElement?.classList?.contains("mnote") && document.activeElement.closest("#view-missing")) return;
+  const byYear = (a, b) => (a.year ?? 0) - (b.year ?? 0);
+  const todo = missing.filter((m) => m.status === "proposed").sort(byYear);
+  $("#m-todo-h").textContent = todo.length ? `Needs your call · ${todo.length}` : "Nothing left to judge";
+  $("#m-todo").innerHTML = todo.length ? todo.map((m) => mrowHTML(m, true)).join("") : `<div class="empty">Every candidate is settled. Overturn anything below.</div>`;
+  const done = missing.filter((m) => m.status !== "proposed");
+  const kept = done.filter((m) => m.status === "kept").length;
+  $("#m-done-h").textContent = `Already settled · ${kept} kept, ${done.length - kept} dropped`;
+  const groups = {};
+  for (const m of done) (groups[mSource(m)] ||= []).push(m);
+  $("#m-done").innerHTML = M_ORDER.filter((g) => groups[g]).map((g) => {
+    const ms = groups[g].sort((a, b) => (a.status === b.status ? 0 : a.status === "kept" ? -1 : 1) || (a.rank ?? 0) - (b.rank ?? 0) || byYear(a, b));
+    const k = ms.filter((m) => m.status === "kept").length;
+    return `<h3 class="section-h">${esc(g)} · ${k} kept, ${ms.length - k} dropped</h3><div class="mlist">${ms.map((m) => mrowHTML(m, false)).join("")}</div>`;
+  }).join("");
+  $("#n-missing").textContent = todo.length ? `· ${todo.length} to judge` : "";
+}
+async function setMissing(id, patch, verdict, note = "") {
+  try {
+    await db.doc("missing/" + id).update({ ...patch, confirmedBy: "human", confirmedById: me?.id || null, decidedAt: Date.now() });
+    await db.collection("decisions").add({ missing: id, verdict, tags: [], note, by: "human", byId: me?.id || null, at: Date.now() });
+  } catch (err) { failed(err); }
+}
+$("#view-missing").addEventListener("click", async (e) => {
+  const b = e.target.closest("[data-mv]"); if (!b) return;
+  const row = b.closest(".mrow"), m = missing.find((x) => x.id === row.dataset.mid); if (!m) return;
+  const status = m.status === b.dataset.mv ? "proposed" : b.dataset.mv;
+  for (const x of row.querySelectorAll("[data-mv]")) x.setAttribute("aria-pressed", x.dataset.mv === status);
+  row.className = "mrow " + status;
+  await setMissing(m.id, { status }, status);
+  toast(`${m.name}: ${M_WORD[status]}`);
+});
+$("#view-missing").addEventListener("change", async (e) => {
+  const inp = e.target.closest(".mnote"); if (!inp) return;
+  const m = missing.find((x) => x.id === inp.closest(".mrow").dataset.mid); if (!m) return;
+  const note = inp.value.trim(); if (note === (m.note || "")) return;
+  await setMissing(m.id, { note }, "noted", note);
+  toast("Note saved");
+});
+$("#view-missing").addEventListener("keydown", (e) => { if (e.key === "Enter" && e.target.closest(".mnote")) e.target.blur(); });
+$("#view-missing").addEventListener("focusout", (e) => { if (e.target.closest(".mnote")) setTimeout(renderMissing, 0); });
+
+/* ---------- new cards (card text) ---------- */
+const NC_WORD = { kept: "looks right", "needs-work": "needs a fix", proposed: "reopened", noted: "noted on" };
+function ncHTML(c) {
+  const who = [c.inventor, c.location, c.type].filter(Boolean).join(" · ");
+  return `<article class="nc ${esc(c.status)}" data-cid="${esc(c.id)}">
+    <h2>${esc(c.title)}<span class="year">${esc(yr(c.year))}</span></h2>
+    ${who ? `<div class="who">${esc(who)}</div>` : ""}
+    ${c.changes?.length ? `<div class="chg">Changed: ${c.changes.map(esc).join("; ")}</div>` : ""}
+    <p class="desc">${esc(c.description)}</p>
+    ${c.flag ? `<div class="flag"><b>Note:</b> ${esc(c.flag)}</div>` : ""}
+    <details><summary>Draw</summary><p>${esc(c.draw)}</p></details>
+    <div class="verdicts" role="group" aria-label="Verdict for ${esc(c.title)}">
+      <button type="button" data-v="kept" data-cv="kept" aria-pressed="${c.status === "kept"}" ${canWrite ? "" : "disabled"}>Looks right</button>
+      <button type="button" data-v="needs-work" data-cv="needs-work" aria-pressed="${c.status === "needs-work"}" ${canWrite ? "" : "disabled"}>Needs a fix</button>
+    </div>
+    <input class="mnote" type="text" value="${esc(c.note || "")}" placeholder="What to fix, or a note" aria-label="Note on ${esc(c.title)}" ${canWrite ? "" : "disabled"}>
+  </article>`;
+}
+function renderCards() {
+  if (!db) { $("#c-chg").innerHTML = `<div class="empty">The shared store isn't available in this view.</div>`; return; }
+  if (document.activeElement?.closest?.("#view-cards") && document.activeElement.classList.contains("mnote")) return;
+  const byYear = (a, b) => (a.year ?? 0) - (b.year ?? 0);
+  const open = newcards.filter((c) => c.status !== "kept");
+  const chg = open.filter((c) => c.changes?.length || c.status === "needs-work").sort(byYear), un = open.filter((c) => !c.changes?.length && c.status !== "needs-work").sort(byYear);
+  const done = newcards.filter((c) => c.status === "kept").sort(byYear);
+  $("#c-chg-h").textContent = chg.length ? `To look at · year or title changed by the fact-check, or marked for a fix · ${chg.length}` : (open.length ? "" : "Nothing left to look at");
+  $("#c-chg").innerHTML = chg.map(ncHTML).join("");
+  $("#c-un-h").textContent = un.length ? `To look at · unchanged · ${un.length}` : "";
+  $("#c-un").innerHTML = un.map(ncHTML).join("");
+  $("#c-rest-h").textContent = `Already approved · ${done.length}`;
+  $("#c-rest").innerHTML = done.map(ncHTML).join("");
+  $("#c-rest-box").hidden = !done.length;
+  $("#n-cards").textContent = open.length ? `· ${open.length} to look at` : "";
+}
+async function setCard(id, patch, verdict, note = "") {
+  try {
+    await db.doc("newcards/" + id).update({ ...patch, confirmedBy: "human", confirmedById: me?.id || null, decidedAt: Date.now() });
+    await db.collection("decisions").add({ newcard: id, verdict, tags: [], note, by: "human", byId: me?.id || null, at: Date.now() });
+  } catch (err) { failed(err); }
+}
+$("#view-cards").addEventListener("click", async (e) => {
+  const b = e.target.closest("[data-cv]"); if (!b) return;
+  const el = b.closest(".nc"), c = newcards.find((x) => x.id === el.dataset.cid); if (!c) return;
+  const status = c.status === b.dataset.cv ? "proposed" : b.dataset.cv;
+  for (const x of el.querySelectorAll("[data-cv]")) x.setAttribute("aria-pressed", x.dataset.cv === status);
+  el.className = "nc " + status;
+  await setCard(c.id, { status }, status);
+  toast(`${c.title}: ${NC_WORD[status]}`);
+});
+$("#view-cards").addEventListener("change", async (e) => {
+  const inp = e.target.closest(".mnote"); if (!inp) return;
+  const c = newcards.find((x) => x.id === inp.closest(".nc").dataset.cid); if (!c) return;
+  const note = inp.value.trim(); if (note === (c.note || "")) return;
+  await setCard(c.id, { note }, "noted", note);
+  toast("Note saved");
+});
+$("#view-cards").addEventListener("keydown", (e) => { if (e.key === "Enter" && e.target.closest(".mnote")) e.target.blur(); });
+$("#view-cards").addEventListener("focusout", (e) => { if (e.target.closest(".mnote")) setTimeout(renderCards, 0); });
+
+/* ---------- vetted (read only) ---------- */
+let vq = "";
+function vftHTML(c) {
+  const note = decisions.filter((x) => x.candidate === c.id && x.by === "human" && x.note).sort((a, b) => (b.at || 0) - (a.at || 0))[0];
+  const fx = c.effects?.length ? c.effects : c.effect ? [{ effect: c.effect, card: c.effectCard || ref.effects[c.effect]?.card, t: c.effectCardTitle }] : [];
+  return `<article class="card kept">
+    <div class="head"><h2>${esc(c.name)}<span class="year">${c.number ? "Future Technology " + c.number : "Future Technology"}</span>${c.subtitle ? `<span class="subtitle">${esc(c.subtitle)}</span>` : ""}</h2></div>
+    <div class="body">
+      <div class="row"><span class="k">Job</span><span class="job">${esc(c.job)}</span></div>
+      ${fx.length ? `<div class="row"><span class="k">Works by</span><span class="parts">${fx.map((e) => `<span class="fx">${thumb(e.card)}<span><span class="t">${esc(e.effect)}</span><small>${esc(e.t || cardTitle(e.card))}${e.y != null ? ` (${yr(e.y)})` : ""}</small></span></span>`).join("")}</span></div>` : ""}
+      ${c.parts?.length ? `<div class="row"><span class="k">Built from</span><span class="parts">${c.parts.map((p) => `<span class="part">${thumb(p.card)}<span><span class="t">${esc(p.t || cardTitle(p.card))}</span></span></span>`).join("")}</span></div>` : ""}
+      ${c.how ? `<p class="how">${esc(c.how)}</p>` : ""}
+      ${c.obstacle ? `<p class="obstacle"><b>What's stopping it:</b> ${esc(c.obstacle)}</p>` : ""}
+      ${note ? `<p class="mynote"><b>${esc(whoSync(note.by, note.byId))}:</b> “${esc(note.note)}”</p>` : ""}
+    </div>
+  </article>`;
+}
+function vfxHTML(e) {
+  const who = [yr(e.year), e.inventor, e.location].filter(Boolean).join(" · ");
+  return `<article class="card kept">
+    <h2 style="font:19px/1.15 var(--display);margin:0">${esc(e.title)}${who ? `<span class="year">${esc(who)}</span>` : ""}</h2>
+    ${e.effect ? `<div class="fxline">${esc(e.effect)}</div>` : ""}
+    ${e.description ? `<p>${esc(e.description)}</p>` : ""}
+    ${e.usedIn?.length ? `<div class="meta"><b>Used in:</b> ${e.usedIn.map(esc).join("; ")}</div>` : ""}
+    ${e.strength ? `<div class="meta"><b>Strength:</b> ${esc(e.strength)}</div>` : ""}
+    ${e.pick === "link" && e.deckMatch ? `<div class="meta"><b>Goes on the deck's card:</b> ${esc(e.deckMatchTitle || cardTitle(e.deckMatch))}</div>` : ""}
+  </article>`;
+}
+function renderVetted() {
+  const ft = cands.filter((c) => c.path === "future" && c.status === "kept").sort((a, b) => (a.number ?? 999) - (b.number ?? 999) || a.name.localeCompare(b.name));
+  const fx = effs.filter((e) => e.status === "kept").sort((a, b) => (a.year ?? 9999) - (b.year ?? 9999) || a.title.localeCompare(b.title));
+  const gap = cands.filter((c) => (c.path || "gap") === "gap" && c.status === "kept").sort((a, b) => (a.year ?? 9999) - (b.year ?? 9999));
+  $("#n-vetted").textContent = ft.length || "";
+  if (!db) { $("#v-ft").innerHTML = `<div class="empty">The shared store isn't available in this view.</div>`; return; }
+  $("#v-ft-h").textContent = `Future Technologies · ${ft.length}`;
+  $("#v-ft").innerHTML = ft.length ? ft.map(vftHTML).join("") : `<div class="empty">None kept yet.</div>`;
+  const words = vq.toLowerCase().split(/\s+/).filter(Boolean);
+  const shown = fx.filter((e) => { const hay = [e.title, e.effect, e.description, e.inventor, e.field, ...(e.usedIn || [])].join(" ").toLowerCase(); return words.every((w) => hay.includes(w)); });
+  $("#v-fx-h").textContent = `Effect cards · ${fx.length}` + (vq ? ` (${shown.length} match)` : "") + ", oldest first";
+  $("#v-fx").innerHTML = shown.length ? shown.map(vfxHTML).join("") : `<div class="empty">No effect cards match.</div>`;
+  $("#v-gap-h").textContent = `Inventions added to fill the gap · ${gap.length}`;
+  $("#v-gap").innerHTML = gap.map((c) => `<li><span>${esc(yr(c.year))}</span><b>${esc(c.name)}</b> · ${esc(c.job)}</li>`).join("");
+}
+$("#v-q").addEventListener("input", (e) => { vq = e.target.value.trim(); renderVetted(); });
+
+function ruleHTML(r) {
+  const ex = (r.examples || []).map((id) => cands.find((c) => c.id === id) || (r.scope === "effects" && effs.find((x) => x.id === id))).filter(Boolean);
+  return `<div class="rule" data-id="${esc(r.id)}">
+    <div class="text">${esc(r.text)}</div>
+    <div class="meta"><span class="pill ${esc(r.status)}">${esc(r.status)}</span><span>${r.scope === "missing" ? esc({ filters: "drops missing inventions", keeps: "keeps missing inventions", shapes: "shapes missing inventions" }[r.kind] || r.kind || "") : r.scope === "effects" ? esc({ filters: "filters effects out", keeps: "keeps effects in", shapes: "shapes effect cards" }[r.kind] || r.kind || "") : esc({ filters: "filters out", keeps: "keeps in", shapes: "shapes candidates" }[r.kind] || r.kind || "")}</span>
+      <span>Proposed by <b>${esc(whoSync(r.proposedBy, r.proposedById))}</b>${r.confirmedBy ? ` · ${r.status === "retired" ? "retired" : "approved"} by <b>${esc(whoSync(r.confirmedBy, r.confirmedById))}</b>` : ""}</span>
+      ${r.hits != null ? `<span>${r.hits} candidate${r.hits === 1 ? "" : "s"} affected</span>` : ""}</div>
+    ${r.why ? `<div class="ex">${esc(r.why)}</div>` : ""}
+    ${ex.length ? `<div class="ex">From: ${ex.map((c) => c.title ? `<a href="#effects">${esc(c.title)}</a>` : `<a href="#candidates" data-jump="${esc(c.id)}">${esc(c.name)}</a>`).join(", ")}</div>` : ""}
+    ${canWrite ? `<div class="verdicts">${r.status !== "approved" ? '<button type="button" data-rv="approved">Approve</button>' : ""}${r.status !== "retired" ? '<button type="button" data-rv="retired">Retire</button>' : ""}${r.status !== "proposed" ? '<button type="button" data-rv="proposed">Reopen</button>' : ""}</div>` : ""}
+  </div>`;
+}
+function renderRules() {
+  const el = $("#r-list");
+  if (!db) { el.innerHTML = `<div class="empty">The shared store isn't available in this view.</div>`; return; }
+  if (!rules.length) { el.innerHTML = `<div class="empty">No rules yet.</div>`; return; }
+  const order = ["proposed", "approved", "retired"], label = { proposed: "Waiting for you", approved: "Approved", retired: "Retired" };
+  el.innerHTML = order.map((s) => { const rs = rules.filter((r) => r.status === s).sort((a, b) => (a.n ?? 99) - (b.n ?? 99)); return rs.length ? `<h3 class="section-h">${label[s]}</h3>` + rs.map(ruleHTML).join("") : ""; }).join("");
+}
+function renderLog() {
+  const el = $("#l-list");
+  const items = [...decisions].sort((a, b) => (b.at || 0) - (a.at || 0));
+  if (!items.length) { el.innerHTML = `<li><span></span><span class="what">No decisions yet. Keep or reject a candidate, or approve a rule, and it shows up here.</span></li>`; return; }
+  el.innerHTML = items.map((h) => {
+    const c = cands.find((x) => x.id === h.candidate), r = rules.find((x) => x.id === h.rule), ef = effs.find((x) => x.id === h.effect), jb = jobs.find((x) => x.id === h.job), mi = missing.find((x) => x.id === h.missing);
+    const nc = newcards.find((x) => x.id === h.newcard);
+    if (nc) return `<li><time>${esc(when(h.at))}</time><span class="what"><b>${esc(whoSync(h.by, h.byId))}</b> marked <a href="#cards">${esc(nc.title)}</a> ${esc(NC_WORD[h.verdict] || h.verdict)}${h.note ? ` — “${esc(h.note)}”` : ""}</span></li>`;
+    if (mi) return `<li><time>${esc(when(h.at))}</time><span class="what"><b>${esc(whoSync(h.by, h.byId))}</b> ${esc(M_WORD[h.verdict] || h.verdict)} <a href="#missing">${esc(mi.name)}</a>${h.note ? ` — “${esc(h.note)}”` : ""}</span></li>`;
+    if (jb) return `<li><time>${esc(when(h.at))}</time><span class="what"><b>${esc(whoSync(h.by, h.byId))}</b> ${esc(JOB_WORD[h.verdict] || h.verdict)} job <a href="#big">${esc(jb.job)}</a>${h.tags?.length ? " · " + esc(h.tags.join(", ")) : ""}${h.note ? ` — “${esc(h.note)}”` : ""}</span></li>`;
+    const what = c ? `<a href="#candidates" data-jump="${esc(c.id)}">${esc(c.name)}</a>` : ef ? `effect <a href="#effects">${esc(ef.title)}</a>` : r ? `rule “${esc(r.text.slice(0, 80))}${r.text.length > 80 ? "…" : ""}”` : esc(h.candidate || h.rule || "");
+    return `<li><time>${esc(when(h.at))}</time><span class="what"><b>${esc(whoSync(h.by, h.byId))}</b> ${esc(VERDICT_WORD[h.verdict] || h.verdict)} ${what}${h.tags?.length ? " · " + esc(h.tags.join(", ")) : ""}${h.note ? ` — “${esc(h.note)}”` : ""}</span></li>`;
+  }).join("");
+}
+async function renderAll() {
+  const ids = [...new Set([...cands, ...rules, ...decisions].flatMap((x) => [x.proposedById, x.confirmedById, x.byId]).filter(Boolean))];
+  if (user && ids.length) { const ps = await user.profiles(ids); for (const id of ids) names[id] = ps[id]?.isMe ? "You" : (ps[id]?.name || "Someone"); }
+  tally(); renderCards(); renderMissing(); renderBig(); renderVetted(); renderCands(); renderEffs(); renderRules(); renderLog();
+}
+
+/* ---------- interactions ---------- */
+for (const [sel, key] of [["#f-status", "status"], ["#f-path", "path"]]) {
+  $(sel).addEventListener("click", (e) => { const b = e.target.closest("button"); if (!b) return; filt[key] = b.dataset.v; for (const x of $(sel).children) x.setAttribute("aria-pressed", x === b); renderCands(); });
+}
+$("#fe-status").addEventListener("click", (e) => { const b = e.target.closest("button"); if (!b) return; efilt.status = b.dataset.v; for (const x of $("#fe-status").children) x.setAttribute("aria-pressed", x === b); renderEffs(); });
+$("#f-q").addEventListener("input", (e) => { filt.q = e.target.value.trim(); renderCands(); });
+
+document.addEventListener("click", async (e) => {
+  const jump = e.target.closest("[data-jump]");
+  if (jump) { filt.status = "all"; for (const x of $("#f-status").children) x.setAttribute("aria-pressed", x.dataset.v === "all"); renderCands(); setTimeout(() => document.getElementById("c-" + jump.dataset.jump)?.scrollIntoView({ block: "center" }), 0); return; }
+  const box = e.target.closest(".decide");
+  if (box) {
+    const d = drafts[box.dataset.id];
+    const vb = e.target.closest("[data-v]"), tb = e.target.closest("[data-tag]");
+    if (vb) { d.verdict = d.verdict === vb.dataset.v ? null : vb.dataset.v; for (const x of box.querySelectorAll("[data-v]")) x.setAttribute("aria-pressed", x.dataset.v === d.verdict); }
+    if (tb) { const t = tb.dataset.tag; d.tags.has(t) ? d.tags.delete(t) : d.tags.add(t); tb.setAttribute("aria-pressed", d.tags.has(t)); }
+    if (e.target.closest(".save")) await saveDecision(box.dataset.id, e.target.closest(".save"));
+    return;
+  }
+  const rb = e.target.closest("[data-rv]");
+  if (rb) await setRule(rb.closest(".rule").dataset.id, rb.dataset.rv);
+});
+document.addEventListener("input", (e) => { if (e.target.id?.startsWith("note-")) drafts[e.target.id.slice(5)].note = e.target.value; });
+
+async function saveDecision(id, btn) {
+  const d = drafts[id];
+  if (!d.verdict && !d.note.trim()) { toast("Pick Keep, Needs work or Reject, or write a note"); return; }
+  btn.disabled = true;
+  const at = Date.now(), tags = [...d.tags], note = d.note.trim();
+  const isE = id.startsWith("e:"), isJ = id.startsWith("j:"), rid = isE || isJ ? id.slice(2) : id;
+  const col = isE ? "effects" : isJ ? "jobs" : "candidates", field = isE ? "effect" : isJ ? "job" : "candidate";
+  try {
+    if (d.verdict) await db.doc(col + "/" + rid).update({ status: d.verdict, tags, confirmedBy: "human", confirmedById: me?.id || null, decidedAt: at });
+    await db.collection("decisions").add({ [field]: rid, verdict: d.verdict || "noted", tags, note, by: "human", byId: me?.id || null, at });
+    d.note = "";
+    toast(d.verdict ? `Saved: ${isJ ? JOB_WORD[d.verdict] : isE && d.verdict === "rejected" ? "dropped" : VERDICT_WORD[d.verdict]}` : "Note saved");
+  } catch (err) { btn.disabled = false; failed(err); }
+}
+async function setRule(id, status) {
+  try {
+    await db.doc("rules/" + id).update({ status, confirmedBy: status === "proposed" ? null : "human", confirmedById: status === "proposed" ? null : me?.id || null });
+    await db.collection("decisions").add({ rule: id, verdict: status === "approved" ? "approved" : status === "retired" ? "retired" : "reopened", tags: [], note: "", by: "human", byId: me?.id || null, at: Date.now() });
+    toast(status === "approved" ? "Rule approved" : status === "retired" ? "Rule retired" : "Rule reopened");
+  } catch (err) { failed(err); }
+}
+Object.assign(VERDICT_WORD, { approved: "approved", retired: "retired", reopened: "reopened", noted: "noted on" });
+function failed(err) {
+  if (err?.code === "invalid_argument") { canWrite = false; renderAll(); toast("You can view this page but not change it"); }
+  else toast("Couldn't save. Check your connection and try again.");
+}
+const slug = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 60) || "c";
+$("#add-cand").addEventListener("submit", async (e) => {
+  e.preventDefault(); if (!db) return;
+  const name = $("#ac-name").value.trim(), job = $("#ac-job").value.trim(), fx = $("#ac-fx").value.trim();
+  const parts = $("#ac-parts").value.split(",").map((s) => s.trim()).filter(Boolean).map((card) => ({ card, job: ref.cards[card]?.job || "" }));
+  const yr = parseInt($("#ac-year").value, 10);
+  const id = slug(name) + "-" + Date.now().toString(36);
+  const doc = { id, name, job, effect: fx || null, effectCard: ref.effects[fx]?.card || null, parts, how: $("#ac-how").value.trim(), year: Number.isFinite(yr) ? yr : null,
+    path: Number.isFinite(yr) ? "gap" : "future", kind: fx ? "invention" : "improvement", jobNew: !ref.jobs.includes(job),
+    effectStatus: !fx ? "none" : ref.effects[fx] ? "in graph" : "needs card", problems: parts.filter((p) => !ref.cards[p.card]).map((p) => "unknown part " + p.card),
+    status: "proposed", proposedBy: "human", proposedById: me?.id || null, createdAt: Date.now() };
+  try { await db.doc("candidates/" + id).set(doc); e.target.reset(); toast("Added. Claude will check it next session."); } catch (err) { failed(err); }
+});
+$("#add-rule").addEventListener("submit", async (e) => {
+  e.preventDefault(); if (!db) return;
+  const text = $("#ar-text").value.trim(); if (!text) return;
+  const id = "r-" + Date.now().toString(36);
+  try { await db.doc("rules/" + id).set({ id, text, kind: $("#ar-kind").value, status: "approved", proposedBy: "human", proposedById: me?.id || null, confirmedBy: "human", confirmedById: me?.id || null, n: 100, createdAt: Date.now() }); e.target.reset(); toast("Rule added"); } catch (err) { failed(err); }
+});
+
+/* ---------- boot ---------- */
+route();
+fetch("ref.json").then((r) => r.json()).then((j) => {
+  ref = j;
+  $("#jobs").innerHTML = j.jobs.map((x) => `<option value="${esc(x)}">`).join("");
+  $("#effects").innerHTML = Object.keys(j.effects).map((x) => `<option value="${esc(x)}">`).join("");
+  $("#cardids").innerHTML = Object.entries(j.cards).map(([id, c]) => `<option value="${esc(id)}">${esc(c.t)}</option>`).join("");
+  renderAll();
+}).catch(() => {});
+
+(async () => {
+  db = await claude.use("db");
+  user = await claude.use("user");
+  if (user) { me = await user.me(); const w = await user.can("data.write"); if (w === false) canWrite = false; }
+  if (!db) { renderAll(); return; }
+  const sub = (name, set) => db.collection(name).onSnapshot((s) => { set(s.docs.map((d) => ({ id: d.id, ...d.data() }))); renderAll(); }, () => {});
+  sub("candidates", (v) => (cands = v));
+  sub("rules", (v) => (rules = v));
+  sub("decisions", (v) => (decisions = v));
+  sub("effects", (v) => (effs = v));
+  sub("jobs", (v) => (jobs = v));
+  sub("missing", (v) => (missing = v));
+  sub("newcards", (v) => (newcards = v));
+})();
+</script>

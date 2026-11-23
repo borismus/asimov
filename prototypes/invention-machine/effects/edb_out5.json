@@ -1,0 +1,1105 @@
+[
+ {
+  "edb": "Seebeck Effect",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "The deck already has Seebeck's 1821 thermoelectric effect.",
+  "card": "seebeck-effect"
+ },
+ {
+  "edb": "Settling",
+  "verdict": "merge",
+  "rule": "e4",
+  "borderline": false,
+  "why": "Gravity settling is the same effect as Sedimentation, which is in another batch; canonical slug 'sedimentation' is not in this batch.",
+  "into": "sedimentation"
+ },
+ {
+  "edb": "Shadow",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "An everyday consequence of light travelling in straight lines, not a nameable effect."
+ },
+ {
+  "edb": "Shape Memory Alloy",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Clear actuator effect with many uses; dated to Nitinol (1962), though the effect was glimpsed in gold-cadmium in the 1930s-50s. Pseudoelasticity (another batch) is the same family and could merge here.",
+  "id": "shape-memory-alloy",
+  "title": "Shape-memory alloy",
+  "year": 1962,
+  "inventor": "William J. Buehler",
+  "location": "United States",
+  "field": "Science: Materials",
+  "description": "A bent wire of nickel-titanium snaps back to its original shape when warmed, as if it remembered it. Buehler's team at the US Naval Ordnance Laboratory found it in their alloy Nitinol, and it now opens heart stents inside arteries and shuts off scalding shower water on its own.",
+  "effect": "a bent metal returns to its remembered shape when heated",
+  "usedIn": [
+   "Self-expanding heart and artery stents",
+   "Anti-scald shower and tap valves",
+   "Crush-proof eyeglass frames",
+   "Orthodontic arch wires"
+  ],
+  "strength": "A nitinol wire as thin as a pencil lead can lift a few kilograms as it shrinks back by about 4 percent when warmed.",
+  "deps": [
+   "nickel",
+   "titanium"
+  ]
+ },
+ {
+  "edb": "Shear Stress",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A generic engineering quantity, not an effect."
+ },
+ {
+  "edb": "Shear Thickening",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": true,
+  "why": "Named, striking effect with a clear protective job; Reynolds' 1885 dilatancy is the usual origin, though shear-thickening fluids weren't studied as such until later, so the date is a judgment call.",
+  "id": "shear-thickening",
+  "title": "Shear thickening",
+  "year": 1885,
+  "inventor": "Osborne Reynolds",
+  "location": "England",
+  "field": "Science: Physics",
+  "description": "Some mixtures, like cornstarch stirred into water, pour like cream when handled gently but turn hard the instant they are struck or pushed fast. Reynolds described the related swelling of packed grains (dilatancy) in 1885, and the effect now stiffens impact pads the moment they are hit.",
+  "effect": "a liquid turns stiff when it is pushed or hit quickly",
+  "usedIn": [
+   "D3O impact pads in sports gear and phone cases",
+   "Shear-thickening-fluid soaked Kevlar body armour",
+   "Speed bumps that stay soft for slow cars"
+  ],
+  "strength": "A pool of cornstarch and water holds a person running across it, but they sink if they stand still.",
+  "deps": []
+ },
+ {
+  "edb": "Shock Wave",
+  "verdict": "attach",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Mach and Salcher's 1887 photographs of shock waves around bullets are the same work as the Mach number card; the shock wave goes on that card.",
+  "card": "mach-number"
+ },
+ {
+  "edb": "Solvation",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "Dissolving is an everyday process; the word names a general chemistry concept, not a specific effect."
+ },
+ {
+  "edb": "Sonochemistry",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A field of study (chemistry driven by ultrasound); its underlying effect is cavitation, covered in another batch."
+ },
+ {
+  "edb": "Sonoluminescence",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": true,
+  "why": "Specific named effect, but the light is weak and its uses are mostly diagnostic; I kept it because it reveals extreme conditions made with tabletop sound.",
+  "id": "sonoluminescence",
+  "title": "Sonoluminescence",
+  "year": 1934,
+  "inventor": "H. Frenzel and H. Schultes",
+  "location": "Germany",
+  "field": "Science: Physics",
+  "description": "Tiny bubbles in water blasted with loud ultrasound collapse so violently that they flash with light. Frenzel and Schultes at Cologne found it when photographic plates in an ultrasound bath came out fogged, and today the glow is used to map where cavitation is strongest in ultrasonic cleaners and chemical reactors.",
+  "effect": "collapsing bubbles in sound-driven water give off flashes of light",
+  "usedIn": [
+   "Mapping cavitation in ultrasonic cleaning tanks",
+   "Tuning sonochemical reactors",
+   "Studying extreme temperatures inside collapsing bubbles"
+  ],
+  "strength": "The light is faint, a pale blue glow visible only in a dark room, but each flash lasts under a billionth of a second and the gas inside may reach about 10,000 degrees.",
+  "deps": [
+   "sonar"
+  ]
+ },
+ {
+  "edb": "Sorption",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "An umbrella word for absorption plus adsorption, not a single effect."
+ },
+ {
+  "edb": "Spheroid",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A shape, not an effect."
+ },
+ {
+  "edb": "Sputtering",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Specific, named effect behind most thin-film coating; Grove's 1852 observation is the standard origin.",
+  "id": "sputtering",
+  "title": "Sputtering",
+  "year": 1852,
+  "inventor": "William Robert Grove",
+  "location": "England",
+  "field": "Science: Physics",
+  "description": "Charged gas atoms slammed into a metal plate knock atoms loose, which then settle as a thin, even coating on anything nearby. Grove noticed metal from the cathode of a glow discharge tube coating the glass in 1852; today it lays down the films on hard disks, microchips and energy-saving window glass.",
+  "effect": "fast ions knock atoms off a surface so they coat nearby objects",
+  "usedIn": [
+   "Low-emissivity coatings on window glass",
+   "Magnetic layers on hard-disk platters",
+   "Metal wiring films in microchips",
+   "Ion-beam polishing of telescope mirrors"
+  ],
+  "strength": "Each incoming ion knocks off roughly one atom, so coatings grow slowly, a few nanometres per second, but are extremely even.",
+  "deps": [
+   "air-pump",
+   "electric-battery"
+  ]
+ },
+ {
+  "edb": "Static Friction",
+  "verdict": "merge",
+  "rule": "e4",
+  "borderline": false,
+  "why": "A variant of friction (the grip before sliding starts); canonical 'friction' is in another batch. Note Coulomb's 1781 essay, which gave the deck's rolling-friction card, also covered static friction.",
+  "into": "friction"
+ },
+ {
+  "edb": "Stick-slip Phenomenon",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": true,
+  "why": "Distinct effect with real jobs, separate from plain friction; no clear discoverer or date (Helmholtz explained bowed strings in the 1860s; Bowden studied it in 1939), so left null.",
+  "id": "stick-slip",
+  "title": "Stick-slip",
+  "year": null,
+  "inventor": null,
+  "location": null,
+  "field": "Science: Physics",
+  "description": "Two surfaces grip, then suddenly slip, then grip again, many times a second, because gripping friction is stronger than sliding friction. It's what makes a violin bow sing and a door hinge squeak, and engineers now use it to inch tiny motors along by nanometres.",
+  "effect": "sliding surfaces jerk in a repeating cycle of gripping and slipping",
+  "usedIn": [
+   "Violin and cello bows with rosin",
+   "Stick-slip piezo motors in nanopositioning stages",
+   "Squeal-free brake design"
+  ],
+  "strength": "A bowed violin string sticks and slips hundreds of times a second (440 times for the A string), loud enough to fill a concert hall.",
+  "deps": []
+ },
+ {
+  "edb": "Stokes Drift",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": true,
+  "why": "Named effect that moves things, but it's slow and used mainly in forecasting rather than devices; I kept it since a wave-driven conveyor is imaginable. Darwin Drift (another batch) is a cousin, not a variant.",
+  "id": "stokes-drift",
+  "title": "Stokes drift",
+  "year": 1847,
+  "inventor": "George Gabriel Stokes",
+  "location": "England",
+  "field": "Science: Physics",
+  "description": "Waves don't just bob floating objects up and down: each wave carries them a little further forward than back, so they slowly drift in the direction the waves travel. Stokes worked this out in 1847, and it's used to forecast where oil slicks, debris and people lost at sea will drift.",
+  "effect": "passing waves slowly push floating things forward",
+  "usedIn": [
+   "Search-and-rescue drift forecasts",
+   "Oil-spill tracking models",
+   "Predicting where floating plastic collects"
+  ],
+  "strength": "Under ordinary sea waves the drift is a few centimetres per second, enough to carry a floating object a few kilometres a day.",
+  "deps": []
+ },
+ {
+  "edb": "Stress Relaxation",
+  "verdict": "merge",
+  "rule": "e4",
+  "borderline": false,
+  "why": "A symptom of viscoelasticity (stress fading in a material held stretched); canonical 'viscoelasticity' is kept in this batch.",
+  "into": "viscoelasticity"
+ },
+ {
+  "edb": "Stroboscopic Effect",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Specific named effect that measures and inspects motion; Faraday described a related wheel illusion in 1831, but the stroboscope itself is Plateau and Stampfer's.",
+  "id": "stroboscopic-effect",
+  "title": "Stroboscopic effect",
+  "year": 1832,
+  "inventor": "Joseph Plateau and Simon Stampfer",
+  "location": "Belgium and Austria",
+  "field": "Science: Physics",
+  "description": "A spinning wheel lit by a flashing light seems to stand still, or creep slowly backwards, when the flashes keep pace with its turning. Plateau and Stampfer built spinning slotted discs around it in 1832, and mechanics still use it to read the speed of engines and machines without touching them.",
+  "effect": "flashing light makes fast repeating motion look frozen or slowed",
+  "usedIn": [
+   "Timing lights for setting car engine ignition",
+   "Strobe dots on record-turntable platters",
+   "Edgerton's stroboscopic high-speed photography",
+   "Videostroboscopy of vocal cords"
+  ],
+  "strength": "A strobe flashing a few thousand times a minute can freeze a fan or engine part spinning at the same speed so it can be read like a still picture.",
+  "deps": []
+ },
+ {
+  "edb": "Sublimation",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A change of state, in the same everyday-process category as Freezing and Melting."
+ },
+ {
+  "edb": "Suction",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A generic term for flow into low pressure; the deck's barometer and air-pressure cards cover the physics."
+ },
+ {
+  "edb": "Supercavitation",
+  "verdict": "merge",
+  "rule": "e4",
+  "borderline": false,
+  "why": "A regime of cavitation (one big bubble wrapping a fast object); canonical 'cavitation' is in another batch, and that card should name the Shkval torpedo.",
+  "into": "cavitation"
+ },
+ {
+  "edb": "Superconductivity",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "The deck already has Onnes's 1911 superconductivity.",
+  "card": "superconductivity"
+ },
+ {
+  "edb": "Supercooling",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Specific, named effect that stores cold or triggers freezing on demand; Fahrenheit's 1724 report is the standard origin. Kept separate from Superheating and Supersaturation since each drives different inventions.",
+  "id": "supercooling",
+  "title": "Supercooling",
+  "year": 1724,
+  "inventor": "Daniel Gabriel Fahrenheit",
+  "location": "Netherlands",
+  "field": "Science: Physics",
+  "description": "Very clean, still water can be cooled well below freezing and stay liquid, then turn to ice in a flash when shaken or seeded. Fahrenheit saw it in sealed bulbs of water in 1724; dropping dry ice into supercooled clouds later became cloud seeding, and supercooling now keeps donor organs alive longer without freezing them.",
+  "effect": "a liquid cooled below its freezing point stays liquid until disturbed",
+  "usedIn": [
+   "Cloud seeding of supercooled clouds",
+   "Supercooled storage of donor livers",
+   "Sodium-acetate heat packs",
+   "Freezing-rain forecasting"
+  ],
+  "strength": "A bottle of purified water can sit liquid in a freezer at minus 10 degrees and turn to slush in seconds when tapped; tiny droplets stay liquid down to about minus 40.",
+  "deps": [
+   "mercury-thermometer"
+  ]
+ },
+ {
+  "edb": "Supercritical Fluid",
+  "verdict": "attach",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Andrews's 1869 work on the critical point is the deck card; the dissolving power of fluids above that point is a different effect from the same discovery.",
+  "card": "critical-temperature"
+ },
+ {
+  "edb": "Superdiamagnetism",
+  "verdict": "merge",
+  "rule": "e4",
+  "borderline": false,
+  "why": "Superdiamagnetism is the perfect magnetic expulsion of a superconductor, i.e. the Meissner effect; canonical 'meissner-effect' is in another batch.",
+  "into": "meissner-effect"
+ },
+ {
+  "edb": "Superfluidity",
+  "verdict": "drop",
+  "rule": "e2",
+  "borderline": false,
+  "why": "Occurs only in liquid helium within about two degrees of absolute zero (though it cools LHC magnets and space telescopes)."
+ },
+ {
+  "edb": "Superheating",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": true,
+  "why": "Specific effect with real uses; I'm unsure of the discoverer and date (Donny 1846 is my best recollection; Deluc noted it in the 1700s).",
+  "id": "superheating",
+  "title": "Superheating",
+  "year": 1846,
+  "inventor": "François Donny",
+  "location": "Belgium",
+  "field": "Science: Physics",
+  "description": "Water heated in a very clean, smooth container can rise above its boiling point without boiling, then erupt all at once when disturbed. Donny heated air-free water far past 100 degrees in the 1840s; Glaser later used a superheated liquid to make the bubble chamber, where passing particles leave trails of bubbles.",
+  "effect": "a liquid heated past its boiling point stays liquid until disturbed",
+  "usedIn": [
+   "Bubble chambers for tracking particles",
+   "Boiling chips and stones that prevent bumping in labs",
+   "Microwave-oven safety warnings"
+  ],
+  "strength": "Water in a smooth mug can pass 100 degrees in a microwave and erupt when a spoon goes in; air-free water has been held liquid above 130 degrees.",
+  "deps": []
+ },
+ {
+  "edb": "Superhydrophilicity",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Specific named effect with commercial uses; the opposite of the lotus leaf effect (another batch), not a variant of it.",
+  "id": "superhydrophilicity",
+  "title": "Superhydrophilicity",
+  "year": 1997,
+  "inventor": "Rong Wang, Kazuhito Hashimoto and Akira Fujishima",
+  "location": "Japan",
+  "field": "Science: Chemistry",
+  "description": "Glass coated with titanium dioxide and left in sunlight makes water spread into a thin, clear sheet instead of beading into drops. A Tokyo team reported it in 1997, and it gives self-cleaning windows that rinse off in the rain and car mirrors that never fog.",
+  "effect": "light makes a coated surface so water-loving that water spreads flat",
+  "usedIn": [
+   "Pilkington Activ self-cleaning glass",
+   "TOTO Hydrotect self-cleaning tiles",
+   "Anti-fog car side mirrors"
+  ],
+  "strength": "After an hour or so of sunlight, water spreads to an almost perfectly flat film, so rain sheets dirt off a window instead of leaving spots.",
+  "deps": [
+   "titanium"
+  ]
+ },
+ {
+  "edb": "Superplasticity",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Specific named effect that shapes metal; Pearson's 1934 experiment is the standard origin.",
+  "id": "superplasticity",
+  "title": "Superplasticity",
+  "year": 1934,
+  "inventor": "C. E. Pearson",
+  "location": "England",
+  "field": "Science: Materials",
+  "description": "Some fine-grained alloys, when hot, can be stretched like toffee to many times their length without snapping. Pearson pulled a tin-bismuth strip to nearly 20 times its length in 1934, and factories now blow hot sheets of such alloys into moulds like glass to make aircraft and car body panels.",
+  "effect": "a hot metal stretches to many times its length without breaking",
+  "usedIn": [
+   "Superplastic-formed aircraft panels",
+   "Car body panels for low-volume sports cars",
+   "Hollow titanium fan blades in jet engines"
+  ],
+  "strength": "Pearson's strip stretched almost twenty-fold; ordinary metals snap after stretching less than half their length.",
+  "deps": []
+ },
+ {
+  "edb": "Supersaturation",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Specific effect with clear jobs; Lowitz is the usual credit for discovering supersaturated solutions, mid-1790s.",
+  "id": "supersaturation",
+  "title": "Supersaturation",
+  "year": 1794,
+  "inventor": "Johann Tobias Lowitz",
+  "location": "Russia",
+  "field": "Science: Chemistry",
+  "description": "A hot liquid can dissolve extra salt or sugar and keep it dissolved as it cools, until a speck or a jolt makes it all crystallise at once. Lowitz studied these overloaded solutions and seeding them with a crystal in the 1790s; the same trick makes clickable hand warmers and, in air, the cloud trails of the cloud chamber.",
+  "effect": "a liquid holds more dissolved than it should until a seed sets it off",
+  "usedIn": [
+   "Reusable sodium-acetate hand warmers",
+   "Rock candy",
+   "Cloud chambers for seeing particle tracks",
+   "Cloud seeding"
+  ],
+  "strength": "Clicking the metal disc in a hand warmer crystallises the whole pack in seconds and warms it to about 54 degrees.",
+  "deps": []
+ },
+ {
+  "edb": "Surface Acoustic Wave",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Specific named effect with large commercial use; also called Rayleigh waves.",
+  "id": "surface-acoustic-wave",
+  "title": "Surface acoustic wave",
+  "year": 1885,
+  "inventor": "Lord Rayleigh",
+  "location": "England",
+  "field": "Science: Physics",
+  "description": "Sound can run along the skin of a solid like a ripple on a pond, staying near the surface instead of going through. Rayleigh predicted these waves in 1885 to explain earthquake shaking; ripples on piezoelectric chips now filter radio signals in every mobile phone.",
+  "effect": "sound travels as a ripple along the surface of a solid",
+  "usedIn": [
+   "SAW radio filters in mobile phones",
+   "SAW touchscreens on kiosks",
+   "Battery-free SAW tyre-pressure sensors",
+   "Microfluidic pumps on lab chips"
+  ],
+  "strength": "On a chip the ripples are only a few atoms tall and travel at about 3 kilometres per second, but they can sort radio channels precisely and even push droplets around.",
+  "deps": [
+   "piezoelectricity"
+  ]
+ },
+ {
+  "edb": "Surface Tension",
+  "verdict": "keep",
+  "rule": "e4",
+  "borderline": false,
+  "why": "Specific effect the deck lacks; Segner named the idea in 1751 but Young's 1805 essay is the standard explanation. Wetting merges here.",
+  "id": "surface-tension",
+  "title": "Surface tension",
+  "year": 1805,
+  "inventor": "Thomas Young",
+  "location": "England",
+  "field": "Science: Physics",
+  "description": "A liquid's surface behaves like a stretched skin, pulling drops round and holding up light objects. Young explained it, and how it sets whether a liquid wets a surface, in 1805; it shapes the droplets fired by inkjet printers, and soaps work by weakening it so water can soak into cloth.",
+  "effect": "the surface of a liquid pulls tight like a stretched skin",
+  "usedIn": [
+   "Shot towers dropping molten lead into round shot",
+   "Inkjet printer droplets",
+   "Detergents and wetting agents",
+   "Floating-needle compasses"
+  ],
+  "strength": "Water's skin holds up a dry steel needle or a pond skater, a pull of about 0.07 newtons along each metre of edge.",
+  "deps": [
+   "capillary-action"
+  ]
+ },
+ {
+  "edb": "Suspension",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A kind of mixture, not an effect."
+ },
+ {
+  "edb": "Synchrotron Radiation",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Needs particle accelerators, but they are buildable and the light does real work; Cyclotron Radiation (another batch) is the slow-electron variant and could merge here.",
+  "id": "synchrotron-radiation",
+  "title": "Synchrotron radiation",
+  "year": 1947,
+  "inventor": "Frank Elder, Anatole Gurewitsch, Robert Langmuir and Herbert Pollock",
+  "location": "United States",
+  "field": "Science: Physics",
+  "description": "Electrons whirled around a ring at nearly the speed of light throw off a brilliant beam of light and X-rays as they turn. A General Electric team saw the glow through the glass of their synchrotron in 1947; giant rings are now built just to make this light for imaging proteins, materials and engine parts.",
+  "effect": "fast electrons bent by magnets give off intense light and X-rays",
+  "usedIn": [
+   "Synchrotron light sources for protein crystallography",
+   "X-ray lithography of microchips",
+   "Imaging fossils and engine parts"
+  ],
+  "strength": "A synchrotron beam is billions of times brighter than a hospital X-ray tube.",
+  "deps": [
+   "synchrocyclotron"
+  ]
+ },
+ {
+  "edb": "Temperature Gradient",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A condition, not an effect."
+ },
+ {
+  "edb": "Tension",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A generic mechanics term."
+ },
+ {
+  "edb": "Terminal Velocity",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A generic mechanics result (drag balancing gravity), not a specific effect; the deck's falling-motion card touches on air resistance."
+ },
+ {
+  "edb": "Thermal Contraction",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Contraction on cooling is the same effect as the thermal-expansion card in new_cards.",
+  "card": "thermal-expansion"
+ },
+ {
+  "edb": "Thermal Expansion",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Already in new_cards as thermal-expansion.",
+  "card": "thermal-expansion"
+ },
+ {
+  "edb": "Thermal Hall Effect",
+  "verdict": "drop",
+  "rule": "e2",
+  "borderline": false,
+  "why": "This is the Righi-Leduc effect: a tiny sideways temperature difference in a magnetic field, too weak to do a job."
+ },
+ {
+  "edb": "Thermal Radiation",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Kirchhoff's blackbody radiation card (with Stefan's heat-and-radiation) already covers glowing from heat.",
+  "card": "black-bodies"
+ },
+ {
+  "edb": "Thermionic Emission",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "The database itself calls it the Edison effect, which is in the deck (Richardson's electron-emission card follows it).",
+  "card": "edison-effect"
+ },
+ {
+  "edb": "Thermo-capillary Convection",
+  "verdict": "merge",
+  "rule": "e4",
+  "borderline": false,
+  "why": "Heat-driven Marangoni flow is a variant of the Marangoni effect; canonical 'marangoni-effect' is in another batch.",
+  "into": "marangoni-effect"
+ },
+ {
+  "edb": "Thermoacoustic Effect",
+  "verdict": "keep",
+  "rule": "e4",
+  "borderline": false,
+  "why": "Kept this one as the canonical card for the thermoacoustics family; Rijke (1859) and Rayleigh's 1878 explanation are alternative origins.",
+  "id": "thermoacoustic-effect",
+  "title": "Thermoacoustic effect",
+  "year": 1850,
+  "inventor": "Carl Sondhauss",
+  "location": "Germany",
+  "field": "Science: Physics",
+  "description": "Heat one end of a narrow tube and the air inside starts to sing; run it backwards and loud sound inside a tube pumps heat from one end to the other. Glassblowers heard their hot bulbs hum, Sondhauss studied it in 1850, and engineers now build fridges and engines with no moving parts on it.",
+  "effect": "heat makes a tube of gas sing, and sound can pump heat",
+  "usedIn": [
+   "Thermoacoustic freezer prototype built for Ben & Jerry's",
+   "Thermoacoustic Stirling engines",
+   "Rijke-tube demonstrations",
+   "Preventing combustion instability in rocket engines"
+  ],
+  "strength": "A heated test tube can hum loudly, and laboratory thermoacoustic engines turn heat into hundreds of watts of sound power.",
+  "deps": []
+ },
+ {
+  "edb": "Thermoacoustics",
+  "verdict": "merge",
+  "rule": "e4",
+  "borderline": false,
+  "why": "Same effect as Thermoacoustic Effect, which carries the card in this batch.",
+  "into": "thermoacoustic-effect"
+ },
+ {
+  "edb": "Thermochromism",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": true,
+  "why": "Clear detecting job, but no single discoverer or date (Reinitzer's 1888 liquid crystals and older colour-changing salts both count), so left null.",
+  "id": "thermochromism",
+  "title": "Thermochromism",
+  "year": null,
+  "inventor": null,
+  "location": null,
+  "field": "Science: Chemistry",
+  "description": "Some dyes and crystals change colour as they warm or cool, so a surface can show its temperature at a glance. It's what makes mood rings and colour-changing mugs shift, and what reads a child's fever on a strip pressed to the forehead.",
+  "effect": "a material changes colour with temperature",
+  "usedIn": [
+   "Forehead fever strips",
+   "Mood rings",
+   "Battery-tester strips on battery packs",
+   "Colour-changing mugs and cans"
+  ],
+  "strength": "The colour shifts over a span of just a few degrees, enough to read body temperature to about half a degree.",
+  "deps": []
+ },
+ {
+  "edb": "Thermoluminescence",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Specific named effect with real detecting uses; Boyle's 1663 report is the usual origin.",
+  "id": "thermoluminescence",
+  "title": "Thermoluminescence",
+  "year": 1663,
+  "inventor": "Robert Boyle",
+  "location": "England",
+  "field": "Science: Physics",
+  "description": "Some crystals that have soaked up radiation glow faintly when warmed, releasing the stored energy as light. Boyle saw a diamond glow when he held it against his skin in 1663; the glow now dates ancient pottery and measures the radiation dose on workers' badges.",
+  "effect": "a heated crystal glows with energy stored from past radiation",
+  "usedIn": [
+   "Thermoluminescence dating of pottery and burnt flint",
+   "Radiation dosimeter badges",
+   "Checking whether food has been irradiated"
+  ],
+  "strength": "The glow is usually too faint to see without a sensitive light detector, but it grows in proportion to dose, so it can record thousands of years of background radiation.",
+  "deps": []
+ },
+ {
+  "edb": "Thermolysis",
+  "verdict": "merge",
+  "rule": "e4",
+  "borderline": false,
+  "why": "Thermal decomposition is the general form of pyrolysis (heating without air), in another batch; if pyrolysis isn't kept, drop as a general chemical process.",
+  "into": "pyrolysis"
+ },
+ {
+  "edb": "Thermomechanical Effect",
+  "verdict": "drop",
+  "rule": "e2",
+  "borderline": false,
+  "why": "The superfluid fountain effect occurs only in liquid helium near absolute zero."
+ },
+ {
+  "edb": "Thermophoresis",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Specific named effect that separates and deposits particles; covers the Soret effect in liquids. Same 1870 dust work as the Tyndall effect, kept separate since it's a different effect.",
+  "id": "thermophoresis",
+  "title": "Thermophoresis",
+  "year": 1870,
+  "inventor": "John Tyndall",
+  "location": "England",
+  "field": "Science: Physics",
+  "description": "Tiny particles drift away from hot surfaces toward cold ones, pushed by the harder knocks of hotter gas molecules on one side. Tyndall saw a dust-free zone above a hot rod in a beam of light in 1870; it's why walls darken above radiators, and it's used to catch smoke for sampling and to build up the glass inside optical fibres.",
+  "effect": "small particles drift from hot regions toward cold ones",
+  "usedIn": [
+   "Thermal precipitators for sampling dust and smoke",
+   "Building optical-fibre glass from soot (MCVD)",
+   "Microscale thermophoresis drug-binding tests"
+  ],
+  "strength": "The push is gentle, far weaker than a light breeze, but next to a hot wire it keeps a layer of air about a millimetre thick completely clear of smoke.",
+  "deps": [
+   "diffusion"
+  ]
+ },
+ {
+  "edb": "Thixotropy",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Specific named effect with clear jobs, distinct from shear thickening; date from Schalek and Szegvári's gels, the name came from Freundlich's lab in 1927.",
+  "id": "thixotropy",
+  "title": "Thixotropy",
+  "year": 1923,
+  "inventor": "Emil Schalek and Árpád Szegvári",
+  "location": "Germany",
+  "field": "Science: Chemistry",
+  "description": "Some thick gels turn runny when shaken or stirred and slowly set again when left alone. Schalek and Szegvári found iron-oxide gels doing this in 1923; it's why non-drip paint brushes on smoothly yet stays put on a wall, and why drilling mud holds rock chips up when the pumps stop.",
+  "effect": "a gel thins when stirred and thickens again at rest",
+  "usedIn": [
+   "Non-drip paint",
+   "Drilling mud for oil wells",
+   "Ketchup and toothpaste",
+   "Gel adhesives and grouts"
+  ],
+  "strength": "Non-drip paint thick enough to stand on a vertical wall thins under a brush in a second and stiffens again within a minute.",
+  "deps": []
+ },
+ {
+  "edb": "Thompson Effect",
+  "verdict": "drop",
+  "rule": "e2",
+  "borderline": false,
+  "why": "The Thomson effect's heating or cooling is tiny and swamped by ordinary resistance heating, so no device uses it; the Peltier and Seebeck effects do the work."
+ },
+ {
+  "edb": "Tidal Force",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "The deck's tides card covers the effect (Roche limit follows from it).",
+  "card": "tides"
+ },
+ {
+  "edb": "Torque",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A generic mechanics quantity, like Lever."
+ },
+ {
+  "edb": "Total Internal Reflection",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Specific effect the deck lacks (fiber-optics is a device that uses it); Kepler's 1611 Dioptrice is the usual first description, and Colladon's 1841 light-guiding water jet is a later landmark.",
+  "id": "total-internal-reflection",
+  "title": "Total internal reflection",
+  "year": 1611,
+  "inventor": "Johannes Kepler",
+  "location": "Czech Republic",
+  "field": "Science: Physics",
+  "description": "Light inside glass or water that hits the surface at a low enough angle is reflected back completely, as if the surface were a perfect mirror. Kepler described it in 1611; it keeps light trapped inside optical fibres for kilometres and folds the light path in binocular prisms.",
+  "effect": "light hitting a surface at a shallow angle from inside is fully reflected",
+  "usedIn": [
+   "Optical fibres",
+   "Prisms in binoculars",
+   "Rain sensors on car windscreens",
+   "Fingerprint scanners"
+  ],
+  "strength": "It reflects essentially 100 percent of the light, better than any silver mirror, once the angle passes about 42 degrees in glass.",
+  "deps": [
+   "refraction"
+  ]
+ },
+ {
+  "edb": "Townsend Discharge",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Specific effect that amplifies tiny signals; the deck's geiger-counter is a device built on it by a different person, so kept separate.",
+  "id": "townsend-discharge",
+  "title": "Townsend discharge",
+  "year": 1897,
+  "inventor": "John Sealy Townsend",
+  "location": "England",
+  "field": "Science: Physics",
+  "description": "In a gas under a strong voltage, one stray electron knocks loose others, which knock loose more, until a whole avalanche of charge rushes across. Townsend worked out this chain reaction around 1897, and it lets a Geiger counter turn the passage of one particle into a loud click.",
+  "effect": "one free electron in a gas multiplies into an avalanche of charge",
+  "usedIn": [
+   "Geiger counters",
+   "Proportional counters and wire chambers in particle detectors",
+   "Gas-discharge surge arresters",
+   "Neon indicator lamps"
+  ],
+  "strength": "A single electron can multiply into a million or more within a millimetre of travel, in less than a microsecond.",
+  "deps": [
+   "ionizing-radiation"
+  ]
+ },
+ {
+  "edb": "Transpiration",
+  "verdict": "attach",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Hales measured plants giving off water in Vegetable Staticks, the same work behind the plant-nourishment card; transpiration goes on that card.",
+  "card": "plant-nourishment"
+ },
+ {
+  "edb": "Tribocorrosion",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A generic combination of wear and corrosion, not a specific effect."
+ },
+ {
+  "edb": "Triboelectric Effect",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Charging by rubbing is what the deck's static-electricity card is about.",
+  "card": "static-electricity"
+ },
+ {
+  "edb": "Triboluminescence",
+  "verdict": "merge",
+  "rule": "e4",
+  "borderline": false,
+  "why": "The curator's own example: name it Mechanoluminescence, which is in another batch.",
+  "into": "mechanoluminescence"
+ },
+ {
+  "edb": "Turbulence",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "A specific, named transition with clear mixing and drag jobs, not just a field word; Reynolds 1883 is the standard origin.",
+  "id": "turbulence",
+  "title": "Turbulence",
+  "year": 1883,
+  "inventor": "Osborne Reynolds",
+  "location": "England",
+  "field": "Science: Physics",
+  "description": "Past a certain speed, a smooth flowing stream breaks into chaotic swirls that mix everything in it. Reynolds showed the switch by running a thread of dye through a glass pipe in 1883; dimples on a golf ball use it to fly twice as far, and engines use it to mix fuel and air.",
+  "effect": "a smooth flow breaks into chaotic swirling eddies above a certain speed",
+  "usedIn": [
+   "Dimpled golf balls",
+   "Vortex generators on aircraft wings",
+   "Swirl chambers for mixing fuel in engines",
+   "Static mixers in chemical plants"
+  ],
+  "strength": "Water in a garden-hose-sized pipe turns turbulent above about a quarter of a metre per second, slower than walking pace.",
+  "deps": []
+ },
+ {
+  "edb": "Turbulence Heating",
+  "verdict": "attach",
+  "rule": "e4",
+  "borderline": false,
+  "why": "A variant of viscous heating (eddies finally rubbing into heat), which goes on Joule's paddle-wheel card.",
+  "card": "mechanical-equivalent-of-heat"
+ },
+ {
+  "edb": "Tyndall Effect",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Specific named effect with detecting uses; a different work from Tyndall's greenhouse-effect card, so not attached. Rayleigh scattering (molecules) is a separate effect in another batch.",
+  "id": "tyndall-effect",
+  "title": "Tyndall effect",
+  "year": 1869,
+  "inventor": "John Tyndall",
+  "location": "England",
+  "field": "Science: Physics",
+  "description": "A beam of light shining through smoke, fog or milky water becomes visible from the side because tiny particles scatter it. Tyndall studied it in 1869; it let Zsigmondy's ultramicroscope see particles too small for ordinary microscopes, and it's how many smoke alarms sense smoke.",
+  "effect": "small particles in a liquid or gas scatter a light beam so it shows",
+  "usedIn": [
+   "Optical smoke detectors",
+   "Turbidity meters for drinking water",
+   "Zsigmondy's ultramicroscope"
+  ],
+  "strength": "Even a faint haze makes a beam visible from the side; it's why headlight beams show up in fog.",
+  "deps": []
+ },
+ {
+  "edb": "Ultrasonic Capillary Effect",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": true,
+  "why": "Specific named effect with a clear job (pushing liquid into pores), but I'm unsure of the date and the size of the effect, and it could instead go on the Cavitation card (another batch).",
+  "id": "ultrasonic-capillary-effect",
+  "title": "Ultrasonic capillary effect",
+  "year": 1961,
+  "inventor": "Evgeny Konovalov",
+  "location": "Belarus",
+  "field": "Science: Physics",
+  "description": "Strong ultrasound makes a liquid climb far higher and faster up a thin tube or into fine pores than it normally would, driven by bubbles collapsing at the tube's mouth. Konovalov reported it in 1961, and it's used to drive liquids deep into porous parts and narrow gaps.",
+  "effect": "ultrasound drives a liquid far higher up narrow channels",
+  "usedIn": [
+   "Ultrasonic impregnation of porous castings and coil windings",
+   "Ultrasonic cleaning of narrow channels"
+  ],
+  "strength": "Under strong ultrasound a liquid rises in a fine tube several times higher than by capillary action alone.",
+  "deps": [
+   "capillary-action"
+  ]
+ },
+ {
+  "edb": "Ultrasonic Vibration",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "Just sound above hearing range; a band of a whole field, like Sound. Its jobs come from piezoelectricity and sonar, already in the deck."
+ },
+ {
+  "edb": "Ultrasound",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A frequency range of sound, not a specific effect; the deck's sonar and piezoelectricity cards cover making and using it."
+ },
+ {
+  "edb": "Van der Waals Force",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "The deck's gas-laws card is van der Waals's 1873 work on the small attraction between molecules.",
+  "card": "gas-laws"
+ },
+ {
+  "edb": "Vapour Cone",
+  "verdict": "drop",
+  "rule": "other",
+  "borderline": false,
+  "why": "A visible condensation cloud around fast jets with no job to do."
+ },
+ {
+  "edb": "Vapour Pressure",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A general property of liquids, not a specific effect; Raoult's law and the refrigerator cards already use it."
+ },
+ {
+  "edb": "Velocity Ratio",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A machine term, like Lever."
+ },
+ {
+  "edb": "Venturi Effect",
+  "verdict": "merge",
+  "rule": "e4",
+  "borderline": true,
+  "why": "Venturi's pressure drop in a narrow pipe is Bernoulli's principle applied to a constriction; canonical 'bernoulli-effect' is in another batch. Judgment call: Venturi (1797) is a different person with distinct inventions (carburettors, venturi meters), so it could be its own card if Bernoulli ends up attached to kinetic-gases.",
+  "into": "bernoulli-effect"
+ },
+ {
+  "edb": "Vibration",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A whole field of mechanical motion, not an effect."
+ },
+ {
+  "edb": "Villari Effect",
+  "verdict": "merge",
+  "rule": "e4",
+  "borderline": false,
+  "why": "The reverse of magnetostriction (stress changes magnetism), as converse piezoelectricity is part of piezoelectricity; canonical 'magnetostriction' is in another batch. That card can name magnetoelastic torque sensors.",
+  "into": "magnetostriction"
+ },
+ {
+  "edb": "Viscoelasticity",
+  "verdict": "keep",
+  "rule": "e4",
+  "borderline": false,
+  "why": "Specific behaviour with many jobs; canonical card for stress relaxation and the Weissenberg effect (this batch), and possibly Creep (another batch).",
+  "id": "viscoelasticity",
+  "title": "Viscoelasticity",
+  "year": 1835,
+  "inventor": "Wilhelm Weber",
+  "location": "Germany",
+  "field": "Science: Materials",
+  "description": "Some materials act partly like a spring and partly like thick honey: they spring back slowly, sag under a steady load, and soak up shocks. Weber noticed silk threads in his instruments slowly creeping under load in 1835; the effect makes memory foam hold your shape and foam earplugs expand slowly to fill the ear.",
+  "effect": "a material springs back slowly and flows a little under load",
+  "usedIn": [
+   "Memory foam mattresses",
+   "Foam earplugs",
+   "Silly Putty",
+   "Vibration-damping pads and layers"
+  ],
+  "strength": "Memory foam takes a few seconds to recover its shape; Silly Putty bounces like a ball but flattens into a puddle over an hour.",
+  "deps": [
+   "hookes-law"
+  ]
+ },
+ {
+  "edb": "Viscous Heating",
+  "verdict": "attach",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Joule warmed water by churning it with paddles, which is viscous heating; the effect goes on his card.",
+  "card": "mechanical-equivalent-of-heat"
+ },
+ {
+  "edb": "Voigt Effect",
+  "verdict": "merge",
+  "rule": "e4",
+  "borderline": false,
+  "why": "A weak sideways twin of the Faraday effect (a magnetic field changing how light passes through a vapour); canonical 'faraday-effect' is in another batch.",
+  "into": "faraday-effect"
+ },
+ {
+  "edb": "Vortex Ring",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Specific, named effect that carries air or smoke a long way; Helmholtz's 1858 vortex theory is the standard first explanation.",
+  "id": "vortex-ring",
+  "title": "Vortex ring",
+  "year": 1858,
+  "inventor": "Hermann von Helmholtz",
+  "location": "Germany",
+  "field": "Science: Physics",
+  "description": "A sharp puff of air or water rolls up into a spinning doughnut that holds together and travels far, like a smoke ring. Helmholtz showed in 1858 why such rings keep spinning, and toy air cannons use them to knock over cups across a room.",
+  "effect": "a puff of fluid rolls into a spinning ring that travels far without spreading",
+  "usedIn": [
+   "Airzooka air-blast toys",
+   "Vortex-ring guns tested for crowd control",
+   "Smoke-ring demonstrations of air flow"
+  ],
+  "strength": "A ring puffed from a bucket-sized box can cross a room, 10 metres or more, and still blow out a candle.",
+  "deps": []
+ },
+ {
+  "edb": "Wear",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "An everyday process, not a specific effect."
+ },
+ {
+  "edb": "Weathering",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "An everyday geological process."
+ },
+ {
+  "edb": "Weissenberg Effect",
+  "verdict": "merge",
+  "rule": "e4",
+  "borderline": false,
+  "why": "Rod-climbing is a visible symptom of elastic polymer liquids; it goes on the viscoelasticity card kept in this batch.",
+  "into": "viscoelasticity"
+ },
+ {
+  "edb": "Wetting",
+  "verdict": "merge",
+  "rule": "e4",
+  "borderline": false,
+  "why": "Wetting is set by surface tension, and Young explained both in the same 1805 essay; it goes on the surface-tension card kept in this batch.",
+  "into": "surface-tension"
+ },
+ {
+  "edb": "Wiedemann Effect",
+  "verdict": "merge",
+  "rule": "e4",
+  "borderline": false,
+  "why": "A twisting form of magnetostriction; canonical 'magnetostriction' is in another batch. That card can name magnetostrictive position sensors, which use this twist.",
+  "into": "magnetostriction"
+ },
+ {
+  "edb": "Wiegand Effect",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Specific named effect that detects motion and harvests energy; date is the 1974 patent, approximately.",
+  "id": "wiegand-effect",
+  "title": "Wiegand effect",
+  "year": 1974,
+  "inventor": "John R. Wiegand",
+  "location": "United States",
+  "field": "Science: Physics",
+  "description": "A specially twisted wire flips its magnetism all at once as a magnet passes, giving off a sharp electric pulse no matter how slowly the magnet moves. Wiegand patented the wire in the 1970s, and it powers battery-free rotation counters and the classic Wiegand access-card readers.",
+  "effect": "a treated wire flips its magnetism suddenly and gives a sharp pulse",
+  "usedIn": [
+   "Wiegand access-card readers",
+   "Battery-free multi-turn rotary encoders",
+   "Pulse counters in water and gas meters"
+  ],
+  "strength": "Each flip gives a pulse of a few volts in a small coil, enough to power a counter chip for an instant with no battery.",
+  "deps": [
+   "electromagnetic-induction"
+  ]
+ },
+ {
+  "edb": "Wind",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A whole natural phenomenon, not a specific effect; windmills and trade winds are already in the deck."
+ },
+ {
+  "edb": "X-Ray",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Röntgen's 1895 x-rays card is in the deck.",
+  "card": "x-rays"
+ },
+ {
+  "edb": "Yarkovsky Effect",
+  "verdict": "drop",
+  "rule": "e2",
+  "borderline": false,
+  "why": "A thrust from heat radiation that only matters to small asteroids over millions of years, far too weak to do a job at a useful size."
+ },
+ {
+  "edb": "Zeeman Effect",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "The deck's light-and-magnetism card is Zeeman's 1896 splitting of spectral lines in a magnetic field.",
+  "card": "light-and-magnetism"
+ }
+]

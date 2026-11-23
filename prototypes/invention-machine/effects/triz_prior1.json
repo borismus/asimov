@@ -1,0 +1,122 @@
+[
+ {
+  "id": "sun-charged-frost-blanket",
+  "verdict": "none",
+  "evidence": "Passive phase-change frost protection exists (1984 patent wrapping plants in PCM, 2023 citrus PCM packages), but nothing found using sensor-triggered crystallisation of a supercooled salt solution to protect crops.",
+  "url": "https://patents.google.com/patent/US4495723"
+ },
+ {
+  "id": "cold-plate-soot-trap",
+  "verdict": "built",
+  "evidence": "A 2007 study on two commercial wood-fired appliances demonstrated thermophoretic particle deposition on cooled surfaces combined with heat recovery from biomass flue gas (lab/field demo, not a cookstove hood product).",
+  "url": "https://portal.fis.tum.de/en/publications/combined-particle-emission-reduction-and-heat-recovery-from-combu/"
+ },
+ {
+  "id": "vortex-ring-crop-sprayer",
+  "verdict": "none",
+  "evidence": "Not checked: the web search refused every wording of this query, so whether a version exists is unknown.",
+  "url": null
+ },
+ {
+  "id": "listening-irrigation-valve",
+  "verdict": "studied",
+  "evidence": "Xylem ultrasonic acoustic emissions are well studied as a water-stress signal and a 2011 IEEE paper proposed using them to guide irrigation, but no closed-loop AE-driven irrigation controller was found.",
+  "url": "https://core.ac.uk/download/54614592.pdf"
+ },
+ {
+  "id": "pressure-pop-recycler",
+  "verdict": "studied",
+  "evidence": "Supercritical CO2 with rapid depressurisation is studied for delaminating PCBs and multilayer films, and old patents use CO2 to dissolve adhesives, but no scCO2 adhesive-foaming disassembly of whole phones was found.",
+  "url": "https://www.scientific.net/MSF.959.100"
+ },
+ {
+  "id": "pit-seeking-pipe-coating",
+  "verdict": "none",
+  "evidence": "Self-healing coatings release inhibitors from pH- or redox-triggered reservoirs at corrosion sites, but nothing found on capsules migrating to pits by diffusiophoresis.",
+  "url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/11577212"
+ },
+ {
+  "id": "salt-gradient-organ-seeding",
+  "verdict": "none",
+  "evidence": "Scaffold seeding is done by perfusion or capillary flow, and diffusiophoretic colloid deposition in hydrogels is studied, but nothing found on using solute gradients to draw cells into scaffolds.",
+  "url": "https://arxiv.org/pdf/1706.06307v1"
+ },
+ {
+  "id": "poured-moon-dust-shield",
+  "verdict": "studied",
+  "evidence": "NASA has tested pneumatic/fluidized conveying of regolith simulant and a 1990s lunar-base paper proposed pumping regolith between pneumatic walls for shielding, but no working shield-filling system was found.",
+  "url": "https://nss.org/wp-content/uploads/2017/07/Lunar-Bases-conference-2-305-Modular-Systems.pdf"
+ },
+ {
+  "id": "wobbling-river-pump",
+  "verdict": "studied",
+  "evidence": "A 2024 paper (Duranay) evaluates vortex-induced-vibration water pumps for irrigation in Turkish rivers and VIV generators were field-tested in a Kerala canal, but no deployed VIV pump was found.",
+  "url": "https://dergipark.org.tr/en/download/article-file/3884851"
+ },
+ {
+  "id": "kidney-stone-seed-strip",
+  "verdict": "studied",
+  "evidence": "Seeded crystallisation of calcium oxalate in urine is an in-vitro research method and induced-crystallisation risk indices (Bonn Risk Index, iCOCI) exist, but no seeded-crystal home strip was found.",
+  "url": "https://core.ac.uk/download/395017608.pdf"
+ },
+ {
+  "id": "electrocaloric-cold-cap",
+  "verdict": "none",
+  "evidence": "Electrocaloric polymer heat pumps exist only as benchtop devices (Berkeley Lab/UCLA 2025) and scalp cooling uses gel or chiller caps; no electrocaloric wearable or cold cap found.",
+  "url": "https://newscenter.lbl.gov/2025/04/29/researchers-pioneer-heat-pumping-material-for-localized-cooling/"
+ },
+ {
+  "id": "seawater-fizz-bed",
+  "verdict": "studied",
+  "evidence": "Patents describe degassing CO2 from acidified seawater (often with vacuum or membranes) and a lake-degassing patent proposes catalysed nucleation, but no nucleation packed bed for seawater CO2 removal was found.",
+  "url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9873650"
+ },
+ {
+  "id": "tree-fall-alarm",
+  "verdict": "studied",
+  "evidence": "Fraunhofer IKTS and the TreeMon project are developing trunk-mounted acoustic-emission sensor nodes that count wind-induced fibre fractures for tree safety, but no validated failure-warning system yet.",
+  "url": "https://www.ikts.fraunhofer.de/en/departments/electronics_microsystems_biomedicine/systems_for_testing_analysis/ultrasonic_sensors_methods/cr_micro_acoustics_for_condition_monitoring_of_trees.html"
+ },
+ {
+  "id": "greenhouse-pest-sniffer",
+  "verdict": "none",
+  "evidence": "Herbivore-induced green leaf volatiles are detected with e-noses, MOF sensors, portable GC and PTR-MS, but no photoacoustic GLV sensor for pest detection was found.",
+  "url": "https://sciforum.net/paper/17538"
+ },
+ {
+  "id": "sweat-ring-patch",
+  "verdict": "studied",
+  "evidence": "Evaporation-assisted capillary wicking has been noted as a way to concentrate sweat biomarkers and coffee-ring analyte concentration is patented generally, but no coffee-ring sweat patch was found.",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7286699"
+ },
+ {
+  "id": "pollen-ring-blower",
+  "verdict": "none",
+  "evidence": "Mechanical pollinators exist (Edete's pollen cannons, air-circulation pollination patents) but none use vortex rings.",
+  "url": "https://mideastenvironment.apps01.yorku.ca/2020/04/with-bees-on-decline-mechanical-pollination-may-be-solution-ynet"
+ },
+ {
+  "id": "shaking-fog-harp",
+  "verdict": "studied",
+  "evidence": "Fog harps with superhydrophobic wires are patented and droplet shedding from vibrated vertical wires is studied, but nothing found using wind-driven vortex-induced vibration to shed drops.",
+  "url": "https://patents.google.com/patent/US11466437"
+ },
+ {
+  "id": "magnetic-malaria-chip",
+  "verdict": "built",
+  "evidence": "A Glasgow group built a handheld device with a magnet and tunnel-magnetoresistance sensor that detects hemozoin label-free (demonstrated on synthetic hemozoin, not yet clinical blood).",
+  "url": "https://core.ac.uk/works/91387606"
+ },
+ {
+  "id": "salt-gradient-wound-dressing",
+  "verdict": "studied",
+  "evidence": "Diffusiophoretic removal of bacteria (CO2-driven, Shim and Stone) and solute-gradient cleaning of dead-end pores are studied in the lab, but not applied to wounds or dressings.",
+  "url": "https://arxiv.org/pdf/2009.07081"
+ },
+ {
+  "id": "mucus-drip-test",
+  "verdict": "studied",
+  "evidence": "Capillary-breakup (CaBER) rheometry of COPD sputum has been studied as an exacerbation biomarker, but no smartphone or point-of-care breakup test was found.",
+  "url": "https://cronfa.swansea.ac.uk/Record/cronfa37591"
+ }
+]

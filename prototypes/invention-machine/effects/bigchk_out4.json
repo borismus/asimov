@@ -1,0 +1,110 @@
+[
+ {
+  "id": "lymph-collar",
+  "verdict": "pass",
+  "rule": "none",
+  "why": "Makes the brain's own drainage something a person can turn up every night at home, aimed at the slow build-up years before symptoms.",
+  "found": "Only the 2025 IBS Nature mouse/macaque work, a Houston Methodist patent on neck stimulation, and MMI's Symani robot in the REMIND study, which reconnects neck lymph vessels by surgery rather than squeezing them. No wearable product, company or human trial.",
+  "url": "https://www.genengnews.com/news/featured/non-invasive-mechanical-stimulation-of-lymphatic-system-boosts-brain-waste-clearance/",
+  "familiar": false
+ },
+ {
+  "id": "skull-marrow-port",
+  "verdict": "borderline",
+  "rule": "exists",
+  "why": "CraniUS ($20M raised) is already building NeuroPASS, a refillable port built into the skull for long-term brain dosing past the barrier, so is sending the drug out through the skull's marrow channels instead of a catheter into the brain a new invention or just a better outlet on the same device? My pick: drop.",
+  "found": "CraniUS NeuroPASS: fully implanted, refillable, skull-embedded reservoir and pump with catheters into the brain (convection-enhanced delivery), preclinical in pigs, $20M round. The marrow route itself is only in a one-off injection stroke trial (SOLUTION, NCT05849805).",
+  "url": "https://www.drugdeliverybusiness.com/cranius-20m-brain-barrier-drug-delivery/",
+  "familiar": false
+ },
+ {
+  "id": "nose-seed-test",
+  "verdict": "drop",
+  "rule": "big",
+  "why": "Fails the big rule: blood p-tau217 tests already flag Alzheimer's changes in people without symptoms from a simple blood draw, and nasal-brushing seed tests are already being tried for tau, so a nose swab would be a small step on both.",
+  "found": "Nasal-swab seed amplification is an active research line for prion, alpha-synuclein and tau (2023 Translational Neurodegeneration review); prion nasal brushings already work clinically. No validated Alzheimer's nasal test or company.",
+  "url": "https://translationalneurodegeneration.biomedcentral.com/articles/10.1186/s40035-023-00345-1",
+  "familiar": false
+ },
+ {
+  "id": "barrier-opening-helmet",
+  "verdict": "drop",
+  "rule": "exists",
+  "why": "Already exists: Cordance Medical is building NeuroAccess, a portable focused-ultrasound system that opens the barrier with the patient sitting up and lists Alzheimer's as a target, and Columbia has patented a wearable version that steers itself by listening to the bubbles.",
+  "found": "Cordance Medical NeuroAccess (portable, done seated, FDA Breakthrough designation for brain-tumour liquid biopsy, Alzheimer's named as a target); Columbia's patented wearable focused-ultrasound device with built-in cavitation detectors, offered for licensing; Columbia's portable MRI-free system already used in Alzheimer's patients (2024).",
+  "url": "https://www.fusfoundation.org/posts/fda-grants-breakthrough-device-designation-for-cordance-medicals-brain-tumor-liquid-biopsy-platform/",
+  "familiar": true
+ },
+ {
+  "id": "nanowire-retina",
+  "verdict": "borderline",
+  "rule": "r19",
+  "why": "It goes in the same place, by the same surgery, for the same patients as Science Corp's PRIMA chip, so is a goggle-free mesh with ten times the pixels a new device or a better part for PRIMA? My pick: keep.",
+  "found": "Tellurium mesh is Fudan lab work only (mice, 112 days in macaque). PRIMA (Science Corp) is a subretinal photovoltaic chip in late trials; Nanovision Biosciences (UCSD) built a silicon-nanowire retinal implant but shows no activity after 2022.",
+  "url": "https://www.nature.com/nature-index/article/10.1126/science.adu2987",
+  "familiar": false
+ },
+ {
+  "id": "ultrasound-vision-lens",
+  "verdict": "drop",
+  "rule": "r5",
+  "why": "Too weak: the best-demonstrated spot size, about 0.6 mm on the retina, is a pixel roughly two degrees wide, coarser than the side vision macular patients already keep.",
+  "found": "Academic only: the Paris sonogenetics work (Nature Nanotechnology 2023) and a University of Melbourne grant for a wearable sonogenetic retinal prosthesis, still in simulation and animal stage.",
+  "url": "https://science.unimelb.edu.au/about/news/restoring-sight-using-sound-and-gene-technology-with-a-major-grant",
+  "familiar": false
+ },
+ {
+  "id": "grooved-cone-patch",
+  "verdict": "drop",
+  "rule": "exists",
+  "why": "Already exists: UW-Madison's Gamm and Ma labs built a dissolving micro-molded scaffold that holds over 300,000 aligned photoreceptors across a macula-sized patch, patented it, and readied it for large-animal surgery, and Gamm's spinout Opsis already has photoreceptor cells in a human trial.",
+  "found": "UW-Madison 'ice cube tray' poly(glycerol-sebacate) scaffold for organised photoreceptors (WARF patent filed, 2021 report says nearly ready for large-animal tests); Opsis Therapeutics/BlueRock OpCT-001 photoreceptor cells in an FDA-cleared trial (2024).",
+  "url": "https://www.nei.nih.gov/research-and-training/research-news/micro-molded-ice-cube-tray-scaffold-next-step-returning-sight-injured-retinas",
+  "familiar": false
+ },
+ {
+  "id": "waste-hook-injection",
+  "verdict": "pass",
+  "rule": "none",
+  "why": "Would let the eye clear the fatty build-up that starts dry macular degeneration, keeping central vision instead of slowing its loss.",
+  "found": "Nothing deployed: the lipid-droplet tethering compounds exist only in the 2023 Autophagy mouse paper; dry-AMD companies (e.g. Lucina's VLC-PUFA programme) use other routes.",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/37266932/",
+  "familiar": false
+ },
+ {
+  "id": "kneading-cuff",
+  "verdict": "drop",
+  "rule": "r5",
+  "why": "Too weak for the job: the mouse result is regrowth of severely injured muscle, not regaining muscle lost to bed rest or age, and steroids themselves waste old muscle.",
+  "found": "Nothing deployed: Harvard Science Robotics 2023 mouse study and a Harvard patent on mechanically induced regeneration; no company or trial.",
+  "url": "https://seas.harvard.edu/news/2023/03/clearing-path-non-invasive-muscle-therapy-elderly",
+  "familiar": false
+ },
+ {
+  "id": "balance-flywheel",
+  "verdict": "pass",
+  "rule": "none",
+  "why": "A hands-free aid that pushes back against a fall before it happens, rather than cushioning the landing.",
+  "found": "TU Delft GyBAR research prototype (2020 study, EU WANDER project with Shirley Ryan AbilityLab); no company or product.",
+  "url": "https://tudelft.nl/en/2020/3me/july/never-fall-again-thanks-to-backpack-like-wearable-robot",
+  "familiar": false
+ },
+ {
+  "id": "bone-threshold-patch",
+  "verdict": "pass",
+  "rule": "none",
+  "why": "Makes walking count as bone-building exercise again for old bone, which vibration plates and loading alone have failed to do.",
+  "found": "Nothing deployed: Yoda1/Yoda2 are research compounds with mouse bone studies only (eLife 2019, JCI Insight 2024, Aging Cell 2025); no company or trial.",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/40410950/",
+  "familiar": false
+ },
+ {
+  "id": "soft-niche-gel",
+  "verdict": "drop",
+  "rule": "r5",
+  "why": "Too weak: the evidence is stem cells rejuvenated on a soft gel in a dish and then transplanted, and an injected blob can't recreate a soft pocket around stem cells spread along every fibre of every ageing muscle.",
+  "found": "Nothing deployed: only the Stanford Blau lab 2014 Nature Medicine work (cells grown on gel outside the body); no company or trial.",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3949152",
+  "familiar": false
+ }
+]

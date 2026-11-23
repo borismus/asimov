@@ -1,0 +1,512 @@
+[
+ {
+  "name": "AI image generation",
+  "year": 2022,
+  "rank": 1,
+  "how": "Neural networks on GPUs, large image-text datasets; ★ diffusion denoising (an image grown out of random noise step by step)",
+  "impact": "Hundreds of millions of people make pictures by typing; ChatGPT alone drew 700 million images in a week in March 2025, and illustration and stock photography were upended.",
+  "verdict": "keep",
+  "rule": "m5",
+  "why": ""
+ },
+ {
+  "name": "Viral-vector vaccines",
+  "year": 2021,
+  "rank": 2,
+  "how": "Harmless adenovirus shell carrying a gene, cell-culture bioreactors; ★ a virus used as a delivery vehicle for a foreign gene",
+  "impact": "Over three billion COVID doses, mostly in poorer countries, cheap and fridge-stable; now also used against Ebola.",
+  "verdict": "keep",
+  "rule": "m1",
+  "why": ""
+ },
+ {
+  "name": "FPV attack drone",
+  "year": 2022,
+  "rank": 3,
+  "how": "Quadcopter drone, video goggles, explosive charge, cheap radio; ★ none new",
+  "impact": "Millions a year are built in Ukraine and Russia; by 2025 drones caused an estimated 70-80% of battlefield casualties, changing how land wars are fought.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "A version of the quadcopter and military-drone cards, but cheap enough for every infantry squad, which changed who uses air power."
+ },
+ {
+  "name": "Remote work",
+  "year": 2020,
+  "rank": 4,
+  "how": "Video calling, cloud data centres, laptops, home broadband",
+  "impact": "Hundreds of millions of office workers moved part of their week home for good after 2020, reshaping cities, commuting and offices.",
+  "verdict": "borderline",
+  "rule": "m1",
+  "why": "A practice like email rather than a device, and built entirely from cards already on the board; keep only if you count practices."
+ },
+ {
+  "name": "AI coding assistants",
+  "year": 2022,
+  "rank": 5,
+  "how": "Large language models trained on public code, code editors; ★ none new",
+  "impact": "By 2025 about half of professional programmers used one daily and over 80% used or planned to; software is now partly written by machines.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "A version of the large-language-model card put to one job, but it changed how a whole profession works."
+ },
+ {
+  "name": "Inactivated COVID vaccines",
+  "year": 2021,
+  "rank": 6,
+  "how": "Virus grown in cells and killed with chemicals",
+  "impact": "About five billion doses, mostly in China and the Global South.",
+  "verdict": "drop",
+  "rule": "m4",
+  "why": "The century-old killed-virus vaccine method; no new assembly."
+ },
+ {
+  "name": "Home COVID self-test",
+  "year": 2020,
+  "rank": 7,
+  "how": "Rapid test strip, antibodies, nasal swab",
+  "impact": "Billions of tests used at home in 2020-2022.",
+  "verdict": "drop",
+  "rule": "m4",
+  "why": "The rapid test strip card aimed at a new virus; same job, same way."
+ },
+ {
+  "name": "AI answers in web search",
+  "year": 2024,
+  "rank": 8,
+  "how": "Large language models, search engine index",
+  "impact": "Shown to about two billion people a month inside Google search by 2025, it changed search from a list of links to a written answer.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "Search engine plus large language model; huge reach, but both parts are already cards."
+ },
+ {
+  "name": "Grid-scale battery storage",
+  "year": 2020,
+  "rank": 9,
+  "how": "Lithium-ion (iron-phosphate) cells in shipping containers, inverters, grid software",
+  "impact": "About 270 GW installed by 2025, more than pumped hydro; in California and China batteries now shift solar power into the evening peak.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "Lithium-ion batteries put somewhere new; it changed how grids work, but the parts and job are existing cards."
+ },
+ {
+  "name": "AI computing clusters",
+  "year": 2023,
+  "rank": 10,
+  "how": "Graphics-processor chips, high-bandwidth memory, liquid cooling, fibre networks; ★ none new",
+  "impact": "Gigawatt-scale buildings that train and run AI; their power demand is reshaping electricity grids.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "A scaled-up cloud data centre; it changed how data centres are built and powered, but it may read as a near-duplicate."
+ },
+ {
+  "name": "5G mobile networks",
+  "year": 2020,
+  "rank": 11,
+  "how": "Mobile phone network, ★ massive multi-antenna beamforming",
+  "impact": "Over two billion 5G subscriptions by 2025.",
+  "verdict": "drop",
+  "rule": "m4",
+  "why": "A faster version of the mobile-phone network, same job; first commercial launch was 2019."
+ },
+ {
+  "name": "Iron-phosphate car batteries",
+  "year": 2020,
+  "rank": 12,
+  "how": "Lithium-ion battery with iron-phosphate cathode, cell-to-pack design",
+  "impact": "About half of new electric cars by 2025.",
+  "verdict": "drop",
+  "rule": "m4",
+  "why": "A chemistry variant of the lithium-ion card, same job."
+ },
+ {
+  "name": "TOPCon solar cells",
+  "year": 2022,
+  "rank": 13,
+  "how": "Photovoltaic cell with a tunnel-oxide passivated contact",
+  "impact": "Most solar panels made worldwide by 2025.",
+  "verdict": "drop",
+  "rule": "m4",
+  "why": "An efficiency tweak to the photovoltaic-cell card."
+ },
+ {
+  "name": "Protein structure prediction",
+  "year": 2021,
+  "rank": 14,
+  "how": "Deep learning, protein-structure databases; ★ none new",
+  "impact": "Predicted shapes for 200 million proteins, used by over two million researchers; won the 2024 chemistry Nobel.",
+  "verdict": "borderline",
+  "rule": "m2",
+  "why": "Reshaped structural biology, but it is a research tool, like the instruments you dropped."
+ },
+ {
+  "name": "Passkeys",
+  "year": 2022,
+  "rank": 15,
+  "how": "Public-key encryption, phone fingerprint/face sensor, cloud sync",
+  "impact": "Over a billion people had turned on at least one passkey by 2025; the start of the end of passwords.",
+  "verdict": "borderline",
+  "rule": "m5",
+  "why": "Recent and still mid-adoption; also close to the public-key encryption card."
+ },
+ {
+  "name": "Long-range attack drones",
+  "year": 2022,
+  "rank": 16,
+  "how": "Small piston engine, wing, satellite navigation, warhead",
+  "impact": "Thousands a month launched at Ukrainian cities.",
+  "verdict": "drop",
+  "rule": "m4",
+  "why": "A cheap cruise missile; the cruise-missile and military-drone cards cover it."
+ },
+ {
+  "name": "Telemedicine",
+  "year": 2020,
+  "rank": 17,
+  "how": "Video calling, electronic health records",
+  "impact": "Became routine for hundreds of millions of patients during the pandemic.",
+  "verdict": "drop",
+  "rule": "m4",
+  "why": "Video calling put to a new job, same way."
+ },
+ {
+  "name": "Instant bank payments",
+  "year": 2020,
+  "rank": 18,
+  "how": "Mobile payments, bank networks, QR codes",
+  "impact": "Brazil's Pix reached 150 million users in four years.",
+  "verdict": "drop",
+  "rule": "m4",
+  "why": "A version of mobile payments; India's similar system dates from 2016."
+ },
+ {
+  "name": "Crop-spraying drones",
+  "year": 2020,
+  "rank": 19,
+  "how": "Quadcopter drone, GPS, tank and nozzles",
+  "impact": "About 250,000 in China alone, treating 178 million hectares in 2024; spreading across Asia and Latin America.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "Quadcopter drones put to a new job; early versions existed before 2020 so the date is soft."
+ },
+ {
+  "name": "Phone earthquake warnings",
+  "year": 2020,
+  "rank": 20,
+  "how": "Smartphone accelerometers, cloud servers, mobile networks; ★ crowd-sensed P-wave detection",
+  "impact": "Built into Android phones in nearly a hundred countries, sending about 18 million alerts a month; seconds of warning for billions who never had any.",
+  "verdict": "borderline",
+  "rule": "m5",
+  "why": "A service on phones people already carry; reach is huge but quakes that use it are rare."
+ },
+ {
+  "name": "Oral COVID antiviral pill",
+  "year": 2021,
+  "rank": 21,
+  "how": "Protease inhibitor drug plus a booster; ★ none new",
+  "impact": "Tens of millions of courses taken at home in the first days of infection, cutting hospital admissions for the old.",
+  "verdict": "borderline",
+  "rule": "m5",
+  "why": "Used by tens of millions, not hundreds of millions, and its use has faded; a new drug, not a new assembly type."
+ },
+ {
+  "name": "Malaria vaccine",
+  "year": 2024,
+  "rank": 22,
+  "how": "Protein-particle antigen, adjuvant; ★ none new",
+  "impact": "Rolling out to millions of African children a year since 2024; malaria kills about 600,000 people a year.",
+  "verdict": "borderline",
+  "rule": "m5",
+  "why": "Real and growing, but tens of millions of doses so far, not yet a proven reshaping; the Asimov deck has general vaccination."
+ },
+ {
+  "name": "Novel oral polio vaccine",
+  "year": 2021,
+  "rank": 23,
+  "how": "Live weakened polio virus, genetically stabilised",
+  "impact": "Over a billion doses given to stop vaccine-derived polio outbreaks.",
+  "verdict": "drop",
+  "rule": "m4",
+  "why": "A tweaked version of the Sabin vaccine card."
+ },
+ {
+  "name": "Post-quantum encryption",
+  "year": 2024,
+  "rank": 24,
+  "how": "Public-key encryption, ★ lattice mathematics thought to resist quantum computers",
+  "impact": "Turned on by default in major browsers in 2024; protects a large share of web traffic for billions of users.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "Same job as public-key encryption done with new mathematics; invisible to users."
+ },
+ {
+  "name": "Satellite texting from phones",
+  "year": 2022,
+  "rank": 25,
+  "how": "Ordinary phone radios, low-orbit satellites; ★ none new",
+  "impact": "Hundreds of millions of phones can send an emergency message where there is no signal.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "A version of the satellite-internet card reaching ordinary phones; changed who can call for help, but few have used it."
+ },
+ {
+  "name": "Naval strike drones",
+  "year": 2023,
+  "rank": 26,
+  "how": "Small fast boat, satellite internet link, explosive charge",
+  "impact": "Ukraine used them to drive Russia's Black Sea Fleet out of the western Black Sea.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "A military drone put on water; reshaped one sea war, unproven elsewhere."
+ },
+ {
+  "name": "Over-the-counter hearing aids",
+  "year": 2022,
+  "rank": 27,
+  "how": "Hearing aid, earbuds, phone hearing test",
+  "impact": "Since 2022 sold without a prescription, and hundreds of millions of earbuds can now act as hearing aids.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "The hearing-aid card in a new form; it changed who can get one, but it does the same job."
+ },
+ {
+  "name": "Exposure-notification apps",
+  "year": 2020,
+  "rank": 28,
+  "how": "Smartphone, short-range wireless link, cloud",
+  "impact": "Installed by hundreds of millions in 2020-21, then retired.",
+  "verdict": "drop",
+  "rule": "m3",
+  "why": "Short-lived and of disputed effect; no lasting use."
+ },
+ {
+  "name": "Lab-grown diamonds",
+  "year": 2020,
+  "rank": 29,
+  "how": "Synthetic diamonds (chemical vapour deposition)",
+  "impact": "Now about half of US engagement-ring diamonds.",
+  "verdict": "drop",
+  "rule": "m4",
+  "why": "The synthetic-diamond card (1955) in jewellery; no new assembly."
+ },
+ {
+  "name": "AI weather forecasting",
+  "year": 2025,
+  "rank": 30,
+  "how": "Deep learning on decades of weather data; ★ none new",
+  "impact": "Run operationally by Europe's main forecasting centre since 2025, faster and often more accurate than physics models.",
+  "verdict": "borderline",
+  "rule": "m5",
+  "why": "Just went operational; whether it reshapes forecasting is not yet proven."
+ },
+ {
+  "name": "Wastewater virus surveillance",
+  "year": 2020,
+  "rank": 31,
+  "how": "PCR (DNA copying), sewage sampling",
+  "impact": "Became standard public-health monitoring in dozens of countries.",
+  "verdict": "drop",
+  "rule": "m3",
+  "why": "A monitoring practice invisible in daily life, built on the PCR card."
+ },
+ {
+  "name": "RSV vaccines and infant antibody",
+  "year": 2023,
+  "rank": 32,
+  "how": "Stabilised protein vaccine; monoclonal antibody",
+  "impact": "Protects tens of millions of older adults and newborns.",
+  "verdict": "drop",
+  "rule": "m4",
+  "why": "Vaccines and monoclonal antibodies are already cards; same job."
+ },
+ {
+  "name": "Glide-bomb kits",
+  "year": 2023,
+  "rank": 33,
+  "how": "Precision-guided bomb, folding wings, satellite navigation",
+  "impact": "Russia drops thousands a month on Ukrainian front lines.",
+  "verdict": "drop",
+  "rule": "m4",
+  "why": "A version of the precision-guided bomb card."
+ },
+ {
+  "name": "Commercial crewed spacecraft",
+  "year": 2020,
+  "rank": 34,
+  "how": "Reusable rocket booster, capsule",
+  "impact": "Carries astronauts to the space station since 2020.",
+  "verdict": "drop",
+  "rule": "m4",
+  "why": "Human spaceflight already on the board; a new operator, same job."
+ },
+ {
+  "name": "AI video generation",
+  "year": 2024,
+  "rank": 35,
+  "how": "Diffusion models on video; ★ none new",
+  "impact": "Tens of millions of users by 2025.",
+  "verdict": "drop",
+  "rule": "m5",
+  "why": "Not yet used by hundreds of millions; a version of AI image generation."
+ },
+ {
+  "name": "AI agents",
+  "year": 2025,
+  "rank": 36,
+  "how": "Large language models, tool access, code execution",
+  "impact": "Early adoption in software and office work in 2025.",
+  "verdict": "drop",
+  "rule": "m5",
+  "why": "Too new to judge; a version of large language models."
+ },
+ {
+  "name": "Gallium-nitride chargers",
+  "year": 2020,
+  "rank": 37,
+  "how": "Gallium-nitride power transistors, ★ wide-bandgap semiconductor switching",
+  "impact": "Hundreds of millions of small fast chargers.",
+  "verdict": "drop",
+  "rule": "m3",
+  "why": "A smaller phone charger; not a change in anyone's daily life."
+ },
+ {
+  "name": "Gene-editing cures",
+  "year": 2023,
+  "rank": 38,
+  "how": "CRISPR gene editing applied to a patient's own blood stem cells",
+  "impact": "First approved for sickle-cell disease in 2023; hundreds of patients treated.",
+  "verdict": "drop",
+  "rule": "m2",
+  "why": "Still a handful of patients; the CRISPR card covers the method."
+ },
+ {
+  "name": "Wolbachia mosquitoes",
+  "year": 2020,
+  "rank": 39,
+  "how": "Mosquitoes infected with a bacterium that blocks dengue",
+  "impact": "Released to protect about ten million people; trial cut dengue by 77%.",
+  "verdict": "drop",
+  "rule": "cut",
+  "why": "Below the decade's cut; still scaling up."
+ },
+ {
+  "name": "Twice-yearly HIV prevention shot",
+  "year": 2025,
+  "rank": 40,
+  "how": "Long-acting capsid-inhibitor drug injection",
+  "impact": "Approved 2025, rollout to two million people planned.",
+  "verdict": "drop",
+  "rule": "m5",
+  "why": "Approved this decade but not yet in wide use."
+ },
+ {
+  "name": "Mixed-reality headset",
+  "year": 2020,
+  "rank": 41,
+  "how": "Displays, lenses, inside-out tracking cameras, motion sensors",
+  "impact": "About 30 million standalone headsets sold.",
+  "verdict": "drop",
+  "rule": "m3",
+  "why": "A niche gaming device, not in most people's lives."
+ },
+ {
+  "name": "Item trackers",
+  "year": 2021,
+  "rank": 42,
+  "how": "Short-range wireless link, ultra-wideband radio, crowdsourced phone network",
+  "impact": "Tens of millions of tags attached to keys and luggage.",
+  "verdict": "drop",
+  "rule": "m3",
+  "why": "A niche convenience; the 2013 versions predate the decade."
+ },
+ {
+  "name": "Smart glasses",
+  "year": 2023,
+  "rank": 43,
+  "how": "Camera, microphones, speakers, AI assistant in eyeglass frames",
+  "impact": "A few million pairs sold.",
+  "verdict": "drop",
+  "rule": "m5",
+  "why": "Small and recent."
+ },
+ {
+  "name": "Space tourism",
+  "year": 2021,
+  "rank": 44,
+  "how": "Reusable suborbital rocket, capsule",
+  "impact": "A few hundred paying passengers.",
+  "verdict": "drop",
+  "rule": "m3",
+  "why": "A luxury for a few hundred people."
+ },
+ {
+  "name": "Cultivated meat",
+  "year": 2020,
+  "rank": 45,
+  "how": "Animal cells grown in bioreactors",
+  "impact": "On sale in a handful of restaurants.",
+  "verdict": "drop",
+  "rule": "m2",
+  "why": "Still essentially a lab product."
+ },
+ {
+  "name": "Sodium-ion batteries",
+  "year": 2023,
+  "rank": 46,
+  "how": "Sodium-ion cells, hard carbon anodes",
+  "impact": "Early use in a few Chinese cars and storage systems.",
+  "verdict": "drop",
+  "rule": "m2",
+  "why": "Barely past pilot production."
+ },
+ {
+  "name": "Perovskite tandem solar cells",
+  "year": 2024,
+  "rank": 47,
+  "how": "Perovskite crystal layer on a silicon cell",
+  "impact": "First small commercial panels.",
+  "verdict": "drop",
+  "rule": "m2",
+  "why": "Still in trials."
+ },
+ {
+  "name": "Humanoid robots",
+  "year": 2025,
+  "rank": 48,
+  "how": "Electric actuators, cameras, AI control",
+  "impact": "Pilot deployments in a few factories.",
+  "verdict": "drop",
+  "rule": "m2",
+  "why": "Still in trials."
+ },
+ {
+  "name": "Brain implants for paralysis",
+  "year": 2024,
+  "rank": 49,
+  "how": "Electrode arrays, wireless chips",
+  "impact": "A few dozen patients.",
+  "verdict": "drop",
+  "rule": "m2",
+  "why": "Still in clinical trials."
+ },
+ {
+  "name": "Electric air taxis",
+  "year": 2025,
+  "rank": 50,
+  "how": "Battery-electric multirotor aircraft",
+  "impact": "Not yet in regular passenger service outside trials.",
+  "verdict": "drop",
+  "rule": "m2",
+  "why": "Still in trials."
+ },
+ {
+  "name": "Direct air capture",
+  "year": 2021,
+  "rank": 51,
+  "how": "Fans, chemical sorbents, heat",
+  "impact": "Captures a few thousand tonnes of CO2 a year, a rounding error.",
+  "verdict": "drop",
+  "rule": "m2",
+  "why": "Pilot plants only."
+ }
+]

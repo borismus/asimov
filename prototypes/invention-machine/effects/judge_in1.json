@@ -1,0 +1,351 @@
+[
+{
+"card": "sea-navigation",
+"title": "Sea navigation",
+"year": -1100,
+"effect": "the pole star stays fixed in the north",
+"does": "night sky -> direction",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "tides",
+"title": "Tides",
+"year": -300,
+"effect": "the moon pulls the sea into tides",
+"does": "moon's pull -> rising water",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "earth-size",
+"title": "Earth size estimate",
+"year": -240,
+"effect": "the sun's angle changes as you go north or south",
+"does": "distance north -> shadow angle",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "moon-distance",
+"title": "Distance to moon estimate",
+"year": -150,
+"effect": "a near thing shifts against far things as you move",
+"does": "change of viewpoint -> distance",
+"strength": "strong",
+"alsoCards": [
+"distance-of-stars"
+],
+"note": "parallax"
+},
+{
+"card": "silk-europe",
+"title": "Silk",
+"year": 552,
+"effect": "silkworms spin a fine, strong thread",
+"does": "mulberry leaves -> fibre",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "perspective",
+"title": "Perspective drawing",
+"year": 1436,
+"effect": "far things shrink in proportion to their distance",
+"does": "distance -> apparent size",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "trig-tables",
+"title": "Trigonometric tables",
+"year": 1551,
+"effect": "a triangle's angles fix the ratios of its sides",
+"does": "angle -> length ratio",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "world-maps",
+"title": "Mercator projection",
+"year": 1568,
+"effect": "a map can make steady compass courses straight lines",
+"does": "bearing -> straight line",
+"strength": "strong",
+"alsoCards": [],
+"note": "Mercator projection"
+},
+{
+"card": "pendulum",
+"title": "Pendulums for time",
+"year": 1581,
+"effect": "a pendulum keeps the same beat whatever its swing",
+"does": "swing -> steady time",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "falling-motion",
+"title": "Falling motion",
+"year": 1589,
+"effect": "heavy and light things fall at the same rate",
+"does": "gravity -> equal acceleration",
+"strength": "strong",
+"alsoCards": [
+"falling-motion-experiment"
+],
+"note": null
+},
+{
+"card": "vein-valves",
+"title": "Vein valves",
+"year": 1603,
+"effect": "flap valves let blood flow only one way",
+"does": "backflow -> closed flap",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "analytic-geometry",
+"title": "Cartesian geometry",
+"year": 1637,
+"effect": "any shape can be written as an equation",
+"does": "shape -> numbers",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "air-pressure-altitude",
+"title": "Air pressure altitude",
+"year": 1648,
+"effect": "air pressure falls the higher you go",
+"does": "height -> lower pressure",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "probability",
+"title": "Probability",
+"year": 1654,
+"effect": "random events are predictable in large numbers",
+"does": "many chances -> steady averages",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "light-diffraction",
+"title": "Diffraction",
+"year": 1665,
+"effect": "light bends around edges",
+"does": "edge -> spread light",
+"strength": "strong",
+"alsoCards": [],
+"note": "kin to 'light waves interfere'"
+},
+{
+"card": "phosphorus",
+"title": "Phosphorus",
+"year": 1669,
+"effect": "white phosphorus glows and catches fire in air",
+"does": "air -> glow and flame",
+"strength": "strong",
+"alsoCards": [],
+"note": "well-established, not on card"
+},
+{
+"card": "blood-color",
+"title": "Blood colors",
+"year": 1669,
+"effect": "blood turns bright red when it takes up air",
+"does": "oxygen -> colour change",
+"strength": "strong",
+"alsoCards": [],
+"note": "basis for reading oxygen by colour"
+},
+{
+"card": "plant-sexuality",
+"title": "Plant sexuality",
+"year": 1682,
+"effect": "pollen fertilizes a flower to make seed",
+"does": "pollen -> seed",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "imaginary-numbers",
+"title": "Complex numbers",
+"year": 1685,
+"effect": "multiplying by i turns a number a quarter circle",
+"does": "multiplication -> rotation",
+"strength": "strong",
+"alsoCards": [],
+"note": "complex numbers"
+},
+{
+"card": "mortality-tables",
+"title": "Mortality tables",
+"year": 1693,
+"effect": "deaths in a large group follow a predictable table",
+"does": "age -> survival odds",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "plant-nourishment",
+"title": "Plant Nourishment",
+"year": 1705,
+"effect": "plants build their bodies partly from air",
+"does": "air -> plant growth",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "blood-pressure",
+"title": "Blood pressure",
+"year": 1733,
+"effect": "blood presses on vessel walls with measurable force",
+"does": "heartbeat -> pressure",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "trade-winds",
+"title": "Trade winds",
+"year": 1735,
+"effect": "sun-heated air at the equator drives steady winds",
+"does": "heat -> wind",
+"strength": "strong",
+"alsoCards": [
+"meteorological-map"
+],
+"note": null
+},
+{
+"card": "celsius",
+"title": "Celsius scale",
+"year": 1742,
+"effect": "water freezes and boils at fixed temperatures",
+"does": "temperature -> phase change",
+"strength": "strong",
+"alsoCards": [],
+"note": "fixed points for scales"
+},
+{
+"card": "platinum",
+"title": "Platinum",
+"year": 1749,
+"effect": "platinum won't tarnish and melts only at great heat",
+"does": "heat, chemicals -> no change",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "carbon-dioxide",
+"title": "Carbon dioxide",
+"year": 1754,
+"effect": "heating limestone frees a gas that lime soaks back up",
+"does": "heat -> carbon dioxide",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "flame-tests",
+"title": "Flame tests",
+"year": 1758,
+"effect": "each metal colours a flame its own colour",
+"does": "heat -> coloured light",
+"strength": "strong",
+"alsoCards": [],
+"note": "close kin of spectral lines, but in flame"
+},
+{
+"card": "heat-capacity",
+"title": "Heat capacity",
+"year": 1760,
+"effect": "water soaks up far more heat per degree than mercury",
+"does": "heat -> stored heat",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "hydrogen",
+"title": "Hydrogen",
+"year": 1766,
+"effect": "hydrogen is fourteen times lighter than air",
+"does": "gas -> lift",
+"strength": "strong",
+"alsoCards": [],
+"note": "also very flammable"
+},
+{
+"card": "nitrogen",
+"title": "Nitrogen",
+"year": 1772,
+"effect": "nitrogen smothers flames and won't support life",
+"does": "gas -> no burning",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "chlorine-oxygen",
+"title": "Chlorine oxygen",
+"year": 1774,
+"effect": "chlorine gas bleaches colours and kills germs",
+"does": "gas -> bleaching",
+"strength": "strong",
+"alsoCards": [],
+"note": "well established, card only covers isolation"
+},
+{
+"card": "digitalis",
+"title": "Digitalis",
+"year": 1775,
+"effect": "foxglove strengthens a failing heart's beat",
+"does": "drug -> stronger heartbeat",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "photosynthesis",
+"title": "Photosynthesis",
+"year": 1779,
+"effect": "plants turn sunlight, water and carbon dioxide into sugar",
+"does": "light -> sugar and oxygen",
+"strength": "strong",
+"alsoCards": [
+"chlorophyll",
+"chloroplasts"
+],
+"note": null
+},
+{
+"card": "tungsten",
+"title": "Tungsten",
+"year": 1783,
+"effect": "tungsten is extremely dense and very hard to melt",
+"does": "heat -> no melting",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+}
+]

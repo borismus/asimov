@@ -1,0 +1,152 @@
+[
+  {
+    "id": "sleep-timed-brain-dose",
+    "verdict": "studied",
+    "evidence": "Searched for intranasal dosing timed to slow-wave sleep: the pieces are published separately (anesthesia-boosted nose-to-brain transport in rats; glymphatic flow tracking NREM slow waves; a WARF patent application on stimulus patterning plus real-time drug-delivery timing for brain clearance) but no device or study fires a nasal dose on detected slow-wave sleep.",
+    "url": "https://www.warf.org/wp-content/uploads/technologies/pubapps/P220055US02-Published-Application.pdf"
+  },
+  {
+    "id": "meal-sensing-gut-bacterium",
+    "verdict": "built",
+    "evidence": "Swallowed engineered microbes that secrete GLP-1 and reduce body weight have been demonstrated in mice several times (Lactococcus lactis MG1363-pMG36e-GLP-1, E. coli Nissle secreting a GLP-1 analogue, and a GLP-1R-agonist-secreting S. boulardii yeast); the glucose-sensing trigger and auxotrophic kill switch are the only unbuilt parts, and no human trial was found.",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7959774/"
+  },
+  {
+    "id": "light-silenced-nerve-cuff",
+    "verdict": "built",
+    "evidence": "Optogenetic silencing of pain fibres in a single peripheral nerve via an implanted light conduit has been demonstrated in mice (soft hydrogel optical fibre inhibiting sciatic pain in a chronic inflammatory pain model; earlier 'optocuff' for chronic peripheral optogenetic stimulation); no human trial found, and DARPA funded a commercial program on this in 2016.",
+    "url": "https://physicsworld.com/a/flexible-optical-fibres-deliver-light-to-nerves-for-optogenetic-pain-inhibition/"
+  },
+  {
+    "id": "fullness-capsule",
+    "verdict": "built",
+    "evidence": "Gastro-resistant capsules that release a concentrated nutrient in the ileum to trigger the ileal brake and endogenous GLP-1/PYY exist and have been tested in people (Eudragit S-coated capsules releasing glutamine/palm oil, a diabetes study showing substantial endogenous GLP-1 release from distal nutrient delivery, trial NCT02635659, plus granted patents).",
+    "url": "https://clinicaltrials.gov/study/NCT02635659"
+  },
+  {
+    "id": "light-paced-heart",
+    "verdict": "built",
+    "evidence": "Optogenetic, shock-free termination of ventricular arrhythmia has been demonstrated in ChR2-expressing mouse hearts with epicardial illumination (Bruegmann/Trayanova, JCI 2016), with human-heart feasibility and implanted red-light LED arrays shown only in simulation; no human implant exists.",
+    "url": "https://www.jci.org/articles/view/88950"
+  },
+  {
+    "id": "breath-restoring-light",
+    "verdict": "built",
+    "evidence": "Light-driven diaphragm pacing after cervical cord injury has been demonstrated in rodents: ChR2 activation of phrenic motor neurons restored breathing in a rat cervical lesion model, and a University of Florida mouse study drove rhythmic diaphragm EMG activity with prolonged/closed-loop photostimulation; clinical pacing remains electrical.",
+    "url": "https://mbi.ufl.edu/2022/04/22/optogenics-shown-to-elicit-activity-in-paralyzed-diaphragm-in-mice/"
+  },
+  {
+    "id": "organ-rejuvenation-rinse",
+    "verdict": "built",
+    "evidence": "Senolytics delivered through ex vivo perfusion of discarded human donor livers preserved biliary regenerative capacity lost to senescence (Science Translational Medicine, 2022), and a 2026 Transplant International review proposes machine perfusion as the senotherapeutic delivery window; no clinical transplant trial yet.",
+    "url": "https://aminer.org/pub/63ea1ab490e50fcafd18a4fe/senolytic-treatment-preserves-biliary-regenerative-capacity-lost-through-cellular-senescence-during-cold"
+  },
+  {
+    "id": "zombie-cell-urine-test",
+    "verdict": "built",
+    "evidence": "An injected probe cleaved by a senescence enzyme and read out in urine has been demonstrated: sulfonic-Cy7Gal is cut by senescence-associated beta-galactosidase and the freed fluorophore is renally excreted, with urine signal tracking a controlled senescent-cell load (Nature Communications 2024); the MIT protease/synthetic-urinary-biomarker platform supplies the same architecture for other targets.",
+    "url": "https://link.springer.com/article/10.1038/s41467-024-44903-1"
+  },
+  {
+    "id": "thymus-restart-implant",
+    "verdict": "built",
+    "evidence": "iPSC-derived thymus organoids have been built and implanted: patient-specific thymic organoids support T-cell development with AIRE expression and Treg output (2023), and organoids engrafted into humanized mice produced T cells that mediated cellular and humoral responses (2022); restoring immunity in an aged adult has not been shown.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/36963390/"
+  },
+  {
+    "id": "clear-skull-brain-reader",
+    "verdict": "built",
+    "evidence": "Reading neuronal activity optically through intact skull using adaptive-optics wavefront correction plus a genetically encoded calcium indicator has been demonstrated in mice (HKUST three-photon AO imaging to 750 um with functional calcium imaging, Nature Biotechnology 2022; earlier IMPACT and three-photon GCaMP6s through-skull imaging); nothing human.",
+    "url": "https://www.nature.com/articles/s41587-022-01343-w.pdf"
+  },
+  {
+    "id": "enzyme-lint-filter",
+    "verdict": "built",
+    "evidence": "A washing-machine outlet filter that traps polyester microfibres and digests them with PETase into terephthalic acid and ethylene glycol was built and demonstrated by the Exeter PETexe iGEM team (3D-printed prototype, ~75% claimed capture-and-breakdown, reportedly discussed with Miele); no peer-reviewed data or product.",
+    "url": "https://phys.org/news/2019-09-machine-filter-plastic-microfibres.html"
+  },
+  {
+    "id": "road-dust-drain-filter",
+    "verdict": "studied",
+    "evidence": "Stormwater inserts that retain tyre particles and 6PPD-Q exist (biochar/woodchip filter socks, permeable pavement, bioretention with >97% retention of particle-bound 6PPD-Q) and soil studies show 6PPD-Q degradation is microbially mediated with ~14-day half-lives, but no filter seeds or feeds microbes/enzymes to degrade tyre rubber in the drain.",
+    "url": "https://labs.wsu.edu/jayakaran/documents/2024/01/mitigating-tire-wear-particles-and-tire-additive-chemicals-in-stormwater-with-permeable-pavements.pdf"
+  },
+  {
+    "id": "fluorine-eating-enzyme",
+    "verdict": "studied",
+    "evidence": "Protein-language-model design of candidate defluorinases has been attempted (68 candidates, a handful expressed, PFOA activity untested) and a natural HAD-II defluorinase shows modest fluoride release, plus commercial enzyme-design partnerships; no designed enzyme or enzyme column has been shown to defluorinate PFAS in water.",
+    "url": "https://www.biorxiv.org/content/10.1101/2024.10.28.620469.full.pdf"
+  },
+  {
+    "id": "origami-filter-membrane",
+    "verdict": "studied",
+    "evidence": "DNA origami pores with exact apertures have been built and shown to span lipid membranes, conduct ions and pass water, and origami nanoplates have been laid over solid-state pores as size-selective lids, but two searches found no origami-pore array tiled into a working filtration or desalination membrane.",
+    "url": "https://www.ucl.ac.uk/news/2018/feb/building-nano-scale-filter-using-dna"
+  },
+  {
+    "id": "brine-metal-binder",
+    "verdict": "studied",
+    "evidence": "Designed lithium-binding proteins are an active funded program (an ARIA-backed UK effort, GBP 6.2M, screening thousands of protein variants for Li/Na-selective membranes; a 2026 grant to deep-learn Li-binding scaffolds and yeast-display screen them) but no peer-reviewed designed-protein sorbent run on brine in a column was found.",
+    "url": "https://interestingengineering.com/energy/protein-membranes-lithium-extraction-uk"
+  },
+  {
+    "id": "continuous-drug-monitor",
+    "verdict": "built",
+    "evidence": "Implanted affinity-binder sensors already report drug levels continuously in vivo: an electrochemical aptamer probe tracked doxorubicin in real time at multiple tumour sites in live rodents (Science Advances 2022), aptamer sensors measured four drugs for hours in awake rats, and implantable aptamer-graphene microtransistors give exactly the graphene-FET readout proposed (demonstrated for dopamine, authors note swapping aptamers for drugs).",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/34995112/"
+  },
+  {
+    "id": "programmable-smell-chip",
+    "verdict": "built",
+    "evidence": "Cell-array smell chips with genetically encoded fluorescent readout exist: seven HEK293 lines each expressing one olfactory receptor plus GCaMP6 detected 49 VOCs down to ppb, an insect-cell microwell array with a calcium reporter was used for cancer biomarkers in urine (2025 preprint), and a granted patent covers a multiwell cell-based olfactory diagnostic; only the de novo designed receptors are missing.",
+    "url": "https://www.biorxiv.org/content/10.1101/2023.04.28.538535.full.pdf"
+  },
+  {
+    "id": "plaque-unknotter",
+    "verdict": "built",
+    "evidence": "Engineered disaggregases tuned to one aggregate have been built and shown to work: Hsp104 pore-loop variants selective for alpha-synuclein disaggregated it and reduced dopaminergic neurodegeneration in a C. elegans Parkinson's model (Shorter lab), and human HTRA1 was shown to disassemble alpha-synuclein fibrils into non-seeding species; nose-spray delivery to humans is untested.",
+    "url": "https://www.biorxiv.org/content/10.1101/2020.04.15.043935.full.pdf"
+  },
+  {
+    "id": "transplant-tolerance-patch",
+    "verdict": "built",
+    "evidence": "Locally delivered checkpoint agonism for graft tolerance has been demonstrated: PD-L1-presenting PEG microgels around islet allografts gave long-term graft survival with local Treg accumulation in diabetic mice (Science Advances 2020), with linker-length follow-ups, a FasL/PD-L1 hydrogel (Nat Commun 2024) and a hydrogel patent; still preclinical and some versions needed brief rapamycin.",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7455180"
+  },
+  {
+    "id": "plaque-eating-immune-cells",
+    "verdict": "studied",
+    "evidence": "A CAR macrophage targeting CD47-high apoptotic cells plus LXR-targeting surface nanoparticles was published (Adv Mater 2024) but tested only in vitro, with the authors stating in vivo work is still needed; plaque reduction in mice has been shown with other engineered cells (IL-10-overexpressing macrophages, FAP.CAR-NKT cells), so the CAR-macrophage plaque-clearance device itself is unbuilt.",
+    "url": "https://kblee.rutgers.edu/wp-content/uploads/Advanced-Materials-2024-Chuang-Enhancing-CAR-Macrophage-Efferocytosis-Via-Surface-Engineered-Lipid-Nanoparticles-5.pdf"
+  },
+  {
+    "id": "gene-editing-phage-pill",
+    "verdict": "built",
+    "evidence": "Orally dosed M13 phage delivered a programmable CRISPR-Cas9 payload into E. coli in the mouse gut, producing chromosomal deletions and sequence-specific depletion (Lam et al., Cell Reports 2021); aiming the guide at a resistance gene to disarm rather than kill the carrier is covered by a patent application but was not demonstrated.",
+    "url": "https://nayak.ucsf.edu/sites/g/files/tkssra7701/f/wysiwyg/Lam2021_PhageFinal.pdf"
+  },
+  {
+    "id": "toxin-eating-gut-bacterium",
+    "verdict": "built",
+    "evidence": "E. coli Nissle 1917 was rationally engineered as a live biotherapeutic to consume uremic toxin precursors, converting L-tyrosine to nontoxic p-coumaric acid via tyrosine ammonia lyase (ACS Synth Biol 2024); no CKD patient trial found, and indole/tryptophanase targeting remains at the proposal stage.",
+    "url": "https://aminer.org/pub/6614b80913fb2c6cf63c4c69/rational-engineering-of-i-escherichia-coli-i-nissle-as-live-biotherapeutic-to"
+  },
+  {
+    "id": "living-sunscreen",
+    "verdict": "studied",
+    "evidence": "Patents claim topically applied engineered commensal Staphylococcus epidermidis secreting the MAA shinorine as a self-renewing living sunscreen, and shinorine production has been engineered into Pseudomonas putida and cyanobacteria, but no in-use demonstration on skin was found (the living-sunscreen version exists as patents and an iGEM design project).",
+    "url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12545936"
+  },
+  {
+    "id": "methane-free-rumen-bolus",
+    "verdict": "studied",
+    "evidence": "Long-acting rumen boluses that cut methane are built and in trials (Ruminant BioTech's bromoform bolus, ~90% reduction over 80 days) but work by chemically inhibiting methanogens; seeding and feeding hydrogen-eating acetogens is a long-discussed strategy that a CSIRO review judged unlikely to displace methanogens on its own, with no bolus product or demonstration found.",
+    "url": "https://publish.csiro.au/cp/AR99004"
+  },
+  {
+    "id": "nitrogen-fixing-wheat",
+    "verdict": "studied",
+    "evidence": "CRISPR-edited hexaploid wheat with raised apigenin exudation boosted free-living soil bacterial nitrogen fixation and yield under low fertiliser (UC Davis, Plant Biotechnology 2025) but deliberately avoids nodules, and nodulation-switch engineering in cereals (ENSA, a reported two-residue immunity-receptor edit enabling nodules in barley) remains unverified and undemonstrated as a nodulating wheat with a matched inoculant.",
+    "url": "https://www.universityofcalifornia.edu/news/wheat-makes-its-own-fertilizer"
+  }
+]

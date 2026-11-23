@@ -1,0 +1,649 @@
+[
+ {
+  "id": "magnetocaloric-effect",
+  "links": [],
+  "year": 1917,
+  "inventor": "Pierre Weiss and Auguste Piccard",
+  "location": "Switzerland"
+ },
+ {
+  "id": "magnetohydrodynamics",
+  "links": [],
+  "year": 1942,
+  "inventor": "Hannes Alfvén",
+  "location": "Sweden"
+ },
+ {
+  "id": "magnetoresistance",
+  "links": [],
+  "year": 1856,
+  "inventor": "William Thomson (Lord Kelvin)",
+  "location": "Scotland"
+ },
+ {
+  "id": "magnetostriction",
+  "links": [],
+  "year": 1842,
+  "inventor": "James Prescott Joule",
+  "location": "England"
+ },
+ {
+  "id": "magnus-effect",
+  "links": [],
+  "year": 1852,
+  "inventor": "Heinrich Gustav Magnus",
+  "location": "Germany"
+ },
+ {
+  "id": "marangoni-effect",
+  "links": [],
+  "year": 1865,
+  "inventor": "Carlo Marangoni",
+  "location": "Italy"
+ },
+ {
+  "id": "metal-fatigue",
+  "links": [],
+  "year": 1837,
+  "inventor": "Wilhelm Albert",
+  "location": "Germany"
+ },
+ {
+  "id": "mirage",
+  "links": [],
+  "year": 1798,
+  "inventor": "Gaspard Monge",
+  "location": "Egypt"
+ },
+ {
+  "id": "moire-effect",
+  "links": [],
+  "year": 1874,
+  "inventor": "Lord Rayleigh",
+  "location": "England"
+ },
+ {
+  "id": "negative-refraction",
+  "links": [],
+  "year": 1967,
+  "inventor": "Victor Veselago",
+  "location": "Russia"
+ },
+ {
+  "id": "negative-thermal-expansion",
+  "links": [],
+  "year": 1996,
+  "inventor": "Arthur Sleight",
+  "location": "United States"
+ },
+ {
+  "id": "nucleation",
+  "links": [
+   {
+    "card": "cloud-seeding",
+    "effect": "droplets and ice form around a seed",
+    "op": "replace",
+    "replaces": "cloud-chamber",
+    "why": "Rule 9: Nucleation (Aitken: vapour needs specks to form droplets) states the seeding effect more directly than the Cloud chamber, which stood in for it."
+   },
+   {
+    "card": "cloud-chamber",
+    "effect": "droplets form on the ions a particle leaves",
+    "op": "add",
+    "why": "The track shows because droplets start on the ions; the Cloud chamber was its own effect's card only while no card stated it."
+   },
+   {
+    "card": "bubble-chambers",
+    "effect": "bubbles form on the ions a particle leaves",
+    "op": "add",
+    "why": "The trail is bubbles starting on ions along the track; Ionizing radiation covers only the ionizing."
+   }
+  ],
+  "year": 1880,
+  "inventor": "John Aitken",
+  "location": "Scotland"
+ },
+ {
+  "id": "ostwald-ripening",
+  "links": [],
+  "year": 1896,
+  "inventor": "Wilhelm Ostwald",
+  "location": "Germany"
+ },
+ {
+  "id": "ouzo-effect",
+  "links": [],
+  "year": 2003,
+  "inventor": "Stephen Vitale and Joseph Katz",
+  "location": "United States"
+ },
+ {
+  "id": "pascals-law",
+  "links": [],
+  "year": 1653,
+  "inventor": "Blaise Pascal",
+  "location": "France"
+ },
+ {
+  "id": "peltier-effect",
+  "links": [],
+  "year": 1834,
+  "inventor": "Jean Charles Athanase Peltier",
+  "location": "France"
+ },
+ {
+  "id": "penning-effect",
+  "links": [],
+  "year": 1927,
+  "inventor": "Frans Michel Penning",
+  "location": "Netherlands"
+ },
+ {
+  "id": "phononic-crystal",
+  "links": [],
+  "year": 1993,
+  "inventor": "Manvyr Kushwaha",
+  "location": "Mexico"
+ },
+ {
+  "id": "phosphorescence",
+  "links": [],
+  "year": 1602,
+  "inventor": "Vincenzo Cascariolo",
+  "location": "Italy"
+ },
+ {
+  "id": "photoacoustic-effect",
+  "links": [],
+  "year": 1880,
+  "inventor": "Alexander Graham Bell",
+  "location": "United States"
+ },
+ {
+  "id": "photochromism",
+  "links": [],
+  "year": 1867,
+  "inventor": "Carl Julius Fritzsche",
+  "location": "Russia"
+ },
+ {
+  "id": "photoconductivity",
+  "links": [
+   {
+    "card": "xerography",
+    "effect": "light lets a coating conduct",
+    "op": "replace",
+    "replaces": "photovoltaic-cells",
+    "why": "Rule 9: the drum works by photoconductivity, which this card states directly; Photovoltaic cells was a stand-in."
+   },
+   {
+    "card": "photocopying",
+    "effect": "light lets a coating conduct",
+    "op": "replace",
+    "replaces": "photovoltaic-cells",
+    "why": "Same effect as Xerography (selenium drum discharged by light); this card names it directly."
+   }
+  ],
+  "year": 1873,
+  "inventor": "Willoughby Smith",
+  "location": "England"
+ },
+ {
+  "id": "photodissociation",
+  "links": [
+   {
+    "card": "photographic-negative",
+    "effect": "light darkens silver salts",
+    "op": "replace",
+    "replaces": "photography",
+    "why": "Rule 9: Schulze's card states 'silver salts darken where light hits them' directly; Photography (a practice) stood in only for want of a card."
+   },
+   {
+    "card": "dry-plates",
+    "effect": "light darkens silver salts",
+    "op": "replace",
+    "replaces": "photography",
+    "why": "As for Photographic negative: the emulsion's silver bromide darkens in light."
+   },
+   {
+    "card": "home-photography",
+    "effect": "light darkens silver salts",
+    "op": "replace",
+    "replaces": "photography",
+    "why": "As for Photographic negative: the film's silver salts."
+   },
+   {
+    "card": "motion-pictures",
+    "effect": "light darkens silver salts",
+    "op": "replace",
+    "replaces": "photography",
+    "why": "As for Photographic negative: the film's silver salts."
+   },
+   {
+    "card": "photography",
+    "effect": "light darkens silver salts",
+    "op": "add",
+    "why": "Once it's no longer the card for the effect, Photography (daguerreotype: light-struck silver iodide) works by it like the others; no part carries it."
+   }
+  ],
+  "year": 1717,
+  "inventor": "Johann Heinrich Schulze",
+  "location": "Germany"
+ },
+ {
+  "id": "photophoresis",
+  "links": [
+   {
+    "card": "radiometer",
+    "effect": "gas pushes harder off the warm side",
+    "op": "replace",
+    "replaces": "kinetic-theory-of-gases",
+    "why": "Rule 9: Ehrenhaft's card states the effect itself (the light-heated side pushes harder on the gas); Kinetic theory is a theory that stood in. Borderline: it's stated for specks rather than vanes."
+   }
+  ],
+  "year": 1918,
+  "inventor": "Felix Ehrenhaft",
+  "location": "Austria"
+ },
+ {
+  "id": "piezoresistive-effect",
+  "links": [
+   {
+    "card": "microphone",
+    "effect": "pressure changes carbon's resistance",
+    "op": "fillGap",
+    "replaces": "Contact resistance",
+    "why": "Close stand-in (rule 9): squeezing changes resistance is the effect the gap names; strictly the carbon microphone's change is at the grain contacts."
+   }
+  ],
+  "year": 1856,
+  "inventor": "Lord Kelvin",
+  "location": "Scotland"
+ },
+ {
+  "id": "plateau-rayleigh-instability",
+  "links": [],
+  "year": 1873,
+  "inventor": "Joseph Plateau",
+  "location": "Belgium"
+ },
+ {
+  "id": "pockels-effect",
+  "links": [],
+  "year": 1893,
+  "inventor": "Friedrich Pockels",
+  "location": "Germany"
+ },
+ {
+  "id": "poisson-effect",
+  "links": [],
+  "year": 1829,
+  "inventor": "Siméon Denis Poisson",
+  "location": "France"
+ },
+ {
+  "id": "precession",
+  "links": [],
+  "year": 1749,
+  "inventor": "Jean le Rond d'Alembert",
+  "location": "France"
+ },
+ {
+  "id": "pyroelectric-effect",
+  "links": [],
+  "year": -314,
+  "inventor": "Theophrastus",
+  "location": "Greece"
+ },
+ {
+  "id": "pyrolysis",
+  "links": [],
+  "year": null,
+  "inventor": null,
+  "location": null
+ },
+ {
+  "id": "pyrophoricity",
+  "links": [],
+  "year": 1711,
+  "inventor": "Wilhelm Homberg",
+  "location": "France"
+ },
+ {
+  "id": "radioluminescence",
+  "links": [
+   {
+    "card": "oscilloscope",
+    "effect": "a screen glows where the beam strikes it",
+    "op": "add",
+    "why": "Its own key effect (the Phosphor screen has no card) and no link yet; a close stand-in, since an electron beam's glow is strictly cathodoluminescence."
+   }
+  ],
+  "year": 1903,
+  "inventor": "William Crookes",
+  "location": "England"
+ },
+ {
+  "id": "rayleigh-scattering",
+  "links": [],
+  "year": 1871,
+  "inventor": "Lord Rayleigh",
+  "location": "England"
+ },
+ {
+  "id": "rayleigh-taylor-instability",
+  "links": [],
+  "year": 1883,
+  "inventor": "Lord Rayleigh",
+  "location": "England"
+ },
+ {
+  "id": "resonance-vibration",
+  "links": [
+   {
+    "card": "electronic-watch",
+    "effect": "a tuning fork rings at its own steady pitch",
+    "op": "add",
+    "why": "The Accutron keeps time by a fork vibrating at its natural frequency; the Tuning fork part has no card, so it stays on the watch."
+   },
+   {
+    "card": "quartz-oscillator",
+    "effect": "a crystal rings at its own steady pitch",
+    "op": "add",
+    "why": "Different effect from piezoelectricity (which only drives and reads it): the crystal keeps time because it responds to one frequency only."
+   }
+  ],
+  "year": 1638,
+  "inventor": "Galileo Galilei",
+  "location": "Italy"
+ },
+ {
+  "id": "shape-memory-alloy",
+  "links": [],
+  "year": 1962,
+  "inventor": "William J. Buehler",
+  "location": "United States"
+ },
+ {
+  "id": "shear-thickening",
+  "links": [],
+  "year": 1885,
+  "inventor": "Osborne Reynolds",
+  "location": "England"
+ },
+ {
+  "id": "skin-effect",
+  "links": [],
+  "year": 1883,
+  "inventor": "Horace Lamb",
+  "location": "England"
+ },
+ {
+  "id": "sputtering",
+  "links": [],
+  "year": 1852,
+  "inventor": "William Robert Grove",
+  "location": "England"
+ },
+ {
+  "id": "stick-slip",
+  "links": [],
+  "year": 1939,
+  "inventor": "Frank Bowden and L. Leben",
+  "location": "England"
+ },
+ {
+  "id": "stokes-drift",
+  "links": [],
+  "year": 1847,
+  "inventor": "George Gabriel Stokes",
+  "location": "England"
+ },
+ {
+  "id": "stroboscopic-effect",
+  "links": [
+   {
+    "card": "motion-pictures",
+    "effect": "the eye blends quick still pictures into motion",
+    "op": "fillGap",
+    "replaces": "Persistence of vision",
+    "why": "Close stand-in (rule 9): Plateau and Stampfer's slotted discs were the first moving pictures, and a projector's shutter shows frames as brief flashes; borderline, as the card's text is about freezing motion."
+   }
+  ],
+  "year": 1832,
+  "inventor": "Joseph Plateau and Simon Stampfer",
+  "location": "Belgium and Austria"
+ },
+ {
+  "id": "supercooling",
+  "links": [
+   {
+    "card": "cloud-seeding",
+    "effect": "cloud droplets stay liquid below freezing until seeded",
+    "op": "add",
+    "why": "Schaefer's dry-ice seeding works on supercooled clouds, as the card says; different from the seed itself (nucleation)."
+   }
+  ],
+  "year": 1724,
+  "inventor": "Daniel Gabriel Fahrenheit",
+  "location": "Netherlands"
+ },
+ {
+  "id": "superelasticity",
+  "links": [],
+  "year": 1932,
+  "inventor": "Arne Ölander",
+  "location": "Sweden"
+ },
+ {
+  "id": "superheating",
+  "links": [
+   {
+    "card": "bubble-chambers",
+    "effect": "a liquid stays liquid past its boiling point until disturbed",
+    "op": "add",
+    "why": "Glaser's chamber is a superheated liquid that boils along a particle's track; the card names it."
+   }
+  ],
+  "year": 1846,
+  "inventor": "François Donny",
+  "location": "Belgium"
+ },
+ {
+  "id": "superhydrophilicity",
+  "links": [],
+  "year": 1997,
+  "inventor": "Rong Wang, Kazuhito Hashimoto and Akira Fujishima",
+  "location": "Japan"
+ },
+ {
+  "id": "superplasticity",
+  "links": [],
+  "year": 1934,
+  "inventor": "C. E. Pearson",
+  "location": "England"
+ },
+ {
+  "id": "supersaturation",
+  "links": [
+   {
+    "card": "cloud-chamber",
+    "effect": "air holds more vapour than it should until something sets it off",
+    "op": "add",
+    "why": "Wilson's chamber expands air to make its vapour supersaturated, the card's own example."
+   }
+  ],
+  "year": 1794,
+  "inventor": "Johann Tobias Lowitz",
+  "location": "Russia"
+ },
+ {
+  "id": "surface-acoustic-wave",
+  "links": [],
+  "year": 1885,
+  "inventor": "Lord Rayleigh",
+  "location": "England"
+ },
+ {
+  "id": "surface-tension",
+  "links": [],
+  "year": 1805,
+  "inventor": "Thomas Young",
+  "location": "England"
+ },
+ {
+  "id": "surfactant-action",
+  "links": [],
+  "year": 1917,
+  "inventor": "Irving Langmuir",
+  "location": "United States"
+ },
+ {
+  "id": "synchrotron-radiation",
+  "links": [],
+  "year": 1947,
+  "inventor": "Frank Elder, Anatole Gurewitsch, Robert Langmuir and Herbert Pollock",
+  "location": "United States"
+ },
+ {
+  "id": "thermoacoustic-effect",
+  "links": [],
+  "year": 1850,
+  "inventor": "Carl Sondhauss",
+  "location": "Germany"
+ },
+ {
+  "id": "thermochromism",
+  "links": [],
+  "year": null,
+  "inventor": null,
+  "location": null
+ },
+ {
+  "id": "thermoluminescence",
+  "links": [],
+  "year": 1663,
+  "inventor": "Robert Boyle",
+  "location": "England"
+ },
+ {
+  "id": "thermophoresis",
+  "links": [],
+  "year": 1870,
+  "inventor": "John Tyndall",
+  "location": "England"
+ },
+ {
+  "id": "thixotropy",
+  "links": [],
+  "year": 1923,
+  "inventor": "Emil Schalek and Árpád Szegvári",
+  "location": "Germany"
+ },
+ {
+  "id": "total-internal-reflection",
+  "links": [
+   {
+    "card": "fiber-optics",
+    "effect": "total internal reflection",
+    "op": "replace",
+    "replaces": "refraction",
+    "why": "Rule 9: this card states the effect directly; Refraction stood in."
+   },
+   {
+    "card": "nicol-prism",
+    "effect": "light at a shallow angle is fully reflected",
+    "op": "add",
+    "why": "The prism throws one of the two rays out by total reflection at the balsam layer, a different effect from double refraction."
+   }
+  ],
+  "year": 1611,
+  "inventor": "Johannes Kepler",
+  "location": "Czech Republic"
+ },
+ {
+  "id": "townsend-discharge",
+  "links": [
+   {
+    "card": "geiger-counter",
+    "effect": "one electron multiplies into an avalanche of charge",
+    "op": "add",
+    "why": "The avalanche turns one ion into a click, a different effect from the ionizing; the card names the Geiger counter. The Spark chamber gets it through its counters."
+   }
+  ],
+  "year": 1897,
+  "inventor": "John Sealy Townsend",
+  "location": "England"
+ },
+ {
+  "id": "triboluminescence",
+  "links": [],
+  "year": 1605,
+  "inventor": "Francis Bacon",
+  "location": "England"
+ },
+ {
+  "id": "turbulence",
+  "links": [],
+  "year": 1883,
+  "inventor": "Osborne Reynolds",
+  "location": "England"
+ },
+ {
+  "id": "tyndall-effect",
+  "links": [
+   {
+    "card": "ultramicroscope",
+    "effect": "small particles scatter light",
+    "op": "fillGap",
+    "replaces": "Light scattering",
+    "why": "The card states it and names Zsigmondy's ultramicroscope."
+   }
+  ],
+  "year": 1869,
+  "inventor": "John Tyndall",
+  "location": "England"
+ },
+ {
+  "id": "ultrasonic-capillary-effect",
+  "links": [],
+  "year": 1961,
+  "inventor": "Evgeny Konovalov",
+  "location": "Belarus"
+ },
+ {
+  "id": "viscoelasticity",
+  "links": [],
+  "year": 1835,
+  "inventor": "Wilhelm Weber",
+  "location": "Germany"
+ },
+ {
+  "id": "vortex-ring",
+  "links": [],
+  "year": 1858,
+  "inventor": "Hermann von Helmholtz",
+  "location": "Germany"
+ },
+ {
+  "id": "vortex-tube-effect",
+  "links": [],
+  "year": 1931,
+  "inventor": "Georges Ranque",
+  "location": "France"
+ },
+ {
+  "id": "water-hammer",
+  "links": [],
+  "year": 1898,
+  "inventor": "Nikolai Zhukovsky",
+  "location": "Russia"
+ },
+ {
+  "id": "wiegand-effect",
+  "links": [],
+  "year": 1974,
+  "inventor": "John R. Wiegand",
+  "location": "United States"
+ }
+]

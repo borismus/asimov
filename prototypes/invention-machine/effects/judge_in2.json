@@ -1,0 +1,353 @@
+[
+{
+"card": "hydrogen-and-water",
+"title": "Hydrogen and water",
+"year": 1784,
+"effect": "burning hydrogen makes nothing but water",
+"does": "hydrogen + oxygen -> heat, water",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "titanium",
+"title": "Titanium",
+"year": 1791,
+"effect": "titanium is strong, light and doesn't corrode",
+"does": "load -> light, lasting part",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "chromium",
+"title": "Chromium",
+"year": 1797,
+"effect": "chromium compounds come in many vivid colours",
+"does": "chemical -> pigment",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "beryllium",
+"title": "Beryllium",
+"year": 1798,
+"effect": "beryllium is very light yet melts only at great heat",
+"does": "heat -> light, stable part",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "decomposition-of-water",
+"title": "Decomposition of water",
+"year": 1800,
+"effect": "a current splits water into hydrogen and oxygen",
+"does": "current -> hydrogen and oxygen",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "tantalum",
+"title": "Tantalum",
+"year": 1802,
+"effect": "tantalum resists corrosion almost completely",
+"does": "chemicals -> no change",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "sodium-and-potassium",
+"title": "Sodium and potassium",
+"year": 1807,
+"effect": "a current pulls reactive metals out of their salts",
+"does": "current -> pure metal",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "liquefying-gases",
+"title": "Liquefying gases",
+"year": 1823,
+"effect": "cold plus pressure turns gases into liquids",
+"does": "cold + pressure -> liquid",
+"strength": "strong",
+"alsoCards": [
+"liquid-oxygen",
+"liquid-ammonia"
+],
+"note": null
+},
+{
+"card": "diastase",
+"title": "Diastase",
+"year": 1833,
+"effect": "an enzyme turns starch into sugar",
+"does": "starch -> sugar",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "dry-ice",
+"title": "Dry ice",
+"year": 1835,
+"effect": "solid carbon dioxide cools far below freezing water",
+"does": "dry ice -> deep cold",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "pepsin",
+"title": "Pepsin",
+"year": 1836,
+"effect": "an enzyme breaks down protein",
+"does": "protein -> digested pieces",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "doppler-effect",
+"title": "Doppler effect",
+"year": 1842,
+"effect": "a moving source's pitch rises approaching, falls receding",
+"does": "motion -> frequency shift",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "quaternions",
+"title": "Quaternions",
+"year": 1843,
+"effect": "four-part numbers make 3D rotations simple arithmetic",
+"does": "rotation -> arithmetic",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "puerperal-fever",
+"title": "Puerperal fever",
+"year": 1847,
+"effect": "germs travel on unwashed hands from patient to patient",
+"does": "contact -> infection",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "spectral-line-shift",
+"title": "Spectral line shift",
+"year": 1848,
+"effect": "a moving light source shifts its colours red or blue",
+"does": "motion -> colour shift",
+"strength": "strong",
+"alsoCards": [
+"spectroscopic-binaries",
+"nebular-velocities"
+],
+"note": null
+},
+{
+"card": "joule-thomson-effect",
+"title": "Joule-thomson effect",
+"year": 1852,
+"effect": "an expanding gas cools itself",
+"does": "expansion -> cold",
+"strength": "strong",
+"alsoCards": [],
+"note": "basis of gas liquefaction and refrigeration"
+},
+{
+"card": "spectral-lines-and-elements",
+"title": "Spectral lines and elements",
+"year": 1859,
+"effect": "each element's light has its own lines",
+"does": "light -> chemical identity",
+"strength": "strong",
+"alsoCards": [],
+"note": "close to 'each gas glows its own colours'; this is elements in flames"
+},
+{
+"card": "organic-synthesis",
+"title": "Organic synthesis",
+"year": 1860,
+"effect": "life's molecules can be made from non-living chemicals",
+"does": "simple chemicals -> organic compounds",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "germ-theory-of-disease",
+"title": "Germ theory of disease",
+"year": 1862,
+"effect": "microbes cause contagious disease",
+"does": "germ -> disease",
+"strength": "strong",
+"alsoCards": [],
+"note": "umbrella for many existing germ effects"
+},
+{
+"card": "hemoglobin",
+"title": "Hemoglobin",
+"year": 1862,
+"effect": "hemoglobin carries oxygen in the blood",
+"does": "oxygen -> bound carrier",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "greenhouse-effect",
+"title": "Greenhouse effect",
+"year": 1863,
+"effect": "some gases let sunlight in but trap heat",
+"does": "light -> trapped heat",
+"strength": "strong",
+"alsoCards": [
+"venuss-atmosphere",
+"greenhouse-effect-effects"
+],
+"note": null
+},
+{
+"card": "genetics",
+"title": "Genetics",
+"year": 1865,
+"effect": "traits pass on in predictable ratios",
+"does": "parent genes -> offspring traits",
+"strength": "strong",
+"alsoCards": [],
+"note": "Mendelian inheritance; breeding predictions"
+},
+{
+"card": "maxwells-equations",
+"title": "Maxwell’s equations",
+"year": 1865,
+"effect": "electric oscillations send out light-speed waves",
+"does": "oscillating charge -> radiated wave",
+"strength": "strong",
+"alsoCards": [],
+"note": "close to 'radio waves'"
+},
+{
+"card": "law-of-mass-action",
+"title": "Law of mass action",
+"year": 1867,
+"effect": "adding more of one chemical pushes a reaction forward",
+"does": "concentration -> reaction direction",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "islets-of-langerhans",
+"title": "Islets of langerhans",
+"year": 1869,
+"effect": "pancreas cell clusters control blood sugar",
+"does": "hormone -> blood sugar level",
+"strength": "strong",
+"alsoCards": [],
+"note": "source of insulin"
+},
+{
+"card": "plant-strains",
+"title": "Plant strains",
+"year": 1871,
+"effect": "careful selection breeds new plant varieties",
+"does": "selection -> new strains",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "platelets",
+"title": "Platelets",
+"year": 1873,
+"effect": "platelets clump to clot blood",
+"does": "wound -> clot",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "protein-size",
+"title": "Protein size",
+"year": 1877,
+"effect": "big molecules trapped behind a membrane draw water in",
+"does": "trapped solute -> osmotic pressure",
+"strength": "strong",
+"alsoCards": [],
+"note": "osmotic pressure; can lift water or weigh molecules"
+},
+{
+"card": "heat-and-radiation",
+"title": "Heat and radiation",
+"year": 1879,
+"effect": "glow rises with the fourth power of temperature",
+"does": "temperature -> radiated power",
+"strength": "strong",
+"alsoCards": [
+"wavelengths-and-temperature"
+],
+"note": "Stefan's law; non-contact thermometry"
+},
+{
+"card": "charged-cathode-rays",
+"title": "Charged cathode rays",
+"year": 1880,
+"effect": "electron beams carry negative charge",
+"does": "charge -> steerable beam",
+"strength": "strong",
+"alsoCards": [],
+"note": "beams can be bent by fields"
+},
+{
+"card": "phagocytes",
+"title": "Phagocytes",
+"year": 1883,
+"effect": "white cells swallow bacteria",
+"does": "bacteria -> engulfed",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "cocaine",
+"title": "Cocaine",
+"year": 1884,
+"effect": "a drug numbs nerves where it is applied",
+"does": "drug -> local numbness",
+"strength": "strong",
+"alsoCards": [],
+"note": "local anesthesia"
+},
+{
+"card": "fingerprints",
+"title": "Fingerprints",
+"year": 1885,
+"effect": "everyone's fingerprints are unique",
+"does": "finger ridges -> identity",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "fluorine",
+"title": "Fluorine",
+"year": 1886,
+"effect": "fluorine grabs onto almost anything",
+"does": "contact -> violent reaction",
+"strength": "strong",
+"alsoCards": [],
+"note": "most reactive element"
+}
+]

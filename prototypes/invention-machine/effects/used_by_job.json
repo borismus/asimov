@@ -1,0 +1,297 @@
+{
+"absorbs shocks": [
+"compressed gas pushes back",
+"elasticity"
+],
+"accelerates particles": [
+"a magnet pushes a current",
+"mass grows with speed"
+],
+"amplifies a signal": [
+"energy levels",
+"excited atoms copy the light passing through",
+"radio waves",
+"thermionic emission"
+],
+"bears the load": [
+"each stone pushes back as hard as it's pushed"
+],
+"bends light": [
+"dispersion",
+"light waves interfere",
+"refraction"
+],
+"carries heat": [
+"latent heat"
+],
+"carries light": [
+"total internal reflection"
+],
+"carries traffic": [
+"rolling friction"
+],
+"changes voltage": [
+"induction"
+],
+"colors": [
+"dyes stain some parts of a cell and not others"
+],
+"communicates": [
+"orbit",
+"radio waves",
+"the ionosphere reflects radio"
+],
+"computes": [
+"Boolean logic",
+"adding logarithms multiplies numbers",
+"binary numbers",
+"integration",
+"place value"
+],
+"controls the current": [
+"one-way conduction in crystals",
+"quantum tunnelling",
+"thermionic emission"
+],
+"detects objects": [
+"piezoelectricity",
+"signal delay gives distance",
+"sound echoes"
+],
+"detects radiation": [
+"gas molecules push harder off the warm side",
+"radiation ionizes what it passes through"
+],
+"diagnoses": [
+"X-rays pass through tissue unevenly",
+"muscles work by electrical impulses",
+"nerve signals are electrical",
+"reconstruction from projections",
+"sound is a vibration"
+],
+"emits electrons": [
+"electron beams",
+"thermionic emission"
+],
+"explodes": [
+"burns all at once, without air",
+"burns with oxygen from the air"
+],
+"finds direction": [
+"the Earth is a magnet"
+],
+"fires projectiles": [
+"a spinning body holds its axis",
+"buoyancy",
+"elasticity",
+"reaction thrust"
+],
+"flies": [
+"buoyancy",
+"reaction thrust"
+],
+"gathers light": [
+"a curved mirror focuses light",
+"light waves interfere",
+"orbit"
+],
+"grows cultures": [
+"cells live outside the body",
+"viruses multiply only inside living cells"
+],
+"grows food": [
+"a plant hormone drives growth",
+"plants need nitrogen from the soil"
+],
+"ignites fuel": [
+"burns with oxygen from the air",
+"rubbing makes heat"
+],
+"impales": [
+"momentum carries into the strike"
+],
+"insulates": [
+"heat radiates as invisible light"
+],
+"is an ingredient": [
+"burns all at once, without air"
+],
+"keeps time": [
+"atomic resonance",
+"piezoelectricity",
+"the Earth's turning moves the shadow"
+],
+"kills bacteria": [
+"a chemical kills the germ but not the patient"
+],
+"magnifies": [
+"electrons travel as waves",
+"light waves interfere",
+"quantum tunnelling",
+"refraction"
+],
+"makes a magnetic field": [
+"a current makes a magnet"
+],
+"makes electricity": [
+"a reaction drives a current",
+"catalysis",
+"conduction",
+"induction",
+"photoelectric effect",
+"static charge"
+],
+"makes heat": [
+"a magnet pushes a current",
+"a neutron splits a heavy atom, freeing more neutrons",
+"a neutron turns one element into another",
+"some atoms soak up neutrons"
+],
+"makes light": [
+"burns with oxygen from the air",
+"capillary action",
+"each gas glows its own colours",
+"excited atoms copy the light passing through",
+"gas glows when current passes",
+"hot things glow",
+"light comes in photons",
+"one-way conduction in crystals"
+],
+"makes rain": [
+"droplets form around a seed"
+],
+"makes x-rays": [
+"electrons hitting metal make X-rays",
+"thermionic emission"
+],
+"measures": [
+"a current makes a magnet",
+"a heavy mass stays put while the ground moves",
+"a lever balances equal weights",
+"a magnet pushes a current",
+"atmospheric pressure",
+"light waves interfere",
+"liquids expand when heated",
+"orbit",
+"resistance"
+],
+"modifies organisms": [
+"a cell follows genes put into it"
+],
+"numbs pain": [
+"a drug fits the nerves' pain receptors",
+"nerve signals are electrical"
+],
+"polarizes light": [
+"some crystals pass light vibrating one way only",
+"some crystals split light in two"
+],
+"prepares food": [
+"burns with oxygen from the air",
+"gas dissolves in water under pressure",
+"rubbing makes heat",
+"yeast turns sugar into alcohol"
+],
+"preserves food": [
+"heat kills microbes"
+],
+"prevents disease": [
+"the body learns to fight a germ"
+],
+"prints": [
+"light lets a coating conduct",
+"static charge"
+],
+"protects": [
+"conduction"
+],
+"provides lift": [
+"buoyancy",
+"heating a gas expands it"
+],
+"provides power": [
+"a magnet pushes a current",
+"atmospheric pressure",
+"compressing a gas heats it"
+],
+"provides thrust": [
+"reaction thrust"
+],
+"pumps blood": [
+"cells live outside the body",
+"compressed gas pushes back",
+"the heart pumps blood around the body"
+],
+"pumps water": [
+"atmospheric pressure"
+],
+"radiates waves": [
+"radio waves"
+],
+"records media": [
+"a curved mirror focuses light",
+"binary numbers",
+"each gas glows its own colours",
+"light darkens silver salts",
+"light waves interfere",
+"refraction",
+"sound is a vibration"
+],
+"regulates the body": [
+"hormones regulate the body",
+"muscles work by electrical impulses"
+],
+"separates mixtures": [
+"charged particles move through a solution",
+"parts of a mixture travel at different speeds"
+],
+"shows the image": [
+"light darkens silver salts",
+"three colours of light mix to make any colour"
+],
+"slows motion": [
+"drag"
+],
+"steers": [
+"lift"
+],
+"stores chemical energy": [
+"burns with oxygen from the air"
+],
+"stores electricity": [
+"a reaction drives a current",
+"conduction",
+"static charge"
+],
+"supplies a nutrient": [
+"the body needs trace nutrients",
+"ultraviolet light makes vitamin D"
+],
+"supplies oxygen": [
+"water pressure grows with depth"
+],
+"transports": [
+"buoyancy",
+"orbit",
+"water pressure grows with depth"
+],
+"treats illness": [
+"a cell follows genes put into it",
+"a chemical kills the germ but not the patient",
+"an egg can be fertilized outside the body",
+"antibodies in serum neutralize a toxin",
+"blood flows in closed vessels",
+"chemicals carry signals between nerves",
+"small molecules seep through a membrane",
+"the body rejects foreign tissue"
+],
+"turns flow into rotation": [
+"reaction thrust"
+],
+"turns light into current": [
+"photoelectric effect"
+],
+"writes": [
+"capillary action"
+]
+}

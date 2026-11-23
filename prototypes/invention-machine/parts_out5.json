@@ -1,0 +1,1053 @@
+{
+ "home-blood-glucose-meter": {
+  "job": "measures",
+  "slots": [
+   {
+    "part": null,
+    "job": "makes light",
+    "fill": "light-emitting-diodes",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "light sensor",
+    "job": "turns light into current",
+    "fill": "photocell",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "computes",
+    "fill": "microchips",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [
+   {
+    "effect": "an enzyme breaks down sugar outside a living cell",
+    "card": "ferments-and-enzymes"
+   }
+  ],
+  "flag": "Own job 'measures' as for Clinical thermometer (it reads a level; Rapid test strip, a yes/no test, is 'diagnoses'). The enzyme pad on the strip (glucose oxidase) has no card; its effect sits on the meter, worded as on the Continuous glucose monitor. A 'Glucose oxidase' part would have 2 uses (this, CGM), not 3. Rapid test strip isn't a slot: it's an antibody strip, not this enzyme strip. Battery not in its text, left off."
+ },
+ "geographic-information-system": {
+  "job": "computes",
+  "slots": [
+   {
+    "part": null,
+    "job": "computes",
+    "fill": "computer",
+    "gap": null,
+    "note": "The Canada GIS ran on an IBM mainframe; Computer is the board's general computer card, as for Email and the ATM."
+   }
+  ],
+  "phen": [
+   {
+    "effect": "map layers pinned to the same coordinates are laid over one another",
+    "card": "geometry"
+   }
+  ],
+  "flag": "Own job 'computes' (it answers questions of maps); 'stores data' would also do. Geometry is maths the practice carries out (rule 22: overlaying layers by coordinates); uncertain, drop if it reads as too general. Map scanner and plotters left off (not in its text)."
+ },
+ "computer-generated-imagery": {
+  "job": "shows the image",
+  "slots": [
+   {
+    "part": null,
+    "job": "computes",
+    "fill": "computer",
+    "gap": null,
+    "note": null,
+    "later": [
+     "graphics-processor-gpu"
+    ]
+   },
+   {
+    "part": "film",
+    "job": "shows the image",
+    "fill": "motion-pictures",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [
+   {
+    "effect": "solid shapes built from flat triangles are projected onto a flat picture",
+    "card": "geometry"
+   }
+  ],
+  "flag": "Graphics processor (1999) did this job later; the 1982 films were rendered on mainframes and minicomputers (Computer card, as elsewhere). Motion pictures as the film it is shown in, like the TV in Video game console; persistence of vision stays with it. Lighting left off: the computer simulates how light bounces (Optics) rather than working by it (rule 5); only the geometry is maths it carries out (rule 22). Uncertain whether Boris wants either effect."
+ },
+ "local-area-network-ethernet": {
+  "job": "communicates",
+  "slots": [
+   {
+    "part": null,
+    "job": "communicates",
+    "fill": null,
+    "gap": "Packet switching",
+    "note": "Same key technique as the Internet."
+   },
+   {
+    "part": "shared cable",
+    "job": "carries current",
+    "fill": "insulated-wire",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [
+   {
+    "effect": "each machine waits a random instant, so a second clash is unlikely",
+    "gap": "Probability"
+   }
+  ],
+  "flag": "Packet switching is the Internet's key-technique gap; with this and Mobile broadband (3G) sending data 'in packets' that's 3 uses, so it earns a card. Probability is the Randomized controlled trial's gap (maths the job carries out, rule 22); now 2 uses. The computers and printers it links are what it's used on (rule 8), not parts. Switch is a later addition, left off."
+ },
+ "desktop-publishing": {
+  "job": "prints",
+  "slots": [
+   {
+    "part": null,
+    "job": "computes",
+    "fill": "personal-computer",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "on-screen page",
+    "job": "takes input",
+    "fill": "graphical-user-interface",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "prints",
+    "fill": "laser-printers",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "PostScript (letters drawn from outlines) is the key technique; no card, and its only job would be 'stores data', so left off. Letters scaled from outlines could link to Geometry (maths it carries out, rule 22) but is left off as loose; add it if wanted. Page-layout program (PageMaker) has no card."
+ },
+ "rolling-suitcase": {
+  "job": "transports",
+  "slots": [
+   {
+    "part": "two corner wheels",
+    "job": "rolls",
+    "fill": "wheel-and-axle",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "Own job 'transports' as for Wheelbarrow. Telescoping handle and the case have no cards and aren't shared; left off. Tipping the weight over the axle is the wheelbarrow's balance, which has no effect on the board either (rule 28)."
+ },
+ "direct-to-home-satellite-tv": {
+  "job": "communicates",
+  "slots": [
+   {
+    "part": "satellite over the equator",
+    "job": "communicates",
+    "fill": "commercial-communications-satellites",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "dish",
+    "job": "reflects light",
+    "fill": "mirror",
+    "gap": null,
+    "note": "A radio mirror, as in the Radio telescope."
+   },
+   {
+    "part": "receiver head",
+    "job": "amplifies a signal",
+    "fill": "superheterodyne-receiver",
+    "gap": null,
+    "note": "It amplifies the signal and lowers its frequency, the superheterodyne's trick."
+   },
+   {
+    "part": null,
+    "job": "shows the image",
+    "fill": "television-in-the-home",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [
+   {
+    "effect": "a curved mirror focuses light",
+    "card": "optics"
+   }
+  ],
+  "flag": "Follows the Radio telescope's dish, receiver and effect. The satellite hanging over one spot is its orbit, which sits with Communications satellites (rule 23). Own job 'communicates' like Commercial comsats; 'shows the image' would also fit."
+ },
+ "mems-motion-sensors": {
+  "job": "measures",
+  "slots": [
+   {
+    "part": "weight and springs",
+    "job": "forms the body",
+    "fill": "silicon",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "comb fingers",
+    "job": "measures",
+    "fill": "leyden-jar",
+    "gap": null,
+    "note": "The comb fingers are a capacitor; Leyden jar is the board's capacitor card."
+   },
+   {
+    "part": "readout circuits",
+    "job": "computes",
+    "fill": "integrated-circuits",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [
+   {
+    "effect": "a weight on springs lags behind when its case speeds up or tilts",
+    "card": "laws-motion"
+   }
+  ],
+  "flag": "Accelerometer isn't a slot (rule 6: the same thing made small, like Transistor radio and Radio), so its own effect, inertia, sits here; drop if Boris reads it as a general law (rule 28). The spring's elasticity is a material property (rule 28), left off. Stored charge sits with the Leyden jar (rule 23); the capacitor stand-in is uncertain (rule 9)."
+ },
+ "contactless-card": {
+  "job": "makes payments",
+  "slots": [
+   {
+    "part": "chip",
+    "job": "computes",
+    "fill": "microchips",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "coil around the edge",
+    "job": "carries current",
+    "fill": "insulated-wire",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [
+   {
+    "effect": "the reader's changing magnetic field drives a current in the card's coil",
+    "card": "electromagnetic-induction"
+   }
+  ],
+  "flag": "Coil filled by Insulated wire (a wound copper coil); the slot job is weak, since the coil picks up power and signals; no 'coil' or 'antenna for near fields' card. Induction is the key effect, on the card because the coil's card states only conduction. Plastic body left off (no card)."
+ },
+ "home-broadband-dsl-and-cable-modem": {
+  "job": "communicates",
+  "slots": [
+   {
+    "part": "phone line",
+    "job": "communicates",
+    "fill": "telephone",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "cable-TV line",
+    "job": "carries current",
+    "fill": "insulated-wire",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "modem",
+    "job": "computes",
+    "fill": "microchips",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [
+   {
+    "effect": "a signal splits into separate frequencies",
+    "card": "fourier-analysis"
+   }
+  ],
+  "flag": "Fourier analysis worded as Wi-Fi's: the modem chip splits the line into hundreds of bands (rule 22). 'As much data as its noise allows' is Shannon's channel limit; no card, not shared, left off. Internet isn't a slot: it's what the line connects to."
+ },
+ "kinase-inhibitor-cancer-drugs": {
+  "job": "treats illness",
+  "slots": [],
+  "phen": [
+   {
+    "effect": "a drug jams an enzyme so a body process slows",
+    "gap": "Enzyme inhibition"
+   }
+  ],
+  "flag": "Enzyme inhibition now has 4 uses among new cards (Statins, Antiretroviral HIV therapy, this, ACE inhibitors; Anti-rejection drugs in the parallel batch also shuts down an enzyme), so it earns a phenomenon card. Wording kept identical (rule 12). Imatinib itself has no card. Chemotherapy ('kills the germ but not the patient') left off: it's about germs, and the specific effect is the enzyme block."
+ },
+ "electronic-cigarette": {
+  "job": "sprays",
+  "slots": [
+   {
+    "part": null,
+    "job": "stores electricity",
+    "fill": "lithium-ion-battery",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [
+   {
+    "effect": "current heats a wire",
+    "card": "joule-heating"
+   },
+   {
+    "effect": "the wick draws the liquid up to the coil",
+    "card": "capillary-action"
+   }
+  ],
+  "flag": "Own job 'sprays' (it makes a mist, like Spray cans); uncertain, no 'delivers a drug' job. Heating coil, wick and the liquid's ingredients (propylene glycol, glycerine, nicotine) have no cards and aren't shared; so Joule heating and capillary action sit on the whole, as capillary action does on the Oil lamp. Flash-boiling and droplets forming as the vapour cools left off as general (rule 28)."
+ },
+ "online-maps-and-navigation": {
+  "job": "finds direction",
+  "slots": [
+   {
+    "part": "satellite positioning",
+    "job": "finds direction",
+    "fill": "gps",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "phone",
+    "job": "communicates",
+    "fill": "mobile-phone",
+    "gap": null,
+    "note": null,
+    "later": [
+     "smartphone"
+    ]
+   },
+   {
+    "part": null,
+    "job": "communicates",
+    "fill": "internet",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "route-planning servers",
+    "job": "computes",
+    "fill": "microchips",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "Phone: Google Maps reached ordinary phones in late 2005; Smartphone (2007) shown as later. Servers filled by Microchips as for Search engine (Cloud data centres is 2006). Route planning is a shortest-path algorithm, maths with no card and not shared (Ride-hailing uses this card instead); left off. Satellite photos are how the maps are made (rule 4). Trilateration sits with GPS (rule 23)."
+ },
+ "oled-display-2000s": {
+  "job": "shows the image",
+  "slots": [
+   {
+    "part": "organic films in each pixel",
+    "job": "makes light",
+    "fill": "light-emitting-diodes",
+    "gap": null,
+    "note": "Organic LEDs; the board's LED card is the crystal kind, the only LED card."
+   },
+   {
+    "part": "transistor behind each pixel",
+    "job": "controls the current",
+    "fill": "transistor",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "forms the body",
+    "fill": "glass",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [
+   {
+    "effect": "three colours of light mix to make any colour",
+    "card": "color-vision"
+   }
+  ],
+  "flag": "LED as a stand-in for the organic film (rule 9); the alternative is a key-part gap 'Organic LED'. Glowing sits with the LED card (rule 23). Colour mixing worded as Color television. Glass vs bendable plastic varies by model; drop the glass slot if too minor."
+ },
+ "emoji": {
+  "job": "communicates",
+  "slots": [
+   {
+    "part": null,
+    "job": "communicates",
+    "fill": "mobile-phone",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "number codes",
+    "job": "stores data",
+    "fill": "unicode-text-encoding",
+    "gap": null,
+    "note": "Docomo's 1999 set used its own codes; Unicode took emoji in 2010."
+   }
+  ],
+  "phen": [],
+  "flag": "Unicode is the board's card for characters stored as agreed numbers, which is how the card says emoji work; but the 1999 Japanese emoji used carriers' own codes, so Unicode only fits from 2010. Drop it if that matters. The phone's font has no card. No nameable effect."
+ },
+ "rocket-interceptor-system": {
+  "job": "protects",
+  "slots": [
+   {
+    "part": "tracking radar and the interceptor's seeker",
+    "job": "detects objects",
+    "fill": "radar",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "battle-management computer",
+    "job": "computes",
+    "fill": "microchips",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "guidance updates",
+    "job": "communicates",
+    "fill": "radio",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "warhead",
+    "job": "explodes",
+    "fill": null,
+    "gap": "High explosive",
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "Own job 'protects' (it defends towns); 'fires projectiles' would also fit the launcher. NEW SHARED GAP 'High explosive' (TNT/RDX): the warhead here, FPV attack drone's charge, Precision-guided bombs' filling and the Cruise missile's warhead all lack a card (Dynamite, Nitroglycerine and Cordite are older and different). Interceptor's solid rocket motor left off: no solid-rocket card (Liquid-fuel rockets would be wrong). Predicting where a rocket lands is gravity on a projectile (rule 28 lesson: no gravity for a missile's arc). Signal delay sits with Radar."
+ },
+ "software-containers": {
+  "job": "computes",
+  "slots": [
+   {
+    "part": "shared system underneath",
+    "job": "computes",
+    "fill": "open-source-operating-system",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "A practice made of another practice (rule 3): Docker walls containers off with Linux's own features. Servers it runs on are what it's used on (rule 8), so Cloud data centres isn't a slot. No nameable effect."
+ },
+ "smartwatch-and-fitness-tracker": {
+  "job": "monitors health continuously",
+  "slots": [
+   {
+    "part": "accelerometer chip",
+    "job": "measures",
+    "fill": "mems-motion-sensors",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "green lights",
+    "job": "makes light",
+    "fill": "light-emitting-diodes",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "light sensor",
+    "job": "turns light into current",
+    "fill": "photocell",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "computes",
+    "fill": "microchips",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "link to the phone",
+    "job": "communicates",
+    "fill": "short-range-wireless-link",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "screen",
+    "job": "shows the image",
+    "fill": "oled-display-2000s",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [
+   {
+    "effect": "blood soaks up green light, so less comes back with each surge",
+    "gap": "Haemoglobin colour"
+   },
+   {
+    "effect": "each heartbeat swells the arteries",
+    "card": "blood-circulation"
+   }
+  ],
+  "flag": "Own job follows Pulse oximeter. Haemoglobin colour is the pulse oximeter's gap; now 2 uses (not 3). Blood circulation worded as the pulse oximeter (rule 25). Inertia sits with the motion-sensor chip (rule 23). Six slots; the screen (OLED on the Apple Watch, not named in its text) or the chip could go to keep it tight. Battery not in its text."
+ },
+ "facial-recognition": {
+  "job": "identifies people",
+  "slots": [
+   {
+    "part": "neural network",
+    "job": "computes",
+    "fill": "deep-learning",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "camera",
+    "job": "records media",
+    "fill": "cmos-camera-chip",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [
+   {
+    "effect": "faces are compared by how close they lie as points in a space of numbers",
+    "card": "geometry"
+   }
+  ],
+  "flag": "NEW JOB 'identifies people': Facial recognition, Biometric digital ID, and DNA fingerprinting (parallel batch); otherwise 'detects objects' or 'protects' is nearest. Geometry (distance between points) is maths the job carries out (rule 22); uncertain, drop if loose. Learning from photos is how the network is made (rule 4). The 3D dot projector (iPhone X) is in the date note only."
+ },
+ "defibrillator": {
+  "job": "treats illness",
+  "slots": [
+   {
+    "part": "capacitor",
+    "job": "stores electricity",
+    "fill": "leyden-jar",
+    "gap": null,
+    "note": "Lown's 1962 capacitor design; Beck's 1947 machine shocked straight from the mains through a transformer."
+   }
+  ],
+  "phen": [
+   {
+    "effect": "muscles work by electrical impulses",
+    "card": "electrical-stimulation"
+   }
+  ],
+  "flag": "Effect worded as Pacemaker and Electrocardiogram (rule 12); the specific use is one shock making every fibre contract at once. The heart's own rhythm-setter (sinoatrial node) has no card; with Pacemaker it would be 2 uses. Capacitor is newer than the card's 1947 date; if that matters, replace with changes voltage: Transformer (Beck's set-up). Pads/paddles left off (no card)."
+ },
+ "ace-inhibitors": {
+  "job": "treats illness",
+  "slots": [],
+  "phen": [
+   {
+    "effect": "a drug jams an enzyme so a body process slows",
+    "gap": "Enzyme inhibition"
+   },
+   {
+    "effect": "a hormone squeezes the blood vessels narrow",
+    "card": "hormones"
+   }
+  ],
+  "flag": "Enzyme inhibition: the shared gap (see Kinase inhibitors). Hormones is the body process it works with (rule 25), as for Beta blockers. The snake-venom peptide is what the drug was modelled on (rule 5, borrowed), not a part. Captopril has no card."
+ },
+ "recombinant-protein-drugs": {
+  "job": "regulates the body",
+  "slots": [],
+  "phen": [
+   {
+    "effect": "hormones regulate the body",
+    "card": "hormones"
+   }
+  ],
+  "flag": "Own job follows Oxytocin synthesis and Steroid synthesis (insulin is a hormone); 'treats illness' would also do for the wider class. No slots: the human insulin has no card, and the bacteria, gene splicing (Recombinant DNA, Genetic engineering) and fermentation tanks are how it's made (rule 4), as are their effects. Effect worded as Oxytocin synthesis (rule 12)."
+ },
+ "word-processor-software": {
+  "job": "writes",
+  "slots": [
+   {
+    "part": "microcomputer",
+    "job": "computes",
+    "fill": "microchips",
+    "gap": null,
+    "note": "Electric Pencil ran on the Altair-type kit computers of 1975-76.",
+    "later": [
+     "personal-computer"
+    ]
+   },
+   {
+    "part": "memory",
+    "job": "stores data",
+    "fill": "dram",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "keyboard",
+    "job": "takes input",
+    "fill": "keys",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "screen",
+    "job": "shows the image",
+    "fill": "oscilloscope",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "Own job 'writes' as for Typewriters. Personal computer (1977) is a year newer, so Microchips fills the slot with it as 'later' (rule 14); if Boris prefers the plain Spreadsheet pattern, use Personal computer alone and drop keyboard and screen. Printer left off: no card fits 1976 (Laser printers 1982). Character codes are binary numbers, which sit with Microchips."
+ },
+ "active-matrix-lcd": {
+  "job": "shows the image",
+  "slots": [
+   {
+    "part": "liquid-crystal panel",
+    "job": "shows the image",
+    "fill": "lcd",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "transistor behind each dot",
+    "job": "controls the current",
+    "fill": "transistor",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "LCD is a slot by rule 7 (the whole earlier screen is inside, refined, like Microscope in Ultramicroscope); read it as rule 6 instead and the slots become Polaroid, Glass and Transistor with the liquid-crystal effect here. Liquid crystals and polarization sit with LCD and Polaroid (rule 23). Holding the voltage between refreshes is the transistor's switching, no separate effect."
+ },
+ "conjugate-vaccines": {
+  "job": "prevents disease",
+  "slots": [],
+  "phen": [
+   {
+    "effect": "the body learns to fight a germ",
+    "card": "vaccination"
+   },
+   {
+    "effect": "a sugar bolted onto a protein brings in the immune system's helper cells",
+    "gap": "Helper T cells"
+   }
+  ],
+  "flag": "Helper T cells is the key effect with no card (rule 16 exception). The bacterial sugar coat and the carrier protein (a tetanus or diphtheria toxoid) have no cards; Antitoxin is a different thing. How the two are bolted together is how it's made (rule 4)."
+ },
+ "fly-by-wire-airliner": {
+  "job": "flies",
+  "slots": [
+   {
+    "part": "flight computers",
+    "job": "computes",
+    "fill": "microchips",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "signal wires",
+    "job": "carries current",
+    "fill": "insulated-wire",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "holds direction",
+    "fill": "gyroscope",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "measures",
+    "fill": "accelerometer",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "hydraulic rams",
+    "job": "pushes",
+    "fill": "piston-and-cylinder",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "wing and tail control surfaces",
+    "job": "steers",
+    "fill": "rudder",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "Uses the new Accelerometer card (the A320's are in its inertial units, not MEMS chips). Rudder stands for all the control surfaces, as fins did in Precision-guided bombs (rule 9). Airplane isn't a slot (rule 6), and wing and engines are left off since its text is about the controls. Side-stick has no card. No own-level effect: stalling is what it prevents, not what it works by."
+ },
+ "open-source-operating-system": {
+  "job": "computes",
+  "slots": [
+   {
+    "part": "changes sent in",
+    "job": "communicates",
+    "fill": "internet",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "Own job 'computes' (it runs the computer). The servers and phones it runs on are what it's used on (rule 8). Distributed version control (2005) came later and isn't in its text. Review by maintainers is a technique with no card. No nameable effect."
+ },
+ "secure-web-connection-ssl-tls": {
+  "job": "protects",
+  "slots": [
+   {
+    "part": "key agreement",
+    "job": "protects",
+    "fill": "public-key-encryption",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "Own job 'protects' as for Public-key encryption. Prime factorization sits with Public-key encryption (rule 23). Certificates and the fast secret-key cipher have no cards; World Wide Web is what it's used on (rule 8)."
+ },
+ "universal-serial-port-usb": {
+  "job": "communicates",
+  "slots": [
+   {
+    "part": "two data and two power wires",
+    "job": "carries current",
+    "fill": "insulated-wire",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "controller chips",
+    "job": "computes",
+    "fill": "microchips",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "Own job 'communicates' (a data link between devices); 'carries current' would fit the power half. Asking the device what it is (enumeration) is a technique with no card. Twisted pairs rejecting noise left off as general. No nameable effect."
+ },
+ "electronic-voting-machine": {
+  "job": "computes",
+  "slots": [
+   {
+    "part": "numbered keys",
+    "job": "takes input",
+    "fill": "keys",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "small screen",
+    "job": "shows the image",
+    "fill": "lcd",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "sealed memory",
+    "job": "stores data",
+    "fill": "flash-memory",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "computes",
+    "fill": "microchips",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "encrypted results",
+    "job": "protects",
+    "fill": "public-key-encryption",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "Own job 'computes' (it counts votes, like the Adding machine); 'measures' would also do. Tally printer left off (no card). Five slots; encryption could go if too minor."
+ },
+ "online-encyclopedia-wiki": {
+  "job": "communicates",
+  "slots": [
+   {
+    "part": "website",
+    "job": "communicates",
+    "fill": "world-wide-web",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "servers keeping every version",
+    "job": "stores data",
+    "fill": "hard-disk-drive",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "Follows Social media's slots. Own job 'communicates'; 'writes' (as for Large language models) or 'stores data' would also do. The wiki itself (Cunningham, 1995) has no card. No nameable effect."
+ },
+ "distributed-version-control": {
+  "job": "stores data",
+  "slots": [
+   {
+    "part": "each programmer's full copy",
+    "job": "computes",
+    "fill": "personal-computer",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "communicates",
+    "fill": "internet",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [
+   {
+    "effect": "a fingerprint calculated from the contents changes if anything in them changes",
+    "gap": "Cryptographic hash"
+   }
+  ],
+  "flag": "Own job 'stores data' (it keeps the code's whole history). Cryptographic hash is maths the job carries out (rule 22), the key effect with no card (like Prime factorization for Public-key encryption); uncertain whether Boris counts it. Line-by-line merging is a technique with no card."
+ },
+ "rotavirus-vaccine": {
+  "job": "prevents disease",
+  "slots": [],
+  "phen": [
+   {
+    "effect": "the body learns to fight a germ",
+    "card": "vaccination"
+   }
+  ],
+  "flag": "Follows the Sabin vaccine (also live, weakened and swallowed): no slots, one effect. Growing the virus until it is weak is how it's made (rule 4)."
+ },
+ "off-grid-solar-lighting": {
+  "job": "makes light",
+  "slots": [
+   {
+    "part": "solar panel",
+    "job": "makes electricity",
+    "fill": "photovoltaic-cells",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "stores electricity",
+    "fill": "lithium-ion-battery",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "makes light",
+    "fill": "white-led-lighting",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "No own-level effect: the photoelectric effect, the battery's reaction and the LED's glow all sit with their parts (rule 23)."
+ },
+ "biometric-digital-id": {
+  "job": "identifies people",
+  "slots": [
+   {
+    "part": null,
+    "job": "takes input",
+    "fill": null,
+    "gap": "Fingerprint scanner",
+    "note": null
+   },
+   {
+    "part": "iris and face cameras",
+    "job": "records media",
+    "fill": "cmos-camera-chip",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "communicates",
+    "fill": "internet",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "central computers",
+    "job": "computes",
+    "fill": "microchips",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [
+   {
+    "effect": "no two people have the same fingerprints or irises",
+    "gap": "Unique fingerprints"
+   }
+  ],
+  "flag": "New job 'identifies people' (see Facial recognition). Fingerprint scanner and Unique fingerprints are its key part and key effect with no card (rule 16 exception); the effect might be shared by Facial recognition (faces) and DNA fingerprinting (repeat counts), if Boris wants one 'Every person is different' card. Facial recognition (2017) isn't a slot: newer, and Aadhaar's face matching came later. Central computers filled by Microchips as for Search engine."
+ },
+ "ride-hailing-apps": {
+  "job": "transports",
+  "slots": [
+   {
+    "part": "app",
+    "job": "communicates",
+    "fill": "smartphone",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "live map",
+    "job": "finds direction",
+    "fill": "online-maps-and-navigation",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "company's computers",
+    "job": "computes",
+    "fill": "microchips",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "makes payments",
+    "fill": "credit-card",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "drivers' own cars",
+    "job": "transports",
+    "fill": "first-automobile",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "GPS sits inside Smartphone, so not listed again. Cars filled by First automobile as the board's car card; drop if the practice is read as only the matching service. Matching and surge pricing are techniques with no card. No nameable effect."
+ },
+ "stroke-clot-retrieval": {
+  "job": "treats illness",
+  "slots": [
+   {
+    "part": "catheter",
+    "job": "treats illness",
+    "fill": "cardiac-catheter",
+    "gap": null,
+    "note": "Label follows Balloon angioplasty."
+   },
+   {
+    "part": "stent retriever",
+    "job": "holds the contents",
+    "fill": "coronary-stent",
+    "gap": null,
+    "note": "A stent on a wire, pulled back out instead of left in."
+   },
+   {
+    "part": "imaging",
+    "job": "makes x-rays",
+    "fill": "coolidge-tube",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "Coronary stent is a close stand-in for the stent retriever (rule 9); 'holds the contents' is the nearest job for catching the clot. X-ray imaging follows Cardiac catheterization; X-rays passing through tissue unevenly sits with Cardiac catheter (rule 23). The mesh springing open is a material property (nitinol, rule 28)."
+ },
+ "grid-battery-storage": {
+  "job": "stores electricity",
+  "slots": [
+   {
+    "part": "cells",
+    "job": "stores electricity",
+    "fill": "lithium-ion-battery",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "inverters",
+    "job": "controls the current",
+    "fill": null,
+    "gap": "Inverter",
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "NEW SHARED GAP 'Inverter' (turns direct current into alternating): this, Solar farm (parallel batch) and the HVDC converter stations (now filled by Electronic rectifier) would share it; otherwise fill with Transistor. The grid's frequency sagging when supply falls short is what it responds to, not what it works by; left off. The battery's reaction sits with Lithium-ion battery (rule 23)."
+ },
+ "fpv-attack-drone": {
+  "job": "explodes",
+  "slots": [
+   {
+    "part": "racing drone",
+    "job": "flies",
+    "fill": "quadcopter-drone",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "video and control link",
+    "job": "communicates",
+    "fill": "radio",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "video goggles",
+    "job": "shows the image",
+    "fill": "lcd",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "charge",
+    "job": "explodes",
+    "fill": null,
+    "gap": "High explosive",
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "Quadcopter drone is a slot by rule 7 (the whole earlier machine is inside); its camera, motors and gyroscopes aren't repeated. Own job 'explodes' as for Cruise missile and Precision-guided bombs. High explosive: shared gap (see Rocket interceptor system). LCD stands for the goggles' screens (often LCD or OLED). No own-level effect."
+ }
+}

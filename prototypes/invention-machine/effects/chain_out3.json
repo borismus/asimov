@@ -1,0 +1,388 @@
+[
+ {
+  "id": "ghost-glow-camera",
+  "name": "Ghost Glow Camera",
+  "subtitle": "a camera that sees radioactive dust in daylight",
+  "job": "detects radiation",
+  "effects": [
+   {
+    "effect": "each gas glows its own colours",
+    "card": "spectral-lines",
+    "newToJob": true
+   },
+   {
+    "effect": "ozone soaks up ultraviolet light",
+    "card": "ozonosphere",
+    "newToJob": true
+   },
+   {
+    "effect": "radiation ionizes what it passes through",
+    "card": "ionizing-radiation",
+    "newToJob": false
+   }
+  ],
+  "parts": [
+   "camera",
+   "microchips"
+  ],
+  "how": "After a nuclear accident or a dirty bomb, the most dangerous dust gives off alpha rays that travel only a few centimetres, so someone has to walk up and wave a probe over every surface. Those rays make the air around the dust glow faintly, and part of that glow is a deep-ultraviolet colour that the ozone high in the sky strips out of sunlight, so even at noon nothing else shines in it. A camera that sees only that colour paints the hot spots from metres away.",
+  "obstacle": "In ordinary air the deep-ultraviolet part of the glow is extremely faint, so the camera needs long exposures and works only within a few metres.",
+  "real": "Lab prototypes of ultraviolet alpha-imaging cameras, Finnish and British labs, 2010s; not in field use.",
+  "plausibility": 3,
+  "why": "The sky's ozone shield makes daylight dark in one colour, so a faint radiation glow can show."
+ },
+ {
+  "id": "blush-moss",
+  "name": "Blush Moss",
+  "subtitle": "a ground cover that reddens where fallout lands",
+  "job": "detects radiation",
+  "effects": [
+   {
+    "effect": "X-rays cause mutations",
+    "card": "x-rays-and-mutations",
+    "newToJob": true
+   },
+   {
+    "effect": "a cell follows genes put into it",
+    "card": "virus-transduction",
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "synthetic-gene"
+  ],
+  "how": "Mapping fallout over a whole region after an accident means sending people to walk it with counters, field by field. Radiation breaks DNA, and cells switch on repair genes in proportion to the damage; a moss given an added gene that makes red pigment whenever those repair genes switch on would blush wherever radiation has settled. A drone photographing the moss maps the danger across square kilometres with nobody on the ground.",
+  "obstacle": "Drought, heat and chemicals also damage DNA, so the moss could blush falsely, and planting a gene-altered moss outdoors needs regulators' approval.",
+  "real": "Tradescantia flower hairs turn from blue to pink after radiation, used as a test since the 1970s; gene-altered reporter plants grown in the Chernobyl zone, 1998, but they had to be stained in a lab.",
+  "plausibility": 3,
+  "why": "Radiation's DNA damage, normally the harm, becomes a colour painted across the landscape."
+ },
+ {
+  "id": "gravity-clocks",
+  "name": "Gravity Clocks",
+  "subtitle": "atomic clocks that weigh the magma under volcanoes",
+  "job": "measures",
+  "effects": [
+   {
+    "effect": "gravity slows clocks",
+    "card": "gravitational-red-shift",
+    "newToJob": true
+   },
+   {
+    "effect": "an atom's light has a fixed wavelength, a natural ruler",
+    "card": "standard-meter",
+    "newToJob": true
+   },
+   {
+    "effect": "total internal reflection",
+    "card": "refraction",
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "atomic-clock",
+   "laser",
+   "fiber-optics"
+  ],
+  "how": "Before a volcano erupts, molten rock gathers underneath it, but today's instruments notice only once the ground starts to bulge. Clocks tick slightly slower where gravity is stronger, so ultra-precise clocks that count the waves of an atom's light, set around a volcano and compared through buried glass fibres, would feel the extra weight of rising magma as a change in their ticking. A drift of one part in a billion billion means a centimetre of height or a hidden mass moving deep below.",
+  "obstacle": "Today's best optical clocks fill a lab room and cost millions; they must shrink into rugged boxes that survive a mountainside.",
+  "real": "Optical clocks have measured height differences in labs, a mountain tunnel (Frejus, 2018) and Tokyo Skytree (2020); none yet watch a volcano.",
+  "plausibility": 3,
+  "why": "Einstein's slowed time becomes a scale for weighing magma under a mountain."
+ },
+ {
+  "id": "pulsar-clock",
+  "name": "Pulsar Clock",
+  "subtitle": "a deep-space timekeeper set by dead stars",
+  "job": "keeps time",
+  "effects": [
+   {
+    "effect": "pulsars tick with clock-like regularity",
+    "card": "pulsars",
+    "newToJob": true
+   },
+   {
+    "effect": "atomic resonance",
+    "card": "magnetic-resonance",
+    "newToJob": false
+   }
+  ],
+  "parts": [
+   "atomic-clock",
+   "telescope",
+   "microchips"
+  ],
+  "how": "Spacecraft far from Earth, and a future Mars outpost, depend on clocks set by radio from Earth, which takes up to 20 minutes to arrive and can be lost; without it their clocks slowly drift, and with them navigation and radio links. A small X-ray telescope watches a handful of pulsars, dead stars that spin and flash hundreds of times a second as steadily as the best atomic clocks over years, and uses their beat to keep a local atomic clock true.",
+  "obstacle": "Pulsars are faint, so the telescope must gather their X-rays for hours to read the beat, and it only works above an atmosphere, in orbit or on the airless Moon.",
+  "real": "NASA's NICER/SEXTANT used X-ray pulsars to navigate on the Space Station, 2017-2018; no pulsar-run clock yet keeps a station's time.",
+  "plausibility": 3,
+  "why": "Dead stars become a shared clock for the whole solar system, needing nothing from Earth."
+ },
+ {
+  "id": "swelling-slide",
+  "name": "Swelling Slide",
+  "subtitle": "tissue swollen big enough for a cheap microscope",
+  "job": "magnifies",
+  "effects": [
+   {
+    "effect": "big molecules trapped behind a membrane draw water in",
+    "card": "protein-size",
+    "newToJob": true
+   },
+   {
+    "effect": "dyes stain some parts of a cell and not others",
+    "card": "chromatin",
+    "newToJob": true
+   },
+   {
+    "effect": "refraction",
+    "card": "refraction",
+    "newToJob": false
+   }
+  ],
+  "parts": [
+   "microscope",
+   "camera"
+  ],
+  "how": "Spotting early kidney disease or the edge of a tumour needs detail finer than an ordinary light microscope can show, and the electron microscopes that can are rare and costly. The stained tissue sample is soaked with a gel full of trapped molecules that draw water in, so in a dish of water it swells evenly to four times its size in every direction, carrying its stained parts with it. A cheap microscope or phone camera then sees details that were too small before.",
+  "obstacle": "The soaking and swelling take a day and skilled hands; it must become a foolproof kit a rural clinic can run.",
+  "real": "Expansion microscopy, MIT, 2015, and expansion pathology, 2017, in research labs; not yet a clinic kit.",
+  "plausibility": 4,
+  "why": "Instead of a better lens, make the sample bigger; osmosis does the magnifying."
+ },
+ {
+  "id": "steady-quill",
+  "name": "Steady Quill",
+  "subtitle": "a pen that cancels a shaking hand",
+  "job": "writes",
+  "effects": [
+   {
+    "effect": "feeding back the error lets a machine correct its own aim",
+    "card": "cybernetics",
+    "newToJob": true
+   },
+   {
+    "effect": "a spinning body holds its axis",
+    "card": "gyroscope",
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "ballpoint-pen",
+   "gyroscope",
+   "microchips"
+  ],
+  "how": "Tens of millions of people with Parkinson's disease or essential tremor slowly lose the ability to sign their name or write a note. This pen's tip rides on tiny motors: a chip senses the fast shaking and moves the tip the opposite way, while a little spinning wheel inside resists sudden jerks but lets the slower strokes of handwriting through.",
+  "obstacle": "Fitting the motors, flywheel and battery into a pen light and slim enough to hold through a whole letter.",
+  "real": "Liftware tremor-cancelling spoon, 2013, and the GyroGlove, 2016 on; no common tremor-cancelling pen.",
+  "plausibility": 4,
+  "why": "Steadying a spoon is solved; writing needs the slow fine strokes through while the fast shake is killed."
+ },
+ {
+  "id": "elemental-tablet",
+  "name": "Elemental Tablet",
+  "subtitle": "data written in metals, readable for millennia",
+  "job": "stores data",
+  "effects": [
+   {
+    "effect": "each element gives off its own X-ray frequency",
+    "card": "atomic-number",
+    "newToJob": true
+   },
+   {
+    "effect": "platinum won't tarnish and melts only at great heat",
+    "card": "platinum",
+    "newToJob": true
+   },
+   {
+    "effect": "binary numbers",
+    "card": "binary-system",
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "malleable-platinum"
+  ],
+  "how": "Digital records live on tapes and disks that decay within decades, so archives must copy everything again and again, forever, at great cost. This tablet stores data as microscopic dots of different metals on a platinum sheet that never rusts; a beam of X-rays makes each dot shine back its own X-ray colour, so one dot holds several bits, and anyone with an X-ray machine could read it in ten thousand years.",
+  "obstacle": "Laying down millions of tiny dots of different metals is slow and costly, so it holds far less per dollar than a hard drive.",
+  "real": "Rosetta Disk etched in nickel, 2008; Microsoft's Project Silica glass, 2019; Cerabyte ceramic, 2023; none read data by each element's X-ray colour.",
+  "plausibility": 4,
+  "why": "Chemistry, not magnetism, holds the bit: the element itself is the message."
+ },
+ {
+  "id": "bee-compass",
+  "name": "Bee Compass",
+  "subtitle": "a cloud-proof compass that reads the sky's polarization",
+  "job": "finds direction",
+  "effects": [
+   {
+    "effect": "some crystals pass light vibrating one way only",
+    "card": "polarized-light",
+    "newToJob": true
+   },
+   {
+    "effect": "bees see ultraviolet and dance to show where food is",
+    "card": "bee-communication",
+    "newToJob": true
+   },
+   {
+    "effect": "the Earth's turning moves the shadow",
+    "card": "rotation-of-the-earth",
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "camera",
+   "polaroid",
+   "microchips"
+  ],
+  "how": "GPS is now jammed every day near war zones, and a drone's own motors fool a magnetic compass. Sunlight scattered by the sky vibrates in a pattern of rings around the sun, and bees steer by it in ultraviolet, where it survives even through cloud; a camera behind polarizing filters reads that pattern, finds the hidden sun, and from the time of day works out which way is north.",
+  "obstacle": "Under thick overcast or near dusk the pattern weakens, and the compass needs an accurate clock and rough position to turn the sun into north.",
+  "real": "Viking 'sunstone' navigation, around 1000 (debated); insect-inspired polarization compasses on lab robots since 1997 and a few commercial sensors in the 2020s.",
+  "plausibility": 4,
+  "why": "The daytime partner to a star compass: a bee's trick covers the hours stars can't."
+ },
+ {
+  "id": "rock-whisper",
+  "name": "Rock Whisper",
+  "subtitle": "a spinning-magnet radio that talks through rock",
+  "job": "radiates waves",
+  "effects": [
+   {
+    "effect": "atoms are tiny magnets",
+    "card": "magnetic-moments",
+    "newToJob": true
+   },
+   {
+    "effect": "a magnet pushes a current",
+    "card": "electrical-motion",
+    "newToJob": true
+   },
+   {
+    "effect": "electric oscillations send out light-speed waves",
+    "card": "maxwells-equations",
+    "newToJob": false
+   }
+  ],
+  "parts": [
+   "rare-earth-magnet",
+   "electric-motors",
+   "electric-battery"
+  ],
+  "how": "Miners trapped after a collapse, cave divers and submarines are cut off because ordinary radio dies within metres of rock or seawater; only very slow waves get through, and those normally need antennas kilometres long. A strong rare-earth magnet, whose atoms all point the same way, spun by a small motor hundreds of times a second makes its field swing round and sends out those slow waves, carrying a short message through hundreds of metres of rock from a lunchbox-sized beacon.",
+  "obstacle": "The signal fades very fast with distance, so it carries only a few letters a minute and needs a very sensitive receiver above ground.",
+  "real": "DARPA's AMEBA program built spinning-magnet transmitters in labs, 2017-2020; mines today use large wire-loop through-the-earth radios.",
+  "plausibility": 3,
+  "why": "Spinning a magnet instead of shaking electrons shrinks a kilometre-long antenna into a lunchbox."
+ },
+ {
+  "id": "chemical-camera",
+  "name": "Chemical Camera",
+  "subtitle": "photos that show what things are made of",
+  "job": "records media",
+  "effects": [
+   {
+    "effect": "molecules shift the colour of light they scatter",
+    "card": "raman-spectra",
+    "newToJob": true
+   },
+   {
+    "effect": "excited atoms copy the light passing through",
+    "card": "stimulated-emission",
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "laser",
+   "camera",
+   "diffraction-gratings"
+  ],
+  "how": "Fake and spoiled medicines kill hundreds of thousands of people a year, and telling them from real ones takes a lab. This camera lights a scene with one pure laser colour; every kind of molecule scatters back a little light shifted to its own set of colours, so a grating sorts those colours and each pixel of the photo records what the thing there is made of, not just how it looks.",
+  "obstacle": "Only about one scattered photon in millions has its colour shifted, so a pocket version needs long exposures or a laser too strong to be eye-safe.",
+  "real": "Handheld single-point Raman scanners (TruScan, 2000s) and lab Raman imaging microscopes; no snapshot Raman camera for everyday use.",
+  "plausibility": 3,
+  "why": "Turns a laser's hidden colour echoes into photographs labelled with chemistry."
+ },
+ {
+  "id": "sunward-sentinel",
+  "name": "Sunward Sentinel",
+  "subtitle": "an asteroid watcher parked beside Earth's orbit",
+  "job": "detects objects",
+  "effects": [
+   {
+    "effect": "objects rest stably at points ahead of and behind a planet",
+    "card": "trojan-asteroids",
+    "newToJob": true
+   },
+   {
+    "effect": "heat radiates as invisible light",
+    "card": "infrared-radiation",
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "telescope",
+   "microchips"
+  ],
+  "how": "Asteroids that come at us from the direction of the sun can't be seen from Earth, which is how the Chelyabinsk meteor injured 1,500 people in 2013 with no warning. A telescope parked at the stable point that trails 60 degrees behind Earth in its orbit, where gravity holds it without fuel, would watch Earth's neighbourhood from the side, the sun out of its eyes, spotting dark asteroids by the heat they give off.",
+  "obstacle": "Cost: a spacecraft 150 million kilometres away needs a big antenna and years of steady funding to send its survey home.",
+  "real": "NASA's NEO Surveyor infrared telescope (launch about 2027) watches from near Earth; ESA's Vigil space-weather probe will go to that trailing point (about 2031); no asteroid hunter there yet.",
+  "plausibility": 4,
+  "why": "A free gravitational parking spot gives a side view of what hides in the sun's glare."
+ },
+ {
+  "id": "waggle-robot",
+  "name": "Waggle Robot",
+  "subtitle": "a robot bee that sends hives foraging",
+  "job": "communicates",
+  "effects": [
+   {
+    "effect": "bees see ultraviolet and dance to show where food is",
+    "card": "bee-communication",
+    "newToJob": true
+   },
+   {
+    "effect": "sound is a vibration",
+    "card": "acoustics",
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "robots",
+   "electric-motors",
+   "microchips"
+  ],
+  "how": "Farms rent millions of beehives to pollinate crops, but the bees fly wherever they like, often to wildflowers or to fields freshly sprayed with pesticide. A small robot bee inside the hive performs the waggle dance, buzzing its wings so bees in the dark feel the vibrations, which tells foragers which direction and how far to fly, so a farmer can send them to the rows that need them and away from danger.",
+  "obstacle": "Bees heed many cues besides the dance, like smell and the dancer's body, so robots have so far persuaded only a few bees to follow.",
+  "real": "RoboBee dancing robot, Free University of Berlin, 2018, with partial success; EU Hiveopolis project, 2020s.",
+  "plausibility": 3,
+  "why": "Speaks the bees' own language, the waggle dance, to steer pollinators across a farm."
+ },
+ {
+  "id": "sun-lens",
+  "name": "Sun Lens",
+  "subtitle": "using the sun's gravity to photograph alien worlds",
+  "job": "magnifies",
+  "effects": [
+   {
+    "effect": "gravity bends light",
+    "card": "gravitational-deflection-of-light",
+    "newToJob": true
+   },
+   {
+    "effect": "light pushes on what it hits",
+    "card": "light-pressure",
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "telescope",
+   "coronagraph"
+  ],
+  "how": "Even the biggest planned telescopes would see a planet around another star as a single dot. The sun's gravity bends passing starlight just enough to bring it to a focus 550 times farther out than Earth, making the sun a giant lens; a small telescope flown there on a thin sail pushed by sunlight, with a disc blocking the sun's glare, could map the oceans and continents of a world light-years away.",
+  "obstacle": "Getting there: even with a sunlight sail the trip takes about 25 years, and then the telescope must build the picture point by point over a patch hundreds of kilometres wide.",
+  "real": "NASA-funded Solar Gravitational Lens mission study, 2018-2020; nothing launched.",
+  "plausibility": 2,
+  "why": "The sun itself becomes the lens; gravity's faint bending turns into a hundred-billion-fold magnifier."
+ }
+]

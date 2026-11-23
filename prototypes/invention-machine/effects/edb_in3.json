@@ -1,0 +1,2083 @@
+[
+ {
+  "name": "Free Convection",
+  "desc": "Movement of molecules of fluids (or gases) dues to density differences in the fluid (or gas) occurring due to temperature gradients.",
+  "wiki": "http://en.wikipedia.org/wiki/Convective_heat_transfer",
+  "functions": [
+   "Accumulate / Divided Solid",
+   "Bend / Gas",
+   "Concentrate / Divided Solid",
+   "Constrain / Divided Solid",
+   "Cool / Gas",
+   "Cool / Liquid",
+   "Cool / Solid",
+   "Deposit / Divided Solid",
+   "Dry / Liquid",
+   "Dry / Solid",
+   "Expand / Gas",
+   "Expand / Liquid",
+   "Heat / Gas",
+   "Heat / Liquid",
+   "Heat / Solid",
+   "Hold / Divided Solid",
+   "Mix / Divided Solid",
+   "Mix / Gas",
+   "Mix / Liquid",
+   "Move / Divided Solid",
+   "Move / Gas",
+   "Move / Liquid",
+   "Move / Solid",
+   "Orient / Divided Solid",
+   "Remove / Divided Solid",
+   "Rotate / Divided Solid",
+   "Separate / Divided Solid",
+   "Vibrate / Divided Solid"
+  ],
+  "notes": [
+   "For example, a suspension of particles in a liquid or gas."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Free Surface Effect",
+  "desc": "One of several mechanisms where a craft can become unstable and roll-over (capsize). It refers to the tendency of liquids  and of aggregates of small solid objects, like seeds, gravel, or crushed ore which can act as liquids  to move in response to changes in the attitude of a craft's cargo holds, decks, or liquid tanks in reaction to operator-induced motions (or sea states caused by waves & wind acting upon the craft).",
+  "wiki": "http://en.wikipedia.org/wiki/Free_surface_effect",
+  "functions": [
+   "Accumulate / Divided Solid",
+   "Detect / Divided Solid",
+   "Mix / Divided Solid",
+   "Move / Divided Solid",
+   "Rotate / Divided Solid",
+   "Rotate / Solid"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Fresnel Diffraction",
+  "desc": "(or near-field diffraction) A process of diffraction which occurs when a wave passes through an aperture and diffracts in the near field, causing any diffraction pattern observed to differ in size and shape, depending on the distance between the aperture and the projection. It occurs due to the short distance in which the diffracted waves propagate. When the distance is increased, outgoing diffracted waves become planar and Fraunhofer diffraction occurs.",
+  "wiki": "http://en.wikipedia.org/wiki/Fresnel_diffraction",
+  "functions": [
+   "Bend / Field",
+   "Compress / Field",
+   "Expand / Field"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Friction",
+  "desc": "The force resisting the relative motion of two surfaces in contact or a surface in contact with a fluid (e.g. air on an aircraft or water in a pipe).",
+  "wiki": "http://en.wikipedia.org/wiki/Friction",
+  "functions": [
+   "Absorb / Field",
+   "Break Down / Divided Solid",
+   "Break Down / Solid",
+   "Clean / Divided Solid",
+   "Clean / Solid",
+   "Destroy / Divided Solid",
+   "Destroy / Solid",
+   "Detect / Divided Solid",
+   "Detect / Solid",
+   "Evaporate / Liquid",
+   "Expand / Gas",
+   "Expand / Liquid",
+   "Expand / Solid",
+   "Heat / Divided Solid",
+   "Heat / Gas",
+   "Heat / Liquid",
+   "Heat / Solid",
+   "Hold / Liquid",
+   "Hold / Solid",
+   "Melt / Divided Solid",
+   "Melt / Solid",
+   "Move / Solid",
+   "Produce / Divided Solid",
+   "Remove / Divided Solid",
+   "Remove / Solid",
+   "Separate / Solid",
+   "Vibrate / Solid"
+  ],
+  "notes": [
+   "As a result of heat generation.",
+   "For example, the presence of particles will affect friction.",
+   "In the case of a moving solid coming into contact with another material (or vice versa) and being detected as a consequence of the friction."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Garshelis Effect",
+  "desc": "The effect wherein a circumferentially magnetized rod of ferromagnetic, magnetostrictive material generates a net axial magnetic field in response to an applied torque.",
+  "wiki": "http://en.wikipedia.org/wiki/Garshelis_Effect",
+  "functions": [
+   "Produce / Field"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Gel",
+  "desc": "A gel is a solid, jelly-like material that can have properties ranging from soft and weak to hard and tough. Gels are defined as a substantially dilute crosslinked system, which exhibits no flow when in the steady-state. By weight, gels are mostly liquid, yet they behave like solids due to a three-dimensional crosslinked network within the liquid. It is the crosslinks within the fluid that give a gel its structure (hardness) and contribute to stickiness (tack).",
+  "wiki": "http://en.wikipedia.org/wiki/Gel",
+  "functions": [
+   "Absorb / Divided Solid",
+   "Absorb / Solid",
+   "Accumulate / Divided Solid",
+   "Accumulate / Liquid",
+   "Accumulate / Solid",
+   "Change Phase / Liquid",
+   "Change Phase / Solid",
+   "Constrain / Divided Solid",
+   "Constrain / Liquid",
+   "Constrain / Solid",
+   "Deposit / Divided Solid",
+   "Deposit / Liquid",
+   "Deposit / Solid",
+   "Dilute / Divided Solid",
+   "Dilute / Liquid",
+   "Dilute / Solid",
+   "Expand / Solid",
+   "Freeze / Liquid",
+   "Hold / Divided Solid",
+   "Hold / Liquid",
+   "Hold / Solid",
+   "Join / Divided Solid",
+   "Join / Field",
+   "Join / Liquid",
+   "Join / Solid",
+   "Move / Field",
+   "Move / Liquid",
+   "Move / Solid",
+   "Orient / Divided Solid",
+   "Produce / Liquid",
+   "Produce / Solid",
+   "Protect / Divided Solid",
+   "Protect / Solid",
+   "Resist / Divided Solid"
+  ],
+  "notes": [
+   "Gels are used, for example, to provide a coupling medium between untrasonic transducers and a substrate.",
+   "In the sense that a liquid component of a gel behaves somewhat like a solid.",
+   "In the sense that a soild component of a gel behaves somewhat like a liquid.",
+   "Through encapulation within the gel."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Glassy Carbon",
+  "desc": "(also called vitreous carbon) A a non-graphitising carbon which combines glassy and ceramic properties with those of graphite. The most important properties are high temperature resistance, extreme resistance to chemical attack and impermeability to gases and liquids. Glassy carbon is widely used as an electrode material in electrochemistry, as well as for high temperature crucibles and as a component of some prosthetic devices.",
+  "wiki": "http://en.wikipedia.org/wiki/Glassy_carbon",
+  "functions": [
+   "Constrain / Gas",
+   "Constrain / Liquid",
+   "Constrain / Solid",
+   "Protect / Divided Solid",
+   "Protect / Solid",
+   "Resist / Divided Solid",
+   "Resist / Gas",
+   "Resist / Liquid",
+   "Resist / Solid"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Goos-Hänchen Effect",
+  "desc": "An optical phenomenon in which linearly polarised light undergoes a small shift, parallel to the direction of propagation, when totally internally reflected. This effect is the linear polarisation analog of the Imbert-Fedorov effect. This occurs because the reflections of a finite sized beam will interfere along a line transverse to the average propagation direction.",
+  "wiki": "http://en.wikipedia.org/wiki/Goos-H%C3%A4nchen_effect",
+  "functions": [
+   "Change Phase / Field"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Grain Boundary Strengthening",
+  "desc": "A method of strengthening materials by changing their average crystallite (grain) size. It is based on the observation that grain boundaries impede dislocation movement and that the number of dislocations within a grain have an effect on how easily dislocations can traverse grain boundaries and travel from grain to grain. Changing grain size can influence dislocation movement and yield strength.",
+  "wiki": "http://en.wikipedia.org/wiki/Grain_boundary_strengthening",
+  "functions": [
+   "Protect / Solid"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Gravitation",
+  "desc": "A natural phenomenon by which objects with mass attract one another. In everyday life, gravitation is most commonly thought of as the agency which lends weight to objects with mass.",
+  "wiki": "http://en.wikipedia.org/wiki/Gravitation",
+  "functions": [
+   "Accumulate / Divided Solid",
+   "Accumulate / Solid",
+   "Bend / Field",
+   "Bend / Gas",
+   "Bend / Liquid",
+   "Bend / Solid",
+   "Compress / Divided Solid",
+   "Compress / Gas",
+   "Compress / Liquid",
+   "Compress / Solid",
+   "Concentrate / Divided Solid",
+   "Concentrate / Solid",
+   "Constrain / Divided Solid",
+   "Deposit / Divided Solid",
+   "Deposit / Liquid",
+   "Detect / Divided Solid",
+   "Detect / Liquid",
+   "Detect / Solid",
+   "Expand / Gas",
+   "Expand / Liquid",
+   "Expand / Solid",
+   "Extract / Divided Solid",
+   "Hold / Divided Solid",
+   "Hold / Liquid",
+   "Hold / Solid",
+   "Join / Solid",
+   "Move / Divided Solid",
+   "Move / Gas",
+   "Move / Liquid",
+   "Move / Solid",
+   "Orient / Divided Solid",
+   "Remove / Divided Solid",
+   "Remove / Liquid",
+   "Remove / Solid",
+   "Rotate / Divided Solid",
+   "Separate / Divided Solid",
+   "Separate / Liquid",
+   "Separate / Solid"
+  ],
+  "notes": [
+   "A gas has mass and is therefore subject to gravitation. It may also be contained within objects that are subject to gravitation.",
+   "For example, suspending a solid object in a gravity field will cause it to stretch.",
+   "For example, using a piston tensioned by gravity."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Gravitational Convection (non heat)",
+  "desc": "Differential buoyancy forces which cause convection in gravity fields may result from sources of density variations in fluids other than those produced by heat, such as variable composition. For example, diffusion of a source of dry salt downward into wet soil assisted by the mechanism of the fact that saline is heavier than fresh water.",
+  "wiki": "http://en.wikipedia.org/wiki/Convection#Buoyancy_induced_convection_not_due_to_heat",
+  "functions": [
+   "Bend / Gas",
+   "Mix / Gas",
+   "Mix / Liquid",
+   "Move / Divided Solid",
+   "Move / Gas",
+   "Move / Liquid",
+   "Move / Solid",
+   "Rotate / Divided Solid"
+  ],
+  "notes": [
+   "For a divided solid suspended in a fluid.",
+   "For example, a suspension of particles in a liquid or gas."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Gravitational Lensing",
+  "desc": "A gravitational lens is formed when the light from a very distant, bright source (such as a quasar) is 'bent' around a massive object (such as a cluster of galaxies) between the source object and the observer. The process is known as gravitational lensing, and is one of the predictions of Albert Einstein's general theory of relativity.",
+  "wiki": "http://en.wikipedia.org/wiki/Gravitational_lensing",
+  "functions": [
+   "Bend / Field",
+   "Compress / Field",
+   "Concentrate / Field",
+   "Expand / Field",
+   "Move / Field"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Gravitational Redshift",
+  "desc": "Light or other forms of electromagnetic radiation of a certain wavelength originating from a source placed in a region of stronger gravitational field (and which could be said to have climbed 'uphill' out of a gravity well) will be found to be of longer wavelength when received by an observer in a region of weaker gravitational field. If applied to optical wave-lengths this manifests itself as a change in the colour of the light as the wavelength is shifted toward the red (less energetic, longer in wavelength, and lower in frequency) end of the spectrum.",
+  "wiki": "http://en.wikipedia.org/wiki/Gravitational_redshift",
+  "functions": [
+   "Expand / Field"
+  ],
+  "notes": [],
+  "deckGuess": "gravitational-red-shift"
+ },
+ {
+  "name": "Groove",
+  "desc": "A long and narrow indentation built into a material, generally for the purpose of allowing another material or part to move within the groove and be guided by it.",
+  "wiki": "http://en.wikipedia.org/wiki/Groove_%28engineering%29",
+  "functions": [
+   "Accumulate / Divided Solid",
+   "Accumulate / Liquid",
+   "Compress / Solid",
+   "Constrain / Divided Solid",
+   "Constrain / Liquid",
+   "Constrain / Solid",
+   "Hold / Divided Solid",
+   "Hold / Liquid",
+   "Hold / Solid",
+   "Orient / Divided Solid",
+   "Orient / Liquid",
+   "Orient / Solid"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Ground Effect",
+  "desc": "Aircraft may be affected by a number of ground effects, or aerodynamic effects due to a flying body's proximity to the ground.",
+  "wiki": "http://en.wikipedia.org/wiki/Ground_effect_(aircraft)",
+  "functions": [
+   "Compress / Gas",
+   "Mix / Divided Solid",
+   "Move / Divided Solid",
+   "Orient / Solid",
+   "Resist / Divided Solid",
+   "Rotate / Divided Solid"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Hall Effect",
+  "desc": "The potential difference (Hall voltage) on the opposite sides of an electrical conductor through which there is an electric current, created by a magnetic field applied perpendicularly to the current.",
+  "wiki": "http://en.wikipedia.org/wiki/Hall_effect",
+  "functions": [
+   "Detect / Divided Solid",
+   "Detect / Field",
+   "Detect / Solid",
+   "Produce / Field"
+  ],
+  "notes": [
+   "In the case of magnetic particles.",
+   "Through proximity to a magnetic field"
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Harmonic Oscillator",
+  "desc": "A system which, when displaced from its equilibrium position, experiences a restoring force proportional to the displacement. Mechanical examples include pendula (with small angles of displacement) and masses connected to springs.",
+  "wiki": "http://en.wikipedia.org/wiki/Harmonic_oscillator",
+  "functions": [
+   "Absorb / Field",
+   "Accumulate / Field",
+   "Compress / Gas",
+   "Compress / Liquid",
+   "Compress / Solid",
+   "Expand / Gas",
+   "Expand / Liquid",
+   "Expand / Solid",
+   "Hold / Field",
+   "Mix / Divided Solid",
+   "Move / Divided Solid",
+   "Move / Liquid",
+   "Move / Solid",
+   "Rotate / Solid",
+   "Vibrate / Divided Solid",
+   "Vibrate / Solid"
+  ],
+  "notes": [
+   "A liquid held in a U tube can act as a harmonic oscillator (albeit one that is heavily damped)",
+   "For part of the cycle."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Heat Treatment",
+  "desc": "A method used to alter the physical, and sometimes chemical, properties of a material through the use of heating or chilling, normally to extreme temperatures, to achieve a desired result such as hardening or softening of a material. Heat treatment techniques include annealing, case hardening, precipitation strengthening, tempering and quenching.",
+  "wiki": "http://en.wikipedia.org/wiki/Heat_treatment",
+  "functions": [
+   "Protect / Solid"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Heating",
+  "desc": "The act of increasing temperature.",
+  "wiki": null,
+  "functions": [
+   "Absorb / Field",
+   "Break Down / Divided Solid",
+   "Change Phase / Divided Solid",
+   "Change Phase / Liquid",
+   "Change Phase / Solid",
+   "Deposit / Divided Solid",
+   "Destroy / Divided Solid",
+   "Destroy / Gas",
+   "Destroy / Liquid",
+   "Destroy / Solid",
+   "Dry / Divided Solid",
+   "Dry / Gas",
+   "Dry / Liquid",
+   "Dry / Solid",
+   "Evaporate / Divided Solid",
+   "Evaporate / Liquid",
+   "Evaporate / Solid",
+   "Expand / Divided Solid",
+   "Expand / Gas",
+   "Expand / Liquid",
+   "Expand / Solid",
+   "Heat / Divided Solid",
+   "Heat / Gas",
+   "Heat / Liquid",
+   "Heat / Solid",
+   "Join / Divided Solid",
+   "Join / Solid",
+   "Melt / Divided Solid",
+   "Melt / Solid",
+   "Produce / Gas",
+   "Produce / Liquid",
+   "Remove / Divided Solid",
+   "Remove / Gas",
+   "Remove / Liquid",
+   "Remove / Solid"
+  ],
+  "notes": [
+   "By evaporation of a liquid",
+   "By melting of a solid",
+   "For example, through melting and then subsequent cooling and solidfying.",
+   "Through melting and subsequent cooling and re-solidifying."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Helix",
+  "desc": "A special kind of space curve, i.e. a smooth curve in three-space. A helix is characterised by the fact that the tangent line at any point makes a constant angle with a fixed line.",
+  "wiki": "http://en.wikipedia.org/wiki/Helix",
+  "functions": [
+   "Compress / Divided Solid",
+   "Join / Solid",
+   "Mix / Divided Solid",
+   "Move / Divided Solid",
+   "Move / Solid",
+   "Orient / Divided Solid",
+   "Orient / Solid",
+   "Remove / Divided Solid",
+   "Rotate / Solid"
+  ],
+  "notes": [
+   "For example, a lead screw",
+   "For example, a wood screw"
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Helmholtz Resonance",
+  "desc": "The phenomenon of air resonance in a cavity, such as when one blows across the top of an empty bottle.",
+  "wiki": "http://en.wikipedia.org/wiki/Helmholtz_resonance",
+  "functions": [
+   "Detect / Gas",
+   "Vibrate / Gas"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Hooke's Law",
+  "desc": "Hooke's law of elasticity is an approximation that states that the extension of a spring is in direct proportion with the load added to it as long as this load does not exceed the elastic limit. Materials for which Hooke's law is a useful approximation are known as linear-elastic or 'Hookean' materials.",
+  "wiki": "http://en.wikipedia.org/wiki/Hooke%27s_law",
+  "functions": [
+   "Absorb / Field",
+   "Accumulate / Field",
+   "Compress / Solid",
+   "Detect / Field",
+   "Expand / Solid",
+   "Move / Solid",
+   "Resist / Field"
+  ],
+  "notes": [
+   "Force can be detected by the change in length of an object upon which the force acts."
+  ],
+  "deckGuess": "hookes-law"
+ },
+ {
+  "name": "Hot Chocolate Effect",
+  "desc": "The pitch heard from tapping a cup of hot liquid rises after addition of a soluble powder. May be observed by stirring chocolate powder into a mug of hot milk, tapping bottom of mug with a spoon while milk is in motion. Pitch of the taps will increase progressively. Subsequent stirring decreases the pitch. Due to the effect of bubble density on the speed of sound in the liquid. The note heard is the frequency of standing wave with fixed wavelength of liquid column height.",
+  "wiki": "http://en.wikipedia.org/wiki/Hot_chocolate_effect",
+  "functions": [
+   "Detect / Divided Solid",
+   "Detect / Gas"
+  ],
+  "notes": [
+   "Entrained gas bubbles reduce the speed of sound in the liquid, lowering the frequency. As the bubbles clear, sound travels faster in the liquid and the frequency increases."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Hydraulic Jump",
+  "desc": "When liquid at high velocity discharges into a zone of lower velocity, a rather abrupt rise (a step or standing wave) occurs in the liquid surface. The liquid is abruptly slowed and increases in height converting some of the flow's initial kinetic energy into an increase in potential energy, with some energy lost through turbulence to heat. In an open channel flow, this manifests as the fast flow rapidly slowing and piling up on top of itself.",
+  "wiki": "http://en.wikipedia.org/wiki/Hydraulic_jump",
+  "functions": [
+   "Bend / Liquid",
+   "Expand / Liquid",
+   "Heat / Liquid",
+   "Mix / Liquid",
+   "Move / Divided Solid",
+   "Move / Liquid",
+   "Vibrate / Liquid"
+  ],
+  "notes": [
+   "For a divided solid suspended in a fluid.",
+   "Through the effects of turbulence"
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Hydraulic Press",
+  "desc": "A hydraulic mechanism for applying a large lifting or compressive force. It is the hydraulic equivalent of a mechanical lever.",
+  "wiki": "http://en.wikipedia.org/wiki/Hydraulic_press",
+  "functions": [
+   "Compress / Gas",
+   "Compress / Liquid",
+   "Compress / Solid",
+   "Concentrate / Solid",
+   "Destroy / Solid",
+   "Expand / Solid",
+   "Hold / Solid"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Hydrodynamic Cavitation",
+  "desc": "The process of vaporisation, bubble generation and bubble implosion which occurs in a flowing liquid as a result of a decrease and subsequent increase in local pressure.",
+  "wiki": "https://en.wikipedia.org/wiki/Cavitation#Hydrodynamic_cavitation",
+  "functions": [
+   "Break Down / Liquid",
+   "Break Down / Solid",
+   "Clean / Liquid",
+   "Clean / Solid",
+   "Destroy / Solid",
+   "Evaporate / Liquid",
+   "Expand / Gas",
+   "Heat / Liquid",
+   "Heat / Solid",
+   "Mix / Liquid",
+   "Move / Liquid",
+   "Produce / Gas",
+   "Purify / Liquid",
+   "Remove / Liquid",
+   "Remove / Solid",
+   "Vibrate / Liquid"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Hydrogenation",
+  "desc": "Hydrogenation is the chemical reaction that results from the addition of hydrogen. The process is usually employed to a reduce or saturate organic compounds. The process typically constitutes the addition of pairs of hydrogen atoms to a molecule.",
+  "wiki": "http://en.wikipedia.org/wiki/Hydrogenation",
+  "functions": [
+   "Absorb / Liquid",
+   "Accumulate / Liquid",
+   "Destroy / Divided Solid",
+   "Destroy / Gas",
+   "Destroy / Liquid",
+   "Destroy / Solid",
+   "Produce / Solid",
+   "Remove / Divided Solid",
+   "Remove / Gas",
+   "Remove / Liquid",
+   "Remove / Solid"
+  ],
+  "notes": [
+   "For example, hydrogenation converts liquid vegetable oils into solid or semi-solid fats, such as those present in margarine."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Hydrolysis",
+  "desc": "A chemical reaction during which one or more water molecules are split into hydrogen and hydroxide ions which may go on to participate in further reactions.",
+  "wiki": "http://en.wikipedia.org/wiki/Hydrolysis",
+  "functions": [
+   "Break Down / Divided Solid",
+   "Break Down / Liquid",
+   "Break Down / Solid",
+   "Separate / Liquid",
+   "Separate / Solid"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Hydrophile",
+  "desc": "A physical property of a molecule that can transiently bond with water (H2O) through hydrogen bonding. This is thermodynamically favorable, and makes these molecules soluble not only in water, but also in other polar solvents.",
+  "wiki": "http://en.wikipedia.org/wiki/Hydrophile",
+  "functions": [
+   "Break Down / Divided Solid",
+   "Break Down / Liquid",
+   "Break Down / Solid",
+   "Change Phase / Divided Solid",
+   "Change Phase / Solid",
+   "Clean / Divided Solid",
+   "Clean / Solid",
+   "Hold / Liquid",
+   "Remove / Divided Solid",
+   "Remove / Liquid",
+   "Remove / Solid",
+   "Separate / Liquid",
+   "Separate / Solid"
+  ],
+  "notes": [
+   "In the sense that it can transform it so as to become soluble in a liquid.",
+   "Soap has a hydrophilic head and a hydrophobic tail, which allows it to dissolve in both waters and oils, therefore allowing the soap to clean a surface."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Hydrophobe",
+  "desc": "The physical property of a molecule (known as a hydrophobe) that is repelled from a mass of water. Hydrophobic molecules tend to be non-polar and thus prefer other neutral molecules and nonpolar solvents. Hydrophobic molecules in water often cluster together forming micelles. Water on hydrophobic surfaces will exhibit a high contact angle.",
+  "wiki": "http://en.wikipedia.org/wiki/Hydrophobe",
+  "functions": [
+   "Accumulate / Liquid",
+   "Clean / Solid",
+   "Constrain / Liquid",
+   "Dry / Divided Solid",
+   "Dry / Solid",
+   "Hold / Liquid",
+   "Join / Liquid",
+   "Protect / Solid",
+   "Remove / Liquid",
+   "Resist / Liquid",
+   "Separate / Liquid"
+  ],
+  "notes": [
+   "For example, the lotus leaf effect."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Hyperboloid",
+  "desc": "A hyperboloid is a quadric, a type of surface in three dimensions. A hyperboloid of revolution of one sheet can be obtained by revolving a hyperbola around its semi-minor axis. A hyperboloid of revolution of two sheets can be obtained by revolving a hyperbola around its focal axis. Hyperboloid structures are used in construction - they can be built with straight steel beams. Examples include cooling towers.",
+  "wiki": "http://en.wikipedia.org/wiki/Hyperboloid",
+  "functions": [
+   "Bend / Solid",
+   "Rotate / Solid"
+  ],
+  "notes": [
+   "Hyperboloid forms are sometimes used for transmission gears.",
+   "The hyperboloid is an example of a curved structure that can be constructed using straight lines - for example a power station cooling tower."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Imbert-Fedorov Effect",
+  "desc": "An optical phenomenon in which circularly or elliptically polarized light undergoes a small shift, transverse to the direction of propagation, when totally internally reflected. This effect is the circular polarisation analog of the Goos-Hänchen effect.",
+  "wiki": "http://en.wikipedia.org/wiki/Imbert-Fedorov_effect",
+  "functions": [
+   "Change Phase / Field",
+   "Move / Field"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Impact Force",
+  "desc": "A high force or shock applied over a short time period. Such a force or acceleration can sometimes have a greater effect than a lower force applied over a proportionally longer time period.",
+  "wiki": "http://en.wikipedia.org/wiki/Impact_force",
+  "functions": [
+   "Break Down / Divided Solid",
+   "Break Down / Solid",
+   "Compress / Divided Solid",
+   "Compress / Gas",
+   "Compress / Liquid",
+   "Compress / Solid",
+   "Concentrate / Divided Solid",
+   "Concentrate / Solid",
+   "Deposit / Divided Solid",
+   "Destroy / Divided Solid",
+   "Destroy / Solid",
+   "Expand / Gas",
+   "Expand / Liquid",
+   "Expand / Solid",
+   "Heat / Divided Solid",
+   "Heat / Solid",
+   "Join / Divided Solid",
+   "Move / Divided Solid",
+   "Move / Liquid",
+   "Move / Solid",
+   "Produce / Divided Solid"
+  ],
+  "notes": [
+   "During an impact, some of the mechanical energy is converted to heat."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Incandescence",
+  "desc": "The emission of light (visible electromagnetic radiation) from a hot body due to its temperature.",
+  "wiki": "http://en.wikipedia.org/wiki/Incandescence",
+  "functions": [
+   "Break Down / Divided Solid",
+   "Break Down / Gas",
+   "Break Down / Liquid",
+   "Break Down / Solid",
+   "Cool / Divided Solid",
+   "Cool / Gas",
+   "Cool / Liquid",
+   "Cool / Solid",
+   "Detect / Divided Solid",
+   "Detect / Solid",
+   "Dry / Divided Solid",
+   "Dry / Gas",
+   "Dry / Liquid",
+   "Dry / Solid",
+   "Heat / Divided Solid",
+   "Heat / Gas",
+   "Heat / Liquid",
+   "Heat / Solid",
+   "Produce / Field"
+  ],
+  "notes": [
+   "Through detection of the radiation emitted by an incandescent divided solid.",
+   "Through detection of the radiation emitted by an incandescent solid."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Induction Heating",
+  "desc": "The process of heating an electrically conducting object (usually a metal) by electromagnetic induction, where eddy currents are generated within the metal and resistance leads to Joule heating of the metal.",
+  "wiki": "http://en.wikipedia.org/wiki/Induction_heating",
+  "functions": [
+   "Detect / Field",
+   "Dry / Divided Solid",
+   "Evaporate / Divided Solid",
+   "Expand / Gas",
+   "Expand / Liquid",
+   "Expand / Solid",
+   "Heat / Divided Solid",
+   "Heat / Gas",
+   "Heat / Liquid",
+   "Heat / Solid",
+   "Melt / Divided Solid",
+   "Produce / Field"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Inertia",
+  "desc": "The resistance of any physical object to a change in its state of motion or rest. It is proportional to an object's mass.",
+  "wiki": "http://en.wikipedia.org/wiki/Inertia",
+  "functions": [
+   "Accumulate / Divided Solid",
+   "Bend / Solid",
+   "Compress / Divided Solid",
+   "Constrain / Divided Solid",
+   "Destroy / Solid",
+   "Expand / Solid",
+   "Hold / Divided Solid",
+   "Hold / Liquid",
+   "Move / Divided Solid",
+   "Move / Gas",
+   "Move / Liquid",
+   "Move / Solid",
+   "Orient / Gas",
+   "Orient / Liquid",
+   "Orient / Solid",
+   "Remove / Divided Solid",
+   "Remove / Solid",
+   "Rotate / Divided Solid",
+   "Rotate / Gas",
+   "Rotate / Liquid",
+   "Rotate / Solid",
+   "Separate / Divided Solid",
+   "Separate / Solid"
+  ],
+  "notes": [
+   "Applying instantaneous tension to one side of an object will (initially) cause it to be stretched due to the intertia of the object."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Infrared Radiation",
+  "desc": "Infrared (IR) radiation is electromagnetic radiation whose wavelength is longer than that of visible light (400-700 nm), but shorter than that of terahertz radiation (3-300 µm) and microwaves (~30,000 µm). Infrared radiation spans roughly three orders of magnitude (750 nm and 1000 µm).",
+  "wiki": "http://en.wikipedia.org/wiki/Infra_Red",
+  "functions": [
+   "Break Down / Divided Solid",
+   "Break Down / Gas",
+   "Break Down / Liquid",
+   "Break Down / Solid",
+   "Change Phase / Divided Solid",
+   "Change Phase / Liquid",
+   "Change Phase / Solid",
+   "Cool / Divided Solid",
+   "Cool / Gas",
+   "Cool / Liquid",
+   "Cool / Solid",
+   "Destroy / Divided Solid",
+   "Destroy / Gas",
+   "Destroy / Liquid",
+   "Destroy / Solid",
+   "Detect / Divided Solid",
+   "Detect / Field",
+   "Detect / Gas",
+   "Detect / Liquid",
+   "Detect / Solid",
+   "Dry / Divided Solid",
+   "Dry / Solid",
+   "Evaporate / Divided Solid",
+   "Evaporate / Liquid",
+   "Evaporate / Solid",
+   "Heat / Divided Solid",
+   "Heat / Gas",
+   "Heat / Liquid",
+   "Heat / Solid",
+   "Melt / Divided Solid",
+   "Melt / Solid",
+   "Produce / Field"
+  ],
+  "notes": [
+   "By emission of Infrared Radiation.",
+   "By emission of infrared radiation",
+   "From energy of incident infrared radiation."
+  ],
+  "deckGuess": "infrared-radiation"
+ },
+ {
+  "name": "Interference",
+  "desc": "The addition (superposition) of two or more waves that result in a new wave pattern. As most commonly used, the term interference usually refers to the interaction of waves which are correlated or coherent with each other, either because they come from the same source or because they have the same or nearly the same frequency.",
+  "wiki": "http://en.wikipedia.org/wiki/Interference#Constructive_and_destructive_interference",
+  "functions": [
+   "Accumulate / Field",
+   "Bend / Field",
+   "Compress / Field",
+   "Destroy / Field",
+   "Destroy / Solid",
+   "Detect / Field",
+   "Expand / Field",
+   "Extract / Field",
+   "Join / Field",
+   "Move / Field",
+   "Orient / Field",
+   "Produce / Field",
+   "Vibrate / Divided Solid",
+   "Vibrate / Gas",
+   "Vibrate / Solid"
+  ],
+  "notes": [
+   "By constructive interference.",
+   "By destructive interference. For example: noise cancelling headphones.",
+   "For example, through constructive interference with a reference field to amplify the field of interest.",
+   "For example, through constructive interference with a reference field."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Inverse Compton Scattering",
+  "desc": "The increase in energy (decrease in wavelength) of an X-ray or gamma ray photon, when it interacts with matter.",
+  "wiki": "http://en.wikipedia.org/wiki/Compton_scattering",
+  "functions": [
+   "Produce / Field"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Inverse Faraday Effect",
+  "desc": "The effect opposite to the Faraday effect. A static magnetisation is induced by an external oscillating electrical field which can be achieved with a high intensity laser pulse for example",
+  "wiki": "http://en.wikipedia.org/wiki/Inverse_Faraday_effect",
+  "functions": [
+   "Produce / Field"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Ionisation",
+  "desc": "The physical process of converting an atom or molecule into an ion by adding or removing charged particles such as electrons or other ions.",
+  "wiki": "http://en.wikipedia.org/wiki/Ionisation",
+  "functions": [
+   "Accumulate / Gas",
+   "Bend / Gas",
+   "Break Down / Divided Solid",
+   "Break Down / Gas",
+   "Break Down / Liquid",
+   "Break Down / Solid",
+   "Constrain / Gas",
+   "Constrain / Liquid",
+   "Constrain / Solid",
+   "Deposit / Gas",
+   "Destroy / Divided Solid",
+   "Detect / Gas",
+   "Extract / Gas",
+   "Move / Gas",
+   "Move / Liquid",
+   "Move / Solid",
+   "Remove / Solid",
+   "Separate / Gas",
+   "Separate / Liquid"
+  ],
+  "notes": [
+   "For example, Ion Thruster"
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Iridescence",
+  "desc": "(also known as goniochromism) The property of certain surfaces which appear to change colour as the angle of view changes. Iridescence is commonly seen in items such as soap bubbles, butterfly wings, and sea shells. Caused by multiple reflections from multi-layered, semi-transparent surfaces in which phase shift and interference of the reflections modulates the incident light",
+  "wiki": "http://en.wikipedia.org/wiki/Iridescence",
+  "functions": [
+   "Detect / Divided Solid",
+   "Detect / Solid",
+   "Expand / Field"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Jet",
+  "desc": "A coherent stream of fluid (e.g. gas or liquid) that is projected into a surrounding medium, usually from some kind of a nozzle or aperture. Jets can travel long distances without dissipating.",
+  "wiki": "http://en.wikipedia.org/wiki/Jet_(fluid)",
+  "functions": [
+   "Bend / Gas",
+   "Break Down / Solid",
+   "Clean / Solid",
+   "Compress / Gas",
+   "Compress / Liquid",
+   "Destroy / Solid",
+   "Expand / Gas",
+   "Expand / Liquid",
+   "Mix / Divided Solid",
+   "Mix / Gas",
+   "Mix / Liquid",
+   "Move / Divided Solid",
+   "Move / Gas",
+   "Move / Liquid",
+   "Move / Solid",
+   "Produce / Divided Solid",
+   "Remove / Divided Solid",
+   "Remove / Solid",
+   "Rotate / Divided Solid",
+   "Rotate / Gas",
+   "Rotate / Liquid",
+   "Rotate / Solid",
+   "Separate / Divided Solid",
+   "Vibrate / Gas",
+   "Vibrate / Liquid"
+  ],
+  "notes": [
+   "For example, by reaction force resulting from the jet."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Jet Damping",
+  "desc": "(or Thrust Damping) is the effect of rocket exhaust removing energy from the transverse angular motion of a rocket. If a rocket has pitch or yaw motion then the exhaust must be accelerated laterally as it flows down the exhaust tube and nozzle. Once the exhaust leaves the nozzle this lateral momentum is lost to the vehicle and thus serves to damping the lateral oscillations.",
+  "wiki": "http://en.wikipedia.org/wiki/Jet_damping",
+  "functions": [
+   "Constrain / Solid"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Johnsen-Rahbek Effect",
+  "desc": "An attractive force that occurs when an electric potential is applied across the boundary between a metallic surface and the surface of a semiconducting material. The magnitude of the force depends on the voltage and the specific materials involved.",
+  "wiki": "http://en.wikipedia.org/wiki/Johnsen%E2%80%93Rahbek_effect",
+  "functions": [
+   "Constrain / Divided Solid",
+   "Constrain / Solid",
+   "Hold / Divided Solid",
+   "Hold / Solid",
+   "Join / Divided Solid",
+   "Join / Solid",
+   "Move / Divided Solid",
+   "Move / Solid"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Josephson Effect",
+  "desc": "The phenomenon of current flow across two weakly coupled superconductors, separated by a very thin insulating barrier.",
+  "wiki": "http://en.wikipedia.org/wiki/Josephson_effect",
+  "functions": [
+   "Detect / Field"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Joule Heating",
+  "desc": "The process by which the passage of an electric current through a conductor releases heat. Heat generated is a function of current, resistance and time. Also known as the Joule-Lenz effect, Ohmic heating or resitive heating.",
+  "wiki": "http://en.wikipedia.org/wiki/Joule_heating",
+  "functions": [
+   "Absorb / Field",
+   "Break Down / Divided Solid",
+   "Break Down / Solid",
+   "Change Phase / Divided Solid",
+   "Change Phase / Solid",
+   "Destroy / Solid",
+   "Detect / Divided Solid",
+   "Detect / Field",
+   "Detect / Solid",
+   "Dry / Divided Solid",
+   "Dry / Solid",
+   "Evaporate / Liquid",
+   "Evaporate / Solid",
+   "Expand / Gas",
+   "Expand / Liquid",
+   "Expand / Solid",
+   "Heat / Divided Solid",
+   "Heat / Gas",
+   "Heat / Liquid",
+   "Heat / Solid",
+   "Melt / Divided Solid",
+   "Melt / Solid",
+   "Produce / Field",
+   "Produce / Liquid",
+   "Separate / Solid"
+  ],
+  "notes": [
+   "By melting of a solid",
+   "For example, an electrical fuse 'blows' as a result of heating.",
+   "Indirectly through heat generated in the case of an electrical conductor.",
+   "May be indirect, with heat transferred from a solid heating element"
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Joule-Thomson Effect",
+  "desc": "The temperature change of a gas resulting from expansion without production of work or the transfer of heat. For example, when a gas or liquid is forced through a valve or porous plug while kept insulated.",
+  "wiki": "http://en.wikipedia.org/wiki/Joule%E2%80%93Thomson_effect",
+  "functions": [
+   "Condense / Gas",
+   "Cool / Gas",
+   "Cool / Liquid",
+   "Cool / Solid",
+   "Freeze / Gas",
+   "Freeze / Liquid",
+   "Heat / Gas",
+   "Produce / Liquid"
+  ],
+  "notes": [
+   "At ordinary temperatures and pressures, all real gases except hydrogen and helium and neon are cooled by the Joule-Thompson effect.",
+   "By cooling a gas until it liquifies",
+   "Indirectly through the heating of a gas by the Joule-Thompson Effect"
+  ],
+  "deckGuess": "joule-thomson-effect"
+ },
+ {
+  "name": "Kelvin-Helmholtz Instability",
+  "desc": "A fluid interface that can occur when there is velocity shear in a single continuous fluid, or where there is a velocity difference across the interface between two fluids. An example is wind blowing over water: The instability manifests in waves on the water surface. More generally, clouds, the ocean, Saturn's bands, and the sun's corona show this instability.",
+  "wiki": "http://en.wikipedia.org/wiki/Kelvin%E2%80%93Helmholtz_instability",
+  "functions": [
+   "Mix / Gas",
+   "Mix / Liquid",
+   "Move / Gas",
+   "Move / Liquid"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Kerr Effect",
+  "desc": "(or the quadratic electro-optic effect) A change in the refractive index of a material in response to an electric field. Distinct from the Pockels effect in that the induced index change is directly proportional to the square of the electric field instead of to the magnitude of the field. All materials show a Kerr effect, but certain liquids display the effect more strongly than other materials.",
+  "wiki": "http://en.wikipedia.org/wiki/Kerr_effect",
+  "functions": [
+   "Bend / Field",
+   "Constrain / Field",
+   "Expand / Field",
+   "Move / Field",
+   "Orient / Field",
+   "Remove / Field",
+   "Rotate / Field"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Kármán Vortex Street",
+  "desc": "A repeating pattern of swirling vortices caused by the unsteady separation of flow of a fluid over bluff bodies. It is responsible for such phenomena as the 'singing' of suspended telephone or power lines, the vibration of a car antenna at certain speeds.",
+  "wiki": "http://en.wikipedia.org/wiki/Von_Karman_vortex_street",
+  "functions": [
+   "Bend / Field",
+   "Bend / Gas",
+   "Bend / Liquid",
+   "Destroy / Solid",
+   "Detect / Gas",
+   "Detect / Liquid",
+   "Move / Divided Solid",
+   "Move / Gas",
+   "Move / Liquid",
+   "Move / Solid",
+   "Rotate / Divided Solid",
+   "Rotate / Gas",
+   "Rotate / Liquid",
+   "Vibrate / Gas",
+   "Vibrate / Liquid",
+   "Vibrate / Solid"
+  ],
+  "notes": [
+   "In the case of a divided solid suspended in a fluid.",
+   "The nature of the vortcies will depend upon the viscosity of the fluid.",
+   "The presence of the of the vortex sheet will depend upon the viscosity of the fluid.",
+   "Vortex shedding caused the collapse of three towers at Ferrybridge power station in 1968 during high winds."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Lagrangian Point",
+  "desc": "The Lagrangian points are the five positions in an orbital configuration where a small object affected only by gravity can theoretically be stationary relative to two larger objects (such as a satellite with respect to the Earth and Moon). The Lagrange points mark positions where the combined gravitational pull of the two large masses provides precisely the centripetal force required to rotate with them.",
+  "wiki": "http://en.wikipedia.org/wiki/Lagrangian_point",
+  "functions": [
+   "Hold / Divided Solid",
+   "Hold / Solid"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Laminar Flow",
+  "desc": "(sometimes known as streamline flow) Occurs when a fluid flows in parallel layers, with no disruption between the layers. In fluid dynamics, laminar flow is a flow regime characterized by high momentum diffusion, low momentum convection, pressure and velocity independent from time. It is the opposite of turbulent flow. In nonscientific terms laminar flow is 'smooth,' while turbulent flow is 'rough.'",
+  "wiki": "http://en.wikipedia.org/wiki/Laminar_flow",
+  "functions": [
+   "Hold / Liquid",
+   "Orient / Divided Solid",
+   "Orient / Gas",
+   "Orient / Liquid"
+  ],
+  "notes": [
+   "In the case of a divided solid suspended in a fluid."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Latent Heat",
+  "desc": "Energy released or absorbed, by a body or a thermodynamic system, during a constant-temperature process. An example is a state of matter change, meaning a phase transition, such as ice melting or water boiling.",
+  "wiki": "http://en.wikipedia.org/wiki/Latent_heat",
+  "functions": [
+   "Absorb / Field",
+   "Change Phase / Divided Solid",
+   "Change Phase / Gas",
+   "Change Phase / Liquid",
+   "Change Phase / Solid",
+   "Cool / Divided Solid",
+   "Cool / Gas",
+   "Cool / Liquid",
+   "Cool / Solid",
+   "Dry / Divided Solid",
+   "Dry / Solid",
+   "Evaporate / Divided Solid",
+   "Evaporate / Liquid",
+   "Evaporate / Solid",
+   "Expand / Gas",
+   "Expand / Liquid",
+   "Expand / Solid",
+   "Freeze / Gas",
+   "Freeze / Liquid",
+   "Heat / Divided Solid",
+   "Heat / Gas",
+   "Heat / Liquid",
+   "Heat / Solid",
+   "Melt / Divided Solid",
+   "Melt / Solid",
+   "Produce / Field",
+   "Remove / Divided Solid",
+   "Remove / Liquid"
+  ],
+  "notes": [
+   "For example, using ice to absorb the heat from a drink.",
+   "Through heating and subsequent evaporation.",
+   "Through heating."
+  ],
+  "deckGuess": "latent-heat"
+ },
+ {
+  "name": "Leidenfrost Effect",
+  "desc": "A phenomenon in which a liquid, in near contact with a mass significantly hotter than its boiling point, produces an insulating vapour layer which keeps that liquid from boiling rapidly. Due to this repulsive force, the droplet hovers over the surface rather than making physical contact with it. Commonly seen in the case of droplets of water skittering across a very hot metal surface.",
+  "wiki": "http://en.wikipedia.org/wiki/Leidenfrost_effect",
+  "functions": [
+   "Change Phase / Liquid",
+   "Cool / Solid",
+   "Heat / Liquid",
+   "Hold / Liquid",
+   "Move / Liquid",
+   "Produce / Gas",
+   "Protect / Liquid"
+  ],
+  "notes": [
+   "The liquid (well, most of it!) is insulated from the hot surface"
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Lenard Effect",
+  "desc": "The separation of electric charges accompanying the aerodynamic breakup of water drops. It is also known as spray electrification or the waterfall effect.",
+  "wiki": null,
+  "functions": [
+   "Detect / Liquid",
+   "Produce / Field"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Length Contraction",
+  "desc": "The physical phenomenon of a decrease in length detected by an observer of objects that travel at any non-zero velocity relative to that observer. This contraction is usually only noticeable at a substantial fraction of the speed of light; the contraction is only in the direction parallel to the direction in which the observed body is travelling.",
+  "wiki": "http://en.wikipedia.org/wiki/Length_contraction",
+  "functions": [
+   "Compress / Divided Solid",
+   "Compress / Gas",
+   "Compress / Liquid",
+   "Compress / Solid"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Light",
+  "desc": "Light is electromagnetic radiation of a wavelength that is visible to the human eye (in a range from about 380 or 400 nanometres to about 760 or 780 nm)",
+  "wiki": "http://en.wikipedia.org/wiki/Light",
+  "functions": [
+   "Break Down / Divided Solid",
+   "Break Down / Gas",
+   "Break Down / Liquid",
+   "Break Down / Solid",
+   "Clean / Solid",
+   "Destroy / Divided Solid",
+   "Destroy / Gas",
+   "Destroy / Liquid",
+   "Destroy / Solid",
+   "Detect / Divided Solid",
+   "Detect / Gas",
+   "Detect / Liquid",
+   "Detect / Solid",
+   "Evaporate / Liquid",
+   "Evaporate / Solid",
+   "Heat / Divided Solid",
+   "Heat / Gas",
+   "Heat / Liquid",
+   "Heat / Solid",
+   "Melt / Divided Solid",
+   "Melt / Solid",
+   "Move / Solid",
+   "Purify / Divided Solid",
+   "Remove / Divided Solid"
+  ],
+  "notes": [
+   "For example, a solar sail.",
+   "For example, using a high-power laser source.",
+   "Using a high-power light source or a target susceptible to light",
+   "Using a high-power light source or a target susceptible to light."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Liquid Crystals",
+  "desc": "Substances that exhibit a phase of matter that has properties between those of a conventional liquid, and those of a solid crystal.",
+  "wiki": "http://en.wikipedia.org/wiki/Liquid_crystal",
+  "functions": [
+   "Absorb / Field",
+   "Bend / Field",
+   "Constrain / Field",
+   "Detect / Field",
+   "Orient / Field",
+   "Rotate / Field"
+  ],
+  "notes": [
+   "Liquid crystals are use to absorb (attenuate) light."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "London Dispersion Force",
+  "desc": "A weak intermolecular force acting between atoms and molecules arising from quantum induced instantaneous polarisation multipoles in molecules. Can therefore act between molecules without permanent multipole moments.",
+  "wiki": "http://en.wikipedia.org/wiki/London_dispersion_force",
+  "functions": [
+   "Accumulate / Gas",
+   "Constrain / Divided Solid",
+   "Constrain / Gas",
+   "Constrain / Liquid",
+   "Constrain / Solid",
+   "Hold / Divided Solid",
+   "Hold / Gas",
+   "Hold / Liquid",
+   "Hold / Solid",
+   "Join / Divided Solid",
+   "Join / Gas",
+   "Join / Liquid",
+   "Join / Solid",
+   "Orient / Solid"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Lonsdaleite",
+  "desc": "(also called Hexagonal diamond in reference to the crystal structure) An allotrope of carbon with a hexagonal lattice. In Nature, it forms from graphite present in meteorites upon their impact to Earth. Lonsdaleite might be 58% harder than diamond.",
+  "wiki": "http://en.wikipedia.org/wiki/Lonsdaleite",
+  "functions": [
+   "Protect / Solid"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Lorentz Force",
+  "desc": "The force on a point charge due to electromagnetic fields. When a wire carrying an electrical current is placed in a magnetic field, each of the moving charges, which comprise the current, experiences the Lorentz force, and together they can create a macroscopic force on the wire (sometimes called the Laplace force).",
+  "wiki": "http://en.wikipedia.org/wiki/Lorentz_force",
+  "functions": [
+   "Absorb / Field",
+   "Accumulate / Divided Solid",
+   "Bend / Gas",
+   "Compress / Divided Solid",
+   "Concentrate / Divided Solid",
+   "Constrain / Divided Solid",
+   "Expand / Gas",
+   "Expand / Liquid",
+   "Expand / Solid",
+   "Extract / Divided Solid",
+   "Hold / Divided Solid",
+   "Join / Field",
+   "Mix / Divided Solid",
+   "Move / Divided Solid",
+   "Move / Field",
+   "Move / Liquid",
+   "Move / Solid",
+   "Orient / Divided Solid",
+   "Orient / Field",
+   "Orient / Liquid",
+   "Orient / Solid",
+   "Produce / Field",
+   "Remove / Divided Solid",
+   "Rotate / Divided Solid",
+   "Rotate / Field",
+   "Rotate / Solid",
+   "Separate / Divided Solid",
+   "Vibrate / Divided Solid",
+   "Vibrate / Field",
+   "Vibrate / Liquid",
+   "Vibrate / Solid"
+  ],
+  "notes": [
+   "A liquid conducting electricity and passing through a perpendicular magnetic field experiences a Lorenz Force. This can be used to implement a pump.",
+   "In the case of a current carrying liquid in a magnetic field,.",
+   "When a wire carrying an electrical current is placed in a magnetic field, each of the moving charges, which comprise the current, experiences the Lorentz force, and together they can create a macroscopic force on the wire."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Lotus Leaf Effect",
+  "desc": "The leaves of the sacred lotus flower (Nelumbo) are characterized by a very high water repellency (superhydrophobicity). Dirt particles are picked up by water droplets due to a complex micro- and nanoscopic architecture of the surface which enables minimisation of adhesion.",
+  "wiki": "http://en.wikipedia.org/wiki/Lotus_effect",
+  "functions": [
+   "Accumulate / Solid",
+   "Clean / Solid",
+   "Dry / Solid",
+   "Move / Divided Solid",
+   "Move / Liquid",
+   "Move / Solid",
+   "Protect / Solid",
+   "Remove / Divided Solid"
+  ],
+  "notes": [
+   "Particles of dirt on a surface can be accumulated on the surface of water droplets running over the surface.",
+   "Solid particles are carried by the water droplets."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Lubrication",
+  "desc": "A process, or technique to reduce wear of one or both surfaces in close proximity, and moving relative to each other, by interposing a substance (lubricant) between the surfaces to carry or to help carry the load (pressure generated) between the opposing surfaces. The interposed lubricant film can be a solid, (e.g. graphite) a solid/liquid dispersion, a liquid, a liquid-liquid dispersion (a grease) or, exceptionally, a gas.",
+  "wiki": "http://en.wikipedia.org/wiki/Lubrication",
+  "functions": [
+   "Separate / Solid"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Luminescence",
+  "desc": "The generation of light that usually occurs at low temperatures, and is thus a form of cold body radiation. It can be caused by chemical reactions, electrical energy, subatomic motions, or stress on a crystal. This distinguishes luminescence from incandescence, which is light generated by high temperatures.",
+  "wiki": "http://en.wikipedia.org/wiki/Luminescence",
+  "functions": [
+   "Detect / Divided Solid",
+   "Detect / Gas",
+   "Detect / Liquid",
+   "Detect / Solid",
+   "Produce / Field"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Maggi-Righi-Leduc Effect",
+  "desc": "Changes in thermal conductivity when placing a conductor in a magnetic field.",
+  "wiki": "http://en.wikipedia.org/wiki/Maggi%E2%80%93Righi%E2%80%93Leduc_effect",
+  "functions": [
+   "Detect / Field"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Magnetic Field",
+  "desc": "A vector field which surrounds magnets and electric currents, and is detected by the force it exerts on moving electric charges and on magnetic materials. When placed in a magnetic field, magnetic dipoles tend to align their axes parallel to the magnetic field. Magnetic fields also have their own energy with an energy density proportional to the square of the field intensity.",
+  "wiki": "http://en.wikipedia.org/wiki/Magnetic_field",
+  "functions": [
+   "Accumulate / Divided Solid",
+   "Accumulate / Liquid",
+   "Accumulate / Solid",
+   "Bend / Field",
+   "Bend / Gas",
+   "Bend / Liquid",
+   "Bend / Solid",
+   "Clean / Divided Solid",
+   "Clean / Gas",
+   "Clean / Liquid",
+   "Clean / Solid",
+   "Compress / Divided Solid",
+   "Compress / Field",
+   "Concentrate / Divided Solid",
+   "Concentrate / Field",
+   "Concentrate / Liquid",
+   "Concentrate / Solid",
+   "Condense / Divided Solid",
+   "Constrain / Divided Solid",
+   "Constrain / Field",
+   "Constrain / Liquid",
+   "Constrain / Solid",
+   "Deposit / Divided Solid",
+   "Deposit / Liquid",
+   "Deposit / Solid",
+   "Detect / Divided Solid",
+   "Detect / Field",
+   "Detect / Liquid",
+   "Detect / Solid",
+   "Expand / Divided Solid",
+   "Expand / Gas",
+   "Expand / Liquid",
+   "Expand / Solid",
+   "Extract / Divided Solid",
+   "Extract / Liquid",
+   "Extract / Solid",
+   "Hold / Divided Solid",
+   "Hold / Field",
+   "Hold / Liquid",
+   "Hold / Solid",
+   "Join / Divided Solid",
+   "Join / Liquid",
+   "Join / Solid",
+   "Mix / Divided Solid",
+   "Move / Divided Solid",
+   "Move / Liquid",
+   "Move / Solid",
+   "Orient / Divided Solid",
+   "Orient / Liquid",
+   "Orient / Solid",
+   "Produce / Field",
+   "Purify / Divided Solid",
+   "Remove / Divided Solid",
+   "Remove / Solid",
+   "Rotate / Divided Solid",
+   "Rotate / Field",
+   "Rotate / Liquid",
+   "Rotate / Solid",
+   "Separate / Divided Solid",
+   "Separate / Liquid",
+   "Separate / Solid",
+   "Vibrate / Divided Solid",
+   "Vibrate / Field",
+   "Vibrate / Liquid",
+   "Vibrate / Solid"
+  ],
+  "notes": [
+   "For example, Ine the case of a magnetic liquid, or separating a liquid from a ferromagnetic solid",
+   "For example, in the case of a ferromagnetic liquid or one constrained by a ferromanetic solid in contact with the liquid.",
+   "For example, in the case of a ferromagnetic liquid or one moved by a ferromanetic solid in contact with the liquid.",
+   "For example, in the case of a ferromagnetic liquid."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Magnetic Hysteresis",
+  "desc": "Hysteresis phenomena occur in magnetic and ferromagnetic materials, as well as in the elastic, electric, and magnetic behavior of materials, in which a lag occurs between the application and the removal of a force or field and its subsequent effect. Magnetic field hysteresis loss causes heating. This effect is used in induction cooking, where an alternating magnetic field causes a ferrite container to heat directly rather than being heated by an external heat-source.",
+  "wiki": "http://en.wikipedia.org/wiki/Magnetic_hysteresis#Magnetic_hysteresis",
+  "functions": [
+   "Constrain / Field",
+   "Expand / Field",
+   "Expand / Gas",
+   "Expand / Liquid",
+   "Expand / Solid",
+   "Heat / Solid",
+   "Produce / Field"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Magnetic Reluctance",
+  "desc": "Analogous to the way an electric field causes an electric current to follow the path of least resistance, a magnetic field causes magnetic flux to follow the path of least magnetic reluctance.",
+  "wiki": "http://en.wikipedia.org/wiki/Magnetic_reluctance",
+  "functions": [
+   "Absorb / Field",
+   "Accumulate / Field",
+   "Bend / Field",
+   "Constrain / Field",
+   "Dilute / Field",
+   "Hold / Field",
+   "Move / Field",
+   "Move / Solid",
+   "Orient / Field",
+   "Resist / Field",
+   "Rotate / Field",
+   "Rotate / Solid"
+  ],
+  "notes": [
+   "Variation of reluctance is the principle behind the reluctance motor. Reluctance forces strive for a maximally aligned magnetic circuit and a minimal air gap distance."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Magnetic Saturation",
+  "desc": "Seen in some magnetic materials, saturation is the state reached when an increase in applied external magnetising field cannot increase the magnetisation of the material further, so the total magnetic field levels off. It is a characteristic particularly of ferromagnetic materials, such as iron, nickel, cobalt and their alloys.",
+  "wiki": "http://en.wikipedia.org/wiki/Saturation_%28magnetic%29",
+  "functions": [
+   "Absorb / Field",
+   "Clean / Field",
+   "Constrain / Field",
+   "Protect / Solid",
+   "Resist / Field"
+  ],
+  "notes": [
+   "Magnetic saturation is employed to limit current in saturable-core transformers, used in arc welding, and ferroresonant transformers which serve as voltage regulators. When the primary current exceeds a certain value, the core is pushed into its saturation region, limiting further increases in secondary current."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Magnetism",
+  "desc": "One of the phenomena by which materials exert attractive or repulsive forces on other materials. Some well-known materials that exhibit easily detectable magnetic properties (called magnets) are nickel, iron, cobalt, and their alloys; however, all materials are influenced to greater or lesser degree by the presence of a magnetic field.",
+  "wiki": "http://en.wikipedia.org/wiki/Magnetism",
+  "functions": [
+   "Accumulate / Divided Solid",
+   "Accumulate / Gas",
+   "Accumulate / Liquid",
+   "Accumulate / Solid",
+   "Bend / Field",
+   "Bend / Gas",
+   "Bend / Liquid",
+   "Bend / Solid",
+   "Break Down / Field",
+   "Clean / Divided Solid",
+   "Clean / Gas",
+   "Clean / Liquid",
+   "Clean / Solid",
+   "Compress / Divided Solid",
+   "Compress / Gas",
+   "Compress / Liquid",
+   "Compress / Solid",
+   "Concentrate / Divided Solid",
+   "Concentrate / Field",
+   "Concentrate / Gas",
+   "Concentrate / Liquid",
+   "Concentrate / Solid",
+   "Constrain / Divided Solid",
+   "Constrain / Field",
+   "Constrain / Gas",
+   "Constrain / Liquid",
+   "Constrain / Solid",
+   "Deposit / Divided Solid",
+   "Deposit / Gas",
+   "Deposit / Liquid",
+   "Deposit / Solid",
+   "Detect / Divided Solid",
+   "Detect / Gas",
+   "Detect / Liquid",
+   "Detect / Solid",
+   "Expand / Divided Solid",
+   "Expand / Gas",
+   "Expand / Liquid",
+   "Expand / Solid",
+   "Extract / Divided Solid",
+   "Extract / Gas",
+   "Extract / Liquid",
+   "Extract / Solid",
+   "Hold / Divided Solid",
+   "Hold / Field",
+   "Hold / Gas",
+   "Hold / Liquid",
+   "Hold / Solid",
+   "Join / Divided Solid",
+   "Join / Gas",
+   "Join / Liquid",
+   "Join / Solid",
+   "Mix / Divided Solid",
+   "Mix / Gas",
+   "Mix / Liquid",
+   "Mix / Solid",
+   "Move / Divided Solid",
+   "Move / Field",
+   "Move / Gas",
+   "Move / Liquid",
+   "Move / Solid",
+   "Orient / Divided Solid",
+   "Orient / Field",
+   "Orient / Gas",
+   "Orient / Liquid",
+   "Orient / Solid",
+   "Produce / Field",
+   "Protect / Gas",
+   "Protect / Liquid",
+   "Protect / Solid",
+   "Purify / Divided Solid",
+   "Remove / Divided Solid",
+   "Remove / Gas",
+   "Remove / Liquid",
+   "Remove / Solid",
+   "Rotate / Divided Solid",
+   "Rotate / Field",
+   "Rotate / Gas",
+   "Rotate / Liquid",
+   "Rotate / Solid",
+   "Separate / Divided Solid",
+   "Separate / Gas",
+   "Separate / Liquid",
+   "Separate / Solid",
+   "Vibrate / Divided Solid",
+   "Vibrate / Gas",
+   "Vibrate / Liquid",
+   "Vibrate / Solid"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Magneto-Optic Effects",
+  "desc": "A number of phenomena in which an electromagnetic wave propagates through a medium that has been altered by the presence of a quasistatic magnetic field. Includes the Faraday Effect and the Magneto-Optic Kerr Effect.",
+  "wiki": "http://en.wikipedia.org/wiki/Magneto-optic_effect",
+  "functions": [
+   "Detect / Field",
+   "Move / Field",
+   "Rotate / Field",
+   "Vibrate / Field"
+  ],
+  "notes": [
+   "Angle of polarisation is rotated"
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Magneto-Optic Kerr Effect",
+  "desc": "(MOKE) Light reflected from a magnetised surface can change in both polarisation and reflectivity. Identical to the Faraday effect except that the magneto-optical Kerr effect is a measurement of the reflected light, while the Faraday effect is a measurement of the transmitted light. Both effects result from the off-diagonal components of the dielectric tensor e.",
+  "wiki": "http://en.wikipedia.org/wiki/Magneto-optic_Kerr_effect",
+  "functions": [
+   "Detect / Field",
+   "Move / Field",
+   "Rotate / Field",
+   "Vibrate / Field"
+  ],
+  "notes": [
+   "Angle of polarisation is rotated"
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Magnetocaloric Effect",
+  "desc": "(or Magnetothermal Effect) A magneto-thermodynamic phenomenon in which a reversible change in temperature of a suitable material is caused by exposing the material to a changing magnetic field. Also known as adiabatic demagnetisation. Can be used to attain extremely low temperatures (well below 1 K), as well as the ranges used in common refrigerators.",
+  "wiki": "http://en.wikipedia.org/wiki/Magnetic_refrigeration",
+  "functions": [
+   "Absorb / Field",
+   "Cool / Divided Solid",
+   "Cool / Gas",
+   "Cool / Liquid",
+   "Cool / Solid",
+   "Expand / Gas",
+   "Expand / Liquid",
+   "Expand / Solid",
+   "Freeze / Gas",
+   "Freeze / Liquid",
+   "Heat / Gas",
+   "Heat / Liquid",
+   "Heat / Solid",
+   "Produce / Liquid",
+   "Produce / Solid"
+  ],
+  "notes": [
+   "As a result of the temperature increase."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Magnetoelastic Effects",
+  "desc": "A group of effects including Magnetostriction (or Joule Magnetostriction), Delta-E Effect, Wiedemann Effect, Magnetovolume Effect, and their Inverses: Villari Effect, Delta-E Effect, Matteucci Effect and the Nagaoka-Honda Effect.",
+  "wiki": null,
+  "functions": [
+   "Bend / Solid",
+   "Change Phase / Liquid",
+   "Compress / Divided Solid",
+   "Compress / Gas",
+   "Compress / Liquid",
+   "Compress / Solid",
+   "Destroy / Solid",
+   "Detect / Field",
+   "Detect / Solid",
+   "Evaporate / Liquid",
+   "Expand / Divided Solid",
+   "Expand / Gas",
+   "Expand / Liquid",
+   "Expand / Solid",
+   "Heat / Divided Solid",
+   "Heat / Liquid",
+   "Heat / Solid",
+   "Hold / Solid",
+   "Melt / Solid",
+   "Move / Liquid",
+   "Move / Solid",
+   "Orient / Solid",
+   "Produce / Field",
+   "Rotate / Solid",
+   "Vibrate / Liquid"
+  ],
+  "notes": [
+   "As a result of frictional heating.",
+   "In the case of a magnetic liquid.",
+   "Through collapse of cavitation bubbles resulting from the manetostriction effect on a magnetic liquid.",
+   "Through frictional heating."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Magnetohydrodynamic Effect",
+  "desc": "A magnetic field can induce currents in a moving conductive fluid, which create forces on the fluid, and also change the magnetic field itself.",
+  "wiki": "http://en.wikipedia.org/wiki/Magneto-hydrodynamics",
+  "functions": [
+   "Bend / Field",
+   "Bend / Gas",
+   "Bend / Liquid",
+   "Compress / Liquid",
+   "Constrain / Gas",
+   "Constrain / Liquid",
+   "Detect / Field",
+   "Detect / Gas",
+   "Detect / Liquid",
+   "Hold / Gas",
+   "Hold / Liquid",
+   "Move / Divided Solid",
+   "Move / Gas",
+   "Move / Liquid",
+   "Move / Solid",
+   "Orient / Gas",
+   "Orient / Liquid",
+   "Orient / Solid",
+   "Produce / Field"
+  ],
+  "notes": [
+   "In early 1990s, Mitsubishi built a boat, the 'Yamato,' which uses a magnetohydrodynamic drive, is driven by a liquid helium-cooled superconductor, and can travel at 15 km/h.",
+   "In microfluidic devices, the MHD pump is so far the most effective for producing a continuous, nonpulsating flow in a complex microchannel design",
+   "In the case of a conductive divided solid.",
+   "MHD is used in plasma confinement."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Magnetoresistance",
+  "desc": "The change of electrical resistance of a material when an external magnetic field is applied. Also called ordinary magnetoresistance (OMR).",
+  "wiki": "http://en.wikipedia.org/wiki/Magnetoresistance",
+  "functions": [
+   "Detect / Field"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Magnetostriction",
+  "desc": "A property of ferromagnetic materials that causes them to change their shape or dimensions during the process of magnetisation. The variation of material's magnetisation due to the applied magnetic field changes the magnetostrictive strain until reaching its saturation value. This effect can cause losses due to frictional heating in susceptible ferromagnetic cores.",
+  "wiki": "http://en.wikipedia.org/wiki/Magnetostriction",
+  "functions": [
+   "Change Phase / Liquid",
+   "Compress / Divided Solid",
+   "Compress / Gas",
+   "Compress / Liquid",
+   "Compress / Solid",
+   "Concentrate / Divided Solid",
+   "Destroy / Solid",
+   "Detect / Field",
+   "Evaporate / Liquid",
+   "Expand / Divided Solid",
+   "Expand / Gas",
+   "Expand / Liquid",
+   "Expand / Solid",
+   "Heat / Divided Solid",
+   "Heat / Liquid",
+   "Heat / Solid",
+   "Hold / Solid",
+   "Melt / Solid",
+   "Move / Liquid",
+   "Vibrate / Liquid"
+  ],
+  "notes": [
+   "As a result of frictional heating.",
+   "In the case of a magnetic liquid.",
+   "Indirectly, e.g. by a piston rod subject to Magnetostriction.",
+   "Through collapse of cavitation bubbles resulting from the manetostriction effect on a magnetic liquid."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Magnetovolume Effect",
+  "desc": "One of a group of Magnetoelastic Effects. Volume change due to magnetisation (most evident near the Curie temperature)",
+  "wiki": null,
+  "functions": [
+   "Bend / Solid",
+   "Compress / Divided Solid",
+   "Compress / Solid",
+   "Detect / Field",
+   "Expand / Divided Solid",
+   "Expand / Gas",
+   "Expand / Liquid",
+   "Expand / Solid",
+   "Move / Solid",
+   "Orient / Solid",
+   "Rotate / Solid"
+  ],
+  "notes": [
+   "By combining a materials having different susceptibilities to the magnetovolume effect.",
+   "In the case of a magnetic field.",
+   "Indirectly, e.g. by a piston rod subject to the Magnetovolume Effect."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Marangoni Effect",
+  "desc": "(or Gibbs-Marangoni effect) The presence of a gradient in surface tension will naturally cause the liquid to flow away from regions of low surface tension. The surface tension gradient can be caused by concentration gradient or by a temperature gradient (surface tension is a function of temperature).",
+  "wiki": "http://en.wikipedia.org/wiki/Marangoni_effect",
+  "functions": [
+   "Dry / Solid",
+   "Expand / Liquid",
+   "Hold / Liquid",
+   "Move / Liquid"
+  ],
+  "notes": [
+   "For example, liquid spots left on silicon wafer surfaces are removed by blowing an alcohol vapor over the wet wafer surface and the subsequent Marangoni effect causes a surface-tension gradient in the liquid allowing gravity to pull the liquid completely off the wafer surface.",
+   "Since a liquid with high surface tension pulls more strongly on the surrounding liquid than one with low surface tension, the presence of a gradient in surface tension causes the liquid to flow away from regions of low surface tension. The surface tension gradient can be caused by concentration gradient - ethanol concentration, in the case of 'tears of wine' - or by a temperature gradient. (Surface tension is a function of temperature.)"
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Matteucci Effect",
+  "desc": "One of a group of Inverse Magnetoelastic Effects. The creation of a helical anisotropy of the susceptibility of a magnetostrictive material (and e.m.f.) when subjected to a torque.",
+  "wiki": "https://en.wikipedia.org/wiki/Matteucci_effect",
+  "functions": [
+   "Produce / Field",
+   "Rotate / Field"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Mechanical Advantage",
+  "desc": "Force amplification achieved by using a tool, mechanical device or machine system. Ideally, the device preserves the input power and simply trades off forces against movement to obtain a desired amplification in the output force.",
+  "wiki": "http://en.wikipedia.org/wiki/Mechanical_advantage",
+  "functions": [
+   "Absorb / Field",
+   "Concentrate / Field",
+   "Expand / Field",
+   "Resist / Field"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Mechanical Force",
+  "desc": "A mechanical influence that causes a free body to undergo an acceleration.",
+  "wiki": "http://en.wikipedia.org/wiki/Force",
+  "functions": [
+   "Absorb / Field",
+   "Bend / Solid",
+   "Break Down / Solid",
+   "Clean / Solid",
+   "Compress / Divided Solid",
+   "Compress / Gas",
+   "Compress / Liquid",
+   "Compress / Solid",
+   "Concentrate / Solid",
+   "Condense / Divided Solid",
+   "Constrain / Liquid",
+   "Constrain / Solid",
+   "Heat / Solid",
+   "Join / Divided Solid",
+   "Join / Solid",
+   "Melt / Divided Solid",
+   "Mix / Solid",
+   "Move / Gas",
+   "Move / Liquid",
+   "Move / Solid",
+   "Orient / Solid",
+   "Produce / Divided Solid",
+   "Rotate / Solid"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Mechanocaloric Effect",
+  "desc": "An effect resulting from the fact that a temperature gradient in helium II is invariably accompanied by a pressure gradient, and conversely; examples are the fountain effect, and the heating of liquid helium left behind in a container when part of it leaks out through a small orifice.",
+  "wiki": null,
+  "functions": [
+   "Cool / Gas",
+   "Cool / Liquid",
+   "Expand / Liquid",
+   "Heat / Gas",
+   "Heat / Liquid",
+   "Move / Liquid"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Meissner Body",
+  "desc": "A surface of constant width constructed by replacing three of the edge arcs of a Reuleaux tetrahedron by curved patches formed as the surfaces of rotation of a circular arc. It has been conjectured (but not yet proved) that Meissner Bodies are the minimum-volume three-dimensional shapes of constant width.",
+  "wiki": "http://en.wikipedia.org/wiki/Reuleaux_tetrahedron#Meissner_bodies",
+  "functions": [
+   "Move / Solid",
+   "Orient / Solid",
+   "Rotate / Solid",
+   "Separate / Solid"
+  ],
+  "notes": [
+   "By acting as a rolling support of constant width."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Meissner Effect",
+  "desc": "(also known as the Jared-Ochsenfeld effect) The expulsion of a magnetic field from a superconductor.",
+  "wiki": "http://en.wikipedia.org/wiki/Meissner_effect",
+  "functions": [
+   "Hold / Solid",
+   "Move / Solid",
+   "Orient / Solid",
+   "Produce / Field",
+   "Separate / Solid"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Melting",
+  "desc": "A process that results in the phase change of a substance from a solid to a liquid. The internal energy of a solid substance is increased (typically by the absorbtion of heat) to a specific temperature (called the melting point) at which it changes to the liquid phase.",
+  "wiki": "http://en.wikipedia.org/wiki/Melting",
+  "functions": [
+   "Absorb / Field",
+   "Break Down / Divided Solid",
+   "Change Phase / Divided Solid",
+   "Concentrate / Divided Solid",
+   "Concentrate / Solid",
+   "Cool / Divided Solid",
+   "Cool / Gas",
+   "Cool / Liquid",
+   "Cool / Solid",
+   "Deposit / Liquid",
+   "Destroy / Solid",
+   "Extract / Solid",
+   "Freeze / Gas",
+   "Freeze / Liquid",
+   "Hold / Solid",
+   "Join / Solid",
+   "Melt / Divided Solid",
+   "Melt / Solid",
+   "Mix / Divided Solid",
+   "Produce / Liquid",
+   "Remove / Divided Solid",
+   "Remove / Solid",
+   "Separate / Solid"
+  ],
+  "notes": [
+   "By transient liquid phase bonding - i.e. melting a solid material and using it as 'glue', joining two solids after it has cooled and resolidified.",
+   "By transient liquid phase bonding - i.e. melting a solid material as using it as 'glue', joining two solids after it has cooled and resolidified.",
+   "Melting is endothermic",
+   "Melting is endothermic. The energy absorbed by the melting of one substance may result in the freezing another."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Metastability",
+  "desc": "A general scientific concept which describes states of delicate equilibrium. A system is in a metastable state when it is in equilibrium (not changing with time) but is susceptible to fall into lower-energy states with only slight interaction. It is analogous to being at the bottom of a small valley when there is a deeper valley close by",
+  "wiki": "http://en.wikipedia.org/wiki/Metastability",
+  "functions": [
+   "Absorb / Field",
+   "Accumulate / Divided Solid",
+   "Accumulate / Field",
+   "Accumulate / Gas",
+   "Accumulate / Liquid",
+   "Accumulate / Solid",
+   "Constrain / Divided Solid",
+   "Constrain / Field",
+   "Constrain / Gas",
+   "Constrain / Liquid",
+   "Constrain / Solid",
+   "Detect / Divided Solid",
+   "Detect / Field",
+   "Detect / Gas",
+   "Detect / Liquid",
+   "Detect / Solid",
+   "Freeze / Gas",
+   "Freeze / Liquid",
+   "Hold / Divided Solid",
+   "Hold / Field",
+   "Hold / Gas",
+   "Hold / Liquid",
+   "Hold / Solid",
+   "Orient / Gas",
+   "Orient / Liquid",
+   "Orient / Solid",
+   "Produce / Liquid",
+   "Produce / Solid",
+   "Protect / Field",
+   "Protect / Gas",
+   "Protect / Liquid",
+   "Protect / Solid"
+  ],
+  "notes": [
+   "For example, codensation of a super-saturated gas.",
+   "The 'tipping' of a metastable system into a lower energy state in response to a small stimulus could be used to make a senstive detector."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Mirage (photothermal deflection)",
+  "desc": "A naturally occurring optical phenomenon in which light rays are bent to produce a displaced image of distant objects or the sky.",
+  "wiki": "http://en.wikipedia.org/wiki/Mirage",
+  "functions": [
+   "Absorb / Field",
+   "Bend / Field",
+   "Compress / Field",
+   "Concentrate / Field",
+   "Detect / Field",
+   "Move / Field",
+   "Orient / Field",
+   "Rotate / Field",
+   "Separate / Field"
+  ],
+  "notes": [
+   "For example, the detection of heat."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Mixed Convection",
+  "desc": "Movement of fluids or gases (or particles carried by fluids or gasses) by a combination of Free and Forced Convection",
+  "wiki": "http://en.wikipedia.org/wiki/Convection",
+  "functions": [
+   "Bend / Gas",
+   "Cool / Divided Solid",
+   "Cool / Gas",
+   "Cool / Liquid",
+   "Cool / Solid",
+   "Dry / Liquid",
+   "Dry / Solid",
+   "Heat / Gas",
+   "Heat / Liquid",
+   "Heat / Solid",
+   "Mix / Divided Solid",
+   "Mix / Gas",
+   "Mix / Liquid",
+   "Move / Divided Solid",
+   "Move / Gas",
+   "Move / Liquid",
+   "Move / Solid",
+   "Rotate / Divided Solid"
+  ],
+  "notes": [
+   "For example, a suspension of particles in a liquid or gas."
+  ],
+  "deckGuess": null
+ }
+]

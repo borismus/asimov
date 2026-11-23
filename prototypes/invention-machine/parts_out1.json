@@ -1,0 +1,1208 @@
+{
+ "flush-toilet": {
+  "job": "cleans",
+  "slots": [
+   {
+    "part": "flush valve",
+    "job": "controls flow",
+    "fill": "valve",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "controls flow",
+    "fill": null,
+    "gap": "S-bend trap",
+    "note": "Key part (Cumming's 1775 patent): water left standing in the bend seals out sewer gas."
+   }
+  ],
+  "phen": [
+   {
+    "effect": "water in connected pipes settles at one level",
+    "card": "hydrostatics"
+   }
+  ],
+  "flag": "New job 'cleans' (also dishwasher, vacuum cleaner, sewage treatment, and washing machine in another batch). Bowl and cistern left off: no card fits (porcelain bowls came a century later)."
+ },
+ "dishwasher": {
+  "job": "cleans",
+  "slots": [
+   {
+    "part": null,
+    "job": "pumps water",
+    "fill": null,
+    "gap": "Centrifugal pump",
+    "note": "Shared gap: the pump that drives the spray; no pump card for water besides Savery's steam pump."
+   },
+   {
+    "part": null,
+    "job": "provides power",
+    "fill": "electric-motors",
+    "gap": null,
+    "note": "Electric home machines from the 1920s; Cochrane's were hand-cranked or steam-driven at first."
+   }
+  ],
+  "phen": [
+   {
+    "effect": "reaction thrust",
+    "card": "conservation-momentum"
+   }
+  ],
+  "flag": "New job 'cleans'. 'Centrifugal pump' gap I think 3+ new cards share (dishwasher, centre-pivot irrigation, washing machine, and likely others). Reaction thrust is what spins the spray arms."
+ },
+ "vacuum-cleaner": {
+  "job": "cleans",
+  "slots": [
+   {
+    "part": "fan",
+    "job": "makes a vacuum",
+    "fill": "air-pump",
+    "gap": null,
+    "note": "Booth's 1901 machine used a piston pump; later cleaners a motor-driven fan."
+   },
+   {
+    "part": null,
+    "job": "provides power",
+    "fill": "electric-motors",
+    "gap": null,
+    "note": "Booth's ran on a petrol engine; Spangler's 1907 upright was electric."
+   }
+  ],
+  "phen": [
+   {
+    "effect": "atmospheric pressure",
+    "card": "air-pressure"
+   }
+  ],
+  "flag": "New job 'cleans'. Filter bag left off (cloth, no card)."
+ },
+ "water-chlorination": {
+  "job": "kills bacteria",
+  "slots": [
+   {
+    "part": null,
+    "job": "kills bacteria",
+    "fill": "chlorine",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [
+   {
+    "effect": "a chemical kills germs on contact",
+    "gap": "Antisepsis"
+   }
+  ],
+  "flag": "Antisepsis is an existing gap (antiseptic surgery); kept here as the key effect. Chlorine gets no effect of its own (rule 24: it also bleaches, goes into PVC, etc.)."
+ },
+ "zipper": {
+  "job": "fastens",
+  "slots": [
+   {
+    "part": null,
+    "job": "fastens",
+    "fill": null,
+    "gap": "Slider",
+    "note": "Key part: the Y-shaped slider bends the two rows apart and wedges them together."
+   }
+  ],
+  "phen": [],
+  "flag": "Teeth material left off (brass, aluminium or nylon, varies). No nameable effect beyond the wedge; none."
+ },
+ "sewage-treatment": {
+  "job": "cleans",
+  "slots": [],
+  "phen": [
+   {
+    "effect": "bacteria feed on dissolved filth and clump into sludge",
+    "gap": "Bacterial decomposition"
+   }
+  ],
+  "flag": "New job 'cleans'. No slots: the aeration tanks, blowers and settling tanks have no cards, and none is shared enough to earn one; the bacteria aren't a card either. Key effect left as a gap. Settling (an old 'Sedimentation' gap) left off."
+ },
+ "frozen-food": {
+  "job": "preserves food",
+  "slots": [
+   {
+    "part": "plate freezer",
+    "job": "carries heat",
+    "fill": "refrigerators",
+    "gap": null,
+    "note": "Refrigerated plates or belts chill the packs."
+   }
+  ],
+  "phen": [
+   {
+    "effect": "fast freezing starts many tiny ice crystals at once",
+    "card": "nucleation"
+   }
+  ],
+  "flag": "Uncertain: nucleation is a stand-in for 'fast freezing makes small crystals'; the card says crystals start on seeds, not that fast cooling makes many small ones. 'Cold stops microbes' left off (no card). Slot job 'carries heat' is the nearest shared job for chilling; a 'cools' job may be worth adding if refrigerated transport, air conditioning and LNG tanker need it too."
+ },
+ "plastics-polyethylene": {
+  "job": "forms the body",
+  "slots": [
+   {
+    "part": null,
+    "job": "is an ingredient",
+    "fill": null,
+    "gap": "Ethylene",
+    "note": "Key ingredient: chains of ethylene molecules."
+   }
+  ],
+  "phen": [],
+  "flag": "Isotactic polymers (1953) is the later Ziegler polyethylene, not an ingredient (rule 6), and polymerization is how it's made (rule 4). Being mouldable when warm is a material property (rule 28): none."
+ },
+ "gas-turbine-power-station": {
+  "job": "makes electricity",
+  "slots": [
+   {
+    "part": "gas turbine",
+    "job": "turns flow into rotation",
+    "fill": "turbines",
+    "gap": null,
+    "note": "Compressor and turbine on one shaft."
+   },
+   {
+    "part": null,
+    "job": "makes electricity",
+    "fill": "electric-generators",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "natural gas",
+    "job": "stores chemical energy",
+    "fill": "oil-wells",
+    "gap": null,
+    "note": "Oil wells stand in: natural gas has no card."
+   },
+   {
+    "part": "combined cycle",
+    "job": "provides power",
+    "fill": "steam-turbine",
+    "gap": null,
+    "note": "Added later: the exhaust raises steam for a second turbine, from about 1960."
+   }
+  ],
+  "phen": [
+   {
+    "effect": "burns with oxygen from the air",
+    "card": "combustion-and-phlogiston-theory-refinement"
+   }
+  ],
+  "flag": "Natural gas has no card; oil-wells stands in (the gas comes up the same wells). A 'Natural gas' supporting card may be shared by 3+ new cards (this, LNG tanker, fracking, offshore oil platform). The existing 'Jet engine' gap (key part of jet planes) is what the gas turbine really is; turbines fills the rotating part."
+ },
+ "randomized-controlled-trial": {
+  "job": "measures",
+  "slots": [],
+  "phen": [
+   {
+    "effect": "chance spreads hidden differences evenly between groups",
+    "gap": "Probability"
+   }
+  ],
+  "flag": "Job: 'measures' is the nearest broad job (it measures whether a treatment works). No devices or techniques with cards. Probability is maths the practice carries out (rule 22), no card on the board."
+ },
+ "credit-card": {
+  "job": "makes payments",
+  "slots": [
+   {
+    "part": "chip",
+    "job": "stores data",
+    "fill": "microchips",
+    "gap": null,
+    "note": "Added later (chip cards from the 1990s). The magnetic stripe (1960s) came first and has no card; Diners Club's 1950 card was printed cardboard."
+   }
+  ],
+  "phen": [
+   {
+    "effect": "a magnetized spot stays magnetized",
+    "card": "magnetic-hysteresis"
+   }
+  ],
+  "flag": "New job 'makes payments' (credit card, online shopping, and ATM and mobile payments in other batches). The phenomenon is for the magnetic stripe, which has no card so the effect sits on the card itself; drop it if Boris sees the stripe as too late a detail for a 1950 card."
+ },
+ "centre-pivot-irrigation": {
+  "job": "supplies water",
+  "slots": [
+   {
+    "part": "pipe and towers",
+    "job": "forms the body",
+    "fill": "steel",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "provides power",
+    "fill": "electric-motors",
+    "gap": null,
+    "note": "Early machines were driven by water pressure; electric drives came later."
+   },
+   {
+    "part": "tower wheels",
+    "job": "rolls",
+    "fill": "wheel-and-axle",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "pumps water",
+    "fill": null,
+    "gap": "Centrifugal pump",
+    "note": "Shared gap: the well pump."
+   }
+  ],
+  "phen": [
+   {
+    "effect": "plants need water",
+    "gap": "Plants need water"
+   }
+  ],
+  "flag": "Irrigation isn't a slot (rule 6: same thing, mechanised). 'Plants need water' is the existing gap irrigation uses. Centrifugal pump: shared gap (see dishwasher)."
+ },
+ "nuclear-submarine": {
+  "job": "transports",
+  "slots": [
+   {
+    "part": "hull",
+    "job": "floats a load",
+    "fill": "submarine",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "makes heat",
+    "fill": "nuclear-reactor",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "provides power",
+    "fill": "steam-turbine",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "provides thrust",
+    "fill": "screw-propeller",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "Submarine as the hull follows rule 7 (whole earlier machine inside, like River boats in the steamboat); its buoyancy and depth-pressure effects stay on it. Steam turbine already carries the boiler (the reactor's steam generator). Chain reaction stays on the reactor. Controlled fission reactors isn't used: that card is a power station."
+ },
+ "disposable-syringe": {
+  "job": "treats illness",
+  "slots": [
+   {
+    "part": "plunger and barrel",
+    "job": "pushes",
+    "fill": "piston-and-cylinder",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "barrel",
+    "job": "forms the body",
+    "fill": "isotactic-polymers",
+    "gap": null,
+    "note": "Disposable barrels are polypropylene, Natta's isotactic polymer."
+   },
+   {
+    "part": "needle",
+    "job": "forms the body",
+    "fill": "stainless-steel",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [
+   {
+    "effect": "atmospheric pressure",
+    "card": "air-pressure"
+   }
+  ],
+  "flag": "Job: no 'injects' job; 'treats illness' is the nearest broad one. Rubber plunger tip left off."
+ },
+ "flexible-endoscope": {
+  "job": "diagnoses",
+  "slots": [
+   {
+    "part": "fibre bundle",
+    "job": "carries light",
+    "fill": "glass",
+    "gap": null,
+    "note": "Clad glass fibres; the Fiber optics card (1970) is the later low-loss kind for communication."
+   },
+   {
+    "part": null,
+    "job": "makes light",
+    "fill": "electric-light",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [
+   {
+    "effect": "total internal reflection",
+    "card": "total-internal-reflection"
+   }
+  ],
+  "flag": "Glass, not Fiber optics (1970, newer and a different, low-loss fibre); glass is a material with no effect of its own, so total internal reflection sits on the endoscope."
+ },
+ "three-point-seat-belt": {
+  "job": "protects",
+  "slots": [
+   {
+    "part": "webbing",
+    "job": "forms the body",
+    "fill": "nylon",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "locking catch",
+    "job": "measures",
+    "fill": "pendulum",
+    "gap": null,
+    "note": "Added later: inertia-locking reels came a few years after the 1959 fixed belts."
+   },
+   {
+    "part": "reel spring",
+    "job": "stores energy",
+    "fill": "spring",
+    "gap": null,
+    "note": "Added later, with the retracting reel."
+   }
+  ],
+  "phen": [
+   {
+    "effect": "a heavy mass keeps moving when the car brakes",
+    "card": "laws-motion"
+   }
+  ],
+  "flag": "Uncertain: slot job for the weighted catch; 'measures' is the nearest shared job (it senses hard braking). Inertia is a specific use of the laws of motion here, not a general law (rule 28)."
+ },
+ "planetary-space-probes": {
+  "job": "measures",
+  "slots": [
+   {
+    "part": null,
+    "job": "makes electricity",
+    "fill": "photovoltaic-cells",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "dish antenna",
+    "job": "communicates",
+    "fill": "radio",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "holds direction",
+    "fill": "gyroscope",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "instruments",
+    "job": "detects radiation",
+    "fill": "geiger-counter",
+    "gap": null,
+    "note": "Mariner 2 carried Geiger tubes and an ion chamber among its instruments."
+   }
+  ],
+  "phen": [
+   {
+    "effect": "orbit",
+    "card": "universal-gravitation"
+   }
+  ],
+  "flag": "Small attitude thrusters (cold gas jets) left off: no card. 'Orbit' follows satellites' wording; for a flyby it's the curved path under the Sun's gravity."
+ },
+ "carbon-fibre-composites": {
+  "job": "forms the body",
+  "slots": [
+   {
+    "part": null,
+    "job": "is an ingredient",
+    "fill": null,
+    "gap": "Carbon fibre",
+    "note": "Key ingredient."
+   },
+   {
+    "part": "resin",
+    "job": "is an ingredient",
+    "fill": "bakelite",
+    "gap": null,
+    "note": "Bakelite stands in as the only synthetic-resin card; carbon-fibre parts mostly use epoxy."
+   }
+  ],
+  "phen": [],
+  "flag": "Bakelite as a stand-in for the resin is uncertain; the alternative is a 'Synthetic resin' gap, which fibreglass boats and wind-turbine blades may share. Fibres carrying load in a resin is a material property: no effect."
+ },
+ "drip-irrigation": {
+  "job": "supplies water",
+  "slots": [
+   {
+    "part": "drip lines",
+    "job": "forms the body",
+    "fill": "plastics-polyethylene",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "controls flow",
+    "fill": null,
+    "gap": "Dripper",
+    "note": "Key part: the zigzag emitter set into the tube."
+   }
+  ],
+  "phen": [
+   {
+    "effect": "water squeezed through a long narrow channel loses its pressure to friction",
+    "gap": "Fluid friction"
+   },
+   {
+    "effect": "plants need water",
+    "gap": "Plants need water"
+   }
+  ],
+  "flag": "Fluid friction is kept as the dripper's key effect (the Friction card is dry sliding friction, not flow in a pipe). Uncertain whether Boris wants it."
+ },
+ "fax-machine": {
+  "job": "communicates",
+  "slots": [
+   {
+    "part": null,
+    "job": "turns light into current",
+    "fill": "photocell",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "phone line",
+    "job": "communicates",
+    "fill": "telephone",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "The printing part at the receiving end left off (no card fits: the Magnafax wrote on special paper). Photoelectric effect stays on the photocell."
+ },
+ "oral-rehydration-therapy": {
+  "job": "treats illness",
+  "slots": [
+   {
+    "part": "salts",
+    "job": "supplies a nutrient",
+    "fill": "sodium-and-potassium",
+    "gap": null,
+    "note": "The WHO drink has sodium and potassium salts."
+   },
+   {
+    "part": null,
+    "job": "supplies a nutrient",
+    "fill": null,
+    "gap": "Glucose",
+    "note": "Key ingredient: sugar carries the salt in with it."
+   }
+  ],
+  "phen": [
+   {
+    "effect": "the gut pulls salt and sugar in together",
+    "gap": "Sodium-glucose co-transport"
+   },
+   {
+    "effect": "small molecules seep through a membrane",
+    "card": "osmosis"
+   }
+  ],
+  "flag": "Sodium-and-potassium is an element card standing for their salts. Co-transport is the key effect, no card."
+ },
+ "email": {
+  "job": "communicates",
+  "slots": [
+   {
+    "part": null,
+    "job": "computes",
+    "fill": "computer",
+    "gap": null,
+    "note": "Stand-in for the time-shared computers that held the mailboxes."
+   },
+   {
+    "part": "network",
+    "job": "communicates",
+    "fill": "internet",
+    "gap": null,
+    "note": "Added later: email ran on ARPANET (1969), which has no card."
+   }
+  ],
+  "phen": [],
+  "flag": "The Computer card (1930) is Bush's analogue machine, so it's a loose stand-in; the barcode scanner uses it the same way. No nameable effect."
+ },
+ "graphical-user-interface": {
+  "job": "takes input",
+  "slots": [
+   {
+    "part": null,
+    "job": "takes input",
+    "fill": "computer-mouse",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "bitmap",
+    "job": "stores data",
+    "fill": "dram",
+    "gap": null,
+    "note": "Every dot on the screen is a bit in memory."
+   },
+   {
+    "part": "screen",
+    "job": "shows the image",
+    "fill": "oscilloscope",
+    "gap": null,
+    "note": "The cathode-ray tube card."
+   }
+  ],
+  "phen": [],
+  "flag": "Own job uncertain: 'takes input' (what else could fill it: a command line); 'shows the image' would also fit. No nameable effect."
+ },
+ "pulse-oximeter": {
+  "job": "monitors health continuously",
+  "slots": [
+   {
+    "part": null,
+    "job": "makes light",
+    "fill": "light-emitting-diodes",
+    "gap": null,
+    "note": "One red, one infrared."
+   },
+   {
+    "part": "light sensor",
+    "job": "turns light into current",
+    "fill": "photocell",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "computes",
+    "fill": "microchips",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [
+   {
+    "effect": "oxygen-rich blood lets more red light through than oxygen-poor blood",
+    "gap": "Haemoglobin colour"
+   },
+   {
+    "effect": "each heartbeat swells the arteries",
+    "card": "blood-circulation"
+   }
+  ],
+  "flag": "Haemoglobin colour is the key effect with no card. The pulse is a body process the device works with (rule 25)."
+ },
+ "waterproof-breathable-fabric": {
+  "job": "protects",
+  "slots": [
+   {
+    "part": "membrane",
+    "job": "is an ingredient",
+    "fill": "teflon",
+    "gap": null,
+    "note": "Stretched PTFE."
+   },
+   {
+    "part": "face fabric",
+    "job": "is an ingredient",
+    "fill": "nylon",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "Phenomenon left off: pores that pass vapour but not drops are a material property (rule 28). Osmosis (a semipermeable membrane) is close but isn't the effect."
+ },
+ "anti-lock-brakes": {
+  "job": "slows motion",
+  "slots": [
+   {
+    "part": null,
+    "job": "measures",
+    "fill": null,
+    "gap": "Wheel-speed sensor",
+    "note": "Key part: a toothed ring passing a magnetic pickup."
+   },
+   {
+    "part": null,
+    "job": "computes",
+    "fill": "microchips",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "brake valves",
+    "job": "controls flow",
+    "fill": "valve",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [
+   {
+    "effect": "a rolling tyre grips better than a skidding one",
+    "card": "friction"
+   },
+   {
+    "effect": "induction",
+    "card": "electromagnetic-induction"
+   }
+  ],
+  "flag": "Induction is the wheel-speed sensor's effect, on the invention because the sensor has no card. The brakes themselves (hydraulic) have no card."
+ },
+ "hepatitis-b-vaccine": {
+  "job": "prevents disease",
+  "slots": [],
+  "phen": [
+   {
+    "effect": "the body learns to fight a germ",
+    "card": "vaccination"
+   }
+  ],
+  "flag": "Ingredient (the virus's surface protein) has no card; yeast making it since 1986 is production (rule 4)."
+ },
+ "mobile-phone": {
+  "job": "communicates",
+  "slots": [
+   {
+    "part": null,
+    "job": "communicates",
+    "fill": "radio",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "computes",
+    "fill": "microchips",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "stores electricity",
+    "fill": "lithium-ion-battery",
+    "gap": null,
+    "note": "Added later: the DynaTAC ran on nickel-cadmium, which has no card."
+   },
+   {
+    "part": null,
+    "job": "turns sound into current",
+    "fill": "microphone",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "turns current into sound",
+    "fill": "loudspeaker",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [
+   {
+    "effect": "a radio signal fades with distance, so far-apart cells can reuse a frequency",
+    "gap": "Inverse-square law"
+   }
+  ],
+  "flag": "Uncertain: the cell idea is a technique, but it works by signals fading with distance; kept as the key effect with no card. Masts are the network, not the phone. Telephone not used as a slot (rule 6); its microphone and receiver are."
+ },
+ "internet": {
+  "job": "communicates",
+  "slots": [
+   {
+    "part": "routers",
+    "job": "computes",
+    "fill": "microchips",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "lines",
+    "job": "communicates",
+    "fill": "telephone",
+    "gap": null,
+    "note": "Leased phone lines.",
+    "later": [
+     "fiber-optic-communication"
+    ]
+   },
+   {
+    "part": null,
+    "job": "communicates",
+    "fill": null,
+    "gap": "Packet switching",
+    "note": "Key technique: messages chopped into labelled packets."
+   }
+  ],
+  "phen": [],
+  "flag": "Packet switching is the key technique with no card (rule 3: a practice's parts are its techniques)."
+ },
+ "flash-memory": {
+  "job": "stores data",
+  "slots": [
+   {
+    "part": "chip",
+    "job": "computes",
+    "fill": "integrated-circuits",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "controls the current",
+    "fill": "transistor",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "stores electricity",
+    "fill": null,
+    "gap": "Floating gate",
+    "note": "Key part: the sealed island that traps the charge."
+   }
+  ],
+  "phen": [
+   {
+    "effect": "quantum tunnelling",
+    "card": "particles-as-waves"
+   }
+  ],
+  "flag": "Integrated circuits' slot job 'computes' follows the DRAM entry."
+ },
+ "rapid-test-strip": {
+  "job": "diagnoses",
+  "slots": [
+   {
+    "part": "strip",
+    "job": "forms the body",
+    "fill": "pyroxylin",
+    "gap": null,
+    "note": "Lateral-flow strips are nitrocellulose membrane."
+   }
+  ],
+  "phen": [
+   {
+    "effect": "capillary action",
+    "card": "capillary-action"
+   },
+   {
+    "effect": "an antibody binds only its own target",
+    "gap": "Antibody specificity"
+   }
+  ],
+  "flag": "Antibody specificity is an existing gap (radioimmune assay); this makes 2 uses, and it's the key effect here. Antibodies and the coloured gold particles have no cards."
+ },
+ "world-wide-web": {
+  "job": "communicates",
+  "slots": [
+   {
+    "part": null,
+    "job": "communicates",
+    "fill": "internet",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "servers and browsers",
+    "job": "computes",
+    "fill": "personal-computer",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "Hypertext (pages with links) is the web's key technique; left off because no shared job fits it ('stores data' is the nearest). Could be a key-part gap."
+ },
+ "online-shopping": {
+  "job": "makes payments",
+  "slots": [
+   {
+    "part": "shop's website",
+    "job": "communicates",
+    "fill": "world-wide-web",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "encryption",
+    "job": "protects",
+    "fill": "public-key-encryption",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "makes payments",
+    "fill": "credit-card",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "New job 'makes payments' (see credit card); 'transports' would describe delivery but the card is about buying. Warehouse and delivery left off (no cards)."
+ },
+ "white-led-lighting": {
+  "job": "makes light",
+  "slots": [
+   {
+    "part": "blue chip",
+    "job": "makes light",
+    "fill": "light-emitting-diodes",
+    "gap": null,
+    "note": "Gallium nitride."
+   },
+   {
+    "part": null,
+    "job": "makes light",
+    "fill": null,
+    "gap": "Phosphor",
+    "note": "Yellow coating over the chip."
+   }
+  ],
+  "phen": [
+   {
+    "effect": "a coating soaks up blue light and glows yellow",
+    "gap": "Fluorescence"
+   },
+   {
+    "effect": "blue and yellow light together look white",
+    "card": "color-vision"
+   }
+  ],
+  "flag": "Phosphor gap should merge with the existing 'Phosphor screen' gap (oscilloscope key part); with night vision too that's 3+ uses. Fluorescence has no card; key effect."
+ },
+ "wi-fi": {
+  "job": "communicates",
+  "slots": [
+   {
+    "part": null,
+    "job": "communicates",
+    "fill": "radio",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "computes",
+    "fill": "microchips",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [
+   {
+    "effect": "a signal splits into separate frequencies",
+    "card": "fourier-analysis"
+   }
+  ],
+  "flag": "Fourier analysis is maths the receiving chip carries out (rule 22). Radio waves stay on the radio."
+ },
+ "ion-thruster": {
+  "job": "provides thrust",
+  "slots": [
+   {
+    "part": "xenon propellant",
+    "job": "provides thrust",
+    "fill": "neon-krypton-xenon",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "accelerates particles",
+    "fill": null,
+    "gap": "Accelerating grids",
+    "note": "Key part: charged grids that fling the ions out."
+   },
+   {
+    "part": "solar panels",
+    "job": "makes electricity",
+    "fill": "photovoltaic-cells",
+    "gap": null,
+    "note": "The spacecraft's panels power it."
+   }
+  ],
+  "phen": [
+   {
+    "effect": "reaction thrust",
+    "card": "conservation-momentum"
+   },
+   {
+    "effect": "charged grids pull the ions out",
+    "card": "positive-negative-charge"
+   }
+  ],
+  "flag": "Uncertain: slot job for the xenon (it's reaction mass, not fuel; 'provides thrust' is the nearest). Solar panels are the spacecraft's, arguably not the thruster's part. Stripping electrons off xenon (electron-impact ionization) left off: no card states it directly."
+ },
+ "continuous-glucose-monitor-insulin-pump": {
+  "job": "monitors health continuously",
+  "slots": [
+   {
+    "part": "sensor wire",
+    "job": "carries current",
+    "fill": "malleable-platinum",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "computes",
+    "fill": "microchips",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "transmitter",
+    "job": "communicates",
+    "fill": "radio",
+    "gap": null,
+    "note": "Added later: the 1999 monitor only recorded; real-time transmitters came 2004-06."
+   }
+  ],
+  "phen": [
+   {
+    "effect": "an enzyme breaks down sugar outside a living cell",
+    "card": "ferments-and-enzymes"
+   },
+   {
+    "effect": "a reaction drives a current",
+    "card": "laws-of-electrolysis"
+   }
+  ],
+  "flag": "The enzyme coating (glucose oxidase) has no card; its effect sits on the monitor. Insulin pump left off (title narrowed to the monitor)."
+ },
+ "video-calling": {
+  "job": "communicates",
+  "slots": [
+   {
+    "part": "webcam",
+    "job": "records media",
+    "fill": "digital-camera",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "compresses data",
+    "fill": "compressed-media",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "communicates",
+    "fill": "internet",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "computes",
+    "fill": "personal-computer",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [
+   {
+    "effect": "the eye blends quick still pictures into motion",
+    "card": "stroboscopic-effect"
+   }
+  ],
+  "flag": "New job 'compresses data' (compressed media in video calling, streaming video, portable music player, digital camera); otherwise 'stores data' is nearest. Persistence of vision follows motion pictures' link (now on the stroboscopic-effect card)."
+ },
+ "smartphone": {
+  "job": "communicates",
+  "slots": [
+   {
+    "part": null,
+    "job": "takes input",
+    "fill": "touchscreen",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "computes",
+    "fill": "microchips",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "communicates",
+    "fill": "radio",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "finds direction",
+    "fill": "gps",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "camera chip",
+    "job": "records media",
+    "fill": "ccd",
+    "gap": null,
+    "note": "Phones use CMOS sensors; CCD is the image-sensor card."
+   },
+   {
+    "part": null,
+    "job": "stores electricity",
+    "fill": "lithium-ion-battery",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "measures",
+    "fill": null,
+    "gap": "Accelerometer",
+    "note": "Shared gap: a microscopic weight on springs in a chip."
+   }
+  ],
+  "phen": [
+   {
+    "effect": "elasticity",
+    "card": "hookes-law"
+   }
+  ],
+  "flag": "Accelerometer gap I think 3+ new cards share (smartphone, airbag crash sensor, quadcopter, ICBM and self-driving car guidance). Its effect (weight on springs, Hooke's law) sits on the phone while the accelerometer has no card; move it there if one is made. The touchscreen's charge effect stays on the touchscreen."
+ },
+ "quadcopter-drone": {
+  "job": "flies",
+  "slots": [
+   {
+    "part": "propellers",
+    "job": "provides lift",
+    "fill": "wing",
+    "gap": null,
+    "note": "As in the helicopter's rotor."
+   },
+   {
+    "part": null,
+    "job": "provides power",
+    "fill": "electric-motors",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "stores electricity",
+    "fill": "lithium-ion-battery",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "holds direction",
+    "fill": "gyroscope",
+    "gap": null,
+    "note": "Tiny vibrating chip gyroscopes; the Gyroscope card is the only one of its kind."
+   },
+   {
+    "part": null,
+    "job": "computes",
+    "fill": "microchips",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "records media",
+    "fill": "digital-camera",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [
+   {
+    "effect": "each spinning rotor twists the craft the other way",
+    "card": "conservation-momentum"
+   }
+  ],
+  "flag": "Uncertain: the counter-rotation effect is angular momentum; Conservation of momentum is the nearest card. Lift stays on the wing."
+ },
+ "deep-learning": {
+  "job": "computes",
+  "slots": [
+   {
+    "part": "graphics chips",
+    "job": "computes",
+    "fill": "microchips",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [
+   {
+    "effect": "the slope of the error shows which way to nudge each setting",
+    "card": "calculus"
+   }
+  ],
+  "flag": "Calculus (gradients) is maths the practice carries out (rule 22). Neural networks are the card itself (rule 6), not a slot."
+ },
+ "mrna-vaccines": {
+  "job": "prevents disease",
+  "slots": [
+   {
+    "part": null,
+    "job": "is an ingredient",
+    "fill": null,
+    "gap": "Messenger RNA",
+    "note": "Key ingredient: the instructions for one virus protein."
+   },
+   {
+    "part": null,
+    "job": "is an ingredient",
+    "fill": null,
+    "gap": "Lipid nanoparticles",
+    "note": "The fat bubbles that carry the RNA into cells."
+   }
+  ],
+  "phen": [
+   {
+    "effect": "a cell follows genes put into it",
+    "card": "virus-transduction"
+   },
+   {
+    "effect": "the body learns to fight a germ",
+    "card": "vaccination"
+   }
+  ],
+  "flag": "Two key ingredients with no cards; keep only messenger RNA if one key part is the limit. How the RNA is made (rule 4) is left off."
+ }
+}

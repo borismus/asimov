@@ -1,0 +1,31 @@
+{
+ "note": "Important assemblies missing from the board (Asimov's chronology lacks them, or they came after 1993). Test of time: in everyday use worldwide, or the standard way its field works; Boris also took some under 10 years old (mRNA vaccines, LLMs, GLP-1 drugs, self-driving cars). Boris's reactions of 2026-11-21.",
+ "kept": [
+  {"name": "Personal computer", "year": 1977},
+  {"name": "Mobile phone", "year": 1983},
+  {"name": "PCR (DNA copying)", "year": 1983},
+  {"name": "Internet", "year": 1983},
+  {"name": "Compact disc", "year": 1982},
+  {"name": "Lithium-ion battery", "year": 1991},
+  {"name": "World Wide Web", "year": 1991},
+  {"name": "Compressed media", "year": 1992, "boris": "the title, not MP3 (covers compressed sound, pictures and video)"},
+  {"name": "White LED lighting", "year": 1996},
+  {"name": "Wi-Fi", "year": 1997},
+  {"name": "Laser eye surgery", "year": 1995, "boris": "LASIK is a brand; use a general name"},
+  {"name": "Antiretroviral HIV therapy", "year": 1996},
+  {"name": "Smartphone", "year": 2007},
+  {"name": "Electric car", "year": 2008},
+  {"name": "Quadcopter drone", "year": 2010},
+  {"name": "CRISPR gene editing", "year": 2012},
+  {"name": "Deep learning", "year": 2012},
+  {"name": "Reusable rocket booster", "year": 2015},
+  {"name": "3D printing", "year": 1986},
+  {"name": "mRNA vaccines", "year": 2020},
+  {"name": "Large language models", "year": 2022},
+  {"name": "GLP-1 drugs", "year": 2017},
+  {"name": "Self-driving cars", "year": 2020}
+ ],
+ "dropped": ["LIGO gravitational-wave detector", "James Webb Space Telescope", "Graphene", "Bitcoin / blockchain", "Quantum computers", "Next-generation DNA sequencing"],
+ "asked": ["Induced pluripotent stem cells (2006)"],
+ "also": "Do a pass for missing effects on cards already on the board (e.g. Hard disk drive <- giant magnetoresistance)."
+}

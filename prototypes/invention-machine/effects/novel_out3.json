@@ -1,0 +1,1639 @@
+[
+ {
+  "id": "sky-cooled-air-capture",
+  "name": "Sky-cooled carbon capture tower",
+  "subtitle": "a carbon capture tower chilled by night sky",
+  "job": "removes carbon dioxide",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "sponge-like crystals with a huge inner surface trap one chosen gas",
+    "card": "metal-organic-frameworks",
+    "recent": true
+   },
+   {
+    "effect": "a surface that reflects sunlight and glows in infrared cools below air temperature in full sun",
+    "card": "radiative-sky-cooling",
+    "recent": true
+   },
+   {
+    "effect": "heat flows only from hot to cold on its own",
+    "card": "second-law-of-thermodynamics",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "air-pump",
+   "photovoltaic-cells",
+   "mirror"
+  ],
+  "how": "Machines that pull carbon dioxide out of thin air spend most of their energy swinging a sponge between cold (when it grabs the gas) and hot (when it lets go), and that energy makes the whole business too expensive. Here the sponge is a crystal with a vast inner surface, and the cold half of the swing is free: a roof that reflects sunlight and glows in the infrared colours the sky lets straight through runs below air temperature even in sun, and the hot half comes from a mirror and the day's sunshine. The tower breathes in cold air at night and gives back pure carbon dioxide by day.",
+  "obstacle": "Sky cooling only buys a handful of degrees, so the roof has to be acres wide per tonne of carbon and stay spotless.",
+  "searchQuery": "radiative sky cooling passive temperature swing direct air capture",
+  "plausibility": 3,
+  "why": "Free night cold replaces the costly cooling half of every air-capture cycle."
+ },
+ {
+  "id": "enzyme-flue-scrubber",
+  "name": "Enzyme carbon scrubber",
+  "subtitle": "a cement works scrubber run by designed enzymes",
+  "job": "removes carbon dioxide",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "a learned model predicts a protein's 3D shape from its sequence",
+    "card": "protein-structure-prediction",
+    "recent": true
+   },
+   {
+    "effect": "catalysis",
+    "card": "catalysis",
+    "recent": false
+   },
+   {
+    "effect": "heating limestone frees a gas that lime soaks back up",
+    "card": "carbon-dioxide",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "boiler",
+   "portland-cement",
+   "air-pump"
+  ],
+  "how": "Cement making releases about a fifteenth of all human carbon dioxide, and it cannot be fixed with clean electricity because the gas comes out of the limestone itself. Our lungs use an enzyme that shuttles carbon dioxide into water thousands of times a second, but it falls apart in a hot, dirty chimney; a model that predicts a protein's shape from its spelling lets chemists redesign it, one letter at a time, to survive at ninety degrees. The gas becomes carbonate in water, and the carbonate is stirred back into the cement.",
+  "obstacle": "Even a toughened enzyme is poisoned by the soot, sulphur and dust of a real kiln within weeks.",
+  "searchQuery": "designed thermostable carbonic anhydrase cement flue gas capture",
+  "plausibility": 3,
+  "why": "Machine-designed enzymes make the body's own carbon trick survive a cement kiln."
+ },
+ {
+  "id": "alkalinity-ship",
+  "name": "Ocean alkalinity ship",
+  "subtitle": "a ship that makes the sea absorb carbon",
+  "job": "removes carbon dioxide",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "graphene lets protons through but stops every atom and molecule",
+    "card": "graphene-proton-sieve",
+    "recent": true
+   },
+   {
+    "effect": "a current splits water into hydrogen and oxygen",
+    "card": "decomposition-of-water",
+    "recent": false
+   },
+   {
+    "effect": "a system at balance shifts to resist any push",
+    "card": "le-chateliers-principle",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "electric-generators",
+   "miners-friend",
+   "screw-propeller"
+  ],
+  "how": "The sea already holds most of the carbon we have emitted, and it would take far more if it were slightly less acidic. On board, a current splits seawater while a one-atom carbon sheet lets only the hydrogen's bare protons cross, cleanly separating an acid stream from an alkaline one; the alkaline water goes overboard, and the sea, pushed out of balance, pulls carbon dioxide out of the air for months to restore it. The acid is neutralised below deck against crushed volcanic rock.",
+  "obstacle": "Moving enough rock and water to matter means a fleet, and no regulator yet knows how to permit changing the chemistry of open ocean.",
+  "searchQuery": "electrochemical ocean alkalinity enhancement proton exchange membrane ship",
+  "plausibility": 3,
+  "why": "A proton-only membrane makes clean acid-base splitting of seawater practical at ship scale."
+ },
+ {
+  "id": "senescent-cell-implant",
+  "name": "Zombie-cell clearing implant",
+  "subtitle": "an implant that sweeps out worn-out cells",
+  "job": "slows ageing",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "clearing out worn-out 'zombie' cells makes old mice healthier",
+    "card": "senescent-cells",
+    "recent": true
+   },
+   {
+    "effect": "immune cells given a designed receptor hunt down a chosen target",
+    "card": "car-t",
+    "recent": true
+   },
+   {
+    "effect": "the body rejects foreign tissue",
+    "card": "tissue-transplantation",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "sutures",
+   "teflon",
+   "perfusion-pump"
+  ],
+  "how": "As we age, cells that have stopped dividing but refuse to die pile up and leak the chemical signals that drive arthritis, stiff arteries and frailty; clearing them makes old mice visibly younger. A matchbox under the skin holds immune cells given a designed receptor that recognises a marker on worn-out cells, behind a membrane that lets the cells out only when a doctor opens a valve. One pulse a year, then the cells are designed to die off, so the hunt stops before it does harm.",
+  "obstacle": "Worn-out cells share their markers with healthy ones that heal wounds and keep the liver running, so the hunt could cost more than it clears.",
+  "searchQuery": "senolytic CAR T cell implant periodic dosing human trial",
+  "plausibility": 2,
+  "why": "Turns a one-off mouse experiment into a controllable, repeatable yearly sweep in people."
+ },
+ {
+  "id": "glymphatic-headband",
+  "name": "Deep-sleep rinsing headband",
+  "subtitle": "a headband that deepens the brain's nightly rinse",
+  "job": "slows ageing",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "during deep sleep the brain flushes out waste through fluid channels",
+    "card": "glymphatic-system",
+    "recent": true
+   },
+   {
+    "effect": "sound is a vibration",
+    "card": "acoustics",
+    "recent": false
+   },
+   {
+    "effect": "feeding back the error lets a machine correct its own aim",
+    "card": "cybernetics",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "electroencephalography",
+   "loudspeaker",
+   "microchips"
+  ],
+  "how": "Only in deep sleep does fluid wash through the brain and carry off the waste proteins that clump into Alzheimer's plaques, and deep sleep is exactly what we lose from middle age onwards. The band reads the slow electrical waves of sleep through the forehead and plays a soft tone timed to the crest of each wave, which makes the next wave larger, and it nudges a vibrating pad to turn the sleeper onto their side, the position in which the flushing runs fastest.",
+  "obstacle": "Nobody can yet measure a living person's brain washing, so there is no way to prove bigger waves clear more waste.",
+  "searchQuery": "closed-loop acoustic slow wave stimulation glymphatic clearance humans",
+  "plausibility": 3,
+  "why": "Aims an existing sleep trick at brain waste clearance rather than at memory alone."
+ },
+ {
+  "id": "reprogramming-patch",
+  "name": "Partial reprogramming skin patch",
+  "subtitle": "a patch that winds old skin partly back",
+  "job": "slows ageing",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "four genes turn an adult cell back into a stem cell that can become any tissue",
+    "card": "induced-stem-cells",
+    "recent": true
+   },
+   {
+    "effect": "a cell follows genes put into it",
+    "card": "virus-transduction",
+    "recent": false
+   },
+   {
+    "effect": "hormones regulate the body",
+    "card": "hormones",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "lithium-battery",
+   "electronic-watch",
+   "isotactic-polymers"
+  ],
+  "how": "Old skin heals so slowly that a bedsore or a diabetic ulcer can cost an elderly person a leg, and nothing on the shelf makes skin young again. The patch's hair-fine needles deliver a brief pulse of the four genes that turn adult cells back toward stem cells, on for three days and off for three weeks, so cells recover a young cell's chemistry without forgetting what kind of cell they are. A timer chip enforces the off period, because duration is the whole safety margin.",
+  "obstacle": "Leave those genes on too long and cells forget themselves and grow tumours; the safe window has to hold for years, not weeks.",
+  "searchQuery": "in vivo partial reprogramming skin patch Yamanaka factors wound healing",
+  "plausibility": 2,
+  "why": "Puts mouse rejuvenation in a dosable device where the off-switch is mechanical."
+ },
+ {
+  "id": "sugar-sensing-gut-microbe",
+  "name": "Sugar-sensing gut bacterium",
+  "subtitle": "a swallowed microbe that curbs appetite after meals",
+  "job": "controls weight",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "a gut hormone curbs appetite and steadies blood sugar",
+    "card": "glp-1",
+    "recent": true
+   },
+   {
+    "effect": "the bacteria in the gut steer the body's immunity, weight and mood",
+    "card": "gut-microbiome",
+    "recent": true
+   },
+   {
+    "effect": "a cell can run on a genome written entirely by computer",
+    "card": "synthetic-genome",
+    "recent": true
+   }
+  ],
+  "parts": [
+   "recombinant-dna",
+   "bacterial-cultivation"
+  ],
+  "how": "The new weight-loss injections work, but they cost more per year than most of the world earns and must be taken forever. A harmless gut bacterium is given a written-from-scratch circuit: when it tastes a flood of sugar it makes the gut hormone that tells the brain the meal is over, and otherwise it stays quiet, so appetite is damped at meals instead of flattened all day. The same genome leaves out a vitamin the microbe cannot make, so stopping a daily tablet clears it from the gut.",
+  "obstacle": "An engineered strain has to hold its place among a thousand competitors for months without drifting genetically or escaping into sewers.",
+  "searchQuery": "engineered gut bacteria glucose-responsive GLP-1 secretion obesity",
+  "plausibility": 2,
+  "why": "A living drug factory dosed by the meal itself, not by a weekly needle."
+ },
+ {
+  "id": "vagus-light-cuff",
+  "name": "Vagus nerve light cuff",
+  "subtitle": "a nerve cuff that flashes the full signal",
+  "job": "controls weight",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "light-sensitive proteins let a flash of light switch chosen nerve cells on or off",
+    "card": "optogenetics",
+    "recent": true
+   },
+   {
+    "effect": "nerve signals are electrical",
+    "card": "electric-nerve-fibers",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "light-emitting-diodes",
+   "lithium-battery",
+   "microchips"
+  ],
+  "how": "Electrical nerve stimulators for appetite are blunt: a pulse of current fires every fibre in the vagus nerve at once, including those that set the heartbeat, so the dose has to stay too low to work. Light-sensitive proteins, delivered only to the fibres that carry fullness from the stomach, let a cuff of tiny lamps fire just those fibres, in a rhythm that imitates a full stomach after a small meal.",
+  "obstacle": "Getting the light-sensing gene into one kind of fibre and no other, in a human, and keeping the lamps safe inside a moving nerve for years.",
+  "searchQuery": "optogenetic vagus nerve stimulation satiety implant human",
+  "plausibility": 2,
+  "why": "Light picks out one fibre type where electricity cannot, making vagal satiety usable."
+ },
+ {
+  "id": "brown-fat-cooling-patch",
+  "name": "Brown-fat cooling patch",
+  "subtitle": "a patch that chills skin to burn fat",
+  "job": "controls weight",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "an electric field makes certain thin films heat up or cool down",
+    "card": "electrocaloric-effect",
+    "recent": true
+   },
+   {
+    "effect": "adrenaline sets the body to fight or flight",
+    "card": "epinephrine",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "lithium-battery",
+   "microchips",
+   "copper"
+  ],
+  "how": "Cold makes the body burn its brown fat, the tissue that exists to make heat, which is why a chilly room beats a warm one for weight, but nobody keeps up with cold baths. A thin film that cools whenever a voltage is applied, worn over the brown fat at the collarbone, chills just that patch of skin in short bursts, which releases the fight-or-flight signal that switches the tissue on, without making the wearer cold.",
+  "obstacle": "Adult brown fat burns only a few hundred extra calories a day at best, and it gets used to the cold within weeks.",
+  "searchQuery": "electrocaloric wearable supraclavicular cooling brown adipose activation",
+  "plausibility": 3,
+  "why": "Solid-state cooling makes targeted cold therapy wearable instead of a cold bath."
+ },
+ {
+  "id": "self-healing-aircraft-skin",
+  "name": "Self-healing aircraft skin",
+  "subtitle": "a wing skin that seals its cracks",
+  "job": "repairs itself",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "capsules in a plastic burst when it cracks and glue the crack shut",
+    "card": "self-healing-polymers",
+    "recent": true
+   },
+   {
+    "effect": "rolled-up carbon sheets are stronger than steel and conduct like metal",
+    "card": "carbon-nanotubes",
+    "recent": true
+   }
+  ],
+  "parts": [
+   "isotactic-polymers",
+   "microchips",
+   "insulated-wire"
+  ],
+  "how": "Airliners are grounded for days of inspection because damage inside a carbon-fibre wing is invisible from outside, and an unnoticed crack is how wings fail. The skin carries capsules of glue that burst as a crack opens and set within hours, and a net of carbon nanotubes woven through the same layer tears where the crack runs, so its resistance jumps and the aircraft reports where the damage was and whether the glue took.",
+  "obstacle": "Certification: regulators would have to trust a repair nobody can see, over thirty years and a hundred thousand flights.",
+  "searchQuery": "self-healing composite aircraft skin nanotube crack sensing certification",
+  "plausibility": 3,
+  "why": "Pairing the healing with a self-report answers the reason healing composites stay grounded."
+ },
+ {
+  "id": "self-healing-subsea-cable",
+  "name": "Self-healing subsea cable",
+  "subtitle": "a sea cable that seals its own punctures",
+  "job": "repairs itself",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "capsules in a plastic burst when it cracks and glue the crack shut",
+    "card": "self-healing-polymers",
+    "recent": true
+   },
+   {
+    "effect": "a one-atom sheet of carbon carries electrons extremely fast and blocks every gas",
+    "card": "graphene",
+    "recent": true
+   },
+   {
+    "effect": "water pressure grows with depth",
+    "card": "hydrostatics",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "insulated-wire",
+   "copper",
+   "fiber-optics"
+  ],
+  "how": "A trawl net or a dragged anchor nicks a power or data cable, seawater creeps into the nick, and months later a continent loses a link that takes a repair ship weeks and millions to fix. The insulation holds capsules whose glue is squeezed out and cured by the very pressure of the deep water trying to get in, and a wrapped sheet of one-atom carbon, which no gas or water molecule can cross, backs up the seal.",
+  "obstacle": "At four kilometres down the glue has to set and hold at four hundred atmospheres and near-freezing cold, where most resins never cure.",
+  "searchQuery": "self-healing insulation subsea power cable pressure activated repair",
+  "plausibility": 3,
+  "why": "Uses the sea's own pressure, the thing that causes the failure, to drive the repair."
+ },
+ {
+  "id": "self-healing-hull-coating",
+  "name": "Self-healing hull coating",
+  "subtitle": "a hull paint that stays smooth and unfouled",
+  "job": "repairs itself",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "microscopic bumps make water bead up and roll off, carrying dirt away",
+    "card": "lotus-effect",
+    "recent": true
+   },
+   {
+    "effect": "capsules in a plastic burst when it cracks and glue the crack shut",
+    "card": "self-healing-polymers",
+    "recent": true
+   }
+  ],
+  "parts": [
+   "spray-cans",
+   "isotactic-polymers"
+  ],
+  "how": "Barnacles and slime on a ship's hull raise its fuel burn by a tenth, and the paints that stop them work by leaching poison into the water. A surface of microscopic bumps gives nothing a grip, so fouling slides off as the ship moves, and because one scratch from a quay or a lump of ice is all a barnacle needs, the coating carries capsules that flow into a scratch and rebuild the texture.",
+  "obstacle": "Textures that shed water in air tend to wet through and lose their trick once held underwater for months.",
+  "searchQuery": "self-healing superhydrophobic fouling release ship hull coating durability",
+  "plausibility": 2,
+  "why": "Healing fixes the scratch problem that kills every textured anti-fouling coating."
+ },
+ {
+  "id": "hydrogen-sponge-shield",
+  "name": "Hydrogen-sponge shield wall",
+  "subtitle": "a spacecraft wall that shields and fuels",
+  "job": "shields from radiation",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "sponge-like crystals with a huge inner surface trap one chosen gas",
+    "card": "metal-organic-frameworks",
+    "recent": true
+   },
+   {
+    "effect": "radiation from space grows stronger with altitude",
+    "card": "cosmic-rays",
+    "recent": false
+   },
+   {
+    "effect": "some atoms soak up neutrons",
+    "card": "neutron-absorption",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "dewar-flask",
+   "fuel-cell",
+   "space-station"
+  ],
+  "how": "On a Mars voyage the crew would take a career's worth of radiation, and the best shield per kilogram is hydrogen, which splits the incoming particles into harmless fragments rather than making new ones. Liquid hydrogen boils away over a two-year trip, so the wall is packed instead with sponge-like crystals that hold hydrogen in their pores at modest pressure and give it back when heated; boron mixed in mops up the stray neutrons the shield itself creates. The same wall is the ship's fuel tank.",
+  "obstacle": "Today's best sponges hold only a few percent of their own weight in hydrogen at room temperature, which is not yet enough wall for the mass.",
+  "searchQuery": "metal organic framework hydrogen storage spacecraft radiation shielding wall",
+  "plausibility": 3,
+  "why": "One mass does two jobs: the best light shield is also the fuel you brought."
+ },
+ {
+  "id": "tardigrade-dsup-therapy",
+  "name": "Radiation-proofing gene therapy",
+  "subtitle": "a treatment that toughens marrow against radiation",
+  "job": "shields from radiation",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "certain proteins turn glassy inside cells and let them survive drying out",
+    "card": "tardigrade-proteins",
+    "recent": true
+   },
+   {
+    "effect": "a cell follows genes put into it",
+    "card": "virus-transduction",
+    "recent": false
+   },
+   {
+    "effect": "X-rays cause mutations",
+    "card": "x-rays-and-mutations",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "genetic-medicine",
+   "recombinant-dna"
+  ],
+  "how": "Radiotherapy and a reactor accident kill the same way: radiation shatters DNA in the tissues that divide fastest, the gut lining and the bone marrow, and there is no way to shield those from inside. A tardigrade protein that wraps itself around DNA and absorbs the chemical shrapnel radiation makes has been shown to cut X-ray damage in human cells by about two-fifths; delivered to marrow cells before treatment, it would let a tumour be given a dose that today would kill the patient.",
+  "obstacle": "A protein that protects DNA would protect a cancer cell's DNA too, so it must reach marrow and nothing else, and switch off afterwards.",
+  "searchQuery": "tardigrade Dsup gene therapy bone marrow radioprotection human cells",
+  "plausibility": 2,
+  "why": "Borrows an animal's DNA armour to widen the gap between tumour dose and patient."
+ },
+ {
+  "id": "strontium-binding-pill",
+  "name": "Strontium-binding pill",
+  "subtitle": "a pill that keeps fallout out of bone",
+  "job": "shields from radiation",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "sponge-like crystals with a huge inner surface trap one chosen gas",
+    "card": "metal-organic-frameworks",
+    "recent": true
+   },
+   {
+    "effect": "a stronger-binding substance pushes a weaker one out",
+    "card": "chemical-affinities",
+    "recent": false
+   },
+   {
+    "effect": "parathyroid hormone controls calcium in the blood",
+    "card": "parathormone",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "vitamin-pills"
+  ],
+  "how": "After a reactor accident, iodine tablets protect the thyroid for a few days, but the other main fallout product, radioactive strontium, behaves chemically like calcium, settles into bone and irradiates the marrow for the rest of a life; nothing on any shelf stops it. The pill carries crystal sponges whose pores are built to the exact size and charge of a strontium ion, so they grip it harder than calcium and carry it out of the gut before the body can mistake it for bone material.",
+  "obstacle": "Telling strontium from the calcium we need, inside a stomach's acid, is a chemically brutal distinction between two near-identical ions.",
+  "searchQuery": "selective strontium binding MOF oral decorporation radioactive fallout",
+  "plausibility": 3,
+  "why": "Fills the real gap in fallout medicine: everything after the iodine tablet."
+ },
+ {
+  "id": "pig-grown-kidney",
+  "name": "Pig-grown human kidney",
+  "subtitle": "a human kidney grown inside an edited pig",
+  "job": "grows organs",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "a guided enzyme cuts DNA at any spot spelled out by a short RNA",
+    "card": "crispr-cas9",
+    "recent": true
+   },
+   {
+    "effect": "four genes turn an adult cell back into a stem cell that can become any tissue",
+    "card": "induced-stem-cells",
+    "recent": true
+   },
+   {
+    "effect": "the body rejects foreign tissue",
+    "card": "tissue-transplantation",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "genetic-engineering",
+   "kidney-transplant"
+  ],
+  "how": "A hundred thousand people sit on dialysis waiting for a kidney, and thousands die each year waiting. A guided enzyme cuts out of a pig embryo the gene it needs to build its own kidneys, leaving an empty space in the growing animal; cells taken from the patient's skin and wound back to a stem-cell state are added to that embryo and fill the gap, so the organ that grows is made of the patient's own cells.",
+  "obstacle": "The blood vessels and scaffolding in the organ stay pig, so rejection and pig viruses remain, and growing human organs in animals sits in a tight legal corner.",
+  "searchQuery": "blastocyst complementation human kidney pig interspecies chimera",
+  "plausibility": 2,
+  "why": "The only route to an organ that is genuinely the patient's own and full-sized."
+ },
+ {
+  "id": "thymus-organoid",
+  "name": "Implanted thymus organoid",
+  "subtitle": "a lab-grown gland that retrains ageing immunity",
+  "job": "grows organs",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "four genes turn an adult cell back into a stem cell that can become any tissue",
+    "card": "induced-stem-cells",
+    "recent": true
+   },
+   {
+    "effect": "some embryo cells steer how their neighbours develop",
+    "card": "embryo-organizer",
+    "recent": false
+   },
+   {
+    "effect": "the body rejects foreign tissue",
+    "card": "tissue-transplantation",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "tissue-culture",
+   "sutures"
+  ],
+  "how": "The thymus, the gland that teaches young immune cells to tell the body from an invader, starts shrivelling at twenty, which is the deepest reason flu, pneumonia and new viruses kill the old. A small gland grown from the patient's own reprogrammed cells, guided by the signals that organise it in an embryo, is tucked under the skin where blood reaches it, and begins schooling fresh immune cells again.",
+  "obstacle": "A thymus teaches tolerance to whatever tissue it meets, so a lab-grown one could just as easily train the immune system to attack its owner.",
+  "searchQuery": "iPSC derived thymus organoid implant immune rejuvenation elderly",
+  "plausibility": 2,
+  "why": "Restores the one organ whose decline undermines every vaccine and every infection."
+ },
+ {
+  "id": "light-loom",
+  "name": "Light Loom",
+  "subtitle": "an organ grown by patterned light",
+  "job": "grows organs",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "light-sensitive proteins let a flash of light switch chosen nerve cells on or off",
+    "card": "optogenetics",
+    "recent": true
+   },
+   {
+    "effect": "four genes turn an adult cell back into a stem cell that can become any tissue",
+    "card": "induced-stem-cells",
+    "recent": true
+   },
+   {
+    "effect": "a jellyfish protein makes any cell that carries its gene glow green",
+    "card": "green-fluorescent-protein",
+    "recent": true
+   }
+  ],
+  "parts": [
+   "microscope",
+   "laser",
+   "tissue-culture"
+  ],
+  "how": "Lab-grown organs come out as lumps, because the chemical signals used to steer them wash over every cell at once, while a real organ is built by the right gene switching on in the right place at the right hour. Here the cells carry light-switched versions of those genes, and a projector paints the pattern onto the growing tissue hour by hour, like a loom laying threads; a glowing marker gene reports which cells actually obeyed, so the projector can correct its own pattern.",
+  "obstacle": "Light penetrates only a few millimetres of living tissue, so anything thicker has to be grown and patterned a layer at a time.",
+  "searchQuery": "optogenetic patterning organoid morphogenesis closed loop projector",
+  "plausibility": 3,
+  "why": "Gives organoid growing the thing it lacks: addressable control in space and time."
+ },
+ {
+  "id": "rare-earth-protein-column",
+  "name": "Rare-earth sorting column",
+  "subtitle": "a column that separates rare earths with proteins",
+  "job": "recycles materials",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "a learned model predicts a protein's 3D shape from its sequence",
+    "card": "protein-structure-prediction",
+    "recent": true
+   },
+   {
+    "effect": "a stronger-binding substance pushes a weaker one out",
+    "card": "chemical-affinities",
+    "recent": false
+   },
+   {
+    "effect": "parts of a mixture travel at different speeds",
+    "card": "chromatography",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "paper-chromatography",
+   "miners-friend"
+  ],
+  "how": "Rare earths are what make the magnets in every electric motor and wind turbine, and separating one from its near-twin takes hundreds of stages of solvent extraction, which is why one country does nearly all of it and why scrap magnets are not recycled. Proteins can be designed, now that shape can be predicted from sequence, to grip one rare earth far harder than its neighbour; fixed in a column, they let dissolved scrap flow in and separated metals come out, with warm water doing the work of the solvents.",
+  "obstacle": "The proteins must survive a strongly acidic scrap liquor through thousands of cycles to be cheaper than a solvent plant.",
+  "searchQuery": "designed lanthanide binding protein column separation magnet recycling",
+  "plausibility": 3,
+  "why": "Replaces a hundred-stage solvent plant with a water column any country could run."
+ },
+ {
+  "id": "lithium-sieve-membrane",
+  "name": "Lithium-sieving membrane",
+  "subtitle": "a membrane that pulls lithium from dead batteries",
+  "job": "recycles materials",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "sponge-like crystals with a huge inner surface trap one chosen gas",
+    "card": "metal-organic-frameworks",
+    "recent": true
+   },
+   {
+    "effect": "charged particles move through a solution",
+    "card": "ionic-dissociation",
+    "recent": false
+   },
+   {
+    "effect": "a current splits water into hydrogen and oxygen",
+    "card": "decomposition-of-water",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "lithium-battery",
+   "electric-generators",
+   "insulated-wire"
+  ],
+  "how": "Recycling a battery today means shredding and dissolving it, then clawing the metals back one by one; lithium, the cheapest by weight and the hardest to separate, is usually written off. A membrane of crystal sponges with pores sized so a lithium ion squeezes through while sodium and magnesium, which drag bigger shells of water, cannot, carries lithium across under a small voltage and leaves everything else behind.",
+  "obstacle": "The organic sludge of shredded cells clogs fine-pored membranes in hours unless the liquor is cleaned first.",
+  "searchQuery": "MOF subnanometre membrane selective lithium extraction battery leachate",
+  "plausibility": 3,
+  "why": "Size-and-charge sieving replaces precipitation chemistry for the metal recyclers currently discard."
+ },
+ {
+  "id": "quantum-dot-resin-passport",
+  "name": "Quantum-dot plastic passport",
+  "subtitle": "dots that record what a plastic survived",
+  "job": "recycles materials",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "crystals a few nanometres wide glow in a colour set purely by their size",
+    "card": "quantum-dots",
+    "recent": true
+   },
+   {
+    "effect": "dispersion",
+    "card": "light-spectrum",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "camera",
+   "light-emitting-diodes",
+   "microchips"
+  ],
+  "how": "Sorting machines can tell one plastic from another, but not a food-grade bottle from a pesticide drum of the same resin, nor whether the material has already been melted five times and is near the end of its strength — so most recycled plastic is downgraded on suspicion. A pinch of size-tuned crystals, each size glowing one pure colour, is mixed in at manufacture as a readable barcode, and because the crystals slowly grow and shift colour each time the plastic is melted, the shift in the colour ratio counts the melt cycles. An ultraviolet flash and a camera read both on a moving sorting line.",
+  "obstacle": "Every maker in the packaging chain would have to add the tracer, and food-contact regulators would have to accept it.",
+  "searchQuery": "quantum dot tracer plastic sorting thermal history melt cycles",
+  "plausibility": 3,
+  "why": "A barcode that also records its own history, which no sorting method reads today."
+ },
+ {
+  "id": "textile-enzyme-unzipper",
+  "name": "Enzymatic textile unzipper",
+  "subtitle": "a machine that digests old clothes into thread",
+  "job": "breaks down plastic",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "bacteria found at a recycling plant make an enzyme that breaks PET plastic apart",
+    "card": "plastic-eating-enzyme",
+    "recent": true
+   },
+   {
+    "effect": "a learned model predicts a protein's 3D shape from its sequence",
+    "card": "protein-structure-prediction",
+    "recent": true
+   },
+   {
+    "effect": "an enzyme's speed levels off as more fuel is added",
+    "card": "michaelis-menten-equation",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "boiler",
+   "spinning-frame"
+  ],
+  "how": "Less than a hundredth of clothing becomes clothing again, mostly because a poly-cotton shirt cannot be pulled apart: no solvent dissolves the polyester without wrecking the cotton. A redesigned version of the enzyme bacteria evolved to eat drink bottles, reshaped to work hot and on dense woven fibre, chews only the polyester in a warm tank; the cotton is left as clean fibre to be spun, and the polyester comes back as the building blocks it was made from.",
+  "obstacle": "Dyes, elastane and finishing chemicals poison the enzyme, and the cost per tonne has to undercut virgin polyester made from oil.",
+  "searchQuery": "engineered PET hydrolase polycotton textile depolymerisation separation",
+  "plausibility": 3,
+  "why": "Attacks the blended-fabric problem that makes clothing recycling fail at step one."
+ },
+ {
+  "id": "polystyrene-worm-farm",
+  "name": "Polystyrene-eating worm farm",
+  "subtitle": "farmed insects that digest foam packaging",
+  "job": "breaks down plastic",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "the bacteria in the gut steer the body's immunity, weight and mood",
+    "card": "gut-microbiome",
+    "recent": true
+   },
+   {
+    "effect": "bacteria found at a recycling plant make an enzyme that breaks PET plastic apart",
+    "card": "plastic-eating-enzyme",
+    "recent": true
+   },
+   {
+    "effect": "a cell can run on a genome written entirely by computer",
+    "card": "synthetic-genome",
+    "recent": true
+   }
+  ],
+  "parts": [
+   "bacterial-cultivation",
+   "agriculture"
+  ],
+  "how": "Polystyrene foam is bulky, worth nothing to a recycler and lasts for centuries, so nearly all of it is buried. Mealworms already nibble it, slowly, because a few of their gut bacteria can crack the chains; give those bacteria a written-to-order set of genes from the plastic-eating family and the worms get a gut that takes the foam apart in days. The fattened larvae are themselves protein for fish and poultry feed.",
+  "obstacle": "Flame retardants and heavy metals from the foam could end up in the larvae, and so in the food chain, unless they can be shown to pass straight through.",
+  "searchQuery": "engineered mealworm gut symbiont polystyrene degradation insect feed",
+  "plausibility": 2,
+  "why": "Turns the most worthless plastic into animal feed using an animal already doing it slowly."
+ },
+ {
+  "id": "self-digesting-film",
+  "name": "Self-digesting plastic film",
+  "subtitle": "packaging that eats itself in a compost heap",
+  "job": "breaks down plastic",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "bacteria found at a recycling plant make an enzyme that breaks PET plastic apart",
+    "card": "plastic-eating-enzyme",
+    "recent": true
+   },
+   {
+    "effect": "certain proteins turn glassy inside cells and let them survive drying out",
+    "card": "tardigrade-proteins",
+    "recent": true
+   },
+   {
+    "effect": "a reaction needs a starting kick of energy",
+    "card": "energy-of-activation",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "isotactic-polymers"
+  ],
+  "how": "Compostable packaging mostly does not compost: in a home bin, without an industrial heap's heat, it sits there for years and ends up contaminating ordinary recycling. Here the enzyme that unzips the plastic is mixed into the film itself at manufacture, held dormant inside a glassy protein shell borrowed from the tardigrade, which keeps it bone dry and motionless. In a damp, warm compost heap the glass dissolves, the enzyme wakes, and the film comes apart into its own building blocks within weeks.",
+  "obstacle": "The film must not begin digesting itself in a hot shop window, and the enzyme must survive being melted into plastic at two hundred degrees.",
+  "searchQuery": "embedded depolymerase film tardigrade protein stabilisation triggered degradation",
+  "plausibility": 3,
+  "why": "A drying protein gives the embedded enzyme the off-switch that earlier versions lacked."
+ },
+ {
+  "id": "blood-lantern",
+  "name": "Blood Lantern",
+  "subtitle": "an implant that glows when potassium climbs",
+  "job": "monitors health continuously",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "a jellyfish protein makes any cell that carries its gene glow green",
+    "card": "green-fluorescent-protein",
+    "recent": true
+   },
+   {
+    "effect": "a learned model predicts a protein's 3D shape from its sequence",
+    "card": "protein-structure-prediction",
+    "recent": true
+   },
+   {
+    "effect": "a curved mirror focuses light",
+    "card": "optics",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "camera",
+   "light-emitting-diodes",
+   "microchips"
+  ],
+  "how": "Kidney patients die suddenly in the days between dialysis sessions when potassium builds up and stops the heart, and the only way to know is a blood draw at a clinic. A speck of gel under the skin holds a designed glowing protein, built on the jellyfish one, that dims as potassium binds to it; a phone's lamp and camera read the brightness through the skin in a few seconds, as often as the patient likes.",
+  "obstacle": "Skin tone, blood flow and the scar that forms around the implant all change the brightness, so the reading has to stay calibrated for a year.",
+  "searchQuery": "implanted fluorescent potassium biosensor transdermal readout kidney",
+  "plausibility": 3,
+  "why": "Takes the one blood test dialysis patients cannot do at home and makes it hourly."
+ },
+ {
+  "id": "aptamer-chemo-sensor",
+  "name": "Chemotherapy dose sensor",
+  "subtitle": "a vein sensor that doses chemotherapy",
+  "job": "monitors health continuously",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "DNA strands fold themselves into any designed nanoscale shape",
+    "card": "dna-origami",
+    "recent": true
+   },
+   {
+    "effect": "a chemical kills the germ but not the patient",
+    "card": "chemotherapy",
+    "recent": false
+   },
+   {
+    "effect": "feeding back the error lets a machine correct its own aim",
+    "card": "cybernetics",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "cardiac-catheter",
+   "perfusion-pump",
+   "microchips"
+  ],
+  "how": "Chemotherapy is still dosed by body surface area, so the same prescription leaves one patient poisoned and another under-treated; the drug level in blood can vary tenfold between people. A folded DNA strand on a fine wire in the vein grips the drug molecule and changes shape when it does, which changes the current it passes, so the level is read every few seconds and the pump trims the infusion to hold it in the narrow band that kills the tumour without the patient.",
+  "obstacle": "Blood proteins coat any sensor placed in a vein, and most such sensors drift badly after a day or two.",
+  "searchQuery": "aptamer electrochemical in vivo sensor closed loop chemotherapy dosing",
+  "plausibility": 3,
+  "why": "Closes the loop on a drug whose dose is currently a guess from weight."
+ },
+ {
+  "id": "breath-screening-card",
+  "name": "Breath screening card",
+  "subtitle": "a card that reads disease from a breath",
+  "job": "monitors health continuously",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "sponge-like crystals with a huge inner surface trap one chosen gas",
+    "card": "metal-organic-frameworks",
+    "recent": true
+   },
+   {
+    "effect": "crystals a few nanometres wide glow in a colour set purely by their size",
+    "card": "quantum-dots",
+    "recent": true
+   }
+  ],
+  "parts": [
+   "camera",
+   "microchips",
+   "light-emitting-diodes"
+  ],
+  "how": "Tuberculosis and lung cancer are usually caught late because diagnosis needs a laboratory, and the illness announces itself in the breath months earlier. A card holds a grid of crystal sponges, each built to trap one of the telltale gases, and each pocket is seeded with size-tuned crystals whose glow is quenched as its gas fills the pores; a phone camera photographs the pattern of dimming and reads the breath like a colour chart.",
+  "obstacle": "Breath differs with food, smoking, time of day and the mouth's own bacteria, so the pattern that means disease has to be learned over very large populations.",
+  "searchQuery": "MOF quantum dot breath sensor array tuberculosis phone readout",
+  "plausibility": 3,
+  "why": "Puts a lab's gas chromatograph on a card a clinic can photograph."
+ },
+ {
+  "id": "atom-cloud-brain-helmet",
+  "name": "Atom-cloud brain scanner",
+  "subtitle": "a helmet that maps thought without surgery",
+  "job": "reads the brain",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "atoms cooled almost to absolute zero behave as a single wave",
+    "card": "bose-einstein-condensate",
+    "recent": true
+   },
+   {
+    "effect": "atoms are tiny magnets",
+    "card": "magnetic-moments",
+    "recent": false
+   },
+   {
+    "effect": "electrodes on the motor cortex let a person's intent move a cursor or arm",
+    "card": "neural-interfaces",
+    "recent": true
+   }
+  ],
+  "parts": [
+   "laser",
+   "air-pump",
+   "microchips"
+  ],
+  "how": "Decoding speech or intent from the brain today needs surgery, because the magnetic whisper a thought makes outside the skull is a billionth of the Earth's own field, and only a liquid-helium machine in a shielded room can hear it. A cloud of atoms chilled until they act as one wave tilts measurably in that whisper, and such a cell can sit against the scalp, so a helmet of them could map which patch of brain spoke, through the skull, for a person who can move.",
+  "obstacle": "Each cell needs a vacuum and near-absolute-zero atoms while the Earth's field, a thousand million times stronger, is cancelled around a head that moves.",
+  "searchQuery": "Bose-Einstein condensate magnetometer wearable magnetoencephalography helmet",
+  "plausibility": 2,
+  "why": "The only route to surgery-free, room-free brain reading sensitive enough to decode."
+ },
+ {
+  "id": "transparent-graphene-grid",
+  "name": "Transparent brain-recording grid",
+  "subtitle": "an implant that listens and watches at once",
+  "job": "reads the brain",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "a one-atom sheet of carbon carries electrons extremely fast and blocks every gas",
+    "card": "graphene",
+    "recent": true
+   },
+   {
+    "effect": "electrodes on the motor cortex let a person's intent move a cursor or arm",
+    "card": "neural-interfaces",
+    "recent": true
+   },
+   {
+    "effect": "a jellyfish protein makes any cell that carries its gene glow green",
+    "card": "green-fluorescent-protein",
+    "recent": true
+   }
+  ],
+  "parts": [
+   "microscope",
+   "laser",
+   "microchips"
+  ],
+  "how": "To cure epilepsy by surgery a surgeon must know exactly which patch of cortex starts the seizure, and metal electrode grids smear the signal from thousands of cells into one blurred trace, while blocking any view of the tissue underneath. A grid whose wires are one-atom carbon sheets is transparent, so a laser can watch a marker protein flash in single cells through the very grid that records the electrical storm, and the two readings together pin the source to a millimetre.",
+  "obstacle": "Both halves are unproven in people: the glowing marker needs a gene put into brain cells, and the window must stay clear for months.",
+  "searchQuery": "transparent graphene electrode array simultaneous calcium imaging human",
+  "plausibility": 3,
+  "why": "Electrical and optical reading at the same spot resolves what either alone blurs."
+ },
+ {
+  "id": "skull-window-ultrasound",
+  "name": "Skull-window thought reader",
+  "subtitle": "a brain reader that uses sound, not electrodes",
+  "job": "reads the brain",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "a moving source's pitch rises approaching, falls receding",
+    "card": "doppler-effect",
+    "recent": false
+   },
+   {
+    "effect": "electrodes on the motor cortex let a person's intent move a cursor or arm",
+    "card": "neural-interfaces",
+    "recent": true
+   },
+   {
+    "effect": "reconstruction from projections",
+    "card": "fourier-analysis",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "sonar",
+   "microchips",
+   "loudspeaker"
+  ],
+  "how": "People locked in by a stroke can think clearly but cannot speak, and today's answer is a grid of electrodes pushed into the brain, which scars and fails within years. Blood rushes towards whichever patch of brain is working, and moving blood shifts the pitch of a sound echo, so a sound probe resting on a small plastic window set in the skull can see which patch is busy, several centimetres down, without touching the brain at all.",
+  "obstacle": "Blood arrives a second or two after the thought, so this reads slow deliberate choices, never fluent speech.",
+  "searchQuery": "functional ultrasound brain computer interface skull window decoding",
+  "plausibility": 3,
+  "why": "Sound reaches depth that electrodes only reach by invading, and nothing scars."
+ },
+ {
+  "id": "sky-cooled-grain-store",
+  "name": "Sky-cooled grain store",
+  "subtitle": "a silo that chills grain with night sky",
+  "job": "cools without power",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "a surface that reflects sunlight and glows in infrared cools below air temperature in full sun",
+    "card": "radiative-sky-cooling",
+    "recent": true
+   },
+   {
+    "effect": "sponge-like crystals with a huge inner surface trap one chosen gas",
+    "card": "metal-organic-frameworks",
+    "recent": true
+   },
+   {
+    "effect": "latent heat",
+    "card": "latent-heat",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "dome",
+   "photovoltaic-cells",
+   "air-pump"
+  ],
+  "how": "A fifth of the grain harvested in hot countries is lost to mould and insects, because cooling a store needs electricity that villages do not have. The roof is a film that reflects sunlight and glows in exactly the infrared colours the atmosphere lets escape, so it runs below air temperature even at noon; crystal sponges on the shaded side drink water vapour from the night air and give it up in the day's warmth, and the evaporation takes the store a few degrees lower still.",
+  "obstacle": "Sky cooling yields only tens of watts a square metre, so the roof must be as big as the store, kept clean, and sees nothing on a cloudy week.",
+  "searchQuery": "passive radiative cooling grain storage sorption water off-grid",
+  "plausibility": 3,
+  "why": "Both halves are passive, so the store cools where no grid or fuel reaches."
+ },
+ {
+  "id": "heat-venting-window-film",
+  "name": "Heat-venting window film",
+  "subtitle": "a window that sends room heat into space",
+  "job": "cools without power",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "tiny repeated structures bend light, sound or radio the 'wrong' way",
+    "card": "metamaterials",
+    "recent": true
+   },
+   {
+    "effect": "a surface that reflects sunlight and glows in infrared cools below air temperature in full sun",
+    "card": "radiative-sky-cooling",
+    "recent": true
+   },
+   {
+    "effect": "some gases let sunlight in but trap heat",
+    "card": "greenhouse-effect",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "plate-glass",
+   "glass"
+  ],
+  "how": "Air conditioning is becoming the fastest-growing load on electricity grids just as the world gets hotter, and most of what it fights is heat coming in and refusing to leave through the windows. A film of microscopic repeated structures is clear to the light we see, reflects the invisible near-infrared that carries most of the sun's heat, and glows strongly in the narrow band of infrared the atmosphere is transparent to, so a room's warmth leaves through the window and does not stop until space.",
+  "obstacle": "A window sees only a slice of sky, and in a street of facing towers each window radiates into its neighbour instead of upward.",
+  "searchQuery": "transparent radiative cooling window film atmospheric window metamaterial",
+  "plausibility": 3,
+  "why": "Makes the window, the usual weak point, into the room's heat exit."
+ },
+ {
+  "id": "self-cooling-solar-panel",
+  "name": "Self-cooling solar panel",
+  "subtitle": "a printed solar cell that keeps itself cool",
+  "job": "cools without power",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "cheap printable crystals turn sunlight into current almost as well as silicon",
+    "card": "perovskite-cells",
+    "recent": true
+   },
+   {
+    "effect": "a surface that reflects sunlight and glows in infrared cools below air temperature in full sun",
+    "card": "radiative-sky-cooling",
+    "recent": true
+   },
+   {
+    "effect": "a one-atom sheet of carbon carries electrons extremely fast and blocks every gas",
+    "card": "graphene",
+    "recent": true
+   }
+  ],
+  "parts": [
+   "photovoltaic-cells",
+   "plate-glass"
+  ],
+  "how": "Printable solar crystals match silicon in the laboratory and cost a fraction as much, but on a roof they wilt: heat and damp unpick them within months, and every ten degrees of heat also shaves their output. The cover layer here is built to reflect the infrared part of sunlight the cell cannot use anyway and to glow in the band that escapes to space, holding the cell ten to twenty degrees cooler all day, while a one-atom carbon sheet beneath it keeps out the water and oxygen that do the chemical damage.",
+  "obstacle": "The cooling layer must give up none of the visible light the cell lives on, and the carbon sheet must be laid pinhole-free over square metres.",
+  "searchQuery": "radiative cooling encapsulation perovskite solar cell graphene barrier lifetime",
+  "plausibility": 3,
+  "why": "Cooling and sealing in one cover attacks both reasons cheap solar fails outdoors."
+ },
+ {
+  "id": "forever-trap",
+  "name": "Forever Trap",
+  "subtitle": "a filter that catches and destroys forever chemicals",
+  "job": "cleans polluted water",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "sponge-like crystals with a huge inner surface trap one chosen gas",
+    "card": "metal-organic-frameworks",
+    "recent": true
+   },
+   {
+    "effect": "fluorine grabs onto almost anything",
+    "card": "fluorine",
+    "recent": false
+   },
+   {
+    "effect": "a reaction needs a starting kick of energy",
+    "card": "energy-of-activation",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "laser",
+   "air-pump",
+   "miners-friend"
+  ],
+  "how": "The 'forever chemicals' now found in most people's blood can be caught by a charcoal filter, but then the spent filter is itself hazardous waste that someone must bury or burn at great heat. Here the water passes through crystal sponges whose pores match the shape of the molecule, concentrating it a thousandfold in one small volume, and then an ultraviolet flash with a cheap electron-donating salt knocks the fluorine atoms off the chain, which is the one blow these molecules cannot survive. Out come salt, carbon dioxide and a sponge ready for the next batch.",
+  "obstacle": "The carbon-fluorine bond is the strongest in organic chemistry, and breaking enough of it to keep up with a town's water takes a great deal of light.",
+  "searchQuery": "MOF concentration UV sulfite PFAS destruction regenerable water treatment",
+  "plausibility": 3,
+  "why": "Concentrating first makes destruction affordable; today's filters only move the problem."
+ },
+ {
+  "id": "electric-denitrifying-bed",
+  "name": "Electric denitrifying bed",
+  "subtitle": "a gravel bed that strips nitrate from runoff",
+  "job": "cleans polluted water",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "vent bacteria live on chemicals, without light or oxygen",
+    "card": "deep-sea-ecosystems",
+    "recent": false
+   },
+   {
+    "effect": "a reaction drives a current",
+    "card": "laws-of-electrolysis",
+    "recent": false
+   },
+   {
+    "effect": "light lets a coating conduct",
+    "card": "photovoltaic-cells",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "photovoltaic-cells",
+   "irrigation",
+   "insulated-wire"
+  ],
+  "how": "Fertiliser washing off farmland turns river mouths into dead zones every summer, and the usual fix, a wood-chip bed where microbes breathe nitrate, runs out of carbon and has to be dug up and refilled. Microbes that strip nitrate will take their electrons straight from an electrode if one is offered, the way vent bacteria live on bare chemistry in the dark, so a gravel bed wired to a small solar panel feeds them forever and turns the nitrate into ordinary nitrogen gas without adding anything at all to the water.",
+  "obstacle": "A bed large enough for a whole farm's drainage, with electrodes that do not foul or corrode in mud for a decade.",
+  "searchQuery": "electro-biostimulated denitrification electrode gravel bed agricultural drainage",
+  "plausibility": 3,
+  "why": "Electrons from a panel replace the carbon feedstock that makes current beds expire."
+ },
+ {
+  "id": "metal-harvest-pond",
+  "name": "Metal-harvesting pond",
+  "subtitle": "microbes that mine metals from mine water",
+  "job": "cleans polluted water",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "a cell can run on a genome written entirely by computer",
+    "card": "synthetic-genome",
+    "recent": true
+   },
+   {
+    "effect": "a guided enzyme cuts DNA at any spot spelled out by a short RNA",
+    "card": "crispr-cas9",
+    "recent": true
+   },
+   {
+    "effect": "a stronger-binding substance pushes a weaker one out",
+    "card": "chemical-affinities",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "bacterial-cultivation",
+   "irrigation"
+  ],
+  "how": "Abandoned mines bleed lead, cadmium and copper into rivers for centuries, and the standard treatment, dosing the water with lime, makes mountains of toxic sludge that must then be stored forever. Microbes given metal-gripping proteins and grown in a shallow pond take the metals out of the water and into themselves; the written-from-scratch genome carries a gene that kills the cells outside the pond's conditions. Skimmed off and burned, the crop is an ash richer in metal than most ore.",
+  "obstacle": "No regulator will license a released engineered organism until containment is proven, and the proof itself takes years.",
+  "searchQuery": "engineered bacteria biosorption mine drainage metal recovery containment",
+  "plausibility": 2,
+  "why": "Turns a perpetual cleanup liability into a crop worth harvesting."
+ },
+ {
+  "id": "rain-fast-rnai-spray",
+  "name": "Rain-fast gene-silencing spray",
+  "subtitle": "a spray that switches off one pest's genes",
+  "job": "protects crops",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "double-stranded RNA silences the matching gene",
+    "card": "rna-interference",
+    "recent": true
+   },
+   {
+    "effect": "sponge-like crystals with a huge inner surface trap one chosen gas",
+    "card": "metal-organic-frameworks",
+    "recent": true
+   }
+  ],
+  "parts": [
+   "spray-cans",
+   "2,4-d"
+  ],
+  "how": "Insecticides kill the bee with the beetle, and within a few seasons the beetle evolves past them anyway. A spray of double-stranded RNA silences a single gene in a single species, so a beetle's gene can be hit and a bee's left alone, but bare RNA is washed off by the first rain and cooked by a day of sun. Locking the strands inside crystal sponges that release them slowly turns a one-day spray into weeks of protection from one pass of the sprayer.",
+  "obstacle": "RNA is still too expensive per hectare for staple crops, and every sequence must be checked against the genes of every insect that might eat the leaf.",
+  "searchQuery": "RNAi pesticide spray nanocarrier rainfastness sustained release field",
+  "plausibility": 3,
+  "why": "Slow release fixes the durability problem that keeps gene-silencing sprays off big acreage."
+ },
+ {
+  "id": "sky-lid",
+  "name": "Sky Lid",
+  "subtitle": "a film that stops orchards radiating heat away",
+  "job": "protects crops",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "a surface that reflects sunlight and glows in infrared cools below air temperature in full sun",
+    "card": "radiative-sky-cooling",
+    "recent": true
+   },
+   {
+    "effect": "some gases let sunlight in but trap heat",
+    "card": "greenhouse-effect",
+    "recent": false
+   },
+   {
+    "effect": "heat radiates as invisible light",
+    "card": "infrared-radiation",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "isotactic-polymers",
+   "nylon"
+  ],
+  "how": "A single clear spring night can destroy a year's fruit, and growers fight it with helicopters, burners and sprinklers that waste fuel and water. Blossom freezes on those nights not because the air is below zero but because the plant radiates its heat straight out through the one band of infrared the atmosphere does not absorb, and so runs colder than the air around it. A thin film stretched a metre above the trees, filled with a cheap mineral that absorbs exactly that band, closes the window and keeps the few degrees that decide the harvest.",
+  "obstacle": "It must pass daylight, survive wind and hail, and roll away for the rest of the season, over whole orchards.",
+  "searchQuery": "selective infrared blocking film frost protection orchard atmospheric window",
+  "plausibility": 3,
+  "why": "Treats frost as a radiation problem, which is what it is, instead of heating air."
+ },
+ {
+  "id": "nodulating-cereal",
+  "name": "Nitrogen-fixing wheat",
+  "subtitle": "wheat that makes its own fertiliser",
+  "job": "protects crops",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "a guided enzyme cuts DNA at any spot spelled out by a short RNA",
+    "card": "crispr-cas9",
+    "recent": true
+   },
+   {
+    "effect": "plants need nitrogen from the soil",
+    "card": "nitrogen-fixation",
+    "recent": false
+   },
+   {
+    "effect": "a cell can run on a genome written entirely by computer",
+    "card": "synthetic-genome",
+    "recent": true
+   }
+  ],
+  "parts": [
+   "agriculture",
+   "gene-synthesis"
+  ],
+  "how": "Making nitrogen fertiliser consumes a couple of percent of the world's energy, and most of what is spread runs off into rivers; beans avoid all of it by housing bacteria in root nodules, and cereals cannot. Cereals still carry most of the genes for the conversation a root has with those bacteria, so a guided enzyme can wake and rewire that pathway, while the partner bacterium gets a written genome tuned to the new host, until wheat roots build nodules of their own.",
+  "obstacle": "Nodules cost a plant sugar it would otherwise put into grain, and despite decades of work no cereal has yet made one.",
+  "searchQuery": "engineered nodulation cereal nitrogen fixation symbiosis CRISPR wheat",
+  "plausibility": 2,
+  "why": "Would retire the single largest industrial energy use in agriculture."
+ },
+ {
+  "id": "spore-data-archive",
+  "name": "Spore data archive",
+  "subtitle": "an archive written into dried living spores",
+  "job": "keeps data for millennia",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "a cell can run on a genome written entirely by computer",
+    "card": "synthetic-genome",
+    "recent": true
+   },
+   {
+    "effect": "certain proteins turn glassy inside cells and let them survive drying out",
+    "card": "tardigrade-proteins",
+    "recent": true
+   },
+   {
+    "effect": "each DNA strand is a template for copying its partner",
+    "card": "the-double-helix",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "dewar-flask",
+   "gene-synthesis"
+  ],
+  "how": "Every digital archive we have must be copied onto fresh media each decade or it is lost, and writing an archive into synthetic DNA, which lasts far longer, costs more per book than a library. Written instead into the spare stretches of a bacterium's written-to-order genome, the archive copies itself: grow a spoonful and you have a million copies for the price of sugar. Dried with the tardigrade proteins that turn a cell's insides to glass, the spores wait out centuries in a jar at room temperature.",
+  "obstacle": "Living things mutate as they copy, so the text needs heavy error correction and the strain must be kept from quietly editing the archive away.",
+  "searchQuery": "DNA data storage living bacterial spores self-replicating archive error correction",
+  "plausibility": 3,
+  "why": "The only archive that makes its own backups, at the cost of growing bacteria."
+ },
+ {
+  "id": "quantum-dot-glass-archive",
+  "name": "Quantum-dot glass archive",
+  "subtitle": "a glass disc read by an ordinary microscope",
+  "job": "keeps data for millennia",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "crystals a few nanometres wide glow in a colour set purely by their size",
+    "card": "quantum-dots",
+    "recent": true
+   },
+   {
+    "effect": "lasers can make flashes short enough to freeze electrons moving in atoms",
+    "card": "attosecond-pulses",
+    "recent": true
+   },
+   {
+    "effect": "a curved mirror focuses light",
+    "card": "optics",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "laser",
+   "microscope",
+   "plate-glass"
+  ],
+  "how": "An archive meant for a thousand years has a second problem beyond lasting: whoever finds it must be able to read it without the machine that wrote it. Ultrashort laser flashes, which deposit their energy before the glass can even heat, plant tiny crystals inside a quartz disc, and each crystal's size fixes the pure colour it glows, so data is written in position and colour together. A future finder needs a lamp and a microscope, and the key to the code is engraved on the rim in plain pictures.",
+  "obstacle": "Writing is agonisingly slow: at today's laser rates one disc would take years to fill.",
+  "searchQuery": "femtosecond laser written quantum dot fused silica archival optical storage",
+  "plausibility": 3,
+  "why": "Stores in colour as well as position, and needs only a microscope to read."
+ },
+ {
+  "id": "skyrmion-probe-memory",
+  "name": "Radiation-proof probe memory",
+  "subtitle": "a memory that outlives centuries of space radiation",
+  "job": "keeps data for millennia",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "tiny stable magnetic whirls can be pushed along a wire with very little current",
+    "card": "magnetic-skyrmions",
+    "recent": true
+   },
+   {
+    "effect": "a current of spin-aligned electrons can flip a tiny magnet",
+    "card": "spin-torque",
+    "recent": true
+   },
+   {
+    "effect": "radiation from space grows stronger with altitude",
+    "card": "cosmic-rays",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "microchips",
+   "insulated-wire"
+  ],
+  "how": "A probe sent to another star, or a vault left on the Moon, loses its memory long before it arrives: ordinary chips store each bit as a little pocket of charge, and a single cosmic ray flips it. A bit stored as a tiny magnetic whirl holds no charge for a ray to disturb, and the whirl is knotted in a way that cannot simply unwind, so it survives heat and radiation that erase anything else; a trickle of spin-aligned current walks the whirls along a wire to the reader.",
+  "obstacle": "Whirls have only been driven reliably in laboratory strips, and they drift sideways as they move, which scrambles the order of the bits.",
+  "searchQuery": "skyrmion racetrack memory radiation hardness deep space data retention",
+  "plausibility": 2,
+  "why": "Charge-free bits remove the very mechanism by which space erases memory."
+ },
+ {
+  "id": "key-well",
+  "name": "Key Well",
+  "subtitle": "a kiosk that fills phones with pads",
+  "job": "secures communications",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "measuring one entangled particle instantly fixes its partner's state, and any snooping shows",
+    "card": "quantum-entanglement",
+    "recent": true
+   },
+   {
+    "effect": "qubits in superposition can solve some problems, like factoring, exponentially faster",
+    "card": "quantum-algorithms",
+    "recent": true
+   },
+   {
+    "effect": "a device whose resistance remembers how much current passed through it",
+    "card": "memristor",
+    "recent": true
+   }
+  ],
+  "parts": [
+   "fiber-optics",
+   "microchips",
+   "laser"
+  ],
+  "how": "Everything encrypted on the internet today is being recorded by people who expect a quantum computer to open it later, and the one code that no computer can break is a pad of random key bits used once and destroyed. A phone docked at a kiosk draws its pad over a short fibre from entangled photons, which give both ends the same random bits and expose any listener in the act, and the bits land in a dense memory chip that erases each one as it is used.",
+  "obstacle": "A pad runs out: you can only speak as many secret bits as you carried home, and then you must dock again.",
+  "searchQuery": "quantum key distribution kiosk one time pad consumer phone refill",
+  "plausibility": 3,
+  "why": "Makes unbreakable one-time pads practical by refilling them where people already charge."
+ },
+ {
+  "id": "self-erasing-key-chip",
+  "name": "Self-erasing key chip",
+  "subtitle": "a chip that forgets its secret when opened",
+  "job": "secures communications",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "a device whose resistance remembers how much current passed through it",
+    "card": "memristor",
+    "recent": true
+   },
+   {
+    "effect": "piezoelectricity",
+    "card": "piezoelectricity",
+    "recent": false
+   },
+   {
+    "effect": "resistance",
+    "card": "ohms-law",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "microchips",
+   "transistor"
+  ],
+  "how": "The weak point in secure communication is not the code but the device: a key written into a chip's memory can be found by someone who freezes, opens and probes it, and whole fleets of phones have been broken that way. Here the key is never stored at all. It is recomputed each time from the exact pattern of resistances in an array of memristors, a pattern set by unrepeatable accidents of manufacture — and so sensitive to cooling, pressure and the removal of the package that the act of attacking the chip changes the answer.",
+  "obstacle": "The same sensitivity makes the key drift with age and ordinary temperature swings, so it must be stabilised without ever writing it down.",
+  "searchQuery": "memristor physical unclonable function tamper evident key derivation",
+  "plausibility": 3,
+  "why": "Makes the key a property of the untouched chip, so opening it destroys it."
+ },
+ {
+  "id": "pencil-beam-link",
+  "name": "Pencil-beam radio link",
+  "subtitle": "a radio link too narrow to intercept quietly",
+  "job": "secures communications",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "tiny repeated structures bend light, sound or radio the 'wrong' way",
+    "card": "metamaterials",
+    "recent": true
+   },
+   {
+    "effect": "radio waves",
+    "card": "radio-waves",
+    "recent": false
+   },
+   {
+    "effect": "light waves interfere",
+    "card": "light-waves",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "radio-antennas",
+   "microchips"
+  ],
+  "how": "Radio sprays in all directions, so anyone within miles can record encrypted traffic today and keep it until the code is breakable. A flat panel of tiny repeated structures steers millimetre waves into a beam a few centimetres across that tracks the far end electronically, with no moving dish; because nothing can be taken out of so narrow a beam without taking it out of the link, an eavesdropper announces himself by the dropout he causes.",
+  "obstacle": "Rain, a passing lorry or a swaying mast break a beam that narrow, so it suits fixed links far better than anything carried.",
+  "searchQuery": "metasurface millimeter wave narrow beam eavesdropping detection secure link",
+  "plausibility": 3,
+  "why": "Physical narrowness turns interception into an outage the receiver notices."
+ },
+ {
+  "id": "organ-vitrification-bank",
+  "name": "Organ vitrification bank",
+  "subtitle": "a store that keeps donor organs for months",
+  "job": "treats illness",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "certain proteins turn glassy inside cells and let them survive drying out",
+    "card": "tardigrade-proteins",
+    "recent": true
+   },
+   {
+    "effect": "a current makes a magnet",
+    "card": "electromagnetism",
+    "recent": false
+   },
+   {
+    "effect": "cold plus pressure turns gases into liquids",
+    "card": "liquefying-gases",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "dewar-flask",
+   "perfusion-pump",
+   "electromagnets"
+  ],
+  "how": "Half of donated hearts and lungs are thrown away because an organ on ice is dead within hours, so the match has to be found in one night, within a flight's distance. The organ is perfused with tardigrade proteins that turn the inside of each cell to glass rather than ice, then cooled until the whole organ is a glass; iron particles left in the perfusion fluid are shaken by a magnetic field to rewarm every part of it at the same instant, which is where thawing usually tears tissue apart.",
+  "obstacle": "Rewarming a human-sized organ evenly enough to beat ice crystal growth has only been done in rat kidneys.",
+  "searchQuery": "organ vitrification nanowarming tardigrade protein intracellular glass transplant",
+  "plausibility": 2,
+  "why": "An organ bank would end the midnight race and let transplants be matched properly."
+ },
+ {
+  "id": "blood-group-converting-filter",
+  "name": "Blood-group converting filter",
+  "subtitle": "a filter that turns any blood into universal",
+  "job": "treats illness",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "the bacteria in the gut steer the body's immunity, weight and mood",
+    "card": "gut-microbiome",
+    "recent": true
+   },
+   {
+    "effect": "a learned model predicts a protein's 3D shape from its sequence",
+    "card": "protein-structure-prediction",
+    "recent": true
+   },
+   {
+    "effect": "mismatched blood types clump",
+    "card": "blood-types",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "perfusion-pump",
+   "surgical-gloves"
+  ],
+  "how": "Blood banks constantly run short of the universal group while units of A and B expire on the shelf, and in a disaster or a battlefield that mismatch costs lives. The sugars that mark a red cell as A or B are stripped by enzymes that gut bacteria evolved to eat the identical sugars in the gut lining; redesigned for speed with shape prediction and fixed to beads in a cartridge, they convert a unit as it is pumped through, minutes before transfusion.",
+  "obstacle": "Even a few sugar stubs left behind can trigger a reaction, so the conversion must be proven complete on every unit, not on average.",
+  "searchQuery": "gut bacterial enzyme blood group conversion universal donor cartridge",
+  "plausibility": 3,
+  "why": "Converting at the bedside turns every expiring unit into the group that is short."
+ },
+ {
+  "id": "electrocaloric-chip-cooler",
+  "name": "Electrocaloric chip cooler",
+  "subtitle": "a processor that pumps out its own heat",
+  "job": "carries heat",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "an electric field makes certain thin films heat up or cool down",
+    "card": "electrocaloric-effect",
+    "recent": true
+   },
+   {
+    "effect": "a one-atom sheet of carbon carries electrons extremely fast and blocks every gas",
+    "card": "graphene",
+    "recent": true
+   },
+   {
+    "effect": "latent heat",
+    "card": "latent-heat",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "microchips",
+   "insulated-wire",
+   "copper"
+  ],
+  "how": "Data centres now spend roughly a third of their electricity on moving heat away from chips, and the hottest spots on a chip, a few square millimetres across, set the speed limit for the whole machine. A film that cools whenever a voltage is applied is laid directly over those spots and switched in a cycle, pumping heat the handful of degrees up to a carbon sheet spreader, with no pumps, pipes or moving parts; cooling is applied where the heat is made rather than to the whole package.",
+  "obstacle": "Each cycle moves only a few degrees' worth of heat, so hundreds of layers would be needed for the lift a real chip wants.",
+  "searchQuery": "electrocaloric thin film on-chip hotspot cooling solid state",
+  "plausibility": 3,
+  "why": "Cooling the hotspot itself beats refrigerating the whole room around it."
+ },
+ {
+  "id": "cold-atom-inertial-navigator",
+  "name": "Cold-atom inertial navigator",
+  "subtitle": "navigation that works with the satellites jammed",
+  "job": "holds direction",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "atoms cooled almost to absolute zero behave as a single wave",
+    "card": "bose-einstein-condensate",
+    "recent": true
+   },
+   {
+    "effect": "electrons travel as waves",
+    "card": "particles-as-waves",
+    "recent": false
+   },
+   {
+    "effect": "light waves interfere",
+    "card": "light-waves",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "laser",
+   "gyroscope",
+   "air-pump"
+  ],
+  "how": "Satellite navigation is jammed or spoofed across whole regions now, and the spinning and vibrating gyroscopes that take over drift kilometres off within a few hours. Atoms chilled until they act as a single wave can be split along two paths and recombined, and the interference fringe where they meet measures acceleration and turning with a precision set by physical constants rather than by a machined part, so it does not drift at all.",
+  "obstacle": "A ship-sized vacuum and laser rig has been demonstrated; shrinking it to fit an aircraft, with its shaking and its temperature swings, has not.",
+  "searchQuery": "cold atom interferometer inertial navigation GPS denied compact",
+  "plausibility": 2,
+  "why": "A drift-free reference is what every jammed vehicle lacks and no spinning mass provides."
+ },
+ {
+  "id": "dry-vaccine-pack",
+  "name": "Glass-dried vaccine pack",
+  "subtitle": "vaccines that need no cold chain",
+  "job": "prevents disease",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "certain proteins turn glassy inside cells and let them survive drying out",
+    "card": "tardigrade-proteins",
+    "recent": true
+   },
+   {
+    "effect": "the body learns to fight a germ",
+    "card": "vaccination",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "canning-food",
+   "dewar-flask",
+   "air-pump"
+  ],
+  "how": "Roughly half the world's vaccine doses are spoiled or thrown away because an unbroken chain of refrigerators has to reach the last village, and the chain breaks. Dried in a syrup of the tardigrade's own protective proteins, the delicate molecules of a vaccine are locked inside a glass so stiff that nothing can move or react, which is exactly how the animal survives years without water; a splash of sterile water reverses it at the clinic.",
+  "obstacle": "Modern vaccines wrapped in fat bubbles, as the mRNA ones are, break as the glass forms, so each kind needs its own drying recipe proven over years.",
+  "searchQuery": "tardigrade protein vitrification thermostable vaccine cold chain free",
+  "plausibility": 3,
+  "why": "Removes the refrigerator, which is the reason most missed vaccinations are missed."
+ }
+]

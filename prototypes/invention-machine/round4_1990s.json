@@ -1,0 +1,432 @@
+[
+ {
+  "name": "Text messaging (SMS)",
+  "year": 1993,
+  "rank": 1,
+  "how": "Mobile phone, digital cellular signalling channel, store-and-forward message centre",
+  "impact": "Became the first mass digital messaging habit, trillions of texts a year by the 2000s and still the fallback channel for billions.",
+  "verdict": "keep",
+  "rule": "m1",
+  "why": ""
+ },
+ {
+  "name": "Digital cellular network (2G)",
+  "year": 1991,
+  "rank": 2,
+  "how": "Mobile phone, microchips, SIM smart card, digital speech compression; ★ time-division multiplexing of radio channels",
+  "impact": "Digital, cheap, roaming networks carried mobile phones from executives to over a billion people by 2002.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "A version of Mobile phone (1983), but going digital is what made phones cheap and global and enabled texting, so m4 says borderline."
+ },
+ {
+  "name": "Home broadband (DSL and cable modem)",
+  "year": 1997,
+  "rank": 3,
+  "how": "Copper phone line or TV cable, modem, microchips; ★ splitting one wire into many narrow frequency bands (discrete multitone)",
+  "impact": "Turned the internet from a dial-up chore into an always-on utility for over a billion households.",
+  "verdict": "keep",
+  "rule": "m1",
+  "why": ""
+ },
+ {
+  "name": "Open-source operating system",
+  "year": 1991,
+  "rank": 4,
+  "how": "Personal computer, compilers, the Internet for distributed volunteer development",
+  "impact": "Runs most of the world's servers, cloud data centres, supercomputers and every Android phone.",
+  "verdict": "keep",
+  "rule": "m1",
+  "why": ""
+ },
+ {
+  "name": "Universal serial port (USB)",
+  "year": 1996,
+  "rank": 5,
+  "how": "Insulated wire & cable, microchips, standard plug; ★ device announces itself to the host (plug and play)",
+  "impact": "A single connector standard in tens of billions of devices, also the default way to charge small electronics.",
+  "verdict": "keep",
+  "rule": "m1",
+  "why": ""
+ },
+ {
+  "name": "Conjugate vaccines",
+  "year": 1990,
+  "rank": 6,
+  "how": "Bacterial sugar coat chemically bonded to a carrier protein; ★ protein carrier makes infants' immune systems respond to sugars",
+  "impact": "Hib and later pneumococcal conjugate vaccines prevent hundreds of thousands of child deaths from meningitis and pneumonia every year.",
+  "verdict": "keep",
+  "rule": "m1",
+  "why": ""
+ },
+ {
+  "name": "Graphics processor (GPU)",
+  "year": 1999,
+  "rank": 7,
+  "how": "Microchips, memory chip; ★ thousands of identical arithmetic units working in parallel",
+  "impact": "Draws every screen in games and phones and became the engine that deep learning and large language models run on.",
+  "verdict": "keep",
+  "rule": "m1",
+  "why": ""
+ },
+ {
+  "name": "Secure web connection (SSL/TLS)",
+  "year": 1995,
+  "rank": 8,
+  "how": "Public-key encryption, certificate authorities, the Web",
+  "impact": "Protects nearly every web page, payment and login, the padlock behind online shopping and banking.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "It is public-key encryption put onto the web; it changed who uses encryption (everyone, daily), so m4 says borderline."
+ },
+ {
+  "name": "Pay-per-click online advertising",
+  "year": 1998,
+  "rank": 9,
+  "how": "Search engine, auctions run by software, click tracking",
+  "impact": "Funds the free search, email, video and social media used by billions; the biggest share of all advertising spending.",
+  "verdict": "borderline",
+  "rule": "m1",
+  "why": "Is it an invention or a business model? It is how the free internet is paid for."
+ },
+ {
+  "name": "CMOS camera chip",
+  "year": 1998,
+  "rank": 10,
+  "how": "Microchips, photodiode in each pixel with its own amplifier; photoelectric effect",
+  "impact": "The camera in every phone, car and laptop, billions made each year.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "A cheaper, lower-power version of CCD image sensor (1969); it put cameras into every phone, so borderline."
+ },
+ {
+  "name": "Electronic stability control",
+  "year": 1995,
+  "rank": 11,
+  "how": "Anti-lock brakes, gyroscope yaw sensor, microchips, braking individual wheels",
+  "impact": "Mandatory on new cars in the US and EU; estimated to cut fatal single-car crashes by about a third.",
+  "verdict": "keep",
+  "rule": "m1",
+  "why": ""
+ },
+ {
+  "name": "MEMS motion sensors",
+  "year": 1993,
+  "rank": 12,
+  "how": "Microchips, silicon etched into tiny springs and masses; ★ capacitance changes as a microscopic mass moves",
+  "impact": "Every phone, airbag, game controller and drone senses motion and tilt with these, billions a year.",
+  "verdict": "keep",
+  "rule": "m1",
+  "why": ""
+ },
+ {
+  "name": "Online banking",
+  "year": 1995,
+  "rank": 13,
+  "how": "The Web, secure web connection, bank databases",
+  "impact": "Most bank customers in rich countries and hundreds of millions in Asia now bank mainly online or by phone.",
+  "verdict": "keep",
+  "rule": "m1",
+  "why": ""
+ },
+ {
+  "name": "Instant messaging",
+  "year": 1996,
+  "rank": 14,
+  "how": "The Internet, presence server, personal computer",
+  "impact": "Grew into the chat apps used by about three billion people daily.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "Close to Email and Social media already kept, and its biggest use came later on smartphones."
+ },
+ {
+  "name": "Flat-screen display (thin-film-transistor LCD)",
+  "year": 1992,
+  "rank": 15,
+  "how": "Liquid crystal display, a transistor printed behind every pixel on glass",
+  "impact": "Flat colour screens replaced the cathode-ray tube in every laptop, monitor and TV.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "A version of Liquid crystal display (1968), but the per-pixel transistor made big colour flat screens possible, so borderline."
+ },
+ {
+  "name": "OLED display",
+  "year": 1997,
+  "rank": 16,
+  "how": "Thin organic films, transparent electrodes, thin-film transistors; ★ electroluminescence of organic molecules",
+  "impact": "The screen in most smartphones and premium TVs, over a billion made each year.",
+  "verdict": "borderline",
+  "rule": "m5",
+  "why": "First sold in 1997 (a car stereo) but only widely used from about 2010 in phones."
+ },
+ {
+  "name": "Internet telephony (VoIP)",
+  "year": 1995,
+  "rank": 17,
+  "how": "The Internet, compressed media, microchips",
+  "impact": "Carries most of the world's phone and video calls today.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "Same job as the telephone and close to Video calling (2003) already kept."
+ },
+ {
+  "name": "Fibre-optic amplifiers and wavelength multiplexing",
+  "year": 1995,
+  "rank": 18,
+  "how": "Fiber optics, laser diodes, erbium-doped fibre; ★ optical amplification by stimulated emission in a doped fibre",
+  "impact": "Multiplied each fibre's capacity a hundredfold; carries nearly all intercontinental internet traffic.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "An upgrade to Fiber optic communication (1977) that nobody sees, though the internet's backbone runs on it."
+ },
+ {
+  "name": "DVD",
+  "year": 1996,
+  "rank": 19,
+  "how": "Laser, laser disks, compressed media, red laser diode",
+  "impact": "Over a billion players sold; the standard way to own and rent films until streaming.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "A shrunk, denser Laser disk (1972) doing the same job, but it was the first one most households used."
+ },
+ {
+  "name": "Electric bicycle",
+  "year": 1993,
+  "rank": 20,
+  "how": "Bicycle, electric motor, battery, torque sensor",
+  "impact": "Around 300 million in China alone; the main motor vehicle for many Asian commuters.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "A bicycle with a motor; it changed who can ride (older, longer, hillier trips), so borderline."
+ },
+ {
+  "name": "QR code",
+  "year": 1994,
+  "rank": 21,
+  "how": "Barcode, camera chip, error-correcting code; ★ 2D pattern readable from any angle",
+  "impact": "Scanned by billions of phones for payments, menus and tickets, especially in China and India.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "A version of Barcode scanner (1974); invented in 1994 but mass use came with phone cameras after 2010."
+ },
+ {
+  "name": "Online maps and directions",
+  "year": 1996,
+  "rank": 22,
+  "how": "The Web, digitised street maps, route-finding software (shortest-path search)",
+  "impact": "Billions of people find their way with phone maps daily; it replaced the paper road atlas.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "You dropped Car satnav (1995); this is its web/phone cousin, which is in far more daily use."
+ },
+ {
+  "name": "Unicode text encoding",
+  "year": 1991,
+  "rank": 23,
+  "how": "Character tables, software standards",
+  "impact": "Lets every language on earth be typed, stored and sent on every computer and phone.",
+  "verdict": "borderline",
+  "rule": "m1",
+  "why": "Is a standard an invention? Every text you read on a screen runs on it."
+ },
+ {
+  "name": "Recommendation algorithms",
+  "year": 1998,
+  "rank": 24,
+  "how": "Databases, statistics of what similar people chose, the Web",
+  "impact": "Choose much of what billions of people watch, read and buy.",
+  "verdict": "borderline",
+  "rule": "m1",
+  "why": "An algorithm rather than a device, and mostly a piece of shopping, streaming and social media."
+ },
+ {
+  "name": "Digital satellite and terrestrial TV",
+  "year": 1994,
+  "rank": 25,
+  "how": "Communications satellites, compressed media, dish antenna, set-top box",
+  "impact": "Hundreds of millions of homes, e.g. most of India's TV households, watch through digital dishes.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "A version of Television and communications satellites; compression made hundreds of channels cheap."
+ },
+ {
+  "name": "Real-time PCR testing",
+  "year": 1996,
+  "rank": 26,
+  "how": "PCR, fluorescent dye probes, photocell; ★ fluorescence that grows with each copying cycle",
+  "impact": "The standard lab test for infections, from HIV viral load to the billions of COVID-19 tests.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "A version of PCR (1983) kept; reading the result live made it a routine clinical test."
+ },
+ {
+  "name": "Intracytoplasmic sperm injection (ICSI)",
+  "year": 1992,
+  "rank": 27,
+  "how": "Test-tube baby methods, microscope, glass micro-needle",
+  "impact": "Used in most IVF cycles worldwide; millions of children born.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "A version of Test-tube baby (1978) that made male infertility treatable."
+ },
+ {
+  "name": "Neonicotinoid insecticides",
+  "year": 1991,
+  "rank": 28,
+  "how": "Synthetic chemistry, seed coating; ★ chemical that jams insects' nerve receptors",
+  "impact": "The world's most used insecticide class, coating most maize, soy and rape seed; also blamed for harming bees.",
+  "verdict": "borderline",
+  "rule": "m1",
+  "why": "Standard in farming, but you dropped Glyphosate weedkiller, so it may also go."
+ },
+ {
+  "name": "Erectile dysfunction pills",
+  "year": 1998,
+  "rank": 29,
+  "how": "Synthetic drug blocking an enzyme (PDE5) that relaxes blood vessels",
+  "impact": "Prescribed to tens of millions of men; now cheap generics.",
+  "verdict": "borderline",
+  "rule": "m1",
+  "why": "Near the cut: widely used, but its impact is personal rather than world-changing."
+ },
+ {
+  "name": "Spiral CT scanner",
+  "year": 1990,
+  "rank": 30,
+  "how": "CAT scan, slip-ring rotating gantry, moving table",
+  "impact": "Made CT fast enough to be routine; hundreds of millions of scans a year.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "A faster CAT scan (1972); it changed how widely CT is used, so borderline."
+ },
+ {
+  "name": "GPS-guided bomb",
+  "year": 1997,
+  "rank": 31,
+  "how": "Precision-guided bombs, GPS receiver, fins",
+  "impact": "Made precision strikes cheap and all-weather; the default air weapon since 1999.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "A version of Precision-guided bombs (1972) kept; GPS made it cheap and usable in any weather."
+ },
+ {
+  "name": "Giant-magnetoresistance disk head",
+  "year": 1997,
+  "rank": 32,
+  "how": "Hard disk drive; ★ giant magnetoresistance (resistance of thin magnetic layers swings with field)",
+  "impact": "Let hard drives grow a thousandfold, making cheap mass storage and data centres possible.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "A version of Hard disk drive (1956); invisible to users but it changed how drives read data."
+ },
+ {
+  "name": "Lung surfactant for premature babies",
+  "year": 1990,
+  "rank": 33,
+  "how": "Lung-lining lipids from cattle or synthetic, breathing tube",
+  "impact": "Cut deaths of very premature babies from breathing failure by roughly a third.",
+  "verdict": "drop",
+  "rule": "cut",
+  "why": "Below the decade's cut; important for newborns but used only in hospital neonatal units."
+ },
+ {
+  "name": "Online dating",
+  "year": 1995,
+  "rank": 34,
+  "how": "The Web, databases, matching software",
+  "impact": "Now how the largest share of couples meet in the US and many other countries.",
+  "verdict": "drop",
+  "rule": "cut",
+  "why": "Below the decade's cut; a service built on the Web rather than a new assembly."
+ },
+ {
+  "name": "Prepaid mobile phone plans",
+  "year": 1995,
+  "rank": 35,
+  "how": "Mobile phone network, top-up vouchers, billing software",
+  "impact": "Made mobile phones affordable for the poor; most phones in Africa and South Asia are prepaid.",
+  "verdict": "drop",
+  "rule": "cut",
+  "why": "Below the decade's cut, and a business model more than an invention."
+ },
+ {
+  "name": "Peer-to-peer file sharing",
+  "year": 1999,
+  "rank": 36,
+  "how": "The Internet, compressed media, personal computer",
+  "impact": "Hit tens of millions of users and forced the music industry onto streaming.",
+  "verdict": "drop",
+  "rule": "cut",
+  "why": "Below the decade's cut; its job passed to streaming."
+ },
+ {
+  "name": "Atypical antipsychotics",
+  "year": 1993,
+  "rank": 37,
+  "how": "Synthetic drugs blocking dopamine and serotonin receptors",
+  "impact": "The standard treatment for schizophrenia and bipolar disorder.",
+  "verdict": "drop",
+  "rule": "cut",
+  "why": "Below the decade's cut; an improvement on Tranquilizers (1952)."
+ },
+ {
+  "name": "Computer-animated feature films",
+  "year": 1995,
+  "rank": 38,
+  "how": "Computer graphics software, render farms of computers",
+  "impact": "Now how nearly all animated and effects-heavy films are made.",
+  "verdict": "drop",
+  "rule": "cut",
+  "why": "Below the decade's cut."
+ },
+ {
+  "name": "Photo-editing software",
+  "year": 1990,
+  "rank": 39,
+  "how": "Personal computer, graphical user interface, digital images",
+  "impact": "The standard tool of photography, design and print.",
+  "verdict": "drop",
+  "rule": "cut",
+  "why": "Below the decade's cut."
+ },
+ {
+  "name": "Common-rail diesel injection",
+  "year": 1997,
+  "rank": 40,
+  "how": "Diesel engine, high-pressure pump, electronic injectors, microchips",
+  "impact": "Made diesel cars quiet and frugal; standard in every modern diesel engine.",
+  "verdict": "drop",
+  "rule": "cut",
+  "why": "Below the decade's cut, and an engine detail rather than something people handle."
+ },
+ {
+  "name": "Portable document format (PDF)",
+  "year": 1993,
+  "rank": 41,
+  "how": "Page description language, personal computer",
+  "impact": "The default format for forms, papers and contracts.",
+  "verdict": "drop",
+  "rule": "cut",
+  "why": "Below the decade's cut."
+ },
+ {
+  "name": "Hormonal IUD",
+  "year": 1990,
+  "rank": 42,
+  "how": "Plastic T-frame, slow-release progestin",
+  "impact": "Used by tens of millions of women.",
+  "verdict": "drop",
+  "rule": "cut",
+  "why": "Below the decade's cut; a variant of existing contraception."
+ },
+ {
+  "name": "Animal cloning",
+  "year": 1996,
+  "rank": 43,
+  "how": "Nuclear transfer into an emptied egg cell",
+  "impact": "Used in research and some livestock breeding; a 1990s headline (Dolly the sheep).",
+  "verdict": "drop",
+  "rule": "m2",
+  "why": "Still a lab and breeding technique, and Asimov already has Vertebrate clones (1967)."
+ }
+]

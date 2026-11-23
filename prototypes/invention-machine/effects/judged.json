@@ -1,0 +1,2311 @@
+[
+ {
+  "id": "star-sighting-drone-compass",
+  "name": "Star-sighting drone compass",
+  "job": "finds direction",
+  "effect": "the pole star stays fixed in the north",
+  "effectCard": "sea-navigation",
+  "parts": [
+   "camera",
+   "microchips",
+   "gyroscope"
+  ],
+  "how": "A small upward-looking camera on a drone or robot photographs the night sky, and a chip picks out the one star that stays put while all the others wheel around it. Because that star always sits over the north pole, its place in the picture tells the machine which way is north, even where steel fools a magnetic compass or satellite signals are jammed.",
+  "real": "Spacecraft and missile star trackers, 1950s on; star compasses for drones in trials, 2020s",
+  "plausibility": 5,
+  "why": "Bronze Age sailors' trick becomes a jam-proof compass for robots.",
+  "batch": 1,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "tidal-power-station",
+  "name": "Tidal power station",
+  "job": "makes electricity",
+  "effect": "the moon pulls the sea into tides",
+  "effectCard": "tides",
+  "parts": [
+   "turbines",
+   "electric-generators"
+  ],
+  "how": "A dam across a bay lets the sea flood in as the moon raises the tide and holds it back as the tide falls. The trapped water rushes through turbines that spin generators, giving electricity on a timetable set by the moon.",
+  "real": "La Rance tidal power station, France, 1966",
+  "plausibility": 5,
+  "why": "The moon's pull turned into electricity, predictable years ahead.",
+  "batch": 1,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "tide-driven-water-pump",
+  "name": "Tide-driven town water pump",
+  "job": "pumps water",
+  "effect": "the moon pulls the sea into tides",
+  "effectCard": "tides",
+  "parts": [
+   "water-wheel",
+   "piston-and-cylinder",
+   "valve"
+  ],
+  "how": "Waterwheels set in the arches of a bridge are turned by the river as the moon pulls the tide in and again as it drains out. The wheels work pistons and valves that push river water up pipes to the town, so the moon does the lifting twice a day.",
+  "real": "London Bridge waterworks, 1582",
+  "plausibility": 5,
+  "why": "The moon as a free pumping engine for a whole city.",
+  "batch": 1,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "camera-sun-sight-locator",
+  "name": "Camera sun-sight position finder",
+  "job": "measures",
+  "effect": "the sun's angle changes as you go north or south",
+  "effectCard": "earth-size",
+  "parts": [
+   "camera",
+   "gyroscope",
+   "electronic-watch",
+   "microchips"
+  ],
+  "how": "A camera measures how high the sun stands above a level set by a gyroscope, while a clock records the exact moment. Since the sun's height at a given time depends on how far north or south you are, a chip turns the angle into your position, a backup for ships and planes when satellite navigation fails.",
+  "real": "Sextant sun sights, 1700s; automatic sun sensors, 1960s",
+  "plausibility": 5,
+  "why": "Eratosthenes' shadow measurement as a satellite-free backup for navigation.",
+  "batch": 1,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "twin-camera-obstacle-sensor",
+  "name": "Twin-camera obstacle sensor",
+  "job": "detects objects",
+  "effect": "a near thing shifts against far things as you move",
+  "effectCard": "moon-distance",
+  "parts": [
+   "camera",
+   "microchips"
+  ],
+  "how": "Two cameras a hand's width apart each photograph the road ahead. Nearby things land in noticeably different spots in the two pictures while distant things barely shift, so a chip turns that shift into a distance and warns a car or robot before it hits something.",
+  "real": "Stereo-camera car safety systems, 2008 (Subaru EyeSight)",
+  "plausibility": 5,
+  "why": "The method that measured the moon now keeps cars off bumpers.",
+  "batch": 1,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "one-camera-distance-gauge",
+  "name": "One-camera distance gauge",
+  "job": "measures",
+  "effect": "far things shrink in proportion to their distance",
+  "effectCard": "perspective",
+  "parts": [
+   "camera",
+   "microchips"
+  ],
+  "how": "A single camera watches the car ahead. Cars are all roughly the same width, and a car twice as far away looks half as wide, so a chip turns the car's width in the picture into its distance and into how fast the gap is closing.",
+  "real": "Single-camera collision warning, 2007 (Mobileye)",
+  "plausibility": 5,
+  "why": "A Renaissance painter's rule now judges braking distances.",
+  "batch": 1,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "laser-triangulation-sensor",
+  "name": "Laser-spot triangulation sensor",
+  "job": "measures",
+  "effect": "a triangle's angles fix the ratios of its sides",
+  "effectCard": "trig-tables",
+  "parts": [
+   "laser",
+   "camera",
+   "microchips"
+  ],
+  "how": "A laser throws a bright dot onto a surface and a camera mounted a short way to the side looks at it. The angle at which the camera sees the dot changes with the dot's distance, and because a triangle's angles fix its sides, a chip turns that angle into a precise distance; sweeping the dot maps a whole object's shape.",
+  "real": "Laser triangulation scanners, 1970s-80s",
+  "plausibility": 5,
+  "why": "Trig tables built for astronomers now let machines see in 3D.",
+  "batch": 1,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "pendulum-sway-damper",
+  "name": "Pendulum skyscraper sway damper",
+  "job": "absorbs shocks",
+  "effect": "a pendulum keeps the same beat whatever its swing",
+  "effectCard": "pendulum",
+  "parts": [
+   "steel",
+   "piston-and-cylinder"
+  ],
+  "how": "A huge steel ball hangs like a pendulum near the top of a tall tower, on cables cut so its steady beat matches the building's own sway. When wind or an earthquake rocks the tower, the ball swings against the motion, and pistons between ball and building soak up the energy.",
+  "real": "Tuned mass dampers, e.g. Taipei 101, 2004",
+  "plausibility": 5,
+  "why": "Galileo's clock rhythm repurposed to calm a swaying skyscraper.",
+  "batch": 1,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "falling-atom-tunnel-finder",
+  "name": "Falling-atom tunnel finder",
+  "job": "detects objects",
+  "effect": "heavy and light things fall at the same rate",
+  "effectCard": "falling-motion",
+  "parts": [
+   "laser",
+   "air-pump",
+   "interferometer",
+   "microchips"
+  ],
+  "how": "Inside two vacuum tubes, one above the other, tiny clouds of atoms are dropped and their fall is timed with laser light. Because everything falls at the same rate, any difference between the two drops can only come from extra or missing mass nearby, revealing buried pipes, tunnels or caves without digging.",
+  "real": "Atom-interferometer gravity sensors, lab field demo 2022",
+  "plausibility": 4,
+  "why": "Galileo's tower drop turned into an X-ray for the ground.",
+  "batch": 1,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "artificial-vein-valve",
+  "name": "Implanted artificial vein valve",
+  "job": "treats illness",
+  "effect": "flap valves let blood flow only one way",
+  "effectCard": "vein-valves",
+  "parts": [
+   "valve",
+   "teflon"
+  ],
+  "how": "When the valves in leg veins fail, blood pools instead of climbing back to the heart, causing swollen legs and sores that won't heal. A small flap valve of slippery plastic placed inside a leg vein opens when the calf muscles squeeze blood upward and snaps shut when it tries to fall back.",
+  "real": "Prosthetic vein valves, in clinical trials 2020s",
+  "plausibility": 4,
+  "why": "Harvey's anatomy lesson turned into a spare part.",
+  "batch": 1,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "number-driven-mill",
+  "name": "Number-driven milling machine",
+  "job": "manufactures",
+  "effect": "any shape can be written as an equation",
+  "effectCard": "analytic-geometry",
+  "parts": [
+   "computer",
+   "electric-motors",
+   "alloy-steel"
+  ],
+  "how": "A part's shape is written down as equations, and a computer turns them into a stream of numbers telling motors exactly where to move a steel cutting tool. The machine carves the shape straight from the maths, so the same part can be made again and again without a skilled hand guiding it.",
+  "real": "Numerical-control milling, MIT 1952",
+  "plausibility": 5,
+  "why": "Descartes' idea that shapes are numbers became modern machining.",
+  "batch": 1,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "phone-floor-finder",
+  "name": "Phone floor-level finder",
+  "job": "measures",
+  "effect": "air pressure falls the higher you go",
+  "effectCard": "air-pressure-altitude",
+  "parts": [
+   "barometer",
+   "microchips"
+  ],
+  "how": "A tiny pressure sensor in a phone notices that air pressure drops by a few parts in ten thousand with every storey you climb. Comparing its reading with a nearby weather station tells emergency services which floor of a tall building a caller is on.",
+  "real": "Barometric altimeters, 1920s; phone floor-finding, 2010s",
+  "plausibility": 5,
+  "why": "Pascal's mountain experiment shrunk to finding a caller's floor.",
+  "batch": 1,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "random-sampling-simulator",
+  "name": "Random-sampling simulator",
+  "job": "computes",
+  "effect": "random events are predictable in large numbers",
+  "effectCard": "probability",
+  "parts": [
+   "computer"
+  ],
+  "how": "Instead of solving an impossibly hard equation, a computer plays out a process, such as a neutron bouncing through a reactor, thousands of times using random dice rolls. Each run is unpredictable, but the average of many runs settles on the right answer, so chance itself does the arithmetic.",
+  "real": "Monte Carlo method, run on ENIAC 1948",
+  "plausibility": 5,
+  "why": "Gamblers' mathematics turned into a way to compute the uncomputable.",
+  "batch": 1,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "coin-flip-chip",
+  "name": "Coin-flip probabilistic chip",
+  "job": "computes",
+  "effect": "random events are predictable in large numbers",
+  "effectCard": "probability",
+  "parts": [
+   "integrated-circuits",
+   "transistor"
+  ],
+  "how": "A chip is built from thousands of deliberately jittery bits that flip between 0 and 1 at random, each nudged by its neighbours. Watched over many flips, the crowd settles into the most likely patterns, solving scheduling and optimisation puzzles with far less energy than ordinary logic.",
+  "real": "Probabilistic-bit (p-bit) chips, lab prototypes 2019 on",
+  "plausibility": 3,
+  "why": "Randomness, normally a chip's enemy, becomes the computing engine.",
+  "batch": 1,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "lensless-diffraction-microscope",
+  "name": "Lensless diffraction microscope",
+  "job": "magnifies",
+  "effect": "light bends around edges",
+  "effectCard": "light-diffraction",
+  "parts": [
+   "laser",
+   "camera",
+   "computer"
+  ],
+  "how": "A laser lights a tiny sample with no lens at all, and the light that bends around its edges spreads into a speckled pattern on a camera chip. A computer works backwards from the pattern to the shape that must have made it, giving a sharp magnified image with no glass to blur it.",
+  "real": "Coherent diffraction imaging, labs since 1999",
+  "plausibility": 4,
+  "why": "The blurring that limits every lens becomes the image itself.",
+  "batch": 1,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "auto-oxygen-dial-newborns",
+  "name": "Automatic oxygen dial for newborns",
+  "job": "regulates the body",
+  "effect": "blood turns bright red when it takes up air",
+  "effectCard": "blood-color",
+  "parts": [
+   "light-emitting-diodes",
+   "photocell",
+   "microchips",
+   "valve"
+  ],
+  "how": "A clip on a premature baby's foot shines red and infrared light through the skin; blood carrying oxygen is brighter red and absorbs the two colours differently. A chip reads that colour many times a second and turns the oxygen valve on the baby's breathing machine up or down, holding oxygen in the narrow safe range better than busy nurses can.",
+  "real": "Closed-loop oxygen control for preterm infants, clinical use 2010s",
+  "plausibility": 5,
+  "why": "Blood's colour closes the loop: the body steering its own oxygen.",
+  "batch": 1,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "phone-camera-oxygen-check",
+  "name": "Phone-camera blood oxygen check",
+  "job": "diagnoses",
+  "effect": "blood turns bright red when it takes up air",
+  "effectCard": "blood-color",
+  "parts": [
+   "camera",
+   "light-emitting-diodes",
+   "microchips"
+  ],
+  "how": "You rest a fingertip over a phone's camera and flash, and the camera watches how red the light coming through your finger is. Because blood is brighter red when full of oxygen, the changing colour with each heartbeat tells an app whether your blood is carrying enough oxygen, without a hospital clip.",
+  "real": "Pulse oximeter, 1974; phone-camera versions in research, 2010s",
+  "plausibility": 4,
+  "why": "A 17th-century observation becomes a check anyone can run.",
+  "batch": 1,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "greenhouse-pollinating-robot",
+  "name": "Greenhouse pollinating robot",
+  "job": "grows food",
+  "effect": "pollen fertilizes a flower to make seed",
+  "effectCard": "plant-sexuality",
+  "parts": [
+   "robots",
+   "camera",
+   "microchips"
+  ],
+  "how": "In greenhouses and orchards where bees are scarce, a robot arm with a camera finds open flowers and dabs pollen from one onto another with a soft brush or puff of air. Each pollinated flower can then set fruit and seed, so the harvest no longer depends on insects.",
+  "real": "Robot pollinator prototypes, 2010s-2020s",
+  "plausibility": 4,
+  "why": "An insurance policy for crops if bees keep disappearing.",
+  "batch": 1,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "quarter-turn-radio-code",
+  "name": "Quarter-turn radio code",
+  "job": "communicates",
+  "effect": "multiplying by i turns a number a quarter circle",
+  "effectCard": "imaginary-numbers",
+  "parts": [
+   "radio",
+   "integrated-circuits"
+  ],
+  "how": "A radio wave's rhythm can be pictured as a point going round a circle, and multiplying by i moves it a quarter of the way round. A transmitter sends two signals a quarter-turn apart on the same wave, and the receiver pulls both back out, doubling what one channel carries; Wi-Fi and phones stack this into dozens of patterns.",
+  "real": "Quadrature amplitude modulation, 1960s",
+  "plausibility": 5,
+  "why": "An 'imaginary' number carries most of the world's wireless data.",
+  "batch": 1,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "carbon-enriched-greenhouse",
+  "name": "Carbon-enriched greenhouse",
+  "job": "grows food",
+  "effect": "plants build their bodies partly from air",
+  "effectCard": "plant-nourishment",
+  "parts": [
+   "glass",
+   "valve"
+  ],
+  "how": "Plants build most of their dry weight from carbon dioxide taken from the air, but ordinary air holds very little of it. A closed glass greenhouse with extra carbon dioxide let in through valves lets tomatoes and cucumbers grow faster and heavier from the same soil.",
+  "real": "Greenhouse CO2 enrichment, 1960s",
+  "plausibility": 5,
+  "why": "Van Helmont's surprise that trees come from air, used as fertilizer.",
+  "batch": 1,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "algae-oxygen-garden",
+  "name": "Algae oxygen garden for spacecraft",
+  "job": "supplies oxygen",
+  "effect": "plants turn sunlight, water and carbon dioxide into sugar",
+  "effectCard": "photosynthesis",
+  "parts": [
+   "glass",
+   "light-emitting-diodes",
+   "valve"
+  ],
+  "how": "Lit glass tubes of green algae sit in a spacecraft's air loop. As the algae turn lamp light, water and the crew's exhaled carbon dioxide into sugar, they release fresh oxygen, so a long voyage needs far less stored oxygen.",
+  "real": "Soviet BIOS-3 tests, 1972; space algae reactors still experimental",
+  "plausibility": 4,
+  "why": "A pond's chemistry as the life support for a trip to Mars.",
+  "batch": 1,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "pulse-powered-implant-cell",
+  "name": "Pulse-powered implant charger",
+  "job": "makes electricity",
+  "effect": "blood presses on vessel walls with measurable force",
+  "effectCard": "blood-pressure",
+  "parts": [
+   "quartz-oscillator",
+   "lithium-battery"
+  ],
+  "how": "A soft band wrapped around an artery holds a crystal that makes a tiny voltage whenever it is squeezed. Every heartbeat pushes the artery wall out against the band, and the trickle of electricity recharges a small battery, so a pacemaker might never need surgery to replace it.",
+  "real": "Lab prototypes, 2010s",
+  "plausibility": 3,
+  "why": "The heartbeat powering the very device that keeps it beating.",
+  "batch": 1,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "solar-updraft-tower",
+  "name": "Solar updraft wind tower",
+  "job": "makes electricity",
+  "effect": "sun-heated air at the equator drives steady winds",
+  "effectCard": "trade-winds",
+  "parts": [
+   "glass",
+   "turbines",
+   "electric-generators"
+  ],
+  "how": "A huge glass roof heats the air beneath it, and the warm air rushes inward to a tall chimney in the middle, the same way sun-heated equatorial air drives the trade winds. Turbines at the chimney's base catch this steady home-made wind and turn generators, even after dark while the ground stays warm.",
+  "real": "Manzanares prototype, Spain, 1982",
+  "plausibility": 4,
+  "why": "A miniature trade wind, made to order and harnessed.",
+  "batch": 1,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "ice-coat-frost-shield",
+  "name": "Ice-coat frost shield for orchards",
+  "job": "protects",
+  "effect": "water freezes and boils at fixed temperatures",
+  "effectCard": "celsius",
+  "parts": [
+   "irrigation",
+   "valve",
+   "thermometer"
+  ],
+  "how": "When a frost threatens fruit blossoms, sprinklers keep coating the buds with water. As long as water is freezing on them, the ice-and-water mix stays fixed at zero degrees, warmer than the killing cold of the air, so the flowers survive inside their glaze.",
+  "real": "Orchard frost sprinkling, 1950s",
+  "plausibility": 5,
+  "why": "Freezing water used to stop something from freezing harder.",
+  "batch": 1,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "limestone-heat-battery",
+  "name": "Limestone heat battery",
+  "job": "stores energy",
+  "effect": "heating limestone frees a gas that lime soaks back up",
+  "effectCard": "carbon-dioxide",
+  "parts": [
+   "mirror",
+   "boiler",
+   "steam-turbine"
+  ],
+  "how": "Concentrated sunlight bakes limestone, driving off carbon dioxide, and the lime and gas are kept in separate tanks, holding the energy. When power is wanted, the gas is let back onto the lime, which soaks it up and gets very hot, raising steam to spin a turbine at night.",
+  "real": "Calcium-looping storage, pilot plants 2020s",
+  "plausibility": 4,
+  "why": "Black's 1750s lime experiment as a battery for solar power.",
+  "batch": 1,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "lime-air-scrubbing-trays",
+  "name": "Lime air-scrubbing trays",
+  "job": "separates mixtures",
+  "effect": "heating limestone frees a gas that lime soaks back up",
+  "effectCard": "carbon-dioxide",
+  "parts": [
+   "robots",
+   "steel"
+  ],
+  "how": "Steel trays of lime powder sit out in open air, where the lime slowly soaks up carbon dioxide and turns back into limestone. Robots carry the full trays to a kiln that heats them, freeing pure carbon dioxide to be stored underground and leaving fresh lime to go back out.",
+  "real": "Lime direct air capture, Heirloom, 2023",
+  "plausibility": 5,
+  "why": "The oldest chemistry in building used to pull carbon from the sky.",
+  "batch": 1,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "spark-colour-scrap-sorter",
+  "name": "Spark-colour scrap metal sorter",
+  "job": "separates mixtures",
+  "effect": "each metal colours a flame its own colour",
+  "effectCard": "flame-tests",
+  "parts": [
+   "laser",
+   "diffraction-gratings",
+   "photocell",
+   "robots"
+  ],
+  "how": "Shredded scrap metal rides a conveyor past a laser that zaps a speck off each piece into a tiny flash of glowing vapour. As in a flame test, each metal glows its own colours, so a grating spreads the light, a sensor reads it, and arms knock aluminium, copper and steel into separate bins.",
+  "real": "Laser-spark (LIBS) scrap sorters, 2010s",
+  "plausibility": 5,
+  "why": "A chemistry-class flame test runs a recycling plant at conveyor speed.",
+  "batch": 1,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "hydrogen-light-gas-gun",
+  "name": "Hydrogen light-gas gun",
+  "job": "fires projectiles",
+  "effect": "hydrogen is fourteen times lighter than air",
+  "effectCard": "hydrogen",
+  "parts": [
+   "cannon",
+   "piston-and-cylinder"
+  ],
+  "how": "A piston slams into a tube of hydrogen, squeezing it to enormous pressure behind a small projectile. Because hydrogen is so light, the gas can rush forward far faster than heavy gunpowder smoke, pushing the projectile to several kilometres a second, used to test spacecraft armour against meteorite hits.",
+  "real": "Light-gas guns, 1946",
+  "plausibility": 5,
+  "why": "The lightest gas, not the strongest explosive, wins the speed race.",
+  "batch": 1,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "nitrogen-fuel-tank-blanket",
+  "name": "Nitrogen fuel-tank blanket",
+  "job": "protects",
+  "effect": "nitrogen smothers flames and won't support life",
+  "effectCard": "nitrogen",
+  "parts": [
+   "valve"
+  ],
+  "how": "Air taken from an airliner's engines is passed through fine fibres that let oxygen escape and keep mostly nitrogen. That nitrogen-rich air fills the empty space above the fuel in the tanks, where without enough oxygen a stray spark cannot set off the fumes.",
+  "real": "Fuel-tank inerting on airliners, 2000s",
+  "plausibility": 5,
+  "why": "An 'unbreathable' gas becomes a fire guard for jets.",
+  "batch": 1,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "salt-water-chlorine-maker",
+  "name": "Salt-water chlorine maker",
+  "job": "prevents disease",
+  "effect": "chlorine gas bleaches colours and kills germs",
+  "effectCard": "chlorine-oxygen",
+  "parts": [
+   "photovoltaic-cells",
+   "valve"
+  ],
+  "how": "A small box runs electricity from a solar panel through salty water, making chlorine on the spot. A measured dose goes into a village's drinking water, where it kills cholera and typhoid germs, with no need to ship and store dangerous chlorine gas.",
+  "real": "On-site electrochlorinators, 1970s; solar village units, 2010s",
+  "plausibility": 5,
+  "why": "Scheele's choking gas, made safely where it saves lives.",
+  "batch": 1,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "hydrogen-steam-generator",
+  "name": "Hydrogen flame steam generator",
+  "job": "makes steam",
+  "effect": "burning hydrogen makes nothing but water",
+  "effectCard": "hydrogen-and-water",
+  "parts": [
+   "liquid-fuel-rockets",
+   "valve"
+  ],
+  "how": "A small rocket-style combustion chamber burns hydrogen with pure oxygen and sprays extra water into the flame. Because the only thing hydrogen burning makes is water, the exhaust is clean, superheated steam that can go straight into a turbine with no boiler or heat exchanger. It can start in seconds, so it suits backing up a power grid.",
+  "real": "DLR hydrogen/oxygen steam generator, 1990s (experimental)",
+  "plausibility": 4,
+  "why": "The exhaust is the product: a flame whose smoke is pure steam replaces the whole boiler.",
+  "batch": 2,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "electrolytic-oxygen-generator",
+  "name": "Electrolytic oxygen generator",
+  "job": "supplies oxygen",
+  "effect": "a current splits water into hydrogen and oxygen",
+  "effectCard": "decomposition-of-water",
+  "parts": [
+   "malleable-platinum",
+   "valve"
+  ],
+  "how": "A sealed cell of water with platinum electrodes sits inside a submarine or space station. A current splits the water, bubbling oxygen off one electrode for the crew to breathe while the hydrogen from the other is vented. Water is far easier to carry than tanks of compressed oxygen.",
+  "real": "Submarine electrolytic oxygen generators, 1950s; ISS Elektron, 2000",
+  "plausibility": 5,
+  "why": "Turns drinking water into breathing air for crews sealed away for months.",
+  "batch": 2,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "hydrogen-round-trip-battery",
+  "name": "Hydrogen round-trip battery",
+  "job": "stores electricity",
+  "effect": "a current splits water into hydrogen and oxygen",
+  "effectCard": "decomposition-of-water",
+  "parts": [
+   "fuel-cell",
+   "malleable-platinum",
+   "valve"
+  ],
+  "how": "Surplus electricity from a sunny or windy day splits water into hydrogen, which is piped into tanks and can wait for weeks. When power is needed, a fuel cell recombines the hydrogen with oxygen from the air and gives the electricity back. Unlike a chemical battery, adding more storage just means adding more tanks.",
+  "real": "Regenerative fuel cells and power-to-gas pilots, 1990s-2010s",
+  "plausibility": 4,
+  "why": "Stores electricity as a gas, so capacity scales with tank size, not electrode area.",
+  "batch": 2,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "moon-rock-oxygen-cell",
+  "name": "Moon-rock oxygen cell",
+  "job": "supplies oxygen",
+  "effect": "a current pulls reactive metals out of their salts",
+  "effectCard": "sodium-and-potassium",
+  "parts": [
+   "porcelain",
+   "valve"
+  ],
+  "how": "Lunar dust is mostly metal oxides, a kind of salt with oxygen locked inside. Packed into a ceramic pot of hot molten salt and given a strong current, the metal is pulled out at one electrode and the freed oxygen bubbles off the other for astronauts to breathe. The leftover metal powder is a bonus building material.",
+  "real": "Lab demonstrations (FFC Cambridge process applied to regolith simulant, ESA, 2020s)",
+  "plausibility": 3,
+  "why": "The same trick that isolated sodium in 1807 could make air from moon dust.",
+  "batch": 2,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "liquid-air-energy-store",
+  "name": "Liquid air energy store",
+  "job": "stores energy",
+  "effect": "cold plus pressure turns gases into liquids",
+  "effectCard": "liquefying-gases",
+  "parts": [
+   "dewar-flask",
+   "turbines",
+   "valve"
+  ],
+  "how": "When power is cheap, a plant squeezes and chills ordinary air until it turns into a liquid, then keeps it in large vacuum-insulated tanks. Later, letting it warm makes it boil back into a gas about 700 times bigger, and that rush of gas spins a turbine. The stored 'fuel' is just air, so nothing burns and nothing needs mining.",
+  "real": "Liquid-air energy storage pilot plants, 2010s",
+  "plausibility": 4,
+  "why": "Energy stored by squashing air into a liquid, released by letting it boil.",
+  "batch": 2,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "starch-sugar-battery",
+  "name": "Starch-eating enzyme battery",
+  "job": "makes electricity",
+  "effect": "an enzyme turns starch into sugar",
+  "effectCard": "diastase",
+  "parts": [
+   "fuel-cell"
+  ],
+  "how": "A fuel cell is filled with starch paste and a team of enzymes instead of hydrogen. The first enzyme chops starch into sugar, and others strip electrons off the sugar at the electrode, the way our cells do, sending them round a circuit. It could run small electronics on something as safe as cornflour.",
+  "real": "Lab sugar batteries (Sony 2007, Virginia Tech 2014)",
+  "plausibility": 3,
+  "why": "A battery fuelled the way bodies are, with harmless starch instead of metal.",
+  "batch": 2,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "dry-ice-cold-trap",
+  "name": "Dry-ice vacuum cold trap",
+  "job": "makes a vacuum",
+  "effect": "solid carbon dioxide cools far below freezing water",
+  "effectCard": "dry-ice",
+  "parts": [
+   "air-pump",
+   "dewar-flask"
+  ],
+  "how": "A metal finger chilled by dry ice in an insulated flask sits in the pipe between a vacuum chamber and its pump. Water and oil vapour hitting the bitterly cold surface freeze solid onto it, which removes them from the chamber faster than the pump could. Cold alone does the pumping for these gases.",
+  "real": "Cold traps, early 1900s; cryopumps, 1960s",
+  "plausibility": 5,
+  "why": "Pumping by freezing: cold surfaces swallow gas no mechanical pump can catch.",
+  "batch": 2,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "protein-chop-identifier",
+  "name": "Protein chop-and-weigh identifier",
+  "job": "measures",
+  "effect": "an enzyme breaks down protein",
+  "effectCard": "pepsin",
+  "parts": [
+   "mass-spectrometer"
+  ],
+  "how": "An unknown protein is too big to weigh well, so a digestive enzyme first cuts it into short pieces at predictable spots. A mass spectrometer weighs each piece, and the set of weights is matched against a catalogue to say exactly which protein it was. Doctors and biologists use this to find what proteins a sample contains.",
+  "real": "Peptide mass fingerprinting, 1993",
+  "plausibility": 5,
+  "why": "Digestion as a measuring step: cut predictably, then the fragments name the protein.",
+  "batch": 2,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "doppler-satellite-navigation",
+  "name": "Doppler satellite navigation",
+  "job": "finds direction",
+  "effect": "a moving source's pitch rises approaching, falls receding",
+  "effectCard": "doppler-effect",
+  "parts": [
+   "sputnik",
+   "radio",
+   "computer"
+  ],
+  "how": "A satellite in a known orbit beeps on a steady radio tone. A ship's receiver hears the tone rise as the satellite approaches and fall as it leaves, and the exact shape of that change tells a computer where the ship must be. It began when engineers tracking Sputnik's beeps realised the trick works in reverse.",
+  "real": "Transit satellite navigation, 1964",
+  "plausibility": 5,
+  "why": "Sputnik's beeping, turned around, became the first way to find your position from space.",
+  "batch": 2,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "doppler-blood-flow-probe",
+  "name": "Doppler blood-flow probe",
+  "job": "diagnoses",
+  "effect": "a moving source's pitch rises approaching, falls receding",
+  "effectCard": "doppler-effect",
+  "parts": [
+   "sonar",
+   "loudspeaker"
+  ],
+  "how": "A handheld probe sends ultrasound into the body and listens for the echo. Blood cells moving toward the probe return a slightly higher pitch and those moving away a lower one, so the device can hear how fast and which way blood flows. Played through a speaker, a blocked artery or a fetal heartbeat becomes audible.",
+  "real": "Doppler ultrasound, 1950s-60s",
+  "plausibility": 5,
+  "why": "Hears blood moving inside the body without a single cut.",
+  "batch": 2,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "strapdown-attitude-computer",
+  "name": "Strapdown quaternion navigator",
+  "job": "finds direction",
+  "effect": "four-part numbers make 3D rotations simple arithmetic",
+  "effectCard": "quaternions",
+  "parts": [
+   "gyroscope",
+   "microchips"
+  ],
+  "how": "Spinning-rotor gyroscopes are bolted straight to a vehicle instead of floating in gimbals. A chip adds up every small twist they sense as four-part numbers, so it always knows which way the vehicle points without ever jamming in impossible orientations. Aircraft, rockets and phones keep their heading this way.",
+  "real": "Strapdown inertial navigation, 1960s-70s",
+  "plausibility": 5,
+  "why": "A 19th-century piece of pure algebra became the way machines know which way is up.",
+  "batch": 2,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "planet-wobble-finder",
+  "name": "Star-wobble planet finder",
+  "job": "detects objects",
+  "effect": "a moving light source shifts its colours red or blue",
+  "effectCard": "spectral-line-shift",
+  "parts": [
+   "reflecting-telescope",
+   "diffraction-gratings-improved"
+  ],
+  "how": "A large telescope feeds starlight into a precise grating that spreads it into thousands of dark lines. An unseen planet tugs its star back and forth, so the lines slide slightly blue then red in a regular rhythm. That rhythm reveals the planet's orbit and mass even though the planet itself is never seen.",
+  "real": "Radial-velocity exoplanet detection, 1995",
+  "plausibility": 5,
+  "why": "Detects objects too faint to see at all, by colour shifts in the star they pull.",
+  "batch": 2,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "laser-window-microphone",
+  "name": "Laser window microphone",
+  "job": "turns sound into current",
+  "effect": "a moving light source shifts its colours red or blue",
+  "effectCard": "spectral-line-shift",
+  "parts": [
+   "laser",
+   "interferometer",
+   "photocell"
+  ],
+  "how": "A laser beam is aimed at a distant window pane, which trembles slightly when people talk behind it. Light bouncing off the moving glass comes back very slightly shifted in colour, and an interferometer turns those tiny shifts into a flickering brightness that a photocell converts to an electrical signal. Played back, it is the conversation in the room.",
+  "real": "Laser microphones and vibrometers, 1960s-80s",
+  "plausibility": 5,
+  "why": "A microphone that never touches the air it listens to.",
+  "batch": 2,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "cryoablation-probe",
+  "name": "Expanding-gas freezing probe",
+  "job": "treats illness",
+  "effect": "an expanding gas cools itself",
+  "effectCard": "joule-thomson-effect",
+  "parts": [
+   "valve",
+   "dewar-flask"
+  ],
+  "how": "A needle-thin probe with a vacuum-insulated shaft is slid into a tumour. High-pressure argon escapes through a tiny valve at the tip and cools itself so much as it expands that an iceball forms around the needle and kills the tumour cells. No cold liquid has to be carried in; the gas makes its own cold right where it is needed.",
+  "real": "Argon cryoablation probes, 1990s",
+  "plausibility": 5,
+  "why": "Cold made exactly at the needle tip, from nothing but gas getting out.",
+  "batch": 2,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "spark-spectrum-scrap-sorter",
+  "name": "Spark-spectrum scrap sorter",
+  "job": "separates mixtures",
+  "effect": "each element's light has its own lines",
+  "effectCard": "spectral-lines-and-elements",
+  "parts": [
+   "laser",
+   "diffraction-gratings",
+   "photocell",
+   "valve"
+  ],
+  "how": "Shredded scrap metal rides a fast conveyor past a laser that zaps a speck of each piece into a tiny glowing spark. A grating spreads the spark's light, and the pattern of bright lines tells which metals the piece contains. A puff of air then knocks each piece into the right bin, separating alloys that look identical.",
+  "real": "Laser-induced breakdown scrap sorters, 2010s",
+  "plausibility": 5,
+  "why": "Sorting by the colour fingerprint of each element, one spark per piece.",
+  "batch": 2,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "air-to-starch-reactor",
+  "name": "Air-to-starch reactor",
+  "job": "grows food",
+  "effect": "life's molecules can be made from non-living chemicals",
+  "effectCard": "organic-synthesis",
+  "parts": [
+   "valve",
+   "distillation"
+  ],
+  "how": "Carbon dioxide from the air is combined with hydrogen to make a simple alcohol, which is purified and fed through a chain of chemical and enzyme steps that build it up into starch, the main food in grain. No plant, soil or field is involved. Such a plant could grow staple food in a building, far faster per acre than wheat.",
+  "real": "Lab only: CO2-to-starch synthesis, 2021",
+  "plausibility": 2,
+  "why": "Food grown with no plants at all, a direct heir of Wöhler's urea.",
+  "batch": 2,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "hemoglobin-artificial-gill",
+  "name": "Hemoglobin artificial gill",
+  "job": "supplies oxygen",
+  "effect": "hemoglobin carries oxygen in the blood",
+  "effectCard": "hemoglobin",
+  "parts": [
+   "perfusion-pump",
+   "valve"
+  ],
+  "how": "Seawater is pumped past a thin membrane with a hemoglobin-like carrier on the other side, which grabs the little oxygen dissolved in the water. The loaded carrier is pumped to a second chamber where it is made to let go, releasing breathable oxygen. Seawater holds little oxygen, so it suits an underwater habitat with big pumps better than a diver.",
+  "real": "Lab prototypes (Aquanautics, 1980s)",
+  "plausibility": 2,
+  "why": "Breathing from the sea itself, the way fish blood does.",
+  "batch": 2,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "infrared-gas-meter",
+  "name": "Infrared carbon dioxide meter",
+  "job": "measures",
+  "effect": "some gases absorb infrared heat rays",
+  "effectCard": "greenhouse-effect",
+  "parts": [
+   "electric-light",
+   "photocell"
+  ],
+  "how": "A small lamp shines heat rays through a tube of sampled air onto a detector. Carbon dioxide traps some of those rays, the same way it traps heat in the atmosphere, so the more of it there is, the less reaches the detector. The dimming gives the gas level, used to check room air, breath and the atmosphere.",
+  "real": "Non-dispersive infrared gas analyser, 1930s-50s",
+  "plausibility": 5,
+  "why": "The effect that warms the planet doubles as the way we measure the gas causing it.",
+  "batch": 2,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "gene-drive-mosquito",
+  "name": "Gene-drive malaria mosquitoes",
+  "job": "prevents disease",
+  "effect": "traits pass on in predictable ratios",
+  "effectCard": "genetics",
+  "parts": [
+   "synthetic-gene"
+  ],
+  "how": "Normally a gene reaches half of an animal's offspring, so an added trait fades out of a wild population. A gene drive is an added gene that copies itself onto the partner chromosome, so nearly all offspring inherit it, for example a gene that stops mosquitoes carrying malaria. Released mosquitoes would spread the trait through the wild population in a few years.",
+  "real": "Lab and caged trials, 2015-2018",
+  "plausibility": 3,
+  "why": "Rewrites Mendel's ratios on purpose to protect people from disease.",
+  "batch": 2,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "microwave-power-beam",
+  "name": "Microwave power beam",
+  "job": "carries current",
+  "effect": "electric oscillations send out light-speed waves",
+  "effectCard": "maxwells-equations",
+  "parts": [
+   "magnetrons",
+   "radio-antennas",
+   "electronic-rectifier"
+  ],
+  "how": "A magnetron turns electricity into a tight beam of microwaves aimed at a distant receiving field of small antennas. Each antenna catches the waves and a rectifier turns them back into ordinary current. Power could reach a drone, a remote island or a city from an orbiting solar station without any wire.",
+  "real": "Microwave power-beaming demos (Brown's helicopter, 1964); not in everyday use",
+  "plausibility": 4,
+  "why": "Power lines replaced by an invisible beam.",
+  "batch": 2,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "microwave-oven",
+  "name": "Microwave oven",
+  "job": "prepares food",
+  "effect": "electric oscillations send out light-speed waves",
+  "effectCard": "maxwells-equations",
+  "parts": [
+   "magnetrons"
+  ],
+  "how": "A magnetron sends waves oscillating billions of times a second into a metal box. Water in the food tries to swing with the waves and the jostling heats the food from within. Nothing in the box burns and the oven itself stays cool.",
+  "real": "Microwave oven, 1947",
+  "plausibility": 5,
+  "why": "Cooking by radiated waves rather than by flame or hot surface.",
+  "batch": 2,
+  "maturity": "everyday",
+  "problems": [
+   "dupid"
+  ]
+ },
+ {
+  "id": "hyperbaric-oxygen-chamber",
+  "name": "Hyperbaric oxygen chamber",
+  "job": "treats illness",
+  "effect": "adding more of one chemical pushes a reaction forward",
+  "effectCard": "law-of-mass-action",
+  "parts": [
+   "steel",
+   "valve"
+  ],
+  "how": "A patient poisoned by carbon monoxide lies in a steel chamber filled with pure oxygen at two or three times normal pressure. The flood of extra oxygen pushes the binding reaction in the blood the other way, knocking carbon monoxide off the blood's oxygen carriers much faster than normal air would. The same push forces extra oxygen into slow-healing wounds.",
+  "real": "Hyperbaric oxygen therapy, 1960s",
+  "plausibility": 5,
+  "why": "Treatment by concentration alone: crowd the reaction and it runs backward.",
+  "batch": 2,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "encapsulated-islet-implant",
+  "name": "Encapsulated islet implant",
+  "job": "regulates the body",
+  "effect": "islet cells sense blood sugar and release matching insulin",
+  "effectCard": "islets-of-langerhans",
+  "parts": [
+   "tissue-culture"
+  ],
+  "how": "Lab-grown pancreas islet cells are sealed in a small porous pouch implanted under the skin. Sugar and insulin pass through the pores, but immune cells are too big to get in and attack. The living cells measure blood sugar and release just the right amount of insulin, doing the job of a diabetic's lost pancreas automatically.",
+  "real": "Clinical trials, 2010s-2020s",
+  "plausibility": 3,
+  "why": "A self-regulating insulin source instead of injections and guesswork.",
+  "batch": 2,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "osmotic-power-plant",
+  "name": "Osmotic river-mouth power plant",
+  "job": "makes electricity",
+  "effect": "big molecules trapped behind a membrane draw water in",
+  "effectCard": "protein-size",
+  "parts": [
+   "turbines",
+   "electric-generators"
+  ],
+  "how": "Where a river meets the sea, fresh water and seawater are separated by a membrane that lets water through but holds back salt. Water seeps across into the salty side and builds up pressure there, and the pressurised water spins a turbine and generator. It runs day and night on nothing but the saltiness difference.",
+  "real": "Statkraft osmotic power pilot, 2009",
+  "plausibility": 3,
+  "why": "Power from mixing fresh and salt water, using the pressure that draws water into cells.",
+  "batch": 2,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "glowing-block-heat-battery",
+  "name": "Glowing-block heat battery",
+  "job": "makes electricity",
+  "effect": "glow rises with the fourth power of temperature",
+  "effectCard": "heat-and-radiation",
+  "parts": [
+   "photovoltaic-cells",
+   "carborundum"
+  ],
+  "how": "Cheap surplus electricity heats insulated blocks of ceramic until they glow white-hot. Solar-type cells facing the blocks turn their light back into electricity on demand. Because glow climbs with the fourth power of temperature, a very hot block shines so brightly that a small panel of cells can deliver a lot of power.",
+  "real": "Thermophotovoltaic heat batteries, lab and pilots 2020s",
+  "plausibility": 3,
+  "why": "Light from stored heat, made practical by the steep fourth-power law.",
+  "batch": 2,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "electron-beam-chip-writer",
+  "name": "Electron-beam chip writer",
+  "job": "prints",
+  "effect": "electron beams carry negative charge",
+  "effectCard": "charged-cathode-rays",
+  "parts": [
+   "electron-gun",
+   "electromagnets"
+  ],
+  "how": "An electron gun fires a fine beam onto a coated chip wafer, and magnets steer it because the electrons are charged. Wherever the beam lands, the coating changes, drawing a circuit pattern line by line. Electrons can be focused far finer than light, so it prints details only a few atoms wide.",
+  "real": "Electron-beam lithography, 1960s",
+  "plausibility": 5,
+  "why": "Prints with a steerable stream of charge instead of ink or light.",
+  "batch": 2,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "fingerprint-lock",
+  "name": "Fingerprint lock",
+  "job": "protects",
+  "effect": "everyone's fingerprints are unique",
+  "effectCard": "fingerprints",
+  "parts": [
+   "cylinder-locks",
+   "photocell",
+   "microchips"
+  ],
+  "how": "A door lock has a small window that photographs the ridges of a finger pressed against it. A chip compares the pattern with the stored prints of allowed people and only then lets the lock turn. No key can be lost or copied, because no two people's fingers match.",
+  "real": "Fingerprint locks, 1990s; on phones 2013",
+  "plausibility": 5,
+  "why": "The body itself becomes the key.",
+  "batch": 2,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "dichromate-breath-tester",
+  "name": "Colour-change breath tester",
+  "job": "measures",
+  "effect": "orange dichromate turns green as it reacts",
+  "effectCard": "chromium",
+  "parts": [
+   "glass",
+   "photocell"
+  ],
+  "how": "A driver blows into a glass tube holding an orange chromium compound in acid. Alcohol in the breath reacts with it and turns it green, and a photocell compares the colour with an untouched sample. The amount of colour change gives the alcohol in the blood.",
+  "real": "Breathalyzer, 1954",
+  "plausibility": 5,
+  "why": "A pigment's colour change becomes a roadside measuring instrument.",
+  "batch": 2,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "brine-air-well",
+  "name": "Salt-brine air well",
+  "job": "supplies water",
+  "effect": "dissolved stuff lowers a liquid's vapor pressure",
+  "effectCard": "raoults-law",
+  "parts": [
+   "pottery",
+   "glass",
+   "valve"
+  ],
+  "how": "A tray of strong salt brine sits open to the night air, and because dissolved salt lowers the brine's vapor pressure, water vapor from even dry desert air condenses into it. By day the sun warms the sealed tray under a glass lid, driving the water back out as vapor that condenses on the cool glass and drips into a jar. The salt never leaves, so the same brine harvests drinking water night after night.",
+  "real": "liquid-desiccant water harvesters, lab prototypes 2010s",
+  "plausibility": 4,
+  "why": "Pulls drinking water from desert air with no power, just salt and sunshine.",
+  "batch": 3,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "brine-heat-battery",
+  "name": "Salt-brine heat battery",
+  "job": "stores energy",
+  "effect": "dissolved stuff lowers a liquid's vapor pressure",
+  "effectCard": "raoults-law",
+  "parts": [
+   "steel",
+   "valve"
+  ],
+  "how": "Summer heat boils water out of a lye solution, leaving thick concentrated brine in a steel tank. In winter a valve lets cool water vapor reach the brine, which grabs it eagerly because dissolved stuff lowers its own vapor pressure, and the absorption releases heat warm enough for a house. Kept apart, the brine and water hold their energy for months without loss.",
+  "real": "sodium-hydroxide seasonal heat storage, lab prototypes 2010s",
+  "plausibility": 3,
+  "why": "Stores summer sunshine as a chemical thirst, released as winter warmth.",
+  "batch": 3,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "bullet-shock-locator",
+  "name": "Supersonic bullet locator",
+  "job": "detects objects",
+  "effect": "above the speed of sound air resistance jumps",
+  "effectCard": "mach-number",
+  "parts": [
+   "microphone",
+   "computer"
+  ],
+  "how": "A ring of microphones on a vehicle listens for gunfire. A supersonic bullet drags a cone-shaped shock wave behind it, and the moment that cone sweeps across each microphone tells a computer the bullet's path and so where the shooter is hiding, even before the slower muzzle bang arrives.",
+  "real": "acoustic shooter locators such as Boomerang, 2000s",
+  "plausibility": 5,
+  "why": "The sonic boom of a bullet betrays its shooter's position.",
+  "batch": 3,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "chemical-heat-pipe",
+  "name": "Chemical heat pipeline",
+  "job": "carries heat",
+  "effect": "a system at balance shifts to resist any push",
+  "effectCard": "le-chateliers-principle",
+  "parts": [
+   "steel",
+   "valve"
+  ],
+  "how": "A gas mixture flows through a steel pipe loop between a hot source and a distant user. At the hot end the reaction is pushed toward the side that soaks up heat, and at the cold end the balance shifts back, giving that heat out again. Because the energy travels as chemistry rather than warmth, it can cross many kilometres cold without loss.",
+  "real": "EVA-ADAM methane heat-transport loop, Jülich pilot 1980s",
+  "plausibility": 3,
+  "why": "Ships heat cold, as chemical bonds, across a whole city.",
+  "batch": 3,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "time-temperature-label",
+  "name": "Spoilage time-temperature label",
+  "job": "measures",
+  "effect": "a reaction needs a starting kick of energy",
+  "effectCard": "energy-of-activation",
+  "parts": [
+   "dye",
+   "paper"
+  ],
+  "how": "A small paper label on a food package holds a slow color-changing chemical reaction. Because each reaction needs a starting kick of energy, warmth speeds it up sharply and cold almost stops it, so the color tracks how much warmth the food has actually suffered. A glance tells you whether milk that was left out is still safe.",
+  "real": "time-temperature indicator labels, 1990s",
+  "plausibility": 5,
+  "why": "Turns a chemistry textbook curve into a sticker that reads spoilage.",
+  "batch": 3,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "argon-archive-case",
+  "name": "Argon-filled document case",
+  "job": "protects",
+  "effect": "argon reacts with nothing",
+  "effectCard": "argon",
+  "parts": [
+   "plate-glass",
+   "valve"
+  ],
+  "how": "A sealed glass-and-metal case holds a precious old document in pure argon instead of air. Argon reacts with nothing, so the oxygen and moisture that slowly yellow and crumble parchment are simply absent. A valve lets curators refill the gas and check the seal.",
+  "real": "argon cases for the US Charters of Freedom, 2003",
+  "plausibility": 5,
+  "why": "Protection by doing nothing: an atmosphere that cannot attack.",
+  "batch": 3,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "curie-heat-generator",
+  "name": "Curie-point waste-heat generator",
+  "job": "makes electricity",
+  "effect": "a magnet loses its magnetism when hot enough",
+  "effectCard": "curie-temperature",
+  "parts": [
+   "rare-earth-magnet",
+   "insulated-wire"
+  ],
+  "how": "A strip of special alloy with a low Curie temperature sits in a magnet's field, wrapped in a coil of wire. Waste heat and cooling water alternately warm and cool it past its Curie point, so it keeps losing and regaining its magnetism. Each switch makes the field through the coil jump, pushing a current with no moving parts.",
+  "real": "Edison's pyromagnetic generator, demonstrated 1887",
+  "plausibility": 3,
+  "why": "Edison tried it in 1887; new alloys could harvest lukewarm factory heat.",
+  "batch": 3,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "curie-thermoseeds",
+  "name": "Self-limiting tumor-heating seeds",
+  "job": "treats illness",
+  "effect": "a magnet loses its magnetism when hot enough",
+  "effectCard": "curie-temperature",
+  "parts": [
+   "electromagnets"
+  ],
+  "how": "Tiny alloy seeds are placed in a tumor and a coil around the patient makes a fast-changing magnetic field that heats them. Once a seed reaches its Curie temperature it stops being magnetic and stops heating, so it holds itself at a fever-like temperature that harms cancer cells but not healthy ones. No thermometer inside the body is needed.",
+  "real": "Curie-point thermoseed hyperthermia, clinical trials 1990s",
+  "plausibility": 4,
+  "why": "A built-in thermostat made of physics, inside the body.",
+  "batch": 3,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "electron-beam-memory",
+  "name": "Electron-beam charge memory",
+  "job": "stores data",
+  "effect": "an electric field bends an electron beam",
+  "effectCard": "electron-as-subatomic-particle",
+  "parts": [
+   "electron-gun",
+   "glass"
+  ],
+  "how": "A glass tube holds an electron gun aimed at a screen. Voltages on deflection plates bend the beam to any spot, where it leaves a tiny patch of charge meaning 1 or no patch meaning 0, and the beam returns to read and refresh each spot. It was one of the first ways computers stored numbers at electronic speed.",
+  "real": "Williams tube, 1947",
+  "plausibility": 5,
+  "why": "A display tube repurposed as the first random-access computer memory.",
+  "batch": 3,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "electron-beam-writer",
+  "name": "Electron-beam chip writer",
+  "job": "prints",
+  "effect": "an electric field bends an electron beam",
+  "effectCard": "electron-as-subatomic-particle",
+  "parts": [
+   "electron-gun",
+   "computer"
+  ],
+  "how": "A computer steers a finely focused electron beam across a coated wafer by bending it with electric fields. Wherever the beam lands it changes the coating, drawing circuit patterns far smaller than light can print. The patterns become masks for making microchips.",
+  "real": "electron-beam lithography, 1960s",
+  "plausibility": 5,
+  "why": "The television's beam-steering trick prints the world's tiniest drawings.",
+  "batch": 3,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "liquid-hydrogen-oil",
+  "name": "Rechargeable hydrogen oil tank",
+  "job": "stores chemical energy",
+  "effect": "nickel adds hydrogen to liquid carrier oils",
+  "effectCard": "nickel-as-catalyst",
+  "parts": [
+   "steel",
+   "valve"
+  ],
+  "how": "Hydrogen gas is hard to store, so a nickel catalyst instead bonds it onto an oily liquid, the same trick that hardens vegetable oil into margarine. The loaded oil sits in an ordinary steel tank at normal pressure like diesel. When energy is needed, heating it over a catalyst releases the hydrogen and the empty oil is reused.",
+  "real": "liquid organic hydrogen carriers, pilot plants 2010s",
+  "plausibility": 4,
+  "why": "Margarine chemistry turned into a safe, pumpable hydrogen tank.",
+  "batch": 3,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "mosquito-vaccinator",
+  "name": "Mosquito-delivered malaria vaccine",
+  "job": "prevents disease",
+  "effect": "a mosquito bite delivers the parasite",
+  "effectCard": "mosquitoes-and-malaria",
+  "parts": [
+   "genetic-engineering"
+  ],
+  "how": "Malaria parasites are genetically crippled so they cannot finish growing in the liver. Mosquitoes carrying these weakened parasites bite volunteers, delivering them exactly as nature does, and the body learns to fight the real disease.",
+  "real": "bite-delivered weakened malaria parasite trials, 2022",
+  "plausibility": 3,
+  "why": "The disease's own delivery system turned into its vaccine syringe.",
+  "batch": 3,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "mosquito-blood-survey",
+  "name": "Mosquito blood survey",
+  "job": "diagnoses",
+  "effect": "mosquitoes carry the blood and germs they drink",
+  "effectCard": "mosquitoes-and-malaria",
+  "parts": [
+   "fish-nets",
+   "radioimmune-assay"
+  ],
+  "how": "Net traps collect mosquitoes that have just fed on people and animals in a village. Testing the blood in their bellies shows which germs are circulating, so mosquitoes act as thousands of free flying blood samplers. Health workers learn of an outbreak without drawing a single needle.",
+  "real": "xenosurveillance studies, 2010s",
+  "plausibility": 4,
+  "why": "Lets the pest do the blood sampling for disease surveillance.",
+  "batch": 3,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "arousal-detector",
+  "name": "Fight-or-flight lie detector",
+  "job": "measures",
+  "effect": "adrenaline sets the body to fight or flight",
+  "effectCard": "epinephrine",
+  "parts": [
+   "galvanometer",
+   "electrocardiogram"
+  ],
+  "how": "Sensors record a person's heartbeat, breathing and skin sweat while they answer questions. A stressful question releases adrenaline, which races the heart and dampens the skin, and the meters show it. It measures arousal, not truth, which is why its verdicts are disputed.",
+  "real": "polygraph, 1921",
+  "plausibility": 5,
+  "why": "Reads a hormone's effects to measure hidden stress.",
+  "batch": 3,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "gamma-cargo-scanner",
+  "name": "Gamma-ray cargo scanner",
+  "job": "detects objects",
+  "effect": "gamma rays go through more than X-rays",
+  "effectCard": "gamma-rays",
+  "parts": [
+   "geiger-counter",
+   "computer"
+  ],
+  "how": "A truck drives between a shielded gamma-ray source and a row of radiation counters. Gamma rays pierce steel container walls that would stop ordinary X-rays, and dense hidden objects cast shadows that a computer builds into a picture. Customs officers see smuggled goods without opening the box.",
+  "real": "gamma-ray cargo scanners such as VACIS, 1990s",
+  "plausibility": 5,
+  "why": "Sees through a steel shipping container in seconds.",
+  "batch": 3,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "radioisotope-ice-probe",
+  "name": "Nuclear-heated ice-melting probe",
+  "job": "transports",
+  "effect": "radium gives off steady heat for centuries",
+  "effectCard": "radioactive-energy",
+  "parts": [
+   "steel",
+   "insulated-wire"
+  ],
+  "how": "A torpedo-shaped steel probe carries a decaying radioactive heat source in its nose. The steady heat melts the ice beneath it, so gravity pulls it kilometres down through a frozen moon's crust, paying out a wire tether to talk to the surface. It could reach the hidden ocean of Europa.",
+  "real": null,
+  "plausibility": 3,
+  "why": "Decay heat as a drill, carrying instruments to an alien ocean.",
+  "batch": 3,
+  "maturity": "idea",
+  "problems": []
+ },
+ {
+  "id": "radioisotope-stirling-engine",
+  "name": "Radioisotope Stirling engine",
+  "job": "provides power",
+  "effect": "radium gives off steady heat for centuries",
+  "effectCard": "radioactive-energy",
+  "parts": [
+   "piston-and-cylinder",
+   "steel"
+  ],
+  "how": "A sealed engine has a decaying radioactive heat source warming one end of a gas-filled cylinder while space or air cools the other. The gas expands and contracts, driving a piston back and forth for decades with no fuel and no refuelling. It suits deep-space probes or remote stations.",
+  "real": "NASA Advanced Stirling Radioisotope Generator prototype, 2000s",
+  "plausibility": 4,
+  "why": "Decades of steady piston power from a lump that never refuels.",
+  "batch": 3,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "nuclear-thermal-rocket",
+  "name": "Nuclear thermal rocket",
+  "job": "provides thrust",
+  "effect": "a little mass holds a huge amount of energy",
+  "effectCard": "mass-energy",
+  "parts": [
+   "nuclear-reactor",
+   "liquid-fuel-rockets"
+  ],
+  "how": "A compact nuclear reactor replaces the combustion chamber of a rocket. Splitting atoms turns a tiny amount of mass into huge heat, which blasts liquid hydrogen out of the nozzle far faster than burning fuel can. That roughly doubles efficiency for trips to Mars.",
+  "real": "NERVA nuclear thermal rocket, ground tests 1960s",
+  "plausibility": 4,
+  "why": "E=mc squared applied to a rocket nozzle could halve Mars trip times.",
+  "batch": 3,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "superhot-rock-geothermal",
+  "name": "Microwave-drilled superhot geothermal",
+  "job": "makes electricity",
+  "effect": "radioactivity heats the Earth's crust",
+  "effectCard": "radioactivity-and-earth",
+  "parts": [
+   "magnetrons",
+   "steam-turbine",
+   "electric-generators"
+  ],
+  "how": "Deep in the crust, radioactive decay keeps rock hotter than 400 degrees everywhere, if you can only reach it. Powerful microwave beams vaporize rock instead of grinding it, boring holes 10 to 20 kilometres down, and water pumped through returns as superhot steam to spin a turbine. Any old coal plant could be fed this way.",
+  "real": "Millimetre-wave drilling (Quaise), field tests 2020s",
+  "plausibility": 3,
+  "why": "Taps the planet's radioactive heat almost anywhere, not just volcanic spots.",
+  "batch": 3,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "bee-explosive-sniffer",
+  "name": "Trained-bee explosive sniffer",
+  "job": "detects objects",
+  "effect": "pairing a signal with a reward trains a reflex",
+  "effectCard": "conditioned-response",
+  "parts": [
+   "air-pump",
+   "camera",
+   "computer"
+  ],
+  "how": "Honeybees are trained in minutes by giving sugar water each time they smell a trace of explosive, until the smell alone makes them stick out their tongues. A handheld box pumps air past a few harnessed bees while a camera and computer watch for the reflex. They beat many electronic noses for sensitivity.",
+  "real": "Inscentinel trained-bee detector prototypes, 2000s",
+  "plausibility": 4,
+  "why": "A Pavlovian reflex turned into a living chemical sensor.",
+  "batch": 3,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "infrared-cryo-telescope",
+  "name": "Helium-cooled infrared telescope",
+  "job": "gathers light",
+  "effect": "evaporating liquid helium chills things to near absolute zero",
+  "effectCard": "liquid-helium",
+  "parts": [
+   "reflecting-telescope",
+   "dewar-flask"
+  ],
+  "how": "Infrared light from distant dust and young stars is faint heat, and a warm telescope glows brighter than its targets. Boiling liquid helium in an insulated flask chills the mirror and detectors to a few degrees above absolute zero, silencing their own glow. Then the faint infrared sky becomes visible.",
+  "real": "IRAS infrared space telescope, 1983",
+  "plausibility": 5,
+  "why": "Cold enough to see heat from the edge of the universe.",
+  "batch": 3,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "seismic-prospecting",
+  "name": "Seismic refraction prospecting",
+  "job": "detects objects",
+  "effect": "earthquake waves travel faster in deeper, denser rock",
+  "effectCard": "mohorovicic-discontinuity",
+  "parts": [
+   "modern-seismograph",
+   "computer"
+  ],
+  "how": "A small blast or heavy thump at the surface sends sound waves into the ground, and a line of seismographs records when they return. Waves that dip into faster, denser rock arrive sooner, so the timing reveals buried layers, salt domes and oil traps. It is the Moho trick shrunk to a few kilometres.",
+  "real": "seismic refraction prospecting, 1920s",
+  "plausibility": 5,
+  "why": "Mapping hidden oil by timing echoes from fast rock.",
+  "batch": 3,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "superconducting-cable",
+  "name": "Superconducting power cable",
+  "job": "carries current",
+  "effect": "very cold metals lose all electrical resistance",
+  "effectCard": "superconductivity",
+  "parts": [
+   "insulated-wire",
+   "dewar-flask"
+  ],
+  "how": "A city power cable is made of superconducting tape inside an insulated tube of liquid nitrogen. Chilled, the tape loses all electrical resistance, so a thin cable carries as much power as a thick bundle of copper with no heat loss. It fits into old ducts under crowded streets.",
+  "real": "superconducting city cables, pilots 2000s",
+  "plausibility": 4,
+  "why": "Zero-loss power lines snaking under existing streets.",
+  "batch": 3,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "superconducting-storage-ring",
+  "name": "Superconducting magnetic energy store",
+  "job": "stores electricity",
+  "effect": "very cold metals lose all electrical resistance",
+  "effectCard": "superconductivity",
+  "parts": [
+   "electromagnets",
+   "dewar-flask"
+  ],
+  "how": "A large coil of superconducting wire is kept frozen in an insulated cryostat. Because the wire has no resistance, a current fed into it keeps circling forever, storing energy in its magnetic field. It can be released in a split second to steady a power grid.",
+  "real": "Superconducting magnetic energy storage, pilot units 1980s-90s",
+  "plausibility": 4,
+  "why": "Electricity that circles a loop forever until needed.",
+  "batch": 3,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "xray-diffraction-bag-scanner",
+  "name": "X-ray fingerprint bag scanner",
+  "job": "detects objects",
+  "effect": "crystals scatter X-rays into telltale patterns",
+  "effectCard": "x-ray-diffraction",
+  "parts": [
+   "coolidge-tube",
+   "geiger-counter",
+   "computer"
+  ],
+  "how": "Airport bags pass through a thin X-ray beam while detectors catch the rays scattered at small angles. Every crystalline substance scatters X-rays into its own pattern, so a computer recognizes explosives by their chemistry rather than their shape. It flags a bomb even if it is molded to look like something harmless.",
+  "real": "X-ray diffraction baggage screeners, 2000s",
+  "plausibility": 5,
+  "why": "Identifies explosives by their crystal fingerprint, not their shape.",
+  "batch": 3,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "calutron",
+  "name": "Magnetic isotope separator",
+  "job": "separates mixtures",
+  "effect": "a magnetic field bends lighter ions more sharply",
+  "effectCard": "neon-varieties",
+  "parts": [
+   "electromagnets",
+   "electron-gun",
+   "air-pump"
+  ],
+  "how": "Atoms of an element are turned into ions and fired as a beam through a vacuum. A huge electromagnet bends the beam into a curve, lighter isotopes curving more sharply, so they land in different collecting cups. It separates atoms that are chemically identical.",
+  "real": "calutron, 1943",
+  "plausibility": 5,
+  "why": "Sorts chemically identical atoms by weight alone.",
+  "batch": 3,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "microwave-oven",
+  "name": "Microwave oven",
+  "job": "prepares food",
+  "effect": "lopsided molecules twist to line up in an electric field",
+  "effectCard": "dipole-moments",
+  "parts": [
+   "magnetrons",
+   "steel"
+  ],
+  "how": "A magnetron fills a steel box with a rapidly flipping electric field. Water molecules are lopsided, so they twist back and forth billions of times a second to follow it, jostling their neighbours and heating the food from within. Food is cooked in minutes without a flame.",
+  "real": "microwave oven, 1947",
+  "plausibility": 5,
+  "why": "A radar tube plus wiggling water molecules reinvented cooking.",
+  "batch": 3,
+  "maturity": "everyday",
+  "problems": [
+   "dupid"
+  ]
+ },
+ {
+  "id": "liquid-crystal-display",
+  "name": "Liquid crystal display",
+  "job": "shows the image",
+  "effect": "lopsided molecules twist to line up in an electric field",
+  "effectCard": "dipole-moments",
+  "parts": [
+   "glass",
+   "polaroid"
+  ],
+  "how": "A thin layer of rod-shaped molecules sits between two glass plates and two polarizing filters. Applying a voltage to a tiny patch makes the lopsided molecules swing into line with the field, which stops them twisting the light, so that patch turns dark. Millions of patches together form a picture.",
+  "real": "liquid crystal display, 1970s",
+  "plausibility": 5,
+  "why": "Molecules turning like weathervanes make every flat screen.",
+  "batch": 3,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "solar-blind-uv-link",
+  "name": "Solar-blind ultraviolet radio",
+  "job": "communicates",
+  "effect": "ozone soaks up ultraviolet light",
+  "effectCard": "ozonosphere",
+  "parts": [
+   "light-emitting-diodes",
+   "photocell"
+  ],
+  "how": "High-altitude ozone absorbs the sun's deep ultraviolet light, so near the ground that colour of light is perfectly dark, even at noon. Deep-UV lamps flash messages that scatter off the air around corners and over hills to a sensitive light detector. With no sunlight to drown it out, the faint signal is easy to hear.",
+  "real": "solar-blind UV communication prototypes, 2000s",
+  "plausibility": 4,
+  "why": "The ozone layer leaves a dark colour channel free for signalling.",
+  "batch": 3,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "xray-ore-sorter",
+  "name": "X-ray scrap and ore sorter",
+  "job": "separates mixtures",
+  "effect": "each element gives off its own X-ray frequency",
+  "effectCard": "atomic-number",
+  "parts": [
+   "coolidge-tube",
+   "geiger-counter",
+   "computer",
+   "valve"
+  ],
+  "how": "Broken scrap metal or ore pieces race along a conveyor under an X-ray tube. Each element glows back X-rays of its own frequency, so a detector and computer know what every piece is made of, and a puff of air from a valve knocks it into the right bin. Mixed junk becomes pure streams of copper, aluminium or ore.",
+  "real": "X-ray fluorescence sorters, 2000s",
+  "plausibility": 5,
+  "why": "Reads each lump's elements in milliseconds to sort scrap automatically.",
+  "batch": 3,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "phage-food-spray",
+  "name": "Bacteria-eating food spray",
+  "job": "preserves food",
+  "effect": "some viruses kill only bacteria",
+  "effectCard": "bacteriophages",
+  "parts": [
+   "spray-cans"
+  ],
+  "how": "Meat and cheese are misted with a harmless solution of bacteriophages, viruses that attack only one kind of bacteria. They hunt down and burst Listeria or Salmonella cells while leaving food, people and helpful microbes alone. The food keeps longer without heat or chemical preservatives.",
+  "real": "bacteriophage food sprays such as ListShield, 2006",
+  "plausibility": 5,
+  "why": "Living, targeted preservative that kills only the germ it is aimed at.",
+  "batch": 3,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "glowing-phage-test",
+  "name": "Glowing-phage germ test",
+  "job": "diagnoses",
+  "effect": "some viruses kill only bacteria",
+  "effectCard": "bacteriophages",
+  "parts": [
+   "genetic-engineering",
+   "photocell"
+  ],
+  "how": "A phage that infects only one kind of bacterium is engineered to carry a firefly glow gene. Mixed with a patient sample, it infects only the target germ, which then lights up, and a light sensor detects the glow. It shows within hours whether that germ is present and alive.",
+  "real": "luciferase reporter phage tests, 1990s-2010s",
+  "plausibility": 4,
+  "why": "A germ's own enemy becomes a pinpoint, fast detector for it.",
+  "batch": 3,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "pet-scanner",
+  "name": "Radioactive-tracer body scanner",
+  "job": "diagnoses",
+  "effect": "a radioactive atom behaves chemically like its stable twin",
+  "effectCard": "radioactive-tracers",
+  "parts": [
+   "coincidence-counter",
+   "computer"
+  ],
+  "how": "A patient is given sugar tagged with radioactive atoms that the body handles exactly like ordinary sugar, so it piles up wherever cells are busiest, such as in tumours. Rings of detectors catch the paired flashes each decay sends out in opposite directions. A computer turns them into a 3D map of where the body is working hardest.",
+  "real": "PET scanner, 1970s",
+  "plausibility": 5,
+  "why": "Watches the body's chemistry live, not just its shape.",
+  "batch": 3,
+  "maturity": "everyday",
+  "problems": [
+   "dupid"
+  ]
+ },
+ {
+  "id": "closed-loop-insulin-pump",
+  "name": "Closed-loop insulin pump",
+  "job": "regulates the body",
+  "effect": "insulin lets the body use sugar",
+  "effectCard": "insulin",
+  "parts": [
+   "piston-and-cylinder",
+   "microchips",
+   "lithium-battery"
+  ],
+  "how": "A pager-sized pump worn on the belt keeps a diabetic's blood sugar steady around the clock. Its chip reads a sugar sensor and nudges a tiny piston to push insulin under the skin, and insulin makes the body's cells take sugar out of the blood.",
+  "real": "insulin pumps 1970s; closed-loop 'artificial pancreas' 2016",
+  "plausibility": 5,
+  "why": "Turns a hormone discovered in 1921 into a thermostat for the body.",
+  "batch": 4,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "growth-gene-salmon",
+  "name": "Fast-growing gene-modified salmon",
+  "job": "grows food",
+  "effect": "a pituitary hormone makes the body grow",
+  "effectCard": "growth-hormone",
+  "parts": [
+   "recombinant-dna"
+  ],
+  "how": "A farmed salmon carrying an extra growth-hormone gene from another fish that stays switched on all year. Ordinary salmon make the pituitary growth hormone only in warm months, so the modified fish keeps growing and reaches market size in about half the time.",
+  "real": "AquAdvantage salmon, approved 2015",
+  "plausibility": 5,
+  "why": "An animal hormone, not a plant one, put to work raising food.",
+  "batch": 4,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "lysozyme-food-wrap",
+  "name": "Tear-enzyme food wrap",
+  "job": "preserves food",
+  "effect": "an enzyme in tears breaks open bacteria",
+  "effectCard": "lysozyme",
+  "parts": [
+   "isotactic-polymers"
+  ],
+  "how": "A plastic food film whose inner face is coated with lysozyme, the enzyme that protects our eyes. Bacteria landing on the wrapped cheese or meat have their cell walls cut open by the enzyme, so the food spoils more slowly without heat or added preservatives.",
+  "real": "Lysozyme antimicrobial packaging, lab 2000s",
+  "plausibility": 4,
+  "why": "Borrows the eye's own germ defence to keep food fresh instead of heating or chilling it.",
+  "batch": 4,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "magnetic-refrigerator",
+  "name": "Magnetic kitchen refrigerator",
+  "job": "preserves food",
+  "effect": "demagnetizing a magnetic material cools it",
+  "effectCard": "magnetism-and-absolute-zero",
+  "parts": [
+   "rare-earth-magnet",
+   "electric-motors",
+   "valve"
+  ],
+  "how": "A refrigerator with no compressor gas, cooled instead by a wheel of special metal turning in and out of a strong magnet. The metal warms when magnetized and gives that heat away, then cools below room temperature when it leaves the field, and water pumped past it carries the cold into the food box.",
+  "real": "magnetocaloric fridge prototypes, 2000s-2010s",
+  "plausibility": 4,
+  "why": "A trick for reaching near absolute zero, scaled up to keep milk cold.",
+  "batch": 4,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "x-ray-mutation-breeding",
+  "name": "X-ray crop mutation breeding",
+  "job": "modifies organisms",
+  "effect": "X-rays cause mutations",
+  "effectCard": "x-rays-and-mutations",
+  "parts": [
+   "coolidge-tube"
+  ],
+  "how": "Seeds are exposed to an X-ray tube so that a few genes in each seed are changed at random. Breeders then grow thousands of plants and keep the rare ones with useful new traits, such as shorter stems or disease resistance.",
+  "real": "mutation breeding, 1920s onward",
+  "plausibility": 5,
+  "why": "Changes genes without inserting any, using damage as a source of variety.",
+  "batch": 4,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "x-ray-sterile-mosquitoes",
+  "name": "X-ray sterile mosquito release",
+  "job": "prevents disease",
+  "effect": "X-rays cause mutations",
+  "effectCard": "x-rays-and-mutations",
+  "parts": [
+   "coolidge-tube"
+  ],
+  "how": "Male mosquitoes are raised by the million and passed through an X-ray cabinet that scrambles the genes in their sperm. Released into the wild, they mate with females whose eggs then never hatch, so the mosquito population that spreads dengue or malaria shrinks.",
+  "real": "sterile insect technique, 1950s (X-ray mosquito trials 2010s)",
+  "plausibility": 5,
+  "why": "Prevents disease by breeding out the carrier, not by training the immune system.",
+  "batch": 4,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "heat-release-glue",
+  "name": "Heat-release molecular glue joint",
+  "job": "fastens",
+  "effect": "two molecules snap together into a ring",
+  "effectCard": "diels-alder-reaction",
+  "parts": [
+   "insulated-wire"
+  ],
+  "how": "A glue whose molecules lock across the joint by snapping together into rings, with a fine heating wire buried in the bond line. Passing current warms the joint so the rings pop open and the parts come apart cleanly, and on cooling the rings snap shut again so the same glue can be reused.",
+  "real": "Reversible Diels-Alder adhesives, lab 2000s",
+  "plausibility": 4,
+  "why": "A reversible ring-forming reaction makes fastenings that undo on command, easing repair and recycling.",
+  "batch": 4,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "raman-cancer-probe",
+  "name": "Laser cancer-finding surgical probe",
+  "job": "diagnoses",
+  "effect": "molecules shift the colour of light they scatter",
+  "effectCard": "raman-spectra",
+  "parts": [
+   "laser",
+   "fiber-optics",
+   "diffraction-gratings"
+  ],
+  "how": "A pen-like probe a surgeon touches to tissue during an operation to tell cancer from healthy brain. A laser shines down the fibre and the tissue scatters back a faint light whose colours are shifted by its molecules; a grating spreads that light so a computer can recognise the chemical fingerprint of a tumour in a second.",
+  "real": "Raman probes in brain-cancer surgery, clinical trials 2010s",
+  "plausibility": 4,
+  "why": "Reads tissue chemistry by colour, with no stain, sample or wait for a lab.",
+  "batch": 4,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "raman-glucose-meter",
+  "name": "Needle-free laser glucose meter",
+  "job": "measures",
+  "effect": "molecules shift the colour of light they scatter",
+  "effectCard": "raman-spectra",
+  "parts": [
+   "laser",
+   "diffraction-gratings",
+   "photocell"
+  ],
+  "how": "A wristband that measures blood sugar without a finger prick. It shines a laser into the skin and spreads the faintly colour-shifted light that comes back into a spectrum, where glucose molecules leave their own small signature that tracks how much sugar is in the blood.",
+  "real": "Raman glucose sensing, lab and trials 2010s",
+  "plausibility": 3,
+  "why": "Would end finger pricks by reading sugar molecules through skin with light.",
+  "batch": 4,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "ice-core-thermometer",
+  "name": "Ice-core ancient thermometer",
+  "job": "measures",
+  "effect": "heavy hydrogen evaporates more slowly than light hydrogen",
+  "effectCard": "deuterium",
+  "parts": [
+   "mass-spectrometer"
+  ],
+  "how": "A method for reading the temperatures of past ice ages from layers of ancient polar ice. Water with heavy hydrogen evaporates less readily and falls out of clouds first, so snow formed in colder times holds less of it; a mass spectrometer weighs the hydrogen in each layer to give the temperature year by year.",
+  "real": "ice-core isotope paleothermometry, 1960s",
+  "plausibility": 5,
+  "why": "An isotope-separation quirk becomes a thermometer for climates hundreds of thousands of years old.",
+  "batch": 4,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "pet-scanner",
+  "name": "Positron body scanner",
+  "job": "diagnoses",
+  "effect": "electrons and positrons destroy each other, giving gamma rays",
+  "effectCard": "positron",
+  "parts": [
+   "coincidence-counter",
+   "computer"
+  ],
+  "how": "A ring-shaped scanner that shows where the body is burning sugar, which lights up tumours and active brain areas. The patient gets a sugar tagged with an atom that gives off positrons; each positron meets an electron and the pair vanish into two gamma rays flying opposite ways, and detectors that fire together let a computer trace back to the spot.",
+  "real": "PET scanner, 1970s",
+  "plausibility": 5,
+  "why": "Antimatter put to routine hospital use.",
+  "batch": 4,
+  "maturity": "everyday",
+  "problems": [
+   "dupid"
+  ]
+ },
+ {
+  "id": "positron-metal-fatigue-tester",
+  "name": "Positron metal-fatigue tester",
+  "job": "measures",
+  "effect": "positrons last longer in atom-sized gaps before annihilating",
+  "effectCard": "positron",
+  "parts": [
+   "coincidence-counter",
+   "geiger-counter"
+  ],
+  "how": "A handheld tester that finds hidden fatigue in aircraft or reactor metal long before cracks appear. A tiny source fires positrons into the metal; in missing-atom gaps fewer electrons are around, so positrons survive slightly longer before turning into gamma rays, and timing those gamma rays reveals how damaged the metal is.",
+  "real": "positron annihilation spectroscopy, lab technique 1960s",
+  "plausibility": 3,
+  "why": "Times antimatter's lifetime to see damage too small for any microscope in the field.",
+  "batch": 4,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "activated-wear-tracer",
+  "name": "Radioactive engine-wear tracer",
+  "job": "measures",
+  "effect": "bombarding stable atoms makes them radioactive",
+  "effectCard": "artificial-radioactivity",
+  "parts": [
+   "piston-and-cylinder",
+   "geiger-counter"
+  ],
+  "how": "A way to measure engine wear while the engine runs. A thin surface layer of a piston ring is made faintly radioactive by a particle beam beforehand; as the ring wears, radioactive specks wash into the oil, and a counter on the oil line shows the wear minute by minute.",
+  "real": "thin-layer activation wear testing, 1970s",
+  "plausibility": 5,
+  "why": "Makes a part tattle on its own wear without stopping the engine.",
+  "batch": 4,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "steroid-eluting-contact-lens",
+  "name": "Anti-inflammation contact lens",
+  "job": "treats illness",
+  "effect": "cortisone calms inflammation",
+  "effectCard": "corticoids",
+  "parts": [
+   "contact-lenses"
+  ],
+  "how": "A soft contact lens loaded with a cortisone-type drug that seeps out slowly over days. It treats eye inflammation after surgery or injury far more steadily than eye drops, most of which wash away within minutes.",
+  "real": "Drug-eluting contact lenses, trials 2010s",
+  "plausibility": 4,
+  "why": "Turns a vision aid into a slow-release drug pump sitting right on the sick tissue.",
+  "batch": 4,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "insecticide-bed-net",
+  "name": "Insecticide-treated bed net",
+  "job": "prevents disease",
+  "effect": "a chemical kills insects on contact",
+  "effectCard": "ddt",
+  "parts": [
+   "nylon"
+  ],
+  "how": "A nylon mesh hung over a bed at night, soaked with an insecticide. Mosquitoes that land on it trying to reach the sleeper die on contact, so fewer people get malaria and fewer infected mosquitoes survive to bite again.",
+  "real": "insecticide-treated bed nets, 1980s",
+  "plausibility": 5,
+  "why": "Prevents malaria with a curtain, not a vaccine.",
+  "batch": 4,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "insecticide-grain-bag",
+  "name": "Insect-killing grain sack",
+  "job": "preserves food",
+  "effect": "a chemical kills insects on contact",
+  "effectCard": "ddt",
+  "parts": [
+   "isotactic-polymers"
+  ],
+  "how": "A woven plastic sack for storing harvested grain whose fibres carry an insecticide. Weevils and moths that try to chew in die on contact with the fabric, so stored grain lasts months longer on the farm.",
+  "real": "insecticide-incorporated storage bags, 2010s",
+  "plausibility": 5,
+  "why": "Food spoiled by insects, not microbes, gets its own preserver.",
+  "batch": 4,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "porous-pot-gas-alarm",
+  "name": "Porous-pot mine gas alarm",
+  "job": "measures",
+  "effect": "lighter gas molecules seep through a porous barrier faster",
+  "effectCard": "uranium-hexafluoride",
+  "parts": [
+   "pottery",
+   "barometer"
+  ],
+  "how": "An alarm for explosive methane in coal mines. Methane is lighter than air, so it seeps into an unglazed clay pot faster than air seeps out, raising the pressure inside; a mercury gauge connected to the pot rises and rings a bell when enough methane is present.",
+  "real": "Ansell's firedamp indicator, 1867",
+  "plausibility": 5,
+  "why": "The same effect that enriched uranium, put in a clay pot to save miners.",
+  "batch": 4,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "jet-stream-kite-generator",
+  "name": "Jet-stream kite power station",
+  "job": "makes electricity",
+  "effect": "fast steady winds blow high in the sky",
+  "effectCard": "jet-streams",
+  "parts": [
+   "wing",
+   "electric-generators",
+   "insulated-wire"
+  ],
+  "how": "A huge tethered kite wing flown kilometres up in the jet stream, where winds are fast and almost never stop. Small generators on the wing are spun by the wind and send power down a long tether cable, giving steadier output than ground windmills.",
+  "real": "Airborne wind kites (Makani and others), prototypes 2010s",
+  "plausibility": 2,
+  "why": "Taps the planet's steadiest wind, out of reach of every tower.",
+  "batch": 4,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "jet-stream-cargo-balloon",
+  "name": "Jet-stream cargo balloon",
+  "job": "transports",
+  "effect": "fast steady winds blow high in the sky",
+  "effectCard": "jet-streams",
+  "parts": [
+   "stratospheric-balloons",
+   "gps"
+  ],
+  "how": "An unpowered balloon that carries a parcel across an ocean by riding the jet stream eastward. It rises to the fast wind layer and drifts at hundreds of kilometres per hour, and when its satellite position says it is over the destination it releases the parcel on a parachute.",
+  "real": "Japanese Fu-Go balloons, 1944",
+  "plausibility": 3,
+  "why": "Free intercontinental freight carried by the wind alone.",
+  "batch": 4,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "self-balancing-scooter",
+  "name": "Self-balancing two-wheel scooter",
+  "job": "steadies the rider",
+  "effect": "feeding back the error lets a machine correct its own aim",
+  "effectCard": "cybernetics",
+  "parts": [
+   "gyroscope",
+   "electric-motors",
+   "wheel-and-axle",
+   "lithium-battery"
+  ],
+  "how": "A standing scooter on two side-by-side wheels that keeps its rider upright with no saddle or stirrup. Gyroscopes sense the slightest tip forward or back, and the motors instantly drive the wheels under the rider to cancel the error, hundreds of times a second.",
+  "real": "Segway, 2001",
+  "plausibility": 5,
+  "why": "Steadiness from constant correction rather than from a seat or a footrest.",
+  "batch": 4,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "active-earthquake-damper",
+  "name": "Active earthquake building damper",
+  "job": "absorbs shocks",
+  "effect": "feeding back the error lets a machine correct its own aim",
+  "effectCard": "cybernetics",
+  "parts": [
+   "seismograph",
+   "computer",
+   "piston-and-cylinder"
+  ],
+  "how": "A heavy weight near the top of a tall building, shoved by powered pistons. Sensors measure how the building is swaying and a computer drives the weight the opposite way to cancel the motion, so the tower stays still in wind and earthquakes.",
+  "real": "active mass dampers, 1989 Tokyo",
+  "plausibility": 5,
+  "why": "Absorbs shocks by pushing back intelligently, not just by springiness.",
+  "batch": 4,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "pcr-infection-test",
+  "name": "Gene-copying infection test",
+  "job": "diagnoses",
+  "effect": "each DNA strand is a template for copying its partner",
+  "effectCard": "the-double-helix",
+  "parts": [
+   "thermometer",
+   "electrophoresis"
+  ],
+  "how": "A test that finds a germ from just a few of its genes in a swab. Repeatedly heating and cooling the sample lets each DNA strand serve as a template for a new partner, doubling the germ's gene every cycle until there are billions of copies, enough to see on a gel.",
+  "real": "PCR diagnostic tests, 1980s",
+  "plausibility": 5,
+  "why": "Copying makes the invisible visible: one gene becomes a billion.",
+  "batch": 4,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "enzyme-dna-data-drive",
+  "name": "Enzyme-written DNA data drive",
+  "job": "stores data",
+  "effect": "an enzyme strings loose nucleotides into DNA or RNA",
+  "effectCard": "nucleic-acid-formation",
+  "parts": [
+   "integrated-circuits"
+  ],
+  "how": "An archive that stores computer files as DNA, written by an enzyme instead of harsh chemistry. A chip with tiny electrodes tells the enzyme which DNA letter to add at each spot, building strands that spell out the data; a sugar cube's worth could hold every film ever made for thousands of years.",
+  "real": "Enzymatic DNA synthesis for data storage, lab 2020s",
+  "plausibility": 3,
+  "why": "Biology's own writing machine becomes the densest, longest-lasting storage.",
+  "batch": 4,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "paper-protein-factory",
+  "name": "Freeze-dried paper medicine factory",
+  "job": "builds molecules",
+  "effect": "ribosomes build proteins by reading RNA instructions",
+  "effectCard": "ribosomes",
+  "parts": [
+   "paper"
+  ],
+  "how": "Paper spots soaked with ribosomes and the rest of a cell's protein-making machinery, then freeze-dried for storage without a fridge. A field medic adds water and the DNA recipe for a needed drug, and the ribosomes read its instructions and build that protein drug in an hour.",
+  "real": "Freeze-dried cell-free protein kits, lab 2014-2018",
+  "plausibility": 4,
+  "why": "Protein manufacture without cells, factories or cold chain.",
+  "batch": 4,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "paper-virus-test",
+  "name": "Paper colour-change virus test",
+  "job": "diagnoses",
+  "effect": "ribosomes build proteins by reading RNA instructions",
+  "effectCard": "ribosomes",
+  "parts": [
+   "paper"
+  ],
+  "how": "A cheap paper strip with freeze-dried ribosomes and a hidden gene circuit. When a virus's RNA from a sample is present it unlocks the circuit, so the ribosomes build a coloured protein and the spot changes colour.",
+  "real": "Paper-based gene-circuit Zika test, lab 2016",
+  "plausibility": 4,
+  "why": "Clinic-grade virus detection on paper, with ribosomes doing the reporting.",
+  "batch": 4,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "interferon-nasal-spray",
+  "name": "Interferon cold-prevention spray",
+  "job": "prevents disease",
+  "effect": "infected cells release a protein that blocks other viruses",
+  "effectCard": "interferon",
+  "parts": [
+   "spray-cans"
+  ],
+  "how": "A nasal spray of interferon used when a cold or flu is going round the household. The protein tells the cells lining the nose to switch on their antiviral defences before any virus arrives, so the infection never takes hold.",
+  "real": "Interferon nasal spray trials against colds, 1980s",
+  "plausibility": 3,
+  "why": "Borrows the body's emergency alarm signal before infection, instead of training immunity.",
+  "batch": 4,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "thorium-nuclear-clock",
+  "name": "Thorium nuclear clock",
+  "job": "keeps time",
+  "effect": "nuclei locked in a crystal absorb a razor-sharp frequency",
+  "effectCard": "mössbauer-effect",
+  "parts": [
+   "laser",
+   "quartz-oscillator"
+  ],
+  "how": "A clock that counts the ticks of an atom's nucleus instead of its electrons. Thorium nuclei held in a clear crystal absorb only one extremely precise colour of ultraviolet light, and a laser locked to that colour keeps time so steadily it would lose less than a second over the age of the universe.",
+  "real": "Thorium-229 nuclear transition first driven by laser, lab 2024",
+  "plausibility": 3,
+  "why": "The next step beyond atomic clocks, counting nuclear rather than electron ticks.",
+  "batch": 4,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "mossbauer-mineral-analyzer",
+  "name": "Gamma-ray mineral analyzer",
+  "job": "measures",
+  "effect": "atoms locked in a crystal emit and absorb razor-sharp gamma rays",
+  "effectCard": "mössbauer-effect",
+  "parts": [
+   "electric-motors",
+   "geiger-counter"
+  ],
+  "how": "A small instrument that tells which iron minerals are in a rock, used even on Mars rovers. A radioactive source shakes back and forth on a motor to shift its gamma-ray colour by tiny amounts, and a counter sees which shifts the iron atoms in the rock absorb, a fingerprint of their chemical surroundings.",
+  "real": "Mössbauer spectrometer, 1960s; on Mars rovers 2004",
+  "plausibility": 5,
+  "why": "Gamma rays so sharp a walking-pace shake detunes them.",
+  "batch": 4,
+  "maturity": "everyday",
+  "problems": []
+ },
+ {
+  "id": "virus-proof-recoded-bacteria",
+  "name": "Virus-proof recoded factory bacteria",
+  "job": "modifies organisms",
+  "effect": "three RNA letters spell one amino acid",
+  "effectCard": "genetic-code",
+  "parts": [
+   "synthetic-gene"
+  ],
+  "how": "Factory bacteria whose whole genome has been rewritten so they never use certain three-letter codons, then the machinery that reads those codons is removed. Viruses still rely on those codons, so their proteins come out garbled inside the cell and they cannot spread through the fermentation tanks.",
+  "real": "Recoded E. coli (Syn61), lab 2019",
+  "plausibility": 4,
+  "why": "Rewriting the genetic dictionary itself makes cells immune to every virus.",
+  "batch": 4,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "arsenic-sensing-bacteria",
+  "name": "Arsenic-sensing glowing bacteria",
+  "job": "measures",
+  "effect": "regulator genes switch other genes on and off",
+  "effectCard": "gene-regulators",
+  "parts": [
+   "recombinant-dna"
+  ],
+  "how": "A vial of harmless bacteria that tests well water for arsenic poisoning. A natural regulator gene that reacts to arsenic is wired to a gene that makes the cells glow, so the more arsenic is present, the more genes get switched on and the brighter the sample.",
+  "real": "Bacterial arsenic biosensors, lab and field kits 2000s",
+  "plausibility": 4,
+  "why": "Living cells as cheap chemical meters, using nature's own on/off switches.",
+  "batch": 4,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "living-logic-gate",
+  "name": "Living genetic logic circuit",
+  "job": "computes",
+  "effect": "regulator genes switch other genes on and off",
+  "effectCard": "gene-regulators",
+  "parts": [
+   "recombinant-dna"
+  ],
+  "how": "Bacteria carrying designed gene circuits that work like the logic gates of a computer. Each regulator gene turns others on or off depending on which chemicals are present, so the cell computes a simple answer, such as 'only if both signals', and shows it by making a coloured protein.",
+  "real": "Synthetic gene circuits (toggle switch, repressilator), lab 2000",
+  "plausibility": 4,
+  "why": "Computation in living cells that can sense and act inside the body.",
+  "batch": 4,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "cell-flight-recorder",
+  "name": "Cellular flight-recorder bacteria",
+  "job": "records media",
+  "effect": "an enzyme copies RNA back into DNA",
+  "effectCard": "reverse-transcriptase",
+  "parts": [
+   "recombinant-dna"
+  ],
+  "how": "Gut bacteria that keep a diary of what they meet on their way through the body. An enzyme copies snippets of the cell's working RNA back into DNA and files them in a memory region of the genome in order, so sequencing the bacteria afterwards reveals what happened and when.",
+  "real": "Record-seq RNA recorders in E. coli, lab 2018",
+  "plausibility": 3,
+  "why": "A tape recorder made from a virus's enzyme, writing history into DNA.",
+  "batch": 4,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "hydrogen-bacteria-protein",
+  "name": "Air-and-hydrogen protein farm",
+  "job": "grows food",
+  "effect": "vent bacteria live on chemicals, without light or oxygen",
+  "effectCard": "deep-sea-ecosystems",
+  "parts": [
+   "air-pump"
+  ],
+  "how": "A tank of bacteria that make protein-rich flour from hydrogen, carbon dioxide and minerals, with no fields or sunlight. Like the microbes at deep-sea vents, they live on chemical energy, so pumping the gases through the tank grows food anywhere, even in a desert or on a spaceship.",
+  "real": "Solar Foods Solein, pilot plant 2020s",
+  "plausibility": 4,
+  "why": "Food grown without photosynthesis, like life at the sea-floor vents.",
+  "batch": 4,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "seabed-mud-battery",
+  "name": "Seabed mud power cell",
+  "job": "makes electricity",
+  "effect": "seabed bacteria living on chemicals hand electrons to an electrode",
+  "effectCard": "deep-sea-ecosystems",
+  "parts": [
+   "fuel-cell",
+   "insulated-wire"
+  ],
+  "how": "A power source for ocean sensors that sits in the seabed mud for years. Bacteria in the mud live off its chemicals and dump spare electrons onto a buried electrode, which flow through a wire to a second electrode in the water above, giving a small but endless current.",
+  "real": "benthic microbial fuel cells, prototypes 2000s",
+  "plausibility": 4,
+  "why": "Deep-sea chemical life as a battery that never needs replacing.",
+  "batch": 4,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "superconducting-city-cable",
+  "name": "Superconducting city power cable",
+  "job": "carries current",
+  "effect": "some ceramics lose all resistance at liquid-nitrogen cold",
+  "effectCard": "warm-superconductivity",
+  "parts": [
+   "insulated-wire",
+   "dewar-flask"
+  ],
+  "how": "An underground power cable made of ceramic tape kept cold with liquid nitrogen inside an insulated jacket. With zero resistance it carries several times the power of a copper cable of the same size and wastes none as heat, so a city can grow without digging new tunnels.",
+  "real": "HTS power cable pilots, 2000s-2010s",
+  "plausibility": 5,
+  "why": "Cheap liquid-nitrogen cold makes lossless power lines practical.",
+  "batch": 4,
+  "maturity": "lab",
+  "problems": []
+ },
+ {
+  "id": "superconducting-energy-store",
+  "name": "Superconducting magnetic energy store",
+  "job": "stores electricity",
+  "effect": "some ceramics lose all resistance at liquid-nitrogen cold",
+  "effectCard": "warm-superconductivity",
+  "parts": [
+   "electromagnets",
+   "dewar-flask",
+   "transformer"
+  ],
+  "how": "A coil of superconducting ceramic in a liquid-nitrogen bath, holding electricity as a current that circles forever. Because there is no resistance the current never fades, and the grid can take the energy back out in a split second to cover sudden dips.",
+  "real": "Superconducting magnetic energy storage, pilot units 1980s-90s",
+  "plausibility": 3,
+  "why": "Stores electricity as motion of charge with no chemistry and no wear.",
+  "batch": 4,
+  "maturity": "lab",
+  "problems": []
+ }
+]

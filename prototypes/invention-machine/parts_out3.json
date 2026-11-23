@@ -1,0 +1,1028 @@
+{
+ "hydroelectric-power-station": {
+  "job": "makes electricity",
+  "slots": [
+   {
+    "part": "dam and reservoir",
+    "job": "holds the contents",
+    "fill": null,
+    "gap": "Dam",
+    "note": "Key part with no card (rule 16 exception)."
+   },
+   {
+    "part": "water turbine",
+    "job": "turns flow into rotation",
+    "fill": "turbines",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "makes electricity",
+    "fill": "electric-generators",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [
+   {
+    "effect": "water pressure grows with depth",
+    "card": "hydrostatics"
+   }
+  ],
+  "flag": "Dam listed as a key-part gap; the 1882 Vulcan Street plant had only a low dam and a water wheel, so drop it if the card means the generic station only loosely. Induction sits with Electric generators (rule 23)."
+ },
+ "escalator": {
+  "job": "transports",
+  "slots": [
+   {
+    "part": null,
+    "job": "provides power",
+    "fill": "electric-motors",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "chain and sprockets",
+    "job": "transmits rotation",
+    "fill": "gear-train",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "step wheels",
+    "job": "rolls",
+    "fill": "wheel-and-axle",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "Chain drive filled by Gear train, as Bicycle's chain drive is. Rubber handrail left off (minor)."
+ },
+ "geothermal-power": {
+  "job": "makes electricity",
+  "slots": [
+   {
+    "part": "steam wells",
+    "job": "makes steam",
+    "fill": "oil-wells",
+    "gap": null,
+    "note": "Stand-in: the only drilled-well card; these wells bring up steam, not oil."
+   },
+   {
+    "part": "steam turbine",
+    "job": "turns flow into rotation",
+    "fill": "turbines",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "makes electricity",
+    "fill": "electric-generators",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [
+   {
+    "effect": "the Earth's interior is hot",
+    "gap": "Earth's internal heat"
+   },
+   {
+    "effect": "hot water flashes into steam when its pressure drops",
+    "gap": "Boiling points"
+   }
+  ],
+  "flag": "Turbines rather than Steam turbine: that card includes a boiler, which a geothermal plant doesn't have. Earth's internal heat is the card's key effect, no card. Boiling points is the existing gap (Distillation, Pressure cooker), now a third use."
+ },
+ "stainless-steel": {
+  "job": "forms the body",
+  "slots": [
+   {
+    "part": null,
+    "job": "is an ingredient",
+    "fill": "steel",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "is an ingredient",
+    "fill": "chromium",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [
+   {
+    "effect": "chromium forms a thin oxide film that seals the metal and re-forms when scratched",
+    "gap": "Passivation"
+   }
+  ],
+  "flag": "Passivation is the key effect, no card; kept on the alloy since Chromium is one ingredient (rule 24). Nickel (in most stainless) has no card."
+ },
+ "traffic-light": {
+  "job": "communicates",
+  "slots": [
+   {
+    "part": "lamps",
+    "job": "makes light",
+    "fill": "electric-light",
+    "gap": null,
+    "note": null,
+    "later": [
+     "light-emitting-diodes"
+    ]
+   },
+   {
+    "part": "coloured lenses",
+    "job": "colors",
+    "fill": "glass",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "Own job 'communicates' (it signals drivers); no 'controls traffic' job. Timer and road sensors left off: the 1914 signal was switched by hand. LEDs as 'later' (1990s)."
+ },
+ "hybrid-corn": {
+  "job": "grows food",
+  "slots": [
+   {
+    "part": "parent lines",
+    "job": "is an ingredient",
+    "fill": null,
+    "gap": "Inbred lines",
+    "note": "Key part with no card."
+   }
+  ],
+  "phen": [
+   {
+    "effect": "a cross between two inbred lines grows unusually vigorous",
+    "gap": "Hybrid vigour"
+   }
+  ],
+  "flag": "Both are key and unshared (rule 16 exception). Maize itself has no card; Agriculture isn't a stand-in for a crop."
+ },
+ "fibreglass": {
+  "job": "insulates",
+  "slots": [
+   {
+    "part": null,
+    "job": "is an ingredient",
+    "fill": "glass",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "Own job 'insulates' (glass wool, the 1932 use); 'forms the body' fits the later resin-composite use equally well. Trapped air and flexible thin strands are material properties (rule 28). Resin belongs to the composite, not fibreglass."
+ },
+ "heat-pump": {
+  "job": "makes heat",
+  "slots": [
+   {
+    "part": "compressor",
+    "job": "pushes",
+    "fill": "piston-and-cylinder",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "refrigerant",
+    "job": "carries heat",
+    "fill": "freon",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "expansion valve",
+    "job": "controls flow",
+    "fill": "valve",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "provides power",
+    "fill": "electric-motors",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [
+   {
+    "effect": "a liquid soaks up heat as it evaporates and gives it up as it condenses",
+    "card": "latent-heat"
+   },
+   {
+    "effect": "squeezing the vapour heats it",
+    "card": "adiabatic-heating-and-cooling"
+   }
+  ],
+  "flag": "Same parts as Refrigerators/Air conditioning; Refrigerators not a slot (rule 6, same machine run backwards). Freon assumed for the 1938 Zurich unit; check. Effects match Air conditioning's wording."
+ },
+ "offshore-oil-platform": {
+  "job": "stores chemical energy",
+  "slots": [
+   {
+    "part": "tower",
+    "job": "bears the load",
+    "fill": "steel",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "wells",
+    "job": "stores chemical energy",
+    "fill": "oil-wells",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "Own job follows Oil wells and Coal mining (no 'extracts fuel' job; only Fracking would share it). Oil wells as a slot is a rule 6 vs rule 7 call: the platform is oil wells moved to sea, but the wells are physically in it; drop if it reads as the same thing."
+ },
+ "cataract-lens-implant": {
+  "job": "bends light",
+  "slots": [
+   {
+    "part": null,
+    "job": "bends light",
+    "fill": null,
+    "gap": "Acrylic plastic",
+    "note": "Key part with no card: Ridley's canopy plastic (PMMA)."
+   }
+  ],
+  "phen": [
+   {
+    "effect": "refraction",
+    "card": "refraction"
+   }
+  ],
+  "flag": "Acrylic plastic (PMMA) would also be the Hip replacement's bone cement; two uses here, so not yet 3."
+ },
+ "tunnel-boring-machine": {
+  "job": "cuts",
+  "slots": [
+   {
+    "part": "disc cutters",
+    "job": "cuts",
+    "fill": "alloy-steel",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "hydraulic rams",
+    "job": "pushes",
+    "fill": "piston-and-cylinder",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "provides power",
+    "fill": "electric-motors",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "Conveyor left off (no card, not shared). Rolling disc cutters came in 1956, four years after the card; hard steel cutters were there from 1952."
+ },
+ "hvdc-power-lines": {
+  "job": "carries current",
+  "slots": [
+   {
+    "part": "converter valves",
+    "job": "controls the current",
+    "fill": "electronic-rectifier",
+    "gap": null,
+    "note": "Stand-in: the 1954 link used mercury-arc valves, the only rectifier card is the vacuum diode."
+   },
+   {
+    "part": null,
+    "job": "changes voltage",
+    "fill": "transformer",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "cable",
+    "job": "carries current",
+    "fill": "insulated-wire",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "No own-level effect: avoiding cable-charging losses is an absence, not an effect it works by. Thyristor valves (c. 1970) have no card."
+ },
+ "container-shipping": {
+  "job": "transports",
+  "slots": [
+   {
+    "part": "standard steel boxes",
+    "job": "holds the contents",
+    "fill": null,
+    "gap": "Shipping container",
+    "note": "Key part with no card."
+   },
+   {
+    "part": "dockside cranes",
+    "job": "transports",
+    "fill": "tower-crane",
+    "gap": null,
+    "note": "Stand-in: the only crane card; dock cranes are gantry cranes."
+   },
+   {
+    "part": "container ship",
+    "job": "transports",
+    "fill": "steamship",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "Crane job 'transports' follows the Tower crane's own job (no 'lifts' job). Trucks and trains left off to keep it tight; twist-lock fittings have no card."
+ },
+ "wind-turbine": {
+  "job": "makes electricity",
+  "slots": [
+   {
+    "part": "blades",
+    "job": "provides lift",
+    "fill": "wing",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "gearbox",
+    "job": "transmits rotation",
+    "fill": "gear-train",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "makes electricity",
+    "fill": "electric-generators",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "Lift sits with Wing (rule 23), induction with Electric generators. Windmill not a slot (rule 5: borrowed idea, not physically inside)."
+ },
+ "liquefied-natural-gas-tanker": {
+  "job": "transports",
+  "slots": [
+   {
+    "part": "cargo and boil-off fuel",
+    "job": "stores chemical energy",
+    "fill": null,
+    "gap": "Natural gas",
+    "note": "Key part with no card."
+   },
+   {
+    "part": "insulated tanks",
+    "job": "insulates",
+    "fill": "dewar-flask",
+    "gap": null,
+    "note": "Stand-in: the only insulated-vessel card, made for liquefied gases; the ship's tanks are insulated with balsa or foam, not a vacuum."
+   },
+   {
+    "part": null,
+    "job": "provides thrust",
+    "fill": "screw-propeller",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [
+   {
+    "effect": "the liquid that boils off carries heat away and keeps the rest cold",
+    "card": "latent-heat"
+   }
+  ],
+  "flag": "Natural gas: possible shared gap with Gas-turbine power station (fuel); Fracking and Offshore oil platform produce it but don't contain it. Dewar flask stand-in is a judgment call."
+ },
+ "turbofan-jet-engine": {
+  "job": "provides thrust",
+  "slots": [
+   {
+    "part": "core",
+    "job": "provides power",
+    "fill": null,
+    "gap": "Jet engine",
+    "note": "Existing key-part gap from Jet planes."
+   },
+   {
+    "part": "fan",
+    "job": "provides thrust",
+    "fill": "screw-propeller",
+    "gap": null,
+    "note": "Stand-in: the only propeller card; the fan is a ducted many-bladed propeller."
+   },
+   {
+    "part": "jet fuel",
+    "job": "stores chemical energy",
+    "fill": "kerosene",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [
+   {
+    "effect": "reaction thrust",
+    "card": "conservation-momentum"
+   }
+  ],
+  "flag": "Jet engine gap is already on the board (Jet planes' key part); Gas-turbine power station ('essentially a jet engine') may share it. Screw propeller as the fan is a stand-in; drop if too loose."
+ },
+ "artificial-hip-joint-replacement": {
+  "job": "treats illness",
+  "slots": [
+   {
+    "part": "ball and stem",
+    "job": "forms the body",
+    "fill": "stainless-steel",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "cup",
+    "job": "reduces friction",
+    "fill": "plastics-polyethylene",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "Own job follows Cochlear implant and Hearing aid ('bears the load' would also do). Acrylic bone cement left off: no card, shared only with Cataract lens implant so far. Low friction is a material property (rule 28)."
+ },
+ "high-speed-rail": {
+  "job": "transports",
+  "slots": [
+   {
+    "part": "motors on every carriage",
+    "job": "provides power",
+    "fill": "electric-motors",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "overhead wire",
+    "job": "carries current",
+    "fill": "copper",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "welded rails",
+    "job": "carries traffic",
+    "fill": "steel",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "Steam locomotive not a slot (rule 5). Pantograph has no card."
+ },
+ "dental-implant": {
+  "job": "treats illness",
+  "slots": [
+   {
+    "part": "screw",
+    "job": "forms the body",
+    "fill": null,
+    "gap": "Titanium",
+    "note": "Key part with no card."
+   },
+   {
+    "part": "false tooth",
+    "job": "forms the body",
+    "fill": "porcelain",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [
+   {
+    "effect": "bone grows right up against titanium and locks onto it",
+    "gap": "Osseointegration"
+   }
+  ],
+  "flag": "Osseointegration is the key effect (rule 25: a body process it works with), no card; kept on the implant since Titanium has no card either. Porcelain for the crown is typical, not stated in the text; drop if too loose."
+ },
+ "atm-cash-machine": {
+  "job": "makes payments",
+  "slots": [
+   {
+    "part": "keypad",
+    "job": "takes input",
+    "fill": "keys",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "line to the bank",
+    "job": "communicates",
+    "fill": "telephone",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "bank's computer",
+    "job": "computes",
+    "fill": "computer",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "Own job 'makes payments', the new job batch 1 proposed (Credit card, Mobile payments, Online shopping). Card reader left off: the 1967 machine took carbon-14 vouchers; magnetic stripes and online PIN checks came in the 1970s, so keypad/phone line/computer are 'added later' in strict terms."
+ },
+ "quartz-watch": {
+  "job": "keeps time",
+  "slots": [
+   {
+    "part": "quartz crystal",
+    "job": "keeps time",
+    "fill": "quartz-oscillator",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "counting chip",
+    "job": "computes",
+    "fill": "integrated-circuits",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "stepping motor",
+    "job": "provides power",
+    "fill": "electric-motors",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "battery",
+    "job": "stores electricity",
+    "fill": "dry-cell",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "Piezoelectricity sits with Quartz oscillator (rule 23). Electronic watch not a slot (rule 5, its tuning fork isn't inside)."
+ },
+ "artemisinin-malaria-drug": {
+  "job": "treats illness",
+  "slots": [
+   {
+    "part": null,
+    "job": "is an ingredient",
+    "fill": null,
+    "gap": "Sweet wormwood",
+    "note": "Key part with no card: the herb it is extracted from."
+   }
+  ],
+  "phen": [
+   {
+    "effect": "a chemical kills the germ but not the patient",
+    "card": "chemotherapy"
+   }
+  ],
+  "flag": "Wording matches Quinine synthesis and Quinacrine. The iron-triggered peroxide bridge is the specific mechanism; no card states it."
+ },
+ "plastic-bottle": {
+  "job": "holds the contents",
+  "slots": [
+   {
+    "part": null,
+    "job": "forms the body",
+    "fill": null,
+    "gap": "PET plastic",
+    "note": "Key part with no card (a polyester, not Polyethylene)."
+   }
+  ],
+  "phen": [],
+  "flag": "Stretch blow-moulding is how it's made (rule 4); aligned molecules are a material property (rule 28)."
+ },
+ "pet-scanner": {
+  "job": "diagnoses",
+  "slots": [
+   {
+    "part": "radioactive sugar",
+    "job": "diagnoses",
+    "fill": "radioactive-tracers",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "detector ring",
+    "job": "detects radiation",
+    "fill": "coincidence-counter",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "computes",
+    "fill": "integrated-circuits",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [
+   {
+    "effect": "a positron meets an electron and both vanish into two gamma rays flying apart",
+    "gap": "Positron annihilation"
+   },
+   {
+    "effect": "reconstruction from projections",
+    "card": "fourier-analysis"
+   }
+  ],
+  "flag": "Coincidence counter fits literally: PET counts the paired gamma rays arriving together. Radioactive decay sits with Radioactive tracers (rule 23). Positron annihilation is the key effect, no card. Computing slot and reconstruction follow CAT scan."
+ },
+ "public-key-encryption": {
+  "job": "protects",
+  "slots": [
+   {
+    "part": null,
+    "job": "computes",
+    "fill": "computer",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [
+   {
+    "effect": "multiplying two primes is easy, but finding them from the product is not",
+    "gap": "Prime factorization"
+   }
+  ],
+  "flag": "Maths the job carries out (rule 22); no number-theory card, so a key-effect gap. Own job 'protects' as for Cylinder locks."
+ },
+ "spreadsheet": {
+  "job": "computes",
+  "slots": [
+   {
+    "part": null,
+    "job": "computes",
+    "fill": "personal-computer",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "VisiCalc ran on the Apple II, so Personal computer is the device it's carried out with (rule 3). No nameable effect."
+ },
+ "pcr-dna-copying": {
+  "job": "builds molecules",
+  "slots": [
+   {
+    "part": "heat-proof enzyme",
+    "job": "builds molecules",
+    "fill": null,
+    "gap": "DNA polymerase",
+    "note": "Key part with no card; Taq polymerase came in 1988."
+   }
+  ],
+  "phen": [
+   {
+    "effect": "heat parts DNA's two strands, and matching strands pair up again as it cools",
+    "gap": "DNA base pairing"
+   }
+  ],
+  "flag": "Base pairing is shared with CRISPR (guide RNA pairs with DNA) and would suit DNA sequencing; 2 new cards here. Primers are made by Gene synthesis, which is production (rule 4)."
+ },
+ "insecticide-treated-bed-nets": {
+  "job": "protects",
+  "slots": [
+   {
+    "part": "mesh",
+    "job": "forms the body",
+    "fill": "nylon",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "permethrin coating",
+    "job": "protects",
+    "fill": null,
+    "gap": "Insecticide",
+    "note": "Key part with no card."
+   }
+  ],
+  "phen": [],
+  "flag": "Mesh may be polyester rather than nylon; Nylon is the only synthetic-fibre card. The village-wide drop in malaria is about the disease and its spread, not an effect the net works by (rule 25)."
+ },
+ "statins": {
+  "job": "treats illness",
+  "slots": [],
+  "phen": [
+   {
+    "effect": "a drug jams an enzyme so a body process slows",
+    "gap": "Enzyme inhibition"
+   }
+  ],
+  "flag": "Shared gap with Antiretroviral HIV therapy (2 new cards). Own job could be 'prevents disease' (it cuts the risk of heart attacks); followed Beta blockers. The mould it came from is how it was found/made, not an ingredient worth a gap."
+ },
+ "antidepressants-ssris": {
+  "job": "treats illness",
+  "slots": [],
+  "phen": [
+   {
+    "effect": "chemicals carry signals between nerves",
+    "card": "vagusstoffe"
+   }
+  ],
+  "flag": "Rule 25: the body process it works with. Blocking the reuptake pump has no card; not shared."
+ },
+ "lithium-ion-battery": {
+  "job": "stores electricity",
+  "slots": [
+   {
+    "part": "lithium ions",
+    "job": "stores chemical energy",
+    "fill": "cadmium-lithium-selenium",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [
+   {
+    "effect": "a reaction drives a current",
+    "card": "laws-of-electrolysis"
+   },
+   {
+    "effect": "lithium ions slip in between the layers of a crystal and out again",
+    "gap": "Intercalation"
+   }
+  ],
+  "flag": "Follows Lithium battery's lithium slot and effect. Intercalation is the key effect, no card. Cobalt-oxide cathode and graphite anode left off (Cobalt would be a weak 'is an ingredient' in an object; graphite has no card). Lithium battery not a slot (rule 6)."
+ },
+ "genetically-modified-crops": {
+  "job": "grows food",
+  "slots": [],
+  "phen": [
+   {
+    "effect": "a cell follows genes put into it",
+    "card": "virus-transduction"
+   }
+  ],
+  "flag": "No slots: inserting the gene (Agrobacterium, gene gun, Genetic engineering) is how it's made (rule 4), and the borrowed gene varies by crop (Bt toxin is only the common example). Could add 'is an ingredient: gap Borrowed gene' if a material must show ingredients."
+ },
+ "antiretroviral-hiv-therapy": {
+  "job": "treats illness",
+  "slots": [],
+  "phen": [
+   {
+    "effect": "a drug jams an enzyme so a body process slows",
+    "gap": "Enzyme inhibition"
+   },
+   {
+    "effect": "a chemical kills the germ but not the patient",
+    "card": "chemotherapy"
+   }
+  ],
+  "flag": "Enzyme inhibition shared with Statins (2 new cards; both key). The individual drugs (AZT, protease inhibitors) have no cards. Chemotherapy may be redundant with enzyme inhibition; drop one if so."
+ },
+ "streaming-video": {
+  "job": "shows the image",
+  "slots": [
+   {
+    "part": null,
+    "job": "compresses data",
+    "fill": "compressed-media",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "communicates",
+    "fill": "internet",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "Uses batch 1's new job 'compresses data'. Buffering has no card."
+ },
+ "social-media": {
+  "job": "communicates",
+  "slots": [
+   {
+    "part": "website",
+    "job": "communicates",
+    "fill": "world-wide-web",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "servers",
+    "job": "stores data",
+    "fill": "hard-disk-drive",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "Feed-ranking program has no card."
+ },
+ "fracking": {
+  "job": "stores chemical energy",
+  "slots": [
+   {
+    "part": "horizontal well",
+    "job": "stores chemical energy",
+    "fill": "oil-wells",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "high-pressure pumps",
+    "job": "pushes",
+    "fill": "piston-and-cylinder",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "Own job follows Oil wells / Coal mining. Oil wells may fall under rule 8 (what the technique is used on); drop it if so. Key effect (fluid pressure splits rock, sand props cracks open) has no card and I couldn't name one that isn't the card itself; left off."
+ },
+ "robotic-surgery": {
+  "job": "treats illness",
+  "slots": [
+   {
+    "part": "small cuts",
+    "job": "treats illness",
+    "fill": "keyhole-surgery",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "instrument arms",
+    "job": "cuts",
+    "fill": "robots",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "motion scaling",
+    "job": "computes",
+    "fill": "microchips",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "A practice made of another practice (rule 3). Camera sits with Keyhole surgery. 'cuts' for the robot arms is the nearest job; no 'manipulates' job."
+ },
+ "cloud-data-centres": {
+  "job": "computes",
+  "slots": [
+   {
+    "part": "servers",
+    "job": "computes",
+    "fill": "microchips",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "stores data",
+    "fill": "hard-disk-drive",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "communicates",
+    "fill": "internet",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "cooling",
+    "job": "carries heat",
+    "fill": "air-conditioning",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "Joule heating is a waste the cooling deals with, not an effect it works by."
+ },
+ "electric-car": {
+  "job": "transports",
+  "slots": [
+   {
+    "part": null,
+    "job": "stores electricity",
+    "fill": "lithium-ion-battery",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "provides power",
+    "fill": "electric-motors",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [
+   {
+    "effect": "braking runs the motor as a generator, turning motion back into charge",
+    "card": "electromagnetic-induction"
+   }
+  ],
+  "flag": "Induction is a different effect from the motor's own (a magnet pushes a current), so allowed (rule 23). Same effect as Hybrid car's regenerative braking."
+ },
+ "crispr-gene-editing": {
+  "job": "modifies organisms",
+  "slots": [
+   {
+    "part": "guide-carrying enzyme",
+    "job": "cuts",
+    "fill": null,
+    "gap": "Cas9",
+    "note": "Key part with no card."
+   }
+  ],
+  "phen": [
+   {
+    "effect": "the guide RNA pairs with the matching letters of DNA",
+    "gap": "DNA base pairing"
+   },
+   {
+    "effect": "the cell repairs a cut in its DNA, disabling or rewriting the gene",
+    "gap": "DNA repair"
+   }
+  ],
+  "flag": "Base pairing shared with PCR. Restriction enzymes (existing gap on Recombinant DNA) is close to Cas9 but cuts only at fixed sites; kept separate."
+ },
+ "self-driving-cars": {
+  "job": "transports",
+  "slots": [
+   {
+    "part": "car",
+    "job": "transports",
+    "fill": "electric-car",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "lidar",
+    "job": "detects objects",
+    "fill": "laser-rangefinder",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "detects objects",
+    "fill": "radar",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "driving software",
+    "job": "computes",
+    "fill": "deep-learning",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "Car slot by rule 7 (Waymo's driverless fleet is electric Jaguars; earlier test cars were hybrid). Cameras left off to keep it tight. Signal delay sits with Laser rangefinder and Radar."
+ },
+ "large-language-models": {
+  "job": "writes",
+  "slots": [
+   {
+    "part": "neural network",
+    "job": "computes",
+    "fill": "deep-learning",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "servers",
+    "job": "computes",
+    "fill": "cloud-data-centres",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "Own job 'writes' (it answers, writes and translates); 'computes' or 'communicates' would also do. Training on text is how it's made (rule 4); data centres kept because it also runs on them."
+ }
+}

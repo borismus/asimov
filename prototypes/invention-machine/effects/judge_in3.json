@@ -1,0 +1,361 @@
+[
+{
+"card": "raoults-law",
+"title": "Raoult's law",
+"year": 1886,
+"effect": "dissolved stuff lowers a liquid's vapor pressure",
+"does": "solute -> lower vapor, shifted boiling",
+"strength": "strong",
+"alsoCards": [],
+"note": "freezing point depression; antifreeze, molecular weights"
+},
+{
+"card": "mach-number",
+"title": "Mach number",
+"year": 1887,
+"effect": "above the speed of sound air resistance jumps",
+"does": "speed -> shock wave",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "le-chateliers-principle",
+"title": "Le Châtelier's principle",
+"year": 1888,
+"effect": "a system at balance shifts to resist any push",
+"does": "imposed change -> counteracting shift",
+"strength": "strong",
+"alsoCards": [],
+"note": "used to push yields in chemical plants"
+},
+{
+"card": "energy-of-activation",
+"title": "Energy of activation",
+"year": 1889,
+"effect": "a reaction needs a starting kick of energy",
+"does": "input energy -> reaction starts",
+"strength": "strong",
+"alsoCards": [],
+"note": "why catalysts and sparks work"
+},
+{
+"card": "argon",
+"title": "Argon",
+"year": 1894,
+"effect": "argon reacts with nothing",
+"does": "inert gas -> no reaction",
+"strength": "strong",
+"alsoCards": [],
+"note": "shielding gas for welding, bulbs"
+},
+{
+"card": "curie-temperature",
+"title": "Curie temperature",
+"year": 1895,
+"effect": "a magnet loses its magnetism when hot enough",
+"does": "heat -> no magnetism",
+"strength": "strong",
+"alsoCards": [],
+"note": "thermal switches"
+},
+{
+"card": "electron-as-subatomic-particle",
+"title": "Electron as subatomic particle",
+"year": 1897,
+"effect": "an electric field bends an electron beam",
+"does": "voltage -> beam deflection",
+"strength": "strong",
+"alsoCards": [],
+"note": "basis of cathode-ray displays"
+},
+{
+"card": "nickel-as-catalyst",
+"title": "Nickel as catalyst",
+"year": 1897,
+"effect": "nickel adds hydrogen to oils, hardening them",
+"does": "oil + hydrogen -> solid fat",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "mosquitoes-and-malaria",
+"title": "Mosquitoes and malaria",
+"year": 1897,
+"effect": "mosquitoes carry malaria",
+"does": "bite -> infection",
+"strength": "strong",
+"alsoCards": [
+"yellow-fever"
+],
+"note": "vector control, nets"
+},
+{
+"card": "polonium-and-radium",
+"title": "Polonium and radium",
+"year": 1898,
+"effect": "radium is intensely radioactive",
+"does": "radium -> strong radiation",
+"strength": "strong",
+"alsoCards": [],
+"note": "near 'radioactive atoms give off radiation'"
+},
+{
+"card": "epinephrine",
+"title": "Epinephrine",
+"year": 1898,
+"effect": "adrenaline sets the body to fight or flight",
+"does": "hormone -> racing heart",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "gamma-rays",
+"title": "Gamma rays",
+"year": 1900,
+"effect": "gamma rays go through more than X-rays",
+"does": "radiation -> deep penetration",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "blood-types",
+"title": "Blood types",
+"year": 1900,
+"effect": "mismatched blood types clump",
+"does": "wrong blood -> clotting",
+"strength": "strong",
+"alsoCards": [],
+"note": "basis of safe transfusion"
+},
+{
+"card": "radioactive-energy",
+"title": "Radioactive energy",
+"year": 1901,
+"effect": "radium gives off steady heat for centuries",
+"does": "decay -> heat",
+"strength": "strong",
+"alsoCards": [],
+"note": "radioisotope heaters and batteries"
+},
+{
+"card": "grignard-reagents",
+"title": "Grignard reagents",
+"year": 1901,
+"effect": "magnesium compounds stitch carbon groups onto molecules",
+"does": "reagent -> new carbon bond",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "anaphylactic-shock",
+"title": "Anaphylactic shock",
+"year": 1902,
+"effect": "a second exposure can trigger a violent allergic reaction",
+"does": "re-exposure -> shock",
+"strength": "strong",
+"alsoCards": [],
+"note": "allergy testing"
+},
+{
+"card": "mass-energy",
+"title": "Mass-energy",
+"year": 1905,
+"effect": "a little mass holds a huge amount of energy",
+"does": "mass -> energy",
+"strength": "strong",
+"alsoCards": [],
+"note": "E=mc^2"
+},
+{
+"card": "radioactivity-and-earth",
+"title": "Radioactivity and earth",
+"year": 1906,
+"effect": "radioactivity heats the Earth's crust",
+"does": "decay -> underground heat",
+"strength": "strong",
+"alsoCards": [],
+"note": "geothermal heat source"
+},
+{
+"card": "radioactive-dating",
+"title": "Radioactive dating",
+"year": 1907,
+"effect": "uranium decays to lead at a steady rate",
+"does": "time -> lead content",
+"strength": "strong",
+"alsoCards": [
+"lead-isotopes",
+"carbon-14-dating"
+],
+"note": "dates rocks"
+},
+{
+"card": "conditioned-response",
+"title": "Conditioned response",
+"year": 1907,
+"effect": "pairing a signal with a reward trains a reflex",
+"does": "repeated pairing -> learned response",
+"strength": "strong",
+"alsoCards": [],
+"note": "animal training"
+},
+{
+"card": "liquid-helium",
+"title": "Liquid helium",
+"year": 1908,
+"effect": "evaporating liquid helium chills things to near absolute zero",
+"does": "evaporation -> extreme cold",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "mohorovicic-discontinuity",
+"title": "Mohorovičić discontinuity",
+"year": 1910,
+"effect": "earthquake waves travel faster in deeper, denser rock",
+"does": "seismic waves -> map of underground layers",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "superconductivity",
+"title": "Superconductivity",
+"year": 1911,
+"effect": "very cold metals lose all electrical resistance",
+"does": "cold -> zero resistance",
+"strength": "strong",
+"alsoCards": [
+"superconductivity-theory"
+],
+"note": null
+},
+{
+"card": "cepheid-variables",
+"title": "Cepheid variables",
+"year": 1912,
+"effect": "a pulsing star's period reveals its true brightness",
+"does": "pulse period -> distance",
+"strength": "strong",
+"alsoCards": [],
+"note": "only for stars"
+},
+{
+"card": "x-ray-diffraction",
+"title": "X-ray diffraction",
+"year": 1912,
+"effect": "crystals scatter X-rays into telltale patterns",
+"does": "X-rays -> crystal structure",
+"strength": "strong",
+"alsoCards": [
+"x-ray-diffraction-of-dna",
+"microcrystalline-diffraction",
+"x-ray-wavelength"
+],
+"note": null
+},
+{
+"card": "neon-varieties",
+"title": "Neon varieties",
+"year": 1912,
+"effect": "a magnetic field bends lighter ions more sharply",
+"does": "magnetic field -> sorts atoms by mass",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "dipole-moments",
+"title": "Dipole moments",
+"year": 1912,
+"effect": "lopsided molecules twist to line up in an electric field",
+"does": "electric field -> molecules turn",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "ozonosphere",
+"title": "Ozonosphere",
+"year": 1913,
+"effect": "ozone soaks up ultraviolet light",
+"does": "ozone -> blocks UV",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "atomic-number",
+"title": "Atomic number",
+"year": 1914,
+"effect": "each element gives off its own X-ray frequency",
+"does": "X-rays -> identify element",
+"strength": "strong",
+"alsoCards": [
+"characteristic-x-rays"
+],
+"note": null
+},
+{
+"card": "thyroxine",
+"title": "Thyroxine",
+"year": 1915,
+"effect": "thyroid hormone sets the body's metabolic rate",
+"does": "hormone -> faster metabolism",
+"strength": "strong",
+"alsoCards": [],
+"note": "specific case of hormones regulating the body"
+},
+{
+"card": "bacteriophages",
+"title": "Bacteriophages",
+"year": 1915,
+"effect": "some viruses kill only bacteria",
+"does": "virus -> dead bacteria",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "radioactive-tracers",
+"title": "Radioactive lead tracing",
+"year": 1918,
+"effect": "a radioactive atom behaves chemically like its stable twin",
+"does": "radiation -> tracks where a substance goes",
+"strength": "strong",
+"alsoCards": [
+"organic-tracers",
+"carbon-14-tracer",
+"isotopic-tracers"
+],
+"note": null
+},
+{
+"card": "dendrochronology",
+"title": "Dendrochronology",
+"year": 1920,
+"effect": "trees grow one ring a year, wide or narrow by weather",
+"does": "ring pattern -> date",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "anemia",
+"title": "Anemia cure",
+"year": 1920,
+"effect": "iron in the diet rebuilds lost blood",
+"does": "iron -> more red blood",
+"strength": "strong",
+"alsoCards": [
+"blood-and-iron"
+],
+"note": null
+}
+]

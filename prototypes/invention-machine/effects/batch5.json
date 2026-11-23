@@ -1,0 +1,1578 @@
+[
+{
+"id": "bacterial-genetics",
+"year": 1946,
+"title": "Bacterial genetics",
+"field": "Science: Biology",
+"desc": "This discovery proved that bacterial reproduction isn't solely asexual and that different strains could intermix genetic material, enabling bacterial sexual reproduction. This fundamentally changed the understanding of bacterial genetics and reproduction.",
+"long": "It had long been customary to think of reproduction in the simplest organisms as essentially simpler than that in multicellular ones. In 1946, the American geneticist Joshua Lederberg, working with Tatum, showed that bacterial reproduction was not entirely asexual. Different strains of bacteria could be crossed in such a way as to make the genetic material intermingle. It was therefore possible for organisms even as simple as bacteria to engage, on occasion, in what is essentially sexual reproduction."
+},
+{
+"id": "virus-genetics",
+"year": 1946,
+"title": "Virus genetics",
+"field": "Science: Biology",
+"desc": "Genetic materials of different virus strains can combine to create entirely new strains, similar to sexual reproduction in more complex organisms. This discovery highlighted the complexity of virus genetics.",
+"long": "While Lederberg was showing the unexpected complexity of bacterial reproduction, the German-born American microbiologist Max Delbrück and Alfred Day Hershey showed that the genetic material of different strains of viruses could be combined to form a new strain different from either. This too is a form of sexual reproduction, and for this Delbrück and Hershey received shares of the Nobel Prize for physiology and medicine in 1969."
+},
+{
+"id": "pion",
+"year": 1947,
+"title": "Pion",
+"field": "Science: Physics",
+"desc": "The pion is a particle predicted to hold protons and neutrons together within the nucleus, despite electromagnetic repulsion. It shares some properties with more massive particles and interacts with protons and neutrons, fulfilling Yukawa's prediction.",
+"long": "Yukawa had predicted the existence of a particle with mass between that of an electron and a proton. It would serve as an exchange particle, holding together the protons and neutrons within the nucleus despite the electromagnetic repulsion among the protons (see 1935, Strong Interaction). Anderson detected a particle of intermediate mass, the muon (see 1937), but it lacked the necessary properties to fulfill the role Yukawa had laid out for it. Meanwhile, the English physicist Cecil Frank Powell (1903–1969) had worked out a new method of particle detection. Instead of having particles strike a cloud chamber and then photographing the results, he had the particles strike a photographic emulsi"
+},
+{
+"id": "carbon-14-dating",
+"year": 1947,
+"title": "Carbon-14 dating",
+"field": "Science: Chemistry",
+"desc": "Carbon-14 dating uses the predictable radioactive decay of carbon-14 to determine the age of organic materials. This technique allows scientists to accurately measure how long it has been since a plant or animal died.",
+"long": "Seven years before, Martin David Kamen had discovered carbon-14 and found it to have a surprisingly long half-life, some 5,700 years. In 1947 the American chemist Willard Frank Libby (1908–1980) put the isotope to important use. It had turned out that cosmic ray bombardment converted some of the nitrogen-14 of the atmosphere into carbon-14. New carbon-14 was formed as old carbon-14 broke down radioactively, so that an equilibrium was achieved. A given very small quantity of it always remained in the Earth’s atmosphere. Libby reasoned that plants absorbed carbon dioxide in the course of photosynthesis, so that carbon atoms from the gas found their way into the molecules of plant tissues. This"
+},
+{
+"id": "crab-nebula-as-radio-source",
+"year": 1947,
+"title": "Crab nebula as radio source",
+"field": "Space",
+"desc": "The Crab Nebula was identified as a significant radio source in 1947 by using radio telescopes. This marked the first discovery of an optical object being a radio source, demonstrating the potential of radio astronomy for making new discoveries.",
+"long": "It had been sixteen years since Jansky first detected radio waves from outer space (see 1932), but only since World War II had techniques been developed that permitted handling of the microwave radiation used in radar. These techniques could now be applied to astronomy. In 1947 the Australian astronomer John C. Bolton had a radio telescope that was capable of locating a radio source with sufficient precision to associate it with an object that could be identified optically. Thus he found that the third strongest radio source in the sky was clearly the Crab Nebula, which was the remains of a great supernova explosion (see 1054). The Crab Nebula was the first optical object discovered to be a "
+},
+{
+"id": "martian-atmosphere",
+"year": 1947,
+"title": "Martian atmosphere",
+"field": "Space",
+"desc": "In 1947, infrared analysis revealed that Mars' atmosphere is primarily composed of carbon dioxide with no nitrogen, oxygen, or water vapor. This discovery diminished the hypothesis of advanced life forms on Mars.",
+"long": "Since Schiaparelli had first detected the “canals” of Mars (see 1877), a feeling had persisted among nonastronomers, and even among some astronomers, that there might be life on Mars. In 1947, however, the Dutch-born American astronomer Gerard Peter Kuiper (1905-1973) analyzed the reflected infrared light of Mars and reported that the Martian atmosphere seemed to be almost entirely carbon dioxide. There was no sign of nitrogen, oxygen, or water vapor. With that, the notion of an advanced civilization on Mars, or of any but possibly the simplest forms of life, went glimmering."
+},
+{
+"id": "coenzyme-a",
+"year": 1947,
+"title": "Coenzyme A",
+"field": "Science: Biology",
+"desc": "In 1947, coenzyme A was isolated as a crucial substance for transferring acetyl groups during metabolism. It includes pantothenic acid, a necessary B vitamin, playing an indispensable role in metabolic processes.",
+"long": "The carbohydrates, fats, and proteins of food, in the course of their metabolism, all break down to an acetyl group, also called a two-carbon fragment. This is then built up again to form the substances characteristic of an organism's own tissues. In 1947 Lippman (see 1941) was able to isolate a substance that was essential to the transfer of the acetyl group from one compound to another. He called it coenzyme A, where the A stood for acetyl group. The structure of coenzyme A was found to include that of pantothenic acid, one of the B vitamins. Pantothenic acid is essential to life and must be present in our food, because the human body cannot form it within its own tissues, cannot form coen"
+},
+{
+"id": "chloramphenicol",
+"year": 1947,
+"title": "Chloramphenicol",
+"field": "Science: Medicine",
+"desc": "Chloramphenicol was isolated from molds that also produced streptomycin, becoming the first broad-spectrum antibiotic. This added to the growing list of antibiotics available for medical ",
+"long": "During World War II, penicillin (see 1939) and streptomycin (see 1940) had been isolated and the age of antibiotics had begun. In 1947 chloramphenicol was isolated from the same group of molds that had yielded streptomycin."
+},
+{
+"id": "cybernetics",
+"year": 1948,
+"title": "Cybernetics",
+"field": "Science: Computer Science",
+"desc": "Cybernetics is a field developed to accurately analyze and predict movements and behaviors using advanced computers, initially driven by the need for precise antiaircraft defense. The field encompasses the study of mechanical and electronic systems for controlling and automating processes.",
+"long": "The American mathematician Norbert Wiener (1894–1964) spent World War II working on antiaircraft defense. To shoot down an attacking airplane, one must know the speed and direction of the plane’s movements, the speed and direction of the wind, the speed of the projectile aimed at the airplane, and other factors as well. To do all this accurately and well, computers were needed that were far better than those available at the time."
+},
+{
+"id": "nuclear-structure",
+"year": 1948,
+"title": "Nuclear structure",
+"field": "Science: Physics",
+"desc": "Nuclear structure explores the arrangement of protons and neutrons in atomic nuclei, proposing the concept of nuclear shells. Certain numbers of protons and neutrons, termed 'magic numbers,' confer extra stability to nuclei.",
+"long": "The chemical properties of atoms depend on the arrangement of their electrons into shells. This is what makes the periodic table of the elements work. The nuclear properties of atoms must depend on the arrangement of the protons and neutrons in the nuclei. They, too, might be arranged in shells, but if so, this would be more difficult to determine than in the case of the outer electrons. The German-born American physicist Maria Goeppert-Mayer (1906–1972) tried to work out the nature of the nuclear shells from the nuclear properties that had been observed for different atoms. She showed that nuclei that contained 2, 8, 20, 50, 82, or 126 protons or neutrons would be more stable than their nei"
+},
+{
+"id": "quantum-electrodynamics",
+"year": 1948,
+"title": "Quantum electrodynamics",
+"field": "Science: Physics",
+"desc": "Quantum electrodynamics is a theory explaining the behavior of electrons and electromagnetic interactions with high precision. It has been essential in forming accurate predictions of subatomic phenomena.",
+"long": "Making use of quantum theory, the American physicist Richard Phillips Feynman (1918–1988), in 1948, worked out equations governing the behavior of electrons and electromagnetic interactions generally; equations that allowed predictions of such phenomena to be made with far greater precision than had been possible until then. This theory was called quantum electrodynamics, and it proved so successful that it has been used as a model for the attempted working out of equations governing the behavior of particles subjected to the weak and strong interactions. For this work, Feynman received a share of the Nobel Prize for physics in 1965."
+},
+{
+"id": "the-big-bang",
+"year": 1948,
+"title": "The Big Bang",
+"field": "Science: Physics",
+"desc": "Gamow attempted to explain how the chemical elements were formed in the aftermath of the explosion of the Cosmic Egg. Predicted background radiation should exist and that the average temperature of the universe should be just a few degrees above absolute zero.",
+"long": ""
+},
+{
+"id": "miranda",
+"year": 1948,
+"title": "Miranda",
+"field": "Space",
+"desc": "A new fifth Uranian satellite, Miranda, was discovered, named after a character from Shakespeare's \\\"The Tempest.\\\" It was the first satellite named after a human being, albeit a fictional one.",
+"long": "For almost a century, Uranus had been known to have four satellites. In 1948, however, Kuiper, who had described the atmosphere of Mars (see 1947), located a fifth Uranian satellite. It was smaller than the other four and closer to Uranus. Since three of the satellites had been named for spirits from Shakespeare's plays—Oberon and Titania from A Midsummer Night's Dream and Ariel from The Tempest—Kuiper named the new satellite Miranda, after the heroine of The Tempest. Miranda was the first satellite to be named after a human being rather than a god, a goddess, or a spirit, although it was a fictional human being, to be sure."
+},
+{
+"id": "nucleic-acid-base-balance",
+"year": 1948,
+"title": "Nucleic acid-base balance",
+"field": "Science: Biology",
+"desc": "New discoveries in nucleic acid structures showed that guanine pairs with cytosine and adenine pairs with thymine, leading to a better understanding of DNA. These findings were crucial to understanding genetic information and its role in biological development.",
+"long": "It was now known that nucleic acids were large and very complex molecules, especially since Avery had shown that deoxyribonucleic acid (DNA) and not protein was the carrier of physical characteristics (see 1944). It was DNA, in short, that made up the genes of the chromosomes. The question was: Just what was it about the structure of nucleic acids that made it possible for them to carry the vast amount of information that genes must carry in order to make human eggs develop into human beings and grasshopper eggs into grasshoppers, without the reverse ever happening? Part of the structure of DNA was known to be four different bases. Two of them (adenine and guanine) were purines with a two-ri"
+},
+{
+"id": "cyanocobalamin",
+"year": 1948,
+"title": "Cyanocobalamin",
+"field": "Science: Biology",
+"desc": "The discovery of vitamin B-12 (cyanocobalamin) was found to be crucial for treating pernicious anemia and involved a complex molecule containing cyanide and cobalt. This discovery allowed for better vitamin B-12 detection and isolation, improving treatment methods.",
+"long": "Minot and Murphy had demonstrated that there was a dietary factor in liver that reversed the onslaught of pernicious anemia (see 1926). The nature of the factor was not easily determined, however, since its presence or absence could only be detected by following the slow changes in pernicious anemia patients. In 1948, the American chemist Karl August Folkers (b. 1906) discovered that this factor, usually called vitamin B-12, was necessary for the growth of certain bacteria. The presence or absence of the vitamin in various fractions of liver could now easily be determined from the reaction of bacteria, and very soon, red crystals of the pure vitamin were isolated. Eventually, analysis showed"
+},
+{
+"id": "cortisone-and-arthritis",
+"year": 1948,
+"title": "Cortisone and arthritis",
+"field": "Science: Medicine",
+"desc": "Turned out that cortisone could alleviate rheumatoid arthritis symptoms, viewing it as a metabolic disorder.",
+"long": "The American physician Philip Showalter Hench (1896-1965) was interested in rheumatoid arthritis, a painful and crippling disease. He conjectured it was not a germ disease but a disorder of metabolism. By 1948, Hench tried various hormones, finding cortisone, isolated in 1946, effective in relieving symptoms. This finding earned him a Nobel Prize in 1950."
+},
+{
+"id": "tetracyclines",
+"year": 1948,
+"title": "Tetracyclines",
+"field": "Science: Medicine",
+"desc": "Chlortetracycline was introduced as Aureomycin. This antibiotic is effective against many microorganisms and has low toxicity.",
+"long": "In 1948, the antibiotic chlortetracycline, discovered by American botanist Benjamin Minge Duggar (1872-1956), was released as Aureomycin. Its four-ringed structure marked it as the first of the tetracyclines family, effective against various microorganisms and low in toxicity, making it one of the safest antibiotics."
+},
+{
+"id": "icarus",
+"year": 1949,
+"title": "Icarus",
+"field": "Space",
+"desc": "Baade discovered the asteroid Icarus in 1949, which is an Earth-grazer and an Apollo-object. It closely approaches the Sun and Earth, named after the mythical Icarus.",
+"long": "In 1949 Baade, who had discovered the asteroid Hidalgo (see 1920), discovered an asteroid that was an Earth-grazer, since it could come as close as 4,000,000 miles from Earth, and an Apollo-object too. Indeed, it approached the Sun more closely than Mercury did, skimming by at a distance of only 17,700,000 miles every 1.12 years. Baade named it Icarus, after the character in Greek mythology who lost his life when he flew on wax wings too close to the Sun."
+},
+{
+"id": "nereid",
+"year": 1949,
+"title": "Nereid",
+"field": "Space",
+"desc": "Kuiper discovered the satellite Nereid orbiting Neptune in 1949. It is noted for having the most eccentric orbit of any known satellite.",
+"long": "Kuiper, who had discovered Miranda (see 1948), reported another far distant satellite in 1949. For a century only one satellite had been known for Neptune, a large one named Triton. Now Kuiper detected a much smaller one, which he called Nereid. It circled Neptune in the most eccentric orbit of any known satellite."
+},
+{
+"id": "berkelium-and-californium",
+"year": 1949,
+"title": "Berkelium and californium",
+"field": "Science: Chemistry",
+"desc": "Elements berkelium and californium were produced as the most complex atoms of the time. These discoveries contributed to nuclear chemistry and expanded the periodic table.",
+"long": "In 1949 the more complex elements 97 and 98 were produced. Since this was done at the University of California in Berkeley, California, element 97 was named berkelium and 98 was named californium."
+},
+{
+"id": "soviet-fission-bomb",
+"year": 1949,
+"title": "Soviet fission bomb",
+"field": "War",
+"desc": "The Soviet Union successfully detonated its first nuclear fission bomb, ending American monopoly on atomic weapons. This event marked the beginning of nuclear arms race with two superpowers.",
+"long": "The Soviets had been working on fission bombs for years, however, and were clever enough to gain knowledge of some of the American techniques. On September 22, 1949, the Soviets exploded their first fission bomb, and Americans were jarred out of their complacency."
+},
+{
+"id": "sickle-cell-anemia",
+"year": 1949,
+"title": "Sickle-cell anemia",
+"field": "Science: Biology",
+"desc": "The genetic cause of sickle-cell anemia was identified, showing its link to the defective gene on chromosomes. This discovery highlighted the disease's genetic resistance to malaria.",
+"long": "It seemed clearly to be a genetic disease, and in 1949 Linus Pauling was able to show that a defective gene produced the abnormal hemoglobin. With a defective gene on each of a chromosome pair, however, the carriers had sickle-cell anemia itself."
+},
+{
+"id": "embryonic-immunological-tolerance",
+"year": 1949,
+"title": "Embryonic immunological tolerance",
+"field": "Science: Biology",
+"desc": "It was discovered that embryos might not reject foreign proteins, making tissue transplantation easier. This finding led to advancements in reducing tissue transplantation difficulties.",
+"long": "Snell had shown the genetic basis of the intolerance for foreign proteins that made tissue transplantation difficult. It occurred to an English anatomist, Peter Brian Medawar, that embryos might not yet have developed an immunological system capable of rejecting foreign proteins. And in fact, when he inoculated mice embryos with tissue cells from another strain, he found that rejection did not take place. Furthermore, when such embryos entered independent life and could form antibodies, they no longer treated cells from the other strain as foreign proteins. By 1949 Medawar had shown how this technique might lead to reducing the difficulties of tissue transplantation. For this he received a s"
+},
+{
+"id": "essential-amino-acids",
+"year": 1949,
+"title": "Essential amino acids",
+"field": "Science: Biology",
+"desc": "Eight amino acids were found to be essential in human diets as they cannot be synthesized by the body. This discovery improved understanding of nutritional requirements.",
+"long": "Since the first amino acid had been discovered, some twenty amino acids that occur commonly in protein molecules had been identified. The last of these was threonine, isolated in 1935 by the American biochemist William Cumming Rose. Rose's dietary experiments showed that some amino acids could be manufactured in the human body from other amino acids, but some could not and had to be present as such in the diet. All the amino acids are essential to the body structure, but eight of them are essential in the diet, where human beings are concerned, and it is these eight that are considered the essential amino acids. This was definitely established by Rose in 1949."
+},
+{
+"id": "cometary-structure",
+"year": 1949,
+"title": "Cometary structure",
+"field": "Space",
+"desc": "Comets were proposed to be 'dirty snowballs,' primarily composed of ice and dust that vaporizes near the Sun, forming a coma and tail. This model became widely accepted in understanding cometary composition.",
+"long": "The approach of a comet to the Sun results in the development of a hazy coma and a tail. The American astronomer Fred Lawrence Whipple suggested in 1949 that this could be explained by supposing that comets were essentially icy in nature, made up of an admixture of silicate dust and gravel (and in some cases perhaps, a small rocky core). When heated by the Sun’s closeness, cometary ice vaporized explosively, and the dust it contained formed the haze and the tail. In short, a comet is a 'dirty snowball.' This suggestion was readily adopted by most astronomers, and few, if any, doubt it now."
+},
+{
+"id": "cometary-cloud",
+"year": 1950,
+"title": "Cometary cloud",
+"field": "Space",
+"desc": "The theory posits a vast spherical cloud of icy comets surrounding the solar system up to 2 light-years away. This would explain the continued presence of comets despite their short-lived appearances near the sun.",
+"long": "It had been clear for at least a century that comets were comparatively short-lived phenomena. At every approach to the Sun, a substantial quantity of a comet's mass must evaporate, never to return (assuming it to be a \\\"dirty snowball\\\"—see 1949). Even a large comet could only endure a few thousand returns to the neighborhood of the Sun, and some comets had actually been seen to fragment on their passage past the Sun. Why then were not all comets long since gone? It seemed to the Dutch astronomer Jan Hendrik Oort (b. 1900) that a vast reservoir of them must exist. In 1950 he suggested that a huge spherical cloud of icy comets, perhaps a hundred billion of them altogether, must exist within "
+},
+{
+"id": "plutos-diameter",
+"year": 1950,
+"title": "Pluto's diameter",
+"field": "Space",
+"desc": "Kuiper determined that Pluto's diameter is less than 3,600 miles, revealing it to be smaller than Mars. This discovery indicated Pluto could not cause the perturbation of Uranus, suggesting sheer coincidence in its location.",
+"long": "In 1950, Kuiper, the discoverer of Miranda, managed to see Pluto as a disk and to measure its apparent width. He showed that its diameter could not be more than 3,600 miles, which made it smaller than Mars and explained its dimness. If Pluto was as small as this, it could not be the source of the perturbation of Uranus, and it must have been located in the right spot by sheer coincidence."
+},
+{
+"id": "turing-machine",
+"year": 1950,
+"title": "Turing machine",
+"field": "Science: Mathematics",
+"desc": "Turing demonstrated a simple machine that could theoretically solve any mathematically formulated problem, suggesting the existence of artificial intelligence. He proposed a test for AI, where a machine's indistinguishable conversation from a human's would demonstrate intelligence.",
+"long": "In 1950, Turing showed that, in principle, a very simple machine capable of an astonishingly few moves could solve any problem capable of being formulated in mathematical terms. This Turing machine went a long way toward convincing workers in the field that something one might call artificial intelligence could exist. Turing also pointed out how one could decide whether artificial intelligence had been achieved: if one could carry on a conversation with some hidden entity without being able to demonstrate from the conversation alone whether that entity was a human being or not, and if that entity was a machine, it displayed artificial intelligence."
+},
+{
+"id": "game-playing-computers",
+"year": 1950,
+"title": "Game-playing computers",
+"field": "Science: Computing",
+"desc": "Shannon proposed a method for creating chess-playing computers (after Arthur L. Samuel's checkers in 1947), leading to machines capable of playing high-level chess games. This innovation expanded computers' abilities beyond simple calculations into strategic gameplay.",
+"long": "In 1950, the American mathematician Claude Elwood Shannon suggested ways to design a chess-playing computer, and such machines have since been built and play excellent games of chess. Indeed, it is not beyond the limits of probability that such a machine might become the world’s chess champion. Such devices further explored the capability of computers beyond basic calculation."
+},
+{
+"id": "endoplasmic-reticulum",
+"year": 1950,
+"title": "Endoplasmic reticulum",
+"field": "Science: Biology",
+"desc": "The electron microscope allowed detailed study of cells, leading to the discovery of the endoplasmic reticulum. This structure provides support within the cell, holding organelles in place.",
+"long": "The invention of the electron microscope made it possible to study the cell in far greater detail than ever before. An early expert in cellular electron microscopy was the Belgian cytologist Albert Claude who discovered the endoplasmic reticulum, which serves as the structural background of the cell holding organelles in place."
+},
+{
+"id": "carbon-14-tracer",
+"year": 1950,
+"title": "Carbon-14 tracer",
+"field": "Science: Chemistry",
+"desc": "Carbon-14 was used successfully as a radioactive tracer to study molecular changes in the body. Its application helped explain cholesterol formation.",
+"long": "Carbon-14 had first found a useful scientific purpose when applied as a dating technique. By 1950, it had been obtained in sufficient quantity to be useful as a radioactive tracer. Biochemist Konrad Emil Bloch used it to show how the cholesterol molecule builds up in the body from the acetyl group."
+},
+{
+"id": "hydrogen-radiation",
+"year": 1951,
+"title": "Hydrogen radiation",
+"field": "Space",
+"desc": "Radio emissions from hydrogen atoms in space were detected, allowing for the identification of atoms and molecules across interstellar space. This discovery provided a method to study the universe using radio waves and their specific emissions.",
+"long": "In 1951 Purcell, who had earlier helped work out the theory of nuclear magnetic resonance, actually detected this radiation coming from outer space. This demonstrated the value of radio waves in detecting the presence of given atoms and molecules in interstellar space. The wavelengths of the radiation emitted were characteristic of different substances and acted as 'fingerprints.'"
+},
+{
+"id": "milky-way-structure",
+"year": 1951,
+"title": "Milky way structure",
+"field": "Space",
+"desc": "The spiral structure of the Milky Way was deduced using radio wave emissions of ionized hydrogen. This discovery identified our galaxy as having a spiral structure, similar to the Andromeda Galaxy.",
+"long": "By 1951, astronomers could detect radio wave emissions and the American astronomer William Wilson Morgan could make out the characteristic radio waves of ionized hydrogen coming from particularly hot, bright stars that were themselves characteristic of the spiral arms of galaxies. When several such lines of ionized hydrogen were found coming from our galaxy, it seemed convincing evidence that the Milky Way Galaxy had spiral arms."
+},
+{
+"id": "jupiter-xii",
+"year": 1951,
+"title": "Jupiter XII",
+"field": "Space",
+"desc": "A new satellite of Jupiter, Jupiter XII, was discovered, adding to the known count of the planet's moons. It was only 20 miles in diameter.",
+"long": "Seth Nicholson, who over a period of nearly four decades had discovered three of the small outer satellites of Jupiter, in 1951 discovered a fourth. This was the twelfth satellite of Jupiter to be detected and was therefore referred to as Jupiter XII."
+},
+{
+"id": "superconductivity-theory",
+"year": 1951,
+"title": "Superconductivity theory",
+"field": "Science: Physics",
+"desc": "A theoretical explanation for superconductivity using quantum mechanics was developed. This theory advanced understanding of how certain materials can conduct electricity with no resistance at very low temperatures.",
+"long": "In 1951 John Bardeen worked out a theoretical consideration of the phenomenon, making use of quantum effects, that seemed to explain a good deal. It was good enough, in fact, for Bardeen to be awarded the Nobel Prize for physics in 1972."
+},
+{
+"id": "acetylcoenzyme-a",
+"year": 1951,
+"title": "Acetylcoenzyme A",
+"field": "Science: Biology",
+"desc": "Acetylcoenzyme A was isolated for the first time in 1951, highlighting its role in metabolism of fats. This discovery significantly advanced understanding of biochemical processes.",
+"long": "Lipmann had demonstrated the existence of coenzyme A as the carrier of the acetyl group. In 1951 the German biochemist Feodor Felix Konrad Lynen studied the function of coenzyme A in the metabolism of fat molecules particularly. He was the first to isolate acetylcoenzyme A, the compound that acts as intermediary in the transference of the acetyl group from one compound to another."
+},
+{
+"id": "einsteinium-and-fermium",
+"year": 1952,
+"title": "Einsteinium and Fermium",
+"field": "Science: Chemistry",
+"desc": "New elements einsteinium and fermium were discovered during the study of the aftermath of a hydrogen bomb test. This highlighted advancements in chemistry, providing insight into the creation of complex atoms.",
+"long": "Seaborg (see 1940 and 1944) and his team continued to make ever more complex atoms, and as the atoms were made, they were bombarded with small atomic nuclei. Some of these stuck to the complex nucleus of the atoms being bombarded so that still newer and more complex atoms were formed. In 1952, however, complex atoms were formed in a different way. The ravening energies of the fusion bomb explosion in the Pacific (see above) had driven nuclei together and formed atoms even more complex than californium (element number 98), which was at the time the most complex known (see 1949). As a result, elements 99 and 100 were formed and detected. They were eventually named, respectively, einsteinium an"
+},
+{
+"id": "kaons-and-hyperons",
+"year": 1952,
+"title": "Kaons and Hyperons",
+"field": "Science: Physics",
+"desc": "New particles called kaons were discovered, about 3.5 times as massive as a pion but still only half as massive as a proton or neutron and was called a K-meson, which was sometimes abbreviated to kaon. Additional newly discovered particles heavier than kaons were termed hyperons.",
+"long": "Pions had been discovered by Powell (see 1947), and since that was the intermediate-sized particle that Yukawa had predicted (see 1935, Strong Interaction), there seemed no reason to expect anything more. In 1952, however, two Polish physicists, Marian Danysz and Jerzy Pniewski, discovered another intermediate-sized particle. It was about 3.5 times as massive as a pion but still only half as massive as a proton or neutron and was called a K-meson, which was sometimes abbreviated to kaon. These same physicists went on that year to discover, among the products of cosmic rays, a series of particles even heavier than kaons and these were termed hyperons."
+},
+{
+"id": "origin-of-life-experiment",
+"year": 1952,
+"title": "Origin of life experiment",
+"field": "Science: Biology",
+"desc": "An experiment recreated early Earth conditions: a core of nickel-iron, surrounded by a rocky mantle and crust, topped by an ocean of water and an atmosphere of ammonia, methane, and hydrogen sulfide. This led to the formation of organic compounds spontaneously and provided insight into possible origins of life on Earth.",
+"long": "In 1952, Stanley Lloyd Miller conducted an experiment with Harold Urey to simulate early Earth conditions. They used a mix of gases like hydrogen, ammonia, and methane, with electric discharge to create organic compounds, simulating a possible way life on Earth began."
+},
+{
+"id": "x-ray-diffraction-of-dna",
+"year": 1952,
+"title": "X-ray diffraction of DNA",
+"field": "Science: Biology",
+"desc": "X-ray diffraction studies revealed DNA's helical structure, with the phosphate groups that bound the units together located on the outside of the helix.",
+"long": "In 1952 the English biophysicist Rosalind Elsie Franklin made careful X-ray diffraction studies of DNA, from which she deduced that the molecule ought to be helical (like a spiral staircase)."
+},
+{
+"id": "insulin-structure",
+"year": 1952,
+"title": "Insulin structure",
+"field": "Science: Biology",
+"desc": "Painstaking research using paper chromatography determined the amino acid order in insulin. This breakthrough enhanced understanding of protein structures.",
+"long": "A British biochemist, Frederick Sanger, used a painstaking method and, by 1952, could show that the molecule of the protein hormone insulin consisted of some fifty amino acids distributed among two interconnected chains."
+},
+{
+"id": "rem-sleep",
+"year": 1952,
+"title": "REM sleep",
+"field": "Science: Psychology",
+"desc": "REM sleep involves periods of heightened physiological activity (eye movement, breathing, heart rate, blood pressure), often linked to dreaming. This discovery revealed critical aspects of sleep cycles and their impact on mental health. The function of REM sleep and dreaming remains a matter of dispute.",
+"long": "In 1952, William Charles Dement discovered that during REM sleep, conditions such as eye movement, breathing, heartbeat, and blood pressure reach waking levels, often coinciding with dreams. REM sleep was found to constitute about a quarter of total sleep time."
+},
+{
+"id": "tranquilizers",
+"year": 1952,
+"title": "Tranquilizers",
+"field": "Science: Medicine",
+"desc": "Tranquilizers, such as reserpine, were developed to calm patients without diminishing alertness which was a side effect of barbituates. They gained popularity for psychiatric treatment, reducing the need for harsh restraints.",
+"long": "Sedatives are obviously useful for quieting overexcited states and for inducing calm. The best-known sedatives prior to the 1950s were the barbiturates, but they diminished alertness and produced sleep. In 1952 the American physician Robert Wallace Wilkins (b. 1906) studied a drug, reserpine, obtained from the root of an Indian shrub. He reported that it had a sedative effect without diminishing alertness or inducing sleep. Reserpine and other drugs of its nature came to be called tranquilizers. They grew instantly popular with many people for use in the reduction (real or fancied) of tensions (real or fancied). They served, more seriously, as adjuncts to psychiatric treatment, for although "
+},
+{
+"id": "the-double-helix",
+"year": 1953,
+"title": "The double helix",
+"field": "Science: Biology",
+"desc": "DNA was imagined as two chains of nucleotides forming a double helix. Each adenine bound to a thymine, a guanine bound to a cytosine. The double helix structure allowed replication without structural changes.",
+"long": "The work of Chargaff and Franklin supplied the information necessary to work out the structure of DNA. The key conceptual step was taken by Francis Harry Compton Crick and James Dewey Watson. They used an X-ray diffraction photograph taken by Franklin, made available by Maurice Hugh Frederick Wilkins. Watson and Crick suggested that DNA consisted of two chains of nucleotides arranged as a double helix, with the purine and pyrimidine bases facing each other and the phosphate links on the outside. Each two-ringed purine faced a one-ringed pyrimidine, so that the space between the two strands was constant. Adenines and thymines were paired, as were guanines and cytosines. DNA is the principal c"
+},
+{
+"id": "plate-tectonics",
+"year": 1953,
+"title": "Plate tectonics",
+"field": "Science: Geography",
+"desc": "The discovery of the Great Global Rift in the mid-Atlantic ocean highlighted the existence of tectonic plates. Plate tectonics explains the structure of Earth's outer shell and the movement of large plates that cause earthquakes and volcanoes.",
+"long": "In 1953, American physicists Maurice Ewing (1906–1974) and Bruce Charles Heezen (1924–1977) discovered a deep canyon running the length of the Mid-Oceanic Ridge, known as the Great Global Rift. The study revealed that the Earth's crust is divided into large plates called tectonic plates."
+},
+{
+"id": "strange-particles",
+"year": 1953,
+"title": "Strange particles",
+"field": "Science: Physics",
+"desc": "Strange particles, like kaons and hyperons, exhibit unique decay behavior and are governed by a property called strangeness. This discovery helped refine the understanding of subatomic particle interactions.",
+"long": "Kaons and hyperons are subject to the strong interaction and are formed in ways that involve the strong interaction. It would seem that they ought to break down by the strong interaction too, but they don’t; they break down far more slowly by way of the weak interaction. This is not to say that they break down slowly in any absolute sense—it takes just under a billionth of a second—but if they broke down by way of the strong reaction, it would only take a billionth of a billionth of a second. That they break down so slowly seemed strange, and they came to be called strange particles. In 1953 the American physicist Murray Gell-Mann (b. 1929) tried to make sense out of this strangeness. He stu"
+},
+{
+"id": "transistorization",
+"year": 1953,
+"title": "Transistorization",
+"field": "Science: Technology",
+"desc": "Early transistors were not reliable, but this quickly changed, and by 1953 the first significant transistorized instruments for use by the general public were introduced. The world was about to enter an age of miniaturization.",
+"long": "The transistor had been invented by Shockley and his group (see 1948), but its performance was at first unreli..."
+},
+{
+"id": "chloroplast-isolation",
+"year": 1954,
+"title": "Chloroplast isolation",
+"field": "Science: Biology",
+"desc": "Intact chloroplasts were isolated from spinach leaves, enabling photosynthesis outside the cell environment. This discovery furthered understanding of photosynthesis and cellular processes in plants.",
+"long": "Since Pelletier and Caventou had isolated chlorophyll (see 1817), it had been well known that chlorophyll was essential to photosynthesis. However, no one had been able to make chlorophyll perform the task in the test-tube. It had been nearly a century since von Sachs had discovered that chlorophyll was present in discrete organelles, called chloroplasts, within the plant cell (see 1862). It was natural to assume that in the cell, chlorophyll worked as a catalyst, not by itself but as part of an intricate system that was present intact in the chloroplast. This could be shown if chloroplasts could be isolated intact from the cells, and made to show that they could then carry out photosynthesi"
+},
+{
+"id": "genetic-code-theory",
+"year": 1954,
+"title": "Genetic code theory",
+"field": "Science: Biology",
+"desc": "By now it was known that there were at least twenty amino acids, and if the DNA mapped to them in some way using just the four nucleotides, there must be some encoding scheme. Gamow proposed a scheme triplets allow to encode 4^3 = 64 amino acids.",
+"long": "Granted that DNA contained the information that governed the inheritance of characteristics, it must do this by overseeing the manufacture of enzymes, which in turn controlled the chemical reactions that went on inside cells. But how could DNA turn the trick? It was composed of chains of four different nucleotides, while enzymes, which were proteins, were composed of chains of twenty different amino acids. In 1954 George Gamow (see 1929) suggested that it made no sense to try to line up an individual nucleotide with an individual amino acid."
+},
+{
+"id": "exploding-galaxies",
+"year": 1955,
+"title": "Exploding galaxies",
+"field": "Space",
+"desc": "An unusually strong radio source in Cygnus led to the discovery of galaxies in a state of explosion. This discovery highlighted the dynamic processes in active galaxies releasing enormous energies.",
+"long": "A radio source in Cygnus was unusually strong, and optical investigation of the region revealed a peculiarly shaped galaxy that looked rather like two galaxies undergoing a collision. The Soviet astronomer Viktor Amazaspovich Ambartsumian (b. 1908) examined the nature of the radio source closely and suggested that it was really a galaxy in a state of vast explosion. That idea was borne out by later work."
+},
+{
+"id": "birth-of-stars",
+"year": 1955,
+"title": "Birth of stars",
+"field": "Space",
+"desc": "The discovery of two new stars in the Orion nebula indicates that star formation is an ongoing process. This provides insight into the lifecycle and birth of stars in the universe.",
+"long": "In 1955 the American astronomer George Howard Herbig (b. 1920) detected two stars in the Orion nebula that had not been seen a few years earlier. This means we may have witnessed the actual birth of these stars."
+},
+{
+"id": "jupiters-radio-waves",
+"year": 1955,
+"title": "Jupiter's radio waves",
+"field": "Space",
+"desc": "The detection of nonthermal radio waves from Jupiter suggested the presence of charged particles around the planet. This advanced the understanding of planetary magnetic fields and particle dynamics.",
+"long": "In 1955 the American astronomer Kenneth Linn Franklin (b. 1923) detected radio waves emanating from the planet Jupiter; they were nonthermal, that is, they were not of the pattern that would be emitted simply because of the temperature of Jupiter's cloud layer. Speculation arose that they were the result of charged particles in motion in the neighborhood of Jupiter, and eventually this was found to be true."
+},
+{
+"id": "plutos-rotation",
+"year": 1955,
+"title": "Pluto's rotation",
+"field": "Space",
+"desc": "Fluctuations in Pluto's light led to the conclusion that it rotates on its axis once every 6.4 days. This provided new insights into Pluto's rotational behavior and surface characteristics.",
+"long": "In 1955 its light was seen to fluctuate slightly, with a period of 6.4 days. The obvious conclusion was that Pluto rotated on its axis once every 6.4 days and that one hemisphere reflected somewhat less light than the other."
+},
+{
+"id": "antiproton",
+"year": 1955,
+"title": "Antiproton",
+"field": "Science: Physics",
+"desc": "The antiproton was discovered using the Bevatron, by bombarding copper with high-energy protons, contributing to the understanding of antimatter. This discovery supported the theory of antiparticles and advanced particle physics.",
+"long": "In 1955 Segrè, who had first detected technetium (see 1937), and the American physicist Owen Chamberlain (b. 1920) bombarded copper for hours with protons possessing energies of 6.2 BeV. They worked out an elaborate system for detecting any antiprotons that might be formed, even amid large numbers of other particles of different charge and."
+},
+{
+"id": "mendelevium",
+"year": 1955,
+"title": "Mendelevium",
+"field": "Science: Chemistry",
+"desc": "Mendelevium was synthesized by bombarding einsteinium with protons. This discovery added a new element to the periodic table.",
+"long": "In 1955 Seaborg and his group bombarded einsteinium, element number 99, with protons and formed a few atoms of element 101. They named this new element mendelevium, after Mendeleev, who had first worked out the periodic table."
+},
+{
+"id": "nucleic-acid-formation",
+"year": 1955,
+"title": "Nucleic acid formation",
+"field": "Science: Biology",
+"desc": "Aztobacter vinelandii, an enzyme capable of forming RNA-like substances was isolated from a bacterium. Soon after, Escherichia coli was discovered which could catalize DNA-like substance from individual nucleotides.",
+"long": "In 1955, Severo Ochoa isolated an enzyme from the bacterium Azotobacter vinelandii capable of catalyzing the formation of RNA-like substances from individual nucleotides."
+},
+{
+"id": "cyanocobalamin-structure",
+"year": 1955,
+"title": "Cyanocobalamin structure",
+"field": "Science: Chemistry",
+"desc": "The detailed structure of cyanocobalamin was determined using X-ray diffraction and computational methods. This was the first direct use of a computer to solve a biochemical problem.",
+"long": "British physicist Dorothy Mary Crowfoot Hodgkin used X-ray diffraction and a computer to determine the complex structure of cyanocobalamin (vitamin B-12), which was four times as massive as penicillin. The structure took years to solve and was completed by 1955, earning her a Nobel Prize in Chemistry in 1964."
+},
+{
+"id": "detection-of-the-neutrino",
+"year": 1956,
+"title": "Detection of the neutrino",
+"field": "Science: Physics",
+"desc": "The neutrino, a nearly undetectable particle proposed to exist two decades earlier, was observed using nuclear fission reactors. More specifically, it's antiparticle the antineutrino was observed, and neutrinos themselves were later detected in solar radiation.",
+"long": "This discovery confirmed the existence of neutrinos, which had no charge, possibly no mass, and little interaction with other particles. Previously thought undetectable, neutrinos were observed thanks to nuclear fission reactions releasing them in large quantities."
+},
+{
+"id": "conservation-of-parity",
+"year": 1956,
+"title": "Conservation of parity",
+"field": "Science: Physics",
+"desc": "The concept of parity conservation was scrutinized, revealing that although parity is conserved in electromagnetism and gravity, it is violated in weak interactions. This realization impacted the understanding of particle physics.",
+"long": "In 1956 two Chinese physicists, Yang Chen Ning and Lee Tsung-dao, suggested that there was only one kind of kaon, but that since kaons broke down through the weak interaction, and since in the weak interaction parity was not necessarily conserved, then a kaon could break down into either two or three pions indiscriminately. The experiment was performed, and the electrons came out predominantly in one direction."
+},
+{
+"id": "antineutron",
+"year": 1956,
+"title": "Antineutron",
+"field": "Science: Physics",
+"desc": "Antiparticles so far had all different in their charge. Since the proton was positively charged, antiproton would need to be negatively charged. But what could distinguish an uncharged particle? Perhaps it had to do with spin.",
+"long": "Once the antiproton was discovered (see 1955), its properties could be studied. If it encountered a proton, the two oppositely propertied particles annihilated each other and their masses were converted into energy in accordance with Einstein's equation (see 1905). If, however, a proton and an antiproton did not actually collide but passed each other closely, they might not undergo annihilation, but the positive charge of the proton and the negative charge of the antiproton might neutralize each other across the small gap, leaving two uncharged particles. One would be the neutron, of course, but the other, as was shown in 1956, would have to be an antineutron."
+},
+{
+"id": "temperature-of-venus",
+"year": 1956,
+"title": "Temperature of venus",
+"field": "Space",
+"desc": "Previously thought to be a comfortable environment for humans, it turned out Venus's temperature was higher than expected, far above the boiling point of water. Discovered by studying the dark side of Venus with a radio telescope.",
+"long": "It had long been assumed that Venus, being closer to the Sun than Earth was, would be warmer than Earth."
+},
+{
+"id": "ribosomes",
+"year": 1956,
+"title": "Ribosomes",
+"field": "Science: Biology",
+"desc": "Ribosomes were discovered by studying small bodies in the cell called microsomes. These were found to be rich in RNA and were identified as the site of protein synthesis.",
+"long": "Once the microsocopes were turned upon the cell, far greater detail could be made out than had ever been seen before (see 1932). For instance, there were numerous small bodies, which were called microsomes (small bodies), distributed through the cytoplasm of the cell. The Romanian-born American physiologist George Emil Palade (b. 1912) studied them carefully by electron microscope and found they were not merely mitochondrial fragments, as some had thought, but independent bodies with a chemical composition quite different from that of mitochondria. By 1956 Palade had shown that microsomes were rich in RNA (ribonucleic acid), and they were therefore renamed ribosomes. It was quickly realized "
+},
+{
+"id": "transfer-rna",
+"year": 1956,
+"title": "Transfer RNA",
+"field": "Science: Biology",
+"desc": "Transfer RNA molecules were discovered floating in the cytoplasm. They facilitate protein synthesis by aligning amino acids on ribosomes, playing a crucial role in transferring genetic information for protein production.",
+"long": "In 1956 the American biochemist Mahlon Bush Hoagland (b. 1921) discovered relatively small molecules of RNA in the cytoplasm. These came in different varieties, and Hoagland showed that each variety had the capacity to combine with a particular amino acid. At the other end, the RNA molecule could combine with a particular spot on a ribosome. Once the RNA molecules were lined up properly, the amino acids at the other end of each would be lined up properly too and could easily combine to form particular proteins. Since these RNA molecules transferred the information from the ribosomes to the proteins, they were called transfer RNA."
+},
+{
+"id": "pituitary-hormones",
+"year": 1956,
+"title": "Pituitary hormones",
+"field": "Science: Biology",
+"desc": "The structure of pituitary hormones was determined. ACTH, which emits the stress hormone cortisol is made up of a 39 amino acid chain and human growth hormone is made of a 256 amino acid chain.",
+"long": "The structure of oxytocin had been worked out by du Vigneaud and that of insulin by Sanger. Choh Hao Li used these methods to tackle the protein hormones from the pituitary gland. In 1956, he showed the structure of ACTH and isolated human growth hormone."
+},
+{
+"id": "photosynthesis-details",
+"year": 1957,
+"title": "Photosynthesis details",
+"field": "Science: Biology",
+"desc": "A detailed scheme of photosynthesis was developed by isolating intermediate products and using techniques like carbon-14 labeling and paper chromatography.",
+"long": "Progress was slow, but little by little, Calvin and his group discovered and isolated the intermediate products, deduced how they must fit together, and built up a scheme of photosynthesis that made sense. By 1957 the main strokes were filled out with detail, and Calvin was awarded the Nobel Prize for chemistry in 1961 as a result."
+},
+{
+"id": "interferon",
+"year": 1957,
+"title": "Interferon",
+"field": "Science: Biology",
+"desc": "Interferon is a protein produced by cells in response to viral infections, possessing antiviral properties. It acts faster than antibodies and plays a vital role in immune response.",
+"long": "In 1957 a group headed by the British bacteriologist Alick Isaacs showed that, under the stimulus of a virus invasion, cells would liberate a protein with antiviral properties. It would counter not only the virus that stimulated the production but other viruses as well. The protein, produced more quickly than antibodies, was named interferon."
+},
+{
+"id": "mössbauer-effect",
+"year": 1958,
+"title": "Mössbauer effect",
+"field": "Science: Physics",
+"desc": "The Mössbauer effect involves the emission of gamma rays by atoms in a crystal without recoil, allowing precise measurements. It has significant applications in physics, particularly in the study of nuclear interactions and precise gamma-ray spectroscopy.",
+"long": "Ordinarily, when an atom emits a gamma ray, it recoils. The wavelength of the gamma ray depends in part on the extent of this recoil. Since this varies somewhat from atom to atom, the gamma rays emitted show a spread of wavelength. The German physicist Rudolf Ludwig Mössbauer (b. 1929) studied conditions under which atoms that were part of a crystal would emit a gamma ray in such a way that the recoil would be spread over all the atoms making up the crystal. The recoil is then vanishingly slight, and the gamma ray wavelength shows no spread due to that recoil. As a result, the crystal emits a sharply monochromatic beam of gamma rays, and this, discovered in 1958, is called the Mössbauer effe"
+},
+{
+"id": "solar-x-rays",
+"year": 1958,
+"title": "Solar X rays",
+"field": "Space",
+"desc": "Solar X Rays are emissions from solar flares detected using rocket-borne instruments beyond Earth’s atmosphere. This discovery enhanced understanding of solar energy and confirmed that the Sun’s corona is extremely hot due to individual atomic energies.",
+"long": "The firing of rockets beyond the atmosphere made it possible to detect X rays coming from astronomical objects. Such X rays could not be detected from Earth's surface, because the Earth's atmosphere absorbed them. In 1958 the American astronomer Herbert Friedman (b. 1916) observed the Sun during a total eclipse, by means of rocket-borne instruments, and detected X rays coming from the Sun's corona. Two years before, he had shown that solar flares emitted X rays, but that was not surprising in view of the fact that flares were clearly very energetic solar explosions. X rays from the apparently quiet corona were more surprising, but this supported the claim of the Swedish physicist Bengt Edlen"
+},
+{
+"id": "magnetosphere",
+"year": 1958,
+"title": "Magnetosphere",
+"field": "Science: Space",
+"desc": "The United States launched Explorer I, II, III, and IV, making a significant discovery about Earth's magnetic field around the atmosphere. This led to the identification of the magnetosphere, which has implications for navigation and electronic equipment.",
+"long": "In 1958 the United States entered the Space Age. The Soviet Union had placed two satellites in orbit in 1957, Sputnik I on October 4 and Sputnik II on November 3. The latter carried a dog, the first living animal to be placed into orbit. The first successful American satellite was Explorer I, which was launched on January 31, 1958. It carried counters designed to estimate the number of charged particles in the upper atmosphere, and detected about the expected concentrations of particles at heights of up to several hundred miles, but at higher altitudes the number fell to zero. Two other satellites launched soon afterward, one by the United States and one by the Soviet Union, recorded the sam"
+},
+{
+"id": "nobelium",
+"year": 1958,
+"title": "Nobelium",
+"field": "Science: Chemistry",
+"desc": "A few atoms with atomic number 102 were formed after bombarding Curium. This discovery was confirmed by Seaborg and the element was called Nobelium.",
+"long": "The effort to form elements with higher and higher atomic numbers set a new record in 1958 with the formation of a few atoms with the atomic number of 102. There was some delay while the identity of the new atoms was confirmed, and when they were, the element was given the name of nobelium after Nobel (see 1866)."
+},
+{
+"id": "moon-probes",
+"year": 1959,
+"title": "Moon probes",
+"field": "Space",
+"desc": "In 1959, the Soviet Union launched several successful Moon probes, including Lunik I, II, and III. Lunik I was the first object to orbit the Sun as an artificial planet, Lunik II impacted the Moon, and Lunik III photographed the Moon's far side.",
+"long": "On January 2, 1959, the Soviet Union launched Lunik I. This was the first rocket to surpass escape velocity (7 miles per second), so that it should recede from Earth indefinitely. It was aimed in the direction of the Moon, so that it was the first Moon probe. It missed the Moon by a considerable margin and took up an independent orbit about the Sun, so that it became the first artificial planet. On September 12, 1959, the Soviet Union launched Lunik II, which was better aimed. It struck the Moon, and for the first time in history, an object made by human beings rested on the surface of another world. Then, on October 4, 1959, two years to the day after the first satellite launch, the Soviet "
+},
+{
+"id": "shape-of-the-earth-satellite",
+"year": 1959,
+"title": "Shape of the earth from space",
+"field": "Space",
+"desc": "Vanguard I was a U.S. satellite launched to study Earth's orbit and revealed effects of the planet's equatorial bulge. After thousands of revolutions, the Earth was found to be a bit bulkier (by 25 feet) on its southern hemisphere.",
+"long": "The previous year, the United States had launched a small satellite, Vanguard I. It revolved about the Earth in 2½ hours and its orbit could be studied in great detail. Its perigee (the point of its closest approach to the Earth) moved somewhat with each revolution, in part because of the gravitational pull of the Earth’s equatorial bulge upon it."
+},
+{
+"id": "solar-wind",
+"year": 1959,
+"title": "Solar wind",
+"field": "Space",
+"desc": "Several days after a solar flare, a magnetic storm could be felt on earth. This solar wind, consisting of an unusually large \\\"gust\\\" of charged particles emitted by the Sun, was theorized by Parker and later verified by Lunik probes.",
+"long": "It had been recognized for some time that solar flares were highly energetic phenomena on the surface of the Sun. Eugene Newman Parker had argued the year before that the Sun constantly emitted charged particles in every direction and that these drifted outward through the Solar System, passing Earth. He called them the solar wind. A solar flare might therefore be the source of an unusually large gust of such particles, which on arriving at Earth would intensify the usual effects of the solar wind. The existence of the solar wind was verified by Lunik II and Lunik III on their way toward the Moon in 1959, and later probes did the same."
+},
+{
+"id": "hemoglobin-structure",
+"year": 1959,
+"title": "Hemoglobin structure",
+"field": "Science: Biology",
+"desc": "The structure of the hemoglobin molecule was deciphered using advanced techniques involving X-ray diffraction and heavy metal atoms. This advance allowed for a detailed understanding of protein structures essential to biology.",
+"long": "Six years earlier, Sanger had determined the exact order of the amino acids in a long protein chain, but even that was not sufficient to describe the structure of a protein totally. The amino acid chain bent and curved and was hooked together by a variety of chemical bonds. The three-dimensional structure of hemoglobin was worked out by the study of X-ray diffraction patterns. Perutz found that by adding a heavy metal to each molecule, the atoms would diffract X-rays more effectively, providing better structural insights. By 1959, the three-dimensional position of every atom in the hemoglobin molecule was understood."
+},
+{
+"id": "homo-habilis",
+"year": 1959,
+"title": "Homo habilis",
+"field": "Science: Anthropology",
+"desc": "By now it was known that Homo Sapiens and Neanderthals overlapped. Homo habilis came into being 2 million years ago and  was capable of shaping stone tools.",
+"long": "By now it was known that the two varieties of Homo sapiens, modern human beings and Neanderthal man (see 200,000 B.C.), had been preceded by the smaller-brained Homo erectus (see 500,000 B.C.), who may first have appeared on Earth as much as 1.5 million years ago. Before that there were various species of the genus Australopithecus (see 4,000,000 B.C.). The australopithecines, whose existence seems to have overlapped that of Homo erectus, were hominids in that they more closely resembled human beings than they resembled any ape, living or extinct. Nevertheless, they were sufficiently primitive to be kept out of genus Homo. Did they develop directly into Homo erectus, or was there an intermed"
+},
+{
+"id": "general-relativity-proof",
+"year": 1960,
+"title": "General relativity proof",
+"field": "Science: Physics",
+"desc": "The experiment further confirmed general relativity by demonstrating changes in gamma ray absorption. It validated Einstein's theory under laboratory conditions.",
+"long": "The experiment proved general relativity by testing gamma rays' absorption in a gravitational field, confirming Einstein's theory in a laboratory setting."
+},
+{
+"id": "standard-meter",
+"year": 1960,
+"title": "Standard meter",
+"field": "Science: Measurement",
+"desc": "The meter was initially set as 1/10,000,000 the distance from the equator to the North Pole, but could not be established with high accuracy so was set to the distance between scratches on a rust-resistant metal bar. Now it was set to 1,650,763.73 wavelengths of one of the spectral lines of an isotope of the rare gas krypton.",
+"long": "A standard meter was defined as 1,650,763.73 wavelengths of an isotope of the rare gas krypton, increasing precision over the previous platinum-iridium bar standard."
+},
+{
+"id": "resonance-particles",
+"year": 1960,
+"title": "Resonance particles",
+"field": "Science: Physics",
+"desc": "Alvarez constructed huge bubble chambers to detect ultra-short-lived particles known as resonance particles, lasting 10^-24 seconds. He was able to deduce their existence from their breakdown products, earning a Nobel Prize for his work.",
+"long": "The bubble chamber was excellent at detecting ultra-short-lived particles. The American physicist Luis Walter Alvarez constructed huge bubble chambers and, beginning in 1960, detected particles that existed for only a few trillionths of a trillionth of a second before breaking down. The tracks they left in this incredibly short lifetime, even if they moved at the speed of light, were too small to detect directly. The existence of these so-called resonance particles could only be deduced from the nature of their longer-lived breakdown products. For this work, Alvarez was awarded the Nobel Prize for physics in 1968."
+},
+{
+"id": "sea-floor-spreading",
+"year": 1960,
+"title": "Sea-floor spreading",
+"field": "Science: Geology",
+"desc": "Harry Hammond Hess proposed the theory of sea-floor spreading, where magma from the mantle pushes tectonic plates apart. Continental drift was not the result of continents slowly floating on the underlying rock, but the plates themselves were forced together and apart.",
+"long": "In 1960 the American geophysicist Harry Hammond Hess decided it was quite possible that molten magma from the mantle might ooze upward through the Great Global Rift. That might force the North American and South American plates farther westward while the Eurasian and African plates were forced further eastward. The Atlantic ocean would thus widen, in what came to be called sea-floor spreading."
+},
+{
+"id": "cyclic-amp",
+"year": 1960,
+"title": "Cyclic-AMP",
+"field": "Science: Biology",
+"desc": "Cyclic-AMP is a molecule crucial for cell metabolism and hormone regulation. It plays a key role in how hormones penetrate cells, leading to significant insights in physiology.",
+"long": "Adenylic acid, also known as adenosine monophosphate (AMP), is one of the nucleotides that make up the molecular chains of nucleic acids. The American pharmacologist Earl Wilbur Sutherland, Jr. (1915-1974) had discovered it in tissue some years earlier, and in 1960 he worked out its structure. He found that the phosphate group was attached to the rest of the molecule in two different places rather than one. A ring of atoms was thus formed, and Sutherland called it cyclic-AMP. Cyclic-AMP has a profound effect on the course of metabolism within a cell, since it apparently controls the way hormones can penetrate cells. For this work, Sutherland was awarded the Nobel Prize for physiology and med"
+},
+{
+"id": "human-beings-in-space",
+"year": 1961,
+"title": "Human beings in space",
+"field": "Space",
+"desc": "The Soviet Union put Laika in space four years before, and eventually put dogs in space and brought them back alive. In 1961 it launched Gagarin into space, successfully orbiting the Earth and returning safely, followed by Titov who orbited around the earth seventeen times over one full day.",
+"long": "On April 21, 1961, Yury Alekseyevich Gagarin (1934–1968) was put into orbit by the Soviet Union in the spaceship Vostok I. He circled the Earth once in 89 minutes and was brought back alive. On August 6, 1961, a second Soviet cosmonaut, Gherman Stepanovich Titov (b. 1935), was put into orbit and circled the Earth seventeen times, remaining in space for a full day."
+},
+{
+"id": "microwave-reflections-from-venus",
+"year": 1961,
+"title": "Microwave reflections from Venus",
+"field": "Space",
+"desc": "Microwave signals were sent to Venus and reflected back to Earth, allowing precise measurements of distance. This advancement improved the understanding of the Solar System's scale.",
+"long": "Fifteen years before, microwaves had been reflected from the Moon. By 1961 the technique had advanced to the point where microwaves could be sent out to Venus, a hundred times as far away as the Moon. This was done, and reflections were received by five different groups, one Soviet, one British, and three American. The microwaves traveled through space at the speed of light, and from the time measured between the emission of the original beam and the detection of the reflection, the distance of Venus and therefore the general scale of the Solar System could be determined much more accurately than had been possible from observations of the asteroid Eros (see 1941)."
+},
+{
+"id": "heliosphere",
+"year": 1961,
+"title": "Heliosphere",
+"field": "Science: Atmospheric Science",
+"desc": "Using the Echo I satellite, scientists accurately measured atmospheric drag and air density at high altitudes, identifying a region filled largely with helium. This discovery contributed to the understanding of Earth's upper atmosphere, known as the heliosphere.",
+"long": "The previous year, the United States had put up Echo I, which expanded into a large sphere of aluminum foil from which microwave reflections could be obtained. By 1961 its orbit had been followed so carefully that the Belgian physicist Marcel Nicolet could calculate the drag of the thin wisps of atmosphere present at the heights through which the satellite was moving. The large volume of the satellite and its comparative lightness magnified that drag so that it was possible to deduce the density of the air at a height of from 200 to 600 miles above Earth’s surface and to show that it consisted largely of helium. This region was known as the heliosphere."
+},
+{
+"id": "quarks",
+"year": 1961,
+"title": "Quarks",
+"field": "Science: Physics",
+"desc": "A new classification system for hadrons (subatomic particle) was developed, organizing them into families based on increasing properties he whimsically called the Eightfold Way (from Buddhism). This new system involved quarks (from Finnegan's Wake) with fractional electric charges (1/3, 2/3) and like Mendeleev's periodic table, predicted gaps that would later be filled.",
+"long": "In 1961 Gell-Mann, who had advanced an explanation of strange particles (see 1953), worked out a method for bringing order to the numerous hadrons that were being discovered. He grouped them into families in which certain particle properties increased in value in a regular pattern."
+},
+{
+"id": "lawrencium",
+"year": 1961,
+"title": "Lawrencium",
+"field": "Science: Chemistry",
+"desc": "Lawrencium, the last of the actinides, was discovered as a result of producing a few atoms of element 103. This discovery increased the actinide elements to fifteen, matching the number of lanthanides and filling out the f-block in the periodic table.",
+"long": "The attempt to produce more and more complex atoms did not cease. In 1961 a few atoms of element 103 were produced, and it was named lawrencium after Lawrence, the inventor of the cyclotron (see 1930), who had died three years earlier. With lawrencium, the last of the actinides (see 1940) was discovered. There were now fifteen actinides as there were fifteen lanthanides."
+},
+{
+"id": "genetic-code",
+"year": 1961,
+"title": "Genetic code",
+"field": "Science: Biology",
+"desc": "Nirenberg synthesized polyuridylic acid corresponding to a chain of uracil nucleotides (U-U-U). When he used this as messenger RNA, it formed a protein, made up of only one amino acid: phenylalanine, establishing the mapping for U-U-U. Similar techniques were applied for the rest of the trinucleotides to work out the whole genetic code.",
+"long": "With the transition of genetic information from DNA to messenger RNA to transfer RNA to protein now well established (see 1956), the most important unanswered question was which trinucleotide corresponded to which amino acid. Without knowing that, one couldn’t understand how information passed from DNA to proteins. The American biochemist Marshall Warren Nirenberg (b. 1927) took the first step toward elucidating the problem. He made use of the enzyme discovered by Ochoa (see 1955) to form an RNA molecule out of a mixture that consisted of uridylic acid only. The RNA molecule that resulted was not one that existed naturally but a synthetic, polyuridylic acid (—U—U—U—U—U—U—U—U—U—), made up of "
+},
+{
+"id": "gene-regulators",
+"year": 1961,
+"title": "Gene regulators",
+"field": "Science: Genetics",
+"desc": "Gene regulators were discovered to control the rate at which genes function, explaining the differing chemistries in identical genetic makeup cells. This finding advanced the understanding of gene expression and cellular function.",
+"long": "Jacob and Monod, who had first suggested the existence of messenger RNA (see 1956), puzzled over the fact that different cells in a body had different chemistries even though they all had the same genetic makeup. They decided that genes did not always work at the same rate, that there were devices that could slow down or speed up the workings of a particular gene, and that different"
+},
+{
+"id": "american-in-space",
+"year": 1962,
+"title": "American in space",
+"field": "Space",
+"desc": "Friendship 7 marked a significant achievement by placing the first American in orbit. It highlighted the capabilities of the United States in space exploration during the early Space Age.",
+"long": "On February 20, 1962, the United States launched Friendship 7, which placed the first American in orbit. He was John Herschel Glenn, Jr. (b. 1921), who orbited the Earth three times and remained in space for 5 hours."
+},
+{
+"id": "venus-probe",
+"year": 1962,
+"title": "Venus probe",
+"field": "Space",
+"desc": "Mariner 2 was the first successful probe to another planet, marking a new era in space exploration. It provided valuable data about Venus, measuring surface temperature at 475°C, confirming the existence of a solar wind, and detecting microwave radiation.",
+"long": "The first successful planetary probe was Mariner 2, launched by the United States on August 27, 1962. It was designed to approach the planet Venus and passed within 22,000 miles of Venus's cloud layer on December 14, 1962."
+},
+{
+"id": "rotation-of-venus",
+"year": 1962,
+"title": "Rotation of venus",
+"field": "Space",
+"desc": "Venus, despite being Earth's closest neighbor, remained shrouded in mystery because of its thick and featureless cloud layer. Scientists used microwave reflections to determine Venus's very slow period of axial rotation of 250 days.",
+"long": "In 1962, the rotation of Venus was determined using microwave reflections. From the extent of the distortion, the speed of rotation could be calculated accurately."
+},
+{
+"id": "noble-gas-compounds",
+"year": 1962,
+"title": "Noble gas compounds",
+"field": "Science: Chemistry",
+"desc": "Pauling pointed out that inert gas atoms grew less inert as their atomic number increased. Noble gases were traditionally considered inert until Bartlett found that platinum fluoride reacts with xenon. This breakthrough expanded the understanding of chemical bonding and reactivity.",
+"long": "In 1962 the British-born Canadian chemist Neil Bartlett found that a compound, platinum fluoride, was almost as active as fluorine itself and easier to work with. He immersed it in xenon gas and the two substances combined to form xenon fluoroplatinate. This was the first known case of an inert gas atom forming a bond with any other atom or group of atoms."
+},
+{
+"id": "approach-to-absolute-zero-final",
+"year": 1962,
+"title": "Closer to absolute zero",
+"field": "Science: Physics",
+"desc": "Previous attempts at very low temperatures reached 1/50,000 of a degree above absolute zero. Now, using helium isotopes helium-4 and helium-3 which separate at temperatures below 0.8° and additional nuclear magnetic properties, temperatures of one millionth of a degree were reached.",
+"long": "In 1962 the German-born British physicist Heinz London used a mixture of the two helium isotopes helium-4 and helium-3 for the purpose. Ordinarily they mix perfectly, but at temperatures below 0.8°, they separate. Processes that allowed the two isotopes to mix and then separate repeatedly offered a powerful new way of cooling. Thanks to this and to other techniques involving helium-3 and nuclear magnetic properties, temperatures of 1/1,000,000 of a degree above absolute zero have been attained."
+},
+{
+"id": "environment",
+"year": 1962,
+"title": "Environment",
+"field": "Science: Biology",
+"desc": "The book 'Silent Spring' raised awareness of the environmental impact of indiscriminate pesticide use, particularly on bird populations. It played a significant role in increasing public consciousness about ecological issues.",
+"long": "It happened in 1962, when Silent Spring, by the American biologist Rachel Louise Carson (1907–1964), was published. Her account of the effect of indiscriminate use of pesticides on the environment was riveting. She described the possibility that pesticides would kill birds, for instance, to the point where spring would finally arrive without birdsong. The book was largely responsible for a sudden increase in awareness of environmental dangers on the part of a large segment of the public."
+},
+{
+"id": "quasars",
+"year": 1963,
+"title": "Quasars",
+"field": "Space",
+"desc": "Quasars (quasistellar radio sources) were identified as compact yet highly radio-active celestial radio sources, listed in the Third Cambridge Catalog of Radio Stars. They were theorized to be galaxies with active centers billions of light years away.",
+"long": "Among the radio sources located in the sky during the 1950s were a few that seemed confined to very small areas. These compact sources were known as 3C48, 3C147, 3C196, 3C273, and 3C286. The 3C is short for Third Cambridge Catalog of Radio Stars, a listing compiled by the British astronomer Martin Ryle (1918–1984)."
+},
+{
+"id": "x-ray-sources",
+"year": 1963,
+"title": "X-ray sources in space",
+"field": "Space",
+"desc": "Light and microwaves can pass through Earth's atmosphere, but X-rays cannot. Rocketry allowed the detection of X-rays from astronomical objects, and X-rays were shortly detected from the Crab nebula.",
+"long": "Through most of history, the only information reaching us from the stars had consisted of visible light waves. For the past thirty years, microwaves from astronomical objects had also been studied. Both light and microwaves can penetrate Earth's atmosphere, but there are other forms of radiation that cannot. They can only be studied by rockets, carrying appropriate instruments, that are sent up beyond the atmosphere. Thus, X rays from astronomical objects are completely absorbed by the atmosphere and cannot be observed from Earth's surface. Rocketry, however, had made it possible to detect X rays in the solar radiation. Still more interesting news came in 1963, when Bruno Rossi, who had done"
+},
+{
+"id": "hydroxyl-group-detection",
+"year": 1963,
+"title": "Hydroxyl group detection",
+"field": "Science: Chemistry",
+"desc": "Characteristic wavelengths of hydroxyl groups were detected in space. This discovery suggests that hydroxyl groups can exist outside Earth, unlike on Earth where they quickly combine with other atoms.",
+"long": "In 1963, two characteristic wavelengths were detected, indicating the presence of hydroxyl groups in interplanetary space."
+},
+{
+"id": "woman-in-space",
+"year": 1963,
+"title": "Woman in space",
+"field": "Space",
+"desc": "The Soviet Union successfully launched the first woman into orbit, marking a historic event in space exploration. This achievement highlighted the advancing role of women in science and space exploration.",
+"long": "On June 18, 1963, the Soviet Union launched Vostok 6, bearing Valentina Vladimirovna Tereshkova, the first woman to be placed into orbit about the Earth."
+},
+{
+"id": "magnetic-reversals",
+"year": 1963,
+"title": "Magnetic reversals",
+"field": "Science: Geology",
+"desc": "Brunhes observed that in some rocks, crystals magnetized in directions opposite to Earth's magnetic field. This was initially ignored but then suggested that Earth's magnetic field fluctuated and even changed polarity completely. This was verified with magma sediment on the seafloor which showed both evidence of seafloor spreading and of irregular reversals of the magnetic field.",
+"long": "Bernard Brunhes had noted that in some rocks, crystals magnetized in directions opposite to that of Earth's magnetic field. Further investigations showed that magnetic reversals occurred at intervals in Earth's history as sediments on the Atlantic Ocean's floor had reversed magnetization."
+},
+{
+"id": "background-microwave-radiation",
+"year": 1964,
+"title": "Background microwave radiation",
+"field": "Science: Physics",
+"desc": "Using a big horn-shaped antenna built to detect radio reflections, Penzias and Wilson found an unexplainable excess of radio emissions coming from all directions with equal intensity. This was the predicted background radiation that would be a consequence of the big bang.",
+"long": "The German-born American physicist Arno Allan Penzias and the American radio astronomer Robert Woodrow Wilson were attempting to determine the characteristics of any radio-wave emission that might come from the outer regions of the Galaxy. They made use of a big horn-shaped antenna originally built to detect radio reflections from the Echo satellite since 1961. In May 1964 they found an excess of radio-wave emission that they could not explain. When they had accounted for all possible sources of error, they found that there was a distinct background microwave radiation, coming from all directions with equal intensity. They turned to the American physicist Robert Henry Dicke, who remembered t"
+},
+{
+"id": "omega-minus-particle",
+"year": 1964,
+"title": "Omega-minus particle",
+"field": "Science: Physics",
+"desc": "The Omega-minus particle with strangeness number of –2 was found. It was predicted based on the Eightfold Way, a system for classifying particles. Its discovery helped validate the method and deepened understanding of particle physics.",
+"long": "Gell-Mann had suggested the Eightfold Way as a means of ordering hadrons into groups. In one of the groups he had set up was an empty spot that ought to hold a particle with a particular set of properties if his method of arrangement was valid."
+},
+{
+"id": "cpt-symmetry",
+"year": 1964,
+"title": "CPT symmetry",
+"field": "Science: Physics",
+"desc": "After it was shown that parity was not conserved in the waek interaction, parity was combined with \\\"charge conjugation\\\" which told whether you were dealing with a particle or an antiparticle. It was shown that charge and parity (CP) together was conserved. But then it was found that Neutral kaons did not conserve CP, but did if you added time (T). Thus CPT.",
+"long": "After Lee and Yang had shown that parity was not conserved in the weak interaction, parity was combined with charge conjugation with the idea that if parity was unbalanced in one direction in a particular particle, charge conjugation would be unbalanced in the other, and the two together would be conserved. This was called CP (charge-parity) conservation. But in 1964 two American physicists, Val Logsdon Fitch and James Watson Cronin, found that CP was not always conserved either."
+},
+{
+"id": "transfer-rna-structure",
+"year": 1964,
+"title": "Transfer-RNA structure",
+"field": "Science: Biology",
+"desc": "Alanine's transfer RNA's structure was analyzed, revealing it is made up of seventy-seven nucleotides forming a three-lobed structure. This discovery advanced understanding of genetic coding and protein synthesis.",
+"long": "In 1964 the molecule of alanine-transfer RNA was completely analyzed by a team headed by the American biochemist Robert William Holley. As Sanger had worked with insulin, so Holley worked with transfer RNA, breaking it down to fragments, identifying the fragments, and working out how they fit together."
+},
+{
+"id": "multiperson-spaceflight",
+"year": 1964,
+"title": "Multiperson spaceflight",
+"field": "Space",
+"desc": "The Voshkod 1 mission marked the first time a spacecraft carried more than one person into orbit. This event expanded human spaceflight capabilities beyond single-occupant missions.",
+"long": "On October 12, 1964, the Soviet Union launched Voshkod 1, which carried three cosmonauts into orbit. It was the first rocket to carry more than one human being."
+},
+{
+"id": "rutherfordium",
+"year": 1964,
+"title": "Rutherfordium",
+"field": "Science: Chemistry",
+"desc": "Element 104 was synthesized, sparking a naming controversy between Soviet and American scientists. This discovery contributed to the expansion of the periodic table with a new transuranium element. The soviets named it Kurchatovium after the leader of the Soviet nuclear bomb project.",
+"long": "In 1964 both Soviet and American researchers reported the formation of atoms of element number 104. There was some dispute as to priority and name. The Soviets named it kurchatovium after Igor Vasilyevich Kurchatov, while the Americans named it rutherfordium after Ernest Rutherford."
+},
+{
+"id": "martian-craters",
+"year": 1965,
+"title": "Martian craters",
+"field": "Space",
+"desc": "The Mariner 4 probe passed within 6000 miles of the Martian surface and provided the first close-up images of Mars, revealing cratered landscapes similar to the Moon. This ended speculation of advanced Martian civilizations and canals.",
+"long": "The Mars probe Mariner 4 had been launched by the United States on November 28, 1964. On July 14, 1965, it passed within 6,000 miles of the Martian surface. As it did so, it took a series of twenty photographs, which were turned into microwave signals, beamed back to Earth, and there converted into photographs again. For the first time in history, close-up views of the Martian surface could be seen by human beings. What those photographs showed were craters very much resembling those of the Moon. There was no sign of canals. The photographs did not cover very much of the Martian surface, but the general impression was one of a Moonlike world, not an Earthlike one. The notion of artificial ca"
+},
+{
+"id": "rotation-of-mercury",
+"year": 1965,
+"title": "Rotation of mercury",
+"field": "Space",
+"desc": "Microwave data indicated Mercury's rotation period is approximately 59 days, disproving the belief that it always faced one side towards the Sun. This discovery revealed Mercury's dynamic rotational behavior.",
+"long": "Schiaparelli had suggested that Mercury turned one face to the Sun at all times. This had begun to seem doubtful, since if it were true, the side of Mercury facing away from the Sun should be extremely cold. Microwaves detected from the dark side of Mercury in 1962 had indicated it was considerably warmer than would be expected if it were eternally dark. In 1965 two American electrical engineers, Rolf Buchanan Dyce and Gordon H. Pettengill, working with microwave reflections from the Mercurian surface, were able to show that it turned on its axis in about 59 days, despite the fact that it revolved about the Sun in 88 days. This meant that every portion of the planet received sunlight at one "
+},
+{
+"id": "spacewalks",
+"year": 1965,
+"title": "Spacewalks",
+"field": "Space",
+"desc": "Spacewalks allowed humans to leave their spacecraft and remain tethered in space. This marked significant progress in space exploration and astronaut capabilities.",
+"long": "In 1965 human beings were able to leave their orbiting rockets and, held by a tether, remain free in space—within their spacesuits, of course. This was referred to as a spacewalk. The first to take a spacewalk was the Soviet cosmonaut Aleksei Leonov, who left the rocket ship Voskhod II on March 18, 1965. The American astronaut Edward Higgins White II (1930–1967) left his ship, Gemini 4, on June 3, 1965."
+},
+{
+"id": "space-rendezvous",
+"year": 1965,
+"title": "Space rendezvous",
+"field": "Space",
+"desc": "Maneuverability in space was increasing rapidly. The American satellite Gemini VII approached within several feet of the previously launched Gemini VI marking the first space rendezvous.",
+"long": "Maneuverability in space was increasing rapidly. On December 15, 1965, the American satellite Gemini VII, having been in space for fourteen days, approached within several feet of the previously launched Gemini VI. This was the first space rendezvous."
+},
+{
+"id": "venus-lander",
+"year": 1965,
+"title": "Venus lander",
+"field": "Space",
+"desc": "A Soviet probe crash landed on Venus, marking the first human-made object to reach another planet. This was a landmark achievement in planetary exploration.",
+"long": "The Soviet Union was making repeated efforts to explore Venus. During the course of 1965, one of its Venus probes struck Venus and became the first human-made object to reach another planet."
+},
+{
+"id": "microfossils",
+"year": 1965,
+"title": "Microfossils",
+"field": "Science: Biology",
+"desc": "The earliest known fossils were in rocks from the Cambrian era, a little over 600 million years old. Now microfossils, identified in ancient rocks, indicated early bacterial life on Earth from 3,500 million years ago.",
+"long": "In 1965, however, the American paleontologist Elso Sterrenberg Barghoorn (1913–1984) worked with tiny bits of carbonized material in very ancient rocks and showed that they might represent bacteria living in the early eons of Earth’s history. When these bits of material were eventually studied by electron microscope, they showed"
+},
+{
+"id": "moon-at-close-quarters",
+"year": 1966,
+"title": "Moon at close quarters",
+"field": "Space",
+"desc": "The Soviet Luna 9 achieved the first soft landing on the Moon. Six months later the American Surveyor 1 did the same, taking many more photographs of higher quality. Luna 10 became the first orbital probe around the Moon and the US followed suite, mapping the entire surface of the moon.",
+"long": "On February 3, the Soviet Moon probe Luna 9 made the first soft landing on the Moon (one in which the landing vessel was not destroyed in the process) and took some photographs of the approaching surface. On June 2, the American Moon probe, Surveyor 1, did the same, taking many more photographs of better quality. On April 3, the Soviet probe Luna 10 was the first to be placed into orbit about the Moon. The first of a series of American probes to go into orbit about the Moon (the Luna Orbiters) followed, and the United States was able to map the entire surface of the Moon, both the side facing us and the side away from us, in full detail."
+},
+{
+"id": "space-docking",
+"year": 1966,
+"title": "Space docking",
+"field": "Space",
+"desc": "Gemini VIII achieved the first docking of two space vessels in orbit, demonstrating a crucial capability for future lunar missions. This milestone was essential for planning manned Moon landings and returns.",
+"long": "On March 16, the American satellite Gemini VIII linked up with another orbiting vessel. This was the first actual docking of one space vessel with another—a maneuver essential if human beings were to be sent to the Moon and brought safely back."
+},
+{
+"id": "pulsars",
+"year": 1967,
+"title": "Pulsars",
+"field": "Space",
+"desc": "Hewish supervised the construction of a device with 2,048 separate receivers spread out in an array that covered an area of nearly 3 acres. This array detected regular bursts of microwaves from a place between Vega and Altair, lasting 1/13 of a second, occurring every 1.3 seconds. This object was eventually called a pulsating star or pulsar.",
+"long": "For some years there had been indications of radio sources in the sky that changed intensity after brief intervals, but radio telescopes at that time were not designed to catch such brief 'twinkles.' Then, in Great Britain, the British astronomer Anthony Hewish (b. 1924) supervised the construction of a device with 2,048 separate receivers spread out in an array that covered an area of nearly 3 acres. This was designed to detect brief changes in microwave intensities. In July 1967 the array was put to work, and within a month a graduate student, Jocelyn Bell, had detected bursts of microwaves from a place midway between Vega and Altair. The bursts were astonishingly brief, lasting only a thi"
+},
+{
+"id": "venuss-atmosphere",
+"year": 1967,
+"title": "Venus's atmosphere",
+"field": "Space",
+"desc": "Soviet Venus probes revealed that Venus's atmosphere is extremely dense and primarily composed of carbon dioxide, causing a severe greenhouse effect. This discovery highlighted Venus as the hottest planet in the Solar System.",
+"long": "The Soviet Union continued to send out Venus probes that didn’t last long because of the fearsome temperature and pressure of Venus's atmosphere. By 1967 the probes had made it clear that Venus's atmosphere was about ninety times as dense as Earth's—far denser than anyone had expected. That atmosphere is about 96.6 percent carbon dioxide, and virtually all the rest is nitrogen. There is about as much nitrogen in Venus's atmosphere as in Earth's, but it is dwarfed by the overwhelming quantity of carbon dioxide. The carbon dioxide produces a runaway greenhouse effect that makes Venus the hottest planet in the Solar System, hotter even than Mercury."
+},
+{
+"id": "space-casualties",
+"year": 1967,
+"title": "Space casualties",
+"field": "Space",
+"desc": "The Space Age marked its first human casualties with the deaths of three American astronauts during an Apollo test and a Soviet cosmonaut during the Soyuz flight. These incidents highlighted the risks involved in the space exploration missions.",
+"long": "The Space Age, now ten years old, saw its first human casualties. On January 27, 1967, three American astronauts died while an Apollo capsule was being tested on the ground. They were Virgil Ivan (Gus) Grissom (1926–1967), who had orbited in Gemini 3 in 1965; Edward White, who had been the first American to take a spacewalk (see 1965), and Roger Bruce Chaffee (1935–1967). On April 24, 1967, the Soviet spacecraft Soyuz made its first flight, but during the return to Earth, the ship became tangled in its parachute lines and the cosmonaut, Vladimir Mikhaylovich Komarov (1927–1967), who had piloted the first multiperson spacecraft (see 1964), died. He was the first person to die in the course of"
+},
+{
+"id": "hahnium",
+"year": 1967,
+"title": "Hahnium",
+"field": "Science: Chemistry",
+"desc": "Hahnium, element number 105, was discovered and named in 1967. This discovery added to the expanding periodic table and highlighted advances in chemical research.",
+"long": "In 1967 the formation of element number 105 was reported in the United States, and it was named hahnium, after Otto Hahn."
+},
+{
+"id": "electroweak-interaction",
+"year": 1968,
+"title": "Electroweak interaction",
+"field": "Science: Physics",
+"desc": "The electroweak interaction unifies electromagnetic and weak nuclear forces into a single framework. Careful observations showed that electromagnetic and weak forces are the same at high enough temperatures.",
+"long": "In 1968, physicists Steven Weinberg, Sheldon Lee Glashow, and Abdus Salam developed a mathematical treatment that unified the electromagnetic and weak interactions, known as the electroweak interaction. This theory demonstrated that these forces are aspects of a single interaction at high temperatures and was verified through experimental observations."
+},
+{
+"id": "solar-neutrinos",
+"year": 1968,
+"title": "Solar neutrinos",
+"field": "Science: Physics",
+"desc": "Previous discovery of antineutrinos made the existence of neutrinos certain, but there was no experimental proof yet. To remedy, Reines set up a tank containing 100,000 gallons of tetrachloryethylene in a mine in South Dakota, left it exposed for several months and came back with definitive proof of argon (and helium) from chlorine reacting with neutrinos.",
+"long": "Although neutrinos had previously been detected as antineutrinos, in 1968, the existence of solar neutrinos was confirmed. The Sun's energy production through hydrogen fusion to helium generates vast quantities of neutrinos, which have become possible to detect directly."
+},
+{
+"id": "astrochemistry",
+"year": 1968,
+"title": "Astrochemistry",
+"field": "Science: Chemistry",
+"desc": "Astrochemistry began with the detection of microwave frequencies from molecules in space. Improved microwave radiation detection showed unexpected complex atom combinations at astronomical distances, leading to discoveries of compounds involving up to thirteen atoms.",
+"long": "In 1968 microwave frequencies characteristic of water molecules (with three atoms each) and ammonia molecules (with four atoms each) were detected in interstellar gas clouds. This was the beginning of what came to be called astrochemistry. Since then, more and more complicated atom groupings have been detected, some involving as many as thirteen atoms."
+},
+{
+"id": "rotating-neutron-stars",
+"year": 1968,
+"title": "Rotating neutron stars",
+"field": "Space",
+"desc": "The hypothesis that pulsars are rotating neutron stars explained how they produce rapid pulsations. Neutron stars emit beams of radiation due to their magnetic fields and rotation, losing energy as they spin.",
+"long": "In 1968 Thomas Gold suggested that pulsars were neutron stars that were rotating. Neutron stars, with intense magnetic fields, emit charged particles at magnetic poles that sweep across space as they rotate, explaining the rapid pulsations."
+},
+{
+"id": "circumnavigation-of-the-moon",
+"year": 1968,
+"title": "Circumnavigation of the moon",
+"field": "Space",
+"desc": "The unmanned Soviet probe Zond 5 and a manned American mission both successfully circumnavigated the Moon. This event marked a significant step towards achieving a manned lunar landing.",
+"long": "On September 17, 1968, the Soviet probe Zond 5, with no crew aboard, circumnavigated the Moon. On December 24, 1968, the American probe Apollo 8, with three astronauts aboard—Frank Borman, James A. Lovell, Jr., and William A. Anders—circumnavigated the Moon ten times."
+},
+{
+"id": "human-beings-on-the-moon",
+"year": 1969,
+"title": "Human beings on the Moon",
+"field": "Space",
+"desc": "Apollo 11 successfully landed humans on the Moon for the first time, achieving a major milestone in space exploration. This mission demonstrated human ability to travel and work in space.",
+"long": "At 4:18 P.M. eastern daylight savings time on July 20, 1969, Neil Alden Armstrong and Edwin Eugene Aldrin, Jr., brought the lunar module of Apollo 11 to the surface of the Moon, while Michael Collins remained in orbit about the Moon. Neil Armstrong stepped out, the first human being to set foot on any world other than the Earth."
+},
+{
+"id": "cosmonaut-transfer",
+"year": 1969,
+"title": "Cosmonaut transfer",
+"field": "Space",
+"desc": "Two Soviet spacecraft met in space, allowing cosmonauts to transfer between them for the first time. This marked a significant step in human space mobility.",
+"long": "On January 14, 1969, two Soviet spacecraft, each carrying cosmonauts, met in space, and cosmonauts passed from one ship to the other. It was the first time human beings had transferred from one spacecraft to another in flight and was another advance in human mobility in space."
+},
+{
+"id": "optical-pulsars",
+"year": 1969,
+"title": "Optical pulsars",
+"field": "Science: Astronomy",
+"desc": "Known pulsars were emitting microwaves, and no visible ones had been found. Now the first optical pulsar was detected near the center of the Crab nebula, which was also emitting X-rays.",
+"long": "In January 1969, sure enough, a star near the center of the Crab nebula was found to be blinking on and off thirty times a second, in time to the microwave pulses. It was the first optical pulsar to be detected. The Crab nebula pulsar was found to be emitting pulses of X rays as well."
+},
+{
+"id": "antarctic-meteorites",
+"year": 1969,
+"title": "Antarctic meteorites",
+"field": "Science: Geology",
+"desc": "Meteorites are hard to find because many that have fallen on earth have been collected by people who made use of their iron contents. Japanese geologists discovered meteorites on the Antarctic ice cap, leading to increased study and collection of meteoric fragments.",
+"long": "In 1969 a group of Japanese geologists came across nine closely spaced meteorites on the Antarctic ice cap. These roused the interest of scientists generally, and thousands of meteoric fragments have been found since, which have made it possible to study the subject in greater detail."
+},
+{
+"id": "protein-structure",
+"year": 1969,
+"title": "Protein structure",
+"field": "Science: Biology",
+"desc": "Edelman worked out the structure of gamma globulin, crucial for antibody formation. Hodgkin worked out the insulin molecule's 3D structure. Choh Hao Li synthesized ribonuclease, the first enzyme to be synthesized, and the even more complex growth hormone the next year.",
+"long": "In 1969 the American biochemist Gerald Maurice Edelman worked out the structure of a gamma globulin, a type of protein that exists in the blood and out of which various antibodies are formed."
+},
+{
+"id": "black-hole-evaporation",
+"year": 1970,
+"title": "Black hole evaporation",
+"field": "Science: Physics",
+"desc": "Black Hole Evaporation proposes that black holes can lose mass through radiation due to quantum mechanical effects. This discovery suggests that black holes will eventually evaporate over time, impacting our understanding of the Universe.",
+"long": "In 1970, however, the British physicist Stephen William Hawking (b. 1942) reasoned from quantum mechanical considerations that black holes might have a temperature. Therefore, if surrounded by an environment with a lower temperature, black holes would evaporate. Massive black holes with the mass of a star or of many stars would evaporate so slowly that they would endure for many, many times the present age of the Universe. As their mass decreased, however, their rate of evaporation would increase."
+},
+{
+"id": "meteoritic-amino-acids",
+"year": 1970,
+"title": "Meteoritic amino acids",
+"field": "Science: Chemistry",
+"desc": "The discovery of amino acids in a rare carbonaceous chondrite meteorite supports the theory of life's extraterrestrial origins. Combined with findings of astrochemistry, this suggests that some building blocks of life on Earth may come from space.",
+"long": "The Sri Lanka–born American biochemist Cyril Ponnamperuma (b. 1923) was continuing to attempt to produce molecules of biochemical interest from the primordial constituents of Earth's atmosphere, in the line of experimentation begun by Miller (see 1952). This investigation into life's origins took an unusual turn in 1970 when Ponnamperuma studied a meteorite that had fallen in Australia the year before. It was of a rare kind called a carbonaceous chondrite, a fragile black material that contained measurable quantities of water and organic material. Ponnamperuma showed that five different amino acids of the kind that helped make up protein molecules were present in the meteorite."
+},
+{
+"id": "reverse-transcriptase",
+"year": 1970,
+"title": "Reverse transcriptase",
+"field": "Science: Biology",
+"desc": "Ever since Watson and Crick worked out the structure of DNA and how it could replicate, it was thought genetic information flowed only one-way from DNA to RNA. Now an enzyme named reverse transcriptase was discovered, demonstrating the flow of genetic information from RNA back to DNA.",
+"long": "Ever since Watson and Crick had worked out the structure of DNA and shown how it could replicate itself (see 1953), it had been felt (and experimental work had supported the feeling) that genetic information flowed in a one-way fashion from DNA to RNA. It usually turns out, however, that nature is more complicated than expected, and there are apparently loops in the flow that occasionally carry information from RNA back to DNA. In 1970 the American oncologist Howard Martin Temin (b. 1934), in his investigation of cancer cells, located an enzyme he called reverse transcriptase, which could affect the working of DNA in line with information received from RNA, thus making the DNA more responsiv"
+},
+{
+"id": "megavitamin-therapy",
+"year": 1970,
+"title": "Megavitamin therapy",
+"field": "Science: Medicine",
+"desc": "Megavitamin therapy proposed the use of higher vitamin doses for maintaining full health, especially vitamin C. The approach stemmed from observing that primitive diets included large quantities of vitamins.",
+"long": "The necessity of vitamins in the diet had been recognized since the work of Eijkman (see 1896). The dosages required appeared to be small, however—in fact, enzymatic in quantity. Then it was suggested that the tiny recommended doses were merely those required to prevent the onset of serious disease and that much higher doses were common in primitive human diets that were heavy on fruits and vegetables. It was these much higher doses that might be needed for full health, and people began to speak of megavitamin therapy."
+},
+{
+"id": "planetary-soft-landing",
+"year": 1970,
+"title": "Planetary soft landing",
+"field": "Space",
+"desc": "Venera 7 achieved the first soft landing on another planet, successfully transmitting atmospheric and surface data from Venus. The unmanned Soviet moon probe Lunik 17 landed on the moon and returned safely.",
+"long": "On August 17, 1970, the Soviet Union launched Venera 7, a Venus probe that reached the planet on December 15. An instrument package was dropped into the atmosphere and made a soft landing. This was the first soft landing of any human-made object on another planet. The instruments sent back information about the atmosphere and surface for 23 minutes before the extreme conditions of temperature and pressure destroyed it."
+},
+{
+"id": "apollo-xiii",
+"year": 1970,
+"title": "Apollo XIII",
+"field": "Space",
+"desc": "Apollo XIII faced an emergency due to an oxygen loss in space, forcing astronauts to use the lunar module as a lifeboat. The mission's safe return demonstrated human resilience and innovation in addressing unexpected challenges in space exploration.",
+"long": "A near disaster in space took place in 1970 when Apollo XIII, en route to the Moon, underwent a loss in oxygen in the main chamber. The three astronauts crowded into the lunar module and maneuvered their way safely back to Earth."
+},
+{
+"id": "mapping-mars",
+"year": 1971,
+"title": "Mapping mars",
+"field": "Space",
+"desc": "Mariner 9 was the first spacecraft to orbit another planet, successfully mapping Mars and taking over 7000 photos. This mission revealed the planet's complex geography, including a canyon that stretched for thousands of miles Valles Marineris and a huge volcano Olympus Mons reaching 15 miles above base level.",
+"long": "On May 30, 1971, the United States launched the Mars probe Mariner 9, and on November 13, 1971, it arrived at Mars and went into orbit, the first human-made object to be placed into orbit about another planet. Mariner 9 was able to take more than seven thousand photographs of Mars, which served to map it completely. There were no canals, although there was a huge canyon stretching for thousands of miles. It was named Valles Marineris."
+},
+{
+"id": "moon-rocks",
+"year": 1971,
+"title": "Moon rocks",
+"field": "Space",
+"desc": "Apollo missions continued to explore the Moon, collecting samples for analysis. Apollo 14 collected 98 pounds of Moon rocks that were brought back to Earth for analysis. Apollo 15 landed a lunar rover and astronauts traveled 17 miles on the Moon's surface.",
+"long": "Exploration of the Moon continued in 1971. Apollo 14 reached the Moon on February 5, 1971, and its crew collected 98 pounds of Moon rocks that were brought back to Earth for analysis. They were the first samples of material collected by human beings on another world. On July 30, 1971, Apollo 15 landed on the Moon. It carried with it a lunar rover, a land vehicle designed to travel on the airless Moon. The astronauts traveled 17 miles using it and brought back more Moon rocks to Earth."
+},
+{
+"id": "black-hole-detection",
+"year": 1971,
+"title": "Black hole detection",
+"field": "Science: Astronomy",
+"desc": "An X-ray-detecting satellite found evidence suggesting the presence of a black hole, Cygnus X-1, near a massive star. It was shown that the large star and black hole were revolving around each other, and that Cygnus X-1 must be 5x as massive as sun.",
+"long": "In 1971 an X-ray-detecting satellite found irregular changes in an X-ray source in the constellation of Cygnus, a source that had been named Cygnus X-1. Such irregular changes might be the result of matter circling a black hole in varying concentrations. Cygnus X-1 was at once investigated and found to exist in the immediate neighborhood of a large, hot, blue star about thirty times as massive as our Sun."
+},
+{
+"id": "mini-black-holes",
+"year": 1971,
+"title": "Mini-black holes",
+"field": "Science: Physics",
+"desc": "Mini-black holes formed during the big bang could still exist today, slowly evaporating over billions of years. Their potential presence offers insights into cosmic evolution and black hole properties, but they have not yet been detected.",
+"long": "Hawking had proposed that black holes slowly evaporated and that the evaporation increased as mass decreased (see 1970). In 1971 he pointed out that at the time of the big bang, black holes of all sizes might have been created."
+},
+{
+"id": "punctuated-evolution",
+"year": 1972,
+"title": "Punctuated evolution",
+"field": "Science: Biology",
+"desc": "The concept of punctuated evolution suggests that species experience long periods of stability interrupted by rapid changes due to environmental pressures. This theory challenged previously held views on the constant rate of evolutionary change and remains under dispute.",
+"long": "Since the development of Darwin’s notion of evolution by natural selection (see 1858), the general feeling had been that evolution was a slow process but a steady one. In 1972 this view was challenged by the American paleontologists Stephen Jay Gould and Niles Eldredge, who suggested what they called punctuated evolution. In this view, species are stable and persist virtually unchanged for a long time. Then, certain small groups of a particular species, subjected for some reason to a special environmental pressure, change comparatively rapidly and develop into a new species. Evolution, then, is a matter of stable situations punctuated by occasional periods of rapid change."
+},
+{
+"id": "speed-of-light-evenson",
+"year": 1972,
+"title": "Speed of light lasers",
+"field": "Science: Physics",
+"desc": "A research team achieved a more precise measurement of the speed of light using laser beams. This enhanced precision aids in scientific calculations and understanding of fundamental physics.",
+"long": "In October 1972, a research team headed by Kenneth M. Evenson, working with a chain of laser beams in Boulder, Colorado, obtained a figure for the speed of light that was far more precise than anything previously reached. He measured the speed as 186,282.3959 miles per second."
+},
+{
+"id": "quantum-chromodynamics",
+"year": 1972,
+"title": "Quantum Chromodynamics",
+"field": "Science: Physics",
+"desc": "By now it was understood that two quarks can form a meson, and three can form protons, neutrons, and other handrons. A theory was advanced in which there are three types of quarks dubbed red, blue, and green. Like light, a red, blue, and green quark will combine to give a lack of color (white), and only combinations yielding white can exist.",
+"long": ""
+},
+{
+"id": "jupiter-probe",
+"year": 1973,
+"title": "Jupiter probe",
+"field": "Space",
+"desc": "Pioneer 10 was the first probe to explore the outer Solar System, successfully navigating through the asteroid belt and coming just 85,000 miles above Jupiter's surface. Jupiter is a ball of hot liquid hydrogen mixed with some helium, a constitution much like that of the Sun.",
+"long": "On March 2, 1972, a Jupiter probe, Pioneer 10, had been launched—the first probe intended to yield information concerning the outer Solar System. After passing safely through the asteroid belt, Pioneer 10 reached the vicinity of Jupiter on December 3, 1973, and passed only 85,000 miles above Jupiter's surface, going right through the planet's magnetosphere."
+},
+{
+"id": "origin-of-the-universe",
+"year": 1973,
+"title": "Origin of the universe",
+"field": "Science: Physics",
+"desc": "Scientists accepted the big bang, but where did the tiny body that originated the universe come from? Tryon proposed that the universe might arise from quantum fluctuations in a vacuum, adding a new perspective on the origin of the universe. ",
+"long": "In 1973 the American physicist Edward P. Tryon pointed out that what we ordinarily think of as a vacuum is not truly a vacuum. It can give rise to sub-atomic particles that disappear before they can be detected, in accordance with quantum mechanics and the uncertainty principle."
+},
+{
+"id": "proton-decay",
+"year": 1973,
+"title": "Proton decay",
+"field": "Science: Physics",
+"desc": "Since the unification of electromagnetic and weak interactions, physicists had been working on integrating strong interactions as well into a Grand Unified Theory (GUT). As part of this research, it was proposed that protons may decay with a very large half life of 10^31 years, but no proof of this has been found yet.",
+"long": "Since the successful unification of the electromagnetic and weak interactions (see 1968), physicists such as Glashow had been attempting to include the strong interaction as well under the umbrella of a single set of equations. This was being done, though it required several sets of modifications to make such a Grand Unified Theory (GUT) work, and it is still not entirely satisfactory today. In 1973 Abdus Salam suggested that such a theory might imply that the proton was very slightly unstable."
+},
+{
+"id": "mapping-of-mercury",
+"year": 1974,
+"title": "Mapping of Mercury",
+"field": "Space",
+"desc": "Mariner 10's mission came within 500 miles of Mercury's surface, provided a detailed mapping ofthe planet, confirming its rotation rate, temperature, and lack of significant atmosphere, and also detecting a faint magnetic field.",
+"long": "Mariner 10 had been launched on November 3, 1973. On February 5, 1974, it passed by Venus just 3,600 miles above its cloud layer and then headed for Mercury. On March 19, 1974, it passed within 435 miles of Mercury's surface. It moved into an orbit about the Sun in such a way that it passed near Mercury a second and third time. On the third approach, it passed within 200 miles of Mercury's surface. Mariner 10 confirmed Mercury's rotation rate and temperature and showed that it had no satellite and no significant atmosphere. It determined the diameter, mass, and density of Mercury with greater precision than had been possible before. In addition, it allowed about three-eighths of Mercury's su"
+},
+{
+"id": "formation-of-the-moon",
+"year": 1974,
+"title": "Formation of the moon",
+"field": "Space",
+"desc": "A new theory proposed that a Mars-sized planet collided with Earth, forming the Moon from Earth's outer layers. This theory is a favored explanation due to computer simulations supporting its feasibility.",
+"long": "In 1974, American astronomer William K. Hartmann suggested that a planet the size of Mars had a glancing collision with Earth in the early days of the Solar System, forming the Moon from Earth's outer layers while the cores merged."
+},
+{
+"id": "leda",
+"year": 1974,
+"title": "Leda",
+"field": "Space",
+"desc": "A thirteenth Jovian satellite was discovered, later named Leda, among Jupiter's outer group of satellites. It is only 5 miles across.",
+"long": "On September 10, 1974, the American astronomer Charles T. Kowall detected a thirteenth satellite of Jupiter, named Leda, among the outermost satellites."
+},
+{
+"id": "freon-and-the-ozone-layer",
+"year": 1974,
+"title": "Freon and the ozone layer",
+"field": "Science: Environmental",
+"desc": "Freon, used in various consumer products, contained chlorofluorocarbons that were later found to damage the ozone layer. This discovery led to increased awareness of environmental safety concerning chemical usage.",
+"long": "Freon, initially introduced by Midgley in 1930 and used in air-conditioning and spray cans, contained compounds called chlorofluorocarbons, which seemed safe but later were found to harm the ozone layer."
+},
+{
+"id": "tauon",
+"year": 1974,
+"title": "Tauon",
+"field": "Science: Physics",
+"desc": "The tauon is a type of lepton found when electrons and positrons collide at high energies. It is 17 times as massive as a muon and 3500 times more massive than an electron, lasting less than five trillionth of a second before breaking down into a muon.",
+"long": "In 1974 the American physicist Martin L. Perl found that when electrons and positrons (antielectrons) were smashed together at high energies, still a third variety of lepton was produced. This was named the tau electron, or in shorter version, the tauon. It presumably has a neutrino of its own, and there is surely an antiparticle for each, so that twelve leptons are now known. The tauon is about 17 times as massive as the muon and about 3,500 times as massive as the electron. It is very unstable and lasts less than five-trillionths of a second before breaking down to a muon."
+},
+{
+"id": "charmed-quarks",
+"year": 1974,
+"title": "Charmed quarks",
+"field": "Science: Physics",
+"desc": "By now three kinds of quarks were known: up, down, and strange. But the theory predicted that quarks should exist in pairs, with up-down and strange-charmed proposed as a pairing. Using the latest particle accelerators, a hadron that had to contain a charmed quark was created. The third pair of quarks is the top-bottom, for a total of six quarks and six antiquarks (matching the number of leptons)",
+"long": "In 1974 the American physicist Burton Richter, using the enormous energies of the latest particle accelerators, produced a particle that, from its properties, had to include a c-quark in its makeup. Another American physicist, Samuel Chao Chung Ting, working independently, also produced a particle that had to contain a c-quark. The two shared the Nobel Prize for physics in 1976."
+},
+{
+"id": "surface-of-venus",
+"year": 1975,
+"title": "Surface of Venus",
+"field": "Space",
+"desc": "The Soviet probes Venera 9 and Venera 10 successfully landed on Venus and captured photographs of its rocky surface. This achievement demonstrated that light could penetrate Venus's cloud layer, allowing for photography.",
+"long": "In 1975 the Soviet probes Venera 9 and Venera 10 managed to make successful soft landings on the planet Venus and to endure long enough to take photographs of a rocky surface. It was clear that sufficient light penetrated the cloud layer to make photographs possible."
+},
+{
+"id": "life-on-mars",
+"year": 1976,
+"title": "Life on Mars",
+"field": "Space",
+"desc": "The Viking probes were launched to explore Mars and provided the best photographs of its surface. They found no visible signs of life, but discovered dry riverbeds indicating a past presence of water.",
+"long": "In 1975 two Mars probes had been launched by the United States, Viking 1 on August 20 and Viking 2 on September 9. Both went into orbit about Mars in mid-1976, and they took the best photographs of the Martian surface yet. On July 20, 1976, Viking 1 came down to the Martian surface at what would have been, on Earth, the edge of the tropical zone. Some weeks later Viking 2 came down in a more northerly position. In coming down, they discovered that the Martian atmosphere, though chiefly carbon dioxide, was also 2.7 percent nitrogen and 1.6 percent argon. The Martian surface was rocky, as Earth’s surface is. The Martian surface, however, was richer in iron and sulfur and poorer in aluminum, so"
+},
+{
+"id": "pluto-surface",
+"year": 1976,
+"title": "Pluto’s surface",
+"field": "Space",
+"desc": "Pluto is normally the furthest planet from the sun, but at perehelion it is a little closer to us than Neptune is. The spectrum of light it reflected was studied and it was decided that Pluto's surface was covered with frozen methane.",
+"long": ""
+},
+{
+"id": "string-theory",
+"year": 1976,
+"title": "String theory",
+"field": "Science: Physics",
+"desc": "Conceptual development of string theory suggested one-dimensional strings formed as the universe cooled after the big bang. They would contain massive energies and gravitational fields, but lack observational evidence.",
+"long": "Suggestions were made in 1976 to the effect that, as the Universe cooled in the first instants after the big bang, flaws or creases would have appeared in the structure of space. These would form long one-dimensional strings containing huge masses, energies, and gravitational fields. Such thoughts persist, but observational evidence for the existence of such strings has not yet been obtained."
+},
+{
+"id": "rings-of-uranus",
+"year": 1977,
+"title": "Rings of Uranus",
+"field": "Space",
+"desc": "The rings of Uranus were discovered when Uranus occulted a star. To minimize distortions from the lower atmosphere, observations from a high flying airplane captured how starlight dimmed, revealing the presence of rings. Saturn's position as the unique posessor of rings was lost.",
+"long": "On March 10, 1977, the planet Uranus moved in front of a ninth-magnitude star in the constellation of Libra. This occultation was observed by the American astronomer James L. Elliot from an airplane that took him high enough to minimize the distorting and obscuring effects of the lower atmosphere. The idea was to observe how the starlight dimmed as the atmosphere of Uranus approached the star and"
+},
+{
+"id": "chiron",
+"year": 1977,
+"title": "Chiron",
+"field": "Space",
+"desc": "Chiron was identified as a distant celestial object with an elliptical orbit between Uranus and Saturn. Completing one turn around the sun every 50 years, it is considered an asteroid but is the farthest one discovered at that time.",
+"long": "On November 1, 1977, Kowall, the discoverer of Jupiter XIII, was studying photographic plates, searching for asteroids in Jupiter's orbit. He detected something that might have been such an asteroid, but it was moving at only one-third the speed that would have associated it with Jupiter's orbit. It had to be somewhere in the neighborhood of Uranus. Eventually Kowall worked out its orbit and found that it followed a markedly elliptical path that carried it out as far as Uranus at one end and as close as Saturn at the other, completing one turn about the Sun every 50.7 years. It seemed to be an asteroid, but it was the farthest one yet discovered, and by far. It was named Chiron, after the mo"
+},
+{
+"id": "inflationary-universe",
+"year": 1977,
+"title": "Inflationary universe",
+"field": "Science: Physics",
+"desc": "The inflationary universe theory suggests a rapid expansion of the universe moments after the big bang. This concept helps explain certain characteristics unexplained by the classical big bang theory.",
+"long": "The concept of the big bang did not answer all questions. In 1977 the American physicist Alan Guth suggested that, from the equations developed for the Grand Unified Theory, it could be argued that the Universe, in the instants after the big bang, underwent a sudden and exceedingly rapid inflation. This period of expansion can be used to explain some characteristics of the Universe that the classical big bang theory cannot, but the details are elusive, and the concept of an inflationary universe is still being worked on by cosmogonists."
+},
+{
+"id": "vela-pulsar",
+"year": 1977,
+"title": "Vela pulsar",
+"field": "Space",
+"desc": "A second optical pulsar was discovered in the Vela nebula, expanding the known examples beyond the Crab nebula. This pulsar is believed to be a remnant of an old supernova.",
+"long": "For nine years, the pulsar at the center of the Crab nebula had been the only optical pulsar known. In 1977 a second optical pulsar was discovered, in the Vela nebula, which seems also to be the remnant of an old supernova explosion."
+},
+{
+"id": "deep-sea-ecosystems",
+"year": 1977,
+"title": "Deep-sea ecosystems",
+"field": "Science: Biology",
+"desc": "Ocean vents spewing mineral-rich hot water into the ocean were discovered. These vents host unique ecosystems with bacteria which require neither oxygen, light, nor photosyntheses.",
+"long": "In 1977 it was discovered that there were ocean vents, or “chimneys,” that continually spewed hot water laden with minerals into the ocean."
+},
+{
+"id": "lucy",
+"year": 1977,
+"title": "Lucy discovery",
+"field": "Science: Anthropology",
+"desc": "A hominid fossil named Lucy was discovered, revealing insights into early human bipedalism. This discovery helps differentiate human ancestors from apes.",
+"long": "Donald Johanson discovered a hominid fossil named Lucy, identified as Australopithecus afarensis, approximately four million years old. Lucy was bipedal, indicating early human-like locomotion."
+},
+{
+"id": "nonbacterial-dna",
+"year": 1977,
+"title": "Nonbacterial DNA",
+"field": "Science: Genetics",
+"desc": "Bacterial DNA, which is easy to work with, is densely packed with meaningful genes. However DNA in non-bacterial cells was found to have many \\\"introns\\\", or non-functional sections. This discovery raises questions about the purpose of noncoding DNA.",
+"long": "It was discovered that the DNA in nonbacterial cells is not densely packed with genes, unlike bacterial DNA. Much of nonbacterial DNA consists of sequences that appear non-functional."
+},
+{
+"id": "smallpox-eradication",
+"year": 1977,
+"title": "Smallpox eradication",
+"field": "Science: Medicine",
+"desc": "Smallpox was officially eradicated, marking a major milestone in medical history. The disease’s extinction showcases the success of global vaccination efforts. ",
+"long": "In 1977, the last case of smallpox was recorded in Somalia. This marked the end of smallpox as a naturally occurring contagious disease."
+},
+{
+"id": "aids",
+"year": 1977,
+"title": "Aids emergence",
+"field": "Science: Medicine",
+"desc": "AIDS was identified in New York, marking its emergence as a global health crisis. The disease is characterized by a severely compromised immune system.",
+"long": "In 1977, a rare form of cancer linked to AIDS was identified in homosexual men in New York City. AIDS is an incurable disease that spread rapidly and became highly feared in the 1980s."
+},
+{
+"id": "radar-mapping-of-venus",
+"year": 1978,
+"title": "Radar mapping of Venus",
+"field": "Space",
+"desc": "Radar mapping by Pioneer Venus provided valuable data about Venus's atmosphere and surface. It revealed the composition of its atmosphere (mostly carbon dioxide, some nitrogen) and the existence of a supercontinent and plateau regions.",
+"long": "The United States launched Pioneer Venus on May 20, 1978, and it went into orbit about Venus on December 4, 1978. It sent several probes into Venus’s atmosphere and found that the cloud layer contained droplets of sulfuric acid, that about 2.5 percent of the sunlight striking the cloud layer penetrated to the surface of the planet, and that the atmosphere was 96.6 percent carbon dioxide and 3.2 percent nitrogen. In view of its density, that meant Venus’s atmosphere had more than three times as much nitrogen as Earth’s. Venus Pioneer also beamed radar waves at Venus, and from the reflections, details of the surface (otherwise invisible from outside the cloud layer) could be determined."
+},
+{
+"id": "charon",
+"year": 1978,
+"title": "Charon",
+"field": "Space",
+"desc": "A distinct lump observed in Pluto's photographs was identified as its satellite, Charon. This discovery contributed significantly to understanding Pluto's composition and celestial positioning. Pluto was measured to be about 2000 miles in diameter, and Charon 750 miles, forming something like a double planet.",
+"long": "On June 22, 1978, the American astronomer James W. Christy, examining photographs of Pluto, noted a distinct lump on one side. He checked other photographs and found that the lump shifted position. Finally he decided it was a satellite."
+},
+{
+"id": "oncogenes",
+"year": 1978,
+"title": "Oncogenes",
+"field": "Science: Biology",
+"desc": "Oncogenes, genes that can transform normal cells into cancerous cells, were identified. The oncogene was found to be very similar to a normal gene, differing in a single amino acid. ",
+"long": "In 1978 the American scientist Robert A. Weinberg and his colleagues successfully produced tumors in mice by the transfer of individual genes. The genes concerned were called oncogenes, the prefix being the one commonly used in medical terminology for 'tumor.' The oncogene was found to be very similar to a normal gene."
+},
+{
+"id": "virus-genome",
+"year": 1978,
+"title": "Virus genome",
+"field": "Science: Biology",
+"desc": "The SV40 virus genome was sequenced, marking progress toward understanding gene structures. This advancement laid groundwork for future human genome research.",
+"long": "In 1978 the first step was taken in this direction when the genome of a virus called SV40 was determined. This points the way, ultimately, to the working out of the human genome."
+},
+{
+"id": "jupiters-satellites",
+"year": 1979,
+"title": "Jupiter's satellites",
+"field": "Space",
+"desc": "Probes Voyager I and Voyager 2 provided the first close observations of Jupiter's four major satellites, revealing unique geological features like Io's active volcanoes and Europa's smooth surface. The mission also led to the discovery of three new satellites and a thin ring around Jupiter.",
+"long": "The probes Voyager I and Voyager 2 passed by Jupiter in March and July, respectively, of 1979. The most interesting result was that they gave humanity its first close look at the four Galilean satellites. The satellites are subject to tidal heating from Jupiter, a heating that increases rapidly as distance from Jupiter decreases. Thus, Ganymede and Callisto, the outermost pair, are both covered with craters as might be expected and seem to be made up largely of icy material. Europa, second-closest to Jupiter, is smooth and criss-crossed with lines, apparently covered with a liquid-water glacier. Io, the closest of the four, has no water at all and exhibits active volcanoes. Io's surface is c"
+},
+{
+"id": "extinction-of-the-dinosaurs",
+"year": 1979,
+"title": "Extinction of the dinosaurs",
+"field": "Science: Geology",
+"desc": "Research identified a layer of rock with high iridium concentrations dating to sixty-five million years ago, hinting at a massive asteroid impact linked to the extinction of dinosaurs. This discovery provided substantial evidence for the theory of an impact event leading to a mass extinction.",
+"long": "In 1979, the American scientist Walter Alvarez was trying to establish sedimentation rates in old sedimentary rocks in Italy using neutron-activation techniques. He discovered a narrow layer of rock with unusually high iridium concentrations, suggesting that it originated from a massive celestial impact. This layer dated to sixty-five million years ago, coinciding with the extinction of the dinosaurs and other species at the Cretaceous-Paleogene boundary."
+},
+{
+"id": "gluons",
+"year": 1979,
+"title": "Gluons",
+"field": "Science: Physics",
+"desc": "The discovery of gluons provided evidence for the particles responsible for the strong nuclear force binding quarks together. This finding was crucial in advancing the understanding of particle physics and the fundamental forces.",
+"long": "Quarks are held together by the strong interaction, which must involve an exchange particle called gluons. Energetic subatomic-particle interactions in 1979 produced rudimentary indications of the production of gluons."
+},
+{
+"id": "saturnian-system",
+"year": 1980,
+"title": "Saturnian system",
+"field": "Space",
+"desc": "The Voyager probes investigated Saturn's moons, revealing Titan's atmosphere to be mostly nitrogen, not methane as previously thought. Mimas has a huge crator that must have nearly shattered the moon, Iapetus has one hemisphere much darker than the other. An additional eight satellites were found bringing the total to seventeen.",
+"long": "The probe Voyager 1 passed by Saturn on November 12, 1980. Voyager 2 followed not long after. A number of the satellites of Saturn were for the first time seen as more than points of light. Titan, the largest satellite, was known to have an atmosphere of methane, but methane turned out to be present in small quantities compared to nitrogen. The Titanian atmosphere turned out to be 98 percent nitrogen and 2 percent methane and may be thicker than Earth's atmosphere. The Saturn probes succeeded in finding eight satellites that were too small to be seen from Earth, bringing the total number to seventeen. Two satellites inside Mimas’s orbit are unusual in being co-orbital. The Saturnian rings we"
+},
+{
+"id": "neutrino-mass",
+"year": 1980,
+"title": "Neutrino mass",
+"field": "Science: Physics",
+"desc": "Previously thought to be massless, experiments showed that neutrinos have small masses. If so, the three neutrinos – electron-neutrino, muon-neutrino and tauon-neutrino might be capable of oscillating, which would explain why the sun emits only a third the number of neutrinos it ought to.",
+"long": "In 1980 Frederick Reines (see 1956) reported on experiments that indicated neutrinos might have tiny quantities of mass (for years they had been thought to be massless). Researchers in Moscow reported similar results in an entirely different experiment and thought the neutrino mass might be 1/13,000 of an electron. If this were so, then the three neutrinos—the electron-neutrino, the muon-neutrino, and the tauon-neutrino—might well have slightly different masses and be capable of oscillating; that is, of continually changing from one to another."
+},
+{
+"id": "neptunes-rings",
+"year": 1982,
+"title": "Neptune's rings",
+"field": "Space",
+"desc": "Neptune's rings were discovered by observing irregularities in star occultation patterns, similar to the discovery of the rings of Uranus. It was suggested that Neptune's rings are arcs of material, and do not fully encircle the planet.",
+"long": "The rings of Uranus had been discovered by the behavior of a star's light, which disappeared and reappeared as Uranus approached it and then left it. In 1981 similar phenomena were noted when Neptune passed in front of a star. But the pattern had been symmetrical as the star passed into and out of occultation with Uranus, and in the case of Neptune it was not. The suggestion was therefore made that Neptune did not have symmetrical rings but merely arcs of ring material that did not stretch all the way around the planet."
+},
+{
+"id": "millisecond-pulsar",
+"year": 1982,
+"title": "Millisecond pulsar",
+"field": "Space",
+"desc": "A new type of millisecond pulsar was discovered, rotating 642 times faster than the fastest previously known pulsar. It likely gained speed by absorbing matter from a companion in a binary system.",
+"long": "The fastest pulsar known was in the Crab nebula and rotated some 30 times a second, emitting pulses at that rate. In 1982, however, a pulsar was found that rotated more than twenty times as fast, at 642 times per second. Moreover, it did not show signs of being a particularly young pulsar. There was a suggestion that it was part of a double star system and that, by absorbing matter from its companion, it had gained angular momentum and speeded up."
+},
+{
+"id": "magnetic-monopoles",
+"year": 1982,
+"title": "Magnetic monopoles",
+"field": "Science: Physics",
+"desc": "Why is it that electricity can exist as a negative or positive charge, but magnetism is always paired with north and south poles? A setup was created to detect magnetic monopoles by producing an electric current as they passed through. This single detection has never been reproduced, so the existence of monopoles remains in question.",
+"long": "Therefore, the physicist Blas Cabrera devised a setup that would produce an electric current if a magnetic monopole were to pass through it, and on February 14, 1982, it produced such a current. That single detection has not yet been repeated, however, either by Cabrera or by anyone else, so the existence of the magnetic monopole remains in question."
+},
+{
+"id": "w-particles",
+"year": 1983,
+"title": "W particles",
+"field": "Science: Physics",
+"desc": "The electroweak theory predicted three exchange particles, W+, W- and Z0 (neutral), which were 80x as massive as protons and took a large amount of energy to form. An experiment formed them all and found the particles had the expected mass, confirming the electroweak theory.",
+"long": "The electroweak theory made it necessary for the weak interaction to involve three exchange particles, one positive (W+), one negative (W-), and one neutral (Z0). By 1983, physicists were able to detect all three particles, confirming their predicted mass. This proved key aspects of the electroweak theory. The experiments were conducted by Italian physicist Carlo Rubbia and Dutch physicist Simon van der Meer."
+},
+{
+"id": "extrasolar-planets",
+"year": 1983,
+"title": "Extrasolar planets",
+"field": "Space",
+"desc": "IRAS, an infrared satellite, picked up IR radiation from the Vega neighborhood, which was interpreted as a ring of planets around that star. This was the best evidence yet of extrasolar planets.",
+"long": "IRAS, a satellite designed to detect infrared radiation, picked up such radiation in the immediate neighborhood of the bright star Vega in 1983. It suggested that a ring of particles, resembling an asteroid belt, might surround the star. This was then interpreted as evidence that other stars might possess planets."
+},
+{
+"id": "nuclear-winter",
+"year": 1983,
+"title": "Nuclear winter",
+"field": "Science: Environmental",
+"desc": "Nuclear winter theory suggests that nuclear explosions could cause severe climate disruptions by reducing sunlight. The concept stresses the devastating global effects of nuclear war.",
+"long": "Speculative accounts of a comet strike on Earth sixty-five million years ago, which might have ended the dinosaurs, inspired thoughts on nuclear war. A group proposed that nuclear explosions could generate enough dust to cause a nuclear winter, affecting global climates and leading to mass starvation."
+},
+{
+"id": "dna-and-human-evolution",
+"year": 1984,
+"title": "Dna and human evolution",
+"field": "Science: Biology",
+"desc": "DNA analysis suggested that humans and chimpanzees have a closer evolutionary relationship than either has to gorillas or orangutans. This finding implies that humans and chimpanzees shared a common ancestor approximately five to six million years ago.",
+"long": "DNA molecules change with time, forming mutations (see 1937). Presumably, if the DNA molecules of two different species are compared, then the more closely related the species are, the fewer the differences. And from the number of differences, one can tell, perhaps, the length of time it has taken the two species to differentiate from a common ancestor. Since the mutations are the result of chance changes, conclusions cannot be drawn with mathematical certainty, but they are suggestive. In 1984 such DNA analysis was used to present reasons for supposing that human beings and chimpanzees were more closely related to each other, evolutionarily, than either was to gorillas or orangutans, and th"
+},
+{
+"id": "brown-dwarfs",
+"year": 1984,
+"title": "Brown dwarfs",
+"field": "Space",
+"desc": "A dim companion star to the red dwarf Van Biesbroeck 8 was found, believed to be a brown dwarf. Brown dwarfs are celestial objects that glow faintly without undergoing nuclear fusion like regular stars.",
+"long": "In 1984 the red dwarf star Van Biesbroeck 8 was reported to have a still dimmer companion star. The companion was so small and dim that it seemed it could not be massive enough, or bright enough, to be shining by ordinary nuclear fusion. It was moderately heated to the point of just glowing, and it gave off radiation rich in infrared, by other types of nuclear reactions, perhaps. If it were totally cold and didn’t radiate in the visible region at all, it would be a black dwarf. Since it wasn’t totally cold, it was called a brown dwarf. The existence of this particular brown dwarf was later disputed, but other examples were reported."
+},
+{
+"id": "ozone-hole",
+"year": 1985,
+"title": "Ozone hole",
+"field": "Science: Environmental Science",
+"desc": "A significant hole in the Antarctic ozone layer was discovered, confirming the harmful effects of chlorofluorocarbons. This finding underscored the environmental damage caused by these chemicals.",
+"long": "A hole in the ozone layer over the Antarctic was detected by the British Antarctic survey, and the ozone concentration elsewhere was abnormally low. This was taken as disturbing confirmation of the deleterious effect of chlorofluorocarbons on ozone (see 1974)."
+},
+{
+"id": "pluto-and-charon",
+"year": 1985,
+"title": "Pluto and Charon",
+"field": "Space",
+"desc": "Observations of Charon moving in front of and behind Pluto revealed new information about their surfaces, suggesting that Charon's surface was frozen water.",
+"long": "In 1985 Charon, which had been discovered near perihelion (see 1978), began to move in front of Pluto on the way to moving behind it. By studying the light of Pluto alone, when Charon was behind it, and the light from both bodies, when Charon was in front of it but not covering all of it, something could be deduced about the surfaces of the two bodies."
+},
+{
+"id": "uranus-probe",
+"year": 1986,
+"title": "Uranus probe",
+"field": "Space",
+"desc": "Voyager 2 provided the first close examination of Uranus, revealing its rotation period of 17.24 hours and a magnetic field tilted at 60 degrees to its rotational exis. ",
+"long": "On January 24, 1986, Voyager 2 flew past Uranus and gave humanity its first close look at that distant planet discovered by Herschel (see 1781), as well as its rings and satellites. Uranus was found to rotate in 17.24 hours (previous estimates had been anywhere from 10 to 25 hours). It had, as expected, a magnetic field, but one that was tilted 60 degrees to the rotational axis. Uranus’s rings, detected from Earth nine years earlier, were confirmed. The five known satellites turned out to be somewhat larger than had been thought, and no fewer than ten small satellites were found to be circling at a smaller distance than that of Miranda, the already-known satellite nearest to Uranus. Miranda "
+},
+{
+"id": "halley-comet-iii",
+"year": 1986,
+"title": "Halley's comet return",
+"field": "Space",
+"desc": "Halley's comet returned for the third time since Halley first worked out its orbit in 1705. An ESA probe named Giotto after the first man to paint the comet in 1304, made a close approach. The comet turned out to be dirtier and larger than expected.",
+"long": "Halley’s comet returned for the third time since Halley had first worked out its orbit (see 1705). Its appearance in 1986 was unfortunately not a showy one, since it remained rather far from Earth even at its closest approach and could only be seen high in the sky from the southern hemisphere. It was an unprecedented return, however, since it could now be studied by probes sent out by the Soviet Union and by the European Space Agency. The European probe, named Giotto (after the painter who had been the first to paint the comet realistically—see 1304), made the closest approach. Comets had been pictured as \\\"dirty snowballs\\\" by Whipple (see 1949), and he was shown to be right, but Halley’s c"
+},
+{
+"id": "magellanic-supernova",
+"year": 1987,
+"title": "Magellanic supernova",
+"field": "Space",
+"desc": "The last visible supernova was studied by Kepler in 1604. The rest of them were too far away until a nearby supernova was caught in the Large Magellanic Cloud 150,000 lightyears away. The explosion was heralded by a spray of neutrinos caught in recently devised neutrino telescopes, and a pulsar at the center reported.",
+"long": "The last supernova that had been visible in our own Milky Way Galaxy was one studied by Kepler in 1604. Since then, the nearest supernova had been one spied 2,300,000 light-years away in the Andromeda galaxy (see 1886), but at the time it was not known to be a supernova and was not carefully studied even with the instruments then available. Since then, the only supernovas to have been noted had been in still more distant galaxies. In February 1987, however, a supernova was caught in its early explosive stage in the Large Magellanic Cloud. That was not in our own galaxy to be sure, but it was in the galaxy closest to our own, only 150,000 light-years away. The explosion had been heralded by a"
+},
+{
+"id": "warm-superconductivity",
+"year": 1987,
+"title": "Warm superconductivity",
+"field": "Science: Physics",
+"desc": "Superconductivity was observed in ceramic substances at 30° K, causing major excitement in the scientific community. This discovery led to intense research on ceramics, though theoretical explanations and practical applications remain challenging.",
+"long": "Johannes Georg Bednorz, studying ceramic substances (mixtures of metallic oxides) rather than metals, found they were obtaining superconductivity at temperatures of 30° K. This broke with shattering impact on the scientific community. Everyone began studying ceramics, and superconductivity in the liquid nitrogen temperature range was obtained. The difficulties that remain are that no good theoretical explanation of this astonishing behavior of ceramics exists, so that it is still a matter of \\\"cookbook chemistry,\\\" as properties vary erratically from one ceramic to another and from one batch of a particular ceramic to another. Then too, ceramics are not easy to form into film or wire, so tha"
+},
+{
+"id": "distant-galaxies-detection",
+"year": 1988,
+"title": "Distant galaxies detection",
+"field": "Space",
+"desc": "Advanced technology enabled the detection of galaxies with extreme red shifts, indicating they might be seventeen billion light-years away. This suggested the universe must be older than previously thought.",
+"long": "New instruments and computerized techniques made it possible to detect galaxies with red shifts greater than any previously seen; greater even than those of quasars. In 1988 some were detected that might be as much as seventeen billion light-years away. This was important with respect to the birth of the Universe. If the galaxies were seventeen billion light-years away, it had taken their light seventeen billion years to reach us, and we were seeing them as they existed seventeen billion years ago. This meant that even seventeen billion years ago the Universe was old enough to have formed galaxies."
+},
+{
+"id": "shroud-of-turin",
+"year": 1988,
+"title": "Shroud of Turin",
+"field": "Science",
+"desc": "The Shroud of Turin, a famous piece of linen with an image showing an bearded, long haired man, was tested using carbon-14 dating. This proved that it originated from the 1300s, overturning the belief that it was the burial shroud of Jesus Christ.",
+"long": "The Shroud of Turin is a linen cloth that seems to possess an image, front and back, of a bearded, long-haired man, which resembles the popular conception of Jesus. It was first displayed in France in the 1350s and in 1578 was taken to Turin, Italy. Many people believed it to be the burial sheet of Jesus with the image produced by miraculous means. Others, more skeptical, assumed it to be a forgery produced not long before it was first shown. In 1988 some of the linen was finally tested by the carbon-14 dating method worked out by Libby (see 1947). The results were clear. The linen had been part of living flax plants seven hundred years ago. The shroud, and presumably the image upon it, had "
+},
+{
+"id": "greenhouse-effect-effects",
+"year": 1988,
+"title": "Greenhouse effect impact",
+"field": "Science: Climate",
+"desc": "The intensifying greenhouse effect was causing rising global temperatures and environmental crises, with the yearly warming and disastrous droughts. Rising temperatures could also promote the melting of Earth's ice caps to produce sea level rise, threatening the habitability of our planet.",
+"long": "It had been known since Arrhenius (see 1884) had pointed it out that carbon dioxide in the atmosphere acted as a heat trap, making Earth's temperature warmer than it would otherwise be. This was called the greenhouse effect. It was also known that the carbon dioxide content of the atmosphere had been rising steadily since 1900, partly because of the increasing use of coal and oil, which produce carbon dioxide when burned, and partly because of the cutting down of forests, which are the most efficient consumers of carbon dioxide. As it happened, 1987 was the warmest year yet recorded by weather bureaus, and 1988 was warmer still. What's more, 1988 saw disastrous droughts in the United States "
+},
+{
+"id": "neptune-and-triton",
+"year": 1989,
+"title": "Neptune and triton",
+"field": "Space",
+"desc": "Voyager 2 flew within 3000 miles of Neptune's surface, revealing that it rotates every 16.1 hours. Discoveries include Neptune's strong winds up to 1500 mph, a magnetic field that is shifted 50 degrees in relation to its rotational axis. Neptune's largest moon Triton was found to be surprisingly cold at a 40°K surface temperature.",
+"long": "On August 25, Voyager 2 flew within 3,000 miles of the pale-blue-gas giant Neptune, making dramatic discoveries about the planet and its moons. Neptune rotates once every 16.1 hours. While its blue color comes from the presence of methane gas, its atmosphere's most prevalent gases are hydrogen and helium. The weather on Neptune is extremely dynamic, with the fastest winds—up to 1,500 mph—detected on any planet. Like Jupiter, with its Great Red Spot, Neptune has an especially turbulent atmospheric storm—also large in diameter as the planet Earth—that scientists have dubbed the Great Dark Spot. Neptune’s planetary magnetism is unusual compared to that of Earth, whose magnetic pole is centered "
+},
+{
+"id": "cold-fusion",
+"year": 1989,
+"title": "Cold fusion",
+"field": "Science: Physics",
+"desc": "A method for achieving nuclear fusion at room temperature was proposed, promising transformative energy generation. The claims were later discredited due to replication failures and inconsistencies.",
+"long": "For years researchers had looked for a feasible means of producing nuclear fusion, which occurs when atomic nuclei combine, releasing energy (see 1951, Stellarator). The problem was that the known methods of combining nuclei required great amounts of heat to initiate the reaction. Scientists had been trying to develop a way to contain the required heat, with no practical solutions yet reported. Since the March 23 announcement by American chemist B. Stanley Pons (b. 1943) and British chemist Martin Fleischmann (b. 1927),"
+},
+{
+"id": "chiron-comet",
+"year": 1989,
+"title": "Chiron Comet",
+"field": "Space",
+"desc": "Chiron was observed to display comet-like characteristics as it neared the Sun. Turned out Chiron was a very large comet, with a nucleus 112 miles in diameter, more than 10x the size of Halley's comet.",
+"long": "Chiron, initially considered an asteroid, displayed increasing brightness in 1987 as it neared the Sun, similar to comet behavior. In 1989, astronomers observed Chiron's coma, confirming its comet-like characteristics. It is a very large comet with a nucleus about 112 miles in diameter."
+},
+{
+"id": "fullerene-research",
+"year": 1991,
+"title": "Fullerene research",
+"field": "Science: Chemistry",
+"desc": "Fullerenes, including buckminsterfullerene (bucky balls), are a C60 object in the shape of a soccer ball with versatile potential uses from creating strong materials to acting as superconductors at relatively warm temperatures at 45°K. Questions remain about their toxicity and stability when exposed to air.",
+"long": "Growing knowledge about a molecule postulated in 1985, isolated in 1990, and first imaged in 1991 led to a flood of research on buckminsterfullerene (the \\\"buckyball,\\\" for short), a soccer-ball-shaped molecule named for the inventor of the geodesic dome, another structure it resembles. A third form of carbon—the others are diamond and graphite—the buckyball (C60) is a highly stable molecule consisting of 60 carbon atoms in an arrangement of 12 pentagonal and 20 hexagonal faces. Its intriguing structure led chemists to suggest that, along with a related group of molecules called fullerenes, it may give rise to a whole new class of materials. Because fullerenes are highly resilient, they migh"
+},
+{
+"id": "volcanic-venus",
+"year": 1991,
+"title": "Volcanic venus",
+"field": "Space",
+"desc": "The Magellan spacecraft successfully mapped over 90% of Venus's surface despite its challenging atmosphere. including mountains as high as 7 miles, craters up to 30 miles across, and gigantic volcanic domes, including lava flows as long as 125 miles.",
+"long": "By the end of 1991, the Venus orbiter Magellan, sent into space in May 1989, had completed mapping more than 90 percent of the planet’s surface. Scientists were familiar with the harsh atmosphere on Venus: mostly carbon dioxide, with a little nitrogen and sulfuric acid, at a pressure 90 times that on Earth and superheated to 900° F. Now Magellan’s powerful radar pierced this"
+},
+{
+"id": "first-asteroid-photograph",
+"year": 1991,
+"title": "First asteroid photograph",
+"field": "Space",
+"desc": "The Galileo space probe photographed the asteroid 951 Gaspra, a 12 x 8 mile wide football shaped body with hundreds of meteorite craters in it. These were the first captured images of an asteroid in space.",
+"long": "On October 29, the Galileo space probe, sent into space in 1989 and on its way to a rendezvous with Jupiter in 1995, traveled within 1,000 miles of the asteroid 951 Gaspra and relayed the first black-and-white photographs ever taken of an asteroid in space. Gaspra orbits the Sun between Mars and Jupiter. Irregularly shaped—one astronomer said it looked like a dented football—Gaspra is marked with deep, criss-crossing grooves and heavily pitted with more than 600 meteorite craters; it is 12 miles long and 8 miles wide. Because of a defect in Galileo's antenna, photos taken the following year were three times sharper than the 1991 images, and in color."
+},
+{
+"id": "gamma-ray-bursts",
+"year": 1991,
+"title": "Gamma ray bursts",
+"field": "Space",
+"desc": "The Gamma Ray Observatory, launched aboard the space shuttle Atlantis, conducted the first survey of gamma-ray sources in the universe. This discovery advanced scientific understanding of powerful cosmic phenomena such as supernovas and black holes.",
+"long": "While scanning the skies for violations of the Nuclear Test-Ban Treaty in the 1970s, U.S. government detectors recorded bursts of gamma rays from outside the Solar System. Astronomers wanted to know more; as the most powerful type of radiation, gamma rays may be the first signals we receive from extremely distant heavenly bodies. In April 1991, the space shuttle Atlantis put the 17-ton Gamma Ray Observatory (GRO) into orbit 280 miles above Earth. Its mission was to make the first survey of gamma-ray sources throughout the universe and particularly to study such explosive energy sources as supernovas, quasars, neutron stars, pulsars, and black holes. Early data from GRO suggested that the fla"
+},
+{
+"id": "background-microwave-radiation-experiment",
+"year": 1992,
+"title": "Background microwave radiation experiment",
+"field": "Science: Cosmology",
+"desc": "The satellite Cosmic Background Explorer (COBE)'s sensitive instruments were anticipated to provide detailed measurements of cosmic microwave background radiation, necessary to provide experimental proof of the afterglow of the big bang. These findings supported the idea of an inflationary universe, and corroborated the theory of dark matter.",
+"long": "Gamow (see 1948) had first postulated and Penzias and Wilson (see 1964) had confirmed the existence of background microwave radiation, which permeates space as the afterglow of the big bang. But cosmogonists needed data on the makeup of the radiation to bolster theories about the formation of galaxies and other large structures in the Universe. Thus the scientific world eagerly awaited results from the Cosmic Background Explorer (COBE), an American satellite launched in November 1989 into an orbit 560 miles above Earth, for COBE's instruments were 100 times more sensitive than previous devices. At first COBE reported that the background radiation was perfectly smooth."
+},
+{
+"id": "larger-role-rna",
+"year": 1992,
+"title": "Larger Role for RNA",
+"field": "Science: Biology",
+"desc": "At this point, cell scientists believed that RNA acted only as a messenger, and that proteins would carry out functional activities. Now RNA was shown to be capable of acting alone to string together amino acids, meaning that RNA was more important in protein synthesis than had been realized.",
+"long": "In the spring of 1992, Harry Francis Noller demonstrated that RNA alone could string together amino acids, showing RNA's crucial role in protein synthesis, fundamental to life."
+},
+{
+"id": "fermats-last-theorem-proof",
+"year": 1993,
+"title": "Fermat's last theorem proof",
+"field": "Math",
+"desc": "Andrew Wiles successfully proved Fermat's Last Theorem using the Taniyama Conjecture related to number theory. His work brought closure to a centuries-old mathematical problem and introduced new mathematical techniques.",
+"long": "A milestone seemed to have been reached when British mathematician Andrew John Wiles announced in July that he had established the truth of the famous theorem. While a year or two would be required for the 200-page proof to be thoroughly scrutinized and confirmed, Wiles's reputation was excellent, and on first review by his mathematical peers the proof was highly acclaimed. Wiles cracked the Fermat case by first solving a related math riddle central to number theory, the Taniyama Conjecture, which deals with elliptical curves. As part of the process of laying Fermat's 356-year-old problem to rest, Wiles also developed new techniques for dealing with important issues in number theory."
+}
+]

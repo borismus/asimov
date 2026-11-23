@@ -1,0 +1,1437 @@
+[
+ {
+  "id": "acoustic-emission",
+  "title": "Acoustic emission",
+  "year": 1950,
+  "inventor": "Joseph Kaiser",
+  "location": "Germany",
+  "effect": "a material under strain clicks with tiny bursts of sound as cracks grow",
+  "description": "A metal or rock under growing strain gives off tiny bursts of sound each time a crack jumps forward or a grain slips, like the 'cry' a bar of tin makes when bent. Joseph Kaiser studied it systematically in 1950, and now sensors stuck to tanks, bridges and aircraft listen for cracks before they become failures.",
+  "usedIn": [
+   "Crack monitoring of pressure vessels and storage tanks",
+   "Bridge and aircraft-wing structural health monitoring",
+   "Pipeline leak detection"
+  ],
+  "strength": "The clicks are far too faint and high-pitched to hear, but a sensor glued to a steel tank can pick up a crack growing a fraction of a millimetre several metres away.",
+  "field": "Science: Physics",
+  "deps": [
+   "piezoelectricity"
+  ],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "acoustic-radiation-pressure",
+  "title": "Acoustic radiation pressure",
+  "year": 1902,
+  "inventor": "Lord Rayleigh",
+  "location": "England",
+  "effect": "a strong sound wave pushes steadily on objects and can float them in mid-air",
+  "description": "A strong sound wave pushes steadily on whatever it hits, and in a standing wave small beads or droplets get trapped and float in mid-air at the quiet spots. Lord Rayleigh worked out the push in 1902; today it levitates samples in labs, sorts cells on chips and lets you feel buttons in mid-air.",
+  "usedIn": [
+   "Acoustic levitators for containerless lab chemistry",
+   "Acoustic tweezers that sort blood cells on a chip",
+   "Mid-air ultrasonic haptics (Ultraleap)",
+   "Shear-wave elastography in ultrasound scanners"
+  ],
+  "strength": "Weak: ultrasound can float droplets and foam beads a few millimetres across, but the force is only a few thousandths of a newton.",
+  "field": "Science: Physics",
+  "deps": [
+   "acoustics",
+   "piezoelectricity"
+  ],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "acousto-optic-effect",
+  "title": "Acousto-optic effect",
+  "year": 1922,
+  "inventor": "Léon Brillouin",
+  "location": "France",
+  "effect": "a sound wave in a crystal bends and shifts a light beam passing through",
+  "description": "A sound wave running through a clear crystal makes ripples of squeezed and stretched material that bend a light beam like a grating; change the sound's pitch and the beam swings to a new angle. Léon Brillouin predicted it in 1922, and it now switches and steers laser beams with no moving parts.",
+  "usedIn": [
+   "Acousto-optic modulators in laser printers and laser engravers",
+   "Q-switches that make pulsed lasers",
+   "Brillouin fibre sensors that measure strain along kilometres of pipeline"
+  ],
+  "strength": "An ultrasound wave in a crystal can redirect most of a laser beam in under a microsecond, millions of times faster than a moving mirror.",
+  "field": "Science: Physics",
+  "deps": [
+   "light-diffraction",
+   "piezoelectricity"
+  ],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "adiabatic-heating-and-cooling",
+  "title": "Adiabatic heating and cooling",
+  "year": 1788,
+  "inventor": "Erasmus Darwin",
+  "location": "England",
+  "effect": "a gas heats up when quickly squeezed and cools when it quickly expands",
+  "description": "Squeeze air quickly and it gets hot; let it expand quickly and it gets cold, even with no heat going in or out. Erasmus Darwin described air chilling as it rushed out of an air gun in 1788. Squeezing ignites fuel in diesel engines, and expanding air cools airliner cabins and makes clouds.",
+  "usedIn": [
+   "Diesel engines",
+   "Fire pistons",
+   "Air-cycle cooling packs on airliners",
+   "Wilson's cloud chamber"
+  ],
+  "strength": "Squeezing air to a twentieth of its volume, as a diesel engine does, heats it above 500 °C, hot enough to light fuel with no spark.",
+  "field": "Science: Physics",
+  "deps": [
+   "boyles-law"
+  ],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "adsorption",
+  "title": "Adsorption",
+  "year": 1773,
+  "inventor": "Carl Wilhelm Scheele",
+  "location": "Sweden",
+  "effect": "molecules from a gas or liquid stick to the surface of a solid",
+  "description": "Gas or dissolved molecules stick to the surface of a solid in a thin film, so a porous solid like charcoal soaks up huge amounts. Carl Scheele noticed charcoal taking up gases in 1773, and Felice Fontana saw the same in 1777. It's how gas masks, water-filter jugs and the silica-gel packets in shoe boxes work.",
+  "usedIn": [
+   "Activated-charcoal gas masks (Zelinsky, 1915)",
+   "Water-filter jugs",
+   "Silica-gel drying packets",
+   "Oxygen concentrators using zeolite beds"
+  ],
+  "strength": "A single gram of activated charcoal has the inner surface area of a few tennis courts, enough to soak up a large share of its own weight in vapour.",
+  "field": "Science: Chemistry",
+  "deps": [],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "auger-effect",
+  "title": "Auger effect",
+  "year": 1923,
+  "inventor": "Pierre Auger",
+  "location": "France",
+  "effect": "an atom that loses an inner electron throws out a second electron with a telltale energy",
+  "description": "When an atom loses an inner electron, it can fill the gap by flinging out a second electron with an energy that is a fingerprint of the element. Pierre Auger saw the tracks in a cloud chamber in 1923. Measuring these electrons tells which atoms sit on a surface, which is how chipmakers check wafers for contamination.",
+  "usedIn": [
+   "Auger electron spectroscopy for checking chip and metal surfaces",
+   "Surface analysis of catalysts and corrosion films"
+  ],
+  "strength": "The electrons only escape from the top few layers of atoms, so it reads a surface less than a hundred-thousandth of a hair's width deep; it needs a vacuum chamber and an electron beam.",
+  "field": "Science: Physics",
+  "deps": [
+   "x-rays",
+   "cloud-chamber"
+  ],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "auxetic-effect",
+  "title": "Auxetic effect",
+  "year": 1987,
+  "inventor": "Roderic Lakes",
+  "location": "United States",
+  "effect": "a material gets fatter when stretched and thinner when squeezed",
+  "description": "Stretch most things and they get thinner; an auxetic material gets fatter instead, and squeezing it makes it shrink in every direction. Roderic Lakes made the first auxetic foam in 1987 by crushing ordinary foam so its cells buckled inward. It makes padding that firms up where it's hit and stents that open evenly.",
+  "usedIn": [
+   "Impact padding in helmets and body armour",
+   "Shoe soles that widen as the foot pushes off (Nike Free RN, 2016)",
+   "Expanding medical stents"
+  ],
+  "strength": "Lakes's foam widened by about seven-tenths of how much it lengthened, where a rubber band narrows by about half.",
+  "field": "Science: Physics",
+  "deps": [
+   "hookes-law"
+  ],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "avalanche-breakdown",
+  "title": "Avalanche breakdown",
+  "year": 1901,
+  "inventor": "John Sealy Townsend",
+  "location": "England",
+  "effect": "one fast electron knocks loose others in a cascade that suddenly lets current flow",
+  "description": "In a strong enough electric field, one free electron speeds up, smashes loose another, and those two free two more, until a flood of current pours through a gas or crystal that normally blocks it. John Townsend explained the cascade in gases around 1901. It makes Geiger counters click and lets light sensors catch single photons.",
+  "usedIn": [
+   "Geiger counters",
+   "Avalanche photodiodes in lidar and fibre-optic receivers",
+   "Surge-protection diodes"
+  ],
+  "strength": "One electron can multiply into millions in under a microsecond, enough to turn a single particle or photon into a pulse you can count.",
+  "field": "Science: Physics",
+  "deps": [
+   "electron-as-subatomic-particle",
+   "cathode-rays"
+  ],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "barkhausen-effect",
+  "title": "Barkhausen effect",
+  "year": 1919,
+  "inventor": "Heinrich Barkhausen",
+  "location": "Germany",
+  "effect": "a magnetised piece of iron crackles as tiny regions inside it flip one by one",
+  "description": "Magnetise a piece of iron slowly and it doesn't change smoothly: tiny regions flip one after another, and a coil wound round it hears them as a crackle in a loudspeaker. Heinrich Barkhausen heard it in 1919. Factories now use the crackle to spot stress and grinding burns in gears and crankshafts.",
+  "usedIn": [
+   "Barkhausen-noise inspection of gears, camshafts and bearings",
+   "Measuring stress in steel rails and pipes"
+  ],
+  "strength": "The crackle is faint, heard only through a sensitive coil and amplifier, but it reads stress in the top tenth of a millimetre of steel.",
+  "field": "Science: Physics",
+  "deps": [
+   "electromagnetic-induction"
+  ],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "bingham-plastic",
+  "title": "Bingham plastic",
+  "year": 1916,
+  "inventor": "Eugene Bingham",
+  "location": "United States",
+  "effect": "a paste stays solid until pushed past a threshold, then flows",
+  "description": "Some pastes act like a solid until you push hard enough, then flow like a liquid: toothpaste sits in a stripe on the brush but squirts out of the tube. Eugene Bingham described the behaviour in 1916 while studying paints. It's why paint doesn't drip and why drilling mud holds rock chips up when the pump stops.",
+  "usedIn": [
+   "Toothpaste",
+   "Non-drip paint",
+   "Drilling mud that suspends rock cuttings",
+   "Pumped and 3D-printed concrete"
+  ],
+  "strength": "Toothpaste holds a stripe a centimetre tall without slumping, yet a gentle squeeze is enough to make it flow.",
+  "field": "Science: Physics",
+  "deps": [],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "bioluminescence",
+  "title": "Bioluminescence",
+  "year": 1885,
+  "inventor": "Raphaël Dubois",
+  "location": "France",
+  "effect": "a living thing makes light by a chemical reaction in its body",
+  "description": "Fireflies, glowing mushrooms and deep-sea fish make their own light by a chemical reaction in their bodies, with almost no heat. Raphaël Dubois showed in 1885 that it takes two substances, which he named luciferin and luciferase. Firefly chemistry now lights up food-safety tests and shows biologists which genes are switched on.",
+  "usedIn": [
+   "ATP hygiene swabs in food factories and hospitals",
+   "Luciferase reporter genes in biology labs",
+   "Glowing-bacteria tests for water toxicity (Microtox)"
+  ],
+  "strength": "Dim: a jar of fireflies barely lets you read, but almost all the reaction's energy comes out as light rather than heat.",
+  "field": "Science: Biology",
+  "deps": [
+   "enzyme"
+  ],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "brazil-nut-effect",
+  "title": "Brazil nut effect",
+  "year": 1987,
+  "inventor": "Anthony Rosato",
+  "location": "United States",
+  "effect": "shaking a mix of grains brings the biggest pieces to the top",
+  "description": "Shake a jar of mixed nuts and the big Brazil nuts rise to the top, even though they're heavier. Anthony Rosato and colleagues named and simulated it in 1987: small pieces slip into the gaps under big ones, ratcheting them upward. It sorts gravel and grain, and it's why mixed powders unmix on a bumpy truck ride.",
+  "usedIn": [
+   "Vibrating screens that sort gravel and seed by size",
+   "Controlling unmixing of pharmaceutical powders"
+  ],
+  "strength": "A few minutes of shaking is enough to bring a large nut from the bottom of a jar to the top.",
+  "field": "Science: Physics",
+  "deps": [],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "capillary-condensation",
+  "title": "Capillary condensation",
+  "year": 1871,
+  "inventor": "Lord Kelvin",
+  "location": "Scotland",
+  "effect": "water vapour condenses inside tiny pores before the air is saturated",
+  "description": "In very narrow pores, water vapour turns to liquid even when the air isn't humid enough to make dew anywhere else, because the curved surface in the pore holds it more easily. Lord Kelvin worked out the rule in 1871. It helps drying packets pull moisture from air, makes powders clump on damp days and lets labs measure pore sizes.",
+  "usedIn": [
+   "Silica-gel and clay desiccants",
+   "Gas-sorption instruments that measure pore sizes in catalysts",
+   "Dip-pen nanolithography"
+  ],
+  "strength": "In a pore a few millionths of a millimetre wide, water condenses at about half the humidity needed for dew in open air.",
+  "field": "Science: Physics",
+  "deps": [
+   "capillary-action"
+  ],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "cavitation",
+  "title": "Cavitation",
+  "year": 1894,
+  "inventor": "Charles Parsons",
+  "location": "England",
+  "effect": "low pressure in a fast or shaken liquid makes bubbles that collapse violently",
+  "description": "Where a liquid moves fast or is shaken hard, its pressure drops so low that vapour bubbles appear, then collapse violently. Charles Parsons found in 1894 that this was what stopped his turbine ship Turbinia's propellers from gripping the water, and why they pitted. The same collapsing bubbles scrub jewellery clean in ultrasonic baths.",
+  "usedIn": [
+   "Ultrasonic cleaning baths",
+   "High-pressure homogenisers for milk",
+   "Supercavitating torpedoes (Shkval)"
+  ],
+  "strength": "Each collapsing bubble briefly reaches thousands of atmospheres, enough to pit a bronze propeller over weeks.",
+  "field": "Science: Physics",
+  "deps": [
+   "screw-propeller",
+   "steam-turbine"
+  ],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "centrifugal-force",
+  "title": "Centrifugal force",
+  "year": 1659,
+  "inventor": "Christiaan Huygens",
+  "location": "Netherlands",
+  "effect": "a spinning object presses outward, harder the faster it spins",
+  "description": "Anything going round in a circle seems flung outward, pressing harder the faster it spins: water stays in a bucket swung overhead. Christiaan Huygens worked out its size in 1659. Spin it fast enough and it squeezes water from clothes, cream from milk and heavy particles from light ones.",
+  "usedIn": [
+   "Spin dryers in washing machines",
+   "Cream separators",
+   "Laboratory and blood centrifuges",
+   "Centrifugal governors on steam engines"
+  ],
+  "strength": "A washing machine spinning at 1,200 rpm presses the clothes against the drum with about 400 times their weight.",
+  "field": "Science: Physics",
+  "deps": [
+   "falling-motion"
+  ],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "cheerio-effect",
+  "title": "Cheerio effect",
+  "year": 2005,
+  "inventor": "Dominic Vella and L. Mahadevan",
+  "location": "United States",
+  "effect": "small floating objects drift together because of the dents they make in the surface",
+  "description": "Cereal floating in milk clumps together and sticks to the bowl's edge, because each piece dents the liquid surface and the dents slide into each other. Dominic Vella and L. Mahadevan explained and named it in 2005. It can pull small floating parts together into ordered patterns without any hands.",
+  "usedIn": [
+   "Bragg and Nye's bubble rafts that model crystal defects",
+   "Self-assembly of millimetre-sized floating parts"
+  ],
+  "strength": "Weak and short-range: it only pulls floating objects a few millimetres across, over a few centimetres, in a few seconds.",
+  "field": "Science: Physics",
+  "deps": [
+   "capillary-action",
+   "archimedes-principle"
+  ],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "christiansen-effect",
+  "title": "Christiansen effect",
+  "year": 1884,
+  "inventor": "Christian Christiansen",
+  "location": "Denmark",
+  "effect": "crushed glass in a liquid lets through only the one colour where both bend light equally",
+  "description": "A glass cell packed with crushed glass and a liquid looks milky, except for one colour that passes straight through: the one where glass and liquid bend light by exactly the same amount. Christian Christiansen found it in 1884. Warming the cell shifts which colour gets through, so it makes simple tunable colour filters.",
+  "usedIn": [
+   "Narrow-band Christiansen filters for light and infrared",
+   "Temperature-tuned colour filters"
+  ],
+  "strength": "A cell a few centimetres thick passes a band of light only a few nanometres wide, and warming it by a few degrees shifts the colour noticeably.",
+  "field": "Science: Physics",
+  "deps": [
+   "refraction",
+   "light-spectrum"
+  ],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "coanda-effect",
+  "title": "Coanda effect",
+  "year": 1910,
+  "inventor": "Henri Coandă",
+  "location": "France",
+  "effect": "a jet of fluid clings to a curved surface beside it and follows its curve",
+  "description": "A jet of air or water bends to follow a curved surface beside it instead of shooting straight: hold the back of a spoon under a tap and the stream wraps around it. Henri Coandă noticed it in 1910 when exhaust from his experimental jet aircraft hugged its body. It's how bladeless fans blow and some helicopters steer without a tail rotor.",
+  "usedIn": [
+   "Dyson Air Multiplier bladeless fan",
+   "NOTAR helicopters with no tail rotor",
+   "Blown wing flaps on short-takeoff planes (Antonov An-72)"
+  ],
+  "strength": "A thin jet can be bent through 90 degrees or more around a rounded edge, dragging along several times its own volume of surrounding air.",
+  "field": "Science: Physics",
+  "deps": [
+   "aerodynamics"
+  ],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "coffee-ring-effect",
+  "title": "Coffee ring effect",
+  "year": 1997,
+  "inventor": "Robert Deegan",
+  "location": "United States",
+  "effect": "a drying drop carries its particles to its edge and leaves a ring",
+  "description": "A drop of coffee dries into a dark ring rather than an even spot, because liquid flows outward to replace what evaporates fastest at the edge and carries the grounds with it. Robert Deegan and colleagues explained it in 1997. Printers fight it to get even ink, and some cheap medical tests use it to sort particles by size.",
+  "usedIn": [
+   "Inkjet printing of electronics (suppressed or exploited for thin conductive rings)",
+   "Paper diagnostics that separate particles by size"
+  ],
+  "strength": "Within a few minutes a drying drop sweeps nearly all its particles to the rim.",
+  "field": "Science: Physics",
+  "deps": [
+   "capillary-action"
+  ],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "corona-discharge",
+  "title": "Corona discharge",
+  "year": 1915,
+  "inventor": "Frank Peek",
+  "location": "United States",
+  "effect": "air around a sharp high-voltage point glows and becomes charged without sparking",
+  "description": "Around a sharp point or thin wire at high voltage, the air starts to glow faintly blue and hiss as it becomes electrically charged, without a spark jumping. Sailors called it St Elmo's fire; Frank Peek worked out when it starts in 1915. It charges the drum in photocopiers, cleans soot from chimney smoke and makes ozone.",
+  "usedIn": [
+   "Electrostatic precipitators in power-plant chimneys",
+   "Charging the drum in photocopiers and laser printers",
+   "Ozone generators for water treatment",
+   "Ionising air purifiers"
+  ],
+  "strength": "A few thousand volts on a needle point is enough to start it, and a precipitator built on it catches over 99% of the ash in smoke.",
+  "field": "Science: Physics",
+  "deps": [
+   "static-electricity",
+   "lightning-rod"
+  ],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "detonation",
+  "title": "Detonation",
+  "year": 1881,
+  "inventor": "Marcellin Berthelot and Paul Vieille",
+  "location": "France",
+  "effect": "a burning front driven by its own shock wave races through an explosive faster than sound",
+  "description": "In some explosives the burning doesn't spread layer by layer like a fire; it rides a shock wave that tears through the material faster than sound, crushing as it goes. Berthelot and Vieille in Paris measured these flame fronts in gas-filled tubes in 1881. It's why dynamite shatters rock while gunpowder only pushes, and it lets welders bang dissimilar metals together into one plate.",
+  "usedIn": [
+   "Blasting caps and mining explosives",
+   "Explosive welding of steel to titanium or copper cladding",
+   "Shaped-charge perforators that punch oil wells",
+   "Rotating detonation rocket engines (test-fired in the 2020s)"
+  ],
+  "strength": "The front moves at 2 to 9 km per second with pressures of a few hundred thousand atmospheres, enough to shatter steel on contact.",
+  "field": "Science: Chemistry",
+  "deps": [
+   "nitroglycerine",
+   "dynamite"
+  ],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "diamagnetism",
+  "title": "Diamagnetism",
+  "year": 1845,
+  "inventor": "Michael Faraday",
+  "location": "England",
+  "effect": "a material is weakly pushed away from a magnet instead of pulled toward it",
+  "description": "Water, wood, graphite and even living things are weakly pushed away by a strong magnet, the opposite of iron. Faraday showed in 1845 that most substances do this (Brugmans had seen bismuth do it in 1778). With a strong enough magnet it can float a frog in mid-air, or a sliver of graphite over a row of fridge-size magnets with no power at all.",
+  "usedIn": [
+   "Levitating a live frog in a 16-tesla magnet (Geim and Berry, 1997)",
+   "Floating pyrolytic-graphite desk toys and levitation stages",
+   "Diamagnetic bearings and sensors in micro-machines"
+  ],
+  "strength": "About a hundred-thousandth the strength of iron's pull: a thin sheet of pyrolytic graphite floats a millimetre above neodymium magnets, but floating water takes a magnetic field about 300,000 times Earth's.",
+  "field": "Science: Physics",
+  "deps": [
+   "electromagnets"
+  ],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "dielectric-heating",
+  "title": "Dielectric heating",
+  "year": 1945,
+  "inventor": "Percy Spencer",
+  "location": "United States",
+  "effect": "radio waves or microwaves shake molecules in a material and heat it from the inside",
+  "description": "Radio waves or microwaves make water and other polar molecules in food flip back and forth billions of times a second, and the jostling heats the food from inside. Percy Spencer at Raytheon noticed a chocolate bar melting in his pocket next to a radar magnetron in 1945 and built the first microwave oven. The same trick welds plastic sheets and dries timber.",
+  "usedIn": [
+   "Microwave ovens",
+   "Radio-frequency welding of PVC (inflatable boats, blister packs)",
+   "Drying timber and curing glue in plywood presses",
+   "Medical diathermy"
+  ],
+  "strength": "A 1,000-watt microwave oven brings a mug of water to the boil in about two minutes.",
+  "field": "Science: Physics",
+  "deps": [
+   "magnetrons",
+   "radar"
+  ],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "diffusiophoresis",
+  "title": "Diffusiophoresis",
+  "year": 1947,
+  "inventor": "Boris Derjaguin",
+  "location": "Russia",
+  "effect": "particles in a liquid drift along a difference in dissolved-salt concentration",
+  "description": "Tiny particles in a liquid drift on their own toward or away from places where dissolved salt or sugar is more concentrated, with no current or stirring. Boris Derjaguin in Moscow described it in 1947 while studying how latex particles coat surfaces. It pulls dirt out of pores too small for any rinse to reach and sorts particles in lab-on-a-chip devices.",
+  "usedIn": [
+   "Latex coating in dip-moulded gloves and balloons",
+   "Pulling dirt out of fabric and porous surfaces with salt gradients (lab-tested)",
+   "Particle sorting in microfluidic chips"
+  ],
+  "strength": "Slow, a few micrometres per second, but enough to empty a pore a hair's width deep in under a minute.",
+  "field": "Science: Chemistry",
+  "deps": [
+   "diffusion"
+  ],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "edb-garshelis-effect",
+  "title": "Garshelis effect",
+  "year": 1992,
+  "inventor": "Ivan Garshelis",
+  "location": "United States",
+  "effect": "twisting a magnetised shaft makes it give off a magnetic field",
+  "description": "Magnetise a ring on a steel shaft around its circumference and nothing leaks out, but twist the shaft and a measurable field appears along it, growing with the twist. Ivan Garshelis turned this into a way to weigh the turning force on a spinning shaft without touching it.",
+  "usedIn": [
+   "Torque sensors in electric power steering",
+   "Pedal-force sensors in e-bikes"
+  ],
+  "strength": "A few gauss at full torque, weak but easily read by a nearby Hall sensor.",
+  "field": "Science: Physics",
+  "deps": [],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "edb-magnetic-saturation",
+  "title": "Magnetic saturation",
+  "year": 1873,
+  "inventor": "Henry Rowland",
+  "location": "United States",
+  "effect": "iron can only be magnetised so far, then extra current adds almost nothing",
+  "description": "Push more current through a coil around iron and the iron's magnetism grows, until every tiny magnetic region in it is lined up; after that it barely grows at all. Henry Rowland measured this ceiling in 1873. Switching iron in and out of saturation lets a small current control a large one.",
+  "usedIn": [
+   "Fluxgate magnetometers in spacecraft and phones",
+   "Magnetic amplifiers and saturable reactors",
+   "Fault-current limiters on power grids"
+  ],
+  "strength": "Iron saturates at about 2 tesla, some 40,000 times Earth's magnetic field.",
+  "field": "Science: Physics",
+  "deps": [],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "eddy-currents",
+  "title": "Eddy currents",
+  "year": 1855,
+  "inventor": "Léon Foucault",
+  "location": "France",
+  "effect": "a moving or changing magnetic field stirs up swirling currents in metal that brake it and heat it",
+  "description": "Move a magnet past a sheet of copper or aluminium and swirling currents spring up in the metal, dragging against the motion and warming it. Foucault showed in 1855 that a copper disc spun between magnet poles slows down and heats up. A magnet dropped down a copper pipe drifts down slowly as if through syrup, and the same drag stops trains and sorts drink cans.",
+  "usedIn": [
+   "Eddy-current brakes on trains and roller coasters",
+   "Induction cooktops",
+   "Metal detectors and coin checkers in vending machines",
+   "Recycling separators that fling aluminium cans off a conveyor"
+  ],
+  "strength": "A strong magnet takes several seconds to fall through a 30 cm copper pipe instead of a quarter of a second.",
+  "field": "Science: Physics",
+  "deps": [
+   "electromagnetic-induction"
+  ],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "electret",
+  "title": "Electret",
+  "year": 1919,
+  "inventor": "Mototaro Eguchi",
+  "location": "Japan",
+  "effect": "a material holds a permanent electric charge, like an electric version of a magnet",
+  "description": "Some waxes and plastics, melted and left to harden inside a strong electric field, keep a frozen-in charge for years, an electric version of a permanent magnet. Mototaro Eguchi made the first from carnauba wax and resin in Tokyo in 1919. Thin charged plastic films now sit in almost every phone microphone, and the fibres of N95 masks are electrets that grab passing particles.",
+  "usedIn": [
+   "Electret microphones in phones and hearing aids (Sessler and West, 1962)",
+   "N95 and surgical mask filters",
+   "Electrostatic air filters for heating and ventilation"
+  ],
+  "strength": "A film thinner than paper can hold a few hundred volts on its surface for decades, enough to tug dust and smoke particles out of the air.",
+  "field": "Science: Physics",
+  "deps": [
+   "static-electricity"
+  ],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "electric-arc",
+  "title": "Electric arc",
+  "year": 1802,
+  "inventor": "Vasily Petrov",
+  "location": "Russia",
+  "effect": "a large current jumping a gap turns the air into a continuous, intensely hot glowing plasma",
+  "description": "Pull two touching carbon rods a little apart while a big current flows and a blinding, roaring bridge of hot glowing gas forms between them. Vasily Petrov in St Petersburg described it in 1802 using a huge battery, and Humphry Davy made it famous in London a few years later. Arcs lit the first street lamps and searchlights, and today they weld ships and melt scrap into new steel.",
+  "usedIn": [
+   "Arc welding",
+   "Electric arc furnaces that recycle scrap steel",
+   "Arc lamps for searchlights and early cinema projectors",
+   "Plasma cutting torches"
+  ],
+  "strength": "A welding arc reaches about 6,000 °C, hot enough to melt any metal in seconds.",
+  "field": "Science: Physics",
+  "deps": [
+   "electric-battery"
+  ],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "electric-wind",
+  "title": "Electric wind",
+  "year": 1709,
+  "inventor": "Francis Hauksbee",
+  "location": "England",
+  "effect": "a sharp point at high voltage blows a breeze",
+  "description": "Air near a sharp point at high voltage becomes charged and is pushed away, making a breeze with no moving parts. It runs silent air purifiers, and in 2018 it flew a model plane with no propeller.",
+  "usedIn": [
+   "Silent ionic air purifiers",
+   "MIT's propeller-less model plane (2018)",
+   "Experimental cooling for computer chips"
+  ],
+  "strength": "Yes, weak: the MIT plane weighed about 2.5 kg and flew just 60 m on a few newtons of thrust. Good for moving air quietly, not for lifting much.",
+  "field": "Science: Physics",
+  "deps": [
+   "static-electricity"
+  ],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "electro-osmosis",
+  "title": "Electro-osmosis",
+  "year": 1807,
+  "inventor": "Ferdinand Friedrich Reuss",
+  "location": "Russia",
+  "effect": "a voltage across a wet porous material or narrow channel makes the liquid flow",
+  "description": "Put a voltage across wet clay or a hair-thin glass tube of water and the water itself starts to flow toward one electrode, with no pump and no moving parts. Ferdinand Reuss saw water climb through sand in Moscow in 1807, in the same experiments where he found clay particles moving the other way. Engineers use it to drain soggy soil, and lab-on-a-chip devices use it to pump tiny drops.",
+  "usedIn": [
+   "Draining clay soil for excavations and embankments (Casagrande, 1930s)",
+   "Pumps in lab-on-a-chip and microfluidic devices",
+   "Liquid flow in capillary electrophoresis DNA sequencers"
+  ],
+  "strength": "Slow but steady: around a millimetre per second through a hair-thin channel at a few hundred volts per centimetre.",
+  "field": "Science: Chemistry",
+  "deps": [
+   "osmosis",
+   "electric-battery"
+  ],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "electroabsorption",
+  "title": "Electroabsorption",
+  "year": 1958,
+  "inventor": "Walter Franz and Leonid Keldysh",
+  "location": "Germany and Russia",
+  "effect": "an electric field makes a semiconductor absorb light it used to let through",
+  "description": "A thin layer of semiconductor that normally lets a laser beam through starts to swallow it when a few volts are applied across it. Walter Franz in Germany and Leonid Keldysh in Moscow predicted it independently in 1958. Because it switches in trillionths of a second, it is used to flick laser light on and off to send internet data down optical fibres.",
+  "usedIn": [
+   "Electroabsorption modulators in fibre-optic transmitters",
+   "High-speed optical switches"
+  ],
+  "strength": "A couple of volts can block most of a beam, and it switches tens of billions of times a second.",
+  "field": "Science: Physics",
+  "deps": [
+   "stark-effect",
+   "light-emitting-diodes"
+  ],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "electrocaloric-effect",
+  "title": "Electrocaloric effect",
+  "year": 1930,
+  "inventor": "Pavel Kobeko and Igor Kurchatov",
+  "location": "Russia",
+  "effect": "a material warms when an electric field is switched on and cools when it is switched off",
+  "description": "Some crystals and plastics warm up when you switch on a strong electric field across them and cool down when you switch it off. Kobeko and Kurchatov first measured it in Rochelle salt in Leningrad in 1930. Cycling a material this way can pump heat like a fridge with no gas and no compressor, and prototype solid-state coolers now do it.",
+  "usedIn": [
+   "Prototype solid-state refrigerators using polymer films",
+   "Experimental chip and battery coolers"
+  ],
+  "strength": "Ordinary crystals change by a fraction of a degree, but thin films found in 2006 swing by about 12 °C per switch.",
+  "field": "Science: Physics",
+  "deps": [],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "electrocapillarity",
+  "title": "Electrocapillarity",
+  "year": 1875,
+  "inventor": "Gabriel Lippmann",
+  "location": "France",
+  "effect": "a voltage makes a drop spread out or bead up",
+  "description": "A voltage changes how well a liquid wets a surface: a drop of mercury in acid flattens or bulges as the voltage is turned up and down. Today it pushes droplets around lab chips and focuses liquid lenses.",
+  "usedIn": [
+   "Lippmann's capillary electrometer, which recorded the first human heartbeat traces (1887)",
+   "Liquid lenses that focus by reshaping a drop",
+   "Lab-on-a-chip devices that move single drops around"
+  ],
+  "strength": "Strong only at small sizes: it reshapes and moves drops a few millimetres across in thousandths of a second, but can't lift anything heavy.",
+  "field": "Science: Physics",
+  "deps": [
+   "capillary-action",
+   "electric-battery"
+  ],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "electrochemiluminescence",
+  "title": "Electrochemiluminescence",
+  "year": null,
+  "inventor": "",
+  "location": "",
+  "effect": "an electrode reaction makes a chemical glow",
+  "description": "Certain chemicals glow when a small voltage at an electrode sets off a light-giving reaction, so the light can be switched on exactly when and where you want it. Chemists worked it out in the 1960s. It is the heart of hospital blood analysers that count tiny amounts of hormones, cancer markers and heart-attack proteins.",
+  "usedIn": [
+   "Roche Elecsys immunoassay analysers (thyroid, cancer marker and troponin tests)",
+   "Meso Scale Discovery assay plates"
+  ],
+  "strength": "The glow is too faint to see, but a light detector can count it down to a few billionths of a gram per litre.",
+  "field": "Science: Chemistry",
+  "deps": [
+   "laws-of-electrolysis"
+  ],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "electrochromism",
+  "title": "Electrochromism",
+  "year": 1969,
+  "inventor": "Satyen Deb",
+  "location": "United States",
+  "effect": "a small voltage makes a material change colour or darken, and it reverses",
+  "description": "A thin film on glass turns from clear to deep blue when a small voltage pushes charged atoms into it, and clears again when the voltage reverses. Satyen Deb found it in tungsten oxide films at American Cyanamid in 1969. It makes windows that dim at the press of a button and car mirrors that darken against headlight glare.",
+  "usedIn": [
+   "Dimmable cabin windows on the Boeing 787",
+   "Auto-dimming rear-view mirrors (Gentex)",
+   "Smart-glass building windows"
+  ],
+  "strength": "A couple of volts darkens a window over a few minutes, cutting the light let through from about 60% to 1%.",
+  "field": "Science: Chemistry",
+  "deps": [],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "electron-spin-resonance",
+  "title": "Electron spin resonance",
+  "year": 1944,
+  "inventor": "Yevgeny Zavoisky",
+  "location": "Russia",
+  "effect": "unpaired electrons in a magnetic field absorb microwaves at one precise frequency",
+  "description": "Put a substance with lone, unpaired electrons in a magnetic field and it soaks up microwaves at one sharp frequency, set by the field strength. Yevgeny Zavoisky found it in Kazan in 1944. Because it picks out free radicals and radiation damage, it can date fossil teeth, check whether food was irradiated, and measure radiation doses.",
+  "usedIn": [
+   "Alanine dosimeters that measure radiotherapy doses",
+   "Dating fossil tooth enamel",
+   "Testing whether food has been irradiated",
+   "Diamond quantum magnetic sensors"
+  ],
+  "strength": "Weak: it needs a sensitive microwave receiver, but it can spot about a billion unpaired electrons in a sample.",
+  "field": "Science: Physics",
+  "deps": [
+   "magnetic-resonance"
+  ],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "electrorheological-effect",
+  "title": "Electrorheological effect",
+  "year": 1947,
+  "inventor": "Willis Winslow",
+  "location": "United States",
+  "effect": "an electric field turns a fluid thick and nearly solid in milliseconds",
+  "description": "A runny oil full of fine powder stiffens into a soft solid in a few thousandths of a second when a strong voltage is applied, and turns runny again when it is switched off. Willis Winslow patented it in 1947. It gives clutches, brakes and haptic controls that change grip instantly with no moving valves.",
+  "usedIn": [
+   "Electrorheological clutches and brakes",
+   "Haptic and tactile feedback devices",
+   "Adaptive shock absorbers and robot grippers"
+  ],
+  "strength": "A few thousand volts per millimetre makes it hold a few kilopascals, roughly like stiff jelly, which is why magnetic versions won in car suspensions.",
+  "field": "Science: Physics",
+  "deps": [],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "electrostatic-induction",
+  "title": "Electrostatic induction",
+  "year": 1753,
+  "inventor": "John Canton",
+  "location": "England",
+  "effect": "a nearby charge pushes the charges in an object around without touching it",
+  "description": "Hold a charged rod near a metal can without touching it and the can's own charges shift, so the near side becomes opposite to the rod and the can rolls toward it. John Canton in London described it in 1753. Touching the far side briefly lets you charge things over and over from one source, which is how the electrophorus and the Wimshurst machine work.",
+  "usedIn": [
+   "Volta's electrophorus (1775)",
+   "Wimshurst static machines",
+   "Gold-leaf electroscopes",
+   "Faraday-cage shielding"
+  ],
+  "strength": "A rod rubbed on hair can pull an empty drink can along a table from a few centimetres away.",
+  "field": "Science: Physics",
+  "deps": [
+   "static-electricity",
+   "positive-negative-charge"
+  ],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "electrostriction",
+  "title": "Electrostriction",
+  "year": null,
+  "inventor": "",
+  "location": "",
+  "effect": "an insulator changes shape a little when an electric field is applied",
+  "description": "Every insulating material squeezes slightly in the direction of a strong electric field, and the effect doesn't care which way the field points. In most materials the change is far too small to notice, but special ceramics move enough to bend mirrors. Telescope mirrors that correct for starlight twinkling and precision positioners use these ceramics.",
+  "usedIn": [
+   "Lead magnesium niobate actuators in adaptive-optics mirrors",
+   "Nanometre positioning stages",
+   "Sonar transducers"
+  ],
+  "strength": "Tiny: the best ceramics stretch about 0.1%, a millimetre-thick piece moving a micrometre.",
+  "field": "Science: Physics",
+  "deps": [
+   "piezoelectricity"
+  ],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "faraday-effect",
+  "title": "Faraday effect",
+  "year": 1845,
+  "inventor": "Michael Faraday",
+  "location": "England",
+  "effect": "a magnetic field twists the polarisation of light passing through a material",
+  "description": "Shine polarised light through glass sitting in a strong magnetic field and the direction of its polarisation twists, more the stronger the field. Faraday found it in 1845, the first proof that light and magnetism are linked. It builds one-way valves for light that protect lasers in fibre-optic networks, and lets power companies measure huge currents with a loop of fibre.",
+  "usedIn": [
+   "Optical isolators in fibre-optic networks and lasers",
+   "Fibre-optic current sensors in power substations",
+   "Mapping galactic magnetic fields with radio telescopes"
+  ],
+  "strength": "In special garnet crystals a small permanent magnet twists light by 45 degrees in a couple of millimetres; ordinary glass needs a strong electromagnet for a few degrees.",
+  "field": "Science: Physics",
+  "deps": [
+   "polarized-light",
+   "electromagnets"
+  ],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "faraday-waves",
+  "title": "Faraday waves",
+  "year": 1831,
+  "inventor": "Michael Faraday",
+  "location": "England",
+  "effect": "vibrating a container makes its liquid surface form standing wave patterns that can throw off droplets",
+  "description": "Shake a dish of liquid up and down fast enough and its surface breaks into a standing pattern of squares, stripes or hexagons that bob at half the shaking rate. Faraday described them in 1831. Shake much faster and the crests fling off fine droplets, which is how ultrasonic humidifiers and nebulisers make mist.",
+  "usedIn": [
+   "Ultrasonic humidifiers and medical nebulisers",
+   "Arranging cells and particles into patterns for tissue engineering"
+  ],
+  "strength": "Patterns appear once the dish is shaken a bit harder than gravity; at 1.7 million shakes a second the crests throw off droplets a few micrometres across.",
+  "field": "Science: Physics",
+  "deps": [
+   "acoustics"
+  ],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "flocculation",
+  "title": "Coagulation",
+  "year": 1882,
+  "inventor": "Hans Schulze",
+  "location": "Germany",
+  "effect": "a pinch of salt makes fine particles clump together and sink",
+  "description": "A pinch of a salt like alum makes the fine particles clouding muddy water clump together and sink, leaving it clear. Hans Schulze showed in 1882 that the salt's electric charge decides how little is needed. Every waterworks does this.",
+  "usedIn": [
+   "Waterworks and sewage plants",
+   "Clearing beer and wine",
+   "Papermaking"
+  ],
+  "strength": "A few milligrams of alum per litre clears muddy water in under an hour.",
+  "field": "Science: Chemistry",
+  "deps": [],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "fluidization",
+  "title": "Fluidization",
+  "year": 1922,
+  "inventor": "Fritz Winkler",
+  "location": "Germany",
+  "effect": "gas blown up through a granular bed makes it flow like a liquid",
+  "description": "Blow air up through a bed of sand or powder and at a certain speed the grains lift apart and the whole bed starts behaving like a boiling liquid: you can stir it, pour it, and things float or sink in it. Fritz Winkler used it in Germany in 1922 to turn powdered coal into gas. Fluidized beds now crack crude oil into gasoline and burn coal and waste cleanly.",
+  "usedIn": [
+   "Fluid catalytic cracking in oil refineries (1942)",
+   "Fluidized-bed boilers and incinerators",
+   "Winkler coal gasifier",
+   "Fluidized-bed dryers for food and medicines"
+  ],
+  "strength": "A gentle updraft of a few centimetres per second is enough; a ball heavier than the sand sinks and a lighter one bobs up.",
+  "field": "Science: Chemistry",
+  "deps": [],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "fluorescence",
+  "title": "Fluorescence",
+  "year": 1852,
+  "inventor": "George Gabriel Stokes",
+  "location": "England",
+  "effect": "a material absorbs light of one colour and instantly gives off light of a longer, redder colour",
+  "description": "Some materials soak up invisible ultraviolet light and instantly give it back as visible colour, so they seem to glow under a black light. George Stokes worked it out in 1852 with quinine water, and named it after the mineral fluorite. It lights fluorescent tubes, makes highlighter ink and whitened laundry glow, and lets biologists tag cells with glowing proteins.",
+  "usedIn": [
+   "Fluorescent lamps",
+   "Highlighter pens and optical brighteners in laundry detergent",
+   "Fluorescence microscopy with green fluorescent protein"
+  ],
+  "strength": "The glow lasts only billionths of a second after the light goes off; a fluorescent tube gives about four times the light per watt of a filament bulb.",
+  "field": "Science: Physics",
+  "deps": [
+   "ultraviolet"
+  ],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "flutter",
+  "title": "Flutter",
+  "year": 1916,
+  "inventor": "Frederick Lanchester",
+  "location": "England",
+  "effect": "a flexible structure in moving air or water feeds on the flow and swings harder and harder",
+  "description": "Above a certain speed, a wing, tail, flag or bridge deck in moving air starts to twist and flap, each swing feeding the next, until it shakes itself apart. Frederick Lanchester traced the tail of a Handley Page bomber violently shaking in 1916 to this feedback. Engineers test every new aircraft against it, and wind-harvesters turn a fluttering ribbon into electricity.",
+  "usedIn": [
+   "Flight flutter testing of new aircraft",
+   "Windbelt flutter generators (Shawn Frayne, 2007)",
+   "Bridge-deck design after the Tacoma Narrows collapse (1940)"
+  ],
+  "strength": "Below the critical speed nothing happens; just above it, swings grow in seconds, and the Tacoma Narrows Bridge tore apart in a 64 km/h wind.",
+  "field": "Science: Physics",
+  "deps": [
+   "airplane",
+   "aerodynamics"
+  ],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "free-surface-effect",
+  "title": "Free surface effect",
+  "year": null,
+  "inventor": "",
+  "location": "",
+  "effect": "loose liquid in a tilting vessel runs to the low side and tips it further",
+  "description": "Liquid sloshing in a half-empty tank, or grain shifting in a ship's hold, runs to whichever side the ship leans and tips it further. It has capsized ferries, but naval engineers also turn it around: a tuned tank of water that sloshes out of step with the waves calms a ship's roll.",
+  "usedIn": [
+   "Anti-roll tanks on ships (Frahm tanks)",
+   "Tuned sloshing-water dampers in skyscrapers",
+   "Baffles in road tankers and aircraft fuel tanks"
+  ],
+  "strength": "Strong: water a few centimetres deep spread across its car deck was enough to capsize the ferry Herald of Free Enterprise in under two minutes in 1987.",
+  "field": "Science: Physics",
+  "deps": [],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "frequency-doubling",
+  "title": "Frequency doubling",
+  "year": 1961,
+  "inventor": "Peter Franken",
+  "location": "United States",
+  "effect": "intense light passing through certain crystals partly comes out at double the frequency",
+  "description": "Shine a very intense laser through certain crystals and some of the light comes out at exactly half the wavelength, so invisible infrared turns into green light. Peter Franken's team found it in 1961 by focusing a ruby laser into quartz, just a year after the laser was invented. Green laser pointers make their light this way from an infrared laser, and microscopes use it to image collagen without dyes.",
+  "usedIn": [
+   "Green laser pointers (1064 nm infrared doubled to 532 nm)",
+   "Green and ultraviolet lasers for eye surgery and chip inspection",
+   "Second-harmonic microscopy of collagen and muscle"
+  ],
+  "strength": "Franken's first try converted about one part in a hundred million; modern crystals convert more than half of a strong pulsed laser beam.",
+  "field": "Science: Physics",
+  "deps": [
+   "laser"
+  ],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "friction",
+  "title": "Friction",
+  "year": 1699,
+  "inventor": "Guillaume Amontons",
+  "location": "France",
+  "effect": "surfaces in contact resist sliding with a force proportional to how hard they press together",
+  "description": "Push a box across the floor and the floor pushes back. Amontons found the drag is proportional to how hard the surfaces press together, and oddly doesn't depend on how big the contact area is. Friction is what lets shoes grip, brakes stop cars and matches light.",
+  "usedIn": [
+   "Disc and drum brakes",
+   "Friction clutches in cars",
+   "Strike-anywhere matches",
+   "Bow drills for starting fire"
+  ],
+  "strength": "Rubber on a dry road grips with a force up to about its own load (coefficient ~0.7-1); steel on ice manages only about 0.03.",
+  "field": "Science: Physics",
+  "deps": [],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "grain-boundary-strengthening",
+  "title": "Grain-boundary strengthening",
+  "year": 1951,
+  "inventor": "Eric Hall",
+  "location": "England",
+  "effect": "smaller crystal grains make a metal stronger",
+  "description": "Metal made of smaller crystal grains is stronger, because the boundaries between grains block the slipping that lets metal bend. Eric Hall (1951) and Norman Petch (1953) worked out the rule; steelmakers now roll and cool steel carefully to keep the grains tiny.",
+  "usedIn": [
+   "High-strength low-alloy steel in car bodies",
+   "Controlled-rolled pipeline steel",
+   "Fine-grained aluminium alloys for aircraft"
+  ],
+  "strength": "Shrinking the grains from about 0.1 mm to 0.01 mm roughly doubles the strength of mild steel, without adding any alloy.",
+  "field": "Science: Metallurgy",
+  "deps": [
+   "steel"
+  ],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "ground-effect",
+  "title": "Ground effect",
+  "year": 1922,
+  "inventor": "Carl Wieselsberger",
+  "location": "Germany",
+  "effect": "a wing close to the ground gets more lift and less drag",
+  "description": "A wing flying closer to the ground or water than about half its span gets extra lift and less drag, because the surface stops air from escaping downward and swirling round the wingtips. Carl Wieselsberger measured it in 1922; pilots feel it as a 'float' just before touchdown.",
+  "usedIn": [
+   "Soviet ekranoplans such as the 'Caspian Sea Monster'",
+   "Wing-in-ground-effect ferries and craft (e.g. Airfish)",
+   "Landing technique allowances for airliners"
+  ],
+  "strength": "Flying at a tenth of its span above the surface, a wing loses roughly half its induced drag, which is why ekranoplans could carry heavy loads on little fuel.",
+  "field": "Science: Physics",
+  "deps": [
+   "airplane",
+   "aerodynamics"
+  ],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "hall-effect",
+  "title": "Hall effect",
+  "year": 1879,
+  "inventor": "Edwin Hall",
+  "location": "United States",
+  "effect": "a magnetic field pushes current to one side of a conductor, creating a sideways voltage",
+  "description": "Run a current through a thin strip in a magnetic field and a small voltage appears across the strip's sides, because the field pushes the moving charges toward one edge. Edwin Hall found it in 1879 as a graduate student at Johns Hopkins. It lets a chip sense a magnet without touching it.",
+  "usedIn": [
+   "Hall sensors timing brushless motors in fans and drones",
+   "Wheel-speed sensors for anti-lock brakes",
+   "Hall-effect thrusters on satellites",
+   "Lid-closed sensors in laptops and phones"
+  ],
+  "strength": "Microvolts in a metal, but in a semiconductor chip a fridge magnet gives millivolts, plenty to detect position or current.",
+  "field": "Science: Physics",
+  "deps": [
+   "electrical-motion"
+  ],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "helmholtz-resonance",
+  "title": "Helmholtz resonance",
+  "year": 1863,
+  "inventor": "Hermann von Helmholtz",
+  "location": "Germany",
+  "effect": "air in a cavity with a narrow neck rings at one note",
+  "description": "Blow across the mouth of an empty bottle and it hums: the air in the neck bounces like a weight on the springy air inside. Hermann von Helmholtz built tuned glass spheres on this principle to pick single tones out of music, published in 1863.",
+  "usedIn": [
+   "Bass-reflex ports in loudspeakers",
+   "Car intake and exhaust resonators that cancel drone",
+   "Ocarinas",
+   "Tuned sound absorbers in concert halls"
+  ],
+  "strength": "A wine bottle hums at roughly 100-200 Hz; a tuned box can soak up one low note almost completely while letting others pass.",
+  "field": "Science: Physics",
+  "deps": [],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "hot-chocolate-effect",
+  "title": "Hot chocolate effect",
+  "year": 1982,
+  "inventor": "Frank Crawford",
+  "location": "United States",
+  "effect": "a few bubbles in a liquid slow sound in it dramatically",
+  "description": "Tap a mug while stirring in cocoa powder and the note drops sharply, then slowly climbs back as the froth clears: tiny air bubbles make the liquid springy and slow sound down enormously. Physicist Frank Crawford described it in 1982.",
+  "usedIn": [
+   "Bubble curtains that muffle offshore pile-driving noise to protect porpoises",
+   "US Navy 'Prairie-Masker' air systems that hide ship noise"
+  ],
+  "strength": "Just 1% air bubbles cuts the speed of sound in water from about 1,500 m/s to roughly 120 m/s.",
+  "field": "Science: Physics",
+  "deps": [],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "hydraulic-jump",
+  "title": "Hydraulic jump",
+  "year": 1819,
+  "inventor": "Giorgio Bidone",
+  "location": "Italy",
+  "effect": "a fast shallow stream abruptly jumps up into a deep slow one, churning away its energy",
+  "description": "When a fast, shallow stream suddenly slows, its surface leaps up in a standing step of churning water; you can see one as the ring around where a tap's stream hits the sink. Giorgio Bidone first studied it by experiment in Turin around 1819. Engineers build one in on purpose at the foot of dams to burn off the water's destructive energy.",
+  "usedIn": [
+   "Stilling basins below dam spillways",
+   "Rapid mixing of chemicals at water-treatment plants",
+   "Aerating rivers and channels"
+  ],
+  "strength": "A jump in a spillway basin can destroy well over half the energy of water falling tens of metres, within a few tens of metres of concrete.",
+  "field": "Science: Physics",
+  "deps": [],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "hygroscopy",
+  "title": "Hygroscopy",
+  "year": null,
+  "inventor": "",
+  "location": "",
+  "effect": "some substances pull water out of the air",
+  "description": "Some substances pull water vapour out of the air and hold on to it; certain salts take up so much that they dissolve into a puddle of their own brine. It's why salt cakes in a damp shaker, and why a sachet of silica gel keeps a shoebox dry.",
+  "usedIn": [
+   "Silica gel packets",
+   "Desiccant dehumidifiers and dryers",
+   "Calcium chloride spread on dirt roads to keep dust down and on icy roads",
+   "Honey and jam stay unspoilt partly because sugar pulls water out of microbes"
+  ],
+  "strength": "Calcium chloride can soak up more than its own weight in water from humid air.",
+  "field": "Science: Chemistry",
+  "deps": [],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "iridescence",
+  "title": "Iridescence",
+  "year": 1665,
+  "inventor": "Robert Hooke",
+  "location": "England",
+  "effect": "thin transparent layers reflect different colours at different angles",
+  "description": "Some surfaces change colour as you tilt them, like soap bubbles, peacock feathers and CDs, because stacked thin layers make light waves reinforce one colour at one angle and another at the next. Robert Hooke looked at peacock feathers under his microscope in 1665 and traced the colours to thin layers, not pigment.",
+  "usedIn": [
+   "Colour-shifting security ink on banknotes",
+   "Colour-flip car paints (ChromaFlair)",
+   "Anti-reflection coatings on lenses",
+   "Holographic foil on cards and packaging"
+  ],
+  "strength": "Layers a few hundred nanometres thick, about 1/200 of a hair, give brilliant colours that never fade because no dye is involved.",
+  "field": "Science: Physics",
+  "deps": [
+   "microscope"
+  ],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "johnsen-rahbek-effect",
+  "title": "Johnsen-Rahbek effect",
+  "year": 1923,
+  "inventor": "Alfred Johnsen and Knud Rahbek",
+  "location": "Denmark",
+  "effect": "a voltage makes a metal and a semiconducting surface cling tightly together",
+  "description": "Put a voltage between a metal plate and a slightly conductive stone or ceramic touching it, and the two cling far harder than ordinary static would allow, because charge piles up across the tiny gaps where they touch. Danish engineers Alfred Johnsen and Knud Rahbek reported it in 1923 and built relays and loudspeakers on it.",
+  "usedIn": [
+   "Electrostatic chucks holding silicon wafers in chip fabs",
+   "Johnsen-Rahbek relays and loudspeakers",
+   "Electroadhesive robot grippers"
+  ],
+  "strength": "A few hundred volts gives a grip of a few kilopascals, enough to hold a wafer flat, many times the pull of plain static at that voltage.",
+  "field": "Science: Physics",
+  "deps": [],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "joule-heating",
+  "title": "Joule heating",
+  "year": 1841,
+  "inventor": "James Prescott Joule",
+  "location": "England",
+  "effect": "electric current heats the wire it flows through",
+  "description": "Current flowing through a wire heats it, in proportion to the wire's resistance and the square of the current, so doubling the current gives four times the heat. James Joule measured it in 1841, before his famous work on the mechanical equivalent of heat.",
+  "usedIn": [
+   "Electric kettles, toasters and heaters",
+   "Incandescent light bulbs",
+   "Fuses that melt to cut a circuit",
+   "Rear-window defrosters"
+  ],
+  "strength": "A kettle's coil turns 2-3 kilowatts into heat, boiling a litre of water in about two to three minutes.",
+  "field": "Science: Physics",
+  "deps": [
+   "ohms-law"
+  ],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "karman-vortex-street",
+  "title": "Kármán vortex street",
+  "year": 1911,
+  "inventor": "Theodore von Kármán",
+  "location": "Germany",
+  "effect": "flow past a cylinder sheds swirls from alternate sides, shaking it at a steady rate",
+  "description": "Wind flowing past a pole or wire peels off swirls alternately from each side, leaving a zigzag trail and shaking the pole side to side; it's what makes power lines sing. Theodore von Kármán explained the pattern in 1911 at Göttingen.",
+  "usedIn": [
+   "Vortex flowmeters in pipelines",
+   "Spiral strakes on chimneys and car antennas that stop shaking",
+   "Aeolian harps"
+  ],
+  "strength": "Swirls come off at about one-fifth of the wind speed divided by the width: a 10 m/s wind past a 1 cm wire gives a 200 Hz hum.",
+  "field": "Science: Physics",
+  "deps": [
+   "aerodynamics"
+  ],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "kelvin-helmholtz-instability",
+  "title": "Kelvin-Helmholtz instability",
+  "year": 1868,
+  "inventor": "Hermann von Helmholtz",
+  "location": "Germany",
+  "effect": "a boundary between two fluids sliding past each other rolls up into waves",
+  "description": "When one layer of fluid slides over another, such as wind over water, the boundary rolls up into a row of curling waves; it's why some clouds look like a line of breaking surf. Helmholtz described it in 1868 and Lord Kelvin in 1871.",
+  "usedIn": [
+   "Shear-layer mixing in jet-engine combustors and chemical mixers",
+   "Wind-wave forecasting for shipping",
+   "Clear-air turbulence warnings in aviation"
+  ],
+  "strength": "Any speed difference across a sharp boundary sets it growing; on a calm sea it takes a moderate breeze to raise waves this way.",
+  "field": "Science: Physics",
+  "deps": [],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "kerr-effect",
+  "title": "Kerr effect",
+  "year": 1875,
+  "inventor": "John Kerr",
+  "location": "Scotland",
+  "effect": "an electric field makes a clear material change the polarization of light",
+  "description": "An electric field makes some clear liquids and glasses split light like a polarizing crystal, so between two polarizers they can switch a beam on and off in under a billionth of a second. John Kerr found it in glass in Glasgow in 1875.",
+  "usedIn": [
+   "Kerr-cell shutters in high-speed photography and early television",
+   "Kerr-lens mode-locking in femtosecond lasers",
+   "Ultrafast optical switches"
+  ],
+  "strength": "Weak: a centimetre-long cell of nitrobenzene needs tens of thousands of volts to switch fully, but responds in under a nanosecond.",
+  "field": "Science: Physics",
+  "deps": [
+   "polarized-light"
+  ],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "lagrangian-point",
+  "title": "Lagrangian points",
+  "year": 1772,
+  "inventor": "Joseph-Louis Lagrange",
+  "location": "Germany",
+  "effect": "a small body stays put relative to two big orbiting bodies at five balance points",
+  "description": "Around any two orbiting bodies, like the Sun and Earth, there are five spots where a small object's pulls balance so it keeps pace with them. Joseph-Louis Lagrange found them in 1772 in Berlin (Euler had found three). Space telescopes park there for a steady view with little fuel.",
+  "usedIn": [
+   "James Webb Space Telescope at Sun-Earth L2",
+   "SOHO solar observatory at L1",
+   "Gaia star-mapping probe at L2"
+  ],
+  "strength": "Sun-Earth L1 and L2 lie 1.5 million km from Earth; a craft there needs only a few metres per second of thrust a year to stay.",
+  "field": "Science: Astronomy",
+  "deps": [
+   "universal-gravitation"
+  ],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "laminar-flow",
+  "title": "Laminar flow",
+  "year": 1883,
+  "inventor": "Osborne Reynolds",
+  "location": "England",
+  "effect": "slow or narrow flows move in smooth layers instead of churning",
+  "description": "Slow or narrow flows slide along in smooth, parallel layers; speed them up and they break into churning eddies. Osborne Reynolds showed in 1883, with a thread of dye in a glass pipe, that a single number predicts which you get. Smooth flow means far less drag and clean, predictable streams.",
+  "usedIn": [
+   "Laminar-flow hoods and cleanroom ceilings",
+   "Laminar-flow wing sections on gliders",
+   "Microfluidic lab-on-a-chip devices",
+   "Glass-smooth laminar fountains"
+  ],
+  "strength": "Water in a 1 cm pipe stays smooth below about 20 cm/s; keeping air laminar over a wing cuts skin drag there several-fold.",
+  "field": "Science: Physics",
+  "deps": [],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "leidenfrost-effect",
+  "title": "Leidenfrost effect",
+  "year": 1756,
+  "inventor": "Johann Gottlob Leidenfrost",
+  "location": "Germany",
+  "effect": "a liquid on a surface far above its boiling point floats on a cushion of its own vapour",
+  "description": "Flick water onto a very hot pan and the drops skate around for a minute instead of hissing away: the bottom of each drop boils into a thin cushion of steam that holds it up and insulates it. Johann Gottlob Leidenfrost described it in 1756.",
+  "usedIn": [
+   "Cooks' water-drop test for a hot pan",
+   "Boiler and nuclear-reactor tube design (avoiding film boiling)",
+   "Quenching steel, where the steam blanket slows cooling"
+  ],
+  "strength": "Above about 200 °C a water drop hovers on a steam layer a tenth of a millimetre thick and lasts over a minute; at 150 °C it would be gone in seconds.",
+  "field": "Science: Physics",
+  "deps": [],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "liquid-crystals",
+  "title": "Liquid crystals",
+  "year": 1888,
+  "inventor": "Friedrich Reinitzer",
+  "location": "Czech Republic",
+  "effect": "a liquid whose lined-up molecules can be turned by a voltage to block or pass light",
+  "description": "Some substances flow like a liquid yet keep their rod-shaped molecules lined up like a crystal, so a small voltage can swing them round and change how light passes. Friedrich Reinitzer noticed in Prague in 1888 that a compound from carrots melted twice, first to a cloudy liquid, then to a clear one.",
+  "usedIn": [
+   "Liquid-crystal displays in phones, TVs and watches",
+   "Liquid-crystal thermometer strips and mood rings",
+   "Switchable smart-glass windows"
+  ],
+  "strength": "A few volts across a layer a few thousandths of a millimetre thick turns a pixel from clear to dark in milliseconds.",
+  "field": "Science: Chemistry",
+  "deps": [
+   "polarized-light"
+  ],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "lotus-effect",
+  "title": "Lotus effect",
+  "year": 1997,
+  "inventor": "Wilhelm Barthlott",
+  "location": "Germany",
+  "effect": "a surface of tiny waxy bumps makes water bead up and roll off, carrying dirt",
+  "description": "Water on a lotus leaf beads into near-perfect balls that roll off at the slightest tilt, picking up dirt as they go, because the leaf is covered in tiny waxy bumps that let drops touch almost nothing. Botanist Wilhelm Barthlott worked out how it keeps the leaf clean using electron microscopes, publishing with Christoph Neinhuis in 1997.",
+  "usedIn": [
+   "Lotusan self-cleaning facade paint",
+   "Water-repellent self-cleaning fabrics",
+   "Superhydrophobic sprays such as NeverWet"
+  ],
+  "strength": "Drops sit with a contact angle above 150° and roll off when the leaf tilts by only a few degrees.",
+  "field": "Science: Biology",
+  "deps": [
+   "electron-microscope"
+  ],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "lubrication",
+  "title": "Lubrication",
+  "year": 1883,
+  "inventor": "Beauchamp Tower",
+  "location": "England",
+  "effect": "a moving surface drags oil into a wedge-shaped gap and floats on it",
+  "description": "A spinning shaft drags oil into the narrowing gap of its bearing and builds enough pressure to float on it, so metal never touches metal. Beauchamp Tower discovered that pressure in 1883 when oil spurted from a hole drilled in a railway-axle bearing, and Osborne Reynolds explained it in 1886.",
+  "usedIn": [
+   "Journal bearings in car engines and turbines",
+   "Michell thrust bearings on ship propeller shafts",
+   "Fluid-dynamic bearings in hard drives"
+  ],
+  "strength": "An oil film thinner than a hair can carry tens of atmospheres of pressure and cuts friction to about a thousandth of the load.",
+  "field": "Science: Physics",
+  "deps": [
+   "rolling-friction"
+  ],
+  "pick": "keep",
+  "deckMatch": null
+ },
+ {
+  "id": "magnetic-hysteresis",
+  "title": "Magnetic hysteresis",
+  "year": 1880,
+  "inventor": "Emil Warburg",
+  "location": "Germany",
+  "effect": "a magnetic material keeps some magnetism after the field is removed",
+  "description": "Iron remembers: magnetise it and switch the field off and some magnetism stays, and to undo it you must push the other way; push hard enough and it stops responding at all (saturation). Emil Warburg measured this loop in 1880 and James Ewing, working in Japan, named it hysteresis a few years later.",
+  "usedIn": [
+   "Magnetic tape and hard-disk storage",
+   "Permanent magnets",
+   "Hysteresis brakes on exercise bikes",
+   "Fluxgate compasses (using saturation)"
+  ],
+  "strength": "A neodymium magnet resists being unmagnetised by fields of about a tesla, while soft transformer iron flips with a field tens of thousands of times weaker.",
+  "field": "Science: Physics",
+  "deps": [
+   "electromagnets"
+  ],
+  "pick": "keep",
+  "deckMatch": null
+ }
+]

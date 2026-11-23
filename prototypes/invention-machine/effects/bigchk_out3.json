@@ -1,0 +1,83 @@
+[
+ {
+  "id": "laser-spike-airliner",
+  "verdict": "borderline",
+  "rule": "r5",
+  "why": "Nobody has flown it and the saving needs a megawatt laser pulsing for hours on a full-size plane at Mach 4, so the question is whether the energy budget survives scale-up. My pick: keep.",
+  "found": "Only wind-tunnel and simulation work (Myrabo/IEAv directed-energy air spike, PM&AM Research with AFRL, NASA Langley/Rutgers, femtosecond-filament tunnel tests); no flight test, programme or airliner company.",
+  "url": "https://www.twz.com/33859/blasting-the-air-in-front-of-hypersonic-vehicles-with-lasers-could-unlock-unprecedented-speeds",
+  "familiar": true
+ },
+ {
+  "id": "boom-cancelling-biplane",
+  "verdict": "pass",
+  "rule": "none",
+  "why": "It would open overland supersonic routes by cancelling the boom and much of the wave drag at the wing itself.",
+  "found": "No company; only university work, chiefly Tohoku University's 'Misora' Mach 2 biplane concept with small prototypes and ballistic-range models, plus MIT/Stanford simulations; JAXA's own demonstrator is a monoplane.",
+  "url": "https://www.tohoku.ac.jp/en/research/research_highlights/innovating_human_flight.html",
+  "familiar": true
+ },
+ {
+  "id": "reef-bubble-shade",
+  "verdict": "pass",
+  "rule": "none",
+  "why": "It would shade whole reef sections through a heatwave from a few moored buoys, where today's shades cover single colonies.",
+  "found": "Australia's Reef Restoration and Adaptation Program describes microbubbles from moored platforms as a concept, but its 2020-2025 field trials were fogging and cloud brightening; no microbubble trial or company found.",
+  "url": "https://gbrrestoration.org/?p=1868",
+  "familiar": true
+ },
+ {
+  "id": "heat-hardened-coral-algae",
+  "verdict": "drop",
+  "rule": "exists",
+  "why": "AIMS's funded Pilot Deployments Program is already taking heat-evolved algae to reef release, with field trials showing the gain and approvals under way, so this is that programme.",
+  "found": "AIMS/RRAP: heat-evolved symbionts passed heat tolerance to corals in lab and field experiments; the 2025-2029 Pilot Deployment Program aims to put them on the Great Barrier Reef within its five years, pending approvals.",
+  "url": "https://www.aims.gov.au/node/4543/",
+  "familiar": true
+ },
+ {
+  "id": "glowing-minefield-scan",
+  "verdict": "drop",
+  "rule": "exists",
+  "why": "A funded MIT spin-out is already building TNT-sensing microbes that drones spread and later image, which is this card.",
+  "found": "Fieldstone Bio (MIT spin-out, 2023, $5M seed 2025) engineers microbes that sense TNT residue from landmines, broadcasts them by drone and reads them with a second drone flight; field trials planned.",
+  "url": "https://techcrunch.com/2025/05/15/fieldstone-bio-is-building-microbes-that-can-sense-everything-from-tnt-to-arsenic",
+  "familiar": true
+ },
+ {
+  "id": "two-tone-mine-listener",
+  "verdict": "pass",
+  "rule": "none",
+  "why": "It would find plastic and metal mines alike by their hollow shape, cutting the thousand false digs per mine to a handful.",
+  "found": "Only research systems (Stevens nonlinear acoustics, MIT Lincoln Lab, Univ. Mississippi NCPA, a 2025 Kyiv lab study); no product or demining deployment, and Ukrainian demining startups use cameras, AI and metal detectors.",
+  "url": "https://ui.adsabs.harvard.edu/abs/2002ASAJ..111.2705D/abstract",
+  "familiar": false
+ },
+ {
+  "id": "atom-sensor-mine-scanner",
+  "verdict": "borderline",
+  "rule": "r19",
+  "why": "It swaps the coil of an existing resonance mine detector for an atom sensor, so the question is whether that speed-up truly turns a spot-check tool into a field sweep or is just a better part. My pick: keep.",
+  "found": "Coil-based NQR detectors were field-tested (Quantum Magnetics, Bosnia 1999) but never fielded; mRead's NMR handheld trialled with HALO; atomic magnetometers for NQR are only lab work, with no company.",
+  "url": "https://physicsworld.com/a/nmr-technology-shows-promise-in-landmine-clearance-field-trials/",
+  "familiar": true
+ },
+ {
+  "id": "sun-powered-tutor-slate",
+  "verdict": "drop",
+  "rule": "r19",
+  "why": "It is a lower-power chip for an offline AI tutor that already runs on phones and small boards, and the barrier for poor children is device cost, not watts, which analog memory chips don't cut.",
+  "found": "Offline tutors exist on ordinary digital hardware (ESP32 tutor board, Gaza AI Edu Kit on a solar hub, Beekee offline boxes); analog in-memory chips (IBM, EnCharge, a solar-powered memristor network) are research or laptop parts, none in a tutor.",
+  "url": "https://www.electronicsforu.com/news/this-esp32-board-runs-an-offline-ai-tutor-for-kids",
+  "familiar": false
+ },
+ {
+  "id": "pupil-reading-tutor",
+  "verdict": "pass",
+  "rule": "none",
+  "why": "It would give machine tutors a live reading of a child's effort from a cheap infrared camera, the feedback human tutors rely on.",
+  "found": "Only research prototypes (pupil and gaze studies with Chem Tutor, webcam attention trackers for online classes and special education); no tutoring product uses pupil effort.",
+  "url": "https://par.nsf.gov/biblio/10643894",
+  "familiar": false
+ }
+]

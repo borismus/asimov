@@ -1,0 +1,2058 @@
+[
+ {
+  "name": "Seebeck Effect",
+  "desc": "The conversion of temperature differences directly into electricity. A thermoelectric EMF (voltage), is created in the presence of a temperature difference between two different metals or semiconductors. This causes a continuous current in the conductors if they form a circuit.",
+  "wiki": "http://en.wikipedia.org/wiki/Thermoelectric_effect#Seebeck_effect",
+  "functions": [
+   "Detect / Field",
+   "Produce / Field"
+  ],
+  "notes": [],
+  "deckGuess": "seebeck-effect"
+ },
+ {
+  "name": "Settling",
+  "desc": "The process by which particulates settle to the bottom of a liquid and form a sediment. Particles that experience a force, either due to gravity or due to centrifugal motion will tend to move in a uniform manner in the direction exerted by that force. For gravity settling, this means that the particles will tend to fall to the bottom of the vessel, forming a slurry at the vessel base.",
+  "wiki": "http://en.wikipedia.org/wiki/Settling",
+  "functions": [
+   "Accumulate / Divided Solid",
+   "Accumulate / Solid",
+   "Clean / Gas",
+   "Clean / Liquid",
+   "Compress / Divided Solid",
+   "Compress / Solid",
+   "Concentrate / Divided Solid",
+   "Concentrate / Solid",
+   "Constrain / Divided Solid",
+   "Deposit / Divided Solid",
+   "Deposit / Solid",
+   "Detect / Divided Solid",
+   "Detect / Solid",
+   "Extract / Liquid",
+   "Extract / Solid",
+   "Hold / Divided Solid",
+   "Join / Divided Solid",
+   "Join / Solid",
+   "Move / Divided Solid",
+   "Move / Solid",
+   "Orient / Divided Solid",
+   "Protect / Divided Solid",
+   "Remove / Divided Solid",
+   "Separate / Divided Solid",
+   "Separate / Liquid",
+   "Separate / Solid"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Shadow",
+  "desc": "An area where direct light (or other radiation) from a source cannot reach due to obstruction by an object. The cross section of a shadow is a two-dimensional silhouette, or reverse projection of the object blocking the light (or radiation).",
+  "wiki": "http://en.wikipedia.org/wiki/Shadow",
+  "functions": [
+   "Absorb / Field",
+   "Constrain / Field",
+   "Destroy / Field",
+   "Detect / Divided Solid",
+   "Detect / Field",
+   "Detect / Gas",
+   "Detect / Liquid",
+   "Detect / Solid",
+   "Remove / Field",
+   "Resist / Field"
+  ],
+  "notes": [
+   "By observation of a cast shadow."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Shape Memory Alloy",
+  "desc": "An alloy that 'remembers' its original, cold-forged shape: returning the pre-deformed shape by heating. This material is a lightweight, solid-state alternative to conventional actuators such as hydraulic, pneumatic, and motor-based systems.",
+  "wiki": "http://en.wikipedia.org/wiki/Shape_memory_alloy",
+  "functions": [
+   "Bend / Solid",
+   "Expand / Divided Solid",
+   "Expand / Gas",
+   "Expand / Liquid",
+   "Expand / Solid",
+   "Freeze / Solid",
+   "Hold / Solid",
+   "Join / Divided Solid",
+   "Join / Solid",
+   "Move / Solid",
+   "Orient / Divided Solid",
+   "Orient / Solid",
+   "Protect / Solid",
+   "Rotate / Solid",
+   "Separate / Divided Solid"
+  ],
+  "notes": [
+   "For example, changing the form of particles into one that forces them apart.",
+   "For example, changing the form of particles into one that is interlocking."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Shear Stress",
+  "desc": "A stress which is applied parallel or tangential to a face of a material, as opposed to a normal stress which is applied perpendicularly.",
+  "wiki": "http://en.wikipedia.org/wiki/Shear_stress",
+  "functions": [
+   "Bend / Solid",
+   "Heat / Solid",
+   "Orient / Solid",
+   "Rotate / Divided Solid",
+   "Rotate / Solid",
+   "Separate / Solid"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Shear Thickening",
+  "desc": "(or Dilitant) The property of a material for which viscosity increases with the rate of shear. Such a shear thickening fluid is an example of a non-Newtonian fluid.",
+  "wiki": "http://en.wikipedia.org/wiki/Shear_thickening",
+  "functions": [
+   "Absorb / Field",
+   "Freeze / Liquid",
+   "Hold / Divided Solid",
+   "Hold / Liquid",
+   "Protect / Divided Solid",
+   "Protect / Liquid",
+   "Protect / Solid"
+  ],
+  "notes": [
+   "For example, mechanical force, in the case of body armour.",
+   "For example, tubeless syphons."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Shock Wave",
+  "desc": "A type of propagating disturbance. Like an ordinary wave, it carries energy and can propagate through a medium (solid, liquid, gas or plasma) or through a field such as the electromagnetic field. Characterized by an abrupt, nearly discontinuous change in the characteristics of the medium. Associated with rapid rise in pressure, temperature and density of the flow. A shock wave travels through most media at a higher speed than an ordinary wave.",
+  "wiki": "http://en.wikipedia.org/wiki/Shock_wave",
+  "functions": [
+   "Break Down / Divided Solid",
+   "Break Down / Solid",
+   "Compress / Divided Solid",
+   "Compress / Gas",
+   "Destroy / Divided Solid",
+   "Destroy / Solid",
+   "Detect / Gas",
+   "Detect / Liquid",
+   "Detect / Solid",
+   "Heat / Divided Solid",
+   "Heat / Gas",
+   "Heat / Liquid",
+   "Heat / Solid",
+   "Mix / Divided Solid",
+   "Move / Divided Solid",
+   "Move / Gas",
+   "Move / Liquid",
+   "Move / Solid",
+   "Produce / Divided Solid",
+   "Remove / Divided Solid",
+   "Separate / Divided Solid",
+   "Vibrate / Divided Solid",
+   "Vibrate / Gas",
+   "Vibrate / Liquid",
+   "Vibrate / Solid"
+  ],
+  "notes": [
+   "By detection of the shock wave produduced by a fast moving Liquid.",
+   "By detection of the shock wave produduced by a fast moving gas.",
+   "By detection of the shock wave produduced by a fast moving solid."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Solvation",
+  "desc": "(commonly called dissolution) The process of attraction and association of molecules of a solvent with molecules or ions of a solute. As ions dissolve in a solvent they spread out and become surrounded by solvent molecules. The bigger the ion, the more solvent molecules are able to surround it and the more it becomes solvated.",
+  "wiki": "http://en.wikipedia.org/wiki/Solvation",
+  "functions": [
+   "Absorb / Divided Solid",
+   "Absorb / Gas",
+   "Absorb / Liquid",
+   "Absorb / Solid",
+   "Accumulate / Divided Solid",
+   "Accumulate / Gas",
+   "Accumulate / Liquid",
+   "Accumulate / Solid",
+   "Bend / Solid",
+   "Break Down / Divided Solid",
+   "Break Down / Gas",
+   "Break Down / Liquid",
+   "Break Down / Solid",
+   "Change Phase / Divided Solid",
+   "Clean / Divided Solid",
+   "Clean / Solid",
+   "Concentrate / Gas",
+   "Concentrate / Liquid",
+   "Concentrate / Solid",
+   "Constrain / Divided Solid",
+   "Cool / Gas",
+   "Cool / Liquid",
+   "Cool / Solid",
+   "Destroy / Solid",
+   "Dilute / Divided Solid",
+   "Dilute / Gas",
+   "Dilute / Liquid",
+   "Dilute / Solid",
+   "Expand / Divided Solid",
+   "Extract / Gas",
+   "Extract / Liquid",
+   "Extract / Solid",
+   "Heat / Gas",
+   "Heat / Liquid",
+   "Heat / Solid",
+   "Hold / Divided Solid",
+   "Join / Liquid",
+   "Mix / Gas",
+   "Mix / Liquid",
+   "Mix / Solid",
+   "Move / Gas",
+   "Move / Liquid",
+   "Move / Solid",
+   "Produce / Liquid",
+   "Protect / Divided Solid",
+   "Protect / Gas",
+   "Protect / Liquid",
+   "Protect / Solid",
+   "Purify / Gas",
+   "Purify / Liquid",
+   "Purify / Solid",
+   "Remove / Divided Solid",
+   "Remove / Gas",
+   "Remove / Liquid",
+   "Remove / Solid",
+   "Separate / Divided Solid",
+   "Separate / Gas",
+   "Separate / Liquid",
+   "Separate / Solid"
+  ],
+  "notes": [
+   "Both solvent and solute can be considered to 'move' during solvation.",
+   "Solvation can be endothermic",
+   "Solvation can be exothermic",
+   "The solid 'moves' as it dissolves in the solvent."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Sonochemistry",
+  "desc": "The effect of sonic waves and wave properties on chemical systems. Sonochemistry arises from acoustic cavitation: the formation, growth, and implosive collapse of bubbles in a liquid. This is demonstrated in phenomena such as ultrasound, sonication, sonoluminescence, and sonic cavitation.",
+  "wiki": "http://en.wikipedia.org/wiki/Sonochemistry",
+  "functions": [
+   "Break Down / Divided Solid",
+   "Break Down / Liquid",
+   "Break Down / Solid",
+   "Change Phase / Liquid",
+   "Clean / Divided Solid",
+   "Clean / Solid",
+   "Destroy / Divided Solid",
+   "Destroy / Solid",
+   "Evaporate / Divided Solid",
+   "Evaporate / Liquid",
+   "Expand / Gas",
+   "Heat / Divided Solid",
+   "Heat / Liquid",
+   "Heat / Solid",
+   "Melt / Divided Solid",
+   "Melt / Solid",
+   "Mix / Liquid",
+   "Produce / Field",
+   "Remove / Divided Solid",
+   "Remove / Solid",
+   "Vibrate / Divided Solid",
+   "Vibrate / Liquid",
+   "Vibrate / Solid"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Sonoluminescence",
+  "desc": "The emission of short bursts of light from imploding bubbles in a liquid when excited by sound.",
+  "wiki": "http://en.wikipedia.org/wiki/Sonoluminescence",
+  "functions": [
+   "Break Down / Divided Solid",
+   "Break Down / Gas",
+   "Break Down / Liquid",
+   "Break Down / Solid",
+   "Produce / Field"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Sorption",
+  "desc": "The action of both absorption and adsorption taking place simultaneously, i.e. the effect of gases or liquids being incorporated into a material of a different state and adhering to the surface of another molecule. Absorption is the incorporation of a substance in one state into another of a different state (e.g., liquids absorbed by solid or gas absorbed by liquid). Adsorption is the physical adherence or bonding of ions and molecules onto the surface of another molecule.",
+  "wiki": "http://en.wikipedia.org/wiki/Sorption",
+  "functions": [
+   "Absorb / Divided Solid",
+   "Absorb / Gas",
+   "Absorb / Liquid",
+   "Accumulate / Divided Solid",
+   "Break Down / Gas",
+   "Break Down / Liquid",
+   "Break Down / Solid",
+   "Change Phase / Divided Solid",
+   "Change Phase / Gas",
+   "Change Phase / Liquid",
+   "Change Phase / Solid",
+   "Clean / Divided Solid",
+   "Clean / Gas",
+   "Clean / Liquid",
+   "Clean / Solid",
+   "Concentrate / Divided Solid",
+   "Constrain / Divided Solid",
+   "Constrain / Field",
+   "Deposit / Divided Solid",
+   "Deposit / Solid",
+   "Detect / Divided Solid",
+   "Detect / Gas",
+   "Detect / Liquid",
+   "Dilute / Divided Solid",
+   "Dry / Divided Solid",
+   "Dry / Gas",
+   "Dry / Liquid",
+   "Dry / Solid",
+   "Expand / Solid",
+   "Extract / Divided Solid",
+   "Extract / Gas",
+   "Extract / Liquid",
+   "Extract / Solid",
+   "Hold / Divided Solid",
+   "Hold / Gas",
+   "Hold / Liquid",
+   "Hold / Solid",
+   "Join / Divided Solid",
+   "Join / Solid",
+   "Move / Gas",
+   "Move / Liquid",
+   "Produce / Divided Solid",
+   "Protect / Divided Solid",
+   "Protect / Gas",
+   "Protect / Liquid",
+   "Protect / Solid",
+   "Purify / Divided Solid",
+   "Purify / Gas",
+   "Purify / Liquid",
+   "Purify / Solid",
+   "Remove / Divided Solid",
+   "Remove / Gas",
+   "Remove / Liquid",
+   "Remove / Solid",
+   "Separate / Divided Solid",
+   "Separate / Gas",
+   "Separate / Liquid",
+   "Separate / Solid"
+  ],
+  "notes": [
+   "By blocking the field as it enters of leaves the surface at which sorption has taken place"
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Spheroid",
+  "desc": "A quadric surface obtained by rotating an ellipse about one of its principal axes; in other words, an ellipsoid with two equal semi-diameters. If the ellipse is rotated about its major axis, the result is a prolate (elongated) spheroid, somewhat similar to a rugby ball. If the ellipse is rotated about its minor axis, the result is an oblate (flattened) spheroid, somewhat similar to a lentil. If the generating ellipse is a circle, the surface is a sphere.",
+  "wiki": "http://en.wikipedia.org/wiki/Spheroid",
+  "functions": [
+   "Move / Solid",
+   "Rotate / Solid"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Sputtering",
+  "desc": "A process whereby atoms are ejected from a solid target material due to bombardment of the target by energetic ions. It is commonly used for thin-film deposition, etching and analytical techniques",
+  "wiki": "http://en.wikipedia.org/wiki/Sputtering",
+  "functions": [
+   "Break Down / Divided Solid",
+   "Break Down / Solid",
+   "Clean / Solid",
+   "Deposit / Solid",
+   "Destroy / Divided Solid",
+   "Destroy / Solid",
+   "Join / Solid",
+   "Remove / Divided Solid",
+   "Remove / Solid",
+   "Separate / Solid"
+  ],
+  "notes": [
+   "For example, Ion Beam Sputtering can be used to polish telescope mirrors.",
+   "Ion Beam Sputtering can be used to polish telescope mirrors.",
+   "Types include: RF Sputtering, Ion-beam Sputtering, Reactive Sputtering, Ion-assisted deposition, High-target-utilisation sputtering, High Power Impulse Magnetron Sputtering"
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Static Friction",
+  "desc": "(or Stiction) Two solid objects pressing against each other (but not sliding) will require some threshold of force parallel to the surface of contact in order to overcome static cohesion. Static Friction is a threshold, not a continuous force.",
+  "wiki": "http://en.wikipedia.org/wiki/Stiction",
+  "functions": [
+   "Absorb / Field",
+   "Accumulate / Field",
+   "Constrain / Divided Solid",
+   "Constrain / Solid",
+   "Hold / Divided Solid",
+   "Hold / Solid",
+   "Join / Divided Solid",
+   "Join / Solid",
+   "Resist / Field"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Stick-slip Phenomenon",
+  "desc": "The spontaneous jerking motion that can occur while two objects are sliding over each other.",
+  "wiki": "http://en.wikipedia.org/wiki/Stick-slip_phenomenon",
+  "functions": [
+   "Absorb / Field",
+   "Move / Divided Solid",
+   "Move / Solid",
+   "Produce / Field",
+   "Rotate / Solid",
+   "Separate / Divided Solid",
+   "Separate / Solid",
+   "Vibrate / Solid"
+  ],
+  "notes": [
+   "For example, place a piece of paper on a solid surface, and place a heavy object on it. Mark the paper to show the initial position of the object. Now slowly move the paper to the left and suddenly slide it to the right. If you do this a few times then you should observe that the object will be to the left side of its initial position.",
+   "For example, rubbing a wet finger around the rim of a wine glass."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Stokes Drift",
+  "desc": "The movement of a specific fluid parcel as it travels with the fluid flow due to wave motion.",
+  "wiki": "http://en.wikipedia.org/wiki/Stokes_drift",
+  "functions": [
+   "Move / Divided Solid",
+   "Move / Liquid",
+   "Move / Solid",
+   "Rotate / Divided Solid",
+   "Rotate / Liquid",
+   "Rotate / Solid"
+  ],
+  "notes": [
+   "For a divided solid floating in a liquid.",
+   "For a solid floating in a liquid."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Stress Relaxation",
+  "desc": "The decrease in stress with time in a viscoelatic material held at constant strain or deformation.",
+  "wiki": "http://en.wikipedia.org/wiki/Stress_relaxation",
+  "functions": [
+   "Absorb / Field",
+   "Constrain / Field",
+   "Dilute / Field",
+   "Remove / Field",
+   "Resist / Field"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Stroboscopic Effect",
+  "desc": "A visual phenomenon caused by aliasing that occurs when continuous motion is represented by a series of short or instantaneous samples. It occurs when the view of a moving object is represented by a series of short samples as distinct from a continuous view, and the moving object is in rotational or other cyclic motion at a rate close to the sampling rate.",
+  "wiki": "http://en.wikipedia.org/wiki/Stroboscopic_effect",
+  "functions": [
+   "Detect / Field",
+   "Freeze / Field",
+   "Vibrate / Field"
+  ],
+  "notes": [
+   "In the case of a modulated field."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Sublimation",
+  "desc": "The change of the physical state of aggregation (or simply state) of matter directly from solid phase to gaseous phase without passing through an intermediate liquid phase.",
+  "wiki": "http://en.wikipedia.org/wiki/Sublimation_(phase_transition)",
+  "functions": [
+   "Absorb / Field",
+   "Break Down / Solid",
+   "Change Phase / Divided Solid",
+   "Clean / Divided Solid",
+   "Clean / Solid",
+   "Cool / Divided Solid",
+   "Cool / Solid",
+   "Deposit / Solid",
+   "Destroy / Solid",
+   "Evaporate / Divided Solid",
+   "Evaporate / Solid",
+   "Expand / Solid",
+   "Extract / Divided Solid",
+   "Move / Divided Solid",
+   "Move / Solid",
+   "Produce / Gas",
+   "Purify / Divided Solid",
+   "Purify / Solid",
+   "Remove / Divided Solid",
+   "Remove / Solid",
+   "Separate / Divided Solid"
+  ],
+  "notes": [
+   "By latent heat of sublimation.",
+   "By removing material by sublimation."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Suction",
+  "desc": "The flow of a fluid into a partial vacuum, or region of low pressure. The pressure gradient between this region and the ambient pressure will propel matter toward the low pressure area.",
+  "wiki": "http://en.wikipedia.org/wiki/Suction",
+  "functions": [
+   "Accumulate / Divided Solid",
+   "Accumulate / Gas",
+   "Accumulate / Liquid",
+   "Bend / Gas",
+   "Bend / Liquid",
+   "Change Phase / Liquid",
+   "Clean / Solid",
+   "Constrain / Divided Solid",
+   "Constrain / Gas",
+   "Constrain / Liquid",
+   "Constrain / Solid",
+   "Evaporate / Liquid",
+   "Expand / Gas",
+   "Extract / Divided Solid",
+   "Extract / Gas",
+   "Extract / Liquid",
+   "Hold / Divided Solid",
+   "Hold / Gas",
+   "Hold / Liquid",
+   "Hold / Solid",
+   "Move / Divided Solid",
+   "Move / Gas",
+   "Move / Liquid",
+   "Move / Solid",
+   "Orient / Divided Solid",
+   "Orient / Gas",
+   "Orient / Liquid",
+   "Orient / Solid",
+   "Remove / Divided Solid",
+   "Remove / Gas",
+   "Remove / Liquid",
+   "Remove / Solid",
+   "Separate / Divided Solid",
+   "Separate / Gas",
+   "Separate / Liquid"
+  ],
+  "notes": [
+   "Low pressure may cause a liquied to boil/evaporate"
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Supercavitation",
+  "desc": "The use of cavitation effects to create a large bubble of gas inside a liquid, allowing an object to travel at great speed through the liquid by being wholly enveloped by the bubble. The cavity (the bubble) reduces the drag on the object and this makes supercavitation an attractive technology; drag is normally about 1,000 times greater in water than in air.",
+  "wiki": "http://en.wikipedia.org/wiki/Supercavitation",
+  "functions": [
+   "Expand / Gas",
+   "Expand / Liquid",
+   "Move / Liquid"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Superconductivity",
+  "desc": "An electrical resistance of exactly zero which occurs in certain materials below a characteristic temperature. Like ferromagnetism and atomic spectral lines, superconductivity is a quantum mechanical phenomenon. It is also characterized by a phenomenon called the Meissner effect, the ejection of any sufficiently weak magnetic field from the interior of the superconductor as it transitions into the superconducting state.",
+  "wiki": "http://en.wikipedia.org/wiki/Superconductivity",
+  "functions": [
+   "Absorb / Field",
+   "Accumulate / Field",
+   "Move / Field",
+   "Move / Solid",
+   "Produce / Field",
+   "Protect / Field",
+   "Separate / Solid"
+  ],
+  "notes": [],
+  "deckGuess": "superconductivity"
+ },
+ {
+  "name": "Supercooling",
+  "desc": "(also known as undercooling) The process of lowering the temperature of a liquid or a gas below its freezing point, without it becoming a solid. A liquid below its standard freezing point will crystallize in the presence of a seed crystal or nucleus around which a crystal structure can form. Without any such nucleus, the liquid phase can be maintained all the way down to the temperature at which crystal homogeneous nucleation occurs.",
+  "wiki": "http://en.wikipedia.org/wiki/Supercooling",
+  "functions": [
+   "Constrain / Solid",
+   "Cool / Gas",
+   "Cool / Liquid",
+   "Protect / Gas",
+   "Protect / Liquid",
+   "Resist / Solid"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Supercritical Fluid",
+  "desc": "Any substance at a temperature and pressure above its critical point. It can diffuse through solids like a gas, and dissolve materials like a liquid. Additionally, close to the critical point, small changes in pressure or temperature result in large changes in density, allowing many properties to be 'tuned'.",
+  "wiki": "http://en.wikipedia.org/wiki/Supercritical_fluid",
+  "functions": [
+   "Absorb / Divided Solid",
+   "Absorb / Gas",
+   "Absorb / Liquid",
+   "Absorb / Solid",
+   "Accumulate / Gas",
+   "Accumulate / Liquid",
+   "Accumulate / Solid",
+   "Break Down / Divided Solid",
+   "Break Down / Solid",
+   "Change Phase / Gas",
+   "Change Phase / Liquid",
+   "Clean / Divided Solid",
+   "Clean / Gas",
+   "Clean / Liquid",
+   "Clean / Solid",
+   "Condense / Gas",
+   "Cool / Divided Solid",
+   "Cool / Gas",
+   "Cool / Liquid",
+   "Cool / Solid",
+   "Deposit / Divided Solid",
+   "Deposit / Solid",
+   "Detect / Divided Solid",
+   "Detect / Gas",
+   "Detect / Liquid",
+   "Detect / Solid",
+   "Dilute / Gas",
+   "Dilute / Liquid",
+   "Dry / Divided Solid",
+   "Dry / Solid",
+   "Evaporate / Liquid",
+   "Expand / Liquid",
+   "Extract / Divided Solid",
+   "Extract / Gas",
+   "Extract / Liquid",
+   "Extract / Solid",
+   "Hold / Gas",
+   "Join / Gas",
+   "Join / Liquid",
+   "Mix / Gas",
+   "Mix / Liquid",
+   "Remove / Divided Solid",
+   "Remove / Gas",
+   "Remove / Liquid",
+   "Remove / Solid",
+   "Separate / Divided Solid",
+   "Separate / Gas",
+   "Separate / Liquid",
+   "Separate / Solid"
+  ],
+  "notes": [
+   "A supercritical fulid has many of the properties of a gas.",
+   "All supercritical fluids are completely miscible with each other so for a mixture a single phase can be guaranteed if the critical point of the mixture is exceeded.",
+   "For example: Carbon dioxide is a common supercritical solvent. It is used on a large scale for the decaffeination of green coffee beans, the extraction of hops for beer production.",
+   "Supercritical Fluids (such as supercritical carbon dioxide) are used a cleaning solvenets - for example in dry-cleaning."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Superdiamagnetism",
+  "desc": "A phenomenon occurring in certain materials at low temperatures, characterised by the complete absence of magnetic permeability (i.e. a magnetic susceptibility ?v = -1) and the exclusion of the interior magnetic field. Superdiamagnetism is a feature of superconductivity.",
+  "wiki": "http://en.wikipedia.org/wiki/Superdiamagnetism",
+  "functions": [
+   "Remove / Field"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Superfluidity",
+  "desc": "A state of matter in which viscosity of a fluid vanishes, while thermal conductivity becomes infinite. These unusual effects are observed when liquids, typically of helium-4 or helium-3, overcome friction in surface interaction at a stage (known as the 'lambda point', which is temperature and pressure, for helium-4) at which the liquid's viscosity becomes zero.",
+  "wiki": "http://en.wikipedia.org/wiki/Superfluid",
+  "functions": [
+   "Move / Liquid"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Superheating",
+  "desc": "(sometimes referred to as boiling retardation, or boiling delay) The phenomenon in which a liquid is heated to a temperature higher than its boiling point, without boiling. Superheating is achieved by heating a homogeneous substance in a clean container, free of nucleation sites, while taking care not to disturb the liquid.",
+  "wiki": "http://en.wikipedia.org/wiki/Superheating",
+  "functions": [
+   "Constrain / Gas",
+   "Expand / Liquid",
+   "Heat / Liquid",
+   "Hold / Gas",
+   "Protect / Liquid",
+   "Resist / Gas"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Superhydrophilicity",
+  "desc": "Under light irradiation, water dropped onto titanium dioxide forms no contact angle (almost 0 degrees). This effect is called superhydrophilicity. Examples of uses: defogging glass, enabling oil spots to be swept away by water, door mirrors for cars, coatings for buildings, self-cleaning glass, etc. Another use is the property of self-cleaning by the photodecomposition of dirt such as organic compounds adsorbed on the surface.",
+  "wiki": "http://en.wikipedia.org/wiki/Super_hydrophilicity",
+  "functions": [
+   "Break Down / Divided Solid",
+   "Break Down / Solid",
+   "Clean / Divided Solid",
+   "Clean / Solid",
+   "Purify / Divided Solid",
+   "Purify / Solid",
+   "Remove / Divided Solid"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Superplasticity",
+  "desc": "A state in which solid crystalline material is deformed well beyond its usual breaking point, usually over about 200% during tensile deformation. Such a state is usually achieved at high homologous temperature, typically half the absolute melting point. Examples of superplastic materials are some fine-grained metals and ceramics.",
+  "wiki": "http://en.wikipedia.org/wiki/Superplasticity",
+  "functions": [
+   "Bend / Solid"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Supersaturation",
+  "desc": "A solution that contains more of the dissolved material than could be dissolved by the solvent under normal circumstances. It can also refer to a vapour of a compound that has a higher (partial) pressure than the vapour pressure of that compound.",
+  "wiki": "http://en.wikipedia.org/wiki/Supersaturation",
+  "functions": [
+   "Absorb / Divided Solid",
+   "Accumulate / Divided Solid",
+   "Accumulate / Gas",
+   "Accumulate / Solid",
+   "Change Phase / Divided Solid",
+   "Change Phase / Gas",
+   "Change Phase / Solid",
+   "Concentrate / Divided Solid",
+   "Concentrate / Gas",
+   "Concentrate / Liquid",
+   "Concentrate / Solid",
+   "Hold / Divided Solid",
+   "Hold / Gas",
+   "Hold / Solid",
+   "Protect / Gas",
+   "Protect / Solid"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Surface Acoustic Wave",
+  "desc": "(SAW) An acoustic wave traveling along the surface of a material having some elasticity, with an amplitude that typically decays exponentially with the depth of the substrate. This kind of wave is commonly used in devices called SAW devices in electronics circuits.",
+  "wiki": "http://en.wikipedia.org/wiki/Surface_acoustic_wave",
+  "functions": [
+   "Accumulate / Field",
+   "Compress / Field",
+   "Compress / Gas",
+   "Compress / Liquid",
+   "Compress / Solid",
+   "Concentrate / Field",
+   "Constrain / Field",
+   "Detect / Gas",
+   "Detect / Liquid",
+   "Detect / Solid",
+   "Mix / Gas",
+   "Mix / Liquid",
+   "Move / Gas",
+   "Move / Liquid",
+   "Move / Solid",
+   "Orient / Field",
+   "Produce / Field",
+   "Remove / Field",
+   "Resist / Field",
+   "Separate / Field",
+   "Vibrate / Field",
+   "Vibrate / Gas",
+   "Vibrate / Liquid",
+   "Vibrate / Solid"
+  ],
+  "notes": [
+   "In recent years, attention has been drawn to using SAWs to drive microfluidic actuation and a variety of processes. Owing to the mismatch of sound velocities in the SAW substrate and fluid, SAWs can be efficiently transferred into the fluid, to create significant inertial force and fluid velocities. This mechanism can be exploited to drive fluid actions such as pumping, mixing, jetting, as well as others",
+   "SAW devices are used as filters, oscillators and transformers, devices that are based on the transduction of acoustic waves. The transduction from electric energy to mechanical energy (in the form of SAWs) is accomplished by the use of piezoelectric materials.",
+   "SAWs have a longitudinal and a vertical shear component that can couple with any media in contact with the surface. This coupling strongly affects the amplitude and velocity of the wave, allowing SAW sensors to directly sense mass and mechanical properties."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Surface Tension",
+  "desc": "An attractive property of the surface of a liquid. It is what causes the surface portion of liquid to be attracted to another surface, such as that of another portion of liquid (as in connecting bits of water or as in a drop of mercury that forms a cohesive ball).",
+  "wiki": "http://en.wikipedia.org/wiki/Surface_tension",
+  "functions": [
+   "Bend / Liquid",
+   "Constrain / Liquid",
+   "Dry / Divided Solid",
+   "Dry / Solid",
+   "Evaporate / Liquid",
+   "Hold / Divided Solid",
+   "Hold / Liquid",
+   "Hold / Solid",
+   "Join / Liquid",
+   "Move / Liquid",
+   "Remove / Liquid",
+   "Separate / Liquid"
+  ],
+  "notes": [
+   "For example, it is possible to suapend a suitable solid on the surface of water by surface tension.",
+   "The vapour pressure for small droplets of liquid in suspension is greater than standard vapour pressure of that same liquid when the interface is flat.",
+   "Water emerging from a tap will break up into droplets, no matter how smoothly the stream is emitted. This is due to a phenomenon called the Plateau-Rayleigh instability, which is entirely a consequence of the effects of surface tension"
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Suspension",
+  "desc": "A heterogeneous fluid containing solid particles that are sufficiently large for sedimentation. Usually they must be larger than 1 micrometer. The internal phase (solid) is dispersed throughout the external phase (fluid - which may be liquid or gas) through mechanical agitation, with the use of certain excipients or suspending agents.",
+  "wiki": "http://en.wikipedia.org/wiki/Suspension_(chemistry)",
+  "functions": [
+   "Absorb / Divided Solid",
+   "Absorb / Solid",
+   "Accumulate / Divided Solid",
+   "Accumulate / Solid",
+   "Change Phase / Solid",
+   "Clean / Divided Solid",
+   "Concentrate / Divided Solid",
+   "Constrain / Divided Solid",
+   "Cool / Gas",
+   "Cool / Liquid",
+   "Cool / Solid",
+   "Deposit / Divided Solid",
+   "Dilute / Divided Solid",
+   "Dilute / Gas",
+   "Dilute / Liquid",
+   "Dilute / Solid",
+   "Expand / Divided Solid",
+   "Expand / Solid",
+   "Extract / Divided Solid",
+   "Hold / Divided Solid",
+   "Hold / Liquid",
+   "Hold / Solid",
+   "Melt / Solid",
+   "Mix / Divided Solid",
+   "Mix / Gas",
+   "Mix / Liquid",
+   "Mix / Solid",
+   "Move / Divided Solid",
+   "Produce / Divided Solid",
+   "Protect / Divided Solid",
+   "Protect / Gas",
+   "Protect / Liquid",
+   "Protect / Solid",
+   "Remove / Divided Solid",
+   "Separate / Divided Solid"
+  ],
+  "notes": [
+   "A gas can be 'mixed' with solid particles in the form of a suspension.",
+   "A liquid can be 'mixed' with solid particles in the form of a suspension.",
+   "In the sense that a suspension (which is partially solid) behaves in many respects as a liquid.",
+   "Solid particles can be 'mixed' with gas or liquid in the form of a suspension."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Synchrotron Radiation",
+  "desc": "Electromagnetic radiation generated by the acceleration of ultrarelativistic (i.e., moving near the speed of light) charged particles through magnetic fields.",
+  "wiki": "http://en.wikipedia.org/wiki/Synchrotron_radiation",
+  "functions": [
+   "Produce / Field"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Temperature Gradient",
+  "desc": "The variation in temperature over distance.",
+  "wiki": "http://en.wikipedia.org/wiki/Temperature_gradient",
+  "functions": [
+   "Bend / Field",
+   "Change Phase / Divided Solid",
+   "Change Phase / Gas",
+   "Change Phase / Liquid",
+   "Change Phase / Solid",
+   "Compress / Gas",
+   "Condense / Gas",
+   "Constrain / Gas",
+   "Constrain / Liquid",
+   "Move / Gas",
+   "Move / Liquid"
+  ],
+  "notes": [
+   "For example by creating a 'lens' based on variations in density due to termperature."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Tension",
+  "desc": "The pulling force exerted by a string, cable, chain, or similar object on another object. It is the opposite of compression.",
+  "wiki": "http://en.wikipedia.org/wiki/Tension_(physics)",
+  "functions": [
+   "Absorb / Field",
+   "Accumulate / Field",
+   "Bend / Solid",
+   "Break Down / Solid",
+   "Compress / Gas",
+   "Compress / Liquid",
+   "Compress / Solid",
+   "Destroy / Solid",
+   "Expand / Gas",
+   "Expand / Liquid",
+   "Expand / Solid",
+   "Heat / Solid",
+   "Move / Solid",
+   "Resist / Field",
+   "Separate / Solid"
+  ],
+  "notes": [
+   "Indirectly, for example, using a piston.",
+   "Tension in one system can be used to induce compression in another."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Terminal Velocity",
+  "desc": "A free falling object achieves its terminal velocity when the downward force of gravity equals the upward force of drag. This causes the net force on the object to be zero, resulting in an acceleration of zero. Mathematically an object asymptotically approaches and can never reach its terminal velocity.",
+  "wiki": "http://en.wikipedia.org/wiki/Terminal_velocity",
+  "functions": [
+   "Absorb / Field",
+   "Detect / Gas",
+   "Detect / Liquid"
+  ],
+  "notes": [
+   "Terminal vecolity depends on the presence of a surrounding medium - which may be a gas.",
+   "Terminal vecolity depends on the presence of a surrounding medium - which may be a liquid."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Thermal Contraction",
+  "desc": "The tendency of matter to reduce in volume (contract) in response to a change in temperature or when a substance is cooled.",
+  "wiki": "http://en.wikipedia.org/wiki/Thermal_expansion",
+  "functions": [
+   "Bend / Gas",
+   "Bend / Solid",
+   "Break Down / Divided Solid",
+   "Compress / Divided Solid",
+   "Compress / Gas",
+   "Compress / Liquid",
+   "Compress / Solid",
+   "Concentrate / Divided Solid",
+   "Concentrate / Gas",
+   "Concentrate / Solid",
+   "Constrain / Liquid",
+   "Constrain / Solid",
+   "Expand / Gas",
+   "Expand / Liquid",
+   "Heat / Gas",
+   "Heat / Liquid",
+   "Heat / Solid",
+   "Hold / Solid",
+   "Join / Solid",
+   "Move / Gas",
+   "Move / Liquid",
+   "Move / Solid",
+   "Separate / Divided Solid",
+   "Separate / Solid",
+   "Vibrate / Gas",
+   "Vibrate / Liquid"
+  ],
+  "notes": [
+   "Indirectly, e.g. using thermal contraction of a piston rod.",
+   "Thermal Contraction is exothermic"
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Thermal Expansion",
+  "desc": "The tendency of matter to change in volume in response to a change in temperature or when a substance is heated.",
+  "wiki": "http://en.wikipedia.org/wiki/Thermal_expansion",
+  "functions": [
+   "Absorb / Field",
+   "Bend / Gas",
+   "Bend / Solid",
+   "Compress / Divided Solid",
+   "Compress / Gas",
+   "Compress / Liquid",
+   "Compress / Solid",
+   "Constrain / Solid",
+   "Cool / Gas",
+   "Cool / Liquid",
+   "Cool / Solid",
+   "Expand / Divided Solid",
+   "Expand / Gas",
+   "Expand / Liquid",
+   "Expand / Solid",
+   "Hold / Solid",
+   "Join / Solid",
+   "Move / Gas",
+   "Move / Liquid",
+   "Move / Solid",
+   "Separate / Divided Solid",
+   "Separate / Solid"
+  ],
+  "notes": [
+   "Expansion in one system can be used to induce compression in another.",
+   "For example by using the expansion of a solid in a limited space to result in it becoming jammed in place.",
+   "Thermal Expansion is endothermic"
+  ],
+  "deckGuess": "thermal-expansion"
+ },
+ {
+  "name": "Thermal Hall Effect",
+  "desc": "The thermal analog of the Hall effect, i.e. a thermal gradient is produced across a solid instead of an electric field. When a magnetic field is applied, an orthogonal temperature gradient develops. For conductors, a significant portion of the thermal current is carried by the electrons. In particular, the Righi-Leduc Effect describes the heat flow resulting from a perpendicular temperature gradient and vice versa, and the Maggi-Righi-Leduc effect describes changes in thermal conductivity when placing a conductor in a magnetic field.",
+  "wiki": "http://en.wikipedia.org/wiki/Thermal_Hall_effect",
+  "functions": [
+   "Cool / Divided Solid",
+   "Cool / Solid",
+   "Detect / Field",
+   "Freeze / Liquid",
+   "Heat / Divided Solid",
+   "Heat / Solid"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Thermal Radiation",
+  "desc": "Electromagnetic radiation emitted from the surface of an object due to the object's temperature.",
+  "wiki": "http://en.wikipedia.org/wiki/Thermal_radiation",
+  "functions": [
+   "Bend / Field",
+   "Break Down / Divided Solid",
+   "Break Down / Gas",
+   "Break Down / Liquid",
+   "Break Down / Solid",
+   "Change Phase / Divided Solid",
+   "Change Phase / Liquid",
+   "Change Phase / Solid",
+   "Condense / Gas",
+   "Cool / Divided Solid",
+   "Cool / Gas",
+   "Cool / Liquid",
+   "Cool / Solid",
+   "Destroy / Divided Solid",
+   "Destroy / Gas",
+   "Destroy / Liquid",
+   "Destroy / Solid",
+   "Detect / Divided Solid",
+   "Evaporate / Divided Solid",
+   "Evaporate / Liquid",
+   "Evaporate / Solid",
+   "Freeze / Liquid",
+   "Heat / Divided Solid",
+   "Heat / Gas",
+   "Heat / Liquid",
+   "Heat / Solid",
+   "Melt / Divided Solid",
+   "Melt / Solid",
+   "Produce / Field",
+   "Produce / Liquid",
+   "Purify / Divided Solid",
+   "Remove / Field"
+  ],
+  "notes": [
+   "A hot gas cools as a result of the loss of energy required to generate the thermal radiation.",
+   "A hot liquid (e.g. molten metal) cools as a result of the loss of energy required to generate the thermal radiation",
+   "A hot solid (e.g. red-hot or white-hot metal) cools as a result of the loss of energy required to generate the thermal radiation.",
+   "A radiating object will lose energy."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Thermionic Emission",
+  "desc": "Emission of electrons or ions caused by thermal vibrational energy . Also known as the Edison Effect.",
+  "wiki": "https://en.wikipedia.org/wiki/Thermionic_emission",
+  "functions": [
+   "Break Down / Divided Solid",
+   "Break Down / Solid",
+   "Cool / Divided Solid",
+   "Cool / Solid",
+   "Detect / Divided Solid",
+   "Detect / Solid",
+   "Move / Field",
+   "Produce / Field"
+  ],
+  "notes": [
+   "Can be used for power generation through the emission of electrons."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Thermo-capillary Convection",
+  "desc": "Mass transfer along an interface between two fluids due to a surface tension gradient, where the surface tension gradient is caused by a temperature gradient.",
+  "wiki": "http://en.wikipedia.org/wiki/Thermo-capillary_convection",
+  "functions": [
+   "Accumulate / Liquid",
+   "Bend / Liquid",
+   "Concentrate / Liquid",
+   "Move / Liquid",
+   "Separate / Liquid"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Thermoacoustic Effect",
+  "desc": "Acoustic waves can be used for heat transfer. The pressure variations in the acoustic wave are accompanied by temperature variations due to compressions and expansions of the gas which, being inherantly associated with a displacement, results in a net transfer of heat. Direction of heat flow can be fixed by, for example, a standing wave pattern generated by an acoustic resonator.",
+  "wiki": null,
+  "functions": [
+   "Absorb / Field",
+   "Cool / Divided Solid",
+   "Cool / Gas",
+   "Cool / Liquid",
+   "Cool / Solid",
+   "Dilute / Field",
+   "Extract / Field",
+   "Freeze / Divided Solid",
+   "Freeze / Gas",
+   "Freeze / Liquid",
+   "Freeze / Solid",
+   "Heat / Divided Solid",
+   "Heat / Gas",
+   "Heat / Liquid",
+   "Heat / Solid",
+   "Melt / Divided Solid",
+   "Melt / Solid",
+   "Move / Field",
+   "Produce / Field",
+   "Remove / Field",
+   "Resist / Field",
+   "Vibrate / Divided Solid",
+   "Vibrate / Field",
+   "Vibrate / Gas",
+   "Vibrate / Solid"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Thermoacoustics",
+  "desc": "The interaction between thermodynamic and acoustic phenomena, for example the relation between pressure changes, and temperature changes. A dynamic pressure would cause a dynamic temperature and vice versa.",
+  "wiki": "http://en.wikipedia.org/wiki/Thermoacoustics",
+  "functions": [
+   "Cool / Divided Solid",
+   "Cool / Gas",
+   "Cool / Liquid",
+   "Cool / Solid",
+   "Heat / Divided Solid",
+   "Heat / Gas",
+   "Heat / Liquid",
+   "Heat / Solid",
+   "Vibrate / Divided Solid"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Thermochromism",
+  "desc": "The ability of substance to change color due to a change in temperature. Thermochromism is one of several types of chromism. The two basic approaches are based on liquid crystals and leuco dyes.",
+  "wiki": "http://en.wikipedia.org/wiki/Thermochromism",
+  "functions": [
+   "Absorb / Field",
+   "Detect / Divided Solid",
+   "Detect / Field",
+   "Detect / Gas",
+   "Detect / Liquid",
+   "Detect / Solid"
+  ],
+  "notes": [
+   "In the case of a hot gas.",
+   "In the case of a hot liquid.",
+   "In the case of a hot solid.",
+   "In the case of a thermal field or one that results in temperature change, such as light absorbed by a surface."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Thermoluminescence",
+  "desc": "A form of luminescence that is exhibited by certain crystalline materials, such as some minerals, when previously absorbed energy from electromagnetic radiation or other ionizing radiation is re-emitted as light upon heating of the material. This phenomenon is distinct from that of black body radiation.",
+  "wiki": "http://en.wikipedia.org/wiki/Thermoluminescence",
+  "functions": [
+   "Absorb / Field",
+   "Accumulate / Field",
+   "Detect / Divided Solid",
+   "Detect / Field",
+   "Detect / Solid",
+   "Hold / Field",
+   "Produce / Field"
+  ],
+  "notes": [
+   "Detection of a thermal field, or detection of a previous exposure to an electromagnetic fied."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Thermolysis",
+  "desc": "(or Thermal decomposition) A chemical decomposition caused by heat. The reaction is usually endothermic as heat is required to break chemical bonds in the compound undergoing decomposition. If decomposition is sufficiently exothermic, a positive feedback loop is created producing thermal runaway and possibly an explosion.",
+  "wiki": "http://en.wikipedia.org/wiki/Thermal_decomposition",
+  "functions": [
+   "Absorb / Field",
+   "Break Down / Divided Solid",
+   "Break Down / Gas",
+   "Break Down / Liquid",
+   "Break Down / Solid",
+   "Change Phase / Divided Solid",
+   "Change Phase / Solid",
+   "Cool / Divided Solid",
+   "Cool / Gas",
+   "Cool / Liquid",
+   "Cool / Solid",
+   "Destroy / Divided Solid",
+   "Destroy / Gas",
+   "Destroy / Liquid",
+   "Destroy / Solid",
+   "Heat / Divided Solid",
+   "Heat / Gas",
+   "Heat / Liquid",
+   "Heat / Solid",
+   "Remove / Divided Solid",
+   "Remove / Gas",
+   "Remove / Liquid",
+   "Remove / Solid",
+   "Separate / Divided Solid"
+  ],
+  "notes": [
+   "In the case of exothermic decomposition.",
+   "Thermolysis is usually endothermic."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Thermomechanical Effect",
+  "desc": "One of the most spectacular results of the properties of superfluids is known as the thermomechanical or 'fountain effect'. If a capillary tube is placed into a bath of superfluid helium and then heated, even by shining a light on it, the superfluid helium will flow up through the tube and out the top.",
+  "wiki": "http://en.wikipedia.org/wiki/Superfluid",
+  "functions": [
+   "Move / Liquid"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Thermophoresis",
+  "desc": "(also called thermodiffusion or Soret Effect) The effect of temperature gradient on multicomponent (or isotopic) mixtures of particles (i.e. particle movement from hotter to colder regions or vice versa). Regarded as 'positive' when molecules move from hot to cold and 'negative' when the reverse is true. Typically the heavier/larger species in a mixture exhibits positive behavior while the lighter/smaller species exhibit negative.",
+  "wiki": "http://aerosol.ees.ufl.edu/Thermophoresis/section01.html",
+  "functions": [
+   "Absorb / Field",
+   "Accumulate / Divided Solid",
+   "Accumulate / Liquid",
+   "Accumulate / Solid",
+   "Clean / Gas",
+   "Concentrate / Divided Solid",
+   "Deposit / Divided Solid",
+   "Deposit / Solid",
+   "Detect / Liquid",
+   "Detect / Solid",
+   "Extract / Divided Solid",
+   "Extract / Liquid",
+   "Extract / Solid",
+   "Move / Divided Solid",
+   "Move / Liquid",
+   "Move / Solid",
+   "Purify / Divided Solid",
+   "Remove / Divided Solid",
+   "Separate / Divided Solid"
+  ],
+  "notes": [
+   "A thermal precipitator is an instrument that collects aerosol particles using thermophoresis to deposit the particles onto a surface. It employs a heated element, such as a wire, and a collection surface. Aerosol passing between the heated element and the cooler surface will be driven to deposit on the surface.",
+   "By moving particles within a gas stream.",
+   "For example, detection of aerosol liquid in a gas stream.",
+   "For example, detection of particles in a gas stream."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Thixotropy",
+  "desc": "The property of some non-Newtonian pseudoplastic fluids to show a time-dependent change in viscosity; the longer the fluid undergoes shear stress, the lower its viscosity. A thixotropic fluid is a fluid which takes a finite amount of time to attain equilibrium viscosity when introduced to a step change in shear rate. Many gels and colloids are thixotropic materials, exhibiting a stable form at rest but becoming fluid when agitated.",
+  "wiki": "http://en.wikipedia.org/wiki/Thixotropy",
+  "functions": [
+   "Change Phase / Divided Solid",
+   "Constrain / Divided Solid",
+   "Constrain / Liquid",
+   "Deposit / Divided Solid",
+   "Hold / Divided Solid",
+   "Hold / Liquid",
+   "Move / Divided Solid",
+   "Move / Liquid",
+   "Separate / Divided Solid"
+  ],
+  "notes": [
+   "Some thixotrophic materials have a divided solid as one of their constituents, e.g. some clays."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Thompson Effect",
+  "desc": "The heating or cooling of a current-carrying conductor with a temperature gradient Depending on the material it may cause heating or cooling. One of a number of thermoelectirc effects (see Seebeck effect and Peltier Effect).",
+  "wiki": "http://en.wikipedia.org/wiki/Thermoelectric_effect#Thomson_effect",
+  "functions": [
+   "Absorb / Field",
+   "Cool / Divided Solid",
+   "Cool / Gas",
+   "Cool / Liquid",
+   "Cool / Solid",
+   "Dry / Divided Solid",
+   "Freeze / Gas",
+   "Freeze / Liquid",
+   "Heat / Divided Solid",
+   "Heat / Gas",
+   "Heat / Liquid",
+   "Heat / Solid"
+  ],
+  "notes": [
+   "Indirectly: Thompson effect could be used to cool a metal, which would function as a heat sink",
+   "Indirectly: Thompson effect would generate heat in a metal, which would then be transferred to the gas",
+   "Indirectly: Thompson effect would generate heat in a metal, which would then be transferred to the liquid"
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Tidal Force",
+  "desc": "A situation in which a body or material (for example, tidal water, or the Moon) is mainly under the gravitational influence of a second body (for example, the Earth), but is also perturbed by the gravitational effects of a third body (for example, by the Moon in the case of tidal water, or by the Sun in the case of the Moon).",
+  "wiki": "http://en.wikipedia.org/wiki/Tidal_force",
+  "functions": [
+   "Bend / Liquid",
+   "Compress / Gas",
+   "Compress / Liquid",
+   "Cool / Liquid",
+   "Detect / Field",
+   "Detect / Liquid",
+   "Hold / Liquid",
+   "Move / Divided Solid",
+   "Move / Liquid",
+   "Move / Solid",
+   "Orient / Divided Solid",
+   "Orient / Liquid",
+   "Orient / Solid",
+   "Remove / Divided Solid",
+   "Remove / Liquid",
+   "Remove / Solid",
+   "Resist / Liquid",
+   "Rotate / Liquid"
+  ],
+  "notes": [
+   "For example, in a tethered diving bell during a rising tide.",
+   "In the case of a divided solid floating on or suspended in a fluid subject to tidal flow.",
+   "In the case of a gravity field.",
+   "In the case of a solid floating on or suspended in a fluid subject to tidal flow."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Torque",
+  "desc": "Torque (also called moment or moment of force) is the tendency of a force to rotate an object about an axis, fulcrum, or pivot. Just as a force is a push or a pull, a torque can be thought of as a twist. Torque is the rotational analogue of Force.",
+  "wiki": "http://en.wikipedia.org/wiki/Torque",
+  "functions": [
+   "Bend / Solid",
+   "Break Down / Divided Solid",
+   "Break Down / Solid",
+   "Compress / Divided Solid",
+   "Compress / Solid",
+   "Destroy / Solid",
+   "Expand / Gas",
+   "Expand / Liquid",
+   "Expand / Solid",
+   "Mix / Liquid",
+   "Move / Divided Solid",
+   "Move / Solid",
+   "Orient / Solid",
+   "Rotate / Divided Solid",
+   "Rotate / Solid"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Total Internal Reflection",
+  "desc": "An optical phenomenon that occurs when a ray of light strikes a medium boundary at an angle larger than a particular critical angle with respect to the normal to the surface. If the refractive index is lower on the other side of the boundary, no light can pass through and all of the light is reflected. The critical angle is the angle of incidence above which the total internal reflection occurs.",
+  "wiki": "http://en.wikipedia.org/wiki/Total_internal_reflection",
+  "functions": [
+   "Absorb / Field",
+   "Accumulate / Field",
+   "Bend / Field",
+   "Change Phase / Field",
+   "Constrain / Field",
+   "Detect / Field",
+   "Extract / Field",
+   "Move / Field",
+   "Orient / Field",
+   "Rotate / Field"
+  ],
+  "notes": [
+   "Also the reflected light has an angle dependent phase shift between the reflected and incident light."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Townsend Discharge",
+  "desc": "A gas ionization process where an initially very small amount of free electrons, accelerated by a sufficiently strong electric field, give rise to electrical conduction through a gas by avalanche multiplication: when the number of free charges drops or the electric field weakens, the phenomena ceases.",
+  "wiki": "http://en.wikipedia.org/wiki/Townsend_discharge",
+  "functions": [
+   "Detect / Field",
+   "Expand / Field"
+  ],
+  "notes": [
+   "Avalanche multiplication during Townsend discharge is naturally used in gas phototubes, to amplify the photoelectric charge generated by incident radiation (visible light or not) on the cathode"
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Transpiration",
+  "desc": "The loss of water vapour from parts of plants (similar to sweating), especially in leaves but also in stems, flowers and roots. Leaf surfaces are dotted with openings called, collectively, stomata. Leaf transpiration occurs through stomata, and can be thought of as a necessary 'cost' associated with the opening of the stomata to allow the diffusion of carbon dioxide gas from the air for photosynthesis. Transpiration also cools plants and enables mass flow of mineral nutrients and water from roots to shoots.",
+  "wiki": "http://en.wikipedia.org/wiki/Transpiration",
+  "functions": [
+   "Cool / Solid",
+   "Dry / Solid",
+   "Move / Liquid"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Tribocorrosion",
+  "desc": "A material degradation process due to the combined effect of corrosion and wear.",
+  "wiki": "http://en.wikipedia.org/wiki/Tribocorrosion",
+  "functions": [
+   "Clean / Solid",
+   "Remove / Solid"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Triboelectric Effect",
+  "desc": "A type of contact electrification in which certain materials become electrically charged after they come into contact with another different material and are then separated (such as through rubbing). The polarity and strength of the charges produced differ according to the materials, surface roughness, temperature, strain, and other properties.",
+  "wiki": "http://en.wikipedia.org/wiki/Triboelectric_effect",
+  "functions": [
+   "Accumulate / Divided Solid",
+   "Accumulate / Field",
+   "Accumulate / Solid",
+   "Bend / Field",
+   "Bend / Gas",
+   "Bend / Liquid",
+   "Clean / Solid",
+   "Concentrate / Divided Solid",
+   "Concentrate / Field",
+   "Constrain / Divided Solid",
+   "Deposit / Divided Solid",
+   "Detect / Divided Solid",
+   "Detect / Liquid",
+   "Detect / Solid",
+   "Hold / Divided Solid",
+   "Hold / Solid",
+   "Join / Divided Solid",
+   "Join / Solid",
+   "Move / Divided Solid",
+   "Move / Field",
+   "Move / Solid",
+   "Orient / Divided Solid",
+   "Orient / Field",
+   "Orient / Solid",
+   "Produce / Field",
+   "Remove / Divided Solid",
+   "Separate / Divided Solid"
+  ],
+  "notes": [
+   "By attracting dirt particles away from the object to be cleaned",
+   "For a gas carrying an electric charge",
+   "For a liquid carrying an electric charge",
+   "For example, the attraction of particles to an object carrying a staic electric charge generated by the Triboelectric Effect"
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Triboluminescence",
+  "desc": "An optical phenomenon in which light is generated via the breaking of asymmetrical bonds in a crystal when that material is scratched, crushed, or rubbed. This is a variant of luminescence.",
+  "wiki": "http://en.wikipedia.org/wiki/Triboluminescence",
+  "functions": [
+   "Detect / Divided Solid",
+   "Detect / Solid",
+   "Produce / Field"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Turbulence",
+  "desc": "A fluid regime characterised by chaotic, stochastic property changes. This includes low momentum diffusion, high momentum convection, and rapid variation of pressure and velocity in space and time (flow that is not turbulent is called laminar flow).",
+  "wiki": "http://en.wikipedia.org/wiki/Turbulence",
+  "functions": [
+   "Bend / Field",
+   "Bend / Gas",
+   "Bend / Liquid",
+   "Clean / Solid",
+   "Destroy / Solid",
+   "Detect / Gas",
+   "Detect / Liquid",
+   "Detect / Solid",
+   "Expand / Gas",
+   "Heat / Gas",
+   "Heat / Liquid",
+   "Mix / Divided Solid",
+   "Mix / Gas",
+   "Mix / Liquid",
+   "Mix / Solid",
+   "Move / Divided Solid",
+   "Move / Field",
+   "Move / Gas",
+   "Move / Liquid",
+   "Move / Solid",
+   "Remove / Divided Solid",
+   "Remove / Solid",
+   "Rotate / Divided Solid",
+   "Rotate / Field",
+   "Rotate / Gas",
+   "Rotate / Liquid",
+   "Rotate / Solid",
+   "Separate / Divided Solid",
+   "Vibrate / Divided Solid",
+   "Vibrate / Field",
+   "Vibrate / Gas",
+   "Vibrate / Liquid",
+   "Vibrate / Solid"
+  ],
+  "notes": [
+   "By observing resulting turbulence around an existing solid object.",
+   "By observing resulting turbulence in an existing liquid or gas.",
+   "For solid particles suspended in a liquid or gas.",
+   "Though turbulence in the medium carrying the field."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Turbulence Heating",
+  "desc": "When small-scale turbulance eddies (or wave packets) dissipate, their energy is converted into heat.",
+  "wiki": "http://www.gb.nrao.edu/~tminter/dig_heat/node2.html",
+  "functions": [
+   "Heat / Gas",
+   "Heat / Liquid"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Tyndall Effect",
+  "desc": "Light scattering by colloidal particles or particles in suspension",
+  "wiki": "http://en.wikipedia.org/wiki/Tyndall_effect",
+  "functions": [
+   "Detect / Divided Solid",
+   "Detect / Solid",
+   "Move / Field",
+   "Separate / Field"
+  ],
+  "notes": [
+   "In the case of particles in a aerosol or other colloid."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Ultrasonic Capillary Effect",
+  "desc": "Abnormally high rise of a liquid and its penetration into capillary channels due to a high-intensity ultrasound field. Caused by the collapse of cavitation bubbles at the capillary inlet. A collaping bubble generates a liquid microjet, the penetration of which into capillary channel causes the height increment of the capillary liquid column. Summation of such increments lies behind the increase of a height and a velocity of the liquid rise in a capillary under the ultrasound action.",
+  "wiki": "http://www.physik3.gwdg.de/isna/poster-review-abstracts/N.Dezhkunov3.html",
+  "functions": [
+   "Hold / Liquid",
+   "Move / Liquid"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Ultrasonic Vibration",
+  "desc": "Vibration at ultrasonic frequencies.",
+  "wiki": "http://en.wikipedia.org/wiki/Ultrasound",
+  "functions": [
+   "Break Down / Divided Solid",
+   "Break Down / Solid",
+   "Change Phase / Liquid",
+   "Clean / Divided Solid",
+   "Clean / Solid",
+   "Compress / Divided Solid",
+   "Concentrate / Divided Solid",
+   "Destroy / Solid",
+   "Dry / Solid",
+   "Evaporate / Liquid",
+   "Heat / Divided Solid",
+   "Heat / Liquid",
+   "Heat / Solid",
+   "Join / Solid",
+   "Mix / Liquid",
+   "Mix / Solid",
+   "Move / Divided Solid",
+   "Move / Liquid",
+   "Move / Solid",
+   "Orient / Divided Solid",
+   "Remove / Liquid",
+   "Remove / Solid",
+   "Separate / Solid",
+   "Vibrate / Divided Solid",
+   "Vibrate / Liquid",
+   "Vibrate / Solid"
+  ],
+  "notes": [
+   "For example, ultrasonic vibration has been proposed to improve the drying performance of dishwashers.",
+   "For example, ultrasonic vibration has been proposed to improve the drying perfromance of dishwashers.",
+   "Through settling.",
+   "Ultrasonic cleaners are used at frequencies from 20 to 40 kHz for jewellery, lenses and other optical parts, watches, dental instruments, surgical instruments, diving regulators and industrial parts. An ultrasonic cleaner works mostly by energy released from the collapse of millions of microscopic cavitations near the dirty surface forming tiny jets directed at the surface."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Ultrasound",
+  "desc": "Cyclic sound pressure with a frequency greater than the upper limit of human hearing. Although this limit varies from person to person, 20 kHz serves as a useful lower limit in describing ultrasound.",
+  "wiki": "http://en.wikipedia.org/wiki/Ultrasound",
+  "functions": [
+   "Break Down / Divided Solid",
+   "Break Down / Liquid",
+   "Break Down / Solid",
+   "Change Phase / Liquid",
+   "Clean / Divided Solid",
+   "Compress / Divided Solid",
+   "Compress / Gas",
+   "Concentrate / Divided Solid",
+   "Destroy / Gas",
+   "Destroy / Liquid",
+   "Destroy / Solid",
+   "Detect / Solid",
+   "Evaporate / Liquid",
+   "Heat / Divided Solid",
+   "Mix / Liquid",
+   "Move / Divided Solid",
+   "Orient / Divided Solid",
+   "Remove / Solid",
+   "Separate / Solid",
+   "Vibrate / Divided Solid"
+  ],
+  "notes": [
+   "For example, by echo location.",
+   "The ultrasonic humidifier, one type of nebulizer (a device that creates a very fine spray), is a popular type of humidifier. It works by vibrating a metal plate at ultrasonic frequencies to nebulize (sometimes incorrectly called 'atomize') the water.",
+   "Ultrasonic nozzles use vibration to produce very narrow drop size distribution and low velocity spray from a low viscosity liquid. This facilitates mixing of liquid with air in aerosol applications."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Van der Waals Force",
+  "desc": "The sum of the attractive or repulsive forces between molecules (or between parts of the same molecule) other than those due to covalent bonds or to the electrostatic interaction of ions with one another or with neutral molecules. Includes Keesom Force, Debye Force and London dispersion force.",
+  "wiki": "http://en.wikipedia.org/wiki/Van_der_Waals_force",
+  "functions": [
+   "Accumulate / Gas",
+   "Constrain / Divided Solid",
+   "Constrain / Gas",
+   "Constrain / Liquid",
+   "Constrain / Solid",
+   "Hold / Divided Solid",
+   "Hold / Gas",
+   "Hold / Liquid",
+   "Hold / Solid",
+   "Join / Divided Solid",
+   "Join / Gas",
+   "Join / Liquid",
+   "Join / Solid"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Vapour Cone",
+  "desc": "(also referred to as shock collar, or shock egg) The creation of a visible condensation cloud caused by a sudden drop in air pressure. Occurs under the right atmospheric conditions - for example by an aircraft traveling at transonic speeds.",
+  "wiki": "https://en.wikipedia.org/wiki/Vapor_cone",
+  "functions": [
+   "Condense / Gas",
+   "Detect / Gas",
+   "Produce / Liquid"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Vapour Pressure",
+  "desc": "The pressure of a vapor in thermodynamic equilibrium with its condensed phases in a closed system. All liquids and solids have a tendency to evaporate into a gaseous form, and all gases have a tendency to condense back to their liquid or solid form.",
+  "wiki": "http://en.wikipedia.org/wiki/Vapor_pressure",
+  "functions": [
+   "Detect / Gas",
+   "Detect / Liquid",
+   "Evaporate / Liquid",
+   "Expand / Liquid",
+   "Extract / Gas",
+   "Extract / Liquid",
+   "Freeze / Gas",
+   "Move / Gas",
+   "Move / Liquid",
+   "Separate / Gas",
+   "Separate / Liquid"
+  ],
+  "notes": [
+   "Through conversion to gas."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Velocity Ratio",
+  "desc": "In a machine, the ratio between the distance moved by the point of effort to that of the point of load.",
+  "wiki": "http://en.wikipedia.org/wiki/Velocity_ratio",
+  "functions": [
+   "Absorb / Field"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Venturi Effect",
+  "desc": "The reduction in fluid pressure that results when a fluid flows through a constricted section of pipe. The fluid velocity must increase through the constriction to satisfy the equation of continuity, while its pressure must decrease due to conservation of energy: the gain in kinetic energy is balanced by a drop in pressure or a pressure gradient force.",
+  "wiki": "http://en.wikipedia.org/wiki/Venturi_effect",
+  "functions": [
+   "Mix / Gas",
+   "Mix / Liquid",
+   "Move / Gas",
+   "Move / Liquid"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Vibration",
+  "desc": "Mechanical oscillations about an equilibrium point. The oscillations may be periodic such as the motion of a pendulum or random such as the movement of a tire on a gravel road.",
+  "wiki": "http://en.wikipedia.org/wiki/Vibration",
+  "functions": [
+   "Break Down / Divided Solid",
+   "Break Down / Liquid",
+   "Break Down / Solid",
+   "Change Phase / Field",
+   "Clean / Divided Solid",
+   "Clean / Solid",
+   "Compress / Divided Solid",
+   "Concentrate / Divided Solid",
+   "Destroy / Solid",
+   "Detect / Divided Solid",
+   "Detect / Solid",
+   "Evaporate / Liquid",
+   "Heat / Liquid",
+   "Heat / Solid",
+   "Melt / Solid",
+   "Mix / Divided Solid",
+   "Mix / Gas",
+   "Mix / Liquid",
+   "Mix / Solid",
+   "Move / Divided Solid",
+   "Move / Gas",
+   "Move / Liquid",
+   "Move / Solid",
+   "Produce / Divided Solid",
+   "Remove / Divided Solid",
+   "Remove / Liquid",
+   "Remove / Solid",
+   "Separate / Solid",
+   "Vibrate / Divided Solid",
+   "Vibrate / Gas",
+   "Vibrate / Liquid",
+   "Vibrate / Solid"
+  ],
+  "notes": [
+   "By detecting reflected/returned vibrations, for example: sonar.",
+   "Through settling."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Villari Effect",
+  "desc": "(or Inverse Magnetostrictive Effect) The change of the magnetic susceptibility of a material when subjected to a mechanical stress.",
+  "wiki": "http://en.wikipedia.org/wiki/Inverse_magnetostrictive_effect",
+  "functions": [
+   "Produce / Field"
+  ],
+  "notes": [
+   "In the case of a magnetic field."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Viscoelasticity",
+  "desc": "The property of exhibiting both viscous and elastic characteristics when undergoing deformation.",
+  "wiki": "http://en.wikipedia.org/wiki/Viscoelasticity",
+  "functions": [
+   "Absorb / Field",
+   "Bend / Solid",
+   "Change Phase / Divided Solid",
+   "Change Phase / Solid",
+   "Compress / Divided Solid",
+   "Compress / Solid",
+   "Expand / Divided Solid",
+   "Expand / Solid",
+   "Melt / Divided Solid",
+   "Melt / Solid",
+   "Rotate / Solid",
+   "Vibrate / Solid"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Viscous Heating",
+  "desc": "The work done by a fluid on adjacent layers due to the action of shear forces is transformed into heat.",
+  "wiki": null,
+  "functions": [
+   "Accumulate / Field",
+   "Change Phase / Liquid",
+   "Detect / Gas",
+   "Detect / Liquid",
+   "Evaporate / Liquid",
+   "Heat / Divided Solid",
+   "Heat / Field",
+   "Heat / Gas",
+   "Heat / Liquid",
+   "Heat / Solid",
+   "Melt / Divided Solid",
+   "Melt / Solid",
+   "Produce / Field"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Voigt Effect",
+  "desc": "A magneto-optical phenomenon whereby the polarisation of light may be rotated when passed through a vapour cell immersed in a magnetic field directed perpendicular to the beam direction.",
+  "wiki": "http://en.wikipedia.org/wiki/Voigt_Effect",
+  "functions": [
+   "Bend / Field",
+   "Detect / Field",
+   "Move / Field",
+   "Orient / Field",
+   "Rotate / Field",
+   "Vibrate / Field"
+  ],
+  "notes": [
+   "Angle of polarisation is rotated"
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Vortex Ring",
+  "desc": "A torus shaped vortex in a fluid i.e. a region where the fluid mostly spins around an imaginary axis line that forms a closed loop. The dominant flow in a vortex ring is said to be toroidal, more precisely poloidal. Within a stationary body of fluid, a vortex ring can travel for relatively long distance, carrying the spinning fluid with it.",
+  "wiki": "http://en.wikipedia.org/wiki/Vortex_ring",
+  "functions": [
+   "Accumulate / Divided Solid",
+   "Accumulate / Gas",
+   "Accumulate / Liquid",
+   "Bend / Gas",
+   "Bend / Liquid",
+   "Concentrate / Divided Solid",
+   "Concentrate / Gas",
+   "Concentrate / Liquid",
+   "Constrain / Divided Solid",
+   "Constrain / Gas",
+   "Constrain / Liquid",
+   "Hold / Divided Solid",
+   "Hold / Gas",
+   "Hold / Liquid",
+   "Move / Divided Solid",
+   "Move / Gas",
+   "Move / Liquid",
+   "Orient / Divided Solid",
+   "Orient / Gas",
+   "Orient / Liquid",
+   "Rotate / Divided Solid",
+   "Rotate / Gas",
+   "Rotate / Liquid"
+  ],
+  "notes": [
+   "In the case of a divided solid dispersed in a fluid, e.g. a smoke ring."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Wear",
+  "desc": "The erosion of material from a solid surface by the action of another surface.",
+  "wiki": "http://en.wikipedia.org/wiki/Wear",
+  "functions": [
+   "Absorb / Field",
+   "Break Down / Divided Solid",
+   "Clean / Divided Solid",
+   "Clean / Solid",
+   "Compress / Divided Solid",
+   "Concentrate / Divided Solid",
+   "Destroy / Divided Solid",
+   "Destroy / Solid",
+   "Detect / Solid",
+   "Heat / Solid",
+   "Produce / Divided Solid",
+   "Remove / Solid"
+  ],
+  "notes": [
+   "Heat is typically a bi-product of wear.",
+   "Through closer packing of finder particles.",
+   "Wear is evidence of the presence of an agent responsible for the wear."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Weathering",
+  "desc": "The breaking down of Earth's rocks, soils and minerals through direct contact with the planet's atmosphere. Weathering occurs in situ, or 'with no movement', and thus should not be confused with erosion, which involves the movement of rocks and minerals by agents such as water, ice, wind, and gravity.",
+  "wiki": "http://en.wikipedia.org/wiki/Weathering",
+  "functions": [
+   "Break Down / Divided Solid",
+   "Break Down / Solid",
+   "Clean / Divided Solid",
+   "Clean / Solid",
+   "Destroy / Divided Solid",
+   "Destroy / Solid",
+   "Extract / Divided Solid",
+   "Extract / Solid",
+   "Produce / Divided Solid",
+   "Remove / Divided Solid",
+   "Remove / Solid",
+   "Separate / Divided Solid",
+   "Separate / Solid"
+  ],
+  "notes": [
+   "By weathering away of all unwanted material, leaving only the required material."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Weissenberg Effect",
+  "desc": "A phenomenon that occurs when a spinning rod is placed into a solution of liquid polymer. Instead of being thrown outward, entanglements cause the polymer chains to be drawn towards the rod.",
+  "wiki": "http://en.wikipedia.org/wiki/Weissenberg_effect",
+  "functions": [
+   "Hold / Liquid",
+   "Move / Liquid",
+   "Move / Solid"
+  ],
+  "notes": [
+   "In the case of a polymer dissoved in a solvent."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Wetting",
+  "desc": "The ability of a liquid to maintain contact with a solid surface, resulting from intermolecular interactions when the two are brought together. The degree of wetting is determined by a force balance between adhesive and cohesive forces. Adhesive forces between a liquid and solid cause a liquid drop to spread across the surface. Cohesive forces within the liquid cause the drop to ball up and avoid contact with the surface.",
+  "wiki": "http://en.wikipedia.org/wiki/Wetting",
+  "functions": [
+   "Absorb / Liquid",
+   "Accumulate / Liquid",
+   "Constrain / Divided Solid",
+   "Constrain / Liquid",
+   "Constrain / Solid",
+   "Deposit / Liquid",
+   "Detect / Liquid",
+   "Dry / Solid",
+   "Extract / Liquid",
+   "Hold / Divided Solid",
+   "Hold / Liquid",
+   "Hold / Solid",
+   "Join / Divided Solid",
+   "Join / Solid",
+   "Move / Liquid",
+   "Protect / Liquid",
+   "Remove / Liquid",
+   "Separate / Liquid"
+  ],
+  "notes": [
+   "By wetting another object, thus drawing water from the object to be dried."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Wiedemann Effect",
+  "desc": "A magnetoelastic effect. The twisting of a magnetic material when a helical magnetic field is applied to it.",
+  "wiki": "http://en.wikipedia.org/w/index.php?title=Wiedemann_effect",
+  "functions": [
+   "Bend / Solid",
+   "Destroy / Solid",
+   "Detect / Field",
+   "Heat / Solid",
+   "Melt / Solid",
+   "Move / Divided Solid",
+   "Orient / Divided Solid",
+   "Orient / Solid",
+   "Rotate / Solid"
+  ],
+  "notes": [
+   "As a result of frictional heating.",
+   "Through frictional heating."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Wiegand Effect",
+  "desc": "Generation of electrical pulses when a specially processed wire is moved in a magnetic field. The wire has two distinct magnetic regions that react differently to the magnetic field: the shell requires a strong magnetic field to reverse its magnetic polarity, whereas the core will revert under weaker field conditions. The polarity of the wire shifts very rapidly, generating strong, short (~10 µs) electrical pulses without additional external power.",
+  "wiki": "http://en.wikipedia.org/wiki/Wiegand_effect",
+  "functions": [
+   "Detect / Field",
+   "Detect / Solid",
+   "Heat / Solid",
+   "Produce / Field"
+  ],
+  "notes": [
+   "In the case of a magnetic field.",
+   "Through ohmic heating of the wire"
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "Wind",
+  "desc": "The flow of air or other gases that compose an atmosphere",
+  "wiki": "http://en.wikipedia.org/wiki/Wind",
+  "functions": [
+   "Bend / Gas",
+   "Compress / Gas",
+   "Compress / Liquid",
+   "Compress / Solid",
+   "Cool / Divided Solid",
+   "Mix / Divided Solid",
+   "Move / Divided Solid",
+   "Move / Gas",
+   "Move / Liquid",
+   "Move / Solid",
+   "Remove / Divided Solid",
+   "Rotate / Divided Solid",
+   "Rotate / Solid",
+   "Separate / Divided Solid",
+   "Separate / Solid"
+  ],
+  "notes": [
+   "Indirectly, for example via a turbine."
+  ],
+  "deckGuess": null
+ },
+ {
+  "name": "X-Ray",
+  "desc": "A form of electromagnetic radiation. X-rays have a wavelength in the range of 0.01 to 10 nanometers, corresponding to frequencies in the range 30 petahertz to 30 exahertz (3 × 1016 Hz to 3 × 1019 Hz) and energies in the range 120 eV to 120 keV. They are shorter in wavelength than UV rays and longer than gamma rays. In many languages, X-radiation is called Röntgen radiation.",
+  "wiki": "http://en.wikipedia.org/wiki/X-ray",
+  "functions": [
+   "Break Down / Divided Solid",
+   "Break Down / Solid",
+   "Destroy / Solid",
+   "Detect / Divided Solid",
+   "Detect / Solid"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Yarkovsky Effect",
+  "desc": "A force acting on a rotating body in space caused by the anisotropic emission of thermal photons, which carry momentum. It is usually considered in relation to meteoroids or small asteroids (about 10 cm to 10 km in diameter), as its influence is most significant for these bodies.",
+  "wiki": "http://en.wikipedia.org/wiki/Yarkovsky_effect",
+  "functions": [
+   "Detect / Field",
+   "Move / Solid"
+  ],
+  "notes": [],
+  "deckGuess": null
+ },
+ {
+  "name": "Zeeman Effect",
+  "desc": "The splitting of a spectral line into several components in the presence of a static magnetic field. The Zeeman effect is very important in applications such as nuclear magnetic resonance spectroscopy, electron spin resonance spectroscopy, magnetic resonance imaging (MRI) and Mössbauer spectroscopy. It may also be utilised to improve accuracy in Atomic absorption spectroscopy.",
+  "wiki": "http://en.wikipedia.org/wiki/Zeeman_effect",
+  "functions": [
+   "Break Down / Field",
+   "Detect / Field",
+   "Extract / Field",
+   "Separate / Field"
+  ],
+  "notes": [
+   "In the case of a magnetic field."
+  ],
+  "deckGuess": null
+ }
+]

@@ -1,0 +1,1956 @@
+[
+ {
+  "id": "video-tape-recorder",
+  "name": "Video tape recorder",
+  "year": 1956,
+  "job": "records media",
+  "effect": "atoms are tiny magnets",
+  "effectCard": "magnetic-moments",
+  "how": "A tape recorder fast enough for television. A spinning electromagnet head lines up the tiny atomic magnets in a coated plastic tape, so the picture is kept as a trail of magnetized spots that can be played back the same evening.",
+  "kind": "invention",
+  "parts": [
+   {
+    "card": "electromagnets",
+    "t": "Electromagnets",
+    "job": "makes a magnetic field",
+    "year": 1823
+   },
+   {
+    "card": "electric-motors",
+    "t": "Electric motors",
+    "job": "provides power",
+    "year": 1831
+   }
+  ],
+  "problems": [],
+  "path": "gap",
+  "proposedBy": "ai",
+  "status": "proposed",
+  "jobNew": false,
+  "effectStatus": "in graph",
+  "effectYear": 1939,
+  "effectCardTitle": "Magnetic moments",
+  "pairNew": true,
+  "inPart": [],
+  "reachable1990": true
+ },
+ {
+  "id": "hard-disk-drive",
+  "name": "Hard disk drive",
+  "year": 1956,
+  "job": "stores data",
+  "effect": "atoms are tiny magnets",
+  "effectCard": "magnetic-moments",
+  "how": "A computer's long-term memory. A head floating a hair's width above a spinning platter flips the direction of tiny magnetized patches, one bit each, and they keep their direction with the power off.",
+  "kind": "invention",
+  "parts": [
+   {
+    "card": "electromagnets",
+    "t": "Electromagnets",
+    "job": "makes a magnetic field",
+    "year": 1823
+   },
+   {
+    "card": "electric-motors",
+    "t": "Electric motors",
+    "job": "provides power",
+    "year": 1831
+   }
+  ],
+  "problems": [],
+  "path": "gap",
+  "proposedBy": "ai",
+  "status": "proposed",
+  "jobNew": false,
+  "effectStatus": "in graph",
+  "effectYear": 1939,
+  "effectCardTitle": "Magnetic moments",
+  "pairNew": true,
+  "inPart": [],
+  "reachable1990": true
+ },
+ {
+  "id": "dram",
+  "name": "Memory chip (DRAM)",
+  "year": 1966,
+  "job": "stores data",
+  "effect": "static charge",
+  "effectCard": "positive-negative-charge",
+  "how": "The working memory of every computer. Each bit is a small electric charge parked on a microscopic capacitor next to a transistor switch. The charge leaks away, so the chip tops it up thousands of times a second.",
+  "kind": "invention",
+  "parts": [
+   {
+    "card": "integrated-circuits",
+    "t": "Integrated circuits",
+    "job": "computes",
+    "year": 1960
+   },
+   {
+    "card": "transistor",
+    "t": "Transistor",
+    "job": "controls the current",
+    "year": 1948
+   }
+  ],
+  "problems": [],
+  "path": "gap",
+  "proposedBy": "ai",
+  "status": "proposed",
+  "jobNew": false,
+  "effectStatus": "in graph",
+  "effectYear": 1733,
+  "effectCardTitle": "Positive and negative charge",
+  "pairNew": true,
+  "inPart": [],
+  "reachable1990": true
+ },
+ {
+  "id": "flash-memory",
+  "name": "Flash memory",
+  "year": 1984,
+  "job": "stores data",
+  "effect": "quantum tunnelling",
+  "effectCard": "particles-as-waves",
+  "how": "Memory that keeps its data with the power off, used in phones, cameras and USB sticks. Because electrons are also waves, a strong voltage lets them pass straight through a thin insulator onto an isolated 'floating gate', where they stay trapped for years.",
+  "kind": "invention",
+  "parts": [
+   {
+    "card": "transistor",
+    "t": "Transistor",
+    "job": "controls the current",
+    "year": 1948
+   },
+   {
+    "card": "integrated-circuits",
+    "t": "Integrated circuits",
+    "job": "computes",
+    "year": 1960
+   }
+  ],
+  "problems": [],
+  "path": "gap",
+  "proposedBy": "ai",
+  "status": "proposed",
+  "jobNew": false,
+  "effectStatus": "in graph",
+  "effectYear": 1923,
+  "effectCardTitle": "Particles as waves",
+  "pairNew": true,
+  "inPart": [],
+  "reachable1990": true
+ },
+ {
+  "id": "gmr-read-head",
+  "name": "Giant magnetoresistance read head",
+  "year": 1997,
+  "job": "stores data",
+  "effect": "a thin magnetic layer changes a current's resistance",
+  "effectCard": null,
+  "how": "The sensor that let hard disks grow a hundredfold. A stack of metal layers a few atoms thick changes its electrical resistance sharply when a tiny magnetized bit passes underneath, so much smaller bits can still be read.",
+  "kind": "invention",
+  "parts": [
+   {
+    "card": "electromagnets",
+    "t": "Electromagnets",
+    "job": "makes a magnetic field",
+    "year": 1823
+   },
+   {
+    "card": "electric-motors",
+    "t": "Electric motors",
+    "job": "provides power",
+    "year": 1831
+   },
+   {
+    "card": "microchips",
+    "t": "Microchips",
+    "job": "computes",
+    "year": 1975
+   }
+  ],
+  "problems": [],
+  "path": "gap",
+  "proposedBy": "ai",
+  "status": "proposed",
+  "jobNew": false,
+  "effectStatus": "needs card",
+  "effectYear": null,
+  "effectCardTitle": null,
+  "pairNew": true,
+  "inPart": [],
+  "reachable1990": false
+ },
+ {
+  "id": "personal-computer",
+  "name": "Personal computer",
+  "year": 1977,
+  "job": "computes",
+  "effect": null,
+  "effectCard": null,
+  "how": "A whole computer for one person on a desk. A single microprocessor chip does the work, a keyboard and mouse take input, and an ordinary TV screen shows the result. It works by the same logic as the room-sized computers before it, so it is an improvement, not a new principle.",
+  "kind": "improvement",
+  "parts": [
+   {
+    "card": "microchips",
+    "t": "Microchips",
+    "job": "computes",
+    "year": 1975
+   },
+   {
+    "card": "keys",
+    "t": "Keys",
+    "job": "takes input",
+    "year": 1837
+   },
+   {
+    "card": "television-in-the-home",
+    "t": "Television in the home",
+    "job": "shows the image",
+    "year": 1947
+   },
+   {
+    "card": "computer-mouse",
+    "t": "Computer mouse",
+    "job": "takes input",
+    "year": 1964,
+    "candidate": true
+   }
+  ],
+  "problems": [],
+  "path": "gap",
+  "proposedBy": "ai",
+  "status": "proposed",
+  "jobNew": false,
+  "effectStatus": "none",
+  "effectYear": null,
+  "effectCardTitle": null,
+  "revision": "Added the computer mouse as a part (Boris's note, r10).",
+  "pairNew": false,
+  "inPart": [],
+  "reachable1990": false
+ },
+ {
+  "id": "deep-learning",
+  "name": "Deep neural network",
+  "year": 2012,
+  "job": "computes",
+  "effect": "a web of simple cells learns by strengthening its connections",
+  "effectCard": "neuron-theory",
+  "how": "Software that learns to recognize speech, faces and words from examples instead of rules. It copies the brain's plan: layers of simple units, like nerve cells, pass signals along connections whose strengths are nudged after every mistake until the answers come out right.",
+  "kind": "invention",
+  "parts": [
+   {
+    "card": "microchips",
+    "t": "Microchips",
+    "job": "computes",
+    "year": 1975
+   },
+   {
+    "card": "computer",
+    "t": "Computers",
+    "job": "computes",
+    "year": 1930
+   }
+  ],
+  "problems": [],
+  "path": "gap",
+  "proposedBy": "ai",
+  "status": "proposed",
+  "jobNew": false,
+  "effectStatus": "card, unused",
+  "effectYear": 1889,
+  "effectCardTitle": "Neuron theory",
+  "revision": "Effect card is now Neuron theory (1889), per r8.",
+  "pairNew": true,
+  "inPart": [],
+  "reachable1990": true
+ },
+ {
+  "id": "public-key-cryptography",
+  "name": "Public-key cryptography",
+  "year": 1976,
+  "job": "protects",
+  "effect": "multiplying primes is easy, factoring is hard",
+  "effectCard": "prime-numbers",
+  "how": "Lets two strangers talk secretly over an open line, which is how every web purchase is protected. Anyone can lock a message with the public key, a huge number made by multiplying two primes; only someone who knows those two primes can unlock it, and finding them from the product would take longer than the age of the universe.",
+  "kind": "invention",
+  "parts": [
+   {
+    "card": "computer",
+    "t": "Computers",
+    "job": "computes",
+    "year": 1930
+   }
+  ],
+  "problems": [],
+  "path": "gap",
+  "proposedBy": "ai",
+  "status": "proposed",
+  "jobNew": false,
+  "effectStatus": "needs card",
+  "effectYear": -300,
+  "effectCardTitle": "Prime numbers",
+  "effectCardNew": "Every whole number is a unique product of primes, and there is no end of primes. Multiplying two big primes is quick; finding them again from the product is hopelessly slow.",
+  "revision": "Proposes a new card, Prime numbers. The board already counts math as an effect (microchips work by Boolean logic and binary numbers).",
+  "pairNew": true,
+  "inPart": [],
+  "reachable1990": false
+ },
+ {
+  "id": "computer-mouse",
+  "name": "Computer mouse",
+  "year": 1964,
+  "job": "takes input",
+  "effect": "a rolling ball grips the surface instead of sliding",
+  "effectCard": "rolling-friction",
+  "how": "A pointer you move by hand. A rubber ball underneath grips the desk and rolls rather than slides, turning two small wheels at right angles, so the computer can count how far the hand moved left-right and up-down.",
+  "kind": "invention",
+  "parts": [
+   {
+    "card": "ball-bearing",
+    "t": "ball-bearing",
+    "job": "reduces friction",
+    "year": null
+   },
+   {
+    "card": "computer",
+    "t": "Computers",
+    "job": "computes",
+    "year": 1930
+   }
+  ],
+  "problems": [],
+  "path": "gap",
+  "proposedBy": "ai",
+  "status": "proposed",
+  "jobNew": false,
+  "effectStatus": "needs card",
+  "effectYear": 1781,
+  "effectCardTitle": "Rolling friction",
+  "revision": "Narrower effect (r11): the ball grips and rolls instead of sliding.",
+  "pairNew": true,
+  "inPart": [],
+  "reachable1990": false
+ },
+ {
+  "id": "touchscreen",
+  "name": "Capacitive touchscreen",
+  "year": 1965,
+  "job": "takes input",
+  "effect": "static charge",
+  "effectCard": "positive-negative-charge",
+  "how": "A screen you point at with a finger, as on every phone. A grid of transparent electrodes under the glass holds a small charge; a fingertip, which conducts, draws some of it away, and the chip finds the spot where the charge dropped.",
+  "kind": "invention",
+  "parts": [
+   {
+    "card": "glass",
+    "t": "Glass",
+    "job": "forms the body",
+    "year": -2500
+   },
+   {
+    "card": "integrated-circuits",
+    "t": "Integrated circuits",
+    "job": "computes",
+    "year": 1960
+   }
+  ],
+  "problems": [],
+  "path": "gap",
+  "proposedBy": "ai",
+  "status": "proposed",
+  "jobNew": false,
+  "effectStatus": "in graph",
+  "effectYear": 1733,
+  "effectCardTitle": "Positive and negative charge",
+  "pairNew": true,
+  "inPart": [],
+  "reachable1990": true
+ },
+ {
+  "id": "barcode-scanner",
+  "name": "Barcode scanner",
+  "year": 1974,
+  "job": "takes input",
+  "effect": "black stripes soak up light, white gaps reflect it",
+  "effectCard": "photoelectric-effect",
+  "how": "Reads a price at the checkout in a blink. A laser spot sweeps across printed stripes, and a photocell turns the flicker of reflected light, strong from the white gaps and weak from the black bars, into a number the computer looks up.",
+  "kind": "invention",
+  "parts": [
+   {
+    "card": "laser",
+    "t": "Laser",
+    "job": "makes light",
+    "year": 1960
+   },
+   {
+    "card": "photocell",
+    "t": "Photocell",
+    "job": "turns light into current",
+    "year": 1893
+   },
+   {
+    "card": "computer",
+    "t": "Computers",
+    "job": "computes",
+    "year": 1930
+   }
+  ],
+  "problems": [],
+  "path": "gap",
+  "proposedBy": "ai",
+  "status": "proposed",
+  "jobNew": false,
+  "effectStatus": "card, unused",
+  "effectYear": 1887,
+  "effectCardTitle": "Photoelectric effect",
+  "revision": "Narrower effect (r11): black bars soak up light while white gaps reflect it. Borderline: it may really be an improvement.",
+  "pairNew": true,
+  "inPart": [],
+  "reachable1990": true
+ },
+ {
+  "id": "ccd",
+  "name": "CCD image sensor",
+  "year": 1969,
+  "job": "records media",
+  "effect": "photoelectric effect",
+  "effectCard": "photoelectric-effect",
+  "how": "The chip that replaced film in cameras and telescopes. Light falling on each pixel knocks electrons loose, so the brighter the spot the more charge collects; the charges are then shuffled out row by row and counted.",
+  "kind": "invention",
+  "parts": [
+   {
+    "card": "integrated-circuits",
+    "t": "Integrated circuits",
+    "job": "computes",
+    "year": 1960
+   }
+  ],
+  "problems": [],
+  "path": "gap",
+  "proposedBy": "ai",
+  "status": "proposed",
+  "jobNew": false,
+  "effectStatus": "in graph",
+  "effectYear": 1887,
+  "effectCardTitle": "Photoelectric effect",
+  "pairNew": true,
+  "inPart": [],
+  "reachable1990": true
+ },
+ {
+  "id": "mp3",
+  "name": "MP3 audio compression",
+  "year": 1993,
+  "job": "records media",
+  "effect": "the ear misses quiet sounds next to loud ones",
+  "effectCard": null,
+  "how": "Shrinks recorded music about tenfold, which made music downloads and the iPod possible. The ear can't hear a quiet sound right next to a loud one in pitch or time, so the encoder simply throws those sounds away.",
+  "kind": "invention",
+  "parts": [
+   {
+    "card": "computer",
+    "t": "Computers",
+    "job": "computes",
+    "year": 1930
+   },
+   {
+    "card": "microchips",
+    "t": "Microchips",
+    "job": "computes",
+    "year": 1975
+   }
+  ],
+  "problems": [],
+  "path": "gap",
+  "proposedBy": "ai",
+  "status": "proposed",
+  "jobNew": false,
+  "effectStatus": "needs card",
+  "effectYear": null,
+  "effectCardTitle": null,
+  "pairNew": true,
+  "inPart": [],
+  "reachable1990": false
+ },
+ {
+  "id": "lcd",
+  "name": "Liquid crystal display",
+  "year": 1968,
+  "job": "shows the image",
+  "effect": "lined-up liquid crystals twist light, and a voltage untwists them",
+  "effectCard": "liquid-crystals",
+  "how": "The flat screen of watches, laptops and TVs. A film of liquid crystal sits between two crossed polarizing sheets; its molecules twist the light so it gets through, and a small voltage straightens them so that dot goes dark.",
+  "kind": "invention",
+  "parts": [
+   {
+    "card": "polaroid",
+    "t": "Polaroid",
+    "job": "polarizes light",
+    "year": 1932
+   },
+   {
+    "card": "integrated-circuits",
+    "t": "Integrated circuits",
+    "job": "computes",
+    "year": 1960
+   },
+   {
+    "card": "glass",
+    "t": "Glass",
+    "job": "forms the body",
+    "year": -2500
+   }
+  ],
+  "problems": [],
+  "path": "gap",
+  "proposedBy": "ai",
+  "status": "proposed",
+  "jobNew": false,
+  "effectStatus": "needs card",
+  "effectYear": 1888,
+  "effectCardTitle": "Liquid crystals",
+  "effectCardNew": "Some substances flow like a liquid while their long molecules stay lined up like a crystal; an electric field or a flow can swing them all round together.",
+  "revision": "Proposes a new card, Liquid crystals (1888), shared with Kevlar.",
+  "pairNew": true,
+  "inPart": [],
+  "reachable1990": false
+ },
+ {
+  "id": "e-paper",
+  "name": "Electronic paper",
+  "year": 1997,
+  "job": "shows the image",
+  "effect": "charged particles move through a solution",
+  "effectCard": "ionic-dissociation",
+  "how": "The paper-like screen of e-book readers, easy to read in sunlight. Each dot is a tiny capsule of clear fluid holding charged black and white grains; a voltage pulls one colour to the top, and it stays there with no power at all.",
+  "kind": "invention",
+  "parts": [
+   {
+    "card": "integrated-circuits",
+    "t": "Integrated circuits",
+    "job": "computes",
+    "year": 1960
+   }
+  ],
+  "problems": [],
+  "path": "gap",
+  "proposedBy": "ai",
+  "status": "proposed",
+  "jobNew": false,
+  "effectStatus": "in graph",
+  "effectYear": 1884,
+  "effectCardTitle": "Ionic dissociation",
+  "pairNew": true,
+  "inPart": [],
+  "reachable1990": true
+ },
+ {
+  "id": "packet-switching",
+  "name": "Packet-switched network",
+  "year": 1969,
+  "job": "communicates",
+  "effect": null,
+  "effectCard": null,
+  "how": "The way the Internet carries everything. Messages are cut into small addressed packets that travel separately by whatever route is free and are put back together at the end, so no line is tied up and a broken link is simply routed around. Claude now counts it as an improvement: the idea is a design, not a principle of nature.",
+  "kind": "improvement",
+  "parts": [
+   {
+    "card": "computer",
+    "t": "Computers",
+    "job": "computes",
+    "year": 1930
+   },
+   {
+    "card": "insulated-wire",
+    "t": "insulated-wire",
+    "job": "carries current",
+    "year": null
+   }
+  ],
+  "problems": [],
+  "path": "gap",
+  "proposedBy": "ai",
+  "status": "proposed",
+  "jobNew": false,
+  "effectStatus": "none",
+  "effectYear": null,
+  "effectCardTitle": null,
+  "revision": "Now an improvement: the idea is a network design, not a principle of nature.",
+  "pairNew": false,
+  "inPart": [],
+  "reachable1990": false
+ },
+ {
+  "id": "world-wide-web",
+  "name": "World Wide Web",
+  "year": 1989,
+  "job": "communicates",
+  "effect": null,
+  "effectCard": null,
+  "how": "Pages on any computer in the Internet, linked so a click on one opens another anywhere in the world. It runs on the network that already existed; what it added was the link and the browser, not a new principle.",
+  "kind": "improvement",
+  "parts": [
+   {
+    "card": "computer",
+    "t": "Computers",
+    "job": "computes",
+    "year": 1930
+   }
+  ],
+  "problems": [],
+  "path": "gap",
+  "proposedBy": "ai",
+  "status": "proposed",
+  "jobNew": false,
+  "effectStatus": "none",
+  "effectYear": null,
+  "effectCardTitle": null,
+  "pairNew": false,
+  "inPart": [],
+  "reachable1990": false
+ },
+ {
+  "id": "cell-phone",
+  "name": "Cellular phone",
+  "year": 1983,
+  "job": "communicates",
+  "effect": null,
+  "effectCard": null,
+  "how": "A telephone you carry. It is a small two-way radio that talks to the nearest tower, and as you move, the call is handed from one tower's area, or cell, to the next. Radio already did this job, so it is an improvement.",
+  "kind": "improvement",
+  "parts": [
+   {
+    "card": "radio",
+    "t": "Radio",
+    "job": "communicates",
+    "year": 1901
+   },
+   {
+    "card": "microchips",
+    "t": "Microchips",
+    "job": "computes",
+    "year": 1975
+   },
+   {
+    "card": "lithium-battery",
+    "t": "Lithium battery",
+    "job": "stores electricity",
+    "year": 1972
+   }
+  ],
+  "problems": [],
+  "path": "gap",
+  "proposedBy": "ai",
+  "status": "proposed",
+  "jobNew": false,
+  "effectStatus": "none",
+  "effectYear": null,
+  "effectCardTitle": null,
+  "pairNew": false,
+  "inPart": [],
+  "reachable1990": false
+ },
+ {
+  "id": "smartphone",
+  "name": "Smartphone",
+  "year": 2007,
+  "job": "communicates",
+  "effect": null,
+  "effectCard": null,
+  "how": "A phone, camera, map, music player and computer behind one touchscreen. Every piece was already invented; putting them in a pocket changed daily life more than most inventions.",
+  "kind": "improvement",
+  "parts": [
+   {
+    "card": "microchips",
+    "t": "Microchips",
+    "job": "computes",
+    "year": 1975
+   },
+   {
+    "card": "lithium-battery",
+    "t": "Lithium battery",
+    "job": "stores electricity",
+    "year": 1972
+   },
+   {
+    "card": "radio",
+    "t": "Radio",
+    "job": "communicates",
+    "year": 1901
+   },
+   {
+    "card": "touchscreen",
+    "t": "Capacitive touchscreen",
+    "job": "takes input",
+    "year": 1965,
+    "candidate": true
+   }
+  ],
+  "problems": [],
+  "path": "gap",
+  "proposedBy": "ai",
+  "status": "proposed",
+  "jobNew": false,
+  "effectStatus": "none",
+  "effectYear": null,
+  "effectCardTitle": null,
+  "revision": "Added the touchscreen as a part (r10).",
+  "pairNew": false,
+  "inPart": [],
+  "reachable1990": false
+ },
+ {
+  "id": "ultrasound-scanner",
+  "name": "Ultrasound scanner",
+  "year": 1958,
+  "job": "diagnoses",
+  "effect": "sound echoes off the boundaries between soft tissues",
+  "effectCard": "acoustics",
+  "how": "Lets doctors see inside the body without X-rays, most famously the unborn child. A probe sends pulses of very high-pitched sound and listens for the faint echoes from every boundary between organs; the timing of each echo places it on a screen.",
+  "kind": "invention",
+  "parts": [
+   {
+    "card": "sonar",
+    "t": "Sonar",
+    "job": "detects objects",
+    "year": 1917
+   },
+   {
+    "card": "oscilloscope",
+    "t": "Oscilloscope",
+    "job": "shows the image",
+    "year": 1897
+   }
+  ],
+  "problems": [],
+  "path": "gap",
+  "proposedBy": "ai",
+  "status": "proposed",
+  "jobNew": false,
+  "effectStatus": "card, unused",
+  "effectYear": 1896,
+  "effectCardTitle": "Acoustics",
+  "revision": "Narrower effect (r11): echoes off the boundaries between soft tissues.",
+  "pairNew": true,
+  "inPart": [],
+  "reachable1990": true
+ },
+ {
+  "id": "mri",
+  "name": "MRI scanner",
+  "year": 1977,
+  "job": "diagnoses",
+  "effect": "atomic nuclei in a magnet answer radio waves",
+  "effectCard": "nuclear-magnetic-resonance",
+  "how": "Takes detailed pictures of soft tissue like the brain, with no radiation. In a very strong magnet the hydrogen nuclei in the body's water all line up; a radio pulse tips them over, they ring back with faint radio signals, and a computer works out where each signal came from.",
+  "kind": "invention",
+  "parts": [
+   {
+    "card": "electromagnets",
+    "t": "Electromagnets",
+    "job": "makes a magnetic field",
+    "year": 1823
+   },
+   {
+    "card": "radio-antennas",
+    "t": "Radio antennas",
+    "job": "radiates waves",
+    "year": 1895
+   },
+   {
+    "card": "computer",
+    "t": "Computers",
+    "job": "computes",
+    "year": 1930
+   }
+  ],
+  "problems": [],
+  "path": "gap",
+  "proposedBy": "ai",
+  "status": "proposed",
+  "jobNew": false,
+  "effectStatus": "card, unused",
+  "effectYear": 1946,
+  "effectCardTitle": "Nuclear magnetic resonance",
+  "pairNew": true,
+  "inPart": [],
+  "reachable1990": true
+ },
+ {
+  "id": "pet-scan",
+  "name": "PET scanner",
+  "year": 1975,
+  "job": "diagnoses",
+  "effect": "matter meets antimatter and vanishes into two gamma rays",
+  "effectCard": "positron",
+  "how": "Shows which parts of the body are busy, such as a working brain region or a growing tumour. The patient is given sugar tagged with an atom that gives off positrons; each positron meets an electron and both vanish into two gamma rays flying in opposite directions, and detectors that catch both at once draw a line through the spot.",
+  "kind": "invention",
+  "parts": [
+   {
+    "card": "coincidence-counter",
+    "t": "Coincidence counter",
+    "job": "detects radiation",
+    "year": 1929
+   },
+   {
+    "card": "computer",
+    "t": "Computers",
+    "job": "computes",
+    "year": 1930
+   }
+  ],
+  "problems": [],
+  "path": "gap",
+  "proposedBy": "ai",
+  "status": "proposed",
+  "jobNew": false,
+  "effectStatus": "card, unused",
+  "effectYear": 1932,
+  "effectCardTitle": "Positron",
+  "revision": "Dropped the cyclotron (it makes the tracer elsewhere, per Boris's note and r9); effect card is now Positron (1932), per r8.",
+  "pairNew": true,
+  "inPart": [],
+  "reachable1990": true
+ },
+ {
+  "id": "pulse-oximeter",
+  "name": "Pulse oximeter",
+  "year": 1972,
+  "job": "diagnoses",
+  "effect": "blood turns bright red when it carries oxygen",
+  "effectCard": "blood-color",
+  "how": "The clip on a patient's finger that shows how much oxygen their blood carries. Blood rich in oxygen is bright red and blood without it is dark, so the clip shines red and infrared light through the fingertip and compares how much of each gets through.",
+  "kind": "invention",
+  "parts": [
+   {
+    "card": "light-emitting-diodes",
+    "t": "Light-emitting diodes",
+    "job": "makes light",
+    "year": 1962
+   },
+   {
+    "card": "photocell",
+    "t": "Photocell",
+    "job": "turns light into current",
+    "year": 1893
+   },
+   {
+    "card": "integrated-circuits",
+    "t": "Integrated circuits",
+    "job": "computes",
+    "year": 1960
+   }
+  ],
+  "problems": [],
+  "path": "gap",
+  "proposedBy": "ai",
+  "status": "proposed",
+  "jobNew": false,
+  "effectStatus": "card, unused",
+  "effectYear": 1669,
+  "effectCardTitle": "Blood colors",
+  "revision": "Effect card is now Blood colors (1669), per Boris's note and r8.",
+  "pairNew": true,
+  "inPart": [],
+  "reachable1990": true
+ },
+ {
+  "id": "cochlear-implant",
+  "name": "Cochlear implant",
+  "year": 1978,
+  "job": "treats illness",
+  "effect": "nerve signals are electrical",
+  "effectCard": "electric-nerve-fibers",
+  "how": "Gives hearing to people who are profoundly deaf. A microphone and chip split sound into pitches, and a row of electrodes threaded into the inner ear gives tiny shocks to the hearing nerve at the right places, which the brain learns to hear as sound.",
+  "kind": "invention",
+  "parts": [
+   {
+    "card": "microphone",
+    "t": "microphone",
+    "job": "turns sound into current",
+    "year": null
+   },
+   {
+    "card": "microchips",
+    "t": "Microchips",
+    "job": "computes",
+    "year": 1975
+   },
+   {
+    "card": "insulated-wire",
+    "t": "insulated-wire",
+    "job": "carries current",
+    "year": null
+   }
+  ],
+  "problems": [],
+  "path": "gap",
+  "proposedBy": "ai",
+  "status": "proposed",
+  "jobNew": false,
+  "effectStatus": "in graph",
+  "effectYear": 1922,
+  "effectCardTitle": "Electric nerve fibers",
+  "pairNew": true,
+  "inPart": [],
+  "reachable1990": true
+ },
+ {
+  "id": "oral-rehydration",
+  "name": "Oral rehydration salts",
+  "year": 1968,
+  "job": "treats illness",
+  "effect": "the gut pulls in salt and water along with sugar",
+  "effectCard": null,
+  "how": "A drink that keeps people with cholera and other diarrhoea alive; it has saved tens of millions of lives. The gut can't absorb plain water fast enough during cholera, but sugar and salt together drag water in with them.",
+  "kind": "invention",
+  "parts": [],
+  "problems": [],
+  "path": "gap",
+  "proposedBy": "ai",
+  "status": "proposed",
+  "jobNew": false,
+  "effectStatus": "needs card",
+  "effectYear": null,
+  "effectCardTitle": null,
+  "pairNew": true,
+  "inPart": [],
+  "reachable1990": false
+ },
+ {
+  "id": "monoclonal-antibodies",
+  "name": "Monoclonal antibodies",
+  "year": 1975,
+  "job": "treats illness",
+  "effect": "each immune cell makes one antibody that fits one target",
+  "effectCard": "vaccination",
+  "how": "Drugs that seek out one exact target, used against cancers and autoimmune disease. Each immune cell makes only one kind of antibody; fusing such a cell with a cancer cell, which never dies, gives a culture that turns out that one antibody for ever.",
+  "kind": "invention",
+  "parts": [
+   {
+    "card": "tissue-culture",
+    "t": "Tissue culture",
+    "job": "grows cultures",
+    "year": 1907
+   }
+  ],
+  "problems": [],
+  "path": "gap",
+  "proposedBy": "ai",
+  "status": "proposed",
+  "jobNew": false,
+  "effectStatus": "card, unused",
+  "effectYear": 1796,
+  "effectCardTitle": "Vaccination",
+  "revision": "Effect card is now Vaccination, as Boris suggested; effect restated as one cell, one antibody.",
+  "pairNew": true,
+  "inPart": [],
+  "reachable1990": true
+ },
+ {
+  "id": "pcr",
+  "name": "PCR",
+  "year": 1983,
+  "job": "builds molecules",
+  "effect": "DNA strands part when heated and pair again when cooled",
+  "effectCard": "the-double-helix",
+  "how": "Copies a chosen stretch of DNA a billionfold in an afternoon, used in forensics, research and COVID tests. Heating splits the double helix into single strands; on cooling, an enzyme from hot-spring bacteria builds each strand back into a pair, doubling the DNA every cycle.",
+  "kind": "invention",
+  "parts": [
+   {
+    "card": "gene-synthesis",
+    "t": "Gene synthesis",
+    "job": "builds molecules",
+    "year": 1970
+   },
+   {
+    "card": "thermometer",
+    "t": "Thermometer",
+    "job": "measures",
+    "year": 1592
+   }
+  ],
+  "problems": [],
+  "path": "gap",
+  "proposedBy": "ai",
+  "status": "proposed",
+  "jobNew": false,
+  "effectStatus": "card, unused",
+  "effectYear": 1953,
+  "effectCardTitle": "The double helix",
+  "pairNew": true,
+  "inPart": [],
+  "reachable1990": true
+ },
+ {
+  "id": "dna-sequencing",
+  "name": "DNA sequencing",
+  "year": 1977,
+  "job": "reads DNA",
+  "effect": "parts of a mixture travel at different speeds",
+  "effectCard": "chromatography",
+  "how": "Reads the letters of a gene, and later of the whole human genome. Copies of the DNA are made that stop at each letter, and the pieces are pulled through a gel, where shorter ones travel faster, so their order spells out the sequence.",
+  "kind": "invention",
+  "parts": [
+   {
+    "card": "electrophoresis",
+    "t": "Electrophoresis",
+    "job": "separates mixtures",
+    "year": 1937
+   },
+   {
+    "card": "gene-synthesis",
+    "t": "Gene synthesis",
+    "job": "builds molecules",
+    "year": 1970
+   }
+  ],
+  "problems": [],
+  "path": "gap",
+  "proposedBy": "ai",
+  "status": "proposed",
+  "jobNew": true,
+  "effectStatus": "in graph",
+  "effectYear": 1906,
+  "effectCardTitle": "Chromatography",
+  "pairNew": true,
+  "inPart": [],
+  "reachable1990": false
+ },
+ {
+  "id": "crispr",
+  "name": "CRISPR gene editing",
+  "year": 2012,
+  "job": "modifies organisms",
+  "effect": "bacteria cut the DNA of viruses that match a stored guide",
+  "effectCard": "bacteriophages",
+  "how": "Edits a chosen gene in almost any living thing, cheaply and precisely. Bacteria defend themselves against viruses by keeping snippets of viral DNA and cutting any DNA that matches; given a guide of our choosing, the same cutting enzyme goes wherever we send it.",
+  "kind": "invention",
+  "parts": [
+   {
+    "card": "gene-synthesis",
+    "t": "Gene synthesis",
+    "job": "builds molecules",
+    "year": 1970
+   },
+   {
+    "card": "recombinant-dna",
+    "t": "Recombinant DNA",
+    "job": "builds molecules",
+    "year": 1970
+   }
+  ],
+  "problems": [],
+  "path": "gap",
+  "proposedBy": "ai",
+  "status": "proposed",
+  "jobNew": false,
+  "effectStatus": "card, unused",
+  "effectYear": 1915,
+  "effectCardTitle": "Bacteriophages",
+  "revision": "Effect card is now Bacteriophages (1915), per r8.",
+  "pairNew": true,
+  "inPart": [],
+  "reachable1990": true
+ },
+ {
+  "id": "mrna-vaccine",
+  "name": "mRNA vaccine",
+  "year": 2020,
+  "job": "prevents disease",
+  "effect": "a cell follows genes put into it",
+  "effectCard": "virus-transduction",
+  "how": "The COVID vaccines that were designed in days. Instead of a weakened virus, the shot carries the genetic message for one viral protein wrapped in a bubble of fat; the body's own cells read it, make the protein, and the immune system learns to recognize it.",
+  "kind": "invention",
+  "parts": [
+   {
+    "card": "gene-synthesis",
+    "t": "Gene synthesis",
+    "job": "builds molecules",
+    "year": 1970
+   }
+  ],
+  "problems": [],
+  "path": "gap",
+  "proposedBy": "ai",
+  "status": "proposed",
+  "jobNew": false,
+  "effectStatus": "in graph",
+  "effectYear": 1952,
+  "effectCardTitle": "Virus transduction",
+  "pairNew": true,
+  "inPart": [],
+  "reachable1990": true
+ },
+ {
+  "id": "lasik",
+  "name": "Laser eye surgery",
+  "year": 1990,
+  "job": "treats illness",
+  "effect": "ultraviolet light breaks bonds without heating",
+  "effectCard": "ultraviolet",
+  "how": "Corrects short sight so people can stop wearing glasses. Pulses of ultraviolet laser light break the bonds holding the cornea's molecules together without heating the tissue around them, reshaping its curve a fraction of a micron at a time.",
+  "kind": "invention",
+  "parts": [
+   {
+    "card": "laser",
+    "t": "Laser",
+    "job": "makes light",
+    "year": 1960
+   },
+   {
+    "card": "computer",
+    "t": "Computers",
+    "job": "computes",
+    "year": 1930
+   }
+  ],
+  "problems": [],
+  "path": "gap",
+  "proposedBy": "ai",
+  "status": "proposed",
+  "jobNew": false,
+  "effectStatus": "card, unused",
+  "effectYear": 1801,
+  "effectCardTitle": "Ultraviolet",
+  "pairNew": true,
+  "inPart": [],
+  "reachable1990": true
+ },
+ {
+  "id": "rtg",
+  "name": "Radioisotope thermoelectric generator",
+  "year": 1961,
+  "job": "makes electricity",
+  "effect": "a temperature difference between two metals drives a current",
+  "effectCard": "seebeck-effect",
+  "how": "A nuclear battery with no moving parts, powering Voyager and the Mars rovers for decades. A lump of plutonium stays hot from its own radioactivity, and rows of thermocouples, junctions of two different metals, turn the difference between that heat and cold space directly into electric current. Its main part, the thermocouple, isn't on the board yet.",
+  "kind": "invention",
+  "parts": [
+   {
+    "card": "lead",
+    "t": "Lead",
+    "job": "forms the body",
+    "year": -4000
+   }
+  ],
+  "problems": [],
+  "path": "gap",
+  "proposedBy": "ai",
+  "status": "proposed",
+  "jobNew": false,
+  "effectStatus": "card, unused",
+  "effectYear": 1821,
+  "effectCardTitle": "Seebeck effect",
+  "revision": "Its main part, the thermocouple, isn't on the board, so it's missing a part.",
+  "pairNew": true,
+  "inPart": [],
+  "reachable1990": true
+ },
+ {
+  "id": "wind-turbine",
+  "name": "Wind turbine",
+  "year": 1980,
+  "job": "makes electricity",
+  "effect": "lift",
+  "effectCard": "aerodynamics",
+  "how": "The tall three-bladed towers of wind farms. Each blade is a long wing, so the wind gives it lift that pulls it around, rather than just pushing as on an old windmill; the rotor turns a generator through a gearbox.",
+  "kind": "invention",
+  "parts": [
+   {
+    "card": "electric-generators",
+    "t": "Electric generators",
+    "job": "makes electricity",
+    "year": 1831
+   },
+   {
+    "card": "gear-train",
+    "t": "gear-train",
+    "job": "transmits rotation",
+    "year": null
+   },
+   {
+    "card": "wing",
+    "t": "wing",
+    "job": "provides lift",
+    "year": null
+   }
+  ],
+  "problems": [],
+  "path": "gap",
+  "proposedBy": "ai",
+  "status": "proposed",
+  "jobNew": false,
+  "effectStatus": "in graph",
+  "effectYear": 1809,
+  "effectCardTitle": "Aerodynamics",
+  "revision": "Borderline: the windmill already did this job, so the new thing is a blade that works by lift instead of drag.",
+  "pairNew": true,
+  "inPart": [
+   "wing"
+  ],
+  "reachable1990": true
+ },
+ {
+  "id": "lithium-ion-battery",
+  "name": "Lithium-ion battery",
+  "year": 1991,
+  "job": "stores electricity",
+  "effect": "lithium ions slip between layers of carbon",
+  "effectCard": null,
+  "how": "The rechargeable battery in phones, laptops and electric cars. Lithium ions slip in between the layers of a graphite electrode when charging and move back to a metal-oxide one when in use, so neither electrode is eaten away and the battery lasts thousands of cycles.",
+  "kind": "invention",
+  "parts": [
+   {
+    "card": "copper",
+    "t": "Copper",
+    "job": "forms the body",
+    "year": -4000
+   },
+   {
+    "card": "aluminum-process",
+    "t": "Aluminum process",
+    "job": "forms the body",
+    "year": 1886
+   }
+  ],
+  "problems": [],
+  "path": "gap",
+  "proposedBy": "ai",
+  "status": "proposed",
+  "jobNew": false,
+  "effectStatus": "needs card",
+  "effectYear": null,
+  "effectCardTitle": null,
+  "pairNew": true,
+  "inPart": [],
+  "reachable1990": false
+ },
+ {
+  "id": "superconducting-magnet",
+  "name": "Superconducting magnet",
+  "year": 1962,
+  "job": "makes a magnetic field",
+  "effect": "some metals lose all resistance when very cold",
+  "effectCard": "superconductivity",
+  "how": "The powerful magnets inside MRI scanners and particle accelerators. Coils of special wire, cooled by liquid helium to a few degrees above absolute zero, lose all electrical resistance, so they carry enormous currents with no heat and no power once started.",
+  "kind": "invention",
+  "parts": [
+   {
+    "card": "insulated-wire",
+    "t": "insulated-wire",
+    "job": "carries current",
+    "year": null
+   },
+   {
+    "card": "dewar-flask",
+    "t": "Dewar flask",
+    "job": "insulates",
+    "year": 1892
+   }
+  ],
+  "problems": [],
+  "path": "gap",
+  "proposedBy": "ai",
+  "status": "proposed",
+  "jobNew": false,
+  "effectStatus": "card, unused",
+  "effectYear": 1911,
+  "effectCardTitle": "Superconductivity",
+  "pairNew": true,
+  "inPart": [],
+  "reachable1990": true
+ },
+ {
+  "id": "led-lighting",
+  "name": "LED lighting",
+  "year": 1995,
+  "job": "makes light",
+  "effect": null,
+  "effectCard": null,
+  "how": "White LED bulbs that use a tenth of the power of a filament bulb. A blue LED shines on a yellow phosphor coating and together they look white. LEDs already made light the same way, so this is an improvement.",
+  "kind": "improvement",
+  "parts": [
+   {
+    "card": "light-emitting-diodes",
+    "t": "Light-emitting diodes",
+    "job": "makes light",
+    "year": 1962
+   }
+  ],
+  "problems": [],
+  "path": "gap",
+  "proposedBy": "ai",
+  "status": "proposed",
+  "jobNew": false,
+  "effectStatus": "none",
+  "effectYear": null,
+  "effectCardTitle": null,
+  "pairNew": false,
+  "inPart": [],
+  "reachable1990": false
+ },
+ {
+  "id": "microwave-oven",
+  "name": "Microwave oven",
+  "year": 1967,
+  "job": "prepares food",
+  "effect": "water molecules soak up microwaves and heat up",
+  "effectCard": "radio-waves",
+  "how": "Heats food in a minute or two. A magnetron fills the box with microwaves, which water molecules soak up by jiggling back and forth billions of times a second, so the food heats from the inside while the plate stays cool.",
+  "kind": "invention",
+  "parts": [
+   {
+    "card": "magnetrons",
+    "t": "Magnetrons",
+    "job": "amplifies a signal",
+    "year": 1921
+   },
+   {
+    "card": "transformer",
+    "t": "Transformer",
+    "job": "changes voltage",
+    "year": 1885
+   }
+  ],
+  "problems": [],
+  "path": "gap",
+  "proposedBy": "ai",
+  "status": "proposed",
+  "jobNew": false,
+  "effectStatus": "card, unused",
+  "effectYear": 1888,
+  "effectCardTitle": "Radio waves",
+  "revision": "Narrower effect (r11): water soaking up microwaves, not just 'radio waves', which the magnetron already has.",
+  "pairNew": true,
+  "inPart": [],
+  "reachable1990": true
+ },
+ {
+  "id": "induction-cooktop",
+  "name": "Induction cooktop",
+  "year": 1971,
+  "job": "prepares food",
+  "effect": "currents stirred up inside a metal heat it",
+  "effectCard": "electromagnetic-induction",
+  "how": "A stove top that heats the pan but not itself. A coil under the glass makes a rapidly changing magnetic field, which stirs up swirling currents inside the iron pan, and the pan's own resistance turns them into heat.",
+  "kind": "invention",
+  "parts": [
+   {
+    "card": "alternating-currents",
+    "t": "Alternating currents",
+    "job": "carries current",
+    "year": 1883
+   },
+   {
+    "card": "transformer",
+    "t": "Transformer",
+    "job": "changes voltage",
+    "year": 1885
+   }
+  ],
+  "problems": [],
+  "path": "gap",
+  "proposedBy": "ai",
+  "status": "proposed",
+  "jobNew": false,
+  "effectStatus": "needs card",
+  "effectYear": 1831,
+  "effectCardTitle": "Electromagnetic induction",
+  "revision": "Narrower effect (r11): currents stirred up inside the pan heat it, not just 'induction', which the transformer already has.",
+  "pairNew": true,
+  "inPart": [],
+  "reachable1990": false
+ },
+ {
+  "id": "catalytic-converter",
+  "name": "Catalytic converter",
+  "year": 1975,
+  "job": "cleans exhaust",
+  "effect": "catalysis",
+  "effectCard": "catalysis",
+  "how": "The box in a car's exhaust that removes most of its poisons. Hot exhaust passes over a ceramic honeycomb coated with platinum, which speeds up the reactions that turn carbon monoxide, unburned fuel and nitrogen oxides into carbon dioxide, water and nitrogen, without being used up itself.",
+  "kind": "invention",
+  "parts": [
+   {
+    "card": "malleable-platinum",
+    "t": "Malleable platinum",
+    "job": "forms the body",
+    "year": 1801
+   },
+   {
+    "card": "porcelain",
+    "t": "Porcelain",
+    "job": "holds the contents",
+    "year": 700
+   }
+  ],
+  "problems": [],
+  "path": "gap",
+  "proposedBy": "ai",
+  "status": "proposed",
+  "jobNew": true,
+  "effectStatus": "in graph",
+  "effectYear": 1812,
+  "effectCardTitle": "Catalysis",
+  "pairNew": true,
+  "inPart": [],
+  "reachable1990": false
+ },
+ {
+  "id": "reverse-osmosis",
+  "name": "Reverse-osmosis desalination",
+  "year": 1965,
+  "job": "supplies water",
+  "effect": "small molecules seep through a membrane",
+  "effectCard": "osmosis",
+  "how": "How most of the world's desalination plants make drinking water from the sea. A thin plastic membrane lets water molecules through but not salt; normally water would flow toward the salty side, but pushing the sea water hard enough forces it the other way.",
+  "kind": "invention",
+  "parts": [
+   {
+    "card": "piston-and-cylinder",
+    "t": "piston-and-cylinder",
+    "job": "pushes",
+    "year": null
+   },
+   {
+    "card": "nylon",
+    "t": "Nylon",
+    "job": "forms the body",
+    "year": 1931
+   },
+   {
+    "card": "electric-motors",
+    "t": "Electric motors",
+    "job": "provides power",
+    "year": 1831
+   }
+  ],
+  "problems": [],
+  "path": "gap",
+  "proposedBy": "ai",
+  "status": "proposed",
+  "jobNew": false,
+  "effectStatus": "in graph",
+  "effectYear": 1748,
+  "effectCardTitle": "Osmosis",
+  "pairNew": true,
+  "inPart": [],
+  "reachable1990": true
+ },
+ {
+  "id": "hovercraft",
+  "name": "Hovercraft",
+  "year": 1959,
+  "job": "transports",
+  "effect": "compressed gas pushes back",
+  "effectCard": "boyles-law",
+  "how": "A craft that travels over water, mud, sand or ice alike. A fan blows air under the hull, where a rubber skirt holds it in; the trapped air is squeezed and pushes back hard enough to lift the craft off the surface, so there is almost no friction.",
+  "kind": "invention",
+  "parts": [
+   {
+    "card": "internal-combustion-engine",
+    "t": "Internal-combustion engine",
+    "job": "provides power",
+    "year": 1860
+   },
+   {
+    "card": "screw-propeller",
+    "t": "Screw propeller",
+    "job": "provides thrust",
+    "year": 1827
+   },
+   {
+    "card": "vulcanization-of-rubber",
+    "t": "Vulcanization of rubber",
+    "job": "forms the body",
+    "year": 1839
+   }
+  ],
+  "problems": [],
+  "path": "gap",
+  "proposedBy": "ai",
+  "status": "proposed",
+  "jobNew": false,
+  "effectStatus": "in graph",
+  "effectYear": 1662,
+  "effectCardTitle": "Boyle's law",
+  "pairNew": true,
+  "inPart": [],
+  "reachable1990": true
+ },
+ {
+  "id": "maglev",
+  "name": "Maglev train",
+  "year": 1984,
+  "job": "transports",
+  "effect": "like magnetic poles push apart",
+  "effectCard": "magnetic-pole",
+  "how": "A train that floats a centimetre above its track, reaching 600 km/h. Electromagnets on the train and in the guideway are set so that their poles repel or attract just enough to hold it up with no wheels, and a magnetic field that travels along the track pulls it forward.",
+  "kind": "invention",
+  "parts": [
+   {
+    "card": "electromagnets",
+    "t": "Electromagnets",
+    "job": "makes a magnetic field",
+    "year": 1823
+   },
+   {
+    "card": "alternating-currents",
+    "t": "Alternating currents",
+    "job": "carries current",
+    "year": 1883
+   },
+   {
+    "card": "electric-motors",
+    "t": "Electric motors",
+    "job": "provides power",
+    "year": 1831
+   }
+  ],
+  "problems": [],
+  "path": "gap",
+  "proposedBy": "ai",
+  "status": "proposed",
+  "jobNew": false,
+  "effectStatus": "card, unused",
+  "effectYear": 1269,
+  "effectCardTitle": "Magnetic poles",
+  "revision": "Narrower effect (r11): like poles push apart, card Magnetic pole (1269).",
+  "pairNew": true,
+  "inPart": [],
+  "reachable1990": true
+ },
+ {
+  "id": "quadcopter",
+  "name": "Quadcopter drone",
+  "year": 2010,
+  "job": "flies",
+  "effect": "a heavy mass stays put while the ground moves",
+  "effectCard": "laws-motion",
+  "how": "The small four-rotor drone. It has no tail and no moving controls; a chip-sized sensor feels the tiniest tilt because a tiny weight inside it lags behind, and the chip speeds up or slows each rotor hundreds of times a second to stay level.",
+  "kind": "invention",
+  "parts": [
+   {
+    "card": "electric-motors",
+    "t": "Electric motors",
+    "job": "provides power",
+    "year": 1831
+   },
+   {
+    "card": "lithium-battery",
+    "t": "Lithium battery",
+    "job": "stores electricity",
+    "year": 1972
+   },
+   {
+    "card": "microchips",
+    "t": "Microchips",
+    "job": "computes",
+    "year": 1975
+   },
+   {
+    "card": "screw-propeller",
+    "t": "Screw propeller",
+    "job": "provides thrust",
+    "year": 1827
+   }
+  ],
+  "problems": [],
+  "path": "gap",
+  "proposedBy": "ai",
+  "status": "proposed",
+  "jobNew": false,
+  "effectStatus": "in graph",
+  "effectYear": 1687,
+  "effectCardTitle": "Laws of motion",
+  "pairNew": true,
+  "inPart": [],
+  "reachable1990": true
+ },
+ {
+  "id": "smoke-detector",
+  "name": "Ionization smoke detector",
+  "year": 1965,
+  "job": "protects",
+  "effect": "radiation ionizes what it passes through",
+  "effectCard": "ionizing-radiation",
+  "how": "The cheap ceiling alarm found in most homes. A speck of radioactive americium knocks electrons off air molecules, so a small current flows across a gap; smoke particles soak up the charged molecules, the current drops, and the alarm sounds.",
+  "kind": "invention",
+  "parts": [
+   {
+    "card": "transistor",
+    "t": "Transistor",
+    "job": "controls the current",
+    "year": 1948
+   },
+   {
+    "card": "electric-battery",
+    "t": "Electric battery",
+    "job": "stores electricity",
+    "year": 1800
+   },
+   {
+    "card": "loudspeaker",
+    "t": "loudspeaker",
+    "job": "turns current into sound",
+    "year": null
+   }
+  ],
+  "problems": [],
+  "path": "gap",
+  "proposedBy": "ai",
+  "status": "proposed",
+  "jobNew": false,
+  "effectStatus": "in graph",
+  "effectYear": 1896,
+  "effectCardTitle": "Ionizing radiation",
+  "pairNew": true,
+  "inPart": [],
+  "reachable1990": false
+ },
+ {
+  "id": "airbag",
+  "name": "Airbag",
+  "year": 1981,
+  "job": "protects",
+  "effect": "burns all at once, without air",
+  "effectCard": "oxygen",
+  "how": "A cushion that bursts out of the steering wheel in a crash. A sensor fires a pellet of propellant that carries its own oxygen, so it burns all at once and fills a nylon bag with gas in about thirty thousandths of a second.",
+  "kind": "invention",
+  "parts": [
+   {
+    "card": "nylon",
+    "t": "Nylon",
+    "job": "forms the body",
+    "year": 1931
+   },
+   {
+    "card": "electric-battery",
+    "t": "Electric battery",
+    "job": "stores electricity",
+    "year": 1800
+   }
+  ],
+  "problems": [],
+  "path": "gap",
+  "proposedBy": "ai",
+  "status": "proposed",
+  "jobNew": false,
+  "effectStatus": "in graph",
+  "effectYear": 1774,
+  "effectCardTitle": "Oxygen",
+  "pairNew": true,
+  "inPart": [],
+  "reachable1990": true
+ },
+ {
+  "id": "kevlar",
+  "name": "Kevlar",
+  "year": 1965,
+  "job": "protects",
+  "effect": "lined-up rod-like molecules make a fibre as strong as its bonds",
+  "effectCard": "liquid-crystals",
+  "how": "The fibre in bulletproof vests, five times stronger than steel for its weight. Its molecules are stiff rods that line up by themselves in a liquid-crystal solution, and spinning the solution into a fibre freezes them in line, so a pull is taken by the strong bonds along every molecule.",
+  "kind": "invention",
+  "parts": [
+   {
+    "card": "nylon",
+    "t": "Nylon",
+    "job": "forms the body",
+    "year": 1931
+   }
+  ],
+  "problems": [],
+  "path": "gap",
+  "proposedBy": "ai",
+  "status": "proposed",
+  "jobNew": false,
+  "effectStatus": "needs card",
+  "effectYear": 1888,
+  "effectCardTitle": "Liquid crystals",
+  "effectCardNew": "Some substances flow like a liquid while their long molecules stay lined up like a crystal; an electric field or a flow can swing them all round together.",
+  "revision": "Proposes a new card, Liquid crystals (1888), shared with the LCD. The way it works is confirmed.",
+  "pairNew": true,
+  "inPart": [],
+  "reachable1990": false
+ },
+ {
+  "id": "thermal-camera",
+  "name": "Thermal imaging camera",
+  "year": 1964,
+  "job": "detects objects",
+  "effect": "heat radiates as invisible light",
+  "effectCard": "infrared-radiation",
+  "how": "Sees people, animals and hot engines in total darkness or smoke, used by firefighters and soldiers. Everything warm gives off infrared light, the warmer the brighter; a special lens and sensor chip turn that invisible glow into a picture.",
+  "kind": "invention",
+  "parts": [
+   {
+    "card": "achromatic-lens",
+    "t": "Achromatic lens",
+    "job": "bends light",
+    "year": 1733
+   },
+   {
+    "card": "integrated-circuits",
+    "t": "Integrated circuits",
+    "job": "computes",
+    "year": 1960
+   }
+  ],
+  "problems": [],
+  "path": "gap",
+  "proposedBy": "ai",
+  "status": "proposed",
+  "jobNew": false,
+  "effectStatus": "in graph",
+  "effectYear": 1800,
+  "effectCardTitle": "Infrared radiation",
+  "pairNew": true,
+  "inPart": [],
+  "reachable1990": true
+ },
+ {
+  "id": "laser-rangefinder",
+  "name": "Laser rangefinder",
+  "year": 1962,
+  "job": "measures",
+  "effect": "signal delay gives distance",
+  "effectCard": "speed-of-light",
+  "how": "Measures distance by timing light, from surveyors' tools to the distance to the Moon. A laser fires a short pulse, a photocell catches its reflection, and since light's speed is known exactly, the round-trip time gives the distance, to within centimetres even off mirrors left on the Moon.",
+  "kind": "invention",
+  "parts": [
+   {
+    "card": "laser",
+    "t": "Laser",
+    "job": "makes light",
+    "year": 1960
+   },
+   {
+    "card": "photocell",
+    "t": "Photocell",
+    "job": "turns light into current",
+    "year": 1893
+   },
+   {
+    "card": "computer",
+    "t": "Computers",
+    "job": "computes",
+    "year": 1930
+   }
+  ],
+  "problems": [],
+  "path": "gap",
+  "proposedBy": "ai",
+  "status": "proposed",
+  "jobNew": false,
+  "effectStatus": "in graph",
+  "effectYear": 1675,
+  "effectCardTitle": "Speed of light",
+  "pairNew": true,
+  "inPart": [],
+  "reachable1990": true
+ },
+ {
+  "id": "ligo",
+  "name": "Gravitational-wave detector",
+  "year": 2015,
+  "job": "measures",
+  "effect": "a passing gravitational wave stretches space",
+  "effectCard": "general-relativity",
+  "how": "Hears colliding black holes across the universe. Two four-kilometre arms at right angles carry laser beams back and forth; a passing gravitational wave stretches one arm and squeezes the other by a thousandth of a proton's width, and the light waves fall out of step.",
+  "kind": "invention",
+  "parts": [
+   {
+    "card": "laser",
+    "t": "Laser",
+    "job": "makes light",
+    "year": 1960
+   },
+   {
+    "card": "interferometer",
+    "t": "Interferometer",
+    "job": "measures",
+    "year": 1881
+   },
+   {
+    "card": "computer",
+    "t": "Computers",
+    "job": "computes",
+    "year": 1930
+   }
+  ],
+  "problems": [],
+  "path": "gap",
+  "proposedBy": "ai",
+  "status": "proposed",
+  "jobNew": false,
+  "effectStatus": "card, unused",
+  "effectYear": 1916,
+  "effectCardTitle": "General relativity",
+  "pairNew": true,
+  "inPart": [],
+  "reachable1990": true
+ },
+ {
+  "id": "stm",
+  "name": "Scanning tunnelling microscope",
+  "year": 1981,
+  "job": "magnifies",
+  "effect": "quantum tunnelling",
+  "effectCard": "particles-as-waves",
+  "how": "The first microscope to show single atoms. A needle with a one-atom tip is held just above a surface; electrons tunnel across the gap, and the current changes so sharply with distance that tracking it maps every atom's bump.",
+  "kind": "invention",
+  "parts": [
+   {
+    "card": "tungsten-wire",
+    "t": "Tungsten wire",
+    "job": "makes light",
+    "year": 1909
+   },
+   {
+    "card": "computer",
+    "t": "Computers",
+    "job": "computes",
+    "year": 1930
+   }
+  ],
+  "problems": [],
+  "path": "gap",
+  "proposedBy": "ai",
+  "status": "proposed",
+  "jobNew": false,
+  "effectStatus": "in graph",
+  "effectYear": 1923,
+  "effectCardTitle": "Particles as waves",
+  "pairNew": false,
+  "inPart": [],
+  "reachable1990": false
+ },
+ {
+  "id": "afm",
+  "name": "Atomic force microscope",
+  "year": 1986,
+  "job": "magnifies",
+  "effect": "elasticity",
+  "effectCard": "hookes-law",
+  "how": "Maps surfaces atom by atom, even ones that don't conduct, like living cells. A tiny springy arm with a sharp tip is dragged across the surface and bends as it feels each atom; a laser bounced off the arm shows how far it bent.",
+  "kind": "invention",
+  "parts": [
+   {
+    "card": "laser",
+    "t": "Laser",
+    "job": "makes light",
+    "year": 1960
+   },
+   {
+    "card": "photocell",
+    "t": "Photocell",
+    "job": "turns light into current",
+    "year": 1893
+   },
+   {
+    "card": "computer",
+    "t": "Computers",
+    "job": "computes",
+    "year": 1930
+   }
+  ],
+  "problems": [],
+  "path": "gap",
+  "proposedBy": "ai",
+  "status": "proposed",
+  "jobNew": false,
+  "effectStatus": "in graph",
+  "effectYear": 1676,
+  "effectCardTitle": "Hooke's law",
+  "pairNew": true,
+  "inPart": [],
+  "reachable1990": false
+ },
+ {
+  "id": "inkjet-printer",
+  "name": "Inkjet printer",
+  "year": 1976,
+  "job": "prints",
+  "effect": "piezoelectricity",
+  "effectCard": "piezoelectricity",
+  "how": "The everyday home printer. Behind each of hundreds of tiny nozzles a crystal flexes when given a voltage and squirts out a droplet of ink, thousands of times a second, while motors step the head across the page and feed the paper.",
+  "kind": "invention",
+  "parts": [
+   {
+    "card": "microchips",
+    "t": "Microchips",
+    "job": "computes",
+    "year": 1975
+   },
+   {
+    "card": "ink",
+    "t": "Ink",
+    "job": "makes marks",
+    "year": -2500
+   },
+   {
+    "card": "electric-motors",
+    "t": "Electric motors",
+    "job": "provides power",
+    "year": 1831
+   }
+  ],
+  "problems": [],
+  "path": "gap",
+  "proposedBy": "ai",
+  "status": "proposed",
+  "jobNew": false,
+  "effectStatus": "in graph",
+  "effectYear": 1880,
+  "effectCardTitle": "Piezoelectricity",
+  "revision": "Added electric motors for moving the head and paper (Boris's note).",
+  "pairNew": true,
+  "inPart": [],
+  "reachable1990": true
+ },
+ {
+  "id": "3d-printer",
+  "name": "3D printer",
+  "year": 1984,
+  "job": "manufactures",
+  "effect": "ultraviolet light hardens a liquid resin",
+  "effectCard": "ultraviolet",
+  "how": "Builds a solid object straight from a computer drawing. An ultraviolet laser traces one thin slice of the object on the surface of a liquid plastic, which hardens wherever the light falls; the platform sinks a little and the next slice is drawn on top.",
+  "kind": "invention",
+  "parts": [
+   {
+    "card": "laser",
+    "t": "Laser",
+    "job": "makes light",
+    "year": 1960
+   },
+   {
+    "card": "computer",
+    "t": "Computers",
+    "job": "computes",
+    "year": 1930
+   },
+   {
+    "card": "electric-motors",
+    "t": "Electric motors",
+    "job": "provides power",
+    "year": 1831
+   }
+  ],
+  "problems": [],
+  "path": "gap",
+  "proposedBy": "ai",
+  "status": "proposed",
+  "jobNew": false,
+  "effectStatus": "card, unused",
+  "effectYear": 1801,
+  "effectCardTitle": "Ultraviolet",
+  "revision": "Effect card is now Ultraviolet (1801), per r8.",
+  "pairNew": true,
+  "inPart": [],
+  "reachable1990": true
+ }
+]

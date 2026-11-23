@@ -1,0 +1,3639 @@
+[
+ {
+  "card": "calendar",
+  "title": "Calendar",
+  "year": -2800,
+  "effect": "the moon's phases repeat every 29½ days",
+  "does": "time -> moon phase",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": "a sky clock anyone can read"
+ },
+ {
+  "card": "numbers",
+  "title": "Number system",
+  "year": -1800,
+  "effect": "sixty splits evenly into many equal parts",
+  "does": "quantity -> easy fractions",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "sea-navigation",
+  "title": "Sea navigation",
+  "year": -1100,
+  "effect": "the pole star stays fixed in the north",
+  "does": "night sky -> direction",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "eclipse",
+  "title": "Solar eclipse predicted",
+  "year": -585,
+  "effect": "eclipses repeat on a predictable cycle",
+  "does": "date -> eclipse",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "irrational-numbers",
+  "title": "Irrational numbers",
+  "year": -520,
+  "effect": "a square's diagonal is no fraction of its side",
+  "does": "shape -> unending number",
+  "strength": "tiny",
+  "alsoCards": [],
+  "note": "pure math; little to harness"
+ },
+ {
+  "card": "spherical-earth",
+  "title": "Spherical earth theory",
+  "year": -350,
+  "effect": "the Earth's curve hides distant ships hull first",
+  "does": "distance -> hidden height",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "tides",
+  "title": "Tides",
+  "year": -300,
+  "effect": "the moon pulls the sea into tides",
+  "does": "moon's pull -> rising water",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "earth-size",
+  "title": "Earth size estimate",
+  "year": -240,
+  "effect": "the sun's angle changes as you go north or south",
+  "does": "distance north -> shadow angle",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "moon-distance",
+  "title": "Distance to moon estimate",
+  "year": -150,
+  "effect": "a near thing shifts against far things as you move",
+  "does": "change of viewpoint -> distance",
+  "strength": "strong",
+  "alsoCards": [
+   "distance-of-stars"
+  ],
+  "note": "parallax"
+ },
+ {
+  "card": "medicinal-plants",
+  "title": "Recorded medicinal plants",
+  "year": 50,
+  "effect": "some plants contain drugs that treat illness",
+  "does": "plant -> remedy",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "spinal-cord",
+  "title": "Spinal cord",
+  "year": 180,
+  "effect": "the spinal cord carries the body's nerve signals",
+  "does": "cut -> paralysis",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "algebra",
+  "title": "Algebra",
+  "year": 250,
+  "effect": "an unknown can be found by balancing an equation",
+  "does": "equation -> unknown value",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "silk-europe",
+  "title": "Silk",
+  "year": 552,
+  "effect": "silkworms spin a fine, strong thread",
+  "does": "mulberry leaves -> fibre",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "acetic-acid",
+  "title": "Acetic acid",
+  "year": 750,
+  "effect": "distilling vinegar concentrates its acid",
+  "does": "vinegar -> strong acid",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": "close kin of 'alcohol boils before water'"
+ },
+ {
+  "card": "coffee",
+  "title": "Coffee",
+  "year": 850,
+  "effect": "coffee's caffeine keeps the brain awake",
+  "does": "drink -> alertness",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": "card mainly about safe drinking"
+ },
+ {
+  "card": "quarantine",
+  "title": "Quarantine",
+  "year": 1403,
+  "effect": "a disease shows itself within a set waiting time",
+  "does": "time -> revealed infection",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "perspective",
+  "title": "Perspective drawing",
+  "year": 1436,
+  "effect": "far things shrink in proportion to their distance",
+  "does": "distance -> apparent size",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "magnetic-declination",
+  "title": "Magnetic declination",
+  "year": 1492,
+  "effect": "compass north strays from true north by place",
+  "does": "location -> compass error",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": "once hoped to find longitude"
+ },
+ {
+  "card": "cubic-equations",
+  "title": "Cubic equations",
+  "year": 1535,
+  "effect": "any cubic equation can be solved by formula",
+  "does": "equation -> roots",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "comet-tails",
+  "title": "Comet tails",
+  "year": 1538,
+  "effect": "sunlight pushes a comet's tail away from the sun",
+  "does": "sunlight -> push",
+  "strength": "tiny",
+  "alsoCards": [],
+  "note": "solar sails"
+ },
+ {
+  "card": "negative-numbers",
+  "title": "Negative numbers",
+  "year": 1545,
+  "effect": "numbers below zero can count debts and deficits",
+  "does": "shortfall -> number",
+  "strength": "tiny",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "trig-tables",
+  "title": "Trigonometric tables",
+  "year": 1551,
+  "effect": "a triangle's angles fix the ratios of its sides",
+  "does": "angle -> length ratio",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "world-maps",
+  "title": "Mercator projection",
+  "year": 1568,
+  "effect": "a map can make steady compass courses straight lines",
+  "does": "bearing -> straight line",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": "Mercator projection"
+ },
+ {
+  "card": "pendulum",
+  "title": "Pendulums for time",
+  "year": 1581,
+  "effect": "a pendulum keeps the same beat whatever its swing",
+  "does": "swing -> steady time",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "falling-motion",
+  "title": "Falling motion",
+  "year": 1589,
+  "effect": "heavy and light things fall at the same rate",
+  "does": "gravity -> equal acceleration",
+  "strength": "strong",
+  "alsoCards": [
+   "falling-motion-experiment"
+  ],
+  "note": null
+ },
+ {
+  "card": "cryptanalysis",
+  "title": "Code breaking",
+  "year": 1589,
+  "effect": "a secret code leaks patterns that can break it",
+  "does": "ciphertext -> message",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": "e.g. letter frequencies"
+ },
+ {
+  "card": "vein-valves",
+  "title": "Vein valves",
+  "year": 1603,
+  "effect": "flap valves let blood flow only one way",
+  "does": "backflow -> closed flap",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "moon",
+  "title": "Moon mountains",
+  "year": 1609,
+  "effect": "shadow lengths reveal how tall mountains are",
+  "does": "shadow -> height",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "metabolism",
+  "title": "Biological metabolism",
+  "year": 1614,
+  "effect": "the body loses weight through breath and skin",
+  "does": "food -> unseen loss",
+  "strength": "tiny",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "magnetic-declination-variation",
+  "title": "Shifting magnetic declination",
+  "year": 1635,
+  "effect": "magnetic north slowly drifts over the years",
+  "does": "time -> compass shift",
+  "strength": "tiny",
+  "alsoCards": [],
+  "note": "could date rocks or fires"
+ },
+ {
+  "card": "analytic-geometry",
+  "title": "Cartesian geometry",
+  "year": 1637,
+  "effect": "any shape can be written as an equation",
+  "does": "shape -> numbers",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "air-pressure-altitude",
+  "title": "Air pressure altitude",
+  "year": 1648,
+  "effect": "air pressure falls the higher you go",
+  "does": "height -> lower pressure",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "probability",
+  "title": "Probability",
+  "year": 1654,
+  "effect": "random events are predictable in large numbers",
+  "does": "many chances -> steady averages",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "acid-base",
+  "title": "Acid-base balance",
+  "year": 1661,
+  "effect": "the body must keep its acid-base balance",
+  "does": "acidity -> health",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "light-diffraction",
+  "title": "Diffraction",
+  "year": 1665,
+  "effect": "light bends around edges",
+  "does": "edge -> spread light",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": "kin to 'light waves interfere'"
+ },
+ {
+  "card": "no-spontaneous-generation",
+  "title": "No spontaneous generation",
+  "year": 1668,
+  "effect": "sealed food breeds no maggots",
+  "does": "sealing -> no pests",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": "life only from life"
+ },
+ {
+  "card": "phosphorus",
+  "title": "Phosphorus",
+  "year": 1669,
+  "effect": "white phosphorus glows and catches fire in air",
+  "does": "air -> glow and flame",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": "well-established, not on card"
+ },
+ {
+  "card": "blood-color",
+  "title": "Blood colors",
+  "year": 1669,
+  "effect": "blood turns bright red when it takes up air",
+  "does": "oxygen -> colour change",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": "basis for reading oxygen by colour"
+ },
+ {
+  "card": "diabetes",
+  "title": "Diabetes diagnosed",
+  "year": 1670,
+  "effect": "sugar in urine signals diabetes",
+  "does": "blood sugar -> sweet urine",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "plant-sexuality",
+  "title": "Plant sexuality",
+  "year": 1682,
+  "effect": "pollen fertilizes a flower to make seed",
+  "does": "pollen -> seed",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "imaginary-numbers",
+  "title": "Complex numbers",
+  "year": 1685,
+  "effect": "multiplying by i turns a number a quarter circle",
+  "does": "multiplication -> rotation",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": "complex numbers"
+ },
+ {
+  "card": "shape-of-earth",
+  "title": "Non-spherical earth",
+  "year": 1687,
+  "effect": "a pendulum beats slower where gravity is weaker",
+  "does": "gravity -> swing rate",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": "maps gravity"
+ },
+ {
+  "card": "mortality-tables",
+  "title": "Mortality tables",
+  "year": 1693,
+  "effect": "deaths in a large group follow a predictable table",
+  "does": "age -> survival odds",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "plant-nourishment",
+  "title": "Plant Nourishment",
+  "year": 1705,
+  "effect": "plants build their bodies partly from air",
+  "does": "air -> plant growth",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "aberration-light",
+  "title": "Aberration of light",
+  "year": 1728,
+  "effect": "Earth's motion tilts incoming starlight",
+  "does": "motion -> tilted light",
+  "strength": "tiny",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "blood-pressure",
+  "title": "Blood pressure",
+  "year": 1733,
+  "effect": "blood presses on vessel walls with measurable force",
+  "does": "heartbeat -> pressure",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "trade-winds",
+  "title": "Trade winds",
+  "year": 1735,
+  "effect": "sun-heated air at the equator drives steady winds",
+  "does": "heat -> wind",
+  "strength": "strong",
+  "alsoCards": [
+   "meteorological-map"
+  ],
+  "note": null
+ },
+ {
+  "card": "cobalt",
+  "title": "Cobalt",
+  "year": 1737,
+  "effect": "cobalt colours glass deep blue",
+  "does": "cobalt -> blue colour",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": "not stated on card"
+ },
+ {
+  "card": "hydra",
+  "title": "Hydra",
+  "year": 1740,
+  "effect": "a hydra regrows parts that are cut off",
+  "does": "wound -> new body part",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "celsius",
+  "title": "Celsius scale",
+  "year": 1742,
+  "effect": "water freezes and boils at fixed temperatures",
+  "does": "temperature -> phase change",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": "fixed points for scales"
+ },
+ {
+  "card": "platinum",
+  "title": "Platinum",
+  "year": 1749,
+  "effect": "platinum won't tarnish and melts only at great heat",
+  "does": "heat, chemicals -> no change",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "nickel",
+  "title": "Nickel",
+  "year": 1751,
+  "effect": "nickel is magnetic, but more weakly than iron",
+  "does": "magnet -> weak pull",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "digestion",
+  "title": "Digestion",
+  "year": 1752,
+  "effect": "stomach juices dissolve food chemically, not just by grinding",
+  "does": "food -> dissolved nutrients",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "carbon-dioxide",
+  "title": "Carbon dioxide",
+  "year": 1754,
+  "effect": "heating limestone frees a gas that lime soaks back up",
+  "does": "heat -> carbon dioxide",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "flame-tests",
+  "title": "Flame tests",
+  "year": 1758,
+  "effect": "each metal colours a flame its own colour",
+  "does": "heat -> coloured light",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": "close kin of spectral lines, but in flame"
+ },
+ {
+  "card": "heat-capacity",
+  "title": "Heat capacity",
+  "year": 1760,
+  "effect": "water soaks up far more heat per degree than mercury",
+  "does": "heat -> stored heat",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "percussion",
+  "title": "Medical percussion",
+  "year": 1761,
+  "effect": "tapping sounds dull over solid parts, hollow over air",
+  "does": "tap -> sound reveals inside",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "pollination",
+  "title": "Pollination",
+  "year": 1763,
+  "effect": "wind and insects carry pollen that fertilizes plants",
+  "does": "pollen transfer -> seeds",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "hydrogen",
+  "title": "Hydrogen",
+  "year": 1766,
+  "effect": "hydrogen is fourteen times lighter than air",
+  "does": "gas -> lift",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": "also very flammable"
+ },
+ {
+  "card": "gulf-stream",
+  "title": "Gulf stream",
+  "year": 1770,
+  "effect": "an ocean current speeds ships sailing with it",
+  "does": "current -> faster crossing",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "plants-and-carbon-dioxide",
+  "title": "Plants and carbon dioxide",
+  "year": 1771,
+  "effect": "plants thrive on the carbon dioxide we breathe out",
+  "does": "carbon dioxide -> plant growth",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "diamond",
+  "title": "Diamond",
+  "year": 1772,
+  "effect": "diamond is carbon and burns away when hot enough",
+  "does": "heat -> diamond vanishes",
+  "strength": "tiny",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "nitrogen",
+  "title": "Nitrogen",
+  "year": 1772,
+  "effect": "nitrogen smothers flames and won't support life",
+  "does": "gas -> no burning",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "chlorine-oxygen",
+  "title": "Chlorine oxygen",
+  "year": 1774,
+  "effect": "chlorine gas bleaches colours and kills germs",
+  "does": "gas -> bleaching",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": "well established, card only covers isolation"
+ },
+ {
+  "card": "digitalis",
+  "title": "Digitalis",
+  "year": 1775,
+  "effect": "foxglove strengthens a failing heart's beat",
+  "does": "drug -> stronger heartbeat",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "respiration-and-combustion",
+  "title": "Respiration and combustion",
+  "year": 1777,
+  "effect": "breathing burns food with oxygen, like a slow flame",
+  "does": "food + oxygen -> heat, carbon dioxide",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "fertilization",
+  "title": "Fertilization",
+  "year": 1779,
+  "effect": "sperm must touch the egg to fertilize it",
+  "does": "sperm + egg -> embryo",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "photosynthesis",
+  "title": "Photosynthesis",
+  "year": 1779,
+  "effect": "plants turn sunlight, water and carbon dioxide into sugar",
+  "does": "light -> sugar and oxygen",
+  "strength": "strong",
+  "alsoCards": [
+   "chlorophyll",
+   "chloroplasts"
+  ],
+  "note": null
+ },
+ {
+  "card": "crystallography",
+  "title": "Crystallography",
+  "year": 1781,
+  "effect": "crystals build themselves from identical repeating units",
+  "does": "solution -> regular solid",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "eclipsing-variables",
+  "title": "Eclipsing variables",
+  "year": 1782,
+  "effect": "a passing body dims the star behind it",
+  "does": "eclipse -> brightness dip",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": "basis of transit planet-hunting"
+ },
+ {
+  "card": "tungsten",
+  "title": "Tungsten",
+  "year": 1783,
+  "effect": "tungsten is extremely dense and very hard to melt",
+  "does": "heat -> no melting",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "volcanoes",
+  "title": "Volcanoes",
+  "year": 1783,
+  "effect": "ash high in the air cools the climate",
+  "does": "airborne ash -> cooling",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "hydrogen-and-water",
+  "title": "Hydrogen and water",
+  "year": 1784,
+  "effect": "burning hydrogen makes nothing but water",
+  "does": "hydrogen + oxygen -> heat, water",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "algebra-and-mechanics",
+  "title": "Algebra and mechanics",
+  "year": 1788,
+  "effect": "motion can be solved from general equations, no drawings",
+  "does": "equations -> predicted motion",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "chemical-affinities",
+  "title": "Affinities",
+  "year": 1789,
+  "effect": "a stronger-binding substance pushes a weaker one out",
+  "does": "mix -> predictable swap",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "conservation-of-mass",
+  "title": "Conservation of mass",
+  "year": 1789,
+  "effect": "total mass stays the same through any chemical change",
+  "does": "reaction -> balanced weights",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "titanium",
+  "title": "Titanium",
+  "year": 1791,
+  "effect": "titanium is strong, light and doesn't corrode",
+  "does": "load -> light, lasting part",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "rare-earths",
+  "title": "Rare earths",
+  "year": 1794,
+  "effect": "rare earth oxides resist heat and don't dissolve in water",
+  "does": "heat, water -> no change",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "heptadecagon",
+  "title": "Heptadecagon",
+  "year": 1796,
+  "effect": "a 17-sided polygon can be drawn with ruler and compass",
+  "does": "construction -> exact polygon",
+  "strength": "tiny",
+  "alsoCards": [],
+  "note": "curiosity; judge may drop"
+ },
+ {
+  "card": "chromium",
+  "title": "Chromium",
+  "year": 1797,
+  "effect": "chromium compounds come in many vivid colours",
+  "does": "chemical -> pigment",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "mass-of-the-earth",
+  "title": "Mass of the Earth",
+  "year": 1798,
+  "effect": "two masses pull on each other measurably",
+  "does": "mass -> tiny force",
+  "strength": "tiny",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "population-growth-theory",
+  "title": "Population growth theory",
+  "year": 1798,
+  "effect": "doubling growth always outruns steady growth",
+  "does": "time -> runaway numbers",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "beryllium",
+  "title": "Beryllium",
+  "year": 1798,
+  "effect": "beryllium is very light yet melts only at great heat",
+  "does": "heat -> light, stable part",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "law-of-definite-proportions",
+  "title": "Law of definite proportions",
+  "year": 1799,
+  "effect": "a compound always holds its elements in fixed weight ratios",
+  "does": "analysis -> fixed ratios",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "strata",
+  "title": "Strata",
+  "year": 1799,
+  "effect": "each rock layer holds its own fossils, dating its order",
+  "does": "fossils -> layer age",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "perturbations",
+  "title": "Perturbations",
+  "year": 1799,
+  "effect": "planets nudge each other's orbits slightly",
+  "does": "mass -> orbit wobble",
+  "strength": "tiny",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "decomposition-of-water",
+  "title": "Decomposition of water",
+  "year": 1800,
+  "effect": "a current splits water into hydrogen and oxygen",
+  "does": "current -> hydrogen and oxygen",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "tantalum",
+  "title": "Tantalum",
+  "year": 1802,
+  "effect": "tantalum resists corrosion almost completely",
+  "does": "chemicals -> no change",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "atomic-theory",
+  "title": "Atomic theory",
+  "year": 1803,
+  "effect": "atoms combine in simple whole-number ratios",
+  "does": "atoms -> predictable compounds",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "sodium-and-potassium",
+  "title": "Sodium and potassium",
+  "year": 1807,
+  "effect": "a current pulls reactive metals out of their salts",
+  "does": "current -> pure metal",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "avogadro-hypothesis",
+  "title": "Avogadro's hypothesis",
+  "year": 1811,
+  "effect": "equal gas volumes hold equal numbers of molecules",
+  "does": "volume -> molecule count",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "iodine",
+  "title": "Iodine",
+  "year": 1811,
+  "effect": "iodine turns straight from solid to violet vapour",
+  "does": "heat -> vapour, no liquid",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "organic-radicals",
+  "title": "Organic radicals",
+  "year": 1815,
+  "effect": "groups of atoms move as a unit through reactions",
+  "does": "reaction -> intact group",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "specific-heat",
+  "title": "Specific heat",
+  "year": 1819,
+  "effect": "heavier atoms need less heat per gram to warm up",
+  "does": "heat capacity -> atomic weight",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "glycine",
+  "title": "Glycine",
+  "year": 1820,
+  "effect": "boiling gelatin in acid breaks it into amino acids",
+  "does": "acid + heat -> amino acids",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "seebeck-effect",
+  "title": "Seebeck effect",
+  "year": 1821,
+  "effect": "two metals joined at different temperatures make a voltage",
+  "does": "heat -> current",
+  "strength": "weak",
+  "alsoCards": [
+   "glycolysis"
+  ],
+  "note": "tiny voltage, but ideal for sensing temperature"
+ },
+ {
+  "card": "projective-geometry",
+  "title": "Projective geometry",
+  "year": 1822,
+  "effect": "straight lines stay straight in any perspective view",
+  "does": "3D scene -> 2D picture",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "gastric-acidity",
+  "title": "Gastric acidity",
+  "year": 1823,
+  "effect": "the stomach makes strong acid to digest food",
+  "does": "acid -> digested food",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "isomers",
+  "title": "Isomers",
+  "year": 1823,
+  "effect": "the same atoms arranged differently behave differently",
+  "does": "arrangement -> new properties",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "liquefying-gases",
+  "title": "Liquefying gases",
+  "year": 1823,
+  "effect": "cold plus pressure turns gases into liquids",
+  "does": "cold + pressure -> liquid",
+  "strength": "strong",
+  "alsoCards": [
+   "liquid-oxygen",
+   "liquid-ammonia"
+  ],
+  "note": null
+ },
+ {
+  "card": "steam-engine-efficiency",
+  "title": "Steam engine efficiency",
+  "year": 1824,
+  "effect": "an engine's best efficiency is set by its hot-cold gap",
+  "does": "temperature gap -> maximum work",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": "a limit, useful for design"
+ },
+ {
+  "card": "brownian-motion",
+  "title": "Brownian motion",
+  "year": 1827,
+  "effect": "tiny particles in liquid jiggle from molecules hitting them",
+  "does": "heat -> random jiggle",
+  "strength": "tiny",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "group-theory",
+  "title": "Group theory",
+  "year": 1830,
+  "effect": "symmetries combine by strict rules you can calculate with",
+  "does": "symmetry -> arithmetic",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "diffusion",
+  "title": "Diffusion",
+  "year": 1831,
+  "effect": "gases spread out on their own from crowded to empty",
+  "does": "concentration -> even mixing",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "cyclonic-storms",
+  "title": "Cyclonic storms",
+  "year": 1831,
+  "effect": "storms spin opposite ways north and south of the equator",
+  "does": "storm -> predictable wind direction",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "diastase",
+  "title": "Diastase",
+  "year": 1833,
+  "effect": "an enzyme turns starch into sugar",
+  "does": "starch -> sugar",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "cellulose",
+  "title": "Cellulose",
+  "year": 1833,
+  "effect": "cellulose is the tough fibre in plant walls",
+  "does": "plants -> fibre",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "dry-ice",
+  "title": "Dry ice",
+  "year": 1835,
+  "effect": "solid carbon dioxide cools far below freezing water",
+  "does": "dry ice -> deep cold",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "coriolis-effect",
+  "title": "Coriolis effect",
+  "year": 1835,
+  "effect": "on a turning body, moving things curve sideways",
+  "does": "rotation -> sideways push",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "pepsin",
+  "title": "Pepsin",
+  "year": 1836,
+  "effect": "an enzyme breaks down protein",
+  "does": "protein -> digested pieces",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "thermochemistry",
+  "title": "Thermochemistry",
+  "year": 1840,
+  "effect": "a reaction's total heat is the same by any route",
+  "does": "reaction path -> fixed heat",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "ozone",
+  "title": "Ozone",
+  "year": 1840,
+  "effect": "oxygen can form ozone, a sharp-smelling reactive gas",
+  "does": "oxygen -> reactive gas",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "hypnotism",
+  "title": "Hypnotism",
+  "year": 1841,
+  "effect": "a sleep-like trance makes people open to suggestion",
+  "does": "suggestion -> changed behaviour",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "doppler-effect",
+  "title": "Doppler effect",
+  "year": 1842,
+  "effect": "a moving source's pitch rises approaching, falls receding",
+  "does": "motion -> frequency shift",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "sunspot-cycle",
+  "title": "Sunspot cycle",
+  "year": 1843,
+  "effect": "the sun's activity rises and falls every eleven years",
+  "does": "time -> solar activity",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": "lets you forecast solar storms"
+ },
+ {
+  "card": "quaternions",
+  "title": "Quaternions",
+  "year": 1843,
+  "effect": "four-part numbers make 3D rotations simple arithmetic",
+  "does": "rotation -> arithmetic",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "higher-analytic-geometry",
+  "title": "Higher analytic geometry",
+  "year": 1843,
+  "effect": "geometry works in any number of dimensions",
+  "does": "many variables -> geometry",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "companion-of-sirius",
+  "title": "Companion of Sirius",
+  "year": 1844,
+  "effect": "an unseen companion makes a star wobble",
+  "does": "wobble -> hidden mass",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "crystal-asymmetry",
+  "title": "Crystal asymmetry",
+  "year": 1846,
+  "effect": "mirror-image molecules twist polarized light opposite ways",
+  "does": "molecule -> rotated light",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": "measures sugar concentration"
+ },
+ {
+  "card": "conservation-of-energy",
+  "title": "Conservation of energy",
+  "year": 1847,
+  "effect": "energy changes form but is never lost",
+  "does": "energy -> other energy",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "puerperal-fever",
+  "title": "Puerperal fever",
+  "year": 1847,
+  "effect": "germs travel on unwashed hands from patient to patient",
+  "does": "contact -> infection",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "absolute-zero",
+  "title": "Absolute zero",
+  "year": 1848,
+  "effect": "nothing can get colder than about minus 273 degrees",
+  "does": "cooling -> hard limit",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "spectral-line-shift",
+  "title": "Spectral line shift",
+  "year": 1848,
+  "effect": "a moving light source shifts its colours red or blue",
+  "does": "motion -> colour shift",
+  "strength": "strong",
+  "alsoCards": [
+   "spectroscopic-binaries",
+   "nebular-velocities"
+  ],
+  "note": null
+ },
+ {
+  "card": "second-law-of-thermodynamics",
+  "title": "Second law of thermodynamics",
+  "year": 1850,
+  "effect": "heat flows only from hot to cold on its own",
+  "does": "temperature gap -> one-way heat flow",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "joule-thomson-effect",
+  "title": "Joule-thomson effect",
+  "year": 1852,
+  "effect": "an expanding gas cools itself",
+  "does": "expansion -> cold",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": "basis of gas liquefaction and refrigeration"
+ },
+ {
+  "card": "sunspots-and-earth",
+  "title": "Sunspots and earth",
+  "year": 1852,
+  "effect": "sunspots disturb the Earth's magnetic field",
+  "does": "solar activity -> magnetic swings",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": "could forecast geomagnetic storms"
+ },
+ {
+  "card": "age-of-the-sun",
+  "title": "Age of the sun",
+  "year": 1853,
+  "effect": "a shrinking star heats up as it falls inward",
+  "does": "gravitational collapse -> heat",
+  "strength": "tiny",
+  "alsoCards": [],
+  "note": "only at star scale; superseded as the Sun's source"
+ },
+ {
+  "card": "glycogen",
+  "title": "Glycogen",
+  "year": 1856,
+  "effect": "the liver stores sugar as glycogen and releases it",
+  "does": "stored starch -> glucose",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "saturns-rings-composition",
+  "title": "Saturn's rings composition",
+  "year": 1857,
+  "effect": "tides tear apart a moon that comes too close",
+  "does": "gravity gradient -> breakup",
+  "strength": "tiny",
+  "alsoCards": [],
+  "note": "Roche limit; planetary scale only"
+ },
+ {
+  "card": "spectral-lines-and-elements",
+  "title": "Spectral lines and elements",
+  "year": 1859,
+  "effect": "each element's light has its own lines",
+  "does": "light -> chemical identity",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": "close to 'each gas glows its own colours'; this is elements in flames"
+ },
+ {
+  "card": "organic-synthesis",
+  "title": "Organic synthesis",
+  "year": 1860,
+  "effect": "life's molecules can be made from non-living chemicals",
+  "does": "simple chemicals -> organic compounds",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "brocas-area",
+  "title": "Broca's area",
+  "year": 1861,
+  "effect": "one brain patch controls speech",
+  "does": "brain region -> function",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": "localization; could guide brain mapping or stimulation"
+ },
+ {
+  "card": "germ-theory-of-disease",
+  "title": "Germ theory of disease",
+  "year": 1862,
+  "effect": "microbes cause contagious disease",
+  "does": "germ -> disease",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": "umbrella for many existing germ effects"
+ },
+ {
+  "card": "hemoglobin",
+  "title": "Hemoglobin",
+  "year": 1862,
+  "effect": "hemoglobin carries oxygen in the blood",
+  "does": "oxygen -> bound carrier",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "greenhouse-effect",
+  "title": "Greenhouse effect",
+  "year": 1863,
+  "effect": "some gases let sunlight in but trap heat",
+  "does": "light -> trapped heat",
+  "strength": "strong",
+  "alsoCards": [
+   "venuss-atmosphere",
+   "greenhouse-effect-effects"
+  ],
+  "note": null
+ },
+ {
+  "card": "genetics",
+  "title": "Genetics",
+  "year": 1865,
+  "effect": "traits pass on in predictable ratios",
+  "does": "parent genes -> offspring traits",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": "Mendelian inheritance; breeding predictions"
+ },
+ {
+  "card": "benzene-ring",
+  "title": "Benzene ring",
+  "year": 1865,
+  "effect": "a ring of six carbons is unusually stable",
+  "does": "ring structure -> stability",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "maxwells-equations",
+  "title": "Maxwell’s equations",
+  "year": 1865,
+  "effect": "electric oscillations send out light-speed waves",
+  "does": "oscillating charge -> radiated wave",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": "close to 'radio waves'"
+ },
+ {
+  "card": "mobius-strip",
+  "title": "Möbius strip",
+  "year": 1865,
+  "effect": "a twisted loop has only one side",
+  "does": "twist -> one-sided surface",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": "used for belts that wear evenly"
+ },
+ {
+  "card": "kirkwood-gaps",
+  "title": "Kirkwood gaps",
+  "year": 1866,
+  "effect": "repeated tugs at matching periods clear an orbit",
+  "does": "resonance -> orbital gaps",
+  "strength": "tiny",
+  "alsoCards": [],
+  "note": "orbital resonance; astronomy scale"
+ },
+ {
+  "card": "law-of-mass-action",
+  "title": "Law of mass action",
+  "year": 1867,
+  "effect": "adding more of one chemical pushes a reaction forward",
+  "does": "concentration -> reaction direction",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "deep-sea-life",
+  "title": "Deep-sea life",
+  "year": 1868,
+  "effect": "life thrives in dark, crushing depths",
+  "does": "extreme pressure -> survival",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": "organisms with pressure-proof biology"
+ },
+ {
+  "card": "nucleic-acid",
+  "title": "Nucleic acid",
+  "year": 1869,
+  "effect": "cells hold a nitrogen and phosphorus rich acid",
+  "does": "cell -> extractable nucleic acid",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": "only isolation; usable properties come later"
+ },
+ {
+  "card": "critical-temperature",
+  "title": "Critical temperature",
+  "year": 1869,
+  "effect": "above a set temperature no pressure liquefies a gas",
+  "does": "temperature -> limit of liquefying",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": "supercritical fluids; design rule for liquefiers"
+ },
+ {
+  "card": "islets-of-langerhans",
+  "title": "Islets of langerhans",
+  "year": 1869,
+  "effect": "pancreas cell clusters control blood sugar",
+  "does": "hormone -> blood sugar level",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": "source of insulin"
+ },
+ {
+  "card": "plant-strains",
+  "title": "Plant strains",
+  "year": 1871,
+  "effect": "careful selection breeds new plant varieties",
+  "does": "selection -> new strains",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "bacteriology",
+  "title": "Bacteriology",
+  "year": 1872,
+  "effect": "some bacteria survive drying and boiling",
+  "does": "harsh conditions -> survival",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": "spores; sterilization design"
+ },
+ {
+  "card": "stellar-photography",
+  "title": "Stellar photography",
+  "year": 1872,
+  "effect": "a photo of a spectrum records light's makeup",
+  "does": "spectrum -> lasting record",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": "method; near 'light darkens silver salts'"
+ },
+ {
+  "card": "transcendental-e",
+  "title": "Transcendental e",
+  "year": 1873,
+  "effect": "e solves no polynomial equation",
+  "does": "number -> not algebraic",
+  "strength": "tiny",
+  "alsoCards": [],
+  "note": "pure math; little procedural use"
+ },
+ {
+  "card": "platelets",
+  "title": "Platelets",
+  "year": 1873,
+  "effect": "platelets clump to clot blood",
+  "does": "wound -> clot",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "tetrahedral-carbon-atom",
+  "title": "Tetrahedral carbon atom",
+  "year": 1874,
+  "effect": "mirror-image molecules twist polarized light opposite ways",
+  "does": "molecular handedness -> light rotation",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": "polarimetry to tell molecules apart"
+ },
+ {
+  "card": "transfinite-numbers",
+  "title": "Transfinite numbers",
+  "year": 1874,
+  "effect": "some infinities are bigger than others",
+  "does": "counting -> infinity sizes",
+  "strength": "tiny",
+  "alsoCards": [],
+  "note": "pure math"
+ },
+ {
+  "card": "chemical-thermodynamics",
+  "title": "Chemical thermodynamics",
+  "year": 1876,
+  "effect": "temperature, pressure and mix decide which phase is stable",
+  "does": "conditions -> phase equilibrium",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": "phase rule; process design"
+ },
+ {
+  "card": "protein-size",
+  "title": "Protein size",
+  "year": 1877,
+  "effect": "big molecules trapped behind a membrane draw water in",
+  "does": "trapped solute -> osmotic pressure",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": "osmotic pressure; can lift water or weigh molecules"
+ },
+ {
+  "card": "varves",
+  "title": "Varves",
+  "year": 1878,
+  "effect": "lakes lay down one sediment layer a year",
+  "does": "seasons -> countable layers",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": "natural clock for dating"
+ },
+ {
+  "card": "origin-of-the-moon",
+  "title": "Origin of the moon",
+  "year": 1879,
+  "effect": "tides slowly trade spin between Earth and Moon",
+  "does": "tidal drag -> slower spin",
+  "strength": "tiny",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "heat-and-radiation",
+  "title": "Heat and radiation",
+  "year": 1879,
+  "effect": "glow rises with the fourth power of temperature",
+  "does": "temperature -> radiated power",
+  "strength": "strong",
+  "alsoCards": [
+   "wavelengths-and-temperature"
+  ],
+  "note": "Stefan's law; non-contact thermometry"
+ },
+ {
+  "card": "unconscious-mind",
+  "title": "Unconscious mind",
+  "year": 1880,
+  "effect": "talking out hidden thoughts can ease symptoms",
+  "does": "verbalizing -> relief",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": "talking cure; soft effect"
+ },
+ {
+  "card": "charged-cathode-rays",
+  "title": "Charged cathode rays",
+  "year": 1880,
+  "effect": "electron beams carry negative charge",
+  "does": "charge -> steerable beam",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": "beams can be bent by fields"
+ },
+ {
+  "card": "high-pressure",
+  "title": "High pressure",
+  "year": 1880,
+  "effect": "materials change behavior under extreme pressure",
+  "does": "pressure -> new material properties",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": "card is a record, not a specific effect"
+ },
+ {
+  "card": "venn-diagram",
+  "title": "Venn diagram",
+  "year": 1881,
+  "effect": "overlapping circles show logical relations",
+  "does": "logic -> picture",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": "close to Boolean logic"
+ },
+ {
+  "card": "transcendental-pi",
+  "title": "Transcendental pi",
+  "year": 1882,
+  "effect": "you cannot square the circle with ruler and compass",
+  "does": "pi -> impossible construction",
+  "strength": "tiny",
+  "alsoCards": [],
+  "note": "pure math"
+ },
+ {
+  "card": "meiosis",
+  "title": "Meiosis",
+  "year": 1883,
+  "effect": "sex cells carry half the chromosomes",
+  "does": "cell division -> halved chromosomes",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "phagocytes",
+  "title": "Phagocytes",
+  "year": 1883,
+  "effect": "white cells swallow bacteria",
+  "does": "bacteria -> engulfed",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "sugar-structure",
+  "title": "Sugar structure",
+  "year": 1884,
+  "effect": "sugars come in mirror-image forms",
+  "does": "molecular handedness -> distinct varieties",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "cocaine",
+  "title": "Cocaine",
+  "year": 1884,
+  "effect": "a drug numbs nerves where it is applied",
+  "does": "drug -> local numbness",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": "local anesthesia"
+ },
+ {
+  "card": "purines-and-pyrimidines",
+  "title": "Purines and pyrimidines",
+  "year": 1885,
+  "effect": "nucleic acids are built from five base letters",
+  "does": "bases -> coded chain",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": "later the genetic code"
+ },
+ {
+  "card": "fingerprints",
+  "title": "Fingerprints",
+  "year": 1885,
+  "effect": "everyone's fingerprints are unique",
+  "does": "finger ridges -> identity",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "fluorine",
+  "title": "Fluorine",
+  "year": 1886,
+  "effect": "fluorine grabs onto almost anything",
+  "does": "contact -> violent reaction",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": "most reactive element"
+ },
+ {
+  "card": "canal-rays",
+  "title": "Canal rays",
+  "year": 1886,
+  "effect": "positive rays stream back through holes in the cathode",
+  "does": "electric field -> positive ion beam",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": "ion beams"
+ },
+ {
+  "card": "raoults-law",
+  "title": "Raoult's law",
+  "year": 1886,
+  "effect": "dissolved stuff lowers a liquid's vapor pressure",
+  "does": "solute -> lower vapor, shifted boiling",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": "freezing point depression; antifreeze, molecular weights"
+ },
+ {
+  "card": "mach-number",
+  "title": "Mach number",
+  "year": 1887,
+  "effect": "above the speed of sound air resistance jumps",
+  "does": "speed -> shock wave",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "le-chateliers-principle",
+  "title": "Le Châtelier's principle",
+  "year": 1888,
+  "effect": "a system at balance shifts to resist any push",
+  "does": "imposed change -> counteracting shift",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": "used to push yields in chemical plants"
+ },
+ {
+  "card": "neuron-theory",
+  "title": "Neuron theory",
+  "year": 1889,
+  "effect": "nerves are separate cells that nearly touch",
+  "does": "cell -> cell signal gap",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "energy-of-activation",
+  "title": "Energy of activation",
+  "year": 1889,
+  "effect": "a reaction needs a starting kick of energy",
+  "does": "input energy -> reaction starts",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": "why catalysts and sparks work"
+ },
+ {
+  "card": "gravitational-and-inertial-mass",
+  "title": "Gravitational and inertial mass",
+  "year": 1890,
+  "effect": "everything falls at the same rate",
+  "does": "mass -> equal acceleration",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": "equivalence principle"
+ },
+ {
+  "card": "light-pressure",
+  "title": "Light pressure",
+  "year": 1892,
+  "effect": "light pushes on what it hits",
+  "does": "light -> push",
+  "strength": "tiny",
+  "alsoCards": [],
+  "note": "solar sails"
+ },
+ {
+  "card": "fitzgerald-contraction",
+  "title": "Fitzgerald contraction",
+  "year": 1892,
+  "effect": "moving things shrink along their motion",
+  "does": "speed -> shorter length",
+  "strength": "tiny",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "psychoanalysis",
+  "title": "Psychoanalysis",
+  "year": 1893,
+  "effect": "free association surfaces repressed memories",
+  "does": "talk -> recall",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": "soft effect"
+ },
+ {
+  "card": "cattle-fever",
+  "title": "Cattle fever",
+  "year": 1893,
+  "effect": "ticks carry disease between animals",
+  "does": "bite -> infection",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": "vector control"
+ },
+ {
+  "card": "argon",
+  "title": "Argon",
+  "year": 1894,
+  "effect": "argon reacts with nothing",
+  "does": "inert gas -> no reaction",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": "shielding gas for welding, bulbs"
+ },
+ {
+  "card": "helium-on-earth",
+  "title": "Helium on earth",
+  "year": 1895,
+  "effect": "radioactive rocks trap helium",
+  "does": "decay -> helium gas",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": "source of helium"
+ },
+ {
+  "card": "curie-temperature",
+  "title": "Curie temperature",
+  "year": 1895,
+  "effect": "a magnet loses its magnetism when hot enough",
+  "does": "heat -> no magnetism",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": "thermal switches"
+ },
+ {
+  "card": "light-and-magnetism",
+  "title": "Light and magnetism",
+  "year": 1896,
+  "effect": "a magnet splits an atom's spectral lines",
+  "does": "magnetic field -> split lines",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": "Zeeman effect; measures magnetic fields remotely"
+ },
+ {
+  "card": "electron-as-subatomic-particle",
+  "title": "Electron as subatomic particle",
+  "year": 1897,
+  "effect": "an electric field bends an electron beam",
+  "does": "voltage -> beam deflection",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": "basis of cathode-ray displays"
+ },
+ {
+  "card": "uranium-radiation-quantified",
+  "title": "Uranium radiation quantified",
+  "year": 1897,
+  "effect": "radiation strength tracks the amount of radioactive atoms",
+  "does": "amount -> radiation intensity",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": "measure quantity by counts"
+ },
+ {
+  "card": "alpha-rays-and-beta-rays",
+  "title": "Alpha rays and beta rays",
+  "year": 1897,
+  "effect": "radiation splits into heavy positive and light negative rays",
+  "does": "decay -> alpha and beta rays",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "nickel-as-catalyst",
+  "title": "Nickel as catalyst",
+  "year": 1897,
+  "effect": "nickel adds hydrogen to oils, hardening them",
+  "does": "oil + hydrogen -> solid fat",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "mosquitoes-and-malaria",
+  "title": "Mosquitoes and malaria",
+  "year": 1897,
+  "effect": "mosquitoes carry malaria",
+  "does": "bite -> infection",
+  "strength": "strong",
+  "alsoCards": [
+   "yellow-fever"
+  ],
+  "note": "vector control, nets"
+ },
+ {
+  "card": "polonium-and-radium",
+  "title": "Polonium and radium",
+  "year": 1898,
+  "effect": "radium is intensely radioactive",
+  "does": "radium -> strong radiation",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": "near 'radioactive atoms give off radiation'"
+ },
+ {
+  "card": "neon-krypton-xenon",
+  "title": "Neon, krypton, and xenon",
+  "year": 1898,
+  "effect": "noble gases never react",
+  "does": "inert gas -> no reaction",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": "glow colors come later; overlaps argon"
+ },
+ {
+  "card": "liquid-hydrogen",
+  "title": "Liquid hydrogen",
+  "year": 1898,
+  "effect": "hydrogen liquefies only far below freezing",
+  "does": "extreme cold -> liquid hydrogen",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "filtrable-virus",
+  "title": "Filtrable virus",
+  "year": 1898,
+  "effect": "viruses slip through filters that stop bacteria",
+  "does": "filter -> separates virus from bacteria",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "epinephrine",
+  "title": "Epinephrine",
+  "year": 1898,
+  "effect": "adrenaline sets the body to fight or flight",
+  "does": "hormone -> racing heart",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "solid-hydrogen",
+  "title": "Solid hydrogen",
+  "year": 1899,
+  "effect": "hydrogen freezes solid near absolute zero",
+  "does": "extreme cold -> solid hydrogen",
+  "strength": "tiny",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "beta-particles",
+  "title": "Beta particles electrons",
+  "year": 1900,
+  "effect": "radioactive atoms shoot out electrons",
+  "does": "decay -> fast electrons",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "gamma-rays",
+  "title": "Gamma rays",
+  "year": 1900,
+  "effect": "gamma rays go through more than X-rays",
+  "does": "radiation -> deep penetration",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "radon",
+  "title": "Radon",
+  "year": 1900,
+  "effect": "radium gives off a radioactive gas",
+  "does": "decay -> radioactive gas",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "atomic-change",
+  "title": "Atomic change",
+  "year": 1900,
+  "effect": "radioactive atoms turn into other elements",
+  "does": "decay -> new element",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "mutations",
+  "title": "Mutations",
+  "year": 1900,
+  "effect": "heritable traits can change suddenly",
+  "does": "mutation -> new trait",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "blood-types",
+  "title": "Blood types",
+  "year": 1900,
+  "effect": "mismatched blood types clump",
+  "does": "wrong blood -> clotting",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": "basis of safe transfusion"
+ },
+ {
+  "card": "tryptophan",
+  "title": "Tryptophan",
+  "year": 1900,
+  "effect": "digestive enzymes break proteins into amino acids",
+  "does": "enzyme -> amino acids",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "free-radicals",
+  "title": "Free radicals",
+  "year": 1900,
+  "effect": "some molecules break into highly reactive halves",
+  "does": "crowding -> reactive fragments",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "radioactive-energy",
+  "title": "Radioactive energy",
+  "year": 1901,
+  "effect": "radium gives off steady heat for centuries",
+  "does": "decay -> heat",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": "radioisotope heaters and batteries"
+ },
+ {
+  "card": "grignard-reagents",
+  "title": "Grignard reagents",
+  "year": 1901,
+  "effect": "magnesium compounds stitch carbon groups onto molecules",
+  "does": "reagent -> new carbon bond",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "chromosomes-and-inheritance",
+  "title": "Chromosomes and inheritance",
+  "year": 1902,
+  "effect": "chromosomes carry the hereditary factors",
+  "does": "chromosome -> inherited trait",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "secretin",
+  "title": "Secretin",
+  "year": 1902,
+  "effect": "the gut sends a chemical message to the pancreas",
+  "does": "acid -> hormone -> digestive juice",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": "overlaps 'hormones regulate the body'"
+ },
+ {
+  "card": "anaphylactic-shock",
+  "title": "Anaphylactic shock",
+  "year": 1902,
+  "effect": "a second exposure can trigger a violent allergic reaction",
+  "does": "re-exposure -> shock",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": "allergy testing"
+ },
+ {
+  "card": "radioactive-series",
+  "title": "Radioactive series",
+  "year": 1902,
+  "effect": "radioactive atoms decay through a fixed chain",
+  "does": "decay -> sequence of elements",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "stratosphere",
+  "title": "Stratosphere",
+  "year": 1902,
+  "effect": "above seven miles the air is still and weatherless",
+  "does": "altitude -> calm cold air",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": "smooth flight path"
+ },
+ {
+  "card": "coenzyme",
+  "title": "Coenzyme",
+  "year": 1904,
+  "effect": "some enzymes work only with a small helper molecule",
+  "does": "helper -> active enzyme",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "mass-energy",
+  "title": "Mass-energy",
+  "year": 1905,
+  "effect": "a little mass holds a huge amount of energy",
+  "does": "mass -> energy",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": "E=mc^2"
+ },
+ {
+  "card": "brownian-motion-atomic-size",
+  "title": "Brownian motion and atomic-size",
+  "year": 1905,
+  "effect": "molecules jostle small particles at random",
+  "does": "heat -> random motion",
+  "strength": "tiny",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "metabolic-intermediate",
+  "title": "Metabolic intermediate",
+  "year": 1905,
+  "effect": "phosphate keeps sugar-burning enzymes running",
+  "does": "phosphate -> sustained metabolism",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "linkage-of-characteristics",
+  "title": "Linkage of characteristics",
+  "year": 1905,
+  "effect": "genes on one chromosome are inherited together",
+  "does": "linkage -> traits travel together",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": "gene mapping"
+ },
+ {
+  "card": "higher-pressure",
+  "title": "Higher pressure",
+  "year": 1905,
+  "effect": "a tighter seal reaches 20,000 atmospheres",
+  "does": "seal -> extreme pressure",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": "more a device; pressure transforms materials"
+ },
+ {
+  "card": "intelligence-quotient",
+  "title": "Intelligence quotient",
+  "year": 1905,
+  "effect": "test scores track mental age",
+  "does": "test -> ability score",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": "measurement method"
+ },
+ {
+  "card": "trojan-asteroids",
+  "title": "Trojan asteroids",
+  "year": 1906,
+  "effect": "objects rest stably at points ahead of and behind a planet",
+  "does": "gravity -> stable parking spot",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": "Lagrange points; park spacecraft"
+ },
+ {
+  "card": "alpha-particles",
+  "title": "Alpha particles",
+  "year": 1906,
+  "effect": "alpha particles are helium nuclei",
+  "does": "decay -> helium nuclei",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "third-law-of-thermodynamics",
+  "title": "Third law of thermodynamics",
+  "year": 1906,
+  "effect": "absolute zero can be approached but never reached",
+  "does": "cooling -> limit",
+  "strength": "tiny",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "magnesium-and-chlorophyll",
+  "title": "Magnesium and chlorophyll",
+  "year": 1906,
+  "effect": "chlorophyll holds a magnesium atom at its heart",
+  "does": "magnesium -> light-capturing molecule",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "radioactivity-and-earth",
+  "title": "Radioactivity and earth",
+  "year": 1906,
+  "effect": "radioactivity heats the Earth's crust",
+  "does": "decay -> underground heat",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": "geothermal heat source"
+ },
+ {
+  "card": "radioactive-dating",
+  "title": "Radioactive dating",
+  "year": 1907,
+  "effect": "uranium decays to lead at a steady rate",
+  "does": "time -> lead content",
+  "strength": "strong",
+  "alsoCards": [
+   "lead-isotopes",
+   "carbon-14-dating"
+  ],
+  "note": "dates rocks"
+ },
+ {
+  "card": "conditioned-response",
+  "title": "Conditioned response",
+  "year": 1907,
+  "effect": "pairing a signal with a reward trains a reflex",
+  "does": "repeated pairing -> learned response",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": "animal training"
+ },
+ {
+  "card": "liquid-helium",
+  "title": "Liquid helium",
+  "year": 1908,
+  "effect": "evaporating liquid helium chills things to near absolute zero",
+  "does": "evaporation -> extreme cold",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "sunspots-and-magnetism",
+  "title": "Sunspots and magnetism",
+  "year": 1908,
+  "effect": "a magnetic field splits a glowing gas's colour lines",
+  "does": "magnetic field -> split spectral lines",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": "lets you read magnetic fields from a distance"
+ },
+ {
+  "card": "rickettsia",
+  "title": "Rickettsia",
+  "year": 1908,
+  "effect": "ticks carry spotted fever from one host to another",
+  "does": "tick bite -> infection",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": "control the tick, stop the disease"
+ },
+ {
+  "card": "typhus",
+  "title": "Typhus",
+  "year": 1909,
+  "effect": "body lice spread typhus",
+  "does": "louse bite -> infection",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": "delousing stops epidemics"
+ },
+ {
+  "card": "mohorovicic-discontinuity",
+  "title": "Mohorovičić discontinuity",
+  "year": 1910,
+  "effect": "earthquake waves travel faster in deeper, denser rock",
+  "does": "seismic waves -> map of underground layers",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "sex-linked-characteristics",
+  "title": "Sex-linked characteristics",
+  "year": 1910,
+  "effect": "genes on the X chromosome show up mostly in males",
+  "does": "inheritance -> sex-linked traits",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "nuclear-atom",
+  "title": "Nuclear atom",
+  "year": 1911,
+  "effect": "alpha particles bounce straight back off dense atomic nuclei",
+  "does": "particle beam -> what atoms a surface holds",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "electron-charge",
+  "title": "Electron charge",
+  "year": 1911,
+  "effect": "an electric field can float a charged droplet",
+  "does": "electric field -> lifts charged drops",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "cosmic-rays",
+  "title": "Cosmic rays",
+  "year": 1911,
+  "effect": "radiation from space grows stronger with altitude",
+  "does": "altitude -> more ionization",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "superconductivity",
+  "title": "Superconductivity",
+  "year": 1911,
+  "effect": "very cold metals lose all electrical resistance",
+  "does": "cold -> zero resistance",
+  "strength": "strong",
+  "alsoCards": [
+   "superconductivity-theory"
+  ],
+  "note": null
+ },
+ {
+  "card": "chromosome-maps",
+  "title": "Chromosome maps",
+  "year": 1911,
+  "effect": "genes far apart on a chromosome get separated more often",
+  "does": "crossover rate -> gene distance",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "tumor-virus",
+  "title": "Tumor virus",
+  "year": 1911,
+  "effect": "a virus can make cells grow into a tumour",
+  "does": "virus -> uncontrolled cell growth",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": "such viruses later used to carry genes"
+ },
+ {
+  "card": "earthquakes-and-faults",
+  "title": "Earthquakes and faults",
+  "year": 1911,
+  "effect": "strain builds on a fault until it suddenly slips",
+  "does": "slow strain -> sudden quake",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "cepheid-variables",
+  "title": "Cepheid variables",
+  "year": 1912,
+  "effect": "a pulsing star's period reveals its true brightness",
+  "does": "pulse period -> distance",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": "only for stars"
+ },
+ {
+  "card": "x-ray-diffraction",
+  "title": "X-ray diffraction",
+  "year": 1912,
+  "effect": "crystals scatter X-rays into telltale patterns",
+  "does": "X-rays -> crystal structure",
+  "strength": "strong",
+  "alsoCards": [
+   "x-ray-diffraction-of-dna",
+   "microcrystalline-diffraction",
+   "x-ray-wavelength"
+  ],
+  "note": null
+ },
+ {
+  "card": "neon-varieties",
+  "title": "Neon varieties",
+  "year": 1912,
+  "effect": "a magnetic field bends lighter ions more sharply",
+  "does": "magnetic field -> sorts atoms by mass",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "dipole-moments",
+  "title": "Dipole moments",
+  "year": 1912,
+  "effect": "lopsided molecules twist to line up in an electric field",
+  "does": "electric field -> molecules turn",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "isotopes",
+  "title": "Isotopes",
+  "year": 1913,
+  "effect": "a radioactive atom turns into a different element",
+  "does": "decay -> new element",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "stark-effect",
+  "title": "Stark effect",
+  "year": 1913,
+  "effect": "an electric field splits a glowing gas's colour lines",
+  "does": "electric field -> split spectral lines",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "ozonosphere",
+  "title": "Ozonosphere",
+  "year": 1913,
+  "effect": "ozone soaks up ultraviolet light",
+  "does": "ozone -> blocks UV",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "michaelis-menten-equation",
+  "title": "Michaelis-menten equation",
+  "year": 1913,
+  "effect": "an enzyme's speed levels off as more fuel is added",
+  "does": "more substrate -> capped rate",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "atomic-number",
+  "title": "Atomic number",
+  "year": 1914,
+  "effect": "each element gives off its own X-ray frequency",
+  "does": "X-rays -> identify element",
+  "strength": "strong",
+  "alsoCards": [
+   "characteristic-x-rays"
+  ],
+  "note": null
+ },
+ {
+  "card": "earths-mantle-and-core",
+  "title": "Earth's mantle and core",
+  "year": 1914,
+  "effect": "earthquake shear waves cannot pass through liquid",
+  "does": "seismic waves -> find liquid layers",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "behaviorism",
+  "title": "Behaviorism",
+  "year": 1914,
+  "effect": "rewards and repetition train a response",
+  "does": "repetition -> learned response",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "thyroxine",
+  "title": "Thyroxine",
+  "year": 1915,
+  "effect": "thyroid hormone sets the body's metabolic rate",
+  "does": "hormone -> faster metabolism",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": "specific case of hormones regulating the body"
+ },
+ {
+  "card": "bacteriophages",
+  "title": "Bacteriophages",
+  "year": 1915,
+  "effect": "some viruses kill only bacteria",
+  "does": "virus -> dead bacteria",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "radioactive-tracers",
+  "title": "Radioactive lead tracing",
+  "year": 1918,
+  "effect": "a radioactive atom behaves chemically like its stable twin",
+  "does": "radiation -> tracks where a substance goes",
+  "strength": "strong",
+  "alsoCards": [
+   "organic-tracers",
+   "carbon-14-tracer",
+   "isotopic-tracers"
+  ],
+  "note": null
+ },
+ {
+  "card": "embryo-organizer",
+  "title": "Embryo organizer",
+  "year": 1918,
+  "effect": "some embryo cells steer how their neighbours develop",
+  "does": "signal -> tissue type",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "nuclear-reaction",
+  "title": "Nuclear reaction",
+  "year": 1919,
+  "effect": "fast alpha particles turn nitrogen into oxygen",
+  "does": "particle hit -> new element",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "gravitational-deflection-of-light",
+  "title": "Gravitational deflection of light",
+  "year": 1919,
+  "effect": "gravity bends light",
+  "does": "mass -> bent light",
+  "strength": "tiny",
+  "alsoCards": [],
+  "note": "only star-sized masses"
+ },
+ {
+  "card": "bee-communication",
+  "title": "Bee communication",
+  "year": 1919,
+  "effect": "bees see ultraviolet and dance to show where food is",
+  "does": "dance -> direction and distance",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "dendrochronology",
+  "title": "Dendrochronology",
+  "year": 1920,
+  "effect": "trees grow one ring a year, wide or narrow by weather",
+  "does": "ring pattern -> date",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "anemia",
+  "title": "Anemia cure",
+  "year": 1920,
+  "effect": "iron in the diet rebuilds lost blood",
+  "does": "iron -> more red blood",
+  "strength": "strong",
+  "alsoCards": [
+   "blood-and-iron"
+  ],
+  "note": null
+ },
+ {
+  "card": "air-masses",
+  "title": "Air masses",
+  "year": 1920,
+  "effect": "weather changes where warm and cold air masses meet",
+  "does": "fronts -> forecast",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "insulin",
+  "title": "Insulin",
+  "year": 1921,
+  "effect": "insulin lets the body use sugar",
+  "does": "hormone -> lower blood sugar",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "glutathione",
+  "title": "Glutathione",
+  "year": 1921,
+  "effect": "glutathione flips between two states, mopping up oxidants",
+  "does": "oxidant -> neutralized",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "growth-hormone",
+  "title": "Growth hormone",
+  "year": 1922,
+  "effect": "a pituitary hormone makes the body grow",
+  "does": "hormone -> growth",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "lysozyme",
+  "title": "Lysozyme",
+  "year": 1922,
+  "effect": "an enzyme in tears breaks open bacteria",
+  "does": "enzyme -> dead bacteria",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "debye-huckel-equations",
+  "title": "Debye-Huckel equations",
+  "year": 1923,
+  "effect": "ions in a strong solution hold each other back",
+  "does": "concentration -> less free ions",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "cytochrome",
+  "title": "Cytochrome",
+  "year": 1924,
+  "effect": "cytochrome changes colour as it gains and loses oxygen",
+  "does": "oxygen -> colour change",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "packing-fraction",
+  "title": "Packing fraction",
+  "year": 1925,
+  "effect": "repacking an atom's nucleus turns a little mass into energy",
+  "does": "mass -> energy",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": "underlies fission and fusion"
+ },
+ {
+  "card": "magnetism-and-absolute-zero",
+  "title": "Magnetism and absolute zero",
+  "year": 1925,
+  "effect": "demagnetizing a very cold salt cools it further",
+  "does": "removing magnetic field -> cooling",
+  "strength": "strong",
+  "alsoCards": [
+   "approach-to-absolute-zero"
+  ],
+  "note": null
+ },
+ {
+  "card": "parathormone",
+  "title": "Parathormone",
+  "year": 1925,
+  "effect": "parathyroid hormone controls calcium in the blood",
+  "does": "hormone -> blood calcium",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "enzyme-crystallization",
+  "title": "Enzyme crystallization",
+  "year": 1926,
+  "effect": "a concentrated enzyme forms pure crystals",
+  "does": "concentration -> purified protein",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "x-rays-and-mutations",
+  "title": "X rays and mutations",
+  "year": 1927,
+  "effect": "X-rays cause mutations",
+  "does": "radiation -> genetic change",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "m-and-n-blood-groups",
+  "title": "M and N blood groups",
+  "year": 1927,
+  "effect": "blood carries inherited markers",
+  "does": "blood test -> family ties",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "diels-alder-reaction",
+  "title": "Diels-Alder reaction",
+  "year": 1928,
+  "effect": "two molecules snap together into a ring",
+  "does": "mixing -> ring molecules",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "raman-spectra",
+  "title": "Raman spectra",
+  "year": 1928,
+  "effect": "molecules shift the colour of light they scatter",
+  "does": "light -> molecular fingerprint",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "game-theory",
+  "title": "Game theory",
+  "year": 1928,
+  "effect": "best strategies can be calculated for fixed-rule games",
+  "does": "rules -> optimal strategy",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "heme",
+  "title": "Heme",
+  "year": 1929,
+  "effect": "heme carries oxygen in the blood",
+  "does": "oxygen -> carried",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "estrone",
+  "title": "Estrone",
+  "year": 1929,
+  "effect": "sex hormones shape male and female bodies",
+  "does": "hormone -> body development",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "intrinsic-factor",
+  "title": "Intrinsic factor",
+  "year": 1929,
+  "effect": "a stomach factor is needed to absorb vitamin B12",
+  "does": "factor -> vitamin uptake",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "pluto",
+  "title": "Pluto",
+  "year": 1930,
+  "effect": "comparing two pictures taken days apart reveals what moved",
+  "does": "two images -> motion",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "surface-temperature-of-the-moon",
+  "title": "Surface temperature of the moon",
+  "year": 1930,
+  "effect": "the moon's dusty surface holds almost no heat",
+  "does": "sunlight off -> fast cooling",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "vitamin-a-structure",
+  "title": "Vitamin A structure",
+  "year": 1930,
+  "effect": "the body makes vitamin A from carrot pigment",
+  "does": "carotene -> vitamin A",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "neutrino",
+  "title": "Neutrino",
+  "year": 1931,
+  "effect": "neutrinos pass through almost anything",
+  "does": "matter -> no stopping",
+  "strength": "tiny",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "deuterium",
+  "title": "Deuterium",
+  "year": 1931,
+  "effect": "heavy hydrogen evaporates more slowly than light hydrogen",
+  "does": "evaporation -> separates isotopes",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "androsterone",
+  "title": "Androsterone",
+  "year": 1931,
+  "effect": "a testicular hormone drives male development",
+  "does": "hormone -> male traits",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "virus-particles",
+  "title": "Virus particles",
+  "year": 1931,
+  "effect": "fine filters stop bacteria but let viruses through",
+  "does": "filter -> sorts by size",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "positron",
+  "title": "Positron",
+  "year": 1932,
+  "effect": "electrons and positrons destroy each other, giving gamma rays",
+  "does": "annihilation -> gamma rays",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": "later basis of PET scans"
+ },
+ {
+  "card": "particle-accelerator-and-nuclear-reaction",
+  "title": "Particle accelerator and nuclear reaction",
+  "year": 1932,
+  "effect": "fast protons split lithium into alpha particles",
+  "does": "accelerated protons -> nuclear reaction",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "urea-cycle",
+  "title": "Urea cycle",
+  "year": 1932,
+  "effect": "the liver turns toxic ammonia into harmless urea",
+  "does": "ammonia -> urea",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "molecular-beams",
+  "title": "Molecular beams",
+  "year": 1933,
+  "effect": "gas leaking through a pinhole into vacuum forms a tight beam",
+  "does": "pinhole -> atom beam",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "artificial-radioactivity",
+  "title": "Artificial radioactivity",
+  "year": 1934,
+  "effect": "bombarding stable atoms makes them radioactive",
+  "does": "particle beam -> radioisotope",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "cherenkov-radiation",
+  "title": "Cherenkov radiation",
+  "year": 1934,
+  "effect": "particles faster than light in a medium leave a glow",
+  "does": "fast particle -> blue light",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "sex-hormones",
+  "title": "Sex hormones",
+  "year": 1934,
+  "effect": "progesterone keeps a pregnancy going",
+  "does": "hormone -> pregnancy",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "crystalline-viruses",
+  "title": "Crystalline viruses",
+  "year": 1935,
+  "effect": "viruses can crystallize and stay infectious",
+  "does": "crystals -> stored virus",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "corticoids",
+  "title": "Corticoids",
+  "year": 1935,
+  "effect": "cortisone calms inflammation",
+  "does": "hormone -> less inflammation",
+  "strength": "strong",
+  "alsoCards": [
+   "cortisone-and-arthritis"
+  ],
+  "note": null
+ },
+ {
+  "card": "prostaglandins",
+  "title": "Prostaglandins",
+  "year": 1935,
+  "effect": "prostaglandins trigger muscle and tissue responses",
+  "does": "signal -> body response",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "imprinting",
+  "title": "Imprinting",
+  "year": 1935,
+  "effect": "hatchlings follow the first moving thing they see",
+  "does": "first sight -> lasting bond",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "citric-acid-cycle",
+  "title": "Citric acid cycle",
+  "year": 1937,
+  "effect": "cells burn sugar to carbon dioxide and water, step by step",
+  "does": "sugar -> energy",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "evolution-and-mutation",
+  "title": "Evolution and mutation",
+  "year": 1937,
+  "effect": "mutation plus selection breeds new forms",
+  "does": "variation -> adaptation",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "vitamin-k",
+  "title": "Vitamin K",
+  "year": 1939,
+  "effect": "vitamin K makes blood clot",
+  "does": "vitamin -> clotting",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "rh-factor",
+  "title": "Rh factor",
+  "year": 1939,
+  "effect": "an Rh-negative mother's antibodies attack an Rh-positive baby's blood",
+  "does": "mismatch -> immune attack",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": "preventable once understood"
+ },
+ {
+  "card": "tyrothricin",
+  "title": "Tyrothricin",
+  "year": 1939,
+  "effect": "soil bacteria make germ-killing substances",
+  "does": "soil microbe -> antibiotic",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "ddt",
+  "title": "DDT",
+  "year": 1939,
+  "effect": "a chemical kills insects on contact",
+  "does": "chemical -> dead insects",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "uranium-hexafluoride",
+  "title": "Uranium hexafluoride",
+  "year": 1940,
+  "effect": "lighter gas molecules seep through a porous barrier faster",
+  "does": "porous barrier -> separates isotopes",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "high-energy-phosphate",
+  "title": "High-energy phosphate",
+  "year": 1941,
+  "effect": "ATP's phosphate bond stores energy cells spend",
+  "does": "bond -> energy",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "polarimetry",
+  "title": "Polarimetry",
+  "year": 1941,
+  "effect": "current through a solution plateaus at a height set by each substance",
+  "does": "voltage sweep -> chemical amounts",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": "the card describes polarography"
+ },
+ {
+  "card": "neurospora",
+  "title": "Neurospora",
+  "year": 1941,
+  "effect": "each gene makes one enzyme",
+  "does": "gene knockout -> lost nutrient",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "adrenocorticotrophic-hormone",
+  "title": "Adrenocorticotrophic hormone",
+  "year": 1943,
+  "effect": "a pituitary hormone switches on the adrenal glands",
+  "does": "hormone -> adrenal hormones",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "lysergic-acid-diethylamide",
+  "title": "Lysergic acid diethylamide",
+  "year": 1943,
+  "effect": "a tiny dose of a chemical causes hallucinations",
+  "does": "chemical -> altered perception",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "radio-waves-from-hydrogen",
+  "title": "Radio waves from hydrogen",
+  "year": 1944,
+  "effect": "cold hydrogen gives off 21-centimetre radio waves",
+  "does": "hydrogen -> fixed radio frequency",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": "later basis of hydrogen maser clocks"
+ },
+ {
+  "card": "viral-mutations",
+  "title": "Viral mutations",
+  "year": 1945,
+  "effect": "viruses mutate and slip past immunity",
+  "does": "mutation -> escapes immunity",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "jet-streams",
+  "title": "Jet streams",
+  "year": 1945,
+  "effect": "fast steady winds blow high in the sky",
+  "does": "altitude -> fast tailwind",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "bacterial-genetics",
+  "title": "Bacterial genetics",
+  "year": 1946,
+  "effect": "bacteria swap genes with one another",
+  "does": "two strains -> mixed genes",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "virus-genetics",
+  "title": "Virus genetics",
+  "year": 1946,
+  "effect": "two viruses in one cell mix genes into a new strain",
+  "does": "two strains -> new strain",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "cybernetics",
+  "title": "Cybernetics",
+  "year": 1948,
+  "effect": "feeding back the error lets a machine correct its own aim",
+  "does": "error -> correction",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": "feedback control; not on the board yet"
+ },
+ {
+  "card": "nuclear-structure",
+  "title": "Nuclear structure",
+  "year": 1948,
+  "effect": "nuclei with 'magic numbers' of particles are extra stable",
+  "does": "particle count -> stability",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "sickle-cell-anemia",
+  "title": "Sickle-cell anemia",
+  "year": 1949,
+  "effect": "one faulty gene bends red blood cells out of shape",
+  "does": "gene defect -> misshapen cells",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": "usable mainly as a diagnostic marker"
+ },
+ {
+  "card": "embryonic-immunological-tolerance",
+  "title": "Embryonic immunological tolerance",
+  "year": 1949,
+  "effect": "an embryo's body accepts foreign tissue without rejecting it",
+  "does": "early exposure -> tolerance",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "essential-amino-acids",
+  "title": "Essential amino acids",
+  "year": 1949,
+  "effect": "the body cannot make eight amino acids; food must supply them",
+  "does": "diet -> protein building",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "turing-machine",
+  "title": "Turing machine",
+  "year": 1950,
+  "effect": "a simple rule-following machine can compute anything computable",
+  "does": "rules + tape -> any calculation",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": "math result"
+ },
+ {
+  "card": "game-playing-computers",
+  "title": "Game-playing computers",
+  "year": 1950,
+  "effect": "looking ahead through possible moves picks good ones",
+  "does": "search -> best move",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": "method rather than nature"
+ },
+ {
+  "card": "hydrogen-radiation",
+  "title": "Hydrogen radiation",
+  "year": 1951,
+  "effect": "hydrogen atoms give off radio at one fixed wavelength",
+  "does": "hydrogen -> 21 cm radio",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "origin-of-life-experiment",
+  "title": "Origin of life experiment",
+  "year": 1952,
+  "effect": "sparks in simple gases make amino acids",
+  "does": "electricity + gases -> amino acids",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "rem-sleep",
+  "title": "REM sleep",
+  "year": 1952,
+  "effect": "eyes dart rapidly while we dream",
+  "does": "dreaming -> eye movement",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "tranquilizers",
+  "title": "Tranquilizers",
+  "year": 1952,
+  "effect": "a drug calms the mind without dulling alertness",
+  "does": "drug -> calm",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "the-double-helix",
+  "title": "The double helix",
+  "year": 1953,
+  "effect": "each DNA strand is a template for copying its partner",
+  "does": "one strand -> two copies",
+  "strength": "strong",
+  "alsoCards": [
+   "nucleic-acid-base-balance"
+  ],
+  "note": null
+ },
+ {
+  "card": "chloroplast-isolation",
+  "title": "Chloroplast isolation",
+  "year": 1954,
+  "effect": "chloroplasts keep photosynthesizing outside the cell",
+  "does": "light -> sugar",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "antiproton",
+  "title": "Antiproton",
+  "year": 1955,
+  "effect": "matter and antimatter annihilate into pure energy",
+  "does": "mass -> energy",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": "antimatter is very hard to make"
+ },
+ {
+  "card": "nucleic-acid-formation",
+  "title": "Nucleic acid formation",
+  "year": 1955,
+  "effect": "an enzyme strings loose nucleotides into DNA or RNA",
+  "does": "nucleotides -> DNA/RNA",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "detection-of-the-neutrino",
+  "title": "Detection of the neutrino",
+  "year": 1956,
+  "effect": "rare neutrinos hitting a tank of liquid make a flash",
+  "does": "neutrino -> flash",
+  "strength": "tiny",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "ribosomes",
+  "title": "Ribosomes",
+  "year": 1956,
+  "effect": "ribosomes build proteins by reading RNA instructions",
+  "does": "RNA -> protein",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "transfer-rna",
+  "title": "Transfer RNA",
+  "year": 1956,
+  "effect": "transfer RNA ferries each amino acid to its codon",
+  "does": "codon -> matching amino acid",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "interferon",
+  "title": "Interferon",
+  "year": 1957,
+  "effect": "infected cells release a protein that blocks other viruses",
+  "does": "infection -> antiviral protein",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "mössbauer-effect",
+  "title": "Mössbauer effect",
+  "year": 1958,
+  "effect": "atoms locked in a crystal emit and absorb razor-sharp gamma rays",
+  "does": "gamma ray -> precise frequency match",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "magnetosphere",
+  "title": "Magnetosphere",
+  "year": 1958,
+  "effect": "earth's magnetic field traps charged particles in belts",
+  "does": "magnetic field -> trapped particles",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "solar-wind",
+  "title": "Solar wind",
+  "year": 1959,
+  "effect": "solar flares set off magnetic storms on earth days later",
+  "does": "flare -> magnetic storm",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": "forecasting use"
+ },
+ {
+  "card": "standard-meter",
+  "title": "Standard meter",
+  "year": 1960,
+  "effect": "an atom's light has a fixed wavelength, a natural ruler",
+  "does": "atomic light -> length standard",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "cyclic-amp",
+  "title": "Cyclic-AMP",
+  "year": 1960,
+  "effect": "hormones work inside cells through a messenger molecule",
+  "does": "hormone -> inner signal",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "heliosphere",
+  "title": "Heliosphere",
+  "year": 1961,
+  "effect": "satellite drag reveals how thin the upper air is",
+  "does": "drag -> air density",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "genetic-code",
+  "title": "Genetic code",
+  "year": 1961,
+  "effect": "three RNA letters spell one amino acid",
+  "does": "codon -> amino acid",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "gene-regulators",
+  "title": "Gene regulators",
+  "year": 1961,
+  "effect": "regulator genes switch other genes on and off",
+  "does": "signal -> gene activity",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "noble-gas-compounds",
+  "title": "Noble gas compounds",
+  "year": 1962,
+  "effect": "heavy noble gases like xenon can bond with fluorine",
+  "does": "xenon + fluorine -> compound",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "approach-to-absolute-zero-final",
+  "title": "Closer to absolute zero",
+  "year": 1962,
+  "effect": "helium-3 dissolving into helium-4 soaks up heat",
+  "does": "mixing -> cooling",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": "basis of ultra-cold refrigerators"
+ },
+ {
+  "card": "environment",
+  "title": "Environment",
+  "year": 1962,
+  "effect": "pesticides build up in animals higher up the food chain",
+  "does": "spraying -> concentrated poison",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "x-ray-sources",
+  "title": "X-ray sources in space",
+  "year": 1963,
+  "effect": "the air blocks x-rays from space",
+  "does": "atmosphere -> x-ray shield",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "magnetic-reversals",
+  "title": "Magnetic reversals",
+  "year": 1963,
+  "effect": "cooling rock locks in the earth's magnetic direction",
+  "does": "cooling -> magnetic record",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "pulsars",
+  "title": "Pulsars",
+  "year": 1967,
+  "effect": "pulsars tick with clock-like regularity",
+  "does": "rotation -> steady pulses",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": "possible navigation beacons"
+ },
+ {
+  "card": "solar-neutrinos",
+  "title": "Solar neutrinos",
+  "year": 1968,
+  "effect": "neutrinos turn chlorine atoms into argon",
+  "does": "neutrino -> argon atom",
+  "strength": "tiny",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "astrochemistry",
+  "title": "Astrochemistry",
+  "year": 1968,
+  "effect": "each molecule gives off its own microwave frequencies",
+  "does": "molecule -> microwave fingerprint",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "antarctic-meteorites",
+  "title": "Antarctic meteorites",
+  "year": 1969,
+  "effect": "moving ice gathers meteorites onto bare ice fields",
+  "does": "ice flow -> meteorite collection",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "reverse-transcriptase",
+  "title": "Reverse transcriptase",
+  "year": 1970,
+  "effect": "an enzyme copies RNA back into DNA",
+  "does": "RNA -> DNA",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "freon-and-the-ozone-layer",
+  "title": "Freon and the ozone layer",
+  "year": 1974,
+  "effect": "chlorofluorocarbons, harmless below, destroy ozone high up",
+  "does": "CFCs -> ozone loss",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "deep-sea-ecosystems",
+  "title": "Deep-sea ecosystems",
+  "year": 1977,
+  "effect": "vent bacteria live on chemicals, without light or oxygen",
+  "does": "minerals -> food",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "nonbacterial-dna",
+  "title": "Nonbacterial DNA",
+  "year": 1977,
+  "effect": "genes are split by junk stretches the cell cuts out",
+  "does": "raw RNA -> spliced RNA",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "oncogenes",
+  "title": "Oncogenes",
+  "year": 1978,
+  "effect": "a one-letter change turns a normal gene cancerous",
+  "does": "mutation -> cancer",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "extinction-of-the-dinosaurs",
+  "title": "Extinction of the dinosaurs",
+  "year": 1979,
+  "effect": "iridium-rich layers mark ancient asteroid impacts",
+  "does": "impact -> iridium layer",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "neutrino-mass",
+  "title": "Neutrino mass",
+  "year": 1980,
+  "effect": "neutrinos change type as they travel",
+  "does": "distance -> neutrino type",
+  "strength": "tiny",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "nuclear-winter",
+  "title": "Nuclear winter",
+  "year": 1983,
+  "effect": "smoke high in the sky blocks sunlight and cools the ground",
+  "does": "smoke -> cooling",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "ozone-hole",
+  "title": "Ozone hole",
+  "year": 1985,
+  "effect": "chlorine thins ozone over the cold poles",
+  "does": "chlorine -> ozone hole",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "warm-superconductivity",
+  "title": "Warm superconductivity",
+  "year": 1987,
+  "effect": "some ceramics lose all resistance at liquid-nitrogen cold",
+  "does": "cold -> zero resistance",
+  "strength": "strong",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "fullerene-research",
+  "title": "Fullerene research",
+  "year": 1991,
+  "effect": "carbon forms hollow, very stable soccer-ball molecules",
+  "does": "carbon -> cage molecule",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ },
+ {
+  "card": "larger-role-rna",
+  "title": "Larger Role for RNA",
+  "year": 1992,
+  "effect": "RNA alone can link amino acids into proteins",
+  "does": "RNA -> protein",
+  "strength": "weak",
+  "alsoCards": [],
+  "note": null
+ }
+]

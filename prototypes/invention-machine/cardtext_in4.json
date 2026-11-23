@@ -1,0 +1,275 @@
+[
+ {
+  "id": "monoclonal-antibodies",
+  "name": "Monoclonal antibodies",
+  "year": 1975,
+  "how": "★ an antibody locks onto one exact target",
+  "note": ""
+ },
+ {
+  "id": "home-blood-glucose-meter",
+  "name": "Home blood-glucose meter",
+  "year": 1981,
+  "how": "Rapid test strip, enzyme (glucose oxidase) reaction, photometer or electrode, microchips",
+  "note": ""
+ },
+ {
+  "id": "ivermectin",
+  "name": "Ivermectin",
+  "year": 1981,
+  "how": "Soil-bacterium fermentation, chemical modification; ★ paralysing nerve channels of worms and mites",
+  "note": ""
+ },
+ {
+  "id": "geographic-information-system",
+  "name": "Geographic information system",
+  "year": 1982,
+  "how": "Computers, digitised maps, database; layered spatial data",
+  "note": ""
+ },
+ {
+  "id": "computer-aided-design",
+  "name": "Computer-aided design",
+  "year": 1982,
+  "how": "Personal computer, graphical user interface, computer mouse; vector geometry software",
+  "note": ""
+ },
+ {
+  "id": "computer-generated-imagery",
+  "name": "Computer-generated imagery",
+  "year": 1982,
+  "how": "Computers, ★ 3D rendering with light simulation, frame buffers",
+  "note": ""
+ },
+ {
+  "id": "relational-database",
+  "name": "Relational database",
+  "year": 1983,
+  "how": "Microchips, hard disk drive, query language (first sold 1979, spread from 1983); ★ set-based tables queried by declarative SQL",
+  "note": ""
+ },
+ {
+  "id": "local-area-network-ethernet",
+  "name": "Local area network (Ethernet)",
+  "year": 1983,
+  "how": "Insulated wire & cable, transceiver chips (standardised 1983 after 1980 spec); ★ collision-detecting shared-medium packet signalling",
+  "note": ""
+ },
+ {
+  "id": "neodymium-magnet",
+  "name": "Neodymium magnet",
+  "year": 1984,
+  "how": "Rare-earth magnet, powder metallurgy; neodymium-iron-boron alloy",
+  "note": ""
+ },
+ {
+  "id": "desktop-publishing",
+  "name": "Desktop publishing",
+  "year": 1985,
+  "how": "Personal computer, graphical user interface, laser printers, page-description language, outline fonts",
+  "note": ""
+ },
+ {
+  "id": "dna-fingerprinting",
+  "name": "DNA fingerprinting",
+  "year": 1986,
+  "how": "Restriction enzymes, gel electrophoresis, DNA probes (later PCR); ★ variable repeat lengths unique to each person",
+  "note": ""
+ },
+ {
+  "id": "rolling-suitcase",
+  "name": "Rolling suitcase",
+  "year": 1987,
+  "how": "Wheel and axle, telescoping handle, luggage; two-wheel tilt design",
+  "note": ""
+ },
+ {
+  "id": "medical-abortion-pill",
+  "name": "Medical abortion pill",
+  "year": 1988,
+  "how": "Organic synthesis of a steroid; ★ progesterone-receptor blocking (mifepristone, with misoprostol)",
+  "note": ""
+ },
+ {
+  "id": "direct-to-home-satellite-tv",
+  "name": "Direct-to-home satellite TV",
+  "year": 1989,
+  "how": "Communications satellites, small dish, low-noise block converter",
+  "note": ""
+ },
+ {
+  "id": "digital-cellular-network-2g",
+  "name": "Digital cellular network (2G)",
+  "year": 1991,
+  "how": "Mobile phone, microchips, SIM smart card, digital speech compression; ★ time-division multiplexing of radio channels",
+  "note": ""
+ },
+ {
+  "id": "mems-motion-sensors",
+  "name": "MEMS motion sensors",
+  "year": 1993,
+  "how": "Microchips, silicon etched into tiny springs and masses; ★ capacitance changes as a microscopic mass moves",
+  "note": ""
+ },
+ {
+  "id": "qr-code",
+  "name": "QR code",
+  "year": 1994,
+  "how": "Barcode, camera chip, error-correcting code; ★ 2D pattern readable from any angle",
+  "note": ""
+ },
+ {
+  "id": "contactless-card",
+  "name": "Contactless card",
+  "year": 1995,
+  "how": "Microchip; electromagnetic induction powers the chip",
+  "note": ""
+ },
+ {
+  "id": "electronic-stability-control",
+  "name": "Electronic stability control",
+  "year": 1995,
+  "how": "Anti-lock brakes, gyroscope yaw sensor, microchips, braking individual wheels",
+  "note": ""
+ },
+ {
+  "id": "home-broadband-dsl-and-cable-modem",
+  "name": "Home broadband (DSL and cable modem)",
+  "year": 1997,
+  "how": "Copper phone line or TV cable, modem, microchips; ★ splitting one wire into many narrow frequency bands (discrete multitone)",
+  "note": ""
+ },
+ {
+  "id": "graphics-processor-gpu",
+  "name": "Graphics processor (GPU)",
+  "year": 1999,
+  "how": "Microchips, memory chip; ★ thousands of identical arithmetic units working in parallel",
+  "note": ""
+ },
+ {
+  "id": "kinase-inhibitor-cancer-drugs",
+  "name": "Kinase-inhibitor cancer drugs",
+  "year": 2001,
+  "how": "Small molecules that block a mutated signalling enzyme; ★ targeted inhibition of a cancer's driver protein",
+  "note": ""
+ },
+ {
+  "id": "smart-electricity-meter",
+  "name": "Smart electricity meter",
+  "year": 2001,
+  "how": "Microchip, meter, two-way communication over power lines or radio",
+  "note": ""
+ },
+ {
+  "id": "electronic-cigarette",
+  "name": "Electronic cigarette",
+  "year": 2004,
+  "how": "Lithium-ion battery, heating coil, nicotine solution; ★ aerosol made by flash-boiling liquid on a wick",
+  "note": ""
+ },
+ {
+  "id": "electric-bicycle-2000s",
+  "name": "Electric bicycle",
+  "year": 2004,
+  "how": "Bicycle, electric motor, lead-acid or lithium-ion battery",
+  "note": ""
+ },
+ {
+  "id": "online-maps-and-navigation",
+  "name": "Online maps and navigation",
+  "year": 2005,
+  "how": "Satellite and aerial imagery, GPS, cloud data centres, tiled web rendering; turn-by-turn routing over live traffic",
+  "note": ""
+ },
+ {
+  "id": "machine-translation",
+  "name": "Machine translation",
+  "year": 2006,
+  "how": "Statistical (later neural) language models trained on bilingual text, cloud data centres",
+  "note": ""
+ },
+ {
+  "id": "oled-display-2000s",
+  "name": "OLED display",
+  "year": 2007,
+  "how": "Thin-film transistors, organic semiconductor layers; ★ organic electroluminescence",
+  "note": ""
+ },
+ {
+  "id": "direct-oral-anticoagulants",
+  "name": "Direct oral anticoagulants",
+  "year": 2008,
+  "how": "Small molecules that block a single clotting factor; ★ direct inhibition of a clotting enzyme",
+  "note": ""
+ },
+ {
+  "id": "emoji",
+  "name": "Emoji",
+  "year": 2010,
+  "how": "Unicode text encoding, smartphone keyboards, colour fonts",
+  "note": ""
+ },
+ {
+  "id": "solar-farm",
+  "name": "Solar farm",
+  "year": 2010,
+  "how": "Photovoltaic cells, inverters, HVDC/AC grid, sun-tracking mounts; photovoltaic effect",
+  "note": ""
+ },
+ {
+  "id": "rocket-interceptor-system",
+  "name": "Rocket interceptor system",
+  "year": 2011,
+  "how": "Radar, guided missiles, computers; trajectory prediction to engage only threats",
+  "note": ""
+ },
+ {
+  "id": "cancer-immunotherapy",
+  "name": "Cancer immunotherapy",
+  "year": 2011,
+  "how": "Monoclonal antibodies; ★ immune checkpoint blockade (releasing the brakes on T cells)",
+  "note": ""
+ },
+ {
+  "id": "software-containers",
+  "name": "Software containers",
+  "year": 2013,
+  "how": "Cloud data centres, operating system isolation (namespaces, cgroups)",
+  "note": ""
+ },
+ {
+  "id": "hepatitis-c-cure",
+  "name": "Hepatitis C cure",
+  "year": 2013,
+  "how": "Synthetic drugs; ★ direct-acting antivirals blocking the virus's own polymerase",
+  "note": ""
+ },
+ {
+  "id": "smartwatch-and-fitness-tracker",
+  "name": "Smartwatch and fitness tracker",
+  "year": 2015,
+  "how": "Microchips, MEMS accelerometer, optical heart-rate sensor (photoplethysmography), short-range wireless link, lithium-ion battery",
+  "note": ""
+ },
+ {
+  "id": "short-video-feed-apps",
+  "name": "Short-video feed apps",
+  "year": 2016,
+  "how": "Smartphone, streaming video, deep learning; ★ engagement-trained recommendation feed",
+  "note": ""
+ },
+ {
+  "id": "facial-recognition",
+  "name": "Facial recognition",
+  "year": 2017,
+  "how": "Deep learning, CCD/CMOS cameras, infrared dot projector; ★ face embedding (matching faces as points in learned space)",
+  "note": ""
+ },
+ {
+  "id": "ai-image-generation",
+  "name": "AI image generation",
+  "year": 2022,
+  "how": "Neural networks on GPUs, large image-text datasets; ★ diffusion denoising (an image grown out of random noise step by step)",
+  "note": ""
+ }
+]

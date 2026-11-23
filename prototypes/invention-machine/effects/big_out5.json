@@ -1,0 +1,419 @@
+[
+ {
+  "id": "lymph-collar",
+  "name": "Lymph collar",
+  "subtitle": "a collar that pumps the brain's waste out",
+  "bigJob": "alzheimers",
+  "job": "clear the brain's waste before plaques can build",
+  "effects": [
+   {
+    "effect": "squeezing a lymph vessel from outside through the skin drives its fluid onward",
+    "card": null,
+    "newToJob": true
+   },
+   {
+    "effect": "a push on a sealed liquid spreads to every part of it",
+    "card": "pascals-law",
+    "newToJob": false
+   },
+   {
+    "effect": "lymph vessels have one-way flaps, so a squeeze can only move fluid one way",
+    "card": "vein-valves",
+    "newToJob": false
+   }
+  ],
+  "parts": [
+   "electric-motors",
+   "neoprene",
+   "lithium-battery",
+   "scale"
+  ],
+  "how": "Alzheimer's damage piles up for fifteen or twenty years before anyone notices, and one reason is that the brain's used fluid drains away more and more slowly with age. That fluid leaves through lymph vessels in the lining of the nose and the roof of the mouth and down the neck, and in old age those neck vessels are still intact: nothing squeezes them hard enough. This collar presses on them through the skin with a measured force at their own slow pumping rhythm, roughly doubling the outflow, so each night's sleep carries off more of the misfolded seeds instead of leaving them to settle.",
+  "obstacle": "Human neck lymphatics sit much deeper than a mouse's, and nobody knows whether months of nightly squeezing keeps working or teaches the vessels to stop pumping on their own.",
+  "evidence": "Jin, Yoon, Koh et al. (Institute for Basic Science, Korea), Nature, June 2025: a force-regulated mechanical device on intact skin roughly doubled cerebrospinal fluid outflow in aged mice and corrected their age-related drainage failure, while barely disturbing the vessels' own contractions; supported by data in macaques. https://pubmed.ncbi.nlm.nih.gov/40468071/",
+  "existsCheck": "Searched for startups, wearables and trials built on cervical-lymphatic stimulation or CSF drainage devices. Found only the IBS lab work, a Houston Methodist patent on electrically stimulating neck muscles to improve CSF drainage, and manual lymph-drainage massage studies in mice. No company, no product, no human trial.",
+  "familiar": false,
+  "tenX": "brain waste clearance rate: about 2x in aged animals, aimed at the 15-20 year silent build-up the target asks to erase",
+  "plausibility": 3,
+  "why": "First machine to speed the brain's own drains, turning clearance into a knob doctors could turn."
+ },
+ {
+  "id": "skull-marrow-port",
+  "name": "Skull marrow port",
+  "subtitle": "a port that feeds drugs through the skull",
+  "bigJob": "alzheimers",
+  "job": "get a drug into the brain for twenty years running",
+  "effects": [
+   {
+    "effect": "natural channels run from the skull's marrow into the brain's lining, carrying fluid and cells inward",
+    "card": null,
+    "newToJob": true
+   },
+   {
+    "effect": "dissolved molecules spread by themselves from where they are crowded to where they are not",
+    "card": "diffusion",
+    "newToJob": false
+   }
+  ],
+  "parts": [
+   "perfusion-pump",
+   "teflon",
+   "sutures"
+  ],
+  "how": "Almost every drug that might stop Alzheimer's early is too big to cross out of the brain's blood vessels, so patients are given enormous infusions to get a trace of it where it is needed, and twenty years of that is neither affordable nor safe. But the skull is not a wall: its spongy middle layer is marrow, and tiny channels run from that marrow straight into the membranes around the brain. A coin-sized reservoir sunk into the skull's own marrow, refilled through the scalp with a needle, trickles the drug into those channels, which in animals delivers tens to hundreds of times more into brain tissue than the same dose in a vein.",
+  "obstacle": "Keeping a port in living bone clean and unblocked for decades, in a tissue whose whole habit is to heal shut around anything put into it.",
+  "evidence": "Kang & Ko, Bioengineering & Translational Medicine 2023: injection into the skull's marrow (intracalvariosseous) put tested compounds into mouse brain tissue at tens-to-hundred times the level of systemic dosing; a rat stroke study then showed reduced infarct with no sign of marrow infection, and first-in-human feasibility and safety was reported in the SOLUTION trial (NCT05849805). https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10013776/",
+  "existsCheck": "Searched for implanted skull ports and chronic intraosseous brain delivery. Found the human stroke feasibility trial (single injections in the acute setting), patents for scalp and cranial infusion ports and for intraventricular anti-amyloid antibody delivery, and a 2026 Tsinghua report on marrow immune cells carrying nanoparticles inward. No implanted marrow reservoir, and nobody is using this route for long-term prevention.",
+  "familiar": false,
+  "tenX": "drug reaching brain tissue per dose: 10-100x, which is what makes two decades of preventive dosing thinkable at all",
+  "plausibility": 3,
+  "why": "Turned the blood-brain barrier into a detour by making the skull itself the way in."
+ },
+ {
+  "id": "nose-seed-test",
+  "name": "Nose seed test",
+  "subtitle": "a nose swab that counts misfolded brain seeds",
+  "bigJob": "alzheimers",
+  "job": "find the first misfolded seeds decades before symptoms",
+  "effects": [
+   {
+    "effect": "brain fluid drains out through lymph vessels in the lining of the nose",
+    "card": null,
+    "newToJob": true
+   },
+   {
+    "effect": "ultrasound snaps fibrils apart, so every seed breeds more seeds",
+    "card": "cavitation",
+    "newToJob": true
+   },
+   {
+    "effect": "a dye glows only once it has bound to a fibril",
+    "card": "fluorescence",
+    "newToJob": false
+   }
+  ],
+  "parts": [
+   "sonar",
+   "nylon",
+   "paper"
+  ],
+  "how": "The first misfolded seeds of amyloid and tau appear fifteen to twenty years before memory slips, but finding them means a PET scanner or a spinal tap, so nobody screens the healthy and the silent years are wasted. Brain fluid turns out to leave through lymph vessels in the lining of the nose, so a brush pushed high into the nostril collects what the brain has just thrown away. Shaking the sample with ultrasound breaks every seed in two, over and over, until one seed has bred millions, and a dye that lights up only on a fibril counts them; done yearly at home, it gives a rising line rather than a single verdict.",
+  "obstacle": "Proving a nose swab's seed count tracks what is happening in the brain, without the nose's own ordinary proteins setting the test off.",
+  "evidence": "Koh et al., Nature 2025 showed cerebrospinal fluid drains through nasal-mucosa and hard-palate lymphatics to neck nodes; seed amplification by ultrasonic protein misfolding cyclic amplification (Xuanwu Hospital, Beijing) detected about one femtomole of amyloid-beta oligomer and separated Alzheimer's from normal cognition with an area under the curve of 0.93 in plasma. https://pubmed.ncbi.nlm.nih.gov/40468071/",
+  "existsCheck": "Searched seed amplification assays and nasal sampling. Nasal brushings are already used to amplify prion and alpha-synuclein seeds from olfactory mucosa, and plasma p-tau217 tests reached FDA clearance in 2025, but p-tau217 measures total phosphorylated protein, not seeds, and is not recommended for symptom-free people. No nasal amyloid or tau seed test, and no company offering one.",
+  "familiar": false,
+  "tenX": "the age at which the disease can be caught moves roughly 20 years earlier, at the cost of a swab instead of a PET scan",
+  "plausibility": 3,
+  "why": "Made the twenty silent years visible with a swab, so prevention could finally be aimed and measured."
+ },
+ {
+  "id": "barrier-opening-helmet",
+  "name": "Barrier-opening helmet",
+  "subtitle": "a helmet that lets medicine into the brain",
+  "bigJob": "alzheimers",
+  "job": "open the brain's barrier often enough to treat it for years",
+  "effects": [
+   {
+    "effect": "focused sound shakes gas bubbles in the blood until they prise a vessel wall briefly open",
+    "card": "cavitation",
+    "newToJob": false
+   },
+   {
+    "effect": "the bubbles' own crackle reports where the beam landed and how hard it is pushing",
+    "card": "acoustic-emission",
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "sonar",
+   "microchips",
+   "lithium-battery"
+  ],
+  "how": "The drugs that might clear early Alzheimer's damage can't get out of the brain's blood vessels, and the one trick that works, focused ultrasound shaking tiny injected gas bubbles until the vessel wall opens for a few hours, is done with the patient's head inside an MRI scanner, so each patient gets a handful of sessions, not the monthly dose that twenty years of prevention would need. In this helmet the bubbles do the aiming themselves: each one crackles as it swells and collapses, and listening to that crackle through the skull tells the array where its beam has landed and when to ease off, which is the job the scanner was doing. Treatment becomes an hour in a chair.",
+  "obstacle": "Every skull bends and muffles sound differently, so the helmet has to learn each head's distortion from faint echoes rather than from a scan.",
+  "evidence": "Konofagou lab (Columbia), Theranostics 2024: a portable, frameless, MRI-free focused-ultrasound system opened the blood-brain barrier in Alzheimer's patients in a single two-minute sonication, with MRI used only afterwards to confirm opening and safety. Earlier MRI-guided work (Rezai, West Virginia University) showed faster plaque clearance in sonicated regions when paired with an anti-amyloid antibody. https://www.thno.org/v14p4519.htm",
+  "existsCheck": "Searched for wearable or scanner-free barrier-opening systems. Insightec's Exablate is MRI-guided and in trials (a lecanemab arm is recruiting), Carthera's SonoCloud is an implant for brain tumours, and Columbia's portable rig is a research instrument. No self-aiming wearable helmet exists, and nothing is approved for repeated preventive dosing.",
+  "familiar": true,
+  "tenX": "sessions a patient can have per year, from a few MRI slots to monthly or better, with cost per session falling roughly 10x",
+  "plausibility": 4,
+  "why": "Took the MRI out of opening the brain's barrier, so brain drugs could be given as routinely as dentistry."
+ },
+ {
+  "id": "nanowire-retina",
+  "name": "Nanowire retina",
+  "subtitle": "a light-sensing mesh laid under the retina",
+  "bigJob": "macular-sight",
+  "job": "give the macula's dead cells a replacement that sees daylight",
+  "effects": [
+   {
+    "effect": "a semiconductor turns light straight into an electric current",
+    "card": "photoconductivity",
+    "newToJob": false
+   },
+   {
+    "effect": "a mesh of nanowires answers to infrared as well as visible light",
+    "card": null,
+    "newToJob": true
+   },
+   {
+    "effect": "a tiny current makes a nerve cell fire",
+    "card": "neuron-theory",
+    "newToJob": false
+   }
+  ],
+  "parts": [
+   "photovoltaic-cells",
+   "sutures"
+  ],
+  "how": "When the macula's light-sensing cells die, the nerve cells behind them live on for years with nothing left to tell them anything. The best implant yet is a chip of a few hundred pixels that needs goggles to project a bright infrared image onto it, and even then reading comes back only after months of training. This is instead a film of tellurium nanowires, each thinner than the cells it stands in for, laid under the retina as a mesh: it makes its own current from ordinary daylight with no camera, no battery and no goggles, and because the wires also answer to infrared the eye gains a kind of night vision as a side effect.",
+  "obstacle": "Nobody has shown the mesh survives years without the body walling it off in scar tissue, and no monkey has yet done a seeing task with it.",
+  "evidence": "Wang et al. (Fudan University), Science 2025 (vol. 388, issue 6751): a subretinal tellurium nanowire network restored pupil reflexes, visual-cortex firing and visually cued learning in genetically blind mice at light levels far below the clinical safety threshold, stayed stable for 112 days in macaque, and added 1550 nm infrared sensitivity in a sighted macaque. https://www.nature.com/nature-index/article/10.1126/science.adu2987",
+  "existsCheck": "Searched for companies and trials. Science Corporation's PRIMA, a 378-pixel subretinal photovoltaic chip worn with infrared projection glasses, published a 38-patient trial in NEJM in October 2025 (81% of those assessed gained meaningful acuity) and has applied for European authorisation; Argus II was withdrawn. No company, trial or patent programme for a nanowire-mesh prosthesis, which is the part PRIMA cannot reach: its pixel count sets its acuity ceiling and its glasses are not optional.",
+  "familiar": false,
+  "tenX": "the pixel count that caps acuity, from a few hundred electrodes to a mesh finer than the nerve cells themselves, with the goggles thrown away",
+  "plausibility": 3,
+  "why": "First implant finer than the cells it replaced: reading vision back, and infrared besides."
+ },
+ {
+  "id": "ultrasound-vision-lens",
+  "name": "Ultrasound vision lens",
+  "subtitle": "a lens that paints pictures with sound",
+  "bigJob": "macular-sight",
+  "job": "restore sight without surgery inside the eye",
+  "effects": [
+   {
+    "effect": "a bacterial gate in a cell's skin springs open when something pushes on it",
+    "card": null,
+    "newToJob": true
+   },
+   {
+    "effect": "a strong sound wave pushes steadily on whatever it hits",
+    "card": "acoustic-radiation-pressure",
+    "newToJob": true
+   },
+   {
+    "effect": "the higher the sound's pitch, the smaller the spot it can be focused onto",
+    "card": null,
+    "newToJob": false
+   }
+  ],
+  "parts": [
+   "contact-lenses",
+   "sonar",
+   "microchips"
+  ],
+  "how": "Every implant that restores sight needs surgery inside the eye and electrodes sitting against nerve cells, which is why almost nobody gets one. Here a single injection makes the eye's surviving nerve cells grow a tiny mechanical gate borrowed from bacteria, a channel that springs open when its membrane is pushed, and a contact lens ringed with ultrasound transducers pushes on them with focused sound, spot by spot, finely enough at megahertz pitches to draw a picture. Sound goes through a cloudy lens, a scarred cornea or a bleeding eye, so sight stops depending on the eye staying clear.",
+  "obstacle": "Showing an animal can actually see a pattern made of sound, and fitting hundreds of transducers into something comfortable enough to wear on an eye.",
+  "evidence": "Cadoni, Picaud, Tanter et al. (Institut de la Vision and Physics for Medicine, Paris), Nature Nanotechnology 2023: the mechanosensitive channel MscL, delivered to rat retinal ganglion cells by an injected virus, made retinas from blind P23H rats respond to ultrasound with short-latency spikes where untreated blind retinas gave nothing; responding cells lay 0.59 mm apart at 15 MHz, and in live animals sonogenetic stimulation of the visual cortex produced light-perception behaviour. https://www.nature.com/articles/s41565-023-01359-6",
+  "existsCheck": "Searched for sonogenetics spinoffs, transducer contact lenses and vision trials. Only academic work: the Paris group, and a University of Melbourne grant to build a ring of transducers on a flexible contact lens. Sonogenetics companies that exist are aimed at deep-brain stimulation, not the eye. GenSight's optogenetic approach, the nearest rival, still needs light and so still needs a clear eye.",
+  "familiar": false,
+  "tenX": "sight restored with nothing implanted in the eye at all, and for the first time through an eye that no longer passes light",
+  "plausibility": 3,
+  "why": "Let sound stand in for light, so a blind eye needed neither an implant nor a clear window."
+ },
+ {
+  "id": "grooved-cone-patch",
+  "name": "Grooved cone patch",
+  "subtitle": "new cone cells that arrive already aligned",
+  "bigJob": "macular-sight",
+  "job": "regrow the macula's lost cone cells so they wire in",
+  "effects": [
+   {
+    "effect": "cells crawl into line along grooves about as wide as themselves",
+    "card": null,
+    "newToJob": true
+   },
+   {
+    "effect": "a scaffold slowly dissolves in the body and leaves only the tissue behind",
+    "card": null,
+    "newToJob": false
+   },
+   {
+    "effect": "cells grown outside the body go on developing as if still in it",
+    "card": null,
+    "newToJob": false
+   }
+  ],
+  "parts": [
+   "isotactic-polymers",
+   "sutures"
+  ],
+  "how": "Cone cells can now be grown from a patient's own skin cells, but injected under the retina they land in a jumble, pointing every which way, and only a few ever connect, so a transplant gives flickers rather than reading. This patch is a dissolving film ruled with grooves one cell wide: the cones are grown inside the grooves, so they arrive packed and aligned the way the fovea packs its own, light-catching ends to the light and stalks towards the nerves they have to join. The film then melts away and leaves a tile of new, properly oriented cones.",
+  "obstacle": "Alignment is the easy half; getting new cones to form working connections with the old retina's wiring is still unsolved.",
+  "evidence": "Gasparini et al., JCI Insight 2022 and follow-ups: human stem-cell-derived cones transplanted into degenerate mouse retina integrate and grow outer segments, and purified human cones restored visual function in mice with advanced degeneration; the authors name transplant organisation, maturation and synaptic connectivity as the limits to be beaten. https://www.jci.org/articles/view/154619",
+  "existsCheck": "Searched photoreceptor transplant companies and trials. jCyte injects loose retinal progenitor cells, Lineage's OpRegen transplants pigment-epithelium cells (not photoreceptors) and is in trials, and Riken has put unpatterned iPSC retinal sheets into patients in Japan. Everyone injects cells or lays down a flat sheet; nobody is pre-aligning cones on a grooved scaffold.",
+  "familiar": false,
+  "tenX": "the share of transplanted cones that wire in, today a few percent, which is the difference between seeing light and reading a page",
+  "plausibility": 3,
+  "why": "Rebuilt the fovea cell by cell in order, turning cell transplants from flickers into reading."
+ },
+ {
+  "id": "waste-hook-injection",
+  "name": "Waste-hook injection",
+  "subtitle": "a drug that tows fat to the recycler",
+  "bigJob": "macular-sight",
+  "job": "clear the fat under the retina before the cells die",
+  "effects": [
+   {
+    "effect": "a molecule with a hook at each end ties waste to the cell's own recycling bag",
+    "card": null,
+    "newToJob": true
+   },
+   {
+    "effect": "a cell digests whatever gets wrapped in that bag",
+    "card": null,
+    "newToJob": false
+   },
+   {
+    "effect": "fat and water don't mix, so greasy waste builds a wall across a watery channel",
+    "card": null,
+    "newToJob": false
+   }
+  ],
+  "parts": [
+   "synthetic-peptides"
+  ],
+  "how": "In macular degeneration the cells die because of what piles up beneath them: the retina's housekeeping layer cannot digest all the fatty waste from a lifetime of seeing, and the leftovers build a greasy wall under the retina that chokes off the supply of food and oxygen. The two drugs approved so far only slow the dying. This molecule has a hook at each end, one that grips a droplet of that fat and one that grips the cell's own recycling membrane, so the cell is made to eat its own rubbish, and the wall comes down before any cell is lost.",
+  "obstacle": "It has only been shown in mice bred and fed to develop the disease, and dragging fat into a cell's recyclers everywhere in the body may be harder to aim than to do.",
+  "evidence": "Zhang, Huang, Chen and Lu et al., Autophagy 2023 (doi 10.1080/15548627.2023.2220540): lipid-droplet autophagy-tethering compounds cleared lipid droplets from the retinal pigment epithelium and choroid of Apoe-deficient mice on a high-fat diet, and reduced their pigment-epithelium degeneration, photoreceptor dysfunction, oxidative stress and inflammation. https://pubmed.ncbi.nlm.nih.gov/37266932/",
+  "existsCheck": "Searched dry-AMD pipelines and lipid-clearance work. Approved drugs (pegcetacoplan, avacincaptad pegol) damp complement in late geographic atrophy and only slow the spread; photobiomodulation (LumiThera Valeda) is cleared but does not remove deposits; targeted-degradation companies work on proteins, not lipid droplets, and none list an eye programme. The compound class exists only in academic hands.",
+  "familiar": false,
+  "tenX": "attacks the cause rather than the rate: aimed at keeping central vision instead of slowing its loss by a fifth",
+  "plausibility": 3,
+  "why": "First drug to make a cell eat its own rubbish, and so to stop macular degeneration before sight went."
+ },
+ {
+  "id": "kneading-cuff",
+  "name": "Kneading cuff",
+  "subtitle": "a cuff that exercises muscle that cannot exercise",
+  "bigJob": "frailty",
+  "job": "rebuild muscle in someone too weak to train",
+  "effects": [
+   {
+    "effect": "rhythmic squeezing makes muscle stem cells divide and flushes out the debris of injury",
+    "card": null,
+    "newToJob": true
+   },
+   {
+    "effect": "the same squeezing in old muscle stokes inflammation instead, unless a steroid damps it",
+    "card": null,
+    "newToJob": true
+   },
+   {
+    "effect": "a material acts partly like a spring and partly like thick honey, so tissue answers to the rhythm of a push as much as its size",
+    "card": "viscoelasticity",
+    "newToJob": false
+   }
+  ],
+  "parts": [
+   "electric-motors",
+   "neoprene",
+   "microchips",
+   "scale"
+  ],
+  "how": "After a fall, an illness or a fortnight in a hospital bed, an old person's muscle often never comes back, because rebuilding muscle takes loading and they are too weak to load it. This cuff squeezes the limb instead, hundreds of times a minute to a set depth, which is signal enough to set muscle stem cells dividing and to wash out the inflammatory cells that otherwise block repair. On its own that makes aged muscle worse, not better, so the cuff releases a small steroid dose through the skin at the same time: in mice that pairing was exactly what turned the harm into regeneration.",
+  "obstacle": "Finding the force, rhythm and dose that work through a human limb, where the muscle lies far deeper than in the mice this was shown in.",
+  "evidence": "McNamara et al. (Mooney and Walsh labs, Harvard), Science Robotics 2023: robot-actuated cyclic compressive loading alone failed to repair injured aged muscle and worsened inflammation, while loading combined with glucocorticoid therapy enabled regeneration; Seo et al. showed in young animals that the benefit comes from rapid clearance of neutrophils. https://pubmed.ncbi.nlm.nih.gov/36947599/",
+  "existsCheck": "Searched mechanotherapy products. Massage guns, pneumatic compression boots (Normatec) and lymphatic pumps are sold for recovery and circulation, dosed by feel and with no regeneration claim, and none pairs loading with an anti-inflammatory. The Harvard work has no company or trial behind it; implanted magnetic ferrogels from the same lab stayed in the lab.",
+  "familiar": false,
+  "tenX": "muscle regained after injury in the aged, from roughly none to the young animals' recovery",
+  "plausibility": 4,
+  "why": "Made loading itself the medicine, so muscle could be rebuilt in people who cannot move."
+ },
+ {
+  "id": "balance-flywheel",
+  "name": "Balance flywheel",
+  "subtitle": "a worn flywheel that pushes you upright",
+  "bigJob": "frailty",
+  "job": "stop a fall before it starts, hands free",
+  "effects": [
+   {
+    "effect": "push sideways on a spinning wheel's axis and it pushes back at right angles",
+    "card": "precession",
+    "newToJob": true
+   },
+   {
+    "effect": "a chip of silicon changes its resistance when bent, so it can feel which way you are tipping",
+    "card": "piezoresistive-effect",
+    "newToJob": false
+   }
+  ],
+  "parts": [
+   "gyroscope",
+   "electric-motors",
+   "lithium-battery",
+   "microchips"
+  ],
+  "how": "A third of people over seventy fall each year, and falls are the leading cause of injury death in old age; a cane or walker takes up your hands and only helps if you are already leaning on it, and a hip airbag merely softens the landing. A disc spinning fast on your back can lean against a fall instead: tilt a spinning wheel's axis and it pushes back sideways, so a motor that tilts it at the first hint of a sway delivers a righting shove to the trunk with nothing touching the ground. Hands stay free, and the wearer keeps using their own legs rather than being carried by a machine.",
+  "obstacle": "Storing enough spin to right a grown adult, quietly and for a whole day, on a battery light enough to wear.",
+  "evidence": "Lemus, Berry et al. (TU Delft), Scientific Reports 2020: a backpack-worn gyroscopic actuator roughly doubled how far healthy adults and chronic stroke survivors could walk along a narrow beam compared with wearing the same device switched off. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7320159/",
+  "existsCheck": "Searched products and trials. Hip-airbag belts are on sale (Tango Belt, Helite Hip'Guard) but only cushion the impact, their pivotal trial has no published results, and a 2025 case report describes a belt slipping down and a fracture following. Exoskeletons assist walking, which deconditions the wearer. The gyroscopic aid remains a TU Delft research device with an EU follow-on project and no product.",
+  "familiar": false,
+  "tenX": "moves the target from cushioning falls to preventing them: balance on a beam doubled, against a 1-in-3 yearly fall rate",
+  "plausibility": 3,
+  "why": "First machine to catch a fall before it happened, keeping old people on their own legs."
+ },
+ {
+  "id": "bone-threshold-patch",
+  "name": "Bone threshold patch",
+  "subtitle": "makes a walk count as weightlifting for bone",
+  "bigJob": "frailty",
+  "job": "make old bone answer to exercise again",
+  "effects": [
+   {
+    "effect": "a gate in a bone cell's skin opens when the skin is stretched, and a drug can hold it part-way open",
+    "card": null,
+    "newToJob": true
+   },
+   {
+    "effect": "a gentle shaking at the right rhythm does more than a hard push at the wrong one",
+    "card": "resonance-vibration",
+    "newToJob": false
+   }
+  ],
+  "parts": [
+   "electric-motors",
+   "leather",
+   "lithium-battery"
+  ],
+  "how": "Bone thins from about fifty onward, and the one cure everybody agrees on, loading it, stops working: old bone barely feels the load. That is why the vibrating plates sold to build bone have mostly failed their trials. Bone cells sense strain through a gate in their outer skin that opens when the skin is stretched, and that gate grows scarce with age; a skin patch supplying a drug that holds it part-way open lowers the threshold, so an ordinary walk or a faint shaking from a powered insole registers to the cell as heavy lifting. The drug and the shaking together do what neither does alone.",
+  "obstacle": "The same stretch gate works in blood vessels and blood cells, so holding it open must somehow be confined to bone.",
+  "evidence": "Aging Cell 2025 (PMID 40410950): in 22-month-old female mice, tibial loading combined with the Piezo1 opener Yoda2 had an additive effect on cortical bone where loading alone did little; Li et al., eLife 2019 showed the opener Yoda1 raised bone mass in adult mice, and a 2025 study found mice lacking Piezo1 in marrow stromal cells are resistant to exercise's benefit for bone. https://pubmed.ncbi.nlm.nih.gov/40410950/",
+  "existsCheck": "Searched devices and drug pipelines. OsteoBoost is FDA-cleared as a vibrating belt for osteopenia and Marodyne LIV is sold, but their trial results are mixed to negative; romosozumab and teriparatide build bone through hormone pathways, not mechanical sensing. No Piezo1 opener is in clinical development for bone, and nobody sells the drug-plus-loading pair.",
+  "familiar": false,
+  "tenX": "turns a failed intervention into a working one: loading built cortical bone in very old mice only when the gate was held open",
+  "plausibility": 3,
+  "why": "Restored the body's answer to exercise, so walking rebuilt bone again after fifty."
+ },
+ {
+  "id": "soft-niche-gel",
+  "name": "Soft-niche gel",
+  "subtitle": "an injected gel that makes muscle feel young",
+  "bigJob": "frailty",
+  "job": "wake the stem cells that old muscle still has",
+  "effects": [
+   {
+    "effect": "a stem cell reads the springiness of whatever it sits on and behaves accordingly",
+    "card": "viscoelasticity",
+    "newToJob": true
+   },
+   {
+    "effect": "a gel turns runny when pushed through a needle and sets again where it lands",
+    "card": "thixotropy",
+    "newToJob": false
+   }
+  ],
+  "parts": [
+   "isotactic-polymers",
+   "nylon"
+  ],
+  "how": "Old muscle still has its stem cells; most of them have simply stopped working, and part of the reason is mechanical, because the tissue around them has stiffened with scar and a stem cell takes the stiffness of its surroundings as an instruction. This gel is tuned to the springiness of young muscle, a few thousand pascals, and thins enough to pass through a needle before setting where it lands, so it rebuilds the soft pocket those cells need right where they live, carrying a drug that quiets the stress enzyme they switch on with age. Cells rescued this way restored strength to injured old muscle in mice.",
+  "obstacle": "The rescue has only been done to cells on a gel in a dish; no gel yet holds its softness for weeks inside a muscle that is being used.",
+  "evidence": "Cosgrove, Blau et al., Nature Medicine 2014: two thirds of aged mouse muscle stem cells are intrinsically defective, and a soft hydrogel matched to muscle stiffness together with a p38 inhibitor rejuvenated them and restored strength to injured aged muscle; the soft substrate was necessary, not incidental. https://pmc.ncbi.nlm.nih.gov/articles/PMC3949152",
+  "existsCheck": "Searched muscle-ageing companies and trials. Epirium Bio has licensed the Stanford prostaglandin E2 work (a systemic small molecule, Phase 1 safety trial from early 2025), EPFL's ALT-007 is an oral ceramide drug, and other programmes target klotho or cardiolipin. All are systemic drugs aimed at the cell's chemistry; nobody is injecting a stiffness-tuned niche to treat the mechanics.",
+  "familiar": false,
+  "tenX": "the two thirds of aged muscle stem cells that no longer work, treated in place rather than in a lab",
+  "plausibility": 3,
+  "why": "Treated old muscle's mechanics rather than its chemistry, and woke the stem cells it already had."
+ }
+]

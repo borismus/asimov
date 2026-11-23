@@ -1,0 +1,296 @@
+[
+ {
+  "id": "hydroelectric-power-station",
+  "name": "Hydroelectric power station",
+  "year": 1882,
+  "how": "Dam, water turbine, generator; electromagnetic induction",
+  "note": ""
+ },
+ {
+  "id": "escalator",
+  "name": "Escalator",
+  "year": 1896,
+  "how": "Electric motor, chain, steps",
+  "note": ""
+ },
+ {
+  "id": "geothermal-power",
+  "name": "Geothermal power",
+  "year": 1904,
+  "how": "Steam turbine, generator",
+  "note": ""
+ },
+ {
+  "id": "traffic-light",
+  "name": "Traffic light",
+  "year": 1912,
+  "how": "Electric light, timer",
+  "note": ""
+ },
+ {
+  "id": "sewage-treatment",
+  "name": "Sewage treatment",
+  "year": 1914,
+  "how": "★ bacteria eat the waste in aerated tanks (activated sludge)",
+  "note": ""
+ },
+ {
+  "id": "prestressed-concrete",
+  "name": "Prestressed concrete",
+  "year": 1928,
+  "how": "Reinforced concrete, steel tendons",
+  "note": ""
+ },
+ {
+  "id": "plastics-polyethylene",
+  "name": "Plastics (polyethylene)",
+  "year": 1933,
+  "how": "Ethylene; isotactic polymers",
+  "note": ""
+ },
+ {
+  "id": "offshore-oil-platform",
+  "name": "Offshore oil platform",
+  "year": 1947,
+  "how": "Oil wells at sea",
+  "note": ""
+ },
+ {
+  "id": "tower-crane",
+  "name": "Tower crane",
+  "year": 1949,
+  "how": "Steel, electric motors, counterweight",
+  "note": ""
+ },
+ {
+  "id": "centre-pivot-irrigation",
+  "name": "Centre-pivot irrigation",
+  "year": 1952,
+  "how": "Irrigation, sprinklers",
+  "note": ""
+ },
+ {
+  "id": "radiotherapy",
+  "name": "Radiotherapy",
+  "year": 1953,
+  "how": "Linear accelerator, X-rays",
+  "note": ""
+ },
+ {
+  "id": "transistor-radio",
+  "name": "Transistor radio",
+  "year": 1954,
+  "how": "Transistor, radio",
+  "note": ""
+ },
+ {
+  "id": "flexible-endoscope",
+  "name": "Flexible endoscope",
+  "year": 1957,
+  "how": "Fiber optics; total internal reflection",
+  "note": ""
+ },
+ {
+  "id": "aluminium-drink-can",
+  "name": "Aluminium drink can",
+  "year": 1959,
+  "how": "Aluminum",
+  "note": ""
+ },
+ {
+  "id": "turbofan-jet-engine",
+  "name": "Turbofan jet engine",
+  "year": 1960,
+  "how": "Jet engine with a big front fan",
+  "note": ""
+ },
+ {
+  "id": "carbon-fibre-composites",
+  "name": "Carbon-fibre composites",
+  "year": 1963,
+  "how": "★ stiff fibres set in resin",
+  "note": ""
+ },
+ {
+  "id": "high-speed-rail",
+  "name": "High-speed rail",
+  "year": 1964,
+  "how": "Electric motors, overhead power",
+  "note": ""
+ },
+ {
+  "id": "dental-implant",
+  "name": "Dental implant",
+  "year": 1965,
+  "how": "Titanium; ★ bone grows onto titanium (osseointegration)",
+  "note": ""
+ },
+ {
+  "id": "atm-cash-machine",
+  "name": "ATM cash machine",
+  "year": 1967,
+  "how": "Microchips, magnetic stripe",
+  "note": ""
+ },
+ {
+  "id": "waterproof-breathable-fabric",
+  "name": "Waterproof breathable fabric",
+  "year": 1969,
+  "how": "★ pores too small for water drops, big enough for vapour",
+  "note": ""
+ },
+ {
+  "id": "artemisinin-malaria-drug",
+  "name": "Artemisinin malaria drug",
+  "year": 1972,
+  "how": "★ a wormwood compound kills malaria parasites",
+  "note": ""
+ },
+ {
+  "id": "plastic-bottle",
+  "name": "Plastic bottle",
+  "year": 1973,
+  "how": "PET plastic",
+  "note": ""
+ },
+ {
+  "id": "pet-scanner",
+  "name": "PET scanner",
+  "year": 1975,
+  "how": "★ a positron and an electron vanish into two gamma rays",
+  "note": ""
+ },
+ {
+  "id": "public-key-encryption",
+  "name": "Public-key encryption",
+  "year": 1977,
+  "how": "★ multiplying primes is easy, factoring the product is hard (maths)",
+  "note": ""
+ },
+ {
+  "id": "spreadsheet",
+  "name": "Spreadsheet",
+  "year": 1979,
+  "how": "Personal computer",
+  "note": ""
+ },
+ {
+  "id": "hepatitis-b-vaccine",
+  "name": "Hepatitis B vaccine",
+  "year": 1981,
+  "how": "Recombinant DNA; vaccination",
+  "note": ""
+ },
+ {
+  "id": "insecticide-treated-bed-nets",
+  "name": "Insecticide-treated bed nets",
+  "year": 1983,
+  "how": "Netting, insecticide",
+  "note": ""
+ },
+ {
+  "id": "internet",
+  "name": "Internet",
+  "year": 1983,
+  "how": "Fiber optic communication, microchips",
+  "note": ""
+ },
+ {
+  "id": "antidepressants-ssris",
+  "name": "Antidepressants (SSRIs)",
+  "year": 1987,
+  "how": "★ blocks the reuptake of serotonin between nerve cells",
+  "note": ""
+ },
+ {
+  "id": "rapid-test-strip",
+  "name": "Rapid test strip",
+  "year": 1988,
+  "how": "Monoclonal antibodies, capillary action",
+  "note": ""
+ },
+ {
+  "id": "world-wide-web",
+  "name": "World Wide Web",
+  "year": 1991,
+  "how": "Internet",
+  "note": ""
+ },
+ {
+  "id": "online-shopping",
+  "name": "Online shopping",
+  "year": 1995,
+  "how": "Internet, credit card",
+  "note": ""
+ },
+ {
+  "id": "white-led-lighting",
+  "name": "White LED lighting",
+  "year": 1996,
+  "how": "LEDs, phosphor; fluorescence",
+  "note": ""
+ },
+ {
+  "id": "hybrid-car",
+  "name": "Hybrid car",
+  "year": 1997,
+  "how": "Gasoline engine, electric motor, battery",
+  "note": ""
+ },
+ {
+  "id": "search-engine",
+  "name": "Search engine",
+  "year": 1998,
+  "how": "★ pages ranked by the links pointing at them (maths)",
+  "note": ""
+ },
+ {
+  "id": "fracking",
+  "name": "Fracking",
+  "year": 2000,
+  "how": "Oil wells, horizontal drilling",
+  "note": ""
+ },
+ {
+  "id": "social-media",
+  "name": "Social media",
+  "year": 2004,
+  "how": "Internet, smartphone",
+  "note": ""
+ },
+ {
+  "id": "mobile-money",
+  "name": "Mobile payments",
+  "year": 2007,
+  "how": "Mobile phone, text messages",
+  "note": "i am reacting to the title. mobile payments maybe? or smartphone payments?"
+ },
+ {
+  "id": "quadcopter-drone",
+  "name": "Quadcopter drone",
+  "year": 2010,
+  "how": "Electric motors, lithium-ion battery, gyroscope, GPS",
+  "note": ""
+ },
+ {
+  "id": "deep-learning",
+  "name": "Deep learning",
+  "year": 2012,
+  "how": "Microchips; ★ gradient descent (maths)",
+  "note": ""
+ },
+ {
+  "id": "satellite-internet-constellations",
+  "name": "Satellite internet constellations",
+  "year": 2019,
+  "how": "Communications satellites, reusable rockets",
+  "note": ""
+ },
+ {
+  "id": "large-language-models",
+  "name": "Large language models",
+  "year": 2022,
+  "how": "Deep learning, microchips",
+  "note": ""
+ }
+]

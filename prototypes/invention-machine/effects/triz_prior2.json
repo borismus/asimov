@@ -1,0 +1,152 @@
+[
+ {
+  "id": "ion-wind-carbon-capture",
+  "verdict": "none",
+  "evidence": "Searches found EHD/ionic-wind fans (cooling, ventilation) and fanless wind-driven DAC contactors (Georgia Tech WEDAC) separately, but nothing pairing an ionic-wind fan with a DAC sorbent contactor.",
+  "url": "https://netl.doe.gov/sites/default/files/netl-file/21DAC_Lively_B.pdf"
+ },
+ {
+  "id": "electro-osmotic-glaucoma-drain",
+  "verdict": "studied",
+  "evidence": "US patent 8603024 describes a glaucoma drainage device whose valve is governed by an electro-osmotic membrane between electrodes; other patents cover electrolysis/electrocapillary pumps with IOP sensors, but no working demonstration found.",
+  "url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/8603024"
+ },
+ {
+  "id": "electro-osmotic-wound-dressing",
+  "verdict": "studied",
+  "evidence": "US patent 8353928 ('Electrochemical wound therapy') claims electro-osmotically moving wound fluid from a cavity over the wound into a chamber/sponge; no clinical or prototype demonstration found.",
+  "url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/8353928"
+ },
+ {
+  "id": "self-perfusing-tissue-scaffold",
+  "verdict": "built",
+  "evidence": "Messerli lab (SDSU) demonstrated electrokinetic (electro-osmotic) perfusion through 3D matrices that reduced cell mortality more consistently than pressure-driven perfusion, framed as keeping artificial tissue alive before vascularization (not yet multi-cm constructs).",
+  "url": "https://frontiersin.org/articles/10.3389/fbioe.2022.983317/full"
+ },
+ {
+  "id": "electric-dew-pump",
+  "verdict": "studied",
+  "evidence": "US patent 7709129 describes capillary condensation of vapour in a flow passage with the condensed water moved out by electro-osmosis; no working humidity harvester of this kind found.",
+  "url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7709129"
+ },
+ {
+  "id": "vanishing-glass-sorter",
+  "verdict": "none",
+  "evidence": "Cullet sorters use IR/optical opacity, XRF, induction heating or Steinert's HR-glass upgrade; index-matched immersion appears only as a bench test for identifying borosilicate, not as a sorting process.",
+  "url": "https://research.yale.edu/glass-facts"
+ },
+ {
+  "id": "glowing-footprint-mat",
+  "verdict": "studied",
+  "evidence": "An NUS 2026 Nature Communications mechano-electroluminescent e-skin maps plantar pressure visually for gait and diabetic-ulcer risk, but it is electrically driven rather than self-glowing mechanoluminescent crystals; no ML footprint mat found.",
+  "url": "https://ihealthtech.nus.edu.sg/publication/strain-localized-luminescent-e-skin-for-high-resolution-pressure-mapping-and-visual-force-feedback/"
+ },
+ {
+  "id": "moire-swelling-band",
+  "verdict": "none",
+  "evidence": "Limb-swelling wearables use capacitive sleeves, strain bands or 3D bodysuits, and moire strain indicators exist for structures, but no moire band for limb circumference was found.",
+  "url": null
+ },
+ {
+  "id": "swelling-alarm-cast",
+  "verdict": "studied",
+  "evidence": "Patents describe fluid-filled bladders/capsules under casts linked to a pressure sensor or indicator with an alarm for excessive pressure (e.g. US 4858620), and a 2022 study tested an under-cast Bluetooth pressure sensor; no product found.",
+  "url": "https://patents.justia.com/patent/4858620"
+ },
+ {
+  "id": "swell-sensing-battery-pack",
+  "verdict": "none",
+  "evidence": "Battery swelling is detected with per-cell pressure/force or resistance sensors between cells; no design using linked fluid pockets feeding one gauge was found.",
+  "url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/10587016"
+ },
+ {
+  "id": "flutter-pump",
+  "verdict": "studied",
+  "evidence": "US patent 4184805 describes airfoils driven into flutter by a fluid stream with the oscillation used for work including pumping, and flutter hydropower papers mention irrigation channels; no working flutter irrigation pump found.",
+  "url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/4184805"
+ },
+ {
+  "id": "trojan-library",
+  "verdict": "studied",
+  "evidence": "The Arch Mission Foundation has announced plans for Arch Libraries at Sun-Earth L4/L5 (target 2027); its existing archive is in heliocentric orbit, and no L4/L5 archive has flown.",
+  "url": "https://archmission.org/billion-year-archive"
+ },
+ {
+  "id": "freshness-clock-label",
+  "verdict": "studied",
+  "evidence": "Emulsion-based time-temperature indicators exist in patents and an EU project (emulsion destabilization causing visible change, three-phase emulsions), but none found using Ostwald ripening plus light scattering as the clock.",
+  "url": "https://cordis.europa.eu/project/id/BRST970726/es"
+ },
+ {
+  "id": "light-switched-brain-grid",
+  "verdict": "none",
+  "evidence": "Searches found microLED optrodes, fibre-reflectometry and frequency-multiplexed recording on one wire, but no photoconductive, light-addressed electrode array for neural recording.",
+  "url": null
+ },
+ {
+  "id": "floating-drop-brine-dryer",
+  "verdict": "none",
+  "evidence": "Searches found Leidenfrost droplet physics and NaCl droplet crystallization studies, and scaling-control ZLD crystallizers, but no Leidenfrost-based brine dryer.",
+  "url": null
+ },
+ {
+  "id": "ram-pump-water-purifier",
+  "verdict": "studied",
+  "evidence": "A 2002 Desalination paper argues water hammer from a hydro-ram can supply reverse-osmosis pressure, and a HeroX concept proposes a ram-pump-fed RO system; no tested prototype found.",
+  "url": "https://herox.com/protected/109/540644/file:2hqMm6GRhrrbjpsM8ObbNexHTxCtFmC_iLESbaKawfo"
+ },
+ {
+  "id": "sound-trap-microplastic-breaker",
+  "verdict": "none",
+  "evidence": "Acoustic standing-wave trapping of microplastics is built (HKRITA Acousweep, EchoGrid) and UV photodegradation is studied separately, but nothing combines acoustic trapping with targeted UV breakdown.",
+  "url": "https://www.hkrita.com/en/our-innovation-tech/projects/59"
+ },
+ {
+  "id": "salt-misted-firebreak",
+  "verdict": "studied",
+  "evidence": "Perimeter-style long-term retardant patents claim magnesium/calcium chloride solutions pull moisture into fuels to retard fire; no independent field trials of a hygroscopic-salt firebreak found.",
+  "url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/11534643"
+ },
+ {
+  "id": "magnetic-crackle-chip-fingerprint",
+  "verdict": "studied",
+  "evidence": "Penn State proposes spintronic PUFs exploiting stochastic domain-wall pinning/depinning, and a patent uses magnetic noise spectra as a PUF signature; no demonstrated Barkhausen-noise PUF chip found.",
+  "url": "https://pure.psu.edu/en/publications/spintronic-pufs-for-security-trust-and-authentication/"
+ },
+ {
+  "id": "dye-free-glass-fibre",
+  "verdict": "studied",
+  "evidence": "US patent 9988517 'Physical colorants for plastics based on the Christiansen effect' proposes glass-particle/polymer index-matched colorants; no Christiansen-coloured textile fibre found.",
+  "url": "https://patents.google.com/patent/US9988517"
+ },
+ {
+  "id": "moire-stem-gauge",
+  "verdict": "none",
+  "evidence": "Dendrometers for irrigation scheduling are commercial and moire displacement amplification exists elsewhere, but no moire-based trunk/stem dendrometer was found.",
+  "url": null
+ },
+ {
+  "id": "electrowetting-brain-shunt",
+  "verdict": "none",
+  "evidence": "Active CSF shunts use electroactive polymers, electromechanical or electrokinetic actuators, and capillary-electrowetting valves exist separately, but no electrowetting hydrocephalus shunt valve was found.",
+  "url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/8172375"
+ },
+ {
+  "id": "laser-meningitis-check",
+  "verdict": "built",
+  "evidence": "CSF lab practice already uses side-scattered light (Tyndall effect: a tube lit at 90 degrees looks 'sparkling' at low cell counts) to flag raised cells; the phone-camera laser quantification is the only new part (evidence from lab teaching material).",
+  "url": "https://www.scribd.com/document/607452530/7-Cerebrospinal-Fluid"
+ },
+ {
+  "id": "acoustic-mosquito-sorter",
+  "verdict": "none",
+  "evidence": "Mosquito pupa sex sorters use sieves, plates and machine vision (ORINNO, WOLBAKI, Science Robotics sorter); acoustic sorting found only for nematodes in microchannels.",
+  "url": "https://link.springer.com/10.1038/s41598-024-58067-x"
+ },
+ {
+  "id": "water-shifting-storm-shelter",
+  "verdict": "none",
+  "evidence": "Reconfigurable water storm shelters (NASA RadWorks water wall, TransHab fill/drain tank) and repositionable shield patents exist, but none moves water by electro-osmosis through porous walls.",
+  "url": "https://ntrs.nasa.gov/api/citations/20170002287/downloads/20170002287.pdf"
+ }
+]

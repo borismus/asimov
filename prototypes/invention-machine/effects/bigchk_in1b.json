@@ -1,0 +1,599 @@
+[
+ {
+  "id": "sulfur-air-battery",
+  "name": "Sulfur-air battery",
+  "subtitle": "sulfur-water tanks that hold power for months",
+  "bigJob": "seasonal-storage",
+  "job": "store a summer's spare power until winter",
+  "effects": [
+   {
+    "effect": "sulfur dissolved in salty water takes up and gives back electrons",
+    "card": null,
+    "newToJob": true
+   },
+   {
+    "effect": "a reaction drives a current",
+    "card": "laws-of-electrolysis",
+    "newToJob": false
+   }
+  ],
+  "parts": [
+   "sulfur",
+   "fuel-cell",
+   "valve"
+  ],
+  "how": "Lithium batteries cost around a hundred dollars for each kilowatt-hour they hold, so nobody can afford to fill them in summer and leave them full until winter. This battery keeps its charge in tanks of sulfur dissolved in salty water, about the cheapest stuff on Earth that can hold electrons, and breathes oxygen from the air for its other side. To store more weeks you only build bigger tanks; the costly part, the electrode stack, stays the same size.",
+  "obstacle": "The electrode stack that trades charge is still slow and costly, and sulfur creeps across its membrane, slowly draining a tank left full for months.",
+  "evidence": "Li, Gallant, Chiang et al. (MIT), Joule 2017: a working air-breathing aqueous sulfur flow battery whose stored chemicals cost about $1 per kWh, with projected system cost of $20-30 per kWh for long durations. https://news.mit.edu/2017/air-breathing-battery-making-renewable-power-more-viable-grid-1011",
+  "existsCheck": "Searched for commercial sulfur-air or polysulfide-air storage: Form Energy started on this chemistry and pivoted to iron-air; a DOE grant continued sulfur work but no deployment or product found.",
+  "familiar": false,
+  "tenX": "Cost of storage capacity: stored chemicals at ~$1/kWh versus ~$100+/kWh for lithium cells (100x); whole system projected at $20-30/kWh, 5-10x below lithium.",
+  "plausibility": 3,
+  "why": "The first battery whose stored energy cost less than its tank, making whole seasons of power storable."
+ },
+ {
+  "id": "methane-cave-battery",
+  "name": "Two-cave methane battery",
+  "subtitle": "power stored as gas in two underground caverns",
+  "bigJob": "seasonal-storage",
+  "job": "store a summer's spare power until winter",
+  "effects": [
+   {
+    "effect": "a hot ceramic cell runs both ways: electricity turns carbon dioxide and steam into methane, and methane back into electricity",
+    "card": null,
+    "newToJob": true
+   },
+   {
+    "effect": "a current splits water into hydrogen and oxygen",
+    "card": "decomposition-of-water",
+    "newToJob": false
+   }
+  ],
+  "parts": [
+   "fuel-cell",
+   "oil-wells",
+   "valve"
+  ],
+  "how": "Summer sun makes far more power than anyone needs while winter needs more than anyone makes, and no battery is cheap enough to hold three months of a country's electricity. Here a hot ceramic cell uses spare power to turn carbon dioxide and steam into methane, which is piped into an underground salt cavern; in winter the same cell runs backwards, turning the methane straight into electricity and sending the carbon dioxide down into a second cavern. The carbon goes round and round in a closed loop, and old gas caverns that already exist hold months of power for a few cents per kilowatt-hour.",
+  "obstacle": "The ceramic cells crack and wear out after a few thousand hours of flipping between modes, and they must last a decade under pressure.",
+  "evidence": "Jensen, Graves, Mogensen et al. (DTU/Stanford), Energy & Environmental Science 2015: design based on measured reversible solid-oxide cell performance, modelling over 70% round-trip efficiency, about 3 cents per kWh storage cost and three months of supply in caverns. https://pubs.rsc.org/en/content/articlelanding/2015/EE/C5EE01485A",
+  "existsCheck": "Searched reversible solid-oxide cells with CO2/methane cavern storage: reversible cells exist as pilots (hydrogen only), salt-cavern gas storage is routine, but no plant combines them in a closed carbon loop.",
+  "familiar": false,
+  "tenX": "Storage capacity cost falls from $100+/kWh (lithium) to cents per kWh of cavern (over 100x), with ~70% round trip versus ~35-40% for hydrogen.",
+  "plausibility": 3,
+  "why": "Turned the world's existing gas caverns into a seasonal battery with carbon kept in a closed loop."
+ },
+ {
+  "id": "aluminium-winter-fuel",
+  "name": "Aluminium winter fuel",
+  "subtitle": "summer power banked as aluminium pellets",
+  "bigJob": "seasonal-storage",
+  "job": "store a summer's spare power until winter",
+  "effects": [
+   {
+    "effect": "a current pulls reactive metals out of their salts",
+    "card": "sodium-and-potassium",
+    "newToJob": true
+   },
+   {
+    "effect": "aluminium with its oxide skin broken bursts into hydrogen and heat in hot water",
+    "card": null,
+    "newToJob": true
+   },
+   {
+    "effect": "burning hydrogen makes nothing but water",
+    "card": "hydrogen-and-water",
+    "newToJob": false
+   }
+  ],
+  "parts": [
+   "aluminum-process",
+   "boiler",
+   "fuel-cell"
+  ],
+  "how": "Northern countries need the most power and heat in winter, when solar panels make the least, and holding a summer's surplus in batteries would cost more than the houses. Here summer electricity smelts aluminium oxide back into metal: dense pellets that sit in a shed for years without losing anything. In winter the pellets react with hot water, giving off hydrogen for a fuel cell and as much again as heat for the house, and the leftover oxide goes back to the smelter; a tonne of aluminium holds about 8 megawatt-hours, so a family's winter fits in a wardrobe.",
+  "obstacle": "Smelting without carbon anodes, so that no CO2 comes out, is still at pilot scale, and the round trip returns only about half the energy as useful power and heat.",
+  "evidence": "Haller et al., SPF/OST Rapperswil, AlEnCycles and PeakMetal projects (Swiss Federal Office of Energy, 2019-2025): measured aluminium-water reactions releasing hydrogen and heat and system studies of the summer-winter loop; EU REVEAL project 2024 reacting aluminium alloy granules. https://zenodo.org/records/6393255",
+  "existsCheck": "Searched aluminium as a seasonal energy store: only Swiss and EU research projects and lab reactors; no building or grid uses it.",
+  "familiar": false,
+  "tenX": "Capacity cost: aluminium at ~$2.5/kg holds ~8.6 kWh, about $0.3 per kWh held (over 100x below lithium), with no loss over months.",
+  "plausibility": 3,
+  "why": "Made a common metal the currency for carrying sunshine from summer to winter."
+ },
+ {
+  "id": "sulfur-sun-store",
+  "name": "Sulfur sun store",
+  "subtitle": "desert sunlight saved as heaps of sulfur",
+  "bigJob": "seasonal-storage",
+  "job": "store a summer's spare power until winter",
+  "effects": [
+   {
+    "effect": "strong heat splits sulfuric acid; its fumes then recombine into acid plus solid sulfur",
+    "card": null,
+    "newToJob": true
+   },
+   {
+    "effect": "sulfur burns very hot in a turbine",
+    "card": null,
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "mirror",
+   "sulfuric-acid",
+   "sulfur",
+   "turbines"
+  ],
+  "how": "Solar plants can store a few hours of sun as hot salt, but the heat leaks away, so they cannot save July's sunshine for January. This plant uses focused sunlight to split sulfuric acid, and the products are steered back together into acid and plain yellow sulfur, which sits in an open heap for years without losing anything. In winter the sulfur is burned to drive a turbine, its fumes are turned back into sulfuric acid for next summer, and sulfur holds about thirty times more energy per tonne than molten salt at about ten cents a kilo.",
+  "obstacle": "The step that turns sulfur dioxide back into solid sulfur is still slow in the lab, and the whole loop handles hot, corrosive acid.",
+  "evidence": "EU PEGASUS project (DLR and partners, 2016-2021): solar-heated particles split sulfuric acid, catalyst particles ran over 1,000 hours at 850 C, and a 10 kW sulfur burner for gas turbines was built. https://www.dlr.de/en/latest/news/2021/04/20211209_solar-energy-storage-using-sulphur",
+  "existsCheck": "Searched sulfur-based thermochemical storage: only the PEGASUS research project and earlier General Atomics lab work; no plant built.",
+  "familiar": false,
+  "tenX": "Capacity cost: sulfur at ~$0.15/kg holds ~2.6 kWh of heat, roughly $0.2 per kWh of electricity held (500x below lithium), lossless for years.",
+  "plausibility": 2,
+  "why": "Stored sunlight as a heap of cheap mineral, letting deserts sell summer power in winter."
+ },
+ {
+  "id": "borehole-reactor",
+  "name": "Borehole reactor",
+  "subtitle": "a nuclear reactor sunk a mile underground",
+  "bigJob": "firm-clean-power",
+  "job": "steady clean power, built in a year",
+  "effects": [
+   {
+    "effect": "water pressure grows with depth",
+    "card": "hydrostatics",
+    "newToJob": true
+   },
+   {
+    "effect": "a neutron splits a heavy atom, freeing more neutrons",
+    "card": "nuclear-chain-reaction",
+    "newToJob": false
+   }
+  ],
+  "parts": [
+   "nuclear-reactor",
+   "oil-wells",
+   "steam-turbine"
+  ],
+  "how": "Nuclear plants give steady clean power day and night, but they take a decade to build, largely because of the giant steel pressure vessel and concrete dome around the core. This slim reactor is lowered on a cable into a borehole a mile deep, where the weight of the water above it supplies the 160 atmospheres a reactor needs and a mile of rock does the job of the dome; hot water rises to a turbine at the surface. Oilfield crews already drill such holes in weeks.",
+  "obstacle": "No one has ever serviced or refuelled a reactor a mile down, and regulators have no rules yet for licensing one.",
+  "evidence": "Deep Fission (US) broke ground in Parsons, Kansas in December 2025 for a 15 MWe reactor in a 30-inch borehole one mile deep; a full-size non-nuclear canister was lowered and retrieved and the first data well drilled. https://www.ans.org/news/2025-12-08/article-7601/deep-fission-to-break-ground-this-week/",
+  "existsCheck": "Searched borehole and underground reactors: Deep Fission's pilot is under construction under the DOE pilot programme, with no reactor yet producing power.",
+  "familiar": true,
+  "tenX": "Build time from 10+ years to about one; capital cost per kW claimed several times lower by removing the pressure vessel and containment.",
+  "plausibility": 3,
+  "why": "Turned nuclear plants from decade-long megaprojects into drilled wells, using oilfield rigs and the weight of water."
+ },
+ {
+  "id": "turbine-free-fusion",
+  "name": "Turbine-free fusion generator",
+  "subtitle": "fusion that makes current with no steam",
+  "bigJob": "firm-clean-power",
+  "job": "steady clean power, built in a year",
+  "effects": [
+   {
+    "effect": "a little mass holds a huge amount of energy",
+    "card": "mass-energy",
+    "newToJob": false
+   },
+   {
+    "effect": "induction: a swelling plasma pushing on a magnetic field drives current back into the coils",
+    "card": "electromagnetic-induction",
+    "newToJob": true
+   },
+   {
+    "effect": "fusing deuterium with helium-3 gives fast charged particles instead of neutrons",
+    "card": null,
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "electromagnets",
+   "leyden-jar"
+  ],
+  "how": "Fusion plants planned today would boil water like coal plants, so they are huge, slow and costly to build. In this machine two rings of hot plasma are fired into each other and squeezed by a pulse from the magnets until they fuse; the burning plasma swells and shoves back on the magnetic field, and that shove drives electricity straight back into the capacitor bank, with no boiler, turbine or cooling tower. Burning deuterium with helium-3 gives off mostly charged particles, which push hardest on the field and leave the machine far less radioactive.",
+  "obstacle": "No such machine has yet returned more electricity than it took in, and helium-3 must itself be bred in deuterium fusion.",
+  "evidence": "Helion Energy, February 2026: the Polaris prototype reached 150 million C and measurable deuterium-tritium fusion while recovering energy from the magnetic field; a 50 MW plant (Orion) for Microsoft has been under construction since July 2025. https://helionenergy.com/newsroom/helion-achieves-new-fusion-energy-milestones",
+  "existsCheck": "Searched pulsed magnetic-compression fusion with direct recovery: only Helion's prototypes; no plant has sent power to a grid.",
+  "familiar": true,
+  "tenX": "Removes the steam plant (about half a power station's cost and size); factory-built 50 MW units could be built in about a year with fuel costs near zero.",
+  "plausibility": 2,
+  "why": "The first power station to make electricity from fusion directly, skipping steam after two centuries."
+ },
+ {
+  "id": "muon-fusion-cell",
+  "name": "Muon fusion cell",
+  "subtitle": "fusion in a cold tank, sparked by muons",
+  "bigJob": "firm-clean-power",
+  "job": "steady clean power, built in a year",
+  "effects": [
+   {
+    "effect": "a muon, a heavy cousin of the electron, pulls two heavy-hydrogen nuclei so close they fuse at room temperature",
+    "card": null,
+    "newToJob": true
+   },
+   {
+    "effect": "a particle accelerator makes muons",
+    "card": null,
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "particle-accelerator",
+   "boiler",
+   "steam-turbine"
+  ],
+  "how": "Fusion normally needs fuel hotter than the Sun's core, held in giant magnets or crushed by giant lasers. A muon is a heavy cousin of the electron, and when it takes an electron's place in heavy hydrogen it pulls two nuclei so close that they fuse while cold, then flies off to do it again; a compact accelerator fires muons into a dense tank of fuel and the heat boils water for a turbine. No plasma and no giant magnets: the fusion part of the plant is a tank.",
+  "obstacle": "Each muon sparks about 150 fusions before it sticks to a helium nucleus and stops, while breaking even needs about 300, so muons must be made cheaper or freed more often.",
+  "evidence": "Muon-catalysed fusion has been measured since the 1980s at about 150 fusions per muon; Marathon Fusion (arXiv 2511.20951, 2025) estimates about 3.1 GeV per muon, near breakeven, and Acceleron Fusion is testing high-pressure fuel in diamond anvil cells to cut sticking (arXiv 2606.05333, 2026). https://arxiv.org/abs/2511.20951",
+  "existsCheck": "Searched muon-catalysed fusion power: only lab experiments and startups (Acceleron, Marathon) aiming first at isotopes; no power plant designed or built.",
+  "familiar": true,
+  "tenX": "If the muon count doubles, a fusion plant shrinks from a stadium of magnets to an accelerator and a tank, cutting build time from decades to a year or two.",
+  "plausibility": 1,
+  "why": "Would be the 'cold fusion' that actually works: fusion at room temperature, from a real particle."
+ },
+ {
+  "id": "rock-hydrogen-well",
+  "name": "Rock hydrogen well",
+  "subtitle": "water pumped into iron-rich rock returns as hydrogen",
+  "bigJob": "firm-clean-power",
+  "job": "steady clean power, built in a year",
+  "effects": [
+   {
+    "effect": "iron in deep olivine rock rusts in hot water and gives off hydrogen",
+    "card": null,
+    "newToJob": true
+   },
+   {
+    "effect": "burning hydrogen makes nothing but water",
+    "card": "hydrogen-and-water",
+    "newToJob": false
+   }
+  ],
+  "parts": [
+   "oil-wells",
+   "miners-friend",
+   "fuel-cell"
+  ],
+  "how": "Wind and sun come and go, and stored fuel is costly, yet the Earth makes its own hydrogen: iron in deep, dark olivine rock rusts in hot water and gives off hydrogen gas. This well pumps water, with a dash of catalyst to speed the rusting, down into such rock and draws hydrogen back up to a fuel cell or turbine at the wellhead, running any hour of the day. A cubic kilometre of the rock can yield about a million tonnes of hydrogen.",
+  "obstacle": "Natural rusting is slow, and no one has yet shown a well that keeps its cracks open and its hydrogen flowing at a steady, paying rate.",
+  "evidence": "A natural hydrogen well at Bourakebougou, Mali has fed a village generator since 2012 with nearly pure hydrogen; Vema Hydrogen drilled the first two engineered-hydrogen pilot wells in Quebec in 2025-26, and ARPA-E funds catalysed low-temperature serpentinisation (LBNL, UT Austin). https://www.powermag.com/vema-hydrogen-drills-wells-in-quebec-in-first-engineered-mineral-hydrogen-test-project/",
+  "existsCheck": "Searched stimulated geologic hydrogen: Vema's Quebec pilot wells are drilled but no output data; the Oman Rock Hydrogen field test is ongoing; no power plant runs on stimulated rock hydrogen.",
+  "familiar": false,
+  "tenX": "Clean hydrogen from ~$5/kg (electrolysis) to under $1/kg, making round-the-clock power from fuel cells near solar cost wherever iron-rich rock lies.",
+  "plausibility": 3,
+  "why": "Turned the Earth's own slow rusting into a fuel well, the clean successor to the gas well."
+ },
+ {
+  "id": "electric-swing-co2-capture",
+  "name": "Electric-swing carbon capture",
+  "subtitle": "plates that drop CO2 when the voltage flips",
+  "bigJob": "air-co2",
+  "job": "pull carbon dioxide out of the air cheaply",
+  "effects": [
+   {
+    "effect": "charging a manganese-oxide or quinone electrode makes it grab carbon dioxide; reversing the voltage lets it go",
+    "card": null,
+    "newToJob": true
+   },
+   {
+    "effect": "adsorption",
+    "card": "adsorption",
+    "newToJob": false
+   }
+  ],
+  "parts": [
+   "storage-battery",
+   "electric-motors"
+  ],
+  "how": "Machines that pull carbon dioxide from the air spend most of their energy heating their sponge until it lets go of the gas, then cooling it again. Here the sponge is a set of electrode plates like those in a battery: charged one way, they grab carbon dioxide from the air blown past them; flip the voltage and they release it as pure gas, at room temperature. That takes a fraction of the energy, and it can all be cheap midday solar power that would otherwise be wasted.",
+  "obstacle": "The plates must survive tens of thousands of swings in dusty, oxygen-rich outdoor air, and so far they have been tested for about a thousand hours.",
+  "evidence": "Liu, Sargent et al. (Northwestern), Nature Energy, Feb 2026: manganese-oxide electrodes captured CO2 from real air (21% oxygen) at 4.1 GJ per tonne versus 6-10 GJ for today's liquid systems, 80% single-pass capture, 1,000+ hours with over 90% capacity kept. Earlier: Voskian and Hatton (MIT) 2019, quinone electrodes at ~1 GJ/t from richer gas. https://www.mccormick.northwestern.edu/news/articles/2026/02/new-electrified-method-captures-carbon-dioxide-from-air",
+  "existsCheck": "Searched electrochemical direct air capture: Verdox (MIT spin-out) targets industrial flue gas; no air-capture plant uses electro-swing electrodes.",
+  "familiar": false,
+  "tenX": "Release energy falls from 6-10 GJ/t of heat to 1-4 GJ/t of electricity; on surplus solar the energy bill drops under $20/t, toward the $50/t target.",
+  "plausibility": 3,
+  "why": "Turned carbon removal from a furnace into an electrical appliance that soaks up the daily solar glut."
+ },
+ {
+  "id": "sun-switched-co2-capture",
+  "name": "Sun-switched carbon capture",
+  "subtitle": "a liquid that releases CO2 in sunlight",
+  "bigJob": "air-co2",
+  "job": "pull carbon dioxide out of the air cheaply",
+  "effects": [
+   {
+    "effect": "a light-switched dye turns acidic in sunlight and relaxes back in the dark",
+    "card": "photochromism",
+    "newToJob": true
+   },
+   {
+    "effect": "gas dissolves in water under pressure",
+    "card": "soluble-gases",
+    "newToJob": false
+   }
+  ],
+  "parts": [
+   "glass",
+   "valve",
+   "air-pump"
+  ],
+  "how": "Soaking carbon dioxide out of air into a liquid is easy; getting it back out of the liquid takes a furnace's worth of heat, and that is most of the cost. Here the capturing liquid carries a dye that turns into an acid when sunlight hits it: at night the liquid drinks carbon dioxide from the air, by day it flows through clear glass tubes where sunlight makes it acidic so the gas fizzes out pure, and in the dark the dye relaxes back for the next night. The sun itself does the releasing, with no heat and no electricity.",
+  "obstacle": "The light-switched dyes wear out within days and dissolve poorly in water; they must survive years of full sun.",
+  "evidence": "Oak Ridge National Laboratory, Angewandte Chemie 2023: a long-lived photoacid made the first light-triggered acidity swing lasting minutes to hours, releasing CO2 from amino-acid air-capture solutions; ORNL 2026 'photo-DAC' with a photobase ran six capture cycles. https://www.ornl.gov/news/light-activated-acid-drives-energy-efficient-demand-release-captured-co2",
+  "existsCheck": "Searched light-driven CO2 release and photoacid direct air capture: only ORNL and university lab papers; no pilot or company.",
+  "familiar": false,
+  "tenX": "The release step, ~6-10 GJ of heat per tonne and most of today's $500+/t, is paid by sunlight; energy cost near zero beyond pumps.",
+  "plausibility": 2,
+  "why": "Carbon removal driven straight by sunlight, like a leaf, with no furnace and no grid."
+ },
+ {
+  "id": "mantle-rock-sea-well",
+  "name": "Mantle-rock sea well",
+  "subtitle": "seawater pumped through rock that petrifies CO2",
+  "bigJob": "air-co2",
+  "job": "pull carbon dioxide out of the air cheaply",
+  "effects": [
+   {
+    "effect": "olivine-rich mantle rock reacts with dissolved carbon dioxide and turns it into solid carbonate",
+    "card": null,
+    "newToJob": true
+   },
+   {
+    "effect": "the reaction and the rock's heat warm the water so it rises back on its own",
+    "card": "forced-convection",
+    "newToJob": true
+   },
+   {
+    "effect": "gas dissolves in water under pressure",
+    "card": "soluble-gases",
+    "newToJob": false
+   }
+  ],
+  "parts": [
+   "oil-wells",
+   "miners-friend"
+  ],
+  "how": "Carbon dioxide is so thin in air that any capture machine must push mountains of air through it, but the surface ocean has already gathered it, holding about a hundred times more per litre than air. This plant drills into the mantle rock that lies near the surface in Oman and under some seabeds and pumps surface seawater through it: the rock grabs the dissolved carbon dioxide and turns it to stone, and the stripped water returns to the sea to soak up more from the sky. There are no fans and no furnaces, and the warmed water rises back on its own.",
+  "obstacle": "New carbonate may clog the rock's cracks; nobody has yet shown that cracks keep opening as the rock swells, as they do in nature.",
+  "evidence": "Kelemen and Matter (Columbia), PNAS 2008: Oman peridotite naturally turns up to 100,000 t of CO2 a year to stone, and pumping surface seawater through it could speed this a millionfold, storing at least 1 Gt a year in Oman alone; the Oman Drilling Project (2017-18) cored the reacting rock. https://news.climate.columbia.edu/2013/07/08/ancient-rocks-modern-purpose",
+  "existsCheck": "Searched seawater circulation through peridotite: 44.01 injects already-captured CO2 into Oman rock, but no one circulates seawater to draw CO2 from the air.",
+  "familiar": false,
+  "tenX": "Skips both air handling and regeneration; projected tens of dollars per tonne at over a gigaton a year from one region.",
+  "plausibility": 2,
+  "why": "Uses the ocean as the air filter and the Earth's mantle as the dump, at gigaton scale."
+ },
+ {
+  "id": "ten-layer-solar-still",
+  "name": "Ten-layer solar still",
+  "subtitle": "a still that reuses sunlight's heat tenfold",
+  "bigJob": "desert-water",
+  "job": "drinking water from salty groundwater with no grid",
+  "effects": [
+   {
+    "effect": "water vapour gives back its heat as it condenses",
+    "card": "latent-heat",
+    "newToJob": true
+   },
+   {
+    "effect": "salt left in a wet wick seeps back out to the brine at night",
+    "card": "diffusion",
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "paper",
+   "glass",
+   "copper"
+  ],
+  "how": "Inland villages often sit on salty groundwater, and a plain solar still makes only a few litres a day per square metre because the heat escapes with the steam. This still stacks ten thin layers: the sun warms the top wick, its vapour condenses on the metal plate beneath, and the heat given off as it turns back to water evaporates the next layer down, and so on, so each ray of sunlight evaporates water about four times over. Salt left in the paper-like wicks seeps back out into the brine overnight.",
+  "obstacle": "Keeping the thin wicks from scaling and fouling for years on hard, dirty groundwater rather than clean lab saltwater.",
+  "evidence": "Xu, Zhang, Zhao, Wang et al. (MIT and Shanghai Jiao Tong), Energy & Environmental Science 2020: a ten-stage still of cheap materials reached 385% solar-to-vapour efficiency and 5.78 litres per square metre per hour on an MIT roof, with water beyond city standards. https://news.mit.edu/2020/passive-solar-powered-water-desalination-0207",
+  "existsCheck": "Searched commercial multistage passive solar stills: only lab and rooftop prototypes and research variants (siphon-flushed stills); no product.",
+  "familiar": false,
+  "tenX": "Water per square metre of sunlight from ~3-4 L/day (basin still) to ~30 L/day, about 8-10x: one square metre gives a family's drinking and cooking water.",
+  "plausibility": 4,
+  "why": "Gave any desert family fresh water from salty ground with nothing but sunlight, metal and paper."
+ },
+ {
+  "id": "green-light-still",
+  "name": "Green-light still",
+  "subtitle": "sunlight plucks water off without boiling it",
+  "bigJob": "desert-water",
+  "job": "drinking water from salty groundwater with no grid",
+  "effects": [
+   {
+    "effect": "green light knocks clusters of water molecules off a water surface without heating it (photomolecular effect)",
+    "card": null,
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "glass",
+   "mirror"
+  ],
+  "how": "Every still and desalting plant is limited by the energy it takes to evaporate water, about 2.3 megajoules per litre, so sun-powered ones stay small. Researchers at MIT found that green light hitting a water surface can knock clusters of water molecules loose directly, without warming them, so a wet gel in sunlight evaporates two to four times more water than its heat alone allows. A still built around this beats the boiling limit, and stacked layers could multiply it again.",
+  "obstacle": "Only one lab has measured the effect so far, and nobody yet knows how large it can be made in ordinary sunlight.",
+  "evidence": "Tu, Zhang, Chen et al. (MIT), PNAS November 2023: water evaporated from hydrogels under visible light beyond the thermal limit, peaking in green light; a 2024 follow-up saw it at a plain air-water surface. https://news.mit.edu/2024/how-light-can-vaporize-water-without-heat-0423",
+  "existsCheck": "Searched photomolecular evaporation and desalination: no independent replication or device found beyond MIT's lab.",
+  "familiar": false,
+  "tenX": "Evaporation per unit of sunlight 2-4x beyond the thermal limit; stacked with heat reuse, toward ~10x a basin still.",
+  "plausibility": 2,
+  "why": "If it holds, a new way to turn liquid to vapour, breaking the energy floor every desalting method shares."
+ },
+ {
+  "id": "solvent-swing-desalter",
+  "name": "Solvent-swing desalter",
+  "subtitle": "a solvent that drinks fresh water when cool",
+  "bigJob": "desert-water",
+  "job": "drinking water from salty groundwater with no grid",
+  "effects": [
+   {
+    "effect": "some amine solvents dissolve water but not salt when cool, and push the water back out when warmed",
+    "card": null,
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "mirror",
+   "valve",
+   "dewar-flask"
+  ],
+  "how": "Brackish groundwater lies under most deserts, but making it fresh needs either high-pressure pumps and a grid or a lot of heat to boil it. Here the cool salty water is stirred with an amine solvent that soaks up water but leaves the salt behind; the solvent is then drawn off and warmed by simple sun collectors to about 60 C, where it can no longer hold the water and lets it out as a separate fresh layer. There is no membrane to clog and no boiling, so even very salty or hard water works.",
+  "obstacle": "Traces of the solvent stay in the water and must be stripped to drinking standard, and some solvent is lost every cycle.",
+  "evidence": "Boo, Billinge, Yip et al. (Columbia), Environmental Science & Technology Letters 2019 and later: over 50% water recovered from 1.5 M salt brine without membranes or boiling, and over 90% of salt precipitated from a 292,500 ppm brine, releasing water at 60-70 C. https://www.engineering.columbia.edu/new-approach-desalinating-hypersaline-brines",
+  "existsCheck": "Searched temperature-swing solvent extraction desalination: Columbia lab work and patents only; no field or household unit.",
+  "familiar": false,
+  "tenX": "Desalting with 60 C solar heat instead of a grid and pumps; works on brines too salty for reverse osmosis, opening most inland aquifers.",
+  "plausibility": 2,
+  "why": "Desalting by a solvent's temperature mood instead of membranes or boiling, run on warm sunlight."
+ },
+ {
+  "id": "wall-socket-mri",
+  "name": "Wall-socket MRI",
+  "subtitle": "a whole-body scanner that plugs into a socket",
+  "bigJob": "early-cancer",
+  "job": "Find cancer while it's curable",
+  "effects": [
+   {
+    "effect": "atomic resonance",
+    "card": "magnetic-resonance",
+    "newToJob": false
+   },
+   {
+    "effect": "a learned model pulls a clean image out of signals swamped by electrical noise",
+    "card": null,
+    "newToJob": true
+   },
+   {
+    "effect": "a weak magnet needs no shielded room and no liquid helium",
+    "card": null,
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "electromagnets",
+   "radio-antennas",
+   "computer"
+  ],
+  "how": "Most cancers are found once they cause symptoms, because the scan that would have seen them early costs millions to install, needs a shielded room and a helium supply, and is rationed. This scanner uses a magnet a sixtieth the usual strength, so it runs off an ordinary wall socket, needs no cage around it and cannot pull metal across the room; the faint, noisy signal is cleaned up by a model trained on strong-magnet images, which learns to tell the body's echo from the hum of the building. A scan then costs about what a blood test costs, which is what makes scanning healthy people worth doing at all.",
+  "obstacle": "Proving that the learned images are trustworthy for finding small tumours, not just recognisable, since the model has to be believed where no strong-magnet scan exists to check it against.",
+  "evidence": "Zhao, Ding, Lau, Wu et al., Science 384:eadm7168 (10 May 2024): whole-body imaging at 0.05 T with no radiofrequency or magnetic shielding, about 1,800 W from a wall outlet, 30 volunteers, deep-learning reconstruction; authors estimate roughly $22,000 of hardware at scale, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11496770/",
+  "existsCheck": "Searched low-field and portable MRI products. Hyperfine's Swoop is a commercial 0.064 T scanner, but it is head-only and for bedside stroke imaging, not whole-body screening; the Hong Kong 0.05 T whole-body system is a research prototype and a Science perspective notes low-field MRI needs more work before wide clinical use. Nothing is marketed for routine whole-body cancer screening.",
+  "familiar": false,
+  "tenX": "Cost per whole-body scan and per installed scanner falls roughly fifty-fold, which is what makes screening healthy people affordable",
+  "plausibility": 5,
+  "why": "Made the scan cheap enough to give everyone, so cancer was usually found at stage one."
+ },
+ {
+  "id": "tumour-finding-probiotic",
+  "name": "Tumour-finding probiotic",
+  "subtitle": "a drink that makes tumours show in urine",
+  "bigJob": "early-cancer",
+  "job": "Find cancer while it's curable",
+  "effects": [
+   {
+    "effect": "harmless gut bacteria multiply inside a tumour and nowhere else in the body",
+    "card": null,
+    "newToJob": true
+   },
+   {
+    "effect": "catalysis",
+    "card": "catalysis",
+    "newToJob": false
+   },
+   {
+    "effect": "a guided enzyme cuts DNA at any spot spelled out by a short RNA",
+    "card": "crispr-cas9",
+    "newToJob": false
+   }
+  ],
+  "parts": [
+   "bacterial-cultivation",
+   "genetic-engineering",
+   "paper"
+  ],
+  "how": "A tumour the size of a pinhead sheds far too little into the blood to find, so cancers are caught years later than they start. A swallowed dose of an ordinary probiotic bacterium, engineered to carry a marker-making enzyme, is cleared from healthy tissue by the immune system but survives and multiplies a millionfold in the oxygen-starved, immune-blind inside of a tumour; the enzyme cuts a harmless substance the patient also swallows, releasing a fragment that leaves in the urine. The tumour therefore amplifies its own signal, and a paper strip dipped in the sample shows a line.",
+  "obstacle": "Safety and regulation: deliberately giving live engineered bacteria to healthy people for screening is a much higher bar than giving them to someone already ill.",
+  "evidence": "Danino et al., Science Translational Medicine 2015: orally delivered E. coli Nissle 1917 carrying a lacZ reporter colonised about 90% of liver metastases in mice (10^6-fold enrichment, tumours above ~1 mm^3) with no colonisation of healthy or fibrotic liver, giving a urine signal within 24 h from 1 microlitre, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4511399/ ; paper-strip CRISPR readout of urine barcodes, Hao et al., Nature Nanotechnology 2023",
+  "existsCheck": "Searched engineered probiotic diagnostics and urinary cancer tests. Blood tests on sale (Galleri) report only about 40% overall sensitivity and were not designed for stage I; engineered bacteria for cancer are in trials as therapy, not as a screening test, and the probiotic reporter work remains in mice. The deck's nearest cards (Gut Diary, Sugar-sensing toilet, Breath screening card) read chemistry the body already makes, not a signal the tumour is made to amplify.",
+  "familiar": false,
+  "tenX": "Smallest detectable tumour drops from roughly a centimetre to a millimetre, a thousandfold in volume, from a drink and a paper strip",
+  "plausibility": 3,
+  "why": "Let a tumour the size of a pinhead announce itself, using bacteria as the amplifier."
+ },
+ {
+  "id": "vein-magnet",
+  "name": "Vein magnet",
+  "subtitle": "a vein wire that catches cancer cells",
+  "bigJob": "early-cancer",
+  "job": "Find cancer while it's curable",
+  "effects": [
+   {
+    "effect": "a steep magnetic field gradient drags magnetically tagged cells sideways out of flowing blood",
+    "card": null,
+    "newToJob": true
+   },
+   {
+    "effect": "an antibody binds only its own target",
+    "card": null,
+    "newToJob": false
+   },
+   {
+    "effect": "magnetoresistance",
+    "card": "magnetoresistance",
+    "newToJob": false
+   }
+  ],
+  "parts": [
+   "rare-earth-magnet",
+   "cardiac-catheter"
+  ],
+  "how": "An early tumour sheds perhaps one cell into a litre of blood, so the usual teaspoon drawn into a tube almost always misses it, and that is why blood tests find cancer late. A thin wire strung with magnets is slipped into an arm vein through an ordinary drip line, after an injection of magnetic particles coated with antibodies that stick to tumour cells; over an hour the patient's whole blood volume washes past the wire many times and the field gradient plucks the tagged cells onto it. Pulling the wire out gives the laboratory the catch from litres of blood instead of millilitres.",
+  "obstacle": "Getting the injected magnetic particles approved for healthy people, and making them stick to tumour cells of every kind rather than a few known types.",
+  "evidence": "Vermesh, Gambhir et al., Nature Biomedical Engineering 2018 (MagWIRE): a magnetic wire placed through a standard IV catheter captured 10-80x more tumour cells than a 5 ml blood draw in pigs, with 56% capture of pre-labelled cells in whole blood, https://pmc.ncbi.nlm.nih.gov/articles/PMC6261517",
+  "existsCheck": "Searched intravascular tumour cell capture and circulating tumour cell devices. CellSearch and similar systems still process a drawn tube of blood; apheresis-based capture is experimental; MagWIRE has only been used in pigs and would need approval for its nanoparticles. No in-vein capture device is in clinical use.",
+  "familiar": false,
+  "tenX": "Blood volume searched per test rises from about 5 millilitres to several litres, a thousandfold, raising the odds of catching a stage-one tumour's one shed cell",
+  "plausibility": 4,
+  "why": "Searched the whole bloodstream instead of a teaspoon of it, making one shed cell findable."
+ },
+ {
+  "id": "decoy-node",
+  "name": "Decoy node",
+  "subtitle": "an implant that catches the first spreading cells",
+  "bigJob": "early-cancer",
+  "job": "Find cancer while it's curable",
+  "effects": [
+   {
+    "effect": "a porous implant recruits immune cells, and travelling tumour cells follow them and settle",
+    "card": null,
+    "newToJob": true
+   },
+   {
+    "effect": "small particles scatter light",
+    "card": "tyndall-effect",
+    "newToJob": true
+   },
+   {
+    "effect": "the body rejects foreign tissue",
+    "card": "tissue-transplantation",
+    "newToJob": false
+   }
+  ],
+  "parts": [
+   "isotactic-polymers",
+   "laser",
+   "fiber-optics"
+  ],
+  "how": "What kills in cancer is the spread, and spread is found only once it has built tumours in the liver, lung or brain, by which time it is too late to cure. A sugar-cube of porous polymer implanted under the skin is colonised by the patient's own immune cells, which makes it look to a wandering tumour cell exactly like the soft, welcoming niche it is hunting for, so the first escaping cells lodge there instead of in an organ. A light beam played over the skin reads the fine structure inside the implant and shows when something has moved in, and the whole cube can be lifted out under local anaesthetic to say what it is.",
+  "obstacle": "Scaling from mice to people: a cube that catches a useful share of travelling cells in a human bloodstream may have to be far larger, or there may have to be several.",
+  "evidence": "Azarin, Shea et al., Nature Communications 2015: porous poly(caprolactone) scaffolds implanted in mice captured metastatic breast cancer cells before tumours appeared in lung or liver, read label-free by inverse spectroscopic optical coherence tomography, and removing the primary tumour after a scaffold-positive result improved survival, https://www.nature.com/articles/ncomms9094 ; follow-up in Cancer Research reported 64% fewer cancer cells in liver and 75% fewer in brain in scaffold-bearing mice",
+  "existsCheck": "Searched implantable metastasis traps and sentinel scaffolds. The Michigan/Northwestern group states it is still developing a clinical trial protocol; nothing is implanted in patients, and all published work is in mice. The deck's Breathing Scaffold is a scaffold that feeds growing tissue oxygen, a different job.",
+  "familiar": false,
+  "tenX": "Spread is caught at the first escaped cells rather than at a visible organ tumour, moving detection from stage four to months before stage two",
+  "plausibility": 3,
+  "why": "Gave cancer somewhere harmless to spread to, and so an alarm before it reached an organ."
+ }
+]

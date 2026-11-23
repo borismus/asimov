@@ -1,0 +1,802 @@
+{
+ "monoclonal-antibodies": {
+  "job": "treats illness",
+  "slots": [],
+  "phen": [
+   {
+    "effect": "an antibody binds only its own target",
+    "gap": "Antibody specificity"
+   }
+  ],
+  "flag": "Own job 'treats illness' (also used in tests; 'diagnoses' would fit those). No slots: the antibody is the material itself, and the fused hybrid cell is how it's made (rule 4). Antibody specificity is the existing gap (Radioimmune assay, Rapid test strip): this is its 3rd use, so it earns a phenomenon card; Asimov's off-board Protein structure card (antibody structure) doesn't state the effect."
+ },
+ "ivermectin": {
+  "job": "treats illness",
+  "slots": [],
+  "phen": [
+   {
+    "effect": "a chemical kills the germ but not the patient",
+    "card": "chemotherapy"
+   }
+  ],
+  "flag": "Wording follows Artemisinin (rule 12), though here the 'germ' is a worm or mite. The soil bacterium's substance is how it's made (rule 4). The specific mechanism (it jams open a chloride gate in worm nerves) would be an 'Ion channels' effect card; not shared by 3, left off."
+ },
+ "computer-aided-design": {
+  "job": "draws pictures",
+  "slots": [
+   {
+    "part": null,
+    "job": "computes",
+    "fill": "personal-computer",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [
+   {
+    "effect": "each line and curve is stored as coordinates and equations",
+    "gap": "Cartesian geometry"
+   }
+  ],
+  "flag": "NEW JOB 'draws pictures': Computer-aided design, AI image generation and (in the parallel batch) Computer-generated imagery; fallback 'makes marks' (Ink's job). Personal computer carries the mouse and screen, so they aren't listed again. Cartesian geometry is maths the job carries out (rule 22) and its key effect; Asimov has a 'Cartesian geometry' card (analytic-geometry, 1637) that isn't on the board, so it could simply be added. The cutting machines it feeds are what its drawings are used on, not parts."
+ },
+ "relational-database": {
+  "job": "stores data",
+  "slots": [
+   {
+    "part": null,
+    "job": "computes",
+    "fill": "computer",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "tables",
+    "job": "stores data",
+    "fill": "hard-disk-drive",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [
+   {
+    "effect": "a query states in logic which rows are wanted",
+    "card": "symbolic-logic"
+   }
+  ],
+  "flag": "Computer (1930) is the same loose stand-in ATM and Email use; Oracle ran on minicomputers. Symbolic logic: Codd's model is predicate logic over tables, maths the job carries out (rule 22), and a different use from the logic gates in chips. Drop it if it reads as 'needed to know' (rule 5)."
+ },
+ "neodymium-magnet": {
+  "job": "makes a magnetic field",
+  "slots": [
+   {
+    "part": "neodymium",
+    "job": "is an ingredient",
+    "fill": "praseodymium-and-neodymium",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [
+   {
+    "effect": "atoms are tiny magnets",
+    "card": "magnetic-moments"
+   },
+   {
+    "effect": "it stays magnetized after the field is gone",
+    "card": "magnetic-hysteresis"
+   }
+  ],
+  "flag": "Iron and boron have no cards (Coke and iron is a smelting card, not a stand-in for the element); left off. Grinding, aligning, pressing and baking are production (rule 4). Magnetic moments matches the Rare-earth magnet card; hysteresis is what makes it permanent, so it's the material's effect in use (rule 24). Hysteresis wording could merge with Credit card's 'a magnetized spot stays magnetized' (rule 12). Overlap with Rare-earth magnet, which already lists neodymium as a slot."
+ },
+ "dna-fingerprinting": {
+  "job": "reads DNA",
+  "slots": [
+   {
+    "part": "gel",
+    "job": "separates mixtures",
+    "fill": "electrophoresis",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [
+   {
+    "effect": "an enzyme cuts DNA at set places",
+    "gap": "Restriction enzymes"
+   },
+   {
+    "effect": "the number of repeats in a stretch of DNA differs between people",
+    "gap": "Variable DNA repeats"
+   }
+  ],
+  "flag": "Own job 'reads DNA' (DNA sequencing's job). Electrophoresis is Tiselius's moving-boundary method, standing in for gel electrophoresis; its charge effect stays on it (rule 23). Restriction enzymes is the existing gap on Recombinant DNA (2 uses now). Variable DNA repeats is the key effect, no card. The radioactive probe and X-ray film Jeffreys used aren't in the text; left off."
+ },
+ "medical-abortion-pill": {
+  "job": "regulates the body",
+  "slots": [],
+  "phen": [
+   {
+    "effect": "the womb lining needs progesterone to stay in place",
+    "card": "sex-hormones"
+   },
+   {
+    "effect": "a drug fits a cell's receptor without switching it on",
+    "gap": "Drug receptors"
+   }
+  ],
+  "flag": "Own job follows Oral contraceptives. Mifepristone and misoprostol have no cards; Steroid synthesis is how it's made (rule 4). Sex hormones' text names progesterone and pregnancy, so it's the body process (rule 25). 'Drug receptors' gap: Beta blockers and GLP-1 drugs flagged it in batch 1; with this card it's 3 (Morphine on the board is another). Misoprostol's contractions left off (no card)."
+ },
+ "digital-cellular-network-2g": {
+  "job": "communicates",
+  "slots": [
+   {
+    "part": "phones",
+    "job": "communicates",
+    "fill": "mobile-phone",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "speech coding",
+    "job": "records media",
+    "fill": "compressed-media",
+    "gap": null,
+    "note": "added later: GSM's speech coder (1991) predates the Compressed media card (1992) by a year"
+   },
+   {
+    "part": "SIM card",
+    "job": "stores data",
+    "fill": "microchips",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "time slots",
+    "job": "communicates",
+    "fill": null,
+    "gap": "Multiplexing",
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "Multiplexing (many signals sharing one channel by time, code or frequency) is the key technique, no card; 2G (time slots) and 3G (codes) both use it, and Wi-Fi, Fiber optic communication and satellite links could, so it may earn a supporting card. Radio waves stay with the phones' radio. Mobile phone isn't the same thing (rule 6): it's the handset, physically in the network. SIM card filled by Microchips as Credit card's chip is."
+ },
+ "qr-code": {
+  "job": "stores data",
+  "slots": [
+   {
+    "part": "reader",
+    "job": "turns light into current",
+    "fill": "ccd",
+    "gap": null,
+    "note": null,
+    "later": [
+     "cmos-camera-chip"
+    ]
+   },
+   {
+    "part": null,
+    "job": "computes",
+    "fill": "microchips",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [
+   {
+    "effect": "each black or white block stands for a binary digit",
+    "card": "binary-system"
+   },
+   {
+    "effect": "extra check blocks let a smudged code be rebuilt",
+    "gap": "Error-correcting codes"
+   }
+  ],
+  "flag": "Error-correcting codes: maths the job carries out (rule 22), key effect here; Compact disc left it off for want of 3, so with QR code it's 2, and 2G/3G, flash memory and space probes also use it (not in their texts). Printing the code is how it's made (rule 4). Phone cameras are CMOS chips today, hence 'later'."
+ },
+ "electronic-stability-control": {
+  "job": "holds direction",
+  "slots": [
+   {
+    "part": "brakes",
+    "job": "slows motion",
+    "fill": "anti-lock-brakes",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "yaw sensor",
+    "job": "measures",
+    "fill": "gyroscope",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "sideways sensor",
+    "job": "measures",
+    "fill": "accelerometer",
+    "gap": null,
+    "note": null,
+    "later": [
+     "mems-motion-sensors"
+    ]
+   },
+   {
+    "part": null,
+    "job": "computes",
+    "fill": "microchips",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "Own job 'holds direction' (keeps the car on the steered line); 'steers' would also do. Anti-lock brakes is a whole earlier machine inside (rule 7): ESC adds sensors and software to the ABS valves and wheel sensors. The yaw sensor is a vibrating gyroscope; Gyroscope's own job is 'holds direction', so 'measures' is the label here (rule 10). Steering-angle sensor has no card. No own-level effect: braking one wheel to turn the car is a general law (rule 28)."
+ },
+ "graphics-processor-gpu": {
+  "job": "computes",
+  "slots": [
+   {
+    "part": "arithmetic units",
+    "job": "computes",
+    "fill": "integrated-circuits",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "Own job 'computes' (what it does for AI, and what fills it in Deep learning); 'draws pictures', the new job, would suit its game use. Microchips isn't the filler: that card is the general-purpose processor, a different chip, not inside it. Graphics memory not in the text, left off. Projecting 3D shapes onto the screen is geometry the chip carries out (rule 22), but the text doesn't state it; left off."
+ },
+ "smart-electricity-meter": {
+  "job": "measures",
+  "slots": [
+   {
+    "part": "measuring chip",
+    "job": "computes",
+    "fill": "microchips",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "modem",
+    "job": "communicates",
+    "fill": "radio",
+    "gap": null,
+    "note": "Enel's meters sent data over the power wires; no card for power-line signalling"
+   }
+  ],
+  "phen": [],
+  "flag": "Power = voltage times current has no card that states it (Ohm's law is V = IR; Joule heating is about heat); a general law with nothing specific to say, left off (rule 28). The current sensor (shunt or coil) isn't in the text."
+ },
+ "electric-bicycle-2000s": {
+  "job": "transports",
+  "slots": [
+   {
+    "part": null,
+    "job": "transports",
+    "fill": "bicycle",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "provides power",
+    "fill": "electric-motors",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "stores electricity",
+    "fill": "storage-battery",
+    "gap": null,
+    "note": "Early e-bikes, especially China's, ran on lead-acid; most now use lithium-ion (lithium-ion-battery)"
+   }
+  ],
+  "phen": [],
+  "flag": "Bicycle is a whole earlier machine inside (rule 7). The pedal-force sensor is the pedal-assist key part but has no card; a strain gauge would take the Piezoresistive effect, but it isn't shared by 3 and Yamaha's sensor type is uncertain, so left off. Battery choice is a judgement call: Lithium-ion battery (1991) is older than the card, so it could fill instead."
+ },
+ "machine-translation": {
+  "job": "writes",
+  "slots": [
+   {
+    "part": "servers",
+    "job": "computes",
+    "fill": "cloud-data-centres",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "neural network",
+    "job": "computes",
+    "fill": "deep-learning",
+    "gap": null,
+    "note": "since 2016"
+   }
+  ],
+  "phen": [
+   {
+    "effect": "the most likely translation is picked from how often phrases matched before",
+    "gap": "Probability"
+   }
+  ],
+  "flag": "Own job follows Large language models ('writes'). Learning from bilingual documents is how it's made (rule 4). Probability is the existing gap from Randomized controlled trial; this is its 2nd use, maths the job carries out (rule 22). Asimov has an off-board 'Probability' card (1654) that could be added instead of a new one. Neural network slot is for the 2016 system the text also covers."
+ },
+ "direct-oral-anticoagulants": {
+  "job": "treats illness",
+  "slots": [],
+  "phen": [
+   {
+    "effect": "a drug jams an enzyme so a body process slows",
+    "gap": "Enzyme inhibition"
+   }
+  ],
+  "flag": "Enzyme inhibition (Statins, Antiretroviral HIV therapy) is now shared by 3+ (also Anti-rejection drugs, Proton pump inhibitors, Hepatitis C cure in this batch): earns a phenomenon card. Own job could be 'prevents disease' (it prevents clots and strokes); followed Statins. The clotting chain is the body process it works with (rule 25), but no board card states it (Asimov's off-board 'Platelets' is close); possible shared gap 'Blood clotting' with Blood bank's anticoagulant and the parallel batch's stroke clot retrieval."
+ },
+ "solar-farm": {
+  "job": "makes electricity",
+  "slots": [
+   {
+    "part": "panels",
+    "job": "makes electricity",
+    "fill": "photovoltaic-cells",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "inverters",
+    "job": "controls the current",
+    "fill": "electronic-rectifier",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "sun-tracking mounts",
+    "job": "provides power",
+    "fill": "electric-motors",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "Rule 6 risk: a solar farm is partly photovoltaic cells scaled up, but like Hydroelectric station's generators the panels are physically inside a larger plant with inverters and trackers. Inverters filled by Electronic rectifier, as HVDC lines' converter valves are (they turn current the other way). Photoelectric effect stays on Photovoltaic cells (rule 23)."
+ },
+ "cancer-immunotherapy": {
+  "job": "treats illness",
+  "slots": [
+   {
+    "part": "antibody",
+    "job": "is an ingredient",
+    "fill": "monoclonal-antibodies",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [
+   {
+    "effect": "killer white blood cells carry brakes that stop them attacking the body, and tumours press them",
+    "gap": "Immune checkpoints"
+   }
+  ],
+  "flag": "The drugs are monoclonal antibodies, so that card is the ingredient; its binding effect stays with it (rule 23). Immune checkpoints is the key effect (rule 25: a body process it works with), no card. Anti-rejection drugs work the opposite side of the same T-cell switching but by an enzyme; not merged."
+ },
+ "hepatitis-c-cure": {
+  "job": "treats illness",
+  "slots": [],
+  "phen": [
+   {
+    "effect": "a drug jams an enzyme so a body process slows",
+    "gap": "Enzyme inhibition"
+   }
+  ],
+  "flag": "Wording follows Statins and Antiretroviral HIV therapy (rule 12), though the enzyme is the virus's. The specific mechanism is chain termination (a fake building block stops the copy), shared with AZT and with Sanger DNA sequencing; a narrower 'Chain termination' card is possible but not proposed. The second drug in the pair has no card."
+ },
+ "short-video-feed-apps": {
+  "job": "shows the image",
+  "slots": [
+   {
+    "part": "phone",
+    "job": "shows the image",
+    "fill": "smartphone",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "clips",
+    "job": "communicates",
+    "fill": "streaming-video",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "feed program",
+    "job": "computes",
+    "fill": "deep-learning",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "Own job follows Streaming video. Social media isn't a slot (rule 5: borrowed idea). Predicting the next clip is done by the learning program (its calculus effect stays there, rule 23). Recording a clip is how the content is made (rule 4)."
+ },
+ "ai-image-generation": {
+  "job": "draws pictures",
+  "slots": [
+   {
+    "part": "neural network",
+    "job": "computes",
+    "fill": "deep-learning",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "graphics chips",
+    "job": "computes",
+    "fill": "graphics-processor-gpu",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "NEW JOB 'draws pictures' (see Computer-aided design); fallback 'makes marks'. Training on captioned images is how it's made (rule 4), like Large language models. Removing speckle step by step is the network's method, not a nameable effect; none. GPU listed rather than Cloud data centres: the free Stable Diffusion runs on a home graphics card."
+ },
+ "polar-fleece": {
+  "job": "insulates",
+  "slots": [
+   {
+    "part": "polyester",
+    "job": "is an ingredient",
+    "fill": null,
+    "gap": "PET plastic",
+    "note": "Since 1993 often spun from recycled drinks bottles (plastic-bottle)"
+   }
+  ],
+  "phen": [],
+  "flag": "Own job follows Fibreglass ('insulates'). Polyester is PET, the existing key-part gap on Plastic bottle (2 uses now); Plastic bottle could fill the slot as 'later' if recycled bottles count as what it's made from (rule 2). Trapped still air and absorbing little water are material properties (rule 28): none, as for Fibreglass. Knitting and brushing are production (rule 4)."
+ },
+ "semiconductor-laser": {
+  "job": "makes light",
+  "slots": [
+   {
+    "part": "crystal",
+    "job": "makes light",
+    "fill": "gallium",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [
+   {
+    "effect": "excited atoms copy the light passing through",
+    "card": "stimulated-emission"
+   }
+  ],
+  "flag": "Crystal filled by Gallium (gallium arsenide), as for Light-emitting diodes. Laser isn't a slot (rule 5: the ruby laser isn't inside). Electrons dropping into holes and giving off light (electroluminescence) has no card; it would be shared with LEDs and the parallel batch's OLED display, so possibly a 3+ gap. Polished end mirrors are faces of the crystal itself, not a Mirror part."
+ },
+ "anti-rejection-drugs": {
+  "job": "regulates the body",
+  "slots": [],
+  "phen": [
+   {
+    "effect": "the body attacks tissue that isn't its own",
+    "card": "tissue-transplantation"
+   },
+   {
+    "effect": "a drug jams an enzyme so a body process slows",
+    "gap": "Enzyme inhibition"
+   }
+  ],
+  "flag": "Own job 'regulates the body' (it damps the immune system); 'treats illness' would also do. Tissue transplantation is the body process it works with (rule 25), the stand-in Blood bank uses for rejection; wording could merge with Blood bank's 'the body attacks blood of the wrong type'. Calcineurin is a signalling enzyme, so Enzyme inhibition fits. The fungus is where it comes from (rule 4)."
+ },
+ "digital-synthesizer-and-midi": {
+  "job": "records media",
+  "slots": [
+   {
+    "part": "keyboard",
+    "job": "takes input",
+    "fill": "keys",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "computes",
+    "fill": "microchips",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [
+   {
+    "effect": "one wave wobbles the pitch of another, making rich tones",
+    "card": "frequency-modulation"
+   }
+  ],
+  "flag": "Own job uncertain: no music job on the list; 'records media' (it plays and records a band) is nearest, as for Compact disc and Portable music player. Frequency modulation is on the board as a radio technique, but its text describes the effect directly (rule 9); FM synthesis applies it to sound. The MIDI cable link is the card's own key part and has no card; it's what the card is, so not listed as a gap. Two inventions in one card (its own flag)."
+ },
+ "coronary-stent": {
+  "job": "treats illness",
+  "slots": [
+   {
+    "part": "mesh",
+    "job": "bears the load",
+    "fill": "stainless-steel",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "The balloon catheter that places it is production (rule 4, like the rocket that launches a satellite), so Balloon angioplasty isn't a slot. 'bears the load' (it props the artery open) is more specific than 'forms the body' (rule 1). Mesh metal: the first stents were self-expanding steel mesh; cobalt-chrome later has no card. No nameable effect; shape memory doesn't apply to these steel stents."
+ },
+ "proton-pump-inhibitors": {
+  "job": "treats illness",
+  "slots": [],
+  "phen": [
+   {
+    "effect": "a drug jams an enzyme so a body process slows",
+    "gap": "Enzyme inhibition"
+   }
+  ],
+  "flag": "The acid pump is an enzyme (an ATPase), so Enzyme inhibition fits. The acid-proof coating has no card. Turning active only in acid is specific but has no card and isn't shared."
+ },
+ "unicode-text-encoding": {
+  "job": "stores data",
+  "slots": [],
+  "phen": [
+   {
+    "effect": "each character becomes a number stored in binary",
+    "card": "binary-system"
+   }
+  ],
+  "flag": "No slots: it's a standard any computer can carry out; no specific device. Binary system is maths the job carries out (rule 22), as for Compact disc. Own job 'stores data'; 'writes' would also do."
+ },
+ "text-messaging-sms": {
+  "job": "communicates",
+  "slots": [
+   {
+    "part": "control channel",
+    "job": "communicates",
+    "fill": "digital-cellular-network-2g",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "message centre",
+    "job": "stores data",
+    "fill": "computer",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "A practice made of another practice (rule 3): it rides on the 2G network, which brings the phones. Computer (1930) is the same loose stand-in ATM and Email use for the message centre. No own-level effect."
+ },
+ "online-banking": {
+  "job": "makes payments",
+  "slots": [
+   {
+    "part": "bank's website",
+    "job": "communicates",
+    "fill": "world-wide-web",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "secure connection",
+    "job": "protects",
+    "fill": "public-key-encryption",
+    "gap": null,
+    "note": null,
+    "later": [
+     "secure-web-connection-ssl-tls"
+    ]
+   },
+   {
+    "part": "account records",
+    "job": "stores data",
+    "fill": "relational-database",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "Own job 'makes payments' (Credit card, Online shopping, ATM). Secure web connection (1995) is a year newer than the card, so Public-key encryption (as in Online shopping) fills it, with SSL/TLS as 'later' (rule 14). Relational database for the account records is a reasonable reading but not stated in the text; drop if too loose."
+ },
+ "cmos-camera-chip": {
+  "job": "records media",
+  "slots": [
+   {
+    "part": "amplifier in each pixel",
+    "job": "amplifies a signal",
+    "fill": "transistor",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "read-out circuits",
+    "job": "computes",
+    "fill": "integrated-circuits",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [
+   {
+    "effect": "photoelectric effect",
+    "card": "photoelectric-effect"
+   }
+  ],
+  "flag": "Own job and effect follow the CCD card. CCD isn't a slot (rule 5: the older chip isn't inside)."
+ },
+ "mobile-broadband-3g-data": {
+  "job": "communicates",
+  "slots": [
+   {
+    "part": "phones",
+    "job": "communicates",
+    "fill": "mobile-phone",
+    "gap": null,
+    "note": null,
+    "later": [
+     "smartphone"
+    ]
+   },
+   {
+    "part": "code division",
+    "job": "communicates",
+    "fill": null,
+    "gap": "Multiplexing",
+    "note": null
+   },
+   {
+    "part": "data packets",
+    "job": "communicates",
+    "fill": "internet",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "Multiplexing: the shared gap with 2G (codes here, time slots there); key technique. Internet carries the packets; its own packet switching stays with it. 2G network isn't a slot (rule 5: 3G replaced its radio side, not built on it). Picking out each phone by its code is maths the chips do, but no card states it."
+ },
+ "podcasting": {
+  "job": "communicates",
+  "slots": [
+   {
+    "part": "sound files",
+    "job": "records media",
+    "fill": "compressed-media",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "web feed",
+    "job": "communicates",
+    "fill": "world-wide-web",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "player",
+    "job": "records media",
+    "fill": "portable-music-player",
+    "gap": null,
+    "note": null,
+    "later": [
+     "smartphone"
+    ]
+   }
+  ],
+  "phen": [],
+  "flag": "Own job 'communicates' (a broadcast-like service); 'records media' would also do. Recording the episode is how it's made (rule 4), so no microphone. No own-level effect."
+ },
+ "hpv-vaccine": {
+  "job": "prevents disease",
+  "slots": [],
+  "phen": [
+   {
+    "effect": "the body learns to fight a germ",
+    "card": "vaccination"
+   }
+  ],
+  "flag": "Follows Hepatitis B vaccine: the shell protein has no card, and yeast making it is production (rule 4). Shells assembling themselves is how the ingredient forms, not how the vaccine works. A 'Virus-like particles' ingredient gap would cover both (2 uses), not yet 3."
+ },
+ "ready-to-use-therapeutic-food": {
+  "job": "supplies a nutrient",
+  "slots": [
+   {
+    "part": "vitamins and minerals",
+    "job": "supplies a nutrient",
+    "fill": "vitamin-pills",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [
+   {
+    "effect": "germs can't grow where there is almost no water",
+    "gap": "Microbes need water"
+   }
+  ],
+  "flag": "Vitamin pills & food fortification fills the vitamin-and-mineral premix (it's fortified food). Peanuts, milk powder, sugar and oil have no cards; peanut paste is arguably its key ingredient but left off. 'Microbes need water' is the key effect (why it keeps without a fridge), no card; dried and salted foods would share it but none is on the board. The body needing trace nutrients stays with the vitamin cards."
+ },
+ "cyberweapons": {
+  "job": "explodes",
+  "slots": [],
+  "phen": [],
+  "flag": "Own job uncertain: 'explodes' is the board's weapon job (V-2, missiles, bombs); a broader 'attacks' job could serve Cyberweapons, Cruise missile, ICBM, Precision-guided bombs and the parallel batch's FPV attack drone. No slots: memory sticks are how it's delivered (rule 4, like a launcher), the centrifuge controllers are what it's used on (rule 8), and the unknown software flaws have no card. No effect at its own level: the breaking spin is the centrifuge's physics (centrifugal force or resonance), not the worm's."
+ },
+ "prenatal-dna-blood-test": {
+  "job": "diagnoses",
+  "slots": [
+   {
+    "part": null,
+    "job": "reads DNA",
+    "fill": "dna-sequencing",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [
+   {
+    "effect": "fragments of the baby's DNA float in the mother's blood",
+    "gap": "Fetal DNA in maternal blood"
+   }
+  ],
+  "flag": "DNA sequencing is Sanger's method; the test uses later massively parallel sequencing (same job). Fetal DNA in the mother's blood is the key effect, no card. Spotting the surplus is a statistical count, so Probability (gap from Randomized controlled trial, Machine translation) could be a 3rd use; left off as too loose."
+ },
+ "sglt2-inhibitors": {
+  "job": "treats illness",
+  "slots": [],
+  "phen": [
+   {
+    "effect": "the kidneys pull sugar back into the blood through pumps in their tubes",
+    "gap": "Sodium-glucose co-transport"
+   }
+  ],
+  "flag": "Sodium-glucose co-transport is the gap Oral rehydration therapy uses (the gut's version of the same pump family, SGLT1); 2 uses now. Rule 25: the body process it works with. Blocking a transporter isn't Enzyme inhibition (no enzyme), so not linked."
+ },
+ "end-to-end-encrypted-messaging": {
+  "job": "protects",
+  "slots": [
+   {
+    "part": null,
+    "job": "protects",
+    "fill": "public-key-encryption",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": "phones",
+    "job": "communicates",
+    "fill": "smartphone",
+    "gap": null,
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "communicates",
+    "fill": "internet",
+    "gap": null,
+    "note": null
+   }
+  ],
+  "phen": [],
+  "flag": "Own job 'protects' (its point is privacy, like Public-key encryption); 'communicates' would also fit. Prime factorization stays on Public-key encryption (rule 23); Signal's elliptic-curve key agreement has no card. Changing keys with every message is a technique, not an effect."
+ },
+ "viral-vector-vaccines": {
+  "job": "prevents disease",
+  "slots": [],
+  "phen": [
+   {
+    "effect": "a cell follows genes put into it",
+    "card": "virus-transduction"
+   },
+   {
+    "effect": "the body learns to fight a germ",
+    "card": "vaccination"
+   }
+  ],
+  "flag": "Effects match mRNA vaccines. Virus transduction fits literally here (a virus carries a gene into the cell). The carrier virus and the target gene have no cards; left off rather than naming unshared gaps."
+ }
+}

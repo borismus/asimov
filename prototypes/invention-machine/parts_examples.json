@@ -1,0 +1,160 @@
+{
+ "microwave-oven": {
+  "job": "prepares food",
+  "slots": [
+   {
+    "part": null,
+    "job": "amplifies a signal",
+    "fill": "magnetrons",
+    "gap": null,
+    "kind": "inside",
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "changes voltage",
+    "fill": "transformer",
+    "gap": null,
+    "kind": "inside",
+    "note": null
+   }
+  ],
+  "phen": [
+   {
+    "effect": "water molecules soak up microwaves and heat up",
+    "id": "dielectric-heating"
+   }
+  ]
+ },
+ "gps": {
+  "job": "finds direction",
+  "slots": [
+   {
+    "part": null,
+    "job": "communicates",
+    "fill": "communications-satellites",
+    "gap": null,
+    "kind": "inside",
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "keeps time",
+    "fill": "atomic-clock",
+    "gap": null,
+    "kind": "inside",
+    "note": null
+   },
+   {
+    "part": "signal",
+    "job": "communicates",
+    "fill": "radio",
+    "gap": null,
+    "kind": "inside",
+    "note": null
+   },
+   {
+    "part": "receiver",
+    "job": "computes",
+    "fill": "microchips",
+    "gap": null,
+    "kind": "inside",
+    "note": null
+   }
+  ],
+  "phen": [
+   {
+    "effect": "gravity slows clocks",
+    "id": "gravitational-red-shift"
+   },
+   {
+    "effect": "motion slows clocks",
+    "id": "special-relativity"
+   },
+   {
+    "effect": "signal delay gives distance",
+    "id": "speed-of-light"
+   },
+   {
+    "effect": "trilateration",
+    "id": "geometry"
+   }
+  ]
+ },
+ "jarvik-hearts": {
+  "job": "pumps blood",
+  "slots": [
+   {
+    "part": null,
+    "job": "controls flow",
+    "fill": "valve",
+    "gap": null,
+    "kind": "inside",
+    "note": null
+   }
+  ],
+  "phen": [
+   {
+    "effect": "compressed gas pushes back",
+    "id": "boyles-law"
+   },
+   {
+    "effect": "the heart pumps blood around the body",
+    "id": "blood-circulation"
+   }
+  ]
+ },
+ "four-stroke-engine": {
+  "job": "provides power",
+  "slots": [
+   {
+    "part": "power stroke",
+    "job": "pushes",
+    "fill": "piston-and-cylinder",
+    "gap": null,
+    "kind": "inside",
+    "note": null
+   },
+   {
+    "part": "intake and exhaust",
+    "job": "controls flow",
+    "fill": "valve",
+    "gap": null,
+    "kind": "inside",
+    "note": null
+   },
+   {
+    "part": null,
+    "job": "stores chemical energy",
+    "fill": "gasoline",
+    "gap": null,
+    "kind": "inside",
+    "note": null
+   }
+  ]
+ },
+ "dentistry": {
+  "job": "treats illness",
+  "slots": [
+   {
+    "part": "fillings",
+    "job": "forms the body",
+    "fill": "lead",
+    "gap": null,
+    "kind": "inside",
+    "note": null,
+    "later": [
+     "silver-fillings"
+    ]
+   },
+   {
+    "part": null,
+    "job": "numbs pain",
+    "fill": "anesthesia",
+    "gap": null,
+    "kind": "inside",
+    "note": null
+   }
+  ]
+ }
+}

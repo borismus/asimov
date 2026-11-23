@@ -1,0 +1,1387 @@
+[
+ {
+  "id": "graphene-tritium-filter",
+  "name": "Graphene tritium filter",
+  "subtitle": "a membrane that strips radioactive tritium from water",
+  "job": "cleans polluted water",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "graphene lets protons through but stops every atom and molecule",
+    "card": "graphene-proton-sieve",
+    "recent": true
+   },
+   {
+    "effect": "a current splits water into hydrogen and oxygen",
+    "card": "decomposition-of-water",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "fuel-cell"
+  ],
+  "how": "Fukushima alone stores over a million tonnes of water laced with tritium, a radioactive form of hydrogen that no filter can catch because chemically it is just hydrogen. A current splits the water and drives the hydrogen nuclei through a sheet of graphene; ordinary hydrogen nuclei squeeze through about ten times faster than the heavier ones, so clean hydrogen leaves and the tritium stays behind, concentrated into a small volume that can be stored safely.",
+  "obstacle": "Making square metres of flawless graphene, since one pinhole lets tritium leak through, and running it fast enough for millions of tonnes of water.",
+  "searchQuery": "graphene membrane tritium separation water pilot plant",
+  "plausibility": 3,
+  "why": "Graphene isotope sieving shown in micron-sized lab devices; no tritium cleanup device exists."
+ },
+ {
+  "id": "sunbreath",
+  "name": "Sunbreath",
+  "subtitle": "an oxygen maker for clinics, run by sunlight",
+  "job": "supplies oxygen",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "sponge-like crystals with a huge inner surface trap one chosen gas",
+    "card": "metal-organic-frameworks",
+    "recent": true
+   },
+   {
+    "effect": "a curved mirror focuses light",
+    "card": "optics",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "mirror",
+   "valve"
+  ],
+  "how": "Pneumonia kills hundreds of thousands of children a year, many in clinics with no steady electricity to run an oxygen machine. Sponge-like crystals that grab oxygen but let nitrogen pass soak it up from cool air in the shade; a curved mirror then warms them in the sun and they breathe out nearly pure oxygen into a storage bag, with two beds taking turns so the bag also covers the night.",
+  "obstacle": "The crystals that pick out oxygen this well break down in humid air within months.",
+  "searchQuery": "solar heated MOF oxygen concentrator without electricity",
+  "plausibility": 3,
+  "why": "Oxygen-binding crystals exist; no electricity-free, sun-driven oxygen concentrator does."
+ },
+ {
+  "id": "hydrogen-sponge-hull",
+  "name": "Hydrogen-sponge spacecraft hull",
+  "subtitle": "a spacecraft wall that is shield and fuel",
+  "job": "shields from radiation",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "sponge-like crystals with a huge inner surface trap one chosen gas",
+    "card": "metal-organic-frameworks",
+    "recent": true
+   },
+   {
+    "effect": "radiation ionizes what it passes through",
+    "card": "ionizing-radiation",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "dewar-flask",
+   "valve",
+   "liquid-fuel-rockets"
+  ],
+  "how": "On the way to Mars, cosmic rays give a crew a serious cancer risk, and the best shield per kilogram is hydrogen, whose light nuclei stop fast particles without shattering into showers of secondary radiation. The hull walls are packed with crystal sponges that hold hydrogen gas densely, wrapping the crew in a shield for the long cruise; near arrival the same hydrogen is drawn off as landing fuel, once the worst of the trip is over.",
+  "obstacle": "The sponges hold enough hydrogen only near minus 200 °C, so the walls still need constant, heavy cooling.",
+  "searchQuery": "metal-organic framework hydrogen storage spacecraft radiation shielding wall",
+  "plausibility": 2,
+  "why": "Water walls proposed as dual-use shields; nobody has built a hydrogen-sponge hull."
+ },
+ {
+  "id": "gravity-earthquake-alarm",
+  "name": "Gravity earthquake alarm",
+  "subtitle": "warns of big quakes before the shaking arrives",
+  "job": "measures",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "atoms cooled almost to absolute zero behave as a single wave",
+    "card": "bose-einstein-condensate",
+    "recent": true
+   },
+   {
+    "effect": "two masses pull on each other measurably",
+    "card": "mass-of-the-earth",
+    "recent": false
+   },
+   {
+    "effect": "strain builds on a fault until it suddenly slips",
+    "card": "earthquakes-and-faults",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "laser",
+   "air-pump",
+   "seismograph"
+  ],
+  "how": "Earthquake warnings today wait for the first seismic waves, which leaves people near the fault almost no time. When a big fault slips, a vast mass of rock moves and its pull changes everywhere at the speed of light; a cloud of atoms chilled until they act as one wave is split and rejoined, and the tiny change in gravity shows up in how the two halves line up, seconds before the ground starts moving.",
+  "obstacle": "The gravity jolt is under a billionth of normal gravity and is drowned by the ground's own trembling, so sensors need about a thousand times more sensitivity.",
+  "searchQuery": "prompt elastogravity signal earthquake early warning atom interferometer",
+  "plausibility": 2,
+  "why": "Light-speed gravity signals were spotted in old records in 2017; nothing yet warns with them."
+ },
+ {
+  "id": "seizure-cooling-implant",
+  "name": "Seizure-cooling brain implant",
+  "subtitle": "a thin film that chills seizures early",
+  "job": "treats illness",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "an electric field makes certain thin films heat up or cool down",
+    "card": "electrocaloric-effect",
+    "recent": true
+   },
+   {
+    "effect": "nerve signals are electrical",
+    "card": "electric-nerve-fibers",
+    "recent": false
+   },
+   {
+    "effect": "a device whose resistance remembers how much current passed through it",
+    "card": "memristor",
+    "recent": true
+   }
+  ],
+  "parts": [
+   "pacemaker",
+   "electroencephalography"
+  ],
+  "how": "A third of people with epilepsy get no relief from drugs, and cooling a patch of brain by a few degrees is known to stop a seizure from spreading. Electrodes on the brain's surface pick up the electrical storm starting, a memristor chip that has learned this patient's warning pattern flags it using almost no power, and a voltage across a paper-thin film makes the film go cold over the trouble spot until the storm passes.",
+  "obstacle": "The heat the film pulls out has to be dumped somewhere without warming the brain next to it.",
+  "searchQuery": "electrocaloric film implant focal brain cooling epilepsy",
+  "plausibility": 2,
+  "why": "Cooling stops seizures in animal studies; electrocaloric films have never been put in a body."
+ },
+ {
+  "id": "photon-broom",
+  "name": "Photon Broom",
+  "subtitle": "a ground laser that nudges space junk aside",
+  "job": "protects",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "a laser makes sodium atoms high in the sky glow as an artificial star for correcting blur",
+    "card": "adaptive-optics-sodium",
+    "recent": true
+   },
+   {
+    "effect": "light pushes on what it hits",
+    "card": "light-pressure",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "laser",
+   "telescope",
+   "mirror"
+  ],
+  "how": "A chain reaction of collisions could make low orbit unusable, and most debris is too small and numerous to catch. A powerful ground laser fired through a telescope pushes on a piece of junk with the pressure of light, slowing it a little on each pass so it misses a satellite or falls sooner; a laser guide star lets a flexing mirror cancel the air's blur so the beam stays tight hundreds of kilometres up.",
+  "obstacle": "Light's push is so feeble that each dodge takes hours of tracking over many nights, and the beam must never dazzle aircraft or other satellites.",
+  "searchQuery": "ground laser photon pressure space debris collision avoidance demonstration",
+  "plausibility": 3,
+  "why": "Proposed by NASA in 2011; ground stations track debris by laser but have never nudged any."
+ },
+ {
+  "id": "topological-chip-wiring",
+  "name": "Cool-running chip wiring",
+  "subtitle": "chip wires that carry current without heating up",
+  "job": "carries current",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "some crystals conduct only along their surface, where nothing scatters the current",
+    "card": "topological-insulators",
+    "recent": true
+   },
+   {
+    "effect": "resistance",
+    "card": "ohms-law",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "microchips"
+  ],
+  "how": "Data centres use a growing share of the world's electricity, and much of a chip's heat comes from forcing current through tiny copper wires where electrons keep bouncing off flaws. Wires made of a crystal that conducts only along its surface send electrons down lanes where they cannot bounce backwards, so the wiring runs cool even as it shrinks.",
+  "obstacle": "Truly loss-free surface currents have only been seen near absolute zero; at room temperature the gain over copper is still unproven.",
+  "searchQuery": "topological insulator interconnect chip wiring lower resistance than copper",
+  "plausibility": 2,
+  "why": "Topological wires are studied for chips; none replaces copper anywhere."
+ },
+ {
+  "id": "electron-fluid-terahertz-chip",
+  "name": "Electron-fluid terahertz chip",
+  "subtitle": "a fingernail-sized source of terahertz waves",
+  "job": "radiates waves",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "in very clean materials electrons flow like a viscous liquid",
+    "card": "electron-hydrodynamics",
+    "recent": true
+   },
+   {
+    "effect": "a one-atom sheet of carbon carries electrons extremely fast and blocks every gas",
+    "card": "graphene",
+    "recent": true
+   }
+  ],
+  "parts": [
+   "transistor",
+   "radio-antennas"
+  ],
+  "how": "Terahertz waves see through clothing, packaging and the top layers of skin, and could carry far faster wireless data, but making them takes bulky lasers or deep cold. In ultra-clean graphene the electrons flow like a thick liquid, and pushing them fast through a narrow channel makes that liquid ripple like a flag in the wind; the ripples throw off terahertz waves from a chip the size of a fingernail.",
+  "obstacle": "The ripple instability has been predicted for decades but has never been shown to give useful power.",
+  "searchQuery": "graphene hydrodynamic electrons Dyakonov-Shur instability terahertz emission",
+  "plausibility": 2,
+  "why": "Graphene terahertz detectors exist; an electron-fluid emitter has never worked."
+ },
+ {
+  "id": "twisted-graphene-logic",
+  "name": "Gate-switched superconducting logic",
+  "subtitle": "computer switches that turn superconductivity on and off",
+  "job": "controls the current",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "two graphene sheets twisted by 1.1 degrees become a superconductor",
+    "card": "magic-angle-graphene",
+    "recent": true
+   },
+   {
+    "effect": "very cold metals lose all electrical resistance",
+    "card": "superconductivity",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "transistor",
+   "dewar-flask"
+  ],
+  "how": "Computing burns ever more electricity, and every ordinary transistor wastes some as heat each time it switches. In two graphene sheets twisted by just over one degree, a small voltage on a nearby plate turns superconductivity on and off, so each switch either carries current with zero loss or blocks it, making logic that wastes almost nothing.",
+  "obstacle": "It works only within about two degrees of absolute zero, and twisting sheets to exactly the right angle cannot yet be done by the million.",
+  "searchQuery": "magic angle twisted bilayer graphene gate-tunable superconducting transistor logic",
+  "plausibility": 2,
+  "why": "Gate-switched twisted-graphene superconductivity shown in single devices; no circuit built from them."
+ },
+ {
+  "id": "skyrmion-racetrack-drive",
+  "name": "Skyrmion racetrack drive",
+  "subtitle": "an archive drive with no moving parts",
+  "job": "stores data",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "tiny stable magnetic whirls can be pushed along a wire with very little current",
+    "card": "magnetic-skyrmions",
+    "recent": true
+   },
+   {
+    "effect": "a current of spin-aligned electrons can flip a tiny magnet",
+    "card": "spin-torque",
+    "recent": true
+   }
+  ],
+  "parts": [
+   "integrated-circuits"
+  ],
+  "how": "Data centres keep most of the world's data on spinning hard disks, which wear out and use power just to keep turning. Here each bit is a tiny magnetic whirl lined up along a nanowire, and pulses of spin-aligned current slide the whole row past a reading head like beads on a string, packing disk-like capacity into a chip with no motor.",
+  "obstacle": "Skyrmions drift sideways and snag on tiny flaws as they move, so the rows lose their spacing.",
+  "searchQuery": "skyrmion racetrack memory working prototype room temperature",
+  "plausibility": 2,
+  "why": "Racetrack memory proposed in 2008; no working skyrmion drive exists."
+ },
+ {
+  "id": "quantum-catalyst-designer",
+  "name": "Catalyst-design quantum computer",
+  "subtitle": "a quantum computer that finds cheap fertilizer catalysts",
+  "job": "computes",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "qubits in superposition can solve some problems, like factoring, exponentially faster",
+    "card": "quantum-algorithms",
+    "recent": true
+   },
+   {
+    "effect": "catalysis",
+    "card": "catalysis",
+    "recent": false
+   },
+   {
+    "effect": "plants need nitrogen from the soil",
+    "card": "nitrogen-fixation",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "computer",
+   "dewar-flask"
+  ],
+  "how": "Making fertilizer eats one to two percent of the world's energy because the Haber process needs fierce heat and pressure, while soil bacteria do it at room temperature with an enzyme too complex for any ordinary computer to simulate. A quantum computer, whose qubits explore many arrangements of electrons at once, works out exactly how the enzyme's metal core breaks nitrogen apart, then screens man-made look-alikes for one that works in a farm-sized reactor.",
+  "obstacle": "It needs around a million error-corrected qubits; today's machines have a few hundred noisy ones.",
+  "searchQuery": "quantum computer FeMoco nitrogenase simulation catalyst discovery achieved",
+  "plausibility": 2,
+  "why": "Simulating the nitrogen-fixing enzyme is a famous target; no quantum computer has done it."
+ },
+ {
+  "id": "lightwave-processor",
+  "name": "Light-wave processor",
+  "subtitle": "electronics switched by the wave of light itself",
+  "job": "controls the current",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "lasers can make flashes short enough to freeze electrons moving in atoms",
+    "card": "attosecond-pulses",
+    "recent": true
+   },
+   {
+    "effect": "quantum tunnelling",
+    "card": "particles-as-waves",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "laser",
+   "transistor"
+  ],
+  "how": "Chips stopped getting faster around 2005 because transistors cannot switch more than a few billion times a second without overheating. Here the electric field of a laser pulse, shaped to within attoseconds, pulls electrons across a tiny gap and pushes them back within a single wave of light, so a switch could flip about a million times faster than today's.",
+  "obstacle": "Single light-wave switches work in the lab, but wiring billions together and reading them out at that speed is unsolved.",
+  "searchQuery": "petahertz lightwave electronics logic gate attosecond working circuit",
+  "plausibility": 2,
+  "why": "A single light-field logic gate was shown in 2022; no processor exists."
+ },
+ {
+  "id": "atom-wave-gravitational-observatory",
+  "name": "Atom-wave gravitational wave detector",
+  "subtitle": "an observatory that warns of colliding stars early",
+  "job": "measures",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "atoms cooled almost to absolute zero behave as a single wave",
+    "card": "bose-einstein-condensate",
+    "recent": true
+   },
+   {
+    "effect": "light waves interfere",
+    "card": "light-waves",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "laser",
+   "interferometer",
+   "air-pump"
+  ],
+  "how": "Today's gravitational-wave detectors catch colliding neutron stars only in their last seconds, too late to point telescopes at the blast. Two clouds of ultracold atoms far apart, each acting as a single wave, are kicked by the same laser beams; a passing ripple in space stretches the gap between them, which shows up in the atoms' waves and catches the slower, earlier stage of a merger weeks ahead.",
+  "obstacle": "It needs a kilometre-tall vacuum shaft or a pair of satellites, and atom sources far brighter than today's.",
+  "searchQuery": "atom interferometer gravitational wave detector mid-band operational",
+  "plausibility": 2,
+  "why": "MAGIS and AION are being built; no atom detector has heard a wave."
+ },
+ {
+  "id": "spoof-proof-time-signal",
+  "name": "Spoof-proof satellite time signal",
+  "subtitle": "clock signals from space that cannot be faked",
+  "job": "secures communications",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "measuring one entangled particle instantly fixes its partner's state, and any snooping shows",
+    "card": "quantum-entanglement",
+    "recent": true
+   },
+   {
+    "effect": "signal delay gives distance",
+    "card": "speed-of-light",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "communications-satellites",
+   "atomic-clock",
+   "laser"
+  ],
+  "how": "Power grids, phone networks and stock exchanges all set their clocks by GPS, whose signals can be faked with a cheap transmitter. A satellite sends one photon of each entangled pair to each of two ground stations, and comparing when partner photons arrived lets the stations set their clocks to each other; forged or delayed photons break the pairs' tell-tale link, so tampering shows at once.",
+  "obstacle": "Entangled photons arrive only a few at a time, and daylight and clouds swamp them.",
+  "searchQuery": "satellite entanglement secure clock synchronization anti-spoofing demonstration",
+  "plausibility": 3,
+  "why": "Quantum-secured time transfer shown over short fibres; no satellite time service exists."
+ },
+ {
+  "id": "quantum-linked-telescopes",
+  "name": "Quantum-linked telescope array",
+  "subtitle": "telescopes joined into one giant eye by entanglement",
+  "job": "gathers light",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "measuring one entangled particle instantly fixes its partner's state, and any snooping shows",
+    "card": "quantum-entanglement",
+    "recent": true
+   },
+   {
+    "effect": "light waves interfere",
+    "card": "light-waves",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "telescope",
+   "fiber-optics"
+  ],
+  "how": "Combining the light of telescopes kilometres apart would be sharp enough to see the surfaces of nearby stars and planets, but faint starlight is lost if piped over long distances. Each telescope instead meets the incoming starlight with one half of an entangled pair shared ahead of time, so the stations combine their light as if joined by a perfect fibre, acting as one telescope kilometres wide.",
+  "obstacle": "It needs entangled photons as fast as starlight arrives and quantum memories that do not exist yet.",
+  "searchQuery": "entanglement assisted optical interferometry long baseline telescopes demonstration",
+  "plausibility": 2,
+  "why": "Proposed in 2012; only table-top tests so far."
+ },
+ {
+  "id": "skull-window",
+  "name": "Skull Window",
+  "subtitle": "a helmet microscope that sees neurons through bone",
+  "job": "reads the brain",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "a laser makes sodium atoms high in the sky glow as an artificial star for correcting blur",
+    "card": "adaptive-optics-sodium",
+    "recent": true
+   },
+   {
+    "effect": "light waves interfere",
+    "card": "light-waves",
+    "recent": false
+   },
+   {
+    "effect": "sound is a vibration",
+    "card": "acoustics",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "laser",
+   "camera",
+   "microscope"
+  ],
+  "how": "The only ways to watch single brain cells today need a hole in the skull, so precise brain-computer interfaces mean surgery. A focused spot of ultrasound inside the head marks the light passing through it, acting like the artificial star astronomers use to correct the sky's blur; a camera works out how bone and tissue scrambled that light, and a shaped laser beam undoes the scramble to bring light to a sharp focus on neurons beneath the skull.",
+  "obstacle": "Flowing blood re-scrambles the light within milliseconds, faster than today's corrections can keep up.",
+  "searchQuery": "ultrasound guide star wavefront shaping through skull neuron imaging",
+  "plausibility": 2,
+  "why": "Guide-star focusing works through thin tissue; nothing images neurons through an adult skull."
+ },
+ {
+  "id": "fibril-fold-dementia-test",
+  "name": "Fibril-fold dementia test",
+  "subtitle": "names a dementia by its proteins' shape",
+  "job": "diagnoses",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "flash-frozen molecules can be imaged atom by atom with electrons",
+    "card": "cryo-em",
+    "recent": true
+   },
+   {
+    "effect": "crystals build themselves from identical repeating units",
+    "card": "crystallography",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "electron-microscope",
+   "dewar-flask"
+  ],
+  "how": "Alzheimer's, Parkinson's and other dementias look alike early on yet need different drugs, and they are often told apart for certain only after death. A drop of spinal fluid is mixed with fresh protein so any misfolded seeds copy their exact fold onto it, growing fibres the way a crystal copies itself; the fibres are flash-frozen and imaged atom by atom, and each disease's fibres have their own tell-tale cross-section.",
+  "obstacle": "Fibres grown in a test tube often take a different fold from the ones in the brain, which would give wrong answers.",
+  "searchQuery": "cryo-EM seeded amplification fibril structure living patient diagnosis",
+  "plausibility": 2,
+  "why": "Cryo-EM proved each dementia has its own fold, but only in brains after death."
+ },
+ {
+  "id": "air-jacket-hull",
+  "name": "Air-jacket ship hull",
+  "subtitle": "a hull coating that holds an air skin",
+  "job": "transports",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "microscopic bumps make water bead up and roll off, carrying dirt away",
+    "card": "lotus-effect",
+    "recent": true
+   },
+   {
+    "effect": "drag",
+    "card": "aerodynamics",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "steel",
+   "teflon"
+  ],
+  "how": "Shipping burns about three percent of the world's fuel, much of it fighting water's friction along the hull. A coating of microscopic hairs with water-repelling tips, like those of a floating fern, holds a thin film of air against the hull, so the ship slides along on air instead of dragging water.",
+  "obstacle": "Waves, deep-water pressure and barnacles collapse the air layer within days in real seas.",
+  "searchQuery": "Salvinia effect permanent air layer ship hull coating sea trial",
+  "plausibility": 2,
+  "why": "Air layers hold for weeks in test tanks; no ship sails on one."
+ },
+ {
+  "id": "ice-shedding-wing",
+  "name": "Ice-shedding wing skin",
+  "subtitle": "a wing skin that sheds ice without heaters",
+  "job": "flies",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "microscopic bumps make water bead up and roll off, carrying dirt away",
+    "card": "lotus-effect",
+    "recent": true
+   },
+   {
+    "effect": "capsules in a plastic burst when it cracks and glue the crack shut",
+    "card": "self-healing-polymers",
+    "recent": true
+   }
+  ],
+  "parts": [
+   "aluminum-process",
+   "teflon"
+  ],
+  "how": "Ice on wings and rotor blades still brings down aircraft, and today's fixes are heaters or chemical sprays that cost fuel and time. A skin covered in microscopic bumps makes supercooled droplets bounce off before they can freeze, and capsules under the surface burst to refill scratches so the texture survives rain and grit.",
+  "obstacle": "Water-repelling textures wear away within hours under rain at flight speeds, faster than any self-repair so far.",
+  "searchQuery": "superhydrophobic self-healing anti-icing coating aircraft certified flight",
+  "plausibility": 2,
+  "why": "Anti-icing textures pass wind-tunnel tests; none is certified on an aircraft."
+ },
+ {
+  "id": "self-healing-heart-valve",
+  "name": "Self-healing heart valve",
+  "subtitle": "a plastic heart valve that mends its cracks",
+  "job": "repairs itself",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "capsules in a plastic burst when it cracks and glue the crack shut",
+    "card": "self-healing-polymers",
+    "recent": true
+   },
+   {
+    "effect": "flap valves let blood flow only one way",
+    "card": "vein-valves",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "isotactic-polymers"
+  ],
+  "how": "Tissue heart valves wear out in 10 to 15 years, so younger patients face repeat open-heart surgery, while mechanical valves need lifelong blood thinners. These plastic leaflets flap open and shut 40 million times a year like the flaps in our veins; when a fatigue crack starts, it breaks tiny capsules that release a glue and seal it before it grows.",
+  "obstacle": "Every capsule glue known so far is toxic or makes blood clot, so a blood-safe healing chemistry is still needed.",
+  "searchQuery": "self-healing polymer heart valve leaflet microcapsule fatigue",
+  "plausibility": 2,
+  "why": "Plastic heart valves are in trials; none heals itself."
+ },
+ {
+  "id": "self-sealing-implant-coating",
+  "name": "Self-sealing brain implant coating",
+  "subtitle": "insulation that reseals so brain implants last decades",
+  "job": "repairs itself",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "capsules in a plastic burst when it cracks and glue the crack shut",
+    "card": "self-healing-polymers",
+    "recent": true
+   },
+   {
+    "effect": "nerve signals are electrical",
+    "card": "electric-nerve-fibers",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "insulated-wire",
+   "integrated-circuits"
+  ],
+  "how": "Brain implants that let paralysed people type or move a robot arm usually fail within a few years, as body fluid seeps through hairline cracks in the insulation and corrodes the wires. A coating seeded with tiny capsules bursts when it cracks and fills the gap with fresh insulation, so the implant could keep listening to neurons for decades.",
+  "obstacle": "The healing agent has to be safe in the brain, and the capsules small enough not to thicken hair-thin electrodes.",
+  "searchQuery": "self-healing encapsulation neural implant microcapsule longevity",
+  "plausibility": 3,
+  "why": "Implant lifetime is the field's biggest problem; no self-healing coating has been implanted."
+ },
+ {
+  "id": "nanotube-healing-bridge-deck",
+  "name": "Nanotube-mesh self-healing bridge deck",
+  "subtitle": "a bridge deck that finds and heals cracks",
+  "job": "repairs itself",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "rolled-up carbon sheets are stronger than steel and conduct like metal",
+    "card": "carbon-nanotubes",
+    "recent": true
+   },
+   {
+    "effect": "resistance",
+    "card": "ohms-law",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "reinforced-concrete"
+  ],
+  "how": "Many of the world's bridges are decades old, and cracks let in water and salt that rust the steel inside long before an inspector notices. A mesh of carbon nanotubes runs through a plastic layer in the deck; a new crack breaks some paths and raises the electrical resistance there, revealing where it is, and a current through the same mesh then warms that spot until the plastic melts and flows shut.",
+  "obstacle": "Heating a bridge deck takes a lot of power, and the mesh must survive decades of salt and traffic.",
+  "searchQuery": "carbon nanotube self-sensing self-healing bridge deck joule heating",
+  "plausibility": 3,
+  "why": "Nanotube crack sensing and heat healing exist separately in labs; never combined in a structure."
+ },
+ {
+  "id": "nanotube-flywheel",
+  "name": "Nanotube flywheel",
+  "subtitle": "a spinning grid battery that never wears out",
+  "job": "stores energy",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "rolled-up carbon sheets are stronger than steel and conduct like metal",
+    "card": "carbon-nanotubes",
+    "recent": true
+   },
+   {
+    "effect": "induction",
+    "card": "electromagnetic-induction",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "electric-motors",
+   "air-pump",
+   "ball-bearing"
+  ],
+  "how": "Wind and solar need storage that lasts decades, and chemical batteries fade after a few thousand cycles. A rotor wound from nanotube fibre, many times stronger than steel for its weight, spins at enormous speed in a vacuum and holds as much energy per kilogram as a lithium battery; a motor spins it up to charge and works as a generator to give the power back, for millions of cycles.",
+  "obstacle": "Long nanotube fibres are still about ten times weaker than single nanotubes, which wipes out most of the gain.",
+  "searchQuery": "carbon nanotube fiber flywheel rotor energy storage prototype",
+  "plausibility": 2,
+  "why": "Carbon-fibre flywheels exist; nanotube rotors remain on paper."
+ },
+ {
+  "id": "nanotube-power-line",
+  "name": "Nanotube overhead power line",
+  "subtitle": "a lighter power line that carries more current",
+  "job": "carries current",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "rolled-up carbon sheets are stronger than steel and conduct like metal",
+    "card": "carbon-nanotubes",
+    "recent": true
+   }
+  ],
+  "parts": [
+   "insulated-wire"
+  ],
+  "how": "Clean power is stuck waiting for new transmission lines, and existing lines sag and overheat when pushed harder. A cable spun from carbon nanotubes conducts like metal at a fraction of copper's weight and is stronger than steel, so old towers could carry several times more current without sagging.",
+  "obstacle": "Nanotube yarn still conducts only about a fifth as well as copper, and costs far more to make.",
+  "searchQuery": "carbon nanotube overhead transmission line conductor field trial",
+  "plausibility": 2,
+  "why": "Nanotube wires appear in aerospace cabling; no power line uses them."
+ },
+ {
+  "id": "nanotube-skyhook",
+  "name": "Nanotube skyhook",
+  "subtitle": "a spinning tether that slings payloads into orbit",
+  "job": "transports",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "rolled-up carbon sheets are stronger than steel and conduct like metal",
+    "card": "carbon-nanotubes",
+    "recent": true
+   },
+   {
+    "effect": "momentum carries into the strike",
+    "card": "conservation-momentum",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "liquid-fuel-rockets"
+  ],
+  "how": "Rockets spend most of their fuel just reaching orbital speed, which is why getting to space is costly. A tether hundreds of kilometres long spins in orbit like a wheel rolling over the Earth; its lower tip dips down almost to a standstill beside a small, cheap suborbital rocket, grabs the payload and slings it into orbit, then slowly regains its own speed with solar-powered thrusters.",
+  "obstacle": "The tether must survive years of micrometeorite hits, and a nanotube cable that long has never been made.",
+  "searchQuery": "orbital rotating skyhook tether carbon nanotube payload capture",
+  "plausibility": 2,
+  "why": "Skyhooks have been studied since the 1990s; none has flown."
+ },
+ {
+  "id": "nanotube-strait-bridge",
+  "name": "Strait-spanning nanotube bridge",
+  "subtitle": "suspension bridges that cross ten-kilometre straits",
+  "job": "bears the load",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "rolled-up carbon sheets are stronger than steel and conduct like metal",
+    "card": "carbon-nanotubes",
+    "recent": true
+   },
+   {
+    "effect": "elasticity",
+    "card": "hookes-law",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "steel",
+   "reinforced-concrete"
+  ],
+  "how": "Suspension bridges top out at about two kilometres because longer steel cables get too heavy to hold up even themselves, so straits like Gibraltar have no crossing. Cables of nanotube fibre, many times stronger than steel for their weight, could hold spans several times longer and link continents by road and rail.",
+  "obstacle": "Nobody can yet make nanotube cable by the thousands of tonnes, and how it stretches under decades of load is unknown.",
+  "searchQuery": "carbon nanotube suspension bridge cable span feasibility",
+  "plausibility": 2,
+  "why": "The longest span is two kilometres of steel; nanotube cable exists only in short lengths."
+ },
+ {
+  "id": "graphene-lined-hydrogen-pipe",
+  "name": "Graphene-lined hydrogen pipeline",
+  "subtitle": "lets old gas pipes carry pure hydrogen safely",
+  "job": "holds the contents",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "a one-atom sheet of carbon carries electrons extremely fast and blocks every gas",
+    "card": "graphene",
+    "recent": true
+   }
+  ],
+  "parts": [
+   "steel",
+   "valve"
+  ],
+  "how": "Hydrogen could reuse the world's gas pipelines, but it seeps into steel and makes it brittle enough to crack. A layer of graphene one atom thick, which no gas can pass, grown on the inner wall keeps the hydrogen from ever touching the steel.",
+  "obstacle": "Coating thousands of kilometres of buried pipe from the inside without a single gap is far beyond today's methods.",
+  "searchQuery": "graphene coating hydrogen embrittlement pipeline steel",
+  "plausibility": 2,
+  "why": "Graphene stops embrittlement on lab samples; no pipeline is lined with it."
+ },
+ {
+  "id": "hyperlens-microscope",
+  "name": "Hyperlens microscope",
+  "subtitle": "an ordinary light microscope that sees single viruses",
+  "job": "magnifies",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "tiny repeated structures bend light, sound or radio the 'wrong' way",
+    "card": "metamaterials",
+    "recent": true
+   },
+   {
+    "effect": "light bends around edges",
+    "card": "light-diffraction",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "microscope",
+   "light-emitting-diodes"
+  ],
+  "how": "Light bends around tiny objects, so ordinary microscopes cannot see anything smaller than about half a wavelength, and seeing viruses needs a costly electron microscope or glowing dyes. A curved lens built from layers of metal and glass thinner than a light wave catches the fine detail that normally fades within a hair's breadth of the sample and spreads it out large enough for a normal microscope to see.",
+  "obstacle": "The layers soak up most of the light, so images are dim, and the sample must sit right on the lens.",
+  "searchQuery": "metamaterial hyperlens microscope live virus imaging",
+  "plausibility": 3,
+  "why": "Hyperlenses resolved test patterns in 2007; none became a usable microscope."
+ },
+ {
+  "id": "wave-steering-breakwater",
+  "name": "Wave-steering breakwater",
+  "subtitle": "a seabed grid that bends storm waves away",
+  "job": "protects",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "tiny repeated structures bend light, sound or radio the 'wrong' way",
+    "card": "metamaterials",
+    "recent": true
+   },
+   {
+    "effect": "refraction",
+    "card": "refraction",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "reinforced-concrete"
+  ],
+  "how": "Storm surges and rising seas threaten coastal cities, and sea walls only throw waves back, often scouring away the beach. A grid of posts and pits on the seabed, spaced to match the waves, changes how fast waves travel over it so they bend around a harbour the way a lens bends light.",
+  "obstacle": "A grid steers only waves within one band of lengths, while real storms mix many.",
+  "searchQuery": "metamaterial breakwater cloaking ocean waves field installation",
+  "plausibility": 2,
+  "why": "Water-wave cloaks work in lab tanks; none has been built at sea."
+ },
+ {
+  "id": "glymphatic-sleep-headband",
+  "name": "Glymphatic sleep headband",
+  "subtitle": "a sleep band boosting the brain's nightly rinse",
+  "job": "slows ageing",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "during deep sleep the brain flushes out waste through fluid channels",
+    "card": "glymphatic-system",
+    "recent": true
+   },
+   {
+    "effect": "tiny repeated structures bend light, sound or radio the 'wrong' way",
+    "card": "metamaterials",
+    "recent": true
+   },
+   {
+    "effect": "sound is a vibration",
+    "card": "acoustics",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "loudspeaker",
+   "electroencephalography"
+  ],
+  "how": "The sticky proteins behind Alzheimer's build up as the brain's nightly flush slows with age. When scalp electrodes sense deep sleep, the band sends gentle ultrasound through a thin patterned lens that undoes the skull's distortion, pulsing the brain's fluid channels so more waste washes out.",
+  "obstacle": "No one knows yet whether a faster flush in people actually slows dementia, and the dose that helps mice may not carry over.",
+  "searchQuery": "focused ultrasound glymphatic clearance wearable sleep humans",
+  "plausibility": 2,
+  "why": "Ultrasound speeds brain clearance in mice; nothing wearable has been tried in people."
+ },
+ {
+  "id": "diamond-ledger",
+  "name": "Diamond Ledger",
+  "subtitle": "an archive written in diamond's carbon isotopes",
+  "job": "keeps data for millennia",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "molecules shift the colour of light they scatter",
+    "card": "raman-spectra",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "synthetic-diamonds",
+   "laser"
+  ],
+  "how": "Every storage medium we use, from disks to tape, has to be copied every few decades or the data fades. Here bits are grown into a synthetic diamond as tiny regions of ordinary or heavy carbon, which never decay or wander; a laser reads them because the heavier carbon shifts the colour of the light the diamond scatters.",
+  "obstacle": "Growing diamond layer by layer in isotope patterns is slow and costly, so it stores far less per dollar than tape.",
+  "searchQuery": "isotope patterned diamond data storage carbon-13 Raman readout",
+  "plausibility": 3,
+  "why": "Isotope-layered diamond is made for quantum sensors; never used as an archive."
+ },
+ {
+  "id": "self-sealing-perovskite-panel",
+  "name": "Self-sealing perovskite panel",
+  "subtitle": "cheap printed solar that seals its own cracks",
+  "job": "makes electricity",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "cheap printable crystals turn sunlight into current almost as well as silicon",
+    "card": "perovskite-cells",
+    "recent": true
+   },
+   {
+    "effect": "capsules in a plastic burst when it cracks and glue the crack shut",
+    "card": "self-healing-polymers",
+    "recent": true
+   }
+  ],
+  "parts": [
+   "photovoltaic-cells",
+   "glass"
+  ],
+  "how": "Printable perovskite solar could cost a fraction of silicon, but the crystals rot within months once a hairline crack lets in moisture. The panel's sealing layer is filled with tiny capsules that burst when it cracks and glue the gap shut, keeping water out for the decades a roof panel must last.",
+  "obstacle": "Perovskites also break down from heat and light alone, so sealing cracks solves only part of the problem.",
+  "searchQuery": "self-healing microcapsule encapsulant perovskite solar module moisture",
+  "plausibility": 3,
+  "why": "Self-healing perovskite films are studied; no capsule-sealed module exists."
+ },
+ {
+  "id": "nanotube-deorbit-tether",
+  "name": "Nanotube deorbit tether",
+  "subtitle": "a fuel-free tether that drags dead satellites down",
+  "job": "slows motion",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "rolled-up carbon sheets are stronger than steel and conduct like metal",
+    "card": "carbon-nanotubes",
+    "recent": true
+   },
+   {
+    "effect": "a magnet pushes a current",
+    "card": "electrical-motion",
+    "recent": false
+   },
+   {
+    "effect": "the Earth is a magnet",
+    "card": "earth-magnet",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "insulated-wire"
+  ],
+  "how": "Dead satellites linger in orbit for decades, raising the risk of collisions, and carrying fuel to bring them down eats into payload. At end of life a satellite unrolls a kilometres-long nanotube tape; moving through the Earth's magnetic field drives a current along it, and the field pushes back on that current, braking the satellite until it burns up within months.",
+  "obstacle": "Long tethers get cut by tiny debris, and unrolling them reliably has failed on past missions.",
+  "searchQuery": "carbon nanotube electrodynamic tether deorbit demonstration success",
+  "plausibility": 3,
+  "why": "Japan's 2017 tether test failed to deploy; no satellite has been brought down this way."
+ },
+ {
+  "id": "mars-air-water-harvester",
+  "name": "Mars air water harvester",
+  "subtitle": "pulls drinking water from the thin Martian air",
+  "job": "supplies water",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "sponge-like crystals with a huge inner surface trap one chosen gas",
+    "card": "metal-organic-frameworks",
+    "recent": true
+   },
+   {
+    "effect": "a curved mirror focuses light",
+    "card": "optics",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "mirror",
+   "valve"
+  ],
+  "how": "Water is the heaviest thing to ship to Mars, and mining ice means landing only near the poles. A bed of crystal sponges that grab water molecules even at the faint traces in Martian air soaks them up through the frigid night, and sunlight focused by a mirror drives them out by day into a cold trap, with no drilling or digging.",
+  "obstacle": "Mars air holds so little water that one person's daily supply would need tonnes of sponge and huge airflow.",
+  "searchQuery": "metal-organic framework water harvesting Martian atmosphere",
+  "plausibility": 2,
+  "why": "Crystal-sponge harvesters work in Earth deserts; Mars air is far drier."
+ },
+ {
+  "id": "wearable-ammonia-sponge-kidney",
+  "name": "Wearable artificial kidney",
+  "subtitle": "a belt-worn kidney that reuses its fluid",
+  "job": "treats illness",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "sponge-like crystals with a huge inner surface trap one chosen gas",
+    "card": "metal-organic-frameworks",
+    "recent": true
+   },
+   {
+    "effect": "small molecules seep through a membrane",
+    "card": "osmosis",
+    "recent": false
+   },
+   {
+    "effect": "catalysis",
+    "card": "catalysis",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "artificial-kidneys",
+   "perfusion-pump"
+  ],
+  "how": "Dialysis patients spend three sessions a week tied to a machine that uses hundreds of litres of water, because there is no small way to clean the used fluid. In a belt-worn unit, waste seeps out of the blood through a membrane, an enzyme breaks the urea into ammonia, and crystal sponges that grab ammonia lock it away, so one litre of fluid can be cleaned and reused all day.",
+  "obstacle": "Holding a day's ammonia needs more sponge than a person can comfortably wear, and any leak back into the blood is dangerous.",
+  "searchQuery": "wearable artificial kidney MOF ammonia adsorbent dialysate regeneration",
+  "plausibility": 2,
+  "why": "Wearable kidneys stalled on removing urea; ammonia-grabbing crystals never tried for it."
+ },
+ {
+  "id": "sky-cooled-carbon-capture-panel",
+  "name": "Sky-cooled carbon capture panel",
+  "subtitle": "a fanless panel pulling carbon dioxide from air",
+  "job": "removes carbon dioxide",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "sponge-like crystals with a huge inner surface trap one chosen gas",
+    "card": "metal-organic-frameworks",
+    "recent": true
+   },
+   {
+    "effect": "a surface that reflects sunlight and glows in infrared cools below air temperature in full sun",
+    "card": "radiative-sky-cooling",
+    "recent": true
+   }
+  ],
+  "parts": [
+   "valve",
+   "air-pump"
+  ],
+  "how": "Pulling carbon dioxide from the air today needs big fans and lots of heat, which makes it too costly to matter. A panel of crystal sponges sits under a coating that radiates heat to the sky, so at night it cools below the air and soaks up much more carbon dioxide; by day the sun warms it and drives the gas off into a collection line.",
+  "obstacle": "Without fans, still air brings carbon dioxide to the panel so slowly that each square metre catches only grams a day.",
+  "searchQuery": "radiative cooling MOF direct air capture passive temperature swing",
+  "plausibility": 3,
+  "why": "Passive moisture-swing capture exists; none uses sky cooling to drive it."
+ },
+ {
+  "id": "sky-cooled-grain-store",
+  "name": "Sky-cooled grain store",
+  "subtitle": "a silo skin that keeps grain cool, unpowered",
+  "job": "cools without power",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "a surface that reflects sunlight and glows in infrared cools below air temperature in full sun",
+    "card": "radiative-sky-cooling",
+    "recent": true
+   }
+  ],
+  "parts": [
+   "steel"
+  ],
+  "how": "In hot countries a fifth or more of stored grain is lost to insects and mould that thrive in warm silos, and grain chillers need power many farmers lack. A silo skin that reflects sunlight and pours heat out to the sky as infrared keeps the grain several degrees below air temperature day and night, slowing insects and mould.",
+  "obstacle": "Sky cooling gives only a few degrees in humid air, short of the 15 °C at which insects really stop breeding.",
+  "searchQuery": "radiative cooling silo grain storage insects field test",
+  "plausibility": 3,
+  "why": "Cooling paints are used on roofs; none has been tested on stored grain."
+ },
+ {
+  "id": "sky-cooling-crop-net",
+  "name": "Sky-cooling crop shade net",
+  "subtitle": "a net that cools crops during heatwaves",
+  "job": "protects crops",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "a surface that reflects sunlight and glows in infrared cools below air temperature in full sun",
+    "card": "radiative-sky-cooling",
+    "recent": true
+   },
+   {
+    "effect": "plants turn sunlight, water and carbon dioxide into sugar",
+    "card": "photosynthesis",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "fish-nets",
+   "nylon"
+  ],
+  "how": "Heatwaves now cut harvests of wheat, maize and fruit because leaves overheat and stop growing. This net lets through the red and blue light that plants use to make sugar but reflects the rest of the sunlight, and its fibres radiate heat to the sky, so leaves underneath stay several degrees cooler than under an ordinary shade cloth.",
+  "obstacle": "The net must stay cheap and clean enough to cover whole fields for years of dust and rain.",
+  "searchQuery": "radiative cooling agricultural shade net crop heat stress field",
+  "plausibility": 3,
+  "why": "Sky-cooling films studied for greenhouses; no field net proven on crops."
+ },
+ {
+  "id": "breathing-scaffold",
+  "name": "Breathing Scaffold",
+  "subtitle": "an organ frame that supplies its own oxygen",
+  "job": "grows organs",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "sponge-like crystals with a huge inner surface trap one chosen gas",
+    "card": "metal-organic-frameworks",
+    "recent": true
+   },
+   {
+    "effect": "gases spread out on their own from crowded to empty",
+    "card": "diffusion",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "tissue-culture"
+  ],
+  "how": "Lab-grown tissue thicker than a few millimetres dies in the middle, because oxygen cannot reach it before blood vessels grow in. The scaffold the cells grow on is laced with crystal sponges loaded with oxygen, which seeps out slowly to the surrounding cells for the week or two the vessels need to form.",
+  "obstacle": "The sponges hold only a few days of oxygen and must break down safely once empty.",
+  "searchQuery": "oxygen loaded metal-organic framework scaffold thick tissue engineering",
+  "plausibility": 3,
+  "why": "Oxygen-releasing scaffolds use peroxides today; crystal-sponge oxygen stores are untested."
+ },
+ {
+  "id": "graphene-acid-recovery",
+  "name": "Graphene acid-recovery membrane",
+  "subtitle": "recovers acid from battery recycling for reuse",
+  "job": "recycles materials",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "graphene lets protons through but stops every atom and molecule",
+    "card": "graphene-proton-sieve",
+    "recent": true
+   }
+  ],
+  "parts": [
+   "electrophoresis"
+  ],
+  "how": "Recycling lithium batteries means dissolving them in strong acid, and the spent acid, thick with metals, is costly to neutralise and dump. A graphene sheet lets the acid's hydrogen ions through while stopping every dissolved metal, so the acid is pulled out clean for reuse and the metals are left behind concentrated.",
+  "obstacle": "Graphene sheets big enough for a plant still crack and leak, and they need supports that survive strong acid.",
+  "searchQuery": "graphene proton selective membrane acid recovery battery recycling leachate",
+  "plausibility": 3,
+  "why": "Proton sieving works in micron-scale lab devices; never applied to recycling."
+ },
+ {
+  "id": "solid-state-vaccine-fridge",
+  "name": "Solid-state solar vaccine fridge",
+  "subtitle": "a silent fridge with no gas or pump",
+  "job": "preserves food",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "an electric field makes certain thin films heat up or cool down",
+    "card": "electrocaloric-effect",
+    "recent": true
+   },
+   {
+    "effect": "cheap printable crystals turn sunlight into current almost as well as silicon",
+    "card": "perovskite-cells",
+    "recent": true
+   }
+  ],
+  "parts": [
+   "dewar-flask"
+  ],
+  "how": "Up to half of vaccines in hot countries are spoiled by broken cold chains, and fridge compressors and refrigerant gases fail in remote clinics. Printed perovskite panels on the lid power stacks of thin films that cool down when a voltage is applied, pumping heat out of a well-insulated box with no compressor, gas or moving parts.",
+  "obstacle": "Electrocaloric coolers are still small lab devices that move only a few watts of heat.",
+  "searchQuery": "electrocaloric refrigerator vaccine solar powered prototype",
+  "plausibility": 3,
+  "why": "Electrocaloric fridges are lab demonstrations; none built for off-grid use."
+ },
+ {
+  "id": "body-heat-health-patch",
+  "name": "Body-heat health patch",
+  "subtitle": "a health sensor patch powered by body warmth",
+  "job": "monitors health continuously",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "some crystals conduct only along their surface, where nothing scatters the current",
+    "card": "topological-insulators",
+    "recent": true
+   },
+   {
+    "effect": "two metals joined at different temperatures make a voltage",
+    "card": "seebeck-effect",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "integrated-circuits",
+   "radio-antennas"
+  ],
+  "how": "Health patches that track heart rhythm or blood oxygen need recharging every few days, which is when people stop wearing them. The patch turns the small warmth difference between skin and air into current using thin films of bismuth telluride, which is also a topological insulator; shaping it so current runs through its scatter-free surface could raise the output enough to run the sensor nonstop.",
+  "obstacle": "Whether surface currents really improve heat-to-power conversion at body temperature is still unproven.",
+  "searchQuery": "topological insulator surface states thermoelectric wearable body heat",
+  "plausibility": 2,
+  "why": "Body-heat wearables run only tiny loads; the topological boost is only predicted."
+ },
+ {
+  "id": "air-skin-stent",
+  "name": "Air-skin stent",
+  "subtitle": "a stent blood cannot clot on",
+  "job": "treats illness",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "microscopic bumps make water bead up and roll off, carrying dirt away",
+    "card": "lotus-effect",
+    "recent": true
+   },
+   {
+    "effect": "platelets clump to clot blood",
+    "card": "platelets",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "balloon-angioplasty",
+   "steel"
+  ],
+  "how": "After a stent props open a heart artery, patients take blood thinners for months or years, which cause dangerous bleeding, because platelets stick to the metal and form clots. A stent coated in microscopic water-repelling bumps holds a thin cushion of air against the blood, so platelets have nothing to cling to.",
+  "obstacle": "Under blood pressure the trapped air dissolves within hours to days, after which the surface acts like plain metal.",
+  "searchQuery": "superhydrophobic stent air layer thrombosis in vivo",
+  "plausibility": 2,
+  "why": "Water-repelling coatings cut clotting in lab tests; no stent keeps its air layer in the body."
+ },
+ {
+  "id": "quantum-dot-voltage-probe",
+  "name": "Quantum-dot brain voltage probe",
+  "subtitle": "glowing dots that report every neuron's firing",
+  "job": "reads the brain",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "crystals a few nanometres wide glow in a colour set purely by their size",
+    "card": "quantum-dots",
+    "recent": true
+   },
+   {
+    "effect": "an electric field splits a glowing gas's colour lines",
+    "card": "stark-effect",
+    "recent": false
+   },
+   {
+    "effect": "nerve signals are electrical",
+    "card": "electric-nerve-fibers",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "fiber-optics",
+   "camera"
+  ],
+  "how": "Electrodes in the brain hear only a few hundred neurons each, while a mind-reading interface would want many thousands. Crystal dots a few nanometres wide, slipped into the membranes of nerve cells, change their glow when the cell fires, because an electric field shifts the colour such tiny crystals give off; a fibre-optic camera then reads thousands of neurons at once by their flicker.",
+  "obstacle": "Getting the dots to sit stably in cell membranes without harming neurons, and doing it in a living human brain.",
+  "searchQuery": "quantum dot voltage sensor neuron membrane in vivo imaging",
+  "plausibility": 2,
+  "why": "Membrane dots reported voltage in cultured cells; never used to read a living brain."
+ },
+ {
+  "id": "enzyme-lint-filter",
+  "name": "Microfibre-digesting washer filter",
+  "subtitle": "a washing machine filter that digests polyester fluff",
+  "job": "breaks down plastic",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "bacteria found at a recycling plant make an enzyme that breaks PET plastic apart",
+    "card": "plastic-eating-enzyme",
+    "recent": true
+   },
+   {
+    "effect": "catalysis",
+    "card": "catalysis",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "valve"
+  ],
+  "how": "Every wash sheds hundreds of thousands of polyester fibres that slip through sewage plants into rivers and seas, and today's lint filters only collect fluff for landfill. This filter traps the fibres on a mesh coated with a heat-hardened version of the PET-eating enzyme, which breaks them back into their harmless building blocks between washes so nothing needs emptying.",
+  "obstacle": "The enzyme works slowly on tightly packed fibres, and detergents and bleach wear it down.",
+  "searchQuery": "PETase enzyme washing machine microfiber filter digest",
+  "plausibility": 2,
+  "why": "Lint filters and PET enzymes exist; nothing digests the fibres where they are caught."
+ },
+ {
+  "id": "laser-sail-probe",
+  "name": "Laser-pushed light sail",
+  "subtitle": "a laser-driven sail to the nearest stars",
+  "job": "provides thrust",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "light pushes on what it hits",
+    "card": "light-pressure",
+    "recent": false
+   },
+   {
+    "effect": "tiny repeated structures bend light, sound or radio the 'wrong' way",
+    "card": "metamaterials",
+    "recent": true
+   },
+   {
+    "effect": "a laser makes sodium atoms high in the sky glow as an artificial star for correcting blur",
+    "card": "adaptive-optics-sodium",
+    "recent": true
+   }
+  ],
+  "parts": [
+   "laser",
+   "mirror"
+  ],
+  "how": "Even our fastest probes would take tens of thousands of years to reach the nearest star, so no spacecraft has ever visited another solar system. A sail lighter than a postage stamp, patterned so that it reflects the beam and steers itself back to the middle of it, is pushed by a vast array of ground lasers to a fifth of light speed; laser guide stars let the array cancel the air's blur so the beam stays on the sail for minutes.",
+  "obstacle": "The ground lasers would need hundreds of gigawatts, more than many countries' total power.",
+  "searchQuery": "laser light sail beam-riding metamaterial sail demonstration",
+  "plausibility": 2,
+  "why": "Self-steering sail designs tested on the bench; no sail has ever been laser-launched."
+ },
+ {
+  "id": "self-sealing-subsea-cable",
+  "name": "Self-sealing subsea power cable",
+  "subtitle": "an offshore power cable that heals its insulation",
+  "job": "carries current",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "capsules in a plastic burst when it cracks and glue the crack shut",
+    "card": "self-healing-polymers",
+    "recent": true
+   },
+   {
+    "effect": "conduction",
+    "card": "electrical-conductance",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "insulated-wire",
+   "copper"
+  ],
+  "how": "Offshore wind farms lose more money to failed seabed cables than to anything else, and each repair needs a special ship and weeks of lost power. The cable's insulation holds tiny capsules that burst when water or a scrape opens a crack and fill it with fresh insulating resin before it grows into a short circuit.",
+  "obstacle": "The healing resin must work cold and under seawater pressure, and match the insulation well enough to stand high voltage.",
+  "searchQuery": "self-healing insulation subsea power cable microcapsule high voltage",
+  "plausibility": 3,
+  "why": "Self-healing cable insulation is studied in labs; no subsea cable uses it."
+ },
+ {
+  "id": "graphene-heavy-water-maker",
+  "name": "Graphene heavy-water separator",
+  "subtitle": "makes heavy water with far less energy",
+  "job": "separates mixtures",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "graphene lets protons through but stops every atom and molecule",
+    "card": "graphene-proton-sieve",
+    "recent": true
+   },
+   {
+    "effect": "a current splits water into hydrogen and oxygen",
+    "card": "decomposition-of-water",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "fuel-cell",
+   "transformer"
+  ],
+  "how": "Heavy water, needed for some reactors, for medical scanning tracers and as fuel for future fusion plants, is made today by plants that boil and react vast amounts of water with toxic hydrogen sulphide. A current drives hydrogen nuclei from water through a sheet of graphene, which lets ordinary ones through about ten times faster than heavy ones, so each pass leaves the water richer in heavy hydrogen, with no toxic gas and far less energy.",
+  "obstacle": "Each pass enriches only a little, so a plant needs many stages of large, flawless graphene that does not yet exist.",
+  "searchQuery": "graphene membrane deuterium enrichment heavy water production scale",
+  "plausibility": 3,
+  "why": "Graphene separated hydrogen isotopes in a 2016 lab study; no production unit exists."
+ },
+ {
+  "id": "skull-lens-ultrasound-scanner",
+  "name": "Skull-lens ultrasound brain scanner",
+  "subtitle": "a headset that maps brain activity through bone",
+  "job": "reads the brain",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "tiny repeated structures bend light, sound or radio the 'wrong' way",
+    "card": "metamaterials",
+    "recent": true
+   },
+   {
+    "effect": "sound echoes",
+    "card": "acoustics",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "sonar",
+   "computer"
+  ],
+  "how": "Brain scanners that track thought, like fMRI, fill a room, and functional ultrasound, which watches blood rush to busy brain areas, works only through a hole in the skull. A thin cap patterned with tiny structures, shaped from a scan of the wearer's own skull, pre-bends the sound to cancel the bone's distortion, so a headset could map brain activity through intact bone.",
+  "obstacle": "Bone soaks up most of the high-pitched sound needed for sharp images, leaving very faint echoes.",
+  "searchQuery": "metasurface skull aberration correction functional ultrasound transcranial human",
+  "plausibility": 2,
+  "why": "Functional ultrasound needs a skull window today; skull-correcting lenses are only bench tests."
+ }
+]

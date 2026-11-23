@@ -1,0 +1,338 @@
+[
+{
+"card": "insulin",
+"title": "Insulin",
+"year": 1921,
+"effect": "insulin lets the body use sugar",
+"does": "hormone -> lower blood sugar",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "growth-hormone",
+"title": "Growth hormone",
+"year": 1922,
+"effect": "a pituitary hormone makes the body grow",
+"does": "hormone -> growth",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "lysozyme",
+"title": "Lysozyme",
+"year": 1922,
+"effect": "an enzyme in tears breaks open bacteria",
+"does": "enzyme -> dead bacteria",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "packing-fraction",
+"title": "Packing fraction",
+"year": 1925,
+"effect": "repacking an atom's nucleus turns a little mass into energy",
+"does": "mass -> energy",
+"strength": "strong",
+"alsoCards": [],
+"note": "underlies fission and fusion"
+},
+{
+"card": "magnetism-and-absolute-zero",
+"title": "Magnetism and absolute zero",
+"year": 1925,
+"effect": "demagnetizing a very cold salt cools it further",
+"does": "removing magnetic field -> cooling",
+"strength": "strong",
+"alsoCards": [
+"approach-to-absolute-zero"
+],
+"note": null
+},
+{
+"card": "x-rays-and-mutations",
+"title": "X rays and mutations",
+"year": 1927,
+"effect": "X-rays cause mutations",
+"does": "radiation -> genetic change",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "diels-alder-reaction",
+"title": "Diels-Alder reaction",
+"year": 1928,
+"effect": "two molecules snap together into a ring",
+"does": "mixing -> ring molecules",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "raman-spectra",
+"title": "Raman spectra",
+"year": 1928,
+"effect": "molecules shift the colour of light they scatter",
+"does": "light -> molecular fingerprint",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "deuterium",
+"title": "Deuterium",
+"year": 1931,
+"effect": "heavy hydrogen evaporates more slowly than light hydrogen",
+"does": "evaporation -> separates isotopes",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "positron",
+"title": "Positron",
+"year": 1932,
+"effect": "electrons and positrons destroy each other, giving gamma rays",
+"does": "annihilation -> gamma rays",
+"strength": "strong",
+"alsoCards": [],
+"note": "later basis of PET scans"
+},
+{
+"card": "artificial-radioactivity",
+"title": "Artificial radioactivity",
+"year": 1934,
+"effect": "bombarding stable atoms makes them radioactive",
+"does": "particle beam -> radioisotope",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "corticoids",
+"title": "Corticoids",
+"year": 1935,
+"effect": "cortisone calms inflammation",
+"does": "hormone -> less inflammation",
+"strength": "strong",
+"alsoCards": [
+"cortisone-and-arthritis"
+],
+"note": null
+},
+{
+"card": "vitamin-k",
+"title": "Vitamin K",
+"year": 1939,
+"effect": "vitamin K makes blood clot",
+"does": "vitamin -> clotting",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "tyrothricin",
+"title": "Tyrothricin",
+"year": 1939,
+"effect": "soil bacteria make germ-killing substances",
+"does": "soil microbe -> antibiotic",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "ddt",
+"title": "DDT",
+"year": 1939,
+"effect": "a chemical kills insects on contact",
+"does": "chemical -> dead insects",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "uranium-hexafluoride",
+"title": "Uranium hexafluoride",
+"year": 1940,
+"effect": "lighter gas molecules seep through a porous barrier faster",
+"does": "porous barrier -> separates isotopes",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "polarimetry",
+"title": "Polarimetry",
+"year": 1941,
+"effect": "current through a solution plateaus at a height set by each substance",
+"does": "voltage sweep -> chemical amounts",
+"strength": "strong",
+"alsoCards": [],
+"note": "the card describes polarography"
+},
+{
+"card": "jet-streams",
+"title": "Jet streams",
+"year": 1945,
+"effect": "fast steady winds blow high in the sky",
+"does": "altitude -> fast tailwind",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "cybernetics",
+"title": "Cybernetics",
+"year": 1948,
+"effect": "feeding back the error lets a machine correct its own aim",
+"does": "error -> correction",
+"strength": "strong",
+"alsoCards": [],
+"note": "feedback control; not on the board yet"
+},
+{
+"card": "turing-machine",
+"title": "Turing machine",
+"year": 1950,
+"effect": "a simple rule-following machine can compute anything computable",
+"does": "rules + tape -> any calculation",
+"strength": "strong",
+"alsoCards": [],
+"note": "math result"
+},
+{
+"card": "tranquilizers",
+"title": "Tranquilizers",
+"year": 1952,
+"effect": "a drug calms the mind without dulling alertness",
+"does": "drug -> calm",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "the-double-helix",
+"title": "The double helix",
+"year": 1953,
+"effect": "each DNA strand is a template for copying its partner",
+"does": "one strand -> two copies",
+"strength": "strong",
+"alsoCards": [
+"nucleic-acid-base-balance"
+],
+"note": null
+},
+{
+"card": "nucleic-acid-formation",
+"title": "Nucleic acid formation",
+"year": 1955,
+"effect": "an enzyme strings loose nucleotides into DNA or RNA",
+"does": "nucleotides -> DNA/RNA",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "ribosomes",
+"title": "Ribosomes",
+"year": 1956,
+"effect": "ribosomes build proteins by reading RNA instructions",
+"does": "RNA -> protein",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "interferon",
+"title": "Interferon",
+"year": 1957,
+"effect": "infected cells release a protein that blocks other viruses",
+"does": "infection -> antiviral protein",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "mössbauer-effect",
+"title": "Mössbauer effect",
+"year": 1958,
+"effect": "atoms locked in a crystal emit and absorb razor-sharp gamma rays",
+"does": "gamma ray -> precise frequency match",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "standard-meter",
+"title": "Standard meter",
+"year": 1960,
+"effect": "an atom's light has a fixed wavelength, a natural ruler",
+"does": "atomic light -> length standard",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "genetic-code",
+"title": "Genetic code",
+"year": 1961,
+"effect": "three RNA letters spell one amino acid",
+"does": "codon -> amino acid",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "gene-regulators",
+"title": "Gene regulators",
+"year": 1961,
+"effect": "regulator genes switch other genes on and off",
+"does": "signal -> gene activity",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "approach-to-absolute-zero-final",
+"title": "Closer to absolute zero",
+"year": 1962,
+"effect": "helium-3 dissolving into helium-4 soaks up heat",
+"does": "mixing -> cooling",
+"strength": "strong",
+"alsoCards": [],
+"note": "basis of ultra-cold refrigerators"
+},
+{
+"card": "reverse-transcriptase",
+"title": "Reverse transcriptase",
+"year": 1970,
+"effect": "an enzyme copies RNA back into DNA",
+"does": "RNA -> DNA",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "deep-sea-ecosystems",
+"title": "Deep-sea ecosystems",
+"year": 1977,
+"effect": "vent bacteria live on chemicals, without light or oxygen",
+"does": "minerals -> food",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+},
+{
+"card": "warm-superconductivity",
+"title": "Warm superconductivity",
+"year": 1987,
+"effect": "some ceramics lose all resistance at liquid-nitrogen cold",
+"does": "cold -> zero resistance",
+"strength": "strong",
+"alsoCards": [],
+"note": null
+}
+]

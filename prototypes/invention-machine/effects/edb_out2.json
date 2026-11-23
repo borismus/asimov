@@ -1,0 +1,1055 @@
+[
+ {
+  "edb": "Cryogenics",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A field and a condition (very low temperature), not one effect; the deck already covers liquefying gases."
+ },
+ {
+  "edb": "Crystallisation",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "An everyday phase-change process like freezing; crystal structure is already in the deck as crystallography."
+ },
+ {
+  "edb": "Curie Point (ferromagnetic)",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "The deck already has Pierre Curie's discovery that iron loses its magnetism above a set temperature.",
+  "card": "curie-temperature"
+ },
+ {
+  "edb": "Curie Point (piezoelectric)",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "The same switch-off-above-a-temperature effect, here in piezoelectric crystals; it belongs on the existing Curie temperature card.",
+  "card": "curie-temperature"
+ },
+ {
+  "edb": "Curve of Constant Width",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A shape (Reuleaux triangle family), not a physical effect."
+ },
+ {
+  "edb": "Cyclotron Radiation",
+  "verdict": "merge",
+  "rule": "e4",
+  "borderline": false,
+  "why": "The slow-electron version of the same light given off by charges circling in a magnetic field; Synchrotron Radiation is the canonical card, in another batch.",
+  "into": "synchrotron-radiation"
+ },
+ {
+  "edb": "Damping",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A generic engineering term for anything that calms vibration, not one nameable effect."
+ },
+ {
+  "edb": "Darwin Drift",
+  "verdict": "drop",
+  "rule": "e6",
+  "borderline": true,
+  "why": "Real and named (C. G. Darwin, 1953), but it does no clear job beyond a debated idea that swimming animals mix the oceans; I picked drop."
+ },
+ {
+  "edb": "Decomposition (biological)",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "An everyday natural process (rotting), not a specific effect."
+ },
+ {
+  "edb": "Deflagration",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "The technical word for ordinary fast burning, which combustion and fire already cover."
+ },
+ {
+  "edb": "Deformation",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A generic term for any change of shape under force."
+ },
+ {
+  "edb": "Dellinger Effect",
+  "verdict": "drop",
+  "rule": "e2",
+  "borderline": false,
+  "why": "Radio fade-outs need a solar flare; nobody can make or use the effect at a useful size."
+ },
+ {
+  "edb": "Delta-E Effect",
+  "verdict": "merge",
+  "rule": "e4",
+  "borderline": false,
+  "why": "The stiffness change comes from the same domain stretching that causes magnetostriction (its use in shop anti-theft tags rides on that); Magnetostriction is the canonical card, in another batch.",
+  "into": "magnetostriction"
+ },
+ {
+  "edb": "Density Gradient",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A condition (density varying from place to place), not an effect."
+ },
+ {
+  "edb": "Deposition (physical)",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "An everyday phase change (frost forming straight from vapour), like freezing."
+ },
+ {
+  "edb": "Depressurisation",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A generic engineering term, like Pressurisation."
+ },
+ {
+  "edb": "Depth of Field",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A geometric property of lenses and cameras, not a physical effect."
+ },
+ {
+  "edb": "Desorption",
+  "verdict": "merge",
+  "rule": "e4",
+  "borderline": false,
+  "why": "Simply adsorption run in reverse (heating a desiccant to drive water off); Adsorption is the canonical card, in another batch.",
+  "into": "adsorption"
+ },
+ {
+  "edb": "Detonation",
+  "verdict": "keep",
+  "rule": "other",
+  "borderline": true,
+  "why": "A specific named effect with clear jobs; borderline because the deck's explosives cards (nitroglycerine, dynamite) touch on it, but none describes the effect itself. I picked keep.",
+  "id": "detonation",
+  "title": "Detonation",
+  "year": 1881,
+  "inventor": "Marcellin Berthelot and Paul Vieille",
+  "location": "France",
+  "field": "Science: Chemistry",
+  "description": "In some explosives the burning doesn't spread layer by layer like a fire; it rides a shock wave that tears through the material faster than sound, crushing as it goes. Berthelot and Vieille in Paris measured these flame fronts in gas-filled tubes in 1881. It's why dynamite shatters rock while gunpowder only pushes, and it lets welders bang dissimilar metals together into one plate.",
+  "effect": "a burning front driven by its own shock wave races through an explosive faster than sound",
+  "usedIn": [
+   "Blasting caps and mining explosives",
+   "Explosive welding of steel to titanium or copper cladding",
+   "Shaped-charge perforators that punch oil wells",
+   "Rotating detonation rocket engines (test-fired in the 2020s)"
+  ],
+  "strength": "The front moves at 2 to 9 km per second with pressures of a few hundred thousand atmospheres, enough to shatter steel on contact.",
+  "deps": [
+   "nitroglycerine",
+   "dynamite"
+  ]
+ },
+ {
+  "edb": "Diamagnetism",
+  "verdict": "keep",
+  "rule": "other",
+  "borderline": false,
+  "why": "Specific, named, and does a clear job (contact-free levitation); Faraday's deck cards are other discoveries, so it gets its own card.",
+  "id": "diamagnetism",
+  "title": "Diamagnetism",
+  "year": 1845,
+  "inventor": "Michael Faraday",
+  "location": "England",
+  "field": "Science: Physics",
+  "description": "Water, wood, graphite and even living things are weakly pushed away by a strong magnet, the opposite of iron. Faraday showed in 1845 that most substances do this (Brugmans had seen bismuth do it in 1778). With a strong enough magnet it can float a frog in mid-air, or a sliver of graphite over a row of fridge-size magnets with no power at all.",
+  "effect": "a material is weakly pushed away from a magnet instead of pulled toward it",
+  "usedIn": [
+   "Levitating a live frog in a 16-tesla magnet (Geim and Berry, 1997)",
+   "Floating pyrolytic-graphite desk toys and levitation stages",
+   "Diamagnetic bearings and sensors in micro-machines"
+  ],
+  "strength": "About a hundred-thousandth the strength of iron's pull: a thin sheet of pyrolytic graphite floats a millimetre above neodymium magnets, but floating water takes a magnetic field about 300,000 times Earth's.",
+  "deps": [
+   "electromagnets"
+  ]
+ },
+ {
+  "edb": "Dielectric",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A class of material (an insulator that polarises), not an effect; capacitors are already in the deck as the Leyden jar."
+ },
+ {
+  "edb": "Dielectric Heating",
+  "verdict": "keep",
+  "rule": "other",
+  "borderline": false,
+  "why": "Specific effect with big uses; Spencer's 1945 discovery is the standard date, though radio-frequency heating of tissue was known from the early 1900s.",
+  "id": "dielectric-heating",
+  "title": "Dielectric heating",
+  "year": 1945,
+  "inventor": "Percy Spencer",
+  "location": "United States",
+  "field": "Science: Physics",
+  "description": "Radio waves or microwaves make water and other polar molecules in food flip back and forth billions of times a second, and the jostling heats the food from inside. Percy Spencer at Raytheon noticed a chocolate bar melting in his pocket next to a radar magnetron in 1945 and built the first microwave oven. The same trick welds plastic sheets and dries timber.",
+  "effect": "radio waves or microwaves shake molecules in a material and heat it from the inside",
+  "usedIn": [
+   "Microwave ovens",
+   "Radio-frequency welding of PVC (inflatable boats, blister packs)",
+   "Drying timber and curing glue in plywood presses",
+   "Medical diathermy"
+  ],
+  "strength": "A 1,000-watt microwave oven brings a mug of water to the boil in about two minutes.",
+  "deps": [
+   "magnetrons",
+   "radar"
+  ]
+ },
+ {
+  "edb": "Dielectric Permittivity",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A material property (how much an insulator boosts an electric field's storage), not an effect."
+ },
+ {
+  "edb": "Diffraction",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "The deck has Grimaldi's Diffraction card.",
+  "card": "light-diffraction"
+ },
+ {
+  "edb": "Diffusion",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "The deck has Thomas Graham's Diffusion card.",
+  "card": "diffusion"
+ },
+ {
+  "edb": "Diffusiophoresis",
+  "verdict": "keep",
+  "rule": "other",
+  "borderline": false,
+  "why": "Specific and named, with a clear moving/separating job at small scales.",
+  "id": "diffusiophoresis",
+  "title": "Diffusiophoresis",
+  "year": 1947,
+  "inventor": "Boris Derjaguin",
+  "location": "Russia",
+  "field": "Science: Chemistry",
+  "description": "Tiny particles in a liquid drift on their own toward or away from places where dissolved salt or sugar is more concentrated, with no current or stirring. Boris Derjaguin in Moscow described it in 1947 while studying how latex particles coat surfaces. It pulls dirt out of pores too small for any rinse to reach and sorts particles in lab-on-a-chip devices.",
+  "effect": "particles in a liquid drift along a difference in dissolved-salt concentration",
+  "usedIn": [
+   "Latex coating in dip-moulded gloves and balloons",
+   "Pulling dirt out of fabric and porous surfaces with salt gradients (lab-tested)",
+   "Particle sorting in microfluidic chips"
+  ],
+  "strength": "Slow, a few micrometres per second, but enough to empty a pore a hair's width deep in under a minute.",
+  "deps": [
+   "diffusion"
+  ]
+ },
+ {
+  "edb": "Dispersion (of waves)",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Splitting white light into colours because each colour travels at a different speed is Newton's Prisms card.",
+  "card": "light-spectrum"
+ },
+ {
+  "edb": "Displacement",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A generic engineering term the curator listed as too general; buoyancy is already the Archimedes card."
+ },
+ {
+  "edb": "Doppler Effect",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "The deck has the Doppler effect.",
+  "card": "doppler-effect"
+ },
+ {
+  "edb": "Dorn Effect",
+  "verdict": "drop",
+  "rule": "e2",
+  "borderline": false,
+  "why": "Particles settling through water make only a few millivolts; it is a lab measurement, too weak to do a job."
+ },
+ {
+  "edb": "Drag",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A generic engineering term for fluid resistance; air resistance is already in the deck (falling motion, parachute)."
+ },
+ {
+  "edb": "Dufour Effect",
+  "verdict": "drop",
+  "rule": "e2",
+  "borderline": false,
+  "why": "The temperature differences from diffusion are tiny (a fraction of a degree) and do no useful job."
+ },
+ {
+  "edb": "Echo",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Sound bouncing back and being timed is what the Sonar card describes.",
+  "card": "sonar"
+ },
+ {
+  "edb": "Eddy Currents",
+  "verdict": "keep",
+  "rule": "other",
+  "borderline": false,
+  "why": "A specific effect with many uses; Faraday's induction card is the cause, but Foucault's braking and heating is a separate discovery and job.",
+  "id": "eddy-currents",
+  "title": "Eddy currents",
+  "year": 1855,
+  "inventor": "Léon Foucault",
+  "location": "France",
+  "field": "Science: Physics",
+  "description": "Move a magnet past a sheet of copper or aluminium and swirling currents spring up in the metal, dragging against the motion and warming it. Foucault showed in 1855 that a copper disc spun between magnet poles slows down and heats up. A magnet dropped down a copper pipe drifts down slowly as if through syrup, and the same drag stops trains and sorts drink cans.",
+  "effect": "a moving or changing magnetic field stirs up swirling currents in metal that brake it and heat it",
+  "usedIn": [
+   "Eddy-current brakes on trains and roller coasters",
+   "Induction cooktops",
+   "Metal detectors and coin checkers in vending machines",
+   "Recycling separators that fling aluminium cans off a conveyor"
+  ],
+  "strength": "A strong magnet takes several seconds to fall through a 30 cm copper pipe instead of a quarter of a second.",
+  "deps": [
+   "electromagnetic-induction"
+  ]
+ },
+ {
+  "edb": "Effusion",
+  "verdict": "attach",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Graham's law of effusion (gas leaking through a pinhole, lighter gases faster) came out of the same Thomas Graham work as the Diffusion card; it is the basis of uranium enrichment by gaseous diffusion.",
+  "card": "diffusion"
+ },
+ {
+  "edb": "Ekman layer",
+  "verdict": "drop",
+  "rule": "e2",
+  "borderline": false,
+  "why": "Ekman transport matters at ocean and atmosphere scale; small versions (tea leaves gathering in a stirred cup) do no job, and the Coriolis effect is already in the deck."
+ },
+ {
+  "edb": "Elastic Recovery",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Springing back to shape after stretching is covered by Hooke's law.",
+  "card": "hookes-law"
+ },
+ {
+  "edb": "Elasticity",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Elasticity is covered by Hooke's law.",
+  "card": "hookes-law"
+ },
+ {
+  "edb": "Electret",
+  "verdict": "keep",
+  "rule": "other",
+  "borderline": false,
+  "why": "Specific, named and widely used; not in the deck.",
+  "id": "electret",
+  "title": "Electret",
+  "year": 1919,
+  "inventor": "Mototaro Eguchi",
+  "location": "Japan",
+  "field": "Science: Physics",
+  "description": "Some waxes and plastics, melted and left to harden inside a strong electric field, keep a frozen-in charge for years, an electric version of a permanent magnet. Mototaro Eguchi made the first from carnauba wax and resin in Tokyo in 1919. Thin charged plastic films now sit in almost every phone microphone, and the fibres of N95 masks are electrets that grab passing particles.",
+  "effect": "a material holds a permanent electric charge, like an electric version of a magnet",
+  "usedIn": [
+   "Electret microphones in phones and hearing aids (Sessler and West, 1962)",
+   "N95 and surgical mask filters",
+   "Electrostatic air filters for heating and ventilation"
+  ],
+  "strength": "A film thinner than paper can hold a few hundred volts on its surface for decades, enough to tug dust and smoke particles out of the air.",
+  "deps": [
+   "static-electricity"
+  ]
+ },
+ {
+  "edb": "Electric Arc",
+  "verdict": "keep",
+  "rule": "other",
+  "borderline": false,
+  "why": "Specific and very useful; credit usually goes to Petrov (1802) over Davy, so I used Petrov.",
+  "id": "electric-arc",
+  "title": "Electric arc",
+  "year": 1802,
+  "inventor": "Vasily Petrov",
+  "location": "Russia",
+  "field": "Science: Physics",
+  "description": "Pull two touching carbon rods a little apart while a big current flows and a blinding, roaring bridge of hot glowing gas forms between them. Vasily Petrov in St Petersburg described it in 1802 using a huge battery, and Humphry Davy made it famous in London a few years later. Arcs lit the first street lamps and searchlights, and today they weld ships and melt scrap into new steel.",
+  "effect": "a large current jumping a gap turns the air into a continuous, intensely hot glowing plasma",
+  "usedIn": [
+   "Arc welding",
+   "Electric arc furnaces that recycle scrap steel",
+   "Arc lamps for searchlights and early cinema projectors",
+   "Plasma cutting torches"
+  ],
+  "strength": "A welding arc reaches about 6,000 °C, hot enough to melt any metal in seconds.",
+  "deps": [
+   "electric-battery"
+  ]
+ },
+ {
+  "edb": "Electric Field",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A basic concept of a whole field, not one effect; Faraday and Maxwell's field ideas are already in the deck (lines of force)."
+ },
+ {
+  "edb": "Electric Glow Discharge",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Current through low-pressure gas making it glow is the Neon lights card.",
+  "card": "neon-lights"
+ },
+ {
+  "edb": "Electric Sonic Amplitude",
+  "verdict": "drop",
+  "rule": "e2",
+  "borderline": false,
+  "why": "A faint sound signal used only in lab instruments to measure particle charge; too weak to do a job beyond that."
+ },
+ {
+  "edb": "Electric Spark",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Sparks from built-up charge are part of the Static electricity card (and lightning of the Lightning rod card).",
+  "card": "static-electricity"
+ },
+ {
+  "edb": "Electrical Resistance",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Resistance is covered by Ohm's Law.",
+  "card": "ohms-law"
+ },
+ {
+  "edb": "Electro-Optic Effects",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "An umbrella term; the specific effects (Kerr, Pockels, electroabsorption) get their own cards."
+ },
+ {
+  "edb": "Electro-Osmosis",
+  "verdict": "keep",
+  "rule": "other",
+  "borderline": false,
+  "why": "Specific effect with clear moving/draining jobs; the canonical card for Electro-Osmotic Flow too.",
+  "id": "electro-osmosis",
+  "title": "Electro-osmosis",
+  "year": 1807,
+  "inventor": "Ferdinand Friedrich Reuss",
+  "location": "Russia",
+  "field": "Science: Chemistry",
+  "description": "Put a voltage across wet clay or a hair-thin glass tube of water and the water itself starts to flow toward one electrode, with no pump and no moving parts. Ferdinand Reuss saw water climb through sand in Moscow in 1807, in the same experiments where he found clay particles moving the other way. Engineers use it to drain soggy soil, and lab-on-a-chip devices use it to pump tiny drops.",
+  "effect": "a voltage across a wet porous material or narrow channel makes the liquid flow",
+  "usedIn": [
+   "Draining clay soil for excavations and embankments (Casagrande, 1930s)",
+   "Pumps in lab-on-a-chip and microfluidic devices",
+   "Liquid flow in capillary electrophoresis DNA sequencers"
+  ],
+  "strength": "Slow but steady: around a millimetre per second through a hair-thin channel at a few hundred volts per centimetre.",
+  "deps": [
+   "osmosis",
+   "electric-battery"
+  ]
+ },
+ {
+  "edb": "Electro-Osmotic Flow",
+  "verdict": "merge",
+  "rule": "e4",
+  "borderline": false,
+  "why": "The same effect as Electro-Osmosis, described as a flow; merged into that card.",
+  "into": "electro-osmosis"
+ },
+ {
+  "edb": "Electrocaloric Effect",
+  "verdict": "keep",
+  "rule": "other",
+  "borderline": false,
+  "why": "Specific effect with a clear cooling job and room to grow; Kurchatov's deck card is the Soviet bomb, a different discovery.",
+  "id": "electrocaloric-effect",
+  "title": "Electrocaloric effect",
+  "year": 1930,
+  "inventor": "Pavel Kobeko and Igor Kurchatov",
+  "location": "Russia",
+  "field": "Science: Physics",
+  "description": "Some crystals and plastics warm up when you switch on a strong electric field across them and cool down when you switch it off. Kobeko and Kurchatov first measured it in Rochelle salt in Leningrad in 1930. Cycling a material this way can pump heat like a fridge with no gas and no compressor, and prototype solid-state coolers now do it.",
+  "effect": "a material warms when an electric field is switched on and cools when it is switched off",
+  "usedIn": [
+   "Prototype solid-state refrigerators using polymer films",
+   "Experimental chip and battery coolers"
+  ],
+  "strength": "Ordinary crystals change by a fraction of a degree, but thin films found in 2006 swing by about 12 °C per switch.",
+  "deps": []
+ },
+ {
+  "edb": "Electrochemiluminescence",
+  "verdict": "keep",
+  "rule": "other",
+  "borderline": true,
+  "why": "Rules don't settle whether it is its own card or a variant of chemiluminescence (another batch); I kept it because the use is distinct. No single discoverer (1960s, Hercules and Bard among others), so year and inventor are null.",
+  "id": "electrochemiluminescence",
+  "title": "Electrochemiluminescence",
+  "year": null,
+  "inventor": null,
+  "location": null,
+  "field": "Science: Chemistry",
+  "description": "Certain chemicals glow when a small voltage at an electrode sets off a light-giving reaction, so the light can be switched on exactly when and where you want it. Chemists worked it out in the 1960s. It is the heart of hospital blood analysers that count tiny amounts of hormones, cancer markers and heart-attack proteins.",
+  "effect": "an electrode reaction makes a chemical glow",
+  "usedIn": [
+   "Roche Elecsys immunoassay analysers (thyroid, cancer marker and troponin tests)",
+   "Meso Scale Discovery assay plates"
+  ],
+  "strength": "The glow is too faint to see, but a light detector can count it down to a few billionths of a gram per litre.",
+  "deps": [
+   "laws-of-electrolysis"
+  ]
+ },
+ {
+  "edb": "Electrochromism",
+  "verdict": "keep",
+  "rule": "other",
+  "borderline": false,
+  "why": "Specific effect with a clear job; not in the deck.",
+  "id": "electrochromism",
+  "title": "Electrochromism",
+  "year": 1969,
+  "inventor": "Satyen Deb",
+  "location": "United States",
+  "field": "Science: Chemistry",
+  "description": "A thin film on glass turns from clear to deep blue when a small voltage pushes charged atoms into it, and clears again when the voltage reverses. Satyen Deb found it in tungsten oxide films at American Cyanamid in 1969. It makes windows that dim at the press of a button and car mirrors that darken against headlight glare.",
+  "effect": "a small voltage makes a material change colour or darken, and it reverses",
+  "usedIn": [
+   "Dimmable cabin windows on the Boeing 787",
+   "Auto-dimming rear-view mirrors (Gentex)",
+   "Smart-glass building windows"
+  ],
+  "strength": "A couple of volts darkens a window over a few minutes, cutting the light let through from about 60% to 1%.",
+  "deps": []
+ },
+ {
+  "edb": "Electrodeposition",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Plating metal out of a solution with current is what Faraday's Laws of electrolysis card measures.",
+  "card": "laws-of-electrolysis"
+ },
+ {
+  "edb": "Electrohydrodynamics",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "An umbrella term covering several effects (electrophoresis, electro-osmosis and others), not one effect."
+ },
+ {
+  "edb": "Electroluminescence",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "A material glowing when current flows through it is what the Light-emitting diodes card covers.",
+  "card": "light-emitting-diodes"
+ },
+ {
+  "edb": "Electrolysis",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "The deck has Faraday's Laws of electrolysis (and Decomposition of water).",
+  "card": "laws-of-electrolysis"
+ },
+ {
+  "edb": "Electrolyte",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Faraday named electrolytes on the Laws of electrolysis card.",
+  "card": "laws-of-electrolysis"
+ },
+ {
+  "edb": "Electromagnetic Induction",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "The deck has Electromagnetic induction.",
+  "card": "electromagnetic-induction"
+ },
+ {
+  "edb": "Electron Impact Desorption",
+  "verdict": "drop",
+  "rule": "e2",
+  "borderline": false,
+  "why": "Knocking single molecules off a surface with electrons happens in ultra-high vacuum and moves far too little material to do a job."
+ },
+ {
+  "edb": "Electron Paramagnetic Resonance",
+  "verdict": "keep",
+  "rule": "other",
+  "borderline": true,
+  "why": "Borderline: it could count as a variant of the deck's Magnetic resonance card, but the deck already splits NMR off as its own discovery, so I kept it under its plainer name.",
+  "id": "electron-spin-resonance",
+  "title": "Electron spin resonance",
+  "year": 1944,
+  "inventor": "Yevgeny Zavoisky",
+  "location": "Russia",
+  "field": "Science: Physics",
+  "description": "Put a substance with lone, unpaired electrons in a magnetic field and it soaks up microwaves at one sharp frequency, set by the field strength. Yevgeny Zavoisky found it in Kazan in 1944. Because it picks out free radicals and radiation damage, it can date fossil teeth, check whether food was irradiated, and measure radiation doses.",
+  "effect": "unpaired electrons in a magnetic field absorb microwaves at one precise frequency",
+  "usedIn": [
+   "Alanine dosimeters that measure radiotherapy doses",
+   "Dating fossil tooth enamel",
+   "Testing whether food has been irradiated",
+   "Diamond quantum magnetic sensors"
+  ],
+  "strength": "Weak: it needs a sensitive microwave receiver, but it can spot about a billion unpaired electrons in a sample.",
+  "deps": [
+   "magnetic-resonance"
+  ]
+ },
+ {
+  "edb": "Electrorheological Effect",
+  "verdict": "keep",
+  "rule": "other",
+  "borderline": false,
+  "why": "Specific effect with a clear holding/gripping job; canonical card for the weaker Electroviscous Effect.",
+  "id": "electrorheological-effect",
+  "title": "Electrorheological effect",
+  "year": 1947,
+  "inventor": "Willis Winslow",
+  "location": "United States",
+  "field": "Science: Physics",
+  "description": "A runny oil full of fine powder stiffens into a soft solid in a few thousandths of a second when a strong voltage is applied, and turns runny again when it is switched off. Willis Winslow patented it in 1947. It gives clutches, brakes and haptic controls that change grip instantly with no moving valves.",
+  "effect": "an electric field turns a fluid thick and nearly solid in milliseconds",
+  "usedIn": [
+   "Electrorheological clutches and brakes",
+   "Haptic and tactile feedback devices",
+   "Adaptive shock absorbers and robot grippers"
+  ],
+  "strength": "A few thousand volts per millimetre makes it hold a few kilopascals, roughly like stiff jelly, which is why magnetic versions won in car suspensions.",
+  "deps": []
+ },
+ {
+  "edb": "Electrostatic Discharge",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "A sudden spark between charged objects is part of the Static electricity card.",
+  "card": "static-electricity"
+ },
+ {
+  "edb": "Electrostatic Induction",
+  "verdict": "keep",
+  "rule": "other",
+  "borderline": false,
+  "why": "Specific named effect with clear jobs (charging, shielding); not in the deck.",
+  "id": "electrostatic-induction",
+  "title": "Electrostatic induction",
+  "year": 1753,
+  "inventor": "John Canton",
+  "location": "England",
+  "field": "Science: Physics",
+  "description": "Hold a charged rod near a metal can without touching it and the can's own charges shift, so the near side becomes opposite to the rod and the can rolls toward it. John Canton in London described it in 1753. Touching the far side briefly lets you charge things over and over from one source, which is how the electrophorus and the Wimshurst machine work.",
+  "effect": "a nearby charge pushes the charges in an object around without touching it",
+  "usedIn": [
+   "Volta's electrophorus (1775)",
+   "Wimshurst static machines",
+   "Gold-leaf electroscopes",
+   "Faraday-cage shielding"
+  ],
+  "strength": "A rod rubbed on hair can pull an empty drink can along a table from a few centimetres away.",
+  "deps": [
+   "static-electricity",
+   "positive-negative-charge"
+  ]
+ },
+ {
+  "edb": "Electrostatics",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "The name of a whole field; static electricity is already in the deck."
+ },
+ {
+  "edb": "Electrostriction",
+  "verdict": "keep",
+  "rule": "other",
+  "borderline": true,
+  "why": "Specific and useful, and different from piezoelectricity (it works in every insulator); no clear discoverer or date (studied around 1880 by Röntgen and Quincke), so year and inventor are null.",
+  "id": "electrostriction",
+  "title": "Electrostriction",
+  "year": null,
+  "inventor": null,
+  "location": null,
+  "field": "Science: Physics",
+  "description": "Every insulating material squeezes slightly in the direction of a strong electric field, and the effect doesn't care which way the field points. In most materials the change is far too small to notice, but special ceramics move enough to bend mirrors. Telescope mirrors that correct for starlight twinkling and precision positioners use these ceramics.",
+  "effect": "an insulator changes shape a little when an electric field is applied",
+  "usedIn": [
+   "Lead magnesium niobate actuators in adaptive-optics mirrors",
+   "Nanometre positioning stages",
+   "Sonar transducers"
+  ],
+  "strength": "Tiny: the best ceramics stretch about 0.1%, a millimetre-thick piece moving a micrometre.",
+  "deps": [
+   "piezoelectricity"
+  ]
+ },
+ {
+  "edb": "Electroviscous Effect",
+  "verdict": "merge",
+  "rule": "e4",
+  "borderline": false,
+  "why": "A weaker version of the same thickening under an electric field; merged into the Electrorheological effect card.",
+  "into": "electrorheological-effect"
+ },
+ {
+  "edb": "Endothermic Reaction",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A whole category of reactions; heat in reactions is already in the deck as thermochemistry."
+ },
+ {
+  "edb": "Entrainment",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A generic fluid term (one flow dragging another along), like Jet."
+ },
+ {
+  "edb": "Entropic Explosion",
+  "verdict": "drop",
+  "rule": "e3",
+  "borderline": false,
+  "why": "A chemistry curiosity variant of explosion with no constructive use; explosives are already in the deck."
+ },
+ {
+  "edb": "Enzyme",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "The deck has the Enzyme card.",
+  "card": "enzyme"
+ },
+ {
+  "edb": "Erosion",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "An everyday natural process; slow geological change is already in the deck (uniformitarianism)."
+ },
+ {
+  "edb": "Ettingshausen Effect",
+  "verdict": "drop",
+  "rule": "e2",
+  "borderline": false,
+  "why": "The cooling from current and a magnetic field is tiny except in bismuth at very low temperatures."
+ },
+ {
+  "edb": "Evaporation",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "An everyday process; evaporative cooling is already in the deck as refrigerators."
+ },
+ {
+  "edb": "Exothermic Reaction",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A whole category of reactions, not one effect."
+ },
+ {
+  "edb": "Explosion",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A generic word; the deck has gunpowder, nitroglycerine and dynamite."
+ },
+ {
+  "edb": "Faraday Effect",
+  "verdict": "keep",
+  "rule": "other",
+  "borderline": false,
+  "why": "Specific effect with clear jobs; none of Faraday's deck cards covers this 1845 discovery.",
+  "id": "faraday-effect",
+  "title": "Faraday effect",
+  "year": 1845,
+  "inventor": "Michael Faraday",
+  "location": "England",
+  "field": "Science: Physics",
+  "description": "Shine polarised light through glass sitting in a strong magnetic field and the direction of its polarisation twists, more the stronger the field. Faraday found it in 1845, the first proof that light and magnetism are linked. It builds one-way valves for light that protect lasers in fibre-optic networks, and lets power companies measure huge currents with a loop of fibre.",
+  "effect": "a magnetic field twists the polarisation of light passing through a material",
+  "usedIn": [
+   "Optical isolators in fibre-optic networks and lasers",
+   "Fibre-optic current sensors in power substations",
+   "Mapping galactic magnetic fields with radio telescopes"
+  ],
+  "strength": "In special garnet crystals a small permanent magnet twists light by 45 degrees in a couple of millimetres; ordinary glass needs a strong electromagnet for a few degrees.",
+  "deps": [
+   "polarized-light",
+   "electromagnets"
+  ]
+ },
+ {
+  "edb": "Faraday Wave",
+  "verdict": "keep",
+  "rule": "other",
+  "borderline": false,
+  "why": "Specific named effect with a clear atomising job; not in the deck.",
+  "id": "faraday-waves",
+  "title": "Faraday waves",
+  "year": 1831,
+  "inventor": "Michael Faraday",
+  "location": "England",
+  "field": "Science: Physics",
+  "description": "Shake a dish of liquid up and down fast enough and its surface breaks into a standing pattern of squares, stripes or hexagons that bob at half the shaking rate. Faraday described them in 1831. Shake much faster and the crests fling off fine droplets, which is how ultrasonic humidifiers and nebulisers make mist.",
+  "effect": "vibrating a container makes its liquid surface form standing wave patterns that can throw off droplets",
+  "usedIn": [
+   "Ultrasonic humidifiers and medical nebulisers",
+   "Arranging cells and particles into patterns for tissue engineering"
+  ],
+  "strength": "Patterns appear once the dish is shaken a bit harder than gravity; at 1.7 million shakes a second the crests throw off droplets a few micrometres across.",
+  "deps": [
+   "acoustics"
+  ]
+ },
+ {
+  "edb": "Fast Ion Conductor",
+  "verdict": "attach",
+  "rule": "e3",
+  "borderline": true,
+  "why": "Faraday found that solid lead fluoride and silver sulfide conduct electricity by moving ions in his 1833-34 electrolysis researches, the same work as the Laws of electrolysis card; borderline because it is now a big field of its own (solid-state batteries, car oxygen sensors, solid oxide fuel cells), so it could be its own card. I picked attach.",
+  "card": "laws-of-electrolysis"
+ },
+ {
+  "edb": "Fatigue",
+  "verdict": "keep",
+  "rule": "other",
+  "borderline": false,
+  "why": "Specific, nameable effect; titled Metal fatigue as the clearest name for \"Fatigue\".",
+  "id": "metal-fatigue",
+  "title": "Metal fatigue",
+  "year": 1837,
+  "inventor": "Wilhelm Albert",
+  "location": "Germany",
+  "field": "Science: Physics",
+  "description": "A metal part bent back and forth many times cracks and breaks under loads far below what would snap it in one go. Wilhelm Albert, a German mining official, first documented it in iron hoist chains in 1837, and August Wöhler's railway-axle tests in the 1860s showed the limits. It's why you can snap a paperclip by bending it, and why airliners are rated for a set number of flights.",
+  "effect": "a material weakened by repeated loading cracks below its normal breaking strength",
+  "usedIn": [
+   "Wöhler fatigue testing of railway axles",
+   "Airliner fatigue-life rules after the de Havilland Comet crashes (1954)",
+   "Snapping wire or paperclips by bending without tools"
+  ],
+  "strength": "Steel can break after about a million cycles at half the load that would snap it at once.",
+  "deps": [
+   "steam-locomotive"
+  ]
+ },
+ {
+  "edb": "Fermentation",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "The deck has the Fermentation card.",
+  "card": "fermentation"
+ },
+ {
+  "edb": "Ferromagnetism",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "The strong magnetism of iron is the deck's magnet cards (Magnetic poles, compass).",
+  "card": "magnetic-pole"
+ },
+ {
+  "edb": "Flow Separation",
+  "verdict": "merge",
+  "rule": "e4",
+  "borderline": true,
+  "why": "Flow peeling off a surface comes from Prandtl's 1904 boundary-layer work and is best told on that card (another batch); borderline because it could stand alone (stall, golf-ball dimples). I picked merge.",
+  "into": "boundary-layer"
+ },
+ {
+  "edb": "Fluid Hammer",
+  "verdict": "keep",
+  "rule": "other",
+  "borderline": false,
+  "why": "Specific named effect with a clear job (ram pumps); titled Water hammer, its common name.",
+  "id": "water-hammer",
+  "title": "Water hammer",
+  "year": 1898,
+  "inventor": "Nikolai Zhukovsky",
+  "location": "Russia",
+  "field": "Science: Physics",
+  "description": "Shut a tap suddenly on fast-flowing water and the pipes bang, because the moving water slams to a stop and sends a pressure spike racing back through the pipe. Nikolai Zhukovsky worked out its size in 1898 after Moscow's water mains kept bursting. The hydraulic ram pump harnesses those bangs to lift water uphill with no motor at all.",
+  "effect": "a moving liquid stopped suddenly sends a sharp pressure spike along its pipe",
+  "usedIn": [
+   "Hydraulic ram pumps (Montgolfier, 1796)",
+   "Water-hammer arrestors in plumbing",
+   "Surge tanks at hydroelectric plants"
+  ],
+  "strength": "Stopping water moving at 1 metre per second all at once raises the pressure by about 14 atmospheres.",
+  "deps": [
+   "hydrostatics"
+  ]
+ },
+ {
+  "edb": "Fluidisation",
+  "verdict": "keep",
+  "rule": "other",
+  "borderline": false,
+  "why": "Specific effect with big industrial uses; not in the deck.",
+  "id": "fluidization",
+  "title": "Fluidization",
+  "year": 1922,
+  "inventor": "Fritz Winkler",
+  "location": "Germany",
+  "field": "Science: Chemistry",
+  "description": "Blow air up through a bed of sand or powder and at a certain speed the grains lift apart and the whole bed starts behaving like a boiling liquid: you can stir it, pour it, and things float or sink in it. Fritz Winkler used it in Germany in 1922 to turn powdered coal into gas. Fluidized beds now crack crude oil into gasoline and burn coal and waste cleanly.",
+  "effect": "gas blown up through a granular bed makes it flow like a liquid",
+  "usedIn": [
+   "Fluid catalytic cracking in oil refineries (1942)",
+   "Fluidized-bed boilers and incinerators",
+   "Winkler coal gasifier",
+   "Fluidized-bed dryers for food and medicines"
+  ],
+  "strength": "A gentle updraft of a few centimetres per second is enough; a ball heavier than the sand sinks and a lighter one bobs up.",
+  "deps": []
+ },
+ {
+  "edb": "Fluorescence",
+  "verdict": "keep",
+  "rule": "other",
+  "borderline": false,
+  "why": "Specific effect with many uses; the deck mentions fluorescence only in passing (electricity in a vacuum) and has no card for it.",
+  "id": "fluorescence",
+  "title": "Fluorescence",
+  "year": 1852,
+  "inventor": "George Gabriel Stokes",
+  "location": "England",
+  "field": "Science: Physics",
+  "description": "Some materials soak up invisible ultraviolet light and instantly give it back as visible colour, so they seem to glow under a black light. George Stokes worked it out in 1852 with quinine water, and named it after the mineral fluorite. It lights fluorescent tubes, makes highlighter ink and whitened laundry glow, and lets biologists tag cells with glowing proteins.",
+  "effect": "a material absorbs light of one colour and instantly gives off light of a longer, redder colour",
+  "usedIn": [
+   "Fluorescent lamps",
+   "Highlighter pens and optical brighteners in laundry detergent",
+   "Fluorescence microscopy with green fluorescent protein"
+  ],
+  "strength": "The glow lasts only billionths of a second after the light goes off; a fluorescent tube gives about four times the light per watt of a filament bulb.",
+  "deps": [
+   "ultraviolet"
+  ]
+ },
+ {
+  "edb": "Flutter",
+  "verdict": "keep",
+  "rule": "other",
+  "borderline": false,
+  "why": "Specific effect; canonical card for Aeroelastic Flutter (other batch). Lanchester 1916 is the usual first recorded case.",
+  "id": "flutter",
+  "title": "Flutter",
+  "year": 1916,
+  "inventor": "Frederick Lanchester",
+  "location": "England",
+  "field": "Science: Physics",
+  "description": "Above a certain speed, a wing, tail, flag or bridge deck in moving air starts to twist and flap, each swing feeding the next, until it shakes itself apart. Frederick Lanchester traced the tail of a Handley Page bomber violently shaking in 1916 to this feedback. Engineers test every new aircraft against it, and wind-harvesters turn a fluttering ribbon into electricity.",
+  "effect": "a flexible structure in moving air or water feeds on the flow and swings harder and harder",
+  "usedIn": [
+   "Flight flutter testing of new aircraft",
+   "Windbelt flutter generators (Shawn Frayne, 2007)",
+   "Bridge-deck design after the Tacoma Narrows collapse (1940)"
+  ],
+  "strength": "Below the critical speed nothing happens; just above it, swings grow in seconds, and the Tacoma Narrows Bridge tore apart in a 64 km/h wind.",
+  "deps": [
+   "airplane",
+   "aerodynamics"
+  ]
+ },
+ {
+  "edb": "Focusing",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A generic optics process; lenses and mirrors are already in the deck."
+ },
+ {
+  "edb": "Force",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A basic physics concept, not an effect; Newton's laws of motion are in the deck."
+ },
+ {
+  "edb": "Fractal Forms",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A kind of shape, not a physical effect."
+ },
+ {
+  "edb": "Fractoluminescence",
+  "verdict": "merge",
+  "rule": "e4",
+  "borderline": false,
+  "why": "Light from cracking crystals is a variant of light from crushing or rubbing them; Mechanoluminescence is the canonical card, in another batch.",
+  "into": "mechanoluminescence"
+ },
+ {
+  "edb": "Franz-Keldysh Effect",
+  "verdict": "keep",
+  "rule": "other",
+  "borderline": false,
+  "why": "Specific effect with a clear job; named Electroabsorption, the broader common term that covers the Franz-Keldysh effect.",
+  "id": "electroabsorption",
+  "title": "Electroabsorption",
+  "year": 1958,
+  "inventor": "Walter Franz and Leonid Keldysh",
+  "location": "Germany and Russia",
+  "field": "Science: Physics",
+  "description": "A thin layer of semiconductor that normally lets a laser beam through starts to swallow it when a few volts are applied across it. Walter Franz in Germany and Leonid Keldysh in Moscow predicted it independently in 1958. Because it switches in trillionths of a second, it is used to flick laser light on and off to send internet data down optical fibres.",
+  "effect": "an electric field makes a semiconductor absorb light it used to let through",
+  "usedIn": [
+   "Electroabsorption modulators in fibre-optic transmitters",
+   "High-speed optical switches"
+  ],
+  "strength": "A couple of volts can block most of a beam, and it switches tens of billions of times a second.",
+  "deps": [
+   "stark-effect",
+   "light-emitting-diodes"
+  ]
+ }
+]

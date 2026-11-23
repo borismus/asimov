@@ -1,0 +1,1631 @@
+[
+ {
+  "id": "sleep-timed-brain-dose",
+  "name": "Sleep-timed brain dose",
+  "subtitle": "a nose spray fired at deep sleep",
+  "job": "treats illness",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "during deep sleep the brain flushes out waste through fluid channels",
+    "card": "glymphatic-system",
+    "recent": true
+   },
+   {
+    "effect": "small molecules seep through a membrane",
+    "card": "osmosis",
+    "recent": false
+   },
+   {
+    "effect": "nerve signals are electrical",
+    "card": "electric-nerve-fibers",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "electroencephalography",
+   "spray-cans",
+   "microchips"
+  ],
+  "how": "Drugs meant for the brain mostly bounce off the barrier around its blood vessels, so doses have to be big and the side effects come with them. Only in deep sleep does fluid wash through the channels that wrap those vessels. A thin headband watches for the slow brain waves that mark that moment and tells a small nose pump to fire, so the dose arrives while the current is running.",
+  "obstacle": "Nobody has shown that a dose timed to a slow wave actually reaches more brain than the same dose at bedtime.",
+  "searchQuery": "nasal drug delivery timed to slow wave sleep glymphatic",
+  "plausibility": 3,
+  "why": "Sleep-gated brain flushing is real; timing a dose to it is untested but cheap to try."
+ },
+ {
+  "id": "meal-sensing-gut-bacterium",
+  "name": "Meal-sensing gut bacterium",
+  "subtitle": "swallowed bacteria that make an appetite hormone",
+  "job": "controls weight",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "a gut hormone curbs appetite and steadies blood sugar",
+    "card": "glp-1",
+    "recent": true
+   },
+   {
+    "effect": "the bacteria in the gut steer the body's immunity, weight and mood",
+    "card": "gut-microbiome",
+    "recent": true
+   },
+   {
+    "effect": "a cell can run on a genome written entirely by computer",
+    "card": "synthetic-genome",
+    "recent": true
+   }
+  ],
+  "parts": [
+   "vitamin-pills",
+   "fermentation"
+  ],
+  "how": "The new weight drugs work, but they are weekly injections, they cost more than most people earn in a week, and the weight returns when they stop. This capsule carries a gut bacterium rewritten to sense the sugar rush of a meal and answer by making the same fullness hormone the gut already makes, so the signal arrives with food instead of from a syringe. It is built to depend on a nutrient only the capsule supplies, so it dies out when you stop taking it.",
+  "obstacle": "A living dose drifts: the organism mutates as it divides, and there is no way to recall it once it is in a million guts.",
+  "searchQuery": "engineered gut bacteria secreting GLP-1 human weight trial",
+  "plausibility": 2,
+  "why": "Mouse probiotics have made GLP-1; dosing a human reliably from a living colony is unsolved."
+ },
+ {
+  "id": "light-silenced-nerve-cuff",
+  "name": "Light-silenced nerve cuff",
+  "subtitle": "a cuff that switches off one pain nerve",
+  "job": "numbs pain",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "light-sensitive proteins let a flash of light switch chosen nerve cells on or off",
+    "card": "optogenetics",
+    "recent": true
+   },
+   {
+    "effect": "nerve signals are electrical",
+    "card": "electric-nerve-fibers",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "light-emitting-diodes",
+   "fiber-optics",
+   "lithium-battery",
+   "microchips"
+  ],
+  "how": "Chronic nerve pain is treated with drugs that dull the whole person, and cutting the nerve takes away ordinary feeling along with the pain. One injection teaches the pain fibres of a single nerve to build a protein that goes quiet under yellow light. A small cuff of LEDs around that nerve then turns those fibres down, on a dial the patient controls, leaving touch and movement alone.",
+  "obstacle": "Light reaches barely a millimetre into tissue, so the cuff has to sit on the nerve and keep its seal and its battery for years.",
+  "searchQuery": "optogenetic peripheral nerve cuff chronic pain human trial",
+  "plausibility": 3,
+  "why": "Done in rodents; the hard part is a human implant and gene delivery to one nerve."
+ },
+ {
+  "id": "fullness-capsule",
+  "name": "Fullness capsule",
+  "subtitle": "a pill that feeds the gut's far end",
+  "job": "controls weight",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "a gut hormone curbs appetite and steadies blood sugar",
+    "card": "glp-1",
+    "recent": true
+   },
+   {
+    "effect": "small molecules seep through a membrane",
+    "card": "osmosis",
+    "recent": false
+   },
+   {
+    "effect": "the stomach makes strong acid to digest food",
+    "card": "gastric-acidity",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "vitamin-pills",
+   "valve",
+   "microchips"
+  ],
+  "how": "Stomach surgery works for weight because it lets food reach the far end of the small intestine, where the body's own fullness hormone is made; a pill that does the same without surgery would reach far more people. This capsule stays sealed through the stomach, counts its hours, and then opens a tiny valve to release a concentrated nutrient exactly where those hormone-making cells sit. The body makes its own dose, at the time it would naturally.",
+  "obstacle": "Gut transit varies hugely from meal to meal and person to person, so the capsule may open in the wrong place half the time.",
+  "searchQuery": "ileal brake capsule delayed nutrient release endogenous GLP-1",
+  "plausibility": 3,
+  "why": "The ileal brake is well documented; a self-timed capsule that hits it reliably doesn't exist."
+ },
+ {
+  "id": "light-paced-heart",
+  "name": "Light-paced heart",
+  "subtitle": "a defibrillator that uses light, not shocks",
+  "job": "regulates the body",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "light-sensitive proteins let a flash of light switch chosen nerve cells on or off",
+    "card": "optogenetics",
+    "recent": true
+   },
+   {
+    "effect": "muscles work by electrical impulses",
+    "card": "electrical-stimulation",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "pacemaker",
+   "light-emitting-diodes",
+   "lithium-battery"
+  ],
+  "how": "An implanted defibrillator saves lives by hitting the heart with a shock that feels like being kicked in the chest, and patients live in fear of the next one. If the heart muscle is given a light-sensitive protein, a pulse of light can nudge the whole wall back into step at a thousandth of the energy, with nothing to feel. The implant becomes a lamp with a battery instead of a capacitor.",
+  "obstacle": "Light has to reach muscle several millimetres deep across a beating, blood-filled chamber, and the gene has to stay switched on for decades.",
+  "searchQuery": "optogenetic defibrillation human heart implant painless",
+  "plausibility": 2,
+  "why": "Shown in hearts outside the body and in mice; delivering light through living muscle is the wall."
+ },
+ {
+  "id": "breath-restoring-light",
+  "name": "Breath-restoring light",
+  "subtitle": "light that drives a paralysed diaphragm",
+  "job": "supplies oxygen",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "light-sensitive proteins let a flash of light switch chosen nerve cells on or off",
+    "card": "optogenetics",
+    "recent": true
+   },
+   {
+    "effect": "nerve signals are electrical",
+    "card": "electric-nerve-fibers",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "light-emitting-diodes",
+   "fiber-optics",
+   "microchips",
+   "lithium-battery"
+  ],
+  "how": "People with a high spinal injury can be tied to a ventilator for life because the nerve to the diaphragm no longer gets orders, even though the muscle itself is fine. Electrical pacing of that nerve works for some, but the current spreads and recruits the wrong fibres, which tires the muscle out. Light only reaches the cells that were given the light-sensitive protein, so the implant can wake small groups of fibres in turn, the way quiet breathing does.",
+  "obstacle": "Gene delivery to one nerve root in a human, and an implant that must not fail while someone is asleep.",
+  "searchQuery": "optogenetic phrenic nerve pacing ventilator spinal injury",
+  "plausibility": 2,
+  "why": "Rodent diaphragm pacing by light works; nothing like it has been tried in people."
+ },
+ {
+  "id": "organ-rejuvenation-rinse",
+  "name": "Donor-organ rejuvenation rinse",
+  "subtitle": "a machine that de-ages an organ before transplant",
+  "job": "treats illness",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "clearing out worn-out 'zombie' cells makes old mice healthier",
+    "card": "senescent-cells",
+    "recent": true
+   },
+   {
+    "effect": "cells live outside the body",
+    "card": "cell-theory",
+    "recent": false
+   },
+   {
+    "effect": "the body rejects foreign tissue",
+    "card": "tissue-transplantation",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "perfusion-pump",
+   "heart-lung-machine",
+   "refrigerators"
+  ],
+  "how": "Thousands of donated kidneys and livers are thrown away every year for being too old, while people die waiting. Organs now spend hours on a pump that keeps them warm and fed before surgery, and that is a window in which the organ can be treated without dosing any patient. Running a senolytic drug through the pump strips out the worn-out cells that make an old organ leak inflammatory signals, so it arrives younger than it left.",
+  "obstacle": "Proving the rinse helps needs a trial where the comparison organ is the one you threw away.",
+  "searchQuery": "senolytic ex vivo machine perfusion donor organ rejuvenation",
+  "plausibility": 3,
+  "why": "Perfusion gives a safe dosing window; senolytics on whole human organs is untried."
+ },
+ {
+  "id": "zombie-cell-urine-test",
+  "name": "Zombie-cell urine test",
+  "subtitle": "a paper strip that counts worn-out cells",
+  "job": "slows ageing",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "clearing out worn-out 'zombie' cells makes old mice healthier",
+    "card": "senescent-cells",
+    "recent": true
+   },
+   {
+    "effect": "an enzyme breaks down protein",
+    "card": "pepsin",
+    "recent": false
+   },
+   {
+    "effect": "small molecules seep through a membrane",
+    "card": "osmosis",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "paper",
+   "synthetic-dyes"
+  ],
+  "how": "Everything aimed at ageing is stuck because nobody can measure whether it worked without waiting thirty years. Worn-out cells give themselves away by the enzymes they pour out, so a harmless probe can be injected that only those enzymes cut. The freed fragment is small enough for the kidneys to dump into urine, where a paper strip reads it: the more worn-out cells in the body, the darker the line.",
+  "obstacle": "The probe must be cut by worn-out cells and almost nothing else, or the strip just reports general inflammation.",
+  "searchQuery": "synthetic urinary biomarker senescence protease reporter",
+  "plausibility": 3,
+  "why": "Urine reporters work for other targets; a specific senescence trigger is the open question."
+ },
+ {
+  "id": "thymus-restart-implant",
+  "name": "Thymus restart implant",
+  "subtitle": "a patch that rebuilds adult immunity",
+  "job": "grows organs",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "four genes turn an adult cell back into a stem cell that can become any tissue",
+    "card": "induced-stem-cells",
+    "recent": true
+   },
+   {
+    "effect": "some embryo cells steer how their neighbours develop",
+    "card": "embryo-organizer",
+    "recent": false
+   },
+   {
+    "effect": "the body rejects foreign tissue",
+    "card": "tissue-transplantation",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "tissue-culture",
+   "nylon",
+   "sutures"
+  ],
+  "how": "The thymus, the gland that trains new immune cells, shrivels to fat by middle age, which is a large part of why old people die of infections and respond badly to vaccines. A patch of thymus tissue grown from the patient's own cells, on a mesh that holds the right shapes, can be tucked under the skin where blood will find it. Because the cells are the patient's own, there is nothing to reject.",
+  "obstacle": "Thymus tissue only trains cells correctly in a particular layered structure that nobody has yet grown outside the body.",
+  "searchQuery": "iPSC derived thymus organoid implant restore adult immunity",
+  "plausibility": 2,
+  "why": "Partial thymus organoids exist; a working trainer of new immune cells does not."
+ },
+ {
+  "id": "clear-skull-brain-reader",
+  "name": "Clear-skull brain reader",
+  "subtitle": "reading neurons by light, without electrodes",
+  "job": "reads the brain",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "a jellyfish protein makes any cell that carries its gene glow green",
+    "card": "green-fluorescent-protein",
+    "recent": true
+   },
+   {
+    "effect": "a laser makes sodium atoms high in the sky glow as an artificial star for correcting blur",
+    "card": "adaptive-optics-sodium",
+    "recent": true
+   },
+   {
+    "effect": "electrodes on the motor cortex let a person's intent move a cursor or arm",
+    "card": "neural-interfaces",
+    "recent": true
+   }
+  ],
+  "parts": [
+   "camera",
+   "laser",
+   "mirror",
+   "microchips"
+  ],
+  "how": "Brain implants read thought through wires that scar the tissue they sit in and fail after a few years. Cells can instead be given a jellyfish protein that flashes when the cell fires, turning thought into light. A clear window in the skull and a deformable mirror that cancels the blur of the tissue above, the trick that gives telescopes sharp stars, let a camera watch thousands of cells at once with nothing pushed into the brain.",
+  "obstacle": "Brain tissue scatters light badly, so even corrected optics see only the top millimetre of cortex.",
+  "searchQuery": "through-skull adaptive optics calcium imaging human brain interface",
+  "plausibility": 2,
+  "why": "All-optical reading works in mice through thin skulls; human depth and gene delivery are unsolved."
+ },
+ {
+  "id": "enzyme-lint-filter",
+  "name": "Enzyme lint filter",
+  "subtitle": "a washing machine filter that digests fibres",
+  "job": "breaks down plastic",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "bacteria found at a recycling plant make an enzyme that breaks PET plastic apart",
+    "card": "plastic-eating-enzyme",
+    "recent": true
+   },
+   {
+    "effect": "a learned model predicts a protein's 3D shape from its sequence",
+    "card": "protein-structure-prediction",
+    "recent": true
+   },
+   {
+    "effect": "catalysis",
+    "card": "catalysis",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "valve",
+   "boiler",
+   "nylon",
+   "microchips"
+  ],
+  "how": "Every wash sends hundreds of thousands of polyester fibres down the drain, through sewage works and into rivers; mesh filters only postpone the problem into a bag of lint. This cartridge traps the fibres, then holds them in warm water with a redesigned PET-splitting enzyme, stable enough to work shift after shift, until they come apart into the two small molecules polyester is made from. What leaves the drain is ordinary chemistry instead of plastic thread.",
+  "obstacle": "The enzymes work on soft, amorphous PET and crawl on the tightly packed fibre in real clothing.",
+  "searchQuery": "PETase washing machine microfibre cartridge enzymatic degradation",
+  "plausibility": 3,
+  "why": "Industrial PET enzymes exist; a home-scale cartridge on tough fibre has not been shown."
+ },
+ {
+  "id": "road-dust-drain-filter",
+  "name": "Road-dust drain filter",
+  "subtitle": "a storm drain that eats tyre particles",
+  "job": "cleans polluted water",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "bacteria found at a recycling plant make an enzyme that breaks PET plastic apart",
+    "card": "plastic-eating-enzyme",
+    "recent": true
+   },
+   {
+    "effect": "a learned model predicts a protein's 3D shape from its sequence",
+    "card": "protein-structure-prediction",
+    "recent": true
+   },
+   {
+    "effect": "vent bacteria live on chemicals, without light or oxygen",
+    "card": "deep-sea-ecosystems",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "valve",
+   "portland-cement",
+   "nylon"
+  ],
+  "how": "Tyres shed more microplastic than any other source, and one of the chemicals that washes off them kills salmon within hours of a rainstorm. This drain insert slows the first flush of a storm in a chamber packed with a bed of microbes chosen and fed to attack rubber and its additives, with designed enzymes doing the first cuts. The runoff that continues to the river has lost the fraction that does the killing.",
+  "obstacle": "Rubber is a cross-linked network, far harder to cut than polyester, and a cold drain gives an enzyme little time.",
+  "searchQuery": "tyre wear particle biodegradation stormwater filter 6PPD-quinone",
+  "plausibility": 2,
+  "why": "Rubber-degrading microbes are slow; the need and the location are both real."
+ },
+ {
+  "id": "fluorine-eating-enzyme",
+  "name": "Fluorine-eating enzyme",
+  "subtitle": "a designed enzyme that breaks forever chemicals",
+  "job": "cleans polluted water",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "a learned model predicts a protein's 3D shape from its sequence",
+    "card": "protein-structure-prediction",
+    "recent": true
+   },
+   {
+    "effect": "fluorine grabs onto almost anything",
+    "card": "fluorine",
+    "recent": false
+   },
+   {
+    "effect": "catalysis",
+    "card": "catalysis",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "valve",
+   "boiler",
+   "nylon"
+  ],
+  "how": "PFAS are in the blood of almost everyone, and the only treatments are filters that concentrate the problem into a sludge someone then has to burn at great expense. Nature has a few weak enzymes that snap carbon-fluorine bonds, and a learned model can now propose protein shapes that grip a PFAS chain and hold the bond where the enzyme can hit it. A column packed with such an enzyme would turn a captured sludge back into salt and harmless fragments.",
+  "obstacle": "Carbon-fluorine is the strongest bond in organic chemistry, and no enzyme yet gets near the rate a treatment plant needs.",
+  "searchQuery": "de novo designed defluorinase enzyme PFAS degradation water",
+  "plausibility": 2,
+  "why": "Design tools are new enough that nobody has yet tried hard at this bond."
+ },
+ {
+  "id": "origami-filter-membrane",
+  "name": "Origami filter membrane",
+  "subtitle": "a membrane with pores of one exact size",
+  "job": "cleans polluted water",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "DNA strands fold themselves into any designed nanoscale shape",
+    "card": "dna-origami",
+    "recent": true
+   },
+   {
+    "effect": "small molecules seep through a membrane",
+    "card": "osmosis",
+    "recent": false
+   },
+   {
+    "effect": "a learned model predicts a protein's 3D shape from its sequence",
+    "card": "protein-structure-prediction",
+    "recent": true
+   }
+  ],
+  "parts": [
+   "nylon",
+   "teflon",
+   "valve"
+  ],
+  "how": "Filter membranes are made by casting plastic and hoping the holes come out roughly the same size, so they must be run at high pressure and still let some of the wrong things through. DNA strands can be written to fold themselves into a plate with a hole of an exact width, and billions of identical plates can be tiled onto a tough support. A filter whose every pore is the same size can separate at lower pressure, which is most of the cost of cleaning water.",
+  "obstacle": "DNA plates are fragile in flowing water and in the salts and bleach a real plant uses.",
+  "searchQuery": "DNA origami nanopore membrane water filtration scale",
+  "plausibility": 2,
+  "why": "Uniform pores would cut filtration energy; DNA's durability in service is the doubt."
+ },
+ {
+  "id": "brine-metal-binder",
+  "name": "Brine metal binder",
+  "subtitle": "a designed protein that picks lithium from brine",
+  "job": "separates mixtures",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "a learned model predicts a protein's 3D shape from its sequence",
+    "card": "protein-structure-prediction",
+    "recent": true
+   },
+   {
+    "effect": "a stronger-binding substance pushes a weaker one out",
+    "card": "chemical-affinities",
+    "recent": false
+   },
+   {
+    "effect": "charged particles move through a solution",
+    "card": "ionic-dissociation",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "nylon",
+   "valve",
+   "electric-battery"
+  ],
+  "how": "Lithium is pulled from brine by leaving it in evaporation ponds for a year and a half, which wastes water and only works in a few deserts. Proteins grip metal ions by holding oxygen atoms at exact distances, and shape-prediction tools now let that cage be designed for one ion and against its near twins. A column of such proteins on a fibre support could take lithium from seawater or oilfield brine in an afternoon and release it with a change of acidity.",
+  "obstacle": "The protein must survive thousands of grip-and-release cycles in hot salt before it beats a pond that costs nothing to run.",
+  "searchQuery": "designed protein selective lithium binding brine extraction",
+  "plausibility": 3,
+  "why": "Metal-binding design is advancing fast; durability in industrial brine is the open question."
+ },
+ {
+  "id": "continuous-drug-monitor",
+  "name": "Continuous drug monitor",
+  "subtitle": "an implant that watches a drug level",
+  "job": "monitors health continuously",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "a learned model predicts a protein's 3D shape from its sequence",
+    "card": "protein-structure-prediction",
+    "recent": true
+   },
+   {
+    "effect": "a one-atom sheet of carbon carries electrons extremely fast and blocks every gas",
+    "card": "graphene",
+    "recent": true
+   },
+   {
+    "effect": "resistance",
+    "card": "ohms-law",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "microchips",
+   "lithium-battery",
+   "radio-antennas"
+  ],
+  "how": "Chemotherapy, transplant drugs and antibiotics are dosed by weight and guesswork, and the blood level that matters is measured days later in a lab, if at all. A designed binder protein that changes shape when it catches one drug molecule can be tethered to a graphene sheet, where that shift changes how easily current flows. A splinter-sized implant then reports a drug level the way a glucose monitor reports sugar, continuously, to a phone.",
+  "obstacle": "The body wraps any implant in scar tissue within weeks, and the binder has to keep working inside it.",
+  "searchQuery": "implantable aptamer graphene continuous therapeutic drug monitoring",
+  "plausibility": 3,
+  "why": "Real-time blood sensors work in animals for hours; months in a human is the gap."
+ },
+ {
+  "id": "programmable-smell-chip",
+  "name": "Programmable smell chip",
+  "subtitle": "a nose chip you can retune by software",
+  "job": "diagnoses",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "a learned model predicts a protein's 3D shape from its sequence",
+    "card": "protein-structure-prediction",
+    "recent": true
+   },
+   {
+    "effect": "a jellyfish protein makes any cell that carries its gene glow green",
+    "card": "green-fluorescent-protein",
+    "recent": true
+   },
+   {
+    "effect": "cells live outside the body",
+    "card": "cell-theory",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "microchips",
+   "camera",
+   "tissue-culture"
+  ],
+  "how": "Dogs can smell lung cancer, low blood sugar and the start of an epileptic seizure, and no instrument does it in a doctor's office. A chip of cultured cells can be given designed smell receptors for chosen molecules, with a glowing protein inside that lights up when a receptor catches one; a camera underneath reads which wells lit. Because the receptors are designed, the same chip can be reprinted for a different disease without new hardware.",
+  "obstacle": "Designing a receptor for a small, floppy odour molecule is much harder than designing one for a protein target.",
+  "searchQuery": "de novo designed olfactory receptor cell based breath diagnostic chip",
+  "plausibility": 3,
+  "why": "Cell-based noses exist; arbitrary designed receptors would make them general."
+ },
+ {
+  "id": "plaque-unknotter",
+  "name": "Plaque unknotter",
+  "subtitle": "a designed protein that pulls tangles apart",
+  "job": "treats illness",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "a learned model predicts a protein's 3D shape from its sequence",
+    "card": "protein-structure-prediction",
+    "recent": true
+   },
+   {
+    "effect": "ATP's phosphate bond stores energy cells spend",
+    "card": "high-energy-phosphate",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "spray-cans",
+   "microchips"
+  ],
+  "how": "Alzheimer's and Parkinson's drugs try to stop new tangles forming, and leave the clumps already choking the cell where they are. Yeast and bacteria have machines that grab a misfolded protein and thread it through a central channel, pulling the tangle straight and spending ATP to do it, but they are too unstable and too indiscriminate for human cells. A designed version with a grip tuned to one clump could be delivered by nose spray and unpick what is already there.",
+  "obstacle": "A machine that pulls proteins straight will damage healthy ones unless its grip is remarkably picky.",
+  "searchQuery": "designed disaggregase protein therapy alpha-synuclein amyloid clearance",
+  "plausibility": 2,
+  "why": "Disaggregases exist in other kingdoms; a safe human version has never been designed."
+ },
+ {
+  "id": "transplant-tolerance-patch",
+  "name": "Transplant tolerance patch",
+  "subtitle": "a patch that stops a graft being rejected",
+  "job": "treats illness",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "releasing the immune system's brakes lets it kill tumours",
+    "card": "immune-checkpoints",
+    "recent": true
+   },
+   {
+    "effect": "the body rejects foreign tissue",
+    "card": "tissue-transplantation",
+    "recent": false
+   },
+   {
+    "effect": "an embryo's body accepts foreign tissue without rejecting it",
+    "card": "embryonic-immunological-tolerance",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "sutures",
+   "nylon"
+  ],
+  "how": "A transplant costs its owner a lifetime of drugs that suppress the whole immune system, so recipients die of infection and cancer at several times the usual rate. Cancer medicine spent twenty years learning to release the immune system's brakes; the same brakes can be pressed instead of released. A slow-release patch stitched beside the new organ floods only that spot with brake-pressing molecules, so the immune cells that meet the graft learn to leave it alone while the rest of the body stays on guard.",
+  "obstacle": "Local tolerance has to hold for decades, and pressing the brakes anywhere raises the risk of a tumour growing unseen there.",
+  "searchQuery": "local checkpoint agonist implant transplant tolerance without immunosuppression",
+  "plausibility": 3,
+  "why": "Checkpoint biology is well mapped; using it in reverse, locally, is barely tried."
+ },
+ {
+  "id": "plaque-eating-immune-cells",
+  "name": "Plaque-eating immune cells",
+  "subtitle": "immune cells trained to clear artery fat",
+  "job": "treats illness",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "immune cells given a designed receptor hunt down a chosen target",
+    "card": "car-t",
+    "recent": true
+   },
+   {
+    "effect": "white cells swallow bacteria",
+    "card": "phagocytes",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "tissue-culture",
+   "cardiac-catheter"
+  ],
+  "how": "Statins slow the growth of the fatty plaques that cause heart attacks, but nothing removes the plaque that is already there, and the immune cells drawn to it get stuck and make matters worse. Scavenger cells taken from the patient can be given a designed receptor that recognises the damaged fat in a plaque, and the switch that tells them to swallow rather than sit. Returned by catheter to the vessel, they clear what is already blocking it.",
+  "obstacle": "Eating a plaque from the inside could break it loose, which is exactly what causes a heart attack.",
+  "searchQuery": "CAR macrophage atherosclerotic plaque clearance therapy",
+  "plausibility": 2,
+  "why": "CAR macrophages exist for tumours; using them on plaque risks dislodging it."
+ },
+ {
+  "id": "gene-editing-phage-pill",
+  "name": "Gene-editing phage pill",
+  "subtitle": "a pill that disarms resistant gut bacteria",
+  "job": "kills bacteria",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "a guided enzyme cuts DNA at any spot spelled out by a short RNA",
+    "card": "crispr-cas9",
+    "recent": true
+   },
+   {
+    "effect": "some viruses kill only bacteria",
+    "card": "bacteriophages",
+    "recent": false
+   },
+   {
+    "effect": "the bacteria in the gut steer the body's immunity, weight and mood",
+    "card": "gut-microbiome",
+    "recent": true
+   }
+  ],
+  "parts": [
+   "vitamin-pills",
+   "fermentation"
+  ],
+  "how": "The gut is where antibiotic resistance is stored and traded: harmless bacteria carry the resistance genes and hand them to dangerous ones later. A virus that infects only bacteria can carry a guided cutting enzyme aimed at a resistance gene rather than at the bacterium itself, so the carrier survives but loses the gene. Taken as a capsule before surgery or chemotherapy, it would disarm the gut instead of flattening it.",
+  "obstacle": "Phages reach only the bacteria they can infect, and surviving cells that resist the phage are the ones selected for.",
+  "searchQuery": "CRISPR phage delivery remove antibiotic resistance gene gut microbiome",
+  "plausibility": 3,
+  "why": "Shown in mice and in early trials for skin; gut-wide disarming is unproven."
+ },
+ {
+  "id": "toxin-eating-gut-bacterium",
+  "name": "Toxin-eating gut bacterium",
+  "subtitle": "gut bacteria that delay dialysis",
+  "job": "treats illness",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "the bacteria in the gut steer the body's immunity, weight and mood",
+    "card": "gut-microbiome",
+    "recent": true
+   },
+   {
+    "effect": "a cell can run on a genome written entirely by computer",
+    "card": "synthetic-genome",
+    "recent": true
+   },
+   {
+    "effect": "the liver turns toxic ammonia into harmless urea",
+    "card": "urea-cycle",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "vitamin-pills",
+   "fermentation"
+  ],
+  "how": "Failing kidneys let waste build up, and once it does the only answer is dialysis three days a week for life. Much of that waste starts as gut bacteria turning dietary protein into compounds the kidney then has to clear. A swallowed organism, rewritten to consume those precursors in the colon before they are absorbed, could take a large share of the load off a kidney that still has some work left in it.",
+  "obstacle": "It has to out-eat the native bacteria that already make these compounds, in a gut that is different in every patient.",
+  "searchQuery": "engineered gut bacteria uremic toxin precursor chronic kidney disease",
+  "plausibility": 3,
+  "why": "The chemistry is known; colonising against an established community is the hard part."
+ },
+ {
+  "id": "living-sunscreen",
+  "name": "Living sunscreen",
+  "subtitle": "skin bacteria that make their own sunscreen",
+  "job": "shields from radiation",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "the bacteria in the gut steer the body's immunity, weight and mood",
+    "card": "gut-microbiome",
+    "recent": true
+   },
+   {
+    "effect": "a cell can run on a genome written entirely by computer",
+    "card": "synthetic-genome",
+    "recent": true
+   },
+   {
+    "effect": "ozone soaks up ultraviolet light",
+    "card": "ozonosphere",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "spray-cans"
+  ],
+  "how": "Sunscreen only works when it is reapplied every two hours, which almost nobody does, and that is why skin cancer keeps rising. Algae and fish make their own ultraviolet-absorbing molecules rather than wearing them. A harmless skin bacterium that everyone already carries, given the genes for those molecules, would renew a thin absorbing layer by itself as long as it is fed by sweat, so protection does not wash or sweat off.",
+  "obstacle": "Deliberately seeding an engineered organism onto skin that touches everyone else is a regulatory question nobody has answered.",
+  "searchQuery": "engineered skin bacteria mycosporine sunscreen living topical",
+  "plausibility": 2,
+  "why": "The pigment genes are known; a living cosmetic faces an unsolved approval path."
+ },
+ {
+  "id": "methane-free-rumen-bolus",
+  "name": "Methane-free rumen bolus",
+  "subtitle": "a cattle capsule that stops methane burps",
+  "job": "removes carbon dioxide",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "the bacteria in the gut steer the body's immunity, weight and mood",
+    "card": "gut-microbiome",
+    "recent": true
+   },
+   {
+    "effect": "vent bacteria live on chemicals, without light or oxygen",
+    "card": "deep-sea-ecosystems",
+    "recent": false
+   },
+   {
+    "effect": "a cell can run on a genome written entirely by computer",
+    "card": "synthetic-genome",
+    "recent": true
+   }
+  ],
+  "parts": [
+   "vitamin-pills",
+   "fermentation"
+  ],
+  "how": "Cattle belch about a sixth of the world's methane, and the feed additives that cut it have to be mixed into every meal, which is impossible for grazing herds. Methane is made by one group of microbes that eat the hydrogen left over from digestion; other microbes eat that hydrogen too, and turn it into a fatty acid the animal can use. A slow-release capsule that sits in the rumen for months, seeding and feeding the hydrogen-eating competitors, would turn a loss into feed.",
+  "obstacle": "The rumen is a fiercely competitive ecosystem that snaps back to its old balance within days of any nudge.",
+  "searchQuery": "rumen acetogen bolus displace methanogens cattle methane reduction",
+  "plausibility": 2,
+  "why": "Hydrogen competition is real; holding an altered rumen community is unsolved."
+ },
+ {
+  "id": "nitrogen-fixing-wheat",
+  "name": "Nitrogen-fixing wheat",
+  "subtitle": "a cereal that feeds itself nitrogen",
+  "job": "grows food",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "a guided enzyme cuts DNA at any spot spelled out by a short RNA",
+    "card": "crispr-cas9",
+    "recent": true
+   },
+   {
+    "effect": "plants need nitrogen from the soil",
+    "card": "nitrogen-fixation",
+    "recent": false
+   },
+   {
+    "effect": "a learned model predicts a protein's 3D shape from its sequence",
+    "card": "protein-structure-prediction",
+    "recent": true
+   }
+  ],
+  "parts": [
+   "chemical-fertilizer",
+   "fermentation"
+  ],
+  "how": "Making nitrogen fertiliser burns around one or two percent of the world's energy, and most of what is spread ends up in rivers rather than in the crop. Beans and clover avoid all of this by housing bacteria in root nodules that pull nitrogen from the air. Cereals have most of the signalling genes for building such nodules but do not switch them on; editing those switches, and pairing the seed with a matched bacterium, would let wheat make its own supply.",
+  "obstacle": "Nodule building is a long conversation between plant and microbe, and no one has yet made a cereal hold up its end.",
+  "searchQuery": "engineered cereal root nodule symbiosis nitrogen fixation wheat",
+  "plausibility": 2,
+  "why": "A famous unsolved goal; editing tools finally make the attempt tractable."
+ },
+ {
+  "id": "drying-proof-crop",
+  "name": "Drying-proof crop",
+  "subtitle": "a crop that survives going dry",
+  "job": "protects crops",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "certain proteins turn glassy inside cells and let them survive drying out",
+    "card": "tardigrade-proteins",
+    "recent": true
+   },
+   {
+    "effect": "a guided enzyme cuts DNA at any spot spelled out by a short RNA",
+    "card": "crispr-cas9",
+    "recent": true
+   },
+   {
+    "effect": "plants turn sunlight, water and carbon dioxide into sugar",
+    "card": "photosynthesis",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "agriculture",
+   "chemical-fertilizer"
+  ],
+  "how": "A drought does not usually kill a crop slowly: a hot dry fortnight at flowering wipes out the year's yield even though rain comes later. Tardigrades survive complete drying because certain proteins turn the inside of their cells to glass, holding every structure in place until water returns. A cereal given those genes, switched on only when the leaf dries out, could pause instead of dying and resume when the rain arrives.",
+  "obstacle": "Glassy cells cannot photosynthesise, so the plant must judge when to shut down and when to wake, and getting it wrong costs the harvest anyway.",
+  "searchQuery": "tardigrade CAHS protein transgenic crop desiccation tolerance field",
+  "plausibility": 2,
+  "why": "The proteins work in yeast and human cells; a whole crop pausing and restarting is untested."
+ },
+ {
+  "id": "dry-platelet-pack",
+  "name": "Dry platelet pack",
+  "subtitle": "clotting cells stored dry on a shelf",
+  "job": "treats illness",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "certain proteins turn glassy inside cells and let them survive drying out",
+    "card": "tardigrade-proteins",
+    "recent": true
+   },
+   {
+    "effect": "platelets clump to clot blood",
+    "card": "platelets",
+    "recent": false
+   },
+   {
+    "effect": "cells live outside the body",
+    "card": "cell-theory",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "canning-food",
+   "nylon"
+  ],
+  "how": "Platelets stop bleeding, and bleeding is what kills most people who could otherwise have been saved after a crash or in childbirth. They last five days, must be kept rocking at room temperature, and so exist only in big hospitals. Loading platelets with the glass-forming proteins that let tardigrades dry out would let them be freeze-dried into a sachet that sits in an ambulance for a year and is mixed with water at the roadside.",
+  "obstacle": "Getting the proteins inside a cell that has no nucleus, and proving the rehydrated platelets still clot rather than clump at once.",
+  "searchQuery": "tardigrade protein dried platelets shelf stable transfusion",
+  "plausibility": 2,
+  "why": "Sugar-dried platelets work partly; glass proteins might close the gap, untried at scale."
+ },
+ {
+  "id": "room-temperature-cell-bank",
+  "name": "Room-temperature cell bank",
+  "subtitle": "a cell bank that needs no liquid nitrogen",
+  "job": "grows cultures",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "certain proteins turn glassy inside cells and let them survive drying out",
+    "card": "tardigrade-proteins",
+    "recent": true
+   },
+   {
+    "effect": "an egg can be fertilized outside the body",
+    "card": "fertilization-observed",
+    "recent": false
+   },
+   {
+    "effect": "cells live outside the body",
+    "card": "cell-theory",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "canning-food",
+   "glass"
+  ],
+  "how": "Cell therapies, fertility samples and research lines all live in tanks of liquid nitrogen, and a week of failed resupply or a power cut during a storm destroys decades of work. Drying is the alternative, but cells die as the last water leaves and their structures collide. Cells given the tardigrade proteins that turn their insides to glass can be dried and kept in a sealed vial on a shelf, then woken with water.",
+  "obstacle": "Mammalian cells have so far survived the drying but not the long wait, and nobody knows what fraction wakes after a year.",
+  "searchQuery": "anhydrobiosis mammalian cell dry storage tardigrade protein revival",
+  "plausibility": 2,
+  "why": "Drying works briefly in culture; long dry storage of human cells is unproven."
+ },
+ {
+  "id": "radiation-proof-seed-capsule",
+  "name": "Radiation-proof seed capsule",
+  "subtitle": "seeds that survive years in deep space",
+  "job": "shields from radiation",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "certain proteins turn glassy inside cells and let them survive drying out",
+    "card": "tardigrade-proteins",
+    "recent": true
+   },
+   {
+    "effect": "a guided enzyme cuts DNA at any spot spelled out by a short RNA",
+    "card": "crispr-cas9",
+    "recent": true
+   },
+   {
+    "effect": "radiation ionizes what it passes through",
+    "card": "ionizing-radiation",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "canning-food",
+   "steel"
+  ],
+  "how": "A crew on the way to Mars cannot carry mass for shielding, and seeds sent ahead sit for years in cosmic radiation that breaks their DNA faster than a dormant seed can repair it. Tardigrades carry a protein that wraps DNA and physically blocks the damage; a seed given that gene, dried into a glassy state and sealed in a thin steel capsule, carries its shielding inside each cell rather than as cargo. The same capsule serves as a backup seed bank on Earth.",
+  "obstacle": "A protein that coats DNA may also get in the way of the plant reading it, so growth and protection have to be traded off.",
+  "searchQuery": "Dsup transgenic seed radiation protection space storage",
+  "plausibility": 2,
+  "why": "Dsup protects cultured cells; whole seeds across years of cosmic rays is untested."
+ },
+ {
+  "id": "thousand-year-dna-archive",
+  "name": "Thousand-year DNA archive",
+  "subtitle": "an archive written in dried DNA",
+  "job": "keeps data for millennia",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "each DNA strand is a template for copying its partner",
+    "card": "the-double-helix",
+    "recent": false
+   },
+   {
+    "effect": "certain proteins turn glassy inside cells and let them survive drying out",
+    "card": "tardigrade-proteins",
+    "recent": true
+   },
+   {
+    "effect": "DNA strands fold themselves into any designed nanoscale shape",
+    "card": "dna-origami",
+    "recent": true
+   }
+  ],
+  "parts": [
+   "steel",
+   "glass",
+   "canning-food"
+  ],
+  "how": "Digital archives survive by being copied every few years onto whatever drives exist then; stop paying for a decade and the record is gone. DNA holds a library in a speck and can be read by equipment that will plainly still exist, but it rots when damp or warm. Spinning the data strands into a glassy matrix of the proteins that let tardigrades dry out, inside a welded steel capsule, gives a record that needs no power and no custodian.",
+  "obstacle": "Reading it back needs an index and an error-correcting scheme that a future reader can work out with no help from us.",
+  "searchQuery": "DNA data storage millennia dry glassy preservation capsule",
+  "plausibility": 3,
+  "why": "DNA storage works; the unsolved half is surviving and being decodable unattended."
+ },
+ {
+  "id": "origami-tamper-seal",
+  "name": "Origami tamper seal",
+  "subtitle": "a seal that cannot be opened unnoticed",
+  "job": "secures communications",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "DNA strands fold themselves into any designed nanoscale shape",
+    "card": "dna-origami",
+    "recent": true
+   },
+   {
+    "effect": "crystals a few nanometres wide glow in a colour set purely by their size",
+    "card": "quantum-dots",
+    "recent": true
+   }
+  ],
+  "parts": [
+   "paper",
+   "camera"
+  ],
+  "how": "A shipment of vaccines, a ballot box or a sealed instrument can be opened and closed again by anyone patient enough to copy the sticker. This seal is a film of folded DNA plates, each holding two coloured dots at a spacing set when the plate was folded, so the film glows a precise mixed colour that depends on a fold pattern nobody else knows. Breaking the seal unfolds the plates and the colour shifts; the pattern is too intricate to copy without the original design file.",
+  "obstacle": "DNA films are delicate in heat and humidity, so the seal may change colour in a hot warehouse without anyone touching it.",
+  "searchQuery": "DNA origami tamper evident seal unclonable optical signature",
+  "plausibility": 3,
+  "why": "Origami colour rulers work in the lab; field durability decides whether a seal is useful."
+ },
+ {
+  "id": "living-skin-sensor",
+  "name": "Living skin sensor",
+  "subtitle": "a patch of skin that reports illness",
+  "job": "monitors health continuously",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "a guided enzyme cuts DNA at any spot spelled out by a short RNA",
+    "card": "crispr-cas9",
+    "recent": true
+   },
+   {
+    "effect": "a jellyfish protein makes any cell that carries its gene glow green",
+    "card": "green-fluorescent-protein",
+    "recent": true
+   },
+   {
+    "effect": "regulator genes switch other genes on and off",
+    "card": "gene-regulators",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "camera",
+   "microchips"
+  ],
+  "how": "The warning signs of kidney failure, a transplant turning against its owner or a cancer returning are all in the blood months before anyone notices, but only if someone draws it. Skin cells edited in a coin-sized patch can be given a switch that senses one of those molecules and answers by making a glowing protein. A phone camera held to the patch reads it in a second, and the patch is the person's own skin, so nothing is rejected and nothing needs a battery.",
+  "obstacle": "Skin renews itself from below, so the edited patch fades in weeks unless the editing reaches the stem cells underneath.",
+  "searchQuery": "gene edited skin biosensor patch fluorescent reporter human",
+  "plausibility": 2,
+  "why": "Demonstrated as implanted cells in mice; editing a person's own skin is a bigger step."
+ },
+ {
+  "id": "bedside-consciousness-test",
+  "name": "Bedside consciousness test",
+  "subtitle": "finds awareness in an unresponsive patient",
+  "job": "reads the brain",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "electrodes on the motor cortex let a person's intent move a cursor or arm",
+    "card": "neural-interfaces",
+    "recent": true
+   },
+   {
+    "effect": "nerve signals are electrical",
+    "card": "electric-nerve-fibers",
+    "recent": false
+   },
+   {
+    "effect": "sound is a vibration",
+    "card": "acoustics",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "electroencephalography",
+   "loudspeaker",
+   "microchips"
+  ],
+  "how": "Perhaps a quarter of patients who look unresponsive after a brain injury can hear and understand, and their families make decisions about them without knowing it. Imagining a movement changes the rhythm over the motor cortex whether or not the body obeys, and that change can be picked up from the scalp. A bedside cap that asks a patient to imagine squeezing a hand for yes and lying still for no gives a channel that needs no movement at all.",
+  "obstacle": "Scalp signals from a swollen, sedated, injured brain are weak and vary daily, so a silent reading can never prove absence of awareness.",
+  "searchQuery": "bedside EEG motor imagery covert consciousness detection ICU device",
+  "plausibility": 3,
+  "why": "Research scanners show it works; a reliable bedside version would change end-of-life decisions."
+ },
+ {
+  "id": "light-brake-for-seizures",
+  "name": "Light brake for seizures",
+  "subtitle": "an implant that stops a seizure starting",
+  "job": "treats illness",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "light-sensitive proteins let a flash of light switch chosen nerve cells on or off",
+    "card": "optogenetics",
+    "recent": true
+   },
+   {
+    "effect": "electrodes on the motor cortex let a person's intent move a cursor or arm",
+    "card": "neural-interfaces",
+    "recent": true
+   },
+   {
+    "effect": "nerve signals are electrical",
+    "card": "electric-nerve-fibers",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "light-emitting-diodes",
+   "microchips",
+   "lithium-battery"
+  ],
+  "how": "A third of people with epilepsy are not helped by drugs, and the implants that sense a coming seizure fight it with electrical pulses that spread into whatever tissue is nearby. If the cells around the seizure's starting point are given a light-sensitive calming protein, the same implant can answer with light instead, reaching only those cells. Nothing happens to the rest of the brain, so the device can intervene early and often.",
+  "obstacle": "Each patient needs a gene delivered to a precisely chosen patch of brain, a step no regulator has yet approved for a non-fatal illness.",
+  "searchQuery": "closed loop optogenetic seizure control human implant epilepsy",
+  "plausibility": 2,
+  "why": "Closed-loop light control works in rodents; human gene delivery to one focus is the barrier."
+ },
+ {
+  "id": "scarless-wound-dressing",
+  "name": "Scarless wound dressing",
+  "subtitle": "a dressing that regrows skin, not scar",
+  "job": "repairs itself",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "four genes turn an adult cell back into a stem cell that can become any tissue",
+    "card": "induced-stem-cells",
+    "recent": true
+   },
+   {
+    "effect": "some embryo cells steer how their neighbours develop",
+    "card": "embryo-organizer",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "nylon",
+   "sutures"
+  ],
+  "how": "A wound in an unborn baby heals without a mark, while the same wound after birth closes with scar tissue that cannot sweat, grow hair or stretch. The cells that crawl into a wound can be nudged partway back toward their younger state, long enough to rebuild skin instead of laying down a patch of fibre. A mesh dressing that releases those factors for the first fortnight, then peels away, would make the difference for burns and surgical wounds.",
+  "obstacle": "Pushing cells backward is exactly how tumours start, so the dose must reverse them a little and stop.",
+  "searchQuery": "partial reprogramming wound dressing scarless skin regeneration human",
+  "plausibility": 2,
+  "why": "Mouse in-vivo reprogramming heals wounds; the safety margin in humans is unknown."
+ },
+ {
+  "id": "skin-graft-that-sweats",
+  "name": "Skin graft that sweats",
+  "subtitle": "grafted skin with glands and hair",
+  "job": "grows organs",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "four genes turn an adult cell back into a stem cell that can become any tissue",
+    "card": "induced-stem-cells",
+    "recent": true
+   },
+   {
+    "effect": "some embryo cells steer how their neighbours develop",
+    "card": "embryo-organizer",
+    "recent": false
+   },
+   {
+    "effect": "cells live outside the body",
+    "card": "cell-theory",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "tissue-culture",
+   "nylon",
+   "sutures"
+  ],
+  "how": "Burn survivors get grafts that close the wound but have no sweat glands, so a large graft leaves a person unable to cool themselves and in danger on a hot day. Glands and follicles form when two layers of skin signal to each other in a particular pattern during development, which cultured sheets never reproduce. Growing the graft from the patient's own reprogrammed cells on a mesh that spaces the two layers as an embryo does could let those organs form before the graft is laid on.",
+  "obstacle": "Appendages take weeks to form and need nerves and blood vessels to find them, which a graft bed may not supply.",
+  "searchQuery": "iPSC skin graft with sweat glands hair follicles burn patients",
+  "plausibility": 2,
+  "why": "Organoid skin with follicles exists in dishes; a usable graft does not."
+ },
+ {
+  "id": "bedside-blood-cell-reactor",
+  "name": "Bedside blood-cell reactor",
+  "subtitle": "a machine that grows platelets on demand",
+  "job": "grows cultures",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "four genes turn an adult cell back into a stem cell that can become any tissue",
+    "card": "induced-stem-cells",
+    "recent": true
+   },
+   {
+    "effect": "a guided enzyme cuts DNA at any spot spelled out by a short RNA",
+    "card": "crispr-cas9",
+    "recent": true
+   },
+   {
+    "effect": "cells live outside the body",
+    "card": "cell-theory",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "tissue-culture",
+   "perfusion-pump",
+   "microchips"
+  ],
+  "how": "Blood supply depends on donors turning up, and platelets expire within a week, so shortages hit exactly when a disaster creates demand. One line of reprogrammed cells, edited to remove the surface markers that cause a mismatch, can be grown indefinitely and coaxed into making platelets. A sealed cartridge in a hospital basement, fed and flowed like a small brewery, could produce units overnight without a single donor.",
+  "obstacle": "Yields are still far below a transfusion unit per batch, and the cost per bag is many times that of a donation.",
+  "searchQuery": "iPSC derived platelets universal donor bedside bioreactor",
+  "plausibility": 2,
+  "why": "Clinical batches have been made in Japan; on-site, affordable production has not."
+ },
+ {
+  "id": "pig-kidney-human-lining",
+  "name": "Pig kidney with a human lining",
+  "subtitle": "an animal organ lined with your own cells",
+  "job": "grows organs",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "a guided enzyme cuts DNA at any spot spelled out by a short RNA",
+    "card": "crispr-cas9",
+    "recent": true
+   },
+   {
+    "effect": "four genes turn an adult cell back into a stem cell that can become any tissue",
+    "card": "induced-stem-cells",
+    "recent": true
+   },
+   {
+    "effect": "the body rejects foreign tissue",
+    "card": "tissue-transplantation",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "perfusion-pump",
+   "sutures"
+  ],
+  "how": "Animal organs are now edited to remove the sugars that trigger instant rejection, but the immune system still meets pig cells lining every blood vessel, and attacks them slowly for as long as the organ lasts. Those vessel linings can be stripped on the perfusion machine and reseeded with cells grown from the recipient, so the blood only ever touches the patient's own surface. The rest of the organ stays pig, hidden behind that lining.",
+  "obstacle": "Reseeding every capillary in a kidney evenly, with cells that stay put under pressure, has never been achieved.",
+  "searchQuery": "recellularized xenograft kidney patient derived endothelium rejection",
+  "plausibility": 2,
+  "why": "Both halves exist separately; a fully reseeded vascular bed is the unsolved step."
+ },
+ {
+  "id": "mitochondria-gene-patch",
+  "name": "Mitochondria gene patch",
+  "subtitle": "an edit for the cell's own power plants",
+  "job": "treats illness",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "a guided enzyme cuts DNA at any spot spelled out by a short RNA",
+    "card": "crispr-cas9",
+    "recent": true
+   },
+   {
+    "effect": "cells burn sugar to carbon dioxide and water, step by step",
+    "card": "citric-acid-cycle",
+    "recent": false
+   },
+   {
+    "effect": "ATP's phosphate bond stores energy cells spend",
+    "card": "high-energy-phosphate",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "cardiac-catheter",
+   "perfusion-pump"
+  ],
+  "how": "Mitochondrial diseases leave children blind, weak and often dying young, and gene therapy has never reached them because the guiding RNA that usual editors need cannot get inside a mitochondrion. A newer class of editors changes one DNA letter without any RNA guide, so it can be sent in as a protein and work where the old tools cannot. Delivered through a catheter into the artery feeding the worst-affected muscle, it could shift the balance of healthy to faulty copies enough to matter.",
+  "obstacle": "Cells hold hundreds of mitochondrial copies, and the fraction that must be fixed before symptoms lift is high.",
+  "searchQuery": "mitochondrial base editing therapy human muscle heteroplasmy shift",
+  "plausibility": 2,
+  "why": "Base editors work on mitochondria in mice; the share of copies needing repair is daunting."
+ },
+ {
+  "id": "virus-blocking-crop-spray",
+  "name": "Virus-blocking crop spray",
+  "subtitle": "a spray that silences a plant virus",
+  "job": "protects crops",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "double-stranded RNA silences the matching gene",
+    "card": "rna-interference",
+    "recent": true
+   },
+   {
+    "effect": "viruses mutate and slip past immunity",
+    "card": "viral-mutations",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "spray-cans",
+   "chemical-fertilizer"
+  ],
+  "how": "Aphids and whiteflies destroy crops less by feeding than by injecting viruses, and the only answer in most places is to spray insecticide repeatedly and hope. Spraying a plant with double-stranded RNA matching the virus primes it to shred that virus's genes, with no change to the plant's own DNA and nothing left by harvest. Because the spray is written rather than discovered, a new mix can be made within weeks of a new strain appearing.",
+  "obstacle": "RNA breaks down in sunlight within a day or two on a leaf, so it must be carried in something that holds it there for weeks.",
+  "searchQuery": "topical dsRNA spray plant virus resistance field durability",
+  "plausibility": 3,
+  "why": "Insect-targeting RNA sprays are approved; virus-targeting field sprays are not."
+ },
+ {
+  "id": "allergy-free-peanut",
+  "name": "Allergy-free peanut",
+  "subtitle": "a peanut without its worst allergen",
+  "job": "grows food",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "double-stranded RNA silences the matching gene",
+    "card": "rna-interference",
+    "recent": true
+   },
+   {
+    "effect": "a guided enzyme cuts DNA at any spot spelled out by a short RNA",
+    "card": "crispr-cas9",
+    "recent": true
+   },
+   {
+    "effect": "a second exposure can trigger a violent allergic reaction",
+    "card": "anaphylactic-shock",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "agriculture",
+   "chemical-fertilizer"
+  ],
+  "how": "Peanut allergy shapes the lives of millions of families, and the treatments on offer amount to eating a carefully measured amount of the thing that could kill you. Most of the danger comes from a handful of storage proteins in the seed, which the plant can grow without if the right genes are silenced or edited out. A peanut missing those proteins would make the ordinary food safe rather than making every allergic child undergo therapy.",
+  "obstacle": "People react to several proteins at once, so removing the main ones may leave a nut that is safer but still not safe.",
+  "searchQuery": "hypoallergenic peanut gene edited Ara h allergen removal",
+  "plausibility": 3,
+  "why": "Silencing works in the lab; proving a nut safe for allergic people is the obstacle."
+ },
+ {
+  "id": "lice-silencing-fish-feed",
+  "name": "Lice-silencing fish feed",
+  "subtitle": "salmon feed that disarms sea lice",
+  "job": "grows food",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "double-stranded RNA silences the matching gene",
+    "card": "rna-interference",
+    "recent": true
+   },
+   {
+    "effect": "ticks carry disease between animals",
+    "card": "cattle-fever",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "fermentation",
+   "agriculture"
+  ],
+  "how": "Sea lice are the biggest single cost in salmon farming and the main reason farms dose fish with chemicals the lice keep growing resistant to. Lice feed on the skin and mucus of the fish, which means anything in that mucus reaches them. Feed pellets carrying double-stranded RNA that matches a louse gene, taken up by the fish and passed into the mucus layer, would silence that gene in the parasite while the fish's own genes, which do not match, are untouched.",
+  "obstacle": "Getting intact RNA through a fish's digestion and out into the mucus in useful amounts is unproven.",
+  "searchQuery": "oral dsRNA salmon feed sea lice RNA interference control",
+  "plausibility": 3,
+  "why": "Injected RNA kills lice in the lab; the delivery route through feed is the gap."
+ },
+ {
+  "id": "self-renewing-hull-coat",
+  "name": "Self-renewing hull coat",
+  "subtitle": "a living paint that keeps a hull clean",
+  "job": "repairs itself",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "a cell can run on a genome written entirely by computer",
+    "card": "synthetic-genome",
+    "recent": true
+   },
+   {
+    "effect": "microscopic bumps make water bead up and roll off, carrying dirt away",
+    "card": "lotus-effect",
+    "recent": true
+   },
+   {
+    "effect": "capsules in a plastic burst when it cracks and glue the crack shut",
+    "card": "self-healing-polymers",
+    "recent": true
+   }
+  ],
+  "parts": [
+   "spray-cans",
+   "neoprene"
+  ],
+  "how": "Barnacles and weed on a hull add up to several percent of world shipping fuel, and the paints that stop them work by slowly leaching poison into the sea. A coat seeded with a contained marine bacterium that continuously secretes a slippery polymer renews its own surface instead of wearing out, and regrows over a scrape rather than leaving bare metal. The organism is built to need a nutrient held in the coating, so it dies where the coating ends.",
+  "obstacle": "A coating that must stay alive for five years between dry-dockings, in freezing water and tropical sun, is a tall order.",
+  "searchQuery": "living antifouling coating engineered bacteria ship hull self-renewing",
+  "plausibility": 2,
+  "why": "Slippery coatings and contained microbes both exist; keeping them alive on a hull doesn't."
+ },
+ {
+  "id": "glowing-reef-sentinel",
+  "name": "Glowing reef sentinel",
+  "subtitle": "coral that signals heat stress early",
+  "job": "measures",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "a jellyfish protein makes any cell that carries its gene glow green",
+    "card": "green-fluorescent-protein",
+    "recent": true
+   },
+   {
+    "effect": "regulator genes switch other genes on and off",
+    "card": "gene-regulators",
+    "recent": false
+   },
+   {
+    "effect": "the bacteria in the gut steer the body's immunity, weight and mood",
+    "card": "gut-microbiome",
+    "recent": true
+   }
+  ],
+  "parts": [
+   "camera",
+   "fiber-optics"
+  ],
+  "how": "A reef looks fine right up to the week it bleaches, by which point the heat damage is done and nothing can be moved or shaded in time. The algae that live inside coral switch on stress genes days before they are expelled. Seeding a few marked colonies on a reef whose algae carry a glowing protein tied to that stress switch gives a row of sentinels a diver or a moored camera can read, so shading or cooling can start while it still helps.",
+  "obstacle": "Putting engineered organisms on a wild reef is a decision no country has a process for making.",
+  "searchQuery": "fluorescent reporter symbiont coral bleaching early warning sentinel",
+  "plausibility": 2,
+  "why": "Stress genes are known; releasing engineered symbionts into the sea is the blocker."
+ },
+ {
+  "id": "crack-reporting-concrete",
+  "name": "Crack-reporting concrete",
+  "subtitle": "concrete that seals and shows its repairs",
+  "job": "repairs itself",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "heating limestone frees a gas that lime soaks back up",
+    "card": "carbon-dioxide",
+    "recent": false
+   },
+   {
+    "effect": "a jellyfish protein makes any cell that carries its gene glow green",
+    "card": "green-fluorescent-protein",
+    "recent": true
+   },
+   {
+    "effect": "a cell can run on a genome written entirely by computer",
+    "card": "synthetic-genome",
+    "recent": true
+   }
+  ],
+  "parts": [
+   "portland-cement",
+   "reinforced-concrete"
+  ],
+  "how": "Bridges and tunnels are inspected by eye, which finds the cracks that show and misses the ones inside where water is already rusting the steel. Spores mixed into concrete wake when a crack lets in water and lay down limestone that seals it, a trick already used in a few buildings. Giving those organisms a glowing protein as well makes every repair site visible under a blue lamp, so an inspector walking the structure reads a map of where it has been working hardest.",
+  "obstacle": "The spores have to survive years in the dry alkaline concrete and still glow brightly enough to see through a wet crack.",
+  "searchQuery": "self healing concrete bacteria fluorescent crack reporting inspection",
+  "plausibility": 3,
+  "why": "Healing concrete is sold; a built-in visual record of repairs is new."
+ },
+ {
+  "id": "deep-sinking-carbon-bloom",
+  "name": "Deep-sinking carbon bloom",
+  "subtitle": "algae bred to carry carbon downward",
+  "job": "removes carbon dioxide",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "a cell can run on a genome written entirely by computer",
+    "card": "synthetic-genome",
+    "recent": true
+   },
+   {
+    "effect": "plants turn sunlight, water and carbon dioxide into sugar",
+    "card": "photosynthesis",
+    "recent": false
+   },
+   {
+    "effect": "buoyancy",
+    "card": "archimedes-principle",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "fermentation",
+   "earth-resources-satellites"
+  ],
+  "how": "Ocean algae pull down huge amounts of carbon each year, but almost all of it is eaten and breathed back out within weeks near the surface. Algae built to make heavy, indigestible shells at the end of their short lives would sink quickly instead, carrying their carbon below the depth where it comes back for centuries. Satellites already watch bloom colour, so the amount sunk could in principle be checked from orbit.",
+  "obstacle": "Nobody can yet verify how much carbon actually reaches the deep, and seeding engineered life in international waters has no legal owner.",
+  "searchQuery": "engineered phytoplankton ballasted sinking carbon export verification",
+  "plausibility": 2,
+  "why": "Export efficiency and governance, not biology, are what stop this."
+ },
+ {
+  "id": "plasma-scrubber",
+  "name": "Plasma scrubber",
+  "subtitle": "a filter that strips ageing signals from blood",
+  "job": "slows ageing",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "a learned model predicts a protein's 3D shape from its sequence",
+    "card": "protein-structure-prediction",
+    "recent": true
+   },
+   {
+    "effect": "clearing out worn-out 'zombie' cells makes old mice healthier",
+    "card": "senescent-cells",
+    "recent": true
+   },
+   {
+    "effect": "big molecules trapped behind a membrane draw water in",
+    "card": "protein-size",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "artificial-kidneys",
+   "perfusion-pump"
+  ],
+  "how": "Joining an old mouse's circulation to a young one's makes the old mouse's muscle and brain behave younger, and simply diluting old blood does much of the same, which points at a handful of circulating proteins doing the harm. Designed binder proteins for those few can be fixed to beads in a column, so blood passes through and comes back missing them and nothing else. It is dialysis aimed at signals rather than waste.",
+  "obstacle": "The list of proteins to remove is still guesswork, and stripping a signalling molecule you need could do real damage.",
+  "searchQuery": "affinity apheresis column remove pro-aging plasma factors human",
+  "plausibility": 2,
+  "why": "Plasma dilution works in mice; which factors to pull is still unknown."
+ },
+ {
+  "id": "hair-cell-regrowth-pump",
+  "name": "Hair-cell regrowth pump",
+  "subtitle": "a drop that regrows the ear's hair cells",
+  "job": "treats illness",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "four genes turn an adult cell back into a stem cell that can become any tissue",
+    "card": "induced-stem-cells",
+    "recent": true
+   },
+   {
+    "effect": "some embryo cells steer how their neighbours develop",
+    "card": "embryo-organizer",
+    "recent": false
+   },
+   {
+    "effect": "sound is a vibration",
+    "card": "acoustics",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "perfusion-pump",
+   "sutures"
+  ],
+  "how": "Most deafness comes from losing the few thousand hair cells in each ear that turn vibration into nerve signals, and mammals never grow them back, though birds do. The supporting cells sitting beside them still carry the instructions and can be coaxed to divide and become hair cells, but only if the signals arrive in the right order over weeks. A tiny pump behind the eardrum delivering that sequence into the inner ear could restore hearing rather than amplifying what remains.",
+  "obstacle": "New hair cells have to be wired to the right nerve fibres in the right order along the cochlea, or the result is noise.",
+  "searchQuery": "supporting cell reprogramming hair cell regeneration inner ear human",
+  "plausibility": 2,
+  "why": "Birds regenerate; mammal attempts make cells but not working, wired ones."
+ },
+ {
+  "id": "enamel-regrowth-film",
+  "name": "Enamel regrowth film",
+  "subtitle": "a film that regrows a tooth's enamel",
+  "job": "treats illness",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "a learned model predicts a protein's 3D shape from its sequence",
+    "card": "protein-structure-prediction",
+    "recent": true
+   },
+   {
+    "effect": "crystals build themselves from identical repeating units",
+    "card": "crystallography",
+    "recent": false
+   },
+   {
+    "effect": "adding more of one chemical pushes a reaction forward",
+    "card": "law-of-mass-action",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "silver-fillings",
+   "dentistry"
+  ],
+  "how": "Enamel is the hardest tissue in the body and the only one that cannot repair itself, which is why dentistry mostly means drilling away decay and plugging the hole with something that fails in a decade. Enamel is built by proteins that hold mineral in long parallel rods, and those proteins are gone by adulthood. A film pressed onto a cleaned tooth, carrying designed versions of them in a mineral paste, would guide new rods to grow locked into the old ones instead of sitting on top as a patch.",
+  "obstacle": "Matching enamel's strength means growing rods in the right direction, which has only been done on flat chips in a lab.",
+  "searchQuery": "designed amelogenin peptide enamel regeneration epitaxial repair",
+  "plausibility": 3,
+  "why": "Peptide-guided mineral layers work on flat samples; real tooth geometry is unsolved."
+ },
+ {
+  "id": "bedside-blood-group-converter",
+  "name": "Bedside blood-group converter",
+  "subtitle": "enzymes that make any blood universal",
+  "job": "separates mixtures",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "the bacteria in the gut steer the body's immunity, weight and mood",
+    "card": "gut-microbiome",
+    "recent": true
+   },
+   {
+    "effect": "mismatched blood types clump",
+    "card": "blood-types",
+    "recent": false
+   },
+   {
+    "effect": "catalysis",
+    "card": "catalysis",
+    "recent": false
+   }
+  ],
+  "parts": [
+   "perfusion-pump",
+   "valve",
+   "nylon"
+  ],
+  "how": "Blood banks spend their lives juggling types, and in an emergency the only blood you can give without testing is group O, which is always the first to run out. The sugars that mark a red cell as type A or B stick out from its surface and can be clipped off by enzymes, and gut bacteria have turned out to make unusually good ones. A cartridge of those enzymes in the transfusion line would convert a bag on its way into the patient, making every donation universal.",
+  "obstacle": "Clipping must be complete: even a few uncleaved cells in a bag can set off a reaction, and checking that takes time an emergency does not have.",
+  "searchQuery": "enzymatic conversion blood group A to O inline transfusion cartridge",
+  "plausibility": 3,
+  "why": "Gut enzymes convert blood in the lab; in-line conversion with a safety check is new."
+ }
+]

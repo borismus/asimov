@@ -1,0 +1,507 @@
+[
+{
+"id": "ft-liquid-hydrogen-oil",
+"name": "Rechargeable hydrogen oil tank",
+"job": "stores chemical energy",
+"effect": "nickel adds hydrogen to liquid carrier oils",
+"effectCard": "nickel-as-catalyst",
+"effectCardTitle": "Nickel as catalyst",
+"how": "Hydrogen gas is hard to store, so a nickel catalyst instead bonds it onto an oily liquid, the same trick that hardens vegetable oil into margarine. The loaded oil sits in an ordinary steel tank at normal pressure like diesel. When energy is needed, heating it over a catalyst releases the hydrogen and the empty oil is reused.",
+"why": "Margarine chemistry turned into a safe, pumpable hydrogen tank.",
+"real": "liquid organic hydrogen carriers, pilot plants 2010s",
+"maturity": "lab",
+"plausibility": 4,
+"parts": [
+"steel",
+"valve"
+],
+"borisNote": null
+},
+{
+"id": "ft-living-logic-gate",
+"name": "Living genetic logic circuit",
+"job": "computes",
+"effect": "regulator genes switch other genes on and off",
+"effectCard": "gene-regulators",
+"effectCardTitle": "Gene regulators",
+"how": "Bacteria carrying designed gene circuits that work like the logic gates of a computer. Each regulator gene turns others on or off depending on which chemicals are present, so the cell computes a simple answer, such as 'only if both signals', and shows it by making a coloured protein.",
+"why": "Computation in living cells that can sense and act inside the body.",
+"real": "Synthetic gene circuits (toggle switch, repressilator), lab 2000",
+"maturity": "lab",
+"plausibility": 4,
+"parts": [
+"recombinant-dna"
+],
+"borisNote": "Noticing a lot of these are all 4-word descriptors. Fine but a bit too technical. Maybe some should have more whimsical names too? (noted)"
+},
+{
+"id": "ft-lysozyme-food-wrap",
+"name": "Tear-enzyme food wrap",
+"job": "preserves food",
+"effect": "an enzyme in tears breaks open bacteria",
+"effectCard": "lysozyme",
+"effectCardTitle": "Lysozyme",
+"how": "A plastic food film whose inner face is coated with lysozyme, the enzyme that protects our eyes. Bacteria landing on the wrapped cheese or meat have their cell walls cut open by the enzyme, so the food spoils more slowly without heat or added preservatives.",
+"why": "Borrows the eye's own germ defence to keep food fresh instead of heating or chilling it.",
+"real": "Lysozyme antimicrobial packaging, lab 2000s",
+"maturity": "lab",
+"plausibility": 4,
+"parts": [
+"isotactic-polymers"
+],
+"borisNote": null
+},
+{
+"id": "ft-magnetic-refrigerator",
+"name": "Magnetic kitchen refrigerator",
+"job": "preserves food",
+"effect": "demagnetizing a magnetic material cools it",
+"effectCard": "magnetism-and-absolute-zero",
+"effectCardTitle": "Magnetism and absolute zero",
+"how": "A refrigerator with no compressor gas, cooled instead by a wheel of special metal turning in and out of a strong magnet. The metal warms when magnetized and gives that heat away, then cools below room temperature when it leaves the field, and water pumped past it carries the cold into the food box.",
+"why": "A trick for reaching near absolute zero, scaled up to keep milk cold.",
+"real": "magnetocaloric fridge prototypes, 2000s-2010s",
+"maturity": "lab",
+"plausibility": 4,
+"parts": [
+"rare-earth-magnet",
+"electric-motors",
+"valve"
+],
+"borisNote": null
+},
+{
+"id": "ft-microwave-power-beam",
+"name": "Microwave power beam",
+"job": "carries current",
+"effect": "electric oscillations send out light-speed waves",
+"effectCard": "maxwells-equations",
+"effectCardTitle": "Maxwell’s equations",
+"how": "A magnetron turns electricity into a tight beam of microwaves aimed at a distant receiving field of small antennas. Each antenna catches the waves and a rectifier turns them back into ordinary current. Power could reach a drone, a remote island or a city from an orbiting solar station without any wire.",
+"why": "Power lines replaced by an invisible beam.",
+"real": "Microwave power-beaming demos (Brown's helicopter, 1964); not in everyday use",
+"maturity": "lab",
+"plausibility": 4,
+"parts": [
+"magnetrons",
+"radio-antennas",
+"electronic-rectifier"
+],
+"borisNote": null
+},
+{
+"id": "ft-moon-rock-oxygen-cell",
+"name": "Moon-rock oxygen cell",
+"job": "supplies oxygen",
+"effect": "a current pulls reactive metals out of their salts",
+"effectCard": "sodium-and-potassium",
+"effectCardTitle": "Sodium and potassium",
+"how": "Lunar dust is mostly metal oxides, a kind of salt with oxygen locked inside. Packed into a ceramic pot of hot molten salt and given a strong current, the metal is pulled out at one electrode and the freed oxygen bubbles off the other for astronauts to breathe. The leftover metal powder is a bonus building material.",
+"why": "The same trick that isolated sodium in 1807 could make air from moon dust.",
+"real": "Lab demonstrations (FFC Cambridge process applied to regolith simulant, ESA, 2020s)",
+"maturity": "lab",
+"plausibility": 3,
+"parts": [
+"porcelain",
+"valve"
+],
+"borisNote": null
+},
+{
+"id": "ft-mosquito-vaccinator",
+"name": "Mosquito-delivered malaria vaccine",
+"job": "prevents disease",
+"effect": "a mosquito bite delivers the parasite",
+"effectCard": "mosquitoes-and-malaria",
+"effectCardTitle": "Mosquitoes and malaria",
+"how": "Malaria parasites are genetically crippled so they cannot finish growing in the liver. Mosquitoes carrying these weakened parasites bite volunteers, delivering them exactly as nature does, and the body learns to fight the real disease.",
+"why": "The disease's own delivery system turned into its vaccine syringe.",
+"real": "bite-delivered weakened malaria parasite trials, 2022",
+"maturity": "lab",
+"plausibility": 3,
+"parts": [
+"genetic-engineering"
+],
+"borisNote": null
+},
+{
+"id": "ft-nuclear-thermal-rocket",
+"name": "Nuclear thermal rocket",
+"job": "provides thrust",
+"effect": "a little mass holds a huge amount of energy",
+"effectCard": "mass-energy",
+"effectCardTitle": "Mass-energy",
+"how": "A compact nuclear reactor replaces the combustion chamber of a rocket. Splitting atoms turns a tiny amount of mass into huge heat, which blasts liquid hydrogen out of the nozzle far faster than burning fuel can. That roughly doubles efficiency for trips to Mars.",
+"why": "E=mc squared applied to a rocket nozzle could halve Mars trip times.",
+"real": "NERVA nuclear thermal rocket, ground tests 1960s",
+"maturity": "lab",
+"plausibility": 4,
+"parts": [
+"nuclear-reactor",
+"liquid-fuel-rockets"
+],
+"borisNote": "why did this never work? (needs work)"
+},
+{
+"id": "ft-osmotic-power-plant",
+"name": "Osmotic river-mouth power plant",
+"job": "makes electricity",
+"effect": "big molecules trapped behind a membrane draw water in",
+"effectCard": "protein-size",
+"effectCardTitle": "Protein size",
+"how": "Where a river meets the sea, fresh water and seawater are separated by a membrane that lets water through but holds back salt. Water seeps across into the salty side and builds up pressure there, and the pressurised water spins a turbine and generator. It runs day and night on nothing but the saltiness difference.",
+"why": "Power from mixing fresh and salt water, using the pressure that draws water into cells.",
+"real": "Statkraft osmotic power pilot, 2009",
+"maturity": "lab",
+"plausibility": 3,
+"parts": [
+"turbines",
+"electric-generators"
+],
+"borisNote": null
+},
+{
+"id": "ft-paper-protein-factory",
+"name": "Freeze-dried paper medicine factory",
+"job": "builds molecules",
+"effect": "ribosomes build proteins by reading RNA instructions",
+"effectCard": "ribosomes",
+"effectCardTitle": "Ribosomes",
+"how": "Paper spots soaked with ribosomes and the rest of a cell's protein-making machinery, then freeze-dried for storage without a fridge. A field medic adds water and the DNA recipe for a needed drug, and the ribosomes read its instructions and build that protein drug in an hour.",
+"why": "Protein manufacture without cells, factories or cold chain.",
+"real": "Freeze-dried cell-free protein kits, lab 2014-2018",
+"maturity": "lab",
+"plausibility": 4,
+"parts": [
+"paper"
+],
+"borisNote": null
+},
+{
+"id": "ft-paper-virus-test",
+"name": "Paper colour-change virus test",
+"job": "diagnoses",
+"effect": "ribosomes build proteins by reading RNA instructions",
+"effectCard": "ribosomes",
+"effectCardTitle": "Ribosomes",
+"how": "A cheap paper strip with freeze-dried ribosomes and a hidden gene circuit. When a virus's RNA from a sample is present it unlocks the circuit, so the ribosomes build a coloured protein and the spot changes colour.",
+"why": "Clinic-grade virus detection on paper, with ribosomes doing the reporting.",
+"real": "Paper-based gene-circuit Zika test, lab 2016",
+"maturity": "lab",
+"plausibility": 4,
+"parts": [
+"paper"
+],
+"borisNote": null
+},
+{
+"id": "ft-phone-camera-oxygen-check",
+"name": "Phone-camera blood oxygen check",
+"job": "diagnoses",
+"effect": "blood turns bright red when it takes up air",
+"effectCard": "blood-color",
+"effectCardTitle": "Blood colors",
+"how": "You rest a fingertip over a phone's camera and flash, and the camera watches how red the light coming through your finger is. Because blood is brighter red when full of oxygen, the changing colour with each heartbeat tells an app whether your blood is carrying enough oxygen, without a hospital clip.",
+"why": "A 17th-century observation becomes a check anyone can run.",
+"real": "Pulse oximeter, 1974; phone-camera versions in research, 2010s",
+"maturity": "lab",
+"plausibility": 4,
+"parts": [
+"camera",
+"light-emitting-diodes",
+"microchips"
+],
+"borisNote": null
+},
+{
+"id": "ft-pulse-powered-implant-cell",
+"name": "Pulse-powered implant charger",
+"job": "makes electricity",
+"effect": "blood presses on vessel walls with measurable force",
+"effectCard": "blood-pressure",
+"effectCardTitle": "Blood pressure",
+"how": "A soft band wrapped around an artery holds a crystal that makes a tiny voltage whenever it is squeezed. Every heartbeat pushes the artery wall out against the band, and the trickle of electricity recharges a small battery, so a pacemaker might never need surgery to replace it.",
+"why": "The heartbeat powering the very device that keeps it beating.",
+"real": "Lab prototypes, 2010s",
+"maturity": "lab",
+"plausibility": 3,
+"parts": [
+"quartz-oscillator",
+"lithium-battery"
+],
+"borisNote": null
+},
+{
+"id": "ft-radioisotope-ice-probe",
+"name": "Nuclear-heated ice-melting probe",
+"job": "transports",
+"effect": "radium gives off steady heat for centuries",
+"effectCard": "radioactive-energy",
+"effectCardTitle": "Radioactive energy",
+"how": "A torpedo-shaped steel probe carries a decaying radioactive heat source in its nose. The steady heat melts the ice beneath it, so gravity pulls it kilometres down through a frozen moon's crust, paying out a wire tether to talk to the surface. It could reach the hidden ocean of Europa.",
+"why": "Decay heat as a drill, carrying instruments to an alien ocean.",
+"real": null,
+"maturity": "idea",
+"plausibility": 3,
+"parts": [
+"steel",
+"insulated-wire"
+],
+"borisNote": null
+},
+{
+"id": "ft-radioisotope-stirling-engine",
+"name": "Radioisotope Stirling engine",
+"job": "provides power",
+"effect": "radium gives off steady heat for centuries",
+"effectCard": "radioactive-energy",
+"effectCardTitle": "Radioactive energy",
+"how": "A sealed engine has a decaying radioactive heat source warming one end of a gas-filled cylinder while space or air cools the other. The gas expands and contracts, driving a piston back and forth for decades with no fuel and no refuelling. It suits deep-space probes or remote stations.",
+"why": "Decades of steady piston power from a lump that never refuels.",
+"real": "NASA Advanced Stirling Radioisotope Generator prototype, 2000s",
+"maturity": "lab",
+"plausibility": 4,
+"parts": [
+"piston-and-cylinder",
+"steel"
+],
+"borisNote": null
+},
+{
+"id": "ft-raman-cancer-probe",
+"name": "Laser cancer-finding surgical probe",
+"job": "diagnoses",
+"effect": "molecules shift the colour of light they scatter",
+"effectCard": "raman-spectra",
+"effectCardTitle": "Raman spectra",
+"how": "A pen-like probe a surgeon touches to tissue during an operation to tell cancer from healthy brain. A laser shines down the fibre and the tissue scatters back a faint light whose colours are shifted by its molecules; a grating spreads that light so a computer can recognise the chemical fingerprint of a tumour in a second.",
+"why": "Reads tissue chemistry by colour, with no stain, sample or wait for a lab.",
+"real": "Raman probes in brain-cancer surgery, clinical trials 2010s",
+"maturity": "lab",
+"plausibility": 4,
+"parts": [
+"laser",
+"fiber-optics",
+"diffraction-gratings"
+],
+"borisNote": null
+},
+{
+"id": "ft-raman-glucose-meter",
+"name": "Needle-free laser glucose meter",
+"job": "measures",
+"effect": "molecules shift the colour of light they scatter",
+"effectCard": "raman-spectra",
+"effectCardTitle": "Raman spectra",
+"how": "A wristband that measures blood sugar without a finger prick. It shines a laser into the skin and spreads the faintly colour-shifted light that comes back into a spectrum, where glucose molecules leave their own small signature that tracks how much sugar is in the blood.",
+"why": "Would end finger pricks by reading sugar molecules through skin with light.",
+"real": "Raman glucose sensing, lab and trials 2010s",
+"maturity": "lab",
+"plausibility": 3,
+"parts": [
+"laser",
+"diffraction-gratings",
+"photocell"
+],
+"borisNote": null
+},
+{
+"id": "ft-seabed-mud-battery",
+"name": "Seabed mud power cell",
+"job": "makes electricity",
+"effect": "seabed bacteria living on chemicals hand electrons to an electrode",
+"effectCard": "deep-sea-ecosystems",
+"effectCardTitle": "Deep-sea ecosystems",
+"how": "A power source for ocean sensors that sits in the seabed mud for years. Bacteria in the mud live off its chemicals and dump spare electrons onto a buried electrode, which flow through a wire to a second electrode in the water above, giving a small but endless current.",
+"why": "Deep-sea chemical life as a battery that never needs replacing.",
+"real": "benthic microbial fuel cells, prototypes 2000s",
+"maturity": "lab",
+"plausibility": 4,
+"parts": [
+"fuel-cell",
+"insulated-wire"
+],
+"borisNote": null
+},
+{
+"id": "ft-solar-blind-uv-link",
+"name": "Solar-blind ultraviolet radio",
+"job": "communicates",
+"effect": "ozone soaks up ultraviolet light",
+"effectCard": "ozonosphere",
+"effectCardTitle": "Ozonosphere",
+"how": "High-altitude ozone absorbs the sun's deep ultraviolet light, so near the ground that colour of light is perfectly dark, even at noon. Deep-UV lamps flash messages that scatter off the air around corners and over hills to a sensitive light detector. With no sunlight to drown it out, the faint signal is easy to hear.",
+"why": "The ozone layer leaves a dark colour channel free for signalling.",
+"real": "solar-blind UV communication prototypes, 2000s",
+"maturity": "lab",
+"plausibility": 4,
+"parts": [
+"light-emitting-diodes",
+"photocell"
+],
+"borisNote": null
+},
+{
+"id": "ft-solar-updraft-tower",
+"name": "Solar updraft wind tower",
+"job": "makes electricity",
+"effect": "sun-heated air at the equator drives steady winds",
+"effectCard": "trade-winds",
+"effectCardTitle": "Trade winds",
+"how": "A huge glass roof heats the air beneath it, and the warm air rushes inward to a tall chimney in the middle, the same way sun-heated equatorial air drives the trade winds. Turbines at the chimney's base catch this steady home-made wind and turn generators, even after dark while the ground stays warm.",
+"why": "A miniature trade wind, made to order and harnessed.",
+"real": "Manzanares prototype, Spain, 1982",
+"maturity": "lab",
+"plausibility": 4,
+"parts": [
+"glass",
+"turbines",
+"electric-generators"
+],
+"borisNote": null
+},
+{
+"id": "ft-star-sighting-drone-compass",
+"name": "Star-sighting drone compass",
+"job": "finds direction",
+"effect": "the pole star stays fixed in the north",
+"effectCard": "sea-navigation",
+"effectCardTitle": "Sea navigation",
+"how": "A small upward-looking camera on a drone or robot photographs the night sky, and a chip picks out the one star that stays put while all the others wheel around it. Because that star always sits over the north pole, its place in the picture tells the machine which way is north, even where steel fools a magnetic compass or satellite signals are jammed.",
+"why": "Bronze Age sailors' trick becomes a jam-proof compass for robots.",
+"real": "Spacecraft and missile star trackers, 1950s on; star compasses for drones in trials, 2020s",
+"maturity": "lab",
+"plausibility": 5,
+"parts": [
+"camera",
+"microchips",
+"gyroscope"
+],
+"borisNote": "im unclear why we'd need this. is this to calibrate a compass or something? why would magnetic compass be jammed? though it's a neat idea for sure. (needs work)"
+},
+{
+"id": "ft-starch-sugar-battery",
+"name": "Starch-eating enzyme battery",
+"job": "makes electricity",
+"effect": "an enzyme turns starch into sugar",
+"effectCard": "diastase",
+"effectCardTitle": "Diastase",
+"how": "A fuel cell is filled with starch paste and a team of enzymes instead of hydrogen. The first enzyme chops starch into sugar, and others strip electrons off the sugar at the electrode, the way our cells do, sending them round a circuit. It could run small electronics on something as safe as cornflour.",
+"why": "A battery fuelled the way bodies are, with harmless starch instead of metal.",
+"real": "Lab sugar batteries (Sony 2007, Virginia Tech 2014)",
+"maturity": "lab",
+"plausibility": 3,
+"parts": [
+"fuel-cell"
+],
+"borisNote": null
+},
+{
+"id": "ft-steroid-eluting-contact-lens",
+"name": "Anti-inflammation contact lens",
+"job": "treats illness",
+"effect": "cortisone calms inflammation",
+"effectCard": "corticoids",
+"effectCardTitle": "Corticoids",
+"how": "A soft contact lens loaded with a cortisone-type drug that seeps out slowly over days. It treats eye inflammation after surgery or injury far more steadily than eye drops, most of which wash away within minutes.",
+"why": "Turns a vision aid into a slow-release drug pump sitting right on the sick tissue.",
+"real": "Drug-eluting contact lenses, trials 2010s",
+"maturity": "lab",
+"plausibility": 4,
+"parts": [
+"contact-lenses"
+],
+"borisNote": "this is very cool, and seems feasible. feels like it needs more effects though (needs work)"
+},
+{
+"id": "ft-superconducting-city-cable",
+"name": "Superconducting city power cable",
+"job": "carries current",
+"effect": "some ceramics lose all resistance at liquid-nitrogen cold",
+"effectCard": "warm-superconductivity",
+"effectCardTitle": "Warm superconductivity",
+"how": "An underground power cable made of ceramic tape kept cold with liquid nitrogen inside an insulated jacket. With zero resistance it carries several times the power of a copper cable of the same size and wastes none as heat, so a city can grow without digging new tunnels.",
+"why": "Cheap liquid-nitrogen cold makes lossless power lines practical.",
+"real": "HTS power cable pilots, 2000s-2010s",
+"maturity": "lab",
+"plausibility": 5,
+"parts": [
+"insulated-wire",
+"dewar-flask"
+],
+"borisNote": null
+},
+{
+"id": "ft-superconducting-energy-store",
+"name": "Superconducting magnetic energy store",
+"job": "stores electricity",
+"effect": "some ceramics lose all resistance at liquid-nitrogen cold",
+"effectCard": "warm-superconductivity",
+"effectCardTitle": "Warm superconductivity",
+"how": "A coil of superconducting ceramic in a liquid-nitrogen bath, holding electricity as a current that circles forever. Because there is no resistance the current never fades, and the grid can take the energy back out in a split second to cover sudden dips.",
+"why": "Stores electricity as motion of charge with no chemistry and no wear.",
+"real": "Superconducting magnetic energy storage, pilot units 1980s-90s",
+"maturity": "lab",
+"plausibility": 3,
+"parts": [
+"electromagnets",
+"dewar-flask",
+"transformer"
+],
+"borisNote": null
+},
+{
+"id": "ft-superhot-rock-geothermal",
+"name": "Microwave-drilled superhot geothermal",
+"job": "makes electricity",
+"effect": "radioactivity heats the Earth's crust",
+"effectCard": "radioactivity-and-earth",
+"effectCardTitle": "Radioactivity and earth",
+"how": "Deep in the crust, radioactive decay keeps rock hotter than 400 degrees everywhere, if you can only reach it. Powerful microwave beams vaporize rock instead of grinding it, boring holes 10 to 20 kilometres down, and water pumped through returns as superhot steam to spin a turbine. Any old coal plant could be fed this way.",
+"why": "Taps the planet's radioactive heat almost anywhere, not just volcanic spots.",
+"real": "Millimetre-wave drilling (Quaise), field tests 2020s",
+"maturity": "lab",
+"plausibility": 3,
+"parts": [
+"magnetrons",
+"steam-turbine",
+"electric-generators"
+],
+"borisNote": null
+},
+{
+"id": "ft-thorium-nuclear-clock",
+"name": "Thorium nuclear clock",
+"job": "keeps time",
+"effect": "nuclei locked in a crystal absorb a razor-sharp frequency",
+"effectCard": "mössbauer-effect",
+"effectCardTitle": "Mössbauer effect",
+"how": "A clock that counts the ticks of an atom's nucleus instead of its electrons. Thorium nuclei held in a clear crystal absorb only one extremely precise colour of ultraviolet light, and a laser locked to that colour keeps time so steadily it would lose less than a second over the age of the universe.",
+"why": "The next step beyond atomic clocks, counting nuclear rather than electron ticks.",
+"real": "Thorium-229 nuclear transition first driven by laser, lab 2024",
+"maturity": "lab",
+"plausibility": 3,
+"parts": [
+"laser",
+"quartz-oscillator"
+],
+"borisNote": null
+},
+{
+"id": "ft-virus-proof-recoded-bacteria",
+"name": "Virus-proof recoded factory bacteria",
+"job": "modifies organisms",
+"effect": "three RNA letters spell one amino acid",
+"effectCard": "genetic-code",
+"effectCardTitle": "Genetic code",
+"how": "Factory bacteria whose whole genome has been rewritten so they never use certain three-letter codons, then the machinery that reads those codons is removed. Viruses still rely on those codons, so their proteins come out garbled inside the cell and they cannot spread through the fermentation tanks.",
+"why": "Rewriting the genetic dictionary itself makes cells immune to every virus.",
+"real": "Recoded E. coli (Syn61), lab 2019",
+"maturity": "lab",
+"plausibility": 4,
+"parts": [
+"synthetic-gene"
+],
+"borisNote": null
+}
+]

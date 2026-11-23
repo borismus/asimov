@@ -1,0 +1,271 @@
+[
+{"id": "ft-liquid-hydrogen-oil", "drop": false,
+ "name": "Margarine Tank", "subtitle": "an oil that carries hydrogen like diesel",
+ "how": "Hydrogen burns clean, but storing it is a nightmare: it must be squeezed to hundreds of atmospheres or chilled to minus 253 degrees, and it leaks through steel. A nickel catalyst instead bonds the hydrogen onto an oily liquid, the same trick that hardens vegetable oil into margarine, so it can sit in an ordinary steel tank and travel by tanker like diesel. At the other end, heat at low pressure tips the reaction backwards, the hydrogen bubbles out, and the empty oil goes back to be refilled.",
+ "obstacle": "Getting the hydrogen back out takes heat worth roughly a quarter to a third of its energy, so much of the gain is lost at the pump.",
+ "effects": [
+  {"effect": "nickel adds hydrogen to liquid carrier oils", "card": "nickel-as-catalyst"},
+  {"effect": "a system at balance shifts to resist any push", "card": "le-chateliers-principle"}
+ ],
+ "parts": ["steel", "valve"]},
+
+{"id": "ft-living-logic-gate", "drop": false,
+ "name": "Thinking Germs", "subtitle": "bacteria that compute with their genes",
+ "how": "A swallowed sensor or medicine-making microbe should act only when disease is really there, not at every passing chemical. These bacteria carry designed gene circuits that behave like a computer's logic gates: regulator genes switch one another on or off depending on which chemicals are around, so the cell can work out 'only if both signals are present'. It answers by making a coloured protein or a dose of medicine, letting living cells watch for illness from inside the gut.",
+ "obstacle": "Bacteria mutate and shed circuits that don't help them survive, so the logic falls apart after many generations.",
+ "effects": [
+  {"effect": "regulator genes switch other genes on and off", "card": "gene-regulators"}
+ ],
+ "parts": ["recombinant-dna"]},
+
+{"id": "ft-lysozyme-food-wrap", "drop": false,
+ "name": "Teardrop Wrap", "subtitle": "a food film that kills germs like tears",
+ "how": "About a third of the world's food spoils before anyone eats it, much of it from bacteria growing on its surface. This plastic film's inner face is coated with lysozyme, the enzyme in tears that guards our eyes, and it cuts open the walls of bacteria that land on wrapped cheese or meat. The food keeps longer without cooking, colder storage or added preservatives.",
+ "obstacle": "Lysozyme mainly kills one family of bacteria, and many spoilage and food-poisoning germs shrug it off.",
+ "effects": [
+  {"effect": "an enzyme in tears breaks open bacteria", "card": "lysozyme"}
+ ],
+ "parts": ["isotactic-polymers"]},
+
+{"id": "ft-magnetic-refrigerator", "drop": false,
+ "name": "Quiet Frost", "subtitle": "a fridge cooled by magnets instead of gas",
+ "how": "Fridge gases leak and trap heat in the atmosphere, and compressors hum and waste power. Here a wheel of special metal turns in and out of a strong magnet: it warms when magnetized and gives that heat to the room, then drops below room temperature as it leaves the field, and water pumped past carries the cold into the food box. The metal is picked so the point where it loses its magnetism sits near room temperature, where this warming and cooling is strongest.",
+ "obstacle": "The best metals are rare earths, and the strong magnets needed make it cost more than an ordinary fridge.",
+ "effects": [
+  {"effect": "demagnetizing a magnetic material cools it", "card": "magnetism-and-absolute-zero"},
+  {"effect": "a magnet loses its magnetism when hot enough", "card": "curie-temperature"}
+ ],
+ "parts": ["rare-earth-magnet", "electric-motors", "valve"]},
+
+{"id": "ft-microwave-power-beam", "drop": false,
+ "name": "Sky Socket", "subtitle": "electricity sent through the air by microwaves",
+ "how": "Wires can't reach a drone in flight, a disaster zone cut off from the grid, or a solar farm in orbit where the sun never sets. A magnetron turns electricity into a tight beam of microwaves aimed at a field of small antennas far away. Each antenna catches the waves, and a rectifier turns them back into ordinary current.",
+ "obstacle": "The beam spreads with distance, so sending power far needs receiving fields kilometres wide, and every conversion along the way loses energy.",
+ "effects": [
+  {"effect": "electric oscillations send out light-speed waves", "card": "maxwells-equations"}
+ ],
+ "parts": ["magnetrons", "radio-antennas", "electronic-rectifier"]},
+
+{"id": "ft-moon-rock-oxygen-cell", "drop": false,
+ "name": "Moon Breath", "subtitle": "a furnace that makes air from moon dust",
+ "how": "Every kilogram of oxygen launched to the Moon costs a fortune, yet moon dust is nearly half oxygen by weight, locked inside metal oxides. Packed into a ceramic pot of hot molten salt and given a strong current, the metal is pulled out at one electrode while oxygen, carried through the melt as charged atoms, bubbles off the other, ready to breathe or burn as rocket fuel. The leftover metal powder becomes building material.",
+ "obstacle": "It needs a furnace near 1,000 degrees and a lot of electricity on the Moon, and the electrodes wear away fast in the hot salt.",
+ "effects": [
+  {"effect": "a current pulls reactive metals out of their salts", "card": "sodium-and-potassium"},
+  {"effect": "charged particles move through a solution", "card": "ionic-dissociation"}
+ ],
+ "parts": ["porcelain", "valve"]},
+
+{"id": "ft-mosquito-vaccinator", "drop": false,
+ "name": "Friendly Bite", "subtitle": "mosquitoes that vaccinate against malaria",
+ "how": "Malaria kills over half a million people a year, mostly young children, and the strongest vaccines use whole live parasites that are hard to deliver. The parasite's genes are crippled so it can't finish growing in the liver, and mosquitoes carrying it bite volunteers, delivering it exactly as nature does. The body learns to fight the real parasite without ever getting sick.",
+ "obstacle": "You can't control who a mosquito bites or how often, so outside trials the weakened parasites still have to be grown and given by needle.",
+ "effects": [
+  {"effect": "a mosquito bite delivers the parasite", "card": "mosquitoes-and-malaria"},
+  {"effect": "the body learns to fight a germ", "card": "vaccination"}
+ ],
+ "parts": ["genetic-engineering"]},
+
+{"id": "ft-nuclear-thermal-rocket", "drop": false,
+ "name": "Atom Kettle", "subtitle": "a rocket heated by a nuclear reactor",
+ "how": "Chemical rockets are near their limit, so a crew bound for Mars spends six months or more in deep-space radiation. A compact reactor replaces the combustion chamber: splitting atoms turns a sliver of mass into enormous heat, which blasts hydrogen out of the nozzle. Because hydrogen is the lightest gas, the same heat drives it about twice as fast as burning fuel's exhaust, cutting the trip by months.",
+ "obstacle": "It did work in ground tests in the 1960s, but it was cancelled in 1972 when the Mars plans it served were dropped, and today a reactor that vents its exhaust can only be tested in costly sealed facilities.",
+ "effects": [
+  {"effect": "a little mass holds a huge amount of energy", "card": "mass-energy"},
+  {"effect": "hydrogen is fourteen times lighter than air", "card": "hydrogen"}
+ ],
+ "parts": ["nuclear-reactor", "liquid-fuel-rockets"]},
+
+{"id": "ft-osmotic-power-plant", "drop": false,
+ "name": "Brine Engine", "subtitle": "power from rivers meeting the sea",
+ "how": "Every river mouth throws away energy as fresh water mixes into the salty sea, and unlike sun and wind it never stops. A membrane between the two lets water through but holds back salt, so water seeps into the salty side and builds up pressure there. The pressurised water spins a turbine and generator day and night.",
+ "obstacle": "Membranes let too little water through per square metre and clog with river silt, so the first pilot plant in Norway was shut down as too costly.",
+ "effects": [
+  {"effect": "big molecules trapped behind a membrane draw water in", "card": "protein-size"}
+ ],
+ "parts": ["turbines", "electric-generators"]},
+
+{"id": "ft-paper-protein-factory", "drop": false,
+ "name": "Paper Pharmacy", "subtitle": "freeze-dried paper that brews protein medicines",
+ "how": "Protein drugs and vaccines need factories and an unbroken cold chain, which remote clinics and battlefields lack. Paper spots carry a cell's protein-making machinery, freeze-dried so it keeps without a fridge. A medic adds water and the DNA recipe: an enzyme copies the recipe into RNA, and ribosomes read it and build the drug within an hour.",
+ "obstacle": "Each spot makes only tiny amounts, and purifying it to a safe, injectable standard in the field is unsolved.",
+ "effects": [
+  {"effect": "ribosomes build proteins by reading RNA instructions", "card": "ribosomes"},
+  {"effect": "an enzyme strings loose nucleotides into DNA or RNA", "card": "nucleic-acid-formation"}
+ ],
+ "parts": ["paper"]},
+
+{"id": "ft-paper-virus-test", "drop": false,
+ "name": "Blushing Paper", "subtitle": "a paper strip that changes colour for viruses",
+ "how": "Telling Zika from dengue usually means sending blood to a lab days away, too slow where outbreaks begin. A paper strip holds freeze-dried ribosomes and a gene switch that stays locked until a matching stretch of the virus's RNA pairs up with it, letter for letter. The virus unlocks it, the ribosomes build a coloured protein, and the spot changes colour.",
+ "obstacle": "Virus RNA in a sample is so scarce it must first be copied many times over, a step that still needs heat and careful handling.",
+ "effects": [
+  {"effect": "ribosomes build proteins by reading RNA instructions", "card": "ribosomes"},
+  {"effect": "each DNA strand is a template for copying its partner", "card": "the-double-helix"}
+ ],
+ "parts": ["paper"]},
+
+{"id": "ft-phone-camera-oxygen-check", "drop": false,
+ "name": "Rosy Fingertip", "subtitle": "a phone that checks your blood oxygen",
+ "how": "Blood oxygen can fall dangerously without you feeling short of breath, as many COVID patients found, and a clip-on meter isn't always at hand. You rest a fingertip over the phone's camera and flash, and the camera watches how red the light coming through your finger is with each heartbeat. Blood full of oxygen is brighter red, so an app can tell whether your blood is carrying enough.",
+ "obstacle": "A phone camera sees only visible colours, not the infrared that real oximeters compare against, so readings drift, especially on darker skin.",
+ "effects": [
+  {"effect": "blood turns bright red when it takes up air", "card": "blood-color"}
+ ],
+ "parts": ["camera", "light-emitting-diodes", "microchips"]},
+
+{"id": "ft-pulse-powered-implant-cell", "drop": false,
+ "name": "Heartbeat Charger", "subtitle": "an implant powered by your own pulse",
+ "how": "Pacemaker batteries run out every five to fifteen years, and each replacement means surgery and a risk of infection. A soft band around an artery holds a crystal that makes a tiny voltage whenever it is squeezed. Every heartbeat pushes the artery wall out against the band, and the trickle of electricity keeps a small battery topped up.",
+ "obstacle": "Each beat yields only millionths of a watt, and a band pressing on an artery for decades could scar it.",
+ "effects": [
+  {"effect": "blood presses on vessel walls with measurable force", "card": "blood-pressure"},
+  {"effect": "piezoelectricity", "card": "piezoelectricity"}
+ ],
+ "parts": ["quartz-oscillator", "lithium-battery"]},
+
+{"id": "ft-radioisotope-ice-probe", "drop": false,
+ "name": "Melt Mole", "subtitle": "a nuclear-heated probe that sinks through ice",
+ "how": "Jupiter's moon Europa probably hides an ocean under kilometres of ice, one of the likeliest places to find life beyond Earth, but no drill rig could be flown there. A torpedo-shaped steel probe carries a decaying radioactive heat source in its nose, and the steady heat melts the ice beneath it so gravity pulls it down. It unreels a wire behind it to talk to the surface.",
+ "obstacle": "Melting through that much ice could take years, and the probe must be scrubbed so clean that it carries no Earth germs into the ocean.",
+ "effects": [
+  {"effect": "radium gives off steady heat for centuries", "card": "radioactive-energy"}
+ ],
+ "parts": ["steel", "insulated-wire"]},
+
+{"id": "ft-radioisotope-stirling-engine", "drop": false,
+ "name": "Forever Piston", "subtitle": "an engine run by radioactive heat for decades",
+ "how": "Probes beyond Mars and remote polar stations get too little sunlight for solar panels, and today's nuclear batteries turn only a small share of their heat into electricity. A decaying radioactive source warms one end of a sealed gas cylinder while space or air cools the other, so the gas swells and shrinks and drives a piston back and forth. That gets about four times the electricity from the same scarce fuel.",
+ "obstacle": "Its moving parts must run untouched for well over a decade, and the plutonium fuel is made only a kilogram or two a year.",
+ "effects": [
+  {"effect": "radium gives off steady heat for centuries", "card": "radioactive-energy"},
+  {"effect": "heating a gas expands it", "card": "charles-law"}
+ ],
+ "parts": ["piston-and-cylinder", "steel", "electric-generators"]},
+
+{"id": "ft-raman-cancer-probe", "drop": false,
+ "name": "Tumour Torch", "subtitle": "a laser pen that spots cancer mid-surgery",
+ "how": "In brain surgery cancer often looks just like healthy tissue, so surgeons either leave tumour behind or remove brain the patient needs. The surgeon touches a pen-like probe to the tissue, a laser shines down a fibre, and the tissue scatters back faint light whose colours are shifted by its molecules. A grating spreads that light so a computer recognises a tumour's chemical fingerprint in about a second.",
+ "obstacle": "The returning light is very faint and each touch checks only a spot a millimetre wide, so mapping a whole tumour's edge is slow.",
+ "effects": [
+  {"effect": "molecules shift the colour of light they scatter", "card": "raman-spectra"}
+ ],
+ "parts": ["laser", "fiber-optics", "diffraction-gratings"]},
+
+{"id": "ft-raman-glucose-meter", "drop": false,
+ "name": "Sugar Watch", "subtitle": "a wristband that reads blood sugar through skin",
+ "how": "People with diabetes prick their fingers several times a day or wear a sensor needle under the skin. This wristband shines a laser into the skin and spreads the faintly colour-shifted light that comes back into a rainbow. Glucose leaves its own small mark in that rainbow, and its strength tracks how much sugar is in the blood.",
+ "obstacle": "Glucose's signal is tiny and buried under those of skin, water and everything else, so the band still has to be checked against finger pricks.",
+ "effects": [
+  {"effect": "molecules shift the colour of light they scatter", "card": "raman-spectra"}
+ ],
+ "parts": ["laser", "diffraction-gratings", "photocell"]},
+
+{"id": "ft-seabed-mud-battery", "drop": false,
+ "name": "Muck Battery", "subtitle": "seabed bacteria that power ocean sensors",
+ "how": "Ocean sensors that watch for tsunamis or track fish die when their batteries run down, and sending a ship to swap them is very expensive. Bacteria in seabed mud live off its chemicals and dump spare electrons onto a buried electrode. They flow up a wire to a second electrode in the water above, giving a small current that lasts as long as the mud does.",
+ "obstacle": "It gives only a trickle, a few hundredths of a watt from an electrode the size of a table, so sensors must save up power for short bursts.",
+ "effects": [
+  {"effect": "seabed bacteria living on chemicals hand electrons to an electrode", "card": "deep-sea-ecosystems"}
+ ],
+ "parts": ["fuel-cell", "insulated-wire"]},
+
+{"id": "ft-solar-blind-uv-link", "drop": true,
+ "dropWhy": "r14: short-range, mainly covert military signalling that radio and light links already handle well enough; clever but niche.",
+ "name": "Noon Dark", "subtitle": "signalling in a colour the sun can't drown",
+ "how": "High-altitude ozone soaks up the sun's deep ultraviolet, so near the ground that colour of light is dark even at noon. Deep-UV lamps flash messages that scatter off the air around corners and over hills to a sensitive detector, with no sunlight to drown them out.",
+ "obstacle": "The signal fades within a kilometre or so, and deep-UV lamps are still dim and short-lived.",
+ "effects": [
+  {"effect": "ozone soaks up ultraviolet light", "card": "ozonosphere"}
+ ],
+ "parts": ["light-emitting-diodes", "photocell"]},
+
+{"id": "ft-solar-updraft-tower", "drop": false,
+ "name": "Sun Chimney", "subtitle": "a glass-roofed chimney that makes its own wind",
+ "how": "Solar panels go quiet at sunset, and storing their power for the night is costly. A huge glass roof heats the air beneath it, and the warm air rushes inward to a tall chimney in the middle, the same sun-driven pull that drives the trade winds; turbines at the chimney's base catch this home-made wind. Water-filled tubes under the roof soak up heat by day and release it at night, so the wind keeps blowing after dark.",
+ "obstacle": "It turns under one percent of the sunlight into power, so a big plant needs a roof kilometres wide and a chimney taller than any building.",
+ "effects": [
+  {"effect": "sun-heated air at the equator drives steady winds", "card": "trade-winds"},
+  {"effect": "water soaks up far more heat per degree than mercury", "card": "heat-capacity"}
+ ],
+ "parts": ["glass", "turbines", "electric-generators"]},
+
+{"id": "ft-star-sighting-drone-compass", "drop": false,
+ "name": "Starlight Compass", "subtitle": "a drone that steers by the stars",
+ "how": "GPS gets jammed and spoofed in war zones, and a drone's own motors and batteries throw off a magnetic compass. A small upward-facing camera matches the stars it sees against a star map, and since the pole star holds still while the rest wheel around it, the drone always knows which way is north. A spinning gyroscope holds that heading when clouds pass over.",
+ "obstacle": "Daytime: the sky is too bright for a cheap camera to see stars, so for now it only works at night or above the clouds.",
+ "effects": [
+  {"effect": "the pole star stays fixed in the north", "card": "sea-navigation"},
+  {"effect": "a spinning body holds its axis", "card": "gyroscope"}
+ ],
+ "parts": ["camera", "microchips", "gyroscope"]},
+
+{"id": "ft-starch-sugar-battery", "drop": false,
+ "name": "Cornflour Battery", "subtitle": "a battery that runs on starch",
+ "how": "Today's batteries are made of mined metals and flammable chemicals that are hard to recycle. This fuel cell is filled with starch paste and a team of enzymes: the first chops starch into sugar, and the rest strip electrons off the sugar step by step, the way our own cells burn it, sending them round a circuit. Sugar packs more energy per kilo than a lithium battery, and the spent fuel is just water and carbon dioxide.",
+ "obstacle": "The enzymes wear out within weeks, and the cell delivers too little power at once to run more than small gadgets.",
+ "effects": [
+  {"effect": "an enzyme turns starch into sugar", "card": "diastase"},
+  {"effect": "cells burn sugar to carbon dioxide and water, step by step", "card": "citric-acid-cycle"}
+ ],
+ "parts": ["fuel-cell"]},
+
+{"id": "ft-steroid-eluting-contact-lens", "drop": false,
+ "name": "Weeping Lens", "subtitle": "a lens that treats inflammation as it happens",
+ "how": "Eye drops wash away in minutes, so inflamed eyes get treated in bursts. This lens holds cortisone in tiny capsules, and lysozyme, the germ-killing enzyme in tears, slowly eats through their walls, so a sore, teary eye gets more medicine; the drug then seeps into the eye through a membrane.",
+ "obstacle": "Proving that the dose stays steady for weeks while the lens stays clear and comfortable.",
+ "effects": [
+  {"effect": "cortisone calms inflammation", "card": "corticoids"},
+  {"effect": "an enzyme in tears breaks open bacteria", "card": "lysozyme"},
+  {"effect": "small molecules seep through a membrane", "card": "osmosis"}
+ ],
+ "parts": ["contact-lenses"]},
+
+{"id": "ft-superconducting-city-cable", "drop": false,
+ "name": "Frost Line", "subtitle": "a lossless power cable chilled by liquid nitrogen",
+ "how": "Cities need ever more power, but copper cables waste some as heat, and digging new tunnels under busy streets is slow and costly. This cable is ceramic tape bathed in liquid nitrogen, made cheaply by squeezing and chilling air, inside an insulated jacket. At that cold the tape loses all resistance, so it carries several times the power of a copper cable the same size through the pipes already there.",
+ "obstacle": "The ceramic tape still costs far more than copper, and the cooling must never fail along the whole route.",
+ "effects": [
+  {"effect": "some ceramics lose all resistance at liquid-nitrogen cold", "card": "warm-superconductivity"},
+  {"effect": "cold plus pressure turns gases into liquids", "card": "liquefying-gases"}
+ ],
+ "parts": ["insulated-wire", "dewar-flask"]},
+
+{"id": "ft-superconducting-energy-store", "drop": false,
+ "name": "Endless Loop", "subtitle": "electricity stored as a current that never stops",
+ "how": "A power flicker lasting a fraction of a second can crash a chip factory or a hospital scanner, and batteries can be too slow to catch it. A coil of superconducting ceramic chilled by liquid nitrogen holds electricity as a current circling with no resistance, so it never fades. The grid can pull it back out in thousandths of a second to cover sudden dips.",
+ "obstacle": "It holds only seconds' worth of energy for its huge cost and cooling, so it guards against blips, not blackouts.",
+ "effects": [
+  {"effect": "some ceramics lose all resistance at liquid-nitrogen cold", "card": "warm-superconductivity"}
+ ],
+ "parts": ["electromagnets", "dewar-flask", "transformer"]},
+
+{"id": "ft-superhot-rock-geothermal", "drop": false,
+ "name": "Earth's Furnace", "subtitle": "microwave-drilled wells into scorching deep rock",
+ "how": "Clean power that runs day and night usually needs a volcano nearby; elsewhere the Earth's heat lies too deep to drill to. Radioactive decay keeps rock 10 to 20 kilometres down hotter than 400 degrees almost everywhere, so powerful microwave beams vaporize a hole instead of grinding one. Water pumped down returns so hot and pressed that it is neither liquid nor steam, carrying several times more energy to spin a turbine, perhaps at an old coal plant.",
+ "obstacle": "Microwave drilling has bored only shallow test holes so far, and nobody knows if a 20-kilometre hole stays open in red-hot, crushing rock.",
+ "effects": [
+  {"effect": "radioactivity heats the Earth's crust", "card": "radioactivity-and-earth"},
+  {"effect": "above a set temperature no pressure liquefies a gas", "card": "critical-temperature"}
+ ],
+ "parts": ["magnetrons", "steam-turbine", "electric-generators"]},
+
+{"id": "ft-thorium-nuclear-clock", "drop": false,
+ "name": "Thorium Heartbeat", "subtitle": "a clock that ticks with an atom's nucleus",
+ "how": "Atomic clocks keep GPS, phone networks and stock markets in step, but the electrons they count are nudged by every stray field and temperature change. The nucleus sits tucked deep inside its electrons, so thorium nuclei held in a clear crystal absorb only one razor-sharp colour of ultraviolet light. A laser locked to that colour could keep time several times steadier than today's best clocks, in a box small enough to carry.",
+ "obstacle": "The ultraviolet laser it needs is a fragile, room-sized lab machine, and the exact colour was only pinned down in 2024.",
+ "effects": [
+  {"effect": "nuclei locked in a crystal absorb a razor-sharp frequency", "card": "mössbauer-effect"}
+ ],
+ "parts": ["laser", "quartz-oscillator"]},
+
+{"id": "ft-virus-proof-recoded-bacteria", "drop": false,
+ "name": "Babel Bacteria", "subtitle": "factory germs that no virus can hijack",
+ "how": "Drugs and food ingredients are brewed by bacteria in giant tanks, and one virus outbreak can wipe out a batch and shut a plant for weeks. Scientists rewrite the bacterium's whole genome so it never uses certain three-letter code words, then delete the helper molecules that read those words. Viruses still use them, so their proteins come out garbled and they cannot spread.",
+ "obstacle": "Some viruses carry their own readers for the missing words and still break in, so each strain has to be recoded further, and rewriting a genome takes years.",
+ "effects": [
+  {"effect": "three RNA letters spell one amino acid", "card": "genetic-code"},
+  {"effect": "transfer RNA ferries each amino acid to its codon", "card": "transfer-rna"}
+ ],
+ "parts": ["synthetic-gene"]}
+]

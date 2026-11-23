@@ -1,0 +1,513 @@
+[
+ {
+  "id": "sun-charged-frost-blanket",
+  "name": "Sun-charged frost blanket",
+  "subtitle": "a crop cover that heats buds during frost",
+  "job": "protects crops",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "a salt solution stays liquid below its setting point, holding its heat",
+    "card": "supersaturation",
+    "triz": true,
+    "newToJob": true
+   },
+   {
+    "effect": "a tiny seed sets the whole pouch crystallising at once",
+    "card": "nucleation",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "nylon",
+   "thermometer"
+  ],
+  "how": "One spring frost can wipe out a year of fruit, because blossoms freeze in the hours before dawn. Pouches of salt water sewn into a black cover melt in the afternoon sun and stay liquid as they cool, keeping that heat locked in; when a sensor feels the air near zero it clicks a tiny seed into each pouch, the salt crystallises at once and warms the buds through the coldest hours.",
+  "obstacle": "Weight: storing enough heat for a long frosty night takes several kilograms of salt per square metre of cover.",
+  "searchQuery": "supersaturated sodium acetate triggered heat release frost protection orchard",
+  "plausibility": 3,
+  "why": "Hand-warmer chemistry saves the sun's heat until the moment frost actually arrives."
+ },
+ {
+  "id": "cold-plate-soot-trap",
+  "name": "Cold-plate soot trap",
+  "subtitle": "a cookstove hood catching soot on cold plates",
+  "job": "prevents disease",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "soot specks drift from hot gas toward cold metal",
+    "card": "thermophoresis",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "franklin-stove",
+   "copper"
+  ],
+  "how": "Smoke from indoor cooking fires kills about three million people a year, and any filter fine enough to stop soot clogs within days. Above the fire the smoke is drawn through narrow gaps between copper plates kept cool by a water tank; the tiny soot specks drift out of the hot gas toward the cold metal on their own and stick there, to be wiped off weekly, while the tank delivers warm washing water.",
+  "obstacle": "The drift is slow, so catching most of the finest soot takes a big stack of cool plates that a poor household must keep clean.",
+  "searchQuery": "thermophoretic soot capture cookstove hood cooled plates household",
+  "plausibility": 2,
+  "why": "Filterless soot capture that never clogs, aimed at one of the world's biggest killers."
+ },
+ {
+  "id": "vortex-ring-crop-sprayer",
+  "name": "Vortex-ring crop sprayer",
+  "subtitle": "a sprayer that fires pesticide in smoke rings",
+  "job": "protects crops",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "a sharp puff rolls into a spinning ring that travels far without spreading",
+    "card": "vortex-ring",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "piston-and-cylinder",
+   "valve"
+  ],
+  "how": "Much of the pesticide farmers spray drifts off on the wind, poisoning neighbours and streams instead of pests. This sprayer loads a small cloud of droplets into a box and punches it out as a spinning ring, which holds its droplets together like a smoke ring and carries them metres deep into a tree's leaves before breaking up, so far less spray is needed and little escapes.",
+  "obstacle": "Crosswinds and dense foliage can tear the rings apart early, and nobody knows yet how many droplets a ring can carry before it falls apart.",
+  "searchQuery": "vortex ring pesticide sprayer orchard canopy spray drift",
+  "plausibility": 3,
+  "why": "Spray drift harms health and wastes chemicals; rings deliver it where blowers scatter it."
+ },
+ {
+  "id": "listening-irrigation-valve",
+  "name": "Listening irrigation valve",
+  "subtitle": "waters crops when their stems click with thirst",
+  "job": "grows food",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "water columns snapping in a thirsty stem give off tiny clicks",
+    "card": "acoustic-emission",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "microphone",
+   "valve"
+  ],
+  "how": "Farms waste huge amounts of water because nobody can tell exactly when a plant starts going thirsty. When a plant runs short, the threads of water inside its stem start to snap, and each snap gives off a faint ultrasonic click; a sensor clipped to the stem counts the clicks and opens the drip valve only when they speed up, before the leaves even wilt.",
+  "obstacle": "Picking the plant's clicks out of wind, rain and insect noise in a field, cheaply enough to put one on every row.",
+  "searchQuery": "xylem cavitation acoustic emission sensor automatic irrigation control",
+  "plausibility": 3,
+  "why": "Water is farming's scarcest input, and here the plant itself reports when it is thirsty."
+ },
+ {
+  "id": "pressure-pop-recycler",
+  "name": "Pressure-pop recycler",
+  "subtitle": "a chamber that pops glued phones apart",
+  "job": "recycles materials",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "carbon dioxide squeezed past its critical point seeps into glue like a gas and dissolves like a liquid",
+    "card": "critical-temperature",
+    "triz": true,
+    "newToJob": true
+   },
+   {
+    "effect": "when pressure drops, the dissolved gas froths into bubbles inside the glue",
+    "card": "nucleation",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "pressure-cooker",
+   "valve"
+  ],
+  "how": "Phones and laptops are glued so tightly that recyclers shred them whole, losing most of the cobalt, rare-earth magnets and gold in the dust. Here whole devices sit in a steel chamber full of carbon dioxide squeezed until it is neither gas nor liquid, which soaks into every glue line; when the pressure is dropped in a second, the gas froths inside the glue and the device falls apart into battery, screen, board and magnets, ready to sort.",
+  "obstacle": "The chamber must hold about 75 times normal air pressure, and the sudden drop must not crack a lithium battery into a fire.",
+  "searchQuery": "supercritical CO2 adhesive foaming smartphone disassembly recycling",
+  "plausibility": 3,
+  "why": "Taking devices apart is the bottleneck of e-waste recovery; this undoes every glue at once."
+ },
+ {
+  "id": "pit-seeking-pipe-coating",
+  "name": "Pit-seeking pipe coating",
+  "subtitle": "a coating whose healing grains drift to rust",
+  "job": "repairs itself",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "particles in a liquid drift along a difference in dissolved salt",
+    "card": "diffusiophoresis",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "steel"
+  ],
+  "how": "Corrosion quietly eats pipelines, bridges and the steel inside concrete, and it starts in pits too small to see. A rusting pit leaks dissolved metal salts, so the water around it gets saltier toward the pit; tiny capsules of rust-stopper held in a damp gel layer drift up that salt slope on their own, pile into the pit and seal it, leaving healthy steel alone.",
+  "obstacle": "The drift only works through a wet layer and over fractions of a millimetre, so capsules must already sit close to where a pit opens.",
+  "searchQuery": "diffusiophoresis inhibitor capsules migrate corrosion pit self-healing coating",
+  "plausibility": 2,
+  "why": "Repair goes only where damage starts, on infrastructure everyone depends on."
+ },
+ {
+  "id": "salt-gradient-organ-seeding",
+  "name": "Salt-gradient organ seeding",
+  "subtitle": "drawing cells deep into a lab-grown organ frame",
+  "job": "grows organs",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "cells in a liquid drift along a difference in dissolved salt",
+    "card": "diffusiophoresis",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "tissue-culture",
+   "perfusion-pump"
+  ],
+  "how": "To grow a replacement liver or kidney, labs coat a spongy organ-shaped frame with a patient's cells, but the cells pile up on the outside and the core stays empty. Pumping fluid through the frame that is saltier at the centre than at the surface makes cells drift inward along the salt slope on their own, a few thousandths of a millimetre a second, filling the deep pores evenly within hours.",
+  "obstacle": "Cells must tolerate the salt difference, and the pull is gentle, so very thick frames may still need channels to shorten the trip.",
+  "searchQuery": "diffusiophoresis cell seeding porous scaffold solute gradient",
+  "plausibility": 2,
+  "why": "Uneven seeding is one of the walls between printed scaffolds and full-size organs."
+ },
+ {
+  "id": "poured-moon-dust-shield",
+  "name": "Poured moon-dust shield",
+  "subtitle": "moon dust blown into walls like a liquid",
+  "job": "shields from radiation",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "gas blown up through a bed of grains makes it flow like a liquid",
+    "card": "fluidization",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "air-pump",
+   "valve"
+  ],
+  "how": "A Moon base needs about two metres of soil heaped over it to block the radiation that would give astronauts cancer, and digging and stacking that by robot is slow. Blowing a gentle stream of gas up through moon dust makes it flow like water, so it can be piped from a hopper into hollow bag-walls around a habitat; when the gas stops the dust locks solid, and the gas is caught and reused.",
+  "obstacle": "Moon dust is jagged and clings by static, so it may clump instead of flowing, and it grinds through pumps and valves fast.",
+  "searchQuery": "fluidized lunar regolith pneumatic conveying radiation shielding habitat",
+  "plausibility": 3,
+  "why": "Radiation limits how long people can live on the Moon; this moves shielding by the tonne."
+ },
+ {
+  "id": "wobbling-river-pump",
+  "name": "Wobbling river pump",
+  "subtitle": "a pole that pumps water by swaying",
+  "job": "pumps water",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "flow past a pole sheds swirls from alternate sides and shakes it",
+    "card": "karman-vortex-street",
+    "triz": true,
+    "newToJob": true
+   },
+   {
+    "effect": "pushes in time with a pole's natural sway build into big swings",
+    "card": "resonance-vibration",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "piston-and-cylinder",
+   "valve"
+  ],
+  "how": "Hundreds of millions of small farmers live beside rivers yet lift irrigation water by hand or with diesel pumps. A smooth pole anchored upright in the current sheds swirls from alternate sides and sways; tuned so its natural sway matches the swirl rhythm, it swings hard, and each swing works a simple piston pump that pushes water up to the fields with no fuel.",
+  "obstacle": "Slow rivers give weak pushes, so each pole must be tuned to its stream and survive floods and floating debris.",
+  "searchQuery": "vortex induced vibration water pump irrigation river cylinder",
+  "plausibility": 3,
+  "why": "Fuel-free irrigation lifting for the farmers who can least afford diesel."
+ },
+ {
+  "id": "kidney-stone-seed-strip",
+  "name": "Kidney-stone seed strip",
+  "subtitle": "a strip showing if urine will grow stones",
+  "job": "diagnoses",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "a liquid can hold more dissolved salt than it should, until something sets it off",
+    "card": "supersaturation",
+    "triz": true,
+    "newToJob": true
+   },
+   {
+    "effect": "crystals start growing only on a seed",
+    "card": "nucleation",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "paper"
+  ],
+  "how": "About one person in ten gets a kidney stone and half get another, but checking whether their urine still breeds stones means a 24-hour collection sent to a lab. Urine overloaded with dissolved calcium salts stays clear until it meets a seed, so this paper strip carries tiny seed crystals: in risky urine they grow into a visible frosty patch within an hour, while safe urine leaves them unchanged.",
+  "obstacle": "Crystal growth also depends on temperature and how long the urine stands, so the strip needs careful calibration to give honest answers at home.",
+  "searchQuery": "seeded crystal growth urine supersaturation home test strip kidney stone",
+  "plausibility": 3,
+  "why": "Patients could check daily whether their water and diet changes are actually stopping stones."
+ },
+ {
+  "id": "electrocaloric-cold-cap",
+  "name": "Electrocaloric cold cap",
+  "subtitle": "a thin cap that saves hair during chemotherapy",
+  "job": "treats illness",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "a plastic film cools when an electric field across it is switched off",
+    "card": "electrocaloric-effect",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "lithium-battery",
+   "nylon"
+  ],
+  "how": "Hair loss makes many cancer patients dread chemotherapy, and chilling the scalp during treatment saves the hair, but today's cold caps are tethered to a fridge pumping coolant. This cap is lined with thin plastic films that warm when a voltage is switched on and cool when it is switched off; cycled in step, they pump heat from the scalp to the cap's outer skin on battery power, so patients can move about or be treated at home.",
+  "obstacle": "Today's films pump only a little heat, and a cap must pull away tens of watts for several hours.",
+  "searchQuery": "electrocaloric polymer wearable scalp cooling chemotherapy hair loss",
+  "plausibility": 2,
+  "why": "Portable scalp cooling could make more patients accept life-saving chemotherapy."
+ },
+ {
+  "id": "seawater-fizz-bed",
+  "name": "Seawater fizz bed",
+  "subtitle": "pulling carbon dioxide out of seawater as bubbles",
+  "job": "removes carbon dioxide",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "slightly acidified seawater holds more dissolved carbon dioxide than it should",
+    "card": "supersaturation",
+    "triz": true,
+    "newToJob": true
+   },
+   {
+    "effect": "bubbles start only on rough spots",
+    "card": "nucleation",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "glass",
+   "valve"
+  ],
+  "how": "The ocean holds about fifty times more carbon than the air, so taking carbon dioxide out of seawater lets the sea soak up more from the sky. Once seawater is made slightly acidic it is overloaded with dissolved carbon dioxide, but bubbles won't start on their own; running it through a bed of rough glass beads gives the gas millions of starting points, so it fizzes out like opened soda and is collected, with no vacuum pump.",
+  "obstacle": "Acidifying the seawater and neutralising it again before release takes electricity, and that sets the cost per tonne.",
+  "searchQuery": "nucleation packed bed degassing acidified seawater CO2 capture",
+  "plausibility": 3,
+  "why": "Swapping vacuum pumps for free bubble-starting surfaces cuts the energy of ocean carbon capture."
+ },
+ {
+  "id": "tree-fall-alarm",
+  "name": "Tree-fall alarm",
+  "subtitle": "hears a city tree before it falls",
+  "job": "protects",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "wood fibres tearing under strain give off bursts of tiny clicks",
+    "card": "acoustic-emission",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "microphone",
+   "radio"
+  ],
+  "how": "Falling trees and branches kill people in storms and bring down power lines, yet a rotten trunk often looks healthy. As wood fibres start to tear in the wind, the trunk gives off bursts of clicks far too faint to hear; a sensor screwed into the trunk counts them during gusts and radios the city when one tree clicks far more than its neighbours, so it can be braced or felled first.",
+  "obstacle": "Knowing which click rates mean real danger needs years of recordings from trees that actually fell.",
+  "searchQuery": "acoustic emission tree trunk wind failure warning sensor",
+  "plausibility": 3,
+  "why": "Turns hidden rot into a warning that protects people, roads and power lines."
+ },
+ {
+  "id": "greenhouse-pest-sniffer",
+  "name": "Greenhouse pest sniffer",
+  "subtitle": "a laser that smells plants under attack",
+  "job": "protects crops",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "flickering light absorbed by a gas makes it give off sound",
+    "card": "photoacoustic-effect",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "laser",
+   "microphone"
+  ],
+  "how": "By the time growers see pests in a greenhouse, they have often spread through the crop and must be sprayed heavily. Leaves being chewed release a puff of cut-grass scent within minutes; a flickering infrared laser tuned to that scent makes the air in a small chamber hum whenever the scent is present, and a microphone hears it at a few parts per billion, pointing growers to the exact bay to treat.",
+  "obstacle": "Making the laser sensor cheap and sturdy enough for every bay, and telling attack scent from the smell of pruning and harvest.",
+  "searchQuery": "photoacoustic sensor green leaf volatiles herbivore detection greenhouse",
+  "plausibility": 3,
+  "why": "Early, targeted treatment cuts both pesticide use and crop losses."
+ },
+ {
+  "id": "sweat-ring-patch",
+  "name": "Sweat-ring patch",
+  "subtitle": "a sweat patch that concentrates signs into rings",
+  "job": "monitors health continuously",
+  "newJob": true,
+  "effects": [
+   {
+    "effect": "a drying liquid carries what it holds to its edge and leaves a ring",
+    "card": "coffee-ring-effect",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "paper",
+   "dye"
+  ],
+  "how": "Sweat carries hints of stress, kidney trouble and dehydration, but in amounts too faint for a cheap patch to read. Sweat soaks into a paper patch and flows out to a thin rim where it dries, and the drying sweeps everything dissolved in it to the edge, piling the markers into a narrow ring many times more concentrated; a colour-changing dye in the ring is read by a phone camera at the end of the day.",
+  "obstacle": "Sweat rates vary so much between people that turning ring colour into a trustworthy blood level is hard.",
+  "searchQuery": "coffee ring effect sweat patch preconcentration biomarker paper",
+  "plausibility": 3,
+  "why": "A free concentration step could make low-cost sweat tests sensitive enough to be useful."
+ },
+ {
+  "id": "pollen-ring-blower",
+  "name": "Pollen-ring blower",
+  "subtitle": "puffs pollen onto flowers in smoke rings",
+  "job": "grows food",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "a sharp puff rolls into a spinning ring that holds together across a room",
+    "card": "vortex-ring",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "piston-and-cylinder",
+   "robots"
+  ],
+  "how": "Indoor farms, and orchards short of bees, pay people to dab pollen onto flowers one by one. A machine fires puffs of pollen as spinning rings, which keep their grains together across a few metres and burst against a cluster of blossoms, so one machine rolling down a row can pollinate thousands of flowers an hour without touching them.",
+  "obstacle": "Aiming at each flower cluster fast enough while wasting little pollen, which is costly to collect.",
+  "searchQuery": "vortex ring air cannon pollen pollination flowers",
+  "plausibility": 3,
+  "why": "Bee decline and indoor farming both need pollination that does not depend on insects."
+ },
+ {
+  "id": "shaking-fog-harp",
+  "name": "Shaking fog harp",
+  "subtitle": "a fog net whose wires shake off water",
+  "job": "supplies water",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "wind past a wire sheds swirls from alternate sides and shakes it",
+    "card": "karman-vortex-street",
+    "triz": true,
+    "newToJob": true
+   },
+   {
+    "effect": "a surface of tiny waxy bumps makes drops bead up and roll off",
+    "card": "lotus-effect",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "steel"
+  ],
+  "how": "Coastal deserts from Chile to Morocco are bathed in fog but short of drinking water, and fog nets lose much of their catch because drops cling to the mesh and blow away or dry. A harp of fine vertical wires with a water-shedding coating catches the fog; the wind itself sheds swirls off each wire and makes it hum and shake, so the beads jump free and slide down into a gutter before they can evaporate.",
+  "obstacle": "Wires that vibrate for years in salty wind tend to fatigue and snap, and the coating wears off.",
+  "searchQuery": "vortex induced vibration fog harp droplet shedding superhydrophobic wires",
+  "plausibility": 3,
+  "why": "More water per net in places where fog is the only dependable source."
+ },
+ {
+  "id": "magnetic-malaria-chip",
+  "name": "Magnetic malaria chip",
+  "subtitle": "a chip that feels malaria's iron crystals",
+  "job": "diagnoses",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "a magnetic field changes a metal film's electrical resistance",
+    "card": "magnetoresistance",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "integrated-circuits",
+   "electromagnets"
+  ],
+  "how": "Malaria kills over half a million people a year, and the standard microscope test needs a trained eye that remote clinics often lack. The parasite turns the iron in blood into tiny weakly magnetic crystals; a magnet pulls them from a drop of blood onto a metal film whose electrical resistance shifts in a magnetic field, so an infection shows up as a number in minutes, with no stain and no skill.",
+  "obstacle": "The crystals are only faintly magnetic, so catching early, low-level infections needs a far more sensitive film than today's.",
+  "searchQuery": "magnetoresistive sensor hemozoin malaria detection blood drop",
+  "plausibility": 2,
+  "why": "A skill-free, reagent-free malaria test for clinics without microscope experts."
+ },
+ {
+  "id": "salt-gradient-wound-dressing",
+  "name": "Salt-gradient wound dressing",
+  "subtitle": "a dressing that draws germs out of crevices",
+  "job": "treats illness",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "particles in a liquid drift along a difference in dissolved salt",
+    "card": "diffusiophoresis",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "rayon"
+  ],
+  "how": "Diabetic foot ulcers stay open for months because bacteria hide in crevices that rinsing can't reach, and they lead to tens of thousands of amputations a year. Rinsing the wound with salty fluid and then laying on a dressing soaked in salt-free gel sets up a salt slope out of every crevice; bacteria and debris drift along it into the dressing on their own and are lifted away when it is changed.",
+  "obstacle": "The pull reaches only fractions of a millimetre a minute and fades as the salt evens out, so dressings may need frequent changes.",
+  "searchQuery": "diffusiophoresis bacteria removal wound crevice solute gradient dressing",
+  "plausibility": 2,
+  "why": "Cleans hidden crevices of chronic wounds without scrubbing or more antibiotics."
+ },
+ {
+  "id": "mucus-drip-test",
+  "name": "Mucus drip test",
+  "subtitle": "timing how a mucus thread breaks into drops",
+  "job": "diagnoses",
+  "newJob": false,
+  "effects": [
+   {
+    "effect": "a thin stream of liquid breaks itself into a row of drops",
+    "card": "plateau-rayleigh-instability",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "camera"
+  ],
+  "how": "People with cystic fibrosis or COPD land in hospital when their lung mucus thickens and gets infected, but measuring its stickiness takes a lab instrument. A thread of coughed-up mucus squeezed from a nozzle breaks itself into drops, and the stickier and stretchier it is, the longer the thread holds before beading; a phone camera times the break, warning of a flare-up days early so treatment can start at home.",
+  "obstacle": "Mucus varies wildly even within one cough, so a single reading may be too noisy to trust.",
+  "searchQuery": "capillary breakup sputum viscoelasticity smartphone COPD exacerbation",
+  "plausibility": 3,
+  "why": "Home warning of flare-ups for millions living with chronic lung disease."
+ }
+]

@@ -1,0 +1,560 @@
+[
+ {
+  "id": "ft-air-to-starch-reactor",
+  "drop": false,
+  "name": "Sky Flour",
+  "subtitle": "a factory that makes starch from air",
+  "how": "Farming already uses most of the world's good land and fresh water, and one drought can wipe out a harvest. This plant splits water with electricity to get hydrogen, joins it with carbon dioxide from the air to make a simple alcohol, then passes that through a chain of chemical and enzyme steps that link it up into starch, the main food in grain. No plant, soil or field is involved, so staple food could be made in a building anywhere.",
+  "obstacle": "Every step wastes energy and so far it makes only grams in a lab, so a loaf's worth of starch costs far more electricity than a wheat field gets free from the sun.",
+  "effects": [
+   {
+    "effect": "life's molecules can be made from non-living chemicals",
+    "card": "organic-synthesis"
+   },
+   {
+    "effect": "a current splits water into hydrogen and oxygen",
+    "card": "decomposition-of-water"
+   }
+  ],
+  "parts": [
+   "valve",
+   "distillation"
+  ]
+ },
+ {
+  "id": "ft-algae-oxygen-garden",
+  "drop": false,
+  "name": "Pond Lungs",
+  "subtitle": "algae tubes that make a spacecraft's air",
+  "how": "A crew on a years-long trip to Mars needs tonnes of oxygen, and carrying it all, or machines that can break down far from help, is heavy and risky. Lit glass tubes of green algae sit in the ship's air loop: the algae use the lamp light to turn the crew's exhaled carbon dioxide and water into sugar, giving off fresh oxygen as they do. The same tubes scrub the stale air and refill it, and the extra algae could even be eaten.",
+  "obstacle": "Keeping a living culture healthy for years in weightlessness, since one contamination or crash of the algae would leave the crew short of air.",
+  "effects": [
+   {
+    "effect": "plants turn sunlight, water and carbon dioxide into sugar",
+    "card": "photosynthesis"
+   }
+  ],
+  "parts": [
+   "glass",
+   "light-emitting-diodes",
+   "valve"
+  ]
+ },
+ {
+  "id": "ft-arsenic-sensing-bacteria",
+  "drop": true,
+  "dropWhy": "Boris rejected it as not important enough (r14): a niche water test that cheap chemical kits already cover.",
+  "name": "Glow Canary",
+  "subtitle": "bacteria that glow when well water has arsenic",
+  "how": "Arsenic in well water slowly poisons people who cannot taste or see it. Harmless bacteria carry a natural regulator gene that reacts to arsenic, wired to a gene that makes them glow, so the more arsenic, the brighter the vial.",
+  "obstacle": "Living bacteria must be kept alive and handled safely in the field, while paper chemical test kits already exist.",
+  "effects": [
+   {
+    "effect": "regulator genes switch other genes on and off",
+    "card": "gene-regulators"
+   }
+  ],
+  "parts": [
+   "recombinant-dna"
+  ]
+ },
+ {
+  "id": "ft-artificial-vein-valve",
+  "drop": false,
+  "name": "Vein Gate",
+  "subtitle": "a one-way flap implanted in a leg vein",
+  "how": "When the tiny valves in leg veins wear out, blood pools in the legs instead of climbing back to the heart, causing swelling and open sores that can take years to heal; millions of people live with this. A small flap valve of slippery plastic is slid into the vein through a needle: it opens when the calf muscles squeeze blood upward and snaps shut when blood tries to fall back, just like the body's own valves.",
+  "obstacle": "Blood moves slowly in leg veins and tends to clot on anything artificial, so keeping the valve from clogging for years is still unsolved.",
+  "effects": [
+   {
+    "effect": "flap valves let blood flow only one way",
+    "card": "vein-valves"
+   }
+  ],
+  "parts": [
+   "valve",
+   "teflon"
+  ]
+ },
+ {
+  "id": "ft-bee-explosive-sniffer",
+  "drop": false,
+  "name": "Sugar Sentinels",
+  "subtitle": "a box of trained bees that smell bombs",
+  "how": "Landmines and hidden bombs kill and maim thousands of people a year, and sniffer dogs take months to train. Honeybees learn in minutes: give them sugar water each time they smell a trace of explosive, and soon the smell alone makes them stick out their tongues. A handheld box pumps air past a few harnessed bees while a camera and computer watch for that tongue flick, which can pick up fainter traces than many electronic sniffers.",
+  "obstacle": "The bees are living animals that tire and must be swapped and retrained every few days, and security agencies are slow to trust insects over a machine.",
+  "effects": [
+   {
+    "effect": "pairing a signal with a reward trains a reflex",
+    "card": "conditioned-response"
+   }
+  ],
+  "parts": [
+   "air-pump",
+   "camera",
+   "computer"
+  ]
+ },
+ {
+  "id": "ft-brine-air-well",
+  "drop": false,
+  "name": "Thirsty Salt",
+  "subtitle": "a salt tray that drinks water from air",
+  "how": "Billions of people live where wells are dry or dirty, yet even desert air holds water vapour. At night a tray of strong salt brine sits open to the air, and because dissolved salt makes water less eager to evaporate, vapour from the air condenses into it. By day the tray is sealed under a glass lid, the sun drives that water back out as vapour, and it beads on the cool glass and drips into a jar; the salt stays behind to work again the next night, with no power at all.",
+  "obstacle": "Each tray gathers only a little water a night, so a family needs a roof-sized one, and the salt corrodes almost any cheap metal it touches.",
+  "effects": [
+   {
+    "effect": "dissolved stuff lowers a liquid's vapor pressure",
+    "card": "raoults-law"
+   }
+  ],
+  "parts": [
+   "pottery",
+   "glass",
+   "valve"
+  ]
+ },
+ {
+  "id": "ft-brine-heat-battery",
+  "drop": false,
+  "name": "Lye Larder",
+  "subtitle": "a tank that saves summer heat for winter",
+  "how": "Heating homes in winter burns huge amounts of gas, while summer sun goes to waste, and a tank of hot water loses its heat within weeks. Summer heat boils water out of a lye solution, leaving a thick, thirsty brine in a steel tank. In winter a valve lets cool water vapour reach the brine, which grabs it eagerly because dissolved stuff lowers its own vapour pressure, and as the vapour turns back to liquid it gives off enough heat to warm a house; kept apart, the two hold their energy for months.",
+  "obstacle": "Lye is caustic and the thick brine soaks up vapour slowly, so a house needs big, costly tanks and heat exchangers that so far only exist as lab prototypes.",
+  "effects": [
+   {
+    "effect": "dissolved stuff lowers a liquid's vapor pressure",
+    "card": "raoults-law"
+   },
+   {
+    "effect": "latent heat",
+    "card": "latent-heat"
+   }
+  ],
+  "parts": [
+   "steel",
+   "valve"
+  ]
+ },
+ {
+  "id": "ft-cell-flight-recorder",
+  "drop": false,
+  "name": "Gut Diary",
+  "subtitle": "bacteria that write down what they meet",
+  "how": "Doctors can barely see what happens inside the gut, where diet, germs and inflammation come and go, and a stool test only shows the end result. Harmless gut bacteria are given an enzyme that copies snippets of the cell's working messages (its RNA) back into DNA and files them in order in a memory region of its genome. Swallowed, they pass through and are collected, and reading their DNA reveals what they ran into along the way and in what order.",
+  "obstacle": "The record is short and patchy, catching only a tiny fraction of the cell's messages, and putting engineered bacteria into people needs years of safety approval.",
+  "effects": [
+   {
+    "effect": "an enzyme copies RNA back into DNA",
+    "card": "reverse-transcriptase"
+   }
+  ],
+  "parts": [
+   "recombinant-dna"
+  ]
+ },
+ {
+  "id": "ft-chemical-heat-pipe",
+  "drop": false,
+  "name": "Cold Fire Pipe",
+  "subtitle": "a pipe that carries heat as chemistry",
+  "how": "Huge amounts of heat from power plants and factories go to waste because hot water cools off after a few kilometres of pipe. At the hot end, methane and steam are heated over a catalyst, a substance that speeds a reaction without being used up, so they split into hydrogen and carbon monoxide and soak up the heat. That gas travels cold, as far as needed; at the other end a second catalyst lets the balance shift back, the gases recombine, and the heat comes out again where homes need it.",
+  "obstacle": "It needs heat at around 800 degrees, hotter than almost any power plant or factory throws away, so it waits on very hot nuclear reactors that barely exist.",
+  "effects": [
+   {
+    "effect": "a system at balance shifts to resist any push",
+    "card": "le-chateliers-principle"
+   },
+   {
+    "effect": "catalysis",
+    "card": "catalysis"
+   }
+  ],
+  "parts": [
+   "steel",
+   "valve"
+  ]
+ },
+ {
+  "id": "ft-coin-flip-chip",
+  "drop": false,
+  "name": "Gambler's Chip",
+  "subtitle": "a chip that computes by flipping random bits",
+  "how": "Data centres burn a growing share of the world's electricity, and puzzles like routing delivery trucks or scheduling a hospital are among the most wasteful jobs for ordinary chips. This chip is built from thousands of deliberately jittery bits that flip between 0 and 1 at random, each nudged by its neighbours. Like a crowd of coin tosses that always averages out, over many flips the whole chip settles into the most likely answer, using far less energy.",
+  "obstacle": "The best random bits are tiny magnets that are hard to make all alike by the million, so most demonstrations still fake the randomness on ordinary chips.",
+  "effects": [
+   {
+    "effect": "random events are predictable in large numbers",
+    "card": "probability"
+   }
+  ],
+  "parts": [
+   "integrated-circuits",
+   "transistor"
+  ]
+ },
+ {
+  "id": "ft-curie-heat-generator",
+  "drop": false,
+  "name": "Lukewarm Dynamo",
+  "subtitle": "a still generator fed by waste heat",
+  "how": "Factories, engines and data centres dump vast amounts of lukewarm heat that no turbine can use. A strip of special metal that loses its magnetism at a low temperature sits by a magnet, wrapped in a coil of wire; warm waste water and cool water take turns flowing past it, so it keeps losing and regaining its magnetism. Each time, the magnetism through the coil jumps, and a changing magnetism pushes a current along the wire, with nothing spinning.",
+  "obstacle": "The metal has to warm up and cool down for every pulse, which is slow, so the power from each kilogram is tiny; Edison hit the same wall in 1887.",
+  "effects": [
+   {
+    "effect": "a magnet loses its magnetism when hot enough",
+    "card": "curie-temperature"
+   },
+   {
+    "effect": "induction",
+    "card": "electromagnetic-induction"
+   }
+  ],
+  "parts": [
+   "rare-earth-magnet",
+   "insulated-wire"
+  ]
+ },
+ {
+  "id": "ft-curie-thermoseeds",
+  "drop": false,
+  "name": "Thermostat Seeds",
+  "subtitle": "seeds that heat a tumour, never too hot",
+  "how": "Heating a tumour to fever temperatures weakens it and makes radiation work better, but deep in the body it is hard to heat the tumour without cooking healthy tissue. Tiny metal seeds are placed in the tumour, and a coil around the patient makes a fast-changing magnetic field that heats them. Each seed is made of a metal that stops being magnetic at just the right temperature, so it stops heating there and holds itself steady with no thermometer inside the body.",
+  "obstacle": "Dozens of seeds must be pushed in by needle and the tissue between them heats unevenly, so doctors have preferred simpler ways to heat tumours.",
+  "effects": [
+   {
+    "effect": "a magnet loses its magnetism when hot enough",
+    "card": "curie-temperature"
+   },
+   {
+    "effect": "induction",
+    "card": "electromagnetic-induction"
+   }
+  ],
+  "parts": [
+   "electromagnets"
+  ]
+ },
+ {
+  "id": "ft-encapsulated-islet-implant",
+  "drop": false,
+  "name": "Pancreas Pocket",
+  "subtitle": "a pouch of living cells that makes insulin",
+  "how": "People with type 1 diabetes have lost the cells that make insulin, so they must measure and inject it all day, and a wrong dose can kill. Lab-grown islet cells, the pancreas's own sugar sensors, are sealed in a small porous pouch under the skin: sugar and insulin are small enough to seep through its pores, but immune cells are too big to get in and attack. The cells sense blood sugar and release just the right amount of insulin, doing the lost pancreas's job automatically.",
+  "obstacle": "The body walls the pouch off with scar tissue, cutting the cells off from oxygen, so most of them die within months.",
+  "effects": [
+   {
+    "effect": "islet cells sense blood sugar and release matching insulin",
+    "card": "islets-of-langerhans"
+   },
+   {
+    "effect": "small molecules seep through a membrane",
+    "card": "osmosis"
+   }
+  ],
+  "parts": [
+   "tissue-culture"
+  ]
+ },
+ {
+  "id": "ft-enzyme-dna-data-drive",
+  "drop": false,
+  "name": "Living Ink",
+  "subtitle": "an archive that writes files into DNA",
+  "how": "The world makes more data than it can afford to keep, and hard drives and tapes have to be copied every few years before they decay. This archive stores files as DNA, written by the same enzyme cells use to build it instead of harsh chemistry: a chip with tiny electrodes tells the enzyme which DNA letter to add at each spot, building strands that spell out the data. DNA packs data millions of times denser than a hard drive and, kept cool and dry, lasts thousands of years.",
+  "obstacle": "Writing is still far too slow and costly: storing one film takes longer and costs more than a lifetime of hard drives.",
+  "effects": [
+   {
+    "effect": "an enzyme strings loose nucleotides into DNA or RNA",
+    "card": "nucleic-acid-formation"
+   }
+  ],
+  "parts": [
+   "integrated-circuits"
+  ]
+ },
+ {
+  "id": "ft-falling-atom-tunnel-finder",
+  "drop": false,
+  "name": "Gravity Eye",
+  "subtitle": "a sensor that feels buried hollows by gravity",
+  "how": "Before digging, builders need to know where old pipes, mine shafts and sinkholes are, and radar can't see more than a few metres into wet clay. Inside two vacuum tubes, one above the other, tiny clouds of atoms are dropped and their fall is timed with laser light. Because everything falls at the same rate, any difference between the two drops can only come from extra or missing mass nearby, revealing what lies underground without digging.",
+  "obstacle": "Each spot takes minutes of holding perfectly still, and the instrument is still a delicate cart-sized machine rather than a tool a road crew can carry.",
+  "effects": [
+   {
+    "effect": "heavy and light things fall at the same rate",
+    "card": "falling-motion"
+   }
+  ],
+  "parts": [
+   "laser",
+   "air-pump",
+   "interferometer",
+   "microchips"
+  ]
+ },
+ {
+  "id": "ft-gene-drive-mosquito",
+  "drop": false,
+  "name": "Mendel's Cheat",
+  "subtitle": "mosquitoes that spread a malaria-blocking gene",
+  "how": "Malaria kills over half a million people a year, mostly young children, and mosquitoes keep evolving around insecticides. Normally a gene reaches only half of an animal's offspring, so an added trait fades out of a wild population; a gene drive is an added gene that copies itself onto the partner chromosome, so nearly all offspring inherit it. If that gene stops mosquitoes carrying malaria, a few released insects could spread it through the wild population in a few years.",
+  "obstacle": "Once released it cannot be recalled and will cross borders, so every affected country must agree first, and mosquitoes may evolve ways to block the drive.",
+  "effects": [
+   {
+    "effect": "traits pass on in predictable ratios",
+    "card": "genetics"
+   }
+  ],
+  "parts": [
+   "synthetic-gene"
+  ]
+ },
+ {
+  "id": "ft-glowing-block-heat-battery",
+  "drop": false,
+  "name": "Captive Sun",
+  "subtitle": "white-hot blocks that store power as light",
+  "how": "Sun and wind make power when the weather allows, not when people need it, and lithium batteries are too costly to store days of it. Cheap surplus electricity heats insulated blocks of ceramic until they glow white-hot, and solar-type cells facing the blocks turn their light back into electricity on demand. Because glow climbs with the fourth power of temperature, doubling the heat gives sixteen times the light, so a small panel of cells can draw a lot of power from a very hot block.",
+  "obstacle": "The cells turn less than half the light back into electricity, so most of the stored energy comes back only as heat.",
+  "effects": [
+   {
+    "effect": "glow rises with the fourth power of temperature",
+    "card": "heat-and-radiation"
+   }
+  ],
+  "parts": [
+   "photovoltaic-cells",
+   "carborundum"
+  ]
+ },
+ {
+  "id": "ft-glowing-phage-test",
+  "drop": false,
+  "name": "Firefly Phage",
+  "subtitle": "a virus that makes one germ glow",
+  "how": "Finding out which germ is making someone sick can take days of growing it in a dish, while doctors guess at antibiotics. A phage, a virus that infects only one kind of bacterium, is given a firefly's glow gene; mixed with a patient's sample, it gets into only the target germ, which then lights up for a light sensor to see. Within hours it shows whether that germ is there and alive.",
+  "obstacle": "Each phage catches only one kind of germ, so every disease needs its own engineered virus, each taking years to build and get approved.",
+  "effects": [
+   {
+    "effect": "some viruses kill only bacteria",
+    "card": "bacteriophages"
+   }
+  ],
+  "parts": [
+   "genetic-engineering",
+   "photocell"
+  ]
+ },
+ {
+  "id": "ft-greenhouse-pollinating-robot",
+  "drop": false,
+  "name": "Brush Bee",
+  "subtitle": "a robot arm that pollinates greenhouse flowers",
+  "how": "Bees are dying off, about a third of our food depends on pollinators, and indoor farms have no bees at all. Rather than a tiny flying robo-bee, which would need batteries far smaller and stronger than any we have, this is a full-size robot arm that rolls along greenhouse rows on mains power. Its camera finds open flowers and it dabs pollen from one onto another with a soft brush or puff of air, so each flower can set fruit without insects.",
+  "obstacle": "Speed: a hive visits many thousands of flowers an hour while the arm takes seconds per flower, so it only pays off for valuable crops like tomatoes and strawberries.",
+  "effects": [
+   {
+    "effect": "pollen fertilizes a flower to make seed",
+    "card": "plant-sexuality"
+   }
+  ],
+  "parts": [
+   "robots",
+   "camera",
+   "microchips"
+  ]
+ },
+ {
+  "id": "ft-heat-release-glue",
+  "drop": false,
+  "name": "Undo Glue",
+  "subtitle": "a glue that lets go when warmed",
+  "how": "Phones, cars and wind turbine blades are glued so tightly they can't be repaired or taken apart for recycling, so they end up in landfill. In this glue the molecules lock across the joint by snapping together into rings, and a fine heating wire runs through the bond. Passing a current warms the joint so the rings pop open and the parts come apart cleanly; on cooling the rings snap shut again, so the same glue can be reused.",
+  "obstacle": "The same heat-triggered release makes it softer than permanent glues in a hot car or summer sun, so it is not yet trusted for parts that carry load.",
+  "effects": [
+   {
+    "effect": "two molecules snap together into a ring",
+    "card": "diels-alder-reaction"
+   }
+  ],
+  "parts": [
+   "insulated-wire"
+  ]
+ },
+ {
+  "id": "ft-hemoglobin-artificial-gill",
+  "drop": true,
+  "dropWhy": "r5: seawater holds so little oxygen that a breathing person needs over a hundred litres pumped past the carrier every minute, and habitats and submarines already make oxygen by splitting water.",
+  "name": "Fish Blood Gill",
+  "subtitle": "a pump that breathes oxygen out of seawater",
+  "how": "Divers and underwater habitats must carry or make all their oxygen. Seawater is pumped past a membrane with a hemoglobin-like carrier behind it, which grabs dissolved oxygen and releases it in a second chamber.",
+  "obstacle": "Seawater holds so little oxygen that the pumps needed are enormous.",
+  "effects": [
+   {
+    "effect": "hemoglobin carries oxygen in the blood",
+    "card": "hemoglobin"
+   }
+  ],
+  "parts": [
+   "perfusion-pump",
+   "valve"
+  ]
+ },
+ {
+  "id": "ft-hydrogen-bacteria-protein",
+  "drop": false,
+  "name": "Vent Flour",
+  "subtitle": "bacteria that make protein from gas",
+  "how": "Raising animals and crops for protein takes vast land and water, and droughts and wars cut supplies. In a steel tank, bacteria like those at deep-sea vents live on chemical energy instead of sunlight, feeding on hydrogen, carbon dioxide and minerals; the hydrogen comes from splitting water with electricity. They grow into a protein-rich flour, so food could be made anywhere there is power, even in a desert or on a spaceship.",
+  "obstacle": "Making the hydrogen takes a lot of electricity, so the flour costs more than soy unless clean power gets very cheap.",
+  "effects": [
+   {
+    "effect": "vent bacteria live on chemicals, without light or oxygen",
+    "card": "deep-sea-ecosystems"
+   },
+   {
+    "effect": "a current splits water into hydrogen and oxygen",
+    "card": "decomposition-of-water"
+   }
+  ],
+  "parts": [
+   "air-pump"
+  ]
+ },
+ {
+  "id": "ft-hydrogen-round-trip-battery",
+  "drop": false,
+  "name": "Bottled Breeze",
+  "subtitle": "a battery that stores power as hydrogen",
+  "how": "Sun and wind can go quiet for a week, and ordinary batteries are far too costly to cover that. Surplus electricity from a sunny or windy day splits water into hydrogen, which is piped into tanks and can wait for weeks or months. When power is needed, a fuel cell joins the hydrogen with oxygen from the air and gives the electricity back; more storage just means more tanks, not more costly battery.",
+  "obstacle": "Less than half of the electricity put in comes back out, so it pays only for long gaps that cheaper batteries can't cover.",
+  "effects": [
+   {
+    "effect": "a current splits water into hydrogen and oxygen",
+    "card": "decomposition-of-water"
+   }
+  ],
+  "parts": [
+   "fuel-cell",
+   "malleable-platinum",
+   "valve"
+  ]
+ },
+ {
+  "id": "ft-hydrogen-steam-generator",
+  "drop": false,
+  "name": "Rocket Kettle",
+  "subtitle": "a hydrogen flame that breathes pure steam",
+  "how": "Power grids need backup that can start in seconds when sun and wind drop, and today that usually means burning gas. A small rocket-style chamber burns hydrogen with pure oxygen and sprays extra water into the flame; because burning hydrogen makes nothing but water, the exhaust is clean superheated steam that goes straight into a turbine with no boiler. It starts in seconds and gives off no carbon dioxide.",
+  "obstacle": "Hydrogen and pure oxygen are costly to make and store, so its steam costs far more than steam from a gas boiler.",
+  "effects": [
+   {
+    "effect": "burning hydrogen makes nothing but water",
+    "card": "hydrogen-and-water"
+   }
+  ],
+  "parts": [
+   "liquid-fuel-rockets",
+   "valve"
+  ]
+ },
+ {
+  "id": "ft-interferon-nasal-spray",
+  "drop": false,
+  "name": "Alarm Mist",
+  "subtitle": "a nose spray that wakes cells' virus defences",
+  "how": "Colds and flu sweep through households every winter, and new viruses can spread before any vaccine exists. When someone at home falls ill, the others spray interferon into their noses: it is the alarm signal infected cells send out, and it tells the cells lining the nose to switch on their antiviral defences before a virus arrives. It works against many viruses at once, so the infection never takes hold.",
+  "obstacle": "In 1980s trials, using it for weeks irritated the nose and made it bleed, so it can only be used in short bursts.",
+  "effects": [
+   {
+    "effect": "infected cells release a protein that blocks other viruses",
+    "card": "interferon"
+   }
+  ],
+  "parts": [
+   "spray-cans"
+  ]
+ },
+ {
+  "id": "ft-jet-stream-kite-generator",
+  "drop": false,
+  "name": "Jet Kite",
+  "subtitle": "a tethered kite that harvests the jet stream",
+  "how": "Ground wind turbines stall when the wind drops, so grids still keep gas plants on standby. Kilometres up, the jet stream blows fast and almost never stops; a huge tethered kite wing flown into it carries small generators spun by the wind and sends power down a long cable, giving far steadier output than any tower.",
+  "obstacle": "A cable many kilometres long is too heavy and draggy and would cross airline routes, so real power kites have only flown a few hundred metres up.",
+  "effects": [
+   {
+    "effect": "fast steady winds blow high in the sky",
+    "card": "jet-streams"
+   }
+  ],
+  "parts": [
+   "wing",
+   "electric-generators",
+   "insulated-wire"
+  ]
+ },
+ {
+  "id": "ft-lensless-diffraction-microscope",
+  "drop": false,
+  "name": "Speckle Eye",
+  "subtitle": "a microscope with no lens, just a camera",
+  "how": "Clinics in poor regions need microscopes to spot malaria parasites and other germs in blood, but good lenses are costly and fragile. Here a laser lights a sample sitting right on a camera chip, and the light that bends around the sample's edges spreads into a speckled pattern. A computer works backwards from the pattern to the shape that must have made it, giving a sharp magnified image from parts as cheap as a phone camera.",
+  "obstacle": "Thick or crowded samples, dust and shaking scramble the pattern, so it only gives clean images of thin, sparse slides.",
+  "effects": [
+   {
+    "effect": "light bends around edges",
+    "card": "light-diffraction"
+   }
+  ],
+  "parts": [
+   "laser",
+   "camera",
+   "computer"
+  ]
+ },
+ {
+  "id": "ft-limestone-heat-battery",
+  "drop": false,
+  "name": "Chalk Battery",
+  "subtitle": "a solar battery made of baked limestone",
+  "how": "Solar power stops at night, and batteries big enough to cover it are costly. By day, concentrated sunlight bakes limestone, driving off carbon dioxide, and the lime and the gas are kept in separate tanks, which can hold the energy for months. At night the gas is let back onto the lime, which soaks it up and gets very hot, raising steam to spin a turbine; limestone is cheap and found almost everywhere.",
+  "obstacle": "Each bake-and-soak cycle makes the lime grains crack and crumble so they soak up less gas, and no plant has yet run for years at power-station size.",
+  "effects": [
+   {
+    "effect": "heating limestone frees a gas that lime soaks back up",
+    "card": "carbon-dioxide"
+   }
+  ],
+  "parts": [
+   "mirror",
+   "boiler",
+   "steam-turbine"
+  ]
+ },
+ {
+  "id": "ft-liquid-air-energy-store",
+  "drop": false,
+  "name": "Bottled Wind",
+  "subtitle": "a grid battery filled with liquid air",
+  "how": "Grids need somewhere to store hours of power, and batteries need mined metals. When power is cheap, a plant squeezes air and lets it expand, which chills it, until it turns into a liquid kept in big vacuum-insulated tanks. Later, letting it warm makes it boil back into a gas about 700 times bigger, and that rush of gas spins a turbine; the stored 'fuel' is just air, so nothing burns and nothing is mined.",
+  "obstacle": "Only about half the electricity comes back out, and that only if the plant can save the cold and reuse waste heat from nearby.",
+  "effects": [
+   {
+    "effect": "cold plus pressure turns gases into liquids",
+    "card": "liquefying-gases"
+   },
+   {
+    "effect": "an expanding gas cools itself",
+    "card": "joule-thomson-effect"
+   }
+  ],
+  "parts": [
+   "dewar-flask",
+   "turbines",
+   "valve"
+  ]
+ }
+]

@@ -1,0 +1,110 @@
+[
+ {
+  "id": "seasonal-storage",
+  "job": "Store electricity across seasons",
+  "bottleneck": "Batteries are priced for hours; lithium costs ~10\u00d7 too much for months of storage",
+  "target": "Storage capacity at about $1 per kWh, holding for months"
+ },
+ {
+  "id": "firm-clean-power",
+  "job": "Clean power anywhere, any hour",
+  "bottleneck": "Sun and wind come and go; fission plants take 10+ years and huge capital to build",
+  "target": "Round-the-clock clean power at the cost of solar, buildable in a year"
+ },
+ {
+  "id": "air-co2",
+  "job": "Pull CO2 out of the air",
+  "bottleneck": "CO2 is 0.04% of air, so moving and stripping that much air costs $500+ per tonne, mostly energy to release the CO2 again",
+  "target": "Under $50 per tonne at gigatons a year"
+ },
+ {
+  "id": "desert-water",
+  "job": "Water for inland and desert places",
+  "bottleneck": "Desalination needs a coast, a grid and pipes; desert air is dry, and cooling it below its dew point costs a lot of energy",
+  "target": "Drinking water for a family from desert air or brackish ground, with no grid"
+ },
+ {
+  "id": "outbreak-week",
+  "job": "Stop an outbreak in its first week",
+  "bottleneck": "New pathogens are found weeks late by clinic testing; vaccines take months to design, test and make",
+  "target": "A new pathogen spotted within days and a vaccine in weeks"
+ },
+ {
+  "id": "early-cancer",
+  "job": "Find cancer while it's curable",
+  "bottleneck": "Most cancers are found by symptoms at stage 3-4; tumours shed only traces into blood, and scans are costly",
+  "target": "Routine, cheap detection at stage 1"
+ },
+ {
+  "id": "organs",
+  "job": "Replace failing organs",
+  "bottleneck": "Too few donors; organs die within hours outside the body and can't be grown",
+  "target": "An organ for anyone who needs one, when they need it"
+ },
+ {
+  "id": "nerve-repair",
+  "job": "Repair the brain and spinal cord",
+  "bottleneck": "Central nerves don't grow back across scar tissue, and signals can't be bridged at full bandwidth",
+  "target": "Paralysis and lost function reversed"
+ },
+ {
+  "id": "cheap-orbit",
+  "job": "Reach orbit cheaply",
+  "bottleneck": "The rocket equation: carrying fuel to lift fuel makes ~90% of a rocket's mass propellant",
+  "target": "$10 per kg to orbit"
+ },
+ {
+  "id": "brain-efficient-compute",
+  "job": "Compute as efficiently as a brain",
+  "bottleneck": "Moving data between memory and processor burns most of the energy; data centres draw megawatts where a brain uses 20 W",
+  "target": "The same work on a thousandth of the energy"
+ },
+ {
+  "id": "recycle-anything",
+  "job": "Recycle anything back to pure material",
+  "bottleneck": "Mixed plastics, alloys and electronics can't be sorted or separated cheaply, so they're downcycled or landfilled",
+  "target": "Any waste stream back to pure feedstock at virgin-material cost"
+ },
+ {
+  "id": "continent-hour",
+  "job": "Cross a continent in an hour",
+  "bottleneck": "Supersonic flight burns several times the fuel and the boom bans it over land",
+  "target": "Coast to coast in an hour at an airline fare"
+ },
+ {
+  "id": "save-reefs",
+  "job": "Keep coral reefs alive through heatwaves",
+  "bottleneck": "Corals expel their algae and starve after a few weeks 1\u00b0C above normal",
+  "target": "Reefs that survive the heatwaves of the 2040s"
+ },
+ {
+  "id": "landmines",
+  "job": "Clear the world's landmines",
+  "bottleneck": "Metal detectors also beep for every nail and shell fragment, about 1,000 false alarms per mine, and each must be dug by hand",
+  "target": "A field cleared 10\u00d7 faster, no one at risk"
+ },
+ {
+  "id": "tutor-every-child",
+  "job": "A personal tutor for every child",
+  "bottleneck": "One-on-one tutoring roughly doubles learning but costs a teacher per child",
+  "target": "Tutoring-level results at textbook cost"
+ },
+ {
+  "id": "alzheimers",
+  "job": "Stop Alzheimer's before memory goes",
+  "bottleneck": "Damage starts 15-20 years before symptoms, and most drugs can't cross the blood-brain barrier",
+  "target": "Found and halted before any memory is lost"
+ },
+ {
+  "id": "macular-sight",
+  "job": "Save sight from macular degeneration",
+  "bottleneck": "The retina's light-sensing cells die and don't come back",
+  "target": "Central vision kept or restored"
+ },
+ {
+  "id": "frailty",
+  "job": "Stay strong and steady in old age",
+  "bottleneck": "Muscle and bone thin after 50, and falls become the leading cause of injury death in the elderly",
+  "target": "An 80-year-old as strong as a 50-year-old"
+ }
+]

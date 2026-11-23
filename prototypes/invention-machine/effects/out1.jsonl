@@ -1,0 +1,200 @@
+{"id": "biped", "verdict": "not-an-effect"}
+{"id": "ceremonial-burial", "verdict": "not-an-effect"}
+{"id": "art", "verdict": "not-an-effect"}
+{"id": "animal-dom", "verdict": "not-an-effect"}
+{"id": "writing", "verdict": "not-an-effect"}
+{"id": "nation", "verdict": "not-an-effect"}
+{"id": "calendar", "verdict": "effect", "effect": "the moon's phases repeat every 29½ days", "does": "time -> moon phase", "strength": "weak", "note": "a sky clock anyone can read"}
+{"id": "literature", "verdict": "not-an-effect"}
+{"id": "empire", "verdict": "not-an-effect"}
+{"id": "horse", "verdict": "not-an-effect"}
+{"id": "numbers", "verdict": "effect", "effect": "sixty splits evenly into many equal parts", "does": "quantity -> easy fractions", "strength": "weak"}
+{"id": "law", "verdict": "not-an-effect"}
+{"id": "medicine", "verdict": "not-an-effect"}
+{"id": "alphabet", "verdict": "not-an-effect"}
+{"id": "monotheism", "verdict": "not-an-effect"}
+{"id": "sea-navigation", "verdict": "effect", "effect": "the pole star stays fixed in the north", "does": "night sky -> direction", "strength": "strong"}
+{"id": "zoo", "verdict": "not-an-effect"}
+{"id": "library", "verdict": "not-an-effect"}
+{"id": "eclipse", "verdict": "effect", "effect": "eclipses repeat on a predictable cycle", "does": "date -> eclipse", "strength": "weak"}
+{"id": "water-element", "verdict": "not-an-effect"}
+{"id": "irrational-numbers", "verdict": "effect", "effect": "a square's diagonal is no fraction of its side", "does": "shape -> unending number", "strength": "tiny", "note": "pure math; little to harness"}
+{"id": "realistic-maps", "verdict": "not-an-effect"}
+{"id": "ocean-navigation", "verdict": "not-an-effect"}
+{"id": "cadaver", "verdict": "not-an-effect"}
+{"id": "venus-named", "verdict": "not-an-effect"}
+{"id": "dream-interpretation", "verdict": "not-an-effect"}
+{"id": "atom", "verdict": "not-an-effect"}
+{"id": "epilepsy", "verdict": "not-an-effect"}
+{"id": "university", "verdict": "not-an-effect"}
+{"id": "heliocentric-theory", "verdict": "not-an-effect"}
+{"id": "logic", "verdict": "same-as", "sameAs": "Boolean logic", "note": "syllogisms are an earlier formal logic"}
+{"id": "spherical-earth", "verdict": "effect", "effect": "the Earth's curve hides distant ships hull first", "does": "distance -> hidden height", "strength": "weak"}
+{"id": "five-elements", "verdict": "not-an-effect"}
+{"id": "animal-classification", "verdict": "not-an-effect"}
+{"id": "star-maps", "verdict": "not-an-effect"}
+{"id": "botany", "verdict": "not-an-effect"}
+{"id": "tides", "verdict": "effect", "effect": "the moon pulls the sea into tides", "does": "moon's pull -> rising water", "strength": "strong"}
+{"id": "arteries-veins", "verdict": "not-an-effect"}
+{"id": "brain-areas", "verdict": "not-an-effect"}
+{"id": "moon-sun-size", "verdict": "not-an-effect"}
+{"id": "earth-size", "verdict": "effect", "effect": "the sun's angle changes as you go north or south", "does": "distance north -> shadow angle", "strength": "strong"}
+{"id": "year-number", "verdict": "not-an-effect"}
+{"id": "great-wall", "verdict": "not-an-effect"}
+{"id": "moon-distance", "verdict": "effect", "effect": "a near thing shifts against far things as you move", "does": "change of viewpoint -> distance", "strength": "strong", "note": "parallax"}
+{"id": "star-maps-better", "verdict": "not-an-effect"}
+{"id": "julian-calendar", "verdict": "not-an-effect"}
+{"id": "climactic-zone", "verdict": "not-an-effect"}
+{"id": "medicinal-plants", "verdict": "effect", "effect": "some plants contain drugs that treat illness", "does": "plant -> remedy", "strength": "weak"}
+{"id": "geocentric-universe", "verdict": "not-an-effect"}
+{"id": "spinal-cord", "verdict": "effect", "effect": "the spinal cord carries the body's nerve signals", "does": "cut -> paralysis", "strength": "weak"}
+{"id": "algebra", "verdict": "effect", "effect": "an unknown can be found by balancing an equation", "does": "equation -> unknown value", "strength": "weak"}
+{"id": "tea", "verdict": "same-as", "sameAs": "heat kills microbes", "note": "boiling water"}
+{"id": "alchemy", "verdict": "not-an-effect"}
+{"id": "silk-europe", "verdict": "effect", "effect": "silkworms spin a fine, strong thread", "does": "mulberry leaves -> fibre", "strength": "strong"}
+{"id": "acetic-acid", "verdict": "effect", "effect": "distilling vinegar concentrates its acid", "does": "vinegar -> strong acid", "strength": "weak", "note": "close kin of 'alcohol boils before water'"}
+{"id": "zero", "verdict": "same-as", "sameAs": "place value"}
+{"id": "iceland-settled", "verdict": "not-an-effect"}
+{"id": "coffee", "verdict": "effect", "effect": "coffee's caffeine keeps the brain awake", "does": "drink -> alertness", "strength": "weak", "note": "card mainly about safe drinking"}
+{"id": "arctic-circle", "verdict": "not-an-effect"}
+{"id": "greenland-viking", "verdict": "not-an-effect"}
+{"id": "newfoundland", "verdict": "not-an-effect"}
+{"id": "new-star", "verdict": "not-an-effect"}
+{"id": "bright-comet", "verdict": "not-an-effect"}
+{"id": "spitsbergen", "verdict": "not-an-effect"}
+{"id": "arab-numbers", "verdict": "same-as", "sameAs": "place value"}
+{"id": "planetary-tables", "verdict": "not-an-effect"}
+{"id": "magnetic-pole", "verdict": "same-as", "sameAs": "the Earth is a magnet", "note": "pivoted compass needle"}
+{"id": "far-east", "verdict": "not-an-effect"}
+{"id": "comet-painting", "verdict": "not-an-effect"}
+{"id": "canary-islands", "verdict": "not-an-effect"}
+{"id": "anatomy", "verdict": "not-an-effect"}
+{"id": "quarantine", "verdict": "effect", "effect": "a disease shows itself within a set waiting time", "does": "time -> revealed infection", "strength": "weak"}
+{"id": "indian-ocean", "verdict": "not-an-effect"}
+{"id": "madeira", "verdict": "not-an-effect"}
+{"id": "azores", "verdict": "not-an-effect"}
+{"id": "perspective", "verdict": "effect", "effect": "far things shrink in proportion to their distance", "does": "distance -> apparent size", "strength": "strong"}
+{"id": "standing-army", "verdict": "not-an-effect"}
+{"id": "comet-tracking", "verdict": "not-an-effect"}
+{"id": "cape-good-hope", "verdict": "not-an-effect"}
+{"id": "new-world", "verdict": "not-an-effect"}
+{"id": "magnetic-declination", "verdict": "effect", "effect": "compass north strays from true north by place", "does": "location -> compass error", "strength": "weak", "note": "once hoped to find longitude"}
+{"id": "syphilis", "verdict": "not-an-effect"}
+{"id": "india-water-route", "verdict": "not-an-effect"}
+{"id": "america", "verdict": "not-an-effect"}
+{"id": "pacific-ocean", "verdict": "not-an-effect"}
+{"id": "florida", "verdict": "not-an-effect"}
+{"id": "mexico", "verdict": "not-an-effect"}
+{"id": "around-earth", "verdict": "not-an-effect"}
+{"id": "peru", "verdict": "not-an-effect"}
+{"id": "cubic-equations", "verdict": "effect", "effect": "any cubic equation can be solved by formula", "does": "equation -> roots", "strength": "weak"}
+{"id": "comet-tails", "verdict": "effect", "effect": "sunlight pushes a comet's tail away from the sun", "does": "sunlight -> push", "strength": "tiny", "note": "solar sails"}
+{"id": "mississipi-river", "verdict": "not-an-effect"}
+{"id": "amazon-river", "verdict": "not-an-effect"}
+{"id": "heliocentric-practice", "verdict": "not-an-effect"}
+{"id": "illustrated-anatomy", "verdict": "not-an-effect"}
+{"id": "negative-numbers", "verdict": "effect", "effect": "numbers below zero can count debts and deficits", "does": "shortfall -> number", "strength": "tiny"}
+{"id": "trig-tables", "verdict": "effect", "effect": "a triangle's angles fix the ratios of its sides", "does": "angle -> length ratio", "strength": "strong"}
+{"id": "planetary-tables-better", "verdict": "not-an-effect"}
+{"id": "eustacian-tubes", "verdict": "not-an-effect"}
+{"id": "northeast-passage", "verdict": "not-an-effect"}
+{"id": "homologies", "verdict": "not-an-effect"}
+{"id": "mineralogy", "verdict": "not-an-effect"}
+{"id": "tobacco", "verdict": "not-an-effect"}
+{"id": "scientific-societies", "verdict": "not-an-effect"}
+{"id": "world-maps", "verdict": "effect", "effect": "a map can make steady compass courses straight lines", "does": "bearing -> straight line", "strength": "strong", "note": "Mercator projection"}
+{"id": "supernova", "verdict": "not-an-effect"}
+{"id": "greenland", "verdict": "not-an-effect"}
+{"id": "comet-distance", "verdict": "not-an-effect"}
+{"id": "drake-strait", "verdict": "not-an-effect"}
+{"id": "pendulum", "verdict": "effect", "effect": "a pendulum keeps the same beat whatever its swing", "does": "swing -> steady time", "strength": "strong"}
+{"id": "siberia", "verdict": "not-an-effect"}
+{"id": "gregorian-calendar", "verdict": "not-an-effect"}
+{"id": "falling-motion", "verdict": "effect", "effect": "heavy and light things fall at the same rate", "does": "gravity -> equal acceleration", "strength": "strong"}
+{"id": "cryptanalysis", "verdict": "effect", "effect": "a secret code leaks patterns that can break it", "does": "ciphertext -> message", "strength": "weak", "note": "e.g. letter frequencies"}
+{"id": "algebraic-symbol", "verdict": "not-an-effect"}
+{"id": "east-indies", "verdict": "not-an-effect"}
+{"id": "pi-accuracy", "verdict": "not-an-effect"}
+{"id": "chemistry-textbook", "verdict": "not-an-effect"}
+{"id": "vein-valves", "verdict": "effect", "effect": "flap valves let blood flow only one way", "does": "backflow -> closed flap", "strength": "strong"}
+{"id": "english-settlement-america", "verdict": "not-an-effect"}
+{"id": "french-settlement-america", "verdict": "not-an-effect"}
+{"id": "elliptical-orbits", "verdict": "same-as", "sameAs": "orbit"}
+{"id": "milky-way", "verdict": "not-an-effect"}
+{"id": "moon", "verdict": "effect", "effect": "shadow lengths reveal how tall mountains are", "does": "shadow -> height", "strength": "weak"}
+{"id": "jupiter-moons", "verdict": "not-an-effect"}
+{"id": "venus-phases", "verdict": "not-an-effect"}
+{"id": "sunspots", "verdict": "not-an-effect"}
+{"id": "andromeda-nebula", "verdict": "not-an-effect"}
+{"id": "metabolism", "verdict": "effect", "effect": "the body loses weight through breath and skin", "does": "food -> unseen loss", "strength": "tiny"}
+{"id": "baffin-bay", "verdict": "not-an-effect"}
+{"id": "tierra-del-fuego", "verdict": "not-an-effect"}
+{"id": "scientific-method", "verdict": "not-an-effect"}
+{"id": "gas", "verdict": "not-an-effect"}
+{"id": "planetary-tables-even-better", "verdict": "not-an-effect"}
+{"id": "aurochs-extinct", "verdict": "not-an-effect"}
+{"id": "science-vs-religion", "verdict": "not-an-effect"}
+{"id": "magnetic-declination-variation", "verdict": "effect", "effect": "magnetic north slowly drifts over the years", "does": "time -> compass shift", "strength": "tiny", "note": "could date rocks or fires"}
+{"id": "analytic-geometry", "verdict": "effect", "effect": "any shape can be written as an equation", "does": "shape -> numbers", "strength": "strong"}
+{"id": "fermat-last-theorem", "verdict": "not-an-effect"}
+{"id": "quinine", "verdict": "same-as", "sameAs": "a chemical kills the germ but not the patient", "note": "quinine vs malaria"}
+{"id": "south-pacific", "verdict": "not-an-effect"}
+{"id": "air-pressure-altitude", "verdict": "effect", "effect": "air pressure falls the higher you go", "does": "height -> lower pressure", "strength": "strong"}
+{"id": "double-star", "verdict": "not-an-effect"}
+{"id": "biblical-age-of-earth", "verdict": "not-an-effect"}
+{"id": "names-on-moon", "verdict": "not-an-effect"}
+{"id": "lymphatic-vessels", "verdict": "not-an-effect"}
+{"id": "probability", "verdict": "effect", "effect": "random events are predictable in large numbers", "does": "many chances -> steady averages", "strength": "strong"}
+{"id": "saturn-ring", "verdict": "not-an-effect"}
+{"id": "falling-motion-experiment", "verdict": "effect", "effect": "without air, a feather falls as fast as a coin", "does": "vacuum -> equal fall", "strength": "strong", "note": "same effect as falling-motion"}
+{"id": "red-blood-cells", "verdict": "not-an-effect"}
+{"id": "syrtis-major", "verdict": "not-an-effect"}
+{"id": "capillaries", "verdict": "not-an-effect"}
+{"id": "chemical-elements", "verdict": "not-an-effect"}
+{"id": "acid-base", "verdict": "effect", "effect": "the body must keep its acid-base balance", "does": "acidity -> health", "strength": "weak"}
+{"id": "royal-society", "verdict": "not-an-effect"}
+{"id": "jupiter-red-spot", "verdict": "not-an-effect"}
+{"id": "cell", "verdict": "not-an-effect"}
+{"id": "light-diffraction", "verdict": "effect", "effect": "light bends around edges", "does": "edge -> spread light", "strength": "strong", "note": "kin to 'light waves interfere'"}
+{"id": "planet-rotations", "verdict": "not-an-effect"}
+{"id": "no-spontaneous-generation", "verdict": "effect", "effect": "sealed food breeds no maggots", "does": "sealing -> no pests", "strength": "weak", "note": "life only from life"}
+{"id": "phosphorus", "verdict": "effect", "effect": "white phosphorus glows and catches fire in air", "does": "air -> glow and flame", "strength": "strong", "note": "well-established, not on card"}
+{"id": "fossils", "verdict": "not-an-effect"}
+{"id": "blood-color", "verdict": "effect", "effect": "blood turns bright red when it takes up air", "does": "oxygen -> colour change", "strength": "strong", "note": "basis for reading oxygen by colour"}
+{"id": "diabetes", "verdict": "effect", "effect": "sugar in urine signals diabetes", "does": "blood sugar -> sweet urine", "strength": "weak"}
+{"id": "saturn-satellites", "verdict": "not-an-effect"}
+{"id": "mars-distance", "verdict": "not-an-effect"}
+{"id": "saturn-rings", "verdict": "not-an-effect"}
+{"id": "microorganisms", "verdict": "not-an-effect"}
+{"id": "southern-stars", "verdict": "not-an-effect"}
+{"id": "light-as-wave", "verdict": "same-as", "sameAs": "light waves interfere", "note": "wave theory of light"}
+{"id": "muscles-bones", "verdict": "same-as", "sameAs": "mechanical advantage", "note": "bones as levers"}
+{"id": "dodo-extinction", "verdict": "not-an-effect"}
+{"id": "plant-sexuality", "verdict": "effect", "effect": "pollen fertilizes a flower to make seed", "does": "pollen -> seed", "strength": "strong"}
+{"id": "bacteria", "verdict": "not-an-effect"}
+{"id": "earth-size-accurate", "verdict": "not-an-effect"}
+{"id": "imaginary-numbers", "verdict": "effect", "effect": "multiplying by i turns a number a quarter circle", "does": "multiplication -> rotation", "strength": "strong", "note": "complex numbers"}
+{"id": "meteorological-map", "verdict": "effect", "effect": "trade winds blow steadily in set directions", "does": "season -> steady wind", "strength": "strong"}
+{"id": "plant-species-classified", "verdict": "not-an-effect"}
+{"id": "shape-of-earth", "verdict": "effect", "effect": "a pendulum beats slower where gravity is weaker", "does": "gravity -> swing rate", "strength": "weak", "note": "maps gravity"}
+{"id": "animal-classification-improved", "verdict": "not-an-effect"}
+{"id": "mortality-tables", "verdict": "effect", "effect": "deaths in a large group follow a predictable table", "does": "age -> survival odds", "strength": "strong"}
+{"id": "scientific-voyages", "verdict": "not-an-effect"}
+{"id": "gas-volume-temperature", "verdict": "same-as", "sameAs": "heating a gas expands it"}
+{"id": "comet-orbits", "verdict": "same-as", "sameAs": "orbit"}
+{"id": "plant-nourishment", "verdict": "effect", "effect": "plants build their bodies partly from air", "does": "air -> plant growth", "strength": "strong"}
+{"id": "solar-eclipse", "verdict": "not-an-effect"}
+{"id": "stellar-motion", "verdict": "not-an-effect"}
+{"id": "easter-island", "verdict": "not-an-effect"}
+{"id": "aberration-light", "verdict": "effect", "effect": "Earth's motion tilts incoming starlight", "does": "motion -> tilted light", "strength": "tiny"}
+{"id": "bering-strait", "verdict": "not-an-effect"}
+{"id": "blood-pressure", "verdict": "effect", "effect": "blood presses on vessel walls with measurable force", "does": "heartbeat -> pressure", "strength": "strong"}
+{"id": "shape-of-earth-confirmed", "verdict": "not-an-effect"}
+{"id": "taxonomy", "verdict": "not-an-effect"}
+{"id": "trade-winds", "verdict": "effect", "effect": "sun-heated air at the equator drives steady winds", "does": "heat -> wind", "strength": "strong"}
+{"id": "mechanics", "verdict": "not-an-effect"}
+{"id": "cobalt", "verdict": "effect", "effect": "cobalt colours glass deep blue", "does": "cobalt -> blue colour", "strength": "weak", "note": "not stated on card"}
+{"id": "kinetic-gases", "verdict": "same-as", "sameAs": "heating a gas expands it", "note": "kinetic explanation of gas laws"}
+{"id": "rocky-mountains", "verdict": "not-an-effect"}
+{"id": "hydra", "verdict": "effect", "effect": "a hydra regrows parts that are cut off", "does": "wound -> new body part", "strength": "weak"}
+{"id": "celsius", "verdict": "effect", "effect": "water freezes and boils at fixed temperatures", "does": "temperature -> phase change", "strength": "strong", "note": "fixed points for scales"}

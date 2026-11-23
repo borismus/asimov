@@ -1,0 +1,296 @@
+[
+ {
+  "id": "refrigerated-transport",
+  "name": "Refrigerated transport",
+  "year": 1880,
+  "how": "Refrigerators, steamship, railroad (the cold chain)",
+  "note": ""
+ },
+ {
+  "id": "tractor",
+  "name": "Tractor",
+  "year": 1892,
+  "how": "Internal-combustion engine, rubber tires",
+  "note": ""
+ },
+ {
+  "id": "air-conditioning",
+  "name": "Air conditioning",
+  "year": 1902,
+  "how": "Compressor, refrigerant; evaporation soaks up heat",
+  "note": ""
+ },
+ {
+  "id": "washing-machine",
+  "name": "Washing machine",
+  "year": 1908,
+  "how": "Electric motor, drum",
+  "note": ""
+ },
+ {
+  "id": "zipper",
+  "name": "Zipper",
+  "year": 1913,
+  "how": "Interlocking teeth, slider",
+  "note": ""
+ },
+ {
+  "id": "frozen-food",
+  "name": "Frozen food",
+  "year": 1924,
+  "how": "Refrigerators; ★ quick freezing makes small ice crystals that don't burst cells",
+  "note": ""
+ },
+ {
+  "id": "fibreglass",
+  "name": "Fibreglass",
+  "year": 1932,
+  "how": "Glass drawn into fine fibres",
+  "note": ""
+ },
+ {
+  "id": "heat-pump",
+  "name": "Heat pump",
+  "year": 1940,
+  "how": "Compressor; evaporation soaks up heat",
+  "note": ""
+ },
+ {
+  "id": "randomized-controlled-trial",
+  "name": "Randomized controlled trial",
+  "year": 1948,
+  "how": "★ chance assignment cancels out hidden differences (statistics)",
+  "note": ""
+ },
+ {
+  "id": "credit-card",
+  "name": "Credit card",
+  "year": 1950,
+  "how": "Magnetic stripe (later chip)",
+  "note": ""
+ },
+ {
+  "id": "tunnel-boring-machine",
+  "name": "Tunnel boring machine",
+  "year": 1952,
+  "how": "Rotating cutter head, conveyor",
+  "note": ""
+ },
+ {
+  "id": "nuclear-submarine",
+  "name": "Nuclear submarine",
+  "year": 1954,
+  "how": "Nuclear reactor, submarine",
+  "note": ""
+ },
+ {
+  "id": "disposable-syringe",
+  "name": "Disposable syringe",
+  "year": 1956,
+  "how": "Plastic barrel, steel needle",
+  "note": ""
+ },
+ {
+  "id": "spandex",
+  "name": "Spandex",
+  "year": 1958,
+  "how": "Polyurethane fibre",
+  "note": "not sure if this is important"
+ },
+ {
+  "id": "three-point-seat-belt",
+  "name": "Three-point seat belt",
+  "year": 1959,
+  "how": "—",
+  "note": ""
+ },
+ {
+  "id": "artificial-hip-joint-replacement",
+  "name": "Artificial hip / joint replacement",
+  "year": 1962,
+  "how": "Steel or titanium, plastic",
+  "note": ""
+ },
+ {
+  "id": "fax-machine",
+  "name": "Fax machine",
+  "year": 1964,
+  "how": "Photoelectric scanner, telephone line",
+  "note": ""
+ },
+ {
+  "id": "night-vision-goggles",
+  "name": "Night-vision goggles",
+  "year": 1965,
+  "how": "★ an image intensifier multiplies faint light",
+  "note": ""
+ },
+ {
+  "id": "mammography",
+  "name": "Mammography",
+  "year": 1966,
+  "how": "X-rays, photographic film",
+  "note": ""
+ },
+ {
+  "id": "quartz-watch",
+  "name": "Quartz watch",
+  "year": 1969,
+  "how": "Piezoelectricity, microchips",
+  "note": ""
+ },
+ {
+  "id": "precision-guided-bombs",
+  "name": "Precision-guided bombs",
+  "year": 1972,
+  "how": "Laser, GPS",
+  "note": ""
+ },
+ {
+  "id": "graphical-user-interface",
+  "name": "Graphical user interface",
+  "year": 1973,
+  "how": "Computer mouse, display",
+  "note": ""
+ },
+ {
+  "id": "digital-camera",
+  "name": "Digital camera",
+  "year": 1975,
+  "how": "CCD, microchips, flash memory",
+  "note": ""
+ },
+ {
+  "id": "personal-computer",
+  "name": "Personal computer",
+  "year": 1977,
+  "how": "Microchips, DRAM, computer mouse, hard disk drive",
+  "note": ""
+ },
+ {
+  "id": "portable-music-player",
+  "name": "Portable music player",
+  "year": 1979,
+  "how": "Cassette or flash memory, earphones",
+  "note": ""
+ },
+ {
+  "id": "airbag",
+  "name": "Airbag",
+  "year": 1981,
+  "how": "Accelerometer; ★ a fast reaction makes a burst of gas",
+  "note": ""
+ },
+ {
+  "id": "mobile-phone",
+  "name": "Mobile phone",
+  "year": 1983,
+  "how": "Microchips, radio antenna, lithium battery; ★ cellular frequency reuse",
+  "note": ""
+ },
+ {
+  "id": "stealth-aircraft",
+  "name": "Stealth aircraft",
+  "year": 1983,
+  "how": "★ shapes and coatings that scatter radar away",
+  "note": ""
+ },
+ {
+  "id": "flash-memory",
+  "name": "Flash memory",
+  "year": 1987,
+  "how": "Quantum tunnelling",
+  "note": ""
+ },
+ {
+  "id": "keyhole-surgery",
+  "name": "Keyhole surgery",
+  "year": 1987,
+  "how": "Fiber optics, video camera",
+  "note": ""
+ },
+ {
+  "id": "lithium-ion-battery",
+  "name": "Lithium-ion battery",
+  "year": 1991,
+  "how": "★ lithium ions slip between graphite layers",
+  "note": ""
+ },
+ {
+  "id": "military-drones",
+  "name": "Military drones",
+  "year": 1995,
+  "how": "Aircraft, satellite link, cameras",
+  "note": ""
+ },
+ {
+  "id": "antiretroviral-hiv-therapy",
+  "name": "Antiretroviral HIV therapy",
+  "year": 1996,
+  "how": "★ the virus copies itself with reverse transcriptase",
+  "note": ""
+ },
+ {
+  "id": "wi-fi",
+  "name": "Wi-Fi",
+  "year": 1997,
+  "how": "Radio antenna, microchips; Fourier analysis",
+  "note": ""
+ },
+ {
+  "id": "ion-thruster",
+  "name": "Ion thruster",
+  "year": 1998,
+  "how": "★ an electric field flings ions out the back",
+  "note": "is this effective? what does it power?"
+ },
+ {
+  "id": "short-range-wireless-link",
+  "name": "Short-range wireless link",
+  "year": 1999,
+  "how": "Radio, microchips",
+  "note": ""
+ },
+ {
+  "id": "video-calling",
+  "name": "Video calling",
+  "year": 2003,
+  "how": "Internet, digital camera",
+  "note": ""
+ },
+ {
+  "id": "cloud-data-centres",
+  "name": "Cloud data centres",
+  "year": 2006,
+  "how": "Personal computers by the thousand, internet",
+  "note": ""
+ },
+ {
+  "id": "electric-car",
+  "name": "Electric car",
+  "year": 2008,
+  "how": "Lithium-ion battery, electric motors, rare-earth magnet; electromagnetic induction",
+  "note": ""
+ },
+ {
+  "id": "crispr-gene-editing",
+  "name": "CRISPR gene editing",
+  "year": 2012,
+  "how": "Recombinant DNA; ★ bacteria cut and remember viral DNA",
+  "note": ""
+ },
+ {
+  "id": "glp-1-drugs",
+  "name": "GLP-1 drugs",
+  "year": 2017,
+  "how": "★ a gut hormone tells the brain you're full",
+  "note": ""
+ },
+ {
+  "id": "mrna-vaccines",
+  "name": "mRNA vaccines",
+  "year": 2020,
+  "how": "Synthetic gene; protein synthesis, vaccination",
+  "note": ""
+ }
+]

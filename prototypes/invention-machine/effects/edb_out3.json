@@ -1,0 +1,1108 @@
+[
+ {
+  "edb": "Free Convection",
+  "verdict": "merge",
+  "rule": "e4",
+  "borderline": false,
+  "why": "A variant of convection (warm fluid rising on its own); the canonical Convection entry is in another batch, so this merges into it.",
+  "into": "convection"
+ },
+ {
+  "edb": "Free Surface Effect",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": true,
+  "why": "Specific and does a job (anti-roll tanks, sloshing dampers), but it grew out of ship-stability practice with no clear discoverer or date; kept with year/inventor null.",
+  "id": "free-surface-effect",
+  "title": "Free surface effect",
+  "year": null,
+  "inventor": null,
+  "location": null,
+  "field": "Science: Physics",
+  "description": "Liquid sloshing in a half-empty tank, or grain shifting in a ship's hold, runs to whichever side the ship leans and tips it further. It has capsized ferries, but naval engineers also turn it around: a tuned tank of water that sloshes out of step with the waves calms a ship's roll.",
+  "effect": "loose liquid in a tilting vessel runs to the low side and tips it further",
+  "usedIn": [
+   "Anti-roll tanks on ships (Frahm tanks)",
+   "Tuned sloshing-water dampers in skyscrapers",
+   "Baffles in road tankers and aircraft fuel tanks"
+  ],
+  "strength": "Strong: water a few centimetres deep spread across its car deck was enough to capsize the ferry Herald of Free Enterprise in under two minutes in 1987.",
+  "deps": []
+ },
+ {
+  "edb": "Fresnel Diffraction",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Near-field diffraction is a variant of diffraction, which the deck already has (Grimaldi).",
+  "card": "light-diffraction"
+ },
+ {
+  "edb": "Friction",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Sliding friction isn't in the deck (only Coulomb's rolling-friction card); kept as the canonical friction card with Amontons' 1699 laws, which Static Friction and Stick-slip in other batches could merge into.",
+  "id": "friction",
+  "title": "Friction",
+  "year": 1699,
+  "inventor": "Guillaume Amontons",
+  "location": "France",
+  "field": "Science: Physics",
+  "description": "Push a box across the floor and the floor pushes back. Amontons found the drag is proportional to how hard the surfaces press together, and oddly doesn't depend on how big the contact area is. Friction is what lets shoes grip, brakes stop cars and matches light.",
+  "effect": "surfaces in contact resist sliding with a force proportional to how hard they press together",
+  "usedIn": [
+   "Disc and drum brakes",
+   "Friction clutches in cars",
+   "Strike-anywhere matches",
+   "Bow drills for starting fire"
+  ],
+  "strength": "Rubber on a dry road grips with a force up to about its own load (coefficient ~0.7-1); steel on ice manages only about 0.03.",
+  "deps": []
+ },
+ {
+  "edb": "Garshelis Effect",
+  "verdict": "merge",
+  "rule": "e4",
+  "borderline": true,
+  "why": "A torque-sensing form of inverse magnetostriction (twisting a magnetised rod makes a magnetic field); judgment call between its own card for torque sensors and merging into magnetostriction, picked merge and listed torque sensors under magnetostriction's uses.",
+  "into": "magnetostriction"
+ },
+ {
+  "edb": "Gel",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A class of material, not an effect."
+ },
+ {
+  "edb": "Glassy Carbon",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A material, not an effect."
+ },
+ {
+  "edb": "Goos-Hänchen Effect",
+  "verdict": "drop",
+  "rule": "e2",
+  "borderline": false,
+  "why": "The sideways shift of totally reflected light is a fraction of a wavelength, far too small to do a job at a useful size."
+ },
+ {
+  "edb": "Grain Boundary Strengthening",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "A specific, named metallurgical effect (Hall-Petch) that does a clear job and is not in the deck.",
+  "id": "grain-boundary-strengthening",
+  "title": "Grain-boundary strengthening",
+  "year": 1951,
+  "inventor": "Eric Hall",
+  "location": "England",
+  "field": "Science: Metallurgy",
+  "description": "Metal made of smaller crystal grains is stronger, because the boundaries between grains block the slipping that lets metal bend. Eric Hall (1951) and Norman Petch (1953) worked out the rule; steelmakers now roll and cool steel carefully to keep the grains tiny.",
+  "effect": "smaller crystal grains make a metal stronger",
+  "usedIn": [
+   "High-strength low-alloy steel in car bodies",
+   "Controlled-rolled pipeline steel",
+   "Fine-grained aluminium alloys for aircraft"
+  ],
+  "strength": "Shrinking the grains from about 0.1 mm to 0.01 mm roughly doubles the strength of mild steel, without adding any alloy.",
+  "deps": [
+   "steel"
+  ]
+ },
+ {
+  "edb": "Gravitation",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "The deck has Newton's universal gravitation.",
+  "card": "universal-gravitation"
+ },
+ {
+  "edb": "Gravitational Convection (non heat)",
+  "verdict": "merge",
+  "rule": "e4",
+  "borderline": false,
+  "why": "Convection driven by density differences from dissolved substances rather than heat is a variant of convection; canonical entry is in another batch.",
+  "into": "convection"
+ },
+ {
+  "edb": "Gravitational Lensing",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Bending of light by gravity is one of the predictions on the deck's general-relativity card; lensing itself needs galaxy-scale masses.",
+  "card": "general-relativity"
+ },
+ {
+  "edb": "Gravitational Redshift",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "The deck already has the gravitational red shift card.",
+  "card": "gravitational-red-shift"
+ },
+ {
+  "edb": "Groove",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A shape, not an effect."
+ },
+ {
+  "edb": "Ground Effect",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "A specific aerodynamic effect with real vehicles built on it; not in the deck.",
+  "id": "ground-effect",
+  "title": "Ground effect",
+  "year": 1922,
+  "inventor": "Carl Wieselsberger",
+  "location": "Germany",
+  "field": "Science: Physics",
+  "description": "A wing flying closer to the ground or water than about half its span gets extra lift and less drag, because the surface stops air from escaping downward and swirling round the wingtips. Carl Wieselsberger measured it in 1922; pilots feel it as a 'float' just before touchdown.",
+  "effect": "a wing close to the ground gets more lift and less drag",
+  "usedIn": [
+   "Soviet ekranoplans such as the 'Caspian Sea Monster'",
+   "Wing-in-ground-effect ferries and craft (e.g. Airfish)",
+   "Landing technique allowances for airliners"
+  ],
+  "strength": "Flying at a tenth of its span above the surface, a wing loses roughly half its induced drag, which is why ekranoplans could carry heavy loads on little fuel.",
+  "deps": [
+   "airplane",
+   "aerodynamics"
+  ]
+ },
+ {
+  "edb": "Hall Effect",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Specific, widely used sensing effect not in the deck.",
+  "id": "hall-effect",
+  "title": "Hall effect",
+  "year": 1879,
+  "inventor": "Edwin Hall",
+  "location": "United States",
+  "field": "Science: Physics",
+  "description": "Run a current through a thin strip in a magnetic field and a small voltage appears across the strip's sides, because the field pushes the moving charges toward one edge. Edwin Hall found it in 1879 as a graduate student at Johns Hopkins. It lets a chip sense a magnet without touching it.",
+  "effect": "a magnetic field pushes current to one side of a conductor, creating a sideways voltage",
+  "usedIn": [
+   "Hall sensors timing brushless motors in fans and drones",
+   "Wheel-speed sensors for anti-lock brakes",
+   "Hall-effect thrusters on satellites",
+   "Lid-closed sensors in laptops and phones"
+  ],
+  "strength": "Microvolts in a metal, but in a semiconductor chip a fridge magnet gives millivolts, plenty to detect position or current.",
+  "deps": [
+   "electrical-motion"
+  ]
+ },
+ {
+  "edb": "Harmonic Oscillator",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A general model (restoring force proportional to displacement), not one effect; the deck already covers it through Hooke's law and the pendulum."
+ },
+ {
+  "edb": "Heat Treatment",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A family of industrial processes (hardening, tempering, annealing), not a single nameable effect."
+ },
+ {
+  "edb": "Heating",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "An everyday process."
+ },
+ {
+  "edb": "Helix",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A shape."
+ },
+ {
+  "edb": "Helmholtz Resonance",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Specific acoustic effect with many real uses; not in the deck (Helmholtz's deck cards are on energy and the Sun).",
+  "id": "helmholtz-resonance",
+  "title": "Helmholtz resonance",
+  "year": 1863,
+  "inventor": "Hermann von Helmholtz",
+  "location": "Germany",
+  "field": "Science: Physics",
+  "description": "Blow across the mouth of an empty bottle and it hums: the air in the neck bounces like a weight on the springy air inside. Hermann von Helmholtz built tuned glass spheres on this principle to pick single tones out of music, published in 1863.",
+  "effect": "air in a cavity with a narrow neck rings at one note",
+  "usedIn": [
+   "Bass-reflex ports in loudspeakers",
+   "Car intake and exhaust resonators that cancel drone",
+   "Ocarinas",
+   "Tuned sound absorbers in concert halls"
+  ],
+  "strength": "A wine bottle hums at roughly 100-200 Hz; a tuned box can soak up one low note almost completely while letting others pass.",
+  "deps": []
+ },
+ {
+  "edb": "Hooke's Law",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "The deck already has Hooke's law (new_cards).",
+  "card": "hookes-law"
+ },
+ {
+  "edb": "Hot Chocolate Effect",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": true,
+  "why": "Sounds like a kitchen curiosity, but the underlying effect (bubbles slowing and blocking sound) is strong and used in bubble curtains; kept under its popular name, though Crawford popularised rather than discovered the physics (Wood worked out the theory around 1930).",
+  "id": "hot-chocolate-effect",
+  "title": "Hot chocolate effect",
+  "year": 1982,
+  "inventor": "Frank Crawford",
+  "location": "United States",
+  "field": "Science: Physics",
+  "description": "Tap a mug while stirring in cocoa powder and the note drops sharply, then slowly climbs back as the froth clears: tiny air bubbles make the liquid springy and slow sound down enormously. Physicist Frank Crawford described it in 1982.",
+  "effect": "a few bubbles in a liquid slow sound in it dramatically",
+  "usedIn": [
+   "Bubble curtains that muffle offshore pile-driving noise to protect porpoises",
+   "US Navy 'Prairie-Masker' air systems that hide ship noise"
+  ],
+  "strength": "Just 1% air bubbles cuts the speed of sound in water from about 1,500 m/s to roughly 120 m/s.",
+  "deps": []
+ },
+ {
+  "edb": "Hydraulic Jump",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Specific, named effect with a clear engineering job; Bidone's experiments are dated 1818-1820 in different sources, picked 1819.",
+  "id": "hydraulic-jump",
+  "title": "Hydraulic jump",
+  "year": 1819,
+  "inventor": "Giorgio Bidone",
+  "location": "Italy",
+  "field": "Science: Physics",
+  "description": "When a fast, shallow stream suddenly slows, its surface leaps up in a standing step of churning water; you can see one as the ring around where a tap's stream hits the sink. Giorgio Bidone first studied it by experiment in Turin around 1819. Engineers build one in on purpose at the foot of dams to burn off the water's destructive energy.",
+  "effect": "a fast shallow stream abruptly jumps up into a deep slow one, churning away its energy",
+  "usedIn": [
+   "Stilling basins below dam spillways",
+   "Rapid mixing of chemicals at water-treatment plants",
+   "Aerating rivers and channels"
+  ],
+  "strength": "A jump in a spillway basin can destroy well over half the energy of water falling tens of metres, within a few tens of metres of concrete.",
+  "deps": []
+ },
+ {
+  "edb": "Hydraulic Press",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A machine (built on Pascal's law), not an effect."
+ },
+ {
+  "edb": "Hydrodynamic Cavitation",
+  "verdict": "merge",
+  "rule": "e4",
+  "borderline": false,
+  "why": "Cavitation in flowing liquid is a variant of cavitation; the canonical Cavitation entry is in another batch.",
+  "into": "cavitation"
+ },
+ {
+  "edb": "Hydrogenation",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "The deck has Sabatier's nickel-catalysed hydrogenation (nickel-as-catalyst), plus coal-hydrogenation.",
+  "card": "nickel-as-catalyst"
+ },
+ {
+  "edb": "Hydrolysis",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A whole class of chemical reactions (water splitting a molecule), not a single nameable effect."
+ },
+ {
+  "edb": "Hydrophile",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A property of molecules rather than an effect; the useful specific cases (wetting, superhydrophilicity) are separate entries."
+ },
+ {
+  "edb": "Hydrophobe",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A property of molecules rather than an effect; the useful specific case is the lotus effect, kept separately."
+ },
+ {
+  "edb": "Hyperboloid",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A shape."
+ },
+ {
+  "edb": "Imbert-Fedorov Effect",
+  "verdict": "drop",
+  "rule": "e2",
+  "borderline": false,
+  "why": "The sideways shift of reflected light is a fraction of a wavelength, too weak to do a job at a useful size."
+ },
+ {
+  "edb": "Impact Force",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A generic engineering term."
+ },
+ {
+  "edb": "Incandescence",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Glowing because hot is black-body radiation, which the deck has (Kirchhoff's black-bodies card; the electric-light card uses it).",
+  "card": "black-bodies"
+ },
+ {
+  "edb": "Induction Heating",
+  "verdict": "merge",
+  "rule": "e4",
+  "borderline": false,
+  "why": "Induction heating is eddy currents heating a metal; it belongs on the Eddy Currents card (another batch) as a use.",
+  "into": "eddy-currents"
+ },
+ {
+  "edb": "Inertia",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Inertia is Newton's first law, on the deck's laws-of-motion card.",
+  "card": "laws-motion"
+ },
+ {
+  "edb": "Infrared Radiation",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "The deck already has infrared radiation (Herschel).",
+  "card": "infrared-radiation"
+ },
+ {
+  "edb": "Interference",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "The deck's light-waves card is Young's interference experiment.",
+  "card": "light-waves"
+ },
+ {
+  "edb": "Inverse Compton Scattering",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "A variant of Compton scattering, which is the deck's waves-as-particles card; the database description actually describes ordinary Compton scattering.",
+  "card": "waves-as-particles"
+ },
+ {
+  "edb": "Inverse Faraday Effect",
+  "verdict": "drop",
+  "rule": "e2",
+  "borderline": false,
+  "why": "Needs intense ultrafast laser pulses and gives only tiny magnetisation."
+ },
+ {
+  "edb": "Ionisation",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A general process, not a specific effect."
+ },
+ {
+  "edb": "Iridescence",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Structural colour isn't in the deck; kept as the thin-film colour card (Newton's Rings in another batch is a close sibling).",
+  "id": "iridescence",
+  "title": "Iridescence",
+  "year": 1665,
+  "inventor": "Robert Hooke",
+  "location": "England",
+  "field": "Science: Physics",
+  "description": "Some surfaces change colour as you tilt them, like soap bubbles, peacock feathers and CDs, because stacked thin layers make light waves reinforce one colour at one angle and another at the next. Robert Hooke looked at peacock feathers under his microscope in 1665 and traced the colours to thin layers, not pigment.",
+  "effect": "thin transparent layers reflect different colours at different angles",
+  "usedIn": [
+   "Colour-shifting security ink on banknotes",
+   "Colour-flip car paints (ChromaFlair)",
+   "Anti-reflection coatings on lenses",
+   "Holographic foil on cards and packaging"
+  ],
+  "strength": "Layers a few hundred nanometres thick, about 1/200 of a hair, give brilliant colours that never fade because no dye is involved.",
+  "deps": [
+   "microscope"
+  ]
+ },
+ {
+  "edb": "Jet",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "Generic engineering term."
+ },
+ {
+  "edb": "Jet Damping",
+  "verdict": "drop",
+  "rule": "e2",
+  "borderline": false,
+  "why": "A small damping of a rocket's wobble by its own exhaust; too weak and narrow to do a job beyond rocket design margins."
+ },
+ {
+  "edb": "Johnsen-Rahbek Effect",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Specific, named effect doing a real job (wafer chucks); not in the deck. Discovered around 1917, published 1923.",
+  "id": "johnsen-rahbek-effect",
+  "title": "Johnsen-Rahbek effect",
+  "year": 1923,
+  "inventor": "Alfred Johnsen and Knud Rahbek",
+  "location": "Denmark",
+  "field": "Science: Physics",
+  "description": "Put a voltage between a metal plate and a slightly conductive stone or ceramic touching it, and the two cling far harder than ordinary static would allow, because charge piles up across the tiny gaps where they touch. Danish engineers Alfred Johnsen and Knud Rahbek reported it in 1923 and built relays and loudspeakers on it.",
+  "effect": "a voltage makes a metal and a semiconducting surface cling tightly together",
+  "usedIn": [
+   "Electrostatic chucks holding silicon wafers in chip fabs",
+   "Johnsen-Rahbek relays and loudspeakers",
+   "Electroadhesive robot grippers"
+  ],
+  "strength": "A few hundred volts gives a grip of a few kilopascals, enough to hold a wafer flat, many times the pull of plain static at that voltage.",
+  "deps": []
+ },
+ {
+  "edb": "Josephson Effect",
+  "verdict": "drop",
+  "rule": "e2",
+  "borderline": true,
+  "why": "Only works in superconductors near absolute zero, which rule e2 drops; judgment call because its uses are major (SQUID magnetometers, the volt standard, superconducting quantum computers), but picked drop per the rule."
+ },
+ {
+  "edb": "Joule Heating",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Not in the deck; Joule's 1841 heating paper is a separate work from the deck's mechanical-equivalent-of-heat card (1843), so a keep rather than attach.",
+  "id": "joule-heating",
+  "title": "Joule heating",
+  "year": 1841,
+  "inventor": "James Prescott Joule",
+  "location": "England",
+  "field": "Science: Physics",
+  "description": "Current flowing through a wire heats it, in proportion to the wire's resistance and the square of the current, so doubling the current gives four times the heat. James Joule measured it in 1841, before his famous work on the mechanical equivalent of heat.",
+  "effect": "electric current heats the wire it flows through",
+  "usedIn": [
+   "Electric kettles, toasters and heaters",
+   "Incandescent light bulbs",
+   "Fuses that melt to cut a circuit",
+   "Rear-window defrosters"
+  ],
+  "strength": "A kettle's coil turns 2-3 kilowatts into heat, boiling a litre of water in about two to three minutes.",
+  "deps": [
+   "ohms-law"
+  ]
+ },
+ {
+  "edb": "Joule-Thomson Effect",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "The deck already has the Joule-Thomson effect.",
+  "card": "joule-thomson-effect"
+ },
+ {
+  "edb": "Kelvin-Helmholtz Instability",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": true,
+  "why": "Specific and named, but it mostly explains things rather than driving inventions; kept since it does a job (mixing) and could do more.",
+  "id": "kelvin-helmholtz-instability",
+  "title": "Kelvin-Helmholtz instability",
+  "year": 1868,
+  "inventor": "Hermann von Helmholtz",
+  "location": "Germany",
+  "field": "Science: Physics",
+  "description": "When one layer of fluid slides over another, such as wind over water, the boundary rolls up into a row of curling waves; it's why some clouds look like a line of breaking surf. Helmholtz described it in 1868 and Lord Kelvin in 1871.",
+  "effect": "a boundary between two fluids sliding past each other rolls up into waves",
+  "usedIn": [
+   "Shear-layer mixing in jet-engine combustors and chemical mixers",
+   "Wind-wave forecasting for shipping",
+   "Clear-air turbulence warnings in aviation"
+  ],
+  "strength": "Any speed difference across a sharp boundary sets it growing; on a calm sea it takes a moderate breeze to raise waves this way.",
+  "deps": []
+ },
+ {
+  "edb": "Kerr Effect",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Specific electro-optic effect with real devices; not in the deck.",
+  "id": "kerr-effect",
+  "title": "Kerr effect",
+  "year": 1875,
+  "inventor": "John Kerr",
+  "location": "Scotland",
+  "field": "Science: Physics",
+  "description": "An electric field makes some clear liquids and glasses split light like a polarizing crystal, so between two polarizers they can switch a beam on and off in under a billionth of a second. John Kerr found it in glass in Glasgow in 1875.",
+  "effect": "an electric field makes a clear material change the polarization of light",
+  "usedIn": [
+   "Kerr-cell shutters in high-speed photography and early television",
+   "Kerr-lens mode-locking in femtosecond lasers",
+   "Ultrafast optical switches"
+  ],
+  "strength": "Weak: a centimetre-long cell of nitrobenzene needs tens of thousands of volts to switch fully, but responds in under a nanosecond.",
+  "deps": [
+   "polarized-light"
+  ]
+ },
+ {
+  "edb": "Kármán Vortex Street",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Specific flow effect with real devices; not in the deck.",
+  "id": "karman-vortex-street",
+  "title": "Kármán vortex street",
+  "year": 1911,
+  "inventor": "Theodore von Kármán",
+  "location": "Germany",
+  "field": "Science: Physics",
+  "description": "Wind flowing past a pole or wire peels off swirls alternately from each side, leaving a zigzag trail and shaking the pole side to side; it's what makes power lines sing. Theodore von Kármán explained the pattern in 1911 at Göttingen.",
+  "effect": "flow past a cylinder sheds swirls from alternate sides, shaking it at a steady rate",
+  "usedIn": [
+   "Vortex flowmeters in pipelines",
+   "Spiral strakes on chimneys and car antennas that stop shaking",
+   "Aeolian harps"
+  ],
+  "strength": "Swirls come off at about one-fifth of the wind speed divided by the width: a 10 m/s wind past a 1 cm wire gives a 200 Hz hum.",
+  "deps": [
+   "aerodynamics"
+  ]
+ },
+ {
+  "edb": "Lagrangian Point",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Not in the deck: trojan-asteroids (1906) confirmed it but is a later discovery by a different person; algebra-and-mechanics is Lagrange's different 1788 work.",
+  "id": "lagrangian-point",
+  "title": "Lagrangian points",
+  "year": 1772,
+  "inventor": "Joseph-Louis Lagrange",
+  "location": "Germany",
+  "field": "Science: Astronomy",
+  "description": "Around any two orbiting bodies, like the Sun and Earth, there are five spots where a small object's pulls balance so it keeps pace with them. Joseph-Louis Lagrange found them in 1772 in Berlin (Euler had found three). Space telescopes park there for a steady view with little fuel.",
+  "effect": "a small body stays put relative to two big orbiting bodies at five balance points",
+  "usedIn": [
+   "James Webb Space Telescope at Sun-Earth L2",
+   "SOHO solar observatory at L1",
+   "Gaia star-mapping probe at L2"
+  ],
+  "strength": "Sun-Earth L1 and L2 lie 1.5 million km from Earth; a craft there needs only a few metres per second of thrust a year to stay.",
+  "deps": [
+   "universal-gravitation"
+  ]
+ },
+ {
+  "edb": "Laminar Flow",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": true,
+  "why": "Judgment call: a flow regime rather than an effect, and it could share one Reynolds card with Turbulence (another batch); picked keep since smooth flow itself does a job.",
+  "id": "laminar-flow",
+  "title": "Laminar flow",
+  "year": 1883,
+  "inventor": "Osborne Reynolds",
+  "location": "England",
+  "field": "Science: Physics",
+  "description": "Slow or narrow flows slide along in smooth, parallel layers; speed them up and they break into churning eddies. Osborne Reynolds showed in 1883, with a thread of dye in a glass pipe, that a single number predicts which you get. Smooth flow means far less drag and clean, predictable streams.",
+  "effect": "slow or narrow flows move in smooth layers instead of churning",
+  "usedIn": [
+   "Laminar-flow hoods and cleanroom ceilings",
+   "Laminar-flow wing sections on gliders",
+   "Microfluidic lab-on-a-chip devices",
+   "Glass-smooth laminar fountains"
+  ],
+  "strength": "Water in a 1 cm pipe stays smooth below about 20 cm/s; keeping air laminar over a wing cuts skin drag there several-fold.",
+  "deps": []
+ },
+ {
+  "edb": "Latent Heat",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "The deck already has latent heat.",
+  "card": "latent-heat"
+ },
+ {
+  "edb": "Leidenfrost Effect",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Specific, named effect not in the deck; it insulates, levitates and moves drops.",
+  "id": "leidenfrost-effect",
+  "title": "Leidenfrost effect",
+  "year": 1756,
+  "inventor": "Johann Gottlob Leidenfrost",
+  "location": "Germany",
+  "field": "Science: Physics",
+  "description": "Flick water onto a very hot pan and the drops skate around for a minute instead of hissing away: the bottom of each drop boils into a thin cushion of steam that holds it up and insulates it. Johann Gottlob Leidenfrost described it in 1756.",
+  "effect": "a liquid on a surface far above its boiling point floats on a cushion of its own vapour",
+  "usedIn": [
+   "Cooks' water-drop test for a hot pan",
+   "Boiler and nuclear-reactor tube design (avoiding film boiling)",
+   "Quenching steel, where the steam blanket slows cooling"
+  ],
+  "strength": "Above about 200 °C a water drop hovers on a steam layer a tenth of a millimetre thick and lasts over a minute; at 150 °C it would be gone in seconds.",
+  "deps": []
+ },
+ {
+  "edb": "Lenard Effect",
+  "verdict": "drop",
+  "rule": "e2",
+  "borderline": false,
+  "why": "Charge separated by splashing water near waterfalls is real but far too small to power or do anything at a useful size."
+ },
+ {
+  "edb": "Length Contraction",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "The deck has the FitzGerald contraction card (and special relativity).",
+  "card": "fitzgerald-contraction"
+ },
+ {
+  "edb": "Light",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A whole field."
+ },
+ {
+  "edb": "Liquid Crystals",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Not in the deck; more a state of matter than an effect, but its switching does a clear job, unlike plain materials such as gel.",
+  "id": "liquid-crystals",
+  "title": "Liquid crystals",
+  "year": 1888,
+  "inventor": "Friedrich Reinitzer",
+  "location": "Czech Republic",
+  "field": "Science: Chemistry",
+  "description": "Some substances flow like a liquid yet keep their rod-shaped molecules lined up like a crystal, so a small voltage can swing them round and change how light passes. Friedrich Reinitzer noticed in Prague in 1888 that a compound from carrots melted twice, first to a cloudy liquid, then to a clear one.",
+  "effect": "a liquid whose lined-up molecules can be turned by a voltage to block or pass light",
+  "usedIn": [
+   "Liquid-crystal displays in phones, TVs and watches",
+   "Liquid-crystal thermometer strips and mood rings",
+   "Switchable smart-glass windows"
+  ],
+  "strength": "A few volts across a layer a few thousandths of a millimetre thick turns a pixel from clear to dark in milliseconds.",
+  "deps": [
+   "polarized-light"
+  ]
+ },
+ {
+  "edb": "London Dispersion Force",
+  "verdict": "merge",
+  "rule": "e4",
+  "borderline": false,
+  "why": "London dispersion is the main part of the van der Waals force; Van der Waals Force (another batch) is the broader common name, so this merges into it.",
+  "into": "van-der-waals-force"
+ },
+ {
+  "edb": "Lonsdaleite",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A rare material, not an effect."
+ },
+ {
+  "edb": "Lorentz Force",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "The push on a current in a magnetic field is the deck's electrical-motion card (Faraday 1821).",
+  "card": "electrical-motion"
+ },
+ {
+  "edb": "Lotus Leaf Effect",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Specific, named effect that cleans and repels; not in the deck.",
+  "id": "lotus-effect",
+  "title": "Lotus effect",
+  "year": 1997,
+  "inventor": "Wilhelm Barthlott",
+  "location": "Germany",
+  "field": "Science: Biology",
+  "description": "Water on a lotus leaf beads into near-perfect balls that roll off at the slightest tilt, picking up dirt as they go, because the leaf is covered in tiny waxy bumps that let drops touch almost nothing. Botanist Wilhelm Barthlott worked out how it keeps the leaf clean using electron microscopes, publishing with Christoph Neinhuis in 1997.",
+  "effect": "a surface of tiny waxy bumps makes water bead up and roll off, carrying dirt",
+  "usedIn": [
+   "Lotusan self-cleaning facade paint",
+   "Water-repellent self-cleaning fabrics",
+   "Superhydrophobic sprays such as NeverWet"
+  ],
+  "strength": "Drops sit with a contact angle above 150° and roll off when the leaf tilts by only a few degrees.",
+  "deps": [
+   "electron-microscope"
+  ]
+ },
+ {
+  "edb": "Lubrication",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": true,
+  "why": "Judgment call: 'lubrication' is a general practice (e1), but the oil-wedge effect Tower found is specific and powerful; kept under the broad name, framed as hydrodynamic lubrication.",
+  "id": "lubrication",
+  "title": "Lubrication",
+  "year": 1883,
+  "inventor": "Beauchamp Tower",
+  "location": "England",
+  "field": "Science: Physics",
+  "description": "A spinning shaft drags oil into the narrowing gap of its bearing and builds enough pressure to float on it, so metal never touches metal. Beauchamp Tower discovered that pressure in 1883 when oil spurted from a hole drilled in a railway-axle bearing, and Osborne Reynolds explained it in 1886.",
+  "effect": "a moving surface drags oil into a wedge-shaped gap and floats on it",
+  "usedIn": [
+   "Journal bearings in car engines and turbines",
+   "Michell thrust bearings on ship propeller shafts",
+   "Fluid-dynamic bearings in hard drives"
+  ],
+  "strength": "An oil film thinner than a hair can carry tens of atmospheres of pressure and cuts friction to about a thousandth of the load.",
+  "deps": [
+   "rolling-friction"
+  ]
+ },
+ {
+  "edb": "Luminescence",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "An umbrella word for many kinds of cold light, each with its own entry."
+ },
+ {
+  "edb": "Maggi-Righi-Leduc Effect",
+  "verdict": "drop",
+  "rule": "e2",
+  "borderline": false,
+  "why": "The change in heat conduction in a magnetic field is tiny in ordinary materials at useful sizes."
+ },
+ {
+  "edb": "Magnetic Field",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A field concept, not an effect."
+ },
+ {
+  "edb": "Magnetic Hysteresis",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": true,
+  "why": "Specific effect behind magnetic memory; credit is split between Warburg (first loop, 1880) and Ewing (named it, 1880s); picked Warburg.",
+  "id": "magnetic-hysteresis",
+  "title": "Magnetic hysteresis",
+  "year": 1880,
+  "inventor": "Emil Warburg",
+  "location": "Germany",
+  "field": "Science: Physics",
+  "description": "Iron remembers: magnetise it and switch the field off and some magnetism stays, and to undo it you must push the other way; push hard enough and it stops responding at all (saturation). Emil Warburg measured this loop in 1880 and James Ewing, working in Japan, named it hysteresis a few years later.",
+  "effect": "a magnetic material keeps some magnetism after the field is removed",
+  "usedIn": [
+   "Magnetic tape and hard-disk storage",
+   "Permanent magnets",
+   "Hysteresis brakes on exercise bikes",
+   "Fluxgate compasses (using saturation)"
+  ],
+  "strength": "A neodymium magnet resists being unmagnetised by fields of about a tesla, while soft transformer iron flips with a field tens of thousands of times weaker.",
+  "deps": [
+   "electromagnets"
+  ]
+ },
+ {
+  "edb": "Magnetic Reluctance",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A circuit-design quantity (magnetic 'resistance'), not an effect; the pull of iron toward a magnet is already on the deck's magnet cards."
+ },
+ {
+  "edb": "Magnetic Saturation",
+  "verdict": "merge",
+  "rule": "e4",
+  "borderline": true,
+  "why": "Saturation is the top end of the same magnetisation (B-H) curve as hysteresis, found in the same studies; judgment call between its own card (fluxgates, magnetic amplifiers) and merging, picked merge with fluxgates listed on the hysteresis card.",
+  "into": "magnetic-hysteresis"
+ },
+ {
+  "edb": "Magnetism",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A whole field; the deck already has magnets (magnetic-pole, earth-magnet)."
+ },
+ {
+  "edb": "Magneto-Optic Effects",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "An umbrella for several effects (Faraday, magneto-optic Kerr, Voigt) that have their own entries."
+ },
+ {
+  "edb": "Magneto-Optic Kerr Effect",
+  "verdict": "merge",
+  "rule": "e4",
+  "borderline": false,
+  "why": "The reflected-light version of the Faraday effect; merges into Faraday Effect (another batch).",
+  "into": "faraday-effect"
+ },
+ {
+  "edb": "Magnetocaloric Effect",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": true,
+  "why": "Specific effect with a clear cooling job; discovery is credited either to Warburg (1881) or, per recent historians, Weiss and Piccard (1917); picked the latter.",
+  "id": "magnetocaloric-effect",
+  "title": "Magnetocaloric effect",
+  "year": 1917,
+  "inventor": "Pierre Weiss and Auguste Piccard",
+  "location": "Switzerland",
+  "field": "Science: Physics",
+  "description": "Some metals warm up when put in a strong magnetic field and cool when it's taken away, because the field lines up their atoms' tiny magnets and squeezes out heat. Pierre Weiss and Auguste Piccard described it in Zurich in 1917, and William Giauque used it in 1933 to get within a fraction of a degree of absolute zero.",
+  "effect": "a material heats up when magnetised and cools when the field is removed",
+  "usedIn": [
+   "Adiabatic demagnetisation refrigerators on X-ray satellites such as XRISM",
+   "Prototype gas-free magnetic fridges using gadolinium"
+  ],
+  "strength": "Gadolinium warms about 2-3 °C per tesla, so a strong permanent magnet heats it only a few degrees, but the cycle can repeat many times a second with no gas.",
+  "deps": [
+   "curie-temperature"
+  ]
+ },
+ {
+  "edb": "Magnetoelastic Effects",
+  "verdict": "merge",
+  "rule": "e4",
+  "borderline": false,
+  "why": "An umbrella for magnetostriction and its relatives; folded into the Magnetostriction card.",
+  "into": "magnetostriction"
+ },
+ {
+  "edb": "Magnetohydrodynamic Effect",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Not in the deck; Alfvén's deck card (new-nebular-hypothesis) is different work.",
+  "id": "magnetohydrodynamics",
+  "title": "Magnetohydrodynamics",
+  "year": 1942,
+  "inventor": "Hannes Alfvén",
+  "location": "Sweden",
+  "field": "Science: Physics",
+  "description": "A magnetic field pushes on electric current flowing through a liquid like seawater or molten metal, so you can pump or steer it with no moving parts; and a conducting fluid flowing through a field makes electricity. Faraday tried to measure the Thames this way in 1832, and Hannes Alfvén founded the science in 1942.",
+  "effect": "a magnetic field pushes on a current-carrying fluid, pumping it with no moving parts",
+  "usedIn": [
+   "Yamato 1, a ship driven by seawater thrusters (1992)",
+   "Electromagnetic pumps for liquid sodium in fast reactors",
+   "Electromagnetic flowmeters"
+  ],
+  "strength": "Weak in seawater: Yamato 1 needed 4-tesla superconducting magnets to crawl at about 15 km/h, but it pumps molten metal easily.",
+  "deps": [
+   "electromagnetic-induction",
+   "electrical-motion"
+  ]
+ },
+ {
+  "edb": "Magnetoresistance",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Specific sensing effect not in the deck.",
+  "id": "magnetoresistance",
+  "title": "Magnetoresistance",
+  "year": 1856,
+  "inventor": "William Thomson (Lord Kelvin)",
+  "location": "Scotland",
+  "field": "Science: Physics",
+  "description": "A magnetic field changes how easily current flows through a metal; in iron and nickel the change depends on the angle between field and current. Lord Kelvin found it in 1856, and thin-film versions became the read heads of hard disks.",
+  "effect": "a magnetic field changes a metal's electrical resistance",
+  "usedIn": [
+   "Hard-disk read heads (anisotropic, then giant magnetoresistance)",
+   "Car wheel-speed and steering-angle sensors",
+   "Electronic compasses"
+  ],
+  "strength": "Iron-nickel films change resistance by only a few per cent; the layered 'giant' version found in 1988 changes it by tens of per cent.",
+  "deps": [
+   "ohms-law"
+  ]
+ },
+ {
+  "edb": "Magnetostriction",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Canonical card for the magnetoelastic family (Magnetovolume, Matteucci, Garshelis and the umbrella entry merge here); not in the deck.",
+  "id": "magnetostriction",
+  "title": "Magnetostriction",
+  "year": 1842,
+  "inventor": "James Prescott Joule",
+  "location": "England",
+  "field": "Science: Physics",
+  "description": "Iron gets very slightly longer or shorter when magnetised, so an alternating field makes it buzz: that is the hum of a transformer. James Joule measured it in 1842; the reverse also works, as stretching or twisting a magnetised rod changes its magnetism, which lets it sense force.",
+  "effect": "a magnetic material changes shape when magnetised, and its magnetism changes when it is strained",
+  "usedIn": [
+   "Terfenol-D sonar transducers",
+   "Acousto-magnetic anti-theft tags in shops",
+   "Magnetoelastic torque sensors in e-bikes and power steering"
+  ],
+  "strength": "Iron changes length by only about 20 parts per million; the alloy Terfenol-D by about 2,000 (2 mm per metre), pushing with great force.",
+  "deps": [
+   "electromagnets"
+  ]
+ },
+ {
+  "edb": "Magnetovolume Effect",
+  "verdict": "merge",
+  "rule": "e4",
+  "borderline": false,
+  "why": "A volume-change variant of magnetostriction.",
+  "into": "magnetostriction"
+ },
+ {
+  "edb": "Marangoni Effect",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Specific, named effect that moves and dries liquids; not in the deck.",
+  "id": "marangoni-effect",
+  "title": "Marangoni effect",
+  "year": 1865,
+  "inventor": "Carlo Marangoni",
+  "location": "Italy",
+  "field": "Science: Physics",
+  "description": "Liquid flows from where its surface tension is low toward where it is high, dragging the surface along: a drop of soap sends pepper racing to a dish's edge, and wine climbs a glass in 'tears'. James Thomson explained the tears in 1855 and Carlo Marangoni studied the effect in 1865.",
+  "effect": "a liquid surface flows from low toward high surface tension",
+  "usedIn": [
+   "Marangoni drying of silicon wafers with alcohol vapour",
+   "Controlling weld-pool depth in welding",
+   "Soap-powered toy boats"
+  ],
+  "strength": "A trace of soap clears pepper across a dish in a fraction of a second; surface flows reach centimetres per second.",
+  "deps": [
+   "capillary-action"
+  ]
+ },
+ {
+  "edb": "Matteucci Effect",
+  "verdict": "merge",
+  "rule": "e4",
+  "borderline": false,
+  "why": "An inverse magnetoelastic effect (twisting a magnetised wire induces a voltage); folded into the Magnetostriction card.",
+  "into": "magnetostriction"
+ },
+ {
+  "edb": "Mechanical Advantage",
+  "verdict": "in-deck",
+  "rule": "e3",
+  "borderline": false,
+  "why": "Force amplification by machines is the deck's Lever mathematics card.",
+  "card": "lever-math"
+ },
+ {
+  "edb": "Mechanical Force",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "Generic term."
+ },
+ {
+  "edb": "Mechanocaloric Effect",
+  "verdict": "drop",
+  "rule": "e2",
+  "borderline": false,
+  "why": "Only occurs in superfluid helium near absolute zero."
+ },
+ {
+  "edb": "Meissner Body",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A shape (surface of constant width)."
+ },
+ {
+  "edb": "Meissner Effect",
+  "verdict": "drop",
+  "rule": "e2",
+  "borderline": false,
+  "why": "Only in superconductors near absolute zero; the deck already has superconductivity."
+ },
+ {
+  "edb": "Melting",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "An everyday process."
+ },
+ {
+  "edb": "Metastability",
+  "verdict": "drop",
+  "rule": "e1",
+  "borderline": false,
+  "why": "A general concept, not a specific effect; its useful cases (supercooling, superheating) are separate entries."
+ },
+ {
+  "edb": "Mirage (photothermal deflection)",
+  "verdict": "keep",
+  "rule": "e6",
+  "borderline": false,
+  "why": "Bending in a gradient is distinct from the deck's refraction card at a single surface, and it drives real instruments; kept.",
+  "id": "mirage",
+  "title": "Mirage",
+  "year": 1798,
+  "inventor": "Gaspard Monge",
+  "location": "Egypt",
+  "field": "Science: Physics",
+  "description": "Over hot ground the air near the surface is thinner, so light skimming it bends upward and you see a shimmering 'pool' that is really the sky. Gaspard Monge explained it in 1798 while in Egypt with Napoleon's army.",
+  "effect": "light bends as it passes through air of changing temperature, shifting images",
+  "usedIn": [
+   "Photothermal-deflection ('mirage') spectroscopy for measuring faint absorption in coatings",
+   "Gradient-index (GRIN) lenses in endoscopes and fibre connectors",
+   "Schlieren imaging of shock waves and air flows"
+  ],
+  "strength": "The bending is only a fraction of a degree, but over a few hundred metres of hot road it shifts the image by metres.",
+  "deps": [
+   "refraction"
+  ]
+ },
+ {
+  "edb": "Mixed Convection",
+  "verdict": "merge",
+  "rule": "e4",
+  "borderline": false,
+  "why": "A mix of free and forced convection; merges into the canonical Convection entry in another batch.",
+  "into": "convection"
+ }
+]

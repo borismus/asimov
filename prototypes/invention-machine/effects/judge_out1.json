@@ -1,0 +1,469 @@
+[
+ {
+  "id": "star-sighting-drone-compass",
+  "name": "Star-sighting drone compass",
+  "job": "finds direction",
+  "effect": "the pole star stays fixed in the north",
+  "effectCard": "sea-navigation",
+  "parts": [
+   "camera",
+   "microchips",
+   "gyroscope"
+  ],
+  "how": "A small upward-looking camera on a drone or robot photographs the night sky, and a chip picks out the one star that stays put while all the others wheel around it. Because that star always sits over the north pole, its place in the picture tells the machine which way is north, even where steel fools a magnetic compass or satellite signals are jammed.",
+  "real": "Spacecraft and missile star trackers, 1950s on; star compasses for drones in trials, 2020s",
+  "plausibility": 5,
+  "why": "Bronze Age sailors' trick becomes a jam-proof compass for robots."
+ },
+ {
+  "id": "tidal-power-station",
+  "name": "Tidal power station",
+  "job": "makes electricity",
+  "effect": "the moon pulls the sea into tides",
+  "effectCard": "tides",
+  "parts": [
+   "turbines",
+   "electric-generators"
+  ],
+  "how": "A dam across a bay lets the sea flood in as the moon raises the tide and holds it back as the tide falls. The trapped water rushes through turbines that spin generators, giving electricity on a timetable set by the moon.",
+  "real": "La Rance tidal power station, France, 1966",
+  "plausibility": 5,
+  "why": "The moon's pull turned into electricity, predictable years ahead."
+ },
+ {
+  "id": "tide-driven-water-pump",
+  "name": "Tide-driven town water pump",
+  "job": "pumps water",
+  "effect": "the moon pulls the sea into tides",
+  "effectCard": "tides",
+  "parts": [
+   "water-wheel",
+   "piston-and-cylinder",
+   "valve"
+  ],
+  "how": "Waterwheels set in the arches of a bridge are turned by the river as the moon pulls the tide in and again as it drains out. The wheels work pistons and valves that push river water up pipes to the town, so the moon does the lifting twice a day.",
+  "real": "London Bridge waterworks, 1582",
+  "plausibility": 5,
+  "why": "The moon as a free pumping engine for a whole city."
+ },
+ {
+  "id": "camera-sun-sight-locator",
+  "name": "Camera sun-sight position finder",
+  "job": "measures",
+  "effect": "the sun's angle changes as you go north or south",
+  "effectCard": "earth-size",
+  "parts": [
+   "camera",
+   "gyroscope",
+   "electronic-watch",
+   "microchips"
+  ],
+  "how": "A camera measures how high the sun stands above a level set by a gyroscope, while a clock records the exact moment. Since the sun's height at a given time depends on how far north or south you are, a chip turns the angle into your position, a backup for ships and planes when satellite navigation fails.",
+  "real": "Sextant sun sights, 1700s; automatic sun sensors, 1960s",
+  "plausibility": 5,
+  "why": "Eratosthenes' shadow measurement as a satellite-free backup for navigation."
+ },
+ {
+  "id": "twin-camera-obstacle-sensor",
+  "name": "Twin-camera obstacle sensor",
+  "job": "detects objects",
+  "effect": "a near thing shifts against far things as you move",
+  "effectCard": "moon-distance",
+  "parts": [
+   "camera",
+   "microchips"
+  ],
+  "how": "Two cameras a hand's width apart each photograph the road ahead. Nearby things land in noticeably different spots in the two pictures while distant things barely shift, so a chip turns that shift into a distance and warns a car or robot before it hits something.",
+  "real": "Stereo-camera car safety systems, 2008 (Subaru EyeSight)",
+  "plausibility": 5,
+  "why": "The method that measured the moon now keeps cars off bumpers."
+ },
+ {
+  "id": "one-camera-distance-gauge",
+  "name": "One-camera distance gauge",
+  "job": "measures",
+  "effect": "far things shrink in proportion to their distance",
+  "effectCard": "perspective",
+  "parts": [
+   "camera",
+   "microchips"
+  ],
+  "how": "A single camera watches the car ahead. Cars are all roughly the same width, and a car twice as far away looks half as wide, so a chip turns the car's width in the picture into its distance and into how fast the gap is closing.",
+  "real": "Single-camera collision warning, 2007 (Mobileye)",
+  "plausibility": 5,
+  "why": "A Renaissance painter's rule now judges braking distances."
+ },
+ {
+  "id": "laser-triangulation-sensor",
+  "name": "Laser-spot triangulation sensor",
+  "job": "measures",
+  "effect": "a triangle's angles fix the ratios of its sides",
+  "effectCard": "trig-tables",
+  "parts": [
+   "laser",
+   "camera",
+   "microchips"
+  ],
+  "how": "A laser throws a bright dot onto a surface and a camera mounted a short way to the side looks at it. The angle at which the camera sees the dot changes with the dot's distance, and because a triangle's angles fix its sides, a chip turns that angle into a precise distance; sweeping the dot maps a whole object's shape.",
+  "real": "Laser triangulation scanners, 1970s-80s",
+  "plausibility": 5,
+  "why": "Trig tables built for astronomers now let machines see in 3D."
+ },
+ {
+  "id": "pendulum-sway-damper",
+  "name": "Pendulum skyscraper sway damper",
+  "job": "absorbs shocks",
+  "effect": "a pendulum keeps the same beat whatever its swing",
+  "effectCard": "pendulum",
+  "parts": [
+   "steel",
+   "piston-and-cylinder"
+  ],
+  "how": "A huge steel ball hangs like a pendulum near the top of a tall tower, on cables cut so its steady beat matches the building's own sway. When wind or an earthquake rocks the tower, the ball swings against the motion, and pistons between ball and building soak up the energy.",
+  "real": "Tuned mass dampers, e.g. Taipei 101, 2004",
+  "plausibility": 5,
+  "why": "Galileo's clock rhythm repurposed to calm a swaying skyscraper."
+ },
+ {
+  "id": "falling-atom-tunnel-finder",
+  "name": "Falling-atom tunnel finder",
+  "job": "detects objects",
+  "effect": "heavy and light things fall at the same rate",
+  "effectCard": "falling-motion",
+  "parts": [
+   "laser",
+   "air-pump",
+   "interferometer",
+   "microchips"
+  ],
+  "how": "Inside two vacuum tubes, one above the other, tiny clouds of atoms are dropped and their fall is timed with laser light. Because everything falls at the same rate, any difference between the two drops can only come from extra or missing mass nearby, revealing buried pipes, tunnels or caves without digging.",
+  "real": "Atom-interferometer gravity sensors, lab field demo 2022",
+  "plausibility": 4,
+  "why": "Galileo's tower drop turned into an X-ray for the ground."
+ },
+ {
+  "id": "artificial-vein-valve",
+  "name": "Implanted artificial vein valve",
+  "job": "treats illness",
+  "effect": "flap valves let blood flow only one way",
+  "effectCard": "vein-valves",
+  "parts": [
+   "valve",
+   "teflon"
+  ],
+  "how": "When the valves in leg veins fail, blood pools instead of climbing back to the heart, causing swollen legs and sores that won't heal. A small flap valve of slippery plastic placed inside a leg vein opens when the calf muscles squeeze blood upward and snaps shut when it tries to fall back.",
+  "real": "Prosthetic vein valves, in clinical trials 2020s",
+  "plausibility": 4,
+  "why": "Harvey's anatomy lesson turned into a spare part."
+ },
+ {
+  "id": "number-driven-mill",
+  "name": "Number-driven milling machine",
+  "job": "manufactures",
+  "effect": "any shape can be written as an equation",
+  "effectCard": "analytic-geometry",
+  "parts": [
+   "computer",
+   "electric-motors",
+   "alloy-steel"
+  ],
+  "how": "A part's shape is written down as equations, and a computer turns them into a stream of numbers telling motors exactly where to move a steel cutting tool. The machine carves the shape straight from the maths, so the same part can be made again and again without a skilled hand guiding it.",
+  "real": "Numerical-control milling, MIT 1952",
+  "plausibility": 5,
+  "why": "Descartes' idea that shapes are numbers became modern machining."
+ },
+ {
+  "id": "phone-floor-finder",
+  "name": "Phone floor-level finder",
+  "job": "measures",
+  "effect": "air pressure falls the higher you go",
+  "effectCard": "air-pressure-altitude",
+  "parts": [
+   "barometer",
+   "microchips"
+  ],
+  "how": "A tiny pressure sensor in a phone notices that air pressure drops by a few parts in ten thousand with every storey you climb. Comparing its reading with a nearby weather station tells emergency services which floor of a tall building a caller is on.",
+  "real": "Barometric altimeters, 1920s; phone floor-finding, 2010s",
+  "plausibility": 5,
+  "why": "Pascal's mountain experiment shrunk to finding a caller's floor."
+ },
+ {
+  "id": "random-sampling-simulator",
+  "name": "Random-sampling simulator",
+  "job": "computes",
+  "effect": "random events are predictable in large numbers",
+  "effectCard": "probability",
+  "parts": [
+   "computer"
+  ],
+  "how": "Instead of solving an impossibly hard equation, a computer plays out a process, such as a neutron bouncing through a reactor, thousands of times using random dice rolls. Each run is unpredictable, but the average of many runs settles on the right answer, so chance itself does the arithmetic.",
+  "real": "Monte Carlo method, run on ENIAC 1948",
+  "plausibility": 5,
+  "why": "Gamblers' mathematics turned into a way to compute the uncomputable."
+ },
+ {
+  "id": "coin-flip-chip",
+  "name": "Coin-flip probabilistic chip",
+  "job": "computes",
+  "effect": "random events are predictable in large numbers",
+  "effectCard": "probability",
+  "parts": [
+   "integrated-circuits",
+   "transistor"
+  ],
+  "how": "A chip is built from thousands of deliberately jittery bits that flip between 0 and 1 at random, each nudged by its neighbours. Watched over many flips, the crowd settles into the most likely patterns, solving scheduling and optimisation puzzles with far less energy than ordinary logic.",
+  "real": "Probabilistic-bit (p-bit) chips, lab prototypes 2019 on",
+  "plausibility": 3,
+  "why": "Randomness, normally a chip's enemy, becomes the computing engine."
+ },
+ {
+  "id": "lensless-diffraction-microscope",
+  "name": "Lensless diffraction microscope",
+  "job": "magnifies",
+  "effect": "light bends around edges",
+  "effectCard": "light-diffraction",
+  "parts": [
+   "laser",
+   "camera",
+   "computer"
+  ],
+  "how": "A laser lights a tiny sample with no lens at all, and the light that bends around its edges spreads into a speckled pattern on a camera chip. A computer works backwards from the pattern to the shape that must have made it, giving a sharp magnified image with no glass to blur it.",
+  "real": "Coherent diffraction imaging, labs since 1999",
+  "plausibility": 4,
+  "why": "The blurring that limits every lens becomes the image itself."
+ },
+ {
+  "id": "auto-oxygen-dial-newborns",
+  "name": "Automatic oxygen dial for newborns",
+  "job": "regulates the body",
+  "effect": "blood turns bright red when it takes up air",
+  "effectCard": "blood-color",
+  "parts": [
+   "light-emitting-diodes",
+   "photocell",
+   "microchips",
+   "valve"
+  ],
+  "how": "A clip on a premature baby's foot shines red and infrared light through the skin; blood carrying oxygen is brighter red and absorbs the two colours differently. A chip reads that colour many times a second and turns the oxygen valve on the baby's breathing machine up or down, holding oxygen in the narrow safe range better than busy nurses can.",
+  "real": "Closed-loop oxygen control for preterm infants, clinical use 2010s",
+  "plausibility": 5,
+  "why": "Blood's colour closes the loop: the body steering its own oxygen."
+ },
+ {
+  "id": "phone-camera-oxygen-check",
+  "name": "Phone-camera blood oxygen check",
+  "job": "diagnoses",
+  "effect": "blood turns bright red when it takes up air",
+  "effectCard": "blood-color",
+  "parts": [
+   "camera",
+   "light-emitting-diodes",
+   "microchips"
+  ],
+  "how": "You rest a fingertip over a phone's camera and flash, and the camera watches how red the light coming through your finger is. Because blood is brighter red when full of oxygen, the changing colour with each heartbeat tells an app whether your blood is carrying enough oxygen, without a hospital clip.",
+  "real": "Pulse oximeter, 1974; phone-camera versions in research, 2010s",
+  "plausibility": 4,
+  "why": "A 17th-century observation becomes a check anyone can run."
+ },
+ {
+  "id": "greenhouse-pollinating-robot",
+  "name": "Greenhouse pollinating robot",
+  "job": "grows food",
+  "effect": "pollen fertilizes a flower to make seed",
+  "effectCard": "plant-sexuality",
+  "parts": [
+   "robots",
+   "camera",
+   "microchips"
+  ],
+  "how": "In greenhouses and orchards where bees are scarce, a robot arm with a camera finds open flowers and dabs pollen from one onto another with a soft brush or puff of air. Each pollinated flower can then set fruit and seed, so the harvest no longer depends on insects.",
+  "real": "Robot pollinator prototypes, 2010s-2020s",
+  "plausibility": 4,
+  "why": "An insurance policy for crops if bees keep disappearing."
+ },
+ {
+  "id": "quarter-turn-radio-code",
+  "name": "Quarter-turn radio code",
+  "job": "communicates",
+  "effect": "multiplying by i turns a number a quarter circle",
+  "effectCard": "imaginary-numbers",
+  "parts": [
+   "radio",
+   "integrated-circuits"
+  ],
+  "how": "A radio wave's rhythm can be pictured as a point going round a circle, and multiplying by i moves it a quarter of the way round. A transmitter sends two signals a quarter-turn apart on the same wave, and the receiver pulls both back out, doubling what one channel carries; Wi-Fi and phones stack this into dozens of patterns.",
+  "real": "Quadrature amplitude modulation, 1960s",
+  "plausibility": 5,
+  "why": "An 'imaginary' number carries most of the world's wireless data."
+ },
+ {
+  "id": "carbon-enriched-greenhouse",
+  "name": "Carbon-enriched greenhouse",
+  "job": "grows food",
+  "effect": "plants build their bodies partly from air",
+  "effectCard": "plant-nourishment",
+  "parts": [
+   "glass",
+   "valve"
+  ],
+  "how": "Plants build most of their dry weight from carbon dioxide taken from the air, but ordinary air holds very little of it. A closed glass greenhouse with extra carbon dioxide let in through valves lets tomatoes and cucumbers grow faster and heavier from the same soil.",
+  "real": "Greenhouse CO2 enrichment, 1960s",
+  "plausibility": 5,
+  "why": "Van Helmont's surprise that trees come from air, used as fertilizer."
+ },
+ {
+  "id": "algae-oxygen-garden",
+  "name": "Algae oxygen garden for spacecraft",
+  "job": "supplies oxygen",
+  "effect": "plants turn sunlight, water and carbon dioxide into sugar",
+  "effectCard": "photosynthesis",
+  "parts": [
+   "glass",
+   "light-emitting-diodes",
+   "valve"
+  ],
+  "how": "Lit glass tubes of green algae sit in a spacecraft's air loop. As the algae turn lamp light, water and the crew's exhaled carbon dioxide into sugar, they release fresh oxygen, so a long voyage needs far less stored oxygen.",
+  "real": "Soviet BIOS-3 tests, 1972; space algae reactors still experimental",
+  "plausibility": 4,
+  "why": "A pond's chemistry as the life support for a trip to Mars."
+ },
+ {
+  "id": "pulse-powered-implant-cell",
+  "name": "Pulse-powered implant charger",
+  "job": "makes electricity",
+  "effect": "blood presses on vessel walls with measurable force",
+  "effectCard": "blood-pressure",
+  "parts": [
+   "quartz-oscillator",
+   "lithium-battery"
+  ],
+  "how": "A soft band wrapped around an artery holds a crystal that makes a tiny voltage whenever it is squeezed. Every heartbeat pushes the artery wall out against the band, and the trickle of electricity recharges a small battery, so a pacemaker might never need surgery to replace it.",
+  "real": "Lab prototypes, 2010s",
+  "plausibility": 3,
+  "why": "The heartbeat powering the very device that keeps it beating."
+ },
+ {
+  "id": "solar-updraft-tower",
+  "name": "Solar updraft wind tower",
+  "job": "makes electricity",
+  "effect": "sun-heated air at the equator drives steady winds",
+  "effectCard": "trade-winds",
+  "parts": [
+   "glass",
+   "turbines",
+   "electric-generators"
+  ],
+  "how": "A huge glass roof heats the air beneath it, and the warm air rushes inward to a tall chimney in the middle, the same way sun-heated equatorial air drives the trade winds. Turbines at the chimney's base catch this steady home-made wind and turn generators, even after dark while the ground stays warm.",
+  "real": "Manzanares prototype, Spain, 1982",
+  "plausibility": 4,
+  "why": "A miniature trade wind, made to order and harnessed."
+ },
+ {
+  "id": "ice-coat-frost-shield",
+  "name": "Ice-coat frost shield for orchards",
+  "job": "protects",
+  "effect": "water freezes and boils at fixed temperatures",
+  "effectCard": "celsius",
+  "parts": [
+   "irrigation",
+   "valve",
+   "thermometer"
+  ],
+  "how": "When a frost threatens fruit blossoms, sprinklers keep coating the buds with water. As long as water is freezing on them, the ice-and-water mix stays fixed at zero degrees, warmer than the killing cold of the air, so the flowers survive inside their glaze.",
+  "real": "Orchard frost sprinkling, 1950s",
+  "plausibility": 5,
+  "why": "Freezing water used to stop something from freezing harder."
+ },
+ {
+  "id": "limestone-heat-battery",
+  "name": "Limestone heat battery",
+  "job": "stores energy",
+  "effect": "heating limestone frees a gas that lime soaks back up",
+  "effectCard": "carbon-dioxide",
+  "parts": [
+   "mirror",
+   "boiler",
+   "steam-turbine"
+  ],
+  "how": "Concentrated sunlight bakes limestone, driving off carbon dioxide, and the lime and gas are kept in separate tanks, holding the energy. When power is wanted, the gas is let back onto the lime, which soaks it up and gets very hot, raising steam to spin a turbine at night.",
+  "real": "Calcium-looping storage, pilot plants 2020s",
+  "plausibility": 4,
+  "why": "Black's 1750s lime experiment as a battery for solar power."
+ },
+ {
+  "id": "lime-air-scrubbing-trays",
+  "name": "Lime air-scrubbing trays",
+  "job": "separates mixtures",
+  "effect": "heating limestone frees a gas that lime soaks back up",
+  "effectCard": "carbon-dioxide",
+  "parts": [
+   "robots",
+   "steel"
+  ],
+  "how": "Steel trays of lime powder sit out in open air, where the lime slowly soaks up carbon dioxide and turns back into limestone. Robots carry the full trays to a kiln that heats them, freeing pure carbon dioxide to be stored underground and leaving fresh lime to go back out.",
+  "real": "Lime direct air capture, Heirloom, 2023",
+  "plausibility": 5,
+  "why": "The oldest chemistry in building used to pull carbon from the sky."
+ },
+ {
+  "id": "spark-colour-scrap-sorter",
+  "name": "Spark-colour scrap metal sorter",
+  "job": "separates mixtures",
+  "effect": "each metal colours a flame its own colour",
+  "effectCard": "flame-tests",
+  "parts": [
+   "laser",
+   "diffraction-gratings",
+   "photocell",
+   "robots"
+  ],
+  "how": "Shredded scrap metal rides a conveyor past a laser that zaps a speck off each piece into a tiny flash of glowing vapour. As in a flame test, each metal glows its own colours, so a grating spreads the light, a sensor reads it, and arms knock aluminium, copper and steel into separate bins.",
+  "real": "Laser-spark (LIBS) scrap sorters, 2010s",
+  "plausibility": 5,
+  "why": "A chemistry-class flame test runs a recycling plant at conveyor speed."
+ },
+ {
+  "id": "hydrogen-light-gas-gun",
+  "name": "Hydrogen light-gas gun",
+  "job": "fires projectiles",
+  "effect": "hydrogen is fourteen times lighter than air",
+  "effectCard": "hydrogen",
+  "parts": [
+   "cannon",
+   "piston-and-cylinder"
+  ],
+  "how": "A piston slams into a tube of hydrogen, squeezing it to enormous pressure behind a small projectile. Because hydrogen is so light, the gas can rush forward far faster than heavy gunpowder smoke, pushing the projectile to several kilometres a second, used to test spacecraft armour against meteorite hits.",
+  "real": "Light-gas guns, 1946",
+  "plausibility": 5,
+  "why": "The lightest gas, not the strongest explosive, wins the speed race."
+ },
+ {
+  "id": "nitrogen-fuel-tank-blanket",
+  "name": "Nitrogen fuel-tank blanket",
+  "job": "protects",
+  "effect": "nitrogen smothers flames and won't support life",
+  "effectCard": "nitrogen",
+  "parts": [
+   "valve"
+  ],
+  "how": "Air taken from an airliner's engines is passed through fine fibres that let oxygen escape and keep mostly nitrogen. That nitrogen-rich air fills the empty space above the fuel in the tanks, where without enough oxygen a stray spark cannot set off the fumes.",
+  "real": "Fuel-tank inerting on airliners, 2000s",
+  "plausibility": 5,
+  "why": "An 'unbreathable' gas becomes a fire guard for jets."
+ },
+ {
+  "id": "salt-water-chlorine-maker",
+  "name": "Salt-water chlorine maker",
+  "job": "prevents disease",
+  "effect": "chlorine gas bleaches colours and kills germs",
+  "effectCard": "chlorine-oxygen",
+  "parts": [
+   "photovoltaic-cells",
+   "valve"
+  ],
+  "how": "A small box runs electricity from a solar panel through salty water, making chlorine on the spot. A measured dose goes into a village's drinking water, where it kills cholera and typhoid germs, with no need to ship and store dangerous chlorine gas.",
+  "real": "On-site electrochlorinators, 1970s; solar village units, 2010s",
+  "plausibility": 5,
+  "why": "Scheele's choking gas, made safely where it saves lives."
+ }
+]

@@ -1,0 +1,140 @@
+[
+ {
+  "id": "shock-cracked-olivine",
+  "verdict": "studied",
+  "evidence": "High-voltage electrofragmentation/pre-weakening of dunite has been lab-tested for ore comminution (Metals 2022) and pre-weakening cuts grinding energy ~30% in ores, but no work applies it to olivine for enhanced weathering.",
+  "url": "https://mdpi.com/2075-4701/12/3/494"
+ },
+ {
+  "id": "shock-tube-fertilizer",
+  "verdict": "studied",
+  "evidence": "1950s patent US2832665 proposes shock-tube heating plus rapid expansion quench for fixing atmospheric nitrogen as NO, and shock-tube N2+O2 kinetics are studied, but no fertilizer device was found.",
+  "url": "https://patents.google.com/patent/US2832665"
+ },
+ {
+  "id": "sun-wetted-air-scrubber",
+  "verdict": "none",
+  "evidence": "Searched photocatalytic superhydrophilic glass as a falling-film DAC contactor; found only separate superhydrophilic-glass patents and structured-packing DAC contactors.",
+  "url": null
+ },
+ {
+  "id": "self-spreading-frost-blanket",
+  "verdict": "none",
+  "evidence": "Searched SMA/thermally actuated frost covers; found only thermally actuated venting plant covers and spring-deployed seedling covers, nothing that self-deploys a frost cover by SMA.",
+  "url": null
+ },
+ {
+  "id": "shape-memory-stomach-coil",
+  "verdict": "studied",
+  "evidence": "Swallowable self-expanding gastric devices exist but use balloons or hydrogels (Elipse, Plenity, US8287562); intragastric implants with Nitinol collapsible frames are only patented, not swallowable.",
+  "url": "https://uspto.report/patent/app/20120095494"
+ },
+ {
+  "id": "sun-timed-drip-valve",
+  "verdict": "studied",
+  "evidence": "Patents describe temperature-actuated drip valves (US4638828) and a drip outlet with a heat-sensitive spring compensator (RU2282346), plus SMA irrigation/sprinkler valves, but no working sun-heated SMA emitter.",
+  "url": "https://patents.google.com/patent/US4638828"
+ },
+ {
+  "id": "plastic-cloud-digester",
+  "verdict": "built",
+  "evidence": "Lab work has made PET nanoparticles by dissolving and anti-solvent precipitation and degraded them enzymatically, and a 2025 Faraday Discussions paper tests dissolution-precipitation as pretreatment for enzymatic PET depolymerization.",
+  "url": "https://pubs.rsc.org/en/content/articlepdf/2025/fd/d5fd00061k"
+ },
+ {
+  "id": "quartz-trap-archive",
+  "verdict": "none",
+  "evidence": "Electron-trapping optical memory was built in doped alkaline-earth sulfide phosphors (rewritable, UV/visible-written), and quartz TL under X-rays is studied, but nothing on X-ray-written quartz trap archival storage.",
+  "url": null
+ },
+ {
+  "id": "electret-fog-net",
+  "verdict": "studied",
+  "evidence": "Powered electrostatic fog harvesting is well studied (ion emitters charge the droplets, 50-90% capture in lab tests), but no passive, permanently charged electret net was found.",
+  "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11865594/"
+ },
+ {
+  "id": "electret-airlock-dust-trap",
+  "verdict": "studied",
+  "evidence": "Patents describe airlock dust-removal systems that neutralize suit dust and trap it in a filter under the astronaut's platform, and NASA tested airlock filtration, but no electret-curtain capture was found.",
+  "url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/11866203"
+ },
+ {
+  "id": "static-bed-net",
+  "verdict": "studied",
+  "evidence": "Electrostatic nets exist but only to hold insecticide/fungal powder (In2Care); a Gates grant proposes a sticky electrically charged net to trap mosquitoes for surveillance; no insecticide-free electret bed net found.",
+  "url": "https://gcgh.grandchallenges.org/grant/mosquito-mist-nets-surveillance-disease-vectors"
+ },
+ {
+  "id": "air-scrubbing-ceiling-fan",
+  "verdict": "built",
+  "evidence": "Multiple patents (e.g. US4753573) and a retail product sell electrostatic filter strips stuck to ceiling-fan blades to capture airborne particles, though without measured performance data.",
+  "url": "https://patents.google.com/patent/US4753573"
+ },
+ {
+  "id": "curve-hugging-nasal-spray",
+  "verdict": "studied",
+  "evidence": "Olfactory-targeted nasal devices exist (Nemera Guided Stream, circumferential-velocity spray patent) and simulations show liquid-film translocation along the wall to the olfactory region, but no Coanda-jet nozzle found.",
+  "url": "https://mdpi.com/1999-4923/13/6/903"
+ },
+ {
+  "id": "auxetic-suture",
+  "verdict": "none",
+  "evidence": "Searched auxetic/negative-Poisson's-ratio braided sutures; found only conventional cut-through studies and auxetic tendon tissue/scaffold work, no auxetic suture.",
+  "url": null
+ },
+ {
+  "id": "shunt-flow-monitor",
+  "verdict": "built",
+  "evidence": "A published flow sensor for hydrocephalus shunts uses a flexible flap carrying a permanent magnet that deflects with CSF flow, read through the skin by a commercial magnetic field sensor.",
+  "url": "https://par.nsf.gov/servlets/purl/10191759"
+ },
+ {
+  "id": "self-counting-knee",
+  "verdict": "studied",
+  "evidence": "A patent describes a joint-implant cycle counter with a magnet in one component and a Hall switch in the other counting flexion steps (US7347874); Wiegand wires are marketed for implants, but no Wiegand knee counter exists.",
+  "url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7347874"
+ },
+ {
+  "id": "battery-free-bearing-watch",
+  "verdict": "studied",
+  "evidence": "Patent US12296867 describes a battery-free on-wheel bearing thermal sensor powered by a magnetic power unit from wheel rotation; Wiegand sensors are used in rail tachometers, but no Wiegand bearing monitor found.",
+  "url": "https://patents.google.com/patent/US12296867"
+ },
+ {
+  "id": "colour-code-plastic",
+  "verdict": "built",
+  "evidence": "Axion Consulting for WRAP demonstrated diffraction gratings stamped in moulds or onto PP packaging that a laser/camera reads to identify food-contact plastic for sorting, though not deployed commercially.",
+  "url": "https://www.dairyreporter.com/Article/2013/10/21/Axion-Consulting-PP-sorting-systems-for-recycling-packaging/"
+ },
+ {
+  "id": "blinking-contact-lens",
+  "verdict": "studied",
+  "evidence": "An electrochromic contact lens covering the pupil is patented (US10678068) and intermittent occlusion is built as Amblyz liquid-crystal glasses, but no electrochromic contact lens for amblyopia was found.",
+  "url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/10678068"
+ },
+ {
+  "id": "magnetic-molten-salt-pump",
+  "verdict": "studied",
+  "evidence": "Conference papers propose and FE-model DC conduction and induction electromagnetic pumps for molten salts in solar plants, and an MHD molten-salt pump is patented, but no tested pump in nitrate CSP loops found.",
+  "url": "https://ipiq.io/patents/1668774"
+ },
+ {
+  "id": "tremor-cooling-cuff",
+  "verdict": "built",
+  "evidence": "A UC San Diego team built a forearm-worn Peltier cooling device for essential tremor with clinician-set zones (prototype, no patient data); Mayo Clinic tested forearm cooling with cold packs.",
+  "url": "https://sites.google.com/eng.ucsd.edu/156b-2020-winter-team06/final-design"
+ },
+ {
+  "id": "sun-cleaned-lidar-window",
+  "verdict": "studied",
+  "evidence": "A patent application covers hydrophilic coatings for automotive lidar covers to form a uniform water film, and Pao et al. 2024 lab-tested hydrophilic lidar covers in rain, but no photocatalytic/sun-activated version found.",
+  "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11124791/"
+ },
+ {
+  "id": "heat-flipping-roof-tiles",
+  "verdict": "built",
+  "evidence": "DGIST (2025) built and tested a power-free device whose SMA springs flip wings between a black solar-absorbing face and a radiative-cooling face to heat or cool buildings by temperature.",
+  "url": "https://eepower.com/tech-insights/3d-power-free-device-heats-and-cools-buildings-with-sunlight/"
+ }
+]

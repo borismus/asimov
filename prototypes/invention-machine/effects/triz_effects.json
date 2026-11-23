@@ -1,0 +1,2879 @@
+[
+ {
+  "card": "torsion-balance",
+  "t": "Coulomb's Law",
+  "y": null,
+  "field": "",
+  "effect": "",
+  "description": "",
+  "usedIn": [],
+  "strength": "",
+  "can": [
+   "Detect / Field",
+   "Mix / Gas",
+   "Move / Divided Solid",
+   "Orient / Solid",
+   "Remove / Divided Solid",
+   "Rotate / Solid",
+   "Separate / Divided Solid",
+   "Separate / Gas",
+   "Separate / Liquid",
+   "Separate / Solid"
+  ],
+  "deckCard": "torsion-balance"
+ },
+ {
+  "card": "diffusion",
+  "t": "Effusion",
+  "y": null,
+  "field": "",
+  "effect": "",
+  "description": "",
+  "usedIn": [],
+  "strength": "",
+  "can": [
+   "Move / Gas",
+   "Separate / Gas"
+  ],
+  "deckCard": "diffusion"
+ },
+ {
+  "card": "mach-number",
+  "t": "Shock Wave",
+  "y": null,
+  "field": "",
+  "effect": "",
+  "description": "",
+  "usedIn": [],
+  "strength": "",
+  "can": [
+   "Break Down / Divided Solid",
+   "Break Down / Solid",
+   "Compress / Divided Solid",
+   "Compress / Gas",
+   "Destroy / Divided Solid",
+   "Destroy / Solid",
+   "Detect / Gas",
+   "Detect / Liquid",
+   "Detect / Solid",
+   "Heat / Divided Solid",
+   "Heat / Gas",
+   "Heat / Liquid"
+  ],
+  "deckCard": "mach-number"
+ },
+ {
+  "card": "critical-temperature",
+  "t": "Supercritical Fluid",
+  "y": null,
+  "field": "",
+  "effect": "",
+  "description": "",
+  "usedIn": [],
+  "strength": "",
+  "can": [
+   "Absorb / Divided Solid",
+   "Absorb / Gas",
+   "Absorb / Liquid",
+   "Absorb / Solid",
+   "Accumulate / Gas",
+   "Accumulate / Liquid",
+   "Accumulate / Solid",
+   "Break Down / Divided Solid",
+   "Break Down / Solid",
+   "Change Phase / Gas",
+   "Change Phase / Liquid",
+   "Clean / Divided Solid"
+  ],
+  "deckCard": "critical-temperature"
+ },
+ {
+  "card": "plant-nourishment",
+  "t": "Transpiration",
+  "y": null,
+  "field": "",
+  "effect": "",
+  "description": "",
+  "usedIn": [],
+  "strength": "",
+  "can": [
+   "Cool / Solid",
+   "Dry / Solid",
+   "Move / Liquid"
+  ],
+  "deckCard": "plant-nourishment"
+ },
+ {
+  "card": "mechanical-equivalent-of-heat",
+  "t": "Turbulence Heating",
+  "y": null,
+  "field": "",
+  "effect": "",
+  "description": "",
+  "usedIn": [],
+  "strength": "",
+  "can": [
+   "Heat / Gas",
+   "Heat / Liquid"
+  ],
+  "deckCard": "mechanical-equivalent-of-heat"
+ },
+ {
+  "card": "mechanical-equivalent-of-heat",
+  "t": "Viscous Heating",
+  "y": null,
+  "field": "",
+  "effect": "",
+  "description": "",
+  "usedIn": [],
+  "strength": "",
+  "can": [
+   "Accumulate / Field",
+   "Change Phase / Liquid",
+   "Detect / Gas",
+   "Detect / Liquid",
+   "Evaporate / Liquid",
+   "Heat / Divided Solid",
+   "Heat / Field",
+   "Heat / Gas",
+   "Heat / Liquid",
+   "Heat / Solid",
+   "Melt / Divided Solid",
+   "Melt / Solid"
+  ],
+  "deckCard": "mechanical-equivalent-of-heat"
+ },
+ {
+  "card": "lagrangian-point",
+  "t": "Lagrangian points",
+  "y": 1772,
+  "field": "Science: Astronomy",
+  "effect": "a small body stays put relative to two big orbiting bodies at five balance points",
+  "description": "Around any two orbiting bodies, like the Sun and Earth, there are five spots where a small object's pulls balance so it keeps pace with them. Joseph-Louis Lagrange found them in 1772 in Berlin (Euler had found three). Space telescopes park there for a steady view with little fuel.",
+  "usedIn": [
+   "James Webb Space Telescope at Sun-Earth L2",
+   "SOHO solar observatory at L1",
+   "Gaia star-mapping probe at L2"
+  ],
+  "strength": "Sun-Earth L1 and L2 lie 1.5 million km from Earth; a craft there needs only a few metres per second of thrust a year to stay.",
+  "can": [
+   "Hold / Divided Solid",
+   "Hold / Solid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "bioluminescence",
+  "t": "Bioluminescence",
+  "y": 1885,
+  "field": "Science: Biology",
+  "effect": "a living thing makes light by a chemical reaction in its body",
+  "description": "Fireflies, glowing mushrooms and deep-sea fish make their own light by a chemical reaction in their bodies, with almost no heat. Raphaël Dubois showed in 1885 that it takes two substances, which he named luciferin and luciferase. Firefly chemistry now lights up food-safety tests and shows biologists which genes are switched on.",
+  "usedIn": [
+   "ATP hygiene swabs in food factories and hospitals",
+   "Luciferase reporter genes in biology labs",
+   "Glowing-bacteria tests for water toxicity (Microtox)"
+  ],
+  "strength": "Dim: a jar of fireflies barely lets you read, but almost all the reaction's energy comes out as light rather than heat.",
+  "can": [
+   "Detect / Divided Solid",
+   "Detect / Gas",
+   "Detect / Liquid",
+   "Detect / Solid",
+   "Produce / Field"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "lotus-effect",
+  "t": "Lotus effect",
+  "y": 1997,
+  "field": "Science: Biology",
+  "effect": "a surface of tiny waxy bumps makes water bead up and roll off, carrying dirt",
+  "description": "Water on a lotus leaf beads into near-perfect balls that roll off at the slightest tilt, picking up dirt as they go, because the leaf is covered in tiny waxy bumps that let drops touch almost nothing. Botanist Wilhelm Barthlott worked out how it keeps the leaf clean using electron microscopes, publishing with Christoph Neinhuis in 1997.",
+  "usedIn": [
+   "Lotusan self-cleaning facade paint",
+   "Water-repellent self-cleaning fabrics",
+   "Superhydrophobic sprays such as NeverWet"
+  ],
+  "strength": "Drops sit with a contact angle above 150° and roll off when the leaf tilts by only a few degrees.",
+  "can": [
+   "Accumulate / Solid",
+   "Clean / Solid",
+   "Dry / Solid",
+   "Move / Divided Solid",
+   "Move / Liquid",
+   "Move / Solid",
+   "Protect / Solid",
+   "Remove / Divided Solid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "adsorption",
+  "t": "Adsorption",
+  "y": 1773,
+  "field": "Science: Chemistry",
+  "effect": "molecules from a gas or liquid stick to the surface of a solid",
+  "description": "Gas or dissolved molecules stick to the surface of a solid in a thin film, so a porous solid like charcoal soaks up huge amounts. Carl Scheele noticed charcoal taking up gases in 1773, and Felice Fontana saw the same in 1777. It's how gas masks, water-filter jugs and the silica-gel packets in shoe boxes work.",
+  "usedIn": [
+   "Activated-charcoal gas masks (Zelinsky, 1915)",
+   "Water-filter jugs",
+   "Silica-gel drying packets",
+   "Oxygen concentrators using zeolite beds"
+  ],
+  "strength": "A single gram of activated charcoal has the inner surface area of a few tennis courts, enough to soak up a large share of its own weight in vapour.",
+  "can": [
+   "Accumulate / Divided Solid",
+   "Bend / Gas",
+   "Break Down / Gas",
+   "Break Down / Liquid",
+   "Break Down / Solid",
+   "Clean / Divided Solid",
+   "Clean / Gas",
+   "Clean / Liquid",
+   "Clean / Solid",
+   "Constrain / Divided Solid",
+   "Constrain / Field",
+   "Cool / Divided Solid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "flocculation",
+  "t": "Coagulation",
+  "y": 1882,
+  "field": "Science: Chemistry",
+  "effect": "a pinch of salt makes fine particles clump together and sink",
+  "description": "A pinch of a salt like alum makes the fine particles clouding muddy water clump together and sink, leaving it clear. Hans Schulze showed in 1882 that the salt's electric charge decides how little is needed. Every waterworks does this.",
+  "usedIn": [
+   "Waterworks and sewage plants",
+   "Clearing beer and wine",
+   "Papermaking"
+  ],
+  "strength": "A few milligrams of alum per litre clears muddy water in under an hour.",
+  "can": [
+   "Accumulate / Divided Solid",
+   "Accumulate / Solid",
+   "Clean / Liquid",
+   "Concentrate / Divided Solid",
+   "Concentrate / Solid",
+   "Constrain / Divided Solid",
+   "Constrain / Solid",
+   "Deposit / Solid",
+   "Detect / Solid",
+   "Dilute / Liquid",
+   "Expand / Solid",
+   "Hold / Divided Solid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "diffusiophoresis",
+  "t": "Diffusiophoresis",
+  "y": 1947,
+  "field": "Science: Chemistry",
+  "effect": "particles in a liquid drift along a difference in dissolved-salt concentration",
+  "description": "Tiny particles in a liquid drift on their own toward or away from places where dissolved salt or sugar is more concentrated, with no current or stirring. Boris Derjaguin in Moscow described it in 1947 while studying how latex particles coat surfaces. It pulls dirt out of pores too small for any rinse to reach and sorts particles in lab-on-a-chip devices.",
+  "usedIn": [
+   "Latex coating in dip-moulded gloves and balloons",
+   "Pulling dirt out of fabric and porous surfaces with salt gradients (lab-tested)",
+   "Particle sorting in microfluidic chips"
+  ],
+  "strength": "Slow, a few micrometres per second, but enough to empty a pore a hair's width deep in under a minute.",
+  "can": [
+   "Move / Divided Solid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "electro-osmosis",
+  "t": "Electro-osmosis",
+  "y": 1807,
+  "field": "Science: Chemistry",
+  "effect": "a voltage across a wet porous material or narrow channel makes the liquid flow",
+  "description": "Put a voltage across wet clay or a hair-thin glass tube of water and the water itself starts to flow toward one electrode, with no pump and no moving parts. Ferdinand Reuss saw water climb through sand in Moscow in 1807, in the same experiments where he found clay particles moving the other way. Engineers use it to drain soggy soil, and lab-on-a-chip devices use it to pump tiny drops.",
+  "usedIn": [
+   "Draining clay soil for excavations and embankments (Casagrande, 1930s)",
+   "Pumps in lab-on-a-chip and microfluidic devices",
+   "Liquid flow in capillary electrophoresis DNA sequencers"
+  ],
+  "strength": "Slow but steady: around a millimetre per second through a hair-thin channel at a few hundred volts per centimetre.",
+  "can": [
+   "Accumulate / Gas",
+   "Accumulate / Liquid",
+   "Clean / Gas",
+   "Clean / Liquid",
+   "Compress / Liquid",
+   "Extract / Liquid",
+   "Move / Gas",
+   "Move / Liquid",
+   "Remove / Liquid",
+   "Separate / Gas",
+   "Separate / Liquid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "electrochromism",
+  "t": "Electrochromism",
+  "y": 1969,
+  "field": "Science: Chemistry",
+  "effect": "a small voltage makes a material change colour or darken, and it reverses",
+  "description": "A thin film on glass turns from clear to deep blue when a small voltage pushes charged atoms into it, and clears again when the voltage reverses. Satyen Deb found it in tungsten oxide films at American Cyanamid in 1969. It makes windows that dim at the press of a button and car mirrors that darken against headlight glare.",
+  "usedIn": [
+   "Dimmable cabin windows on the Boeing 787",
+   "Auto-dimming rear-view mirrors (Gentex)",
+   "Smart-glass building windows"
+  ],
+  "strength": "A couple of volts darkens a window over a few minutes, cutting the light let through from about 60% to 1%.",
+  "can": [
+   "Absorb / Field",
+   "Constrain / Field",
+   "Dilute / Field",
+   "Remove / Field"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "fluidization",
+  "t": "Fluidization",
+  "y": 1922,
+  "field": "Science: Chemistry",
+  "effect": "gas blown up through a granular bed makes it flow like a liquid",
+  "description": "Blow air up through a bed of sand or powder and at a certain speed the grains lift apart and the whole bed starts behaving like a boiling liquid: you can stir it, pour it, and things float or sink in it. Fritz Winkler used it in Germany in 1922 to turn powdered coal into gas. Fluidized beds now crack crude oil into gasoline and burn coal and waste cleanly.",
+  "usedIn": [
+   "Fluid catalytic cracking in oil refineries (1942)",
+   "Fluidized-bed boilers and incinerators",
+   "Winkler coal gasifier",
+   "Fluidized-bed dryers for food and medicines"
+  ],
+  "strength": "A gentle updraft of a few centimetres per second is enough; a ball heavier than the sand sinks and a lighter one bobs up.",
+  "can": [
+   "Accumulate / Solid",
+   "Bend / Solid",
+   "Break Down / Solid",
+   "Change Phase / Divided Solid",
+   "Change Phase / Solid",
+   "Clean / Divided Solid",
+   "Compress / Divided Solid",
+   "Concentrate / Solid",
+   "Cool / Solid",
+   "Deposit / Solid",
+   "Dry / Solid",
+   "Expand / Divided Solid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "hygroscopy",
+  "t": "Hygroscopy",
+  "y": null,
+  "field": "Science: Chemistry",
+  "effect": "some substances pull water out of the air",
+  "description": "Some substances pull water vapour out of the air and hold on to it; certain salts take up so much that they dissolve into a puddle of their own brine. It's why salt cakes in a damp shaker, and why a sachet of silica gel keeps a shoebox dry.",
+  "usedIn": [
+   "Silica gel packets",
+   "Desiccant dehumidifiers and dryers",
+   "Calcium chloride spread on dirt roads to keep dust down and on icy roads",
+   "Honey and jam stay unspoilt partly because sugar pulls water out of microbes"
+  ],
+  "strength": "Calcium chloride can soak up more than its own weight in water from humid air.",
+  "can": [
+   "Dry / Gas",
+   "Produce / Liquid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "liquid-crystals",
+  "t": "Liquid crystals",
+  "y": 1888,
+  "field": "Science: Chemistry",
+  "effect": "a liquid whose lined-up molecules can be turned by a voltage to block or pass light",
+  "description": "Some substances flow like a liquid yet keep their rod-shaped molecules lined up like a crystal, so a small voltage can swing them round and change how light passes. Friedrich Reinitzer noticed in Prague in 1888 that a compound from carrots melted twice, first to a cloudy liquid, then to a clear one.",
+  "usedIn": [
+   "Liquid-crystal displays in phones, TVs and watches",
+   "Liquid-crystal thermometer strips and mood rings",
+   "Switchable smart-glass windows"
+  ],
+  "strength": "A few volts across a layer a few thousandths of a millimetre thick turns a pixel from clear to dark in milliseconds.",
+  "can": [
+   "Absorb / Field",
+   "Bend / Field",
+   "Constrain / Field",
+   "Detect / Field",
+   "Orient / Field",
+   "Rotate / Field"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "negative-thermal-expansion",
+  "t": "Negative thermal expansion",
+  "y": 1996,
+  "field": "Science: Chemistry",
+  "effect": "a material that shrinks when it's heated",
+  "description": "Some materials shrink when heated: zirconium tungstate contracts steadily from near absolute zero to 700 °C. Mixed into other materials it cancels out their swelling, for mirrors and fillings that keep their shape.",
+  "usedIn": [
+   "Zero-expansion glass-ceramic cooktops and telescope mirrors",
+   "Mounts for optical-fibre sensors that must not drift"
+  ],
+  "strength": "Zirconium tungstate shrinks by about a third as much as aluminium grows, enough to cancel out the swelling of whatever it's mixed into.",
+  "can": [
+   "Compress / Divided Solid",
+   "Compress / Solid",
+   "Expand / Divided Solid",
+   "Expand / Solid",
+   "Move / Liquid",
+   "Move / Solid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "ostwald-ripening",
+  "t": "Ostwald ripening",
+  "y": 1896,
+  "field": "Science: Chemistry",
+  "effect": "small crystals or droplets shrink and feed their material to larger neighbours",
+  "description": "In a mix of small and large crystals or droplets, the small ones slowly dissolve and their material builds onto the big ones, so the mix gets coarser over time. Wilhelm Ostwald described it in 1896. It is why ice cream turns gritty after weeks in the freezer, and chemists use it on purpose to grow crystals big enough to filter or to make fast photographic film.",
+  "usedIn": [
+   "'Digesting' precipitates so they can be filtered in chemical analysis",
+   "Physical ripening of silver halide grains in photographic emulsions",
+   "Ice-cream stabilisers designed to slow it",
+   "Controlling particle size in nanoparticle and catalyst making"
+  ],
+  "strength": "Slow but steady: ice crystals in stored ice cream grow from about 0.03 mm to over 0.05 mm in a few weeks, big enough to feel on the tongue.",
+  "can": [
+   "Absorb / Divided Solid",
+   "Absorb / Liquid",
+   "Accumulate / Divided Solid",
+   "Accumulate / Liquid",
+   "Accumulate / Solid",
+   "Clean / Liquid",
+   "Concentrate / Divided Solid",
+   "Concentrate / Liquid",
+   "Concentrate / Solid",
+   "Deposit / Divided Solid",
+   "Deposit / Liquid",
+   "Dilute / Liquid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "ouzo-effect",
+  "t": "Ouzo effect",
+  "y": 2003,
+  "field": "Science: Chemistry",
+  "effect": "adding water to an oil dissolved in alcohol makes the oil burst into a stable cloud of tiny droplets",
+  "description": "Pour water into clear ouzo or absinthe and it instantly turns milky: the anise oil, dissolved in the alcohol, comes out as countless tiny droplets that stay suspended without any shaking. Stephen Vitale and Joseph Katz studied and named it in 2003. The same trick makes fine, stable emulsions with no mixing energy, and is used to make nanoparticles and drug capsules.",
+  "usedIn": [
+   "Nanoprecipitation of polymer nanocapsules for drug delivery",
+   "The clouding ('louche') of ouzo, pastis and absinthe",
+   "Solvent-shifting to make pigment and nanoparticle dispersions"
+  ],
+  "strength": "Droplets are about a thousandth of a millimetre across and can stay suspended for days without stirring.",
+  "can": [
+   "Hold / Liquid",
+   "Mix / Liquid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "photochromism",
+  "t": "Photochromism",
+  "y": 1867,
+  "field": "Science: Chemistry",
+  "effect": "light switches a material to a different colour, and it switches back in the dark",
+  "description": "Some substances change colour in bright light and change back in the dark, over and over. Carl Fritzsche reported in 1867 that an orange solution of tetracene bleached in daylight and regained its colour in the dark. It is what makes eyeglass lenses that darken outdoors and clear indoors.",
+  "usedIn": [
+   "Self-darkening eyeglass lenses (Corning photochromic glass, 1964; Transitions lenses)",
+   "UV-sensing colour-changing beads and inks",
+   "Rewritable optical data storage research"
+  ],
+  "strength": "Eyeglass lenses go from clear to sunglass-dark, passing only about 15-20% of light, within a minute in sunshine, and take a few minutes to clear.",
+  "can": [
+   "Absorb / Field",
+   "Detect / Field"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "photodissociation",
+  "t": "Photodissociation",
+  "y": 1717,
+  "field": "Science: Chemistry",
+  "effect": "light with enough energy breaks molecules into pieces",
+  "description": "Light with enough energy can snap molecules apart, which is why sunlight fades dyes and turns some silver salts black. Johann Heinrich Schulze found in 1717 that silver salts darkened where light hit them, not where heat did, the effect photography later built on. High in the sky, ultraviolet light splitting oxygen molecules is what makes the ozone layer.",
+  "usedIn": [
+   "Silver halide photographic film",
+   "UV lamps that make ozone for water treatment",
+   "Photoresists in chip lithography",
+   "Light-cured dental fillings and gel nails (photoinitiators)"
+  ],
+  "strength": "Mostly needs ultraviolet or blue light; each photon breaks at most one bond, so it is slow in daylight but fast under a strong UV lamp.",
+  "can": [
+   "Absorb / Field",
+   "Break Down / Divided Solid",
+   "Break Down / Gas",
+   "Break Down / Liquid",
+   "Break Down / Solid",
+   "Clean / Divided Solid",
+   "Clean / Gas",
+   "Clean / Liquid",
+   "Clean / Solid",
+   "Destroy / Divided Solid",
+   "Destroy / Gas",
+   "Destroy / Liquid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "superhydrophilicity",
+  "t": "Superhydrophilicity",
+  "y": 1997,
+  "field": "Science: Chemistry",
+  "effect": "light makes a coated surface so water-loving that water spreads flat",
+  "description": "Glass coated with titanium dioxide and left in sunlight makes water spread into a thin, clear sheet instead of beading into drops. A Tokyo team reported it in 1997, and it gives self-cleaning windows that rinse off in the rain and car mirrors that never fog.",
+  "usedIn": [
+   "Pilkington Activ self-cleaning glass",
+   "TOTO Hydrotect self-cleaning tiles",
+   "Anti-fog car side mirrors"
+  ],
+  "strength": "After an hour or so of sunlight, water spreads to an almost perfectly flat film, so rain sheets dirt off a window instead of leaving spots.",
+  "can": [
+   "Break Down / Divided Solid",
+   "Break Down / Solid",
+   "Clean / Divided Solid",
+   "Clean / Solid",
+   "Purify / Divided Solid",
+   "Purify / Solid",
+   "Remove / Divided Solid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "supersaturation",
+  "t": "Supersaturation",
+  "y": 1794,
+  "field": "Science: Chemistry",
+  "effect": "a liquid holds more dissolved than it should until a seed sets it off",
+  "description": "A hot liquid can dissolve extra salt or sugar and keep it dissolved as it cools, until a speck or a jolt makes it all crystallise at once. Lowitz studied these overloaded solutions and seeding them with a crystal in the 1790s; the same trick makes clickable hand warmers and, in air, the cloud trails of the cloud chamber.",
+  "usedIn": [
+   "Reusable sodium-acetate hand warmers",
+   "Rock candy",
+   "Cloud chambers for seeing particle tracks",
+   "Cloud seeding"
+  ],
+  "strength": "Clicking the metal disc in a hand warmer crystallises the whole pack in seconds and warms it to about 54 degrees.",
+  "can": [
+   "Absorb / Divided Solid",
+   "Accumulate / Divided Solid",
+   "Accumulate / Gas",
+   "Accumulate / Solid",
+   "Change Phase / Divided Solid",
+   "Change Phase / Gas",
+   "Change Phase / Solid",
+   "Concentrate / Divided Solid",
+   "Concentrate / Gas",
+   "Concentrate / Liquid",
+   "Concentrate / Solid",
+   "Hold / Divided Solid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "thixotropy",
+  "t": "Thixotropy",
+  "y": 1923,
+  "field": "Science: Chemistry",
+  "effect": "a gel thins when stirred and thickens again at rest",
+  "description": "Some thick gels turn runny when shaken or stirred and slowly set again when left alone. Schalek and Szegvári found iron-oxide gels doing this in 1923; it's why non-drip paint brushes on smoothly yet stays put on a wall, and why drilling mud holds rock chips up when the pumps stop.",
+  "usedIn": [
+   "Non-drip paint",
+   "Drilling mud for oil wells",
+   "Ketchup and toothpaste",
+   "Gel adhesives and grouts"
+  ],
+  "strength": "Non-drip paint thick enough to stand on a vertical wall thins under a brush in a second and stiffens again within a minute.",
+  "can": [
+   "Change Phase / Divided Solid",
+   "Constrain / Divided Solid",
+   "Constrain / Liquid",
+   "Deposit / Divided Solid",
+   "Hold / Divided Solid",
+   "Hold / Liquid",
+   "Move / Divided Solid",
+   "Move / Liquid",
+   "Separate / Divided Solid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "shape-memory-alloy",
+  "t": "Shape-memory alloy",
+  "y": 1962,
+  "field": "Science: Materials",
+  "effect": "a bent metal returns to its remembered shape when heated",
+  "description": "A bent wire of nickel-titanium snaps back to its original shape when warmed, as if it remembered it. Buehler's team at the US Naval Ordnance Laboratory found it in their alloy Nitinol, and it now opens heart stents inside arteries and shuts off scalding shower water on its own.",
+  "usedIn": [
+   "Self-expanding heart and artery stents",
+   "Anti-scald shower and tap valves",
+   "Crush-proof eyeglass frames",
+   "Orthodontic arch wires"
+  ],
+  "strength": "A nitinol wire as thin as a pencil lead can lift a few kilograms as it shrinks back by about 4 percent when warmed.",
+  "can": [
+   "Bend / Solid",
+   "Expand / Divided Solid",
+   "Expand / Gas",
+   "Expand / Liquid",
+   "Expand / Solid",
+   "Freeze / Solid",
+   "Hold / Solid",
+   "Join / Divided Solid",
+   "Join / Solid",
+   "Move / Solid",
+   "Orient / Divided Solid",
+   "Orient / Solid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "superplasticity",
+  "t": "Superplasticity",
+  "y": 1934,
+  "field": "Science: Materials",
+  "effect": "a hot metal stretches to many times its length without breaking",
+  "description": "Some fine-grained alloys, when hot, can be stretched like toffee to many times their length without snapping. Pearson pulled a tin-bismuth strip to nearly 20 times its length in 1934, and factories now blow hot sheets of such alloys into moulds like glass to make aircraft and car body panels.",
+  "usedIn": [
+   "Superplastic-formed aircraft panels",
+   "Car body panels for low-volume sports cars",
+   "Hollow titanium fan blades in jet engines"
+  ],
+  "strength": "Pearson's strip stretched almost twenty-fold; ordinary metals snap after stretching less than half their length.",
+  "can": [
+   "Bend / Solid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "viscoelasticity",
+  "t": "Viscoelasticity",
+  "y": 1835,
+  "field": "Science: Materials",
+  "effect": "a material springs back slowly and flows a little under load",
+  "description": "Some materials act partly like a spring and partly like thick honey: they spring back slowly, sag under a steady load, and soak up shocks. Weber noticed silk threads in his instruments slowly creeping under load in 1835; the effect makes memory foam hold your shape and foam earplugs expand slowly to fill the ear.",
+  "usedIn": [
+   "Memory foam mattresses",
+   "Foam earplugs",
+   "Silly Putty",
+   "Vibration-damping pads and layers"
+  ],
+  "strength": "Memory foam takes a few seconds to recover its shape; Silly Putty bounces like a ball but flattens into a puddle over an hour.",
+  "can": [
+   "Absorb / Field",
+   "Bend / Solid",
+   "Change Phase / Divided Solid",
+   "Change Phase / Solid",
+   "Compress / Divided Solid",
+   "Compress / Solid",
+   "Expand / Divided Solid",
+   "Expand / Solid",
+   "Melt / Divided Solid",
+   "Melt / Solid",
+   "Rotate / Solid",
+   "Vibrate / Solid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "grain-boundary-strengthening",
+  "t": "Grain-boundary strengthening",
+  "y": 1951,
+  "field": "Science: Metallurgy",
+  "effect": "smaller crystal grains make a metal stronger",
+  "description": "Metal made of smaller crystal grains is stronger, because the boundaries between grains block the slipping that lets metal bend. Eric Hall (1951) and Norman Petch (1953) worked out the rule; steelmakers now roll and cool steel carefully to keep the grains tiny.",
+  "usedIn": [
+   "High-strength low-alloy steel in car bodies",
+   "Controlled-rolled pipeline steel",
+   "Fine-grained aluminium alloys for aircraft"
+  ],
+  "strength": "Shrinking the grains from about 0.1 mm to 0.01 mm roughly doubles the strength of mild steel, without adding any alloy.",
+  "can": [
+   "Protect / Solid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "acoustic-emission",
+  "t": "Acoustic emission",
+  "y": 1950,
+  "field": "Science: Physics",
+  "effect": "a material under strain clicks with tiny bursts of sound as cracks grow",
+  "description": "A metal or rock under growing strain gives off tiny bursts of sound each time a crack jumps forward or a grain slips, like the 'cry' a bar of tin makes when bent. Joseph Kaiser studied it systematically in 1950, and now sensors stuck to tanks, bridges and aircraft listen for cracks before they become failures.",
+  "usedIn": [
+   "Crack monitoring of pressure vessels and storage tanks",
+   "Bridge and aircraft-wing structural health monitoring",
+   "Pipeline leak detection"
+  ],
+  "strength": "The clicks are far too faint and high-pitched to hear, but a sensor glued to a steel tank can pick up a crack growing a fraction of a millimetre several metres away.",
+  "can": [
+   "Detect / Field",
+   "Expand / Solid",
+   "Produce / Field"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "acoustic-radiation-pressure",
+  "t": "Acoustic radiation pressure",
+  "y": 1902,
+  "field": "Science: Physics",
+  "effect": "a strong sound wave pushes steadily on objects and can float them in mid-air",
+  "description": "A strong sound wave pushes steadily on whatever it hits, and in a standing wave small beads or droplets get trapped and float in mid-air at the quiet spots. Lord Rayleigh worked out the push in 1902; today it levitates samples in labs, sorts cells on chips and lets you feel buttons in mid-air.",
+  "usedIn": [
+   "Acoustic levitators for containerless lab chemistry",
+   "Acoustic tweezers that sort blood cells on a chip",
+   "Mid-air ultrasonic haptics (Ultraleap)",
+   "Shear-wave elastography in ultrasound scanners"
+  ],
+  "strength": "Weak: ultrasound can float droplets and foam beads a few millimetres across, but the force is only a few thousandths of a newton.",
+  "can": [
+   "Constrain / Divided Solid",
+   "Constrain / Solid",
+   "Hold / Divided Solid",
+   "Hold / Solid",
+   "Move / Divided Solid",
+   "Move / Liquid",
+   "Move / Solid",
+   "Vibrate / Divided Solid",
+   "Vibrate / Liquid",
+   "Vibrate / Solid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "acousto-optic-effect",
+  "t": "Acousto-optic effect",
+  "y": 1922,
+  "field": "Science: Physics",
+  "effect": "a sound wave in a crystal bends and shifts a light beam passing through",
+  "description": "A sound wave running through a clear crystal makes ripples of squeezed and stretched material that bend a light beam like a grating; change the sound's pitch and the beam swings to a new angle. Léon Brillouin predicted it in 1922, and it now switches and steers laser beams with no moving parts.",
+  "usedIn": [
+   "Acousto-optic modulators in laser printers and laser engravers",
+   "Q-switches that make pulsed lasers",
+   "Brillouin fibre sensors that measure strain along kilometres of pipeline"
+  ],
+  "strength": "An ultrasound wave in a crystal can redirect most of a laser beam in under a microsecond, millions of times faster than a moving mirror.",
+  "can": [
+   "Absorb / Field",
+   "Bend / Field",
+   "Compress / Field",
+   "Expand / Field",
+   "Orient / Field",
+   "Rotate / Field"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "adiabatic-heating-and-cooling",
+  "t": "Adiabatic heating and cooling",
+  "y": 1788,
+  "field": "Science: Physics",
+  "effect": "a gas heats up when quickly squeezed and cools when it quickly expands",
+  "description": "Squeeze air quickly and it gets hot; let it expand quickly and it gets cold, even with no heat going in or out. Erasmus Darwin described air chilling as it rushed out of an air gun in 1788. Squeezing ignites fuel in diesel engines, and expanding air cools airliner cabins and makes clouds.",
+  "usedIn": [
+   "Diesel engines",
+   "Fire pistons",
+   "Air-cycle cooling packs on airliners",
+   "Wilson's cloud chamber"
+  ],
+  "strength": "Squeezing air to a twentieth of its volume, as a diesel engine does, heats it above 500 °C, hot enough to light fuel with no spark.",
+  "can": [
+   "Condense / Gas",
+   "Condense / Liquid",
+   "Cool / Divided Solid",
+   "Cool / Gas",
+   "Cool / Liquid",
+   "Cool / Solid",
+   "Detect / Gas",
+   "Freeze / Gas",
+   "Freeze / Liquid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "auger-effect",
+  "t": "Auger effect",
+  "y": 1923,
+  "field": "Science: Physics",
+  "effect": "an atom that loses an inner electron throws out a second electron with a telltale energy",
+  "description": "When an atom loses an inner electron, it can fill the gap by flinging out a second electron with an energy that is a fingerprint of the element. Pierre Auger saw the tracks in a cloud chamber in 1923. Measuring these electrons tells which atoms sit on a surface, which is how chipmakers check wafers for contamination.",
+  "usedIn": [
+   "Auger electron spectroscopy for checking chip and metal surfaces",
+   "Surface analysis of catalysts and corrosion films"
+  ],
+  "strength": "The electrons only escape from the top few layers of atoms, so it reads a surface less than a hundred-thousandth of a hair's width deep; it needs a vacuum chamber and an electron beam.",
+  "can": [
+   "Detect / Gas",
+   "Detect / Solid",
+   "Produce / Field"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "auxetic-effect",
+  "t": "Auxetic effect",
+  "y": 1987,
+  "field": "Science: Physics",
+  "effect": "a material gets fatter when stretched and thinner when squeezed",
+  "description": "Stretch most things and they get thinner; an auxetic material gets fatter instead, and squeezing it makes it shrink in every direction. Roderic Lakes made the first auxetic foam in 1987 by crushing ordinary foam so its cells buckled inward. It makes padding that firms up where it's hit and stents that open evenly.",
+  "usedIn": [
+   "Impact padding in helmets and body armour",
+   "Shoe soles that widen as the foot pushes off (Nike Free RN, 2016)",
+   "Expanding medical stents"
+  ],
+  "strength": "Lakes's foam widened by about seven-tenths of how much it lengthened, where a rubber band narrows by about half.",
+  "can": [
+   "Absorb / Field",
+   "Bend / Field",
+   "Compress / Divided Solid",
+   "Compress / Gas",
+   "Compress / Liquid",
+   "Compress / Solid",
+   "Expand / Solid",
+   "Move / Solid",
+   "Protect / Solid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "avalanche-breakdown",
+  "t": "Avalanche breakdown",
+  "y": 1901,
+  "field": "Science: Physics",
+  "effect": "one fast electron knocks loose others in a cascade that suddenly lets current flow",
+  "description": "In a strong enough electric field, one free electron speeds up, smashes loose another, and those two free two more, until a flood of current pours through a gas or crystal that normally blocks it. John Townsend explained the cascade in gases around 1901. It makes Geiger counters click and lets light sensors catch single photons.",
+  "usedIn": [
+   "Geiger counters",
+   "Avalanche photodiodes in lidar and fibre-optic receivers",
+   "Surge-protection diodes"
+  ],
+  "strength": "One electron can multiply into millions in under a microsecond, enough to turn a single particle or photon into a pulse you can count.",
+  "can": [
+   "Change Phase / Liquid",
+   "Change Phase / Solid",
+   "Condense / Liquid",
+   "Condense / Solid",
+   "Destroy / Gas",
+   "Destroy / Liquid",
+   "Destroy / Solid",
+   "Evaporate / Liquid",
+   "Evaporate / Solid",
+   "Heat / Gas",
+   "Heat / Liquid",
+   "Heat / Solid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "barkhausen-effect",
+  "t": "Barkhausen effect",
+  "y": 1919,
+  "field": "Science: Physics",
+  "effect": "a magnetised piece of iron crackles as tiny regions inside it flip one by one",
+  "description": "Magnetise a piece of iron slowly and it doesn't change smoothly: tiny regions flip one after another, and a coil wound round it hears them as a crackle in a loudspeaker. Heinrich Barkhausen heard it in 1919. Factories now use the crackle to spot stress and grinding burns in gears and crankshafts.",
+  "usedIn": [
+   "Barkhausen-noise inspection of gears, camshafts and bearings",
+   "Measuring stress in steel rails and pipes"
+  ],
+  "strength": "The crackle is faint, heard only through a sensitive coil and amplifier, but it reads stress in the top tenth of a millimetre of steel.",
+  "can": [
+   "Detect / Field",
+   "Produce / Field"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "bingham-plastic",
+  "t": "Bingham plastic",
+  "y": 1916,
+  "field": "Science: Physics",
+  "effect": "a paste stays solid until pushed past a threshold, then flows",
+  "description": "Some pastes act like a solid until you push hard enough, then flow like a liquid: toothpaste sits in a stripe on the brush but squirts out of the tube. Eugene Bingham described the behaviour in 1916 while studying paints. It's why paint doesn't drip and why drilling mud holds rock chips up when the pump stops.",
+  "usedIn": [
+   "Toothpaste",
+   "Non-drip paint",
+   "Drilling mud that suspends rock cuttings",
+   "Pumped and 3D-printed concrete"
+  ],
+  "strength": "Toothpaste holds a stripe a centimetre tall without slumping, yet a gentle squeeze is enough to make it flow.",
+  "can": [
+   "Absorb / Divided Solid",
+   "Accumulate / Divided Solid",
+   "Accumulate / Liquid",
+   "Accumulate / Solid",
+   "Bend / Liquid",
+   "Bend / Solid",
+   "Change Phase / Divided Solid",
+   "Change Phase / Liquid",
+   "Change Phase / Solid",
+   "Constrain / Divided Solid",
+   "Constrain / Liquid",
+   "Constrain / Solid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "brazil-nut-effect",
+  "t": "Brazil nut effect",
+  "y": 1987,
+  "field": "Science: Physics",
+  "effect": "shaking a mix of grains brings the biggest pieces to the top",
+  "description": "Shake a jar of mixed nuts and the big Brazil nuts rise to the top, even though they're heavier. Anthony Rosato and colleagues named and simulated it in 1987: small pieces slip into the gaps under big ones, ratcheting them upward. It sorts gravel and grain, and it's why mixed powders unmix on a bumpy truck ride.",
+  "usedIn": [
+   "Vibrating screens that sort gravel and seed by size",
+   "Controlling unmixing of pharmaceutical powders"
+  ],
+  "strength": "A few minutes of shaking is enough to bring a large nut from the bottom of a jar to the top.",
+  "can": [
+   "Clean / Divided Solid",
+   "Detect / Divided Solid",
+   "Extract / Divided Solid",
+   "Join / Solid",
+   "Move / Divided Solid",
+   "Move / Solid",
+   "Purify / Divided Solid",
+   "Remove / Divided Solid",
+   "Separate / Divided Solid",
+   "Separate / Solid",
+   "Vibrate / Divided Solid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "capillary-condensation",
+  "t": "Capillary condensation",
+  "y": 1871,
+  "field": "Science: Physics",
+  "effect": "water vapour condenses inside tiny pores before the air is saturated",
+  "description": "In very narrow pores, water vapour turns to liquid even when the air isn't humid enough to make dew anywhere else, because the curved surface in the pore holds it more easily. Lord Kelvin worked out the rule in 1871. It helps drying packets pull moisture from air, makes powders clump on damp days and lets labs measure pore sizes.",
+  "usedIn": [
+   "Silica-gel and clay desiccants",
+   "Gas-sorption instruments that measure pore sizes in catalysts",
+   "Dip-pen nanolithography"
+  ],
+  "strength": "In a pore a few millionths of a millimetre wide, water condenses at about half the humidity needed for dew in open air.",
+  "can": [
+   "Clean / Gas",
+   "Condense / Gas",
+   "Detect / Gas",
+   "Dry / Gas",
+   "Dry / Liquid",
+   "Dry / Solid",
+   "Extract / Gas",
+   "Hold / Liquid",
+   "Move / Gas",
+   "Move / Liquid",
+   "Produce / Liquid",
+   "Separate / Gas"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "cavitation",
+  "t": "Cavitation",
+  "y": 1894,
+  "field": "Science: Physics",
+  "effect": "low pressure in a fast or shaken liquid makes bubbles that collapse violently",
+  "description": "Where a liquid moves fast or is shaken hard, its pressure drops so low that vapour bubbles appear, then collapse violently. Charles Parsons found in 1894 that this was what stopped his turbine ship Turbinia's propellers from gripping the water, and why they pitted. The same collapsing bubbles scrub jewellery clean in ultrasonic baths.",
+  "usedIn": [
+   "Ultrasonic cleaning baths",
+   "High-pressure homogenisers for milk",
+   "Supercavitating torpedoes (Shkval)"
+  ],
+  "strength": "Each collapsing bubble briefly reaches thousands of atmospheres, enough to pit a bronze propeller over weeks.",
+  "can": [
+   "Break Down / Liquid",
+   "Break Down / Solid",
+   "Clean / Liquid",
+   "Clean / Solid",
+   "Compress / Solid",
+   "Destroy / Solid",
+   "Evaporate / Liquid",
+   "Expand / Gas",
+   "Expand / Liquid",
+   "Heat / Liquid",
+   "Heat / Solid",
+   "Mix / Liquid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "centrifugal-force",
+  "t": "Centrifugal force",
+  "y": 1659,
+  "field": "Science: Physics",
+  "effect": "a spinning object presses outward, harder the faster it spins",
+  "description": "Anything going round in a circle seems flung outward, pressing harder the faster it spins: water stays in a bucket swung overhead. Christiaan Huygens worked out its size in 1659. Spin it fast enough and it squeezes water from clothes, cream from milk and heavy particles from light ones.",
+  "usedIn": [
+   "Spin dryers in washing machines",
+   "Cream separators",
+   "Laboratory and blood centrifuges",
+   "Centrifugal governors on steam engines"
+  ],
+  "strength": "A washing machine spinning at 1,200 rpm presses the clothes against the drum with about 400 times their weight.",
+  "can": [
+   "Accumulate / Divided Solid",
+   "Bend / Gas",
+   "Compress / Divided Solid",
+   "Compress / Gas",
+   "Compress / Liquid",
+   "Compress / Solid",
+   "Concentrate / Divided Solid",
+   "Concentrate / Solid",
+   "Constrain / Divided Solid",
+   "Deposit / Divided Solid",
+   "Dry / Solid",
+   "Hold / Divided Solid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "christiansen-effect",
+  "t": "Christiansen effect",
+  "y": 1884,
+  "field": "Science: Physics",
+  "effect": "crushed glass in a liquid lets through only the one colour where both bend light equally",
+  "description": "A glass cell packed with crushed glass and a liquid looks milky, except for one colour that passes straight through: the one where glass and liquid bend light by exactly the same amount. Christian Christiansen found it in 1884. Warming the cell shifts which colour gets through, so it makes simple tunable colour filters.",
+  "usedIn": [
+   "Narrow-band Christiansen filters for light and infrared",
+   "Temperature-tuned colour filters"
+  ],
+  "strength": "A cell a few centimetres thick passes a band of light only a few nanometres wide, and warming it by a few degrees shifts the colour noticeably.",
+  "can": [
+   "Absorb / Field",
+   "Clean / Field",
+   "Separate / Field"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "coanda-effect",
+  "t": "Coanda effect",
+  "y": 1910,
+  "field": "Science: Physics",
+  "effect": "a jet of fluid clings to a curved surface beside it and follows its curve",
+  "description": "A jet of air or water bends to follow a curved surface beside it instead of shooting straight: hold the back of a spoon under a tap and the stream wraps around it. Henri Coandă noticed it in 1910 when exhaust from his experimental jet aircraft hugged its body. It's how bladeless fans blow and some helicopters steer without a tail rotor.",
+  "usedIn": [
+   "Dyson Air Multiplier bladeless fan",
+   "NOTAR helicopters with no tail rotor",
+   "Blown wing flaps on short-takeoff planes (Antonov An-72)"
+  ],
+  "strength": "A thin jet can be bent through 90 degrees or more around a rounded edge, dragging along several times its own volume of surrounding air.",
+  "can": [
+   "Accumulate / Divided Solid",
+   "Bend / Divided Solid",
+   "Bend / Gas",
+   "Bend / Liquid",
+   "Concentrate / Divided Solid",
+   "Constrain / Gas",
+   "Constrain / Liquid",
+   "Hold / Divided Solid",
+   "Hold / Gas",
+   "Hold / Liquid",
+   "Move / Divided Solid",
+   "Move / Gas"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "coffee-ring-effect",
+  "t": "Coffee ring effect",
+  "y": 1997,
+  "field": "Science: Physics",
+  "effect": "a drying drop carries its particles to its edge and leaves a ring",
+  "description": "A drop of coffee dries into a dark ring rather than an even spot, because liquid flows outward to replace what evaporates fastest at the edge and carries the grounds with it. Robert Deegan and colleagues explained it in 1997. Printers fight it to get even ink, and some cheap medical tests use it to sort particles by size.",
+  "usedIn": [
+   "Inkjet printing of electronics (suppressed or exploited for thin conductive rings)",
+   "Paper diagnostics that separate particles by size"
+  ],
+  "strength": "Within a few minutes a drying drop sweeps nearly all its particles to the rim.",
+  "can": [
+   "Accumulate / Divided Solid",
+   "Accumulate / Liquid",
+   "Accumulate / Solid",
+   "Concentrate / Divided Solid",
+   "Concentrate / Liquid",
+   "Concentrate / Solid",
+   "Deposit / Divided Solid",
+   "Deposit / Solid",
+   "Detect / Divided Solid",
+   "Detect / Solid",
+   "Extract / Divided Solid",
+   "Extract / Solid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "forced-convection",
+  "t": "Convection",
+  "y": 1797,
+  "field": "Science: Physics",
+  "effect": "warm fluid rises and carries heat with it",
+  "description": "Heated water or air expands, rises and carries its heat away, while cooler fluid sinks to take its place. Count Rumford worked this out in Munich while watching how slowly thick soups cooled. A fan or pump forces the same flow faster.",
+  "usedIn": [
+   "Radiators and central heating",
+   "Chimneys",
+   "Cooling fans and heat sinks"
+  ],
+  "strength": "Strong and everyday: most of the heat a radiator gives a room travels this way.",
+  "can": [
+   "Accumulate / Divided Solid",
+   "Bend / Gas",
+   "Compress / Divided Solid",
+   "Concentrate / Divided Solid",
+   "Constrain / Divided Solid",
+   "Cool / Gas",
+   "Cool / Liquid",
+   "Cool / Solid",
+   "Deposit / Divided Solid",
+   "Dry / Liquid",
+   "Dry / Solid",
+   "Expand / Gas"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "diamagnetism",
+  "t": "Diamagnetism",
+  "y": 1845,
+  "field": "Science: Physics",
+  "effect": "a material is weakly pushed away from a magnet instead of pulled toward it",
+  "description": "Water, wood, graphite and even living things are weakly pushed away by a strong magnet, the opposite of iron. Faraday showed in 1845 that most substances do this (Brugmans had seen bismuth do it in 1778). With a strong enough magnet it can float a frog in mid-air, or a sliver of graphite over a row of fridge-size magnets with no power at all.",
+  "usedIn": [
+   "Levitating a live frog in a 16-tesla magnet (Geim and Berry, 1997)",
+   "Floating pyrolytic-graphite desk toys and levitation stages",
+   "Diamagnetic bearings and sensors in micro-machines"
+  ],
+  "strength": "About a hundred-thousandth the strength of iron's pull: a thin sheet of pyrolytic graphite floats a millimetre above neodymium magnets, but floating water takes a magnetic field about 300,000 times Earth's.",
+  "can": [
+   "Bend / Liquid",
+   "Constrain / Divided Solid",
+   "Constrain / Solid",
+   "Move / Divided Solid",
+   "Move / Liquid",
+   "Move / Solid",
+   "Produce / Field",
+   "Vibrate / Divided Solid",
+   "Vibrate / Solid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "dielectric-heating",
+  "t": "Dielectric heating",
+  "y": 1945,
+  "field": "Science: Physics",
+  "effect": "radio waves or microwaves shake molecules in a material and heat it from the inside",
+  "description": "Radio waves or microwaves make water and other polar molecules in food flip back and forth billions of times a second, and the jostling heats the food from inside. Percy Spencer at Raytheon noticed a chocolate bar melting in his pocket next to a radar magnetron in 1945 and built the first microwave oven. The same trick welds plastic sheets and dries timber.",
+  "usedIn": [
+   "Microwave ovens",
+   "Radio-frequency welding of PVC (inflatable boats, blister packs)",
+   "Drying timber and curing glue in plywood presses",
+   "Medical diathermy"
+  ],
+  "strength": "A 1,000-watt microwave oven brings a mug of water to the boil in about two minutes.",
+  "can": [
+   "Change Phase / Divided Solid",
+   "Change Phase / Liquid",
+   "Change Phase / Solid",
+   "Condense / Liquid",
+   "Condense / Solid",
+   "Detect / Field",
+   "Dry / Divided Solid",
+   "Dry / Solid",
+   "Evaporate / Divided Solid",
+   "Evaporate / Liquid",
+   "Evaporate / Solid",
+   "Expand / Gas"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "eddy-currents",
+  "t": "Eddy currents",
+  "y": 1855,
+  "field": "Science: Physics",
+  "effect": "a moving or changing magnetic field stirs up swirling currents in metal that brake it and heat it",
+  "description": "Move a magnet past a sheet of copper or aluminium and swirling currents spring up in the metal, dragging against the motion and warming it. Foucault showed in 1855 that a copper disc spun between magnet poles slows down and heats up. A magnet dropped down a copper pipe drifts down slowly as if through syrup, and the same drag stops trains and sorts drink cans.",
+  "usedIn": [
+   "Eddy-current brakes on trains and roller coasters",
+   "Induction cooktops",
+   "Metal detectors and coin checkers in vending machines",
+   "Recycling separators that fling aluminium cans off a conveyor"
+  ],
+  "strength": "A strong magnet takes several seconds to fall through a 30 cm copper pipe instead of a quarter of a second.",
+  "can": [
+   "Absorb / Field",
+   "Break Down / Divided Solid",
+   "Break Down / Liquid",
+   "Break Down / Solid",
+   "Change Phase / Divided Solid",
+   "Clean / Divided Solid",
+   "Constrain / Divided Solid",
+   "Destroy / Divided Solid",
+   "Destroy / Solid",
+   "Detect / Divided Solid",
+   "Detect / Field",
+   "Detect / Solid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "electret",
+  "t": "Electret",
+  "y": 1919,
+  "field": "Science: Physics",
+  "effect": "a material holds a permanent electric charge, like an electric version of a magnet",
+  "description": "Some waxes and plastics, melted and left to harden inside a strong electric field, keep a frozen-in charge for years, an electric version of a permanent magnet. Mototaro Eguchi made the first from carnauba wax and resin in Tokyo in 1919. Thin charged plastic films now sit in almost every phone microphone, and the fibres of N95 masks are electrets that grab passing particles.",
+  "usedIn": [
+   "Electret microphones in phones and hearing aids (Sessler and West, 1962)",
+   "N95 and surgical mask filters",
+   "Electrostatic air filters for heating and ventilation"
+  ],
+  "strength": "A film thinner than paper can hold a few hundred volts on its surface for decades, enough to tug dust and smoke particles out of the air.",
+  "can": [
+   "Absorb / Divided Solid",
+   "Accumulate / Divided Solid",
+   "Accumulate / Field",
+   "Accumulate / Gas",
+   "Accumulate / Solid",
+   "Bend / Divided Solid",
+   "Clean / Divided Solid",
+   "Clean / Gas",
+   "Compress / Divided Solid",
+   "Concentrate / Divided Solid",
+   "Concentrate / Solid",
+   "Constrain / Divided Solid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "electric-arc",
+  "t": "Electric arc",
+  "y": 1802,
+  "field": "Science: Physics",
+  "effect": "a large current jumping a gap turns the air into a continuous, intensely hot glowing plasma",
+  "description": "Pull two touching carbon rods a little apart while a big current flows and a blinding, roaring bridge of hot glowing gas forms between them. Vasily Petrov in St Petersburg described it in 1802 using a huge battery, and Humphry Davy made it famous in London a few years later. Arcs lit the first street lamps and searchlights, and today they weld ships and melt scrap into new steel.",
+  "usedIn": [
+   "Arc welding",
+   "Electric arc furnaces that recycle scrap steel",
+   "Arc lamps for searchlights and early cinema projectors",
+   "Plasma cutting torches"
+  ],
+  "strength": "A welding arc reaches about 6,000 °C, hot enough to melt any metal in seconds.",
+  "can": [
+   "Accumulate / Divided Solid",
+   "Break Down / Gas",
+   "Break Down / Liquid",
+   "Break Down / Solid",
+   "Change Phase / Liquid",
+   "Change Phase / Solid",
+   "Clean / Gas",
+   "Concentrate / Divided Solid",
+   "Destroy / Divided Solid",
+   "Destroy / Gas",
+   "Destroy / Liquid",
+   "Destroy / Solid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "electric-wind",
+  "t": "Electric wind",
+  "y": 1709,
+  "field": "Science: Physics",
+  "effect": "a sharp point at high voltage blows a breeze",
+  "description": "Air near a sharp point at high voltage becomes charged and is pushed away, making a breeze with no moving parts. It runs silent air purifiers, and in 2018 it flew a model plane with no propeller.",
+  "usedIn": [
+   "Silent ionic air purifiers",
+   "MIT's propeller-less model plane (2018)",
+   "Experimental cooling for computer chips"
+  ],
+  "strength": "Yes, weak: the MIT plane weighed about 2.5 kg and flew just 60 m on a few newtons of thrust. Good for moving air quietly, not for lifting much.",
+  "can": [
+   "Bend / Gas",
+   "Expand / Gas",
+   "Move / Field",
+   "Move / Gas",
+   "Move / Solid",
+   "Produce / Field"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "electroabsorption",
+  "t": "Electroabsorption",
+  "y": 1958,
+  "field": "Science: Physics",
+  "effect": "an electric field makes a semiconductor absorb light it used to let through",
+  "description": "A thin layer of semiconductor that normally lets a laser beam through starts to swallow it when a few volts are applied across it. Walter Franz in Germany and Leonid Keldysh in Moscow predicted it independently in 1958. Because it switches in trillionths of a second, it is used to flick laser light on and off to send internet data down optical fibres.",
+  "usedIn": [
+   "Electroabsorption modulators in fibre-optic transmitters",
+   "High-speed optical switches"
+  ],
+  "strength": "A couple of volts can block most of a beam, and it switches tens of billions of times a second.",
+  "can": [
+   "Absorb / Field",
+   "Remove / Field"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "electrocaloric-effect",
+  "t": "Electrocaloric effect",
+  "y": 1930,
+  "field": "Science: Physics",
+  "effect": "a material warms when an electric field is switched on and cools when it is switched off",
+  "description": "Some crystals and plastics warm up when you switch on a strong electric field across them and cool down when you switch it off. Kobeko and Kurchatov first measured it in Rochelle salt in Leningrad in 1930. Cycling a material this way can pump heat like a fridge with no gas and no compressor, and prototype solid-state coolers now do it.",
+  "usedIn": [
+   "Prototype solid-state refrigerators using polymer films",
+   "Experimental chip and battery coolers"
+  ],
+  "strength": "Ordinary crystals change by a fraction of a degree, but thin films found in 2006 swing by about 12 °C per switch.",
+  "can": [
+   "Cool / Divided Solid",
+   "Cool / Gas",
+   "Cool / Liquid",
+   "Cool / Solid",
+   "Detect / Divided Solid",
+   "Detect / Solid",
+   "Freeze / Liquid",
+   "Heat / Divided Solid",
+   "Heat / Gas",
+   "Heat / Liquid",
+   "Heat / Solid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "electrocapillarity",
+  "t": "Electrocapillarity",
+  "y": 1875,
+  "field": "Science: Physics",
+  "effect": "a voltage makes a drop spread out or bead up",
+  "description": "A voltage changes how well a liquid wets a surface: a drop of mercury in acid flattens or bulges as the voltage is turned up and down. Today it pushes droplets around lab chips and focuses liquid lenses.",
+  "usedIn": [
+   "Lippmann's capillary electrometer, which recorded the first human heartbeat traces (1887)",
+   "Liquid lenses that focus by reshaping a drop",
+   "Lab-on-a-chip devices that move single drops around"
+  ],
+  "strength": "Strong only at small sizes: it reshapes and moves drops a few millimetres across in thousandths of a second, but can't lift anything heavy.",
+  "can": [
+   "Bend / Liquid",
+   "Dry / Divided Solid",
+   "Dry / Solid",
+   "Hold / Liquid",
+   "Move / Gas",
+   "Move / Liquid",
+   "Vibrate / Gas",
+   "Vibrate / Liquid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "electrorheological-effect",
+  "t": "Electrorheological effect",
+  "y": 1947,
+  "field": "Science: Physics",
+  "effect": "an electric field turns a fluid thick and nearly solid in milliseconds",
+  "description": "A runny oil full of fine powder stiffens into a soft solid in a few thousandths of a second when a strong voltage is applied, and turns runny again when it is switched off. Willis Winslow patented it in 1947. It gives clutches, brakes and haptic controls that change grip instantly with no moving valves.",
+  "usedIn": [
+   "Electrorheological clutches and brakes",
+   "Haptic and tactile feedback devices",
+   "Adaptive shock absorbers and robot grippers"
+  ],
+  "strength": "A few thousand volts per millimetre makes it hold a few kilopascals, roughly like stiff jelly, which is why magnetic versions won in car suspensions.",
+  "can": [
+   "Absorb / Field",
+   "Bend / Solid",
+   "Change Phase / Divided Solid",
+   "Change Phase / Solid",
+   "Compress / Divided Solid",
+   "Concentrate / Divided Solid",
+   "Constrain / Divided Solid",
+   "Constrain / Liquid",
+   "Constrain / Solid",
+   "Hold / Divided Solid",
+   "Hold / Liquid",
+   "Hold / Solid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "electrostatic-induction",
+  "t": "Electrostatic induction",
+  "y": 1753,
+  "field": "Science: Physics",
+  "effect": "a nearby charge pushes the charges in an object around without touching it",
+  "description": "Hold a charged rod near a metal can without touching it and the can's own charges shift, so the near side becomes opposite to the rod and the can rolls toward it. John Canton in London described it in 1753. Touching the far side briefly lets you charge things over and over from one source, which is how the electrophorus and the Wimshurst machine work.",
+  "usedIn": [
+   "Volta's electrophorus (1775)",
+   "Wimshurst static machines",
+   "Gold-leaf electroscopes",
+   "Faraday-cage shielding"
+  ],
+  "strength": "A rod rubbed on hair can pull an empty drink can along a table from a few centimetres away.",
+  "can": [
+   "Accumulate / Divided Solid",
+   "Accumulate / Field",
+   "Bend / Field",
+   "Break Down / Field",
+   "Concentrate / Divided Solid",
+   "Constrain / Divided Solid",
+   "Deposit / Divided Solid",
+   "Detect / Divided Solid",
+   "Detect / Field",
+   "Detect / Solid",
+   "Expand / Field",
+   "Hold / Divided Solid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "faraday-effect",
+  "t": "Faraday effect",
+  "y": 1845,
+  "field": "Science: Physics",
+  "effect": "a magnetic field twists the polarisation of light passing through a material",
+  "description": "Shine polarised light through glass sitting in a strong magnetic field and the direction of its polarisation twists, more the stronger the field. Faraday found it in 1845, the first proof that light and magnetism are linked. It builds one-way valves for light that protect lasers in fibre-optic networks, and lets power companies measure huge currents with a loop of fibre.",
+  "usedIn": [
+   "Optical isolators in fibre-optic networks and lasers",
+   "Fibre-optic current sensors in power substations",
+   "Mapping galactic magnetic fields with radio telescopes"
+  ],
+  "strength": "In special garnet crystals a small permanent magnet twists light by 45 degrees in a couple of millimetres; ordinary glass needs a strong electromagnet for a few degrees.",
+  "can": [
+   "Bend / Field",
+   "Detect / Field",
+   "Move / Field",
+   "Orient / Field",
+   "Rotate / Field",
+   "Vibrate / Field"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "faraday-waves",
+  "t": "Faraday waves",
+  "y": 1831,
+  "field": "Science: Physics",
+  "effect": "vibrating a container makes its liquid surface form standing wave patterns that can throw off droplets",
+  "description": "Shake a dish of liquid up and down fast enough and its surface breaks into a standing pattern of squares, stripes or hexagons that bob at half the shaking rate. Faraday described them in 1831. Shake much faster and the crests fling off fine droplets, which is how ultrasonic humidifiers and nebulisers make mist.",
+  "usedIn": [
+   "Ultrasonic humidifiers and medical nebulisers",
+   "Arranging cells and particles into patterns for tissue engineering"
+  ],
+  "strength": "Patterns appear once the dish is shaken a bit harder than gravity; at 1.7 million shakes a second the crests throw off droplets a few micrometres across.",
+  "can": [
+   "Absorb / Field",
+   "Accumulate / Divided Solid",
+   "Accumulate / Liquid",
+   "Accumulate / Solid",
+   "Bend / Liquid",
+   "Concentrate / Divided Solid",
+   "Concentrate / Liquid",
+   "Concentrate / Solid",
+   "Constrain / Divided Solid",
+   "Constrain / Liquid",
+   "Constrain / Solid",
+   "Deposit / Divided Solid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "fluorescence",
+  "t": "Fluorescence",
+  "y": 1852,
+  "field": "Science: Physics",
+  "effect": "a material absorbs light of one colour and instantly gives off light of a longer, redder colour",
+  "description": "Some materials soak up invisible ultraviolet light and instantly give it back as visible colour, so they seem to glow under a black light. George Stokes worked it out in 1852 with quinine water, and named it after the mineral fluorite. It lights fluorescent tubes, makes highlighter ink and whitened laundry glow, and lets biologists tag cells with glowing proteins.",
+  "usedIn": [
+   "Fluorescent lamps",
+   "Highlighter pens and optical brighteners in laundry detergent",
+   "Fluorescence microscopy with green fluorescent protein"
+  ],
+  "strength": "The glow lasts only billionths of a second after the light goes off; a fluorescent tube gives about four times the light per watt of a filament bulb.",
+  "can": [
+   "Absorb / Field",
+   "Accumulate / Field",
+   "Break Down / Field",
+   "Constrain / Field",
+   "Detect / Divided Solid",
+   "Detect / Field",
+   "Detect / Gas",
+   "Detect / Liquid",
+   "Detect / Solid",
+   "Expand / Field",
+   "Heat / Divided Solid",
+   "Heat / Gas"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "flutter",
+  "t": "Flutter",
+  "y": 1916,
+  "field": "Science: Physics",
+  "effect": "a flexible structure in moving air or water feeds on the flow and swings harder and harder",
+  "description": "Above a certain speed, a wing, tail, flag or bridge deck in moving air starts to twist and flap, each swing feeding the next, until it shakes itself apart. Frederick Lanchester traced the tail of a Handley Page bomber violently shaking in 1916 to this feedback. Engineers test every new aircraft against it, and wind-harvesters turn a fluttering ribbon into electricity.",
+  "usedIn": [
+   "Flight flutter testing of new aircraft",
+   "Windbelt flutter generators (Shawn Frayne, 2007)",
+   "Bridge-deck design after the Tacoma Narrows collapse (1940)"
+  ],
+  "strength": "Below the critical speed nothing happens; just above it, swings grow in seconds, and the Tacoma Narrows Bridge tore apart in a 64 km/h wind.",
+  "can": [
+   "Bend / Gas",
+   "Bend / Liquid",
+   "Bend / Solid",
+   "Destroy / Solid",
+   "Mix / Gas",
+   "Mix / Liquid",
+   "Move / Gas",
+   "Move / Liquid",
+   "Move / Solid",
+   "Rotate / Solid",
+   "Vibrate / Gas",
+   "Vibrate / Liquid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "frequency-doubling",
+  "t": "Frequency doubling",
+  "y": 1961,
+  "field": "Science: Physics",
+  "effect": "intense light passing through certain crystals partly comes out at double the frequency",
+  "description": "Shine a very intense laser through certain crystals and some of the light comes out at exactly half the wavelength, so invisible infrared turns into green light. Peter Franken's team found it in 1961 by focusing a ruby laser into quartz, just a year after the laser was invented. Green laser pointers make their light this way from an infrared laser, and microscopes use it to image collagen without dyes.",
+  "usedIn": [
+   "Green laser pointers (1064 nm infrared doubled to 532 nm)",
+   "Green and ultraviolet lasers for eye surgery and chip inspection",
+   "Second-harmonic microscopy of collagen and muscle"
+  ],
+  "strength": "Franken's first try converted about one part in a hundred million; modern crystals convert more than half of a strong pulsed laser beam.",
+  "can": [
+   "Compress / Field",
+   "Detect / Field",
+   "Produce / Field",
+   "Remove / Field"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "friction",
+  "t": "Friction",
+  "y": 1699,
+  "field": "Science: Physics",
+  "effect": "surfaces in contact resist sliding with a force proportional to how hard they press together",
+  "description": "Push a box across the floor and the floor pushes back. Amontons found the drag is proportional to how hard the surfaces press together, and oddly doesn't depend on how big the contact area is. Friction is what lets shoes grip, brakes stop cars and matches light.",
+  "usedIn": [
+   "Disc and drum brakes",
+   "Friction clutches in cars",
+   "Strike-anywhere matches",
+   "Bow drills for starting fire"
+  ],
+  "strength": "Rubber on a dry road grips with a force up to about its own load (coefficient ~0.7-1); steel on ice manages only about 0.03.",
+  "can": [
+   "Absorb / Field",
+   "Break Down / Divided Solid",
+   "Break Down / Solid",
+   "Clean / Divided Solid",
+   "Clean / Solid",
+   "Destroy / Divided Solid",
+   "Destroy / Solid",
+   "Detect / Divided Solid",
+   "Detect / Solid",
+   "Evaporate / Liquid",
+   "Expand / Gas",
+   "Expand / Liquid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "ground-effect",
+  "t": "Ground effect",
+  "y": 1922,
+  "field": "Science: Physics",
+  "effect": "a wing close to the ground gets more lift and less drag",
+  "description": "A wing flying closer to the ground or water than about half its span gets extra lift and less drag, because the surface stops air from escaping downward and swirling round the wingtips. Carl Wieselsberger measured it in 1922; pilots feel it as a 'float' just before touchdown.",
+  "usedIn": [
+   "Soviet ekranoplans such as the 'Caspian Sea Monster'",
+   "Wing-in-ground-effect ferries and craft (e.g. Airfish)",
+   "Landing technique allowances for airliners"
+  ],
+  "strength": "Flying at a tenth of its span above the surface, a wing loses roughly half its induced drag, which is why ekranoplans could carry heavy loads on little fuel.",
+  "can": [
+   "Compress / Gas",
+   "Mix / Divided Solid",
+   "Move / Divided Solid",
+   "Orient / Solid",
+   "Resist / Divided Solid",
+   "Rotate / Divided Solid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "hall-effect",
+  "t": "Hall effect",
+  "y": 1879,
+  "field": "Science: Physics",
+  "effect": "a magnetic field pushes current to one side of a conductor, creating a sideways voltage",
+  "description": "Run a current through a thin strip in a magnetic field and a small voltage appears across the strip's sides, because the field pushes the moving charges toward one edge. Edwin Hall found it in 1879 as a graduate student at Johns Hopkins. It lets a chip sense a magnet without touching it.",
+  "usedIn": [
+   "Hall sensors timing brushless motors in fans and drones",
+   "Wheel-speed sensors for anti-lock brakes",
+   "Hall-effect thrusters on satellites",
+   "Lid-closed sensors in laptops and phones"
+  ],
+  "strength": "Microvolts in a metal, but in a semiconductor chip a fridge magnet gives millivolts, plenty to detect position or current.",
+  "can": [
+   "Detect / Divided Solid",
+   "Detect / Field",
+   "Detect / Solid",
+   "Produce / Field"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "helmholtz-resonance",
+  "t": "Helmholtz resonance",
+  "y": 1863,
+  "field": "Science: Physics",
+  "effect": "air in a cavity with a narrow neck rings at one note",
+  "description": "Blow across the mouth of an empty bottle and it hums: the air in the neck bounces like a weight on the springy air inside. Hermann von Helmholtz built tuned glass spheres on this principle to pick single tones out of music, published in 1863.",
+  "usedIn": [
+   "Bass-reflex ports in loudspeakers",
+   "Car intake and exhaust resonators that cancel drone",
+   "Ocarinas",
+   "Tuned sound absorbers in concert halls"
+  ],
+  "strength": "A wine bottle hums at roughly 100-200 Hz; a tuned box can soak up one low note almost completely while letting others pass.",
+  "can": [
+   "Detect / Gas",
+   "Vibrate / Gas"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "hydraulic-jump",
+  "t": "Hydraulic jump",
+  "y": 1819,
+  "field": "Science: Physics",
+  "effect": "a fast shallow stream abruptly jumps up into a deep slow one, churning away its energy",
+  "description": "When a fast, shallow stream suddenly slows, its surface leaps up in a standing step of churning water; you can see one as the ring around where a tap's stream hits the sink. Giorgio Bidone first studied it by experiment in Turin around 1819. Engineers build one in on purpose at the foot of dams to burn off the water's destructive energy.",
+  "usedIn": [
+   "Stilling basins below dam spillways",
+   "Rapid mixing of chemicals at water-treatment plants",
+   "Aerating rivers and channels"
+  ],
+  "strength": "A jump in a spillway basin can destroy well over half the energy of water falling tens of metres, within a few tens of metres of concrete.",
+  "can": [
+   "Bend / Liquid",
+   "Expand / Liquid",
+   "Heat / Liquid",
+   "Mix / Liquid",
+   "Move / Divided Solid",
+   "Move / Liquid",
+   "Vibrate / Liquid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "iridescence",
+  "t": "Iridescence",
+  "y": 1665,
+  "field": "Science: Physics",
+  "effect": "thin transparent layers reflect different colours at different angles",
+  "description": "Some surfaces change colour as you tilt them, like soap bubbles, peacock feathers and CDs, because stacked thin layers make light waves reinforce one colour at one angle and another at the next. Robert Hooke looked at peacock feathers under his microscope in 1665 and traced the colours to thin layers, not pigment.",
+  "usedIn": [
+   "Colour-shifting security ink on banknotes",
+   "Colour-flip car paints (ChromaFlair)",
+   "Anti-reflection coatings on lenses",
+   "Holographic foil on cards and packaging"
+  ],
+  "strength": "Layers a few hundred nanometres thick, about 1/200 of a hair, give brilliant colours that never fade because no dye is involved.",
+  "can": [
+   "Detect / Divided Solid",
+   "Detect / Solid",
+   "Expand / Field"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "johnsen-rahbek-effect",
+  "t": "Johnsen-Rahbek effect",
+  "y": 1923,
+  "field": "Science: Physics",
+  "effect": "a voltage makes a metal and a semiconducting surface cling tightly together",
+  "description": "Put a voltage between a metal plate and a slightly conductive stone or ceramic touching it, and the two cling far harder than ordinary static would allow, because charge piles up across the tiny gaps where they touch. Danish engineers Alfred Johnsen and Knud Rahbek reported it in 1923 and built relays and loudspeakers on it.",
+  "usedIn": [
+   "Electrostatic chucks holding silicon wafers in chip fabs",
+   "Johnsen-Rahbek relays and loudspeakers",
+   "Electroadhesive robot grippers"
+  ],
+  "strength": "A few hundred volts gives a grip of a few kilopascals, enough to hold a wafer flat, many times the pull of plain static at that voltage.",
+  "can": [
+   "Constrain / Divided Solid",
+   "Constrain / Solid",
+   "Hold / Divided Solid",
+   "Hold / Solid",
+   "Join / Divided Solid",
+   "Join / Solid",
+   "Move / Divided Solid",
+   "Move / Solid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "joule-heating",
+  "t": "Joule heating",
+  "y": 1841,
+  "field": "Science: Physics",
+  "effect": "electric current heats the wire it flows through",
+  "description": "Current flowing through a wire heats it, in proportion to the wire's resistance and the square of the current, so doubling the current gives four times the heat. James Joule measured it in 1841, before his famous work on the mechanical equivalent of heat.",
+  "usedIn": [
+   "Electric kettles, toasters and heaters",
+   "Incandescent light bulbs",
+   "Fuses that melt to cut a circuit",
+   "Rear-window defrosters"
+  ],
+  "strength": "A kettle's coil turns 2-3 kilowatts into heat, boiling a litre of water in about two to three minutes.",
+  "can": [
+   "Absorb / Field",
+   "Break Down / Divided Solid",
+   "Break Down / Solid",
+   "Change Phase / Divided Solid",
+   "Change Phase / Solid",
+   "Destroy / Solid",
+   "Detect / Divided Solid",
+   "Detect / Field",
+   "Detect / Solid",
+   "Dry / Divided Solid",
+   "Dry / Solid",
+   "Evaporate / Liquid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "kerr-effect",
+  "t": "Kerr effect",
+  "y": 1875,
+  "field": "Science: Physics",
+  "effect": "an electric field makes a clear material change the polarization of light",
+  "description": "An electric field makes some clear liquids and glasses split light like a polarizing crystal, so between two polarizers they can switch a beam on and off in under a billionth of a second. John Kerr found it in glass in Glasgow in 1875.",
+  "usedIn": [
+   "Kerr-cell shutters in high-speed photography and early television",
+   "Kerr-lens mode-locking in femtosecond lasers",
+   "Ultrafast optical switches"
+  ],
+  "strength": "Weak: a centimetre-long cell of nitrobenzene needs tens of thousands of volts to switch fully, but responds in under a nanosecond.",
+  "can": [
+   "Bend / Field",
+   "Constrain / Field",
+   "Expand / Field",
+   "Move / Field",
+   "Orient / Field",
+   "Remove / Field",
+   "Rotate / Field"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "karman-vortex-street",
+  "t": "Kármán vortex street",
+  "y": 1911,
+  "field": "Science: Physics",
+  "effect": "flow past a cylinder sheds swirls from alternate sides, shaking it at a steady rate",
+  "description": "Wind flowing past a pole or wire peels off swirls alternately from each side, leaving a zigzag trail and shaking the pole side to side; it's what makes power lines sing. Theodore von Kármán explained the pattern in 1911 at Göttingen.",
+  "usedIn": [
+   "Vortex flowmeters in pipelines",
+   "Spiral strakes on chimneys and car antennas that stop shaking",
+   "Aeolian harps"
+  ],
+  "strength": "Swirls come off at about one-fifth of the wind speed divided by the width: a 10 m/s wind past a 1 cm wire gives a 200 Hz hum.",
+  "can": [
+   "Bend / Field",
+   "Bend / Gas",
+   "Bend / Liquid",
+   "Destroy / Solid",
+   "Detect / Gas",
+   "Detect / Liquid",
+   "Move / Divided Solid",
+   "Move / Gas",
+   "Move / Liquid",
+   "Move / Solid",
+   "Rotate / Divided Solid",
+   "Rotate / Gas"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "leidenfrost-effect",
+  "t": "Leidenfrost effect",
+  "y": 1756,
+  "field": "Science: Physics",
+  "effect": "a liquid on a surface far above its boiling point floats on a cushion of its own vapour",
+  "description": "Flick water onto a very hot pan and the drops skate around for a minute instead of hissing away: the bottom of each drop boils into a thin cushion of steam that holds it up and insulates it. Johann Gottlob Leidenfrost described it in 1756.",
+  "usedIn": [
+   "Cooks' water-drop test for a hot pan",
+   "Boiler and nuclear-reactor tube design (avoiding film boiling)",
+   "Quenching steel, where the steam blanket slows cooling"
+  ],
+  "strength": "Above about 200 °C a water drop hovers on a steam layer a tenth of a millimetre thick and lasts over a minute; at 150 °C it would be gone in seconds.",
+  "can": [
+   "Change Phase / Liquid",
+   "Cool / Solid",
+   "Heat / Liquid",
+   "Hold / Liquid",
+   "Move / Liquid",
+   "Produce / Gas",
+   "Protect / Liquid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "magnetohydrodynamics",
+  "t": "Magnetohydrodynamics",
+  "y": 1942,
+  "field": "Science: Physics",
+  "effect": "a magnetic field pushes on a current-carrying fluid, pumping it with no moving parts",
+  "description": "A magnetic field pushes on electric current flowing through a liquid like seawater or molten metal, so you can pump or steer it with no moving parts; and a conducting fluid flowing through a field makes electricity. Faraday tried to measure the Thames this way in 1832, and Hannes Alfvén founded the science in 1942.",
+  "usedIn": [
+   "Yamato 1, a ship driven by seawater thrusters (1992)",
+   "Electromagnetic pumps for liquid sodium in fast reactors",
+   "Electromagnetic flowmeters"
+  ],
+  "strength": "Weak in seawater: Yamato 1 needed 4-tesla superconducting magnets to crawl at about 15 km/h, but it pumps molten metal easily.",
+  "can": [
+   "Bend / Field",
+   "Bend / Gas",
+   "Bend / Liquid",
+   "Compress / Liquid",
+   "Constrain / Gas",
+   "Constrain / Liquid",
+   "Detect / Field",
+   "Detect / Gas",
+   "Detect / Liquid",
+   "Hold / Gas",
+   "Hold / Liquid",
+   "Move / Divided Solid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "magnetoresistance",
+  "t": "Magnetoresistance",
+  "y": 1856,
+  "field": "Science: Physics",
+  "effect": "a magnetic field changes a metal's electrical resistance",
+  "description": "A magnetic field changes how easily current flows through a metal; in iron and nickel the change depends on the angle between field and current. Lord Kelvin found it in 1856, and thin-film versions became the read heads of hard disks.",
+  "usedIn": [
+   "Hard-disk read heads (anisotropic, then giant magnetoresistance)",
+   "Car wheel-speed and steering-angle sensors",
+   "Electronic compasses"
+  ],
+  "strength": "Iron-nickel films change resistance by only a few per cent; the layered 'giant' version found in 1988 changes it by tens of per cent.",
+  "can": [
+   "Detect / Field"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "magnetostriction",
+  "t": "Magnetostriction",
+  "y": 1842,
+  "field": "Science: Physics",
+  "effect": "a magnetic material changes shape when magnetised, and its magnetism changes when it is strained",
+  "description": "Iron gets very slightly longer or shorter when magnetised, so an alternating field makes it buzz: that is the hum of a transformer. James Joule measured it in 1842; the reverse also works, as stretching or twisting a magnetised rod changes its magnetism, which lets it sense force.",
+  "usedIn": [
+   "Terfenol-D sonar transducers",
+   "Acousto-magnetic anti-theft tags in shops",
+   "Magnetoelastic torque sensors in e-bikes and power steering"
+  ],
+  "strength": "Iron changes length by only about 20 parts per million; the alloy Terfenol-D by about 2,000 (2 mm per metre), pushing with great force.",
+  "can": [
+   "Change Phase / Liquid",
+   "Compress / Divided Solid",
+   "Compress / Gas",
+   "Compress / Liquid",
+   "Compress / Solid",
+   "Concentrate / Divided Solid",
+   "Destroy / Solid",
+   "Detect / Field",
+   "Evaporate / Liquid",
+   "Expand / Divided Solid",
+   "Expand / Gas",
+   "Expand / Liquid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "magnus-effect",
+  "t": "Magnus effect",
+  "y": 1852,
+  "field": "Science: Physics",
+  "effect": "a spinning object moving through air is pushed sideways",
+  "description": "A spinning ball moving through air curves sideways, because its spin drags the air faster past one side than the other. It's why a sliced ball swerves, and it drove ships with tall spinning cylinders for sails.",
+  "usedIn": [
+   "Rotor ships (Flettner, 1924) and today's rotor sails on cargo ships",
+   "Curveballs and swerving free kicks"
+  ],
+  "strength": "Strong enough to help push a cargo ship: modern rotor sails cut fuel use by roughly 5 to 20 percent.",
+  "can": [
+   "Compress / Gas",
+   "Compress / Liquid",
+   "Move / Liquid",
+   "Move / Solid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "marangoni-effect",
+  "t": "Marangoni effect",
+  "y": 1865,
+  "field": "Science: Physics",
+  "effect": "a liquid surface flows from low toward high surface tension",
+  "description": "Liquid flows from where its surface tension is low toward where it is high, dragging the surface along: a drop of soap sends pepper racing to a dish's edge, and wine climbs a glass in 'tears'. James Thomson explained the tears in 1855 and Carlo Marangoni studied the effect in 1865.",
+  "usedIn": [
+   "Marangoni drying of silicon wafers with alcohol vapour",
+   "Controlling weld-pool depth in welding",
+   "Soap-powered toy boats"
+  ],
+  "strength": "A trace of soap clears pepper across a dish in a fraction of a second; surface flows reach centimetres per second.",
+  "can": [
+   "Dry / Solid",
+   "Expand / Liquid",
+   "Hold / Liquid",
+   "Move / Liquid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "triboluminescence",
+  "t": "Mechanoluminescence",
+  "y": 1605,
+  "field": "Science: Physics",
+  "effect": "some solids give off light when crushed, rubbed or strained",
+  "description": "Some crystals flash light when they're crushed, scratched or pulled apart: crunch a lump of sugar in the dark and it sparks blue. Francis Bacon described the sugar sparks in 1605. Coatings that glow where they're strained can show cracks in bridges and wings.",
+  "usedIn": [
+   "Stress-sensing paints and films (still mostly in labs)",
+   "Peeling sticky tape in a vacuum gives off enough X-rays to image a finger (2008)"
+  ],
+  "strength": "Faint: you need a dark room to see most of it.",
+  "can": [
+   "Detect / Divided Solid",
+   "Detect / Solid",
+   "Produce / Field"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "metal-fatigue",
+  "t": "Metal fatigue",
+  "y": 1837,
+  "field": "Science: Physics",
+  "effect": "a material weakened by repeated loading cracks below its normal breaking strength",
+  "description": "A metal part bent back and forth many times cracks and breaks under loads far below what would snap it in one go. Wilhelm Albert, a German mining official, first documented it in iron hoist chains in 1837, and August Wöhler's railway-axle tests in the 1860s showed the limits. It's why you can snap a paperclip by bending it, and why airliners are rated for a set number of flights.",
+  "usedIn": [
+   "Wöhler fatigue testing of railway axles",
+   "Airliner fatigue-life rules after the de Havilland Comet crashes (1954)",
+   "Snapping wire or paperclips by bending without tools"
+  ],
+  "strength": "Steel can break after about a million cycles at half the load that would snap it at once.",
+  "can": [
+   "Absorb / Field",
+   "Break Down / Divided Solid",
+   "Break Down / Solid",
+   "Destroy / Divided Solid",
+   "Destroy / Solid",
+   "Expand / Solid",
+   "Produce / Divided Solid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "mirage",
+  "t": "Mirage",
+  "y": 1798,
+  "field": "Science: Physics",
+  "effect": "light bends as it passes through air of changing temperature, shifting images",
+  "description": "Over hot ground the air near the surface is thinner, so light skimming it bends upward and you see a shimmering 'pool' that is really the sky. Gaspard Monge explained it in 1798 while in Egypt with Napoleon's army.",
+  "usedIn": [
+   "Photothermal-deflection ('mirage') spectroscopy for measuring faint absorption in coatings",
+   "Gradient-index (GRIN) lenses in endoscopes and fibre connectors",
+   "Schlieren imaging of shock waves and air flows"
+  ],
+  "strength": "The bending is only a fraction of a degree, but over a few hundred metres of hot road it shifts the image by metres.",
+  "can": [
+   "Absorb / Field",
+   "Bend / Field",
+   "Compress / Field",
+   "Concentrate / Field",
+   "Detect / Field",
+   "Move / Field",
+   "Orient / Field",
+   "Rotate / Field",
+   "Separate / Field"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "moire-effect",
+  "t": "Moiré effect",
+  "y": 1874,
+  "field": "Science: Physics",
+  "effect": "two overlaid fine patterns make broad bands that magnify any small shift between them",
+  "description": "Lay one fine grid or striped screen over another at a slight angle and broad wavy bands appear that neither pattern has, sweeping across when one layer moves a hair. Lord Rayleigh pointed out in 1874 that these bands could test how evenly a diffraction grating was ruled. Because the bands magnify tiny shifts, they are used to measure small movements and strains and to make banknotes hard to copy.",
+  "usedIn": [
+   "Moiré fringe gratings in machine-tool position encoders",
+   "Moiré strain measurement on bridges and machine parts",
+   "Anti-copy line patterns on banknotes and ID cards",
+   "Moiré alignment marks in chip lithography"
+  ],
+  "strength": "Two gratings with lines 0.1 mm apart crossed at 1 degree make bands about 6 mm wide, so a shift between them is magnified about 50 times.",
+  "can": [
+   "Orient / Solid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "negative-refraction",
+  "t": "Negative refraction",
+  "y": 1967,
+  "field": "Science: Physics",
+  "effect": "a wave entering a specially structured material bends backward to the same side it came from",
+  "description": "In specially built materials a light or radio wave bends the 'wrong' way at the surface, ending up on the same side of the perpendicular it came from, so a flat slab can focus like a lens. Victor Veselago predicted it in 1967, and David Smith's team first showed it with microwaves in 2000 using a metamaterial made of tiny copper rings and wires. It drives work on 'superlenses' that see finer detail than ordinary lenses and on cloaks that steer waves around objects.",
+  "usedIn": [
+   "Superlens experiments imaging details finer than the wavelength",
+   "Flat metamaterial lenses for microwave and radar antennas",
+   "Research cloaks that steer microwaves around an object"
+  ],
+  "strength": "Works well for microwaves in lab metamaterials; for visible light it is still weak and lossy, absorbing most of the light within a few wavelengths.",
+  "can": [
+   "Bend / Field",
+   "Change Phase / Field",
+   "Move / Field",
+   "Orient / Field",
+   "Rotate / Field"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "nucleation",
+  "t": "Nucleation",
+  "y": 1880,
+  "field": "Science: Physics",
+  "effect": "a new bubble, droplet or crystal starts only on a tiny seed or rough spot",
+  "description": "Bubbles, droplets and crystals don't form evenly through a liquid or gas; they start on a speck, a scratch or a seed, which is why soda fizzes from the same spots on a glass. John Aitken showed around 1880 that water vapour won't form fog droplets without dust specks to start on. Supplying the right seeds makes rain, crystals or bubbles appear on command, from cloud seeding to click-to-start hand warmers.",
+  "usedIn": [
+   "Cloud chambers, where droplets form on particle tracks",
+   "Silver iodide cloud seeding",
+   "Reusable sodium acetate hand warmers triggered by clicking a metal disc",
+   "Bubble chambers"
+  ],
+  "strength": "Without any specks, air must hold several times its normal limit of water vapour before droplets form; one seed can set a whole pouch of supercooled solution crystallising in seconds.",
+  "can": [
+   "Accumulate / Divided Solid",
+   "Accumulate / Gas",
+   "Accumulate / Liquid",
+   "Accumulate / Solid",
+   "Change Phase / Gas",
+   "Change Phase / Liquid",
+   "Concentrate / Gas",
+   "Concentrate / Liquid",
+   "Concentrate / Solid",
+   "Condense / Gas",
+   "Deposit / Divided Solid",
+   "Deposit / Gas"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "pascals-law",
+  "t": "Pascal's law",
+  "y": 1653,
+  "field": "Science: Physics",
+  "effect": "pressure applied anywhere to a confined liquid is passed on undiminished everywhere",
+  "description": "Push on a liquid sealed in a container and the push spreads equally to every part of it, so a small piston pressing on oil can lift a car resting on a large one. Blaise Pascal worked it out around 1653 and imagined the hydraulic press; Joseph Bramah built a working one in 1795. Every hydraulic brake, jack, lift and digger arm runs on it.",
+  "usedIn": [
+   "Bramah's hydraulic press (1795)",
+   "Hydraulic car brakes",
+   "Car jacks and garage lifts",
+   "Excavator and crane arms"
+  ],
+  "strength": "A piston with 100 times the area gets 100 times the force: a 20 kg push on a hand jack can lift a 2-tonne car.",
+  "can": [
+   "Compress / Divided Solid",
+   "Compress / Gas",
+   "Compress / Liquid",
+   "Compress / Solid",
+   "Expand / Divided Solid",
+   "Move / Divided Solid",
+   "Move / Gas",
+   "Move / Liquid",
+   "Move / Solid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "peltier-effect",
+  "t": "Peltier effect",
+  "y": 1834,
+  "field": "Science: Physics",
+  "effect": "an electric current through a junction of two materials pumps heat from one side to the other",
+  "description": "Run a current through a junction of two different metals or semiconductors and one side gets cold while the other gets hot; reverse the current and they swap. Jean Peltier noticed it in 1834, thirteen years after Seebeck found the reverse effect. It is the solid-state cooler, with no moving parts or gas, inside plug-in picnic coolers, small wine fridges and laser temperature controllers.",
+  "usedIn": [
+   "Plug-in car picnic coolers",
+   "Temperature control of laser diodes in fibre-optic transmitters",
+   "Compact wine fridges and hotel minibars",
+   "Cooled cameras for astronomy"
+  ],
+  "strength": "A matchbook-sized module can pump about 50 watts and hold one face up to about 70°C colder than the other, but it uses several times more power than a fridge compressor for the same cooling.",
+  "can": [
+   "Absorb / Field",
+   "Condense / Gas",
+   "Cool / Divided Solid",
+   "Cool / Gas",
+   "Cool / Liquid",
+   "Cool / Solid",
+   "Detect / Field",
+   "Dry / Divided Solid",
+   "Evaporate / Liquid",
+   "Freeze / Liquid",
+   "Heat / Divided Solid",
+   "Heat / Gas"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "photoacoustic-effect",
+  "t": "Photoacoustic effect",
+  "y": 1880,
+  "field": "Science: Physics",
+  "effect": "flickering light absorbed by a material makes it give off sound",
+  "description": "Flicker a light on a material and it gives off sound at the flicker rate, because each flash heats it slightly and makes it swell and shrink. Alexander Graham Bell discovered this in 1880 while building his photophone, which sent speech on a beam of sunlight. Today pulsed lasers use it to 'hear' blood vessels and tumours inside the body and to sniff tiny amounts of gas.",
+  "usedIn": [
+   "Photoacoustic imaging of blood vessels and tumours",
+   "Photoacoustic CO2 sensors for building ventilation",
+   "Trace-gas analysers for air pollution",
+   "Bell's photophone (1880)"
+  ],
+  "strength": "With sunlight it is a faint hum you need an ear tube to hear; with a pulsed laser it can detect a gas at a few parts per billion.",
+  "can": [
+   "Absorb / Field",
+   "Detect / Field",
+   "Produce / Field"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "photoconductivity",
+  "t": "Photoconductivity",
+  "y": 1873,
+  "field": "Science: Physics",
+  "effect": "a material conducts electricity much better when light falls on it",
+  "description": "Some materials, like selenium, let electricity through far more easily in light than in the dark. Willoughby Smith noticed in 1873 that the selenium resistors he used to test undersea telegraph cables gave readings that changed with the sunlight. Light meters, dusk-to-dawn streetlight switches, early TV cameras and the drum in every photocopier and laser printer use it.",
+  "usedIn": [
+   "Photoconductive drums in photocopiers and laser printers",
+   "Cadmium sulfide sensors that switch streetlights on at dusk",
+   "Vidicon TV camera tubes",
+   "Infrared detectors in heat-seeking sensors"
+  ],
+  "strength": "A cheap cadmium sulfide cell drops from millions of ohms in darkness to a few hundred ohms in daylight, a thousandfold change.",
+  "can": [
+   "Absorb / Field",
+   "Detect / Field",
+   "Produce / Field"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "piezoresistive-effect",
+  "t": "Piezoresistive effect",
+  "y": 1856,
+  "field": "Science: Physics",
+  "effect": "squeezing or stretching a material changes its electrical resistance",
+  "description": "Stretch or squeeze a wire or a chip of silicon and its electrical resistance changes, so measuring the resistance tells you the force. Lord Kelvin found it in metals in 1856, and in 1954 Charles Smith found it is many times stronger in silicon and germanium. Strain gauges in scales and bridges, car engine pressure sensors and airbag crash sensors use it.",
+  "usedIn": [
+   "Metal-foil strain gauges in bathroom and truck scales",
+   "Silicon pressure sensors in car engines and blood-pressure monitors",
+   "Early airbag crash accelerometers",
+   "Atomic force microscope cantilevers"
+  ],
+  "strength": "In metal foil a stretch of one part in a thousand changes resistance by about 0.2%; in silicon the same stretch changes it by 10% or more.",
+  "can": [
+   "Detect / Divided Solid",
+   "Detect / Field",
+   "Detect / Solid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "plateau-rayleigh-instability",
+  "t": "Plateau-Rayleigh instability",
+  "y": 1873,
+  "field": "Science: Physics",
+  "effect": "a thin stream of liquid breaks itself into a row of equal drops",
+  "description": "A thin stream of water from a tap doesn't stay a smooth thread: it wobbles and breaks into a row of drops, because surface tension pulls it into shapes with less surface. Joseph Plateau measured it in 1873 and Lord Rayleigh explained its timing in 1878. Vibrating the jet at the right pitch makes perfectly even drops, the basis of the inkjet printers that mark dates on cans.",
+  "usedIn": [
+   "Continuous inkjet printers that print dates on cans and bottles",
+   "Flow-cytometry cell sorters",
+   "Making uniform droplets for capsules and beads"
+  ],
+  "strength": "A stream breaks into drops spaced about 4.5 stream-widths apart, each roughly twice the stream's width; an inkjet nozzle makes over 60,000 drops a second this way.",
+  "can": [
+   "Separate / Liquid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "pockels-effect",
+  "t": "Pockels effect",
+  "y": 1893,
+  "field": "Science: Physics",
+  "effect": "an electric field changes how a crystal bends light",
+  "description": "An electric field changes how strongly certain crystals bend light, in step with the field. Crystals that switch light this way put data onto optical fibres and fire the pulses of many lasers.",
+  "usedIn": [
+   "Pockels cells that switch laser pulses on and off",
+   "Modulators that put internet data onto fibre-optic light",
+   "Ultra-fast camera shutters"
+  ],
+  "strength": "Needs thousands of volts across a crystal, but switches light in under a billionth of a second.",
+  "can": [
+   "Absorb / Field",
+   "Bend / Field",
+   "Constrain / Field",
+   "Move / Field",
+   "Remove / Field",
+   "Rotate / Field",
+   "Vibrate / Field"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "poisson-effect",
+  "t": "Poisson effect",
+  "y": 1829,
+  "field": "Science: Physics",
+  "effect": "a material squeezed in one direction swells in the other two",
+  "description": "Squash a rubber block from the top and it bulges out at the sides; stretch a rubber band and it gets thinner. Siméon Poisson put a number on this sideways swelling in 1829. Rubber seals and wall anchors grip tighter by bulging when squeezed, and cork makes good wine stoppers because it barely bulges at all.",
+  "usedIn": [
+   "O-rings and rubber stoppers that seal tighter when compressed",
+   "Rubber expansion anchors (well nuts) that grip a hole when tightened",
+   "Cork wine stoppers, which hardly bulge"
+  ],
+  "strength": "Rubber swells sideways by about half as much as it is squashed, steel by about 0.3 times, cork almost not at all.",
+  "can": [
+   "Absorb / Field",
+   "Bend / Gas",
+   "Bend / Solid",
+   "Compress / Divided Solid",
+   "Compress / Gas",
+   "Compress / Liquid",
+   "Compress / Solid",
+   "Expand / Divided Solid",
+   "Expand / Solid",
+   "Join / Divided Solid",
+   "Move / Solid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "pyroelectric-effect",
+  "t": "Pyroelectric effect",
+  "y": -314,
+  "field": "Science: Physics",
+  "effect": "a crystal produces a voltage when its temperature changes",
+  "description": "Some crystals, like tourmaline, become electrically charged at their ends whenever they are warmed or cooled. Theophrastus wrote around 314 BCE of a stone that attracted straw and ash when heated, and David Brewster named the effect in 1824. Motion-sensor lights and burglar alarms use it to feel the warmth of a passing person.",
+  "usedIn": [
+   "Passive infrared (PIR) motion sensors in alarms and automatic lights",
+   "Flame detectors in industrial fire alarms",
+   "Thermal-imaging cameras for firefighters",
+   "Laser power meters"
+  ],
+  "strength": "A pyroelectric sensor notices temperature changes of a thousandth of a degree, enough to sense a person's body heat 10 metres away.",
+  "can": [
+   "Absorb / Field",
+   "Detect / Field",
+   "Produce / Field"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "radioluminescence",
+  "t": "Radioluminescence",
+  "y": 1903,
+  "field": "Science: Physics",
+  "effect": "radiation hitting certain materials makes them flash or glow with light",
+  "description": "Some materials glow when struck by radiation from radioactive substances, each particle making a tiny flash of light. In 1903 William Crookes looked through a lens at a zinc sulfide screen near a speck of radium, saw it sparkle with countless separate flashes, and built the spinthariscope to show it. Tritium-lit watch hands and exit signs, and the scintillation counters that detect radiation, use it.",
+  "usedIn": [
+   "Tritium-lit watch hands, gun sights and exit signs",
+   "Scintillation counters and hospital gamma cameras",
+   "Detectors in PET and CT scanners",
+   "Crookes's spinthariscope (1903)"
+  ],
+  "strength": "Each alpha particle makes a flash just visible to dark-adapted eyes; a tritium exit sign glows with no power for 10-20 years, but only bright enough to see in the dark.",
+  "can": [
+   "Detect / Divided Solid",
+   "Detect / Solid",
+   "Produce / Field"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "rayleigh-scattering",
+  "t": "Rayleigh scattering",
+  "y": 1871,
+  "field": "Science: Physics",
+  "effect": "particles much smaller than the light's wavelength scatter blue light far more than red",
+  "description": "Air molecules scatter blue light far more than red, so the sky looks blue in every direction and the setting sun, whose light has lost its blue on the long way through the air, looks red. John Tyndall saw blue light scattered by fine haze in the 1860s, and Lord Rayleigh worked out in 1871 that the shorter the wavelength, the much stronger the scattering. It sets how clear optical fibres can be and lets lasers measure the air high above.",
+  "usedIn": [
+   "Loss limit of optical fibres",
+   "Rayleigh lidar that measures upper-air temperature",
+   "Light-scattering instruments that weigh polymer molecules",
+   "Explains the blue sky and red sunsets"
+  ],
+  "strength": "Blue light is scattered about five times more than red; in the best glass fibre it still costs half the light every 20 km or so.",
+  "can": [
+   "Absorb / Field",
+   "Detect / Divided Solid",
+   "Detect / Field",
+   "Detect / Solid",
+   "Expand / Field",
+   "Remove / Field"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "rayleigh-taylor-instability",
+  "t": "Rayleigh-Taylor instability",
+  "y": 1883,
+  "field": "Science: Physics",
+  "effect": "a heavy fluid resting on a lighter one breaks into growing fingers and plumes",
+  "description": "When a heavy fluid sits on a light one, or a light fluid pushes on a heavy one, the boundary can't stay flat: it grows fingers and mushroom shapes that sink and rise into each other. Lord Rayleigh worked it out in 1883 and G. I. Taylor extended it in 1950 to accelerating fluids. It is why water spills from an upside-down glass even though air pressure could hold it up, why big explosions make mushroom clouds, and the main thing laser-fusion fuel capsules must be designed to resist.",
+  "usedIn": [
+   "Fuel-capsule design for laser fusion at the National Ignition Facility",
+   "Rising wax blobs in lava lamps",
+   "Simulations of supernovas and mushroom clouds"
+  ],
+  "strength": "Fast: ripples on the surface of water held upside down grow and spill in a fraction of a second; in a fusion capsule tiny ripples grow a thousandfold in billionths of a second.",
+  "can": [
+   "Mix / Divided Solid",
+   "Mix / Gas",
+   "Mix / Liquid",
+   "Move / Divided Solid",
+   "Move / Gas",
+   "Move / Liquid",
+   "Rotate / Divided Solid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "resonance-vibration",
+  "t": "Resonance",
+  "y": 1638,
+  "field": "Science: Physics",
+  "effect": "small pushes at an object's natural rhythm build up into very large vibrations",
+  "description": "Push a swing in time with its own rhythm and each small push adds up until it flies high; anything that can vibrate, from a wine glass to a bridge to an electric circuit, responds hugely to pushes at its own natural frequency and hardly at all to others. Galileo described it in 1638, noting that well-timed puffs of breath could set a heavy pendulum swinging. Radios tune to one station this way, quartz watches keep time by it, and MRI scanners use it to pick out hydrogen atoms.",
+  "usedIn": [
+   "Tuned circuits that select one station in radios",
+   "Quartz crystal oscillators in watches",
+   "MRI and NMR scanners",
+   "Tuned mass dampers that steady skyscrapers such as Taipei 101"
+  ],
+  "strength": "A good quartz crystal or tuning fork builds its swing up thousands of times over from tiny pushes; a singer matching a wine glass's pitch can shatter it.",
+  "can": [
+   "Absorb / Field",
+   "Accumulate / Field",
+   "Break Down / Divided Solid",
+   "Break Down / Solid",
+   "Clean / Divided Solid",
+   "Clean / Solid",
+   "Compress / Field",
+   "Destroy / Divided Solid",
+   "Destroy / Solid",
+   "Detect / Field",
+   "Expand / Field",
+   "Extract / Field"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "sagnac-effect",
+  "t": "Sagnac effect",
+  "y": 1913,
+  "field": "Science: Physics",
+  "effect": "light running round a turning loop takes longer one way than the other",
+  "description": "Split a beam of light in two and send the halves round a loop in opposite directions. If the loop is turning, the half running with the turn has farther to go, so the two come back slightly out of step. Gyroscopes in airliners and submarines measure that to know which way they're turning.",
+  "usedIn": [
+   "Ring-laser gyroscopes in airliners",
+   "Fibre-optic gyroscopes in submarines, missiles and satellites"
+  ],
+  "strength": "Tiny: Earth's own spin shifts the light by a small fraction of a wavelength, so gyroscopes wind kilometres of fibre into a coil to make it measurable.",
+  "can": [
+   "Change Phase / Field"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "skin-effect",
+  "t": "Skin effect",
+  "y": 1883,
+  "field": "Science: Physics",
+  "effect": "fast-alternating current flows only in a conductor's outer skin",
+  "description": "Fast alternating current crowds into the outer skin of a wire, the more so the faster it alternates. That's why radio aerials can be hollow tubes, and why induction furnaces harden only the surface of steel.",
+  "usedIn": [
+   "Induction hardening of gears and shafts",
+   "Braided Litz wire in chargers and radios",
+   "Hollow copper tubes in radio transmitters"
+  ],
+  "strength": "At mains frequency the current keeps to the outer centimetre of copper; at radio frequencies, to a fraction of a millimetre.",
+  "can": [
+   "Absorb / Field",
+   "Concentrate / Field",
+   "Move / Field",
+   "Resist / Field"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "sputtering",
+  "t": "Sputtering",
+  "y": 1852,
+  "field": "Science: Physics",
+  "effect": "fast ions knock atoms off a surface so they coat nearby objects",
+  "description": "Charged gas atoms slammed into a metal plate knock atoms loose, which then settle as a thin, even coating on anything nearby. Grove noticed metal from the cathode of a glow discharge tube coating the glass in 1852; today it lays down the films on hard disks, microchips and energy-saving window glass.",
+  "usedIn": [
+   "Low-emissivity coatings on window glass",
+   "Magnetic layers on hard-disk platters",
+   "Metal wiring films in microchips",
+   "Ion-beam polishing of telescope mirrors"
+  ],
+  "strength": "Each incoming ion knocks off roughly one atom, so coatings grow slowly, a few nanometres per second, but are extremely even.",
+  "can": [
+   "Break Down / Divided Solid",
+   "Break Down / Solid",
+   "Clean / Solid",
+   "Deposit / Solid",
+   "Destroy / Divided Solid",
+   "Destroy / Solid",
+   "Join / Solid",
+   "Remove / Divided Solid",
+   "Remove / Solid",
+   "Separate / Solid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "stroboscopic-effect",
+  "t": "Stroboscopic effect",
+  "y": 1832,
+  "field": "Science: Physics",
+  "effect": "flashing light makes fast repeating motion look frozen or slowed",
+  "description": "A spinning wheel lit by a flashing light seems to stand still, or creep slowly backwards, when the flashes keep pace with its turning. Plateau and Stampfer built spinning slotted discs around it in 1832, and mechanics still use it to read the speed of engines and machines without touching them.",
+  "usedIn": [
+   "Timing lights for setting car engine ignition",
+   "Strobe dots on record-turntable platters",
+   "Edgerton's stroboscopic high-speed photography",
+   "Videostroboscopy of vocal cords"
+  ],
+  "strength": "A strobe flashing a few thousand times a minute can freeze a fan or engine part spinning at the same speed so it can be read like a still picture.",
+  "can": [
+   "Detect / Field",
+   "Freeze / Field",
+   "Vibrate / Field"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "supercooling",
+  "t": "Supercooling",
+  "y": 1724,
+  "field": "Science: Physics",
+  "effect": "a liquid cooled below its freezing point stays liquid until disturbed",
+  "description": "Very clean, still water can be cooled well below freezing and stay liquid, then turn to ice in a flash when shaken or seeded. Fahrenheit saw it in sealed bulbs of water in 1724; dropping dry ice into supercooled clouds later became cloud seeding, and supercooling now keeps donor organs alive longer without freezing them.",
+  "usedIn": [
+   "Cloud seeding of supercooled clouds",
+   "Supercooled storage of donor livers",
+   "Sodium-acetate heat packs",
+   "Freezing-rain forecasting"
+  ],
+  "strength": "A bottle of purified water can sit liquid in a freezer at minus 10 degrees and turn to slush in seconds when tapped; tiny droplets stay liquid down to about minus 40.",
+  "can": [
+   "Constrain / Solid",
+   "Cool / Gas",
+   "Cool / Liquid",
+   "Protect / Gas",
+   "Protect / Liquid",
+   "Resist / Solid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "surface-acoustic-wave",
+  "t": "Surface acoustic wave",
+  "y": 1885,
+  "field": "Science: Physics",
+  "effect": "sound travels as a ripple along the surface of a solid",
+  "description": "Sound can run along the skin of a solid like a ripple on a pond, staying near the surface instead of going through. Rayleigh predicted these waves in 1885 to explain earthquake shaking; ripples on piezoelectric chips now filter radio signals in every mobile phone.",
+  "usedIn": [
+   "SAW radio filters in mobile phones",
+   "SAW touchscreens on kiosks",
+   "Battery-free SAW tyre-pressure sensors",
+   "Microfluidic pumps on lab chips"
+  ],
+  "strength": "On a chip the ripples are only a few atoms tall and travel at about 3 kilometres per second, but they can sort radio channels precisely and even push droplets around.",
+  "can": [
+   "Accumulate / Field",
+   "Compress / Field",
+   "Compress / Gas",
+   "Compress / Liquid",
+   "Compress / Solid",
+   "Concentrate / Field",
+   "Constrain / Field",
+   "Detect / Gas",
+   "Detect / Liquid",
+   "Detect / Solid",
+   "Mix / Gas",
+   "Mix / Liquid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "surface-tension",
+  "t": "Surface tension",
+  "y": 1805,
+  "field": "Science: Physics",
+  "effect": "the surface of a liquid pulls tight like a stretched skin",
+  "description": "A liquid's surface behaves like a stretched skin, pulling drops round and holding up light objects. Young explained it, and how it sets whether a liquid wets a surface, in 1805; it shapes the droplets fired by inkjet printers, and soaps work by weakening it so water can soak into cloth.",
+  "usedIn": [
+   "Shot towers dropping molten lead into round shot",
+   "Inkjet printer droplets",
+   "Detergents and wetting agents",
+   "Floating-needle compasses"
+  ],
+  "strength": "Water's skin holds up a dry steel needle or a pond skater, a pull of about 0.07 newtons along each metre of edge.",
+  "can": [
+   "Bend / Liquid",
+   "Constrain / Liquid",
+   "Dry / Divided Solid",
+   "Dry / Solid",
+   "Evaporate / Liquid",
+   "Hold / Divided Solid",
+   "Hold / Liquid",
+   "Hold / Solid",
+   "Join / Liquid",
+   "Move / Liquid",
+   "Remove / Liquid",
+   "Separate / Liquid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "synchrotron-radiation",
+  "t": "Synchrotron radiation",
+  "y": 1947,
+  "field": "Science: Physics",
+  "effect": "fast electrons bent by magnets give off intense light and X-rays",
+  "description": "Electrons whirled around a ring at nearly the speed of light throw off a brilliant beam of light and X-rays as they turn. A General Electric team saw the glow through the glass of their synchrotron in 1947; giant rings are now built just to make this light for imaging proteins, materials and engine parts.",
+  "usedIn": [
+   "Synchrotron light sources for protein crystallography",
+   "X-ray lithography of microchips",
+   "Imaging fossils and engine parts"
+  ],
+  "strength": "A synchrotron beam is billions of times brighter than a hospital X-ray tube.",
+  "can": [
+   "Produce / Field"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "thermoacoustic-effect",
+  "t": "Thermoacoustic effect",
+  "y": 1850,
+  "field": "Science: Physics",
+  "effect": "heat makes a tube of gas sing, and sound can pump heat",
+  "description": "Heat one end of a narrow tube and the air inside starts to sing; run it backwards and loud sound inside a tube pumps heat from one end to the other. Glassblowers heard their hot bulbs hum, Sondhauss studied it in 1850, and engineers now build fridges and engines with no moving parts on it.",
+  "usedIn": [
+   "Thermoacoustic freezer prototype built for Ben & Jerry's",
+   "Thermoacoustic Stirling engines",
+   "Rijke-tube demonstrations",
+   "Preventing combustion instability in rocket engines"
+  ],
+  "strength": "A heated test tube can hum loudly, and laboratory thermoacoustic engines turn heat into hundreds of watts of sound power.",
+  "can": [
+   "Absorb / Field",
+   "Cool / Divided Solid",
+   "Cool / Gas",
+   "Cool / Liquid",
+   "Cool / Solid",
+   "Dilute / Field",
+   "Extract / Field",
+   "Freeze / Divided Solid",
+   "Freeze / Gas",
+   "Freeze / Liquid",
+   "Freeze / Solid",
+   "Heat / Divided Solid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "thermoluminescence",
+  "t": "Thermoluminescence",
+  "y": 1663,
+  "field": "Science: Physics",
+  "effect": "a heated crystal glows with energy stored from past radiation",
+  "description": "Some crystals that have soaked up radiation glow faintly when warmed, releasing the stored energy as light. Boyle saw a diamond glow when he held it against his skin in 1663; the glow now dates ancient pottery and measures the radiation dose on workers' badges.",
+  "usedIn": [
+   "Thermoluminescence dating of pottery and burnt flint",
+   "Radiation dosimeter badges",
+   "Checking whether food has been irradiated"
+  ],
+  "strength": "The glow is usually too faint to see without a sensitive light detector, but it grows in proportion to dose, so it can record thousands of years of background radiation.",
+  "can": [
+   "Absorb / Field",
+   "Accumulate / Field",
+   "Detect / Divided Solid",
+   "Detect / Field",
+   "Detect / Solid",
+   "Hold / Field",
+   "Produce / Field"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "thermophoresis",
+  "t": "Thermophoresis",
+  "y": 1870,
+  "field": "Science: Physics",
+  "effect": "small particles drift from hot regions toward cold ones",
+  "description": "Tiny particles drift away from hot surfaces toward cold ones, pushed by the harder knocks of hotter gas molecules on one side. Tyndall saw a dust-free zone above a hot rod in a beam of light in 1870; it's why walls darken above radiators, and it's used to catch smoke for sampling and to build up the glass inside optical fibres.",
+  "usedIn": [
+   "Thermal precipitators for sampling dust and smoke",
+   "Building optical-fibre glass from soot (MCVD)",
+   "Microscale thermophoresis drug-binding tests"
+  ],
+  "strength": "The push is gentle, far weaker than a light breeze, but next to a hot wire it keeps a layer of air about a millimetre thick completely clear of smoke.",
+  "can": [
+   "Absorb / Field",
+   "Accumulate / Divided Solid",
+   "Accumulate / Liquid",
+   "Accumulate / Solid",
+   "Clean / Gas",
+   "Concentrate / Divided Solid",
+   "Deposit / Divided Solid",
+   "Deposit / Solid",
+   "Detect / Liquid",
+   "Detect / Solid",
+   "Extract / Divided Solid",
+   "Extract / Liquid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "total-internal-reflection",
+  "t": "Total internal reflection",
+  "y": 1611,
+  "field": "Science: Physics",
+  "effect": "light hitting a surface at a shallow angle from inside is fully reflected",
+  "description": "Light inside glass or water that hits the surface at a low enough angle is reflected back completely, as if the surface were a perfect mirror. Kepler described it in 1611; it keeps light trapped inside optical fibres for kilometres and folds the light path in binocular prisms.",
+  "usedIn": [
+   "Optical fibres",
+   "Prisms in binoculars",
+   "Rain sensors on car windscreens",
+   "Fingerprint scanners"
+  ],
+  "strength": "It reflects essentially 100 percent of the light, better than any silver mirror, once the angle passes about 42 degrees in glass.",
+  "can": [
+   "Absorb / Field",
+   "Accumulate / Field",
+   "Bend / Field",
+   "Change Phase / Field",
+   "Constrain / Field",
+   "Detect / Field",
+   "Extract / Field",
+   "Move / Field",
+   "Orient / Field",
+   "Rotate / Field"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "townsend-discharge",
+  "t": "Townsend discharge",
+  "y": 1897,
+  "field": "Science: Physics",
+  "effect": "one free electron in a gas multiplies into an avalanche of charge",
+  "description": "In a gas under a strong voltage, one stray electron knocks loose others, which knock loose more, until a whole avalanche of charge rushes across. Townsend worked out this chain reaction around 1897, and it lets a Geiger counter turn the passage of one particle into a loud click.",
+  "usedIn": [
+   "Geiger counters",
+   "Proportional counters and wire chambers in particle detectors",
+   "Gas-discharge surge arresters",
+   "Neon indicator lamps"
+  ],
+  "strength": "A single electron can multiply into a million or more within a millimetre of travel, in less than a microsecond.",
+  "can": [
+   "Detect / Field",
+   "Expand / Field"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "turbulence",
+  "t": "Turbulence",
+  "y": 1883,
+  "field": "Science: Physics",
+  "effect": "a smooth flow breaks into chaotic swirling eddies above a certain speed",
+  "description": "Past a certain speed, a smooth flowing stream breaks into chaotic swirls that mix everything in it. Reynolds showed the switch by running a thread of dye through a glass pipe in 1883; dimples on a golf ball use it to fly twice as far, and engines use it to mix fuel and air.",
+  "usedIn": [
+   "Dimpled golf balls",
+   "Vortex generators on aircraft wings",
+   "Swirl chambers for mixing fuel in engines",
+   "Static mixers in chemical plants"
+  ],
+  "strength": "Water in a garden-hose-sized pipe turns turbulent above about a quarter of a metre per second, slower than walking pace.",
+  "can": [
+   "Bend / Field",
+   "Bend / Gas",
+   "Bend / Liquid",
+   "Clean / Solid",
+   "Destroy / Solid",
+   "Detect / Gas",
+   "Detect / Liquid",
+   "Detect / Solid",
+   "Expand / Gas",
+   "Heat / Gas",
+   "Heat / Liquid",
+   "Mix / Divided Solid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "tyndall-effect",
+  "t": "Tyndall effect",
+  "y": 1869,
+  "field": "Science: Physics",
+  "effect": "small particles in a liquid or gas scatter a light beam so it shows",
+  "description": "A beam of light shining through smoke, fog or milky water becomes visible from the side because tiny particles scatter it. Tyndall studied it in 1869; it let Zsigmondy's ultramicroscope see particles too small for ordinary microscopes, and it's how many smoke alarms sense smoke.",
+  "usedIn": [
+   "Optical smoke detectors",
+   "Turbidity meters for drinking water",
+   "Zsigmondy's ultramicroscope"
+  ],
+  "strength": "Even a faint haze makes a beam visible from the side; it's why headlight beams show up in fog.",
+  "can": [
+   "Detect / Divided Solid",
+   "Detect / Solid",
+   "Move / Field",
+   "Separate / Field"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "vortex-tube-effect",
+  "t": "Vortex cooling",
+  "y": 1931,
+  "field": "Science: Physics",
+  "effect": "whirling compressed air splits into a hot stream and a cold stream",
+  "description": "Compressed air whirled inside a tube splits into a hot stream out one end and a cold stream out the other, with no moving parts. Factories use vortex tubes to cool cutting tools and electrical cabinets.",
+  "usedIn": [
+   "Spot coolers for cutting tools",
+   "Cooling for electrical cabinets in hot factories"
+  ],
+  "strength": "Chills compressed air from room temperature to about −40 °C, but wastes a lot of compressed air doing it.",
+  "can": [
+   "Cool / Gas",
+   "Freeze / Liquid",
+   "Heat / Gas",
+   "Move / Gas",
+   "Separate / Gas"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "vortex-ring",
+  "t": "Vortex ring",
+  "y": 1858,
+  "field": "Science: Physics",
+  "effect": "a puff of fluid rolls into a spinning ring that travels far without spreading",
+  "description": "A sharp puff of air or water rolls up into a spinning doughnut that holds together and travels far, like a smoke ring. Helmholtz showed in 1858 why such rings keep spinning, and toy air cannons use them to knock over cups across a room.",
+  "usedIn": [
+   "Airzooka air-blast toys",
+   "Vortex-ring guns tested for crowd control",
+   "Smoke-ring demonstrations of air flow"
+  ],
+  "strength": "A ring puffed from a bucket-sized box can cross a room, 10 metres or more, and still blow out a candle.",
+  "can": [
+   "Accumulate / Divided Solid",
+   "Accumulate / Gas",
+   "Accumulate / Liquid",
+   "Bend / Gas",
+   "Bend / Liquid",
+   "Concentrate / Divided Solid",
+   "Concentrate / Gas",
+   "Concentrate / Liquid",
+   "Constrain / Divided Solid",
+   "Constrain / Gas",
+   "Constrain / Liquid",
+   "Hold / Divided Solid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "water-hammer",
+  "t": "Water hammer",
+  "y": 1898,
+  "field": "Science: Physics",
+  "effect": "a moving liquid stopped suddenly sends a sharp pressure spike along its pipe",
+  "description": "Shut a tap suddenly on fast-flowing water and the pipes bang, because the moving water slams to a stop and sends a pressure spike racing back through the pipe. Nikolai Zhukovsky worked out its size in 1898 after Moscow's water mains kept bursting. The hydraulic ram pump harnesses those bangs to lift water uphill with no motor at all.",
+  "usedIn": [
+   "Hydraulic ram pumps (Montgolfier, 1796)",
+   "Water-hammer arrestors in plumbing",
+   "Surge tanks at hydroelectric plants"
+  ],
+  "strength": "Stopping water moving at 1 metre per second all at once raises the pressure by about 14 atmospheres.",
+  "can": [
+   "Compress / Gas",
+   "Compress / Liquid",
+   "Compress / Solid",
+   "Expand / Gas",
+   "Expand / Liquid",
+   "Move / Liquid"
+  ],
+  "deckCard": null
+ },
+ {
+  "card": "wiegand-effect",
+  "t": "Wiegand effect",
+  "y": 1974,
+  "field": "Science: Physics",
+  "effect": "a treated wire flips its magnetism suddenly and gives a sharp pulse",
+  "description": "A specially twisted wire flips its magnetism all at once as a magnet passes, giving off a sharp electric pulse no matter how slowly the magnet moves. Wiegand patented the wire in the 1970s, and it powers battery-free rotation counters and the classic Wiegand access-card readers.",
+  "usedIn": [
+   "Wiegand access-card readers",
+   "Battery-free multi-turn rotary encoders",
+   "Pulse counters in water and gas meters"
+  ],
+  "strength": "Each flip gives a pulse of a few volts in a small coil, enough to power a counter chip for an instant with no battery.",
+  "can": [
+   "Detect / Field",
+   "Detect / Solid",
+   "Heat / Solid",
+   "Produce / Field"
+  ],
+  "deckCard": null
+ }
+]

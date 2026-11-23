@@ -1,0 +1,501 @@
+[
+ {
+  "id": "brine-air-well",
+  "name": "Salt-brine air well",
+  "job": "supplies water",
+  "effect": "dissolved stuff lowers a liquid's vapor pressure",
+  "effectCard": "raoults-law",
+  "parts": [
+   "pottery",
+   "glass",
+   "valve"
+  ],
+  "how": "A tray of strong salt brine sits open to the night air, and because dissolved salt lowers the brine's vapor pressure, water vapor from even dry desert air condenses into it. By day the sun warms the sealed tray under a glass lid, driving the water back out as vapor that condenses on the cool glass and drips into a jar. The salt never leaves, so the same brine harvests drinking water night after night.",
+  "real": "liquid-desiccant water harvesters, lab prototypes 2010s",
+  "plausibility": 4,
+  "why": "Pulls drinking water from desert air with no power, just salt and sunshine."
+ },
+ {
+  "id": "brine-heat-battery",
+  "name": "Salt-brine heat battery",
+  "job": "stores energy",
+  "effect": "dissolved stuff lowers a liquid's vapor pressure",
+  "effectCard": "raoults-law",
+  "parts": [
+   "steel",
+   "valve"
+  ],
+  "how": "Summer heat boils water out of a lye solution, leaving thick concentrated brine in a steel tank. In winter a valve lets cool water vapor reach the brine, which grabs it eagerly because dissolved stuff lowers its own vapor pressure, and the absorption releases heat warm enough for a house. Kept apart, the brine and water hold their energy for months without loss.",
+  "real": "sodium-hydroxide seasonal heat storage, lab prototypes 2010s",
+  "plausibility": 3,
+  "why": "Stores summer sunshine as a chemical thirst, released as winter warmth."
+ },
+ {
+  "id": "bullet-shock-locator",
+  "name": "Supersonic bullet locator",
+  "job": "detects objects",
+  "effect": "above the speed of sound air resistance jumps",
+  "effectCard": "mach-number",
+  "parts": [
+   "microphone",
+   "computer"
+  ],
+  "how": "A ring of microphones on a vehicle listens for gunfire. A supersonic bullet drags a cone-shaped shock wave behind it, and the moment that cone sweeps across each microphone tells a computer the bullet's path and so where the shooter is hiding, even before the slower muzzle bang arrives.",
+  "real": "acoustic shooter locators such as Boomerang, 2000s",
+  "plausibility": 5,
+  "why": "The sonic boom of a bullet betrays its shooter's position."
+ },
+ {
+  "id": "chemical-heat-pipe",
+  "name": "Chemical heat pipeline",
+  "job": "carries heat",
+  "effect": "a system at balance shifts to resist any push",
+  "effectCard": "le-chateliers-principle",
+  "parts": [
+   "steel",
+   "valve"
+  ],
+  "how": "A gas mixture flows through a steel pipe loop between a hot source and a distant user. At the hot end the reaction is pushed toward the side that soaks up heat, and at the cold end the balance shifts back, giving that heat out again. Because the energy travels as chemistry rather than warmth, it can cross many kilometres cold without loss.",
+  "real": "EVA-ADAM methane heat-transport loop, Jülich pilot 1980s",
+  "plausibility": 3,
+  "why": "Ships heat cold, as chemical bonds, across a whole city."
+ },
+ {
+  "id": "time-temperature-label",
+  "name": "Spoilage time-temperature label",
+  "job": "measures",
+  "effect": "a reaction needs a starting kick of energy",
+  "effectCard": "energy-of-activation",
+  "parts": [
+   "dye",
+   "paper"
+  ],
+  "how": "A small paper label on a food package holds a slow color-changing chemical reaction. Because each reaction needs a starting kick of energy, warmth speeds it up sharply and cold almost stops it, so the color tracks how much warmth the food has actually suffered. A glance tells you whether milk that was left out is still safe.",
+  "real": "time-temperature indicator labels, 1990s",
+  "plausibility": 5,
+  "why": "Turns a chemistry textbook curve into a sticker that reads spoilage."
+ },
+ {
+  "id": "argon-archive-case",
+  "name": "Argon-filled document case",
+  "job": "protects",
+  "effect": "argon reacts with nothing",
+  "effectCard": "argon",
+  "parts": [
+   "plate-glass",
+   "valve"
+  ],
+  "how": "A sealed glass-and-metal case holds a precious old document in pure argon instead of air. Argon reacts with nothing, so the oxygen and moisture that slowly yellow and crumble parchment are simply absent. A valve lets curators refill the gas and check the seal.",
+  "real": "argon cases for the US Charters of Freedom, 2003",
+  "plausibility": 5,
+  "why": "Protection by doing nothing: an atmosphere that cannot attack."
+ },
+ {
+  "id": "curie-heat-generator",
+  "name": "Curie-point waste-heat generator",
+  "job": "makes electricity",
+  "effect": "a magnet loses its magnetism when hot enough",
+  "effectCard": "curie-temperature",
+  "parts": [
+   "rare-earth-magnet",
+   "insulated-wire"
+  ],
+  "how": "A strip of special alloy with a low Curie temperature sits in a magnet's field, wrapped in a coil of wire. Waste heat and cooling water alternately warm and cool it past its Curie point, so it keeps losing and regaining its magnetism. Each switch makes the field through the coil jump, pushing a current with no moving parts.",
+  "real": null,
+  "plausibility": 3,
+  "why": "Edison tried it in 1887; new alloys could harvest lukewarm factory heat."
+ },
+ {
+  "id": "curie-thermoseeds",
+  "name": "Self-limiting tumor-heating seeds",
+  "job": "treats illness",
+  "effect": "a magnet loses its magnetism when hot enough",
+  "effectCard": "curie-temperature",
+  "parts": [
+   "electromagnets"
+  ],
+  "how": "Tiny alloy seeds are placed in a tumor and a coil around the patient makes a fast-changing magnetic field that heats them. Once a seed reaches its Curie temperature it stops being magnetic and stops heating, so it holds itself at a fever-like temperature that harms cancer cells but not healthy ones. No thermometer inside the body is needed.",
+  "real": "Curie-point thermoseed hyperthermia, clinical trials 1990s",
+  "plausibility": 4,
+  "why": "A built-in thermostat made of physics, inside the body."
+ },
+ {
+  "id": "electron-beam-memory",
+  "name": "Electron-beam charge memory",
+  "job": "stores data",
+  "effect": "an electric field bends an electron beam",
+  "effectCard": "electron-as-subatomic-particle",
+  "parts": [
+   "electron-gun",
+   "glass"
+  ],
+  "how": "A glass tube holds an electron gun aimed at a screen. Voltages on deflection plates bend the beam to any spot, where it leaves a tiny patch of charge meaning 1 or no patch meaning 0, and the beam returns to read and refresh each spot. It was one of the first ways computers stored numbers at electronic speed.",
+  "real": "Williams tube, 1947",
+  "plausibility": 5,
+  "why": "A display tube repurposed as the first random-access computer memory."
+ },
+ {
+  "id": "electron-beam-writer",
+  "name": "Electron-beam chip writer",
+  "job": "prints",
+  "effect": "an electric field bends an electron beam",
+  "effectCard": "electron-as-subatomic-particle",
+  "parts": [
+   "electron-gun",
+   "computer"
+  ],
+  "how": "A computer steers a finely focused electron beam across a coated wafer by bending it with electric fields. Wherever the beam lands it changes the coating, drawing circuit patterns far smaller than light can print. The patterns become masks for making microchips.",
+  "real": "electron-beam lithography, 1960s",
+  "plausibility": 5,
+  "why": "The television's beam-steering trick prints the world's tiniest drawings."
+ },
+ {
+  "id": "liquid-hydrogen-oil",
+  "name": "Rechargeable hydrogen oil tank",
+  "job": "stores chemical energy",
+  "effect": "nickel adds hydrogen to liquid carrier oils",
+  "effectCard": "nickel-as-catalyst",
+  "parts": [
+   "steel",
+   "valve"
+  ],
+  "how": "Hydrogen gas is hard to store, so a nickel catalyst instead bonds it onto an oily liquid, the same trick that hardens vegetable oil into margarine. The loaded oil sits in an ordinary steel tank at normal pressure like diesel. When energy is needed, heating it over a catalyst releases the hydrogen and the empty oil is reused.",
+  "real": "liquid organic hydrogen carriers, pilot plants 2010s",
+  "plausibility": 4,
+  "why": "Margarine chemistry turned into a safe, pumpable hydrogen tank."
+ },
+ {
+  "id": "mosquito-vaccinator",
+  "name": "Mosquito-delivered malaria vaccine",
+  "job": "prevents disease",
+  "effect": "a mosquito bite delivers the parasite",
+  "effectCard": "mosquitoes-and-malaria",
+  "parts": [
+   "genetic-engineering"
+  ],
+  "how": "Malaria parasites are genetically crippled so they cannot finish growing in the liver. Mosquitoes carrying these weakened parasites bite volunteers, delivering them exactly as nature does, and the body learns to fight the real disease.",
+  "real": "bite-delivered weakened malaria parasite trials, 2022",
+  "plausibility": 3,
+  "why": "The disease's own delivery system turned into its vaccine syringe."
+ },
+ {
+  "id": "mosquito-blood-survey",
+  "name": "Mosquito blood survey",
+  "job": "diagnoses",
+  "effect": "mosquitoes carry the blood and germs they drink",
+  "effectCard": "mosquitoes-and-malaria",
+  "parts": [
+   "fish-nets",
+   "radioimmune-assay"
+  ],
+  "how": "Net traps collect mosquitoes that have just fed on people and animals in a village. Testing the blood in their bellies shows which germs are circulating, so mosquitoes act as thousands of free flying blood samplers. Health workers learn of an outbreak without drawing a single needle.",
+  "real": "xenosurveillance studies, 2010s",
+  "plausibility": 4,
+  "why": "Lets the pest do the blood sampling for disease surveillance."
+ },
+ {
+  "id": "arousal-detector",
+  "name": "Fight-or-flight lie detector",
+  "job": "measures",
+  "effect": "adrenaline sets the body to fight or flight",
+  "effectCard": "epinephrine",
+  "parts": [
+   "galvanometer",
+   "electrocardiogram"
+  ],
+  "how": "Sensors record a person's heartbeat, breathing and skin sweat while they answer questions. A stressful question releases adrenaline, which races the heart and dampens the skin, and the meters show it. It measures arousal, not truth, which is why its verdicts are disputed.",
+  "real": "polygraph, 1921",
+  "plausibility": 5,
+  "why": "Reads a hormone's effects to measure hidden stress."
+ },
+ {
+  "id": "gamma-cargo-scanner",
+  "name": "Gamma-ray cargo scanner",
+  "job": "detects objects",
+  "effect": "gamma rays go through more than X-rays",
+  "effectCard": "gamma-rays",
+  "parts": [
+   "geiger-counter",
+   "computer"
+  ],
+  "how": "A truck drives between a shielded gamma-ray source and a row of radiation counters. Gamma rays pierce steel container walls that would stop ordinary X-rays, and dense hidden objects cast shadows that a computer builds into a picture. Customs officers see smuggled goods without opening the box.",
+  "real": "gamma-ray cargo scanners such as VACIS, 1990s",
+  "plausibility": 5,
+  "why": "Sees through a steel shipping container in seconds."
+ },
+ {
+  "id": "radioisotope-ice-probe",
+  "name": "Nuclear-heated ice-melting probe",
+  "job": "transports",
+  "effect": "radium gives off steady heat for centuries",
+  "effectCard": "radioactive-energy",
+  "parts": [
+   "steel",
+   "insulated-wire"
+  ],
+  "how": "A torpedo-shaped steel probe carries a decaying radioactive heat source in its nose. The steady heat melts the ice beneath it, so gravity pulls it kilometres down through a frozen moon's crust, paying out a wire tether to talk to the surface. It could reach the hidden ocean of Europa.",
+  "real": null,
+  "plausibility": 3,
+  "why": "Decay heat as a drill, carrying instruments to an alien ocean."
+ },
+ {
+  "id": "radioisotope-stirling-engine",
+  "name": "Radioisotope Stirling engine",
+  "job": "provides power",
+  "effect": "radium gives off steady heat for centuries",
+  "effectCard": "radioactive-energy",
+  "parts": [
+   "piston-and-cylinder",
+   "steel"
+  ],
+  "how": "A sealed engine has a decaying radioactive heat source warming one end of a gas-filled cylinder while space or air cools the other. The gas expands and contracts, driving a piston back and forth for decades with no fuel and no refuelling. It suits deep-space probes or remote stations.",
+  "real": "NASA Advanced Stirling Radioisotope Generator prototype, 2000s",
+  "plausibility": 4,
+  "why": "Decades of steady piston power from a lump that never refuels."
+ },
+ {
+  "id": "nuclear-thermal-rocket",
+  "name": "Nuclear thermal rocket",
+  "job": "provides thrust",
+  "effect": "a little mass holds a huge amount of energy",
+  "effectCard": "mass-energy",
+  "parts": [
+   "nuclear-reactor",
+   "liquid-fuel-rockets"
+  ],
+  "how": "A compact nuclear reactor replaces the combustion chamber of a rocket. Splitting atoms turns a tiny amount of mass into huge heat, which blasts liquid hydrogen out of the nozzle far faster than burning fuel can. That roughly doubles efficiency for trips to Mars.",
+  "real": "NERVA nuclear thermal rocket, ground tests 1960s",
+  "plausibility": 4,
+  "why": "E=mc squared applied to a rocket nozzle could halve Mars trip times."
+ },
+ {
+  "id": "superhot-rock-geothermal",
+  "name": "Microwave-drilled superhot geothermal",
+  "job": "makes electricity",
+  "effect": "radioactivity heats the Earth's crust",
+  "effectCard": "radioactivity-and-earth",
+  "parts": [
+   "magnetrons",
+   "steam-turbine",
+   "electric-generators"
+  ],
+  "how": "Deep in the crust, radioactive decay keeps rock hotter than 400 degrees everywhere, if you can only reach it. Powerful microwave beams vaporize rock instead of grinding it, boring holes 10 to 20 kilometres down, and water pumped through returns as superhot steam to spin a turbine. Any old coal plant could be fed this way.",
+  "real": null,
+  "plausibility": 3,
+  "why": "Taps the planet's radioactive heat almost anywhere, not just volcanic spots."
+ },
+ {
+  "id": "bee-explosive-sniffer",
+  "name": "Trained-bee explosive sniffer",
+  "job": "detects objects",
+  "effect": "pairing a signal with a reward trains a reflex",
+  "effectCard": "conditioned-response",
+  "parts": [
+   "air-pump",
+   "camera",
+   "computer"
+  ],
+  "how": "Honeybees are trained in minutes by giving sugar water each time they smell a trace of explosive, until the smell alone makes them stick out their tongues. A handheld box pumps air past a few harnessed bees while a camera and computer watch for the reflex. They beat many electronic noses for sensitivity.",
+  "real": "Inscentinel trained-bee detector prototypes, 2000s",
+  "plausibility": 4,
+  "why": "A Pavlovian reflex turned into a living chemical sensor."
+ },
+ {
+  "id": "infrared-cryo-telescope",
+  "name": "Helium-cooled infrared telescope",
+  "job": "gathers light",
+  "effect": "evaporating liquid helium chills things to near absolute zero",
+  "effectCard": "liquid-helium",
+  "parts": [
+   "reflecting-telescope",
+   "dewar-flask"
+  ],
+  "how": "Infrared light from distant dust and young stars is faint heat, and a warm telescope glows brighter than its targets. Boiling liquid helium in an insulated flask chills the mirror and detectors to a few degrees above absolute zero, silencing their own glow. Then the faint infrared sky becomes visible.",
+  "real": "IRAS infrared space telescope, 1983",
+  "plausibility": 5,
+  "why": "Cold enough to see heat from the edge of the universe."
+ },
+ {
+  "id": "seismic-prospecting",
+  "name": "Seismic refraction prospecting",
+  "job": "detects objects",
+  "effect": "earthquake waves travel faster in deeper, denser rock",
+  "effectCard": "mohorovicic-discontinuity",
+  "parts": [
+   "modern-seismograph",
+   "computer"
+  ],
+  "how": "A small blast or heavy thump at the surface sends sound waves into the ground, and a line of seismographs records when they return. Waves that dip into faster, denser rock arrive sooner, so the timing reveals buried layers, salt domes and oil traps. It is the Moho trick shrunk to a few kilometres.",
+  "real": "seismic refraction prospecting, 1920s",
+  "plausibility": 5,
+  "why": "Mapping hidden oil by timing echoes from fast rock."
+ },
+ {
+  "id": "superconducting-cable",
+  "name": "Superconducting power cable",
+  "job": "carries current",
+  "effect": "very cold metals lose all electrical resistance",
+  "effectCard": "superconductivity",
+  "parts": [
+   "insulated-wire",
+   "dewar-flask"
+  ],
+  "how": "A city power cable is made of superconducting tape inside an insulated tube of liquid nitrogen. Chilled, the tape loses all electrical resistance, so a thin cable carries as much power as a thick bundle of copper with no heat loss. It fits into old ducts under crowded streets.",
+  "real": "superconducting city cables, pilots 2000s",
+  "plausibility": 4,
+  "why": "Zero-loss power lines snaking under existing streets."
+ },
+ {
+  "id": "superconducting-storage-ring",
+  "name": "Superconducting magnetic energy store",
+  "job": "stores electricity",
+  "effect": "very cold metals lose all electrical resistance",
+  "effectCard": "superconductivity",
+  "parts": [
+   "electromagnets",
+   "dewar-flask"
+  ],
+  "how": "A large coil of superconducting wire is kept frozen in an insulated cryostat. Because the wire has no resistance, a current fed into it keeps circling forever, storing energy in its magnetic field. It can be released in a split second to steady a power grid.",
+  "real": "superconducting magnetic energy storage, 1980s",
+  "plausibility": 4,
+  "why": "Electricity that circles a loop forever until needed."
+ },
+ {
+  "id": "xray-diffraction-bag-scanner",
+  "name": "X-ray fingerprint bag scanner",
+  "job": "detects objects",
+  "effect": "crystals scatter X-rays into telltale patterns",
+  "effectCard": "x-ray-diffraction",
+  "parts": [
+   "coolidge-tube",
+   "geiger-counter",
+   "computer"
+  ],
+  "how": "Airport bags pass through a thin X-ray beam while detectors catch the rays scattered at small angles. Every crystalline substance scatters X-rays into its own pattern, so a computer recognizes explosives by their chemistry rather than their shape. It flags a bomb even if it is molded to look like something harmless.",
+  "real": "X-ray diffraction baggage screeners, 2000s",
+  "plausibility": 5,
+  "why": "Identifies explosives by their crystal fingerprint, not their shape."
+ },
+ {
+  "id": "calutron",
+  "name": "Magnetic isotope separator",
+  "job": "separates mixtures",
+  "effect": "a magnetic field bends lighter ions more sharply",
+  "effectCard": "neon-varieties",
+  "parts": [
+   "electromagnets",
+   "electron-gun",
+   "air-pump"
+  ],
+  "how": "Atoms of an element are turned into ions and fired as a beam through a vacuum. A huge electromagnet bends the beam into a curve, lighter isotopes curving more sharply, so they land in different collecting cups. It separates atoms that are chemically identical.",
+  "real": "calutron, 1943",
+  "plausibility": 5,
+  "why": "Sorts chemically identical atoms by weight alone."
+ },
+ {
+  "id": "microwave-oven",
+  "name": "Microwave oven",
+  "job": "prepares food",
+  "effect": "lopsided molecules twist to line up in an electric field",
+  "effectCard": "dipole-moments",
+  "parts": [
+   "magnetrons",
+   "steel"
+  ],
+  "how": "A magnetron fills a steel box with a rapidly flipping electric field. Water molecules are lopsided, so they twist back and forth billions of times a second to follow it, jostling their neighbours and heating the food from within. Food is cooked in minutes without a flame.",
+  "real": "microwave oven, 1947",
+  "plausibility": 5,
+  "why": "A radar tube plus wiggling water molecules reinvented cooking."
+ },
+ {
+  "id": "liquid-crystal-display",
+  "name": "Liquid crystal display",
+  "job": "shows the image",
+  "effect": "lopsided molecules twist to line up in an electric field",
+  "effectCard": "dipole-moments",
+  "parts": [
+   "glass",
+   "polaroid"
+  ],
+  "how": "A thin layer of rod-shaped molecules sits between two glass plates and two polarizing filters. Applying a voltage to a tiny patch makes the lopsided molecules swing into line with the field, which stops them twisting the light, so that patch turns dark. Millions of patches together form a picture.",
+  "real": "liquid crystal display, 1970s",
+  "plausibility": 5,
+  "why": "Molecules turning like weathervanes make every flat screen."
+ },
+ {
+  "id": "solar-blind-uv-link",
+  "name": "Solar-blind ultraviolet radio",
+  "job": "communicates",
+  "effect": "ozone soaks up ultraviolet light",
+  "effectCard": "ozonosphere",
+  "parts": [
+   "light-emitting-diodes",
+   "photocell"
+  ],
+  "how": "High-altitude ozone absorbs the sun's deep ultraviolet light, so near the ground that colour of light is perfectly dark, even at noon. Deep-UV lamps flash messages that scatter off the air around corners and over hills to a sensitive light detector. With no sunlight to drown it out, the faint signal is easy to hear.",
+  "real": "solar-blind UV communication prototypes, 2000s",
+  "plausibility": 4,
+  "why": "The ozone layer leaves a dark colour channel free for signalling."
+ },
+ {
+  "id": "xray-ore-sorter",
+  "name": "X-ray scrap and ore sorter",
+  "job": "separates mixtures",
+  "effect": "each element gives off its own X-ray frequency",
+  "effectCard": "atomic-number",
+  "parts": [
+   "coolidge-tube",
+   "geiger-counter",
+   "computer",
+   "valve"
+  ],
+  "how": "Broken scrap metal or ore pieces race along a conveyor under an X-ray tube. Each element glows back X-rays of its own frequency, so a detector and computer know what every piece is made of, and a puff of air from a valve knocks it into the right bin. Mixed junk becomes pure streams of copper, aluminium or ore.",
+  "real": "X-ray fluorescence sorters, 2000s",
+  "plausibility": 5,
+  "why": "Reads each lump's elements in milliseconds to sort scrap automatically."
+ },
+ {
+  "id": "phage-food-spray",
+  "name": "Bacteria-eating food spray",
+  "job": "preserves food",
+  "effect": "some viruses kill only bacteria",
+  "effectCard": "bacteriophages",
+  "parts": [
+   "spray-cans"
+  ],
+  "how": "Meat and cheese are misted with a harmless solution of bacteriophages, viruses that attack only one kind of bacteria. They hunt down and burst Listeria or Salmonella cells while leaving food, people and helpful microbes alone. The food keeps longer without heat or chemical preservatives.",
+  "real": "bacteriophage food sprays such as ListShield, 2006",
+  "plausibility": 5,
+  "why": "Living, targeted preservative that kills only the germ it is aimed at."
+ },
+ {
+  "id": "glowing-phage-test",
+  "name": "Glowing-phage germ test",
+  "job": "diagnoses",
+  "effect": "some viruses kill only bacteria",
+  "effectCard": "bacteriophages",
+  "parts": [
+   "genetic-engineering",
+   "photocell"
+  ],
+  "how": "A phage that infects only one kind of bacterium is engineered to carry a firefly glow gene. Mixed with a patient sample, it infects only the target germ, which then lights up, and a light sensor detects the glow. It shows within hours whether that germ is present and alive.",
+  "real": "luciferase reporter phage tests, 1990s-2010s",
+  "plausibility": 4,
+  "why": "A germ's own enemy becomes a pinpoint, fast detector for it."
+ },
+ {
+  "id": "pet-scanner",
+  "name": "Radioactive-tracer body scanner",
+  "job": "diagnoses",
+  "effect": "a radioactive atom behaves chemically like its stable twin",
+  "effectCard": "radioactive-tracers",
+  "parts": [
+   "coincidence-counter",
+   "computer"
+  ],
+  "how": "A patient is given sugar tagged with radioactive atoms that the body handles exactly like ordinary sugar, so it piles up wherever cells are busiest, such as in tumours. Rings of detectors catch the paired flashes each decay sends out in opposite directions. A computer turns them into a 3D map of where the body is working hardest.",
+  "real": "PET scanner, 1970s",
+  "plausibility": 5,
+  "why": "Watches the body's chemistry live, not just its shape."
+ }
+]

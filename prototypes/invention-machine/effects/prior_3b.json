@@ -1,0 +1,152 @@
+[
+  {
+    "id": "aptamer-chemo-sensor",
+    "verdict": "built",
+    "evidence": "Soh/Kippin groups demonstrated closed-loop control of circulating doxorubicin in live rats and rabbits with an in-vivo electrochemical aptamer (methylene-blue-labelled, shape-switching) sensor driving an infusion pump every ~7 s, with later methotrexate and multi-day in-vivo versions.",
+    "url": "https://communities.springernature.com/posts/personalized-drug-dosing-through-closed-loop-control"
+  },
+  {
+    "id": "breath-screening-card",
+    "verdict": "studied",
+    "evidence": "The pieces exist separately - MOF film arrays read by a phone camera for VOCs, a MOF/quantum-dot fluorescent sensor for sub-ppb breath benzaldehyde, and porphyrin e-nose breath arrays field-tested for TB - but no integrated MOF+quantum-dot fluorescence card with phone readout was found.",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10216756/"
+  },
+  {
+    "id": "atom-cloud-brain-helmet",
+    "verdict": "studied",
+    "evidence": "Rubidium BEC magnetometers with record energy resolution are promoted for future brain sensing but have never measured brain signals; all wearable-helmet MEG demonstrated to date (UCL/Nottingham, ~60 channels) uses room-temperature optically pumped magnetometers, a different mechanism.",
+    "url": "https://www.eurekalert.org/news-releases/942755"
+  },
+  {
+    "id": "transparent-graphene-grid",
+    "verdict": "built",
+    "evidence": "Transparent graphene microelectrode arrays have been used in rodents to record micro-ECoG while simultaneously two-photon/confocal calcium-imaging the same cortex, explicitly to map seizure onset and spread at the microscale (Driscoll et al., Commun Biol 2021; eNeuro 2022); human use is the remaining gap.",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7846732"
+  },
+  {
+    "id": "skull-window-ultrasound",
+    "verdict": "built",
+    "evidence": "Caltech implanted a permanent polymer acoustic skull window in a patient and used functional ultrasound through it to map and decode finger movements non-invasively (Sci Transl Med 2024), after single-trial fUS decoding of movement intention in primates.",
+    "url": "https://shapirolab.caltech.edu/?p=1751"
+  },
+  {
+    "id": "sky-cooled-grain-store",
+    "verdict": "built",
+    "evidence": "Spectrally selective radiative-cooling membranes and coatings have been installed and field-measured on real grain warehouses and a concrete wheat silo, dropping headspace air by up to 9.8 C and the grain pile by 4-10 C with no power; MIT's hybrid radiative+evaporative off-grid food cooler is a built prototype of the water-assisted variant.",
+    "url": "https://ideas.repec.org/a/eee/renene/v218y2023ics0960148123011874.html"
+  },
+  {
+    "id": "heat-venting-window-film",
+    "verdict": "built",
+    "evidence": "Visibly transparent radiative-cooling films that pass sunlight and emit in the 8-13 um atmospheric window are demonstrated devices (resonant-microsphere polymer metamaterial at ~93 W/m2, 2025 window glazings at 0.8 emissivity, polymer composite cutting container temperature 10 C), including roll-to-roll manufacturing and VO2 switchable variants.",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12592792/"
+  },
+  {
+    "id": "self-cooling-solar-panel",
+    "verdict": "studied",
+    "evidence": "Radiative-cooling layers on cells (~7-10 C drop, mostly modelling plus one preprint) and graphene moisture barriers for perovskites (95% efficiency after 100 h at 85-90% RH) exist separately; no device combining a radiative-cooling encapsulant with a graphene barrier, nor a lifetime figure for the pair, was found.",
+    "url": "https://www.perovskite-info.com/novel-graphene-based-encapsulation-opens-door-robust-perovskite-solar-cells"
+  },
+  {
+    "id": "forever-trap",
+    "verdict": "built",
+    "evidence": "framergy's EPA SBIR Phase II built a titanium-MOF catalyst-bed flow-through reactor that adsorbs and photocatalytically destroys PFOA, PFOS and GenX from ppb water over multiple regeneration cycles; the UV/sulfite hydrated-electron chemistry is separately demonstrated for regenerating PFAS-loaded sorbents.",
+    "url": "https://cfpub.epa.gov/ncer_abstracts/index.cfm/fuseaction/display.abstractDetail/abstract_id/11061/report/F"
+  },
+  {
+    "id": "electric-denitrifying-bed",
+    "verdict": "built",
+    "evidence": "Electrode-fed (biocathode) denitrification beds have been run in the lab, including biocathodes buried in gravel outperforming sand for nitrate removal (Heliyon 2019) and graphite-electrode woodchip bioreactors for farm drainage at Iowa State; the solar-powered, carbon-free field version is not yet reported.",
+    "url": "https://doaj.org/article/0db87971674a4b3e851adf204c3b9749"
+  },
+  {
+    "id": "metal-harvest-pond",
+    "verdict": "built",
+    "evidence": "Engineered microbes that pull metals out of mine water are demonstrated in the lab - E. coli overexpressing NikABCDE plus metallothionein with 7-fold nickel bioaccumulation from real Sudbury mine effluent, Cupriavidus with 6.5-20x Cd/Ni uptake and ~90% acid elution recovery, and surface-displayed lanthanide-binding peptides on tailings leachate - but no pond-scale system and no biocontainment kill switch.",
+    "url": "https://research.bangor.ac.uk/en/publications/heavy-metal-removal-by-bioaccumulation-using-genetically-engineer/"
+  },
+  {
+    "id": "rain-fast-rnai-spray",
+    "verdict": "built",
+    "evidence": "Species-specific sprayable dsRNA is a registered product (Calantha/ledprona, first FIFRA Section 3 foliar RNA insecticide, field-equivalent to conventional insecticides but degrading in ~3 days), and nanocarrier-stabilised versions are demonstrated: BioClay layered-double-hydroxide nanosheets extend a single spray from ~1 week to 3-4 weeks of protection.",
+    "url": "https://par.nsf.gov/servlets/purl/10450653"
+  },
+  {
+    "id": "sky-lid",
+    "verdict": "built",
+    "evidence": "A selective night-warming film has been fabricated and tested outdoors for exactly this effect - germanium/ZnS layers reflecting 0.91 in the 8-14 um atmospheric window while absorbing in adjacent bands, to stop crops radiating to space on frost nights - though only on small containers and infrastructure, not at orchard scale.",
+    "url": "https://newatlas.com/materials/selective-warming-film-crops-infrastructure-cold-nights"
+  },
+  {
+    "id": "nodulating-cereal",
+    "verdict": "studied",
+    "evidence": "Decades of attempts to give cereals functional root nodules have failed; the closest working result is UC Davis CRISPR wheat that exudes extra apigenin to stimulate free-living soil bacteria to fix nitrogen (greenhouse yield gain, Plant Biotech J 2025) - the same job by a different, nodule-free mechanism.",
+    "url": "https://www.eurekalert.org/news-releases/1096180"
+  },
+  {
+    "id": "spore-data-archive",
+    "verdict": "built",
+    "evidence": "Data has been written into spore-forming Bacillus as a long-term storage vessel and stress-tested (ACS Synth Biol 2022), and self-replicating genomic archives with error correction are demonstrated in Halomonas genomes and a 254 kbp synthetic yeast chromosome; only the tardigrade-protein drying step is absent.",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10074078/"
+  },
+  {
+    "id": "quantum-dot-glass-archive",
+    "verdict": "built",
+    "evidence": "Femtosecond lasers already write and erase 3D patterns of CsPbBr3 perovskite quantum dots inside glass and this has been used for multilayer optical data storage read by photoluminescence (Nature Photonics 2019; Science direct-lithography work; Nanoscale 2025), alongside Microsoft Project Silica's 1.59 Gbit/mm3 fused-silica archive.",
+    "url": "https://ui.adsabs.harvard.edu/abs/2019NaPho..14...82H/abstract"
+  },
+  {
+    "id": "skyrmion-probe-memory",
+    "verdict": "studied",
+    "evidence": "Skyrmion racetrack memory remains a proposal - reviews state a fully functional skyrmion racetrack memory has not been experimentally demonstrated, with edge annihilation and pinning unsolved - and no radiation-hardness testing of skyrmion storage was found; the charge-free radiation argument exists only for RRAM.",
+    "url": "https://arxiv.org/pdf/2101.09947"
+  },
+  {
+    "id": "key-well",
+    "verdict": "built",
+    "evidence": "The UK Quantum Communications Hub has demonstrated a 'quantum ATM': free-space QKD between a prototype handheld device and a wall-mounted terminal to top up keys on a phone, with patents covering kiosk-based one-time-pad refills.",
+    "url": "https://uknqt.ukri.org/wp-content/uploads/2021/10/Consumer-Quantum-Key-Distribution.pdf"
+  },
+  {
+    "id": "self-erasing-key-chip",
+    "verdict": "built",
+    "evidence": "Wilson and Cambou (Front Nanotechnol 2022) experimentally validated tamper-sensitive pre-formed ReRAM (memristive) PUFs that regenerate the key from device physics rather than storing it, including a self-destroy protocol triggered when tampering is sensed.",
+    "url": "https://www.frontiersin.org/articles/10.3389/fnano.2022.1055545"
+  },
+  {
+    "id": "pencil-beam-link",
+    "verdict": "built",
+    "evidence": "Mittleman's group demonstrated a narrow-beam THz link with a backscatter-monitoring countermeasure that flags eavesdroppers (Nature 2018), and follow-on work shows metasurface and waveguide attacks that this detection can miss - so the mechanism is built and its 'cannot be tapped quietly' premise is already partly refuted.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/30323288/"
+  },
+  {
+    "id": "organ-vitrification-bank",
+    "verdict": "built",
+    "evidence": "Bischof/Fahy groups vitrified rat kidneys for up to 100 days and recovered them by nanowarming - RF heating of perfused silica-coated iron oxide nanoparticles - restoring full renal function after transplant (Nat Commun 2023); tardigrade proteins for intracellular glass are not part of it.",
+    "url": "https://link.springer.com/10.1038/s41467-023-38824-8"
+  },
+  {
+    "id": "blood-group-converting-filter",
+    "verdict": "built",
+    "evidence": "Gut-bacterial glycosidases (FpGalNAc deacetylase and FpGalactosaminidase from Flavonifractor plautii) strip A antigens to make universal group O, demonstrated on human kidneys and lungs by machine perfusion and on red cells by enzyme cocktail; the immobilised-enzyme cartridge format has not been reported.",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10981661/"
+  },
+  {
+    "id": "electrocaloric-chip-cooler",
+    "verdict": "studied",
+    "evidence": "A flexible 30 um electrocaloric polymer refrigerator cooled an external electronic chip by 17.5 K (Nature 2024) and patents and liquid-metal simulations propose integration into the die stack, but no experimental electrocaloric film cooling an on-die hotspot was found; the demonstrated hotspot coolers are thermoelectric (15 C at ~1300 W/cm2).",
+    "url": "https://www.nature.com/articles/s41467-024-48583-9.pdf"
+  },
+  {
+    "id": "cold-atom-inertial-navigator",
+    "verdict": "built",
+    "evidence": "Imperial College cold-atom inertial sensors have been taken to sea by the Royal Navy (XV Patrick Blackett 2023, MV Anvil Point Arctic trial 2025) and Aquark's compact system was trialled on HMS Pursuer, with a published Rb-87 grating-MOT accelerometer demonstrator; shock, shielding and 6-axis operation are the open work.",
+    "url": "https://ukdefencejournal.org.uk/royal-navy-tests-quantum-navigation-in-arctic/"
+  },
+  {
+    "id": "dry-vaccine-pack",
+    "verdict": "studied",
+    "evidence": "Tardigrade CAHS D proteins have been shown to vitrify and protect a biologic - clotting factor VIII kept active through heat and dry storage - and the group proposes extending this to vaccines with an industry partner, but no tardigrade-protein-stabilised vaccine has been demonstrated.",
+    "url": "https://par.nsf.gov/servlets/purl/10416527"
+  }
+]

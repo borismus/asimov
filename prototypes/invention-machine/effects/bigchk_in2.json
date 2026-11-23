@@ -1,0 +1,709 @@
+[
+ {
+  "id": "light-echo-breast-scanner",
+  "name": "Light-echo breast scanner",
+  "subtitle": "a laser maps the vessels a tumour grows",
+  "bigJob": "early-cancer",
+  "job": "Find cancer while it's curable",
+  "effects": [
+   {
+    "effect": "a flash of light absorbed in tissue makes it expand and thump out an ultrasound pulse",
+    "card": "photoacoustic-effect",
+    "newToJob": true
+   },
+   {
+    "effect": "hemoglobin carries oxygen in the blood",
+    "card": "hemoglobin",
+    "newToJob": false
+   },
+   {
+    "effect": "sound echoes",
+    "card": "acoustics",
+    "newToJob": false
+   }
+  ],
+  "parts": [
+   "laser",
+   "sonar",
+   "computer"
+  ],
+  "how": "Mammograms squash the breast, use X-rays and miss much of what is there in dense tissue, which is why young women are not screened and why tumours are found late in exactly the people whose cancers grow fastest. A bowl of listening crystals surrounds the breast while a near-infrared laser pulses into it; blood soaks up the light far more strongly than the tissue around it, heats by a thousandth of a degree, expands and thumps out a faint ultrasound ping, so the detectors hear a map of every vessel. A tumour only millimetres across has already grown its own tangle of crooked new vessels, and that tangle is what shows up, in a scan that takes seconds, needs no X-rays and no compression.",
+  "obstacle": "Depth: light reaches a few centimetres into tissue, so the method suits the breast and the skin but cannot yet look deep inside the body.",
+  "evidence": "Lin et al., Nature Communications 2018: single-breath-hold photoacoustic computed tomography imaged human breast vasculature and identified a tumour missed by angiographic imaging, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6003984/ ; a 2025 dual photoacoustic-ultrasonic system reports whole-breast scans in 12 seconds to 5 cm depth, and Tong et al., Nature Biomedical Engineering 2025, classify lesions with panoramic PACT",
+  "existsCheck": "Searched photoacoustic breast imaging and screening. Systems are research prototypes or early clinical studies for characterising known lesions; no photoacoustic scanner is approved for population screening, and reviews frame small early-stage lesions as the open gap. The deck's Raman cancer probe reads chemistry in an open surgical field, not vessels through intact tissue.",
+  "familiar": false,
+  "tenX": "Screening becomes safe to repeat often and works in dense breasts, where mammography misses roughly a third of cancers",
+  "plausibility": 4,
+  "why": "Found tumours by the new blood vessels they build, with light and sound instead of X-rays."
+ },
+ {
+  "id": "organ-bank",
+  "name": "Organ bank",
+  "subtitle": "donor organs turned to glass for years",
+  "bigJob": "organs",
+  "job": "Replace failing organs",
+  "effects": [
+   {
+    "effect": "a strong enough cryoprotectant cooled fast enough sets as glass, with no ice crystals to tear cells",
+    "card": null,
+    "newToJob": true
+   },
+   {
+    "effect": "iron particles in an alternating magnetic field heat from within, warming a whole organ evenly in seconds",
+    "card": "magnetic-hysteresis",
+    "newToJob": true
+   },
+   {
+    "effect": "supercooling",
+    "card": "supercooling",
+    "newToJob": false
+   }
+  ],
+  "parts": [
+   "perfusion-pump",
+   "dewar-flask",
+   "electromagnets"
+  ],
+  "how": "A donated kidney is only good for about a day, so organs are flown out within hours to whoever is reachable rather than whoever matches best, and thousands are thrown away each year for want of a recipient in time. The organ is perfused with a cryoprotectant that sets as glass instead of ice, laced with iron oxide particles, and cooled to about minus 150 degrees; to bring it back, the whole organ is put in an alternating magnetic field, and the particles spread through every vessel heat it from the inside fast enough that ice never has time to form. With a bank, matching stops being a race against the clock, organs can be tissue-matched properly, and transplants become scheduled operations.",
+  "obstacle": "Scale: a human kidney is hundreds of times the volume of a rat's, so getting cryoprotectant everywhere and cooling without cracking is still unsolved.",
+  "evidence": "Han, Rao, Bischof et al., Nature Communications 14 (June 2023): rat kidneys vitrified and stored up to 100 days, nanowarmed and transplanted, restoring life-sustaining function in all five recipients within 30 days, https://www.nature.com/articles/s41467-023-38824-8 ; in October 2026 the same group reported pig kidneys stored for up to a year, rewarmed and transplanted, https://www.technologyreview.com/2026/10/15/1146091/pig-kidneys-that-were-frozen-for-a-year-have-been-brought-back-to-life",
+  "existsCheck": "Searched organ cryopreservation and organ banking status 2025-2026. No human organ has been vitrified and transplanted; the Minnesota method is licensable but at the rat and pig stage, and the authors' own preprint lists cooling, cryoprotectant toxicity and transport as open problems. Clinical practice is cold storage or normothermic machine perfusion, both measured in hours.",
+  "familiar": true,
+  "tenX": "Shelf life from about 24 hours to a year, which both ends organ discard and lets every transplant be properly matched",
+  "plausibility": 4,
+  "why": "Turned transplantation from a race against a clock into a bank, the way blood banking changed surgery."
+ },
+ {
+  "id": "organ-reviver",
+  "name": "Organ reviver",
+  "subtitle": "restarts organs an hour after the heart stops",
+  "bigJob": "organs",
+  "job": "Replace failing organs",
+  "effects": [
+   {
+    "effect": "a cell-free fluid carrying anti-inflammatory and anti-cell-death compounds halts the cascade that kills starved tissue",
+    "card": null,
+    "newToJob": true
+   },
+   {
+    "effect": "pulsed rather than steady flow reopens vessels that have collapsed and clotted",
+    "card": null,
+    "newToJob": true
+   },
+   {
+    "effect": "hemoglobin carries oxygen in the blood",
+    "card": "hemoglobin",
+    "newToJob": false
+   }
+  ],
+  "parts": [
+   "heart-lung-machine",
+   "perfusion-pump",
+   "insulated-wire"
+  ],
+  "how": "Almost all organs are lost not for want of donors but because only a tiny fraction of deaths happen where circulation can be kept going; everywhere else the organs are written off within minutes. This machine, a heart-lung bypass pump driving a synthetic cell-free fluid rather than blood, is connected after the heart has been stopped for an hour: the fluid is pulsed through at pressures that force open collapsed vessels, and it carries compounds that block the self-destruct cascade starved cells begin, so circulation is restored throughout the body and kidneys, liver and heart recover function. If organs can be recovered an hour after death rather than in the first minutes, the donor pool stops being the limit.",
+  "obstacle": "It works on the whole body, including the brain, so it cannot be used without first settling in law and in medicine what it means that a declared-dead body has circulation again.",
+  "evidence": "Andrijevic, Vrselja, Sestan et al., Nature 608:405 (August 2022, OrganEx): after 1 hour of warm whole-body ischaemia in pigs, pulsatile perfusion with a cytoprotective cell-free perfusate preserved tissue integrity, cut cell death and restored molecular and cellular function across vital organs, with electrical activity and contraction in the heart, https://pubmed.ncbi.nlm.nih.gov/35922506/",
+  "existsCheck": "Searched organ recovery after circulatory death and normothermic regional perfusion. Clinical practice (NRP, TransMedics OCS) starts within minutes and perfuses with blood; OrganEx is a research system used only in pigs and its own authors call for oversight before any further work. No device recovers organs an hour after death.",
+  "familiar": false,
+  "tenX": "The share of deaths that can yield transplantable organs rises from a couple of percent towards most of them, a ten-to-fiftyfold increase in supply",
+  "plausibility": 4,
+  "why": "Showed organ death is a cascade that can be stopped, and multiplied the donor pool many times over."
+ },
+ {
+  "id": "lymph-node-liver",
+  "name": "Lymph-node liver",
+  "subtitle": "spare livers grown in your own lymph nodes",
+  "bigJob": "organs",
+  "job": "Replace failing organs",
+  "effects": [
+   {
+    "effect": "a lymph node's rich blood supply and open mesh let injected organ cells organise into working tissue",
+    "card": null,
+    "newToJob": true
+   },
+   {
+    "effect": "cells live outside the body",
+    "card": "cell-theory",
+    "newToJob": false
+   },
+   {
+    "effect": "the liver stores sugar as glycogen and releases it",
+    "card": "glycogen",
+    "newToJob": false
+   }
+  ],
+  "parts": [
+   "tissue-culture",
+   "cardiac-catheter"
+  ],
+  "how": "A failing liver needs a whole donated organ and a major operation, so most people with end-stage liver disease simply wait and die. Liver cells from one donor are injected through a fine needle into a handful of the patient's own lymph nodes, which already have the plumbing and the open structure an organ needs: the cells engraft there, grow their own blood supply and mature into small working livers, several at once, doing the real job of filtering and making proteins. One donated liver can seed dozens of patients, and the procedure is an endoscopic injection instead of a transplant.",
+  "obstacle": "Dose and durability: it is not yet shown in people that enough liver tissue grows, or lasts long enough, to replace a failing organ rather than merely help it.",
+  "evidence": "LyGenesis Phase 2a (NCT04496479) in end-stage liver disease at Houston Methodist and Tufts: in March 2025 the Data and Safety Monitoring Board reviewed the first cohort of four patients and cleared dose escalation, with safety and tolerability reported as encouraging, https://www.biospace.com/press-releases/data-and-safety-monitoring-board-approves-lygenesiss-phase-2a-clinical-trial-to-continue-and-dose-escalate-in-novel-trial-of-organ-regeneration",
+  "existsCheck": "Searched ectopic organ regeneration and LyGenesis results 2025. Only interim safety news exists, no efficacy results; no approved therapy grows an organ in a lymph node, and hepatocyte transplantation into the liver or spleen, which is tried clinically, engrafts poorly. Nothing in the deck grows an organ in an existing body site.",
+  "familiar": false,
+  "tenX": "One donor organ treats dozens of patients instead of one, and a transplant becomes an injection",
+  "plausibility": 4,
+  "why": "Found spare building sites for organs already inside the body, so one donor served dozens."
+ },
+ {
+  "id": "machine-edited-organ",
+  "name": "Machine-edited donor organ",
+  "subtitle": "edited on the pump so nobody rejects it",
+  "bigJob": "organs",
+  "job": "Replace failing organs",
+  "effects": [
+   {
+    "effect": "a vector flushed through an organ's own vessels reaches every cell in it, which is impossible inside a patient",
+    "card": null,
+    "newToJob": true
+   },
+   {
+    "effect": "double-stranded RNA silences the matching gene",
+    "card": "rna-interference",
+    "newToJob": true
+   },
+   {
+    "effect": "the body rejects foreign tissue",
+    "card": "tissue-transplantation",
+    "newToJob": false
+   }
+  ],
+  "parts": [
+   "perfusion-pump",
+   "recombinant-dna",
+   "insulated-wire"
+  ],
+  "how": "A transplant costs the recipient a lifetime of drugs that hold the immune system down, which brings infections and cancers, and the graft is still slowly destroyed; this is why organs are given sparingly and only to those sick enough to be worth the trade. While a donated organ sits on the perfusion pump, warm and beating, it is a closed system with its own plumbing, so gene-carrying vectors pumped into it reach every cell: they switch off the surface markers by which a stranger's immune system recognises the organ as foreign, and blunt the inflammation that follows the operation. The organ is edited before it is ever connected to a patient, so no drug has to hold the patient's immune system down.",
+  "obstacle": "An organ hidden from the immune system is also hidden from the defences that watch for infected and cancerous cells in it, and the editing has to be complete enough to matter without being permanent elsewhere.",
+  "evidence": "Figueiredo et al., Frontiers in Immunology 2020: lentiviral vectors delivered during sub-normothermic machine perfusion silenced beta-2-microglobulin and CIITA in rat kidneys with no added cell death, https://frontiersin.org/articles/10.3389/fimmu.2020.00265/pdf ; a Human Gene Therapy paper (June 2024) demonstrated CRISPR editing in human lungs on ex vivo perfusion as groundwork for a first-in-human organ study",
+  "existsCheck": "Searched ex vivo organ gene editing and hypoimmune transplants 2024-2026. All whole-organ work is preclinical or platform-building; hypoimmune editing that has reached patients is in cells (islets, CAR-T), not organs, and every transplant today still requires immunosuppression. The deck's Pig kidney with a human lining relines vessels with cells, rather than editing the organ's own genes on the pump.",
+  "familiar": false,
+  "tenX": "Lifelong immunosuppression removed and graft survival roughly doubled, which widens who can be transplanted at all",
+  "plausibility": 3,
+  "why": "Used the hours an organ spends on a pump to make it immune-invisible, ending immunosuppression."
+ },
+ {
+  "id": "pig-grown-human-kidney",
+  "name": "Pig-grown human kidney",
+  "subtitle": "a pig embryo grows a patient's own kidney",
+  "bigJob": "organs",
+  "job": "Replace failing organs",
+  "effects": [
+   {
+    "effect": "some embryo cells steer how their neighbours develop",
+    "card": "embryo-organizer",
+    "newToJob": false
+   },
+   {
+    "effect": "an embryo with its kidney genes switched off leaves an empty niche that foreign stem cells fill",
+    "card": null,
+    "newToJob": true
+   },
+   {
+    "effect": "four genes turn an adult cell back into a stem cell that can become any tissue",
+    "card": "induced-stem-cells",
+    "newToJob": false
+   }
+  ],
+  "parts": [
+   "genetic-engineering",
+   "test-tube-baby"
+  ],
+  "how": "There is no way to grow an organ in a dish, because nothing we build supplies the blood and the months of development an organ needs. A pig embryo has both, so two of its kidney-building genes are switched off, leaving a vacancy, and stem cells made from the patient's own skin are injected to fill it; the embryo's own signals then direct those human cells through the whole programme of kidney development while the sow carries it. The organ that grows is built from the patient's cells, so it needs no immunosuppression, and it is grown to order rather than waited for.",
+  "obstacle": "Human cells are badly outcompeted in a pig embryo, so far only to day 28 and only to an early kidney stage, and letting such a pregnancy go to term raises ethical questions nobody has settled.",
+  "evidence": "Wang, Dai, Pan, Lai et al., Cell Stem Cell (7 September 2023): human iPSCs with MYCN and BCL2 support generated humanized mesonephros with tubules in pig embryos to day 28, from 1,820 transferred embryos and 13 surrogates, https://pubmed.ncbi.nlm.nih.gov/37683604/",
+  "existsCheck": "Searched interspecies chimera organogenesis and xenotransplantation 2023-2026. Xenotransplants now reaching patients use gene-edited pig organs made of pig cells, which still need heavy immunosuppression; humanized chimeric organs have never gone past early embryonic stages. The deck's Pig kidney with a human lining is a pig organ relined with human cells, not an organ grown from the patient's own cells.",
+  "familiar": true,
+  "tenX": "An organ on demand for anyone, made of their own cells, instead of a waiting list and a lifetime of drugs",
+  "plausibility": 2,
+  "why": "Borrowed a pig embryo's development to grow organs from a patient's own cells."
+ },
+ {
+  "id": "dancing-molecule-gel",
+  "name": "Dancing-molecule gel",
+  "subtitle": "an injected gel nerves grow through",
+  "bigJob": "nerve-repair",
+  "job": "Repair the brain and spinal cord",
+  "effects": [
+   {
+    "effect": "how fast molecules jiggle within an assembly sets how strongly they can signal a cell's receptors",
+    "card": null,
+    "newToJob": true
+   },
+   {
+    "effect": "viscoelasticity",
+    "card": "viscoelasticity",
+    "newToJob": false
+   },
+   {
+    "effect": "a plant hormone drives growth",
+    "card": "gibberellins",
+    "newToJob": false
+   }
+  ],
+  "parts": [
+   "synthetic-peptides",
+   "isotactic-polymers"
+  ],
+  "how": "A cut in the spinal cord seals itself with scar tissue, and central nerves will not grow through it, which is why paralysis is permanent. A liquid injected into the injury self-assembles into a mesh of nanofibres carrying two signals copied from the body's own growth cues, and the trick is that the molecules in the mesh are deliberately left loosely bound, so they move about rapidly; receptors on nerve cells are themselves in motion, and signals that keep up with them are read far more strongly than signals held rigidly in place. In mice, one injection a day after a severe injury restored walking.",
+  "obstacle": "It has worked in rodents and in injured human spinal cord grown in a dish, but no human has been treated yet.",
+  "evidence": "Alvarez, Stupp et al., Science 2021: a single injection of a supramolecular scaffold with fast-moving molecules 24 hours after severe spinal cord injury restored walking in mice, with slow-moving versions far less effective; FDA Orphan Drug Designation July 2025; Northwestern's February 2026 Nature Biomedical Engineering paper reports the same therapy driving neurite outgrowth in injured human spinal cord organoids containing microglia, https://news.northwestern.edu/stories/2026/02/paralysis-treatment-heals-lab-grown-human-spinal-cord-organoids",
+  "existsCheck": "Searched spinal cord injury therapies in trials 2025-2026. Nothing restores central nerve growth in people; approved care is surgical stabilisation and rehabilitation, and Amphix Bio is only targeting late 2026 for first trials. The deck's nerve cards (Self-sealing brain implant coating, Rechargeable numbing implant) do not regrow nerves.",
+  "familiar": false,
+  "tenX": "Function recovered after a complete injury rather than none, and from one injection instead of no option at all",
+  "plausibility": 4,
+  "why": "Showed that how fast a molecule moves, not just its shape, decides whether a nerve regrows."
+ },
+ {
+  "id": "guided-nerve-regrowth",
+  "name": "Guided nerve regrowth",
+  "subtitle": "nerves regrown and steered to their old targets",
+  "bigJob": "nerve-repair",
+  "job": "Repair the brain and spinal cord",
+  "effects": [
+   {
+    "effect": "a regrown axon only restores function if it is steered to the exact region it used to serve",
+    "card": null,
+    "newToJob": true
+   },
+   {
+    "effect": "a cell follows genes put into it",
+    "card": "virus-transduction",
+    "newToJob": false
+   },
+   {
+    "effect": "chemical attractants laid in a gradient pull a growing nerve tip along them",
+    "card": null,
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "genetic-engineering",
+   "recombinant-dna",
+   "cardiac-catheter"
+  ],
+  "how": "Decades of work got nerves to regrow across spinal injuries without restoring any movement, and the reason turned out to be that the regrown fibres wander and connect to the wrong places. Single-cell sequencing is used to pick out which few neuron types actually matter for walking; a gene-carrying virus is then injected to switch their growth programmes back on, while a trail of attractant proteins is laid from the injury down to the exact segment of the cord those fibres used to serve, so the regrowing tips follow it home. Mice with anatomically complete injuries walked again, with a gait like that of animals recovering from partial injuries.",
+  "obstacle": "The chemical trail has to be laid over the length of a human spinal cord, centimetres rather than millimetres, and held in place for the months that regrowth takes.",
+  "evidence": "Squair, Anderson, Courtine et al., Science (22 September 2023): chemoattracting and guiding the transected axons of identified neuron subpopulations to their natural target region restored walking after complete spinal cord injury in mice, whereas regrowth without guidance did not, https://pubmed.ncbi.nlm.nih.gov/37733871/",
+  "existsCheck": "Searched spinal cord gene therapy and axon guidance 2023-2026. All of it is rodent work and the authors say many obstacles remain before human use; no gene therapy for spinal cord injury is approved or in registrational trials. No existing card or product guides regrown fibres to a target region.",
+  "familiar": false,
+  "tenX": "Walking recovered after an anatomically complete injury, where regrowth alone gives essentially nothing",
+  "plausibility": 3,
+  "why": "Proved regrowth is not enough: nerves must be addressed to their old targets, and then showed how."
+ },
+ {
+  "id": "grafted-neuron-bridge",
+  "name": "Grafted neuron bridge",
+  "subtitle": "an implant that grows its own nerve wiring",
+  "bigJob": "nerve-repair",
+  "job": "Repair the brain and spinal cord",
+  "effects": [
+   {
+    "effect": "neurons grown on an implant send their own axons into the host and make the connections metal cannot",
+    "card": null,
+    "newToJob": true
+   },
+   {
+    "effect": "light-sensitive proteins let a flash of light switch chosen nerve cells on or off",
+    "card": "optogenetics",
+    "newToJob": true
+   },
+   {
+    "effect": "electrodes on the motor cortex let a person's intent move a cursor or arm",
+    "card": "neural-interfaces",
+    "newToJob": false
+   }
+  ],
+  "parts": [
+   "light-emitting-diodes",
+   "microchips",
+   "tissue-culture"
+  ],
+  "how": "An electrode is a blunt instrument: it is a thousand times bigger than a nerve cell, it scars, and it can only shout at whole neighbourhoods of neurons at once, which is why implants give coarse control and fade over years. This implant instead carries a living layer of lab-grown neurons on its face; placed on the brain or either side of a spinal injury, those cells send their own axons out into the tissue and form real synapses, so the device talks to the nervous system in its own language. The implant drives its grafted cells with flashes of light and reads them back optically, keeping the metal outside the body's own circuitry.",
+  "obstacle": "Keeping grafted neurons alive and wired for years, and showing they connect reliably: in the first mouse test only five of nine animals learned the light-cued task.",
+  "evidence": "Science Corporation's biohybrid interface: a grid holding a layer of stem-cell-derived neurons on the mouse cortex, where light delivered to the grafted cells drove a learned behaviour in 5 of 9 mice, https://spectrum.ieee.org/brain-computer-interface-2671151260 ; Rochford et al., Science Advances 2023 report a biohybrid regenerative interface restoring function in severed rat peripheral nerve, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10032597/",
+  "existsCheck": "Searched biohybrid neural interfaces 2023-2026. Every clinical brain-computer interface (Utah arrays, Neuralink, Blackrock, Synchron) is metal or polymer electrodes in direct contact with tissue; biohybrid devices with living neurons are in rodents only, and the groups themselves name human cells as the next milestone. No existing card bridges a nerve with grafted cells.",
+  "familiar": false,
+  "tenX": "Connections per implant go from thousands of electrode contacts to the neuron-by-neuron synapses a graft makes, and the interface stops degrading as scar builds",
+  "plausibility": 3,
+  "why": "Stopped trying to wire metal into the brain and let living neurons make the connections instead."
+ },
+ {
+  "id": "nerve-dust",
+  "name": "Nerve dust",
+  "subtitle": "hundreds of dust-sized chips bridge a cut cord",
+  "bigJob": "nerve-repair",
+  "job": "Repair the brain and spinal cord",
+  "effects": [
+   {
+    "effect": "a chip smaller than a grain of salt harvests the power it needs from a radio field",
+    "card": "electromagnetic-induction",
+    "newToJob": true
+   },
+   {
+    "effect": "each grain answers on its own address, so one radio patch coordinates hundreds of them",
+    "card": null,
+    "newToJob": true
+   },
+   {
+    "effect": "electrodes on the motor cortex let a person's intent move a cursor or arm",
+    "card": "neural-interfaces",
+    "newToJob": false
+   }
+  ],
+  "parts": [
+   "microchips",
+   "radio-antennas",
+   "transistor"
+  ],
+  "how": "Bridging a spinal injury at a useful bandwidth means listening to and speaking with thousands of nerve cells at once, and today that means thick wire bundles through the skull or spine, which scar, break and leak. Instead, hundreds of chips a quarter of a millimetre across are sprinkled across the cord or cortex, each with no battery and no wire: a patch worn on the skin floods them with radio power, and each grain has its own network address, so the patch polls them one by one the way a cell tower handles phones. Signals read above the injury can then be played back into the grains below it, bridging the gap in both directions.",
+  "obstacle": "Power and bandwidth per grain are tiny, and nobody has yet shown hundreds of them working in a human for years without the brain's defences walling them off.",
+  "evidence": "Lee, Leung, Nurmikko et al., Nature Electronics 4:604-614 (12 August 2021): 48 untethered 0.25 mm^2 neurograins, powered and addressed by an external skin-patch radio, recorded spontaneous cortical activity in a rat, with the design supporting up to about 770, https://dx.doi.org/10.1038/s41928-021-00631-8",
+  "existsCheck": "Searched wireless microscale neural implants 2021-2026. Clinical systems all use tethered arrays or a single implanted can (Utah array, Neuralink, Synchron, Stentrode); neurograins and similar neural dust remain rodent demonstrations, limited to 48 units by the animal's brain size. No existing card distributes an implant into independent wireless grains.",
+  "familiar": false,
+  "tenX": "Channels bridging an injury rise from a few hundred wired contacts towards tens of thousands, with no cable through the skin",
+  "plausibility": 3,
+  "why": "Replaced the cable into the nervous system with a cloud of radio-powered grains."
+ },
+ {
+  "id": "electric-field-spine-patch",
+  "name": "Electric-field spine patch",
+  "subtitle": "a daily electric field guides nerve growth",
+  "bigJob": "nerve-repair",
+  "job": "Repair the brain and spinal cord",
+  "effects": [
+   {
+    "effect": "a growing nerve tip turns and grows towards the negative pole of a weak electric field",
+    "card": null,
+    "newToJob": true
+   },
+   {
+    "effect": "an oxide film holds and releases charge at its surface instead of corroding like bare metal",
+    "card": null,
+    "newToJob": true
+   },
+   {
+    "effect": "muscles work by electrical impulses",
+    "card": "electrical-stimulation",
+    "newToJob": false
+   }
+  ],
+  "parts": [
+   "malleable-platinum",
+   "insulated-wire",
+   "dry-cell"
+  ],
+  "how": "A damaged spinal cord is not only scarred, it has lost the faint electrical field that guided its nerves as they grew in the embryo, and a nerve tip with nothing to steer by does not cross the gap. A flexible film slipped under the cord's outer membrane holds two charge-storing oxide electrodes that apply a weak direct field across the injury for an hour a day; growing tips turn towards the negative side, so the field acts as a compass across the scar, and the same field also calms the dying-back of cells around the wound. Because the electrodes store charge in an oxide surface rather than passing current through bare metal, they neither corrode nor inflame the cord.",
+  "obstacle": "In rats the benefit looked protective rather than regenerative, with axon density unchanged at twelve weeks, so it is not yet clear the field really guides new growth.",
+  "evidence": "Harland, Matter et al., Nature Communications 16:5372 (June 2025): a thin-film implant with sputtered iridium oxide supercapacitive electrodes placed under the dura delivered a daily electric field after thoracic contusion injury in rats, improving locomotion and coordination from week 4 with no neuroinflammatory response, https://research.chalmers.se/en/publication/547408",
+  "existsCheck": "Searched electric field therapy for spinal cord injury 2025. Earlier human attempts (oscillating field stimulators) used corroding metal electrodes outside the dura and were abandoned; this implant is in rats, with dose-finding the stated next step. Epidural stimulators now in patients drive muscles below an injury rather than steering nerve growth.",
+  "familiar": false,
+  "tenX": "An implant the thickness of a film, with no drug and no cells, moves a complete-injury animal from no recovery to measurable walking",
+  "plausibility": 3,
+  "why": "Revived the embryo's electrical compass for nerve growth, in a film that does not corrode."
+ },
+ {
+  "id": "microwave-beamed-rocket",
+  "name": "Microwave-powered rocket",
+  "subtitle": "a rocket powered by a beam from below",
+  "bigJob": "cheap-orbit",
+  "job": "lift cargo to orbit without carrying its own energy",
+  "effects": [
+   {
+    "effect": "a gyrotron, a kind of maser, turns grid power into a tight beam of microwaves at over 50% efficiency",
+    "card": null,
+    "newToJob": true
+   },
+   {
+    "effect": "microwaves soak into a dark ceramic heat exchanger and heat it, the way a microwave oven heats food",
+    "card": "dielectric-heating",
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "masers",
+   "radio-antennas",
+   "liquid-fuel-rockets"
+  ],
+  "how": "Nine-tenths of a rocket is fuel, because it has to carry the energy for its whole climb, and burning oxygen with hydrogen gives only so much push per kilogram. Here the energy stays on the ground: a field of dish antennas aims a microwave beam at the climbing rocket, whose belly is a heat exchanger that soaks up the beam and heats plain hydrogen to about 2,500 C, so the rocket carries no oxygen at all. Pure hot hydrogen shoots out faster than any burnt fuel, so a single, fully reusable stage can reach orbit with several times more of its weight left for cargo.",
+  "obstacle": "The ground station needs hundreds of megawatts of microwave power, about 200 one-megawatt gyrotrons, kept on a target moving at 7 km/s, which nobody has built.",
+  "evidence": "Escape Dynamics (Colorado), July 2015: grid power through a gyrotron, beamed by mirrors and an antenna onto a thruster's heat exchanger, gave a specific impulse above 500 s with helium (hydrogen projected 750 s, vs about 450 s for the best chemical engine); company statements, not peer-reviewed. Builds on Kevin Parkin's Caltech microwave thermal rocket work (2006-2012). https://www.space.com/30134-beamed-propulsion-reusable-launch-vehicles-startup.html",
+  "existsCheck": "Searched 'beamed energy launch microwave gyrotron rocket startup 2025 2026': Escape Dynamics folded at the end of 2015; only academic studies and JAXA microwave-rocket experiments since. Nothing flying or under construction.",
+  "familiar": true,
+  "tenX": "Payload fraction of a single reusable stage rises from about 1-4% to 10-15%; with gyrotron fusion-industry prices, cost per kg could fall roughly 10x below today's reusable rockets.",
+  "plausibility": 3,
+  "why": "First vehicle to leave its energy on the ground; breaks the rocket equation instead of tuning it."
+ },
+ {
+  "id": "ram-accelerator-fuel-gun",
+  "name": "Ram-accelerator launch tube",
+  "subtitle": "a fuel-filled gun barrel that throws cargo upward",
+  "bigJob": "cheap-orbit",
+  "job": "send bulk cargo such as propellant, water and metal to orbit",
+  "effects": [
+   {
+    "effect": "a projectile racing through a tube of fuel-air mix acts as its own jet engine: the shock off its nose sets the gas burning just behind it, pushing it ever faster",
+    "card": "detonation",
+    "newToJob": true
+   },
+   {
+    "effect": "a shock wave squeezes and heats gas in a thin layer",
+    "card": "edb-shock-wave",
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "cannon",
+   "liquid-fuel-rockets"
+  ],
+  "how": "Most of what goes up on rockets is dumb mass: fuel for spacecraft, water, structural metal, none of which minds being shaken. A long tube is filled with pressurised natural gas and air; a projectile fired into it compresses the gas around its nose so it ignites behind it, so the push travels with the projectile instead of fading as in an ordinary gun. Leaving the muzzle at several km/s, the canister needs only a small rocket motor at the top to round out its orbit, so most of the energy came from cheap fuel on the ground.",
+  "obstacle": "No ram accelerator has passed about 2.7 km/s, a third of orbital speed, and canisters must survive thousands of g and a fireball exit through the thick lower air.",
+  "evidence": "Hertzberg and Bruckner, University of Washington, 1980s-90s: ram accelerator drove projectiles to 2.7 km/s in a 16 m tube. HyperSciences (General Hypersonics) reported rocketless ram-accelerated Mach 3+ flights with payload separation in Sept 2025 and reusable Mach 4+ launches under DoD contract. https://www.accessnewswire.com/newsroom/en/clean-technology/hypersciences-dba-general-hypersonics-achieves-world-first-rocketless-ram-accelera-1076811",
+  "existsCheck": "Searched 'ram accelerator hypersonic launch velocity record space launch 2024': only suborbital Mach 3-4 tests (HyperSciences) and Longshot's planned gas gun; no orbital launch by gun has ever happened.",
+  "familiar": true,
+  "tenX": "Cost per kg for rugged bulk cargo could drop from about $1,500 (reusable rockets) toward $50-100, since the energy is mostly cheap gas burned in a fixed tube.",
+  "plausibility": 2,
+  "why": "Bulk cargo shot to orbit by a gun; separates hauling freight from carrying people."
+ },
+ {
+  "id": "precooled-air-breathing-engine",
+  "name": "Precooled air-breathing rocket engine",
+  "subtitle": "a rocket engine that breathes air at first",
+  "bigJob": "cheap-orbit",
+  "job": "reach orbit in one reusable stage, like a plane",
+  "effects": [
+   {
+    "effect": "a mesh of hair-thin tubes carrying cold helium chills 1,000 C ram air to -150 C in a hundredth of a second, without frosting up",
+    "card": "forced-convection",
+    "newToJob": true
+   },
+   {
+    "effect": "air rammed into an intake at hypersonic speed heats up as it is squeezed",
+    "card": "adiabatic-heating-and-cooling",
+    "newToJob": false
+   }
+  ],
+  "parts": [
+   "liquid-fuel-rockets",
+   "jet-planes",
+   "turbines"
+  ],
+  "how": "A rocket carries all its oxygen, about two-thirds of its take-off weight, even though the first part of the climb is through air full of it. A jet engine can't use that air above about Mach 3 because it arrives so hot it would melt the compressor; this engine first runs it through a precooler of thousands of fine tubes that drops it from 1,000 C to almost liquid-air cold, then compresses it into the rocket chamber. Breathing air up to Mach 5 and 25 km, then switching to its own oxygen, a craft could fly to orbit in a single stage and land like a plane.",
+  "obstacle": "Reaction Engines proved the precooler but went into administration in late 2024 before building a whole engine; the full cycle and an airframe light enough for single-stage orbit remain undemonstrated.",
+  "evidence": "Reaction Engines, Oct 2019, Colorado: SABRE precooler test article quenched airflow at over 1,000 C (Mach 5 conditions) in under 1/20 s, ESA-validated. https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Air-breathing_engine_precooler_achieves_record-breaking_Mach_5_performance",
+  "existsCheck": "Searched 'SABRE precooler Reaction Engines administration 2024 Mach 5 test result': only precooler component tests exist; the company collapsed in 2024 and no full engine or Skylon vehicle was built.",
+  "familiar": true,
+  "tenX": "Propellant mass at take-off falls by roughly a third and a single-stage, aircraft-style reusable vehicle becomes possible, aiming at about $100/kg or less with airline-like turnaround.",
+  "plausibility": 3,
+  "why": "The first engine to fly from runway to orbit, ending the throwaway stage."
+ },
+ {
+  "id": "reversible-resonant-chip",
+  "name": "Reversible chip",
+  "subtitle": "a chip that takes back each step's energy",
+  "bigJob": "brain-efficient-compute",
+  "job": "run AI and computing without turning every bit flip into heat",
+  "effects": [
+   {
+    "effect": "a resonating circuit, like a swinging pendulum, hands energy back and forth instead of throwing it away each cycle",
+    "card": "resonance-vibration",
+    "newToJob": true
+   },
+   {
+    "effect": "charge moved onto a wire gently and slowly, rather than slammed on, loses almost none of its energy as heat; logic that never erases data can return it",
+    "card": null,
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "integrated-circuits",
+   "transistor"
+  ],
+  "how": "Every time an ordinary chip flips a bit, it dumps the electric charge on that wire into the ground as heat, and doing that trillions of times a second is why data centres draw megawatts. A reversible chip drives its logic from a ringing resonator, so charge flows onto each wire smoothly and then back out into the resonator, the way a pendulum keeps its swing; its circuits are built so no step erases information, which physics says is the only part that must cost heat. Run many such gates a bit slower in parallel and most of the energy is recycled instead of burned.",
+  "obstacle": "Gentle charging means slower gates and more of them, and designers have no tools, languages or chip libraries for logic that never erases.",
+  "evidence": "Vaire Computing, 2025: 22 nm 'Ice River' test chip with a resonator-driven power supply; its capacitor array recovered about 1.77x and its adder about 1.41x the energy a normal circuit would lose, with roughly 30-50% energy saving reported (not yet independently verified). https://spectrum.ieee.org/reversible-computing",
+  "existsCheck": "Searched 'Vaire Computing adiabatic reversible chip energy recovery resonator test results 2025': only Vaire's test chip and academic adiabatic circuits; no commercial reversible processor.",
+  "familiar": false,
+  "tenX": "Energy per operation: theory allows 100-1000x below today's chips at moderate speed; first silicon recovers about half.",
+  "plausibility": 3,
+  "why": "First computers to slip under the heat cost of erasing data, ending the energy wall."
+ },
+ {
+  "id": "nanotube-memory-skyscraper-chip",
+  "name": "Skyscraper chip",
+  "subtitle": "memory and logic stacked floor upon floor",
+  "bigJob": "brain-efficient-compute",
+  "job": "put computing right on top of the memory it uses",
+  "effects": [
+   {
+    "effect": "carbon nanotube transistors can be made below 400 C, cool enough to build a new logic layer right on top of finished memory without melting it",
+    "card": "carbon-nanotubes",
+    "newToJob": true
+   },
+   {
+    "effect": "a resistor that remembers how much current passed through it stores data without power",
+    "card": "memristor",
+    "newToJob": false
+   }
+  ],
+  "parts": [
+   "integrated-circuits",
+   "transistor"
+  ],
+  "how": "Most of a chip's energy goes into shuttling data back and forth along millimetres of wire between memory and processor, because silicon logic must be made at over 1,000 C and so lives on its own flat chip. Nanotube transistors can be grown cool, so a chip can be built as a tower: a floor of memory, a floor of nanotube logic, another floor of memory, tied together by millions of vertical wires each a few hundred nanometres long. Data then travels microns instead of millimetres, the way the brain keeps its memory in the same cells that compute.",
+  "obstacle": "Making nanotubes pure and aligned enough, every one a semiconductor, to compete with silicon at modern sizes and yields.",
+  "evidence": "Shulaker group (MIT) with SkyWater, 2019 (DARPA 3DSoC): first foundry-made monolithic 3D wafer with layers of carbon-nanotube transistors and RRAM memory joined by vertical vias; earlier Shulaker et al., Nature 2017, built a working 3D nanotube-RRAM chip. Projections cite up to 1000x better energy-delay for AI workloads. https://www.mtl.mit.edu/node/751",
+  "existsCheck": "Searched 'monolithic 3D chip carbon nanotube transistors RRAM memory stacked energy-delay 1000x Shulaker 2024 2025': research and foundry prototypes only; commercial 3D chips stack separate silicon dies with far coarser links (HBM), not monolithic memory-logic floors.",
+  "familiar": false,
+  "tenX": "Energy-delay of data-heavy AI work projected 100-1000x better than flat 2D chips; measured gains so far about 5-10x.",
+  "plausibility": 3,
+  "why": "Chips stopped being flat; memory and logic merged into one block, like the brain."
+ },
+ {
+  "id": "proton-synapse-learning-chip",
+  "name": "Proton synapse chip",
+  "subtitle": "a chip that learns by shuffling protons",
+  "bigJob": "brain-efficient-compute",
+  "job": "train AI models in place without moving the weights",
+  "effects": [
+   {
+    "effect": "a thin glass film lets protons through but not electrons, so a nanosecond voltage pulse pushes protons into a layer and changes its resistance by a set step",
+    "card": null,
+    "newToJob": true
+   },
+   {
+    "effect": "a resistor whose value remembers what passed through it acts as a stored weight",
+    "card": "memristor",
+    "newToJob": false
+   }
+  ],
+  "parts": [
+   "integrated-circuits",
+   "transistor"
+  ],
+  "how": "Training an AI model costs gigawatt-hours because each of billions of weights is fetched from memory, updated and written back, over and over. Here each weight is a tiny resistor: a sandwich in which a pulse drives a few protons through a glass film into a metal oxide, nudging its conductance up or down by an even step, in nanoseconds and without the protons ever leaving the chip. A whole grid of them does the network's sums by Ohm's law and learns by being pulsed where it sits, so the weights never travel.",
+  "obstacle": "Getting millions of such cells to change by identical, repeatable steps for billions of cycles on a working chip; only arrays of a few hundred have trained so far.",
+  "evidence": "Onen, Yildiz, Li, del Alamo et al., MIT, Science 2022 (377:539): nanosecond protonic programmable resistors with phosphosilicate glass electrolyte, room temperature, silicon-compatible, millions of cycles; ECRAM arrays up to 64x64 and in-situ training of 441 devices reported 2025. https://news.mit.edu/2022/analog-deep-learning-ai-computing-0728",
+  "existsCheck": "Searched 'ECRAM electrochemical analog in-memory training chip IBM array demonstration 2024 2025' and the MIT result: only small research arrays; analog inference chips (Mythic, IBM Hermes) exist but none trains in place with electrochemical weights.",
+  "familiar": false,
+  "tenX": "Energy per weight update projected 100-1000x below GPU training, which moves the dominant cost of AI.",
+  "plausibility": 3,
+  "why": "The hardware that let machines learn like synapses, where memory and learning are the same thing."
+ },
+ {
+  "id": "magnetoelectric-logic-chip",
+  "name": "Magnetoelectric logic chip",
+  "subtitle": "logic that flips nanomagnets with tiny voltages",
+  "bigJob": "brain-efficient-compute",
+  "job": "compute at a tenth of today's voltage with memory built into every gate",
+  "effects": [
+   {
+    "effect": "a voltage across a ferroelectric crystal flips the magnet lying on it, with almost no current flowing",
+    "card": null,
+    "newToJob": true
+   },
+   {
+    "effect": "spin-carrying electrons passing a heavy metal pile up charge at its sides, reading the magnet's direction as a voltage",
+    "card": "hall-effect",
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "integrated-circuits",
+   "transistor"
+  ],
+  "how": "A transistor's energy grows with the square of its voltage, and transistors can't work much below about 0.7 V, so chips are stuck burning power and forgetting everything when switched off. In this logic each bit is a nanomagnet sitting on a ferroelectric crystal: a tenth of a volt flips the crystal, which flips the magnet, and the magnet's direction is read back out as a voltage that drives the next gate. Because magnets remember without power, every gate is also memory, so nothing is shuttled and idle parts draw nothing.",
+  "obstacle": "No material yet flips reliably at 100 mV, and the read-out voltage is still far too small to drive the next gate directly.",
+  "evidence": "Manipatruni, Nikonov, Young et al., Intel/Berkeley, Nature 2019 proposed MESO logic projecting 10-30x lower energy; Vaz et al., Nature Communications 2024, showed voltage switching of a CoFe magnet on BiFeO3 with spin-orbit readout through Pt in one nanodevice. https://www.nature.com/articles/s41467-024-45868-x",
+  "existsCheck": "Searched 'magnetoelectric spin-orbit MESO logic demonstration 100 mV switching BiFeO3 2023 2024': single devices at about 0.2-1.5 V only, no circuits or chips; nothing commercial.",
+  "familiar": false,
+  "tenX": "Switching energy per operation projected 10-30x lower than CMOS, plus near-zero idle power; with memory-in-logic, system energy ~100x.",
+  "plausibility": 2,
+  "why": "The first switch to replace the transistor, ending sixty years of the voltage floor."
+ },
+ {
+  "id": "plasma-element-sorter",
+  "name": "Plasma element sorter",
+  "subtitle": "a spinning plasma that sorts waste into elements",
+  "bigJob": "recycle-anything",
+  "job": "turn mixed electronics and alloys back into separate pure elements",
+  "effects": [
+   {
+    "effect": "a hot gas of charged atoms in crossed electric and magnetic fields spins like a centrifuge",
+    "card": "magnetohydrodynamics",
+    "newToJob": true
+   },
+   {
+    "effect": "spinning flings heavy atoms outward and lets light ones drift to the middle",
+    "card": "centrifugal-force",
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "electromagnets",
+   "magnetrons",
+   "air-pump"
+  ],
+  "how": "A phone holds some 60 elements, alloyed, glued and soldered together so tightly that recyclers recover only a handful and smelt the rest into slag. This machine vaporises shredded waste into a plasma inside a vacuum tube wrapped in big magnets; crossed fields spin the plasma thousands of times a second, so atoms sort themselves by weight, heavy ones flung to the walls and light ones drawn along the axis, and each band condenses as a nearly pure metal. It sorts by atomic weight, which no blending, gluing or alloying can hide, so the input can be anything.",
+  "obstacle": "Energy and throughput: ionising every atom costs a few megawatt-hours per tonne, affordable only for metal-rich waste, and no filter has yet run at tonnes per hour.",
+  "evidence": "Ohkawa and Miller's Archimedes plasma mass filter (2002) for nuclear waste; Gueroult, Rax and Fisch, J. Cleaner Production 2018, showed plasma separation could compete for rare earths from NdFeB magnets; Zweben et al. 2018 review of plasma mass separation experiments (crossed-field separation factors up to ~35 reported). https://arxiv.org/pdf/1710.04506",
+  "existsCheck": "Searched 'plasma mass filter separation rare earth recycling demonstration' and 'plasma centrifuge element separation spent nuclear fuel waste': only lab devices and studies (PPPL, Kurchatov); Archimedes never ran at scale. No recycling plant uses plasma separation.",
+  "familiar": false,
+  "tenX": "Elements recovered from e-waste rise from about 20 to most of the 60 present, from one machine with no chemistry.",
+  "plausibility": 2,
+  "why": "A mass spectrometer the size of a factory: any mixture back to the periodic table."
+ },
+ {
+  "id": "copper-scrubbing-steel-cell",
+  "name": "Copper-scrubbing steel cell",
+  "subtitle": "pulls copper out of melted scrap steel",
+  "bigJob": "recycle-anything",
+  "job": "make top-grade steel from mixed scrap, again and again",
+  "effects": [
+   {
+    "effect": "an electric current through a molten slag of oxides and sulfides drags copper out of liquid iron into the slag",
+    "card": "laws-of-electrolysis",
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "aluminum-process",
+   "transformer"
+  ],
+  "how": "Steel is the world's most recycled material, but every car and building scrapped brings copper wiring with it, and once copper melts into steel no furnace can get it out; above a few tenths of a percent the steel cracks when rolled, so scrap gets downcycled into rebar and car-grade steel still comes from iron ore. This cell works like the pot that makes aluminium: molten scrap iron is the anode under a molten oxysulfide slag, and a current carries the copper into the slag while fresh iron collects at the other electrode.",
+  "obstacle": "Electrodes and linings that survive 1,600 C molten slag for years, at a cost per tonne near an ordinary arc furnace's.",
+  "evidence": "Paeng, Judge and Azimi, University of Toronto, Resources, Conservation and Recycling, April 2024: first electrochemical removal of copper from molten iron to below alloy level (<0.1 wt%) using an oxysulfide electrolyte, also producing iron and sulfur. https://news.engineering.utoronto.ca/this-new-way-to-recycle-steel-could-expand-its-recycling-and-reduce-the-industrys-carbon-footprint/",
+  "existsCheck": "Searched 'removing copper from steel scrap new method sulfide molten electrolysis 2023 2024': TU Delft 2024 review finds no copper-removal method scaled industrially; today mills only dilute copper with fresh iron.",
+  "familiar": false,
+  "tenX": "Old scrap could feed flat, top-grade steel too, lifting usable scrap from about a third of steel output toward nearly all of it, and making copper tolerance 10x easier.",
+  "plausibility": 3,
+  "why": "Made steel endlessly recyclable, ending iron mining's role in a mature economy."
+ },
+ {
+  "id": "plastic-to-propylene-reactor",
+  "name": "Plastic-to-propylene reactor",
+  "subtitle": "turns plastic bags back into new-plastic gas",
+  "bigJob": "recycle-anything",
+  "job": "turn mixed plastic waste back into the gas that makes new plastic",
+  "effects": [
+   {
+    "effect": "pairs of catalysts snip a long plastic chain three carbons at a time, swapping chain ends with ethylene gas until only propylene is left",
+    "card": "catalysis",
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "distillation",
+   "boiler"
+  ],
+  "how": "Bags, films and tubs, the polyethylene and polypropylene that make up most plastic, can't be sorted well enough to recycle, and heating them only cracks them into a messy oil. In this reactor, shredded mixed plastic is stirred with catalysts and ethylene gas: one catalyst moves a weak spot along each long chain, the other snips off three-carbon pieces there, so nearly all the plastic comes out as propylene, a clean gas that boils off and goes straight into making new plastic. A gas is easy to purify, so dyes and dirt stay behind and the output is as good as new.",
+  "obstacle": "The catalysts contain costly metals and lose activity on dirty, real-world waste; it hasn't left the lab.",
+  "evidence": "Conk et al., Hartwig group, UC Berkeley, Science 2022: polyethylene to propylene by dehydrogenation then tandem isomerising ethenolysis, over 80% yield (94% selectivity semi-continuous); 2024 Science follow-up with tungsten oxide and sodium catalysts turned a near-equal PE/PP mix into propylene and isobutylene at nearly 90%. https://chemistry.berkeley.edu/node/2629",
+  "existsCheck": "Searched 'polyethylene to propylene chemical recycling pilot plant company 2025 ethenolysis commercial': Berkeley Lab says not ready for industrial scale; no pilot plant; existing chemical recyclers pyrolyse to oil (downcycling).",
+  "familiar": false,
+  "tenX": "Polyolefin recycling rate, now under 10%, could approach that of aluminium cans, since output is virgin-grade monomer from unsorted waste.",
+  "plausibility": 3,
+  "why": "Made the most-used plastics truly circular: unsorted trash back to new-plastic feedstock."
+ }
+]

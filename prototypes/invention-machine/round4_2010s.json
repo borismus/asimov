@@ -1,0 +1,732 @@
+[
+ {
+  "name": "4G mobile broadband",
+  "year": 2010,
+  "rank": 1,
+  "how": "Mobile phone network, microchips; ★ OFDM (splitting a signal across many narrow subcarriers) and MIMO multi-antenna radio",
+  "impact": "Carries the internet to over five billion phones, making video, maps and apps work anywhere.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "A new generation of the Mobile phone card's network, but it changed how it works (all-internet, OFDM) and made the phone the world's main computer."
+ },
+ {
+  "name": "Solar farm",
+  "year": 2010,
+  "rank": 2,
+  "how": "Photovoltaic cells, inverters, HVDC/AC grid, sun-tracking mounts; photovoltaic effect",
+  "impact": "Became the cheapest electricity in history and the largest source of new power capacity worldwide.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "Scaled-up Photovoltaic cells (1954), but the 90% price fall in the 2010s turned a satellite part into the world's main new power source."
+ },
+ {
+  "name": "End-to-end encrypted messaging",
+  "year": 2016,
+  "rank": 3,
+  "how": "Smartphone, internet, public-key encryption; ★ double-ratchet key exchange (fresh keys for every message)",
+  "impact": "Over two billion people's daily messages became unreadable to anyone but sender and receiver.",
+  "verdict": "keep",
+  "rule": "m1",
+  "why": ""
+ },
+ {
+  "name": "Cancer immunotherapy",
+  "year": 2011,
+  "rank": 4,
+  "how": "Monoclonal antibodies; ★ immune checkpoint blockade (releasing the brakes on T cells)",
+  "impact": "Turned some deadly cancers like melanoma into long-term survivable ones; now standard for many tumour types.",
+  "verdict": "keep",
+  "rule": "m1",
+  "why": ""
+ },
+ {
+  "name": "Ride-hailing apps",
+  "year": 2012,
+  "rank": 5,
+  "how": "Smartphone, GPS, mobile payments, cloud data centres; real-time matching",
+  "impact": "Billions of trips a year; reshaped taxis and urban transport in hundreds of cities.",
+  "verdict": "keep",
+  "rule": "m1",
+  "why": ""
+ },
+ {
+  "name": "Hepatitis C cure",
+  "year": 2013,
+  "rank": 6,
+  "how": "Synthetic drugs; ★ direct-acting antivirals blocking the virus's own polymerase",
+  "impact": "A 12-week pill course cures over 95% of a chronic infection carried by some 58 million people.",
+  "verdict": "keep",
+  "rule": "m1",
+  "why": ""
+ },
+ {
+  "name": "Facial recognition",
+  "year": 2017,
+  "rank": 7,
+  "how": "Deep learning, CCD/CMOS cameras, infrared dot projector; ★ face embedding (matching faces as points in learned space)",
+  "impact": "Unlocks over a billion phones and runs mass surveillance and border checks across much of the world.",
+  "verdict": "keep",
+  "rule": "m1",
+  "why": ""
+ },
+ {
+  "name": "Short-video feed apps",
+  "year": 2016,
+  "rank": 8,
+  "how": "Smartphone, streaming video, deep learning; ★ engagement-trained recommendation feed",
+  "impact": "Over two billion users scrolling an algorithm-chosen feed; reshaped media, music and politics.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "A version of Social media, but the feed chosen by a learning algorithm rather than friends changed how it works."
+ },
+ {
+  "name": "Tablet computer",
+  "year": 2010,
+  "rank": 9,
+  "how": "Capacitive touchscreen, microchips, lithium-ion battery, LCD",
+  "impact": "Over a billion in use; became the computer for young children, the elderly, shops and cockpits.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "A scaled-up Smartphone; it widened who uses computers (toddlers, elders, point-of-sale) but does the same job the same way."
+ },
+ {
+  "name": "Neural machine translation",
+  "year": 2016,
+  "rank": 10,
+  "how": "Deep learning, cloud data centres; ★ sequence-to-sequence neural networks with attention",
+  "impact": "Used by over a billion people a month to read and talk across languages.",
+  "verdict": "keep",
+  "rule": "m1",
+  "why": ""
+ },
+ {
+  "name": "3D transistor (FinFET)",
+  "year": 2011,
+  "rank": 11,
+  "how": "Transistor, microchips, photolithography; ★ gate wrapped around a vertical silicon fin",
+  "impact": "Every phone and computer chip since about 2014 is built from these.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "A reshaped Transistor rather than a new device, but it's how every modern chip works; same people, new how."
+ },
+ {
+  "name": "QR-code payments",
+  "year": 2013,
+  "rank": 12,
+  "how": "Smartphone camera, QR code, mobile payments, real-time bank transfers",
+  "impact": "Over a billion people in China and India pay this way, down to street vendors.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "A version of Mobile payments (2007); scanning a printed code let any stall take payments, changing who could use it."
+ },
+ {
+  "name": "Grid battery storage",
+  "year": 2017,
+  "rank": 13,
+  "how": "Lithium-ion battery, inverters, power grid; fast frequency response",
+  "impact": "Lets grids store solar for the evening; hundreds of gigawatt-hours installed worldwide.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "Scaled-up Lithium-ion batteries, but used in a new way: as a power plant that can switch in milliseconds."
+ },
+ {
+  "name": "OLED display",
+  "year": 2010,
+  "rank": 14,
+  "how": "Thin-film transistors, organic semiconductors; ★ organic electroluminescence (each pixel makes its own light)",
+  "impact": "The screen in most smartphones, billions of units.",
+  "verdict": "keep",
+  "rule": "m1",
+  "why": ""
+ },
+ {
+  "name": "Direct oral anticoagulants",
+  "year": 2010,
+  "rank": 15,
+  "how": "Synthetic drugs; ★ direct inhibition of clotting factors Xa or thrombin",
+  "impact": "Replaced warfarin for tens of millions at risk of stroke and clots, with no blood monitoring needed.",
+  "verdict": "keep",
+  "rule": "m1",
+  "why": ""
+ },
+ {
+  "name": "Smartwatch and fitness tracker",
+  "year": 2015,
+  "rank": 16,
+  "how": "Microchips, MEMS accelerometer, optical heart-rate sensor (photoplethysmography), short-range wireless link, lithium-ion battery",
+  "impact": "Worn by hundreds of millions to count steps, heartbeats and sleep, and to catch irregular heart rhythms.",
+  "verdict": "keep",
+  "rule": "m5",
+  "why": ""
+ },
+ {
+  "name": "SGLT2 inhibitors",
+  "year": 2013,
+  "rank": 17,
+  "how": "Synthetic drugs; ★ blocking glucose re-uptake in the kidney so sugar leaves in urine",
+  "impact": "Standard treatment for diabetes, heart failure and kidney disease in tens of millions.",
+  "verdict": "keep",
+  "rule": "m1",
+  "why": ""
+ },
+ {
+  "name": "Biometric digital ID",
+  "year": 2010,
+  "rank": 18,
+  "how": "Fingerprints, iris scanners, cloud data centres, mobile phone",
+  "impact": "Gave 1.3 billion Indians an ID used for welfare, banking and phone SIMs; copied across Africa and Asia.",
+  "verdict": "keep",
+  "rule": "m1",
+  "why": ""
+ },
+ {
+  "name": "E-cigarette",
+  "year": 2012,
+  "rank": 19,
+  "how": "Lithium-ion battery, heating coil, nicotine liquid; Joule heating, aerosol",
+  "impact": "Used by over 80 million people; displaced cigarettes for many and hooked teens.",
+  "verdict": "borderline",
+  "rule": "m5",
+  "why": "First sold in China in 2004, so the date is a stretch; mass use came in the 2010s (pod vapes 2015)."
+ },
+ {
+  "name": "Phone fingerprint sensor",
+  "year": 2013,
+  "rank": 20,
+  "how": "Fingerprints, capacitive sensor array, secure chip",
+  "impact": "Unlocks and pays on billions of phones.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "Fingerprints (1885) put somewhere new; a fresh sensor made biometrics an everyday thing for everyone."
+ },
+ {
+  "name": "Food delivery apps",
+  "year": 2013,
+  "rank": 21,
+  "how": "Smartphone, GPS, mobile payments, courier fleets; real-time dispatch",
+  "impact": "Hundreds of millions order meals this way; reshaped restaurants, especially in China.",
+  "verdict": "borderline",
+  "rule": "m1",
+  "why": "Is it an invention or a business? It's ride-hailing's dispatch applied to meals."
+ },
+ {
+  "name": "Swipe dating apps",
+  "year": 2012,
+  "rank": 22,
+  "how": "Smartphone, GPS, social media; mutual-match swiping",
+  "impact": "By the late 2010s the most common way couples meet in the US and much of Europe.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "A version of online dating (1995); location and swiping changed who used it, but the job is the same."
+ },
+ {
+  "name": "EUV lithography",
+  "year": 2019,
+  "rank": 23,
+  "how": "Photolithography, CO2 laser, multilayer mirrors, vacuum; ★ laser-produced tin plasma emitting 13.5 nm light",
+  "impact": "Every leading-edge chip (phones, AI accelerators) is now printed with it.",
+  "verdict": "borderline",
+  "rule": "m5",
+  "why": "Recent and invisible to users, but the entire leading-edge chip industry now runs on one firm's machine."
+ },
+ {
+  "name": "Prenatal DNA blood test",
+  "year": 2011,
+  "rank": 24,
+  "how": "DNA sequencing, blood draw; ★ fetal DNA fragments circulating in the mother's blood",
+  "impact": "Screens tens of millions of pregnancies for Down syndrome without amniocentesis.",
+  "verdict": "keep",
+  "rule": "m1",
+  "why": ""
+ },
+ {
+  "name": "Software containers",
+  "year": 2013,
+  "rank": 25,
+  "how": "Cloud data centres, operating system isolation (namespaces, cgroups)",
+  "impact": "The standard way most of the world's online services are packaged and run.",
+  "verdict": "keep",
+  "rule": "m1",
+  "why": ""
+ },
+ {
+  "name": "Wireless earbuds",
+  "year": 2016,
+  "rank": 26,
+  "how": "Short-range wireless link, MEMS microphones, lithium-ion battery, loudspeaker",
+  "impact": "Hundreds of millions sold a year; changed how people listen and take calls.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "Short-range wireless link plus Portable music player, shrunk; same job, mostly the same people."
+ },
+ {
+  "name": "Stroke clot retrieval",
+  "year": 2015,
+  "rank": 27,
+  "how": "Catheter, stent, X-ray imaging; ★ mechanical thrombectomy (pulling the clot out with a stent-mesh)",
+  "impact": "Became standard care for major strokes, sharply cutting disability.",
+  "verdict": "keep",
+  "rule": "m1",
+  "why": ""
+ },
+ {
+  "name": "Cyberweapons",
+  "year": 2010,
+  "rank": 28,
+  "how": "Computers, internet, software exploits",
+  "impact": "Since Stuxnet wrecked Iranian centrifuges, a standard tool of state conflict against grids, pipelines and hospitals.",
+  "verdict": "keep",
+  "rule": "m1",
+  "why": ""
+ },
+ {
+  "name": "Ransomware",
+  "year": 2013,
+  "rank": 29,
+  "how": "Public-key encryption, internet, cryptocurrency payments",
+  "impact": "Hits hospitals, cities and pipelines; a multi-billion-dollar criminal industry.",
+  "verdict": "borderline",
+  "rule": "m1",
+  "why": "Is malware an assembly? It's a method, like email, but a criminal one."
+ },
+ {
+  "name": "Transcatheter heart valve",
+  "year": 2011,
+  "rank": 30,
+  "how": "Catheter, stent, animal-tissue valve, X-ray imaging",
+  "impact": "Replaced open-heart surgery for most aortic valve patients; hundreds of thousands a year.",
+  "verdict": "borderline",
+  "rule": "m5",
+  "why": "First approved in Europe in 2007; US approval (2011) made it widely used, so the date is debatable."
+ },
+ {
+  "name": "Wireless phone charging",
+  "year": 2012,
+  "rank": 31,
+  "how": "Electromagnetic induction, coils, lithium-ion battery; ★ resonant inductive coupling",
+  "impact": "Built into most mid- and high-end phones, watches and earbuds.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "Inductive charging was in electric toothbrushes from the 1990s; phones put it in everyone's hands."
+ },
+ {
+  "name": "Cartridge PCR test",
+  "year": 2010,
+  "rank": 32,
+  "how": "PCR (DNA copying), microfluidic cartridge, fluorescence detection",
+  "impact": "The standard tuberculosis test in poor countries; tens of millions of tests a year, later used for COVID.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "PCR in a sealed cartridge; same method, but it moved molecular testing from labs to rural clinics."
+ },
+ {
+  "name": "Air fryer",
+  "year": 2010,
+  "rank": 33,
+  "how": "Electric heating element, fan; forced convection, Maillard browning",
+  "impact": "In over half of UK and US homes within a decade.",
+  "verdict": "borderline",
+  "rule": "m3",
+  "why": "A small convection oven; everyday in many homes, but is it more than a kitchen convenience?"
+ },
+ {
+  "name": "Emoji",
+  "year": 2010,
+  "rank": 34,
+  "how": "Unicode text encoding, smartphone keyboards, colour fonts",
+  "impact": "Billions of people use them daily in messages.",
+  "verdict": "borderline",
+  "rule": "m1",
+  "why": "Invented in Japan in 1999; became global when added to Unicode (2010). Is a writing addition an assembly?"
+ },
+ {
+  "name": "Dockless bike and e-scooter sharing",
+  "year": 2016,
+  "rank": 35,
+  "how": "Bicycle, electric motor, lithium-ion battery, GPS, smartphone app with QR unlock",
+  "impact": "Hundreds of millions of riders, mostly in Chinese cities.",
+  "verdict": "borderline",
+  "rule": "m1",
+  "why": "Is it an invention or a business? Docked bike-share is older; GPS and phone unlock made it dockless."
+ },
+ {
+  "name": "AI accelerator chip",
+  "year": 2016,
+  "rank": 36,
+  "how": "Microchips, high-bandwidth memory; ★ systolic arrays for matrix multiplication",
+  "impact": "Trains and runs all modern AI, from translation to large language models.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "A specialised Microchip for Deep learning; the field now runs on it, but it does the same job faster."
+ },
+ {
+  "name": "Crop-spraying drone",
+  "year": 2015,
+  "rank": 37,
+  "how": "Quadcopter drone, GPS, pumps and nozzles",
+  "impact": "Spray hundreds of millions of acres a year in China and Asia, replacing backpack sprayers.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "Quadcopter drone put on farms; it changed who sprays and how, but is still the same flying machine."
+ },
+ {
+  "name": "Pay-as-you-go solar kit",
+  "year": 2012,
+  "rank": 38,
+  "how": "Photovoltaic cells, LED lighting, lithium battery, mobile payments; remote lock-out",
+  "impact": "Brought first electric light to tens of millions of off-grid people in Africa and Asia.",
+  "verdict": "borderline",
+  "rule": "m5",
+  "why": "Big for its users, but tens rather than hundreds of millions."
+ },
+ {
+  "name": "Rocket interceptor system",
+  "year": 2011,
+  "rank": 39,
+  "how": "Radar, guided missiles, computers; trajectory prediction to engage only threats",
+  "impact": "Intercepted thousands of rockets over Israel; now copied and sought by many countries.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "Missile defence is older (Patriot, 1980s); this made it cheap and fast enough for short-range rockets."
+ },
+ {
+  "name": "Phone-based two-factor login",
+  "year": 2011,
+  "rank": 40,
+  "how": "Smartphone, public-key encryption; ★ time-based one-time codes from a shared secret",
+  "impact": "Protects billions of email, bank and work accounts.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "Hardware code tokens existed since the 1980s; phones made it everyone's practice."
+ },
+ {
+  "name": "Team chat apps",
+  "year": 2013,
+  "rank": 41,
+  "how": "Internet, cloud data centres, smartphone",
+  "impact": "Hundreds of millions of office workers coordinate by channels rather than email.",
+  "verdict": "drop",
+  "rule": "m4",
+  "why": "Messaging applied to offices: the same job as Email, done the same way."
+ },
+ {
+  "name": "CAR-T cell therapy",
+  "year": 2017,
+  "rank": 42,
+  "how": "Genetic engineering, virus vectors, T cells; ★ chimeric antigen receptor",
+  "impact": "Cures some blood cancers that nothing else could; tens of thousands treated so far.",
+  "verdict": "borderline",
+  "rule": "m5",
+  "why": "A new kind of medicine, but still only tens of thousands treated."
+ },
+ {
+  "name": "Smart speaker",
+  "year": 2014,
+  "rank": 43,
+  "how": "Voice assistants, MEMS microphone array, loudspeaker, Wi-Fi",
+  "impact": "In hundreds of millions of homes.",
+  "verdict": "drop",
+  "rule": "m4",
+  "why": "Voice assistants (2011) put in a speaker: same job, same way."
+ },
+ {
+  "name": "Airport body scanner",
+  "year": 2010,
+  "rank": 44,
+  "how": "Millimetre-wave radio, antennas, computers; ★ millimetre-wave imaging through clothing",
+  "impact": "Screens billions of air passengers.",
+  "verdict": "borderline",
+  "rule": "cut",
+  "why": "Near the decade's cut: billions pass through one, but it's a checkpoint gadget."
+ },
+ {
+  "name": "Meningitis A conjugate vaccine",
+  "year": 2010,
+  "rank": 45,
+  "how": "Conjugate vaccine, cold chain",
+  "impact": "Given to over 300 million people across Africa's meningitis belt, nearly ending epidemics there.",
+  "verdict": "borderline",
+  "rule": "cut",
+  "why": "Near the decade's cut: huge for Africa, but one more vaccine on an old method."
+ },
+ {
+  "name": "Low-warming refrigerant",
+  "year": 2013,
+  "rank": 46,
+  "how": "Air conditioning, refrigerators; fluorinated olefins that break down in days",
+  "impact": "Now in most new car air conditioners in Europe and the US.",
+  "verdict": "borderline",
+  "rule": "cut",
+  "why": "Near the decade's cut: a substitute chemical in an existing machine."
+ },
+ {
+  "name": "Livestream shopping",
+  "year": 2016,
+  "rank": 47,
+  "how": "Streaming video, smartphone, mobile payments",
+  "impact": "Hundreds of billions of dollars of sales a year in China.",
+  "verdict": "borderline",
+  "rule": "cut",
+  "why": "Near the decade's cut, and more a business than an invention."
+ },
+ {
+  "name": "Language-learning apps",
+  "year": 2012,
+  "rank": 48,
+  "how": "Smartphone, cloud data centres, spaced repetition",
+  "impact": "Over 100 million learners a month.",
+  "verdict": "borderline",
+  "rule": "cut",
+  "why": "Near the decade's cut: popular, but still a niche use of the phone."
+ },
+ {
+  "name": "Automated insulin delivery",
+  "year": 2016,
+  "rank": 49,
+  "how": "Continuous glucose monitor, insulin pump, control algorithm",
+  "impact": "Lets many type 1 diabetics run their blood sugar on autopilot.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "Continuous glucose monitor / insulin pump (1999) joined by an algorithm; changed how it works, so borderline not drop."
+ },
+ {
+  "name": "Gene therapy",
+  "year": 2017,
+  "rank": 50,
+  "how": "Genetic engineering, harmless virus vectors (AAV)",
+  "impact": "Cures a few rare inherited diseases; thousands treated.",
+  "verdict": "borderline",
+  "rule": "m5",
+  "why": "Real but tiny scale so far."
+ },
+ {
+  "name": "Computational phone photography",
+  "year": 2018,
+  "rank": 51,
+  "how": "Smartphone, CCD/CMOS sensors, deep learning; burst stacking",
+  "impact": "Most of the world's photos are taken this way.",
+  "verdict": "drop",
+  "rule": "m4",
+  "why": "Digital camera made smarter: same job, same way, same people."
+ },
+ {
+  "name": "Loitering munition",
+  "year": 2016,
+  "rank": 52,
+  "how": "Military drones, explosive warhead, camera",
+  "impact": "Widely used in the Nagorno-Karabakh and Ukraine wars.",
+  "verdict": "borderline",
+  "rule": "m4",
+  "why": "A version of Military drones; mass use came after 2020."
+ },
+ {
+  "name": "Daily satellite imaging of Earth",
+  "year": 2017,
+  "rank": 53,
+  "how": "Small satellites, CCD image sensor, launch rideshares",
+  "impact": "Images all the Earth's land every day for farmers, insurers and militaries.",
+  "verdict": "borderline",
+  "rule": "cut",
+  "why": "Near the decade's cut: mostly used by specialists, not in daily life."
+ },
+ {
+  "name": "5G mobile broadband",
+  "year": 2019,
+  "rank": 54,
+  "how": "4G mobile broadband, ★ millimetre-wave and massive-MIMO beamforming",
+  "impact": "Over two billion subscriptions by 2025.",
+  "verdict": "drop",
+  "rule": "m4",
+  "why": "The next generation of 4G: same job, same way, same people."
+ },
+ {
+  "name": "Power bank",
+  "year": 2012,
+  "rank": 55,
+  "how": "Lithium-ion battery, USB charging circuit",
+  "impact": "Carried by hundreds of millions.",
+  "verdict": "drop",
+  "rule": "m4",
+  "why": "Lithium-ion battery in a box: same job."
+ },
+ {
+  "name": "Electric multicooker",
+  "year": 2010,
+  "rank": 56,
+  "how": "Pressure cooker, microcontroller, electric heater",
+  "impact": "Tens of millions of kitchens.",
+  "verdict": "drop",
+  "rule": "cut",
+  "why": "Below the decade's cut; a pressure cooker with a timer."
+ },
+ {
+  "name": "Video doorbell",
+  "year": 2013,
+  "rank": 57,
+  "how": "Camera, Wi-Fi, smartphone, cloud",
+  "impact": "Tens of millions of homes.",
+  "verdict": "drop",
+  "rule": "cut",
+  "why": "Below the decade's cut."
+ },
+ {
+  "name": "VR headset",
+  "year": 2016,
+  "rank": 58,
+  "how": "OLED display, lenses, gyroscopes, accelerometers",
+  "impact": "Tens of millions sold, mostly for games.",
+  "verdict": "drop",
+  "rule": "cut",
+  "why": "Below the decade's cut; still not in most people's lives."
+ },
+ {
+  "name": "Phone tap-to-pay wallet",
+  "year": 2014,
+  "rank": 59,
+  "how": "Contactless card, smartphone, secure chip",
+  "impact": "Hundreds of millions pay with phones and watches.",
+  "verdict": "drop",
+  "rule": "m4",
+  "why": "Contactless card (1995) moved into the phone: same job, same way."
+ },
+ {
+  "name": "3D NAND flash",
+  "year": 2013,
+  "rank": 60,
+  "how": "Flash memory, microchips; memory cells stacked in vertical layers",
+  "impact": "All modern phone and SSD storage.",
+  "verdict": "drop",
+  "rule": "m4",
+  "why": "Flash memory stacked up: same job, same way, same people."
+ },
+ {
+  "name": "Electric bus",
+  "year": 2011,
+  "rank": 61,
+  "how": "Electric car drivetrain, lithium-ion battery, bus",
+  "impact": "Over half a million in Chinese cities.",
+  "verdict": "drop",
+  "rule": "m4",
+  "why": "Electric car scaled up: same job, same way."
+ },
+ {
+  "name": "Geared turbofan",
+  "year": 2016,
+  "rank": 62,
+  "how": "Turbofan jet engine, gearbox",
+  "impact": "On thousands of new airliners.",
+  "verdict": "drop",
+  "rule": "m4",
+  "why": "Turbofan jet engine refined: same job, same way."
+ },
+ {
+  "name": "Home battery",
+  "year": 2015,
+  "rank": 63,
+  "how": "Lithium-ion battery, inverter",
+  "impact": "Millions of homes with rooftop solar.",
+  "verdict": "drop",
+  "rule": "m4",
+  "why": "Lithium-ion battery on a garage wall."
+ },
+ {
+  "name": "Universal reversible connector",
+  "year": 2015,
+  "rank": 64,
+  "how": "Insulated wire & cable, microchips",
+  "impact": "On billions of phones and laptops; mandated in the EU.",
+  "verdict": "drop",
+  "rule": "cut",
+  "why": "Below the decade's cut; a plug."
+ },
+ {
+  "name": "HIV prevention pill",
+  "year": 2012,
+  "rank": 65,
+  "how": "Antiretroviral HIV therapy given before exposure",
+  "impact": "Millions take it; cut new infections in gay men sharply.",
+  "verdict": "drop",
+  "rule": "m4",
+  "why": "Like the stomach-ulcer cure: old antiretrovirals aimed at a new use, no new assembly."
+ },
+ {
+  "name": "Plant-based burger",
+  "year": 2016,
+  "rank": 66,
+  "how": "Plant proteins, heme from engineered yeast",
+  "impact": "Sold widely but a few percent of meat sales.",
+  "verdict": "drop",
+  "rule": "m3",
+  "why": "Not in most people's daily lives."
+ },
+ {
+  "name": "Cryo-electron microscopy",
+  "year": 2013,
+  "rank": 67,
+  "how": "Electron microscope, direct electron detector, image averaging",
+  "impact": "Solves protein structures for drug design.",
+  "verdict": "drop",
+  "rule": "m2",
+  "why": "A research instrument."
+ },
+ {
+  "name": "Nanopore sequencer",
+  "year": 2014,
+  "rank": 68,
+  "how": "DNA sequencing, protein nanopore; ★ ionic current blockade by passing DNA",
+  "impact": "Pocket-sized sequencing in labs and outbreaks.",
+  "verdict": "drop",
+  "rule": "m2",
+  "why": "A research instrument."
+ },
+ {
+  "name": "Malaria vaccine",
+  "year": 2019,
+  "rank": 69,
+  "how": "Recombinant protein vaccine, adjuvant",
+  "impact": "Pilot rollout in three African countries.",
+  "verdict": "drop",
+  "rule": "m2",
+  "why": "Still pilots in 2019; wide use only from 2023."
+ },
+ {
+  "name": "Perovskite solar cell",
+  "year": 2012,
+  "rank": 70,
+  "how": "Photovoltaic cells, perovskite crystals",
+  "impact": "Record efficiencies in labs.",
+  "verdict": "drop",
+  "rule": "m2",
+  "why": "Still in labs and pilot lines."
+ },
+ {
+  "name": "Wolbachia mosquitoes",
+  "year": 2011,
+  "rank": 71,
+  "how": "Bacteria, mosquito breeding; ★ Wolbachia blocking dengue virus",
+  "impact": "Released over several million people's cities.",
+  "verdict": "drop",
+  "rule": "m2",
+  "why": "Mostly trials and city pilots."
+ },
+ {
+  "name": "Foldable phone",
+  "year": 2019,
+  "rank": 72,
+  "how": "Smartphone, flexible OLED display",
+  "impact": "A few percent of phone sales.",
+  "verdict": "drop",
+  "rule": "m4",
+  "why": "A Smartphone that folds: same job, same people."
+ },
+ {
+  "name": "Hypersonic glide missile",
+  "year": 2019,
+  "rank": 73,
+  "how": "Intercontinental ballistic missile, glide vehicle",
+  "impact": "A handful deployed by Russia and China.",
+  "verdict": "drop",
+  "rule": "m2",
+  "why": "Barely deployed; mostly tests."
+ }
+]

@@ -1,0 +1,425 @@
+[
+ {
+  "id": "hydrogen-steam-generator",
+  "name": "Hydrogen flame steam generator",
+  "job": "makes steam",
+  "effect": "burning hydrogen makes nothing but water",
+  "effectCard": "hydrogen-and-water",
+  "parts": [
+   "liquid-fuel-rockets",
+   "valve"
+  ],
+  "how": "A small rocket-style combustion chamber burns hydrogen with pure oxygen and sprays extra water into the flame. Because the only thing hydrogen burning makes is water, the exhaust is clean, superheated steam that can go straight into a turbine with no boiler or heat exchanger. It can start in seconds, so it suits backing up a power grid.",
+  "real": "DLR hydrogen/oxygen steam generator, 1990s (experimental)",
+  "plausibility": 4,
+  "why": "The exhaust is the product: a flame whose smoke is pure steam replaces the whole boiler."
+ },
+ {
+  "id": "electrolytic-oxygen-generator",
+  "name": "Electrolytic oxygen generator",
+  "job": "supplies oxygen",
+  "effect": "a current splits water into hydrogen and oxygen",
+  "effectCard": "decomposition-of-water",
+  "parts": [
+   "malleable-platinum",
+   "valve"
+  ],
+  "how": "A sealed cell of water with platinum electrodes sits inside a submarine or space station. A current splits the water, bubbling oxygen off one electrode for the crew to breathe while the hydrogen from the other is vented. Water is far easier to carry than tanks of compressed oxygen.",
+  "real": "Submarine electrolytic oxygen generators, 1950s; ISS Elektron, 2000",
+  "plausibility": 5,
+  "why": "Turns drinking water into breathing air for crews sealed away for months."
+ },
+ {
+  "id": "hydrogen-round-trip-battery",
+  "name": "Hydrogen round-trip battery",
+  "job": "stores electricity",
+  "effect": "a current splits water into hydrogen and oxygen",
+  "effectCard": "decomposition-of-water",
+  "parts": [
+   "fuel-cell",
+   "malleable-platinum",
+   "valve"
+  ],
+  "how": "Surplus electricity from a sunny or windy day splits water into hydrogen, which is piped into tanks and can wait for weeks. When power is needed, a fuel cell recombines the hydrogen with oxygen from the air and gives the electricity back. Unlike a chemical battery, adding more storage just means adding more tanks.",
+  "real": "Regenerative fuel cells and power-to-gas pilots, 1990s-2010s",
+  "plausibility": 4,
+  "why": "Stores electricity as a gas, so capacity scales with tank size, not electrode area."
+ },
+ {
+  "id": "moon-rock-oxygen-cell",
+  "name": "Moon-rock oxygen cell",
+  "job": "supplies oxygen",
+  "effect": "a current pulls reactive metals out of their salts",
+  "effectCard": "sodium-and-potassium",
+  "parts": [
+   "porcelain",
+   "valve"
+  ],
+  "how": "Lunar dust is mostly metal oxides, a kind of salt with oxygen locked inside. Packed into a ceramic pot of hot molten salt and given a strong current, the metal is pulled out at one electrode and the freed oxygen bubbles off the other for astronauts to breathe. The leftover metal powder is a bonus building material.",
+  "real": "Lab demonstrations (FFC Cambridge process applied to regolith simulant, ESA, 2020s)",
+  "plausibility": 3,
+  "why": "The same trick that isolated sodium in 1807 could make air from moon dust."
+ },
+ {
+  "id": "liquid-air-energy-store",
+  "name": "Liquid air energy store",
+  "job": "stores energy",
+  "effect": "cold plus pressure turns gases into liquids",
+  "effectCard": "liquefying-gases",
+  "parts": [
+   "dewar-flask",
+   "turbines",
+   "valve"
+  ],
+  "how": "When power is cheap, a plant squeezes and chills ordinary air until it turns into a liquid, then keeps it in large vacuum-insulated tanks. Later, letting it warm makes it boil back into a gas about 700 times bigger, and that rush of gas spins a turbine. The stored 'fuel' is just air, so nothing burns and nothing needs mining.",
+  "real": "Liquid-air energy storage pilot plants, 2010s",
+  "plausibility": 4,
+  "why": "Energy stored by squashing air into a liquid, released by letting it boil."
+ },
+ {
+  "id": "starch-sugar-battery",
+  "name": "Starch-eating enzyme battery",
+  "job": "makes electricity",
+  "effect": "an enzyme turns starch into sugar",
+  "effectCard": "diastase",
+  "parts": [
+   "fuel-cell"
+  ],
+  "how": "A fuel cell is filled with starch paste and a team of enzymes instead of hydrogen. The first enzyme chops starch into sugar, and others strip electrons off the sugar at the electrode, the way our cells do, sending them round a circuit. It could run small electronics on something as safe as cornflour.",
+  "real": "Lab sugar batteries (Sony 2007, Virginia Tech 2014)",
+  "plausibility": 3,
+  "why": "A battery fuelled the way bodies are, with harmless starch instead of metal."
+ },
+ {
+  "id": "dry-ice-cold-trap",
+  "name": "Dry-ice vacuum cold trap",
+  "job": "makes a vacuum",
+  "effect": "solid carbon dioxide cools far below freezing water",
+  "effectCard": "dry-ice",
+  "parts": [
+   "air-pump",
+   "dewar-flask"
+  ],
+  "how": "A metal finger chilled by dry ice in an insulated flask sits in the pipe between a vacuum chamber and its pump. Water and oil vapour hitting the bitterly cold surface freeze solid onto it, which removes them from the chamber faster than the pump could. Cold alone does the pumping for these gases.",
+  "real": "Cold traps, early 1900s; cryopumps, 1960s",
+  "plausibility": 5,
+  "why": "Pumping by freezing: cold surfaces swallow gas no mechanical pump can catch."
+ },
+ {
+  "id": "protein-chop-identifier",
+  "name": "Protein chop-and-weigh identifier",
+  "job": "measures",
+  "effect": "an enzyme breaks down protein",
+  "effectCard": "pepsin",
+  "parts": [
+   "mass-spectrometer"
+  ],
+  "how": "An unknown protein is too big to weigh well, so a digestive enzyme first cuts it into short pieces at predictable spots. A mass spectrometer weighs each piece, and the set of weights is matched against a catalogue to say exactly which protein it was. Doctors and biologists use this to find what proteins a sample contains.",
+  "real": "Peptide mass fingerprinting, 1993",
+  "plausibility": 5,
+  "why": "Digestion as a measuring step: cut predictably, then the fragments name the protein."
+ },
+ {
+  "id": "doppler-satellite-navigation",
+  "name": "Doppler satellite navigation",
+  "job": "finds direction",
+  "effect": "a moving source's pitch rises approaching, falls receding",
+  "effectCard": "doppler-effect",
+  "parts": [
+   "sputnik",
+   "radio",
+   "computer"
+  ],
+  "how": "A satellite in a known orbit beeps on a steady radio tone. A ship's receiver hears the tone rise as the satellite approaches and fall as it leaves, and the exact shape of that change tells a computer where the ship must be. It began when engineers tracking Sputnik's beeps realised the trick works in reverse.",
+  "real": "Transit satellite navigation, 1964",
+  "plausibility": 5,
+  "why": "Sputnik's beeping, turned around, became the first way to find your position from space."
+ },
+ {
+  "id": "doppler-blood-flow-probe",
+  "name": "Doppler blood-flow probe",
+  "job": "diagnoses",
+  "effect": "a moving source's pitch rises approaching, falls receding",
+  "effectCard": "doppler-effect",
+  "parts": [
+   "sonar",
+   "loudspeaker"
+  ],
+  "how": "A handheld probe sends ultrasound into the body and listens for the echo. Blood cells moving toward the probe return a slightly higher pitch and those moving away a lower one, so the device can hear how fast and which way blood flows. Played through a speaker, a blocked artery or a fetal heartbeat becomes audible.",
+  "real": "Doppler ultrasound, 1950s-60s",
+  "plausibility": 5,
+  "why": "Hears blood moving inside the body without a single cut."
+ },
+ {
+  "id": "strapdown-attitude-computer",
+  "name": "Strapdown quaternion navigator",
+  "job": "finds direction",
+  "effect": "four-part numbers make 3D rotations simple arithmetic",
+  "effectCard": "quaternions",
+  "parts": [
+   "gyroscope",
+   "microchips"
+  ],
+  "how": "Spinning-rotor gyroscopes are bolted straight to a vehicle instead of floating in gimbals. A chip adds up every small twist they sense as four-part numbers, so it always knows which way the vehicle points without ever jamming in impossible orientations. Aircraft, rockets and phones keep their heading this way.",
+  "real": "Strapdown inertial navigation, 1960s-70s",
+  "plausibility": 5,
+  "why": "A 19th-century piece of pure algebra became the way machines know which way is up."
+ },
+ {
+  "id": "planet-wobble-finder",
+  "name": "Star-wobble planet finder",
+  "job": "detects objects",
+  "effect": "a moving light source shifts its colours red or blue",
+  "effectCard": "spectral-line-shift",
+  "parts": [
+   "reflecting-telescope",
+   "diffraction-gratings-improved"
+  ],
+  "how": "A large telescope feeds starlight into a precise grating that spreads it into thousands of dark lines. An unseen planet tugs its star back and forth, so the lines slide slightly blue then red in a regular rhythm. That rhythm reveals the planet's orbit and mass even though the planet itself is never seen.",
+  "real": "Radial-velocity exoplanet detection, 1995",
+  "plausibility": 5,
+  "why": "Detects objects too faint to see at all, by colour shifts in the star they pull."
+ },
+ {
+  "id": "laser-window-microphone",
+  "name": "Laser window microphone",
+  "job": "turns sound into current",
+  "effect": "a moving light source shifts its colours red or blue",
+  "effectCard": "spectral-line-shift",
+  "parts": [
+   "laser",
+   "interferometer",
+   "photocell"
+  ],
+  "how": "A laser beam is aimed at a distant window pane, which trembles slightly when people talk behind it. Light bouncing off the moving glass comes back very slightly shifted in colour, and an interferometer turns those tiny shifts into a flickering brightness that a photocell converts to an electrical signal. Played back, it is the conversation in the room.",
+  "real": "Laser microphones and vibrometers, 1960s-80s",
+  "plausibility": 5,
+  "why": "A microphone that never touches the air it listens to."
+ },
+ {
+  "id": "cryoablation-probe",
+  "name": "Expanding-gas freezing probe",
+  "job": "treats illness",
+  "effect": "an expanding gas cools itself",
+  "effectCard": "joule-thomson-effect",
+  "parts": [
+   "valve",
+   "dewar-flask"
+  ],
+  "how": "A needle-thin probe with a vacuum-insulated shaft is slid into a tumour. High-pressure argon escapes through a tiny valve at the tip and cools itself so much as it expands that an iceball forms around the needle and kills the tumour cells. No cold liquid has to be carried in; the gas makes its own cold right where it is needed.",
+  "real": "Argon cryoablation probes, 1990s",
+  "plausibility": 5,
+  "why": "Cold made exactly at the needle tip, from nothing but gas getting out."
+ },
+ {
+  "id": "spark-spectrum-scrap-sorter",
+  "name": "Spark-spectrum scrap sorter",
+  "job": "separates mixtures",
+  "effect": "each element's light has its own lines",
+  "effectCard": "spectral-lines-and-elements",
+  "parts": [
+   "laser",
+   "diffraction-gratings",
+   "photocell",
+   "valve"
+  ],
+  "how": "Shredded scrap metal rides a fast conveyor past a laser that zaps a speck of each piece into a tiny glowing spark. A grating spreads the spark's light, and the pattern of bright lines tells which metals the piece contains. A puff of air then knocks each piece into the right bin, separating alloys that look identical.",
+  "real": "Laser-induced breakdown scrap sorters, 2010s",
+  "plausibility": 5,
+  "why": "Sorting by the colour fingerprint of each element, one spark per piece."
+ },
+ {
+  "id": "air-to-starch-reactor",
+  "name": "Air-to-starch reactor",
+  "job": "grows food",
+  "effect": "life's molecules can be made from non-living chemicals",
+  "effectCard": "organic-synthesis",
+  "parts": [
+   "valve",
+   "distillation"
+  ],
+  "how": "Carbon dioxide from the air is combined with hydrogen to make a simple alcohol, which is purified and fed through a chain of chemical and enzyme steps that build it up into starch, the main food in grain. No plant, soil or field is involved. Such a plant could grow staple food in a building, far faster per acre than wheat.",
+  "real": "Lab only: CO2-to-starch synthesis, 2021",
+  "plausibility": 2,
+  "why": "Food grown with no plants at all, a direct heir of Wöhler's urea."
+ },
+ {
+  "id": "hemoglobin-artificial-gill",
+  "name": "Hemoglobin artificial gill",
+  "job": "supplies oxygen",
+  "effect": "hemoglobin carries oxygen in the blood",
+  "effectCard": "hemoglobin",
+  "parts": [
+   "perfusion-pump",
+   "valve"
+  ],
+  "how": "Seawater is pumped past a thin membrane with a hemoglobin-like carrier on the other side, which grabs the little oxygen dissolved in the water. The loaded carrier is pumped to a second chamber where it is made to let go, releasing breathable oxygen. Seawater holds little oxygen, so it suits an underwater habitat with big pumps better than a diver.",
+  "real": "Lab prototypes (Aquanautics, 1980s)",
+  "plausibility": 2,
+  "why": "Breathing from the sea itself, the way fish blood does."
+ },
+ {
+  "id": "infrared-gas-meter",
+  "name": "Infrared carbon dioxide meter",
+  "job": "measures",
+  "effect": "some gases absorb infrared heat rays",
+  "effectCard": "greenhouse-effect",
+  "parts": [
+   "electric-light",
+   "photocell"
+  ],
+  "how": "A small lamp shines heat rays through a tube of sampled air onto a detector. Carbon dioxide traps some of those rays, the same way it traps heat in the atmosphere, so the more of it there is, the less reaches the detector. The dimming gives the gas level, used to check room air, breath and the atmosphere.",
+  "real": "Non-dispersive infrared gas analyser, 1930s-50s",
+  "plausibility": 5,
+  "why": "The effect that warms the planet doubles as the way we measure the gas causing it."
+ },
+ {
+  "id": "gene-drive-mosquito",
+  "name": "Gene-drive malaria mosquitoes",
+  "job": "prevents disease",
+  "effect": "traits pass on in predictable ratios",
+  "effectCard": "genetics",
+  "parts": [
+   "synthetic-gene"
+  ],
+  "how": "Normally a gene reaches half of an animal's offspring, so an added trait fades out of a wild population. A gene drive is an added gene that copies itself onto the partner chromosome, so nearly all offspring inherit it, for example a gene that stops mosquitoes carrying malaria. Released mosquitoes would spread the trait through the wild population in a few years.",
+  "real": "Lab and caged trials, 2015-2018",
+  "plausibility": 3,
+  "why": "Rewrites Mendel's ratios on purpose to protect people from disease."
+ },
+ {
+  "id": "microwave-power-beam",
+  "name": "Microwave power beam",
+  "job": "carries current",
+  "effect": "electric oscillations send out light-speed waves",
+  "effectCard": "maxwells-equations",
+  "parts": [
+   "magnetrons",
+   "radio-antennas",
+   "electronic-rectifier"
+  ],
+  "how": "A magnetron turns electricity into a tight beam of microwaves aimed at a distant receiving field of small antennas. Each antenna catches the waves and a rectifier turns them back into ordinary current. Power could reach a drone, a remote island or a city from an orbiting solar station without any wire.",
+  "real": "Microwave power-beaming demos (Brown's helicopter, 1964); not in everyday use",
+  "plausibility": 4,
+  "why": "Power lines replaced by an invisible beam."
+ },
+ {
+  "id": "microwave-oven",
+  "name": "Microwave oven",
+  "job": "prepares food",
+  "effect": "electric oscillations send out light-speed waves",
+  "effectCard": "maxwells-equations",
+  "parts": [
+   "magnetrons"
+  ],
+  "how": "A magnetron sends waves oscillating billions of times a second into a metal box. Water in the food tries to swing with the waves and the jostling heats the food from within. Nothing in the box burns and the oven itself stays cool.",
+  "real": "Microwave oven, 1947",
+  "plausibility": 5,
+  "why": "Cooking by radiated waves rather than by flame or hot surface."
+ },
+ {
+  "id": "hyperbaric-oxygen-chamber",
+  "name": "Hyperbaric oxygen chamber",
+  "job": "treats illness",
+  "effect": "adding more of one chemical pushes a reaction forward",
+  "effectCard": "law-of-mass-action",
+  "parts": [
+   "steel",
+   "valve"
+  ],
+  "how": "A patient poisoned by carbon monoxide lies in a steel chamber filled with pure oxygen at two or three times normal pressure. The flood of extra oxygen pushes the binding reaction in the blood the other way, knocking carbon monoxide off the blood's oxygen carriers much faster than normal air would. The same push forces extra oxygen into slow-healing wounds.",
+  "real": "Hyperbaric oxygen therapy, 1960s",
+  "plausibility": 5,
+  "why": "Treatment by concentration alone: crowd the reaction and it runs backward."
+ },
+ {
+  "id": "encapsulated-islet-implant",
+  "name": "Encapsulated islet implant",
+  "job": "regulates the body",
+  "effect": "islet cells sense blood sugar and release matching insulin",
+  "effectCard": "islets-of-langerhans",
+  "parts": [
+   "tissue-culture"
+  ],
+  "how": "Lab-grown pancreas islet cells are sealed in a small porous pouch implanted under the skin. Sugar and insulin pass through the pores, but immune cells are too big to get in and attack. The living cells measure blood sugar and release just the right amount of insulin, doing the job of a diabetic's lost pancreas automatically.",
+  "real": "Clinical trials, 2010s-2020s",
+  "plausibility": 3,
+  "why": "A self-regulating insulin source instead of injections and guesswork."
+ },
+ {
+  "id": "osmotic-power-plant",
+  "name": "Osmotic river-mouth power plant",
+  "job": "makes electricity",
+  "effect": "big molecules trapped behind a membrane draw water in",
+  "effectCard": "protein-size",
+  "parts": [
+   "turbines",
+   "electric-generators"
+  ],
+  "how": "Where a river meets the sea, fresh water and seawater are separated by a membrane that lets water through but holds back salt. Water seeps across into the salty side and builds up pressure there, and the pressurised water spins a turbine and generator. It runs day and night on nothing but the saltiness difference.",
+  "real": "Statkraft osmotic power pilot, 2009",
+  "plausibility": 3,
+  "why": "Power from mixing fresh and salt water, using the pressure that draws water into cells."
+ },
+ {
+  "id": "glowing-block-heat-battery",
+  "name": "Glowing-block heat battery",
+  "job": "makes electricity",
+  "effect": "glow rises with the fourth power of temperature",
+  "effectCard": "heat-and-radiation",
+  "parts": [
+   "photovoltaic-cells",
+   "carborundum"
+  ],
+  "how": "Cheap surplus electricity heats insulated blocks of ceramic until they glow white-hot. Solar-type cells facing the blocks turn their light back into electricity on demand. Because glow climbs with the fourth power of temperature, a very hot block shines so brightly that a small panel of cells can deliver a lot of power.",
+  "real": "Thermophotovoltaic heat batteries, lab and pilots 2020s",
+  "plausibility": 3,
+  "why": "Light from stored heat, made practical by the steep fourth-power law."
+ },
+ {
+  "id": "electron-beam-chip-writer",
+  "name": "Electron-beam chip writer",
+  "job": "prints",
+  "effect": "electron beams carry negative charge",
+  "effectCard": "charged-cathode-rays",
+  "parts": [
+   "electron-gun",
+   "electromagnets"
+  ],
+  "how": "An electron gun fires a fine beam onto a coated chip wafer, and magnets steer it because the electrons are charged. Wherever the beam lands, the coating changes, drawing a circuit pattern line by line. Electrons can be focused far finer than light, so it prints details only a few atoms wide.",
+  "real": "Electron-beam lithography, 1960s",
+  "plausibility": 5,
+  "why": "Prints with a steerable stream of charge instead of ink or light."
+ },
+ {
+  "id": "fingerprint-lock",
+  "name": "Fingerprint lock",
+  "job": "protects",
+  "effect": "everyone's fingerprints are unique",
+  "effectCard": "fingerprints",
+  "parts": [
+   "cylinder-locks",
+   "photocell",
+   "microchips"
+  ],
+  "how": "A door lock has a small window that photographs the ridges of a finger pressed against it. A chip compares the pattern with the stored prints of allowed people and only then lets the lock turn. No key can be lost or copied, because no two people's fingers match.",
+  "real": "Fingerprint locks, 1990s; on phones 2013",
+  "plausibility": 5,
+  "why": "The body itself becomes the key."
+ },
+ {
+  "id": "dichromate-breath-tester",
+  "name": "Colour-change breath tester",
+  "job": "measures",
+  "effect": "orange dichromate turns green as it reacts",
+  "effectCard": "chromium",
+  "parts": [
+   "glass",
+   "photocell"
+  ],
+  "how": "A driver blows into a glass tube holding an orange chromium compound in acid. Alcohol in the breath reacts with it and turns it green, and a photocell compares the colour with an untouched sample. The amount of colour change gives the alcohol in the blood.",
+  "real": "Breathalyzer, 1954",
+  "plausibility": 5,
+  "why": "A pigment's colour change becomes a roadside measuring instrument."
+ }
+]

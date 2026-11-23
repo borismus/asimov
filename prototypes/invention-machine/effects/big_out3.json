@@ -1,0 +1,305 @@
+[
+ {
+  "id": "microwave-beamed-rocket",
+  "name": "Microwave-powered rocket",
+  "subtitle": "a rocket powered by a beam from below",
+  "bigJob": "cheap-orbit",
+  "job": "lift cargo to orbit without carrying its own energy",
+  "effects": [
+   {
+    "effect": "a gyrotron, a kind of maser, turns grid power into a tight beam of microwaves at over 50% efficiency",
+    "card": null,
+    "newToJob": true
+   },
+   {
+    "effect": "microwaves soak into a dark ceramic heat exchanger and heat it, the way a microwave oven heats food",
+    "card": "dielectric-heating",
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "masers",
+   "radio-antennas",
+   "liquid-fuel-rockets"
+  ],
+  "how": "Nine-tenths of a rocket is fuel, because it has to carry the energy for its whole climb, and burning oxygen with hydrogen gives only so much push per kilogram. Here the energy stays on the ground: a field of dish antennas aims a microwave beam at the climbing rocket, whose belly is a heat exchanger that soaks up the beam and heats plain hydrogen to about 2,500 C, so the rocket carries no oxygen at all. Pure hot hydrogen shoots out faster than any burnt fuel, so a single, fully reusable stage can reach orbit with several times more of its weight left for cargo.",
+  "obstacle": "The ground station needs hundreds of megawatts of microwave power, about 200 one-megawatt gyrotrons, kept on a target moving at 7 km/s, which nobody has built.",
+  "evidence": "Escape Dynamics (Colorado), July 2015: grid power through a gyrotron, beamed by mirrors and an antenna onto a thruster's heat exchanger, gave a specific impulse above 500 s with helium (hydrogen projected 750 s, vs about 450 s for the best chemical engine); company statements, not peer-reviewed. Builds on Kevin Parkin's Caltech microwave thermal rocket work (2006-2012). https://www.space.com/30134-beamed-propulsion-reusable-launch-vehicles-startup.html",
+  "existsCheck": "Searched 'beamed energy launch microwave gyrotron rocket startup 2025 2026': Escape Dynamics folded at the end of 2015; only academic studies and JAXA microwave-rocket experiments since. Nothing flying or under construction.",
+  "familiar": true,
+  "tenX": "Payload fraction of a single reusable stage rises from about 1-4% to 10-15%; with gyrotron fusion-industry prices, cost per kg could fall roughly 10x below today's reusable rockets.",
+  "plausibility": 3,
+  "why": "First vehicle to leave its energy on the ground; breaks the rocket equation instead of tuning it."
+ },
+ {
+  "id": "ram-accelerator-fuel-gun",
+  "name": "Ram-accelerator launch tube",
+  "subtitle": "a fuel-filled gun barrel that throws cargo upward",
+  "bigJob": "cheap-orbit",
+  "job": "send bulk cargo such as propellant, water and metal to orbit",
+  "effects": [
+   {
+    "effect": "a projectile racing through a tube of fuel-air mix acts as its own jet engine: the shock off its nose sets the gas burning just behind it, pushing it ever faster",
+    "card": "detonation",
+    "newToJob": true
+   },
+   {
+    "effect": "a shock wave squeezes and heats gas in a thin layer",
+    "card": "edb-shock-wave",
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "cannon",
+   "liquid-fuel-rockets"
+  ],
+  "how": "Most of what goes up on rockets is dumb mass: fuel for spacecraft, water, structural metal, none of which minds being shaken. A long tube is filled with pressurised natural gas and air; a projectile fired into it compresses the gas around its nose so it ignites behind it, so the push travels with the projectile instead of fading as in an ordinary gun. Leaving the muzzle at several km/s, the canister needs only a small rocket motor at the top to round out its orbit, so most of the energy came from cheap fuel on the ground.",
+  "obstacle": "No ram accelerator has passed about 2.7 km/s, a third of orbital speed, and canisters must survive thousands of g and a fireball exit through the thick lower air.",
+  "evidence": "Hertzberg and Bruckner, University of Washington, 1980s-90s: ram accelerator drove projectiles to 2.7 km/s in a 16 m tube. HyperSciences (General Hypersonics) reported rocketless ram-accelerated Mach 3+ flights with payload separation in Sept 2025 and reusable Mach 4+ launches under DoD contract. https://www.accessnewswire.com/newsroom/en/clean-technology/hypersciences-dba-general-hypersonics-achieves-world-first-rocketless-ram-accelera-1076811",
+  "existsCheck": "Searched 'ram accelerator hypersonic launch velocity record space launch 2024': only suborbital Mach 3-4 tests (HyperSciences) and Longshot's planned gas gun; no orbital launch by gun has ever happened.",
+  "familiar": true,
+  "tenX": "Cost per kg for rugged bulk cargo could drop from about $1,500 (reusable rockets) toward $50-100, since the energy is mostly cheap gas burned in a fixed tube.",
+  "plausibility": 2,
+  "why": "Bulk cargo shot to orbit by a gun; separates hauling freight from carrying people."
+ },
+ {
+  "id": "precooled-air-breathing-engine",
+  "name": "Precooled air-breathing rocket engine",
+  "subtitle": "a rocket engine that breathes air at first",
+  "bigJob": "cheap-orbit",
+  "job": "reach orbit in one reusable stage, like a plane",
+  "effects": [
+   {
+    "effect": "a mesh of hair-thin tubes carrying cold helium chills 1,000 C ram air to -150 C in a hundredth of a second, without frosting up",
+    "card": "forced-convection",
+    "newToJob": true
+   },
+   {
+    "effect": "air rammed into an intake at hypersonic speed heats up as it is squeezed",
+    "card": "adiabatic-heating-and-cooling",
+    "newToJob": false
+   }
+  ],
+  "parts": [
+   "liquid-fuel-rockets",
+   "jet-planes",
+   "turbines"
+  ],
+  "how": "A rocket carries all its oxygen, about two-thirds of its take-off weight, even though the first part of the climb is through air full of it. A jet engine can't use that air above about Mach 3 because it arrives so hot it would melt the compressor; this engine first runs it through a precooler of thousands of fine tubes that drops it from 1,000 C to almost liquid-air cold, then compresses it into the rocket chamber. Breathing air up to Mach 5 and 25 km, then switching to its own oxygen, a craft could fly to orbit in a single stage and land like a plane.",
+  "obstacle": "Reaction Engines proved the precooler but went into administration in late 2024 before building a whole engine; the full cycle and an airframe light enough for single-stage orbit remain undemonstrated.",
+  "evidence": "Reaction Engines, Oct 2019, Colorado: SABRE precooler test article quenched airflow at over 1,000 C (Mach 5 conditions) in under 1/20 s, ESA-validated. https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Air-breathing_engine_precooler_achieves_record-breaking_Mach_5_performance",
+  "existsCheck": "Searched 'SABRE precooler Reaction Engines administration 2024 Mach 5 test result': only precooler component tests exist; the company collapsed in 2024 and no full engine or Skylon vehicle was built.",
+  "familiar": true,
+  "tenX": "Propellant mass at take-off falls by roughly a third and a single-stage, aircraft-style reusable vehicle becomes possible, aiming at about $100/kg or less with airline-like turnaround.",
+  "plausibility": 3,
+  "why": "The first engine to fly from runway to orbit, ending the throwaway stage."
+ },
+ {
+  "id": "reversible-resonant-chip",
+  "name": "Reversible chip",
+  "subtitle": "a chip that takes back each step's energy",
+  "bigJob": "brain-efficient-compute",
+  "job": "run AI and computing without turning every bit flip into heat",
+  "effects": [
+   {
+    "effect": "a resonating circuit, like a swinging pendulum, hands energy back and forth instead of throwing it away each cycle",
+    "card": "resonance-vibration",
+    "newToJob": true
+   },
+   {
+    "effect": "charge moved onto a wire gently and slowly, rather than slammed on, loses almost none of its energy as heat; logic that never erases data can return it",
+    "card": null,
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "integrated-circuits",
+   "transistor"
+  ],
+  "how": "Every time an ordinary chip flips a bit, it dumps the electric charge on that wire into the ground as heat, and doing that trillions of times a second is why data centres draw megawatts. A reversible chip drives its logic from a ringing resonator, so charge flows onto each wire smoothly and then back out into the resonator, the way a pendulum keeps its swing; its circuits are built so no step erases information, which physics says is the only part that must cost heat. Run many such gates a bit slower in parallel and most of the energy is recycled instead of burned.",
+  "obstacle": "Gentle charging means slower gates and more of them, and designers have no tools, languages or chip libraries for logic that never erases.",
+  "evidence": "Vaire Computing, 2025: 22 nm 'Ice River' test chip with a resonator-driven power supply; its capacitor array recovered about 1.77x and its adder about 1.41x the energy a normal circuit would lose, with roughly 30-50% energy saving reported (not yet independently verified). https://spectrum.ieee.org/reversible-computing",
+  "existsCheck": "Searched 'Vaire Computing adiabatic reversible chip energy recovery resonator test results 2025': only Vaire's test chip and academic adiabatic circuits; no commercial reversible processor.",
+  "familiar": false,
+  "tenX": "Energy per operation: theory allows 100-1000x below today's chips at moderate speed; first silicon recovers about half.",
+  "plausibility": 3,
+  "why": "First computers to slip under the heat cost of erasing data, ending the energy wall."
+ },
+ {
+  "id": "nanotube-memory-skyscraper-chip",
+  "name": "Skyscraper chip",
+  "subtitle": "memory and logic stacked floor upon floor",
+  "bigJob": "brain-efficient-compute",
+  "job": "put computing right on top of the memory it uses",
+  "effects": [
+   {
+    "effect": "carbon nanotube transistors can be made below 400 C, cool enough to build a new logic layer right on top of finished memory without melting it",
+    "card": "carbon-nanotubes",
+    "newToJob": true
+   },
+   {
+    "effect": "a resistor that remembers how much current passed through it stores data without power",
+    "card": "memristor",
+    "newToJob": false
+   }
+  ],
+  "parts": [
+   "integrated-circuits",
+   "transistor"
+  ],
+  "how": "Most of a chip's energy goes into shuttling data back and forth along millimetres of wire between memory and processor, because silicon logic must be made at over 1,000 C and so lives on its own flat chip. Nanotube transistors can be grown cool, so a chip can be built as a tower: a floor of memory, a floor of nanotube logic, another floor of memory, tied together by millions of vertical wires each a few hundred nanometres long. Data then travels microns instead of millimetres, the way the brain keeps its memory in the same cells that compute.",
+  "obstacle": "Making nanotubes pure and aligned enough, every one a semiconductor, to compete with silicon at modern sizes and yields.",
+  "evidence": "Shulaker group (MIT) with SkyWater, 2019 (DARPA 3DSoC): first foundry-made monolithic 3D wafer with layers of carbon-nanotube transistors and RRAM memory joined by vertical vias; earlier Shulaker et al., Nature 2017, built a working 3D nanotube-RRAM chip. Projections cite up to 1000x better energy-delay for AI workloads. https://www.mtl.mit.edu/node/751",
+  "existsCheck": "Searched 'monolithic 3D chip carbon nanotube transistors RRAM memory stacked energy-delay 1000x Shulaker 2024 2025': research and foundry prototypes only; commercial 3D chips stack separate silicon dies with far coarser links (HBM), not monolithic memory-logic floors.",
+  "familiar": false,
+  "tenX": "Energy-delay of data-heavy AI work projected 100-1000x better than flat 2D chips; measured gains so far about 5-10x.",
+  "plausibility": 3,
+  "why": "Chips stopped being flat; memory and logic merged into one block, like the brain."
+ },
+ {
+  "id": "proton-synapse-learning-chip",
+  "name": "Proton synapse chip",
+  "subtitle": "a chip that learns by shuffling protons",
+  "bigJob": "brain-efficient-compute",
+  "job": "train AI models in place without moving the weights",
+  "effects": [
+   {
+    "effect": "a thin glass film lets protons through but not electrons, so a nanosecond voltage pulse pushes protons into a layer and changes its resistance by a set step",
+    "card": null,
+    "newToJob": true
+   },
+   {
+    "effect": "a resistor whose value remembers what passed through it acts as a stored weight",
+    "card": "memristor",
+    "newToJob": false
+   }
+  ],
+  "parts": [
+   "integrated-circuits",
+   "transistor"
+  ],
+  "how": "Training an AI model costs gigawatt-hours because each of billions of weights is fetched from memory, updated and written back, over and over. Here each weight is a tiny resistor: a sandwich in which a pulse drives a few protons through a glass film into a metal oxide, nudging its conductance up or down by an even step, in nanoseconds and without the protons ever leaving the chip. A whole grid of them does the network's sums by Ohm's law and learns by being pulsed where it sits, so the weights never travel.",
+  "obstacle": "Getting millions of such cells to change by identical, repeatable steps for billions of cycles on a working chip; only arrays of a few hundred have trained so far.",
+  "evidence": "Onen, Yildiz, Li, del Alamo et al., MIT, Science 2022 (377:539): nanosecond protonic programmable resistors with phosphosilicate glass electrolyte, room temperature, silicon-compatible, millions of cycles; ECRAM arrays up to 64x64 and in-situ training of 441 devices reported 2025. https://news.mit.edu/2022/analog-deep-learning-ai-computing-0728",
+  "existsCheck": "Searched 'ECRAM electrochemical analog in-memory training chip IBM array demonstration 2024 2025' and the MIT result: only small research arrays; analog inference chips (Mythic, IBM Hermes) exist but none trains in place with electrochemical weights.",
+  "familiar": false,
+  "tenX": "Energy per weight update projected 100-1000x below GPU training, which moves the dominant cost of AI.",
+  "plausibility": 3,
+  "why": "The hardware that let machines learn like synapses, where memory and learning are the same thing."
+ },
+ {
+  "id": "magnetoelectric-logic-chip",
+  "name": "Magnetoelectric logic chip",
+  "subtitle": "logic that flips nanomagnets with tiny voltages",
+  "bigJob": "brain-efficient-compute",
+  "job": "compute at a tenth of today's voltage with memory built into every gate",
+  "effects": [
+   {
+    "effect": "a voltage across a ferroelectric crystal flips the magnet lying on it, with almost no current flowing",
+    "card": null,
+    "newToJob": true
+   },
+   {
+    "effect": "spin-carrying electrons passing a heavy metal pile up charge at its sides, reading the magnet's direction as a voltage",
+    "card": "hall-effect",
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "integrated-circuits",
+   "transistor"
+  ],
+  "how": "A transistor's energy grows with the square of its voltage, and transistors can't work much below about 0.7 V, so chips are stuck burning power and forgetting everything when switched off. In this logic each bit is a nanomagnet sitting on a ferroelectric crystal: a tenth of a volt flips the crystal, which flips the magnet, and the magnet's direction is read back out as a voltage that drives the next gate. Because magnets remember without power, every gate is also memory, so nothing is shuttled and idle parts draw nothing.",
+  "obstacle": "No material yet flips reliably at 100 mV, and the read-out voltage is still far too small to drive the next gate directly.",
+  "evidence": "Manipatruni, Nikonov, Young et al., Intel/Berkeley, Nature 2019 proposed MESO logic projecting 10-30x lower energy; Vaz et al., Nature Communications 2024, showed voltage switching of a CoFe magnet on BiFeO3 with spin-orbit readout through Pt in one nanodevice. https://www.nature.com/articles/s41467-024-45868-x",
+  "existsCheck": "Searched 'magnetoelectric spin-orbit MESO logic demonstration 100 mV switching BiFeO3 2023 2024': single devices at about 0.2-1.5 V only, no circuits or chips; nothing commercial.",
+  "familiar": false,
+  "tenX": "Switching energy per operation projected 10-30x lower than CMOS, plus near-zero idle power; with memory-in-logic, system energy ~100x.",
+  "plausibility": 2,
+  "why": "The first switch to replace the transistor, ending sixty years of the voltage floor."
+ },
+ {
+  "id": "plasma-element-sorter",
+  "name": "Plasma element sorter",
+  "subtitle": "a spinning plasma that sorts waste into elements",
+  "bigJob": "recycle-anything",
+  "job": "turn mixed electronics and alloys back into separate pure elements",
+  "effects": [
+   {
+    "effect": "a hot gas of charged atoms in crossed electric and magnetic fields spins like a centrifuge",
+    "card": "magnetohydrodynamics",
+    "newToJob": true
+   },
+   {
+    "effect": "spinning flings heavy atoms outward and lets light ones drift to the middle",
+    "card": "centrifugal-force",
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "electromagnets",
+   "magnetrons",
+   "air-pump"
+  ],
+  "how": "A phone holds some 60 elements, alloyed, glued and soldered together so tightly that recyclers recover only a handful and smelt the rest into slag. This machine vaporises shredded waste into a plasma inside a vacuum tube wrapped in big magnets; crossed fields spin the plasma thousands of times a second, so atoms sort themselves by weight, heavy ones flung to the walls and light ones drawn along the axis, and each band condenses as a nearly pure metal. It sorts by atomic weight, which no blending, gluing or alloying can hide, so the input can be anything.",
+  "obstacle": "Energy and throughput: ionising every atom costs a few megawatt-hours per tonne, affordable only for metal-rich waste, and no filter has yet run at tonnes per hour.",
+  "evidence": "Ohkawa and Miller's Archimedes plasma mass filter (2002) for nuclear waste; Gueroult, Rax and Fisch, J. Cleaner Production 2018, showed plasma separation could compete for rare earths from NdFeB magnets; Zweben et al. 2018 review of plasma mass separation experiments (crossed-field separation factors up to ~35 reported). https://arxiv.org/pdf/1710.04506",
+  "existsCheck": "Searched 'plasma mass filter separation rare earth recycling demonstration' and 'plasma centrifuge element separation spent nuclear fuel waste': only lab devices and studies (PPPL, Kurchatov); Archimedes never ran at scale. No recycling plant uses plasma separation.",
+  "familiar": false,
+  "tenX": "Elements recovered from e-waste rise from about 20 to most of the 60 present, from one machine with no chemistry.",
+  "plausibility": 2,
+  "why": "A mass spectrometer the size of a factory: any mixture back to the periodic table."
+ },
+ {
+  "id": "copper-scrubbing-steel-cell",
+  "name": "Copper-scrubbing steel cell",
+  "subtitle": "pulls copper out of melted scrap steel",
+  "bigJob": "recycle-anything",
+  "job": "make top-grade steel from mixed scrap, again and again",
+  "effects": [
+   {
+    "effect": "an electric current through a molten slag of oxides and sulfides drags copper out of liquid iron into the slag",
+    "card": "laws-of-electrolysis",
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "aluminum-process",
+   "transformer"
+  ],
+  "how": "Steel is the world's most recycled material, but every car and building scrapped brings copper wiring with it, and once copper melts into steel no furnace can get it out; above a few tenths of a percent the steel cracks when rolled, so scrap gets downcycled into rebar and car-grade steel still comes from iron ore. This cell works like the pot that makes aluminium: molten scrap iron is the anode under a molten oxysulfide slag, and a current carries the copper into the slag while fresh iron collects at the other electrode.",
+  "obstacle": "Electrodes and linings that survive 1,600 C molten slag for years, at a cost per tonne near an ordinary arc furnace's.",
+  "evidence": "Paeng, Judge and Azimi, University of Toronto, Resources, Conservation and Recycling, April 2024: first electrochemical removal of copper from molten iron to below alloy level (<0.1 wt%) using an oxysulfide electrolyte, also producing iron and sulfur. https://news.engineering.utoronto.ca/this-new-way-to-recycle-steel-could-expand-its-recycling-and-reduce-the-industrys-carbon-footprint/",
+  "existsCheck": "Searched 'removing copper from steel scrap new method sulfide molten electrolysis 2023 2024': TU Delft 2024 review finds no copper-removal method scaled industrially; today mills only dilute copper with fresh iron.",
+  "familiar": false,
+  "tenX": "Old scrap could feed flat, top-grade steel too, lifting usable scrap from about a third of steel output toward nearly all of it, and making copper tolerance 10x easier.",
+  "plausibility": 3,
+  "why": "Made steel endlessly recyclable, ending iron mining's role in a mature economy."
+ },
+ {
+  "id": "plastic-to-propylene-reactor",
+  "name": "Plastic-to-propylene reactor",
+  "subtitle": "turns plastic bags back into new-plastic gas",
+  "bigJob": "recycle-anything",
+  "job": "turn mixed plastic waste back into the gas that makes new plastic",
+  "effects": [
+   {
+    "effect": "pairs of catalysts snip a long plastic chain three carbons at a time, swapping chain ends with ethylene gas until only propylene is left",
+    "card": "catalysis",
+    "newToJob": true
+   }
+  ],
+  "parts": [
+   "distillation",
+   "boiler"
+  ],
+  "how": "Bags, films and tubs, the polyethylene and polypropylene that make up most plastic, can't be sorted well enough to recycle, and heating them only cracks them into a messy oil. In this reactor, shredded mixed plastic is stirred with catalysts and ethylene gas: one catalyst moves a weak spot along each long chain, the other snips off three-carbon pieces there, so nearly all the plastic comes out as propylene, a clean gas that boils off and goes straight into making new plastic. A gas is easy to purify, so dyes and dirt stay behind and the output is as good as new.",
+  "obstacle": "The catalysts contain costly metals and lose activity on dirty, real-world waste; it hasn't left the lab.",
+  "evidence": "Conk et al., Hartwig group, UC Berkeley, Science 2022: polyethylene to propylene by dehydrogenation then tandem isomerising ethenolysis, over 80% yield (94% selectivity semi-continuous); 2024 Science follow-up with tungsten oxide and sodium catalysts turned a near-equal PE/PP mix into propylene and isobutylene at nearly 90%. https://chemistry.berkeley.edu/node/2629",
+  "existsCheck": "Searched 'polyethylene to propylene chemical recycling pilot plant company 2025 ethenolysis commercial': Berkeley Lab says not ready for industrial scale; no pilot plant; existing chemical recyclers pyrolyse to oil (downcycling).",
+  "familiar": false,
+  "tenX": "Polyolefin recycling rate, now under 10%, could approach that of aluminium cans, since output is virgin-grade monomer from unsorted waste.",
+  "plausibility": 3,
+  "why": "Made the most-used plastics truly circular: unsorted trash back to new-plastic feedstock."
+ }
+]

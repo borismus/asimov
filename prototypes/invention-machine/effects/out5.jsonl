@@ -1,0 +1,197 @@
+{"id": "bacterial-genetics", "verdict": "effect", "effect": "bacteria swap genes with one another", "does": "two strains -> mixed genes", "strength": "weak"}
+{"id": "virus-genetics", "verdict": "effect", "effect": "two viruses in one cell mix genes into a new strain", "does": "two strains -> new strain", "strength": "weak"}
+{"id": "pion", "verdict": "not-an-effect"}
+{"id": "carbon-14-dating", "verdict": "effect", "effect": "radioactive carbon fades at a steady, clock-like rate", "does": "elapsed time -> lost radioactivity", "strength": "strong"}
+{"id": "crab-nebula-as-radio-source", "verdict": "not-an-effect"}
+{"id": "martian-atmosphere", "verdict": "not-an-effect"}
+{"id": "coenzyme-a", "verdict": "not-an-effect"}
+{"id": "chloramphenicol", "verdict": "same-as", "sameAs": "a chemical kills the germ but not the patient", "note": "broad-spectrum antibiotic"}
+{"id": "cybernetics", "verdict": "effect", "effect": "feeding back the error lets a machine correct its own aim", "does": "error -> correction", "strength": "strong", "note": "feedback control; not on the board yet"}
+{"id": "nuclear-structure", "verdict": "effect", "effect": "nuclei with 'magic numbers' of particles are extra stable", "does": "particle count -> stability", "strength": "weak"}
+{"id": "quantum-electrodynamics", "verdict": "not-an-effect"}
+{"id": "the-big-bang", "verdict": "not-an-effect"}
+{"id": "miranda", "verdict": "not-an-effect"}
+{"id": "nucleic-acid-base-balance", "verdict": "effect", "effect": "DNA letters pair only A with T and G with C", "does": "one strand -> matching strand", "strength": "strong"}
+{"id": "cyanocobalamin", "verdict": "same-as", "sameAs": "the body needs trace nutrients", "note": "vitamin B12 cures pernicious anemia"}
+{"id": "cortisone-and-arthritis", "verdict": "effect", "effect": "cortisone calms inflamed joints", "does": "hormone -> less inflammation", "strength": "strong"}
+{"id": "tetracyclines", "verdict": "same-as", "sameAs": "a chemical kills the germ but not the patient"}
+{"id": "icarus", "verdict": "not-an-effect"}
+{"id": "nereid", "verdict": "not-an-effect"}
+{"id": "berkelium-and-californium", "verdict": "not-an-effect"}
+{"id": "soviet-fission-bomb", "verdict": "not-an-effect"}
+{"id": "sickle-cell-anemia", "verdict": "effect", "effect": "one faulty gene bends red blood cells out of shape", "does": "gene defect -> misshapen cells", "strength": "weak", "note": "usable mainly as a diagnostic marker"}
+{"id": "embryonic-immunological-tolerance", "verdict": "effect", "effect": "an embryo's body accepts foreign tissue without rejecting it", "does": "early exposure -> tolerance", "strength": "weak"}
+{"id": "essential-amino-acids", "verdict": "effect", "effect": "the body cannot make eight amino acids; food must supply them", "does": "diet -> protein building", "strength": "weak"}
+{"id": "cometary-structure", "verdict": "not-an-effect"}
+{"id": "cometary-cloud", "verdict": "not-an-effect"}
+{"id": "plutos-diameter", "verdict": "not-an-effect"}
+{"id": "turing-machine", "verdict": "effect", "effect": "a simple rule-following machine can compute anything computable", "does": "rules + tape -> any calculation", "strength": "strong", "note": "math result"}
+{"id": "game-playing-computers", "verdict": "effect", "effect": "looking ahead through possible moves picks good ones", "does": "search -> best move", "strength": "weak", "note": "method rather than nature"}
+{"id": "endoplasmic-reticulum", "verdict": "not-an-effect"}
+{"id": "carbon-14-tracer", "verdict": "effect", "effect": "radioactive atoms let you follow a molecule's path", "does": "label -> tracking", "strength": "strong"}
+{"id": "hydrogen-radiation", "verdict": "effect", "effect": "hydrogen atoms give off radio at one fixed wavelength", "does": "hydrogen -> 21 cm radio", "strength": "weak"}
+{"id": "milky-way-structure", "verdict": "not-an-effect"}
+{"id": "jupiter-xii", "verdict": "not-an-effect"}
+{"id": "superconductivity-theory", "verdict": "effect", "effect": "electrons pair up and flow without resistance when very cold", "does": "cold -> zero resistance", "strength": "strong"}
+{"id": "acetylcoenzyme-a", "verdict": "not-an-effect"}
+{"id": "einsteinium-and-fermium", "verdict": "not-an-effect"}
+{"id": "kaons-and-hyperons", "verdict": "not-an-effect"}
+{"id": "origin-of-life-experiment", "verdict": "effect", "effect": "sparks in simple gases make amino acids", "does": "electricity + gases -> amino acids", "strength": "weak"}
+{"id": "x-ray-diffraction-of-dna", "verdict": "effect", "effect": "x-rays scattered by a crystal reveal how its atoms sit", "does": "x-rays -> structure pattern", "strength": "strong"}
+{"id": "insulin-structure", "verdict": "same-as", "sameAs": "parts of a mixture travel at different speeds", "note": "paper chromatography sequenced insulin"}
+{"id": "rem-sleep", "verdict": "effect", "effect": "eyes dart rapidly while we dream", "does": "dreaming -> eye movement", "strength": "weak"}
+{"id": "tranquilizers", "verdict": "effect", "effect": "a drug calms the mind without dulling alertness", "does": "drug -> calm", "strength": "strong"}
+{"id": "the-double-helix", "verdict": "effect", "effect": "each DNA strand is a template for copying its partner", "does": "one strand -> two copies", "strength": "strong"}
+{"id": "plate-tectonics", "verdict": "not-an-effect"}
+{"id": "strange-particles", "verdict": "not-an-effect"}
+{"id": "transistorization", "verdict": "not-an-effect"}
+{"id": "chloroplast-isolation", "verdict": "effect", "effect": "chloroplasts keep photosynthesizing outside the cell", "does": "light -> sugar", "strength": "weak"}
+{"id": "genetic-code-theory", "verdict": "not-an-effect", "note": "theory; usable code is the genetic-code card"}
+{"id": "exploding-galaxies", "verdict": "not-an-effect"}
+{"id": "birth-of-stars", "verdict": "not-an-effect"}
+{"id": "jupiters-radio-waves", "verdict": "not-an-effect"}
+{"id": "plutos-rotation", "verdict": "not-an-effect"}
+{"id": "antiproton", "verdict": "effect", "effect": "matter and antimatter annihilate into pure energy", "does": "mass -> energy", "strength": "weak", "note": "antimatter is very hard to make"}
+{"id": "mendelevium", "verdict": "not-an-effect"}
+{"id": "nucleic-acid-formation", "verdict": "effect", "effect": "an enzyme strings loose nucleotides into DNA or RNA", "does": "nucleotides -> DNA/RNA", "strength": "strong"}
+{"id": "cyanocobalamin-structure", "verdict": "not-an-effect", "note": "first computer-solved structure; method, not effect"}
+{"id": "detection-of-the-neutrino", "verdict": "effect", "effect": "rare neutrinos hitting a tank of liquid make a flash", "does": "neutrino -> flash", "strength": "tiny"}
+{"id": "conservation-of-parity", "verdict": "not-an-effect"}
+{"id": "antineutron", "verdict": "not-an-effect"}
+{"id": "temperature-of-venus", "verdict": "not-an-effect"}
+{"id": "ribosomes", "verdict": "effect", "effect": "ribosomes build proteins by reading RNA instructions", "does": "RNA -> protein", "strength": "strong"}
+{"id": "transfer-rna", "verdict": "effect", "effect": "transfer RNA ferries each amino acid to its codon", "does": "codon -> matching amino acid", "strength": "weak"}
+{"id": "pituitary-hormones", "verdict": "same-as", "sameAs": "hormones regulate the body"}
+{"id": "photosynthesis-details", "verdict": "not-an-effect", "note": "mapping of steps using existing techniques"}
+{"id": "interferon", "verdict": "effect", "effect": "infected cells release a protein that blocks other viruses", "does": "infection -> antiviral protein", "strength": "strong"}
+{"id": "mössbauer-effect", "verdict": "effect", "effect": "atoms locked in a crystal emit and absorb razor-sharp gamma rays", "does": "gamma ray -> precise frequency match", "strength": "strong"}
+{"id": "solar-x-rays", "verdict": "not-an-effect"}
+{"id": "magnetosphere", "verdict": "effect", "effect": "earth's magnetic field traps charged particles in belts", "does": "magnetic field -> trapped particles", "strength": "weak"}
+{"id": "nobelium", "verdict": "not-an-effect"}
+{"id": "moon-probes", "verdict": "not-an-effect"}
+{"id": "shape-of-the-earth-satellite", "verdict": "not-an-effect"}
+{"id": "solar-wind", "verdict": "effect", "effect": "solar flares set off magnetic storms on earth days later", "does": "flare -> magnetic storm", "strength": "weak", "note": "forecasting use"}
+{"id": "hemoglobin-structure", "verdict": "not-an-effect", "note": "heavy-atom trick for x-ray diffraction; method"}
+{"id": "homo-habilis", "verdict": "not-an-effect"}
+{"id": "general-relativity-proof", "verdict": "same-as", "sameAs": "gravity slows clocks"}
+{"id": "standard-meter", "verdict": "effect", "effect": "an atom's light has a fixed wavelength, a natural ruler", "does": "atomic light -> length standard", "strength": "strong"}
+{"id": "resonance-particles", "verdict": "not-an-effect"}
+{"id": "sea-floor-spreading", "verdict": "not-an-effect"}
+{"id": "cyclic-amp", "verdict": "effect", "effect": "hormones work inside cells through a messenger molecule", "does": "hormone -> inner signal", "strength": "weak"}
+{"id": "human-beings-in-space", "verdict": "not-an-effect"}
+{"id": "microwave-reflections-from-venus", "verdict": "same-as", "sameAs": "signal delay gives distance"}
+{"id": "heliosphere", "verdict": "effect", "effect": "satellite drag reveals how thin the upper air is", "does": "drag -> air density", "strength": "weak"}
+{"id": "quarks", "verdict": "not-an-effect"}
+{"id": "lawrencium", "verdict": "not-an-effect"}
+{"id": "genetic-code", "verdict": "effect", "effect": "three RNA letters spell one amino acid", "does": "codon -> amino acid", "strength": "strong"}
+{"id": "gene-regulators", "verdict": "effect", "effect": "regulator genes switch other genes on and off", "does": "signal -> gene activity", "strength": "strong"}
+{"id": "american-in-space", "verdict": "not-an-effect"}
+{"id": "venus-probe", "verdict": "not-an-effect"}
+{"id": "rotation-of-venus", "verdict": "not-an-effect", "note": "radar finding about a planet"}
+{"id": "noble-gas-compounds", "verdict": "effect", "effect": "heavy noble gases like xenon can bond with fluorine", "does": "xenon + fluorine -> compound", "strength": "weak"}
+{"id": "approach-to-absolute-zero-final", "verdict": "effect", "effect": "helium-3 dissolving into helium-4 soaks up heat", "does": "mixing -> cooling", "strength": "strong", "note": "basis of ultra-cold refrigerators"}
+{"id": "environment", "verdict": "effect", "effect": "pesticides build up in animals higher up the food chain", "does": "spraying -> concentrated poison", "strength": "weak"}
+{"id": "quasars", "verdict": "not-an-effect"}
+{"id": "x-ray-sources", "verdict": "effect", "effect": "the air blocks x-rays from space", "does": "atmosphere -> x-ray shield", "strength": "weak"}
+{"id": "hydroxyl-group-detection", "verdict": "not-an-effect"}
+{"id": "woman-in-space", "verdict": "not-an-effect"}
+{"id": "magnetic-reversals", "verdict": "effect", "effect": "cooling rock locks in the earth's magnetic direction", "does": "cooling -> magnetic record", "strength": "weak"}
+{"id": "background-microwave-radiation", "verdict": "not-an-effect"}
+{"id": "omega-minus-particle", "verdict": "not-an-effect"}
+{"id": "cpt-symmetry", "verdict": "not-an-effect"}
+{"id": "transfer-rna-structure", "verdict": "not-an-effect"}
+{"id": "multiperson-spaceflight", "verdict": "not-an-effect"}
+{"id": "rutherfordium", "verdict": "not-an-effect"}
+{"id": "martian-craters", "verdict": "not-an-effect"}
+{"id": "rotation-of-mercury", "verdict": "not-an-effect"}
+{"id": "spacewalks", "verdict": "not-an-effect"}
+{"id": "space-rendezvous", "verdict": "not-an-effect"}
+{"id": "venus-lander", "verdict": "not-an-effect"}
+{"id": "microfossils", "verdict": "not-an-effect"}
+{"id": "moon-at-close-quarters", "verdict": "not-an-effect"}
+{"id": "space-docking", "verdict": "not-an-effect"}
+{"id": "pulsars", "verdict": "effect", "effect": "pulsars tick with clock-like regularity", "does": "rotation -> steady pulses", "strength": "weak", "note": "possible navigation beacons"}
+{"id": "venuss-atmosphere", "verdict": "effect", "effect": "thick carbon dioxide traps heat, baking a planet", "does": "sunlight -> trapped heat", "strength": "strong"}
+{"id": "space-casualties", "verdict": "not-an-effect"}
+{"id": "hahnium", "verdict": "not-an-effect"}
+{"id": "electroweak-interaction", "verdict": "not-an-effect"}
+{"id": "solar-neutrinos", "verdict": "effect", "effect": "neutrinos turn chlorine atoms into argon", "does": "neutrino -> argon atom", "strength": "tiny"}
+{"id": "astrochemistry", "verdict": "effect", "effect": "each molecule gives off its own microwave frequencies", "does": "molecule -> microwave fingerprint", "strength": "weak"}
+{"id": "rotating-neutron-stars", "verdict": "not-an-effect"}
+{"id": "circumnavigation-of-the-moon", "verdict": "not-an-effect"}
+{"id": "human-beings-on-the-moon", "verdict": "not-an-effect"}
+{"id": "cosmonaut-transfer", "verdict": "not-an-effect"}
+{"id": "optical-pulsars", "verdict": "not-an-effect"}
+{"id": "antarctic-meteorites", "verdict": "effect", "effect": "moving ice gathers meteorites onto bare ice fields", "does": "ice flow -> meteorite collection", "strength": "weak"}
+{"id": "protein-structure", "verdict": "not-an-effect"}
+{"id": "black-hole-evaporation", "verdict": "not-an-effect"}
+{"id": "meteoritic-amino-acids", "verdict": "not-an-effect"}
+{"id": "reverse-transcriptase", "verdict": "effect", "effect": "an enzyme copies RNA back into DNA", "does": "RNA -> DNA", "strength": "strong"}
+{"id": "megavitamin-therapy", "verdict": "not-an-effect", "note": "unproven therapy claim"}
+{"id": "planetary-soft-landing", "verdict": "not-an-effect"}
+{"id": "apollo-xiii", "verdict": "not-an-effect"}
+{"id": "mapping-mars", "verdict": "not-an-effect"}
+{"id": "moon-rocks", "verdict": "not-an-effect"}
+{"id": "black-hole-detection", "verdict": "not-an-effect"}
+{"id": "mini-black-holes", "verdict": "not-an-effect"}
+{"id": "punctuated-evolution", "verdict": "not-an-effect"}
+{"id": "speed-of-light-evenson", "verdict": "not-an-effect", "note": "precision measurement, not a new effect"}
+{"id": "quantum-chromodynamics", "verdict": "not-an-effect"}
+{"id": "jupiter-probe", "verdict": "not-an-effect"}
+{"id": "origin-of-the-universe", "verdict": "not-an-effect"}
+{"id": "proton-decay", "verdict": "not-an-effect"}
+{"id": "mapping-of-mercury", "verdict": "not-an-effect"}
+{"id": "formation-of-the-moon", "verdict": "not-an-effect"}
+{"id": "leda", "verdict": "not-an-effect"}
+{"id": "freon-and-the-ozone-layer", "verdict": "effect", "effect": "chlorofluorocarbons, harmless below, destroy ozone high up", "does": "CFCs -> ozone loss", "strength": "weak"}
+{"id": "tauon", "verdict": "not-an-effect"}
+{"id": "charmed-quarks", "verdict": "not-an-effect"}
+{"id": "surface-of-venus", "verdict": "not-an-effect"}
+{"id": "life-on-mars", "verdict": "not-an-effect"}
+{"id": "pluto-surface", "verdict": "not-an-effect"}
+{"id": "string-theory", "verdict": "not-an-effect"}
+{"id": "rings-of-uranus", "verdict": "not-an-effect"}
+{"id": "chiron", "verdict": "not-an-effect"}
+{"id": "inflationary-universe", "verdict": "not-an-effect"}
+{"id": "vela-pulsar", "verdict": "not-an-effect"}
+{"id": "deep-sea-ecosystems", "verdict": "effect", "effect": "vent bacteria live on chemicals, without light or oxygen", "does": "minerals -> food", "strength": "strong"}
+{"id": "lucy", "verdict": "not-an-effect"}
+{"id": "nonbacterial-dna", "verdict": "effect", "effect": "genes are split by junk stretches the cell cuts out", "does": "raw RNA -> spliced RNA", "strength": "weak"}
+{"id": "smallpox-eradication", "verdict": "not-an-effect"}
+{"id": "aids", "verdict": "not-an-effect"}
+{"id": "radar-mapping-of-venus", "verdict": "not-an-effect"}
+{"id": "charon", "verdict": "not-an-effect"}
+{"id": "oncogenes", "verdict": "effect", "effect": "a one-letter change turns a normal gene cancerous", "does": "mutation -> cancer", "strength": "weak"}
+{"id": "virus-genome", "verdict": "not-an-effect"}
+{"id": "jupiters-satellites", "verdict": "not-an-effect"}
+{"id": "extinction-of-the-dinosaurs", "verdict": "effect", "effect": "iridium-rich layers mark ancient asteroid impacts", "does": "impact -> iridium layer", "strength": "weak"}
+{"id": "gluons", "verdict": "not-an-effect"}
+{"id": "saturnian-system", "verdict": "not-an-effect"}
+{"id": "neutrino-mass", "verdict": "effect", "effect": "neutrinos change type as they travel", "does": "distance -> neutrino type", "strength": "tiny"}
+{"id": "neptunes-rings", "verdict": "not-an-effect"}
+{"id": "millisecond-pulsar", "verdict": "not-an-effect"}
+{"id": "magnetic-monopoles", "verdict": "not-an-effect"}
+{"id": "w-particles", "verdict": "not-an-effect"}
+{"id": "extrasolar-planets", "verdict": "not-an-effect"}
+{"id": "nuclear-winter", "verdict": "effect", "effect": "smoke high in the sky blocks sunlight and cools the ground", "does": "smoke -> cooling", "strength": "weak"}
+{"id": "dna-and-human-evolution", "verdict": "not-an-effect"}
+{"id": "brown-dwarfs", "verdict": "not-an-effect"}
+{"id": "ozone-hole", "verdict": "effect", "effect": "chlorine thins ozone over the cold poles", "does": "chlorine -> ozone hole", "strength": "weak"}
+{"id": "pluto-and-charon", "verdict": "not-an-effect"}
+{"id": "uranus-probe", "verdict": "not-an-effect"}
+{"id": "halley-comet-iii", "verdict": "not-an-effect"}
+{"id": "magellanic-supernova", "verdict": "not-an-effect"}
+{"id": "warm-superconductivity", "verdict": "effect", "effect": "some ceramics lose all resistance at liquid-nitrogen cold", "does": "cold -> zero resistance", "strength": "strong"}
+{"id": "distant-galaxies-detection", "verdict": "not-an-effect"}
+{"id": "shroud-of-turin", "verdict": "not-an-effect", "note": "an application of carbon dating"}
+{"id": "greenhouse-effect-effects", "verdict": "effect", "effect": "more carbon dioxide in the air warms the whole planet", "does": "carbon dioxide -> warming", "strength": "strong"}
+{"id": "neptune-and-triton", "verdict": "not-an-effect"}
+{"id": "cold-fusion", "verdict": "not-an-effect", "note": "claim discredited"}
+{"id": "chiron-comet", "verdict": "not-an-effect"}
+{"id": "fullerene-research", "verdict": "effect", "effect": "carbon forms hollow, very stable soccer-ball molecules", "does": "carbon -> cage molecule", "strength": "weak"}
+{"id": "volcanic-venus", "verdict": "not-an-effect"}
+{"id": "first-asteroid-photograph", "verdict": "not-an-effect"}
+{"id": "gamma-ray-bursts", "verdict": "not-an-effect"}
+{"id": "background-microwave-radiation-experiment", "verdict": "not-an-effect"}
+{"id": "larger-role-rna", "verdict": "effect", "effect": "RNA alone can link amino acids into proteins", "does": "RNA -> protein", "strength": "weak"}
+{"id": "fermats-last-theorem-proof", "verdict": "not-an-effect", "note": "pure math with no procedure to run"}

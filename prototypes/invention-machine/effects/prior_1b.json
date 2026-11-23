@@ -1,0 +1,152 @@
+[
+  {
+    "id": "drying-proof-crop",
+    "verdict": "studied",
+    "evidence": "Tardigrade CAHS/TDP genes raise desiccation tolerance in yeast, bacteria and cultured cells and a patent claims transgenic drought-tolerant plants, but the only plant work found is a 2025 Arabidopsis/agroinfiltration manuscript with inconsistent expression and no field or whole-crop pause-and-resume demonstration.",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5987194"
+  },
+  {
+    "id": "dry-platelet-pack",
+    "verdict": "studied",
+    "evidence": "Tardigrade CAHS D plus trehalose has been shown (DARPA-funded, Sci Rep 2023) to stabilise dried human Factor VIII, and freeze-dried/trehalose-loaded platelets exist separately, but no work was found applying tardigrade glass-forming proteins to platelets for transfusion.",
+    "url": "https://www.uwyo.edu/uw/news/2023/03/uw-scientists-use-tardigrade-proteins-for-human-health-breakthrough.html"
+  },
+  {
+    "id": "room-temperature-cell-bank",
+    "verdict": "studied",
+    "evidence": "CAHS proteins protect HeLa and insect cells against osmotic/desiccation stress and gel reversibly on drying, but the EU DRYLIFE project concluded dry-state mammalian cells need many further changes, and no dried-and-revived mammalian cell bank was found.",
+    "url": "https://cordis.europa.eu/project/id/233232/reporting/de"
+  },
+  {
+    "id": "radiation-proof-seed-capsule",
+    "verdict": "studied",
+    "evidence": "Dsup reduces radiation-induced DNA damage in human cells and has been expressed in tobacco pollen (UV-B) and reportedly rice, but no Dsup transgenic seed, dried glassy state or sealed-capsule space-storage demonstration was found.",
+    "url": "https://doaj.org/article/a9af7f402f864b31b6c6c6a770fe35b6"
+  },
+  {
+    "id": "thousand-year-dna-archive",
+    "verdict": "built",
+    "evidence": "ETH Zurich demonstrated DNA encapsulated in dry silica glass with Reed-Solomon coding and accelerated-aging readback (millennia-scale projections), and Imagene's commercial process dries DNA and laser-welds it into inert-atmosphere metal capsules; only the tardigrade-protein matrix is new.",
+    "url": "https://snia.org/sites/default/files/2025-05/SNIA-SDC21-Colotte-Storing-Data-over-Millennia.pdf"
+  },
+  {
+    "id": "origami-tamper-seal",
+    "verdict": "studied",
+    "evidence": "DNA-origami-placed plasmonic nanoparticle assemblies have been demonstrated as unclonable optical authentication labels (Dass/Liedl), and non-DNA optical PUF tamper-indicating seals exist, but no seal whose optical signature changes on opening via unfolding origami was found.",
+    "url": "https://bohrium.dp.tech/paper/arxiv/2310.19587"
+  },
+  {
+    "id": "living-skin-sensor",
+    "verdict": "built",
+    "evidence": "Gene-edited skin grafts that report a blood analyte by fluorescence have been demonstrated in mice: CRISPR-edited glucose-sensing skin as accurate as a blood test, and NF-kB-driven EGFP 'living skin' reporting internal inflammation; human versions are the stated next step.",
+    "url": "https://www.hospimedica.com/latest-news/articles/294807912/implanted-living-skin-indicates-internal-inflammation-without-blood-samples.html"
+  },
+  {
+    "id": "bedside-consciousness-test",
+    "verdict": "built",
+    "evidence": "Portable bedside EEG BCIs using motor imagery for covert awareness exist (mindBEAGLE) and have been tested in ICU disorders-of-consciousness patients and in EEG-fNIRS case reports, though accuracy and protocol length are still limiting.",
+    "url": "https://currents.neurocriticalcare.org/Leading-Insights/Article/listening-to-the-injured-brain-how-brain-computer-interfaces-are-transforming-neurocritical-care"
+  },
+  {
+    "id": "light-brake-for-seizures",
+    "verdict": "built",
+    "evidence": "Closed-loop optogenetic seizure control has been demonstrated in rodents with implanted optrodes and wireless seizure-detection-triggered light delivery that shortens seizures; no human implant exists, and human-usable opsins remain a translation barrier.",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7824489/"
+  },
+  {
+    "id": "scarless-wound-dressing",
+    "verdict": "built",
+    "evidence": "In situ partial reprogramming of mouse cutaneous wounds (OSKM induction) reduced myofibroblasts, contraction and scar, and a topical four-factor reprogramming solution healed ulcers in mice; only the timed peel-away mesh and human use are untested.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/29761584/"
+  },
+  {
+    "id": "skin-graft-that-sweats",
+    "verdict": "built",
+    "evidence": "iPSC-derived skin with hair follicles, sebaceous and sweat glands has been demonstrated: RIKEN's 3D iPSC skin grafted into mice with follicles and glands, and UQ's 2024 human iPSC skin organoids with follicles, neurons and sweat glands; not yet in burn patients.",
+    "url": "https://news.uq.edu.au/2024-03-07-lifelike-lab-grown-skin-developed-human-stem-cells"
+  },
+  {
+    "id": "bedside-blood-cell-reactor",
+    "verdict": "built",
+    "evidence": "Universal platelets have been made at scale from beta-2-microglobulin-knockout iPSCs, and Kyoto's turbulence-driven VerMES bioreactor produced ~100 billion platelets per run with donor-comparable function in animal models; the open part is siting a cartridge in a hospital.",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4235139/"
+  },
+  {
+    "id": "pig-kidney-human-lining",
+    "verdict": "studied",
+    "evidence": "Partially decellularized rat kidneys reseeded with human endothelium perfused and made urine for ~90 min, and human discarded-kidney scaffolds have been seeded with hPSC endothelium, but no pig organ re-endothelialized with recipient cells and transplanted was found.",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9300320/"
+  },
+  {
+    "id": "mitochondria-gene-patch",
+    "verdict": "built",
+    "evidence": "RNA-free mitochondrial editors work in vivo: AAV-delivered DdCBEs install mtDNA edits in adult mouse heart, AAV mitoZFNs shifted heteroplasmy with molecular and biochemical rescue in the m.5024C>T mouse, and a 2025 paper reports base-editing correction of a pathogenic mtDNA mutation in mice.",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8825850/"
+  },
+  {
+    "id": "virus-blocking-crop-spray",
+    "verdict": "built",
+    "evidence": "Topical dsRNA (UQ BioClay) sprays have protected plants against several viruses including aphid-transmitted ones, with dose-dependent ~60% resistance in tomato and reported glasshouse and field trials against zucchini yellow mosaic and tomato spotted wilt virus.",
+    "url": "https://www.insidecotton.com/sites/default/files/article-files/HIA1803_Public_Summary_%25281%2529.pdf"
+  },
+  {
+    "id": "allergy-free-peanut",
+    "verdict": "built",
+    "evidence": "Peanuts with major storage-protein allergens removed exist: RNAi lines with significantly reduced IgE binding to Ara h 2/6, Clemson CRISPR lines edited at Ara h1/2/3/6 confirmed by IgE blots and basophil activation, and an AgriNetica CRISPR line in a first US field trial.",
+    "url": "https://www.seedworld.com/us/2026/03/02/can-we-breed-a-safer-peanut/"
+  },
+  {
+    "id": "lice-silencing-fish-feed",
+    "verdict": "studied",
+    "evidence": "RNAi works in the salmon louse by immersion and injection (up to ~97% knockdown) and a patent describes salmon feed coated with dsRNA-expressing algae against louse COPB2, but no demonstrated louse-count reduction from oral dsRNA feed was found.",
+    "url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/11939576"
+  },
+  {
+    "id": "self-renewing-hull-coat",
+    "verdict": "studied",
+    "evidence": "An ONR-funded Essex project is developing self-repairing engineered-biofilm hull coatings, UNSW encapsulated the antifouling bacterium Pseudoalteromonas tunicata in a 'living paint' lab prototype, and a 2025 paper assembles non-GM biofilm coatings, but field durability is unsolved and no working self-renewing coat exists.",
+    "url": "https://www.essex.ac.uk/news/2020/09/29/research-to-investigate-%E2%80%98living-coatings%E2%80%99-to-protect-ship-hulls"
+  },
+  {
+    "id": "glowing-reef-sentinel",
+    "verdict": "studied",
+    "evidence": "Coral's own GFP fluorescence drops days before visible bleaching and is used as a non-invasive field indicator, but transgenic Symbiodinium reporters remain irreproducible and transient (1998 GUS work largely unrepeated), so no engineered sentinel colony exists.",
+    "url": "https://today.ucsd.edu/story/fluorescent_light_revealed_as_gauge_of_coral_health"
+  },
+  {
+    "id": "crack-reporting-concrete",
+    "verdict": "studied",
+    "evidence": "Bacterial self-healing concrete that seals cracks by microbial calcite precipitation is real and commercially demonstrated, but no fluorescent or GFP-tagged reporting of repair sites was found; healing is still assessed visually, microscopically or ultrasonically.",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6947293/"
+  },
+  {
+    "id": "deep-sinking-carbon-bloom",
+    "verdict": "studied",
+    "evidence": "An EBRC roadmap case study proposes releasing engineered algae with increased carbon capture and sinking biomass, and ballasted-particle export (Gigablue, mineral ballast studies) is being measured, but no organism engineered to make heavy indigestible shells for carbon export was found.",
+    "url": "https://roadmap.ebrc.org/case-study-1-release-of-engineered-algae-with-increased-carbon-capture-capability-in-u-s-coastal-waters-off-california/"
+  },
+  {
+    "id": "plasma-scrubber",
+    "verdict": "studied",
+    "evidence": "A 2025 proteomics study showed pore-size-based therapeutic apheresis lowers several age-associated plasma proteins, and a patent proposes columns for 'pro-aging' factors beyond the existing Kaneka Lixelle beta-2-microglobulin column, but no designed-binder affinity column targeting specific ageing factors has been demonstrated.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/40233791/"
+  },
+  {
+    "id": "hair-cell-regrowth-pump",
+    "verdict": "built",
+    "evidence": "Reprogramming cochlear supporting cells into hair cells has been demonstrated in adult mice with a small-molecule/siRNA cocktail, and intratympanic drugs for the same job have reached humans (UCL's gamma-secretase inhibitor LY3056480, ISRCTN59733689; FX-322); only the weeks-long sequenced pump is new.",
+    "url": "https://www.isrctn.com/pdf/ISRCTN59733689"
+  },
+  {
+    "id": "enamel-regrowth-film",
+    "verdict": "built",
+    "evidence": "Designed amelogenin-derived peptides (LRAP with pyrophosphate; P26/P32 in chitosan hydrogel; QP5) have regrown organized enamel-like aprismatic layers on human enamel in vitro/ex vivo, and peptide remineralization products are already sold; no human trial of full enamel regeneration exists.",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10611442/"
+  },
+  {
+    "id": "bedside-blood-group-converter",
+    "verdict": "built",
+    "evidence": "Gut-bacterial enzyme pairs convert the A antigen to H/O on intact red cells at low enzyme doses (Flavonifractor plautii, Nat Microbiol 2019; newer Akkermansia muciniphila enzymes stripping A and B extensions), though conversion of group A is still incomplete and no inline transfusion cartridge was found.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/31182795/"
+  }
+]

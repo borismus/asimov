@@ -1,0 +1,568 @@
+[
+ {
+  "id": "acoustic-emission",
+  "links": [],
+  "year": 1950,
+  "inventor": "Joseph Kaiser",
+  "location": "Germany"
+ },
+ {
+  "id": "acoustic-radiation-pressure",
+  "links": [],
+  "year": 1902,
+  "inventor": "Lord Rayleigh",
+  "location": "England"
+ },
+ {
+  "id": "acousto-optic-effect",
+  "links": [],
+  "year": 1922,
+  "inventor": "Léon Brillouin",
+  "location": "France"
+ },
+ {
+  "id": "adiabatic-heating-and-cooling",
+  "links": [
+   {
+    "card": "diesel-engine",
+    "effect": "compressing a gas heats it",
+    "op": "replace",
+    "replaces": "gas-laws",
+    "why": "The diesel lights its fuel by squeezing air until it is hot; this card states that effect directly (and names the diesel), where Gas laws only stands in for it. Gas laws then has no other link."
+   },
+   {
+    "card": "cloud-chamber",
+    "effect": "a gas cools when it suddenly expands",
+    "op": "add",
+    "why": "Wilson's chamber works by a quick piston stroke cooling the air so vapour condenses on the ion trails; the card has no worksBy yet and no part carries this."
+   }
+  ],
+  "year": 1788,
+  "inventor": "Erasmus Darwin",
+  "location": "England"
+ },
+ {
+  "id": "adsorption",
+  "links": [],
+  "year": 1773,
+  "inventor": "Carl Wilhelm Scheele",
+  "location": "Sweden"
+ },
+ {
+  "id": "auger-effect",
+  "links": [],
+  "year": 1923,
+  "inventor": "Pierre Auger",
+  "location": "France"
+ },
+ {
+  "id": "auxetic-effect",
+  "links": [],
+  "year": 1987,
+  "inventor": "Roderic Lakes",
+  "location": "United States"
+ },
+ {
+  "id": "avalanche-breakdown",
+  "links": [
+   {
+    "card": "geiger-counter",
+    "effect": "one freed electron sets off an avalanche of current",
+    "op": "add",
+    "why": "The Geiger tube turns a single ionization into a countable pulse by Townsend avalanche; a different effect from the ionization it already links."
+   }
+  ],
+  "year": 1901,
+  "inventor": "John Sealy Townsend",
+  "location": "England"
+ },
+ {
+  "id": "barkhausen-effect",
+  "links": [],
+  "year": 1919,
+  "inventor": "Heinrich Barkhausen",
+  "location": "Germany"
+ },
+ {
+  "id": "bingham-plastic",
+  "links": [],
+  "year": 1916,
+  "inventor": "Eugene Bingham",
+  "location": "United States"
+ },
+ {
+  "id": "bioluminescence",
+  "links": [],
+  "year": 1885,
+  "inventor": "Raphaël Dubois",
+  "location": "France"
+ },
+ {
+  "id": "brazil-nut-effect",
+  "links": [],
+  "year": 1987,
+  "inventor": "Anthony Rosato",
+  "location": "United States"
+ },
+ {
+  "id": "capillary-condensation",
+  "links": [],
+  "year": 1871,
+  "inventor": "Lord Kelvin",
+  "location": "Scotland"
+ },
+ {
+  "id": "cavitation",
+  "links": [],
+  "year": 1894,
+  "inventor": "Charles Parsons",
+  "location": "England"
+ },
+ {
+  "id": "centrifugal-force",
+  "links": [
+   {
+    "card": "ultracentrifuge",
+    "effect": "spinning flings heavier things outward",
+    "op": "fillGap",
+    "replaces": "Sedimentation",
+    "why": "The gap \"spinning pulls heavier particles outward\" is exactly this card's effect."
+   },
+   {
+    "card": "improved-steam-engine",
+    "effect": "spinning flings heavier things outward",
+    "op": "add",
+    "why": "Watt's centrifugal governor (a part with no card) regulates speed by spinning balls swinging outward; the card has no worksBy and no carded part carries it."
+   }
+  ],
+  "year": 1659,
+  "inventor": "Christiaan Huygens",
+  "location": "Netherlands"
+ },
+ {
+  "id": "cheerio-effect",
+  "links": [],
+  "year": 2005,
+  "inventor": "Dominic Vella and L. Mahadevan",
+  "location": "United States"
+ },
+ {
+  "id": "christiansen-effect",
+  "links": [],
+  "year": 1884,
+  "inventor": "Christian Christiansen",
+  "location": "Denmark"
+ },
+ {
+  "id": "coanda-effect",
+  "links": [],
+  "year": 1910,
+  "inventor": "Henri Coandă",
+  "location": "France"
+ },
+ {
+  "id": "coffee-ring-effect",
+  "links": [],
+  "year": 1997,
+  "inventor": "Robert Deegan",
+  "location": "United States"
+ },
+ {
+  "id": "corona-discharge",
+  "links": [
+   {
+    "card": "photocopying",
+    "effect": "a high-voltage wire sprays charge onto a surface",
+    "op": "add",
+    "why": "The Xerox copier charges its selenium drum (and transfers toner) with a corona wire; Carlson's 1938 xerography charged by rubbing, so it stays without. Borderline: the existing static-charge link covers holding the charge, this covers putting it there."
+   }
+  ],
+  "year": 1915,
+  "inventor": "Frank Peek",
+  "location": "United States"
+ },
+ {
+  "id": "detonation",
+  "links": [
+   {
+    "card": "dynamite",
+    "effect": "a shock sets off a blast front that races through faster than sound",
+    "op": "add",
+    "why": "Dynamite works only when a blasting cap's shock detonates it, which is why it shatters rock; nitroglycerine's 'burns all at once' link (shared with deflagrating gunpowder) doesn't name this, and by rule 24 it stays on the invention since nitroglycerine also goes into cordite, which burns."
+   }
+  ],
+  "year": 1881,
+  "inventor": "Marcellin Berthelot and Paul Vieille",
+  "location": "France"
+ },
+ {
+  "id": "diamagnetism",
+  "links": [],
+  "year": 1845,
+  "inventor": "Michael Faraday",
+  "location": "England"
+ },
+ {
+  "id": "dielectric-heating",
+  "links": [],
+  "year": 1945,
+  "inventor": "Percy Spencer",
+  "location": "United States"
+ },
+ {
+  "id": "diffusiophoresis",
+  "links": [],
+  "year": 1947,
+  "inventor": "Boris Derjaguin",
+  "location": "Russia"
+ },
+ {
+  "id": "edb-garshelis-effect",
+  "links": [],
+  "year": 1992,
+  "inventor": "Ivan Garshelis",
+  "location": "United States"
+ },
+ {
+  "id": "edb-magnetic-saturation",
+  "links": [],
+  "year": 1873,
+  "inventor": "Henry Rowland",
+  "location": "United States"
+ },
+ {
+  "id": "eddy-currents",
+  "links": [],
+  "year": 1855,
+  "inventor": "Léon Foucault",
+  "location": "France"
+ },
+ {
+  "id": "electret",
+  "links": [],
+  "year": 1919,
+  "inventor": "Mototaro Eguchi",
+  "location": "Japan"
+ },
+ {
+  "id": "electric-arc",
+  "links": [],
+  "year": 1802,
+  "inventor": "Vasily Petrov",
+  "location": "Russia"
+ },
+ {
+  "id": "electric-wind",
+  "links": [],
+  "year": 1709,
+  "inventor": "Francis Hauksbee",
+  "location": "England"
+ },
+ {
+  "id": "electro-osmosis",
+  "links": [],
+  "year": 1807,
+  "inventor": "Ferdinand Friedrich Reuss",
+  "location": "Russia"
+ },
+ {
+  "id": "electroabsorption",
+  "links": [],
+  "year": 1958,
+  "inventor": "Walter Franz and Leonid Keldysh",
+  "location": "Germany and Russia"
+ },
+ {
+  "id": "electrocaloric-effect",
+  "links": [],
+  "year": 1930,
+  "inventor": "Pavel Kobeko and Igor Kurchatov",
+  "location": "Russia"
+ },
+ {
+  "id": "electrocapillarity",
+  "links": [],
+  "year": 1875,
+  "inventor": "Gabriel Lippmann",
+  "location": "France"
+ },
+ {
+  "id": "electrochemiluminescence",
+  "links": [],
+  "year": null,
+  "inventor": null,
+  "location": null
+ },
+ {
+  "id": "electrochromism",
+  "links": [],
+  "year": 1969,
+  "inventor": "Satyen Deb",
+  "location": "United States"
+ },
+ {
+  "id": "electron-spin-resonance",
+  "links": [],
+  "year": 1944,
+  "inventor": "Yevgeny Zavoisky",
+  "location": "Russia"
+ },
+ {
+  "id": "electrorheological-effect",
+  "links": [],
+  "year": 1947,
+  "inventor": "Willis Winslow",
+  "location": "United States"
+ },
+ {
+  "id": "electrostatic-induction",
+  "links": [
+   {
+    "card": "leyden-jar",
+    "effect": "a charge draws an opposite charge onto a nearby conductor",
+    "op": "add",
+    "why": "The jar stores charge because charge on the inner foil induces the opposite charge on the outer foil across the glass; its links (conduction, static charge) don't name this."
+   }
+  ],
+  "year": 1753,
+  "inventor": "John Canton",
+  "location": "England"
+ },
+ {
+  "id": "electrostriction",
+  "links": [],
+  "year": null,
+  "inventor": null,
+  "location": null
+ },
+ {
+  "id": "faraday-effect",
+  "links": [],
+  "year": 1845,
+  "inventor": "Michael Faraday",
+  "location": "England"
+ },
+ {
+  "id": "faraday-waves",
+  "links": [],
+  "year": 1831,
+  "inventor": "Michael Faraday",
+  "location": "England"
+ },
+ {
+  "id": "flocculation",
+  "links": [],
+  "year": 1882,
+  "inventor": "Hans Schulze",
+  "location": "Germany"
+ },
+ {
+  "id": "fluidization",
+  "links": [],
+  "year": 1922,
+  "inventor": "Fritz Winkler",
+  "location": "Germany"
+ },
+ {
+  "id": "fluorescence",
+  "links": [],
+  "year": 1852,
+  "inventor": "George Gabriel Stokes",
+  "location": "England"
+ },
+ {
+  "id": "flutter",
+  "links": [],
+  "year": 1916,
+  "inventor": "Frederick Lanchester",
+  "location": "England"
+ },
+ {
+  "id": "free-surface-effect",
+  "links": [],
+  "year": null,
+  "inventor": null,
+  "location": null
+ },
+ {
+  "id": "frequency-doubling",
+  "links": [],
+  "year": 1961,
+  "inventor": "Peter Franken",
+  "location": "United States"
+ },
+ {
+  "id": "friction",
+  "links": [
+   {
+    "card": "air-brake",
+    "effect": "surfaces pressed together resist sliding",
+    "op": "add",
+    "why": "The air brake stops the train by pressing shoes against the wheels; it has no worksBy and its parts (piston, valve) don't carry friction."
+   }
+  ],
+  "year": 1699,
+  "inventor": "Guillaume Amontons",
+  "location": "France"
+ },
+ {
+  "id": "grain-boundary-strengthening",
+  "links": [],
+  "year": 1951,
+  "inventor": "Eric Hall",
+  "location": "England"
+ },
+ {
+  "id": "ground-effect",
+  "links": [],
+  "year": 1922,
+  "inventor": "Carl Wieselsberger",
+  "location": "Germany"
+ },
+ {
+  "id": "hall-effect",
+  "links": [],
+  "year": 1879,
+  "inventor": "Edwin Hall",
+  "location": "United States"
+ },
+ {
+  "id": "helmholtz-resonance",
+  "links": [],
+  "year": 1863,
+  "inventor": "Hermann von Helmholtz",
+  "location": "Germany"
+ },
+ {
+  "id": "hot-chocolate-effect",
+  "links": [],
+  "year": 1982,
+  "inventor": "Frank Crawford",
+  "location": "United States"
+ },
+ {
+  "id": "hydraulic-jump",
+  "links": [],
+  "year": 1819,
+  "inventor": "Giorgio Bidone",
+  "location": "Italy"
+ },
+ {
+  "id": "hygroscopy",
+  "links": [],
+  "year": null,
+  "inventor": null,
+  "location": null
+ },
+ {
+  "id": "iridescence",
+  "links": [],
+  "year": 1665,
+  "inventor": "Robert Hooke",
+  "location": "England"
+ },
+ {
+  "id": "johnsen-rahbek-effect",
+  "links": [],
+  "year": 1923,
+  "inventor": "Alfred Johnsen and Knud Rahbek",
+  "location": "Denmark"
+ },
+ {
+  "id": "joule-heating",
+  "links": [
+   {
+    "card": "electric-light",
+    "effect": "a current heats the wire it flows through",
+    "op": "add",
+    "why": "The filament glows because the current heats it; the existing link (hot things glow) covers the glow, not the heating."
+   },
+   {
+    "card": "nitrogen-filled-light-bulbs",
+    "effect": "a current heats the wire it flows through",
+    "op": "add",
+    "why": "Same as the electric light: the current heats the tungsten wire to glowing; neither the bulb nor its tungsten-wire part has this yet."
+   }
+  ],
+  "year": 1841,
+  "inventor": "James Prescott Joule",
+  "location": "England"
+ },
+ {
+  "id": "karman-vortex-street",
+  "links": [],
+  "year": 1911,
+  "inventor": "Theodore von Kármán",
+  "location": "Germany"
+ },
+ {
+  "id": "kelvin-helmholtz-instability",
+  "links": [],
+  "year": 1868,
+  "inventor": "Hermann von Helmholtz",
+  "location": "Germany"
+ },
+ {
+  "id": "kerr-effect",
+  "links": [],
+  "year": 1875,
+  "inventor": "John Kerr",
+  "location": "Scotland"
+ },
+ {
+  "id": "lagrangian-point",
+  "links": [],
+  "year": 1772,
+  "inventor": "Joseph-Louis Lagrange",
+  "location": "Germany"
+ },
+ {
+  "id": "laminar-flow",
+  "links": [],
+  "year": 1883,
+  "inventor": "Osborne Reynolds",
+  "location": "England"
+ },
+ {
+  "id": "leidenfrost-effect",
+  "links": [],
+  "year": 1756,
+  "inventor": "Johann Gottlob Leidenfrost",
+  "location": "Germany"
+ },
+ {
+  "id": "liquid-crystals",
+  "links": [],
+  "year": 1888,
+  "inventor": "Friedrich Reinitzer",
+  "location": "Czech Republic"
+ },
+ {
+  "id": "lotus-effect",
+  "links": [],
+  "year": 1997,
+  "inventor": "Wilhelm Barthlott",
+  "location": "Germany"
+ },
+ {
+  "id": "lubrication",
+  "links": [],
+  "year": 1883,
+  "inventor": "Beauchamp Tower",
+  "location": "England"
+ },
+ {
+  "id": "magnetic-hysteresis",
+  "links": [
+   {
+    "card": "rare-earth-magnet",
+    "effect": "a magnetized material stays magnetized",
+    "op": "add",
+    "why": "A permanent magnet works by keeping its magnetism once the field is gone (rare-earth magnets hold it extremely hard); the existing link explains why atoms are magnetic, not why the magnet stays one. Borderline under rule 28 (could be read as a material property)."
+   }
+  ],
+  "year": 1880,
+  "inventor": "Emil Warburg",
+  "location": "Germany"
+ }
+]

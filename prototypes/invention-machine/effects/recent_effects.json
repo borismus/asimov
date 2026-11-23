@@ -1,0 +1,322 @@
+[
+ {
+  "card": "carbon-nanotubes",
+  "title": "Carbon nanotubes",
+  "year": 1991,
+  "effect": "rolled-up carbon sheets are stronger than steel and conduct like metal",
+  "does": "structure -> strength, current",
+  "recent": true
+ },
+ {
+  "card": "graphene",
+  "title": "Graphene",
+  "year": 2004,
+  "effect": "a one-atom sheet of carbon carries electrons extremely fast and blocks every gas",
+  "does": "current -> fast signal; barrier",
+  "recent": true
+ },
+ {
+  "card": "graphene-proton-sieve",
+  "title": "Graphene passes protons",
+  "year": 2014,
+  "effect": "graphene lets protons through but stops every atom and molecule",
+  "does": "mixture -> pure hydrogen ions",
+  "recent": true
+ },
+ {
+  "card": "metamaterials",
+  "title": "Metamaterials",
+  "year": 2000,
+  "effect": "tiny repeated structures bend light, sound or radio the 'wrong' way",
+  "does": "waves -> steered or hidden waves",
+  "recent": true
+ },
+ {
+  "card": "topological-insulators",
+  "title": "Topological insulators",
+  "year": 2007,
+  "effect": "some crystals conduct only along their surface, where nothing scatters the current",
+  "does": "current -> lossless edge current",
+  "recent": true
+ },
+ {
+  "card": "perovskite-cells",
+  "title": "Perovskite solar crystals",
+  "year": 2009,
+  "effect": "cheap printable crystals turn sunlight into current almost as well as silicon",
+  "does": "light -> current",
+  "recent": true
+ },
+ {
+  "card": "optogenetics",
+  "title": "Optogenetics",
+  "year": 2005,
+  "effect": "light-sensitive proteins let a flash of light switch chosen nerve cells on or off",
+  "does": "light -> nerve signal",
+  "recent": true
+ },
+ {
+  "card": "crispr-cas9",
+  "title": "CRISPR-Cas9",
+  "year": 2012,
+  "effect": "a guided enzyme cuts DNA at any spot spelled out by a short RNA",
+  "does": "code -> cut gene",
+  "recent": true
+ },
+ {
+  "card": "metal-organic-frameworks",
+  "title": "Metal-organic frameworks",
+  "year": 1999,
+  "effect": "sponge-like crystals with a huge inner surface trap one chosen gas",
+  "does": "mixture -> captured gas",
+  "recent": true
+ },
+ {
+  "card": "bose-einstein-condensate",
+  "title": "Bose-Einstein condensate",
+  "year": 1995,
+  "effect": "atoms cooled almost to absolute zero behave as a single wave",
+  "does": "cold -> ultra-sensitive wave",
+  "recent": true
+ },
+ {
+  "card": "quantum-entanglement",
+  "title": "Entanglement shown at a distance",
+  "year": 1997,
+  "effect": "measuring one entangled particle instantly fixes its partner's state, and any snooping shows",
+  "does": "measurement -> shared secret",
+  "recent": true
+ },
+ {
+  "card": "rna-interference",
+  "title": "RNA interference",
+  "year": 1998,
+  "effect": "double-stranded RNA silences the matching gene",
+  "does": "code -> gene switched off",
+  "recent": true
+ },
+ {
+  "card": "induced-stem-cells",
+  "title": "Induced stem cells",
+  "year": 2006,
+  "effect": "four genes turn an adult cell back into a stem cell that can become any tissue",
+  "does": "genes -> young cells",
+  "recent": true
+ },
+ {
+  "card": "green-fluorescent-protein",
+  "title": "Green fluorescent protein",
+  "year": 1994,
+  "effect": "a jellyfish protein makes any cell that carries its gene glow green",
+  "does": "gene -> light",
+  "recent": true
+ },
+ {
+  "card": "spin-torque",
+  "title": "Spin-transfer torque",
+  "year": 1996,
+  "effect": "a current of spin-aligned electrons can flip a tiny magnet",
+  "does": "current -> magnet flip",
+  "recent": true
+ },
+ {
+  "card": "memristor",
+  "title": "Memristor",
+  "year": 2008,
+  "effect": "a device whose resistance remembers how much current passed through it",
+  "does": "current history -> resistance",
+  "recent": true
+ },
+ {
+  "card": "attosecond-pulses",
+  "title": "Attosecond pulses",
+  "year": 2001,
+  "effect": "lasers can make flashes short enough to freeze electrons moving in atoms",
+  "does": "light -> ultrafast snapshot",
+  "recent": true
+ },
+ {
+  "card": "gut-microbiome",
+  "title": "Gut microbiome",
+  "year": 2010,
+  "effect": "the bacteria in the gut steer the body's immunity, weight and mood",
+  "does": "microbes -> body state",
+  "recent": true
+ },
+ {
+  "card": "magic-angle-graphene",
+  "title": "Magic-angle graphene",
+  "year": 2018,
+  "effect": "two graphene sheets twisted by 1.1 degrees become a superconductor",
+  "does": "twist -> zero resistance",
+  "recent": true
+ },
+ {
+  "card": "quantum-dots",
+  "title": "Quantum dots",
+  "year": 1993,
+  "effect": "crystals a few nanometres wide glow in a colour set purely by their size",
+  "does": "light -> pure tuned colour",
+  "recent": true
+ },
+ {
+  "card": "senescent-cells",
+  "title": "Senescent cells",
+  "year": 2011,
+  "effect": "clearing out worn-out 'zombie' cells makes old mice healthier",
+  "does": "cell removal -> younger tissue",
+  "recent": true
+ },
+ {
+  "card": "immune-checkpoints",
+  "title": "Immune checkpoints",
+  "year": 1992,
+  "effect": "releasing the immune system's brakes lets it kill tumours",
+  "does": "brake release -> immune attack",
+  "recent": true
+ },
+ {
+  "card": "car-t",
+  "title": "CAR-T cells",
+  "year": 2011,
+  "effect": "immune cells given a designed receptor hunt down a chosen target",
+  "does": "receptor -> targeted killing",
+  "recent": true
+ },
+ {
+  "card": "lotus-effect",
+  "title": "Lotus effect",
+  "year": 1997,
+  "effect": "microscopic bumps make water bead up and roll off, carrying dirt away",
+  "does": "texture -> self-cleaning",
+  "recent": true
+ },
+ {
+  "card": "self-healing-polymers",
+  "title": "Self-healing materials",
+  "year": 2001,
+  "effect": "capsules in a plastic burst when it cracks and glue the crack shut",
+  "does": "crack -> repair",
+  "recent": true
+ },
+ {
+  "card": "tardigrade-proteins",
+  "title": "Tardigrade proteins",
+  "year": 2017,
+  "effect": "certain proteins turn glassy inside cells and let them survive drying out",
+  "does": "drying -> preserved cell",
+  "recent": true
+ },
+ {
+  "card": "quantum-algorithms",
+  "title": "Quantum algorithms",
+  "year": 1994,
+  "effect": "qubits in superposition can solve some problems, like factoring, exponentially faster",
+  "does": "superposition -> fast answer",
+  "recent": true
+ },
+ {
+  "card": "magnetic-skyrmions",
+  "title": "Magnetic skyrmions",
+  "year": 2009,
+  "effect": "tiny stable magnetic whirls can be pushed along a wire with very little current",
+  "does": "current -> moving bit",
+  "recent": true
+ },
+ {
+  "card": "glymphatic-system",
+  "title": "Glymphatic system",
+  "year": 2012,
+  "effect": "during deep sleep the brain flushes out waste through fluid channels",
+  "does": "sleep -> cleaned brain",
+  "recent": true
+ },
+ {
+  "card": "electrocaloric-effect",
+  "title": "Giant electrocaloric effect",
+  "year": 2006,
+  "effect": "an electric field makes certain thin films heat up or cool down",
+  "does": "voltage -> cooling",
+  "recent": true
+ },
+ {
+  "card": "glp-1",
+  "title": "GLP-1 hormone action",
+  "year": 2005,
+  "effect": "a gut hormone curbs appetite and steadies blood sugar",
+  "does": "hormone -> less hunger",
+  "recent": true
+ },
+ {
+  "card": "synthetic-genome",
+  "title": "Synthetic genome",
+  "year": 2010,
+  "effect": "a cell can run on a genome written entirely by computer",
+  "does": "code -> new organism",
+  "recent": true
+ },
+ {
+  "card": "plastic-eating-enzyme",
+  "title": "Plastic-eating enzyme",
+  "year": 2016,
+  "effect": "bacteria found at a recycling plant make an enzyme that breaks PET plastic apart",
+  "does": "plastic -> raw building blocks",
+  "recent": true
+ },
+ {
+  "card": "dna-origami",
+  "title": "DNA origami",
+  "year": 2013,
+  "effect": "DNA strands fold themselves into any designed nanoscale shape",
+  "does": "code -> nano-structure",
+  "recent": true
+ },
+ {
+  "card": "cryo-em",
+  "title": "Cryo-electron microscopy",
+  "year": 2015,
+  "effect": "flash-frozen molecules can be imaged atom by atom with electrons",
+  "does": "electrons -> molecular shape",
+  "recent": true
+ },
+ {
+  "card": "protein-structure-prediction",
+  "title": "Protein structure prediction",
+  "year": 2020,
+  "effect": "a learned model predicts a protein's 3D shape from its sequence",
+  "does": "sequence -> shape",
+  "recent": true
+ },
+ {
+  "card": "radiative-sky-cooling",
+  "title": "Daytime sky cooling",
+  "year": 2014,
+  "effect": "a surface that reflects sunlight and glows in infrared cools below air temperature in full sun",
+  "does": "heat -> radiated into space",
+  "recent": true
+ },
+ {
+  "card": "electron-hydrodynamics",
+  "title": "Electron fluids",
+  "year": 2019,
+  "effect": "in very clean materials electrons flow like a viscous liquid",
+  "does": "current -> fluid-like flow",
+  "recent": true
+ },
+ {
+  "card": "neural-interfaces",
+  "title": "Brain-computer interface",
+  "year": 2003,
+  "effect": "electrodes on the motor cortex let a person's intent move a cursor or arm",
+  "does": "thought -> signal",
+  "recent": true
+ },
+ {
+  "card": "adaptive-optics-sodium",
+  "title": "Laser guide stars",
+  "year": 1996,
+  "effect": "a laser makes sodium atoms high in the sky glow as an artificial star for correcting blur",
+  "does": "light -> corrected image",
+  "recent": true
+ }
+]

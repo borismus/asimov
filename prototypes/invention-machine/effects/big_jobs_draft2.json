@@ -1,0 +1,19 @@
+[
+ {"id":"clean-long-haul","job":"Fly across oceans without fossil fuel","bottleneck":"Batteries hold about 1/50 the energy per kg of jet fuel","target":"Zero-carbon long-haul at today's fares"},
+ {"id":"continent-hour","job":"Cross a continent in an hour","bottleneck":"Supersonic flight burns several times the fuel and the boom bans it over land","target":"Coast to coast in an hour at an airline fare"},
+ {"id":"see-the-ocean","job":"See and map the deep ocean","bottleneck":"Radio and light die within metres of seawater, so only sound reaches far, and it carries little data","target":"The whole seafloor mapped in detail; live sensing anywhere"},
+ {"id":"save-reefs","job":"Keep coral reefs alive through heatwaves","bottleneck":"Corals expel their algae and starve after a few weeks 1°C above normal","target":"Reefs that survive the heatwaves of the 2040s"},
+ {"id":"sleep-learning","job":"Learn a skill or language much faster","bottleneck":"Memory sets during sleep at its own slow pace; practice time is the limit","target":"Half the practice for the same skill"},
+ {"id":"tutor-every-child","job":"A personal tutor for every child","bottleneck":"One-on-one tutoring roughly doubles learning but costs a teacher per child","target":"Tutoring-level results at textbook cost"},
+ {"id":"landmines","job":"Clear the world's landmines","bottleneck":"Metal detectors also beep for every nail and shell fragment, about 1,000 false alarms per mine, and each must be dug by hand","target":"A field cleared 10× faster, no one at risk"},
+ {"id":"quake-warning","job":"Warn of an earthquake before it strikes","bottleneck":"No reliable precursor is known; today's systems give seconds of warning once shaking has started","target":"Hours or days of warning"},
+ {"id":"wildfire-small","job":"Put out wildfires while they're small","bottleneck":"Fires start in remote places and are spotted and reached late","target":"Every fire found within minutes and out within the hour"},
+ {"id":"rubble-survivors","job":"Find survivors under rubble","bottleneck":"Dogs, cameras and listening devices reach only some voids; most survivors must be found within 72 hours","target":"Every living person located in the first day"},
+ {"id":"alzheimers","job":"Stop Alzheimer's before memory goes","bottleneck":"Damage starts 15-20 years before symptoms, and most drugs can't cross the blood-brain barrier","target":"Found and halted before any memory is lost"},
+ {"id":"hearing-regrow","job":"Restore hearing in old age","bottleneck":"The ear's hair cells never grow back in mammals; hearing aids only amplify","target":"Natural hearing restored"},
+ {"id":"reading-glasses","job":"Never need reading glasses","bottleneck":"The eye's lens stiffens with age and can't refocus up close","target":"Near focus restored for life"},
+ {"id":"macular-sight","job":"Save sight from macular degeneration","bottleneck":"The retina's light-sensing cells die and don't come back","target":"Central vision kept or restored"},
+ {"id":"cartilage","job":"Regrow worn-out joints","bottleneck":"Cartilage has no blood supply and doesn't heal; the fix is a metal joint","target":"Your own knee back, no replacement"},
+ {"id":"heart-regrow","job":"Heal a heart after a heart attack","bottleneck":"Heart muscle doesn't regrow; scar tissue weakens the heart for life","target":"Heart muscle rebuilt"},
+ {"id":"frailty","job":"Stay strong and steady in old age","bottleneck":"Muscle and bone thin after 50, and falls become the leading cause of injury death in the elderly","target":"An 80-year-old as strong as a 50-year-old"}
+]

@@ -1,0 +1,1602 @@
+[
+{
+"id": "joule-thomson-effect",
+"year": 1852,
+"title": "Joule-thomson effect",
+"field": "Science",
+"desc": "The Joule-Thomson effect demonstrated how a gas cools when it expands if kept insulated from external energy sources. This effect later facilitated the liquefaction of permanent gases.",
+"long": "In 1852, Joule and Thomson were able to show that if a gas was allowed to expand, it consumed energy, because the molecules had to separate against a certain tendency to cling together. If energy were kept from entering the gas, the energy for expansion would have to come from the gas itself, and the temperature would drop. This came to be called the Joule-Thomson effect and would later be used to liquefy some of the permanent gases."
+},
+{
+"id": "valence-theory",
+"year": 1852,
+"title": "Valence theory",
+"field": "Science",
+"desc": "The valence theory explained how elements combine with fixed numbers of other atoms according to specific rules. The notion of valence imposed a new kind of order on the elements, because valence seemed to change regularly with the arrangement of atoms in the periodic table.",
+"long": "Chemists knew that elements had different capacities for combining with other elements. For instance, an oxygen atom would combine with two hydrogen atoms to form water, a nitrogen atom would combine with three hydrogen atoms to form ammonia, and a carbon atom would combine with four hydrogen atoms to form methane. This was not studied closely and systematically, however, until an English chemist, Edward Frankland, studied organometallic compounds. He could not help noticing the manner in which metallic atoms combined with organic compounds, and how each different kind of atom would almost invariably hook onto a fixed number of other atom groupings. In 1852 he published his theory of what ca"
+},
+{
+"id": "sunspots-and-earth",
+"year": 1852,
+"title": "Sunspots and earth",
+"field": "Space",
+"desc": "The discovery linked disturbances in Earth's magnetic field with the increase and decrease of sunspots on the Sun. This finding was pivotal in showing that Earth's magnetic properties were influenced by solar activity.",
+"long": "Research demonstrated that the frequency of disturbances in Earth's magnetic field paralleled the increase and decrease of sunspots. It established the first known connection between Earth and Sun involving something other than light, heat, or gravitational pull, indicating that sunspots had magnetic properties."
+},
+{
+"id": "age-of-the-sun",
+"year": 1853,
+"title": "Age of the sun",
+"field": "Space",
+"desc": "The Sun's energy source was identified as gravitational collapse rather than combustion, leading to the conclusion that the Sun is millions of years old and will eventually become too cool to support life on Earth. This challenged the belief that the Sun was eternal and suggested that Earth is much older than previously believed.",
+"long": "It had been assumed for thousands of years that the Sun was eternal, unchanged, and only God could end it. The discovery of sunspots began to question this belief. With the law of conservation of energy established, scientists queried how the Sun could shine brilliantly for millions of years. Helmholtz proposed gravitational contraction as the energy source. This implied that the Sun had been gradually contracting for about twenty-five million years, and in another ten million years, it would be too small and cool to support life, indicating that the Earth is much older than twenty-five million years."
+},
+{
+"id": "cholera",
+"year": 1854,
+"title": "Cholera",
+"field": "Science:Medicine",
+"desc": "Through studying a cholera epidemic, Snow identified contaminated water as the source of the Cholera disease, shaping future concepts of epidemiology and public health sanitation.",
+"long": "In the early nineteenth century, Europe suffered from several cholera epidemics that arrived from India, where it was endemic. Increasingly, physicians were sure that the contagion arose from polluted water. An English physician, John Snow, had published his views on this matter in 1849. When an epidemic of cholera struck London in 1854, Snow studied the geographic incidence of cholera in relation to water supply. He found five hundred cases of cholera, for instance, within a few blocks of a public water pump that drew water from a well just a few feet from a sewer pipe. He had the pump handle removed, and"
+},
+{
+"id": "telegraph-plateau",
+"year": 1854,
+"title": "Telegraph plateau",
+"field": "Geography",
+"desc": "Laying cables across the Atlantic Ocean to connect Europe and America necessitated understanding the ocean floor. American oceanographer Matthew Fontaine Maury identified a central plateau, naming it the Telegraph Plateau, essential for cable laying.",
+"long": "With cables laid across the Hudson and Mississippi rivers in the 1840s and under the English Channel and the Irish Sea in the 1850s, it became natural to think of a real job, that of laying a cable under the Atlantic Ocean to connect Europe and America. The process of laying such a cable required some understanding of what the floor of the Atlantic Ocean was like, and the task fell to the American oceanographer Maury. In the early 1850s he had prepared a chart of ocean depths, and by 1854 he had noted that the Atlantic Ocean was shallower in the center than on either side. He concluded that there was a central plateau, which he called Telegraph Plateau."
+},
+{
+"id": "riemann-geometry",
+"year": 1854,
+"title": "Riemann geometry",
+"field": "Math:Geometry",
+"desc": "Riemann generalized geometry to work with any number of dimensions, building on Lobachevsky and Bolay. He created self-consistent models where all lines intersect and all lines are finite in length, extending geometry's scope beyond traditional Euclidean limitations. ",
+"long": "The non-Euclidean geometry worked out by Lobachevsky and Bolyai presupposed the possibility of more than one line through a point, all parallel to a given line that did not include the point. As in Euclidean geometry, lines of infinite length were possible. In 1854 a German mathematician, Georg Friedrich Bernhard Riemann, developed another kind of non-Euclidean geometry, one in which it was impossible for any two lines to be parallel, and all lines intersected. In this geometry all lines were finite in length. In Euclidean geometry, the three angles of a triangle add up to 360 degrees; in Lobachevskian geometry, they add up to less than 360 degrees; and in Riemannian geometry, they add up to"
+},
+{
+"id": "lines-of-force",
+"year": 1855,
+"title": "Lines of force",
+"field": "Science:Physics",
+"desc": "Faraday introduced the concept of lines of force but knowing no math could only describe it pictorally. Maxwell translated it into mathematical form.",
+"long": "Faraday introduced the concept of lines of force, which he could only describe pictorially due to a lack of mathematical knowledge. In 1855, British mathematician James Clerk Maxwell managed to translate this concept into a mathematical form, demonstrating that Faraday's intuitive grasp of the subject was accurate."
+},
+{
+"id": "glycogen",
+"year": 1856,
+"title": "Glycogen",
+"field": "Science:Biology",
+"desc": "Glycogen is a form of starch discovered in the mammalian liver that is easily broken down into glucose. This discovery showed that both plants and animals build up and break down complex molecules for energy storage and usage.",
+"long": "Until now, starch had been viewed as the plant's way of storing energy. Animals tend to store it as fat (as some plants do too), which is a more compact form of energy. In 1856, however, the French physiologist Claude Bernard (1813–1878) discovered a form of starch in the mammalian liver. Because it was easily broken down to glucose (the immediate energy source in the bloodstream), he called it glycogen (Greek for 'glucose-producer'). He showed that glycogen was built up out of blood glucose and acted as a reserve store that could be broken down to glucose again when necessary. Whether glycogen was built up or broken down depended on the exact state of the body, the energy requirements of th"
+},
+{
+"id": "neanderthal-man",
+"year": 1856,
+"title": "Neanderthal man",
+"field": "Science:Archaeology",
+"desc": "The discovery of Neanderthal bones in Neander Valley in Germany provided key insights into human evolution. This finding helped establish the understanding that humans have ancient origins and are part of a long lineage.",
+"long": "In Neander Valley, Germany, workers found ancient bones, including a skull, which were identified by a professor at a nearby school. This significant discovery contributed to the fields of geology and biology, confirming the ancient age of Earth and early human ancestors."
+},
+{
+"id": "saturns-rings-composition",
+"year": 1857,
+"title": "Saturn's rings composition",
+"field": "Space",
+"desc": "Saturn's rings were hypothesized to be composed of myriad small particles. Maxwell confirmed this using Roche's limit, solidifying the theory.",
+"long": "By this time, it seemed very likely that Saturn's rings were composed of myriads of small particles. Since they were inside Roche's limit, solid particles would break up under tidal influences and be unable to coalesce again. In 1857, Maxwell showed that this was indeed so, based on purely theoretical considerations, and no one has doubted it since."
+},
+{
+"id": "evolution-by-natural-selection",
+"year": 1858,
+"title": "Evolution by natural selection",
+"field": "Science:Biology",
+"desc": "Natural selection explained how some species evolve into other related species while others become extinct, driven by the competition for survival. This theory posited that nature selects the fittest individuals to survive and pass on their advantageous traits to their offspring.",
+"long": "The British biologist Charles Robert Darwin believed that life forms had evolved; that some species, with time, changed into other related species, while some species became extinct. Darwin theorized that not only human beings multiplied past the food supply available, but that all living things did. Therefore, in each generation, there was a competition for survival among the too-many, and those tended to survive who could snatch enough food, or best evade a predator. In short, nature itself would select a few from the many for survival. The characteristics that made survival likely would be inherited by the offspring of the survivors and again there would be a natural selection. Darwin ass"
+},
+{
+"id": "organic-molecular-structure",
+"year": 1858,
+"title": "Organic molecular structure",
+"field": "Science:Chemistry",
+"desc": "A major advancement in understanding molecular structure, highlighting the arrangement of atoms within compounds using the concept of valence. This system introduced notation: Water would be H—O—H, and carbon dioxide O=C=O, clarifying the organization of organic molecules, resolving many mysteries of organic chemistry.",
+"long": "Until this point, organic molecules were characterized solely by the number of atoms of each element present. Even with isomers showing identical atom counts but different properties, it was unclear how to distinguish these differences. Friedrich August Kekulé expanded on Frankland's idea of valence, illustrating how each hydrogen atom could bond to others and how atoms within molecules can form complex structures by latching onto valence bonds. This led to the clarification of organic molecules' structures and the resolution of many mysteries in organic chemistry."
+},
+{
+"id": "cellular-pathology",
+"year": 1858,
+"title": "Cellular pathology",
+"field": "Science:Biology",
+"desc": "Further development of cell theory, emphasizing the importance of cells in pathology. This advancement strengthened the concept that all diseases involve changes at the cellular level, and opposed the idea of spontaneous generation.",
+"long": "Building on the cell theory, which emerged in 1838, Rudolph Virchow continued to refine our understanding of pathology by stressing that all diseases are manifestations of changes in cells. This insight provided a crucial framework for modern medical practices, making it possible to relate clinical symptoms and pathological findings to cellular alterations."
+},
+{
+"id": "spectral-lines-and-elements",
+"year": 1859,
+"title": "Spectral lines and elements",
+"field": "Science:Chemistry",
+"desc": "Since their discovery by Fraunhofer nearly half a century before, spectral lines had not been connected with chemistry. The discovery that each element produces characteristic spectral lines when heated extended knowledge about chemical elements and their behaviors. This finding allowed for the identification of elements through their unique spectral fingerprints.",
+"long": "Since their discovery by Fraunhofer nearly half a century before, spectral lines had not been connected with chemistry. The German physicist Gustav Robert Kirchhoff (1824-1887), however, had carefully studied the spectra of light produced when various elements were heated to incandescence. He found that each element produced light of only certain wavelengths, so that the spectrum consisted sometimes of only a few lines of light, which were sometimes well separated. In 1859 Kirchhoff announced that every element produced characteristic spectral lines, which it also absorbed when its vapors were cooler than the light source. The pattern of lines was different for each element; no two elements "
+},
+{
+"id": "solar-flares",
+"year": 1859,
+"title": "Solar flares",
+"field": "Space",
+"desc": "An astronomical observation identified solar flares, which are brief but violent explosions associated with sunspots. This discovery enhanced understanding of the Sun's activity, distinguishing between periods of high and low sunspot activity.",
+"long": "The British astronomer Richard Christopher Carrington observed the Sun's rotation by measuring sunspots. He noticed a bright point of light that lasted for five minutes and then subsided, which he initially speculated to be a falling meteor but later realized was a solar flare. This observation linked sunspots with solar flares and marked the understanding of 'active' and 'quiet' phases of the Sun based on sunspot activity."
+},
+{
+"id": "spontaneous-generation-rip",
+"year": 1860,
+"title": "Spontaneous generation R. I. P.",
+"field": "Science:Biology",
+"desc": "Pasteur's experiment conclusively demonstrated that life does not spontaneously arise from non-living matter. This was the nail in the coffin for the concept of spontaneous generation.",
+"long": "Pasteur boiled meat extract and placed it in a flask with a long, curved neck that allowed air to enter but prevented dust particles from falling in. The meat extract did not spoil or develop microorganisms, disproving the theory of spontaneous generation and suggesting that dust carries microorganisms."
+},
+{
+"id": "organic-synthesis",
+"year": 1860,
+"title": "Organic synthesis",
+"field": "Science: Chemistry",
+"desc": "Berthelot was able to synthesize organic molecules in a lab without the use of living matter. This advancement supported the development of organic chemistry and debunked the idea that only living tissue could manufacture complex organic molecules.",
+"long": "When Wöhler synthesized urea, it challenged the notion that complex organic molecules could only be produced by living organisms. Pierre-Eugène-Marcelin Berthelot furthered this field by synthesizing important organic compounds such as methyl alcohol, ethyl alcohol, methane, benzene, and acetylene by 1860. This led to the realization that the chemical structures and properties of organic molecules could be replicated outside of living systems, aiding the progression of organic chemistry."
+},
+{
+"id": "solar-prominences",
+"year": 1860,
+"title": "Solar prominences",
+"field": "Space",
+"desc": "Advancements in astronomical photography allowed for the detailed capture of solar phenomena. This included solar prominences which are gouts of flame around the edge of the sun during a total eclipse. This was the first astronomical discovery made as a result of photography, and required de la Rue to quickly travel to Spain.",
+"long": "Through the use of a specially adapted telescope, the English astronomer Warren de la Rue excelled in photographing the Sun's phenomena. In 1860 during a trip to Spain, he captured an image of a total solar eclipse that clearly showed flame-like prominences extending from the sun. These images provided valuable insights into solar behavior and greatly improved the understanding of solar prominences."
+},
+{
+"id": "avogadro-revived",
+"year": 1860,
+"title": "Avogadro's hypothesis revived",
+"field": "Science:Chemistry",
+"desc": "Avogadro's hypothesis, revived by Italian chemist Stanislao Cannizzaro, clarified that the molecular weight of gases can be determined with certainty, resolving much confusion in molecular structure.",
+"long": "Avogadro's hypothesis, revived by Italian chemist Stanislao Cannizzaro, clarified that the molecular weight of gases can be determined, resolving much confusion in molecular structure. Presented at an international conference of chemists in Karlsruhe, it gained acceptance and led to a general agreement over molecular structures."
+},
+{
+"id": "archeopteryx",
+"year": 1861,
+"title": "Archeopteryx",
+"field": "Science:Biology",
+"desc": "Archeopteryx is a fossil representing an ancient life form that lies between dinosaurs and birds, showing evolutionary transition. It showcases a blend of lizard-like and avian features, highlighting the link between the two groups.",
+"long": "Although the giant dinosaurs, whose fossil relics had been dug up over the past forty years, were the most dramatic remnants of ancient life, the most important single fossil was not a giant, but a relatively small lizardlike animal that was discovered in 1861. It left a clear impression in a rock, which showed that it had a head possessing teeth and a beak, a long neck, a long tail, and a flat breastbone—all very lizardlike. There was, however, one all-important added feature. The 'lizard' had feathers. The imprints of those feathers are unmistakable. They are in a double row down the length of the tail and are also present along the forelimbs."
+},
+{
+"id": "brocas-area",
+"year": 1861,
+"title": "Broca's area",
+"field": "Science:Biology",
+"desc": "Gall had speculated that different parts of the brain controlled different parts and functions of the body. Now a postmortem of Broca's patient who lost the ability to speak revealed damage to an area in the left frontal lobe of the cerebrum.",
+"long": "Gall had been of the opinion that different parts of the brain controlled different parts and functions of the body. Gall’s conclusions were strictly speculative. Broca, the first person to present conclusive evidence of a specific region of the brain in charge of a specific function, had a fifty-one-year-old patient who had lost the ability to speak. When the patient died in 1861, a postmortem revealed damage to the third convolution on the left frontal lobe of the cerebrum (now known as Broca’s convolution). Gall’s insight, which had been misdirected into phrenology, was thus put right."
+},
+{
+"id": "thallium",
+"year": 1861,
+"title": "Thallium",
+"field": "Science:Chemistry",
+"desc": "Thallium was discovered through spectroscopy, distinguishing itself with a bright green spectral line. This element, derived from heated selenium ores, was significant for its unique identifying characteristic via spectroscopy.",
+"long": "Kirchhoff was not the only one to discover new elements by means of spectroscopy. The British physicist William Crookes was working with selenium ores, and in 1861 he came upon a sample of such ore that when heated showed a bright green line characteristic of no known element. He analyzed the ore in search of the new element, found it, and named it thallium, from the Greek word for 'green twig' after the color of its line."
+},
+{
+"id": "germ-theory-of-disease",
+"year": 1862,
+"title": "Germ theory of disease",
+"field": "Science:Biology",
+"desc": "Pasteur surveyed the evidence and synthesized it into a theory that contagious diseases are caused by microorganisms. It revolutionized medicine, leading to the prevention and treatment of diseases and significantly increasing life expectancy.",
+"long": "In 1862, Pasteur took up the matter and issued a publication that gathered all the evidence supporting that microorganisms cause diseases. This became a pivotal advancement in medicine, reducing the death rate, doubling life expectancy, and contributing to a significant population growth. The theory allowed scientists to identify specific microorganisms responsible for diseases and develop ways to prevent or cure them."
+},
+{
+"id": "dim-companion-of-sirius",
+"year": 1862,
+"title": "Dim companion of sirius",
+"field": "Space",
+"desc": "Using a newly ground 18-inch lens, Clark saw an anomaly near Sirius. The existence of a dark companion star orbiting Sirius was confirmed through its gravitational influence. This discovery added to the understanding of binary star systems.",
+"long": "Bessel had suggested the existence of a dark companion of Sirius, one that could not be seen but whose existence was indicated by its gravitational influence. On January 31, 1862, American astronomer Alvan Graham Clark confirmed this by observing the companion star through a telescope."
+},
+{
+"id": "hydrogen-in-the-sun",
+"year": 1862,
+"title": "Hydrogen in the sun",
+"field": "Science:Physics",
+"desc": "In later years, astronomers began to use spectral lines to compare the position of the dark lines to determine the solar spectrum. Ångström discovered hydrogen in the Sun, and later published a spectrum with wavelengths represented by each line in units of ten-billionths of a meter, now known as the ångström.",
+"long": "In 1862, the Swedish physicist Anders Jonas Ångström announced his discovery of hydrogen in the Sun. He went on, in later years, to publish a map of the spectrum that showed the position of the dark lines in comparison to the solar spectrum, measured in units that are still known today as the ångström."
+},
+{
+"id": "chloroplasts",
+"year": 1862,
+"title": "Chloroplasts",
+"field": "Science:Biology",
+"desc": "Rather than being uniformly spread through plant cells, chlorophyll is concentrated in discrete bodies named chloroplasts. Starch grains appeared within chloroplasts, supporting the product of photosynthesis.",
+"long": "In 1862, the German botanist Julius von Sachs observed that plant cells contained discrete chlorophyll bodies, which he called chloroplasts. He noted that starch grains appeared within these chloroplasts, linking them directly to photosynthesis."
+},
+{
+"id": "source-of-the-white-nile",
+"year": 1862,
+"title": "Source of the white nile",
+"field": "Geography",
+"desc": "Confirmed that the stream flowing from the northern rim of Lake Victoria was the White Nile. Speke traced the longest river flowing into Lake Victoria, the Luvironza, establishing it as the true source of the Nile, located in modern-day Burundi.",
+"long": "In 1862, explorations led by Richard Francis Burton and John Hanning Speke confirmed that a stream issuing from the northern rim of Lake Victoria was the White Nile. Speke traced the longest inflowing river, the Luvironza, establishing it as the true source of the Nile, located in modern-day Burundi."
+},
+{
+"id": "hemoglobin",
+"year": 1862,
+"title": "Hemoglobin",
+"field": "Science:Biology",
+"desc": "The protein hemoglobin, crucial in carrying oxygen in the blood, was identified and named. This discovery was fundamental in understanding blood's role in oxygen transportation.",
+"long": "German biochemist Felix Hoppe-Seyler crystallized the protein hemoglobin, which combines with oxygen in the lungs and transports it to tissues. He gave it the name hemoglobin (derived from the Greek word for blood, hemo, and globin, a protein class), and discovered that hemoglobin becomes oxyhemoglobin when it binds with oxygen."
+},
+{
+"id": "greenhouse-effect",
+"year": 1863,
+"title": "Greenhouse effect",
+"field": "Science:Physics",
+"desc": "The concept describes how gases like carbon dioxide and water vapor trap heat in the Earth's atmosphere, leading to an increase in surface temperatures. This phenomenon is similar to how a greenhouse works.",
+"long": "In 1863, the Irish physicist John Tyndall pointed out that gases such as carbon dioxide and water vapor are transparent to the visible light that reaches Earth's surface from the Sun, but rather opaque to the infrared radiations that the Earth gives off to space when it cools down at night. This means that the presence of even a small amount of these gases in the air will keep the Earth's surface temperature higher than it would otherwise be. This resembles the situation in a greenhouse, where light enters through the glass and warms the atmosphere within, but heat escapes only with difficulty, so that the net effect is to warm the greenhouse. For this reason, the action of carbon dioxide an"
+},
+{
+"id": "law-of-octaves",
+"year": 1863,
+"title": "Law of octaves",
+"field": "Science:Chemistry",
+"desc": "Now that over sixty elements were known, the proposed Law of Octaves grouped elements based on their atomic weights in a repeating pattern, resembling musical octaves. This failed attempt helped pave the way for better-organized periodic tables.",
+"long": "By this time, over sixty elements were known, and they seemed to represent an unruly jungle of characteristics. Chemists were uneasy with that, so they tried to group elements into families. Several attempts had already been made, but an English chemist tried something a bit different. He listed the elements in order of atomic weight and found that the second seven repeated the properties of the first seven quite closely. He tried to extend this further, referring to it as the law of octaves (as in music, where the same seven notes are repeated over and over, with every eighth note resembling the first octave higher, octave coming from the Latin word for “eight”). Newlands's work was not tak"
+},
+{
+"id": "constitution-of-the-stars",
+"year": 1863,
+"title": "Constitution of the stars",
+"field": "Space",
+"desc": "Spectral analysis of stars revealed that their composition was similar to elements found on Earth, suggesting a commonality in the universe's materials. This discovery supported the idea that the universe comprises the same elements throughout.",
+"long": "Granted that the elements in the Sun seemed to be the same as those on Earth, might it be argued that the Solar System would naturally be made of one set of materials but that other stars might be made of other elements? The English astronomer William Huggins studied the spectra of some of the brighter stars and announced in 1863 that their spectral lines were those of the old familiar elements. Presumably, then, the entire Universe was made up of the same elements."
+},
+{
+"id": "indium",
+"year": 1863,
+"title": "Indium",
+"field": "Science:Chemistry",
+"desc": "Indium was discovered through spectroscopic analysis of a zinc ore precipitate, revealing a new element with unique indigo spectral lines. ",
+"long": "A German mineralogist suspected that a yellow precipitate he had obtained from a zinc ore might contain a new metal. Because he himself was color-blind, he had his assistant examine it spectroscopically. Richer did so and spotted an indigo-colored line that was not characteristic of any known element. The new element was therefore named indium."
+},
+{
+"id": "nature-of-orion-nebula",
+"year": 1864,
+"title": "Nature of Orion Nebula",
+"field": "Space",
+"desc": "The Orion Nebula, previously thought to be a simple cloud of gas, was discovered to contain clusters of faint stars. This finding indicated that stars are embedded in nebulous regions and contribute to the nebula's luminosity.",
+"long": "Some patches of nebulosity, including the Milky Way itself, had turned out to be clusters of faint stars. A number of Messier objects had turned out to be globular clusters. The Orion nebula was studied, and it was found that its spectrum was typical of what would be expected of a luminous gas. It was concluded that the nebula is a large cloud of gas with stars embedded in it, which heat the gas to luminosity."
+},
+{
+"id": "genetics",
+"year": 1865,
+"title": "Genetics",
+"field": "Science: Biology",
+"desc": "Mendel discovered the fundamental laws of inheritance by conducting experiments with pea plants. He observed how plant height was passed from one generation to the next. Dominant traits would overpower recessive ones, but the recessive traits could reappear in future generations.",
+"long": "Gregor Mendel, an Austrian botanist and monk, discovered the fundamental laws of inheritance by conducting experiments with pea plants. He observed how certain traits, like plant height, were passed from one generation to the next. By carefully arranging plants to self-pollinate and analyzing the traits in their offspring, Mendel concluded that organisms have pairs of factors for each trait that segregate during reproduction. Dominant traits would overpower recessive ones, but the recessive traits could reappear in future generations. His work laid the groundwork for the science of genetics."
+},
+{
+"id": "benzene-ring",
+"year": 1865,
+"title": "Benzene ring",
+"field": "Science:Chemistry",
+"desc": "The benzene ring is a molecular structure consisting of six carbon atoms forming a hexagonal ring with hydrogen atoms attached. This configuration made benzene stable and significantly contributed to the understanding of molecular structures.",
+"long": "The molecule of benzene is made up of six carbon atoms and six hydrogen atoms. Given a chain of six carbon atoms, there seemed to be no way of adding six hydrogen atoms without producing a very unstable compound—and benzene was quite stable. It was Kekulé himself who found the answer in 1865. According to his own story, he was in a semidoze in a horse-drawn bus and was visualizing carbon chains when suddenly the tail end of one chain attached itself to the head end and formed a spinning ring. At once he saw that if he imagined the six carbon atoms forming a hexagonal ring, with one hydrogen atom attached to each carbon, a stable atom might be the result. Once the notion of carbon rings was a"
+},
+{
+"id": "avogadros-number",
+"year": 1865,
+"title": "Avogadro’s number",
+"field": "Science:Chemistry",
+"desc": "Avogadro’s number represents the number of molecules in 22.4 liters of any gas, which is approximately 6×10^23. This measurement allowed scientists to quantify the number of atoms and molecules in a given volume and weigh gases accurately.",
+"long": "The hydrogen molecule is composed of two hydrogen atoms. The hydrogen atom has an atomic weight of just about 1, so that a hydrogen molecule has a molecular weight of 2. Hydrogen gas is made up of hydrogen molecules, and at 0°C and normal atmospheric pressure at sea level, 22.4 liters (5.9 gallons) of hydrogen gas weigh 2 grams. This is the molecular weight in grams, or 1 mole. Since equal volumes of gases are made up of equal numbers of molecules, according to Avogadro’s hypothesis (see 1811), and since each oxygen molecule has a weight of 32, then 22.4 liters of oxygen gas would weigh 32 grams—or 1 mole. In fact, 22.4 liters of any gas are likely to weigh 1 mole. The question is, how many "
+},
+{
+"id": "maxwells-equations",
+"year": 1865,
+"title": "Maxwell’s equations",
+"field": "Science:Physics",
+"desc": "Maxwell devised a set of equations that unified electricity and magnetism into a single electromagnetic force. These equations demonstrated the relationship between electric oscillations and electromagnetic fields, showing that light is an electromagnetic wave.",
+"long": "The culminating work of Maxwell came when he began to devise a set of equations, simple in form, that expressed all the varied phenomena of electricity and magnetism and bound them together indissolubly, as Newton had done for gravitation. Maxwell showed that electricity and magnetism did not exist separately, but that each was an inevitable aspect of the other. There was a single electromagnetic force. Maxwell showed that the oscillation of an electric charge produced an electromagnetic field that radiated outward from its source at a constant speed. This speed could be calculated from the equations and turned out to be just the speed of light."
+},
+{
+"id": "mobius-strip",
+"year": 1865,
+"title": "Möbius strip",
+"field": "Math:Topology",
+"desc": "The Möbius strip is a one-sided surface that challenges traditional geometry, created by twisting a strip of paper 180 degrees and joining its ends. This concept found applications in various scientific and artistic fields, demonstrating properties of non-orientable surfaces and founding topology.",
+"long": "In 1865, the German mathematician August Ferdinand Möbius presented what came to be called a Möbius strip. This is a long, flat strip of paper (or other flexible material) that is given a half twist and the two ends then pasted together to give a circular figure with one edge and one side. The resulting construction has only one surface and one edge. This made Möbius one of the founders of topology, the branch of mathematics that deals with properties of figures that are not altered by deformations (as long as there is no tearing)."
+},
+{
+"id": "kirkwood-gaps",
+"year": 1866,
+"title": "Kirkwood gaps",
+"field": "Space",
+"desc": "The discovery of the Kirkwood gaps revealed that the distribution of asteroids in the asteroid belt is not uniform. These gaps occur due to the gravitational influence of Jupiter, which causes asteroids to be either pulled away or pushed into these gaps.",
+"long": "By now, nearly ninety asteroids had been discovered and their orbits calculated. It was clear that they were not evenly distributed, and the American astronomer Daniel Kirkwood showed in 1866 that there were definite gaps, since called 'Kirkwood gaps.' He explained these gaps by postulating that any asteroids that would have been in those gaps would revolve around the Sun in a period that had a simple ratio to the period of Jupiter. That meant that every two or three turns of the asteroid would bring it into the same position with respect to Jupiter. Jupiter's gravitational pull would then be cumulative, and the asteroid would be forced either farther from the Sun or nearer to it, leaving a "
+},
+{
+"id": "earths-iron-core",
+"year": 1866,
+"title": "Earth's iron core",
+"field": "Science:Geology",
+"desc": "The hypothesis that Earth's center must be composed of denser material than its crust was confirmed through the study of meteorites. This led to the acceptance that Earth has a nickel-iron core, shaping our understanding of the planet's composition.",
+"long": "Ever since Cavendish had determined the Earth's mass (see 1798), it had been known that the Earth's average density was about twice that of its rocky crust. The conclusion was that Earth's center must be made of material that was denser than rock. Metal seemed to be the only reasonable alternative. The French geologist Gabriel-Auguste Daubrée, considering the fact that a number of meteorites were composed of a nickel-iron alloy (though most were rocky), assumed that if meteorites were remnants of an exploded planet, the rocky ones came from the outermost portions of the planet, and the nickel-iron ones came from its core. He reasoned that this would be true of Earth as well, so that Earth ha"
+},
+{
+"id": "composition-of-a-nova",
+"year": 1866,
+"title": "Composition of a nova",
+"field": "Space",
+"desc": "The study of nova spectra revealed that they are dominated by hydrogen, indicating its presence as a major component of the Universe. This finding was pivotal in understanding the composition and behavior of novas.",
+"long": "Since the exceedingly bright novas spied by Tycho Brahe and by Kepler nearly three centuries before, further novas of the sort had been seen. Nevertheless, dim novas had been sighted, and they still attracted notice because they had brightened suddenly and without warning. In 1866 Huggins managed to study the spectrum of a nova and showed from its spectral lines that it was surrounded by a cloud of hydrogen. This was the first indication that hydrogen might be a dominating constituent of the Universe."
+},
+{
+"id": "law-of-mass-action",
+"year": 1867,
+"title": "Law of mass action",
+"field": "Science:Chemistry",
+"desc": "The law of mass action describes how chemical reactions can be reversed by varying the mass of the reactants. This principle has been fundamental in advancing the field of thermodynamics and chemical reaction engineering.",
+"long": "Chemists discovered that chemical reactions could often proceed in two directions, and by increasing the mass of one set of reactants, the reaction could be forced to move in the direction that consumed that set. Norwegian chemists Cato Maximilian Guldberg and Peter Waage demonstrated that it's not mass alone but concentration—the quantity of mass in a given volume—that determines reaction direction. Known as the law of mass action, it was promulgated in 1867 and laid the foundation for modern thermodynamics and its application to chemical reactions."
+},
+{
+"id": "helium",
+"year": 1868,
+"title": "Helium",
+"field": "Space",
+"desc": "Thanks to modern transportation, astronomers could take a journey to see an eclipse if they liked. Studying an eclipse in India, Janssen discovered a new spectral line corresponding to a new element, Helium.",
+"long": "Improvements in transportation had made it possible for astronomers to travel all over the world if they had to. The most spectacular astronomical phenomenon that might be confined to a small area almost anywhere in the world was a total eclipse of the Sun. When an eclipse was due to be visible at certain areas in India in 1868, European astronomers didn’t hesitate to make the journey. A French astronomer at the site, Pierre-Jules-César Janssen, studied the spectra of the solar prominences. Meanwhile, a British astronomer, Joseph Norman Lockyer, showed that by allowing light from the edge of the Sun to pass through a prism, he could obtain spectra of prominences even without an eclipse. Jans"
+},
+{
+"id": "cro-magnon-man",
+"year": 1868,
+"title": "Cro-magnon man",
+"field": "Science:Archaeology",
+"desc": "The discovery of Cro-Magnon man in a cave revealed that these humans were around thirty-five thousand years old, indicating an early form of modern humans. This finding challenged the belief that the human race was far younger and shed light on human evolution.",
+"long": "In 1868, a French paleontologist discovered four skeletons of human beings in a cave called Cro-Magnon. They were around thirty-five thousand years old but human in every respect, demonstrating that this earlier form of human was significantly older than previously thought."
+},
+{
+"id": "deep-sea-life",
+"year": 1868,
+"title": "Deep-sea life",
+"field": "Science:Biology",
+"desc": "The discovery of deep-sea life revealed that living organisms could thrive in depths far lower than light could reach. This groundbreaking finding expanded our understanding of marine biology and the adaptability of life forms.",
+"long": "In 1868, a British zoologist began deep-sea dredging operations, leading to the identification of life forms thriving in the depths of the Mediterranean and Atlantic Oceans. This research showed that life exists from the ocean's surface to its depths, even though deep-sea life does not live in the same profusion as surface life."
+},
+{
+"id": "periodic-table-of-the-elements",
+"year": 1869,
+"title": "Periodic table of the elements",
+"field": "Science:Chemistry",
+"desc": "Arranging elements in order of increasing atomic weight, Mendeleev allowed the length of periods to vary according to the properties of elements, creating a table that predicted undiscovered elements. His periodic table became the foundation for modern chemistry, providing a systematic way to understand element properties and interactions.",
+"long": "In Mendeleev's original periodic table of 1871, the periods were listed vertically and groups horizontally, with elements arranged by increasing atomic weight. He predicted the existence and properties of then-undiscovered elements by leaving gaps, some of which were later filled by actual discoveries such as eka-silicon (germanium). This new organization allowed for periodic trends and valences to be more apparent, leading to a comprehensive understanding of chemical properties and behaviors."
+},
+{
+"id": "nucleic-acid",
+"year": 1869,
+"title": "Nucleic acid",
+"field": "Science:Biology",
+"desc": "A substance was isolated from cell remnants that did not belong to the known classes of carbohydrates, fats, or proteins. This substance was later identified as nucleic acid and contained nitrogen and phosphorus.",
+"long": "The classification of foodstuffs into carbohydrates, fats, and proteins was satisfactory until 1869. In that year, a Swiss biochemist isolated a substance in cell nuclei, named 'nuclein', that contained nitrogen and phosphorus and did not belong to any known classes of foodstuffs. The true importance of nuclein, later known as nucleic acid, was appreciated when it was revealed as essential to the cell's functions."
+},
+{
+"id": "critical-temperature",
+"year": 1869,
+"title": "Critical temperature",
+"field": "Science:Physics",
+"desc": "An Irish physical chemist determined the specific temperature above which gas cannot be liquefied by pressure alone. This concept became essential for chemists working with permanent gases.",
+"long": "An Irish physical chemist studied the liquefaction of gases, particularly carbon dioxide. He discovered that as the temperature rose, more pressure was needed to liquefy it until it reached a critical temperature at which only lower temperatures could enable liquefaction. This critical temperature was crucial for chemists dealing with so-called permanent gases."
+},
+{
+"id": "biogeography",
+"year": 1869,
+"title": "Biogeography",
+"field": "Science:Geography",
+"desc": "A naturalist developed the concept separating animal species of Australia and Asia, marking a distinct ecological divide that laid the foundations of biogeography. \\\"Wallace's line\\\" drew a clear separation between the evolutionary paths of species on the two continents.",
+"long": "A naturalist noticed significant differences between the animal species of Australia and Asia, leading him to delineate a boundary, known as Wallace's line, which separates these two distinct groups. This realization laid the groundwork for the science of biogeography, which explores the distribution of species and ecosystems in geographic space and through geological time."
+},
+{
+"id": "islets-of-langerhans",
+"year": 1869,
+"title": "Islets of langerhans",
+"field": "Science:Biology",
+"desc": "A German physician identified clusters of cells within the pancreas that produce hormones essential for regulating blood sugar levels. These clusters were named the Islets of Langerhans after their discoverer.",
+"long": "A German physician, while studying the microscopic structure of the pancreas, identified numerous small, distinct clusters of cells. These cell clusters, later named Islets of Langerhans, were found to play a crucial role in producing hormones that regulate blood sugar levels, significantly advancing the understanding of endocrine pancreas function."
+},
+{
+"id": "troy",
+"year": 1870,
+"title": "Troy",
+"field": "Science:Archaeology",
+"desc": "Discovery of multiple ancient sites of immense historical interest in present-day Turkey. Heinrich Schliemann used Homer's Iliad to locate the remains and various artifacts, notably contributing to archaeological research.",
+"long": "The ancient non-Biblical site of most interest to Europeans was surely Troy, in what is now the northwestern part of Asian Turkey. It was there that the semilegendary Trojan War was fought around 1200 B.C., and many who had read Homer's Iliad in the last twenty-five centuries had thought there was a historical basis to it. One of the believers was a German businessman, Heinrich Schliemann, who worked hard to make a fortune, for the sole purpose of using it to locate the ruined city of Troy. In 1870 he went to Turkey, managed to choose the right spot (following the description in the Iliad), and uncovered a series of ancient cities, built one on top of the other. He obtained various fascinati"
+},
+{
+"id": "human-evolution",
+"year": 1871,
+"title": "Human evolution",
+"field": "Science:Biology",
+"desc": "Darwin published \\\"Descent of Man\\\" discussing the principles of evolution as it specifically applies to humans. The publication emphasizes the role of biological evolution in shaping human life and identifies vestigial organs as evidence for evolution.",
+"long": "Darwin, writing his book on evolution, had initially refrained from discussing human evolution to avoid controversy. In 1871, he published *The Descent of Man,* which applied the principles of evolution to humanity, highlighting the significance of biological evolution in human development. He pointed out vestigial organs in humans as evidence for evolution from nonhuman animals."
+},
+{
+"id": "plant-strains",
+"year": 1871,
+"title": "Plant strains",
+"field": "Science:Botany",
+"desc": "The cultivation and development of new plant strains that demonstrated the variation within species and supported the theory of evolution through natural selection. This work highlighted the potential for creating new varieties of plants through careful selection and breeding.",
+"long": "Luther Burbank began his extensive work on cultivating new plant strains. He specialized in producing new fruit strains and developed sixty varieties of plums among other plants. His work provided clear examples of the capacity for variation within organisms and supported Darwin's theory of evolution by natural selection."
+},
+{
+"id": "gilgamesh",
+"year": 1872,
+"title": "Gilgamesh found",
+"field": "Culture",
+"desc": "The epic of Gilgamesh, the oldest literary work, was uncovered and it contained a flood story similar to the Biblical tales. This discovery further increased popular interest in archaeology.",
+"long": "The last great king of the Assyrian Empire, Ashurbanipal, had patronized art and literature and established a large library in Nineveh. In the 1860s, British archaeologists excavated the site of ruined Nineveh and brought cuneiform tablets back to the British Museum. George Smith, an expert at reading cuneiform, discovered the epic of Gilgamesh in 1872 and announced it contained a flood story used by Biblical writers. This created a large sensation and increased popular interest in archaeology."
+},
+{
+"id": "bacteriology",
+"year": 1872,
+"title": "Bacteriology",
+"field": "Science:Biology",
+"desc": "Bacteriology, the study of bacteria, became prominent when it was discovered that numerous bacteria were pathogenic. They are also extremely resilient, capable of surviving desiccation and boiling. This field of study advanced the understanding of diseases and their contagious nature.",
+"long": "Bacteria, known for two centuries, were not studied in detail until Pasteur's germ theory of disease in 1862. A German botanist, inspired by Pasteur's work, was the first to treat bacteriology as a special branch of knowledge in 1872. It was discovered that some bacteria were pathogenic, causing certain diseases and their contagious character."
+},
+{
+"id": "stellar-photography",
+"year": 1872,
+"title": "Stellar photography",
+"field": "Space",
+"desc": "This involves photographing a star’s spectrum to study light sources. It eventually allowed astronomers to photograph the spectra of over a hundred stars.",
+"long": "The American astronomer Henry Draper was the first to photograph a star’s spectrum (that of Vega). As Draper adopted the use of dry plates, stellar photography became easier, facilitating the capture of the spectra of numerous stars."
+},
+{
+"id": "experimental-psychology",
+"year": 1872,
+"title": "Experimental psychology",
+"field": "Science:Psychology",
+"desc": "Experimental psychology was initiated to measure facets of human behavior using scientific methods. It includes the establishment of laboratories and journals for publishing behavioral findings.",
+"long": "Wilhelm Wundt suggested that aspects of human behavior could be measured profitably. He wrote a textbook on the subject and later established the first laboratory and journal dedicated to experimental psychology."
+},
+{
+"id": "leprosy",
+"year": 1873,
+"title": "Leprosy",
+"field": "Science:Biology",
+"desc": "A bacterium was discovered as the cause of leprosy, which led to the disease being named Hansen's disease. This marked the first discovery of a microorganism causing a specific disease, providing a breakthrough in medical microbiology.",
+"long": "In 1873, a Norwegian physician discovered that a specific bacterium was the cause of leprosy, and as a result, it became known as Hansen's disease. This pivotal discovery marked the first occasion where a specific microorganism was identified as causing a particular disease, significantly advancing the field of medical microbiology and the understanding of infectious diseases."
+},
+{
+"id": "transcendental-e",
+"year": 1873,
+"title": "Transcendental e",
+"field": "Math",
+"desc": "Hermite proved that e (a very important mathematical constant ~ 2.71828) is a transcendental number. Transcendental numbers cannot be solutions to any algebraic equation with rational coefficients.",
+"long": "In 1873, a French mathematician succeeded in proving that e (a very important mathematical constant approximately equal to 2.71828) is a transcendental number. This significant discovery involved proving that certain numbers, called transcendental numbers, cannot be solutions to any algebraic equation with rational coefficients, thus expanding the knowledge of irrational numbers in mathematics."
+},
+{
+"id": "platelets",
+"year": 1873,
+"title": "Platelets",
+"field": "Science:Medicine",
+"desc": "Platelets, also called thrombocytes, were identified and studied, revealing their role in blood clotting. This discovery marked a crucial advancement in hematology and understanding of blood components.",
+"long": "In 1873, a Canadian physician studied platelets (small cells in the blood) which are fewer in number than red and white blood cells, but play a crucial role in blood clotting. These cells, called thrombocytes, were extensively studied for their shape and function, leading to important discoveries about their role in the clotting process and significance in medical hematology."
+},
+{
+"id": "gallium",
+"year": 1874,
+"title": "Gallium",
+"field": "Science:Chemistry",
+"desc": "A new element named gallium was discovered, displaying unique spectral lines and validating predictions made in the periodic table. This discovery firmly established Mendeleyev’s table, confirming it for subsequent scientific exploration.",
+"long": "The discovery of new elements continued after Mendeleyev announced his periodic table of elements. In 1874, the French chemist Paul-Émile Lecoq de Boisbaudran found a zinc ore that displayed previously unknown spectral lines. He extracted the new element and named it gallium, from the old Latin word for the area that later became France after the fall of the Roman Empire. Mendeleyev had predicted this element as eka-aluminium, and gallium's characteristics and properties aligned with his prediction, solidifying the validity of the periodic table."
+},
+{
+"id": "tetrahedral-carbon-atom",
+"year": 1874,
+"title": "Tetrahedral carbon atom",
+"field": "Science:Chemistry",
+"desc": "A new three-dimensional representation of organic molecules demonstrated that molecules must be asymmetric to rotate polarized light, showing that the four valence bonds of the carbon atom pointed towards the vertices of a tetrahedron. ",
+"long": "Kekule's earlier two-dimensional models of organic molecules had limitations, as some molecules in solution rotated the plane of polarized light, implying necessary asymmetry. In 1874, Dutch physical chemist Jacobus Henricus van't Hoff advanced this understanding by creating a three-dimensional model. He showed that the four valence bonds of the carbon atom pointed towards the vertices of a tetrahedron, with one bond pointing upward and three arranged equally below, illustrating the essential structural asymmetry of organic molecules in achieving specific chemical behaviors."
+},
+{
+"id": "transfinite-numbers",
+"year": 1874,
+"title": "Transfinite numbers",
+"field": "Math",
+"desc": "The invention of transfinite numbers illustrates an endless series of numbers larger than the ordinary infinity of integers. This concept revolutionized mathematical understanding of infinity and real numbers.",
+"long": "The German mathematician Ludwig Philipp Cantor introduced the concept of transfinite numbers, addressing the troublesome notion of infinity. He demonstrated that while all fractions (rational numbers) are countable through one-to-one correspondence, real numbers (rational and irrational) are not, representing a higher form of infinity. This mathematical innovation showed that real numbers exist in an endlessly larger quantity, changing our approach to infinity and counting."
+},
+{
+"id": "chemical-thermodynamics",
+"year": 1876,
+"title": "Chemical thermodynamics",
+"field": "Science: Chemistry",
+"desc": "Thermodynamics principles were applied to chemical reactions, evolving the modern concepts of energy and chemical potential. He also explored equilibria involving different phases and the number of ways temperature, pressure, or concentration interrelate. This application helped in understanding equilibria and the phase rule, influencing various scientific fields.",
+"long": "Thermodynamics, initially developed through the study of heat, was applied to chemical changes. In a series of papers, an American physicist, Josiah Willard Gibbs, discussed how energy and chemical potential drive chemical reactions. He also explored equilibria involving different phases and the number of ways temperature, pressure, or concentration can vary, which can be expressed by the phase rule. This work significantly contributed to the field of chemical thermodynamics."
+},
+{
+"id": "protein-size",
+"year": 1877,
+"title": "Protein size",
+"field": "Science:Biology",
+"desc": "Explained how certain substances could pass through membranes while others could not and presented the concept of osmotic pressure. This work laid the foundation for calculating molecular weights of proteins and understanding macromolecules.",
+"long": "The fact of osmosis—that some substances could go through certain membranes while others could not—had been known for two decades. In 1877 a German botanist Wilhelm Friedrich Philipp Pfeffer (1845–1920), explained the phenomenon by showing that large molecules would not go through, while small ones would. If all the large molecules were on one side of the membrane, they would block the passage of some of the small ones. That meant that more small molecules would pass through from the side that lacked the large molecules. The side with the large molecules would then swell, as more small molecules entered than left, and it would experience an osmotic pressure. Pfeffer showed how one might meas"
+},
+{
+"id": "liquid-oxygen",
+"year": 1877,
+"title": "Liquid oxygen",
+"field": "Science:Chemistry",
+"desc": "Progress in the liquefaction of gases led to cooling oxygen and other gases to extreme temperatures, creating liquid oxygen. This discovery enabled advancements in physics and chemistry related to gas properties and behaviors.",
+"long": "The work of Andrews (see 1869) and of van der Waals (see 1873) had emphasized the fact that gases that resisted liquefaction had to be cooled as far as possible before pressure could be usefully applied, or the Joule-Thomson cooling-by-expansion effect attempted. In 1877 a French physicist, Louis-Paul Cailletet (1832–1913), cooled oxygen intensively and then let it expand. He got a fog of liquid droplets of oxygen. By using similar techniques, he also managed to get small quantities of liquid nitrogen and liquid carbon monoxide as well. A Swiss chemist, Raoul-Pierre Pictet (1846–1929), managed to do this independently in the same year. Using a more elaborate method, he produced greater quant"
+},
+{
+"id": "martian-canals",
+"year": 1877,
+"title": "Martian canals",
+"field": "Space",
+"desc": "Martian canals were perceived networks of linear markings on Mars that were thought to be channels filled with water and built by intelligent beings. This lead to significant speculation about advanced Martian civilizations.",
+"long": "Italian astronomer Giovanni Virginio Schiaparelli observed Mars during a close approach to Earth in 1877. He saw markings that he interpreted as water channels and named them 'canali', which was mistranslated to 'canals' in English. This led to the widespread belief that these were constructed by intelligent Martian beings to carry water from polar ice caps to the equatorial regions of Mars."
+},
+{
+"id": "martian-satellites",
+"year": 1877,
+"title": "Martian moons",
+"field": "Space",
+"desc": "Two small Martian satellites were discovered and named Phobos and Deimos after the sons of Ares. This contributed to the understanding of planetary systems and the natural satellites of other planets.",
+"long": "In 1877, during a conjunction of Earth and Mars, American astronomer Asaph Hall seized the opportunity to confirm if Mars had any natural satellites. Using improved telescopes, Hall discovered two small satellites, later named Phobos and Deimos. These satellites helped deepen the understanding of Mars and its celestial system while debunking previous assumptions that Mars did not have any satellites."
+},
+{
+"id": "enzyme",
+"year": 1878,
+"title": "Enzyme",
+"field": "Science:Biology",
+"desc": "Previously, living catalysts were called ferments. Kuhne suggested that non-living substances that act as biological catalysts be called enzymes. Eventually the name enzyme came to be applied to living and non-living biological catalysts.",
+"long": "In 1878, Wilhelm Friedrich Kühne proposed that substances exerting catalytic effects in biological systems should be called enzymes, derived from the Greek meaning 'in yeast.' This shifted the perception from considering these catalysts as alive to recognizing their universal role in biological reactions, irrespective of their existence in living or isolated forms."
+},
+{
+"id": "varves",
+"year": 1878,
+"title": "Varves",
+"field": "Science:Geology",
+"desc": "Layered sediments in glacial-fed lakes were studied by counting the varves (Swedish for \\\"layers\\\") and estimating a glacier's age in (12,000 years) with considerable accuracy. This discovery was pivotal in identifying seasonal patterns in sediment deposition and their correlation with glacial and interglacial periods.",
+"long": "A Swedish geologist, Gerard Jakob de Geer, conducted studies in 1878 on finest and coarser sediment layers in glacier-fed lakes. His work showed that these layers alternated seasonally, revealing significant insights into the duration and intervals of ice ages and interglacial periods."
+},
+{
+"id": "ytterbium",
+"year": 1878,
+"title": "Ytterbium",
+"field": "Science:Chemistry",
+"desc": "Discovery of ytterbium added to the list of elements isolated from rare earths. This contribution expanded the known elements, aiding further chemical research and application.",
+"long": "Six elements had been isolated from rare earths, but in 1878, the discovery of ytterbium by Jean-Charles-Galissard de Marignac added another element to this list. Named after the Ytterby quarry where the first rare earth was discovered, ytterbium's discovery helped enhance the understanding and utilization of rare earth elements in various fields."
+},
+{
+"id": "origin-of-the-moon",
+"year": 1879,
+"title": "Origin of the moon",
+"field": "Space",
+"desc": "This hypothesis suggests that the Moon was once part of the Earth and spun off due to the Earth's rapid rotation in its early primordial times. This idea highlights the exchange of angular momentum between the Earth and the Moon, contributing to the lengthening of Earth's day over time.",
+"long": "Newton believed that tides were solely a result of the Moon's gravitational pull. George Darwin proposed that as Earth's rotation slowed, its angular momentum was conserved by the Moon gradually moving away from the Earth. This momentum exchange implies that the Moon was once part of Earth, breaking away due to rapid primordial spin. Despite the hypothesis being dramatic and not accepted today, it offered an early explanation for the Earth-Moon system's evolution."
+},
+{
+"id": "scandium",
+"year": 1879,
+"title": "Scandium",
+"field": "Science:Chemistry",
+"desc": "Scandium is a chemical element discovered as part of the rare earth series but with distinct properties that fulfilled predictions made by Dmitri Mendeleyev. Its discovery reinforced the periodic table by fitting the properties of the previously predicted 'eka-boron'.",
+"long": "Swedish chemist Lars Fredrik Nilson discovered scandium in 1879, identifying it as part of the rare earth elements but with unique properties. Following this, chemist Per Teodor Cleve confirmed that scandium's characteristics matched those of 'eka-boron', a predicted element by Dmitri Mendeleyev, thus verifying the predictive power of the periodic table."
+},
+{
+"id": "thulium-holmium-samarium",
+"year": 1879,
+"title": "Thulium, holmium, and samarium",
+"field": "Science:Chemistry",
+"desc": "Two new rare earth elements, thulium (after Thule) and holmium (after Stockholm), were discovered and named to reflect Scandinavian connections. Another rare earth element, samarium, was also identified in the same year.",
+"long": "If scandium was not quite a rare earth element, other elements were discovered that were. Cleve, who identified scandium as eka-boron (see above), isolated two new rare earth elements in 1879. He gave both of them names of Scandinavian aura. One was thulium, after Thule, which in classic legend was the land farthest to the north, and which was interpreted by later Europeans as representing Scandinavia. The other he named holmium, after Stockholm. In the same year, Lecoq de Boisbaudran, who had discovered gallium (see 1874), identified a new rare earth element, which he named samarium, because he had found it in a mineral called samarskite, which, in turn, bore the name of an otherwise obscur"
+},
+{
+"id": "heat-and-radiation",
+"year": 1879,
+"title": "Heat and radiation",
+"field": "Science:Physics",
+"desc": "The relationship between a body’s temperature and the radiation it emits was established, revealing that radiation increases dramatically with temperature (T^4). This principle, known as Stefan's law, has significant implications for understanding stellar evolution and the radiation of the Sun.",
+"long": "An Austrian physicist, Josef Stefan (1835-1893), was particularly interested in how hot bodies cooled and, therefore, in how much radiation they emitted. He studied hot bodies over a considerable range of temperature and, in 1879, was able to show that the total radiation of a body was proportional to the fourth power of its absolute temperature (Stefan's law). For example, if a body's temperature tripled, from 1,000° K to 3,000° K, its radiation output would increase 3 x 3 x 3 x 3, or 81 times. This very rapid increase of radiation with temperature was more of an increase than would have been expected and turned out to be of great use in deducing the evolution of stars. More immediately, fr"
+},
+{
+"id": "malaria",
+"year": 1880,
+"title": "Malaria",
+"field": "Science: Biology",
+"desc": "The disease-causing microorganism for malaria was discovered to be a protozoon rather than a bacterium. This groundbreaking discovery earned a Nobel Prize and advanced the understanding of malaria's pathology.",
+"long": "In 1880 a French physician, Charles-Louis-Alphonse Laveran (1845-1922), isolated the microorganism that caused malaria and, to everyone's astonishment, found it to be not a bacterium but a protozoon, a one-celled animal. It was the first pathogenic organism to be found that was anything but a bacterium. For this discovery, Laveran received the Nobel Prize in physiology and medicine in 1907."
+},
+{
+"id": "nebular-photography",
+"year": 1880,
+"title": "Nebular photography",
+"field": "Space",
+"desc": "The first photograph of a nebula was taken, shedding light on the composition and characteristics of the Orion nebula. This milestone in astrophotography allowed for significant insights into the nature of nebulas.",
+"long": "In 1880 Draper (see 1872), who had learned the use of dry plates from Huggins (see 1863), used the new technique to photograph the Orion nebula and to study its spectrum. It was the first time a nebula had been photographed. From its spectrum, it was possible to deduce that the Orion nebula was a cloud of dust and gas lit by stars that must be embedded in it. It would be natural to suppose, as a result, that all other nebulas might be of such composition, but within forty years it turned out that there were all-important exceptions."
+},
+{
+"id": "gadolinium",
+"year": 1880,
+"title": "Gadolinium",
+"field": "Science: Chemistry",
+"desc": "A new rare earth element, gadolinium, was discovered and named in honor of Gadolin, adding to the known elements in the periodic table. This discovery underscored the ongoing advancements in the field of chemistry.",
+"long": "Maringac, who had discovered ytterbium (see 1878), discovered yet another rare earth element in 1880. This time Gadolin, who had discovered the rare earths (see 1794), was honored, and the element was named gadolinium."
+},
+{
+"id": "unconscious-mind",
+"year": 1880,
+"title": "Unconscious mind",
+"field": "Science: Psychology",
+"desc": "A significant case in psychology involving patient 'Anna O.' was recorded, in which Anna's symptoms were alleviated when she could be asked to verbalize the fantasies of her unconscious mind. This case contributed to the early foundations of psychoanalysis.",
+"long": "In 1880 an Austrian physician, Josef Breuer (1842–1925), acquired a new patient whom he referred to as “Anna O.” She suffered from various psychological issues."
+},
+{
+"id": "charged-cathode-rays",
+"year": 1880,
+"title": "Charged cathode rays",
+"field": "Science: Physics",
+"desc": "Cathode rays were shown to be a stream of negatively charged particles, as opposed to a form of electromagnetic radiation. This discovery clarified the nature of cathode rays, contributing to the understanding of atomic structure.",
+"long": "There was some question about the nature of the cathode rays to which Goldstein had given a name (see 1876). Most of the reported observations could be explained equally well by supposing cathode rays to be either a form of electromagnetic radiation, like light, or a stream of particles. The matter was investigated by Crookes (see 1861), who in 1875 had devised a vacuum tube that was even better than Geissler’s (see 1855). In 1880, using his own Crookes tube, he showed that cathode rays traveled in straight lines and cast sharp shadows. The radiation could even turn a small wheel, which it struck on one side. This still left the nature of the rays uncertain. But then Crookes showed that a ma"
+},
+{
+"id": "high-pressure",
+"year": 1880,
+"title": "High pressure",
+"field": "Science: Physics",
+"desc": "A French physicist managed to reach a pressure equal to 3,000 atmospheres, setting a record and laying the groundwork for future work in extreme pressures. This contributed to the study and understanding of the behavior of materials under extreme conditions.",
+"long": "Scientists starting with Boyle (see 1662) had used pressure to study the compression of gases or, as Faraday had, to bring about the liquefaction of gases (see 1823). A French physicist, Emile Hilaire Amagat (1841-1915), was the first, though, to attempt to reach really high pressures and study the behavior of materials under those conditions. He began his experiments in 1880 and soon managed to attain a pressure equal to 3,000 atmospheres. It set a record and laid the groundwork for further work in decades to come at still more extreme pressures."
+},
+{
+"id": "pneumococcus",
+"year": 1881,
+"title": "Pneumococcus",
+"field": "Science: Microbiology",
+"desc": "Isolated the bacterium responsible for pneumonia, recognizing it as a small spherical type called pneumococcus. This identification facilitated the study of pneumonia's bacteriology and treatment methods.",
+"long": "The physician George Miller Sternberg (1838-1915) was the American pioneer in bacteriology. In 1881 he isolated the bacterium that caused pneumonia. It was a small spherical bacterium of the kind called coccus (from a Greek word meaning 'seed'). The pneumonia-causing bacterium was therefore called pneumococcus."
+},
+{
+"id": "venn-diagram",
+"year": 1881,
+"title": "Venn diagram",
+"field": "Math",
+"desc": "Venn diagrams visualize logical relationships using intersecting circles, simplifying the handling of logical statements. This extension of symbolic logic into geometric formats broadened the utility and understanding of logical concepts.",
+"long": "In 1881 the British mathematician John Venn (1834-1923) extended the work of Boole on symbolic logic (see 1847), by representing logical statements as intersecting circles (Venn diagrams). Such circles made it easier to handle statements like 'All A are B' or 'Some A are B' or 'A can be B or C but not both.' If Boole's work was a kind of algebraic logic, Venn's was geometric logic."
+},
+{
+"id": "speed-of-light-interferometer",
+"year": 1882,
+"title": "Speed of light interferometer",
+"field": "Science: Physics",
+"desc": "By timing a flash of light travelling between mirrors in Annapolis, the speed of light was measured to be 186,320 miles per second. This was an improvement from previous measurements and 0.02% from the modern value. ",
+"long": "Michelson (the inventor of the interferometer—see 1881), measured the speed of light in 1882 and reported it to be 186,320 miles per second. This was over a thousand miles per second faster than Foucault had reported, and Michelson's value was more accurate. In fact, it was less than 40 miles per second above the value that is currently accepted."
+},
+{
+"id": "tuberculosis",
+"year": 1882,
+"title": "Tuberculosis",
+"field": "Science: Biology",
+"desc": "Tuberculosis was a very common disease in the nineteenth century. The bacterium causing tuberculosis, known as the tubercle bacillus, was isolated. Identifying this pathogen was a key step in the fight against tuberculosis and earned recognition with a Nobel Prize.",
+"long": "In 1882 Koch isolated the tubercle bacillus, the bacterium that caused tuberculosis. This led him to search for a cure, and for a while he thought he had one, but was disappointed. Still, such was the dread of the disease that merely identifying the germ seemed a feat important enough to warrant granting Koch a Nobel Prize in medicine and physiology in 1905."
+},
+{
+"id": "transcendental-pi",
+"year": 1882,
+"title": "Transcendental pi",
+"field": "Math",
+"desc": "Pi was proven to be a transcendental number, meaning it is not a root of any non-zero polynomial with rational coefficients. This mathematical proof has significant implications in number theory and geometry.",
+"long": "In 1882 the German mathematician Ferdinand von Lindemann studied π, the ratio of the circumference of a circle to its diameter. Its value is 3.14159 . . . and so on, forever, in a nonrepeating decimal, for π is an irrational number. Lindemann was able to show that it was more than irrational. It was transcendental, as Hermite had theorized."
+},
+{
+"id": "meiosis",
+"year": 1883,
+"title": "Meiosis",
+"field": "Science: Biology",
+"desc": "Meiosis is the process of halving the number of chromosomes in sex cells, ensuring genetic stability across generations. Beneden discovered that the number of chromosones in each species is constant. The discovery provided crucial insight into genetic inheritance and cell division.",
+"long": "The discovery of the mechanism of cell division by Flemming (see 1882) stimulated many biologists into investigating the matter further. The Belgian cytologist Edouard Joseph Louis-Marie van Beneden found that the number of chromosomes in the cells of a particular species was always constant, though the number varied from species to species. (It is now known that there are forty-six chromosomes in human cells.) Furthermore, he discovered that in the formation of the sex cells (that is, the ova and spermatozoa), the division of chromosomes during one of the cell divisions was not preceded by a doubling. Each egg and sperm cell, therefore, ended with only half the usual number of chromosomes. "
+},
+{
+"id": "phagocytes",
+"year": 1883,
+"title": "Phagocytes",
+"field": "Science: Biology",
+"desc": "Discovery of phagocytes, semi-independent cells in animals capable of ingesting small particles and bacteria, was made. This discovery highlighted the importance of white blood cells in the immune system.",
+"long": "A Russian-born French bacteriologist, Élie Metchnikoff (1845-1916), found that in simple animals there were semi-independent cells that were capable of ingesting small particles. Any damage to the animals brought these cells to the spot at once. In 1883 Metchnikoff followed up this lead and studied more complicated animals. He was able to show that the white cells in blood were also semi-independent and were capable of ingesting bacteria. The white cells flocked to the site of any infection, and what followed was a battle between bacteria and what Metchnikoff called phagocytes (Greek for 'eating cells'). When the phagocytes lost heavily, their disintegrated structures made up pus. The white "
+},
+{
+"id": "diphtheria",
+"year": 1883,
+"title": "Diphtheria",
+"field": "Science: Biology",
+"desc": "Discovery of the bacterium causing diphtheria was made. This provided crucial understanding for tackling a serious children's disease.",
+"long": "The German pathologist Edwin Klebs (1834-1913) discovered the bacterium responsible for a serious children's disease, diphtheria, in 1883."
+},
+{
+"id": "eugenics",
+"year": 1883,
+"title": "Eugenics",
+"field": "Culture",
+"desc": "Eugenics (\\\"good breeding\\\") was an attempt to apply selective breeding techniques from animal domestication to humans, but faced many problems, practical and ethical.",
+"long": ""
+},
+{
+"id": "stefan-boltzmann-law",
+"year": 1884,
+"title": "Stefan-boltzmann law",
+"field": "Science: Thermodynamics",
+"desc": "The relationship between heat emission and temperature was mathematically refined and led to the formulation of the Stefan-Boltzmann law. This advancement laid the foundation for statistical mechanics.",
+"long": "Stefan had related heat emission to the fourth power of the temperature in 1879, and in 1884, the matter was taken up further by the Austrian physicist Ludwig Eduard Boltzmann. Boltzmann increased the rigor of the mathematical treatment of thermodynamics and emphasized the statistical interpretation of the second law of thermodynamics, leading to statistical mechanics. The rule is often called the Stefan-Boltzmann law."
+},
+{
+"id": "sugar-structure",
+"year": 1884,
+"title": "Sugar structure",
+"field": "Science: Chemistry",
+"desc": "The structure of sugars, including their three-dimensional atomic arrangement, was studied to explain their optical activity. It was found that sugars can exist in multiple varieties based on carbon bond arrangements, and they fall into two series, D and L, which are mirror images of each other.",
+"long": "Though sugars had been studied throughout the nineteenth century, and though their atomic content was more or less known, the actual three-dimensional arrangement of the atoms was not known. The work of van’t Hoff, ten years before, had shown the importance of the three-dimensional arrangement of atoms in a molecule and the way this could be responsible for optical activity (see 1874)."
+},
+{
+"id": "cocaine",
+"year": 1884,
+"title": "Cocaine",
+"field": "Science: Medicine",
+"desc": "Cocaine, an alkaloid from coca leaves, was used for its pain-relieving properties and tested as a local anesthetic during an eye surgery. This led to developments in safer and more effective local anesthetics.",
+"long": "Cocaine is an alkaloid obtained from the leaves of the coca bush, which originally grew wild in Peru and Bolivia. The Incas chewed the leaves to suppress feelings of pain and weariness and so be able to endure the strains of life better. Europeans eventually discovered cocaine without understanding at first that it was strongly addictive and therefore dangerous. One of the first to study it was an Austrian physician, Sigmund Freud (1856–1939). He did not follow it up but passed on his information to an Austrian colleague, Karl Koller (1857–1944). Freud suggested that cocaine might be a pain-relieving agent, but Koller went further and studied its uses as a local anesthetic (one that would de"
+},
+{
+"id": "purines-and-pyrimidines",
+"year": 1885,
+"title": "Purines and pyrimidines",
+"field": "Science: Biochemistry",
+"desc": "The molecular structure of nucleic acids was explored by isolating purines and pyrimidines. Two different purines, adenine (A) and guanine (G) and three different pyramidines, uracil (U), cytosine (C), and thymine (T)",
+"long": "Since the nucleic acids had been discovered by Miescher (see 1869), little had been done to determine their molecular structure. Then the German biochemist Albrecht Kossel (1853–1927) took up the matter. He got rid of the proteins associated with the nucleic acids and worked on the material itself. By 1885 he had obtained substances from it that included the double-ring purines Emil Fischer had studied a few years earlier (see 1884). He also obtained pyrimidines, whose molecules were made up of a single ring of atoms, four carbons and two nitrogens. He isolated two different pyrimidine bases, thymine and cytosine."
+},
+{
+"id": "praseodymium-and-neodymium",
+"year": 1885,
+"title": "Praseodymium and neodymium",
+"field": "Science: Chemistry",
+"desc": "Didymium was found to be a mixture of two rare earth elements, which were separated and named praseodymium and neodymium. This discovery allowed for further scientific understanding and advancements in the study of rare earth elements.",
+"long": "Didymium was a rare earth element that had been discovered by Mosander some forty years before. Its name is derived from the Greek word for \\\"twin\\\" because it was so like other rare earth elements. However, the name turned out to be more apt than was thought, for the element was actually twins, a mixture of two very similar elements. In 1885, after much careful work, an Austrian chemist, Carl Auer, Freiherr von Welsbach, managed to separate the two elements. One he named praseodymium (\\\"green twin,\\\" because of the color of a prominent line in its spectrum) and the other he named neodymium (new twin)."
+},
+{
+"id": "fingerprints",
+"year": 1885,
+"title": "Fingerprints",
+"field": "Science: Biology",
+"desc": "The uniqueness of fingerprints was highlighted, establishing that no two people, except identical twins, have the same fingerprints. This laid the foundation for using fingerprints in personal identification, adding a new dimension to forensic medicine.",
+"long": "In 1885 Galton pointed out the individuality of fingerprints. No two people (barring identical twins) had identical fingerprints, and Galton"
+},
+{
+"id": "germanium",
+"year": 1886,
+"title": "Germanium",
+"field": "Science: Chemistry",
+"desc": "Germanium is an element discovered by analyzing a silver ore, which filled the gap predicted by Mendeleyev as eka-silicon. Its properties matched those predicted, validating Mendeleyev's periodic table.",
+"long": "A German chemist, Clemens Alexander Winkler (1838–1904), analyzed a silver ore and, when he had completed his work, found that the elements he had located added up to only 93 percent of the whole. Puzzled, he searched out the remaining 7 percent and, in 1886, found a hitherto unrecognized element, which he named germanium, after Germany. It turned out to be eka-silicon and filled the one remaining gap for which Mendeleyev had predicted a new element (see 1869). What's more, the properties matched. "
+},
+{
+"id": "fluorine",
+"year": 1886,
+"title": "Fluorine",
+"field": "Science: Chemistry",
+"desc": "Chemists had long theorized the existence of an element named fluorine, but it was more reactive than oxygen thus very hard to isolate. Using platinum equipment, fluorine was successfully isolated, leading to significant advancements in chemistry.",
+"long": "For three-quarters of a century, chemists had known that a certain element must exist. They had even given it a name—fluorine. However, it was a particularly active element, the most active one known, more active than oxygen and chlorine, and nothing seemed capable of forcing it out of combination with other elements. A number of chemists tried to isolate it and found the matter not only difficult but dangerous, for the materials they had to work with were poisonous. Finally, a French chemist, Henri Moissan (1852-1907), tried. He used platinum for all his equipment, because it was one of the very few substances that fluorine would not attack and combine with instantly. If he isolated some fl"
+},
+{
+"id": "dysprosium",
+"year": 1886,
+"title": "Dysprosium",
+"field": "Science: Chemistry",
+"desc": "While working with rare earth ores, a new element called dysprosium (Greek \\\"hard to get at\\\") was discovered. This advanced the understanding and classification of rare earth elements.",
+"long": "Lecoq de Boisbaudran, who had already isolated gallium (see 1874) and samarium (see 1879), was working on a rare earth ore containing holmium when he discovered that it contained a small amount of still another rare earth element, which he named dysprosium, from a Greek word meaning 'hard to get at.'"
+},
+{
+"id": "canal-rays",
+"year": 1886,
+"title": "Canal rays",
+"field": "Science: Physics",
+"desc": "Canal rays were discovered using a perforated cathode, revealing radiation that streamed in the opposite direction. This finding contributed to the understanding of particle physics and radiation.",
+"long": "Goldstein, who had given cathode rays their name (see 1876), continued to work with them. In 1886 he used a perforated cathode, one with small holes, or channels, penetrating it. When he did this, he found that not only did cathode rays emerge as usual, but radiation passed through the channels and streamed in the opposite direction. He called the radiation Kanalstrahlen, which is German for 'channel rays,' but they were usually called canal rays, by the same mistranslation that had given rise to the notion of Martian canals (see 1877)."
+},
+{
+"id": "raoults-law",
+"year": 1886,
+"title": "Raoult's law",
+"field": "Science: Chemistry",
+"desc": "Raoult's Law demonstrates that the partial pressure of solvent vapors is proportional to the number of solvent molecules to solute molecules in a solution. This law aids in calculating molecular weights and understanding the effects on boiling and freezing points.",
+"long": "The French physical chemist François-Marie Raoult (1830–1901) showed in 1886 that the partial pressure of solvent vapors in equilibrium with a solution is directly proportional to the ratio of the number of solvent molecules to solute molecules. This is called Raoult's law. To the nonchemist, the law may seem unclear, but it provided chemists with a new way of calculating the molecular weight of dissolved substances. It also showed that the freezing point was depressed, and the boiling point elevated, in proportion to the number of particles present in a given volume of solution. Arrhenius had assumed this when he had worked out his theory of ionic dissociation two years earlier (see 1884)."
+},
+{
+"id": "michelson-morley-experiment",
+"year": 1887,
+"title": "Michelson-Morley experiment",
+"field": "Science: Physics",
+"desc": "An experiment aimed to detect the Earth's motion through the ether yielded no results, challenging existing scientific theories. This 'failure' became a pivotal point in the development of modern physics.",
+"long": "Michelson, who had hoped to determine the Earth’s speed of motion through the stationary ether (see 1881), continued to improve the delicacy of his procedure and of his instruments, and to repeat the experiment. Finally, in 1887, with the help of a colleague, the American chemist Edward Williams Morley (1838-1923), Michelson ran a definitive experiment and, once again, found no interference fringes. There had to be an explanation. Either the Earth was motionless with respect to the ether, or the Earth dragged the ether with it, or something. All possible explanations seemed highly unlikely, and for nearly a quarter of a century, the world of science was completely puzzled. It took a scientif"
+},
+{
+"id": "mach-number",
+"year": 1887,
+"title": "Mach number",
+"field": "Science: Physics",
+"desc": "As technology advanced so did the sped with which humans could move. Mach studied the relationship between speed of an object and the speed of sound through air, identifying critical changes in air resistance. It led to important advancements in aerodynamics and high-speed travel.",
+"long": "With advancing technology, human beings were traveling faster than they had in the past, and they were likely to travel faster still in the future. The faster human beings traveled, the more important air resistance would be. The Austrian physicist Ernst Mach (1838–1916) studied the conditions that occurred when a solid object and air were in rapid motion relative to each other. The natural rate at which air molecules can move is the speed of sound through air. When an object moves through air at higher speeds, the air molecules can no longer move aside naturally but must be shoved aside (so to speak) faster than they want to go. This produces new conditions, which Mach studied."
+},
+{
+"id": "le-chateliers-principle",
+"year": 1888,
+"title": "Le Châtelier's principle",
+"field": "Science: Chemistry",
+"desc": "Le Châtelier's principle describes how systems in equilibrium respond to changes in environmental conditions such as pressure and temperature. It explains that systems will adjust in a way that counteracts or minimizes the imposed change.",
+"long": "The French chemist Henri-Louis Le Châtelier (1850–1936) stated a rule in 1888 that became known as Le Châtelier’s principle. The rule is this: Every change in one of the factors of an equilibrium brings about a rearrangement of the system in such a direction as to minimize the original change. If a system in equilibrium is placed under increased pressure, for instance, the system rearranges itself to take up less room, so as to minimize the increased pressure. Again, if the temperature is raised, the system undergoes a change that absorbs some of the additional heat, so as to minimize the rise in temperature."
+},
+{
+"id": "chromosome",
+"year": 1888,
+"title": "Chromosome",
+"field": "Science: Biology",
+"desc": "Chromosomes are the stubby threads of chromatin that appear during cell division. The term became widely known in the scientific community and to the general public.",
+"long": "In 1888 the German anatomist Heinrich Wilhelm Gottfried von Waldeyer-Hartz (1836-1921) suggested that the stubby threads of chromatin that appeared during cell division be called chromosomes. This has become one of those scientific terms that is well known to the public at large."
+},
+{
+"id": "greenland-ice-cap",
+"year": 1888,
+"title": "Greenland ice cap",
+"field": "Geography",
+"desc": "Fridtjof Nansen successfully crossed Greenland, demonstrating it was covered by a significant ice cap. That one ice cap is now known to contain ~8% of all the ice in the world.",
+"long": "In 1888 the Norwegian explorer Fridtjof Nansen (1861-1930) landed on the eastern shore of Greenland with five others. All six managed to cross to the inhabited western shore in a six-week trek. It was the first time Greenland had ever been crossed. The crossing seemed to indicate that the entire interior of Greenland was buried under a huge ice cap, a last remnant of the Ice Age. That one ice cap is now known to contain about 8 percent of all the ice in the world."
+},
+{
+"id": "neuron-theory",
+"year": 1889,
+"title": "Neuron theory",
+"field": "Science: Biology",
+"desc": "Neuron theory posits that the nervous system is built out of separate cells called neurons, which remain distinct from each other nearly touching one another. Golgi and Ramón y Cajal used staining techniques that worked out the cellular structure of the brain and spinal cord in detail, firmly establishing this theory.",
+"long": "Of all the cells, the nerve cells seem most complex, and of all the organs and systems of organs, the brain and nervous system seem most complex. Moreover, of all the parts of a human body, the brain and nervous system are, or should be, the most interesting, since it is they that make us human. Waldeyer-Hartz (see 1888) was the first to maintain that the nervous system was built out of separate cells and their delicate extensions. The delicate extensions, he pointed out, approached each other closely but did not actually meet, much less join, so that the nerve cells remained separate. He called the nerve cells neurons, and his thesis that the nervous system is composed of separate neurons i"
+},
+{
+"id": "tetanus",
+"year": 1889,
+"title": "Tetanus",
+"field": "Science: Biology",
+"desc": "The modernization efforts in Japan allowed scholars to adapt and excel in Western scientific practices, exemplified by advancements in understanding diseases like tetanus. Japanese researchers bridged cultural gaps in scientific knowledge.",
+"long": "The modernization of Japan included an orientation of Japanese scholars toward western science, for which they showed a ready aptitude. (This is true of scholars in all nations. There is no such thing as “western” science in the sense that it can only come out of western minds.) Thus, a Japanese bacteriologist, Shibasaburo Kita-"
+},
+{
+"id": "axiomatics",
+"year": 1889,
+"title": "Axiomatics",
+"field": "Math",
+"desc": "Inspired by redefinitions of Euclidian geometry, Peano used symbolic logic to define natural numbers, beginning with formally defined concepts of zero, number, and successor, and developing it up to algebra.",
+"long": "The work of Lobachevsky and others in non-Euclidean geometry (see 1826) had highlighted the importance of choosing different systems of axioms to develop different types of geometry. The work of Boole on symbolic logic (see 1847) seemed to offer a tool for testing the necessary axioms of mathematics generally. In 1889 an Italian mathematician, Giuseppe Peano (1858–1932), published A Logical Exposition of the Principles of Geometry."
+},
+{
+"id": "energy-of-activation",
+"year": 1889,
+"title": "Energy of activation",
+"field": "Science: Chemistry",
+"desc": "The energy of activation concept explained why certain reactions require an initial energy input to start. This understanding led to insights into chemical reactions and chain reactions.",
+"long": "It was the experience of early humans that fires were hard to start but that once started, they kept right on going with no further trouble as long as they were fed fuel. This is also true of many chemical reactions. Nevertheless, a reaction that ordinarily yields energy when it proceeds will not take place spontaneously until energy is added to it. The reaction has to be activated, by breaking molecules apart, perhaps, so that individual atoms or molecular fragments can react with each other more freely. The energy required is called the energy of activation. Once the reaction starts, it yields energy that can be used to activate neighboring parts of the initial substance. Thus, when you he"
+},
+{
+"id": "spectroscopic-binaries",
+"year": 1889,
+"title": "Spectroscopic binaries",
+"field": "Space",
+"desc": "Spectroscopic binaries are binary stars that are too close to be observed as separate stars through a telescope. They were identified by their spectral lines shifting due to their motion relative to Earth.",
+"long": "Binary stars had been known since Herschel had discovered them nearly a century before (see 1781). However, they could be detected optically only if they were far enough apart to be seen as separate objects in a telescope. What if the pair were so far away or so close together (or both) that they could not be distinguished? In 1889 the American astronomer Edward Charles Pickering (1846–1919) noted that Mizar, the middle star in the handle of the Big Dipper, had dark lines that divided in two. They moved apart, then came together, joined, and moved apart again in the opposite direction. He suspected that what he was viewing was a binary star with components so close together they could not be"
+},
+{
+"id": "mercurys-rotation",
+"year": 1889,
+"title": "Mercury's rotation",
+"field": "Space",
+"desc": "The rotation of Mercury was studied using its surface markings, and Schiaparelli found some, which he always saw in the same position. He concluded that Mercury always presented the same side to the sun, which was consistent with the Sun's tidal influences to produce this effect.",
+"long": "Schiaparelli, who had been the first to see the markings on Mars that were interpreted as canals (see 1877), went on to study the markings on Mercury. Mercury was a smaller world than Mars and farther away. It was often lost in the Sun’s glare, and when it could be seen best, only a crescent"
+},
+{
+"id": "java-man",
+"year": 1890,
+"title": "Java man",
+"field": "Science: Paleontology",
+"desc": "Skeletal remains of an early human ancestor, Java Man, was found. These hominids were believed to be more primitive than Neanderthals and are now called Homo Erectus. This discovery added significant knowledge about human evolution.",
+"long": "The skeletal remains of Neanderthal man had been uncovered thirty-four years earlier (see 1856), but although the Neanderthals possessed some primitive features, they had brains as large as our own. A truly primitive human ancestor had not yet been discovered.By this time, though, the anthropoid apes were well known, and a Dutch paleontologist, Marie Eugène François Thomas Dubois (1858–1941), believed that primitive human beings would be found where the anthropoid apes now were: in sections of Africa and southeast Asia. He could not easily reach Africa, but the Indonesian islands were Dutch territory, and Dubois, who was serving in the army, managed"
+},
+{
+"id": "gravitational-and-inertial-mass",
+"year": 1890,
+"title": "Gravitational and inertial mass",
+"field": "Science: Physics",
+"desc": "Gravitational mass relates to the intensity of an object’s gravitational field required for a given distance, whereas inertial mass is defined by the resistance to change in velocity. Through careful measurements, these two kinds of mass were found to be identical. This led to a new way of looking at gravity.",
+"long": "Newton had defined mass in terms of the amount of acceleration produced in a body through the application of a force of a given magnitude. This is called the inertial mass, because the greater the mass of a body, the less acceleration a given force produces and the greater the inertia (the resistance to a change in velocity). Newton also found that the intensity of an object’s gravitational field at a given distance depended upon its mass. That is the gravitational mass. These two kinds of mass were determined by two entirely different kinds of observations and would seem to have no necessary connection, yet the mass determined by inertial effects always seemed to be the same as the mass det"
+},
+{
+"id": "asteroid-photography",
+"year": 1891,
+"title": "Asteroid photography",
+"field": "Space",
+"desc": "Asteroid photography involves using a telescope to capture images of asteroids as the earth turns. This method allowed for more precise calculation of asteroid orbits and helped Halsted discover the 323rd known asteroid and then 500 more in his life.",
+"long": "It had been almost a century now since the first asteroid was discovered by Piazzi (see 1802), and others had been discovered in astonishing numbers. By 1891, 322 asteroids had been discovered and their orbits calculated. Each one, however, had been discovered by eye; an object would be seen that looked like a rather dim star but would be shifting position against the starry background. If it moved at a certain rate, it was almost certainly an asteroid. In 1891 it occurred to a German astronomer, Maximilian Franz Joseph Cornelius Wolf (1863-1932), to make the discoveries by photography. If a telescope is set to turning in time with the movement of the vault of the sky (a movement that arises"
+},
+{
+"id": "fundamental-unit-of-electricity",
+"year": 1891,
+"title": "Fundamental unit of electricity",
+"field": "Science: Physics",
+"desc": "The theory proposed that electricity exists in fundamental particles called electrons, which carry electric charges. This theory had yet to be proven.",
+"long": "Arrhenius's theory of ionic dissociation (see 1884) made it look as though atoms or groups of atoms could carry electric charges. What's more, it looked as though atoms or atom groups would carry charges of different sizes that were related to each other in ratios of exact whole numbers. An Irish physicist, George Johnstone Stoney (1826-1911), suggested that electricity existed in fundamental particles, as matter did, and that all these particles carried the same electric charge. A particular atom or atom group would then carry one of these particles, or two or three, and that was why the ratios would be in whole numbers. He suggested in 1891 that the fundamental particle be called an 'elect"
+},
+{
+"id": "amalthea",
+"year": 1892,
+"title": "Amalthea",
+"field": "Space",
+"desc": "A small satellite of Jupiter, named Amalthea, was discovered to be small close to the planet, analogous to the discoveries of Mars small moons. It was the last Jovian satellite identified without the use of photography.",
+"long": "Galileo had discovered the four large satellites of Jupiter (see 1610). In the interval since, no other Jovian satellite had been discovered, even though Saturn, a smaller and more distant planet, was known to have eight satellites by this time. The American astronomer Edward Emerson Barnard (1857–1923) reasoned, as Hall had in connection with Mars (see 1877), that a fifth satellite, if it existed, would have to be small and close to Jupiter. He searched the neighborhood of Jupiter and in 1892 spotted a satellite only 112,500 miles from Jupiter’s center and only 68,000 miles above Jupiter’s cloud surface. We now know it to be only 125 miles in diameter. It was variously called Barnard’s sate"
+},
+{
+"id": "light-pressure",
+"year": 1892,
+"title": "Light pressure",
+"field": "Science: Physics",
+"desc": "The pressure exerted by light, predicted by Maxwell’s equations, was measured using light mirrors in a vacuum. This discovery provided experimental evidence for the pressure of light.",
+"long": "From Maxwell’s equations (see 1865) one could deduce that light ought to exert a pressure, albeit a very feeble one. The Russian physicist Pyotr Nikolayevich Lebedev (1866–1912) checked the point by making use of very light mirrors in a vacuum. In 1892 he was able to observe and measure the pressure exerted by light."
+},
+{
+"id": "fitzgerald-contraction",
+"year": 1892,
+"title": "Fitzgerald contraction",
+"field": "Science: Physics",
+"desc": "An explanation for the negative results of the Michelson-Morley experiment was proposed, suggesting that distances contract with speed. This theory influenced the understanding of the behavior of light and motion but seemed unsatisfying.",
+"long": "For five years the negative results of the Michelson-Morley experiment had puzzled physicists. The Irish physicist George Francis FitzGerald (1851–1901) offered an explanation in 1892. He suggested that distances contracted with speed. If a light source sped along toward point A at a certain velocity, then the light it emitted in the direction of that velocity had to cover a slightly smaller distance to reach point A than light emitted in other directions. The faster the source moved, the shorter the distance light would have to travel to reach a point that would seem to be a fixed distance away to a motionless observer. That change in distance would keep the light moving in different direct"
+},
+{
+"id": "psychoanalysis",
+"year": 1893,
+"title": "Psychoanalysis",
+"field": "Science: Psychology",
+"desc": "Psychoanalysis involved using free association, allowing patients to talk randomly with minimal guidance, which helped reveal repressed matters. This method showed advantages over hypnotism in treating mental diseases.",
+"long": "Breuer had started to use hypnotism in the treatment of mental diseases such as hysteria (see 1880). The method had later been taken up by Freud (see 1884), but he eventually abandoned hypnotism for free association, allowing the patient to talk randomly and at will with a minimum of guidance. In this fashion, the patient was gradually put off guard, and matters came to be revealed that in ordinary circumstances would have been kept secret from the patient's conscious mind. The advantage of this method over hypnotism"
+},
+{
+"id": "cattle-fever",
+"year": 1893,
+"title": "Cattle fever",
+"field": "Science: Biology",
+"desc": "Texas cattle fever was identified as being caused by a protozoan parasite (just like malaria) and spread by blood-sucking ticks. This discovery provided the first clear evidence that arthropods could transmit diseases.",
+"long": "In 1893 the American pathologist Theobald Smith (1859-1934) reported that Texas cattle fever was caused by a protozoan parasite, as had been found to be true of malaria thirteen years before. Smith went on to show that the parasite was spread from infected animals to healthy ones by blood-sucking ticks. This was the first definite indication that disease could be spread by an arthropod. Ticks were among the arachnids (the spider family), but it would soon be shown that blood-sucking insects could also be responsible for the spread of disease."
+},
+{
+"id": "wavelengths-and-temperature",
+"year": 1893,
+"title": "Wavelengths and temperature",
+"field": "Science: Physics",
+"desc": "Wilhelm Wien demonstrated that the peak wavelength of radiation emitted by an object varies inversely with its absolute temperature. This relationship helps explain the color changes in heated objects and contributes to our understanding of thermal radiation.",
+"long": "At any temperature above absolute zero, objects give off electromagnetic radiation. In general, very long wavelengths are rare, as are very short wavelengths. Somewhere in between there is a peak wavelength, which is radiated to a greater extent than any other. The German physicist Wilhelm Wien (1864-1928) demonstrated this by actually measuring the wavelengths. In 1893 he was able to show that the peak wavelength varies inversely with absolute temperature. As the temperature rises, not only does the total amount of radiation increase, in line with Stefan's finding (see 1879), but the peak wavelength decreases.  Thus, warm bodies radiate chiefly in the infrared, of which we are unaware excep"
+},
+{
+"id": "alternating-current-theory",
+"year": 1893,
+"title": "Alternating current theory",
+"field": "Science: Engineering",
+"desc": "Developed the mathematical details essential for designing efficient alternating current equipment. His work facilitated the widespread adoption of alternating current over direct current in electrical systems.",
+"long": "Tesla had made alternating current useful (see 1883). By 1893 a German-born American electrical engineer, Charles Proteus Steinmetz (1865-1923), had worked out the intricacies of alternating current circuitry in complete mathematical detail, making use of complex numbers. This made it possible to design alternating current equipment with increased efficiency. Steinmetz's mathematics spread among the electrical engineering profession and completed the victory of alternating current over direct current. (The house current we draw on whenever we plug an electrical device into a wall socket is invariably alternating current.)"
+},
+{
+"id": "arctic-ocean",
+"year": 1894,
+"title": "Arctic ocean",
+"field": "Geography",
+"desc": "A strong ship named Fram was designed to withstand Arctic sea ice and carry explorers close to the North Pole. The expedition got closer to the Pole than anyone before.",
+"long": "Nansen, who had crossed Greenland (see 1888), now made ready to explore the Arctic Ocean. He designed a strong ship that would be lifted, rather than crushed, when the ocean about it froze. He named the ship Fram (Forward) and set sail in 1893 with thirteen men aboard. His idea was to let himself be frozen in by the sea ice and carried along with it in its slow swirl about the Arctic Ocean, perhaps reaching the North Pole itself. He remained on the ship for a year and a half, and although he never reached the North Pole, he got closer to it (86.23 degrees North) than anyone before him ever had."
+},
+{
+"id": "argon",
+"year": 1894,
+"title": "Argon",
+"field": "Science: Chemistry",
+"desc": "The atomic weight of nitrogen was found to vary based on its source. To resolve this inconsistency Ramsay used the same technique Cavendish used to discovering hydrogen. The result was a verifiably new gas, proven through spectrometry. He called this new element argon (\\\"inert\\\" in Greek).",
+"long": "Ever since Prout had suggested that all atoms were built up of hydrogen atoms (see 1815), chemists had been checking the atomic weights of various elements with greater and greater accuracy. The fact that so many atomic weights were not multiples of hydrogen's seemed to disprove Prout's hypothesis. Twelve years before, for instance, the British physicist John William Strutt, Lord Rayleigh (1842-1919), had shown that the atomic weight of oxygen, although usually considered to be 16 times the atomic weight of hydrogen, is actually 15.882 times the atomic weight of hydrogen. Rayleigh went on to measure the atomic weight of nitrogen and then encountered a puzzle. Whereas oxygen always had the sa"
+},
+{
+"id": "cathode-ray-particles",
+"year": 1895,
+"title": "Cathode ray particles",
+"field": "Science: Physics",
+"desc": "It was demonstrated that cathode rays are streams of negatively charged particles and not waves, leading to a better understanding of their nature. This discovery was crucial in confirming the particle nature of cathode rays.",
+"long": "In 1895, however, a French physicist, Jean-Baptist Perrin (1870-1942), showed that when cathode rays were made to impinge upon a cylinder, the cylinder gradually gained a large negative charge. That finally settled the matter. Cathode rays were streams of negatively-charged particles, and no one has doubted it since."
+},
+{
+"id": "velocity-and-mass",
+"year": 1895,
+"title": "Velocity and mass",
+"field": "Science: Physics",
+"desc": "Research indicated that mass increases with velocity, posing that at the speed of light, mass becomes infinite, implying the speed of light as an absolute maximum. This theory contributed significantly to the understanding of the relationship between velocity and mass.",
+"long": "The negative results of the Michelson-Morley experiment (see 1887) still attracted the attention of physicists. The Dutch physicist Hendrik Antoon Lorentz (1853-1928) came to the same conclusions that FitzGerald had come to concerning the shortening of distance with speed (see 1892) but went farther. It seemed to Lorentz that mass would have to increase with velocity and do so at a steadily increasing rate. At a speed of 160,000 miles per second, the mass of any object should have doubled, and at the speed of light (a little over 186,000 miles per second), it should become infinite. This idea made the speed of light appear to be an absolute maximum. As a result of Lorentz’s work,"
+},
+{
+"id": "helium-on-earth",
+"year": 1895,
+"title": "Helium on earth",
+"field": "Science: Chemistry",
+"desc": "Helium was identified on Earth after being previously detected only in solar observations. Ramsey extracted it out of a uranium mineral. Like argon, this element didn't quite fit into the existing periodic table.",
+"long": "Argon, discovered the year before by Rayleigh and Ramsay (see 1894), did not fit in with any existing family, but it seemed to be in the neighborhood of chlorine and potassium as far as its atomic weight was concerned. Since the periodic table was based largely on valence (see 1852), it made sense to put argon between chlorine and potassium. Chlorine and potassium each had a valence of 1, and since argon formed no combinations with other atoms at all, it had to have a valence of 0. The valence progression of 1, 0, 1 made sense, and argon would be the first member of a new family of elements of 0 valence. In that case, where were the others? Ramsay made it his business to look for them. In 18"
+},
+{
+"id": "curie-temperature",
+"year": 1895,
+"title": "Curie temperature",
+"field": "Science: Physics",
+"desc": "It was discovered that magnetism in ferromagnetic materials, such as iron, disappears at a specific temperature, known as the Curie temperature. This temperature varies for different metals, with iron losing its magnetism at 770°C.",
+"long": "People must have noticed that if a magnet was made red hot it would lose its magnetism. Curie (see 1880) showed that this was not a gradual effect. There was a specific temperature (now called the Curie temperature) at which the magnetism of iron disappeared. This happens to be 770° C. Other metals that have the same strong response to magnetism that iron does (and are therefore said to be ferromagnetic, from the Latin word for 'iron') also have Curie temperatures. For nickel it is 358° C, and for cobalt, 1131° C."
+},
+{
+"id": "dietary-deficiency-diseases",
+"year": 1896,
+"title": "Dietary deficiency diseases",
+"field": "Science: Medicine",
+"desc": "Eijkman discovered that beriberi was a dietary deficiency disease caused by the absence of a substance found in the hulls of unpolished rice. This discovery was significant as it corrected the previous assumption that beriberi was a germ disease.",
+"long": "People in the Dutch East Indies commonly suffered from beriberi, which produced weakness and death. Naturally it was assumed to be a germ disease, since Pasteur (see 1862) and others had been so successful at combating disease on that assumption. However, no one could find the germ that caused the disease. A Dutch physician, Christiaan Eijkman (1858-1930), who had gone to the East Indies to study the disease, was nonplussed. But then an ailment broke out in 1896 among the chickens being used at the laboratory for bacteriological researches. The chicken polyneuritis showed symptoms similar to beriberi, and Eijkman was busily studying the disease and checking on its contagiousness—when it sudd"
+},
+{
+"id": "light-and-magnetism",
+"year": 1896,
+"title": "Light and magnetism",
+"field": "Science: Physics",
+"desc": "Maxwell thought that light was electromagnetic radiation, but whatever charge doing the oscillating had yet to be found. Lorentz and his student Zeeman suggested there might be electric charges within the atom, and found them by placing a strong magnetic field near an atom, confirming their spectral lines had changed. ",
+"long": ""
+},
+{
+"id": "electron-as-subatomic-particle",
+"year": 1897,
+"title": "Electron as subatomic particle",
+"field": "Science: Physics",
+"desc": "Demonstrated that cathode rays are made of negatively charged particles which could be deflected by an electric field. This was the first discovery of a subatomic particle, smaller than an atom.",
+"long": "By now Perrin's work had convinced everyone that cathode rays consisted of negatively charged particles (see 1895). The last bit of evidence was supplied by the British physicist Joseph John Thomson (1856-1940), who showed that cathode rays could be deflected not only by a magnet but by an electric field. From the amount of the deflection, Thomson could work out the ratio of the electric charge of the cathode ray particle to its mass. This ratio turned out to be quite high, so that either the charge was high or the mass was low or both. Thomson supposed that the charge would be the unit charge worked out from Faraday's laws of electrolysis (see 1832). If so, the mass of the cathode ray parti"
+},
+{
+"id": "uranium-radiation-quantified",
+"year": 1897,
+"title": "Uranium radiation quantified",
+"field": "Science: Physics",
+"desc": "Used piezoelectricity to measure the intensity of radiation given off by uranium compounds. She found that the intensity was proportional to the amount of uranium, suggesting that radiation comes directly from the uranium atom, not the compound.",
+"long": ""
+},
+{
+"id": "alpha-rays-and-beta-rays",
+"year": 1897,
+"title": "Alpha rays and beta rays",
+"field": "Science: Physics",
+"desc": "Discovered two types of radiation emitted by uranium, which he named alpha rays and beta rays. Alpha rays are positively charged and more massive than beta rays, which are negatively charged.",
+"long": "The radiations given off by uranium were of more than one kind. Some were deflected only slightly in a direction that indicated them to be positively charged. Some were deflected much more sharply in the opposite direction and were therefore negatively charged. Both had to consist of streams of particles, and the particles of the former were clearly the more massive."
+},
+{
+"id": "nickel-as-catalyst",
+"year": 1897,
+"title": "Nickel as catalyst",
+"field": "Science: Chemistry",
+"desc": "Found that powdered nickel could act as a catalyst to convert ethylene to ethane, which helped in creating edible fats from inedible plant oils. Nickel was much cheaper than platnium which had previous been used for this purpose.",
+"long": "The metal nickel combines with carbon monoxide to form a compound that is liquid at ordinary temperatures and boils at 43°C. In 1897 the French chemist Paul Sabatier (1854–1941) wondered if other volatile nickel compounds could be formed by combining the metal with other gases. He chose ethylene for his attempt, since like carbon monoxide, it has a double bond. He failed, but found that some of the ethylene had, in the presence of nickel, changed to ethane. The double bond in ethylene had thus added two hydrogen atoms. That happens easily if a metal such as powdered platinum is used as a catalyst. Sabatier had now shown that powdered nickel, which was much cheaper, would do the same. Sabatie"
+},
+{
+"id": "mosquitoes-and-malaria",
+"year": 1897,
+"title": "Mosquitoes and malaria",
+"field": "Science: Medicine",
+"desc": "Ronald Ross discovered the malarial parasite in the anopheles mosquito, highlighting mosquitoes as disease vectors. This finding paved the way for malaria prevention by targeting mosquito breeding sites and using mosquito netting.",
+"long": "Smith’s discovery of the manner in which ticks served to communicate disease (see 1893) turned the minds of pathologists in the direction of sighting insects as possible disease-spreaders. The British physician Ronald Ross (1857–1932) devoted himself to collecting, feeding, and dissecting mosquitoes until in 1897 he discovered the malarial parasite that had been identified by Laveran (see 1880) in the anopheles mosquito. This meant that malaria might well be fought by wiping out the breeding places of these mosquitoes, by making use of mosquito netting, and so on. For this, Ross received the Nobel Prize in physiology and medicine in 1902."
+},
+{
+"id": "polonium-and-radium",
+"year": 1898,
+"title": "Polonium and radium",
+"field": "Science: Chemistry",
+"desc": "Polonium and radium were discovered, demonstrating intense radioactivity. Thorium too was recognized as radioactive.This led to the coining of the term 'radioactivity' and awards for the Curies.",
+"long": "Marie and Pierre Curie continued to work on the radiations produced by uranium and other heavy metals. In 1898 Marie Curie showed that thorium produced radiations and coined the term radioactivity. They discovered polonium and radium, which were intensely radioactive."
+},
+{
+"id": "neon-krypton-xenon",
+"year": 1898,
+"title": "Neon, krypton, and xenon",
+"field": "Science: Chemistry",
+"desc": "Krypton, neon, and xenon were discovered as new zero-valent noble gases. The discovery added to the understanding of the newly discovered noble (or inert) gas group which came to include argon and helium.",
+"long": "Polonium and radium were not the only elements discovered in 1898. William Ramsay discovered krypton, neon, and xenon with the help of Morris William Travers. These were part of the zero-valence and noble gases."
+},
+{
+"id": "liquid-hydrogen",
+"year": 1898,
+"title": "Liquid hydrogen",
+"field": "Science: Chemistry",
+"desc": "A new technique enabled the production of liquid hydrogen at very low temperatures. This was a significant advancement in gas liquefaction processes. However Helium remained a gas even at 20°K.",
+"long": "Carl von Linde developed a technique for cooling gases in stages, making it possible to produce commercial quantities of liquid air. James Dewar improved Linde's system and successfully liquefied hydrogen at only 20°K in 1898."
+},
+{
+"id": "phoebe",
+"year": 1898,
+"title": "Phoebe",
+"field": "Space",
+"desc": "A ninth satellite of Saturn, named Phoebe, was discovered. It orbits far from Saturn in a retrograde direction (clockwise rather than counterclockwise as seen above Saturn's north pole), suggesting it may be a captured asteroid.",
+"long": "In 1898 the American astronomer William Henry Pickering (1858-1938) discovered a ninth satellite of Saturn, which he named Phoebe, after still another of the siblings of Saturn (Cronos) in the Greek myths. It was far more distant from Saturn than the satellites discovered earlier, and it revolved around the planet in a retrograde direction (clockwise rather than counterclockwise, if viewed from high above Saturn's north pole), so that it is considered to be a captured asteroid."
+},
+{
+"id": "eros",
+"year": 1898,
+"title": "Eros",
+"field": "Space",
+"desc": "Asteroid 433, named Eros, was discovered and it approaches Earth more closely than Mars or Venus. Its discovery led to the practice of naming asteroids with orbits extending outside the asteroid belt with masculine names.",
+"long": "But then, on August 13, 1898, the German astronomer Gustav Witt discovered asteroid number 433. When its orbit was plotted, it proved to be a real stunner. At aphelion (when it is most distant from the Sun), it is well within the asteroid belt. At perihelion, however, it is only 105,000,000 miles from the Sun—well within the orbit of Mars. At its closest to the Earth, the two could be only a little over 14,000,000 miles apart. Since it approached Earth more closely than Mars or Venus did, Witt gave it the name of the child of Mars and Venus in the Greek myths—Eros. That began the habit of giving masculine names to asteroids whose orbits extend outside the asteroid belt."
+},
+{
+"id": "filtrable-virus",
+"year": 1898,
+"title": "Filtrable virus",
+"field": "Science: Biology",
+"desc": "Pasteur couldn't find the microorganism that caused rabies and suggested a smaller microorganism might be responsible. These viruses were identified: microorganisms smaller than bacteria capable of passing through filters that stop bacteria. This discovery laid the foundational principles for virology.",
+"long": "In 1898 the Dutch botanist Martinus Willem Beijerinck (1851-1931) did a similar experiment, but he had no hesitation in maintaining that there was a causative agent smaller than a bacterium, but capable of passing through a filter that could stop bacteria. He created the term 'virus' for such a filtrable causative agent. His term was quickly accepted, and he is generally considered the founder of virology as an independent branch of microbiology."
+},
+{
+"id": "mitochondria",
+"year": 1898,
+"title": "Mitochondria",
+"field": "Science: Biology",
+"desc": "Microscopes improved and it became clear that the cell had a complex structure. Mitochondria were identified as distinct structures within the cell's cytoplasm, initially named due to their thread-like appearance. This later revealed them to be crucial organelles with significant functions.",
+"long": "As microscopes improved, it was clear that the cell did not consist of a homogeneous fluid but had a complex structure, even outside the nucleus. In 1898 the German histologist Carl Benda (1857–1933) made out tiny bodies in the cytoplasm. He called them mitochondria, from Greek words meaning “threads of cartilage,” which is what he thought they were. They turned out to be far more than that."
+},
+{
+"id": "epinephrine",
+"year": 1898,
+"title": "Epinephrine",
+"field": "Science: Biology",
+"desc": "Epinephrine, also known as adrenaline, was studied and named after the discovery that deterioration of adrenal glands can cause Addison's disease. This became the first isolated hormone, despite the concept of hormones not being fully developed at the time.",
+"long": "An American pharmacologist, John Jacob Abel (1857–1938), was able to study this substance in 1898, and he named it epinephrine (from Greek words meaning “above the kidney”). Three years later, a Japanese chemist, Jokichi Takamine (1854–1922), working in the United States, isolated the substance in pure, crystalline form. He called it adrenaline. Both names are still used. Actually epinephrine/adrenaline was the first hormone to be isolated, but the hormone concept had not yet been elaborated."
+},
+{
+"id": "actinium",
+"year": 1899,
+"title": "Actinium",
+"field": "Science: Chemistry",
+"desc": "A new element, actinium, was isolated from uranium ores. It was named based on the Greek word for 'ray' and is equivalent to radium in Latin.",
+"long": "There was more in uranium ores than the polonium and radium that the Curies had detected (see 1898). In 1899 the French chemist André-Louis Debierne (1874–1949), a close friend of the Curies, isolated still another element from the ores. He called it actinium, from a Greek word for \\\"ray,\\\" so that the name was the Greek equivalent of the Latin radium."
+},
+{
+"id": "logic-and-geometry",
+"year": 1899,
+"title": "Logic and geometry",
+"field": "Math",
+"desc": "Foundations of Geometry' proposed a set of axioms for geometry, focusing on the properties of points, lines, and planes. The system proved to be self-consistent, which was crucial for its acceptance.",
+"long": "In 1899 the German mathematician David Hilbert (1862–1943) published Foundations of Geometry, in which he proposed a set of axioms for geometry that was the most satisfactory yet. He began with points, lines, and planes as undefined concepts. It was not necessary to define them, merely to describe certain properties they possessed. He also used certain relationships, such as between, parallel, and continuous, without defining them. Again, provided the consequences of using those words were clearly set forth, it didn’t matter what they actually meant. Hilbert proved his system of axioms to be self-consistent, and that was crucial."
+},
+{
+"id": "solid-hydrogen",
+"year": 1899,
+"title": "Solid hydrogen",
+"field": "Science: Physics",
+"desc": "Solid hydrogen was produced, achieving the lowest temperature ever obtained at 14° K. At this temperature, helium still remained gaseous.",
+"long": "Dewar, who had liquefied hydrogen the year before, took another step toward absolute zero by producing solid hydrogen in 1899. This brought the lowest temperature ever obtained down to 14° K. At this temperature, all known substances but one were solid. The only exception was helium, which even at this temperature remained gaseous."
+},
+{
+"id": "quanta",
+"year": 1900,
+"title": "Quanta",
+"field": "Science: Physics",
+"desc": "Planck developed an equation for black body radiation by hypothesizing that energy is emitted in discrete pieces called quanta. This discovery introduced the concept of energy quantization, laying the foundation for quantum mechanics.",
+"long": "Kirchnoff had pointed out that a black body (one that absorbed all electromagnetic radiation that fell on it) would radiate at all wavelengths if heated (see 1860). Thus, a hollow body with a small hole in it would absorb all the radiation that entered through the hole, for virtually none of it would be reflected and find its way out again. If such a body was heated, radiation would therefore emerge from the hole at all wavelengths, with very little at the extremes and with a peak at some intermediate value. The higher the temperature, the shorter the wavelength of the peak value. A number of physicists tried to work out mathematical equations for the distribution of wavelengths in such blac"
+},
+{
+"id": "beta-particles",
+"year": 1900,
+"title": "Beta particles electrons",
+"field": "Science: Physics",
+"desc": "Becquerel determined that beta particles were actually electrons through his studies of uranium radiation. This finding linked electrons not just to electric currents but also to atomic structure, particularly in radioactive atoms.",
+"long": "Becquerel, who had discovered uranium radiations (see 1896) continued to study them. The beta rays were clearly composed of negatively charged beta particles, and from the way these curved in a magnetic field of a particular strength, they seemed to resemble electrons. In 1900, after a close study of the properties of beta particles, Becquerel decided that they were electrons. Until then, electrons had seemed to be associated only with electric currents, as in the case of cathode rays. Now it seemed they were associated with atoms as well—at least with radioactive atoms."
+},
+{
+"id": "gamma-rays",
+"year": 1900,
+"title": "Gamma rays",
+"field": "Science: Physics",
+"desc": "Paul Ulrich Villard discovered gamma rays while studying uranium radiation. These rays were even more pentrating than x-rays and characterized by their short wavelength, distinguishing them from alpha and beta rays.",
+"long": "In 1900 the French physicist Paul Ulrich Villard (1860–1934), studying the radiations from uranium that Becquerel had discovered, noted that in addition to alpha rays and beta rays, there was some radiation that was totally unaffected by magnets. This, it was decided, consisted of electromagnetic radiation. Its properties were very much like those of X rays, but it was even more penetrating and therefore even shorter in wavelength. It came to be called gamma rays, after the third letter of the Greek alphabet."
+},
+{
+"id": "radon",
+"year": 1900,
+"title": "Radon",
+"field": "Science: Chemistry",
+"desc": "Friedrich Ernst Dorn discovered that radium emits a radioactive gas, later identified as the noble gas radon. This addition expanded the understanding of radioactive elements and noble gases.",
+"long": "A German physicist, Friedrich Ernst Dorn (1848–1916), studying the radium that Curie had discovered (see 1898), found in 1900 that it gave off not only radiations but a gas that was itself radioactive. The gas was called radium emanation at first, but on closer study it turned out to be a noble gas (see 1898), the sixth one, and was named radon."
+},
+{
+"id": "atomic-change",
+"year": 1900,
+"title": "Atomic change",
+"field": "Science: Chemistry",
+"desc": "Crookes discovered a method for treating uranium compounds in a way to make them much less radioactive. Uranium might not be radioactive after all. Becquerel suggested that this was due to a spontaneous change of one atom into another, the first suggestion of its kind.",
+"long": "In 1900 Crookes (see 1861) found that it was possible to treat a solution of uranium compound in such a way that part of it would be removed as an insoluble material. The removed portion was an impurity, the uranium compound itself remaining in solution."
+},
+{
+"id": "electron-emission",
+"year": 1900,
+"title": "Electron emission",
+"field": "Science: Physics",
+"desc": "Heated metals were found to emit speeding electrons which carried electricity. This a phenomenon advanced electronic technology development.",
+"long": "Beginning in 1900, the British physicist Owen Willans Richardson (1879–1959) studied the phenomenon and realized that heated metals tended to emit speeding electrons, which carried the electricity. His observation made it possible to apply the Edison effect to the developing electronic technology. For his work, he received the Nobel Prize in physics in 1928."
+},
+{
+"id": "mutations",
+"year": 1900,
+"title": "Mutations",
+"field": "Science: Biology",
+"desc": "Research on the American evening primrose flower led to the discovery of visible changes in organisms, termed mutations. This concept advanced evolutionary theory by emphasizing broader changes in traits across generations.",
+"long": "The American evening primrose had been introduced into the Netherlands in the 1880s, and in 1886 a Dutch botanist, Hugo Marie De Vries (1848–1935), came across a colony of them growing in a clump in a meadow. He could see that some were very different from others, even though it seemed likely that all had grown from a common batch of seeds. He dug them up, took them to his garden, and bred them separately and together. By 1900 he had evolved the laws of genetics that Mendel had worked out (see 1865). Unknown to De Vries and to each other, two other botanists were making the same rediscovery. One was a German, Karl Erich Correns (1864–1933), and the other an Austrian, Erich Tschermak von Seys"
+},
+{
+"id": "blood-types",
+"year": 1900,
+"title": "Blood types",
+"field": "Science: Medicine",
+"desc": "Specific properties of human blood were demonstrated, classifying it into four types: O, A, B, and AB. Plasma of some types of blood introduced into some patients could clump red cells and block blood vessels, leading to death. This breakthrough significantly improved the safety and effectiveness of blood transfusions.",
+"long": "An Austrian physician, Karl Landsteiner (1868-1943), was able to demonstrate some specific properties of human blood. Plasma (the liquid portion of blood) from one donor might clump red cells from person A but not from person B. Serum from another donor might clump red cells from person B but not from person A. Still other samples of plasma might clump both - or neither. Clumped red cells could block blood vessels and lead to death. Therefore, it was necessary in performing a blood transfusion to know that the blood of the donor would not clump the red cells of the receiver. Landsteiner showed that human blood fell into four classes: O, A, B, and AB. It was always safest if both donor and re"
+},
+{
+"id": "yellow-fever",
+"year": 1900,
+"title": "Yellow fever",
+"field": "Science: Medicine",
+"desc": "Yellow fever was a severe problem in coastal cities, with many deaths following outbreaks. Research in 1900 showed that it is transmitted by mosquitoes, leading to control efforts by targeting mosquito populations.",
+"long": "Yellow fever was a terrifying scourge of coastal cities. New York and Philadelphia, for instance, were periodically hit, and many deaths followed. The Spanish-American War made the United States particularly disease-conscious, as far more American soldiers died from disease and from tainted meat than died from enemy bullets. The American military surgeon Walter Reed (1851-1902) was sent to Cuba in 1899 to see if he could do something about yellow fever. He had already showed, in 1897, that it was not caused by a bacterium, as had been earlier proposed. His studies in Cuba showed that the disease was not transmitted by bodily contact, by clothing, or by bedding. He suspected mosquito carriers"
+},
+{
+"id": "dreams",
+"year": 1900,
+"title": "Dreams",
+"field": "Science: Psychology",
+"desc": "Dreams were historically interpreted as supernatural or spiritual events. Freud's \\\"Interpretation of Dreams\\\" gave them a scientific meaning, suggesting they reveal truths about our unconscious mind.",
+"long": "Dreams had always mystified human beings. Dreaming that dead people were alive helped lead to a belief in the spirit world. Erotic dreams led to belief in incubi and succubi. Dreams seemed to be doorways into a different world, to be messages from the gods, to be revelations of events at a distance or in the future. All this was dismissed as superstition by rationalists, but Freud (see 1884) gave new meaning to dreams. In 1900 he published The Interpretation of Dreams. Dreams, he maintained, might represent truths about human beings that they were not willing to accept in their waking hours, so that psychoanalysis might be hastened and aided by: the study of dreams."
+},
+{
+"id": "tryptophan",
+"year": 1900,
+"title": "Tryptophan",
+"field": "Science: Biology",
+"desc": "By this point, thirteen different amino acids had been isolated. Tryptophan is an amino acid isolated from protein molecules broken down by the digestive enzyme trypsin. It plays a significant role in dietetics and food chemistry.",
+"long": "By now, some thirteen different amino acids had been isolated, each of which were among the building blocks of protein molecules. Still another was isolated in 1900 by the British biochemist Frederick Gowland Hopkins (1861-1947). He called it tryptophan, from Greek words meaning \\\"appearing through trypsin,\\\" because he had obtained it from protein molecules that had been broken down by the digestive enzyme trypsin."
+},
+{
+"id": "free-radicals",
+"year": 1900,
+"title": "Free radicals",
+"field": "Science: Chemistry",
+"desc": "Gomberg experimented with compounds with unusual structure. First he studied the compound consisting of a carbon atom to four different benzene rings, then he failed to create one with two carbons hooked to six benzene rings which would always break apart. Such groupings became known as radicals.",
+"long": "Organic chemists find it interesting to try to synthesize compounds of unusual structure. The Russian-born American chemist Moses Gomberg (1866-1947) tried to attach a carbon atom to four different benzene rings. There is scarcely room around a single carbon atom for four such bulky groupings, and a number of chemists had tried and failed. Gomberg, however, succeeded in forming small quantities of his compound, called tetraphenylmethane."
+},
+{
+"id": "knossos-excavation",
+"year": 1900,
+"title": "Knossos excavation",
+"field": "Geography: Archaeology",
+"desc": "Archaeological excavations revealed that a complex civilization existed in Crete nearly two thousand years before the Trojan War. This discovery provided evidence of an advanced society that dominated parts of the Greek mainland and Aegean islands.",
+"long": "During classical times, Crete had lain outside the current of history and was little regarded. Yet Homer, describing the Trojan War, gave Crete an important role, and in the Greek myths, Crete, under its king Minos, was described as dominating Greece in early times. A British archaeologist, Arthur John Evans (1851–1941), felt there might be some historical fact in that myth and, beginning in 1894, he engaged in archaeological excavations in Greece. By 1900 he had dug up the site of Knossos, the capital of Crete in Minos's legendary time. (Evans called it the Minoan civilization after the king.) He showed that a complex and advanced civilization had indeed existed for nearly two thousand year"
+},
+{
+"id": "radioactive-energy",
+"year": 1901,
+"title": "Radioactive energy",
+"field": "Science: Physics",
+"desc": "Measured the heat emission of radium as it emitted radiation, discovering it released consistent energy over many centuries. This finding indicated a previously unknown energy source within the atom, leading to the concept of atomic energy.",
+"long": "In 1901 Pierre Curie measured the heat given off by radium as it emitted radiation. He determined that each gram of radium gave off 140 calories per hour. This becomes much more surprising when one realizes that radium continues to emit energy at this rate hour after hour after hour for years and centuries. It falls off with time, but only slowly, and even after 1600 years, the rate of energy emission is still half of what it was at the start. The total energy emitted by radium (or by radioactive substances generally) was far beyond anything humanity had experience with in ordinary chemical changes, such as the burning of fuel or the shattering of explosives. Curie’s finding was the first in"
+},
+{
+"id": "europium",
+"year": 1901,
+"title": "Europium",
+"field": "Science: Chemistry",
+"desc": "Europium, a rare earth element, was discovered. It was named in honor of Europe.",
+"long": "The French chemist Eugène-Anatole Demarcay (1852–1903) detected a twelfth, which he named europium in honor of Europe."
+},
+{
+"id": "grignard-reagents",
+"year": 1901,
+"title": "Grignard reagents",
+"field": "Science: Chemistry",
+"desc": "Grignard reagents, useful for attaching carbon-containing groups to organic molecules, were discovered. They are crucial for building complicated compounds in organic chemistry.",
+"long": "The French chemist Victor Grignard (1871–1935) was searching for methods of attaching carbon-containing groups to organic molecules. He needed a catalyst. Zinc shavings and magnesium shavings did some good but not much. Frankland had reported on zinc combinations with organic compounds using diethyl ether as the solvent. Grignard tried it with magnesium instead, in 1901, and found he had the catalyst he needed. Magnesium-organic compounds dissolved in diethyl ether are called Grignard reagents and proved extraordinarily useful to organic chemists who were trying to build up relatively complicated compounds. For this work, Grignard shared with Sabatier the Nobel Prize in chemistry in 1912."
+},
+{
+"id": "chromosomes-and-inheritance",
+"year": 1902,
+"title": "Chromosomes and inheritance",
+"field": "Science: Genetics",
+"desc": "The role of chromosomes in inheritance was confirmed, linking them to Mendel's genetic factors. This discovery established chromosomes as carriers of genetic information, verifying Mendel's earlier theories.",
+"long": "Mendel, in working out the laws of genetics (see 1865), had suggested that for every characteristic there was a pair of factors. Mother and father each contributed one of that pair to the offspring, who in this way inherited characteristics from each parent. By the time Mendel's work had been rediscovered by De Vries and others (see 1900), the role of chromosomes in cell division of sex cells had been researched by Beneden (see 1883). In 1902, then, an American geneticist, Walter Stanborough Sutton (1877–1916), made a suggestion that in hindsight seems obvious. He pointed out that chromosomes were (or contained) the genetic factors Mendel spoke of. He proved to be correct."
+},
+{
+"id": "secretin",
+"year": 1902,
+"title": "Secretin",
+"field": "Science: Physiology",
+"desc": "Cutting all the nerves leading to the pancreas did not prevent it from working. This led to the discovery that the small intestine lining secreted \\\"secretin\\\", under the influence of scomath acid. Starling and Bayliss had discovered that it was possible for chemical messages as well as nerve messages to exist in the body. This finding laid the foundation for the study of hormones in the body.",
+"long": "The pancreas begins to secrete its digestive juice as soon as the acid food contents of the stomach enter the small intestine. How does the pancreas 'know' that food, requiring digestion, is making its appearance? The natural assumption is that entering food stimulates a nerve that in turn stimulates the pancreas. The Russian physiologist Ivan Petrovich Pavlov (1849–1936) suggested that this was so. Two British physiologists, Ernest Henry Starling (1866–1927) and his brother-in-law, William Maddock Bayliss (1860–1924), tested the matter. They cut all the nerves leading to the pancreas—yet it still performed on cue. They then discovered that the lining of the small intestine secreted a substa"
+},
+{
+"id": "animal-inheritance",
+"year": 1902,
+"title": "Animal inheritance",
+"field": "Science: Genetics",
+"desc": "The application of Mendel's genetic laws to animals demonstrated that the same principles governing plant genetics also apply to animal genetics. This discovery extended Mendel's theories beyond botany to zoology.",
+"long": "Mendel's work, once rediscovered, created an enormous stir. The British biologist William Bateson (1861–1926) was a strong supporter of Mendelian views and translated his papers into English. Mendel, together with the rediscoverers of the laws of genetics, had worked with plants, in which breeding was easier to control and inheritance easier to study than in animals. Bateson showed that the same laws of genetics that applied to plants applied also to animals."
+},
+{
+"id": "anaphylactic-shock",
+"year": 1902,
+"title": "Anaphylactic shock",
+"field": "Science: Immunology",
+"desc": "Anaphylaxis was discovered when animals injected with an immune serum to a specific foreign protein died upon re-exposure to the antigen. These reactions were named after the Greek for \\\"overprotection\\\", and weaker versions became known as allergies.",
+"long": "The French physiologist Charles Robert Richet (1850–1935) worked on immune sera, the sort of thing that Behring had used successfully. Seemingly paradoxically, under certain conditions, doses of what is normally beneficial can, on second exposure, resensitize creatures to such an extent that a tiny, harmless dose can be fatal. Richet termed this phenomenon 'anaphylaxis' (Greek for 'against the shield'), and further work eventually helped to develop the science of immunology."
+},
+{
+"id": "radioactive-series",
+"year": 1902,
+"title": "Radioactive series",
+"field": "Science: Chemistry",
+"desc": "It was discovered that uranium and thorium break down into a sequence of intermediate elements. This meant that one could speak of a radioactive series.",
+"long": "Crookes discovered that much of uranium’s radioactivity could be precipitated and that the radioactivity would spontaneously return thereafter. Rutherford and his assistant Frederick Soddy showed that by subjecting uranium and thorium to chemical manipulations, the elements break down into a series of intermediate elements, forming a radioactive series."
+},
+{
+"id": "photoelectric-effect-and-electrons",
+"year": 1902,
+"title": "Photoelectric effect and electrons",
+"field": "Science: Physics",
+"desc": "Lenard showed that light falling on certain metals causes electron emission and established the relationship between the light's wavelength and the emitted electrons' energy.  The photoelectric effect made it appear that electrons existed in matter even when electric currents were not involved.",
+"long": "Hertz had first noted the photoelectric effect - the greater ease with which electric sparks cross small gaps when ultraviolet light falls on those gaps. Lenard showed in 1902 that the electrical effects produced by light falling upon certain metals were due to electrons being emitted from the metal surface. He showed that only light of a certain wavelength or shorter could emit electrons from the metal, and the emitted electron's energy was directly related to the light's wavelength."
+},
+{
+"id": "stratosphere",
+"year": 1902,
+"title": "Stratosphere",
+"field": "Science: Meteorology",
+"desc": "The stratosphere is a layer of the atmosphere starting above the 7-mile mark where the temperature remains constantly cold and weather phenomena do not occur. This discovery was crucial for understanding atmospheric layers and their influence on weather.",
+"long": "Teisserenc de Bort suggested that the atmosphere be divided into two parts. The lower part, below the 7-mile mark, had temperature variations and therefore produced winds, clouds, and in short, the weather changes so familiar to us. This would be called the tropopause. Above it would be the constant-temperature stratosphere (\\\"sphere of layers,\\\" because Teisserenc de Bort felt that constant temperature meant the gases would lie in undisturbed layers)."
+},
+{
+"id": "symbolic-logic-and-mathematics",
+"year": 1902,
+"title": "Symbolic logic and mathematics",
+"field": "Math",
+"desc": "Frege attempted to provide an even more rigorous foundation for mathematics by minimizing assumptions and proving steps logically. Before its publication, however, Bertrand Russel found an apparent self-contradiction in Frege's system known as Russel's paradox. This failure would have important ramifications in mathematics.",
+"long": "The German mathematician Gottlob Frege (1848-1925) improved and extended Boole's system of symbolic logic (see 1847). In fact, he spent almost twenty years putting together a system of symbolic logic that would serve as the basis of all mathematics, reducing it to complete rigor by minimizing assumptions and proving each step."
+},
+{
+"id": "space-flight",
+"year": 1903,
+"title": "Space flight",
+"field": "Space",
+"desc": "Space flight began to receive scientific attention with theoretical work on rocketry, space suits, satellites, and space colonization. This foundational work laid the groundwork for future space exploration.",
+"long": "Oddly enough, in the same year that air flight became a reality, space flight began to receive true scientific attention. In 1903 a Russian physicist, Konstantin Eduardovich Tsiolkovsky (1857-1935), began a series of articles for an aviation magazine in which he went into the theory of rocketry quite thoroughly. He wrote of space suits, satellites, and the colonization of the solar system. He was the first to suggest the possibility of a space station."
+},
+{
+"id": "atomic-structure",
+"year": 1904,
+"title": "Atomic structure",
+"field": "Science: Physics",
+"desc": "The discovery and understanding of the electron's emission from various metals were facilitated by the photoelectric effect. Thus atoms themselves must have a structure involving electrons. Thomson suggested the atom was positively charged, with negatively charged electrons embedded like raising in a pound cake. This led to further thinking about the atomic structure.",
+"long": "With the discovery of the electron and its emission from many different metals by way of the photoelectric effect, there was no use in"
+},
+{
+"id": "coenzyme",
+"year": 1904,
+"title": "Coenzyme",
+"field": "Science: Biology",
+"desc": "While studying yeast, Harden discovered that some enzymes require a small molecule called a coenzyme to function as a catalyst. This can be any nonprotein structure that proves essential to the activities of an enzyme. Not all enzymes require coenzymes, but this dichotomy explained a lot of mysteries.",
+"long": "In 1904, the British biochemist Arthur Harden placed an extract of yeast in a bag made of a semipermeable membrane to dialyze the extract and remove small molecules. Harden discovered that the material left behind in the bag lost its enzymatic activity unless the material from outside the bag was added back, showing the necessity of a small molecule coenzyme."
+},
+{
+"id": "organic-tracers",
+"year": 1904,
+"title": "Organic tracers",
+"field": "Science: Biology",
+"desc": "The body is a \\\"black box\\\" in the sense that we know that food and air goes in, and waste products come out, but it is very difficult to understand the metabolism that happens in-between. Benzene rings were used as tracers to study intermediate metabolism in the body.",
+"long": "In 1904, Franz Knoop, a German biochemist, added benzene rings to the long carbon chains of the fatty acids, expecting that the benzene rings would show up in the urine. This was aimed to give insight into the body's intermediate metabolism processes."
+},
+{
+"id": "star-streams",
+"year": 1904,
+"title": "Star streams",
+"field": "Space",
+"desc": "Astronomers discovered that stars in the Milky Way Galaxy move in two huge streams in opposite directions: one containing 2/5ths of the stars, the other with the remainder. This finding suggested an order in the movement of stars that was previously thought to be random.",
+"long": "When Halley first noted that stars moved (see 1718), astronomers strove to determine the motions of as many stars as possible, and the usual conclusion was that they moved randomly. The Dutch astronomer Jacobus Cornelis Kapteyn (1851-1922) found out differently. Observing numerous stars, he was able to conclude by 1904 that there were two huge streams of stars moving in opposite directions; three-fifths of the stars were in one, and two-fifths in the other. The reason for this wasn’t clear, but at least it showed that there was order to the movement of the many millions of stars that made up the Milky Way Galaxy. The nature of that order became clear a quarter-century later."
+},
+{
+"id": "jupiters-outer-satellites",
+"year": 1904,
+"title": "Jupiter’s outer satellites",
+"field": "Space",
+"desc": "A small satellite circling Jupiter was discovered, less than 110 miles across, marking the sixth known satellite of Jupiter. Next year, a seventh even smaller one, only 50 miles across was found.",
+"long": "The large satellites had by now all been discovered, but there still remained small ones to find. In 1904 the American astronomer Charles Dillon Perrine (1867-1951) discovered a small satellite circling Jupiter. It was the sixth to be discovered and was no more than 110 miles across. The next year he discovered another, also of tiny diameter."
+},
+{
+"id": "mass-energy",
+"year": 1905,
+"title": "Mass-energy",
+"field": "Science: Physics",
+"desc": "The mass-energy equivalence principle shows that mass is a concentrated form of energy, represented by the equation e=mc^2. This extended the law of conservation of energy to include mass as another form of energy, and is sometimes known as the law of conservation of mass-energy.",
+"long": "Another consequence of Einstein's theory of special relativity is that mass must be viewed as a highly concentrated form of energy. Einstein's equation representing this is the famous e = mc^2. The speed of light is so huge that to square it and multiply it by even a small amount of mass is to represent a large amount of energy. Whenever any process gives off energy, it loses a little mass; when it absorbs energy, it gains a little mass. This led to the inclusion of mass as one more form of energy, making the law of conservation of energy more precise and extending it into what is sometimes known as the law of conservation of mass-energy."
+},
+{
+"id": "photoelectric-effect-and-quanta",
+"year": 1905,
+"title": "Photoelectric effect and quanta",
+"field": "Science: Physics",
+"desc": "Combining the photoelectric effect with quantum theory demonstrated that light quanta can eject electrons from metal surfaces only if they have sufficient energy based on their frequency. This discovery helped establish the particle nature of light.",
+"long": "In 1905 the photoelectric effect, as observed by Lenard, was combined with quantum theory by Einstein. He showed that if light consisted of quanta, with energies proportional to frequency, then the atoms in a metal surface could only absorb intact quanta. Long-wavelength quanta would not supply enough energy to eject an electron from the metal, no matter how intense the light might be. Short-wavelength quanta, however, provided sufficient energy."
+},
+{
+"id": "brownian-motion-atomic-size",
+"year": 1905,
+"title": "Brownian motion and atomic-size",
+"field": "Science: Physics",
+"desc": "Einstein's work on Brownian motion explained the random movement of particles in a fluid, providing valuable insight into molecular and atomic sizes. He formulated an equation for Brownian motion, which found numerous applications.",
+"long": "Einstein analyzed the bombardment of particles such as those in a fluid, explaining the random movement known as Brownian motion. He developed an equation to account for the size of molecules and the atoms making them up."
+},
+{
+"id": "color-and-stellar-luminosity",
+"year": 1905,
+"title": "Color and stellar luminosity",
+"field": "Space",
+"desc": "Hertzsprung devised an absolute measure of star brightness, measuring its luminosity from a standard distance of 10 parsecs (about 32 light years) away. An interesting finding was that there were no red stars of intermediate luminosity. This helped compare the real luminosities of different stars.",
+"long": "The Danish astronomer Ejnar Hertzsprung suggested that if a star's distance were known, one could calculate what magnitude it would have if it were some standard distance away. The distance chosen was 10 parsecs, or 32.6 light-years. The brightness of the star at that distance would then be its absolute magnitude."
+},
+{
+"id": "planetesimal-hypothesis",
+"year": 1905,
+"title": "Planetesimal hypothesis",
+"field": "Space",
+"desc": "The Planetesimal Hypothesis suggested the Solar System formed from material pulled from the Sun by a passing star, forming planetesimals that coalesced into planets. It accounted for the concentration of angular momentum in the planets. If true, there would be very few planets in the universe, since the close approach of two stars is so rare.",
+"long": "Laplace's nebular hypothesis of the origin of the Solar System had held sway for a century, even though astronomers had grown steadily more dubious about it. It turned out that most of the angular momentum in the Solar System was concentrated in the planets. Thomas Crowder Chamberlin and Forest Ray Moulton advanced the suggestion that the Solar System began when the Sun, already in existence, passed near another star. This hypothesis retained popularity for nearly half a century."
+},
+{
+"id": "metabolic-intermediate",
+"year": 1905,
+"title": "Metabolic intermediate",
+"field": "Science: Biochemistry",
+"desc": "Metabolic intermediates (or metabolites) are an intermediate or end product of metabolism. In this discovery, an enzyme's activity was sustained with the addition of inorganic phosphate. This showed the importance of phosphate groups in metabolism, and other metabolites were soon discovered.",
+"long": "Harden showed that when inorganic phosphate was added to the solution, the enzyme continued working. The sugar phosphate formed was a metabolic intermediate."
+},
+{
+"id": "linkage-of-characteristics",
+"year": 1905,
+"title": "Linkage of characteristics",
+"field": "Science: Genetics",
+"desc": "Mendel's research on heredity revealed that characteristics are inherited independently, and chromosomes were identified as the carriers of these factors. Bateson suggested that a chromosome was a collection of factors, a crucial idea for genetics. Bateson also coined the term genetics.",
+"long": "Mendel's studies on pea plants showed characteristics were inherited independently. However, Sutton pointed out that chromosomes were Mendel's factors."
+},
+{
+"id": "higher-pressure",
+"year": 1905,
+"title": "Higher pressure",
+"field": "Science: Physics",
+"desc": "Bridgman developed a better high-pressure apparatus by inventing a tighter seal, attaining pressures of 20,000 atmospheres.",
+"long": "Percy Williams Bridgman designed sealed vessels capable of withstanding high pressures to produce high temperatures."
+},
+{
+"id": "intelligence-quotient",
+"year": 1905,
+"title": "Intelligence quotient",
+"field": "Science: Psychology",
+"desc": "Tests designed to measure the ability of the human mind to think and reason were created, leading to the development of the concept of intelligence quotient (IQ). The IQ represents the ratio of mental age to chronological age, and Binet's work laid the foundation for various psychological assessments.",
+"long": "While abnormal psychological phenomena have long interested physicians and scientists, the normal manifestations of the mind were what interested the French psychologist Alfred Binet (1857-1911). He strove to devise tests that would measure the ability of the human mind to think and reason, independently of learning and education in one field or another. To do this, he asked children to name objects, follow commands, rearrange disordered things, copy designs, and so on. In 1905 he and his associates published the first batteries of tests designed to measure intelligence. Standards were set empirically. If a particular test was passed by some 70 percent or so of the nine-year-olds in the Pari"
+},
+{
+"id": "trojan-asteroids",
+"year": 1906,
+"title": "Trojan asteroids",
+"field": "Space",
+"desc": "An asteroid was found in Jupiter's orbit, which moved unusually slowly and held a stable gravitational position very far from Jupiter. This made it a 'Trojan' asteroid. This discovery confirmed the theoretical work predicting stable gravitational triangles in space.",
+"long": "By 1906, no fewer than 587 asteroids had been spotted (thanks to Wolf's photographic technique—see 1891) and had their orbits calculated. In 1906 Wolf discovered an asteroid that moved unusually slowly and must therefore be unusually distant. In fact it moved in Jupiter's orbit at the outer extreme of the asteroid belt, keeping step with Jupiter at a distance of 60 degrees. This meant that the Sun, Jupiter, and the new asteroid were located at the vertices of a vast equilateral triangle. Lagrange (see 1788) had shown back in 1772 that such an arrangement was gravitationally stable, but this was the first case of such a gravitational triangle that had been actually found in space. Wolf named "
+},
+{
+"id": "alpha-particles",
+"year": 1906,
+"title": "Alpha particles",
+"field": "Science: Physics",
+"desc": "Beta rays were identified as streams of speeding electrons and gamma rays as electromagnetic radiation with shorter wavelengths and higher frequencies than X-rays. By firing alpha particles at glass and observing the resultant gas, Rutherford confirmed that alpha particles were related to, but not identical to, helium atoms.",
+"long": "By now it was understood that beta rays were streams of speeding electrons (beta particles), while gamma rays were electromagnetic radiation of still shorter wavelength and higher frequency than X rays. The nature of the alpha particles that made up the alpha rays remained to be determined. In 1906 Rutherford (see 1897), working with a German assistant, Johannes Hans Wilhelm Geiger (1882–1945), managed to determine the ratio of the electric charge to the mass in the case of the alpha particles. This ratio turned out to be equal to that in a helium atom from which two electrons had been removed. Later Rutherford fired alpha particles at a double wall of glass with a vacuum between. The alpha "
+},
+{
+"id": "characteristic-x-rays",
+"year": 1906,
+"title": "Characteristic X rays",
+"field": "Science: Physics",
+"desc": "Barkla studied the manner in which X rays were scattered by gases and found that the higher the molecular weight of the gas, the greater the scattering of the X rays. He showed that X rays were transverse waves, and that the higher the atomic weight of the element, the more charged particles were emitted, and the more penetrating the characteristic X rays became.",
+"long": "X rays had been discovered eleven years earlier and were still of profound interest to physicists. The British physicist Charles Glover Barkla (1877–1944) studied the manner in which X rays were scattered by gases and found that the higher the molecular weight of the gas, the greater the scattering of the X rays. From this he deduced, in 1904, that the more massive the atoms and molecules, the more charged particles they contained, since it was the charged particles that did the scattering. This was the first indication of a connection between the number of charged particles in an atom and its position in the periodic table. He further showed, from the manner of scattering, that X rays were "
+},
+{
+"id": "third-law-of-thermodynamics",
+"year": 1906,
+"title": "Third law of thermodynamics",
+"field": "Science: Physics",
+"desc": "Proposed that absolute zero is a theoretical limit that cannot be reached, only approached, just like the speed of light. This principle is sometimes called the third law of thermodynamics.",
+"long": "By now, temperatures as low as 14 degrees above absolute zero had been reached with Dewar’s solid hydrogen (see 1898). It seemed that the race to reach absolute zero might be soon completed. In 1906, however, the German physical chemist Walther Hermann Nernst (1864-1941) advanced thermodynamic reasons for supposing that absolute zero could not be reached by any technique. He proposed that, like the speed of light in a vacuum, absolute zero was a limit that could be approached more and more closely but never actually reached. This is sometimes called the third law of thermodynamics, and for this Nernst was awarded the Nobel Prize in chemistry in 1920."
+},
+{
+"id": "magnesium-and-chlorophyll",
+"year": 1906,
+"title": "Magnesium and chlorophyll",
+"field": "Science: Biology",
+"desc": "The structure of chlorophyll includes a magnesium atom, analogous to the presence of an iron atom in hemoglobin. This discovery advanced the understanding of the chemical makeup of chlorophyll and its role in plant biology.",
+"long": "Ever since Pelletier discovered chlorophyll (see 1817), it had been understood that the substance was of the utmost importance. After all, it brought about the production of food and oxygen on which animal life, including human beings, subsisted. The chemical structure of chlorophyll was therefore of devouring interest to biochemists, but it was still poorly understood for all that. The German chemist Richard Willstätter (1872-1942), however, managed to supply a key item of information about chlorophyll structure in 1906. He showed that each chlorophyll molecule contained a magnesium atom, held in much the same way that an iron atom was held by hemoglobin. For this and for other work on plan"
+},
+{
+"id": "radioactivity-and-earth",
+"year": 1906,
+"title": "Radioactivity and earth",
+"field": "Science: Geology",
+"desc": "Dutton suggested that radioactivity in the Earth's crust generated heat, contributing to volcanic activity and significantly impacting the Earth's thermal history. He also devised methods to determine earthquake depth and wave velocity, helping to understand the Earth's deep interior.",
+"long": "In 1906 the American geologist Clarence Edward Dutton (1841–1912) suggested that pockets of radioactivity in the Earth's crust delivered enough heat over time to activate volcanic action. This was the beginning of the understanding that radioactivity added substantial heat to the Earth's crust, enough to balance that lost by radiation, so that any attempt to judge the Earth's age by calculating the time it took Earth to \\\"cool down\\\" from an initial high temperature was far off base. Earth could be billions of years old and still retain a heated interior. Dutton also developed methods for determining the depth of earthquake origins and the velocity with which earthquake waves traveled throug"
+},
+{
+"id": "radioactive-dating",
+"year": 1907,
+"title": "Radioactive dating",
+"field": "Science: Chemistry",
+"desc": "Boltwood concluded that lead was the final product in the radioactive decay series beginning with uranium and thorium. This understanding paved the way for the development of radioactive dating methods to determine the age of geological samples.",
+"long": "Once it was understood that radioactivity involved the change of uranium or thorium to some other radioactive atom, which then broke down into still another, and so on (see 1900, Atomic Change, and 1902, Radioactive Series), the question that naturally arose was, Where did it all end? The American chemist Bertram Borden Boltwood (1870–1927) was convinced that lead was the final product of the radioactive series that began with uranium and thorium. As early as 1905 he had noted that lead."
+},
+{
+"id": "lutetium",
+"year": 1907,
+"title": "Lutetium",
+"field": "Science: Chemistry",
+"desc": "The rate of discovery of elements had been falling off, but there was room for another rare earth, the fourteenth known.",
+"long": ""
+},
+{
+"id": "fruit-flies",
+"year": 1907,
+"title": "Fruit flies",
+"field": "Science: Genetics",
+"desc": "Fruit flies were used to study genetic inheritance, leading to the discovery of linked and independent inheritance. Fruit flies have only four chromosomes pairs in each cell, are simple to feed, and breed often. Using them in research greatly hastened the pace at which knowledge of genetic mechanisms increased.",
+"long": "In 1907, however, the American geneticist Thomas Hunt Morgan (1866–1945) began to use a tiny insect called Drosophila, or fruit fly. They have only four chromosome pairs in each cell, are simple to feed, and breed readily and copiously at brief intervals. In studying them, Morgan found that there were characteristics that were linked and inherited together, but that the linkage was not necessarily permanent. Every once in a while, two characteristics that had previously been inherited together were suddenly inherited independently. He was able to correlate this with the fact that chromosomes sometimes interchanged parts so that two characters ordinarily on the same chromosome came to be on d"
+},
+{
+"id": "conditioned-response",
+"year": 1907,
+"title": "Conditioned response",
+"field": "Science: Psychology",
+"desc": "Unconditioned responses happen automatically through hormones, for example salivation at the sight of food. Conditioned response involves creating a new behavioral pattern by associating an unrelated stimulus with a natural reaction. As an example of conditioned response, Pavlov trained dogs to salivate in response to the ringing of a bell.",
+"long": "Salivation at the sight of food is an unconditioned response. It is brought about by the construction of the nerve network with which the organism is born. In 1907 Pavlov (see 1902) began an attempt to see if he could impose a new pattern upon such inborn ones. Thus, a hungry dog that is shown food will salivate. If a bell is made to ring every time the dog is shown food, the dog will eventually salivate when the bell rings even when food is not shown. The dog has associated the sound of the bell with the sight of food and reacts to the first as though it were the second. This is a conditioned response. Studies of the conditioned response led to the thought that a good part of learning and o"
+},
+{
+"id": "space-time",
+"year": 1907,
+"title": "Space-time",
+"field": "Science: Physics",
+"desc": "Minkowski demonstrated that relativity requires time to be considered as a fourth dimension, combining space and time into space-time. Einstein later incorporated this concept into his theories to address gravitational interactions.",
+"long": "Einstein's theory of special relativity (see 1905) forced many physicists to reconsider their view of the Universe. It was clear from Einstein's work that an ordinary three-dimensional view of the Universe was insufficient. The Russian-born German mathematician Hermann Minkowski (1864-1909) published Time and Space in 1907. In it he demonstrated that relativity made it necessary to take time into account as a kind of fourth dimension (treated mathematically somewhat differently from the three spatial dimensions). Neither space nor time had existed separately, in Minkowski's view, so that the Universe consisted of a fused space-time. Einstein adopted this notion as he continued to work on his"
+},
+{
+"id": "genes",
+"year": 1907,
+"title": "Genes",
+"field": "Science: Biology",
+"desc": "Chromosomes were found to have chains of inheritance units, and Johannsen suggested to call these units genes. The suggestion was adopted.",
+"long": "Thanks to the work of Morgan and his fruit flies (see 1907), it was established that chromosomes contained chains of many units of inheritance. It would obviously be convenient to have some way of referring to those units in a concise way. In 1909 the Danish botanist Wilhelm Ludvig Johannsen (1857-1927) suggested that they be called genes. The suggestion was adopted."
+},
+{
+"id": "atomic-size",
+"year": 1908,
+"title": "Atomic size",
+"field": "Science: Physics",
+"desc": "Einstein's equation enabled the calculation of atomic and molecular sizes from Brownian motion. Perrin confirmed this by observing suspended particles through a microscope, relying on Einstein's equations to make his determinations. Atoms, it turned out, are about a hundred-millionth of a centimeter in diameter.",
+"long": "Einstein had devised an equation showing how one might calculate the size of atoms and molecules from Brownian motion (see 1905). In 1908 Perrin, who had shown that cathode rays consisted of particles carrying a negative electric charge (see 1895), set about making the calculation. Through a microscope, he counted the number of small particles of gum resin suspended at different heights in water. That they were suspended at all was the result of recoil from collisions with water molecules; in other words, from Brownian motion. From his observations and from Einstein’s equations, Perrin could make his determination."
+}
+]

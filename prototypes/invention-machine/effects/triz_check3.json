@@ -1,0 +1,400 @@
+[
+ {
+  "id": "shock-cracked-olivine",
+  "name": "Shock-cracked olivine mill",
+  "subtitle": "cheaper rock powder that soaks up CO2",
+  "job": "removes carbon dioxide",
+  "how": "Olivine, a common green rock, locks up carbon dioxide as it weathers, but only once it is ground to flour, and the grinding burns so much electricity that it eats into the carbon saved. Here a bank of capacitors dumps a pulse into a spark under water beside the rock, and the shock wave cracks it along the boundaries between its crystals, so the mill afterwards has far less work to do.",
+  "effects": [
+   {
+    "effect": "a shock wave cracks rock along the edges of its crystals",
+    "card": "mach-number",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "searchQuery": "electric pulse shock wave pre-weakening olivine enhanced weathering grinding energy"
+ },
+ {
+  "id": "shock-tube-fertilizer",
+  "name": "Shock-tube fertilizer maker",
+  "subtitle": "farm nitrate made from air by shock waves",
+  "job": "grows food",
+  "how": "Nitrogen fertilizer is made in a few giant gas-burning plants and trucked to farms, so the poorest farmers pay the most for it. Lightning makes fertilizer from air by heating it until nitrogen and oxygen join; here a piston slams air into a shock wave that does the same for a millionth of a second, and the gas cools again so fast that the new compound can't fall apart. Bubbled through water, it becomes nitrate for the field.",
+  "effects": [
+   {
+    "effect": "a shock wave heats air for a millionth of a second, then lets it cool at once",
+    "card": "mach-number",
+    "triz": true,
+    "newToJob": true
+   },
+   {
+    "effect": "plants need nitrogen from the soil",
+    "card": "nitrogen-fixation",
+    "triz": false,
+    "newToJob": false
+   }
+  ],
+  "searchQuery": "shock tube nitrogen fixation nitric oxide fertilizer rapid quench"
+ },
+ {
+  "id": "sun-wetted-air-scrubber",
+  "name": "Sun-wetted air scrubber",
+  "subtitle": "glass panels that pull CO2 from the wind",
+  "job": "removes carbon dioxide",
+  "how": "Machines that pull carbon dioxide out of the air need a huge wet surface for the air to touch, and pumping liquid over plastic packing, which never wets evenly, costs much of their energy. Here tall glass panels carry a coating that sunlight makes so water-loving that a slow trickle of alkaline water spreads into a thin, even film. The wind blows past, the film soaks up carbon dioxide, and lime in a tank at the bottom pulls it back out for storage.",
+  "effects": [
+   {
+    "effect": "sunlight makes a coated surface so water-loving that water spreads flat",
+    "card": "superhydrophilicity",
+    "triz": true,
+    "newToJob": true
+   },
+   {
+    "effect": "an alkaline liquid soaks up carbon dioxide, and lime pulls it back out",
+    "card": "carbon-dioxide",
+    "triz": false,
+    "newToJob": false
+   }
+  ],
+  "searchQuery": "photocatalytic superhydrophilic glass falling film direct air capture contactor"
+ },
+ {
+  "id": "self-spreading-frost-blanket",
+  "name": "Self-spreading frost blanket",
+  "subtitle": "orchard covers that drop down when frost comes",
+  "job": "protects crops",
+  "how": "One spring night below freezing can kill a year's fruit as the buds open, and farmers either sit up all night running fans and fires or lose the crop. Over each row hangs a rolled fleece held up by shape-memory metal springs: as the air cools toward freezing the springs go soft and the fleece drops over the blossoms, trapping the ground's warmth, and when the morning warms they stiffen and roll it back up.",
+  "effects": [
+   {
+    "effect": "a bent metal returns to its remembered shape when warmed, and goes soft when cooled",
+    "card": "shape-memory-alloy",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "searchQuery": "shape memory alloy passive frost protection cover orchard automatic"
+ },
+ {
+  "id": "shape-memory-stomach-coil",
+  "name": "Shape-memory stomach coil",
+  "subtitle": "a swallowed capsule that fills the stomach",
+  "job": "controls weight",
+  "how": "Stomach balloons help people eat less, but they are put in and taken out with a tube down the throat. This one is a capsule holding a coiled wire of shape-memory metal: at body heat it springs into a loose cage the size of a fist that sits in the stomach and makes a small meal feel big. Months later a glass of ice water chills it below its switching point so it goes limp and passes out.",
+  "effects": [
+   {
+    "effect": "a bent metal returns to its remembered shape at body heat, and goes limp when chilled",
+    "card": "shape-memory-alloy",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "searchQuery": "swallowable nitinol intragastric device obesity self-expanding"
+ },
+ {
+  "id": "sun-timed-drip-valve",
+  "name": "Sun-timed drip valve",
+  "subtitle": "a drip emitter that waters more in heat",
+  "job": "grows food",
+  "how": "Drip irrigation saves water, but most small farms run it on a timer, so plants get the same dose on a cool cloudy day as on a scorching one. Each emitter holds a small shape-memory spring that sits in the sun: as the day heats up it straightens and opens the valve wider, and as it cools it closes, so water follows the heat that makes plants thirsty, with no wires or batteries.",
+  "effects": [
+   {
+    "effect": "a metal spring changes shape as the sun warms it",
+    "card": "shape-memory-alloy",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "searchQuery": "shape memory alloy temperature responsive drip irrigation emitter"
+ },
+ {
+  "id": "plastic-cloud-digester",
+  "name": "Plastic-cloud enzyme digester",
+  "subtitle": "bottle plastic clouded into dust for enzymes",
+  "job": "breaks down plastic",
+  "how": "Enzymes that eat PET bottle plastic work slowly, because they can only nibble the surface, and only its loosely packed parts. Dissolving the plastic and then pouring in water makes it burst into a cloud of loosely packed particles a thousandth of a millimetre across, giving the enzymes about a thousand times more surface to chew. A still recovers the solvent for the next batch.",
+  "effects": [
+   {
+    "effect": "adding water to a dissolved substance makes it burst into a stable cloud of tiny particles",
+    "card": "ouzo-effect",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "searchQuery": "PET nanoprecipitation nanoparticles enzymatic depolymerization recycling process"
+ },
+ {
+  "id": "quartz-trap-archive",
+  "name": "Quartz-trap archive",
+  "subtitle": "data stored the way rocks record radiation",
+  "job": "keeps data for millennia",
+  "how": "Hard disks and tapes last decades, but archives need centuries. Quartz holds electrons knocked into traps by radiation for hundreds of thousands of years, which is how scientists date ancient pottery; here a fine X-ray beam traps electrons in a pattern of dots on a quartz plate, and a reader warms each dot and counts the faint glow it gives off.",
+  "effects": [
+   {
+    "effect": "a crystal stores radiation as trapped charge and glows it out when heated",
+    "card": "thermoluminescence",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "searchQuery": "thermoluminescence quartz optical data storage archival write X-ray"
+ },
+ {
+  "id": "electret-fog-net",
+  "name": "Electret fog net",
+  "subtitle": "a charged mesh that grabs fog droplets",
+  "job": "supplies water",
+  "how": "In coastal deserts from Chile to Morocco, fog nets supply villages with drinking water, but most fine droplets flow around the threads and only a few percent are caught. Weaving the net from Teflon fibres that hold a permanent electric charge, like the filter in a face mask, pulls passing droplets onto the threads; Teflon also repels water, so the drops bead up and run down into the gutter.",
+  "effects": [
+   {
+    "effect": "a material holds a permanent electric charge that tugs fine droplets out of the air",
+    "card": "electret",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "searchQuery": "electret mesh fog harvesting collection efficiency charged fibres"
+ },
+ {
+  "id": "electret-airlock-dust-trap",
+  "name": "Moon-dust airlock trap",
+  "subtitle": "charged curtains that strip dust off spacesuits",
+  "job": "protects",
+  "how": "Moon dust is sharp, clingy and electrically charged; on Apollo it ground into suit joints and got into the astronauts' lungs, and months-long stays will be far worse. Before entering the habitat an astronaut stands while puffs of air shake dust off the suit, and curtains of permanently charged fibres, like mask filter material, grab the already-charged grains before they reach the cabin.",
+  "effects": [
+   {
+    "effect": "a material holds a permanent electric charge that grabs dust",
+    "card": "electret",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "searchQuery": "electret filter lunar dust airlock spacesuit mitigation"
+ },
+ {
+  "id": "static-bed-net",
+  "name": "Static bed net",
+  "subtitle": "a mosquito net that holds insects by charge",
+  "job": "prevents disease",
+  "how": "Insecticide bed nets saved millions of children from malaria, but mosquitoes across Africa have evolved to shrug off the poison. This net is woven from polypropylene fibres that hold a permanent electric charge, like a face mask's filter, so a mosquito that lands while hunting for a gap is held by the static pull and dries out by morning.",
+  "effects": [
+   {
+    "effect": "a material holds a permanent electric charge",
+    "card": "electret",
+    "triz": true,
+    "newToJob": true
+   },
+   {
+    "effect": "mosquitoes carry malaria",
+    "card": "mosquitoes-and-malaria",
+    "triz": false,
+    "newToJob": true
+   }
+  ],
+  "searchQuery": "electret net mosquito capture electrostatic insecticide-free bed net"
+ },
+ {
+  "id": "air-scrubbing-ceiling-fan",
+  "name": "Air-scrubbing ceiling fan",
+  "subtitle": "fan blades that catch germs from room air",
+  "job": "prevents disease",
+  "how": "Tuberculosis, flu and COVID spread through the air of crowded clinics and classrooms, and in poor countries most of those rooms have a ceiling fan but no filters. Wrapping the blades in the permanently charged film used inside face masks lets them grab tiny droplets from the huge volume of air they sweep each minute, without slowing the fan.",
+  "effects": [
+   {
+    "effect": "a material holds a permanent electric charge that pulls droplets out of the air",
+    "card": "electret",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "searchQuery": "electret coated ceiling fan blades airborne particle capture"
+ },
+ {
+  "id": "curve-hugging-nasal-spray",
+  "name": "Curve-hugging nasal spray",
+  "subtitle": "a nose spray that reaches the smell nerves",
+  "job": "sprays",
+  "how": "Drugs sprayed high in the nose can slip into the brain along the smell nerves, skipping the barrier that blocks most brain medicines, but ordinary sprays land low and get swallowed. This nozzle fires a thin jet along the curved roof of the nostril; the jet clings to the curve and follows it up to the narrow strip where the smell nerves are, and the drug seeps through the lining there.",
+  "effects": [
+   {
+    "effect": "a jet clings to a curved surface beside it and follows its curve",
+    "card": "coanda-effect",
+    "triz": true,
+    "newToJob": true
+   },
+   {
+    "effect": "small molecules seep through a membrane",
+    "card": "osmosis",
+    "triz": false,
+    "newToJob": true
+   }
+  ],
+  "searchQuery": "Coanda effect nasal spray olfactory region nose-to-brain delivery"
+ },
+ {
+  "id": "auxetic-suture",
+  "name": "Auxetic suture",
+  "subtitle": "a stitch that gets fatter when pulled",
+  "job": "fastens",
+  "how": "Repaired shoulder tendons fail in a quarter or more of patients, often because the thin stitches slice through the soft tendon like a cheese wire when the arm is used. This suture is braided so that it gets fatter instead of thinner when pulled, spreading the load over more tendon exactly when the pull is hardest.",
+  "effects": [
+   {
+    "effect": "a material gets fatter when stretched",
+    "card": "auxetic-effect",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "searchQuery": "auxetic braided suture tendon repair cut-through"
+ },
+ {
+  "id": "shunt-flow-monitor",
+  "name": "Shunt flow monitor",
+  "subtitle": "a skin patch that checks a brain drain",
+  "job": "monitors health continuously",
+  "how": "Hundreds of thousands of people live with a tube draining excess fluid from the brain, and about half of these shunts fail within a few years, usually by clogging; the warning headache looks like any other, so families rush to the emergency room again and again. A speck of magnet rides on a tiny flap inside the shunt's valve and swings with the flow, and a patch behind the ear senses its position through the skin, the way a phone senses its closed lid, sounding an alarm when the flow stops.",
+  "effects": [
+   {
+    "effect": "a magnetic field pushes current to one side, so a chip senses a nearby magnet",
+    "card": "hall-effect",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "searchQuery": "hydrocephalus shunt flow sensor magnet hall effect wearable"
+ },
+ {
+  "id": "self-counting-knee",
+  "name": "Self-counting knee implant",
+  "subtitle": "a battery-free knee that counts its bends",
+  "job": "monitors health continuously",
+  "how": "Knee replacements wear out after enough millions of steps, but surgeons can only guess how hard each patient uses theirs and spot the wear late on X-rays. A treated wire in one half of the implant and a small magnet in the other flip the wire's magnetism at every bend, and the sharp pulse powers a counter chip for an instant; a wand held over the knee reads the tally, with no battery ever to replace.",
+  "effects": [
+   {
+    "effect": "a treated wire flips its magnetism suddenly and gives a sharp pulse",
+    "card": "wiegand-effect",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "searchQuery": "Wiegand wire self-powered sensor orthopedic implant knee"
+ },
+ {
+  "id": "battery-free-bearing-watch",
+  "name": "Battery-free bearing watch",
+  "subtitle": "freight wheels that report their own overheating",
+  "job": "measures",
+  "how": "A freight car's wheel bearing can overheat and fail within minutes, causing derailments like the 2023 chemical spill in East Palestine, Ohio, yet trackside heat sensors sit kilometres apart and unpowered freight cars can't run their own. A magnet on the axle flips a treated wire in the bearing housing once per turn, and each sharp pulse powers a chip just long enough to read the bearing's temperature and radio it to the locomotive.",
+  "effects": [
+   {
+    "effect": "a treated wire flips its magnetism suddenly and gives a sharp pulse",
+    "card": "wiegand-effect",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "searchQuery": "Wiegand effect self-powered railcar bearing temperature sensor"
+ },
+ {
+  "id": "colour-code-plastic",
+  "name": "Colour-code plastic",
+  "subtitle": "plastics marked by dye-free colour for sorting",
+  "job": "recycles materials",
+  "how": "Only about a tenth of plastic gets recycled, partly because sorting machines can't tell one plastic recipe from another, and printed labels contaminate the melt. The mould stamps a patch of ridges a few hundred nanometres apart onto each item, giving it a shimmer whose colour pattern names its exact plastic; a camera on the sorting line reads it, and the ridges vanish without trace when the plastic is melted.",
+  "effects": [
+   {
+    "effect": "thin ridges reflect different colours at different angles",
+    "card": "iridescence",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "searchQuery": "structural colour nanograting code plastic sorting recycling identification"
+ },
+ {
+  "id": "blinking-contact-lens",
+  "name": "Blinking contact lens",
+  "subtitle": "a lazy-eye lens that darkens on schedule",
+  "job": "treats illness",
+  "how": "Lazy eye affects about one child in forty, and the usual cure, patching the good eye for hours a day, often fails because children tear the patch off. A contact lens on the good eye carries a layer that a small voltage darkens; it switches dark and clear many times an hour, forcing the brain to use the weak eye, and the child can't peel it off.",
+  "effects": [
+   {
+    "effect": "a small voltage makes a material darken, and it reverses",
+    "card": "electrochromism",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "searchQuery": "electrochromic contact lens amblyopia occlusion therapy"
+ },
+ {
+  "id": "magnetic-molten-salt-pump",
+  "name": "Magnetic molten-salt pump",
+  "subtitle": "a seal-free pump for stored solar heat",
+  "job": "carries heat",
+  "how": "Solar power plants store heat in tanks of molten salt above 500°C so they can make electricity at night, but the long-shafted pumps that move it, with bearings and seals working in that heat, are among the parts most prone to fail. Passing a current through the salt itself, across a magnetic field, pushes it along a sealed steel pipe with no moving parts at all.",
+  "effects": [
+   {
+    "effect": "a magnetic field pushes on a current-carrying fluid, pumping it with no moving parts",
+    "card": "magnetohydrodynamics",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "searchQuery": "electromagnetic MHD pump molten nitrate salt concentrated solar power"
+ },
+ {
+  "id": "tremor-cooling-cuff",
+  "name": "Tremor-cooling cuff",
+  "subtitle": "a wristband that chills a shaking hand steady",
+  "job": "treats illness",
+  "how": "Millions of people have essential tremor, a shake that makes eating and writing hard, and the drugs help only about half of them. Cooling the forearm muscles and nerves is known to quiet the shake for a while, so a cuff with an electric cooling plate gives that dose before a meal at the press of a button, without ice packs.",
+  "effects": [
+   {
+    "effect": "an electric current through a junction pumps heat from one side to the other",
+    "card": "peltier-effect",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "searchQuery": "wearable Peltier forearm cooling essential tremor device"
+ },
+ {
+  "id": "sun-cleaned-lidar-window",
+  "name": "Sun-cleaned lidar window",
+  "subtitle": "self-driving sensors that rain washes clean",
+  "job": "detects objects",
+  "how": "Self-driving cars see with lidar, which times laser pulses bouncing back from the road, but grime or beaded raindrops on its window scatter the beam and blind it, and today's fix is tiny wipers and washer jets. A window coating that sunlight turns so water-loving that rain spreads into a flat, clear sheet keeps the beam undistorted and lets the rain carry away road grime.",
+  "effects": [
+   {
+    "effect": "sunlight makes a coated surface so water-loving that rain spreads flat",
+    "card": "superhydrophilicity",
+    "triz": true,
+    "newToJob": true
+   },
+   {
+    "effect": "signal delay gives distance",
+    "card": "speed-of-light",
+    "triz": false,
+    "newToJob": false
+   }
+  ],
+  "searchQuery": "photocatalytic superhydrophilic coating lidar window rain self-cleaning"
+ },
+ {
+  "id": "heat-flipping-roof-tiles",
+  "name": "Heat-flipping roof tiles",
+  "subtitle": "roof tiles that turn white in the heat",
+  "job": "cools without power",
+  "how": "A dark roof helps warm a house in winter but bakes it in summer, and a white roof does the opposite, so in most climates either choice wastes energy. Each tile is a row of slats, dark on one face and white on the other, turned by shape-memory metal springs: when the sun heats the roof past about 40°C the springs twist the slats white side up, and in cool weather they turn back dark.",
+  "effects": [
+   {
+    "effect": "a bent metal returns to its remembered shape when heated",
+    "card": "shape-memory-alloy",
+    "triz": true,
+    "newToJob": true
+   }
+  ],
+  "searchQuery": "shape memory alloy roof tiles switch reflective dark seasonal passive"
+ }
+]

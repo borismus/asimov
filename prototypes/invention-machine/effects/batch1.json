@@ -1,0 +1,1602 @@
+[
+{
+"id": "biped",
+"year": -4000000,
+"title": "Bipedal species",
+"field": "General",
+"desc": "Free hands allowed hominids to manipulate objects, bring them closer to our senses and thus increase brain capacity, priming the feedback loop.",
+"long": ""
+},
+{
+"id": "ceremonial-burial",
+"year": -200000,
+"title": "Ceremonial burial",
+"field": "Culture",
+"desc": "Neanderthals were the first hominids to bury their dead rather than leaving their bodies to scavengers and rot. Food and floweres were often buried with the corpse.",
+"long": ""
+},
+{
+"id": "art",
+"year": -20000,
+"title": "Art",
+"field": "Culture",
+"desc": "Some of the earliest paintings were found in caves, seem to be drawn for ceremonial, religious purposes.",
+"long": ""
+},
+{
+"id": "animal-dom",
+"year": -12000,
+"title": "Animals domesticated",
+"field": "General",
+"desc": "Dogs were first to be domesticated, followed by goats. This enabled hunter gatherers to become shepherds with a much more secure food supply.",
+"long": ""
+},
+{
+"id": "writing",
+"year": -3500,
+"title": "Writing",
+"field": "General",
+"desc": "Earliest use of writing was for ledgers, which led to symbols for fruit, frain, man, and ultimately hieroglyphics.",
+"long": ""
+},
+{
+"id": "nation",
+"year": -3100,
+"title": "Nations",
+"field": "Culture",
+"desc": "Irrigation meant more coordination since water was a shared resource. As settlements grew in complexity and density, city-states blended together. This first happened in the Nile delta in Egypt.",
+"long": ""
+},
+{
+"id": "calendar",
+"year": -2800,
+"title": "Calendar",
+"field": "Culture",
+"desc": "Some phenomena, like seasons, vary over hundreds of days. The moon cycle is a convenient length (~30 days), and about 12 of them make for a seasonal cycle.",
+"long": ""
+},
+{
+"id": "literature",
+"year": -2500,
+"title": "Literature",
+"field": "Culture",
+"desc": "Oral storytelling is as old as speech, but writing allowed to codify epics. Gilgamesh is the first written tale.",
+"long": ""
+},
+{
+"id": "empire",
+"year": -2340,
+"title": "Empires",
+"field": "Culture",
+"desc": "Sumerian city states fought one another, eventually Sargon of Akkad conquered Sumer and ruled over people of different languages and cultures, with Akkadians superior.",
+"long": ""
+},
+{
+"id": "horse",
+"year": -2000,
+"title": "Horses",
+"field": "General",
+"desc": "Oxen are strong but dumb and slow, while donkeys are smart but weak. Tamed horses were a good compromise, initially used for driving chariots, eventually much more.",
+"long": ""
+},
+{
+"id": "numbers",
+"year": -1800,
+"title": "Number system",
+"field": "Math",
+"desc": "Base 60 was first used by Sumer because it is divisible by so many numbers. This is why there are 6*60 degrees in a circle, which is conveniently close to 365. Seven known planets led to the week.",
+"long": ""
+},
+{
+"id": "law",
+"year": -1775,
+"title": "Code of Laws",
+"field": "Culture",
+"desc": "Social conventions work up to a point, but a complex society needs more hierarchy, mistrust, and a need to codify custom. First known law code was inscribed by Hammurabi on an 8-foot tall stone pillar.",
+"long": ""
+},
+{
+"id": "medicine",
+"year": -1550,
+"title": "Recorded medicine",
+"field": "Science",
+"desc": "Ancient medical remedies included ritualized behavior, use of plants and animals. First surviving account of medical remedies is called Eber's Papyrus.",
+"long": ""
+},
+{
+"id": "alphabet",
+"year": -1500,
+"title": "Phonetic alphabet",
+"field": "Culture",
+"desc": "To simplify complex ideographic written languages of the time, the Phonecian alphabet instead used a symbol for each sound to construct words.",
+"long": ""
+},
+{
+"id": "monotheism",
+"year": -1375,
+"title": "Monotheism",
+"field": "Culture",
+"desc": "Earlier humans believed in many supernatural influences, one for each common and abstract object. Amenhotep first accepted just one god (sun), but his reign failed, eventually central to Judaism.",
+"long": ""
+},
+{
+"id": "sea-navigation",
+"year": -1100,
+"title": "Sea navigation",
+"field": "General",
+"desc": "Sea ventures were restricted to coast hugging, and the distant sea was feared and revered (cf. Homer). Phoenicians used the big dipper to find north, and relied on oars to mitigate bad winds.",
+"long": ""
+},
+{
+"id": "zoo",
+"year": -700,
+"title": "Zoos",
+"field": "Design",
+"desc": "Hunting animals for food, sports, artifacts was common. Keeping rare animals in zoos and plants in botanical gardens was first done in Assyria.",
+"long": ""
+},
+{
+"id": "library",
+"year": -640,
+"title": "Libraries",
+"field": "Design",
+"desc": "Books on clay or papyrus were rare and expensive since they had to be manually copied by literate scribes. Only monarchs could accumulate thousands of books.",
+"long": ""
+},
+{
+"id": "eclipse",
+"year": -585,
+"title": "Solar eclipse predicted",
+"field": "Space",
+"desc": "Eclipses were seen as frightening, evil omens. The first solar eclipse was predicted by Thales on May 28, 585 BCE.",
+"long": ""
+},
+{
+"id": "water-element",
+"year": -580,
+"title": "Water as element",
+"field": "Science",
+"desc": "What is everything made of? Thales theorized everything was fundamentally made of water.",
+"long": ""
+},
+{
+"id": "irrational-numbers",
+"year": -520,
+"title": "Irrational numbers",
+"field": "Math",
+"desc": "Pythagoras first believed whole numbers including fractions were the basis of the universe. However what about a unit isoceles right triangle with hypotenuse √2?",
+"long": ""
+},
+{
+"id": "realistic-maps",
+"year": -510,
+"title": "Realistic maps",
+"field": "General",
+"desc": "A Greek traveler traveled the Persian empire and drew a realistic map covering thousands of miles, including parts of Europe, Africa and Asia.",
+"long": ""
+},
+{
+"id": "ocean-navigation",
+"year": -500,
+"title": "Ocean navigation",
+"field": "General",
+"desc": "Spurred by depleted tin resources needed for bronze, Phoenicians ventured through Gibraltar and into the Atlantic, finding \\\"tin islands\\\", potentially Britain. Likely circumnavigated Africa.",
+"long": ""
+},
+{
+"id": "cadaver",
+"year": -500,
+"title": "Human dissection",
+"field": "Science",
+"desc": "Animals had been butchered so much was known about their internal organs, not so humans. Saw arteries, veins, nerves.",
+"long": ""
+},
+{
+"id": "venus-named",
+"year": -500,
+"title": "Venus named",
+"field": "Space",
+"desc": "The Babylonians first saw the evening star (Hesperos), and the morning star (Phorphoros), but these turned out to be the same planet, Venus.",
+"long": ""
+},
+{
+"id": "dream-interpretation",
+"year": -480,
+"title": "Dream interpretation",
+"field": "Science",
+"desc": "Once viewed as messages from the gods (eg. Joseph in Bible), Heracleitus suggested dreams have no meaning outside one's own thoughts.",
+"long": ""
+},
+{
+"id": "atom",
+"year": -440,
+"title": "Atoms",
+"field": "Science",
+"desc": "Leucippus theorized that every event has a natural cause. Democritus expanded this suggesting that all matter was composed of tiny particles, and maybe there are billions of stars that are too far to be seen.",
+"long": ""
+},
+{
+"id": "epilepsy",
+"year": -420,
+"title": "Epilepsy",
+"field": "Science",
+"desc": "Epilepsy the disease discovered. Hippocrates thought disease was due to a misbalance between the four humors: blood, phlegm, bile, black bile.",
+"long": ""
+},
+{
+"id": "university",
+"year": -387,
+"title": "Advanced schools",
+"field": "Culture",
+"desc": "Plato founded a school on grounds once owned by Academus, so called the Academy. Plato's student Aristotle founded his own school called Lyceum.",
+"long": ""
+},
+{
+"id": "heliocentric-theory",
+"year": -350,
+"title": "Non-geocentric theory",
+"field": "Space",
+"desc": "Philolatus thought everything rotated around some central fire (not earth). Ponticus thought maybe Venus and Mercury circled the sun (but sun circles the earth).",
+"long": ""
+},
+{
+"id": "logic",
+"year": -350,
+"title": "Logic",
+"field": "Math",
+"desc": "First formal system of reasoning. Aristotle wrote \\\"Organon\\\", describing how to draw conclusions from premises.",
+"long": ""
+},
+{
+"id": "spherical-earth",
+"year": -350,
+"title": "Spherical earth theory",
+"field": "Geography",
+"desc": "Looking around, the earth looks flat, but over long distances it seems to have curvature (eg. ships hulls dissapear first, then masts).",
+"long": ""
+},
+{
+"id": "five-elements",
+"year": -350,
+"title": "Five elements theorized",
+"field": "Science",
+"desc": "Aristotle's model had concentric circles of elements: earth at center, surrounded by water, surrounded by air, surrounded by fire (sometimes seen as lightning), and the heavens made of aether.",
+"long": ""
+},
+{
+"id": "animal-classification",
+"year": -350,
+"title": "Animal classification",
+"field": "Science",
+"desc": "Dissected 500 species, in particular the dolphin, unlike other fish, seems to have placenta and milk, so classified it with mammals.",
+"long": ""
+},
+{
+"id": "star-maps",
+"year": -350,
+"title": "Star maps",
+"field": "Space",
+"desc": "Improved on the best earth maps. The sky is hard to map because there are no physical landmarks. Drew out latitude and longitude lines to identify locations.",
+"long": ""
+},
+{
+"id": "botany",
+"year": -320,
+"title": "Botany book",
+"field": "Science",
+"desc": "Theophrastus, one of Aristotle's students, wrote a book on botany, including 550 plant species.",
+"long": ""
+},
+{
+"id": "tides",
+"year": -300,
+"title": "Tides",
+"field": "General",
+"desc": "Pytheas explored the British Isles, as far as Norway or Iceland. He observed and described tides (not visible in the Mediterranean due to narrowness of Gibraltar)",
+"long": ""
+},
+{
+"id": "arteries-veins",
+"year": -300,
+"title": "Arteries vs veins",
+"field": "Science",
+"desc": "Distinguished between arteries and veins, and thought that arteries carried air.",
+"long": ""
+},
+{
+"id": "brain-areas",
+"year": -280,
+"title": "Parts of brain",
+"field": "Science",
+"desc": "Herophilus divided nerves into sensory and motor, described the retina. Erasistratus distinguished the cerebrum and cerebellum. Then paused for religious reasons.",
+"long": ""
+},
+{
+"id": "moon-sun-size",
+"year": -280,
+"title": "Moon and sun size estimate",
+"field": "Space",
+"desc": "When Anaxagoras suggested the Sun was the size of Greece, he was exiled. 200 years later, Aristarchus estimated sun to be gigantic and venus/mars as comparable in size to Earth.",
+"long": ""
+},
+{
+"id": "earth-size",
+"year": -240,
+"title": "Earth size estimate",
+"field": "Geography",
+"desc": "In Aswan, the sun is directly overhead. By comparing it to the 7 deg offset in Alexandria and using the cities' relative location Eratosthenes estimated earth circumference to be 25k miles.",
+"long": ""
+},
+{
+"id": "year-number",
+"year": -240,
+"title": "Standardized years",
+"field": "Culture",
+"desc": "Formerly years were called \\\"the seventh year of King X\\\". Eratosthenes matched these dates onto a global timeline.",
+"long": ""
+},
+{
+"id": "great-wall",
+"year": -214,
+"title": "Great Wall",
+"field": "Design",
+"desc": "Great Wall is largest construction project ever. First made of earth, later of brick, extending for 1500 miles. Shih Huang Ti burned all known books in 214 BCE, explaining why little is known about China before then.",
+"long": ""
+},
+{
+"id": "moon-distance",
+"year": -150,
+"title": "Distance to moon estimate",
+"field": "Space",
+"desc": "Hipparchus made the first trig tables. He used trig to calculate the moon's parallax by comparing its position to the stars from multiple points on earth.",
+"long": ""
+},
+{
+"id": "star-maps-better",
+"year": -134,
+"title": "Better star maps",
+"field": "Space",
+"desc": "Improved on the previous star maps by including magnitudes, and including over a thousand stars, and incorporating lat long from earth maps.",
+"long": ""
+},
+{
+"id": "julian-calendar",
+"year": -46,
+"title": "Julian calendar",
+"field": "General",
+"desc": "Julian calendar adopted, inspired by Egyptian calendar. Some months had 30 and some 31 days. An extra day every four years (leap).",
+"long": ""
+},
+{
+"id": "climactic-zone",
+"year": 25,
+"title": "Climactic zones",
+"field": "Geography",
+"desc": "Mela suggested earth be divided into north and south frigid zones around the poles, a torrid zone around the equator and temperate zones in between.",
+"long": ""
+},
+{
+"id": "medicinal-plants",
+"year": 50,
+"title": "Recorded medicinal plants",
+"field": "Science",
+"desc": "After serving as a medic in Roman army, he wrote \\\"Materia Medica\\\" which described 600 plants, 1000 drugs. Start of pharmacology.",
+"long": ""
+},
+{
+"id": "geocentric-universe",
+"year": 140,
+"title": "Geocentric universe",
+"field": "Space",
+"desc": "Ptolemy wrote that the sun and planets rotate around the earth in circular planets and worked out the math for predicting planetary motions. Remained canon for 14 centuries.",
+"long": ""
+},
+{
+"id": "spinal-cord",
+"year": 180,
+"title": "Spinal cord",
+"field": "Science",
+"desc": "Galen worked at a gladiator school which gave him insights into human anatomy. He also cut animals’ spines to see resulting paralysis.",
+"long": ""
+},
+{
+"id": "algebra",
+"year": 250,
+"title": "Algebra",
+"field": "Math",
+"desc": "Most Greek math focused on geometry, but Diophantus focused on problems that were less visual, usually equations with multiple unknowns.",
+"long": ""
+},
+{
+"id": "tea",
+"year": 250,
+"title": "Tea",
+"field": "Culture",
+"desc": "Reduced infection since it required water to be boiled",
+"long": ""
+},
+{
+"id": "alchemy",
+"year": 300,
+"title": "Recorded alchemy",
+"field": "Science",
+"desc": "Chemical change was intuitively understood: pottery from clay, metals from ore, glass from sand. Zosimus summarized ancient alchemy. Ultimately led nowhere.",
+"long": ""
+},
+{
+"id": "silk-europe",
+"year": 552,
+"title": "Silk",
+"field": "Science",
+"desc": "Supposedly invented in 2480 BCE in China, Silk was in high demand in Rome and expensive, so Justinian arranged to bring back silkworms and the silk making process from China. By 552 Constantinople was producing.",
+"long": ""
+},
+{
+"id": "acetic-acid",
+"year": 750,
+"title": "Acetic acid",
+"field": "Science",
+"desc": "Arabs continued the Greek alchemical tradition and sought to find an elixir of life. Instead Geber found a way to distill vinegar into acetic acid.",
+"long": ""
+},
+{
+"id": "zero",
+"year": 810,
+"title": "Zero",
+"field": "Math",
+"desc": "Around 500, an Indian mathematician suggested using the symbol \\\"0\\\" to represent an untouched abacus level. This came to the Arabs and was used in Al-Khwarizmi's book on algebra.",
+"long": ""
+},
+{
+"id": "iceland-settled",
+"year": 847,
+"title": "Iceland settled",
+"field": "Geography",
+"desc": "Europe’s first expansion to new land overseas. Iceland first discovered around 550 by Brendan, an Irishman",
+"long": ""
+},
+{
+"id": "coffee",
+"year": 850,
+"title": "Coffee",
+"field": "Culture",
+"desc": "Lacking safe drinking water, you could either drink alcohol or boil tea. Muslims were prohibited from alcohol and didn't know about tea.",
+"long": ""
+},
+{
+"id": "arctic-circle",
+"year": 870,
+"title": "Arctic circle",
+"field": "Geography",
+"desc": "First crossing into the arctic circle. Ottar rounded North Cape (125 miles north of the arctic circle), and entered the White Sea.",
+"long": ""
+},
+{
+"id": "greenland-viking",
+"year": 982,
+"title": "Greenland",
+"field": "Geography",
+"desc": "Just 200 miles from Iceland, Vikings settled SW shores of Greenland and stayed there for four centuries.",
+"long": ""
+},
+{
+"id": "newfoundland",
+"year": 1000,
+"title": "Newfoundland discovered",
+"field": "Geography",
+"desc": "Leif, Erik's son continued westward, discovered Vinland but the settlement did not last long.",
+"long": ""
+},
+{
+"id": "new-star",
+"year": 1054,
+"title": "New star",
+"field": "Space",
+"desc": "Creation of new star witnessed. Went unnoticed in Europe.",
+"long": ""
+},
+{
+"id": "bright-comet",
+"year": 1066,
+"title": "Bright comets",
+"field": "Space",
+"desc": "Comets were observed but very mysterious, widely considered a bad omen.",
+"long": ""
+},
+{
+"id": "spitsbergen",
+"year": 1194,
+"title": "Spitsbergen",
+"field": "Geography",
+"desc": "Spitsbergen are islands 500 miles north of Norway. Vikings discovered them but they remained unknown to Europe.",
+"long": ""
+},
+{
+"id": "arab-numbers",
+"year": 1202,
+"title": "Arabic numerals",
+"field": "Math",
+"desc": "Popularized by Fibonacci, who brought them back from his travels in North Africa, they existed in parallel with Roman numerals for 3 centuries.",
+"long": ""
+},
+{
+"id": "planetary-tables",
+"year": 1252,
+"title": "Planetary tables",
+"field": "Space",
+"desc": "More accurate than Ptolemy's geocentric model, called Alfonsine tables.",
+"long": ""
+},
+{
+"id": "magnetic-pole",
+"year": 1269,
+"title": "Magnetic poles",
+"field": "General",
+"desc": "Magnetic poles discovered, magnetic principles understood. Compass was improved by placing the magnetic needle on a pivot and overlaying it on a circular scale.",
+"long": ""
+},
+{
+"id": "far-east",
+"year": 1298,
+"title": "Far east",
+"field": "Geography",
+"desc": "Far east became a wonder-goal for European dreamers.",
+"long": ""
+},
+{
+"id": "comet-painting",
+"year": 1304,
+"title": "Realistic comets",
+"field": "Space",
+"desc": "First realistic depiction of a comet as seen by naked eye. Painted in \\\"Adoration of the Magi\\\".",
+"long": ""
+},
+{
+"id": "canary-islands",
+"year": 1312,
+"title": "Canary islands",
+"field": "Geography",
+"desc": "Originally discovered in 40 BCE by King of Mauritania. First expansion of Europe overseas.",
+"long": ""
+},
+{
+"id": "anatomy",
+"year": 1316,
+"title": "Anatomy book",
+"field": "Science",
+"desc": "After a ban, cadaver dissection became possible again and de Luzzi wrote the definitive Anatomy book for next 2.5 centuries.",
+"long": ""
+},
+{
+"id": "quarantine",
+"year": 1403,
+"title": "Quarantine",
+"field": "Science",
+"desc": "Venician policy was to delay strangers from entering the city until a waiting period had passed (40 days).",
+"long": ""
+},
+{
+"id": "indian-ocean",
+"year": 1405,
+"title": "Indian ocean",
+"field": "Geography",
+"desc": "Led expedition to Red Sea, India, Ceylon, brought back ruler of Ceylon as prisoner.",
+"long": ""
+},
+{
+"id": "madeira",
+"year": 1418,
+"title": "Madeira settled",
+"field": "Geography",
+"desc": "Kicked off the European Age of Exploration. Madeira had very dense wood forest that was burned down and given over to cultivating sugar cane.",
+"long": ""
+},
+{
+"id": "azores",
+"year": 1427,
+"title": "Azores",
+"field": "Geography",
+"desc": "1/3 of the way to America. Like Madeira, originally uninhabited, also still part of Portugal",
+"long": ""
+},
+{
+"id": "perspective",
+"year": 1436,
+"title": "Perspective drawing",
+"field": "Design",
+"desc": "Book published about how to draw in perspective.",
+"long": ""
+},
+{
+"id": "standing-army",
+"year": 1450,
+"title": "Standing army",
+"field": "War",
+"desc": "Salaried full-time soldiers replacing feudal levies and roving mercenary companies. The first Christian standing army since the Roman fall; strengthens the crown over feudal nobility. Knights become courtiers.",
+"long": ""
+},
+{
+"id": "comet-tracking",
+"year": 1472,
+"title": "Comet trajectory tracking",
+"field": "Space",
+"desc": "Comets usually viewed with terror, now understood rationally.",
+"long": ""
+},
+{
+"id": "cape-good-hope",
+"year": 1487,
+"title": "Cape of Good Hope",
+"field": "Geography",
+"desc": "Initially called Cape of Storms, renamed as Good Hope by John II who knew it would open trade routes with orient",
+"long": ""
+},
+{
+"id": "new-world",
+"year": 1492,
+"title": "New world",
+"field": "Geography",
+"desc": "New world discovered by Europeans with funding from Spain. First landing in the Bahamas.",
+"long": ""
+},
+{
+"id": "magnetic-declination",
+"year": 1492,
+"title": "Magnetic declination",
+"field": "General",
+"desc": "Saw discrepancy of the compass compared to the stars. First inkling that geographic and magnetic north don't always align.",
+"long": ""
+},
+{
+"id": "syphilis",
+"year": 1495,
+"title": "Syphilis",
+"field": "Science",
+"desc": "There was a large syphilis breakout during siege of Naples by France leading to a better understanding of how the STD spreads. The disease was named after the protagonist of a poem that had syphilis.",
+"long": ""
+},
+{
+"id": "india-water-route",
+"year": 1497,
+"title": "India water route",
+"field": "Geography",
+"desc": "Discovery of the India water route by Europeans. Lost 3/5 of crew to scurvy, but ultimately made it around the Cape of Good hope and landed in Kozhikode, India.",
+"long": ""
+},
+{
+"id": "america",
+"year": 1502,
+"title": "America",
+"field": "Geography",
+"desc": "Columbus thought that he'd arrived in Asia, but Vespucci realized that wasn't true from comparing to reports from asian foot travelers. Documented another ocean even further west.",
+"long": ""
+},
+{
+"id": "pacific-ocean",
+"year": 1513,
+"title": "Pacific ocean",
+"field": "Geography",
+"desc": "In search of asian wealth, Europeans crossed Panama to get to the Pacific. Called it the \\\"south sea\\\".",
+"long": ""
+},
+{
+"id": "florida",
+"year": 1513,
+"title": "Florida",
+"field": "Geography",
+"desc": "First portion of USA to be settled by Europeans.",
+"long": ""
+},
+{
+"id": "mexico",
+"year": 1519,
+"title": "Mexico conquered",
+"field": "Geography",
+"desc": "1517: Landed on Yucatan, found traces of Maya civilization. 1519: landed again and went to war with the Aztec empire, defeating them with 600 men 17 horse, 10 cannons.",
+"long": ""
+},
+{
+"id": "around-earth",
+"year": 1523,
+"title": "Earth circumnavigated",
+"field": "Geography",
+"desc": "Magellan comandeered five ships, one of which survived with 18 men aboard. He himself died in Guam, not technically finishing the circumnavigation.",
+"long": ""
+},
+{
+"id": "peru",
+"year": 1531,
+"title": "Peru conquered",
+"field": "Geography",
+"desc": "Pizarro conquered the Inca with 180 men, 27 cannon and 2 horses. Spain held it for 3 centuries.",
+"long": ""
+},
+{
+"id": "cubic-equations",
+"year": 1535,
+"title": "Cubic equations",
+"field": "Math",
+"desc": "Quadratic equations had been solved for a long time, but this was a closed form solution to cubic equations in general. Geronimo Cardano also contributed.",
+"long": ""
+},
+{
+"id": "comet-tails",
+"year": 1538,
+"title": "Comet tails",
+"field": "Space",
+"desc": "Comet tails always point away from the sun. Also independently discovered by Peter Bennewitz in Germany.",
+"long": ""
+},
+{
+"id": "mississipi-river",
+"year": 1541,
+"title": "Mississipi river",
+"field": "Geography",
+"desc": "Mississipi explored by Europeans. Commisioned by Charles V to explore America's interior, de Soto explored Florida and the southeast US.",
+"long": ""
+},
+{
+"id": "amazon-river",
+"year": 1542,
+"title": "Amazon river",
+"field": "Geography",
+"desc": "Amazon explored by Europeans. de Orellio went west to east, from Quito to Marajo. He was first to cross South America from one ocean to another.",
+"long": ""
+},
+{
+"id": "heliocentric-practice",
+"year": 1543,
+"title": "Math of heliocentricity",
+"field": "Math",
+"desc": "Still kept the concentric circle constraint the Greeks proposed but greatly improved the math.",
+"long": ""
+},
+{
+"id": "illustrated-anatomy",
+"year": 1543,
+"title": "Illustrated anatomy book",
+"field": "Science",
+"desc": "Published \\\"Concerning the Structure of the Human Body\\\" including illustrations of human anatomy",
+"long": ""
+},
+{
+"id": "negative-numbers",
+"year": 1545,
+"title": "Negative numbers",
+"field": "Math",
+"desc": "First used to represent debt. Also negative integers, fractions, irrationals.",
+"long": ""
+},
+{
+"id": "trig-tables",
+"year": 1551,
+"title": "Trigonometric tables",
+"field": "Math",
+"desc": "Built tables of angle ratios to make astronomy calculations easier.",
+"long": ""
+},
+{
+"id": "planetary-tables-better",
+"year": 1551,
+"title": "Better planetary tables",
+"field": "Space",
+"desc": "Used Copernicus' math to improve over previous planetary tables.",
+"long": ""
+},
+{
+"id": "eustacian-tubes",
+"year": 1552,
+"title": "Eustacian tubes",
+"field": "Science",
+"desc": "Described tube going from ear to throat, as well as adrenal glands published a new anatomy book.",
+"long": ""
+},
+{
+"id": "northeast-passage",
+"year": 1553,
+"title": "Northeastern passage",
+"field": "Geography",
+"desc": "First crossing through northeastern passage landed in Archangelsk (so not quite the whole way to asia). Improved Russia-English trade relations but ultimately impractical.",
+"long": ""
+},
+{
+"id": "homologies",
+"year": 1555,
+"title": "Vertebrate skeletons",
+"field": "Science",
+"desc": "Similarities between vertebrate skeletons documented, noted that number of bones in limbs were often constant regardless of animal species. Foreshadowed evolution.",
+"long": ""
+},
+{
+"id": "mineralogy",
+"year": 1556,
+"title": "Mining book",
+"field": "Science",
+"desc": "Wrote and illustrated \\\"Concerning Metallic Things\\\" and founded Mineralogy. Also contributed: Theophrastus Bombastus von Hohenheim (best name ever?)",
+"long": ""
+},
+{
+"id": "tobacco",
+"year": 1556,
+"title": "Tobacco",
+"field": "Culture",
+"desc": "Europeans learned about Tobacco from Native Americans. Nicotine named after Nicot, ambassador to Portugal who sent tobacco seeds to France.",
+"long": ""
+},
+{
+"id": "scientific-societies",
+"year": 1560,
+"title": "Scientific societies",
+"field": "Culture",
+"desc": "First scientific association for idea exchange “Academy of the Mysteries of Nature” was closed down by the inquisition shortly, but others formed later.",
+"long": ""
+},
+{
+"id": "world-maps",
+"year": 1568,
+"title": "Mercator projection",
+"field": "Math",
+"desc": "Main feature of Mercator projection: movement in a fixed compass direction appears as a straight line on the map. The cover of the book showed Atlas holding the world on his shoulders, this is why books of maps are called atlases.",
+"long": ""
+},
+{
+"id": "supernova",
+"year": 1572,
+"title": "Supernova",
+"field": "Space",
+"desc": "Observed the star birth process over 485 days (until it became invisible). Tried to determine parallax but found none, suggesting it was very far away. Notion of heavenly immutability destroyed.",
+"long": ""
+},
+{
+"id": "greenland",
+"year": 1576,
+"title": "Greenland revisited",
+"field": "Geography",
+"desc": "Discovered Baffin Island, and second time around, Greenland rediscovered. All Vikings settlers had died or left. Found no viable northwest passage path.",
+"long": ""
+},
+{
+"id": "comet-distance",
+"year": 1577,
+"title": "Comet distances",
+"field": "Space",
+"desc": "Distance to comets proven to be far beyond previous notions. Greeks thought comets were atmospheric phenomenon (!), but Tycho saw no parallax in the comet’s trajectory, proving it was far.",
+"long": ""
+},
+{
+"id": "drake-strait",
+"year": 1578,
+"title": "Drake Strait",
+"field": "Geography",
+"desc": "Discovered a passage around the southernmost tip of South America. Attempting to find Straight of Magellan, which weaves through South American continent (far south), Drake overshot and found an even more southern passage. Coming back around he got as far as SFBA. 60 years after Magellan this was only the second circumnavigation of the world.",
+"long": ""
+},
+{
+"id": "pendulum",
+"year": 1581,
+"title": "Pendulums for time",
+"field": "Science",
+"desc": "First inkling that pendulums might have good time-keeping properties. Most time keeping done via heart rate, dripping water, burning candle, Took another 70 years to implement.",
+"long": ""
+},
+{
+"id": "siberia",
+"year": 1581,
+"title": "Siberia settled",
+"field": "Geography",
+"desc": "Driven by fur trade, Russia expanded east. Timofievich conquered last Mongol kingdom named Sibir. Eventually paved the way to Russians in the Pacific.",
+"long": ""
+},
+{
+"id": "gregorian-calendar",
+"year": 1582,
+"title": "Gregorian calendar",
+"field": "Culture",
+"desc": "Pope mandated a calendar switch, causing holidays to be more aligned with seasons. A leap year every 4 years means a year is 365.25 days, but it’s actually 365.2422 days long. To avoid error new calendar introduced a new rule. Instead of 1/4, 97/100 had to be leap years. To adjust for the offset, 10 days were dropped on October 4, 1582. The next day was October 15.",
+"long": ""
+},
+{
+"id": "falling-motion",
+"year": 1589,
+"title": "Falling motion",
+"field": "Science",
+"desc": "Definitive proof that objects fall at same acceleration regardless of their mass. Confusions stemmed from air resistance. Also showed that force not necessary to keep object in perpetual motion. Credited with founding experimental science.",
+"long": ""
+},
+{
+"id": "cryptanalysis",
+"year": 1589,
+"title": "Code breaking",
+"field": "Math",
+"desc": "Francois Vieta managed to break a code Philip II of Spain was using to send secret messages to Henry III of France.",
+"long": ""
+},
+{
+"id": "algebraic-symbol",
+"year": 1591,
+"title": "Algebraic symbols",
+"field": "Math",
+"desc": "Algebraic symbol system proposed, using x and y for variables",
+"long": ""
+},
+{
+"id": "east-indies",
+"year": 1596,
+"title": "East indies settled",
+"field": "Geography",
+"desc": "Dutch expansion into Asia. Setup a factory at Palembang on Sumatra, starting the Dutch overseas empire",
+"long": ""
+},
+{
+"id": "pi-accuracy",
+"year": 1596,
+"title": "PI accuracy",
+"field": "Math",
+"desc": "Archimedes estimated to 3.142, but van Ceulen got it to 20 and then 35 decimal places.",
+"long": ""
+},
+{
+"id": "chemistry-textbook",
+"year": 1597,
+"title": "Chemistry book",
+"field": "Science",
+"desc": "Described preparation of hydrochloride and sulfuric and nitric acid. Still Alchemy, but set stage for real chemistry.",
+"long": ""
+},
+{
+"id": "vein-valves",
+"year": 1603,
+"title": "Vein valves",
+"field": "Science",
+"desc": "Discovery that veins have valves that prevent backflow. Galen’s doctrine was that blood was made in liver, carried to heart and pumped through arteries and veins. Fabrici found something else but didn’t dare to go against Galen.",
+"long": ""
+},
+{
+"id": "english-settlement-america",
+"year": 1607,
+"title": "English America",
+"field": "Geography",
+"desc": "Jamestown became first permanent English settlement in North America, start of French-English rivalry there.",
+"long": ""
+},
+{
+"id": "french-settlement-america",
+"year": 1608,
+"title": "French America",
+"field": "Geography",
+"desc": "Quebec: first permanent French settlement in North America, Commissioned by Henry IV",
+"long": ""
+},
+{
+"id": "elliptical-orbits",
+"year": 1609,
+"title": "Elliptical orbits",
+"field": "Space",
+"desc": "Discovery that planetary orbits aren’t circular but elliptical. Working under Tycho Brahe, Kepler found that his teacher’s data worked best for non-circular orbits with sun at one of the foci’s. Also developed Kepler’s laws.",
+"long": ""
+},
+{
+"id": "milky-way",
+"year": 1609,
+"title": "Milky Way",
+"field": "Space",
+"desc": "Discovery that the Milky Way is full of stars. Galileo replicated Lippershey’s telescope and peered into the Milky Way, discerning many small stars.",
+"long": ""
+},
+{
+"id": "moon",
+"year": 1609,
+"title": "Moon mountains",
+"field": "Space",
+"desc": "Discovery that the moon has mountains. Also with the help of his telescope, Galileo discerned dark spots on the moon t hat might have been seas. Ultimately it suggested that the moon wasn’t just a globe of light, but a world.",
+"long": ""
+},
+{
+"id": "jupiter-moons",
+"year": 1610,
+"title": "Jupiter's four moons",
+"field": "Space",
+"desc": "Discovery that Jupiter has 4 moons orbiting it with apparently elliptical orbits. Another point against egocentrism.",
+"long": ""
+},
+{
+"id": "venus-phases",
+"year": 1610,
+"title": "Venus phases",
+"field": "Space",
+"desc": "Discovery that Venus has a full range of phases. The discovery strongly suggests heliocentric model.",
+"long": ""
+},
+{
+"id": "sunspots",
+"year": 1610,
+"title": "Sunspots",
+"field": "Space",
+"desc": "Discovery of sunspots. Annoying to religious conservatives since the sun was supposed to be perfect.",
+"long": ""
+},
+{
+"id": "andromeda-nebula",
+"year": 1612,
+"title": "Andromeda Nebula",
+"field": "Space",
+"desc": "Discovery of nebulas (specifically Andromeda)",
+"long": ""
+},
+{
+"id": "metabolism",
+"year": 1614,
+"title": "Biological metabolism",
+"field": "Science",
+"desc": "Beginning of the study of biological metabolism. Self-experimented while eating and drinking, found he lost more weight than the weight of his feces and urine.",
+"long": ""
+},
+{
+"id": "baffin-bay",
+"year": 1616,
+"title": "Baffin Bay",
+"field": "Geography",
+"desc": "Came as far as 78 deg N, within 800 miles of North Pole, concluding that there was no practical NW passage. Furthest north for 2.5 centuries.",
+"long": ""
+},
+{
+"id": "tierra-del-fuego",
+"year": 1616,
+"title": "Tierra Del Fuego",
+"field": "Geography",
+"desc": "Sailed around the southern tip of Cape Horn, which is on a large island.",
+"long": ""
+},
+{
+"id": "scientific-method",
+"year": 1620,
+"title": "Scientific method",
+"field": "Culture",
+"desc": "New Organon published. Bacon laid out the foundation for the scientific method, going beyond logic. Formalized experimental science.",
+"long": ""
+},
+{
+"id": "gas",
+"year": 1624,
+"title": "Gas state",
+"field": "Science",
+"desc": "Before the 17th century, the Greek four-element model dictated that any vapor was just generic \\\"air.\\\" van Helmont overturned this by demonstrating that distinct types of \\\"airs\\\" exist, just like distinct solids and liquids, and coined the term \\\"gas.\\\"",
+"long": ""
+},
+{
+"id": "planetary-tables-even-better",
+"year": 1627,
+"title": "Even better planetary tables",
+"field": "Space",
+"desc": "Greatly improved by Napier’s logarithms, which was the first application of the technique.",
+"long": ""
+},
+{
+"id": "aurochs-extinct",
+"year": 1627,
+"title": "Aurochs extinction",
+"field": "Science",
+"desc": "Closest ancestor of cattle became extinct. Aurochs weren’t hunted deliberatey, just ran out of space due to domesticated cows.",
+"long": ""
+},
+{
+"id": "science-vs-religion",
+"year": 1633,
+"title": "Science religion debates",
+"field": "Culture",
+"desc": "Serious criticism of church worldview. Written in Italian (not Latin), “Dialog on the two chief world systems” was accessible to the public and created a huge stir. Copernicus-supporter was described favorably, Ptolemy-supporter laughed at. Pope forced Galileo to renounce his views.",
+"long": ""
+},
+{
+"id": "magnetic-declination-variation",
+"year": 1635,
+"title": "Shifting magnetic declination",
+"field": "Science",
+"desc": "Discovered that magnetic north and geographic north aren’t the same, and that magnetic north shifts position over time.",
+"long": ""
+},
+{
+"id": "analytic-geometry",
+"year": 1637,
+"title": "Cartesian geometry",
+"field": "Math",
+"desc": "Represented points in 2D space as pairs of coordinates, with graphs of functions first illustrated. Algebraic and geometric solutions. Laid foundation for calculus.",
+"long": ""
+},
+{
+"id": "fermat-last-theorem",
+"year": 1637,
+"title": "Fermat's last theorem",
+"field": "Math",
+"desc": "Conjectured that no 3 positive integers a, b, c exist such that a^n + b^n = c^n (for n > 2). Only proven 350 years later.",
+"long": ""
+},
+{
+"id": "quinine",
+"year": 1642,
+"title": "Quinine",
+"field": "Science",
+"desc": "Quinine as treatment for malaria in Europe. Incas used bark of cinchona tree, in which active ingredient quinine treats malaria. Allowed Europeans to remain in tropical climates.",
+"long": ""
+},
+{
+"id": "south-pacific",
+"year": 1642,
+"title": "New Zealand and Tasmania",
+"field": "Geography",
+"desc": "Seeking a continent entirely in the Southern Hemisphere (predicted by Greeks), European explorers went south. Tasman discovered Indonesia, then Tasmania, then New Guinea and also South Island of New Zealand.",
+"long": ""
+},
+{
+"id": "air-pressure-altitude",
+"year": 1648,
+"title": "Air pressure altitude",
+"field": "Science",
+"desc": "Air pressure was found to depend on altitude. Pascal was too sick to go himself, so sent his brother in law up a mountain, saw mercury column descend from 30” to 27”. Showed atmosphere would have finite height of ~100 mi",
+"long": ""
+},
+{
+"id": "double-star",
+"year": 1650,
+"title": "Double star",
+"field": "Space",
+"desc": "First double star observed. Middle star of the Big Dipper is actually two stars very close together.",
+"long": ""
+},
+{
+"id": "biblical-age-of-earth",
+"year": 1650,
+"title": "Biblical earth age",
+"field": "Culture",
+"desc": "Theologians decide earth created in 4004 BC. More specifically, 9am GMT on October 26, 4004 BCE",
+"long": ""
+},
+{
+"id": "names-on-moon",
+"year": 1651,
+"title": "Moon features named",
+"field": "Space",
+"desc": "Features of the moon first named. Published a map of the moon in “New Algamest” and named craters of the moon after famous astronomers: Tycho, Copernicus, Ptolemaeus, and Kepler.",
+"long": ""
+},
+{
+"id": "lymphatic-vessels",
+"year": 1653,
+"title": "Lymphatic vessels",
+"field": "Science",
+"desc": "Veins and arteries well known, but a third type of vessel resembling veins was found. These vessels had thinner walls, carried “lymph”, or watery parts of blood. Took back interstitial fluid from outside of cells.",
+"long": ""
+},
+{
+"id": "probability",
+"year": 1654,
+"title": "Probability",
+"field": "Math",
+"desc": "Consulting with Pascal and Fermat, a certain gambler wanted to understand why he kept losing at dice. These greats formulated a mathematics for considering a large number of random events, unpredictable on their own, but in predictable in aggregate.",
+"long": ""
+},
+{
+"id": "saturn-ring",
+"year": 1656,
+"title": "Saturn's ring",
+"field": "Space",
+"desc": "Build a large telescope (23ft long) with better lens grinding techniques, and were able to see Saturn’s rings, which eluded Galileo. Also saw Orion Nebula rather than a single star. Baruch Spinoza also contributed.",
+"long": ""
+},
+{
+"id": "falling-motion-experiment",
+"year": 1657,
+"title": "Falling motion experiment",
+"field": "Science",
+"desc": "Definitive experiment created a vacuum (mitigating air resistance) using an air pump and dropped feather and coin at the same time, and they fell at the same speed",
+"long": ""
+},
+{
+"id": "red-blood-cells",
+"year": 1658,
+"title": "Red blood cells",
+"field": "Science",
+"desc": "Red blood cells first seen in blood w/ microscope. Due to improvements in microscopes in 1650s, Swammerdam studied insects. Father of modern entomology (study of insects).",
+"long": ""
+},
+{
+"id": "syrtis-major",
+"year": 1659,
+"title": "Syrtis Major",
+"field": "Space",
+"desc": "Dark triangular marking on Mars.",
+"long": ""
+},
+{
+"id": "capillaries",
+"year": 1660,
+"title": "Capillaries",
+"field": "Science",
+"desc": "Capillaries first seen under microscope. Previous unclear was how blood got from arteries to veins (to get back to heart). Harvey's theory suggested that there should be vessels, but they were too small to see.",
+"long": ""
+},
+{
+"id": "chemical-elements",
+"year": 1661,
+"title": "Scientific chemistry",
+"field": "Science",
+"desc": "Definition of chemical elements. 2000 years after Aristotle's 4 elements, published \\\"The Skeptical Chymist\\\", changing the name alchemist => chemist. Suggested defining elements as components that can't be converted into anything simpler.",
+"long": ""
+},
+{
+"id": "acid-base",
+"year": 1661,
+"title": "Acid-base balance",
+"field": "Science",
+"desc": "Acid-base balance is necessary for health. Supplanted the 4 humor theory (bile, blood, phlegm, black bile) with acid-base balance. Suggested digestion was more chemical than mechanical.",
+"long": ""
+},
+{
+"id": "royal-society",
+"year": 1662,
+"title": "Royal Society",
+"field": "Science",
+"desc": "The English Royal Society became the first scientific society, other nations modeled theirs after it. Legal charter.",
+"long": ""
+},
+{
+"id": "jupiter-red-spot",
+"year": 1664,
+"title": "Jupiter's Red Spot",
+"field": "Space",
+"desc": "It's so huge the whole Earth could fit inside.",
+"long": ""
+},
+{
+"id": "cell",
+"year": 1665,
+"title": "Cells",
+"field": "Science",
+"desc": "Published Micrographia which outlined his work. Looked at structure of cork, saw dead cells. First use of the term \\\"cell\\\"",
+"long": ""
+},
+{
+"id": "light-diffraction",
+"year": 1665,
+"title": "Diffraction",
+"field": "Science",
+"desc": "Saw light bending around objects. First inkling that light may have wave like properties.",
+"long": ""
+},
+{
+"id": "planet-rotations",
+"year": 1665,
+"title": "Planetary rotation",
+"field": "Space",
+"desc": "All planets rotate around their own axes. Discovered that Mars has a period of 24h40m, Jupiter 9h56m.",
+"long": ""
+},
+{
+"id": "no-spontaneous-generation",
+"year": 1668,
+"title": "No spontaneous generation",
+"field": "Science",
+"desc": "Devised a biological experiment with controls (first of its kind) to see if spoiled meat in a sealed flask would generate maggots. Answer: no.",
+"long": ""
+},
+{
+"id": "phosphorus",
+"year": 1669,
+"title": "Phosphorus",
+"field": "Science",
+"desc": "Nine modern elements were known at the time (eg. gold) but their discoverers were unknown. Brand discovered Phosphorus in an attempt to create gold out of urine.",
+"long": ""
+},
+{
+"id": "fossils",
+"year": 1669,
+"title": "Fossils",
+"field": "Geography",
+"desc": "Fossils first identified as petrified remnants of life. View eventually prevailed. Spectacular evidence of evolution.",
+"long": ""
+},
+{
+"id": "blood-color",
+"year": 1669,
+"title": "Blood colors",
+"field": "Science",
+"desc": "Observed different colors of blood. His work Tractatus de Corde first documented that dark red blood in veins turned brighter red from contact with air.",
+"long": ""
+},
+{
+"id": "diabetes",
+"year": 1670,
+"title": "Diabetes diagnosed",
+"field": "Science",
+"desc": "May have been known by ancients that diabetic urine was sweet from all of the flies that accumulated.",
+"long": ""
+},
+{
+"id": "saturn-satellites",
+"year": 1671,
+"title": "Saturn's four moons",
+"field": "Space",
+"desc": "Huygens thought that the 6 known satellites (4 around Jupiter, Titan around Saturn and Moon around Earth) matched the 6 known planets, so that was that. Cassini proved him wrong.",
+"long": ""
+},
+{
+"id": "mars-distance",
+"year": 1672,
+"title": "Mars distance",
+"field": "Space",
+"desc": "Two millenium before, estimates of distance to Moon was established, but no other astronomical distances since. Cassini determined position of Mars as seen from Paris. Also determined size of solar system in general. Calculated Saturn orbit (farthest known planet) was at least 1.6e9 miles across",
+"long": ""
+},
+{
+"id": "saturn-rings",
+"year": 1675,
+"title": "Saturn's multiple rings",
+"field": "Space",
+"desc": "Cassini observed a dark line separating inner and outer ring. Known as \\\"cassini's division\\\"",
+"long": ""
+},
+{
+"id": "microorganisms",
+"year": 1676,
+"title": "Microorganisms",
+"field": "Science",
+"desc": "Used small single lenses ground expertly to produce 200x magnification. Observed \\\"animalcules\\\" in pond water. Also first detected spermatazoa in semen.",
+"long": ""
+},
+{
+"id": "southern-stars",
+"year": 1678,
+"title": "Southern stars",
+"field": "Space",
+"desc": "First systematic observations of southern skies. Southern sky was never visible to Europeans. Halley traveled to St. Helena in south Atlantic, returned with a catalog of 341 southern stars.",
+"long": ""
+},
+{
+"id": "light-as-wave",
+"year": 1678,
+"title": "Light as wave",
+"field": "Science",
+"desc": "Light: particle or wave controversy grew sharper. Newton couldn't see how light was a wave (there is nothing to wave), Huygens thought light traveled through an aether.",
+"long": ""
+},
+{
+"id": "muscles-bones",
+"year": 1680,
+"title": "Human kinetics",
+"field": "Science",
+"desc": "Mechanical model for human kinetics. Modeled human bone and muscle as a system of levers, applying the same laws of physics to our body.",
+"long": ""
+},
+{
+"id": "dodo-extinction",
+"year": 1681,
+"title": "Dodo extinct",
+"field": "Science",
+"desc": "Dodo became first anthrogenic extinction. Mauritius had many species that evolved in isolation and were different from elsewhere. Dodo had no natural predators until the Dutch came and gradually killed them all.",
+"long": ""
+},
+{
+"id": "plant-sexuality",
+"year": 1682,
+"title": "Plant sexuality",
+"field": "Science",
+"desc": "Some plants shown to reproduce sexually, sexual plant organs, that plant pollen is equivalent to animal sperm. Previously, plants were assumed to be semi-alive (eg. in Genesis, they appear alongside dry land)",
+"long": ""
+},
+{
+"id": "bacteria",
+"year": 1683,
+"title": "Bacteria",
+"field": "Science",
+"desc": "Continuing to rely on his excellent lenses, saw even smaller organisms than \\\"animalcules\\\", which in retrospect turned out to be bacteria.",
+"long": ""
+},
+{
+"id": "earth-size-accurate",
+"year": 1684,
+"title": "Earth size accurate",
+"field": "Space",
+"desc": "Improvement over Eratosthenes' estimate based on distance of a star from zenith at different places using the help of telescopes. Estimate for radius was 3950 miles (actual 3,958.8)",
+"long": ""
+},
+{
+"id": "imaginary-numbers",
+"year": 1685,
+"title": "Complex numbers",
+"field": "Math",
+"desc": "First used the complex plane to represent i=sqrt(-1).",
+"long": ""
+},
+{
+"id": "meteorological-map",
+"year": 1686,
+"title": "Trade winds mapped",
+"field": "Geography",
+"desc": "First world map showing consistent winds. Seasonal winds called monsoons come from the arabic word meaning \\\"season\\\". These and steady winds were never documented before. Halley hinted at sun-heated air but didn't understand reason for westward flow at the equator.",
+"long": ""
+},
+{
+"id": "plant-species-classified",
+"year": 1686,
+"title": "Plant species classified",
+"field": "Science",
+"desc": "Published a volume classifying 18600 different plant species, including a pretty good taxonomy.",
+"long": ""
+},
+{
+"id": "shape-of-earth",
+"year": 1687,
+"title": "Non-spherical earth",
+"field": "Science",
+"desc": "Earth shape suggested as oblate spheroid. When Richer traveled to Cayenne to determine Mars parallax, found pendelum beats slower there than in Paris. Newton suggested that this was due to difference in gravity at equator vs. at poles. This would mean earth would bulge.",
+"long": ""
+},
+{
+"id": "animal-classification-improved",
+"year": 1691,
+"title": "Improved animal classifications",
+"field": "Science",
+"desc": "Classified animals logistically based on hooves, toes, and teeth.",
+"long": ""
+},
+{
+"id": "mortality-tables",
+"year": 1693,
+"title": "Mortality tables",
+"field": "Math",
+"desc": "Halley produced a life table showing the number of people surviving to any age from a cohort born the same year.",
+"long": ""
+},
+{
+"id": "scientific-voyages",
+"year": 1698,
+"title": "Scientific ocean voyages",
+"field": "Science",
+"desc": "First ocean voyage exclusively for science. Prior, voyages were taken for exploration, settlement or trade, with science as a side-effect. Halley's voyage measured magnetic declinations around the world, prepared first map of the world showing isodeclination, and accurate lat/long for ports.",
+"long": ""
+},
+{
+"id": "gas-volume-temperature",
+"year": 1699,
+"title": "Gas volume temperature",
+"field": "Science",
+"desc": "Discovery that volume of gas proportional to temperature. A step towards gas laws, but not quite precise enough measurements yet.",
+"long": ""
+},
+{
+"id": "comet-orbits",
+"year": 1705,
+"title": "Comets' Orbits",
+"field": "Space",
+"desc": "Comet orbits remained mysterious. Halley claimed that comet orbits were elliptical, just very elongated. At the time, he was not taken seriously, but when he successfully predicted the return of a comet 50 years later, he was vindicated posthumously.",
+"long": ""
+},
+{
+"id": "plant-nourishment",
+"year": 1705,
+"title": "Plant Nourishment",
+"field": "Science:Chemistry",
+"desc": "Discovery that air contributed to the nourishment of plants, not just water. Also the first to collect gas by bubbling them through water and trapping in an inverted vessel.",
+"long": ""
+},
+{
+"id": "solar-eclipse",
+"year": 1715,
+"title": "Solar eclipse",
+"field": "Space",
+"desc": "23 centuries prior, Thales predicted the eclipse which happened on April 22, 1715. Halley plotted the path of the eclipse and organized a number of observers to watch the eclipse.",
+"long": ""
+},
+{
+"id": "stellar-motion",
+"year": 1718,
+"title": "Stellar motion",
+"field": "Space",
+"desc": "Up to now, it had been assumed that the stars were fixed in the sky. However, upon careful observation of bright stars Sirius, Procyon, and Arcturus, Halley found that they'd moved relative to the observations of Tycho.",
+"long": ""
+},
+{
+"id": "easter-island",
+"year": 1722,
+"title": "Easter Island",
+"field": "Geography",
+"desc": "Just 45 square miles in area, and 1200 miles from nearest land (a small island), likely the farthest point reached by the Polynesians. Roggeveen also discovered the Samoan Islands.",
+"long": ""
+},
+{
+"id": "aberration-light",
+"year": 1728,
+"title": "Aberration of light",
+"field": "Science:Physics",
+"desc": "Since heliocentricity, astronomers tried to see parallax in the stars as a result of the earth moving around the sun (186 million miles displacement). Rather than finding this parallax, Bradley ooked through a 212ft long telescope and found he had to tip the scope to catch the light as the earth moved, and unlocked a new way to calculate the speed of light.",
+"long": ""
+},
+{
+"id": "bering-strait",
+"year": 1728,
+"title": "Bering Strait",
+"field": "Geography",
+"desc": "Peter I commissioned Bering, a Dutch navigator to explore far reaches of eastern Russia. He first mapped Kamchatka and then sailed north and reached the arctic ice without sighting land, continuing through the Bering Strait. This was definitive proof that North America was not part of Asia.",
+"long": ""
+},
+{
+"id": "blood-pressure",
+"year": 1733,
+"title": "Blood pressure",
+"field": "Science:Biology",
+"desc": "Hales went from studying the flow of sap in plants to the flow of blood in animals, measuring rates of flow in different parts of the circulatory system. He wrote Hemostaticks in 1733.",
+"long": ""
+},
+{
+"id": "shape-of-earth-confirmed",
+"year": 1735,
+"title": "Shape of the Earth",
+"field": "Geography",
+"desc": "If the earth was the shape Newton suggested it was, a degree of latitude near the poles should be greater in mileage than at the equator. One explorer went to the equator (Peru), the other to the north pole (Lapland), confirming Newton. Sea level at equator is 13 miles farther from center than sea level at poles.",
+"long": ""
+},
+{
+"id": "taxonomy",
+"year": 1735,
+"title": "Taxonomy",
+"field": "Science:Biology",
+"desc": "Linnaeus traveled over 4600 miles through northern Scandinavia, discovering hundreds of new plant species. He referred to each plant by genus and species (eg. Homo sapiens), the binomial nomenclature we still use today. And invented the taxonomy of classes, orders.",
+"long": ""
+},
+{
+"id": "trade-winds",
+"year": 1735,
+"title": "Trade winds",
+"field": "Science:Physics",
+"desc": "Hadley found that air near the equator had a faster west-to-east motion than air farther from it. This is due to the uneven heating of the earth due to the sun: hotter at the equator, cooler at poles, and the coriolis effect. Today this model is called the Hadley cell.",
+"long": ""
+},
+{
+"id": "mechanics",
+"year": 1736,
+"title": "Mechanics",
+"field": "Science:Physics",
+"desc": "Newton's principia featured geometric proofs of his claims. Euler wrote \\\"Mechanics\\\", and provided proofs using algebra and calculus.",
+"long": ""
+},
+{
+"id": "cobalt",
+"year": 1737,
+"title": "Cobalt",
+"field": "Science:Chemistry",
+"desc": "Miners were puzzled at some varieties of copper ore which didn't yield copper when smelted, and suspected foul play from kobolds, a type of mythical sprite. Upon closer examination, it was a new element (after Phosphorus), and Brandt named it cobalt. This was the first metal to be discovered not known to the medeival alchemists.",
+"long": ""
+},
+{
+"id": "kinetic-gases",
+"year": 1738,
+"title": "Kinetic gases",
+"field": "Science:Physics",
+"desc": "Bernoulli modeled gas as many small particles in rapid movement, with temperature increasing their speed. As a result, increasing temperature increases volume (keeping pressure the same). Similarly, increasing temperature increases pressure if volume is kept fixed.",
+"long": ""
+},
+{
+"id": "rocky-mountains",
+"year": 1739,
+"title": "Rocky Mountains",
+"field": "Geography",
+"desc": "The French continued their exploration of North America, with brother Pierre and Paul Mallet reaching Colorado and becoming the first Europeans to see the Rockies.",
+"long": ""
+},
+{
+"id": "hydra",
+"year": 1740,
+"title": "Hydra",
+"field": "Science:Biology",
+"desc": "Trembley discovered the hydra, a small primitive organism resembling a plant, but actually an animal. It's tiny tentacles resembled the formidable Hydra destroyed by Hercules. And this hydra could regenerate parts that were cut off, as well as merge with other hydras to become one organism.",
+"long": ""
+},
+{
+"id": "celsius",
+"year": 1742,
+"title": "Celsius scale",
+"field": "Science:Physics",
+"desc": "The Fahrenheit scale was commonly used, but phase changes were set at awkward quantities: melting at 32 F and boiling at 212 F. Celsius rationalized this by setting them to 0 and 100 respectively.",
+"long": ""
+}
+]

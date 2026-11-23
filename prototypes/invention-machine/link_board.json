@@ -1,0 +1,7417 @@
+[
+{
+"id": "100-inch-telescope",
+"t": "100-inch telescope",
+"y": "1917",
+"type": "object",
+"job": "gathers light",
+"parts": [
+"mirror"
+],
+"worksBy": [
+{
+"effect": "a curved mirror focuses light",
+"card": "optics"
+}
+]
+},
+{
+"id": "2,4-d",
+"t": "2,4-D",
+"y": "1944",
+"type": "material",
+"job": "grows food",
+"parts": [],
+"worksBy": [
+{
+"effect": "a plant hormone drives growth",
+"card": "gibberellins"
+}
+]
+},
+{
+"id": "abacus",
+"t": "Abacus",
+"y": "500 BCE",
+"type": "object",
+"job": "computes",
+"parts": [],
+"worksBy": [
+{
+"effect": "place value",
+"card": "decimal-notation"
+}
+]
+},
+{
+"id": "achromatic-lens",
+"t": "Achromatic lens",
+"y": "1733",
+"type": "object",
+"job": "bends light",
+"parts": [
+"concave-lenses",
+"glass"
+],
+"worksBy": [
+{
+"effect": "dispersion",
+"card": "light-spectrum"
+}
+]
+},
+{
+"id": "achromatic-microscopes",
+"t": "Achromatic microscopes",
+"y": "1830",
+"type": "object",
+"job": "magnifies",
+"parts": [
+"achromatic-lens"
+],
+"worksBy": []
+},
+{
+"id": "acoustics",
+"t": "Acoustics",
+"y": "1896",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "adding-machine",
+"t": "Mechanical calculators",
+"y": "1642",
+"type": "object",
+"job": "computes",
+"parts": [
+"gear-train"
+],
+"worksBy": [
+{
+"effect": "place value",
+"card": "decimal-notation"
+}
+]
+},
+{
+"id": "aerodynamics",
+"t": "Aerodynamics",
+"y": "1809",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "agriculture",
+"t": "Plants domesticated",
+"y": "8000 BCE",
+"type": "practice",
+"job": "grows food",
+"parts": [
+"stone-tool",
+"irrigation"
+],
+"worksBy": []
+},
+{
+"id": "air-brake",
+"t": "Air brake",
+"y": "1868",
+"type": "object",
+"job": "slows motion",
+"parts": [
+"piston-and-cylinder",
+"valve"
+],
+"worksBy": []
+},
+{
+"id": "air-pressure",
+"t": "Early pneumatics",
+"y": "1654",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "air-pump",
+"t": "Air pumps",
+"y": "1645",
+"type": "object",
+"job": "makes a vacuum",
+"parts": [
+"piston-and-cylinder",
+"valve"
+],
+"worksBy": []
+},
+{
+"id": "airplane",
+"t": "Airplane",
+"y": "1903",
+"type": "object",
+"job": "flies",
+"parts": [
+"wing",
+"four-stroke-engine",
+"screw-propeller",
+"Wing warping"
+],
+"worksBy": []
+},
+{
+"id": "alloy-steel",
+"t": "Alloy steel",
+"y": "1883",
+"type": "material",
+"job": "forms the body",
+"parts": [],
+"worksBy": []
+},
+{
+"id": "alternating-currents",
+"t": "Alternating currents",
+"y": "1883",
+"type": "practice",
+"job": "carries current",
+"parts": [
+"electric-generators",
+"transformer",
+"electric-motors"
+],
+"worksBy": []
+},
+{
+"id": "aluminum-process",
+"t": "Aluminum process",
+"y": "1886",
+"type": "material",
+"job": "forms the body",
+"parts": [],
+"worksBy": []
+},
+{
+"id": "analytical-engine",
+"t": "Analytical engine",
+"y": "1822",
+"type": "object",
+"job": "computes",
+"parts": [
+"gear-train",
+"punched-cards"
+],
+"worksBy": [
+{
+"effect": "place value",
+"card": "decimal-notation"
+}
+]
+},
+{
+"id": "anesthesia",
+"t": "Anesthesia",
+"y": "1846",
+"type": "practice",
+"job": "numbs pain",
+"parts": [
+"nitrous-oxide",
+"chloroform"
+],
+"worksBy": []
+},
+{
+"id": "anthrax-inoculation",
+"t": "Anthrax inoculation",
+"y": "1881",
+"type": "practice",
+"job": "prevents disease",
+"parts": [],
+"worksBy": [
+{
+"effect": "the body learns to fight a germ",
+"card": "vaccination"
+}
+]
+},
+{
+"id": "antiseptic-surgery",
+"t": "Antiseptic surgery",
+"y": "1865",
+"type": "practice",
+"job": "treats illness",
+"parts": [
+"coal-mining"
+],
+"worksBy": [
+{
+"effect": "a chemical kills germs on contact",
+"gap": "Antisepsis"
+}
+]
+},
+{
+"id": "antitoxin",
+"t": "Antitoxin",
+"y": "1890",
+"type": "material",
+"job": "treats illness",
+"parts": [
+"horse"
+],
+"worksBy": [
+{
+"effect": "antibodies in serum neutralize a toxin",
+"card": "vaccination"
+}
+]
+},
+{
+"id": "aqualung",
+"t": "Aqualung",
+"y": "1943",
+"type": "object",
+"job": "supplies oxygen",
+"parts": [
+"valve",
+"oxygen"
+],
+"worksBy": [
+{
+"effect": "water pressure grows with depth",
+"card": "hydrostatics"
+}
+]
+},
+{
+"id": "aqueduct",
+"t": "Aqueducts",
+"y": "700 BCE",
+"type": "object",
+"job": "supplies water",
+"parts": [
+"arch"
+],
+"worksBy": []
+},
+{
+"id": "arch",
+"t": "Architectural arches",
+"y": "750 BCE",
+"type": "object",
+"job": "bears the load",
+"parts": [],
+"worksBy": [
+{
+"effect": "each stone pushes back as hard as it's pushed",
+"card": "laws-motion"
+}
+]
+},
+{
+"id": "archimedes-principle",
+"t": "Archimedes' principle",
+"y": "-250",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "arecibo-radio-telescope",
+"t": "Arecibo radio telescope",
+"y": "1963",
+"type": "object",
+"job": "gathers light",
+"parts": [
+"superheterodyne-receiver",
+"mirror"
+],
+"worksBy": [
+{
+"effect": "a curved mirror focuses light",
+"card": "optics"
+}
+]
+},
+{
+"id": "arquebus",
+"t": "Arquebus",
+"y": "1450",
+"type": "object",
+"job": "fires projectiles",
+"parts": [
+"gunpowder",
+"steel",
+"gun-lock"
+],
+"worksBy": []
+},
+{
+"id": "artificial-heart-implant",
+"t": "Artificial heart implant",
+"y": "1969",
+"type": "object",
+"job": "pumps blood",
+"parts": [
+"valve"
+],
+"worksBy": [
+{
+"effect": "the heart pumps blood around the body",
+"card": "blood-circulation"
+}
+]
+},
+{
+"id": "artificial-kidneys",
+"t": "Artificial kidneys",
+"y": "1945",
+"type": "object",
+"job": "treats illness",
+"parts": [
+"cellulose"
+],
+"worksBy": [
+{
+"effect": "small molecules seep through a membrane",
+"card": "osmosis"
+}
+]
+},
+{
+"id": "artillery",
+"t": "Artillery",
+"y": "1439",
+"type": "object",
+"job": "fires projectiles",
+"parts": [],
+"worksBy": []
+},
+{
+"id": "ascorbic-acid",
+"t": "Ascorbic acid",
+"y": "1932",
+"type": "material",
+"job": null,
+"parts": [],
+"worksBy": [
+{
+"effect": "the body needs trace nutrients",
+"card": "vitamin-concept"
+}
+]
+},
+{
+"id": "assembly-line",
+"t": "Assembly line",
+"y": "1908",
+"type": "practice",
+"job": "manufactures",
+"parts": [
+"interchangeable-parts"
+],
+"worksBy": []
+},
+{
+"id": "atomic-clock",
+"t": "Atomic clock",
+"y": "1949",
+"type": "object",
+"job": "keeps time",
+"parts": [
+"quartz-oscillator",
+"liquid-ammonia"
+],
+"worksBy": [
+{
+"effect": "atomic resonance",
+"card": "magnetic-resonance"
+}
+]
+},
+{
+"id": "bacterial-cultivation",
+"t": "Bacterial cultivation",
+"y": "1876",
+"type": "practice",
+"job": "grows cultures",
+"parts": [],
+"worksBy": []
+},
+{
+"id": "bacterial-staining",
+"t": "Bacterial staining",
+"y": "1884",
+"type": "practice",
+"job": "colors",
+"parts": [
+"synthetic-dyes"
+],
+"worksBy": [
+{
+"effect": "dyes stain some parts of a cell and not others",
+"card": "chromatin"
+}
+]
+},
+{
+"id": "bakelite",
+"t": "Bakelite",
+"y": "1909",
+"type": "material",
+"job": "insulates",
+"parts": [
+"coal-mining"
+],
+"worksBy": []
+},
+{
+"id": "ball-bearing",
+"t": "ball-bearing",
+"y": "",
+"type": "object",
+"job": "reduces friction",
+"parts": [
+"steel"
+],
+"worksBy": [
+{
+"effect": "rolling friction",
+"card": "rolling-friction"
+}
+]
+},
+{
+"id": "balloon-angioplasty",
+"t": "Balloon angioplasty",
+"y": "1977",
+"type": "practice",
+"job": "treats illness",
+"parts": [
+"cardiac-catheter"
+],
+"worksBy": []
+},
+{
+"id": "ballpoint-pen",
+"t": "Ballpoint pen",
+"y": "1938",
+"type": "object",
+"job": "writes",
+"parts": [
+"ball-bearing",
+"ink"
+],
+"worksBy": [
+{
+"effect": "capillary action",
+"card": "capillary-action"
+}
+]
+},
+{
+"id": "barbiturates",
+"t": "Barbiturates",
+"y": "1863",
+"type": "material",
+"job": "treats illness",
+"parts": [
+"synthetic-urea"
+],
+"worksBy": [
+{
+"effect": "chemicals carry signals between nerves",
+"card": "vagusstoffe"
+}
+]
+},
+{
+"id": "barometer",
+"t": "Barometers",
+"y": "1643",
+"type": "object",
+"job": "measures",
+"parts": [
+"glass",
+"mercury"
+],
+"worksBy": [
+{
+"effect": "atmospheric pressure",
+"card": "air-pressure"
+}
+]
+},
+{
+"id": "basic-steam-engine",
+"t": "Rudimentary steam motion",
+"y": "50",
+"type": "object",
+"job": "turns flow into rotation",
+"parts": [
+"boiler"
+],
+"worksBy": [
+{
+"effect": "reaction thrust",
+"card": "conservation-momentum"
+}
+]
+},
+{
+"id": "bathyscaphe",
+"t": "Bathyscaphe",
+"y": "1948",
+"type": "object",
+"job": "transports",
+"parts": [
+"steel",
+"gasoline"
+],
+"worksBy": [
+{
+"effect": "buoyancy",
+"card": "archimedes-principle"
+},
+{
+"effect": "water pressure grows with depth",
+"card": "hydrostatics"
+}
+]
+},
+{
+"id": "bathysphere",
+"t": "Bathyspheres",
+"y": "1934",
+"type": "object",
+"job": "transports",
+"parts": [
+"steel",
+"glass",
+"oxygen"
+],
+"worksBy": [
+{
+"effect": "water pressure grows with depth",
+"card": "hydrostatics"
+}
+]
+},
+{
+"id": "beryllium",
+"t": "Beryllium",
+"y": "1798",
+"type": "material",
+"job": null,
+"parts": [],
+"worksBy": [
+{
+"effect": "alpha rays knock neutrons out of beryllium",
+"card": "neutron"
+}
+]
+},
+{
+"id": "bessemer-steel",
+"t": "Bessemer steel",
+"y": "1856",
+"type": "material",
+"job": "forms the body",
+"parts": [
+"coke-iron"
+],
+"worksBy": []
+},
+{
+"id": "betatron",
+"t": "Betatron",
+"y": "1940",
+"type": "object",
+"job": "accelerates particles",
+"parts": [
+"electromagnets",
+"transformer"
+],
+"worksBy": [
+{
+"effect": "a magnet pushes a current",
+"card": "electrical-motion"
+},
+{
+"effect": "mass grows with speed",
+"card": "mass-increase"
+}
+]
+},
+{
+"id": "bevatron",
+"t": "Bevatron",
+"y": "1954",
+"type": "object",
+"job": "accelerates particles",
+"parts": [
+"electromagnets",
+"particle-accelerator"
+],
+"worksBy": [
+{
+"effect": "a magnet pushes a current",
+"card": "electrical-motion"
+},
+{
+"effect": "mass grows with speed",
+"card": "mass-increase"
+}
+]
+},
+{
+"id": "bicycle",
+"t": "Bicycle",
+"y": "1839",
+"type": "object",
+"job": "transports",
+"parts": [
+"wheel-and-axle",
+"gear-train",
+"rubber-tire",
+"ball-bearing",
+"steel"
+],
+"worksBy": []
+},
+{
+"id": "bifocal-lenses",
+"t": "Bifocal lenses",
+"y": "1784",
+"type": "object",
+"job": "bends light",
+"parts": [
+"eyeglass",
+"concave-lenses"
+],
+"worksBy": []
+},
+{
+"id": "binary-system",
+"t": "Binary system",
+"y": "1700",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "biotin",
+"t": "Biotin",
+"y": "1942",
+"type": "material",
+"job": null,
+"parts": [],
+"worksBy": [
+{
+"effect": "the body needs trace nutrients",
+"card": "vitamin-concept"
+}
+]
+},
+{
+"id": "black-bodies",
+"t": "Blackbody Radiation",
+"y": "1860",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "block-printing",
+"t": "Block printing",
+"y": "700",
+"type": "practice",
+"job": "prints",
+"parts": [
+"paper",
+"ink"
+],
+"worksBy": []
+},
+{
+"id": "blood-circulation",
+"t": "Blood circulation",
+"y": "1628",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "boiler",
+"t": "boiler",
+"y": "",
+"type": "object",
+"job": "makes steam",
+"parts": [
+"copper"
+],
+"worksBy": [
+{
+"effect": "latent heat",
+"card": "latent-heat"
+}
+]
+},
+{
+"id": "borazon",
+"t": "Borazon",
+"y": "1957",
+"type": "material",
+"job": "grinds",
+"parts": [
+"nitrogen"
+],
+"worksBy": []
+},
+{
+"id": "bow",
+"t": "Bows and arrows",
+"y": "20000 BCE",
+"type": "object",
+"job": "fires projectiles",
+"parts": [
+"stone-tool"
+],
+"worksBy": [
+{
+"effect": "elasticity",
+"card": "hookes-law"
+}
+]
+},
+{
+"id": "boyles-law",
+"t": "Boyle's law",
+"y": "1662",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "breeder-reactors",
+"t": "Breeder reactors",
+"y": "1951",
+"type": "object",
+"job": "makes heat",
+"parts": [
+"neptunium-and-plutonium",
+"uranium",
+"sodium-and-potassium"
+],
+"worksBy": [
+{
+"effect": "a neutron turns one element into another",
+"card": "neutron-bombardment"
+}
+]
+},
+{
+"id": "bridle",
+"t": "Bridle",
+"y": "1500 BCE",
+"type": "object",
+"job": "steers",
+"parts": [
+"bronze",
+"leather"
+],
+"worksBy": []
+},
+{
+"id": "bronze",
+"t": "Bronze",
+"y": "3600 BCE",
+"type": "material",
+"job": "forms the body",
+"parts": [
+"copper"
+],
+"worksBy": []
+},
+{
+"id": "bubble-chambers",
+"t": "Bubble chambers",
+"y": "1953",
+"type": "object",
+"job": "detects radiation",
+"parts": [
+"liquid-hydrogen",
+"electromagnets",
+"piston-and-cylinder",
+"camera"
+],
+"worksBy": [
+{
+"effect": "radiation ionizes what it passes through",
+"card": "ionizing-radiation"
+}
+]
+},
+{
+"id": "calculating-machines",
+"t": "Calculating machines",
+"y": "1693",
+"type": "object",
+"job": "computes",
+"parts": [
+"gear-train"
+],
+"worksBy": [
+{
+"effect": "place value",
+"card": "decimal-notation"
+}
+]
+},
+{
+"id": "calculus",
+"t": "Calculus",
+"y": "1669",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "camera",
+"t": "Camera",
+"y": "1685",
+"type": "object",
+"job": "records media",
+"parts": [
+"glass"
+],
+"worksBy": [
+{
+"effect": "refraction",
+"card": "refraction"
+}
+]
+},
+{
+"id": "candle",
+"t": "Candles",
+"y": "3000 BCE",
+"type": "object",
+"job": "makes light",
+"parts": [
+"animal-dom"
+],
+"worksBy": [
+{
+"effect": "burns with oxygen from the air",
+"card": "combustion-and-phlogiston-theory-refinement"
+},
+{
+"effect": "capillary action",
+"card": "capillary-action"
+}
+]
+},
+{
+"id": "canning-food",
+"t": "Canning food",
+"y": "1795",
+"type": "practice",
+"job": "preserves food",
+"parts": [
+"glass"
+],
+"worksBy": [
+{
+"effect": "heat kills microbes",
+"card": "no-spontaneous-generation-redux"
+}
+]
+},
+{
+"id": "cannon",
+"t": "Cannons",
+"y": "1346",
+"type": "object",
+"job": "fires projectiles",
+"parts": [
+"gunpowder",
+"bronze"
+],
+"worksBy": []
+},
+{
+"id": "capillary-action",
+"t": "Capillary action",
+"y": "1709",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "carbonated-water",
+"t": "Carbonated water",
+"y": "1768",
+"type": "material",
+"job": "prepares food",
+"parts": [
+"carbon-dioxide"
+],
+"worksBy": [
+{
+"effect": "gas dissolves in water under pressure",
+"card": "soluble-gases"
+}
+]
+},
+{
+"id": "carborundum",
+"t": "Carborundum",
+"y": "1891",
+"type": "material",
+"job": "grinds",
+"parts": [
+"silicon"
+],
+"worksBy": []
+},
+{
+"id": "cardiac-catheter",
+"t": "Cardiac catheter",
+"y": "1929",
+"type": "object",
+"job": "diagnoses",
+"parts": [
+"vulcanization-of-rubber"
+],
+"worksBy": [
+{
+"effect": "X-rays pass through tissue unevenly",
+"card": "x-rays"
+}
+]
+},
+{
+"id": "cardiac-catheterization-practice",
+"t": "Cardiac catheterization practice",
+"y": "1941",
+"type": "practice",
+"job": "diagnoses",
+"parts": [
+"coolidge-tube"
+],
+"worksBy": []
+},
+{
+"id": "carriage-springs",
+"t": "Carriage springs",
+"y": "1706",
+"type": "object",
+"job": "absorbs shocks",
+"parts": [
+"steel"
+],
+"worksBy": [
+{
+"effect": "elasticity",
+"card": "hookes-law"
+}
+]
+},
+{
+"id": "cart",
+"t": "Wheeled carts",
+"y": "3500 BCE",
+"type": "object",
+"job": "transports",
+"parts": [
+"wheel-and-axle",
+"animal-dom"
+],
+"worksBy": []
+},
+{
+"id": "cat-scan",
+"t": "CAT scan",
+"y": "1972",
+"type": "object",
+"job": "diagnoses",
+"parts": [
+"coolidge-tube",
+"integrated-circuits"
+],
+"worksBy": [
+{
+"effect": "X-rays pass through tissue unevenly",
+"card": "x-rays"
+},
+{
+"effect": "reconstruction from projections",
+"card": "fourier-analysis"
+}
+]
+},
+{
+"id": "catalysis",
+"t": "Catalysis",
+"y": "1812",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "catapult",
+"t": "Catapult",
+"y": "400 BCE",
+"type": "object",
+"job": "fires projectiles",
+"parts": [
+"bow"
+],
+"worksBy": []
+},
+{
+"id": "cathode-rays",
+"t": "Cathode rays",
+"y": "1876",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "cell-theory",
+"t": "Cell theory",
+"y": "1838",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "celluloid",
+"t": "Celluloid",
+"y": "1869",
+"type": "material",
+"job": "forms the body",
+"parts": [
+"pyroxylin"
+],
+"worksBy": []
+},
+{
+"id": "charles-law",
+"t": "Charles's law",
+"y": "1787",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "chemical-fertilizer",
+"t": "Chemical fertilizer",
+"y": "1842",
+"type": "material",
+"job": "grows food",
+"parts": [
+"nitrogen",
+"phosphorus",
+"sodium-and-potassium"
+],
+"worksBy": [
+{
+"effect": "plants need nitrogen from the soil",
+"card": "nitrogen-fixation"
+}
+]
+},
+{
+"id": "chemotherapy",
+"t": "Chemotherapy",
+"y": "1907",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "chloroform",
+"t": "Chloroform",
+"y": "1831",
+"type": "material",
+"job": null,
+"parts": [],
+"worksBy": [
+{
+"effect": "an inhaled drug puts the patient beyond pain",
+"gap": "General anesthesia"
+}
+]
+},
+{
+"id": "chlorophyll-synthesis",
+"t": "Chlorophyll synthesis",
+"y": "1960",
+"type": "practice",
+"job": "builds molecules",
+"parts": [],
+"worksBy": []
+},
+{
+"id": "chromatin",
+"t": "Chromatin",
+"y": "1882",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "chromatography",
+"t": "Chromatography",
+"y": "1906",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "clinical-thermometer",
+"t": "Clinical thermometer",
+"y": "1866",
+"type": "object",
+"job": "measures",
+"parts": [
+"glass",
+"mercury"
+],
+"worksBy": [
+{
+"effect": "liquids expand when heated",
+"card": "thermal-expansion"
+}
+]
+},
+{
+"id": "cloud-chamber",
+"t": "Cloud chamber",
+"y": "1911",
+"type": "object",
+"job": "detects radiation",
+"parts": [
+"glass",
+"piston-and-cylinder",
+"camera"
+],
+"worksBy": []
+},
+{
+"id": "cloud-seeding",
+"t": "Cloud-seeding",
+"y": "1946",
+"type": "practice",
+"job": "makes rain",
+"parts": [
+"dry-ice",
+"iodine"
+],
+"worksBy": [
+{
+"effect": "droplets form around a seed",
+"card": "cloud-chamber"
+}
+]
+},
+{
+"id": "coal-hydrogenation",
+"t": "Coal hydrogenation",
+"y": "1912",
+"type": "material",
+"job": "stores chemical energy",
+"parts": [
+"hydrogen",
+"coal-mining"
+],
+"worksBy": [
+{
+"effect": "burns with oxygen from the air",
+"card": "combustion-and-phlogiston-theory-refinement"
+}
+]
+},
+{
+"id": "coal-mining",
+"t": "Coal mining",
+"y": "1228",
+"type": "material",
+"job": "stores chemical energy",
+"parts": [],
+"worksBy": []
+},
+{
+"id": "coin",
+"t": "Currency (Coins)",
+"y": "640 BCE",
+"type": "object",
+"job": "measures",
+"parts": [],
+"worksBy": []
+},
+{
+"id": "coincidence-counter",
+"t": "Coincidence counter",
+"y": "1929",
+"type": "object",
+"job": "detects radiation",
+"parts": [
+"geiger-counter",
+"triode"
+],
+"worksBy": []
+},
+{
+"id": "coke-iron",
+"t": "Coke and iron",
+"y": "1709",
+"type": "material",
+"job": "forms the body",
+"parts": [],
+"worksBy": []
+},
+{
+"id": "color-television",
+"t": "Color television",
+"y": "1940",
+"type": "object",
+"job": "shows the image",
+"parts": [
+"iconoscope",
+"oscilloscope",
+"europium"
+],
+"worksBy": [
+{
+"effect": "three colours of light mix to make any colour",
+"card": "color-vision"
+}
+]
+},
+{
+"id": "color-vision",
+"t": "Color vision",
+"y": "1959",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "combustion-and-phlogiston-theory-refinement",
+"t": "Combustion and phlogiston",
+"y": "1772",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "commercial-communications-satellites",
+"t": "Commercial communications satellites",
+"y": "1965",
+"type": "object",
+"job": "communicates",
+"parts": [],
+"worksBy": [
+{
+"effect": "orbit",
+"card": "universal-gravitation"
+}
+]
+},
+{
+"id": "communications-satellites",
+"t": "Communications satellites",
+"y": "1962",
+"type": "object",
+"job": "communicates",
+"parts": [
+"radio",
+"transistor",
+"photovoltaic-cells"
+],
+"worksBy": [
+{
+"effect": "orbit",
+"card": "universal-gravitation"
+}
+]
+},
+{
+"id": "compass",
+"t": "Magnetic navigation",
+"y": "1180",
+"type": "object",
+"job": "finds direction",
+"parts": [],
+"worksBy": [
+{
+"effect": "the Earth is a magnet",
+"card": "earth-magnet"
+}
+]
+},
+{
+"id": "computer",
+"t": "Computers",
+"y": "1930",
+"type": "object",
+"job": "computes",
+"parts": [
+"gear-train",
+"electric-motors"
+],
+"worksBy": [
+{
+"effect": "integration",
+"card": "calculus"
+}
+]
+},
+{
+"id": "concave-lenses",
+"t": "Concave lenses",
+"y": "1451",
+"type": "object",
+"job": "bends light",
+"parts": [
+"glass"
+],
+"worksBy": [
+{
+"effect": "refraction",
+"card": "refraction"
+}
+]
+},
+{
+"id": "conservation-momentum",
+"t": "Conservation of momentum",
+"y": "1668",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "contact-lenses",
+"t": "Contact lenses",
+"y": "1954",
+"type": "object",
+"job": "bends light",
+"parts": [],
+"worksBy": [
+{
+"effect": "refraction",
+"card": "refraction"
+}
+]
+},
+{
+"id": "continuous-maser",
+"t": "Continuous maser",
+"y": "1956",
+"type": "object",
+"job": "amplifies a signal",
+"parts": [],
+"worksBy": [
+{
+"effect": "energy levels",
+"card": "quantized-atom"
+},
+{
+"effect": "excited atoms copy the light passing through",
+"card": "stimulated-emission"
+}
+]
+},
+{
+"id": "controlled-fission-reactors",
+"t": "Controlled fission reactors",
+"y": "1954",
+"type": "object",
+"job": "makes electricity",
+"parts": [
+"nuclear-reactor",
+"boiler",
+"steam-turbine",
+"electric-generators"
+],
+"worksBy": []
+},
+{
+"id": "coolidge-tube",
+"t": "Coolidge tube",
+"y": "1913",
+"type": "object",
+"job": "makes x-rays",
+"parts": [
+"tungsten-wire",
+"glass",
+"tungsten"
+],
+"worksBy": [
+{
+"effect": "electrons hitting metal make X-rays",
+"card": "x-rays"
+},
+{
+"effect": "thermionic emission",
+"card": "edison-effect"
+}
+]
+},
+{
+"id": "copper",
+"t": "Copper",
+"y": "4000 BCE",
+"type": "material",
+"job": "forms the body",
+"parts": [],
+"worksBy": []
+},
+{
+"id": "cordite",
+"t": "Cordite",
+"y": "1889",
+"type": "material",
+"job": "explodes",
+"parts": [
+"nitroglycerine",
+"pyroxylin"
+],
+"worksBy": []
+},
+{
+"id": "coronagraph",
+"t": "Coronagraph",
+"y": "1930",
+"type": "object",
+"job": "gathers light",
+"parts": [
+"telescope"
+],
+"worksBy": []
+},
+{
+"id": "coronary-bypass-surgery",
+"t": "Coronary bypass surgery",
+"y": "1969",
+"type": "practice",
+"job": "treats illness",
+"parts": [
+"heart-lung-machine"
+],
+"worksBy": []
+},
+{
+"id": "cotton-gin",
+"t": "Cotton gin",
+"y": "1793",
+"type": "object",
+"job": "makes textiles",
+"parts": [],
+"worksBy": []
+},
+{
+"id": "couched-lance",
+"t": "Couched lance",
+"y": "780",
+"type": "object",
+"job": "impales",
+"parts": [
+"high-backed-saddle",
+"metal-stirrup"
+],
+"worksBy": [
+{
+"effect": "momentum carries into the strike",
+"card": "conservation-momentum"
+}
+]
+},
+{
+"id": "cross-hairs",
+"t": "Cross hairs",
+"y": "1641",
+"type": "object",
+"job": "finds direction",
+"parts": [],
+"worksBy": []
+},
+{
+"id": "crossbow",
+"t": "Crossbows",
+"y": "1050",
+"type": "object",
+"job": "fires projectiles",
+"parts": [
+"bow",
+"steel"
+],
+"worksBy": []
+},
+{
+"id": "current-and-crystals",
+"t": "Current and crystals",
+"y": "1874",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "cyanocobalamin",
+"t": "Cyanocobalamin",
+"y": "1948",
+"type": "material",
+"job": null,
+"parts": [],
+"worksBy": [
+{
+"effect": "the body needs trace nutrients",
+"card": "vitamin-concept"
+}
+]
+},
+{
+"id": "cyclotron",
+"t": "Cyclotron",
+"y": "1930",
+"type": "object",
+"job": "accelerates particles",
+"parts": [
+"electromagnets",
+"triode"
+],
+"worksBy": [
+{
+"effect": "a magnet pushes a current",
+"card": "electrical-motion"
+}
+]
+},
+{
+"id": "cylinder-locks",
+"t": "Cylinder locks",
+"y": "1865",
+"type": "object",
+"job": "protects",
+"parts": [
+"spring"
+],
+"worksBy": []
+},
+{
+"id": "daniell-cell",
+"t": "Daniell cell",
+"y": "1836",
+"type": "object",
+"job": "stores electricity",
+"parts": [
+"copper",
+"sulfuric-acid",
+"zinc"
+],
+"worksBy": [
+{
+"effect": "a reaction drives a current",
+"card": "laws-of-electrolysis"
+}
+]
+},
+{
+"id": "decimal-notation",
+"t": "Positional notation",
+"y": "1586",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "dentistry",
+"t": "Dentistry",
+"y": "1728",
+"type": "practice",
+"job": "treats illness",
+"parts": [
+"lead",
+"anesthesia"
+],
+"worksBy": []
+},
+{
+"id": "deuterium",
+"t": "Deuterium",
+"y": "1931",
+"type": "material",
+"job": null,
+"parts": [],
+"worksBy": [
+{
+"effect": "light atoms fuse, releasing energy",
+"card": "solar-energy-source"
+}
+]
+},
+{
+"id": "dewar-flask",
+"t": "Dewar flask",
+"y": "1892",
+"type": "object",
+"job": "insulates",
+"parts": [
+"glass",
+"mirror"
+],
+"worksBy": [
+{
+"effect": "a vacuum stops heat passing",
+"gap": "Vacuum insulation"
+},
+{
+"effect": "heat radiates as invisible light",
+"card": "infrared-radiation"
+}
+]
+},
+{
+"id": "diesel-engine",
+"t": "Diesel engine",
+"y": "1897",
+"type": "object",
+"job": "provides power",
+"parts": [
+"piston-and-cylinder",
+"valve",
+"kerosene",
+"Fuel injector"
+],
+"worksBy": [
+{
+"effect": "compressing a gas heats it",
+"card": "gas-laws"
+}
+]
+},
+{
+"id": "diffraction-gratings",
+"t": "Diffraction gratings",
+"y": "1821",
+"type": "object",
+"job": "bends light",
+"parts": [
+"glass"
+],
+"worksBy": [
+{
+"effect": "light waves interfere",
+"card": "light-waves"
+}
+]
+},
+{
+"id": "diffraction-gratings-improved",
+"t": "Improved diffraction gratings",
+"y": "1882",
+"type": "object",
+"job": "bends light",
+"parts": [],
+"worksBy": [
+{
+"effect": "light waves interfere",
+"card": "light-waves"
+}
+]
+},
+{
+"id": "dirigible",
+"t": "Dirigible",
+"y": "1900",
+"type": "object",
+"job": "flies",
+"parts": [
+"hydrogen",
+"four-stroke-engine",
+"screw-propeller",
+"aluminum"
+],
+"worksBy": [
+{
+"effect": "buoyancy",
+"card": "archimedes-principle"
+}
+]
+},
+{
+"id": "distillation",
+"t": "Liquor distillation",
+"y": "1300",
+"type": "practice",
+"job": "separates mixtures",
+"parts": [],
+"worksBy": [
+{
+"effect": "alcohol boils before water",
+"gap": "Boiling points"
+}
+]
+},
+{
+"id": "dome",
+"t": "Architectural domes",
+"y": "537",
+"type": "object",
+"job": "bears the load",
+"parts": [
+"arch"
+],
+"worksBy": []
+},
+{
+"id": "double-refraction",
+"t": "Double refraction",
+"y": "1669",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "dry-cell",
+"t": "Dry cell",
+"y": "1867",
+"type": "object",
+"job": "stores electricity",
+"parts": [
+"zinc"
+],
+"worksBy": [
+{
+"effect": "a reaction drives a current",
+"card": "laws-of-electrolysis"
+}
+]
+},
+{
+"id": "dry-plates",
+"t": "Dry plates",
+"y": "1871",
+"type": "object",
+"job": "records media",
+"parts": [
+"glass",
+"discovery-of-bromine"
+],
+"worksBy": [
+{
+"effect": "light darkens silver salts",
+"card": "photography"
+}
+]
+},
+{
+"id": "dye",
+"t": "Resistant dyes",
+"y": "1200 BCE",
+"type": "material",
+"job": "colors",
+"parts": [],
+"worksBy": []
+},
+{
+"id": "dynamite",
+"t": "Dynamite",
+"y": "1866",
+"type": "material",
+"job": "explodes",
+"parts": [
+"nitroglycerine"
+],
+"worksBy": []
+},
+{
+"id": "earth-magnet",
+"t": "Earth as giant magnet",
+"y": "1600",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "earth-resources-satellites",
+"t": "Earth resources satellites",
+"y": "1972",
+"type": "object",
+"job": "measures",
+"parts": [
+"photovoltaic-cells",
+"radio"
+],
+"worksBy": [
+{
+"effect": "orbit",
+"card": "universal-gravitation"
+}
+]
+},
+{
+"id": "edison-effect",
+"t": "Edison effect",
+"y": "1883",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "electric-battery",
+"t": "Electric battery",
+"y": "1800",
+"type": "object",
+"job": "stores electricity",
+"parts": [
+"copper",
+"zinc"
+],
+"worksBy": [
+{
+"effect": "a reaction drives a current",
+"card": "laws-of-electrolysis"
+}
+]
+},
+{
+"id": "electric-generators",
+"t": "Electric generators",
+"y": "1831",
+"type": "object",
+"job": "makes electricity",
+"parts": [
+"electromagnets",
+"copper",
+"ball-bearing"
+],
+"worksBy": [
+{
+"effect": "induction",
+"card": "electromagnetic-induction"
+}
+]
+},
+{
+"id": "electric-light",
+"t": "Electric light",
+"y": "1879",
+"type": "object",
+"job": "makes light",
+"parts": [
+"glass",
+"Carbon filament"
+],
+"worksBy": [
+{
+"effect": "hot things glow",
+"card": "black-bodies"
+}
+]
+},
+{
+"id": "electric-motors",
+"t": "Electric motors",
+"y": "1831",
+"type": "object",
+"job": "provides power",
+"parts": [
+"electromagnets",
+"copper",
+"ball-bearing",
+"electric-battery"
+],
+"worksBy": [
+{
+"effect": "a magnet pushes a current",
+"card": "electrical-motion"
+}
+]
+},
+{
+"id": "electric-nerve-fibers",
+"t": "Electric nerve fibers",
+"y": "1922",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "electrical-conductance",
+"t": "Electrical conductance",
+"y": "1729",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "electrical-motion",
+"t": "Electrical motion",
+"y": "1821",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "electrical-stimulation",
+"t": "Electrical stimulation",
+"y": "1780",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "electricity-in-a-vacuum",
+"t": "Electricity in a vacuum",
+"y": "1858",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "electrocardiogram",
+"t": "Electrocardiogram",
+"y": "1903",
+"type": "practice",
+"job": "diagnoses",
+"parts": [
+"galvanometer"
+],
+"worksBy": [
+{
+"effect": "muscles work by electrical impulses",
+"card": "electrical-stimulation"
+}
+]
+},
+{
+"id": "electroencephalography",
+"t": "Electroencephalography",
+"y": "1929",
+"type": "practice",
+"job": "diagnoses",
+"parts": [
+"galvanometer"
+],
+"worksBy": [
+{
+"effect": "nerve signals are electrical",
+"card": "electric-nerve-fibers"
+}
+]
+},
+{
+"id": "electromagnetic-induction",
+"t": "Electromagnetic induction",
+"y": "1831",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "electromagnetism",
+"t": "Electromagnetism",
+"y": "1820",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "electromagnets",
+"t": "Electromagnets",
+"y": "1823",
+"type": "object",
+"job": "makes a magnetic field",
+"parts": [
+"copper",
+"electric-battery",
+"Soft iron core"
+],
+"worksBy": [
+{
+"effect": "a current makes a magnet",
+"card": "electromagnetism"
+}
+]
+},
+{
+"id": "electromechanical-calculator",
+"t": "Electromechanical calculator",
+"y": "1880",
+"type": "object",
+"job": "computes",
+"parts": [
+"electromagnets",
+"punched-cards"
+],
+"worksBy": []
+},
+{
+"id": "electron-gun",
+"t": "Electron gun",
+"y": "1897",
+"type": "object",
+"job": "emits electrons",
+"parts": [],
+"worksBy": [
+{
+"effect": "electron beams",
+"card": "cathode-rays"
+},
+{
+"effect": "thermionic emission",
+"card": "edison-effect"
+}
+]
+},
+{
+"id": "electron-microscope",
+"t": "Electron microscope",
+"y": "1932",
+"type": "object",
+"job": "magnifies",
+"parts": [
+"electromagnets",
+"tungsten-wire",
+"dry-plates",
+"electron-gun"
+],
+"worksBy": [
+{
+"effect": "electrons travel as waves",
+"card": "particles-as-waves"
+}
+]
+},
+{
+"id": "electron-microscope-improved",
+"t": "Improved electron microscope",
+"y": "1937",
+"type": "object",
+"job": "magnifies",
+"parts": [
+"electromagnets",
+"tungsten-wire",
+"dry-plates",
+"electron-gun"
+],
+"worksBy": [
+{
+"effect": "electrons travel as waves",
+"card": "particles-as-waves"
+}
+]
+},
+{
+"id": "electronic-rectifier",
+"t": "Electronic rectifier",
+"y": "1904",
+"type": "object",
+"job": "controls the current",
+"parts": [
+"electric-light",
+"Metal plate"
+],
+"worksBy": [
+{
+"effect": "thermionic emission",
+"card": "edison-effect"
+}
+]
+},
+{
+"id": "electronic-watch",
+"t": "Electronic watch",
+"y": "1961",
+"type": "object",
+"job": "keeps time",
+"parts": [
+"light-emitting-diodes",
+"transistor",
+"dry-cell",
+"Tuning fork"
+],
+"worksBy": []
+},
+{
+"id": "electrophoresis",
+"t": "Electrophoresis",
+"y": "1937",
+"type": "practice",
+"job": "separates mixtures",
+"parts": [],
+"worksBy": [
+{
+"effect": "charged particles move through a solution",
+"card": "ionic-dissociation"
+}
+]
+},
+{
+"id": "elevators",
+"t": "Elevators",
+"y": "1852",
+"type": "object",
+"job": "transports",
+"parts": [
+"spring",
+"improved-steam-engine"
+],
+"worksBy": []
+},
+{
+"id": "endorphins",
+"t": "Endorphins",
+"y": "1975",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "eniac",
+"t": "ENIAC",
+"y": "1946",
+"type": "object",
+"job": "computes",
+"parts": [
+"triode",
+"punched-cards"
+],
+"worksBy": []
+},
+{
+"id": "escapement",
+"t": "Escapement",
+"y": "1275",
+"type": "object",
+"job": "regulates speed",
+"parts": [],
+"worksBy": []
+},
+{
+"id": "essential-minerals",
+"t": "Essential minerals",
+"y": "1939",
+"type": "material",
+"job": null,
+"parts": [],
+"worksBy": [
+{
+"effect": "the body needs trace nutrients",
+"card": "vitamin-concept"
+}
+]
+},
+{
+"id": "eyeglass",
+"t": "Eyeglasses invented",
+"y": "1249",
+"type": "object",
+"job": "bends light",
+"parts": [
+"glass"
+],
+"worksBy": [
+{
+"effect": "refraction",
+"card": "refraction"
+}
+]
+},
+{
+"id": "fermentation",
+"t": "Fermentation",
+"y": "1800 BCE",
+"type": "practice",
+"job": "prepares food",
+"parts": [
+"Yeast"
+],
+"worksBy": [
+{
+"effect": "yeast turns sugar into alcohol",
+"card": "ferments-and-enzymes"
+}
+]
+},
+{
+"id": "ferments-and-enzymes",
+"t": "Ferments and enzymes",
+"y": "1896",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "fertilization-observed",
+"t": "Fertilization observed",
+"y": "1875",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "fiber-optic-communication",
+"t": "Fiber optic communication",
+"y": "1977",
+"type": "practice",
+"job": "communicates",
+"parts": [
+"fiber-optics",
+"laser",
+"photocell"
+],
+"worksBy": []
+},
+{
+"id": "fiber-optics",
+"t": "Fiber optics",
+"y": "1970",
+"type": "object",
+"job": "carries light",
+"parts": [
+"glass"
+],
+"worksBy": [
+{
+"effect": "total internal reflection",
+"card": "refraction"
+}
+]
+},
+{
+"id": "field-emission-microscope",
+"t": "Field-emission microscope",
+"y": "1937",
+"type": "object",
+"job": "magnifies",
+"parts": [
+"tungsten-wire"
+],
+"worksBy": [
+{
+"effect": "quantum tunnelling",
+"card": "particles-as-waves"
+}
+]
+},
+{
+"id": "field-ion-microscopes",
+"t": "Field ion microscopes",
+"y": "1955",
+"type": "object",
+"job": "magnifies",
+"parts": [
+"tungsten-wire",
+"helium-on-earth"
+],
+"worksBy": [
+{
+"effect": "quantum tunnelling",
+"card": "particles-as-waves"
+}
+]
+},
+{
+"id": "fire",
+"t": "Fire tamed",
+"y": "500000 BCE",
+"type": "practice",
+"job": "prepares food",
+"parts": [],
+"worksBy": [
+{
+"effect": "burns with oxygen from the air",
+"card": "combustion-and-phlogiston-theory-refinement"
+},
+{
+"effect": "rubbing makes heat",
+"card": "mechanical-equivalent-of-heat"
+}
+]
+},
+{
+"id": "first-automobile",
+"t": "First automobile",
+"y": "1885",
+"type": "object",
+"job": "transports",
+"parts": [
+"four-stroke-engine",
+"wheel-and-axle",
+"vulcanization-of-rubber",
+"carriage-springs",
+"gear-train",
+"ball-bearing",
+"self-starter"
+],
+"worksBy": []
+},
+{
+"id": "fish-nets",
+"t": "Linen",
+"y": "6000 BCE",
+"type": "material",
+"job": "forms the body",
+"parts": [],
+"worksBy": []
+},
+{
+"id": "fluoridation",
+"t": "Fluoridation",
+"y": "1951",
+"type": "practice",
+"job": "prevents disease",
+"parts": [
+"fluorine"
+],
+"worksBy": [
+{
+"effect": "fluoride protects teeth from decay",
+"gap": "Fluoride and teeth"
+}
+]
+},
+{
+"id": "flying-buttress",
+"t": "Flying buttresses",
+"y": "1137",
+"type": "object",
+"job": "bears the load",
+"parts": [
+"arch"
+],
+"worksBy": []
+},
+{
+"id": "flying-shuttle",
+"t": "Flying shuttle",
+"y": "1733",
+"type": "object",
+"job": "makes textiles",
+"parts": [],
+"worksBy": []
+},
+{
+"id": "fork",
+"t": "Forks",
+"y": "1071",
+"type": "object",
+"job": "holds the contents",
+"parts": [],
+"worksBy": []
+},
+{
+"id": "fountain-pen",
+"t": "Fountain pen",
+"y": "1884",
+"type": "object",
+"job": "writes",
+"parts": [
+"steel",
+"vulcanization-of-rubber",
+"ink"
+],
+"worksBy": [
+{
+"effect": "capillary action",
+"card": "capillary-action"
+}
+]
+},
+{
+"id": "four-stroke-engine",
+"t": "Four-stroke engine",
+"y": "1876",
+"type": "object",
+"job": "provides power",
+"parts": [
+"piston-and-cylinder",
+"valve",
+"gasoline"
+],
+"worksBy": []
+},
+{
+"id": "fourier-analysis",
+"t": "Fourier analysis",
+"y": "1822",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "franklin-stove",
+"t": "Franklin stove",
+"y": "1742",
+"type": "object",
+"job": "makes heat",
+"parts": [
+"coke-iron"
+],
+"worksBy": []
+},
+{
+"id": "freon",
+"t": "Freon",
+"y": "1930",
+"type": "material",
+"job": "carries heat",
+"parts": [
+"fluorine",
+"chlorine"
+],
+"worksBy": [
+{
+"effect": "latent heat",
+"card": "latent-heat"
+}
+]
+},
+{
+"id": "frequency-modulation",
+"t": "Frequency modulation",
+"y": "1939",
+"type": "practice",
+"job": "communicates",
+"parts": [],
+"worksBy": [
+{
+"effect": "radio waves",
+"card": "radio-waves"
+}
+]
+},
+{
+"id": "fuel-cell",
+"t": "Fuel cell",
+"y": "1839",
+"type": "object",
+"job": "makes electricity",
+"parts": [
+"platinum",
+"hydrogen",
+"oxygen",
+"sulfuric-acid"
+],
+"worksBy": [
+{
+"effect": "a reaction drives a current",
+"card": "laws-of-electrolysis"
+},
+{
+"effect": "catalysis",
+"card": "catalysis"
+}
+]
+},
+{
+"id": "galvanometer",
+"t": "Galvanometer",
+"y": "1820",
+"type": "object",
+"job": "measures",
+"parts": [
+"copper",
+"compass"
+],
+"worksBy": [
+{
+"effect": "a current makes a magnet",
+"card": "electromagnetism"
+}
+]
+},
+{
+"id": "gas-chromatography",
+"t": "Gas chromatography",
+"y": "1952",
+"type": "practice",
+"job": "separates mixtures",
+"parts": [],
+"worksBy": [
+{
+"effect": "parts of a mixture travel at different speeds",
+"card": "chromatography"
+}
+]
+},
+{
+"id": "gas-laws",
+"t": "Gas laws",
+"y": "1873",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "gas-lighting",
+"t": "Gas lighting",
+"y": "1800",
+"type": "object",
+"job": "makes light",
+"parts": [
+"coal-mining",
+"welsbach-mantle"
+],
+"worksBy": [
+{
+"effect": "burns with oxygen from the air",
+"card": "combustion-and-phlogiston-theory-refinement"
+}
+]
+},
+{
+"id": "gasoline",
+"t": "Gasoline",
+"y": "1860",
+"type": "material",
+"job": "stores chemical energy",
+"parts": [
+"oil-wells"
+],
+"worksBy": [
+{
+"effect": "burns with oxygen from the air",
+"card": "combustion-and-phlogiston-theory-refinement"
+}
+]
+},
+{
+"id": "gear-train",
+"t": "gear-train",
+"y": "",
+"type": "object",
+"job": "transmits rotation",
+"parts": [
+"bronze"
+],
+"worksBy": [
+{
+"effect": "mechanical advantage",
+"card": "lever-math"
+}
+]
+},
+{
+"id": "geiger-counter",
+"t": "Geiger counter",
+"y": "1908",
+"type": "object",
+"job": "detects radiation",
+"parts": [
+"argon",
+"electric-battery"
+],
+"worksBy": [
+{
+"effect": "radiation ionizes what it passes through",
+"card": "ionizing-radiation"
+}
+]
+},
+{
+"id": "geissler-tubes",
+"t": "Geissler tubes",
+"y": "1855",
+"type": "object",
+"job": "makes light",
+"parts": [
+"glass",
+"platinum"
+],
+"worksBy": [
+{
+"effect": "gas glows when current passes",
+"card": "electricity-in-a-vacuum"
+}
+]
+},
+{
+"id": "gene-synthesis",
+"t": "Gene synthesis",
+"y": "1970",
+"type": "practice",
+"job": "builds molecules",
+"parts": [],
+"worksBy": []
+},
+{
+"id": "genetic-engineering",
+"t": "Genetic engineering",
+"y": "1973",
+"type": "practice",
+"job": "modifies organisms",
+"parts": [
+"recombinant-dna"
+],
+"worksBy": [
+{
+"effect": "a cell follows genes put into it",
+"card": "virus-transduction"
+}
+]
+},
+{
+"id": "genetic-medicine",
+"t": "Genetic medicine",
+"y": "1990",
+"type": "practice",
+"job": "treats illness",
+"parts": [
+"recombinant-dna"
+],
+"worksBy": [
+{
+"effect": "a cell follows genes put into it",
+"card": "virus-transduction"
+}
+]
+},
+{
+"id": "geometry",
+"t": "Geometry",
+"y": "300 BCE",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "gibberellins",
+"t": "Gibberellins",
+"y": "1957",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "glass",
+"t": "Glass",
+"y": "2500 BCE",
+"type": "material",
+"job": "forms the body",
+"parts": [],
+"worksBy": []
+},
+{
+"id": "glass-blowing",
+"t": "Glass blowing",
+"y": "100 BCE",
+"type": "practice",
+"job": "forms the body",
+"parts": [
+"glass"
+],
+"worksBy": []
+},
+{
+"id": "glider",
+"t": "Glider",
+"y": "1853",
+"type": "object",
+"job": "flies",
+"parts": [
+"wing"
+],
+"worksBy": []
+},
+{
+"id": "glider-improved",
+"t": "Improved gliders",
+"y": "1891",
+"type": "object",
+"job": "flies",
+"parts": [
+"wing",
+"Weight-shift control"
+],
+"worksBy": []
+},
+{
+"id": "gps",
+"t": "gps",
+"y": "",
+"type": "object",
+"job": "finds direction",
+"parts": [
+"communications-satellites",
+"atomic-clock",
+"radio",
+"microchips"
+],
+"worksBy": [
+{
+"effect": "gravity slows clocks",
+"card": "gravitational-red-shift"
+},
+{
+"effect": "motion slows clocks",
+"card": "special-relativity"
+},
+{
+"effect": "signal delay gives distance",
+"card": "speed-of-light"
+},
+{
+"effect": "trilateration",
+"card": "geometry"
+}
+]
+},
+{
+"id": "gravitational-red-shift",
+"t": "Gravitational red shift",
+"y": "1925",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "greek-fire",
+"t": "Greek fire",
+"y": "673",
+"type": "material",
+"job": "explodes",
+"parts": [],
+"worksBy": [
+{
+"effect": "burns with oxygen from the air",
+"card": "combustion-and-phlogiston-theory-refinement"
+}
+]
+},
+{
+"id": "gun-lock",
+"t": "Gun lock",
+"y": "1411",
+"type": "object",
+"job": "ignites fuel",
+"parts": [],
+"worksBy": []
+},
+{
+"id": "gunpowder",
+"t": "Gunpowder",
+"y": "1249",
+"type": "material",
+"job": "explodes",
+"parts": [
+"Saltpeter",
+"sulfur"
+],
+"worksBy": [
+{
+"effect": "burns all at once, without air",
+"card": "oxygen"
+}
+]
+},
+{
+"id": "gyroscope",
+"t": "Gyroscope",
+"y": "1852",
+"type": "object",
+"job": "holds direction",
+"parts": [
+"ball-bearing"
+],
+"worksBy": []
+},
+{
+"id": "haber-process",
+"t": "Haber process",
+"y": "1908",
+"type": "material",
+"job": "grows food",
+"parts": [
+"hydrogen",
+"nitrogen"
+],
+"worksBy": [
+{
+"effect": "plants need nitrogen from the soil",
+"card": "nitrogen-fixation"
+}
+]
+},
+{
+"id": "hand-watch",
+"t": "Spring-powered watches",
+"y": "1504",
+"type": "object",
+"job": "keeps time",
+"parts": [
+"spring",
+"gear-train",
+"escapement"
+],
+"worksBy": []
+},
+{
+"id": "heart-lung-machine",
+"t": "Heart-lung machine",
+"y": "1953",
+"type": "object",
+"job": "pumps blood",
+"parts": [
+"perfusion-pump",
+"oxygen",
+"electric-motors"
+],
+"worksBy": [
+{
+"effect": "the heart pumps blood around the body",
+"card": "blood-circulation"
+}
+]
+},
+{
+"id": "heart-transplants",
+"t": "Heart transplants",
+"y": "1967",
+"type": "practice",
+"job": "treats illness",
+"parts": [
+"heart-lung-machine"
+],
+"worksBy": [
+{
+"effect": "the body rejects foreign tissue",
+"card": "tissue-transplantation"
+}
+]
+},
+{
+"id": "helicopter",
+"t": "Helicopter",
+"y": "1939",
+"type": "object",
+"job": "flies",
+"parts": [
+"wing",
+"four-stroke-engine",
+"gear-train",
+"Tail rotor"
+],
+"worksBy": []
+},
+{
+"id": "high-backed-saddle",
+"t": "High-backed saddle",
+"y": "750",
+"type": "object",
+"job": "steadies the rider",
+"parts": [
+"metal-stirrup",
+"saddle"
+],
+"worksBy": []
+},
+{
+"id": "holography",
+"t": "Holography",
+"y": "1947",
+"type": "practice",
+"job": "records media",
+"parts": [
+"dry-plates"
+],
+"worksBy": [
+{
+"effect": "light waves interfere",
+"card": "light-waves"
+}
+]
+},
+{
+"id": "home-photography",
+"t": "Home photography",
+"y": "1888",
+"type": "practice",
+"job": "records media",
+"parts": [
+"celluloid",
+"achromatic-lens",
+"camera"
+],
+"worksBy": [
+{
+"effect": "light darkens silver salts",
+"card": "photography"
+}
+]
+},
+{
+"id": "hookes-law",
+"t": "Hooke's law",
+"y": "1676",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "hormones",
+"t": "Hormones",
+"y": "1905",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "horse-collar",
+"t": "Horse collars",
+"y": "900",
+"type": "object",
+"job": "provides power",
+"parts": [
+"leather"
+],
+"worksBy": []
+},
+{
+"id": "hot-air-balloon",
+"t": "Balloon",
+"y": "1783",
+"type": "object",
+"job": "provides lift",
+"parts": [
+"fire",
+"silk-europe"
+],
+"worksBy": [
+{
+"effect": "buoyancy",
+"card": "archimedes-principle"
+},
+{
+"effect": "heating a gas expands it",
+"card": "charles-law"
+}
+]
+},
+{
+"id": "hubble-space-telescope",
+"t": "Hubble space telescope",
+"y": "1990",
+"type": "object",
+"job": "gathers light",
+"parts": [
+"mirror",
+"photovoltaic-cells",
+"gyroscope",
+"radio"
+],
+"worksBy": [
+{
+"effect": "a curved mirror focuses light",
+"card": "optics"
+},
+{
+"effect": "orbit",
+"card": "universal-gravitation"
+}
+]
+},
+{
+"id": "hydrostatics",
+"t": "Hydrostatics",
+"y": "1583",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "iconoscope",
+"t": "Iconoscope",
+"y": "1938",
+"type": "object",
+"job": "records media",
+"parts": [
+"electron-gun",
+"photocell"
+],
+"worksBy": []
+},
+{
+"id": "improved-steam-engine",
+"t": "Improved steam engine",
+"y": "1781",
+"type": "object",
+"job": "provides power",
+"parts": [
+"boiler",
+"piston-and-cylinder",
+"valve",
+"gear-train",
+"Centrifugal governor"
+],
+"worksBy": []
+},
+{
+"id": "infrared-radiation",
+"t": "Infrared radiation",
+"y": "1800",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "ink",
+"t": "Ink",
+"y": "-2500",
+"type": "material",
+"job": "makes marks",
+"parts": [],
+"worksBy": []
+},
+{
+"id": "insulated-wire",
+"t": "insulated-wire",
+"y": "",
+"type": "object",
+"job": "carries current",
+"parts": [
+"copper",
+"vulcanization-of-rubber"
+],
+"worksBy": [
+{
+"effect": "conduction",
+"card": "electrical-conductance"
+}
+]
+},
+{
+"id": "integrated-circuits",
+"t": "Integrated circuits",
+"y": "1960",
+"type": "object",
+"job": "computes",
+"parts": [
+"transistor",
+"silicon"
+],
+"worksBy": []
+},
+{
+"id": "interchangeable-parts",
+"t": "Interchangeable parts",
+"y": "1798",
+"type": "practice",
+"job": "manufactures",
+"parts": [],
+"worksBy": []
+},
+{
+"id": "interferometer",
+"t": "Interferometer",
+"y": "1881",
+"type": "object",
+"job": "measures",
+"parts": [
+"mirror"
+],
+"worksBy": [
+{
+"effect": "light waves interfere",
+"card": "light-waves"
+}
+]
+},
+{
+"id": "internal-combustion-engine",
+"t": "Internal-combustion engine",
+"y": "1860",
+"type": "object",
+"job": "provides power",
+"parts": [
+"piston-and-cylinder",
+"valve",
+"gas-lighting"
+],
+"worksBy": []
+},
+{
+"id": "ionic-dissociation",
+"t": "Ionic dissociation",
+"y": "1884",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "ionizing-radiation",
+"t": "Ionizing radiation",
+"y": "1896",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "iron-horseshoes",
+"t": "Iron horseshoes",
+"y": "770",
+"type": "object",
+"job": "protects",
+"parts": [
+"steel"
+],
+"worksBy": []
+},
+{
+"id": "ironclad-warships",
+"t": "Ironclad warships",
+"y": "1862",
+"type": "object",
+"job": "fires projectiles",
+"parts": [
+"steel",
+"improved-steam-engine",
+"cannon"
+],
+"worksBy": [
+{
+"effect": "buoyancy",
+"card": "archimedes-principle"
+}
+]
+},
+{
+"id": "irradiation",
+"t": "Irradiation",
+"y": "1924",
+"type": "practice",
+"job": "supplies a nutrient",
+"parts": [],
+"worksBy": [
+{
+"effect": "ultraviolet light makes vitamin D",
+"card": "ultraviolet"
+}
+]
+},
+{
+"id": "irrigation",
+"t": "Irrigation",
+"y": "5000 BCE",
+"type": "practice",
+"job": "supplies water",
+"parts": [],
+"worksBy": [
+{
+"effect": "plants need water",
+"gap": "Plants need water"
+}
+]
+},
+{
+"id": "isotactic-polymers",
+"t": "Isotactic polymers",
+"y": "1953",
+"type": "material",
+"job": "forms the body",
+"parts": [],
+"worksBy": []
+},
+{
+"id": "jacquard-loom",
+"t": "Jacquard loom",
+"y": "1801",
+"type": "object",
+"job": "makes textiles",
+"parts": [
+"flying-shuttle",
+"punched-cards"
+],
+"worksBy": []
+},
+{
+"id": "jarvik-hearts",
+"t": "Jarvik hearts",
+"y": "1982",
+"type": "object",
+"job": "pumps blood",
+"parts": [
+"valve"
+],
+"worksBy": [
+{
+"effect": "compressed gas pushes back",
+"card": "boyles-law"
+},
+{
+"effect": "the heart pumps blood around the body",
+"card": "blood-circulation"
+}
+]
+},
+{
+"id": "jet-planes",
+"t": "Jet planes",
+"y": "1941",
+"type": "object",
+"job": "flies",
+"parts": [
+"wing",
+"Jet engine"
+],
+"worksBy": [
+{
+"effect": "reaction thrust",
+"card": "conservation-momentum"
+}
+]
+},
+{
+"id": "jodrell-bank",
+"t": "Jodrell Bank",
+"y": "1957",
+"type": "object",
+"job": "gathers light",
+"parts": [
+"superheterodyne-receiver",
+"mirror"
+],
+"worksBy": [
+{
+"effect": "a curved mirror focuses light",
+"card": "optics"
+}
+]
+},
+{
+"id": "kennelly-heaviside-layer",
+"t": "Kennelly-heaviside layer",
+"y": "1902",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "kerosene",
+"t": "Kerosene",
+"y": "1853",
+"type": "material",
+"job": "stores chemical energy",
+"parts": [
+"coal-mining"
+],
+"worksBy": [
+{
+"effect": "burns with oxygen from the air",
+"card": "combustion-and-phlogiston-theory-refinement"
+}
+]
+},
+{
+"id": "keys",
+"t": "Keys",
+"y": "1837",
+"type": "object",
+"job": "takes input",
+"parts": [
+"spring"
+],
+"worksBy": []
+},
+{
+"id": "kidney-transplant",
+"t": "Kidney transplant",
+"y": "1954",
+"type": "practice",
+"job": "treats illness",
+"parts": [
+"artificial-kidneys"
+],
+"worksBy": [
+{
+"effect": "the body rejects foreign tissue",
+"card": "tissue-transplantation"
+}
+]
+},
+{
+"id": "kinetic-theory-of-gases",
+"t": "Kinetic theory of gases",
+"y": "1859",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "land-camera",
+"t": "Land camera",
+"y": "1947",
+"type": "object",
+"job": "records media",
+"parts": [
+"camera"
+],
+"worksBy": []
+},
+{
+"id": "large-refracting-telescope",
+"t": "Large refracting telescope",
+"y": "1897",
+"type": "object",
+"job": "gathers light",
+"parts": [
+"achromatic-lens"
+],
+"worksBy": []
+},
+{
+"id": "laser",
+"t": "Laser",
+"y": "1960",
+"type": "object",
+"job": "makes light",
+"parts": [
+"chromium",
+"mirror"
+],
+"worksBy": [
+{
+"effect": "excited atoms copy the light passing through",
+"card": "stimulated-emission"
+}
+]
+},
+{
+"id": "laser-disks",
+"t": "Laser disks",
+"y": "1972",
+"type": "object",
+"job": "records media",
+"parts": [
+"laser",
+"electric-motors",
+"photocell"
+],
+"worksBy": [
+{
+"effect": "binary numbers",
+"card": "binary-system"
+}
+]
+},
+{
+"id": "laser-printers",
+"t": "Laser printers",
+"y": "1982",
+"type": "object",
+"job": "prints",
+"parts": [
+"laser",
+"xerography",
+"microchips"
+],
+"worksBy": []
+},
+{
+"id": "latent-heat",
+"t": "Latent heat",
+"y": "1762",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "laws-motion",
+"t": "Laws of motion",
+"y": "1687",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "laws-of-electrolysis",
+"t": "Laws of electrolysis",
+"y": "1832",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "lead",
+"t": "Lead",
+"y": "-4000",
+"type": "material",
+"job": "forms the body",
+"parts": [],
+"worksBy": []
+},
+{
+"id": "leather",
+"t": "Leather",
+"y": -3500,
+"type": "material",
+"job": "forms the body",
+"parts": [
+"animal-dom"
+],
+"worksBy": []
+},
+{
+"id": "lever-math",
+"t": "Lever mathematics",
+"y": "260 BCE",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "leyden-jar",
+"t": "Leyden jar",
+"y": "1745",
+"type": "object",
+"job": "stores electricity",
+"parts": [
+"glass",
+"Metal foil"
+],
+"worksBy": [
+{
+"effect": "conduction",
+"card": "electrical-conductance"
+},
+{
+"effect": "static charge",
+"card": "positive-negative-charge"
+}
+]
+},
+{
+"id": "light-emitting-diodes",
+"t": "Light-emitting diodes",
+"y": "1962",
+"type": "object",
+"job": "makes light",
+"parts": [
+"gallium"
+],
+"worksBy": [
+{
+"effect": "light comes in photons",
+"card": "waves-as-particles"
+},
+{
+"effect": "one-way conduction in crystals",
+"card": "current-and-crystals"
+}
+]
+},
+{
+"id": "light-spectrum",
+"t": "Prisms",
+"y": "1666",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "light-waves",
+"t": "Light waves",
+"y": "1801",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "lighthouse",
+"t": "Lighthouses",
+"y": "280 BCE",
+"type": "object",
+"job": "makes light",
+"parts": [
+"fire"
+],
+"worksBy": []
+},
+{
+"id": "lightning-rod",
+"t": "Lightning rod",
+"y": "1752",
+"type": "object",
+"job": "protects",
+"parts": [
+"steel"
+],
+"worksBy": [
+{
+"effect": "conduction",
+"card": "electrical-conductance"
+}
+]
+},
+{
+"id": "linotype",
+"t": "Linotype",
+"y": "1884",
+"type": "object",
+"job": "prints",
+"parts": [
+"keys",
+"lead"
+],
+"worksBy": []
+},
+{
+"id": "liquid-fuel-rockets",
+"t": "Liquid-fuel rockets",
+"y": "1926",
+"type": "object",
+"job": "provides thrust",
+"parts": [
+"liquid-oxygen",
+"gasoline",
+"valve",
+"Combustion chamber and nozzle"
+],
+"worksBy": [
+{
+"effect": "reaction thrust",
+"card": "conservation-momentum"
+}
+]
+},
+{
+"id": "lithium-battery",
+"t": "Lithium battery",
+"y": "1972",
+"type": "object",
+"job": "stores electricity",
+"parts": [
+"cadmium-lithium-selenium"
+],
+"worksBy": [
+{
+"effect": "a reaction drives a current",
+"card": "laws-of-electrolysis"
+}
+]
+},
+{
+"id": "logarithms",
+"t": "Logarithms",
+"y": "1614",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "long-playing-records",
+"t": "Long-playing records",
+"y": "1948",
+"type": "object",
+"job": "records media",
+"parts": [],
+"worksBy": []
+},
+{
+"id": "longbow",
+"t": "Longbows",
+"y": "1298",
+"type": "object",
+"job": "fires projectiles",
+"parts": [],
+"worksBy": [
+{
+"effect": "elasticity",
+"card": "hookes-law"
+}
+]
+},
+{
+"id": "longitude",
+"t": "Ship’s chronometer",
+"y": "1728",
+"type": "object",
+"job": "keeps time",
+"parts": [
+"spring",
+"gear-train",
+"escapement"
+],
+"worksBy": []
+},
+{
+"id": "loudspeaker",
+"t": "loudspeaker",
+"y": "",
+"type": "object",
+"job": "turns current into sound",
+"parts": [
+"electromagnets",
+"insulated-wire"
+],
+"worksBy": [
+{
+"effect": "a magnet pushes a current",
+"card": "electrical-motion"
+}
+]
+},
+{
+"id": "macadamized-roads",
+"t": "Macadamized roads",
+"y": "1815",
+"type": "object",
+"job": "carries traffic",
+"parts": [],
+"worksBy": [
+{
+"effect": "rolling friction",
+"card": "rolling-friction"
+}
+]
+},
+{
+"id": "machine-guns",
+"t": "Machine guns",
+"y": "1862",
+"type": "object",
+"job": "fires projectiles",
+"parts": [
+"gunpowder",
+"steel"
+],
+"worksBy": []
+},
+{
+"id": "magnetic-moments",
+"t": "Magnetic moments",
+"y": "1939",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "magnetic-resonance",
+"t": "Magnetic resonance",
+"y": "1938",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "magnetrons",
+"t": "Magnetrons",
+"y": "1921",
+"type": "object",
+"job": "amplifies a signal",
+"parts": [
+"electromagnets",
+"tungsten-wire",
+"glass"
+],
+"worksBy": [
+{
+"effect": "radio waves",
+"card": "radio-waves"
+},
+{
+"effect": "thermionic emission",
+"card": "edison-effect"
+}
+]
+},
+{
+"id": "malleable-platinum",
+"t": "Malleable platinum",
+"y": "1801",
+"type": "material",
+"job": "forms the body",
+"parts": [],
+"worksBy": []
+},
+{
+"id": "masers",
+"t": "Masers",
+"y": "1953",
+"type": "object",
+"job": "amplifies a signal",
+"parts": [
+"liquid-ammonia"
+],
+"worksBy": [
+{
+"effect": "excited atoms copy the light passing through",
+"card": "stimulated-emission"
+}
+]
+},
+{
+"id": "mass-increase",
+"t": "Mass increase",
+"y": "1900",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "mass-spectrometer",
+"t": "Mass spectrometer",
+"y": "1919",
+"type": "object",
+"job": "measures",
+"parts": [
+"electromagnets",
+"dry-plates"
+],
+"worksBy": [
+{
+"effect": "a magnet pushes a current",
+"card": "electrical-motion"
+}
+]
+},
+{
+"id": "matches",
+"t": "Matches",
+"y": "1831",
+"type": "object",
+"job": "ignites fuel",
+"parts": [
+"phosphorus"
+],
+"worksBy": [
+{
+"effect": "burns with oxygen from the air",
+"card": "combustion-and-phlogiston-theory-refinement"
+},
+{
+"effect": "rubbing makes heat",
+"card": "mechanical-equivalent-of-heat"
+}
+]
+},
+{
+"id": "maxim-gun",
+"t": "Maxim gun",
+"y": "1883",
+"type": "object",
+"job": "fires projectiles",
+"parts": [
+"gunpowder",
+"spring",
+"steel"
+],
+"worksBy": [
+{
+"effect": "reaction thrust",
+"card": "conservation-momentum"
+}
+]
+},
+{
+"id": "mechanical-clock",
+"t": "Mechanical clocks",
+"y": "1335",
+"type": "object",
+"job": "keeps time",
+"parts": [
+"gear-train",
+"escapement"
+],
+"worksBy": []
+},
+{
+"id": "mechanical-equivalent-of-heat",
+"t": "Mechanical equivalent of heat",
+"y": "1843",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "mechanical-reaper",
+"t": "Mechanical reaper",
+"y": "1834",
+"type": "object",
+"job": "cuts",
+"parts": [
+"sickle",
+"wheel-and-axle",
+"gear-train",
+"horse"
+],
+"worksBy": []
+},
+{
+"id": "mercury",
+"t": "Mercury",
+"y": "-1500",
+"type": "material",
+"job": "forms the body",
+"parts": [],
+"worksBy": []
+},
+{
+"id": "mercury-thermometer",
+"t": "Mercury thermometer",
+"y": "1714",
+"type": "object",
+"job": "measures",
+"parts": [
+"glass",
+"mercury"
+],
+"worksBy": [
+{
+"effect": "liquids expand when heated",
+"card": "thermal-expansion"
+}
+]
+},
+{
+"id": "metal-stirrup",
+"t": "Metal stirrups",
+"y": "300",
+"type": "object",
+"job": "steadies the rider",
+"parts": [
+"steel"
+],
+"worksBy": []
+},
+{
+"id": "microchips",
+"t": "Microchips",
+"y": "1975",
+"type": "object",
+"job": "computes",
+"parts": [
+"integrated-circuits",
+"quartz-oscillator"
+],
+"worksBy": [
+{
+"effect": "Boolean logic",
+"card": "symbolic-logic"
+},
+{
+"effect": "binary numbers",
+"card": "binary-system"
+}
+]
+},
+{
+"id": "microphone",
+"t": "microphone",
+"y": "",
+"type": "object",
+"job": "turns sound into current",
+"parts": [
+"Carbon granules"
+],
+"worksBy": [
+{
+"effect": "pressure changes carbon's resistance",
+"gap": "Contact resistance"
+}
+]
+},
+{
+"id": "microscope",
+"t": "Microscope",
+"y": "1590",
+"type": "object",
+"job": "magnifies",
+"parts": [
+"glass"
+],
+"worksBy": [
+{
+"effect": "refraction",
+"card": "refraction"
+}
+]
+},
+{
+"id": "miners-friend",
+"t": "Miner's friend",
+"y": "1698",
+"type": "object",
+"job": "pumps water",
+"parts": [
+"boiler",
+"valve",
+"Receiving vessel"
+],
+"worksBy": [
+{
+"effect": "atmospheric pressure",
+"card": "air-pressure"
+}
+]
+},
+{
+"id": "mirror",
+"t": "Mirrors",
+"y": "1291",
+"type": "object",
+"job": "reflects light",
+"parts": [
+"glass",
+"mercury"
+],
+"worksBy": []
+},
+{
+"id": "modern-candles",
+"t": "Modern candles",
+"y": "1825",
+"type": "object",
+"job": "makes light",
+"parts": [],
+"worksBy": [
+{
+"effect": "burns with oxygen from the air",
+"card": "combustion-and-phlogiston-theory-refinement"
+},
+{
+"effect": "capillary action",
+"card": "capillary-action"
+}
+]
+},
+{
+"id": "modern-seismograph",
+"t": "Modern seismograph",
+"y": "1880",
+"type": "object",
+"job": "measures",
+"parts": [
+"pendulum"
+],
+"worksBy": [
+{
+"effect": "a heavy mass stays put while the ground moves",
+"card": "laws-motion"
+}
+]
+},
+{
+"id": "morphine-synthesis",
+"t": "Morphine synthesis",
+"y": "1925",
+"type": "material",
+"job": "numbs pain",
+"parts": [],
+"worksBy": [
+{
+"effect": "a drug fits the nerves' pain receptors",
+"card": "endorphins"
+}
+]
+},
+{
+"id": "motion-pictures",
+"t": "Motion pictures",
+"y": "1889",
+"type": "practice",
+"job": "shows the image",
+"parts": [
+"celluloid",
+"camera"
+],
+"worksBy": [
+{
+"effect": "light darkens silver salts",
+"card": "photography"
+},
+{
+"effect": "the eye blends quick still pictures into motion",
+"gap": "Persistence of vision"
+}
+]
+},
+{
+"id": "musket",
+"t": "Musket",
+"y": "1565",
+"type": "object",
+"job": "fires projectiles",
+"parts": [
+"gunpowder",
+"steel",
+"gun-lock"
+],
+"worksBy": []
+},
+{
+"id": "needle-gun",
+"t": "Needle gun",
+"y": "1841",
+"type": "object",
+"job": "fires projectiles",
+"parts": [
+"gunpowder",
+"paper",
+"gun-lock",
+"steel"
+],
+"worksBy": []
+},
+{
+"id": "neon-lights",
+"t": "Neon lights",
+"y": "1910",
+"type": "object",
+"job": "makes light",
+"parts": [
+"glass",
+"neon-krypton-xenon",
+"transformer"
+],
+"worksBy": [
+{
+"effect": "each gas glows its own colours",
+"card": "spectral-lines"
+}
+]
+},
+{
+"id": "neoprene",
+"t": "Neoprene",
+"y": "1931",
+"type": "material",
+"job": "forms the body",
+"parts": [
+"chlorine"
+],
+"worksBy": []
+},
+{
+"id": "neptunium-and-plutonium",
+"t": "Neptunium and plutonium",
+"y": "1940",
+"type": "material",
+"job": null,
+"parts": [],
+"worksBy": [
+{
+"effect": "a neutron splits a heavy atom, freeing more neutrons",
+"card": "nuclear-chain-reaction"
+}
+]
+},
+{
+"id": "neutron",
+"t": "Neutron",
+"y": "1932",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "neutron-absorption",
+"t": "Neutron absorption",
+"y": "1936",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "neutron-bombardment",
+"t": "Neutron bombardment",
+"y": "1934",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "newcomen-steam-engine",
+"t": "Newcomen steam engine",
+"y": "1712",
+"type": "object",
+"job": "provides power",
+"parts": [
+"boiler",
+"piston-and-cylinder",
+"valve",
+"Rocking beam"
+],
+"worksBy": [
+{
+"effect": "atmospheric pressure",
+"card": "air-pressure"
+}
+]
+},
+{
+"id": "niacin",
+"t": "Niacin",
+"y": "1937",
+"type": "material",
+"job": null,
+"parts": [],
+"worksBy": [
+{
+"effect": "the body needs trace nutrients",
+"card": "vitamin-concept"
+}
+]
+},
+{
+"id": "nicol-prism",
+"t": "Nicol prism",
+"y": "1829",
+"type": "object",
+"job": "polarizes light",
+"parts": [],
+"worksBy": [
+{
+"effect": "some crystals split light in two",
+"card": "double-refraction"
+}
+]
+},
+{
+"id": "nitrogen-filled-light-bulbs",
+"t": "Nitrogen-filled light bulbs",
+"y": "1913",
+"type": "object",
+"job": "makes light",
+"parts": [
+"tungsten-wire",
+"nitrogen",
+"glass"
+],
+"worksBy": [
+{
+"effect": "hot things glow",
+"card": "black-bodies"
+}
+]
+},
+{
+"id": "nitrogen-fixation",
+"t": "Nitrogen fixation",
+"y": "1886",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "nitroglycerine",
+"t": "Nitroglycerine",
+"y": "1847",
+"type": "material",
+"job": "explodes",
+"parts": [],
+"worksBy": [
+{
+"effect": "burns all at once, without air",
+"card": "oxygen"
+}
+]
+},
+{
+"id": "nitrous-oxide",
+"t": "Nitrous oxide",
+"y": "1800",
+"type": "material",
+"job": null,
+"parts": [],
+"worksBy": [
+{
+"effect": "an inhaled drug puts the patient beyond pain",
+"gap": "General anesthesia"
+}
+]
+},
+{
+"id": "no-spontaneous-generation-redux",
+"t": "Definitely no spontaneous generation",
+"y": "1768",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "novocaine",
+"t": "Novocaine",
+"y": "1904",
+"type": "material",
+"job": "numbs pain",
+"parts": [],
+"worksBy": [
+{
+"effect": "nerve signals are electrical",
+"card": "electric-nerve-fibers"
+}
+]
+},
+{
+"id": "nuclear-chain-reaction",
+"t": "Nuclear chain reaction",
+"y": "1939",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "nuclear-fission-bomb",
+"t": "Nuclear fission bomb",
+"y": "1945",
+"type": "object",
+"job": "explodes",
+"parts": [
+"uranium-two-three-five",
+"neptunium-and-plutonium",
+"polonium-and-radium",
+"beryllium"
+],
+"worksBy": []
+},
+{
+"id": "nuclear-fusion-bomb",
+"t": "Nuclear fusion bomb",
+"y": "1952",
+"type": "object",
+"job": "explodes",
+"parts": [
+"nuclear-fission-bomb",
+"deuterium",
+"cadmium-lithium-selenium",
+"uranium"
+],
+"worksBy": []
+},
+{
+"id": "nuclear-reactor",
+"t": "Nuclear reactor",
+"y": "1942",
+"type": "object",
+"job": "makes heat",
+"parts": [
+"uranium",
+"cadmium-lithium-selenium"
+],
+"worksBy": [
+{
+"effect": "a neutron splits a heavy atom, freeing more neutrons",
+"card": "nuclear-chain-reaction"
+},
+{
+"effect": "some atoms soak up neutrons",
+"card": "neutron-absorption"
+}
+]
+},
+{
+"id": "nylon",
+"t": "Nylon",
+"y": "1931",
+"type": "material",
+"job": "forms the body",
+"parts": [],
+"worksBy": []
+},
+{
+"id": "ohms-law",
+"t": "Ohm's Law",
+"y": "1827",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "oil-lamp",
+"t": "Oil lamps",
+"y": "20000 BCE",
+"type": "object",
+"job": "makes light",
+"parts": [
+"pottery",
+"animal-dom"
+],
+"worksBy": [
+{
+"effect": "burns with oxygen from the air",
+"card": "combustion-and-phlogiston-theory-refinement"
+},
+{
+"effect": "capillary action",
+"card": "capillary-action"
+}
+]
+},
+{
+"id": "oil-wells",
+"t": "Oil wells",
+"y": "1859",
+"type": "material",
+"job": "stores chemical energy",
+"parts": [],
+"worksBy": []
+},
+{
+"id": "optics",
+"t": "Optics",
+"y": "1025",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "oral-contraceptives",
+"t": "Oral contraceptives",
+"y": "1954",
+"type": "material",
+"job": "regulates the body",
+"parts": [
+"sex-hormones"
+],
+"worksBy": []
+},
+{
+"id": "oscilloscope",
+"t": "Oscilloscope",
+"y": "1897",
+"type": "object",
+"job": "shows the image",
+"parts": [
+"glass",
+"electromagnets",
+"Phosphor screen",
+"electron-gun"
+],
+"worksBy": []
+},
+{
+"id": "osmosis",
+"t": "Osmosis",
+"y": "1748",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "oxygen",
+"t": "Oxygen",
+"y": "1774",
+"type": "material",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "oxytocin-synthesis",
+"t": "Oxytocin synthesis",
+"y": "1954",
+"type": "material",
+"job": "regulates the body",
+"parts": [],
+"worksBy": [
+{
+"effect": "hormones regulate the body",
+"card": "hormones"
+}
+]
+},
+{
+"id": "pacemaker",
+"t": "Pacemaker",
+"y": "1957",
+"type": "object",
+"job": "regulates the body",
+"parts": [
+"transistor",
+"dry-cell",
+"insulated-wire"
+],
+"worksBy": [
+{
+"effect": "muscles work by electrical impulses",
+"card": "electrical-stimulation"
+}
+]
+},
+{
+"id": "painless-childbirth",
+"t": "Painless childbirth",
+"y": "1847",
+"type": "practice",
+"job": "numbs pain",
+"parts": [
+"chloroform"
+],
+"worksBy": []
+},
+{
+"id": "paper",
+"t": "Paper",
+"y": "105",
+"type": "material",
+"job": "takes the print",
+"parts": [
+"Plant fiber"
+],
+"worksBy": []
+},
+{
+"id": "paper-chromatography",
+"t": "Paper chromatography",
+"y": "1944",
+"type": "practice",
+"job": "separates mixtures",
+"parts": [
+"paper"
+],
+"worksBy": [
+{
+"effect": "parts of a mixture travel at different speeds",
+"card": "chromatography"
+}
+]
+},
+{
+"id": "papyrus",
+"t": "Papyrus",
+"y": "3000 BCE",
+"type": "material",
+"job": "takes the print",
+"parts": [],
+"worksBy": []
+},
+{
+"id": "parachute",
+"t": "Parachute",
+"y": "1798",
+"type": "object",
+"job": "slows motion",
+"parts": [
+"silk-europe"
+],
+"worksBy": [
+{
+"effect": "drag",
+"card": "aerodynamics"
+}
+]
+},
+{
+"id": "parchment",
+"t": "Parchment",
+"y": "170 BCE",
+"type": "material",
+"job": "takes the print",
+"parts": [
+"animal-dom"
+],
+"worksBy": []
+},
+{
+"id": "particle-accelerator",
+"t": "Particle accelerator",
+"y": "1929",
+"type": "object",
+"job": "accelerates particles",
+"parts": [
+"transformer",
+"electronic-rectifier"
+],
+"worksBy": []
+},
+{
+"id": "particles-as-waves",
+"t": "Particles as waves",
+"y": "1923",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "pasteurization",
+"t": "Pasteurization",
+"y": "1856",
+"type": "practice",
+"job": "preserves food",
+"parts": [],
+"worksBy": [
+{
+"effect": "heat kills microbes",
+"card": "no-spontaneous-generation-redux"
+}
+]
+},
+{
+"id": "paved-road",
+"t": "Paved roads",
+"y": "312 BCE",
+"type": "object",
+"job": "carries traffic",
+"parts": [],
+"worksBy": [
+{
+"effect": "rolling friction",
+"card": "rolling-friction"
+}
+]
+},
+{
+"id": "pendulum-clock",
+"t": "Grandfather clocks",
+"y": "1656",
+"type": "object",
+"job": "keeps time",
+"parts": [
+"gear-train",
+"escapement",
+"pendulum"
+],
+"worksBy": []
+},
+{
+"id": "penicillin",
+"t": "Penicillin",
+"y": "1928",
+"type": "material",
+"job": null,
+"parts": [],
+"worksBy": [
+{
+"effect": "a chemical kills the germ but not the patient",
+"card": "chemotherapy"
+}
+]
+},
+{
+"id": "penicillin-practical",
+"t": "Practical Penicillin",
+"y": "1939",
+"type": "material",
+"job": "kills bacteria",
+"parts": [
+"penicillin"
+],
+"worksBy": []
+},
+{
+"id": "perfusion-pump",
+"t": "Perfusion pump",
+"y": "1936",
+"type": "object",
+"job": "pumps blood",
+"parts": [
+"glass",
+"valve"
+],
+"worksBy": [
+{
+"effect": "cells live outside the body",
+"card": "cell-theory"
+}
+]
+},
+{
+"id": "phase-contrast-microscope",
+"t": "Phase-contrast microscope",
+"y": "1938",
+"type": "object",
+"job": "magnifies",
+"parts": [
+"microscope"
+],
+"worksBy": [
+{
+"effect": "light waves interfere",
+"card": "light-waves"
+}
+]
+},
+{
+"id": "phonograph",
+"t": "Phonograph",
+"y": "1877",
+"type": "object",
+"job": "records media",
+"parts": [],
+"worksBy": [
+{
+"effect": "sound is a vibration",
+"card": "acoustics"
+}
+]
+},
+{
+"id": "photocell",
+"t": "Photocell",
+"y": "1893",
+"type": "object",
+"job": "turns light into current",
+"parts": [
+"sodium-and-potassium"
+],
+"worksBy": [
+{
+"effect": "photoelectric effect",
+"card": "photoelectric-effect"
+}
+]
+},
+{
+"id": "photocopying",
+"t": "Photocopying",
+"y": "1958",
+"type": "practice",
+"job": "prints",
+"parts": [
+"cadmium-lithium-selenium",
+"electric-light"
+],
+"worksBy": [
+{
+"effect": "light lets a coating conduct",
+"card": "photovoltaic-cells"
+},
+{
+"effect": "static charge",
+"card": "positive-negative-charge"
+}
+]
+},
+{
+"id": "photoelectric-effect",
+"t": "Photoelectric effect",
+"y": "1887",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "photographic-negative",
+"t": "Photographic negative",
+"y": "1841",
+"type": "object",
+"job": "records media",
+"parts": [
+"paper",
+"camera"
+],
+"worksBy": [
+{
+"effect": "light darkens silver salts",
+"card": "photography"
+}
+]
+},
+{
+"id": "photography",
+"t": "Photography",
+"y": "1839",
+"type": "practice",
+"job": "records media",
+"parts": [
+"iodine",
+"copper",
+"camera"
+],
+"worksBy": []
+},
+{
+"id": "photovoltaic-cells",
+"t": "Photovoltaic cells",
+"y": "1954",
+"type": "object",
+"job": "makes electricity",
+"parts": [
+"silicon"
+],
+"worksBy": [
+{
+"effect": "photoelectric effect",
+"card": "photoelectric-effect"
+}
+]
+},
+{
+"id": "piezoelectricity",
+"t": "Piezoelectricity",
+"y": "1880",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "pike",
+"t": "Pike",
+"y": "1300",
+"type": "object",
+"job": "impales",
+"parts": [
+"steel"
+],
+"worksBy": []
+},
+{
+"id": "piston-and-cylinder",
+"t": "piston-and-cylinder",
+"y": "",
+"type": "object",
+"job": "pushes",
+"parts": [
+"bronze"
+],
+"worksBy": [
+{
+"effect": "compressed gas pushes back",
+"card": "boyles-law"
+}
+]
+},
+{
+"id": "plate-glass",
+"t": "Plate glass",
+"y": "1688",
+"type": "material",
+"job": "forms the body",
+"parts": [],
+"worksBy": []
+},
+{
+"id": "plow",
+"t": "Plows",
+"y": "3500 BCE",
+"type": "object",
+"job": "cuts",
+"parts": [
+"animal-dom"
+],
+"worksBy": []
+},
+{
+"id": "pocket-calculators",
+"t": "Pocket calculators",
+"y": "1971",
+"type": "object",
+"job": "computes",
+"parts": [
+"integrated-circuits",
+"light-emitting-diodes",
+"dry-cell",
+"keys"
+],
+"worksBy": []
+},
+{
+"id": "polarized-light",
+"t": "Polarized light",
+"y": "1808",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "polaroid",
+"t": "Polaroid",
+"y": "1932",
+"type": "object",
+"job": "polarizes light",
+"parts": [
+"quinine",
+"iodine",
+"celluloid"
+],
+"worksBy": [
+{
+"effect": "some crystals pass light vibrating one way only",
+"card": "polarized-light"
+}
+]
+},
+{
+"id": "polonium-and-radium",
+"t": "Polonium and radium",
+"y": "1898",
+"type": "material",
+"job": null,
+"parts": [],
+"worksBy": [
+{
+"effect": "radioactive atoms give off radiation",
+"card": "uranium-radiations"
+}
+]
+},
+{
+"id": "porcelain",
+"t": "Porcelain",
+"y": "700",
+"type": "material",
+"job": "holds the contents",
+"parts": [],
+"worksBy": []
+},
+{
+"id": "portland-cement",
+"t": "Portland cement",
+"y": "1824",
+"type": "material",
+"job": "forms the body",
+"parts": [],
+"worksBy": [
+{
+"effect": "sets hard by reacting with water",
+"gap": "Hydration"
+}
+]
+},
+{
+"id": "positive-negative-charge",
+"t": "Positive and negative charge",
+"y": "1733",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "pottery",
+"t": "Pottery",
+"y": "7000 BCE",
+"type": "object",
+"job": "holds the contents",
+"parts": [],
+"worksBy": []
+},
+{
+"id": "practical-hologram",
+"t": "Holograms",
+"y": "1965",
+"type": "object",
+"job": "records media",
+"parts": [
+"laser"
+],
+"worksBy": [
+{
+"effect": "light waves interfere",
+"card": "light-waves"
+}
+]
+},
+{
+"id": "pressure-cooker",
+"t": "Pressure cookers",
+"y": "1679",
+"type": "object",
+"job": "prepares food",
+"parts": [
+"valve",
+"steel"
+],
+"worksBy": [
+{
+"effect": "pressure raises water's boiling point",
+"gap": "Boiling points"
+}
+]
+},
+{
+"id": "printing-press",
+"t": "Printing press",
+"y": "1454",
+"type": "object",
+"job": "prints",
+"parts": [
+"paper",
+"ink",
+"Movable type"
+],
+"worksBy": []
+},
+{
+"id": "prontosil",
+"t": "Prontosil",
+"y": "1932",
+"type": "material",
+"job": "kills bacteria",
+"parts": [
+"synthetic-dyes"
+],
+"worksBy": [
+{
+"effect": "a chemical kills the germ but not the patient",
+"card": "chemotherapy"
+}
+]
+},
+{
+"id": "protein-synthesis",
+"t": "Protein synthesis",
+"y": "1965",
+"type": "practice",
+"job": "builds molecules",
+"parts": [],
+"worksBy": []
+},
+{
+"id": "pulse-watch",
+"t": "Pulse watch",
+"y": "1707",
+"type": "object",
+"job": "keeps time",
+"parts": [
+"spring",
+"gear-train",
+"escapement"
+],
+"worksBy": []
+},
+{
+"id": "punched-cards",
+"t": "Punched cards",
+"y": "1725",
+"type": "object",
+"job": "stores data",
+"parts": [
+"paper"
+],
+"worksBy": []
+},
+{
+"id": "pyroxylin",
+"t": "Pyroxylin",
+"y": "1855",
+"type": "material",
+"job": "is an ingredient",
+"parts": [
+"cellulose"
+],
+"worksBy": [
+{
+"effect": "burns all at once, without air",
+"card": "oxygen"
+}
+]
+},
+{
+"id": "quantized-atom",
+"t": "Quantized atom",
+"y": "1913",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "quartz-oscillator",
+"t": "Quartz oscillator",
+"y": "1921",
+"type": "object",
+"job": "keeps time",
+"parts": [],
+"worksBy": [
+{
+"effect": "piezoelectricity",
+"card": "piezoelectricity"
+}
+]
+},
+{
+"id": "quinacrine",
+"t": "Quinacrine",
+"y": "1932",
+"type": "material",
+"job": "treats illness",
+"parts": [],
+"worksBy": [
+{
+"effect": "a chemical kills the germ but not the patient",
+"card": "chemotherapy"
+}
+]
+},
+{
+"id": "rabies",
+"t": "Rabies",
+"y": "1885",
+"type": "practice",
+"job": "prevents disease",
+"parts": [],
+"worksBy": [
+{
+"effect": "the body learns to fight a germ",
+"card": "vaccination"
+}
+]
+},
+{
+"id": "radar",
+"t": "Radar",
+"y": "1935",
+"type": "object",
+"job": "detects objects",
+"parts": [
+"magnetrons",
+"oscilloscope",
+"radio-antennas",
+"triode"
+],
+"worksBy": [
+{
+"effect": "signal delay gives distance",
+"card": "speed-of-light"
+}
+]
+},
+{
+"id": "radio",
+"t": "Radio",
+"y": "1901",
+"type": "object",
+"job": "communicates",
+"parts": [
+"radio-antennas",
+"triode",
+"loudspeaker",
+"electric-battery"
+],
+"worksBy": [
+{
+"effect": "the ionosphere reflects radio",
+"card": "kennelly-heaviside-layer"
+}
+]
+},
+{
+"id": "radio-antennas",
+"t": "Radio antennas",
+"y": "1895",
+"type": "object",
+"job": "radiates waves",
+"parts": [
+"electric-battery",
+"Coherer"
+],
+"worksBy": [
+{
+"effect": "radio waves",
+"card": "radio-waves"
+}
+]
+},
+{
+"id": "radio-telescope",
+"t": "Radio telescope",
+"y": "1937",
+"type": "object",
+"job": "gathers light",
+"parts": [
+"mirror",
+"superheterodyne-receiver"
+],
+"worksBy": [
+{
+"effect": "a curved mirror focuses light",
+"card": "optics"
+}
+]
+},
+{
+"id": "radio-waves",
+"t": "Radio waves",
+"y": "1888",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "radio-waves-and-sound",
+"t": "Radio waves and sound",
+"y": "1906",
+"type": "practice",
+"job": "communicates",
+"parts": [
+"microphone"
+],
+"worksBy": [
+{
+"effect": "radio waves",
+"card": "radio-waves"
+}
+]
+},
+{
+"id": "radioactive-tracers",
+"t": "Radioactive lead tracing",
+"y": "1918",
+"type": "practice",
+"job": null,
+"parts": [],
+"worksBy": [
+{
+"effect": "radioactive atoms give off radiation",
+"card": "uranium-radiations"
+}
+]
+},
+{
+"id": "radioimmune-assay",
+"t": "Radioimmune assay",
+"y": "1952",
+"type": "practice",
+"job": "diagnoses",
+"parts": [
+"radioactive-tracers"
+],
+"worksBy": [
+{
+"effect": "an antibody binds only its own target",
+"gap": "Antibody specificity"
+}
+]
+},
+{
+"id": "radiometer",
+"t": "Radiometer",
+"y": "1875",
+"type": "object",
+"job": "detects radiation",
+"parts": [
+"glass"
+],
+"worksBy": [
+{
+"effect": "gas molecules push harder off the warm side",
+"card": "kinetic-theory-of-gases"
+}
+]
+},
+{
+"id": "raft",
+"t": "Rafts",
+"y": "6000 BCE",
+"type": "object",
+"job": "transports",
+"parts": [],
+"worksBy": [
+{
+"effect": "buoyancy",
+"card": "archimedes-principle"
+}
+]
+},
+{
+"id": "rare-earth-magnet",
+"t": "rare-earth-magnet",
+"y": "",
+"type": "object",
+"job": "makes a magnetic field",
+"parts": [
+"thulium-holmium-samarium",
+"cobalt",
+"praseodymium-and-neodymium",
+"dysprosium"
+],
+"worksBy": [
+{
+"effect": "atoms are tiny magnets",
+"card": "magnetic-moments"
+}
+]
+},
+{
+"id": "rayon",
+"t": "Rayon",
+"y": "1883",
+"type": "material",
+"job": "forms the body",
+"parts": [
+"cellulose",
+"pyroxylin"
+],
+"worksBy": []
+},
+{
+"id": "recombinant-dna",
+"t": "Recombinant DNA",
+"y": "1970",
+"type": "practice",
+"job": "builds molecules",
+"parts": [],
+"worksBy": [
+{
+"effect": "an enzyme cuts DNA at set places",
+"gap": "Restriction enzymes"
+}
+]
+},
+{
+"id": "reflecting-telescope",
+"t": "Reflecting telescopes",
+"y": "1668",
+"type": "object",
+"job": "gathers light",
+"parts": [
+"mirror"
+],
+"worksBy": [
+{
+"effect": "a curved mirror focuses light",
+"card": "optics"
+}
+]
+},
+{
+"id": "refraction",
+"t": "Light refraction",
+"y": "1621",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "refrigerators",
+"t": "Refrigerators",
+"y": "1858",
+"type": "object",
+"job": "preserves food",
+"parts": [
+"piston-and-cylinder",
+"liquid-ammonia",
+"valve",
+"improved-steam-engine"
+],
+"worksBy": []
+},
+{
+"id": "reinforced-concrete",
+"t": "Reinforced Concrete",
+"y": "1849",
+"type": "material",
+"job": "bears the load",
+"parts": [
+"portland-cement",
+"steel"
+],
+"worksBy": []
+},
+{
+"id": "revolvers",
+"t": "Revolvers",
+"y": "1835",
+"type": "object",
+"job": "fires projectiles",
+"parts": [
+"gunpowder",
+"spring",
+"gun-lock",
+"steel"
+],
+"worksBy": []
+},
+{
+"id": "riboflavin",
+"t": "Riboflavin",
+"y": "1935",
+"type": "material",
+"job": null,
+"parts": [],
+"worksBy": [
+{
+"effect": "the body needs trace nutrients",
+"card": "vitamin-concept"
+}
+]
+},
+{
+"id": "rifle",
+"t": "Rifle",
+"y": "1710",
+"type": "object",
+"job": "fires projectiles",
+"parts": [
+"gunpowder",
+"steel",
+"gun-lock"
+],
+"worksBy": [
+{
+"effect": "a spinning body holds its axis",
+"card": "gyroscope"
+}
+]
+},
+{
+"id": "river-boat",
+"t": "River boats",
+"y": "3500 BCE",
+"type": "object",
+"job": "transports",
+"parts": [
+"sail",
+"rudder"
+],
+"worksBy": [
+{
+"effect": "buoyancy",
+"card": "archimedes-principle"
+}
+]
+},
+{
+"id": "robots",
+"t": "Robots",
+"y": "1954",
+"type": "object",
+"job": "manufactures",
+"parts": [
+"piston-and-cylinder"
+],
+"worksBy": []
+},
+{
+"id": "rolling-friction",
+"t": "Rolling friction",
+"y": "1781",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "rotation-of-the-earth",
+"t": "Rotation of the earth",
+"y": "1851",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "rubber-tire",
+"t": "Rubber tire",
+"y": "1887",
+"type": "object",
+"job": "absorbs shocks",
+"parts": [
+"vulcanization-of-rubber",
+"valve"
+],
+"worksBy": [
+{
+"effect": "compressed gas pushes back",
+"card": "boyles-law"
+}
+]
+},
+{
+"id": "rudder",
+"t": "Rudders",
+"y": "1241",
+"type": "object",
+"job": "steers",
+"parts": [],
+"worksBy": [
+{
+"effect": "lift",
+"card": "aerodynamics"
+}
+]
+},
+{
+"id": "sabin-vaccine",
+"t": "Sabin vaccine",
+"y": "1957",
+"type": "material",
+"job": "prevents disease",
+"parts": [],
+"worksBy": [
+{
+"effect": "the body learns to fight a germ",
+"card": "vaccination"
+}
+]
+},
+{
+"id": "saccharin",
+"t": "Saccharin",
+"y": "1879",
+"type": "material",
+"job": "prepares food",
+"parts": [
+"coal-mining"
+],
+"worksBy": []
+},
+{
+"id": "saddle",
+"t": "Saddle",
+"y": "700 BCE",
+"type": "object",
+"job": "steadies the rider",
+"parts": [
+"leather"
+],
+"worksBy": []
+},
+{
+"id": "safety-pin",
+"t": "Safety Pin",
+"y": "1849",
+"type": "object",
+"job": "fastens",
+"parts": [
+"steel",
+"spring"
+],
+"worksBy": []
+},
+{
+"id": "sail",
+"t": "sail",
+"y": "",
+"type": "object",
+"job": "provides thrust",
+"parts": [
+"fish-nets"
+],
+"worksBy": [
+{
+"effect": "lift",
+"card": "aerodynamics"
+}
+]
+},
+{
+"id": "salk-vaccine",
+"t": "Salk vaccine",
+"y": "1954",
+"type": "material",
+"job": "prevents disease",
+"parts": [],
+"worksBy": [
+{
+"effect": "the body learns to fight a germ",
+"card": "vaccination"
+}
+]
+},
+{
+"id": "scale",
+"t": "Weight scales",
+"y": "5000 BCE",
+"type": "object",
+"job": "measures",
+"parts": [],
+"worksBy": [
+{
+"effect": "a lever balances equal weights",
+"card": "lever-math"
+}
+]
+},
+{
+"id": "scanning-electron-microscope",
+"t": "Scanning electron microscope",
+"y": "1970",
+"type": "object",
+"job": "magnifies",
+"parts": [
+"electromagnets",
+"oscilloscope",
+"tungsten-wire",
+"electron-gun"
+],
+"worksBy": []
+},
+{
+"id": "schmidt-camera",
+"t": "Schmidt camera",
+"y": "1930",
+"type": "object",
+"job": "records media",
+"parts": [
+"mirror",
+"glass",
+"dry-plates"
+],
+"worksBy": [
+{
+"effect": "a curved mirror focuses light",
+"card": "optics"
+},
+{
+"effect": "refraction",
+"card": "refraction"
+}
+]
+},
+{
+"id": "screw-propeller",
+"t": "Screw propeller",
+"y": "1827",
+"type": "object",
+"job": "provides thrust",
+"parts": [
+"bronze"
+],
+"worksBy": [
+{
+"effect": "reaction thrust",
+"card": "conservation-momentum"
+}
+]
+},
+{
+"id": "seaplanes",
+"t": "Seaplanes",
+"y": "1911",
+"type": "object",
+"job": "flies",
+"parts": [
+"airplane",
+"Floats"
+],
+"worksBy": [
+{
+"effect": "buoyancy",
+"card": "archimedes-principle"
+}
+]
+},
+{
+"id": "seismograph",
+"t": "Seismograph",
+"y": "1855",
+"type": "object",
+"job": "measures",
+"parts": [
+"mercury"
+],
+"worksBy": [
+{
+"effect": "a heavy mass stays put while the ground moves",
+"card": "laws-motion"
+}
+]
+},
+{
+"id": "self-starter",
+"t": "Self-starter",
+"y": "1911",
+"type": "object",
+"job": "provides power",
+"parts": [
+"electric-motors",
+"storage-battery",
+"insulated-wire"
+],
+"worksBy": []
+},
+{
+"id": "sewing-machine",
+"t": "Sewing machine",
+"y": "1846",
+"type": "object",
+"job": "makes textiles",
+"parts": [
+"steel",
+"gear-train"
+],
+"worksBy": []
+},
+{
+"id": "sex-hormones",
+"t": "Sex hormones",
+"y": "1934",
+"type": "material",
+"job": null,
+"parts": [],
+"worksBy": [
+{
+"effect": "hormones regulate the body",
+"card": "hormones"
+}
+]
+},
+{
+"id": "sickle",
+"t": "Sickles",
+"y": "6000 BCE",
+"type": "object",
+"job": "cuts",
+"parts": [
+"stone-tool"
+],
+"worksBy": []
+},
+{
+"id": "silver-fillings",
+"t": "Silver fillings",
+"y": "1847",
+"type": "material",
+"job": "treats illness",
+"parts": [
+"mercury"
+],
+"worksBy": []
+},
+{
+"id": "simple-electromagnet",
+"t": "Simple electromagnet",
+"y": "1820",
+"type": "object",
+"job": "makes a magnetic field",
+"parts": [
+"copper",
+"electric-battery"
+],
+"worksBy": [
+{
+"effect": "a current makes a magnet",
+"card": "electromagnetism"
+}
+]
+},
+{
+"id": "simple-sundial",
+"t": "Simple sundials",
+"y": "4000 BCE",
+"type": "object",
+"job": "keeps time",
+"parts": [],
+"worksBy": [
+{
+"effect": "the Earth's turning moves the shadow",
+"card": "rotation-of-the-earth"
+}
+]
+},
+{
+"id": "skylab",
+"t": "Skylab",
+"y": "1973",
+"type": "object",
+"job": "measures",
+"parts": [
+"photovoltaic-cells"
+],
+"worksBy": [
+{
+"effect": "orbit",
+"card": "universal-gravitation"
+}
+]
+},
+{
+"id": "slide-rules",
+"t": "Slide rules",
+"y": "1622",
+"type": "object",
+"job": "computes",
+"parts": [],
+"worksBy": [
+{
+"effect": "adding logarithms multiplies numbers",
+"card": "logarithms"
+}
+]
+},
+{
+"id": "smallpox-vaccine",
+"t": "Smallpox inoculation",
+"y": "1713",
+"type": "practice",
+"job": "prevents disease",
+"parts": [],
+"worksBy": [
+{
+"effect": "the body learns to fight a germ",
+"card": "vaccination"
+}
+]
+},
+{
+"id": "solar-energy-source",
+"t": "Solar energy source",
+"y": "1938",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "soluble-gases",
+"t": "Soluble gases",
+"y": "1770",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "sonar",
+"t": "Sonar",
+"y": "1917",
+"type": "object",
+"job": "detects objects",
+"parts": [
+"microphone",
+"triode",
+"Quartz transducer"
+],
+"worksBy": [
+{
+"effect": "piezoelectricity",
+"card": "piezoelectricity"
+},
+{
+"effect": "sound echoes",
+"card": "acoustics"
+}
+]
+},
+{
+"id": "space-shuttle",
+"t": "Space shuttle",
+"y": "1981",
+"type": "object",
+"job": "transports",
+"parts": [
+"liquid-fuel-rockets",
+"wing",
+"liquid-hydrogen",
+"liquid-oxygen",
+"microchips"
+],
+"worksBy": [
+{
+"effect": "orbit",
+"card": "universal-gravitation"
+}
+]
+},
+{
+"id": "space-station",
+"t": "Space station",
+"y": "1971",
+"type": "object",
+"job": "measures",
+"parts": [
+"photovoltaic-cells",
+"radio"
+],
+"worksBy": [
+{
+"effect": "orbit",
+"card": "universal-gravitation"
+}
+]
+},
+{
+"id": "spark-chamber",
+"t": "Spark chamber",
+"y": "1959",
+"type": "object",
+"job": "detects radiation",
+"parts": [
+"neon-krypton-xenon",
+"coincidence-counter",
+"camera"
+],
+"worksBy": []
+},
+{
+"id": "special-relativity",
+"t": "Special relativity",
+"y": "1905",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "spectral-lines",
+"t": "Spectral lines",
+"y": "1814",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "spectroheliograph",
+"t": "Spectroheliograph",
+"y": "1890",
+"type": "object",
+"job": "records media",
+"parts": [
+"telescope",
+"diffraction-gratings",
+"dry-plates"
+],
+"worksBy": [
+{
+"effect": "each gas glows its own colours",
+"card": "spectral-lines"
+}
+]
+},
+{
+"id": "speed-of-light",
+"t": "Speed of light",
+"y": "1675",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "spinning-frame",
+"t": "Spinning frame",
+"y": "1769",
+"type": "object",
+"job": "makes textiles",
+"parts": [
+"water-wheel",
+"gear-train"
+],
+"worksBy": []
+},
+{
+"id": "spinning-wheel",
+"t": "Spinning wheels",
+"y": "1298",
+"type": "object",
+"job": "makes textiles",
+"parts": [
+"wheel-and-axle"
+],
+"worksBy": []
+},
+{
+"id": "spray-cans",
+"t": "Spray cans",
+"y": "1953",
+"type": "object",
+"job": "sprays",
+"parts": [
+"freon",
+"valve"
+],
+"worksBy": []
+},
+{
+"id": "spring",
+"t": "spring",
+"y": "",
+"type": "object",
+"job": "stores energy",
+"parts": [
+"steel"
+],
+"worksBy": [
+{
+"effect": "elasticity",
+"card": "hookes-law"
+}
+]
+},
+{
+"id": "sputnik",
+"t": "Sputnik",
+"y": "1957",
+"type": "object",
+"job": "communicates",
+"parts": [
+"radio",
+"electric-battery"
+],
+"worksBy": [
+{
+"effect": "orbit",
+"card": "universal-gravitation"
+}
+]
+},
+{
+"id": "stagecoach",
+"t": "Stagecoaches",
+"y": "1620",
+"type": "object",
+"job": "transports",
+"parts": [
+"wheel-and-axle",
+"leather",
+"horse"
+],
+"worksBy": []
+},
+{
+"id": "starch-chromatography",
+"t": "Starch chromatography",
+"y": "1948",
+"type": "practice",
+"job": "separates mixtures",
+"parts": [],
+"worksBy": [
+{
+"effect": "parts of a mixture travel at different speeds",
+"card": "chromatography"
+}
+]
+},
+{
+"id": "static-electricity",
+"t": "Static electricity",
+"y": "1660",
+"type": "object",
+"job": "makes electricity",
+"parts": [
+"sulfur"
+],
+"worksBy": [
+{
+"effect": "static charge",
+"card": "positive-negative-charge"
+}
+]
+},
+{
+"id": "static-electricity-improved",
+"t": "Improved static generator",
+"y": "1706",
+"type": "object",
+"job": "makes electricity",
+"parts": [
+"glass"
+],
+"worksBy": [
+{
+"effect": "conduction",
+"card": "electrical-conductance"
+},
+{
+"effect": "static charge",
+"card": "positive-negative-charge"
+}
+]
+},
+{
+"id": "steam-engine",
+"t": "Steam engine",
+"y": "1764",
+"type": "object",
+"job": "provides power",
+"parts": [
+"boiler",
+"piston-and-cylinder",
+"valve",
+"Separate condenser"
+],
+"worksBy": [
+{
+"effect": "atmospheric pressure",
+"card": "air-pressure"
+}
+]
+},
+{
+"id": "steam-locomotive",
+"t": "Steam locomotive",
+"y": "1804",
+"type": "object",
+"job": "transports",
+"parts": [
+"improved-steam-engine",
+"wheel-and-axle",
+"coke-iron"
+],
+"worksBy": []
+},
+{
+"id": "steam-locomotive-improved",
+"t": "Practical steam locomotive",
+"y": "1825",
+"type": "object",
+"job": "transports",
+"parts": [
+"boiler",
+"piston-and-cylinder",
+"wheel-and-axle"
+],
+"worksBy": []
+},
+{
+"id": "steam-turbine",
+"t": "Steam turbine",
+"y": "1884",
+"type": "object",
+"job": "provides power",
+"parts": [
+"boiler",
+"turbines",
+"valve",
+"ball-bearing"
+],
+"worksBy": []
+},
+{
+"id": "steamboat",
+"t": "Steamboat",
+"y": "1787",
+"type": "object",
+"job": "transports",
+"parts": [
+"improved-steam-engine",
+"river-boat",
+"water-wheel"
+],
+"worksBy": []
+},
+{
+"id": "steamship",
+"t": "Steamship",
+"y": "1819",
+"type": "object",
+"job": "transports",
+"parts": [
+"improved-steam-engine",
+"water-wheel",
+"sail",
+"compass",
+"river-boat"
+],
+"worksBy": []
+},
+{
+"id": "steel",
+"t": "Steel",
+"y": "1000 BCE",
+"type": "material",
+"job": "forms the body",
+"parts": [],
+"worksBy": []
+},
+{
+"id": "stellarator",
+"t": "Stellarator",
+"y": "1951",
+"type": "object",
+"job": "makes heat",
+"parts": [
+"electromagnets",
+"deuterium"
+],
+"worksBy": [
+{
+"effect": "a magnet pushes a current",
+"card": "electrical-motion"
+}
+]
+},
+{
+"id": "steroid-synthesis",
+"t": "Steroid synthesis",
+"y": "1951",
+"type": "material",
+"job": "regulates the body",
+"parts": [],
+"worksBy": [
+{
+"effect": "hormones regulate the body",
+"card": "hormones"
+}
+]
+},
+{
+"id": "stethoscope",
+"t": "Stethoscope",
+"y": "1816",
+"type": "object",
+"job": "diagnoses",
+"parts": [],
+"worksBy": [
+{
+"effect": "sound is a vibration",
+"card": "acoustics"
+}
+]
+},
+{
+"id": "stimulated-emission",
+"t": "Stimulated emission",
+"y": "1917",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "stock-ticker",
+"t": "Stock ticker",
+"y": "1869",
+"type": "object",
+"job": "communicates",
+"parts": [
+"insulated-wire",
+"electromagnets"
+],
+"worksBy": []
+},
+{
+"id": "stocking-frame",
+"t": "Stocking frame",
+"y": "1589",
+"type": "object",
+"job": "makes textiles",
+"parts": [
+"steel"
+],
+"worksBy": []
+},
+{
+"id": "stone-monument",
+"t": "Stone monuments",
+"y": "2650 BCE",
+"type": "object",
+"job": "commemorates",
+"parts": [],
+"worksBy": []
+},
+{
+"id": "stone-tool",
+"t": "Stone tools",
+"y": "2000000 BCE",
+"type": "object",
+"job": "cuts",
+"parts": [],
+"worksBy": []
+},
+{
+"id": "storage-battery",
+"t": "Storage battery",
+"y": "1859",
+"type": "object",
+"job": "stores electricity",
+"parts": [
+"lead",
+"sulfuric-acid"
+],
+"worksBy": [
+{
+"effect": "a reaction drives a current",
+"card": "laws-of-electrolysis"
+}
+]
+},
+{
+"id": "stratospheric-balloons",
+"t": "Stratospheric balloons",
+"y": "1931",
+"type": "object",
+"job": "flies",
+"parts": [
+"hydrogen",
+"aluminum"
+],
+"worksBy": [
+{
+"effect": "buoyancy",
+"card": "archimedes-principle"
+}
+]
+},
+{
+"id": "strychnine-synthesis",
+"t": "Strychnine synthesis",
+"y": "1954",
+"type": "practice",
+"job": "builds molecules",
+"parts": [],
+"worksBy": []
+},
+{
+"id": "submarine",
+"t": "Submarine",
+"y": "1898",
+"type": "object",
+"job": "transports",
+"parts": [
+"four-stroke-engine",
+"electric-motors",
+"storage-battery",
+"screw-propeller"
+],
+"worksBy": [
+{
+"effect": "buoyancy",
+"card": "archimedes-principle"
+},
+{
+"effect": "water pressure grows with depth",
+"card": "hydrostatics"
+}
+]
+},
+{
+"id": "sulfur",
+"t": "Sulfur",
+"y": "-2000",
+"type": "material",
+"job": "is an ingredient",
+"parts": [],
+"worksBy": []
+},
+{
+"id": "sulfuric-acid",
+"t": "Sulfuric acid",
+"y": "1300",
+"type": "material",
+"job": "is an ingredient",
+"parts": [
+"sulfur"
+],
+"worksBy": []
+},
+{
+"id": "sundial",
+"t": "Improved sundials",
+"y": "700 BCE",
+"type": "object",
+"job": "keeps time",
+"parts": [],
+"worksBy": [
+{
+"effect": "the Earth's turning moves the shadow",
+"card": "rotation-of-the-earth"
+}
+]
+},
+{
+"id": "superheterodyne-receiver",
+"t": "Superheterodyne receiver",
+"y": "1917",
+"type": "object",
+"job": "amplifies a signal",
+"parts": [
+"triode",
+"radio-antennas",
+"loudspeaker"
+],
+"worksBy": []
+},
+{
+"id": "supersonic-flight",
+"t": "Supersonic flight",
+"y": "1947",
+"type": "object",
+"job": "flies",
+"parts": [
+"liquid-fuel-rockets",
+"wing"
+],
+"worksBy": []
+},
+{
+"id": "supersonic-transport",
+"t": "Supersonic transport",
+"y": "1970",
+"type": "object",
+"job": "transports",
+"parts": [
+"wing"
+],
+"worksBy": []
+},
+{
+"id": "surgery",
+"t": "Rational surgery",
+"y": "1545",
+"type": "practice",
+"job": "treats illness",
+"parts": [
+"steel"
+],
+"worksBy": [
+{
+"effect": "blood flows in closed vessels",
+"card": "blood-circulation"
+}
+]
+},
+{
+"id": "surgical-gloves",
+"t": "Surgical gloves",
+"y": "1890",
+"type": "object",
+"job": "protects",
+"parts": [
+"vulcanization-of-rubber"
+],
+"worksBy": []
+},
+{
+"id": "sutures",
+"t": "Sutures",
+"y": "1902",
+"type": "object",
+"job": "fastens",
+"parts": [
+"silk-europe"
+],
+"worksBy": []
+},
+{
+"id": "symbolic-logic",
+"t": "Symbolic logic",
+"y": "1847",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "synchrocyclotron",
+"t": "Synchrocyclotron",
+"y": "1945",
+"type": "object",
+"job": "accelerates particles",
+"parts": [
+"electromagnets",
+"triode"
+],
+"worksBy": [
+{
+"effect": "a magnet pushes a current",
+"card": "electrical-motion"
+},
+{
+"effect": "mass grows with speed",
+"card": "mass-increase"
+}
+]
+},
+{
+"id": "synthesis-of-quinine",
+"t": "Synthesis of quinine",
+"y": "1944",
+"type": "material",
+"job": "treats illness",
+"parts": [],
+"worksBy": [
+{
+"effect": "a chemical kills the germ but not the patient",
+"card": "chemotherapy"
+}
+]
+},
+{
+"id": "synthetic-diamonds",
+"t": "Synthetic diamonds",
+"y": "1955",
+"type": "material",
+"job": "grinds",
+"parts": [],
+"worksBy": []
+},
+{
+"id": "synthetic-dyes",
+"t": "Synthetic dyes",
+"y": "1856",
+"type": "material",
+"job": "colors",
+"parts": [
+"coal-mining"
+],
+"worksBy": []
+},
+{
+"id": "synthetic-gene",
+"t": "Synthetic gene",
+"y": "1977",
+"type": "practice",
+"job": "modifies organisms",
+"parts": [
+"gene-synthesis"
+],
+"worksBy": [
+{
+"effect": "a cell follows genes put into it",
+"card": "virus-transduction"
+}
+]
+},
+{
+"id": "synthetic-peptides",
+"t": "Synthetic peptides",
+"y": "1907",
+"type": "practice",
+"job": "builds molecules",
+"parts": [],
+"worksBy": []
+},
+{
+"id": "synthetic-urea",
+"t": "Synthetic urea",
+"y": "1828",
+"type": "material",
+"job": "is an ingredient",
+"parts": [],
+"worksBy": []
+},
+{
+"id": "synthetic-vitamin-c",
+"t": "Synthetic vitamin C",
+"y": "1933",
+"type": "material",
+"job": "supplies a nutrient",
+"parts": [],
+"worksBy": [
+{
+"effect": "the body needs trace nutrients",
+"card": "vitamin-concept"
+}
+]
+},
+{
+"id": "syphilis-treatment",
+"t": "Syphilis treatment",
+"y": "1909",
+"type": "material",
+"job": "kills bacteria",
+"parts": [],
+"worksBy": [
+{
+"effect": "a chemical kills the germ but not the patient",
+"card": "chemotherapy"
+}
+]
+},
+{
+"id": "talking-pictures",
+"t": "Talking pictures",
+"y": "1927",
+"type": "practice",
+"job": "shows the image",
+"parts": [
+"motion-pictures",
+"photocell",
+"triode",
+"loudspeaker"
+],
+"worksBy": []
+},
+{
+"id": "teflon",
+"t": "Teflon",
+"y": "1944",
+"type": "material",
+"job": "forms the body",
+"parts": [
+"fluorine"
+],
+"worksBy": []
+},
+{
+"id": "telegraph",
+"t": "Telegraph",
+"y": "1844",
+"type": "object",
+"job": "communicates",
+"parts": [
+"insulated-wire",
+"electromagnets",
+"electric-battery",
+"keys"
+],
+"worksBy": []
+},
+{
+"id": "telephone",
+"t": "Telephone",
+"y": "1876",
+"type": "object",
+"job": "communicates",
+"parts": [
+"microphone",
+"loudspeaker",
+"insulated-wire",
+"electric-battery"
+],
+"worksBy": []
+},
+{
+"id": "telescope",
+"t": "Telescope",
+"y": "1608",
+"type": "object",
+"job": "gathers light",
+"parts": [
+"concave-lenses",
+"glass"
+],
+"worksBy": []
+},
+{
+"id": "television-in-the-home",
+"t": "Television in the home",
+"y": "1947",
+"type": "object",
+"job": "shows the image",
+"parts": [
+"oscilloscope",
+"superheterodyne-receiver",
+"loudspeaker"
+],
+"worksBy": []
+},
+{
+"id": "test-tube-baby",
+"t": "Test-tube baby",
+"y": "1978",
+"type": "practice",
+"job": "treats illness",
+"parts": [
+"microscope"
+],
+"worksBy": [
+{
+"effect": "an egg can be fertilized outside the body",
+"card": "fertilization-observed"
+}
+]
+},
+{
+"id": "tetraethyl-lead",
+"t": "Tetraethyl lead",
+"y": "1921",
+"type": "material",
+"job": "regulates speed",
+"parts": [
+"lead"
+],
+"worksBy": [
+{
+"effect": "slows the burning in the cylinder",
+"gap": "Knock suppression"
+}
+]
+},
+{
+"id": "thermal-expansion",
+"t": "Thermal expansion",
+"y": "1654",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "thermometer",
+"t": "Thermometer",
+"y": "1592",
+"type": "object",
+"job": "measures",
+"parts": [
+"glass"
+],
+"worksBy": [
+{
+"effect": "liquids expand when heated",
+"card": "thermal-expansion"
+}
+]
+},
+{
+"id": "thiamine",
+"t": "Thiamine",
+"y": "1936",
+"type": "material",
+"job": null,
+"parts": [],
+"worksBy": [
+{
+"effect": "the body needs trace nutrients",
+"card": "vitamin-concept"
+}
+]
+},
+{
+"id": "tissue-culture",
+"t": "Tissue culture",
+"y": "1907",
+"type": "practice",
+"job": "grows cultures",
+"parts": [],
+"worksBy": [
+{
+"effect": "cells live outside the body",
+"card": "cell-theory"
+}
+]
+},
+{
+"id": "tissue-transplantation",
+"t": "Tissue transplantation",
+"y": "1948",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "transatlantic-liner",
+"t": "Transatlantic liner",
+"y": "1843",
+"type": "object",
+"job": "transports",
+"parts": [
+"improved-steam-engine",
+"screw-propeller",
+"coke-iron",
+"boiler",
+"sail",
+"compass"
+],
+"worksBy": [
+{
+"effect": "buoyancy",
+"card": "archimedes-principle"
+}
+]
+},
+{
+"id": "transformer",
+"t": "Transformer",
+"y": "1885",
+"type": "object",
+"job": "changes voltage",
+"parts": [
+"insulated-wire",
+"Soft iron core"
+],
+"worksBy": [
+{
+"effect": "induction",
+"card": "electromagnetic-induction"
+}
+]
+},
+{
+"id": "transistor",
+"t": "Transistor",
+"y": "1948",
+"type": "object",
+"job": "controls the current",
+"parts": [
+"germanium",
+"Contact wires"
+],
+"worksBy": [
+{
+"effect": "one-way conduction in crystals",
+"card": "current-and-crystals"
+}
+]
+},
+{
+"id": "triode",
+"t": "Triode",
+"y": "1906",
+"type": "object",
+"job": "controls the current",
+"parts": [
+"electronic-rectifier",
+"Control grid"
+],
+"worksBy": []
+},
+{
+"id": "tungsten-wire",
+"t": "Tungsten wire",
+"y": "1909",
+"type": "object",
+"job": "makes light",
+"parts": [
+"tungsten"
+],
+"worksBy": []
+},
+{
+"id": "tunnel-diode",
+"t": "Tunnel diode",
+"y": "1957",
+"type": "object",
+"job": "controls the current",
+"parts": [
+"germanium"
+],
+"worksBy": [
+{
+"effect": "one-way conduction in crystals",
+"card": "current-and-crystals"
+},
+{
+"effect": "quantum tunnelling",
+"card": "particles-as-waves"
+}
+]
+},
+{
+"id": "turbines",
+"t": "Turbines",
+"y": "1827",
+"type": "object",
+"job": "turns flow into rotation",
+"parts": [
+"ball-bearing"
+],
+"worksBy": [
+{
+"effect": "reaction thrust",
+"card": "conservation-momentum"
+}
+]
+},
+{
+"id": "turnplow",
+"t": "Turnplows",
+"y": "600",
+"type": "object",
+"job": "cuts",
+"parts": [
+"steel",
+"animal-dom",
+"wheel-and-axle"
+],
+"worksBy": []
+},
+{
+"id": "typewriters",
+"t": "Typewriters",
+"y": "1867",
+"type": "object",
+"job": "writes",
+"parts": [
+"spring",
+"keys",
+"ink"
+],
+"worksBy": []
+},
+{
+"id": "ultracentrifuge",
+"t": "Ultracentrifuge",
+"y": "1923",
+"type": "object",
+"job": "separates mixtures",
+"parts": [
+"turbines",
+"ball-bearing"
+],
+"worksBy": [
+{
+"effect": "spinning pulls heavier particles outward",
+"gap": "Sedimentation"
+}
+]
+},
+{
+"id": "ultramicroscope",
+"t": "Ultramicroscope",
+"y": "1902",
+"type": "object",
+"job": "magnifies",
+"parts": [
+"microscope"
+],
+"worksBy": [
+{
+"effect": "small particles scatter light",
+"gap": "Light scattering"
+}
+]
+},
+{
+"id": "ultraviolet",
+"t": "Ultraviolet",
+"y": "1801",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "univac",
+"t": "UNIVAC",
+"y": "1951",
+"type": "object",
+"job": "computes",
+"parts": [
+"triode"
+],
+"worksBy": []
+},
+{
+"id": "universal-gravitation",
+"t": "Universal graviation",
+"y": "1687",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "uranium-radiations",
+"t": "Uranium radiations",
+"y": "1896",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "uranium-two-three-five",
+"t": "Uranium-235",
+"y": "1935",
+"type": "material",
+"job": null,
+"parts": [],
+"worksBy": [
+{
+"effect": "a neutron splits a heavy atom, freeing more neutrons",
+"card": "nuclear-chain-reaction"
+}
+]
+},
+{
+"id": "v-two",
+"t": "V-2",
+"y": "1944",
+"type": "object",
+"job": "explodes",
+"parts": [
+"liquid-fuel-rockets",
+"gyroscope"
+],
+"worksBy": []
+},
+{
+"id": "vaccination",
+"t": "Vaccination",
+"y": "1796",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "vagusstoffe",
+"t": "Vagusstoffe",
+"y": "1921",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "valve",
+"t": "valve",
+"y": "",
+"type": "object",
+"job": "controls flow",
+"parts": [
+"bronze"
+],
+"worksBy": []
+},
+{
+"id": "vertebrate-clones",
+"t": "Vertebrate clones",
+"y": "1967",
+"type": "practice",
+"job": "modifies organisms",
+"parts": [
+"microscope"
+],
+"worksBy": [
+{
+"effect": "a body cell's nucleus can grow a whole animal",
+"gap": "Nuclear transfer"
+}
+]
+},
+{
+"id": "very-long-baseline-array",
+"t": "Very long baseline array",
+"y": "1993",
+"type": "object",
+"job": "gathers light",
+"parts": [
+"radio-telescope",
+"masers"
+],
+"worksBy": [
+{
+"effect": "light waves interfere",
+"card": "light-waves"
+}
+]
+},
+{
+"id": "virus-culture",
+"t": "Virus culture",
+"y": "1931",
+"type": "practice",
+"job": "grows cultures",
+"parts": [],
+"worksBy": [
+{
+"effect": "viruses multiply only inside living cells",
+"card": "virus-transduction"
+}
+]
+},
+{
+"id": "virus-culture-penicillin",
+"t": "Virus culture improved",
+"y": "1948",
+"type": "practice",
+"job": "grows cultures",
+"parts": [
+"penicillin-practical"
+],
+"worksBy": [
+{
+"effect": "viruses multiply only inside living cells",
+"card": "virus-transduction"
+}
+]
+},
+{
+"id": "virus-transduction",
+"t": "Virus transduction",
+"y": "1952",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "vitamin-b-12-synthesis",
+"t": "Vitamin B-12 synthesis",
+"y": "1972",
+"type": "material",
+"job": "supplies a nutrient",
+"parts": [],
+"worksBy": [
+{
+"effect": "the body needs trace nutrients",
+"card": "vitamin-concept"
+}
+]
+},
+{
+"id": "vitamin-concept",
+"t": "Vitamin concept",
+"y": "1906",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "vitamin-e",
+"t": "Vitamin E",
+"y": "1922",
+"type": "material",
+"job": null,
+"parts": [],
+"worksBy": [
+{
+"effect": "the body needs trace nutrients",
+"card": "vitamin-concept"
+}
+]
+},
+{
+"id": "vitamin-e-synthesis",
+"t": "Vitamin e synthesis",
+"y": "1938",
+"type": "material",
+"job": "supplies a nutrient",
+"parts": [],
+"worksBy": [
+{
+"effect": "the body needs trace nutrients",
+"card": "vitamin-concept"
+}
+]
+},
+{
+"id": "vitamin-k",
+"t": "Vitamin K",
+"y": "1939",
+"type": "material",
+"job": null,
+"parts": [],
+"worksBy": [
+{
+"effect": "the body needs trace nutrients",
+"card": "vitamin-concept"
+}
+]
+},
+{
+"id": "vitamin-pills",
+"t": "vitamin-pills",
+"y": "",
+"type": "practice",
+"job": "prevents disease",
+"parts": [
+"vitamins-a-and-b",
+"irradiation",
+"vitamin-e",
+"ascorbic-acid",
+"riboflavin",
+"thiamine",
+"niacin",
+"vitamin-k",
+"iodine",
+"biotin",
+"cyanocobalamin"
+],
+"worksBy": []
+},
+{
+"id": "vitamins-a-and-b",
+"t": "Vitamins A and B",
+"y": "1913",
+"type": "material",
+"job": null,
+"parts": [],
+"worksBy": [
+{
+"effect": "the body needs trace nutrients",
+"card": "vitamin-concept"
+}
+]
+},
+{
+"id": "vulcanization-of-rubber",
+"t": "Vulcanization of rubber",
+"y": "1839",
+"type": "material",
+"job": "forms the body",
+"parts": [
+"sulfur"
+],
+"worksBy": []
+},
+{
+"id": "water-clock",
+"t": "Water clocks",
+"y": "270 BCE",
+"type": "object",
+"job": "keeps time",
+"parts": [
+"pottery"
+],
+"worksBy": []
+},
+{
+"id": "water-wheel",
+"t": "Waterwheels",
+"y": "85 BCE",
+"type": "object",
+"job": "provides power",
+"parts": [
+"gear-train"
+],
+"worksBy": []
+},
+{
+"id": "waves-as-particles",
+"t": "Waves as particles",
+"y": "1923",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "weather-satellites",
+"t": "Weather satellites",
+"y": "1960",
+"type": "object",
+"job": "measures",
+"parts": [
+"iconoscope",
+"photovoltaic-cells",
+"radio"
+],
+"worksBy": [
+{
+"effect": "orbit",
+"card": "universal-gravitation"
+}
+]
+},
+{
+"id": "welsbach-mantle",
+"t": "Welsbach mantle",
+"y": "1885",
+"type": "object",
+"job": "makes light",
+"parts": [
+"thorium",
+"cerium-osmium-iridium"
+],
+"worksBy": [
+{
+"effect": "hot things glow",
+"card": "black-bodies"
+}
+]
+},
+{
+"id": "wheatstone-bridge",
+"t": "Wheatstone bridge",
+"y": "1843",
+"type": "object",
+"job": "measures",
+"parts": [
+"insulated-wire",
+"galvanometer"
+],
+"worksBy": [
+{
+"effect": "resistance",
+"card": "ohms-law"
+}
+]
+},
+{
+"id": "wheel-and-axle",
+"t": "wheel-and-axle",
+"y": "",
+"type": "object",
+"job": "rolls",
+"parts": [],
+"worksBy": [
+{
+"effect": "mechanical advantage",
+"card": "lever-math"
+},
+{
+"effect": "rolling friction",
+"card": "rolling-friction"
+}
+]
+},
+{
+"id": "wheelbarrow",
+"t": "Wheelbarrows",
+"y": "400",
+"type": "object",
+"job": "transports",
+"parts": [
+"wheel-and-axle"
+],
+"worksBy": []
+},
+{
+"id": "windmill",
+"t": "Windmills",
+"y": "1180",
+"type": "object",
+"job": "provides power",
+"parts": [
+"sail",
+"gear-train"
+],
+"worksBy": []
+},
+{
+"id": "wing",
+"t": "wing",
+"y": "",
+"type": "object",
+"job": "provides lift",
+"parts": [
+"aluminum"
+],
+"worksBy": [
+{
+"effect": "lift",
+"card": "aerodynamics"
+}
+]
+},
+{
+"id": "wooden-stirrup",
+"t": "Wooden stirrups",
+"y": "100 BCE",
+"type": "object",
+"job": "steadies the rider",
+"parts": [],
+"worksBy": []
+},
+{
+"id": "working-steamboat",
+"t": "Practical Steamboat",
+"y": "1807",
+"type": "object",
+"job": "transports",
+"parts": [
+"improved-steam-engine",
+"river-boat",
+"boiler",
+"water-wheel"
+],
+"worksBy": []
+},
+{
+"id": "x-rays",
+"t": "X-rays",
+"y": "1895",
+"type": "phenomenon",
+"job": null,
+"parts": [],
+"worksBy": []
+},
+{
+"id": "xerography",
+"t": "Xerography",
+"y": "1938",
+"type": "practice",
+"job": "prints",
+"parts": [
+"sulfur"
+],
+"worksBy": [
+{
+"effect": "light lets a coating conduct",
+"card": "photovoltaic-cells"
+},
+{
+"effect": "static charge",
+"card": "positive-negative-charge"
+}
+]
+},
+{
+"id": "yellow-fever-vaccine",
+"t": "Yellow fever vaccine",
+"y": "1937",
+"type": "material",
+"job": "prevents disease",
+"parts": [],
+"worksBy": [
+{
+"effect": "the body learns to fight a germ",
+"card": "vaccination"
+}
+]
+},
+{
+"id": "zinc",
+"t": "Zinc",
+"y": "1746",
+"type": "material",
+"job": "forms the body",
+"parts": [],
+"worksBy": []
+},
+{
+"id": "zone-refining",
+"t": "Zone refining",
+"y": "1952",
+"type": "practice",
+"job": "separates mixtures",
+"parts": [],
+"worksBy": [
+{
+"effect": "impurities stay in the melted part",
+"gap": "Impurity segregation"
+}
+]
+}
+]
